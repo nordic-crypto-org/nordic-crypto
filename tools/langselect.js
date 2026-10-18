@@ -39,7 +39,7 @@
     /* Arabic. MR is Mauritania, not Marathi. */
     SA: "ar", EG: "ar", AE: "ar", QA: "ar", KW: "ar", BH: "ar", OM: "ar", JO: "ar", LB: "ar", SY: "ar",
     IQ: "ar", YE: "ar", LY: "ar", TN: "ar", DZ: "ar", MA: "ar", SD: "ar", PS: "ar", MR: "ar",
-    /* Bengali, Portuguese, Russian, Urdu, Indonesian, German, Japanese, Swahili, Persian (Iran, and Afghanistan for Dari), Ukrainian. */
+    /* Bengali, Portuguese, Russian, Urdu, Indonesian, German, Japanese, Swahili, Persian (Iran, and Afghanistan for Dari), Ukrainian, Turkish. */
     BD: "bn",
     BR: "pt", PT: "pt", AO: "pt", MZ: "pt", CV: "pt", GW: "pt", ST: "pt", TL: "pt",
     RU: "ru", BY: "ru",
@@ -49,7 +49,8 @@
     JP: "ja",
     KE: "sw", TZ: "sw", UG: "sw",
     IR: "fa", AF: "fa",
-    UA: "uk"
+    UA: "uk",
+    TR: "tr"
   };
   function fromCountry(c) { return BY_COUNTRY[String(c || "").toUpperCase()] || "en"; }
   function fromLanguages(list) {

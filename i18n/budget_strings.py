@@ -801,9 +801,43 @@ S["mr"] = _check("mr", {
     "bud_nok_amt": "NOK {n}",
 })
 
+S["tr"] = _check("tr", {
+    "bud_nav": "Bütçe",
+    "bud_title": "Altyapı bütçesi",
+    "bud_desc": "Nordic Crypto'nun barındırma ve alan adları için her ay ödediği tutar. Rakamlar iş gücünü dışarıda tutar ve manuel olarak güncellenir.",
+    "bud_h1": "Altyapı bütçesi",
+    "bud_lead": "Nordic Crypto'nun barındırma ve alan adları için her ay ödediği tutar, {date} itibarıyla.",
+    "bud_note": "Bu rakamlar iş gücünü dışarıda tutar ve manuel olarak güncellenir. Bir fiyat yalnızca KDV dahil veya hariç olarak belirtilmişse işaretlenir.",
+    "bud_col_item": "Kalem",
+    "bud_col_month": "Aylık",
+    "bud_caption": "Aylık barındırma ve alan adı maliyetleri",
+    "bud_server": "Hetzner Cloud sunucu {name}, tip {type} ({place})",
+    "bud_runs": "{what} çalışır.",
+    "bud_server_split": "Sunucu için {server} ve birincil IPv4 için {ipv4}.",
+    "bud_volume": "Hetzner Cloud Volume, {gb} GB, GB başına {price}",
+    "bud_workers": "Cloudflare Workers Ücretli",
+    "bud_domains": "Domainler {names} üzerinden {vendor}",
+    "bud_year": "{amount} yılda",
+    "bud_year_incl": "{amount} yılda, KDV dahil",
+    "bud_year_excl": "{amount} yılda, KDV hariç",
+    "bud_pages": "{host} için GitHub Pages barındırma",
+    "bud_dns": "Cloudflare DNS ve Web Analitiği",
+    "bud_sub_h": "Ara toplamlar",
+    "bud_sub_caption": "Para birimi başına, ay başına ara toplam",
+    "bud_col_cur": "Para birimi",
+    "bud_col_sub": "Ara toplam",
+    "bud_col_nok": "NOK cinsinden, yaklaşık",
+    "bud_total_h": "NOK cinsinden yaklaşık toplam",
+    "bud_rates": "Bu sayfadaki sabit oranlar, yaklaşık: {rates}.",
+    "bud_total_line": "Aylık yaklaşık {amount}.",
+    "bud_conv": "{amount} × {rate} = {nok}",
+    "bud_nok_part": "Zaten NOK cinsinden",
+    "bud_nok_amt": "NOK {n}",
+})
+
 _missing_langs = [code for code in (
     "en", "nn", "nb", "sv", "da", "fi", "is",
-    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk",
+    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr",
 ) if code not in S]
 if _missing_langs:
     raise RuntimeError("budget strings missing languages: " + ", ".join(_missing_langs))

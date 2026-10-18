@@ -4,12 +4,12 @@ Only what is approved here is published. Org-chart approvals (approved.json -> o
 events by build.py (events.*), academia by tools/import_academia.py (status column of the researcher's list).
 
 queue/approved.json -> items: [{"url": ..., "summary": "2–4 sentences IN ENGLISH, own words, what the story says", "title_en": optional English headline,
-                                "title_i18n": {"nn": ..., "nb": ..., ..., "fa": ..., "uk": ...} (our headline in each site language except English; omit the source language),
+                                "title_i18n": {"nn": ..., "nb": ..., ..., "fa": ..., "uk": ..., "tr": ...} (our headline in each site language except English; omit the source language),
                                 "title_i18n_source": "<the source headline the translations were made from>",
                                 "blurb": optional, same length, stored for the front page when summary stays a one-line intro,
-                                "blurb_i18n": {"nn": ..., "nb": ..., ..., "uk": ...} (every site language except English),
+                                "blurb_i18n": {"nn": ..., "nb": ..., ..., "uk": ..., "tr": ...} (every site language except English),
                                 "blurb_i18n_source": "<the English blurb the translations were made from>",
-                                "summary_i18n": {"nn": ..., "nb": ..., ..., "fa": ..., "uk": ...} (our own summary in every site language except English;
+                                "summary_i18n": {"nn": ..., "nb": ..., ..., "fa": ..., "uk": ..., "tr": ...} (our own summary in every site language except English;
                                                 tools/story_translate.py fills the languages that are missing),
                                 "summary_i18n_source": "<the English summary the translations were made from>",
                                 "summary_i18n_review": "pending" | "approved" (pending translations appear only in the preview build),

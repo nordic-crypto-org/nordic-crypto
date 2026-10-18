@@ -35,6 +35,7 @@ const LABELS = {
   mr: { aria: "हे पृष्ठ शेअर करा", share: "शेअर करा:", native: "शेअर करा", email: "ईमेल", copy: "लिंक कॉपी करा", copied: "लिंक कॉपी झाली", body: "कदाचित तुम्हाला हे आवडेल:" },
   fa: { aria: "این صفحه را هم‌رسانی کنید", share: "هم‌رسانی:", native: "هم‌رسانی", email: "ایمیل", copy: "رونوشت پیوند", copied: "پیوند رونوشت شد", body: "شاید برایتان جالب باشد:" },
   uk: { aria: "Поділитися сторінкою", share: "Поділитися:", native: "Поділитися", email: "Пошта", copy: "Копіювати посилання", copied: "Посилання скопійовано", body: "Можливо, вам буде цікаво:" },
+  tr: { aria: "Bu sayfayı paylaşın", share: "Paylaş:", native: "Paylaş", email: "E-posta", copy: "Bağlantıyı kopyala", copied: "Bağlantı kopyalandı", body: "İlginizi çekebilir:" },
 };
 LABELS.no = LABELS.nb;
 

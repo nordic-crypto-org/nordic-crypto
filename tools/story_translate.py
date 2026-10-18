@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Headline, summary and front-page blurb of every published story in every site language.
 
-The site has 23 languages (i18n.ALL_LANGS). English is the base: title_en (or the source title
+The site has 24 languages (i18n.ALL_LANGS). English is the base: title_en (or the source title
 for an English story), summary and the English blurb. This tool fills what is missing:
 
   data/title_i18n.json        headline per language, except the language the source headline is in
@@ -39,7 +39,7 @@ NAMES = {
     "is": "Icelandic", "zh": "Simplified Chinese (zh-CN)", "hi": "Hindi", "es": "Spanish", "fr": "French",
     "ar": "Modern Standard Arabic", "bn": "Bengali", "pt": "Portuguese", "ru": "Russian", "ur": "Urdu",
     "id": "Indonesian", "de": "German", "ja": "Japanese", "sw": "Swahili", "mr": "Marathi", "fa": "Persian (Farsi)",
-    "uk": "Ukrainian",
+    "uk": "Ukrainian", "tr": "Turkish",
 }
 # A reply must be mostly in the script of its language.
 SCRIPT = {
