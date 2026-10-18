@@ -536,7 +536,7 @@ ol.news h3{font-size:23px;line-height:1.16;margin:0 0 4px}ol.news h3 a{text-deco
 <li><b>Newsletter by email</b>: <span class="tag" lang="zh" dir="ltr">已启用</span></li>
 <li><b>Browser notifications</b>: <span class="tag" lang="zh" dir="ltr">尚未启用</span></li>
 <li><b>Notifications in the apps</b>: only when you turn them on in the app (see <a href="#apps">Apps</a>).</li>
-<li><b>Private tips</b>: <span class="tag" lang="zh" dir="ltr">尚未启用</span></li>
+<li><b>Private tips</b>: <span class="tag" lang="zh" dir="ltr">已启用</span></li>
 <li><b>Shoutbox</b>: <span class="tag" lang="zh" dir="ltr">尚未启用</span></li>
 </ul>
 <p>Not used at all: advertising, advertising or social-media trackers, Google Analytics, Telegram or X widgets, third-party web fonts (our fonts are served from this site), script libraries from a CDN, and photos hotlinked from newspapers. Links to Telegram, X, GitHub and TestFlight are plain links; those services see you only if you follow the link, and then their own privacy terms apply.</p>
@@ -601,12 +601,13 @@ ol.news h3{font-size:23px;line-height:1.16;margin:0 0 4px}ol.news h3 a{text-deco
 <p><b>Who and where.</b> Cloudflare, Inc. stores the list (Cloudflare D1); request logging is off and our code does not store the IP address of a request (see <a href="#hosting">Hosting</a> for transfers). Apple (Apple Push Notification service) and Google (Firebase Cloud Messaging) deliver the notifications under their own privacy terms. On Android, Firebase also gives the app an installation id that Google uses to deliver them; the app has no Firebase Analytics. Apple Inc. and Google LLC are in the USA, outside the EEA. The full app policy, including the few other services the apps connect to, is in the <a href="https://github.com/jQrgen/nordic-crypto-tv/blob/main/support/appstore/privacy-policy.md" rel="noopener">app’s source code</a>.</p>
 
 <h2 id="tips">Private tips<a class="hlink" href="#tips" aria-label="Link to this section">#</a></h2>
-<p>Status: <span class="tag" lang="zh" dir="ltr">尚未启用</span></p>
-<p>We do not take tips in public GitHub issues. The <a href="../tip/">tip page</a> opens only when the private inbox below is ready.</p>
-<p><b>What.</b> The tip text, any links you add, an optional way to contact you, the page language and the time, stored in a private database on our Cloudflare Worker. Your IP address is not stored. To limit abuse, the Worker keeps a hash of your IP address with a random value that changes every day, for ten minutes. Before sending, Cloudflare Turnstile checks that you are a person; it runs only on that page. The editors may forward a tip to their own private newsroom inbox.</p>
+<p>Status: <span class="tag" lang="zh" dir="ltr">已启用</span></p>
+<p>We do not take tips in public GitHub issues. You can send a tip privately through our onion tip line in Tor Browser; the <a href="../tip/">tip page</a> links it.</p>
+<p><b>Onion tip line.</b> A page on a Tor onion address, run on a small server of our own. It works without JavaScript, loads nothing from other sites, sets no cookies and keeps no request log. It is reached only through Tor, so it never sees your IP address. The tip text, an optional attachment (up to 64 MB) and any follow-up messages are encrypted the moment they arrive. You get the receipt code once. It is the only way to read our reply or send more, and we cannot recover it.</p>
+<p><b>Web form (not switched on yet).</b> The tip text, any links you add, an optional way to contact you, the page language and the time, stored in a private database on our Cloudflare Worker. Your IP address is not stored. To limit abuse, the Worker keeps a hash of your IP address with a random value that changes every day, for ten minutes. Before sending, Cloudflare Turnstile checks that you are a person; it runs only on that page. The editors may forward a tip to their own private newsroom inbox.</p>
 <p><b>Why and legal basis.</b> Receiving and checking news tips: legitimate interest (Art. 6(1)(f)), as part of journalism (Norwegian Personal Data Act § 3).</p>
 <p><b>How long.</b> Until the editors have handled the tip and delete it. Tips and contact details are never published.</p>
-<p><b>Who and where.</b> Cloudflare, Inc. (Workers, D1, Turnstile); see <a href="#hosting">Hosting</a> for transfers.</p>
+<p><b>Who and where.</b> The onion tip line: our own server, no outside service. The web form: Cloudflare, Inc. (Workers, D1, Turnstile); see <a href="#hosting">Hosting</a> for transfers.</p>
 
 <h2 id="chat">Shoutbox<a class="hlink" href="#chat" aria-label="Link to this section">#</a></h2>
 <p>Status: <span class="tag" lang="zh" dir="ltr">尚未启用</span></p>
