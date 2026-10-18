@@ -1,13 +1,13 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T12:10:20+00:00",
+ "generated_at": "2026-10-18T14:08:29+00:00",
  "title": "Nordic Crypto data model",
  "docs_url": "https://nordiccrypto.no/db/",
  "schema_version": "2026-10-18",
- "commit": "70ffd00",
- "committed_at": "2026-10-18T13:54:00+02:00",
- "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/70ffd00867c9501992d9e27298d8c3cbff56e352",
+ "commit": "5419d2f",
+ "committed_at": "2026-10-18T16:02:27+02:00",
+ "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/5419d2f5d44f83710af03b5d868c85b74fe86d5e",
  "changelog_url": "https://nordiccrypto.no/api/v1/schema/changelog.json",
  "erd_svg_url": "https://nordiccrypto.no/api/v1/schema/erd.svg",
  "erd_mermaid_url": "https://nordiccrypto.no/api/v1/schema/erd.mmd",
@@ -358,6 +358,28 @@
    "derived": [],
    "omitted_from_api": [],
    "schema_url": "https://nordiccrypto.no/api/v1/schema/markets.schema.json"
+  },
+  {
+   "id": "podcasts",
+   "title": "Podcasts",
+   "description": "Nordic podcasts on bitcoin and crypto, in data/podcasts.json. Metadata and links only; audio is never hosted.",
+   "files": [
+    "data/podcasts.json"
+   ],
+   "store": null,
+   "pages": [
+    "/podcasts/"
+   ],
+   "api": [
+    {
+     "path": "/api/v1/podcasts.json",
+     "note": "Every podcast, active first"
+    }
+   ],
+   "relations": [],
+   "derived": [],
+   "omitted_from_api": [],
+   "schema_url": "https://nordiccrypto.no/api/v1/schema/podcasts.schema.json"
   },
   {
    "id": "profiles",

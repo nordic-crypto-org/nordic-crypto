@@ -423,6 +423,86 @@
     },
     "summary_i18n_source": {
      "type": "string"
+    },
+    "title_i18n": {
+     "type": "object",
+     "properties": {
+      "ar": {
+       "type": "string"
+      },
+      "bn": {
+       "type": "string"
+      },
+      "da": {
+       "type": "string"
+      },
+      "de": {
+       "type": "string"
+      },
+      "es": {
+       "type": "string"
+      },
+      "fa": {
+       "type": "string"
+      },
+      "fi": {
+       "type": "string"
+      },
+      "fr": {
+       "type": "string"
+      },
+      "hi": {
+       "type": "string"
+      },
+      "id": {
+       "type": "string"
+      },
+      "is": {
+       "type": "string"
+      },
+      "ja": {
+       "type": "string"
+      },
+      "mr": {
+       "type": "string"
+      },
+      "nb": {
+       "type": "string"
+      },
+      "nn": {
+       "type": "string"
+      },
+      "pt": {
+       "type": "string"
+      },
+      "ru": {
+       "type": "string"
+      },
+      "sv": {
+       "type": "string"
+      },
+      "sw": {
+       "type": "string"
+      },
+      "tr": {
+       "type": "string"
+      },
+      "uk": {
+       "type": "string"
+      },
+      "ur": {
+       "type": "string"
+      },
+      "zh": {
+       "type": "string"
+      }
+     },
+     "additionalProperties": false,
+     "description": "Our headline in other site languages, keyed by language code. English is title_en."
+    },
+    "title_i18n_source": {
+     "type": "string",
+     "description": "The source headline the translations in title_i18n were made from, so a changed headline is translated again."
     }
    },
    "additionalProperties": false,
