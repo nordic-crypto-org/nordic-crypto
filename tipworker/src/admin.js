@@ -10,6 +10,9 @@
 //   GET  /api/admin/subscribers (bearer) -> every subscriber with the issues each has received.
 //   POST /api/admin/deliveries  (bearer ADMIN_DELIVERY_TOKEN, a secret) {deliveries:[{subscriber_id, issue}]} – used by
 //                               newsletter/send_issue.py when it is not writing to D1 directly.
+//   GET  /api/admin/press-sends (bearer) -> press release sends with their recipients (migrations/0008_press_history.sql).
+//   POST /api/admin/press-sends (bearer ADMIN_DELIVERY_TOKEN) {send:{id, release_id, at, from, dry_run, recipients:[{email,status,error}]}}
+//                               – used by tools/press_history.py; idempotent by send id.
 // Why bearer and not a cookie: the page is on nordiccrypto.no and the Worker on workers.dev, a different site; browsers
 // (Safari, Firefox strict, Chrome's third-party-cookie limits) drop cross-site cookies. CORS here allows only ADMIN_ORIGIN.
 import { sendMail } from "./mailer.js";
@@ -153,6 +156,37 @@ async function recordDeliveries(req, env, h) {
   return json(req, 200, { ok: true, recorded: list.length });
 }
 
+const PRESS_ID = /^[A-Za-z0-9_-]{1,120}$/, PRESS_ST = new Set(["sent", "failed", "dry_run"]);
+const isEmail = (e) => typeof e === "string" && e.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+
+async function recordPressSend(req, env, h) {
+  const t = bearer(req), secret = env.ADMIN_DELIVERY_TOKEN || "";
+  if (!t || secret.length < 32 || !sameStr(t, secret)) return json(req, 401, { ok: false });
+  const raw = await h.readCapped(req, 262144);
+  let f; try { f = JSON.parse(new TextDecoder().decode(raw)); } catch { return json(req, 400, { ok: false }); }
+  const s = f && f.send, rs = s && Array.isArray(s.recipients) ? s.recipients : null;
+  if (!s || !PRESS_ID.test(s.id || "") || !PRESS_ID.test(s.release_id || "") || typeof s.at !== "string" || s.at.length > 40
+      || typeof s.from !== "string" || s.from.length > 200 || !/@/.test(s.from) || !rs || rs.length > 1000
+      || !rs.every((r) => r && isEmail(r.email) && PRESS_ST.has(r.status) && (r.error == null || (typeof r.error === "string" && r.error.length <= 80))))
+    return json(req, 400, { ok: false });
+  const n = (st) => rs.filter((r) => r.status === st).length;
+  await env.DB.batch([
+    env.DB.prepare("INSERT OR IGNORE INTO press_sends (id, release_id, at, from_addr, dry_run, sent, failed) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .bind(s.id, s.release_id, s.at, s.from, s.dry_run ? 1 : 0, n("sent"), n("failed")),
+    ...rs.map((r) => env.DB.prepare("INSERT OR IGNORE INTO press_send_recipients (send_id, email, status, error) VALUES (?, ?, ?, ?)")
+      .bind(s.id, r.email.toLowerCase(), r.status, r.error || "")),
+  ]);
+  return json(req, 200, { ok: true, recorded: rs.length });
+}
+
+export async function listPressSends(env) {
+  const sends = (await env.DB.prepare("SELECT id, release_id, at, from_addr, dry_run, sent, failed FROM press_sends ORDER BY at DESC").all()).results || [];
+  const rec = (await env.DB.prepare("SELECT send_id, email, status, error FROM press_send_recipients ORDER BY email").all()).results || [];
+  const by = new Map(sends.map((s) => [s.id, []]));
+  for (const r of rec) if (by.has(r.send_id)) by.get(r.send_id).push({ email: r.email, status: r.status, error: r.error });
+  return { sends: sends.map((s) => ({ ...s, dry_run: !!s.dry_run, recipients: by.get(s.id) })) };
+}
+
 export async function admin(req, env, h, path) {
   try {
     if (req.method === "OPTIONS") return adminPreflight(req);
@@ -160,10 +194,12 @@ export async function admin(req, env, h, path) {
     if (req.method === "POST" && path === "/api/admin/verify") return await verify(req, env, h);
     if (req.method === "POST" && path === "/api/admin/logout") return await logout(req, env);
     if (req.method === "POST" && path === "/api/admin/deliveries") return await recordDeliveries(req, env, h);
-    if (req.method === "GET" && (path === "/api/admin/me" || path === "/api/admin/subscribers")) {
+    if (req.method === "POST" && path === "/api/admin/press-sends") return await recordPressSend(req, env, h);
+    if (req.method === "GET" && (path === "/api/admin/me" || path === "/api/admin/subscribers" || path === "/api/admin/press-sends")) {
       const s = await session(req, env);
       if (!s) return json(req, 401, { ok: false, error: "auth" });
       if (path === "/api/admin/me") return json(req, 200, { ok: true, email: s.email });
+      if (path === "/api/admin/press-sends") return json(req, 200, { ok: true, ...(await listPressSends(env)) });
       return json(req, 200, { ok: true, email: s.email, ...(await listSubscribers(env)) });
     }
     return json(req, 404, { ok: false });

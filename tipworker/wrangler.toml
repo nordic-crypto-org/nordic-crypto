@@ -18,7 +18,7 @@ enabled = false
 #   wrangler secret put ONION_INGEST_TOKEN          (Tor forwarder in onion/; must differ from the read token)
 
 # Admin page (/admin/, src/admin.js): ADMIN_EMAIL_DOMAIN below; optional secret for send_issue.py --from-json:
-#   wrangler secret put ADMIN_DELIVERY_TOKEN        (>= 32 chars; only needed for POST /api/admin/deliveries)
+#   wrangler secret put ADMIN_DELIVERY_TOKEN        (>= 32 chars; only needed for POST /api/admin/deliveries and /api/admin/press-sends)
 # Newsletter mail ON (jQrgen, 2026-10-16). Sender MAIL_FROM_NORDIC_CRYPTO is a wrangler secret.
 [vars]
 MAIL_PROVIDER = "resend"

@@ -3967,7 +3967,7 @@ table.adm th[aria-sort=ascending] button::after{content:" ▲"}table.adm th[aria
 .adm-st{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600}
 .adm-st.confirmed{background:var(--gold);color:var(--on-gold)}.adm-st.pending{background:var(--soft);color:var(--fg);border:1px solid var(--line-strong)}
 .adm-st.unsubscribed{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
-#adm-login{max-width:28rem}</style>"""
+#adm-login{max-width:28rem}.adm-sends{margin:.75rem 0 0}.adm-sends details{margin:.4rem 0}.adm-sends ul{margin:.3rem 0 .6rem;font-family:var(--f-ui);font-size:14px}</style>"""
 
 ADMIN_JS = r"""<script>
 (function(){
@@ -3987,14 +3987,21 @@ function render(){
    var td=document.createElement("td");if(i===2){var b=document.createElement("span");b.className="adm-st "+r.status;b.textContent=r.status;td.appendChild(b)}else td.textContent=v;tr.appendChild(td)});
   tb.appendChild(tr)});
  $("adm-shown").textContent=list.length+" / "+rows.length;
- document.querySelectorAll("table.adm th").forEach(function(th){th.setAttribute("aria-sort",th.dataset.k===key?(dir>0?"ascending":"descending"):"none")});
+ document.querySelectorAll("#adm-subs th").forEach(function(th){th.setAttribute("aria-sort",th.dataset.k===key?(dir>0?"ascending":"descending"):"none")});
 }
 function load(){api("/api/admin/subscribers").then(function(r){if(r.status===401){localStorage.removeItem(K);show("login");msg("Please sign in again.");return null}return r.json()}).then(function(d){
  if(!d)return;if(!d.ok){msg("Could not load the list.",1);return}
  show("app");msg("");$("adm-email").textContent=d.email;rows=d.rows||[];var t=d.totals||{};
  $("adm-tot").innerHTML="";[["All",t.all],["Confirmed",t.confirmed],["Pending",t.pending],["Unsubscribed",t.unsubscribed],["Deliveries",t.deliveries],["Last issue",d.last_issue==null?"–":"#"+d.last_issue]].forEach(function(p){var li=document.createElement("li"),b=document.createElement("b");b.textContent=p[1]==null?"0":p[1];li.appendChild(b);li.appendChild(document.createTextNode(p[0]));$("adm-tot").appendChild(li)});
- render()}).catch(function(){msg("The admin service is not reachable.",1)})}
-document.querySelectorAll("table.adm th button").forEach(function(b){b.addEventListener("click",function(){var k=b.parentNode.dataset.k;if(k===key)dir=-dir;else{key=k;dir=1}render()})});
+ render();loadPress()}).catch(function(){msg("The admin service is not reachable.",1)})}
+function loadPress(){var box=$("adm-sends");api("/api/admin/press-sends").then(function(r){return r.ok?r.json():null}).then(function(d){
+ box.textContent="";if(!d||!d.ok){box.textContent="Could not load the sends.";return}
+ if(!d.sends.length){box.textContent="No press emails sent yet.";return}
+ d.sends.forEach(function(s){var det=document.createElement("details"),sum=document.createElement("summary"),ul=document.createElement("ul");
+  sum.textContent=s.release_id+" · "+s.at.slice(0,16).replace("T"," ")+" (Oslo) · "+s.from_addr+" · sent "+s.sent+", failed "+s.failed+(s.dry_run?" · DRY RUN":"");
+  s.recipients.forEach(function(x){var li=document.createElement("li");li.textContent=x.email+" – "+x.status+(x.error?" ("+x.error+")":"");ul.appendChild(li)});
+  det.appendChild(sum);det.appendChild(ul);box.appendChild(det)})}).catch(function(){box.textContent="Could not load the sends."})}
+document.querySelectorAll("#adm-subs th button").forEach(function(b){b.addEventListener("click",function(){var k=b.parentNode.dataset.k;if(k===key)dir=-dir;else{key=k;dir=1}render()})});
 $("adm-q").addEventListener("input",render);$("adm-f").addEventListener("change",render);
 $("adm-form").addEventListener("submit",function(e){e.preventDefault();var b=$("adm-send");b.disabled=true;
  api("/api/admin/login",{method:"POST",body:JSON.stringify({email:$("adm-e").value})}).then(function(r){
@@ -4006,6 +4013,18 @@ if(t){msg("Signing in…");fetch(EP+"/api/admin/verify",{method:"POST",credentia
 else if(sess())load();else show("login");
 })();
 </script>"""
+
+def admin_press_table(path=os.path.join(ROOT, "data", "press", "history.json")):
+    """Public part of the press history (data/press/history.json): one row per release, no addresses."""
+    try: rel = json.load(open(path, encoding="utf-8")).get("releases") or []
+    except FileNotFoundError: rel = []
+    if not rel: return '<p class="notice">No press releases yet.</p>'
+    rows = "".join(f'<tr><td><a href="{E(r.get("link", ""))}">{E(r.get("title", r["id"]))}</a><br><span class="adm-who">{E(r["id"])}</span></td>'
+                   f'<td>{E(r.get("published", ""))}</td><td title="{E(" ".join(r.get("languages", [])))}">{len(r.get("languages", []))}</td>'
+                   f'<td>{int(r.get("emails_sent", 0))}</td><td><span class="adm-st confirmed">{E(r.get("status", ""))}</span></td></tr>'
+                   for r in sorted(rel, key=lambda r: (r.get("published", ""), r["id"]), reverse=True))
+    return ('<div class="adm-wrap"><table class="adm" id="adm-press"><thead><tr><th>Release</th><th>Published</th><th>Languages</th>'
+            f'<th>Emails sent</th><th>Status</th></tr></thead><tbody>{rows}</tbody></table></div>')
 
 def build_admin():
     """Private admin page /admin/ (English only): magic-link sign-in for @ADMIN_EMAIL_DOMAIN and the subscriber list from the
@@ -4032,9 +4051,13 @@ def build_admin():
 <div class="adm-tools"><label for="adm-q" class="vh">Search</label><input id="adm-q" type="search" placeholder="Search email, language, issue">
 <label for="adm-f" class="vh">Status</label><select id="adm-f"><option value="">All statuses</option><option>confirmed</option><option>pending</option><option>unsubscribed</option></select>
 <span id="adm-shown" class="adm-who"></span></div>
-<div class="adm-wrap"><table class="adm"><thead><tr><th data-k="email"><button>Email</button></th><th data-k="lang"><button>Lang</button></th>
+<div class="adm-wrap"><table class="adm" id="adm-subs"><thead><tr><th data-k="email"><button>Email</button></th><th data-k="lang"><button>Lang</button></th>
 <th data-k="status"><button>Status</button></th><th data-k="created_at"><button>Signed up (UTC)</button></th><th data-k="confirmed_at"><button>Confirmed (UTC)</button></th>
 <th data-k="issues"><button>Issues received</button></th><th data-k="last_issue"><button>Last issue</button></th></tr></thead><tbody id="adm-body"></tbody></table></div>
+<h2>Press releases</h2>
+""" + admin_press_table() + """
+<h3>Sends</h3><p class="adm-who">Recipients come from the admin service and are shown only to you. Times are Oslo time.</p>
+<div id="adm-sends" class="adm-sends"></div>
 </section>"""
     page("admin", "Admin", "", body, "Admin", langs=["en"], head_extra=grab, extra_script=ADMIN_JS.replace("__EP__", json.dumps(ep)))
 

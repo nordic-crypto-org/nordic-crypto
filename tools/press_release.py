@@ -14,6 +14,7 @@ Inputs: data/press/contacts.csv (public sources only), data/press/suppressed.csv
 newsletter/published/issues.json, optional data/press/issues/<id>.json (per-language copy).
 State: data/press/sent/<id>.json holds SHA-256 hashes of addresses already sent for that issue,
 so a re-run never mails anyone twice for the same issue (idempotent).
+History: every --send and every explicit --dry-run is logged by tools/press_history.py (recipients privately only).
 
 Env for --send (placeholders, never committed):
   RESEND_API_KEY        Resend key. Missing: sending is skipped, drafts are still written.
@@ -24,7 +25,9 @@ Env for --send (placeholders, never committed):
 import argparse, csv, datetime, hashlib, hmac, html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "tools"))
 import site_url
+import press_history
 
 CONTACT = "jqrgen@nordiccrypto.no"
 FROM_DEFAULT = f"Nordic Crypto <{CONTACT}>"
@@ -241,7 +244,8 @@ def resend_send(key, msg, timeout=30):
     except Exception: return False, "send failed"
 
 
-def run(issue_id, out_dir, send=False, env=None, sender=resend_send, sleep_s=0.6, contacts=None, suppressed=None, ledger=None, langs=None):
+def run(issue_id, out_dir, send=False, env=None, sender=resend_send, sleep_s=0.6, contacts=None, suppressed=None, ledger=None, langs=None,
+        record=None, log_dry_run=False):
     env = os.environ if env is None else env
     contacts = load_contacts() if contacts is None else contacts
     supp = load_suppressed() if suppressed is None else suppressed
@@ -267,9 +271,9 @@ def run(issue_id, out_dir, send=False, env=None, sender=resend_send, sleep_s=0.6
         if not key: note = "RESEND_API_KEY missing: sending skipped, drafts written"; send = False
         elif not origin.startswith("https://") or not secret:
             raise SystemExit("press: --send needs PRESS_UNSUB_ORIGIN (https) and PRESS_UNSUB_SECRET for the one-click unsubscribe link")
+    frm = env.get("PRESS_FROM") or FROM_DEFAULT
     if send:
         note = "sent"
-        frm = env.get("PRESS_FROM") or FROM_DEFAULT
         for p in plan:
             if p["status"] != "queued": continue
             rel = rels[p["language"]]
@@ -287,6 +291,15 @@ def run(issue_id, out_dir, send=False, env=None, sender=resend_send, sleep_s=0.6
     with open(os.path.join(out_dir, f"press-{issue_id}-recipients.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["email", "name", "outlet", "country", "language", "status"]); w.writeheader(); w.writerows(plan)
     summary = {"issue": issue_id, "mode": note, **counts, "languages": sorted(rels)}
+    if send: res = [(p["email"], "sent" if p["status"] == "sent" else "failed", p["status"][8:]) for p in plan if p["status"] == "sent" or p["status"].startswith("failed")]
+    else: res = [(p["email"], "dry_run", "") for p in plan if p["status"] == "queued"]
+    if record and (res if send else log_dry_run):
+        rel = rels.get("en") or next(iter(rels.values()))
+        iss = load_issue(issue_id)
+        meta = {"id": f"issue-{issue_id}", "title": rel["headline"], "languages": sorted(rels), "published": iss.get("date", ""),
+                "link": site_url.join(f"newsletter/{issue_id}/")}
+        summary["history"] = {True: "logged", None: "logged locally (Worker not configured)", False: "logged locally (Worker failed; run tools/press_history.py --sync)"}[
+            record(meta, press_history.make_send(meta["id"], frm, res, dry_run=not send), env)]
     json.dump(summary, open(os.path.join(out_dir, f"press-{issue_id}-summary.json"), "w"), indent=1)
     return summary
 
@@ -305,7 +318,8 @@ def main(argv=None):
         print("suppressed" if add_suppression(a.suppress, a.reason) else "already suppressed"); return 0
     issue = a.issue or json.load(open(os.path.join(ROOT, "newsletter", "published", "issues.json")))["issues"][0]["id"]
     out = a.out or os.path.join(ROOT, "out", "press", str(issue))
-    s = run(issue, out, send=a.send and not a.dry_run, langs=a.lang)
+    s = run(issue, out, send=a.send and not a.dry_run, langs=a.lang, log_dry_run=a.dry_run,
+            record=lambda meta, entry, env: press_history.log_run(meta, entry, env=env))
     print(json.dumps(s)); print("previews:", out)
     return 1 if s["failed"] else 0
 
