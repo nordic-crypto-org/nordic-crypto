@@ -17,7 +17,7 @@ class SqliteD1 {
 const O = "https://nordiccrypto.no";
 function env(extra = {}) {
   const db = new DatabaseSync(":memory:");
-  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
+  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql", "0008_press_history.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
   return { DB: new SqliteD1(db), raw: db, SUBSCRIBE_TEST: "1", ...extra };
 }
 let ipn = 1;
@@ -101,4 +101,23 @@ test("subscriber list with issues, and the delivery endpoint needs its secret", 
   assert.deepEqual(l.totals, { all: 2, pending: 1, confirmed: 1, unsubscribed: 0, deliveries: 2 });
   assert.deepEqual(l.rows[0].issues, [1, 2]); assert.equal(l.rows[0].last_issue, 2); assert.equal(l.rows[1].last_issue, null);
   assert.equal(l.last_issue, 2);
+});
+
+test("press sends: write needs the delivery secret, read needs an admin session, idempotent by id", async () => {
+  const e = env({ ADMIN_DELIVERY_TOKEN: "d".repeat(40) });
+  const send = { id: "press-x-20261019090000", release_id: "press-x", at: "2026-10-19T09:00:00+02:00", from: "Nordic Crypto <jqrgen@nordiccrypto.no>",
+    dry_run: false, recipients: [{ email: "Desk@Outlet.no", status: "sent", error: "" }, { email: "tips@other.se", status: "failed", error: "provider error 422" }] };
+  for (const token of [undefined, "e".repeat(40)]) assert.equal((await call(e, "POST", "/api/admin/press-sends", { token, body: { send }, origin: null })).status, 401);
+  assert.equal((await call(e, "POST", "/api/admin/press-sends", { token: "d".repeat(40), body: { send: { ...send, recipients: [{ email: "x", status: "sent" }] } }, origin: null })).status, 400);
+  assert.equal((await call(e, "POST", "/api/admin/press-sends", { token: "d".repeat(40), body: { send: { ...send, recipients: [{ email: "a@b.no", status: "queued" }] } }, origin: null })).status, 400);
+  for (let i = 0; i < 2; i++) assert.equal((await call(e, "POST", "/api/admin/press-sends", { token: "d".repeat(40), body: { send }, origin: null })).status, 200);
+  assert.equal((await call(e, "GET", "/api/admin/press-sends")).status, 401);
+  assert.equal((await call(e, "GET", "/api/admin/press-sends", { token: "d".repeat(40) })).status, 401, "the write secret is not a read session");
+  await call(e, "POST", "/api/admin/login", { body: { email: "j@nordiccrypto.no" } });
+  const s = await (await call(e, "POST", "/api/admin/verify", { body: { token: linkToken() } })).json();
+  const r = await call(e, "GET", "/api/admin/press-sends", { token: s.token }); assert.equal(r.status, 200);
+  const d = await r.json();
+  assert.equal(d.sends.length, 1); assert.equal(d.sends[0].sent, 1); assert.equal(d.sends[0].failed, 1); assert.equal(d.sends[0].dry_run, false);
+  assert.deepEqual(d.sends[0].recipients.map((x) => [x.email, x.status]), [["desk@outlet.no", "sent"], ["tips@other.se", "failed"]]);
+  assert.equal((await call(e, "GET", "/api/admin/press-sends", { token: s.token, origin: "https://evil.example" })).headers.get("Access-Control-Allow-Origin"), null);
 });

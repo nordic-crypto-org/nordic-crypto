@@ -61,6 +61,18 @@ Brand rules are checked on every draft and a failing draft stops the run: always
 written after each successful send, so a re-run or a crash never mails anyone twice. Resend also
 gets an `Idempotency-Key` per issue and recipient.
 
+## History (admin page)
+
+`tools/press_history.py` keeps one entry per press release and one per send.
+
+- Public, committed: `data/press/history.json` (id, title, languages, publish date, link, status, emails sent). No
+  addresses. Listed under «Press releases» on `/admin/`.
+- Private: each `--send` and each explicit `--dry-run` (marked as a dry run) is appended to `state/press/sends.jsonl`
+  (gitignored, mode 0600) with Oslo time, from-address and every recipient as sent/failed/dry_run, then posted to the
+  tip Worker (`POST /api/admin/press-sends`, needs `NEWSLETTER_WORKER_ORIGIN` and `ADMIN_DELIVERY_TOKEN`). The Worker stores
+  it in D1 (`migrations/0008_press_history.sql`) and returns recipients only to a signed-in admin
+  (`GET /api/admin/press-sends`). If the Worker was not reachable, run `python3 tools/press_history.py --sync` later.
+
 ## GDPR and markedsføringsloven
 
 - **Legal basis:** legitimate interest (GDPR art. 6(1)(f)). Press releases about published news,
