@@ -1,0 +1,75 @@
+# New stories to Bluesky (one post per story, link card) and Threads (one daily digest), via tools/social_stories.py.
+# State is kept in the Actions cache; a missing cache re-seeds (nothing is posted). Without the secrets a job skips with a notice.
+name: Bluesky and Threads stories
+
+on:
+  workflow_run:
+    workflows: ["Deploy site"]
+    types: [completed]
+  schedule:
+    - cron: "7 * * * *"   # fallback for box publishes and late translations
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print only, post nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  actions: write   # save the state in the Actions cache
+
+jobs:
+  post:
+    if: github.repository == 'nordic-crypto-org/nordic-crypto' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    strategy:
+      fail-fast: false
+      matrix:
+        kind: [bluesky, threads]
+    concurrency:
+      group: social-${{ matrix.kind }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+      BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+    steps:
+      - name: Check secrets
+        id: s
+        run: |
+          if [ "${{ matrix.kind }}" = bluesky ]; then a=$BLUESKY_HANDLE b=$BLUESKY_APP_PASSWORD n="BLUESKY_HANDLE / BLUESKY_APP_PASSWORD"
+          else a=$THREADS_USER_ID b=$THREADS_ACCESS_TOKEN n="THREADS_USER_ID / THREADS_ACCESS_TOKEN"; fi
+          if [ -n "$a" ] && [ -n "$b" ] || [ "${{ inputs.dry_run }}" = true ]; then echo run=true >> "$GITHUB_OUTPUT"
+          else echo "::notice::${{ matrix.kind }}: $n not set; skipping"; fi
+
+      - uses: actions/checkout@v4
+        if: steps.s.outputs.run
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        if: steps.s.outputs.run
+        with:
+          python-version: "3.13"
+
+      - name: Restore state
+        if: steps.s.outputs.run
+        uses: actions/cache/restore@v4
+        with:
+          path: .social/${{ matrix.kind }}.json
+          key: social-${{ matrix.kind }}-${{ github.run_id }}
+          restore-keys: social-${{ matrix.kind }}-
+
+      - name: Post
+        if: steps.s.outputs.run
+        run: python3 tools/social_stories.py ${{ matrix.kind }} --state .social/${{ matrix.kind }}.json ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Save state
+        if: always() && steps.s.outputs.run && hashFiles(format('.social/{0}.json', matrix.kind)) != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .social/${{ matrix.kind }}.json
+          key: social-${{ matrix.kind }}-${{ github.run_id }}
