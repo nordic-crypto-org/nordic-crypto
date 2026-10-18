@@ -1,0 +1,69 @@
+{
+ "api_version": "1",
+ "name": "Nordic Crypto",
+ "generated_at": "2026-10-18T11:58:43+00:00",
+ "preview": false,
+ "item": {
+  "id": "spk-hilde-latour",
+  "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-hilde-latour.json",
+  "html_url": "https://nordiccrypto.no/org-chart/#spk-hilde-latour",
+  "name": "Hilde Latour",
+  "type": "person",
+  "sector": "private",
+  "country": null,
+  "description": null,
+  "role": null,
+  "org": null,
+  "group": null,
+  "profile_url": null,
+  "provenance": "Talks archive",
+  "caveat": false,
+  "sources": [
+   {
+    "url": "https://www.youtube.com/watch?v=aMd06HuEYqI&hl=en",
+    "title": "Part 2 - Bitcoin and Basic Income?",
+    "source_name": "Mission Possible 2030",
+    "date": "2026-10-18"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+    "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+    "source_name": "Mission Possible 2030",
+    "date": "2026-10-18"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=2k1-AGfp75o&hl=en",
+    "title": "Basic Income, Blockchain and  Care Economy - BIEN congress 2021 - Hilde Latour",
+    "source_name": "Mission Possible 2030",
+    "date": "2026-10-18"
+   }
+  ],
+  "logo": null,
+  "image": null,
+  "profiles": [],
+  "talk_ids": [
+   "yt-2k1-AGfp75o",
+   "yt-aMd06HuEYqI",
+   "yt-ioyZ-yZDlCQ"
+  ],
+  "talks": [
+   {
+    "id": "yt-ioyZ-yZDlCQ",
+    "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+    "video_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ",
+    "date": "2026-09-26"
+   },
+   {
+    "id": "yt-aMd06HuEYqI",
+    "title": "Part 2 - Bitcoin and Basic Income?",
+    "video_url": "https://www.youtube.com/watch?v=aMd06HuEYqI",
+    "date": "2026-09-26"
+   },
+   {
+    "id": "yt-2k1-AGfp75o",
+    "title": "Basic Income, Blockchain and  Care Economy - BIEN congress 2021 - Hilde Latour",
+    "video_url": "https://www.youtube.com/watch?v=2k1-AGfp75o"
+   }
+  ]
+ }
+}

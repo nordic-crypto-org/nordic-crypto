@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T05:48:25+00:00",
+ "generated_at": "2026-10-18T11:58:43+00:00",
  "preview": false,
  "item": {
   "id": "hakon-sandbakken",
@@ -24,10 +24,51 @@
     "title": "Bitcoinpolitisk institutt",
     "source_name": "Bitcoinpolitisk institutt",
     "date": "03.10.2026"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=jb3YQjX0Wn0&hl=en",
+    "title": "Part 1 - Bitcoin and Basic Income?",
+    "source_name": "Mission Possible 2030",
+    "date": "2026-10-18"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+    "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+    "source_name": "Mission Possible 2030",
+    "date": "2026-10-18"
    }
   ],
   "logo": null,
   "image": null,
-  "profiles": []
+  "profiles": [],
+  "talk_ids": [
+   "yt-ioyZ-yZDlCQ",
+   "yt-jb3YQjX0Wn0"
+  ],
+  "talks": [
+   {
+    "id": "yt-jb3YQjX0Wn0",
+    "title": "Part 1 - Bitcoin and Basic Income?",
+    "video_url": "https://www.youtube.com/watch?v=jb3YQjX0Wn0",
+    "date": "2026-09-26"
+   },
+   {
+    "id": "yt-ioyZ-yZDlCQ",
+    "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+    "video_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ",
+    "date": "2026-09-26"
+   }
+  ],
+  "affiliations": [
+   {
+    "talk_id": "yt-ioyZ-yZDlCQ",
+    "organisation": "Bitcoin Policy Norway",
+    "source_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+    "source_name": "Mission Possible 2030",
+    "retrieved_at": "2026-10-18T11:38:06+00:00",
+    "role": "Chair",
+    "date": "2026-09-26"
+   }
+  ]
  }
 }

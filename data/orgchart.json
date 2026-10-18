@@ -2615,6 +2615,18 @@
      "title": "Bitcoinpolitisk institutt",
      "source_name": "Bitcoinpolitisk institutt",
      "date": "03.10.2026"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=jb3YQjX0Wn0&hl=en",
+     "title": "Part 1 - Bitcoin and Basic Income?",
+     "source_name": "Mission Possible 2030",
+     "date": "2026-10-18"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+     "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+     "source_name": "Mission Possible 2030",
+     "date": "2026-10-18"
     }
    ],
    "image": null,
@@ -2624,6 +2636,35 @@
    "role": "Chair (from June 2026)",
    "profile_url": "https://bpinorge.no/blog/ny-styreleder-vil-gi-bitcoin-en-tydeligere-stemme-i-norge/",
    "status": "published",
+   "talk_ids": [
+    "yt-ioyZ-yZDlCQ",
+    "yt-jb3YQjX0Wn0"
+   ],
+   "talks": [
+    {
+     "id": "yt-jb3YQjX0Wn0",
+     "title": "Part 1 - Bitcoin and Basic Income?",
+     "video_url": "https://www.youtube.com/watch?v=jb3YQjX0Wn0",
+     "date": "2026-09-26"
+    },
+    {
+     "id": "yt-ioyZ-yZDlCQ",
+     "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+     "video_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ",
+     "date": "2026-09-26"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-ioyZ-yZDlCQ",
+     "organisation": "Bitcoin Policy Norway",
+     "source_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+     "source_name": "Mission Possible 2030",
+     "retrieved_at": "2026-10-18T11:38:06+00:00",
+     "role": "Chair",
+     "date": "2026-09-26"
+    }
+   ],
    "profiles": []
   },
   {
@@ -2780,6 +2821,13 @@
      "source_url": "https://www.youtube.com/watch?v=rfLLR9vhoYI&hl=en",
      "source_name": "Nordic Blockchain Association",
      "retrieved_at": "2026-10-16T08:56:33+00:00"
+    },
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Nordic Blockchain Conference",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
     }
    ],
    "status": "published",
@@ -10339,7 +10387,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "UN:BLOCK",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10375,7 +10431,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Cryptoprocessing by Coinspaid",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10411,7 +10475,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Lex Law",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10447,7 +10519,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Crypto Risk Metrics",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10483,7 +10563,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Bird & Bird",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10519,7 +10607,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "DataExpert",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10555,7 +10651,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Sapio",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10591,7 +10695,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Ethereum Foundation",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10627,7 +10739,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Algorand",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10663,7 +10783,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Stellar Development Foundation",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10699,7 +10827,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Espoir PR & Communications",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10735,7 +10871,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Bermuda Monetary Authority",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10771,7 +10915,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Blockchain for Europe",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10807,7 +10959,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Cork Gully",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10843,7 +11003,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "VBNL",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10879,7 +11047,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "DARA - Digital Asset Regulatory Authority",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10915,7 +11091,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "dewa",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10951,7 +11135,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "Blockchain Sweden",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -10987,7 +11179,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "pointer.capital",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -11023,7 +11223,15 @@
      "video_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4"
     }
    ],
-   "affiliations": [],
+   "affiliations": [
+    {
+     "talk_id": "yt-FXf5cpY0oY4",
+     "organisation": "UNICEF Cryptofund",
+     "source_url": "https://www.youtube.com/watch?v=FXf5cpY0oY4&hl=en",
+     "source_name": "Nordic Blockchain Association",
+     "retrieved_at": "2026-10-18T11:38:06+00:00"
+    }
+   ],
    "from_talks": true,
    "origin": "Talks archive",
    "caveat": false,
@@ -15589,6 +15797,68 @@
      "id": "yt-cL9Uk67wzd8",
      "title": "Torstein Thinn from Skatteetaten - \"Invisibility in the Crypto Space\"",
      "video_url": "https://www.youtube.com/watch?v=cL9Uk67wzd8"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "spk-hilde-latour",
+   "name": "Hilde Latour",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=aMd06HuEYqI&hl=en",
+     "title": "Part 2 - Bitcoin and Basic Income?",
+     "source_name": "Mission Possible 2030",
+     "date": "2026-10-18"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ&hl=en",
+     "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+     "source_name": "Mission Possible 2030",
+     "date": "2026-10-18"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=2k1-AGfp75o&hl=en",
+     "title": "Basic Income, Blockchain and  Care Economy - BIEN congress 2021 - Hilde Latour",
+     "source_name": "Mission Possible 2030",
+     "date": "2026-10-18"
+    }
+   ],
+   "talk_ids": [
+    "yt-2k1-AGfp75o",
+    "yt-aMd06HuEYqI",
+    "yt-ioyZ-yZDlCQ"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-ioyZ-yZDlCQ",
+     "title": "When Bitcoin and Basic Income meet - full recording- Oslo, 26 SEPT 2026",
+     "video_url": "https://www.youtube.com/watch?v=ioyZ-yZDlCQ",
+     "date": "2026-09-26"
+    },
+    {
+     "id": "yt-aMd06HuEYqI",
+     "title": "Part 2 - Bitcoin and Basic Income?",
+     "video_url": "https://www.youtube.com/watch?v=aMd06HuEYqI",
+     "date": "2026-09-26"
+    },
+    {
+     "id": "yt-2k1-AGfp75o",
+     "title": "Basic Income, Blockchain and  Care Economy - BIEN congress 2021 - Hilde Latour",
+     "video_url": "https://www.youtube.com/watch?v=2k1-AGfp75o"
     }
    ],
    "affiliations": [],
