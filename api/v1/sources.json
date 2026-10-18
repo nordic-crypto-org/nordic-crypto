@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T02:30:46+00:00",
+ "generated_at": "2026-10-18T02:37:02+00:00",
  "preview": false,
  "user_agent": "NordicCryptoBot/0.1 (+__SITE__about/; news headline bot)",
  "min_delay_seconds": 2,
@@ -31187,15 +31187,15 @@
   {
    "id": "bpi-arrangementer",
    "name": "Bitcoinpolitisk institutt – events",
-   "url": "https://bpinorge.no/arrangementer/",
+   "url": "https://bpinorge.no/",
    "country": "NO",
    "city": null,
    "organiser": "Bitcoinpolitisk institutt Norge",
    "enabled": true,
    "trusted": true,
-   "status": "no machine-readable data; researcher checks manually",
-   "method": "",
-   "intake": "jsonld",
+   "status": "ok",
+   "method": "Homepage Kalender block (day, Norwegian month and year, type, city, title). The venue link is the event URL when the card has one; otherwise the homepage. A row with the same normalised title and date already listed by Litteraturhuset, Nasjonalbiblioteket or Polyteknisk is not added again. The arrangementer page is an empty placeholder and is not read.",
+   "intake": "bpi_kalender",
    "ics": null,
    "organizer_id": null,
    "venue_id": null
