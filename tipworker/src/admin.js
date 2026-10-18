@@ -5,6 +5,10 @@
 //   POST /api/admin/verify      {token}  -> 200 {"ok":true, token, email, expires} – a bearer session token (7 days).
 //                               POST, not GET: the link points at the site (…/admin/#t=…) and the page posts the token, so
 //                               mail scanners that prefetch links never burn it, and the token is never in a server log.
+//   App (iOS) sign-in, no link and no cookie: POST /api/admin/login {email, challenge} where challenge = base64url(SHA-256(
+//                               verifier)) and the verifier stays in the app. The email then holds an 8-digit code instead of
+//                               a link. POST /api/admin/verify {code, verifier} -> the same bearer session. A code works once,
+//                               for 15 minutes, only with the verifier of the app that asked, and dies after CODE_TRIES misses.
 //   POST /api/admin/logout      (bearer) -> deletes the session.
 //   GET  /api/admin/me          (bearer) -> {"ok":true, email}
 //   GET  /api/admin/subscribers (bearer) -> every subscriber with the issues each has received.
@@ -17,13 +21,20 @@
 // (Safari, Firefox strict, Chrome's third-party-cookie limits) drop cross-site cookies. CORS here allows only ADMIN_ORIGIN.
 import { sendMail } from "./mailer.js";
 
-export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, ADMIN_RATE_N = 5;
+export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, ADMIN_RATE_N = 5, CODE_TRIES = 5;
 export const ADMIN_ORIGIN = "https://nordiccrypto.no";
 const enc = new TextEncoder();
 const hex = (b) => [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join("");
 export const sha256 = async (s) => hex(await crypto.subtle.digest("SHA-256", enc.encode(s)));
 const b64url = (u8) => btoa(String.fromCharCode(...u8)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 export const newToken = () => b64url(crypto.getRandomValues(new Uint8Array(32)));
+export const challengeOf = async (v) => b64url(new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(v))));
+const CHALLENGE_RE = /^[A-Za-z0-9_-]{43}$/, VERIFIER_RE = /^[A-Za-z0-9_-]{43,128}$/;
+export function newCode() {   // 8 digits, uniform (rejection sampling)
+  const lim = 4294967296 - (4294967296 % 1e8), u = new Uint32Array(1);
+  do crypto.getRandomValues(u); while (u[0] >= lim);
+  return String(u[0] % 1e8).padStart(8, "0");
+}
 const now = () => Math.floor(Date.now() / 1000);
 const nowIso = () => new Date().toISOString().replace(/\.\d{3}Z$/, "+00:00");
 const LOCAL_RE = /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]{1,64}$/;
@@ -80,12 +91,19 @@ export function loginEmail(link) {
     text: `Sign in to the Nordic Crypto admin page:\n\n${link}\n\nThe link works once and expires in 15 minutes. If you did not ask for it, ignore this email.\n` };
 }
 
+export function codeEmail(code) {
+  return { subject: "Nordic Crypto admin sign-in code",
+    text: `Your sign-in code for the admin screen in the Nordic Crypto app:\n\n${code.slice(0, 4)} ${code.slice(4)}\n\nIt works once, only in the app that asked for it, and expires in 15 minutes. If you did not ask for it, ignore this email.\n` };
+}
+
 async function login(req, env, h) {
   const origin = req.headers.get("Origin");
   if (origin !== null && origin !== ADMIN_ORIGIN) return json(req, 403, { ok: false });
-  const generic = () => json(req, 202, { ok: true, message: "If that address may sign in, a link is on its way." });
   const f = await body(req, h);
   if (!f) return json(req, 400, { ok: false, error: "invalid" });
+  const app = f.challenge !== undefined;
+  if (app && (typeof f.challenge !== "string" || !CHALLENGE_RE.test(f.challenge))) return json(req, 400, { ok: false, error: "invalid" });
+  const generic = () => json(req, 202, { ok: true, message: `If that address may sign in, a ${app ? "code" : "link"} is on its way.` });
   const ip = (req.headers.get("CF-Connecting-IP") || "unknown").trim().slice(0, 64);
   try { if (!(await h.rateOk(env.DB, ip, "admin", ADMIN_RATE_N))) return json(req, 429, { ok: false, error: "rate" }); }
   catch { return json(req, 503, { ok: false }); }
@@ -96,6 +114,13 @@ async function login(req, env, h) {
   const c = await env.DB.prepare("SELECT COUNT(*) AS n FROM admin_login_tokens WHERE email = ? AND created_at > ?").bind(email, t - LOGIN_TTL).first();
   if (c.n >= PER_EMAIL_N) return generic();   // per-address cap, silent (no enumeration)
   const token = newToken();
+  if (app) {   // the row's token is never sent; only the code (bound to the challenge) can redeem it
+    const code = newCode(), th = await sha256(token);
+    await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at, challenge, code_hash) VALUES (?, ?, ?, ?, ?, ?)")
+      .bind(th, email, t, t + LOGIN_TTL, f.challenge, await sha256(th + ":" + code)).run();
+    await sendMail(env, { to: email, site: "nordic-crypto", lang: "en", kind: "admin-login-code", ...codeEmail(code) });
+    return generic();
+  }
   await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at) VALUES (?, ?, ?, ?)")
     .bind(await sha256(token), email, t, t + LOGIN_TTL).run();
   const link = `${ADMIN_ORIGIN}/admin/#t=${token}`;
@@ -106,6 +131,7 @@ async function login(req, env, h) {
 async function verify(req, env, h) {
   if (req.headers.get("Origin") !== null && req.headers.get("Origin") !== ADMIN_ORIGIN) return json(req, 403, { ok: false });
   const f = await body(req, h);
+  if (f && f.code !== undefined) return verifyCode(req, env, f);
   const tok = f && typeof f.token === "string" && /^[A-Za-z0-9_-]{20,200}$/.test(f.token) ? f.token : null;
   const bad = () => json(req, 401, { ok: false, error: "The link is invalid, used or expired. Ask for a new one." });
   if (!tok) return bad();
@@ -116,6 +142,30 @@ async function verify(req, env, h) {
   const row = await env.DB.prepare("SELECT email FROM admin_login_tokens WHERE token_hash = ?").bind(th).first();
   const email = row && allowedAdmin(row.email, env);
   if (!email) return bad();
+  return newSession(req, env, email, t);
+}
+
+async function verifyCode(req, env, f) {
+  const bad = () => json(req, 401, { ok: false, error: "The code is invalid, used or expired. Ask for a new one." });
+  const code = typeof f.code === "string" ? f.code.replace(/[\s-]/g, "") : "";
+  if (!/^\d{8}$/.test(code) || typeof f.verifier !== "string" || !VERIFIER_RE.test(f.verifier)) return bad();
+  const t = now();
+  const row = await env.DB.prepare("SELECT token_hash, email, code_hash, attempts FROM admin_login_tokens WHERE challenge = ? AND used_at IS NULL AND expires_at > ? ORDER BY created_at DESC")
+    .bind(await challengeOf(f.verifier), t).first();
+  if (!row || !row.code_hash || row.attempts >= CODE_TRIES) return bad();
+  if (!sameStr(await sha256(row.token_hash + ":" + code), row.code_hash)) {
+    await env.DB.prepare("UPDATE admin_login_tokens SET attempts = attempts + 1, used_at = CASE WHEN attempts + 1 >= ? THEN ? ELSE used_at END WHERE token_hash = ?")
+      .bind(CODE_TRIES, t, row.token_hash).run();
+    return bad();
+  }
+  const u = await env.DB.prepare("UPDATE admin_login_tokens SET used_at = ? WHERE token_hash = ? AND used_at IS NULL").bind(t, row.token_hash).run();
+  if (!u.meta || u.meta.changes !== 1) return bad();
+  const email = allowedAdmin(row.email, env);
+  if (!email) return bad();
+  return newSession(req, env, email, t);
+}
+
+async function newSession(req, env, email, t) {
   const st = newToken();
   await env.DB.batch([
     env.DB.prepare("DELETE FROM admin_sessions WHERE expires_at <= ?").bind(t),
