@@ -684,7 +684,7 @@ def site_footer(rel, root, slug=""):
     sections += li(rel + "developers/", t("dev_nav"))   # under Who's who; not a header tab
     site = (li(rel + "about/", t("nav_about")) + li(rel + "sources/", t("nav_sources")) + li(rel + "ethics/", t("ethics_title")) + li(rel + "contact/", t("contact_title"))
             + li(rel + "budget/", t("bud_nav"))
-            + li(rel + "changelog/", t("cl_title")) + li(rel + "stats/", t("vst_title")) + li(rel + "privacy/", t("pp_title")) + li(rel + "media/", t("media_title")) + li(rel + "columnist/", t("col_title"))
+            + li(rel + "changelog/", t("cl_title")) + li(rel + "stats/", t("vst_title")) + li(rel + "privacy/", t("pp_title")) + li(rel + "terms/", t("tos_title")) + li(rel + "media/", t("media_title")) + li(rel + "columnist/", t("col_title"))
             + li(rel + "tip/", t("nav_tip")) + li(rel + "api/", t("foot_api")) + li(rel + "db/", t("db_nav"))
             + li(REPO_CONTRIBUTORS, t("contributors"), True)
             + (li(rel + "treasury/", t("nav_treasury")) if event_nft.enabled() else ""))
@@ -1325,6 +1325,34 @@ def build_privacy():
         body = body.replace('<div class="prose">', note + '<div class="prose">', 1)
     page("privacy", t("pp_title"), "privacy", text_page(body, attrs=attrs), t("pp_desc"))
 
+def build_terms():
+    """Terms of use (terms/): English, Bokmål and Nynorsk text; other languages show the English text with a short note."""
+    attrs = template_attrs("terms")
+    body = lang_template("terms").replace("{{UP}}", "../")
+    if attrs and i18n.has(LANG, "tos_note"):
+        note = f'<p class="notice" lang="{i18n.HTML_LANG[LANG]}" dir="{"rtl" if i18n.rtl(LANG) else "ltr"}">{E(t("tos_note"))}</p>'
+        body = body.replace('<div class="prose">', note + '<div class="prose">', 1)
+    page("terms", t("tos_title"), "terms", text_page(body, attrs=attrs), t("tos_desc"))
+
+def build_tiktok_callback():
+    """TikTok OAuth redirect (tiktok/callback/, English only, noindex, not in menus or sitemap.xml). Shows code and state
+    so the owner can copy them; the query string is removed from the address bar first and nothing is sent anywhere."""
+    if LANG != "en": return
+    head = ('<meta name="robots" content="noindex, nofollow"><meta name="referrer" content="no-referrer">'
+            '<script>(function(){var q=new URLSearchParams(location.search);window.__ncTT={code:q.get("code")||"",state:q.get("state")||"",'
+            'error:[q.get("error"),q.get("error_description")].filter(Boolean).join(": ")};if(location.search)history.replaceState(null,"",location.pathname)})();</script>')
+    body = """<h1>TikTok sign-in</h1>
+<p class="lead">Copy the code below. It is shown only in this browser and not sent anywhere.</p>
+<p id="tt-err" class="notice warn" hidden></p>
+<p><label for="tt-code"><b>code</b></label><br><textarea id="tt-code" rows="3" cols="60" readonly></textarea><br><button class="btn" type="button" data-copy="tt-code">Copy code</button></p>
+<p><label for="tt-state"><b>state</b></label><br><input id="tt-state" size="40" readonly></p>
+<noscript><p class="notice warn">This page needs JavaScript.</p></noscript>"""
+    js = ('<script>(function(){var v=window.__ncTT||{};document.getElementById("tt-code").value=v.code||"";document.getElementById("tt-state").value=v.state||"";'
+          'var e=document.getElementById("tt-err");if(v.error){e.textContent=v.error;e.hidden=false}else if(!v.code){e.textContent="No code in the address.";e.hidden=false}'
+          'document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){var f=document.getElementById(b.getAttribute("data-copy"));'
+          'f.select();if(navigator.clipboard)navigator.clipboard.writeText(f.value);else document.execCommand("copy");b.textContent="Copied"})})})();</script>')
+    page("tiktok/callback", "TikTok sign-in", "tiktok", body, "TikTok sign-in", langs=["en"], head_extra=head, extra_script=js)
+
 CF_PATH = P("data", "crowdfunding.json")
 def _cf_data():
     return load(CF_PATH, {"pilot": {}, "campaigns": []}) or {"pilot": {}, "campaigns": []}
@@ -1522,6 +1550,7 @@ def sitemap():
             if r.split("/")[0] in ("kalender", "skjerm", "organisasjonskart", "kilder", "om", "akademia"): continue
             if "crowdfunding" in r.split("/"): continue   # closed pilot: noindex
             if r.split("/")[0] == "admin": continue          # private admin page: noindex, Disallow
+            if r.split("/")[0] == "tiktok": continue         # TikTok OAuth redirect: noindex
             urls.append(BASE + r)
     for rel in ("api/v1/index.json", "api/v1/openapi.json", "api/v1/schema/index.json", "api/v1/markets.json", "api/v1/markets/aggregated.json", "llms.txt"):
         if os.path.exists(os.path.join(SITE, rel)):
@@ -2260,6 +2289,8 @@ def build_lang(ctx):
     build_ethics()
     build_contact()
     build_privacy()
+    build_terms()
+    build_tiktok_callback()
     build_budget()
     build_crowdfunding()
     build_chat()
