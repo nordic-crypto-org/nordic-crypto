@@ -83,11 +83,12 @@
 
 <h2 id="tips">Private tips</h2>
 <p>Status: {{ST_TIPS}}</p>
-<p>Vi tek ikkje imot tips i offentlege GitHub-saker. <a href="{{UP}}tip/">Tipssida</a> opnar fyrst når den private innboksen nedanfor er klar.</p>
-<p><b>Kva.</b> Tipset, eventuelle lenker, ein valfri måte å kontakte deg på, sidespråket og tidspunktet, lagra i ein privat database på Cloudflare Workeren vår. IP-adressa di vert ikkje lagra. For å hindre misbruk har Workeren ein hash av IP-adressa saman med ein tilfeldig verdi som vert bytt kvar dag, i ti minutt. Før innsending sjekkar Cloudflare Turnstile at du er eit menneske; det køyrer berre på den sida. Redaktørane kan sende eit tips vidare til sin eigen private innboks i redaksjonen.</p>
+<p>Vi tek ikkje imot tips i offentlege GitHub-saker. Du kan sende tips privat gjennom onion-tipslina vår i Tor Browser; <a href="{{UP}}tip/">tipssida</a> lenkjer til ho.</p>
+<p><b>Onion-tipslina.</b> Ei side på ei Tor onion-adresse, som køyrer på ein liten server vi har sjølve. Ho verkar utan JavaScript, hentar ingenting frå andre nettstader, set ingen informasjonskapslar og fører ingen logg over førespurnader. Ho vert berre nådd gjennom Tor, så ho ser aldri IP-adressa di. Tipset, eit valfritt vedlegg (opptil 64 MB) og eventuelle oppfølgingsmeldingar vert krypterte i det dei kjem inn, med ein eigen nøkkel for kvart tips. Den nøkkelen vert berre lagra kryptert: forsegla for redaktørane og låst med kvitteringskoden din. Du får kvitteringskoden éin gong. Han er den einaste måten å lese svaret vårt eller sende meir på, og vi kan ikkje gjenopprette han.</p>
+<p><b>Nettskjema (ikkje slått på enno).</b> Tipset, eventuelle lenker, ein valfri måte å kontakte deg på, sidespråket og tidspunktet, lagra i ein privat database på Cloudflare Workeren vår. IP-adressa di vert ikkje lagra. For å hindre misbruk har Workeren ein hash av IP-adressa saman med ein tilfeldig verdi som vert bytt kvar dag, i ti minutt. Før innsending sjekkar Cloudflare Turnstile at du er eit menneske; det køyrer berre på den sida. Redaktørane kan sende eit tips vidare til sin eigen private innboks i redaksjonen.</p>
 <p><b>Føremål og rettsleg grunnlag.</b> Å ta imot og sjekke nyheitstips: berettiga interesse (art. 6 nr. 1 bokstav f), som del av journalistisk verksemd (personopplysningslova § 3).</p>
 <p><b>Kor lenge.</b> Til redaktørane har handsama tipset og slettar det. Tips og kontaktopplysningar vert aldri publiserte.</p>
-<p><b>Kven og kvar.</b> Cloudflare, Inc. (Workers, D1, Turnstile); sjå <a href="#hosting">Drift</a> om overføring.</p>
+<p><b>Kven og kvar.</b> Onion-tipslina: vår eigen server, inga ekstern teneste. Nettskjemaet: Cloudflare, Inc. (Workers, D1, Turnstile); sjå <a href="#hosting">Drift</a> om overføring.</p>
 
 <h2 id="chat">Prateboks</h2>
 <p>Status: {{ST_CHAT}}</p>

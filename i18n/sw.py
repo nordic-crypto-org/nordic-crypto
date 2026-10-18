@@ -446,6 +446,7 @@ S.update({
 "tip_desc": "Ipe Nordic Crypto taarifa kuhusu makala ya sarafu fiche, bitcoin au blockchain katika nchi za Nordic.",
 "tip_lead": "Umeona habari kuhusu sarafu fiche, bitcoin au blockchain nchini Norway, Sweden, Denmark, Finland au Iceland ambayo hatujaipata? Tutumie kiungo.",
 "tip_private_soon": "Tunafanyia kazi njia ya kutuma taarifa kwa siri. Hadi itakapokuwa tayari, ukurasa huu hauchukui taarifa.",
+"tip_onion_only": "Unaweza kutuma taarifa kwa siri kupitia laini yetu ya taarifa ya onion ndani ya Tor Browser. Inafanya kazi bila JavaScript, inasimba taarifa yako mara inapofika na inakupa msimbo wa risiti wa kuangalia jibu.",
 "tip_required": "(inahitajika)",
 "tip_honeypot": "Acha sehemu hii wazi",
 "tip_send": "Tuma taarifa",

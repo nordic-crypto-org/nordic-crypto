@@ -1335,7 +1335,7 @@ def build_privacy():
     on = lambda v: f'<span class="tag"{tl}>{E(t("pp_on" if v else "pp_off"))}</span>'
     body = lang_template("privacy").replace("{{UP}}", "../")   # links stay in the page language
     for key, val in (("ANALYTICS", analytics_token()), ("GEO", geo_endpoint()), ("NEWSLETTER", newsletter_endpoint()),
-                     ("PUSH", push_endpoint()), ("TIPS", tip_intake()[0]), ("CHAT", chat_endpoint())):
+                     ("PUSH", push_endpoint()), ("TIPS", tip_intake()[0] or tip_onion()), ("CHAT", chat_endpoint())):
         body = body.replace("{{ST_" + key + "}}", on(val))
     if attrs and i18n.has(LANG, "pp_note"):   # English fallback: a short note in the page language first
         note = (f'<p class="notice" lang="{i18n.HTML_LANG[LANG]}" dir="{"rtl" if i18n.rtl(LANG) else "ltr"}">{E(t("pp_note"))}</p>')
@@ -3986,13 +3986,17 @@ def tip_onion():
     o = (o or "").strip().rstrip("/")
     return o if re.fullmatch(r"http://[a-z2-7]{56}\.onion", o) else None
 
-def tip_onion_block():
+def tip_onion_href(o):
+    """The onion tip line has an English page (/) and a Norwegian one (/no/) only."""
+    return o + ("/no/" if LANG in ("nb", "nn") else "/")
+
+def tip_onion_block(text_key="tip_onion_ready"):
     """(notice html, head html) about the onion tip page: a link plus <meta http-equiv="onion-location"> when the address
     exists, otherwise a note that it is being prepared."""
     o = tip_onion()
     if not o: return f'<p class="notice"><b>{E(t("tip_onion_h"))}.</b> {E(t("tip_onion_pending"))}</p>', ""
-    href = o + "/" + LANG + "/"
-    return (f'<p class="notice"><b>{E(t("tip_onion_h"))}.</b> {E(t("tip_onion_ready"))} <a href="{E(href)}">{E(t("tip_onion_link"))}</a> '
+    href = tip_onion_href(o)
+    return (f'<p class="notice"><b>{E(t("tip_onion_h"))}.</b> {E(t(text_key))} <a href="{E(href)}">{E(t("tip_onion_link"))}</a> '
             f'(<span class="meta">{E(href)}</span>).</p>', f'<meta http-equiv="onion-location" content="{E(href)}">')
 
 def admin_endpoint():
@@ -4131,7 +4135,8 @@ def build_tip():
     ep, key = tip_intake()
     onion_html, onion_head = tip_onion_block()
     if not ep:
-        body = f"""<h1>{E(t("tip_title"))}</h1>
+        if tip_onion(): body = f'<h1>{E(t("tip_title"))}</h1>\n{tip_onion_block("tip_onion_only")[0]}'
+        else: body = f"""<h1>{E(t("tip_title"))}</h1>
 <p class="notice">{t("tip_private_soon")}</p>
 {onion_html}"""
         page("tip", t("tip_title"), "tip", text_page(body, toc=False), t("tip_desc"), head_extra=onion_head)

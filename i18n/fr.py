@@ -446,6 +446,7 @@ S.update({
 "tip_desc": "Signalez à Nordic Crypto un article sur la crypto, le bitcoin ou la blockchain dans les pays nordiques.",
 "tip_lead": "Vous avez vu un article sur la crypto, le bitcoin ou la blockchain en Norvège, en Suède, au Danemark, en Finlande ou en Islande qui nous a échappé ? Envoyez-nous le lien.",
 "tip_private_soon": "Nous travaillons sur un moyen d’envoyer des infos de façon privée. D’ici là, cette page n’accepte pas d’infos.",
+"tip_onion_only": "Vous pouvez envoyer une info de façon privée par notre ligne de signalement onion, dans Tor Browser. Elle fonctionne sans JavaScript, chiffre votre info dès son arrivée et vous donne un code de reçu pour vérifier si nous avons répondu.",
 "tip_required": "(obligatoire)",
 "tip_honeypot": "Laissez ce champ vide",
 "tip_send": "Envoyer l’info",

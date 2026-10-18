@@ -78,10 +78,15 @@ class TipPage(unittest.TestCase):
     def test_onion_link_and_meta_when_address_exists(self):
         addr = "http://" + "a" * 56 + ".onion"
         os.environ["TIP_ONION"] = addr
-        for lang in ("en", "sv"):
+        for lang in ("en", "sv", "nb", "nn"):
+            href = addr + ("/no/" if lang in ("nb", "nn") else "/")
             html = self.page(lang)
-            self.assertIn(f'<meta http-equiv="onion-location" content="{addr}/{lang}/">', html)
-            self.assertIn(f'href="{addr}/{lang}/"', html); self.assertNoGithub(html)
+            self.assertIn(f'<meta http-equiv="onion-location" content="{href}">', html)
+            self.assertIn(f'href="{href}"', html); self.assertNoGithub(html)
+        for lang in build.i18n.ALL_LANGS:
+            html = self.page(lang)
+            self.assertIn(build.E(build.i18n.t(lang, "tip_onion_only")), html)
+            self.assertNotIn(build.i18n.t(lang, "tip_private_soon"), html)
         os.environ["TIP_ENDPOINT"] = "https://tips.nordiccrypto.no"; os.environ["TIP_TURNSTILE_SITE_KEY"] = "1x00000000000000000000AA"
         self.assertIn("onion-location", self.page("en"))
 
@@ -101,7 +106,7 @@ class TipPage(unittest.TestCase):
         self.assertNotIn("onion-location", self.page("en"))
         os.environ["TIP_ONION"] = tip
         html = self.page("en")
-        self.assertEqual(html.count("onion-location"), 1); self.assertIn(f'content="{tip}/en/"', html)
+        self.assertEqual(html.count("onion-location"), 1); self.assertIn(f'content="{tip}/"', html)
         os.environ["SITE_ONION"] = "http://bad.onion"
         self.assertIsNone(build.site_onion())
 
