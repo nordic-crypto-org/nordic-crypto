@@ -1,9 +1,14 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T03:18:00+00:00",
+ "generated_at": "2026-10-18T05:35:30+00:00",
  "preview": false,
  "topics": [
+  {
+   "id": "ai",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/ai.json"
+  },
   {
    "id": "aml",
    "count": 3,
@@ -50,6 +55,11 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/energy.json"
   },
   {
+   "id": "ethereum",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/ethereum.json"
+  },
+  {
    "id": "events",
    "count": 3,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/events.json"
@@ -86,7 +96,7 @@
   },
   {
    "id": "security",
-   "count": 2,
+   "count": 3,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/security.json"
   },
   {
