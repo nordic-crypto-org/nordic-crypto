@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T02:14:53+00:00",
+ "generated_at": "2026-10-18T02:22:31+00:00",
  "preview": false,
  "topic": "security",
  "count": 2,
@@ -34,7 +34,8 @@
     "sw": "Mifuko ya Ledger iliyoharibika inahusishwa na wizi wa takriban SEK 860 milioni",
     "mr": "टॅम्पर केलेल्या Ledger हार्डवेअर वॉलेट्सचा अंदाजे SEK 860 दशलक्षांच्या चोरीत सहभाग",
     "fa": "کیف پول‌های سخت‌افزاری Ledger دستکاری‌شده مشکوک به سرقت حدود 860 میلیون کرون سوئد",
-    "uk": "Підозрюють, що підроблені апаратні гаманці Ledger стали причиною крадіжок на суму близько 860 мільйонів шведських крон"
+    "uk": "Підозрюють, що підроблені апаратні гаманці Ledger стали причиною крадіжок на суму близько 860 мільйонів шведських крон",
+    "tr": "Ledger donanım cüzdanlarında gizli devre kartı saldırısı şüphesiyle yaklaşık 860 milyon SEK değerinde hırsızlık"
    },
    "source": "dagensps.se",
    "source_name": "Dagens PS",
@@ -69,6 +70,7 @@
     "ru": "Dagens PS со ссылкой на The Verge сообщает, что подозреваемая атака цепочки поставок с использованием скрытой печатной платы в некоторых аппаратных кошельках Ledger могла позволить злоумышленнику захватить фразы восстановления и опустошить счета, что привело к потерям, оцениваемым примерно в 86 млн USD. Ledger подтвердил наличие неавторизованного аппаратного компонента в устройстве одного пострадавшего пользователя и попросил участвующего реселлера приостановить продажи во время расследования.",
     "sv": "Dagens PS rapporterar, med hänvisning till The Verge, att en misstänkt attack mot leveranskedjan med ett dolt kretskort i vissa Ledger-hårdvaruplånböcker kan ha låtit en angripare fånga upp återställningsfraser och tömma konton, med förluster som uppskattas till omkring 86 miljoner dollar. Ledger har bekräftat en obehörig hårdvarukomponent i en drabbad användares enhet och bett den berörda återförsäljaren pausa försäljningen medan en utredning pågår.",
     "sw": "Dagens PS inaripoti, ikitaja The Verge, kwamba shambulio la mlolongo wa usambazaji lililojumuisha bodi ya mzunguko iliyofichwa katika baadhi ya mifuko ya Ledger ya vifaa vya ngumu linaweza kumruhusu mshambulizi kukamata maneno ya urejeshaji na kumtoa fedha kutoka kwa akaunti, huku hasara zikikadiriwa kuwa takriban USD 86 milioni. Ledger imethibitisha kuwepo kwa kipengele kisicho halali cha vifaa katika kifaa cha mtumiaji mmoja aliyepatwa na kuomba muuzaji husika kusitisha mauzo wakati wa uchunguzi.",
+    "tr": "Dagens PS, The Verge'ye atıfta bulunarak, bazı Ledger donanım cüzdanlarına yerleştirilen gizli bir devre kartı aracılığıyla gerçekleşen bir tedarik zinciri saldırısının, saldırganın kurtarma ifadelerini ele geçirmesine ve hesapları boşaltmasına yol açtığını ve kayıpların yaklaşık 86 milyon USD civarında olduğunu bildirdi. Ledger, etkilenen bir kullanıcının cihazında yetkisiz bir donanım bileşeni tespit ettiğini doğruladı ve konuyla ilgili bir soruşturma yürütülürken satıcıdan satışları durdurmasını istedi.",
     "uk": "Dagens PS повідомляє за даними The Verge, що підозрюваний кібератака на ланцюжок постачання з використанням прихованої друкованої плати в деяких апаратних гаманцях Ledger могла дозволити зловмиснику отримати фрази відновлення та спустошити рахунки, завдавши збитків у розмірі приблизно 86 мільйонів доларів США. Ledger підтвердив наявність несанкціонованого апаратного компонента в пристрої одного постраждалого користувача і попросив продавця, який був залучений, призупинити продажі під час розслідування.",
     "ur": "Dagens PS نے The Verge کا حوالہ دیتے ہوئے رپورٹ کیا کہ ایک مشتبہ سپلائی چین حملے میں کچھ Ledger ہارڈویئر والیٹس میں چھپی سرکٹ بورڈ کے استعمال سے حملہ آور ریکوری فریز حاصل کر کے اکاؤنٹس خالی کر سکا، جس کی لاگت تقریباً 86 ملین امریکی ڈالر تخمینہ لگائی گئی ہے۔ Ledger نے ایک متاثرہ صارف کے ڈیوائس میں غیر مجاز ہارڈویئر جزو کی تصدیق کی اور تحقیق کے دوران متعلقہ ری سیلر سے فروخت روکنے کی درخواست کی۔",
     "zh": "《每日PS》援引《The Verge》报道，怀疑一次供应链攻击在部分 Ledger 硬件钱包中植入隐藏电路板，可能使攻击者获取恢复短语并清空账户，损失约为 8600 万美元。Ledger 已确认在一名受影响用户的设备中发现未经授权的硬件组件，并要求相关经销商在调查期间暂停销售。"
@@ -186,7 +188,8 @@
     "sw": "Mtafiti wa Ethereum anatoa onyo kwamba AI inaweza kuvunja sahihi za pochi; Buterin anahimiza utulivu",
     "mr": "इथरियम संशोधकाने AI वॉलेट स्वाक्षऱ्या तोडू शकते असे इशारा; बुटेरिन यांनी शांतीची विनंती",
     "fa": "پژوهشگر اتریوم هشدار می‌دهد هوش مصنوعی می‌تواند امضای کیف پول‌ها را بشکند؛ بوتیرین خواستار آرامش است",
-    "uk": "Дослідник Ethereum попереджає, що ШІ може зламати підписи гаманців; Бутерін закликає до спокою"
+    "uk": "Дослідник Ethereum попереджає, що ШІ може зламати підписи гаманців; Бутерін закликає до спокою",
+    "tr": "Ethereum araştırmacısı, AI'nin cüzdan imzalarını kırabileceğini uyarıyor; Buterin sakin kalın diyor"
    },
    "source": "investornytt",
    "source_name": "Investornytt",
@@ -220,6 +223,7 @@
     "ru": "По сообщению Investornytt, исследователь Ethereum Foundation Джастин Дрейк считает, что ИИ может помочь взломать ECDSA — схему подписи, используемую в биткойн- и эфирных кошельках, в худшем случае за несколько месяцев, и советует переводить средства на адреса, публичный ключ которых не раскрыт. Виталик Бутерин считает риск серьёзным, но предостерегает от паники.",
     "sv": "Investornytt rapporterar att Ethereum Foundation-forskaren Justin Drake bedömer att AI i värsta fall kan knäcka ECDSA, signatursystemet bakom Bitcoin- och Ethereum-plånböcker, inom månader, och råder att flytta medel till adresser utan exponerad publik nyckel. Vitalik Buterin tar risken på allvar men varnar för panik.",
     "sw": "Investornytt ripoti kwamba mtafiti wa Ethereum Foundation, Justin Drake, anaamini AI inaweza kuvunja ECDSA, mfumo wa sahihi unaotumika kwenye pochi za Bitcoin na Ethereum, katika muda wa miezi michache, na anapendekeza kuhamisha fedha kwenye anwani ambazo funguo za umma hazijafichuliwa. Vitalik Buterin anataja hatari hiyo kuwa kubwa lakini anahimiza kuepuka hofu.",
+    "tr": "Investornytt, Ethereum Vakfı araştırmacısı Justin Drake'in, AI'nin Bitcoin ve Ethereum cüzdanlarının arkasındaki imza şeması ECDSA'yı en kötü senaryoda birkaç ay içinde kırmaya yardımcı olabileceğine inandığını ve fonların hâlâ açık anahtarı ortaya çıkmamış adreslere taşınmasını önerdiğini bildiriyor. Vitalik Buterin, riskin ciddi olduğunu belirtiyor ancak panik yapmamaları gerektiğini uyarıyor.",
     "uk": "За повідомленням Investornytt, дослідник Ethereum Foundation Джастін Дрейк вважає, що штучний інтелект може допомогти зламати ECDSA — схему підпису, що використовується в гаманцях Bitcoin і Ethereum, у найгіршому випадку за кілька місяців, і радить перемістити кошти на адреси, публічний ключ яких не був розкритий. Віталік Бутерін називає цей ризик серйозним, але застерігає від паніки.",
     "ur": "Investornytt کے مطابق Ethereum Foundation کے محقق جیسٹن ڈریک کا خیال ہے کہ AI ای سی ڈی ایس اے، جو بٹ کوائن اور ایthereum والیٹس کے پیچھے دستخطی نظام ہے، کو چند ماہ کے اندر توڑ سکتا ہے، اور انہوں نے مشورہ دیا ہے کہ فنڈز ایسے ایڈریسز پر منتقل کیے جائیں جن کی پبلک کلید ظاہر نہ ہوئی ہو۔ وٹالیك بٹیرن نے اس خطرے کو سنگین تسلیم کیا لیکن پینک سے بچنے کی تنبیہ کی۔",
     "zh": "Investornytt 报道，以太坊基金会研究员 Justin Drake 认为，AI 最坏情况下可能在数月内帮助破解 ECDSA——比特币和以太坊钱包背后的签名方案，并建议将资金转移到其公钥未被公开的地址。Vitalik Buterin 认为风险严重，但警告不要恐慌。"
