@@ -127,7 +127,7 @@ Public TestFlight invite, linked from the footer, the homepage, `/markets/` and 
 Nordic Crypto brand accounts, linked from the footer, About and the newsletter, in every site language (English until a translation is written):
 
 - Telegram: https://t.me/nordiccryptochat
-- X: https://x.com/nordiccryptobot (each weekly newsletter issue is posted there as one long post with its newsreel, linking each story's page on nordiccrypto.no; see `docs/x-newsletter.md`)
+- X: https://x.com/nordiccryptobot (each weekly newsletter issue is posted there as one long post with its newsreel, linking each story's page on nordiccrypto.no; plus a daily digest of new stories at about 20:00 Oslo; see `docs/x-newsletter.md`)
 
 Each weekly newsletter issue is also posted to the Nordic Crypto Facebook Page as a video post; see `docs/fb-newsletter.md`.
 
