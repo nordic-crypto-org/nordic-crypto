@@ -29,19 +29,19 @@ async function signIn(e) {
   return (await (await call(e, "POST", "/api/admin/verify", { body: { token: t } })).json()).token;
 }
 const DATA = { campaigns: [{ id: "c1", name: "Campaign", channels: "Telegram,X", status: "active", starts_at: "2026-10-18T20:00", ends_at: "2026-10-31T23:59" }],
-  schedule: [{ id: "daily", channel: "Site", what: "Daily publishing", cron: "27 7 * * *", status: "active", source: "routine" },
+  schedule: [{ id: "daily", channel: "Site", what: "Daily", cron: "15 8 * * *", status: "active", source: "routine" },
     { id: "gha", channel: "X", what: "Weekly", cron: "45 6 * * 1", tz: "UTC", status: "paused", source: "workflow:x-newsletter.yml" },
-    { id: "once", channel: "Facebook", what: "Launch", at: "2026-10-20T12:00", status: "awaiting_approval", source: "campaign", campaign_id: "c1" }] };
+    { id: "once", channel: "Web", what: "One-off", at: "2026-10-20T13:00", status: "awaiting_approval", source: "campaign", campaign_id: "c1" }] };
 
 test("cron next run in Oslo time, across the DST change", () => {
   assert.equal(parseCron("61 * * * *"), null); assert.equal(parseCron("* * *"), null);
-  assert.deepEqual(parseCron("4 9 * * 1-5")[4], [1, 2, 3, 4, 5]);
+  assert.deepEqual(parseCron("5 9 * * 1-5")[4], [1, 2, 3, 4, 5]);
   const now = Date.parse("2026-10-18T18:00:00Z");   // Sun 20:00 Oslo (CEST)
-  assert.equal(osloIso(nextRun("27 7 * * *", "Europe/Oslo", now)), "2026-10-19T07:27+02:00");
-  assert.equal(osloIso(nextRun("31 10 * * 2,5", "Europe/Oslo", now)), "2026-10-20T10:31+02:00");
-  assert.equal(osloIso(nextRun("30 4 * * 1", "Europe/Oslo", Date.parse("2026-10-19T03:00:00Z"))), "2026-10-26T04:30+01:00");
+  assert.equal(osloIso(nextRun("15 8 * * *", "Europe/Oslo", now)), "2026-10-19T08:15+02:00");
+  assert.equal(osloIso(nextRun("20 10 * * 2,5", "Europe/Oslo", now)), "2026-10-20T10:20+02:00");
+  assert.equal(osloIso(nextRun("0 5 * * 1", "Europe/Oslo", Date.parse("2026-10-19T03:00:00Z"))), "2026-10-26T05:00+01:00");
   assert.equal(osloIso(nextRun("45 6 * * 1", "UTC", now)), "2026-10-19T08:45+02:00");
-  assert.equal(osloIso(nextRun("4 9 * * 1-5", "Europe/Oslo", Date.parse("2026-10-23T08:00:00Z"))), "2026-10-26T09:04+01:00");
+  assert.equal(osloIso(nextRun("5 9 * * 1-5", "Europe/Oslo", Date.parse("2026-10-23T08:00:00Z"))), "2026-10-26T09:05+01:00");
 });
 
 test("schedule: read needs an admin session, write needs ADMIN_DELIVERY_TOKEN", async () => {
@@ -63,6 +63,6 @@ test("schedule: read needs an admin session, write needs ADMIN_DELIVERY_TOKEN", 
 test("listSchedule: sorted by next run, past one-offs have none", async () => {
   const e = env(); await call(e, "POST", "/api/admin/schedule", { body: DATA, token: SECRET });
   const d = await listSchedule(e, Date.parse("2026-10-19T12:00:00Z"));
-  assert.deepEqual(d.schedule.map((r) => [r.id, r.next_run]), [["daily", "2026-10-20T07:27+02:00"], ["once", "2026-10-20T12:00+02:00"], ["gha", "2026-10-26T07:45+01:00"]]);
+  assert.deepEqual(d.schedule.map((r) => [r.id, r.next_run]), [["daily", "2026-10-20T08:15+02:00"], ["once", "2026-10-20T13:00+02:00"], ["gha", "2026-10-26T07:45+01:00"]]);
   assert.equal((await listSchedule(e, Date.parse("2026-10-21T00:00:00Z"))).schedule.find((r) => r.id === "once").next_run, null);
 });
