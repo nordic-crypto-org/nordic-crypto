@@ -1103,9 +1103,9 @@ def _meta(feed):
         language_note=(
             "Site languages, with native_name, english_name and rtl, are listed in languages and in /api/v1/languages.json. "
             "Our own text is written in English first. summary_i18n, title_i18n, subtitle_i18n, note_i18n and about_i18n "
-            "carry published translations, today nn, nb, sv, da, fi and is. Other site languages fall back to the English field "
+            "carry published translations, keyed by site language. A language without one falls back to the English field "
             "until a translation is published. On a news item, title is the source headline, title_en is our English headline "
-            "and title_i18n is our headline in nn, nb, sv, da, fi and is. The site shows the page-language headline first "
+            "and title_i18n is our headline in every other site language. The site shows the page-language headline first "
             "and the source headline underneath when they differ. Outlet headlines inside sources stay in that outlet's language. "
             "There is no query string for language: each JSON document already carries every published translation. "
             "The language switcher's country default is a guess; see /api/v1/geo-language.json. The nc_lang cookie wins."

@@ -402,6 +402,108 @@
        "examples": [
         "Til upplýsingar: fyrirlesarinn, Jørgen S. Notland, er útgefandi Nordic Crypto."
        ]
+      },
+      "zh": {
+       "type": "string",
+       "examples": [
+        "说明：演讲者 Jørgen S. Notland 是 Nordic Crypto 的出版人。"
+       ]
+      },
+      "hi": {
+       "type": "string",
+       "examples": [
+        "सूचना: वक्ता Jørgen S. Notland, Nordic Crypto के प्रकाशक हैं।"
+       ]
+      },
+      "es": {
+       "type": "string",
+       "examples": [
+        "Aviso: el ponente, Jørgen S. Notland, es el editor de Nordic Crypto."
+       ]
+      },
+      "fr": {
+       "type": "string",
+       "examples": [
+        "À noter : l'intervenant, Jørgen S. Notland, est l'éditeur de Nordic Crypto."
+       ]
+      },
+      "ar": {
+       "type": "string",
+       "examples": [
+        "تنويه: المتحدث Jørgen S. Notland هو ناشر Nordic Crypto."
+       ]
+      },
+      "bn": {
+       "type": "string",
+       "examples": [
+        "জ্ঞাতব্য: বক্তা Jørgen S. Notland, Nordic Crypto-র প্রকাশক।"
+       ]
+      },
+      "pt": {
+       "type": "string",
+       "examples": [
+        "Aviso: o palestrante, Jørgen S. Notland, é o editor da Nordic Crypto."
+       ]
+      },
+      "ru": {
+       "type": "string",
+       "examples": [
+        "К сведению: докладчик Jørgen S. Notland — издатель Nordic Crypto."
+       ]
+      },
+      "ur": {
+       "type": "string",
+       "examples": [
+        "اطلاع: مقرر Jørgen S. Notland، Nordic Crypto کے ناشر ہیں۔"
+       ]
+      },
+      "id": {
+       "type": "string",
+       "examples": [
+        "Catatan: pembicara, Jørgen S. Notland, adalah penerbit Nordic Crypto."
+       ]
+      },
+      "de": {
+       "type": "string",
+       "examples": [
+        "Hinweis: Der Redner, Jørgen S. Notland, ist Herausgeber von Nordic Crypto."
+       ]
+      },
+      "ja": {
+       "type": "string",
+       "examples": [
+        "お知らせ：講演者の Jørgen S. Notland は Nordic Crypto の発行人です。"
+       ]
+      },
+      "sw": {
+       "type": "string",
+       "examples": [
+        "Taarifa: mzungumzaji, Jørgen S. Notland, ni mchapishaji wa Nordic Crypto."
+       ]
+      },
+      "mr": {
+       "type": "string",
+       "examples": [
+        "सूचना: वक्ते Jørgen S. Notland हे Nordic Crypto चे प्रकाशक आहेत."
+       ]
+      },
+      "fa": {
+       "type": "string",
+       "examples": [
+        "توجه: سخنران، Jørgen S. Notland، ناشر Nordic Crypto است."
+       ]
+      },
+      "uk": {
+       "type": "string",
+       "examples": [
+        "До відома: доповідач Jørgen S. Notland — видавець Nordic Crypto."
+       ]
+      },
+      "tr": {
+       "type": "string",
+       "examples": [
+        "Bilgi: konuşmacı Jørgen S. Notland, Nordic Crypto'nun yayıncısıdır."
+       ]
       }
      },
      "additionalProperties": false,
@@ -413,7 +515,7 @@
       "fi",
       "is"
      ],
-     "description": "That note in nn, nb, sv, da, fi and is."
+     "description": "That note in every site language except English (nn, nb, sv, da, fi and is required). A missing language shows the English note."
     },
     "attendees": {
      "type": "null"
