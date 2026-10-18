@@ -52,7 +52,11 @@ Each card is a day, a Norwegian month and year, a type, a city and a title. The 
 link is the event URL when the card has one; otherwise the homepage. The arrangementer
 page is an empty placeholder and is not read. A card with the same normalised title and
 date as a Litteraturhuset, Nasjonalbiblioteket or Polyteknisk row is not added again.
-No clock is published on the card, so the row is that civil day. No images."""
+No clock is published on the card, so the row is that civil day. No images.
+
+type rss: a WordPress category feed. An item is kept when a source keyword matches and the post
+states a day and month (kl. HH:MM–HH:MM and the venue after "på" when given) that has not passed.
+A missing year is the first such day on or after the publication date. No date, no row."""
 import argparse, datetime as dt, hashlib, json, os, re, sys, time, urllib.parse
 from zoneinfo import ZoneInfo
 from html import unescape as html_unescape
@@ -1192,6 +1196,78 @@ def bpi_events(src, cards, tz):
     return out
 
 
+_RSS_WHEN = re.compile(
+    r"(\d{1,2})\.\s*(januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)(?:\s+(20\d\d))?"
+    r"(?:[^.\d]{0,12}?kl\.?\s*(\d{1,2})[.:](\d{2})(?:\s*[–-]\s*(\d{1,2})[.:](\d{2}))?)?", re.I)
+_RSS_PLACE = re.compile(r"(?s).*\bpå\s+(.{3,90}?)\s+(?:den\s+)?$", re.I)
+
+
+def rss_when(text, published, tz):
+    """First Norwegian date in the post (day, month, optional year and kl. HH:MM–HH:MM).
+    A missing year is the first such day on or after the publication day. No date -> None."""
+    m = _RSS_WHEN.search(text or "")
+    if not m:
+        return None
+    zone = ZoneInfo(tz)
+    month = _NO_MONTH[m.group(2).lower()]
+    year = int(m.group(3)) if m.group(3) else published.astimezone(zone).year
+    try:
+        day = dt.date(year, month, int(m.group(1)))
+        if not m.group(3) and day < published.astimezone(zone).date():
+            day = dt.date(year + 1, month, int(m.group(1)))
+    except ValueError:
+        return None
+    if m.group(4):
+        start = dt.datetime(day.year, day.month, day.day, int(m.group(4)), int(m.group(5)), tzinfo=zone)
+        end = dt.datetime(day.year, day.month, day.day, int(m.group(6)), int(m.group(7)), tzinfo=zone) if m.group(6) else None
+    else:
+        start = dt.datetime(day.year, day.month, day.day, 0, 0, tzinfo=zone)
+        end = dt.datetime(day.year, day.month, day.day, 23, 59, tzinfo=zone)
+    place = city = None
+    pm = _RSS_PLACE.search(text[max(0, m.start() - 120):m.start()])
+    if pm:
+        place = pm.group(1).strip(" ,")
+        cm = re.match(r"(.+?)\s+i\s+([A-ZÆØÅ][\wæøåÆØÅ-]+)$", place)
+        if cm:
+            place, city = cm.group(1), cm.group(2)
+    return {"start": start, "end": end, "place": place, "city": city}
+
+
+def rss_events(src, xml, tz, now):
+    """WordPress category RSS. An item is kept only when src keywords match and the post states a future date."""
+    s = BeautifulSoup(xml or "", "xml")
+    keys = re.compile(r"\b(?:" + "|".join(re.escape(k) for k in src.get("keywords") or []) + r")", re.I) if src.get("keywords") else None
+    out = []
+    for item in s.find_all("item"):
+        title = re.sub(r"\s+", " ", item.find("title").get_text(" ", strip=True)) if item.find("title") else ""
+        title = re.sub(r"^(?:kommende|upcoming)\s+\w+:\s*", "", title, flags=re.I)
+        link = item.find("link").get_text(strip=True) if item.find("link") else ""
+        body = item.find("encoded") or item.find("description")
+        text = re.sub(r"\s+", " ", BeautifulSoup(body.get_text() if body else "", "lxml").get_text(" ")).strip()
+        text = re.sub(r"\s*Innlegget .{0,200}? dukket først opp på .*$", "", text)
+        if not title or (keys and not keys.search(title + " " + text)):
+            continue
+        try:
+            published = dt.datetime.strptime(item.find("pubDate").get_text(strip=True), "%a, %d %b %Y %H:%M:%S %z")
+        except (AttributeError, ValueError):
+            published = now
+        when = rss_when(text, published, tz)
+        if not when or (when["end"] or when["start"]) < now:
+            continue
+        organiser = src.get("organiser")
+        hosts = [h for h in src.get("cohosts") or [] if h.lower() in text.lower()]
+        if organiser and hosts:
+            organiser = organiser + " and " + " and ".join(hosts)
+        out.append({
+            "title": title, "start": when["start"], "end": when["end"],
+            "place": when["place"], "city": when["city"] or src.get("city"),
+            "country_hint": src.get("country"), "online": False, "organiser": organiser,
+            "url": link or src["url"], "description": text, "description_lang": language_of(text) if text else None,
+            "paid": False if re.search(r"\bgratis\b|\bfree entrance\b", text, re.I) else None,
+        })
+    return out
+
+
 def sanity_query_url(src, now):
     stamp = now.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     api = src.get("api") or ""
@@ -1420,6 +1496,10 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
                     evs = squarespace_events(src, raw, tz, matches); n_found = len(evs)
                     for ev in evs:
                         src2 = dict(src, page=ev["url"]); take(ev, src2, src.get("trusted", False))
+                elif src["type"] == "rss":
+                    evs = rss_events(src, fetch_page(src["url"]).text, tz, now); n_found = len(evs)
+                    for ev in evs:
+                        take(ev, dict(src, page=ev["url"]), src.get("trusted", False))
                 elif src["type"] == "manual":
                     n_found = 0
                 else:

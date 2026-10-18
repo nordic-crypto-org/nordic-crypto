@@ -354,6 +354,8 @@ The intake reads the one upcoming page, then one WordPress request for those slu
 
 Bitcoinpolitisk institutt (`bpi_kalender`): the Kalender block on https://bpinorge.no/ (day, Norwegian month and year, type, city, title). A venue link is the event URL; otherwise the homepage. The same normalised title and date already listed by Litteraturhuset, Nasjonalbiblioteket or Polyteknisk is not added again. https://bpinorge.no/arrangementer/ is empty and is not read.
 
+BIEN Norge (`rss`): the WordPress feed https://www.biennorge.no/category/arrangementer/feed/. Most items are about basic income, so an item is kept only when a source keyword (bitcoin, krypto, crypto, blokkjede, blockchain, lightning) matches and the post states a day and month that has not passed. The time (kl. HH:MM–HH:MM) and the venue after «på» are read when given; a post without a date is skipped. Mission Possible 2030 (missionpossible2030.xyz) publishes no events of its own; it co-hosts with BIEN Norge and is added to the organiser when the post names it.
+
 ## Outlet logos on news
 
 Whenever a story is shown (the news list, the screen, our own story pages, and the HTML newsletter digest) the outlet logo sits beside the source name when a checked image is on file. The name is text only when there is no logo. Nothing is drawn or invented. The site brand stays Nordic Crypto. Kaupr is a news source, and its logo appears only next to Kaupr stories.

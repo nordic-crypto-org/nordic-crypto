@@ -501,6 +501,31 @@
       "crypto-money"
      ]
     },
+    "keywords": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Words that keep an item from a mixed feed (prefix match).",
+     "examples": [
+      [
+       "bitcoin",
+       "krypto"
+      ]
+     ]
+    },
+    "cohosts": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Co-organisers added to the organiser when the post names them.",
+     "examples": [
+      [
+       "Mission Possible 2030"
+      ]
+     ]
+    },
     "max_pages": {
      "type": "integer",
      "description": "How many programme pages to read.",

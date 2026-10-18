@@ -20892,6 +20892,29 @@
    "method": "Homepage Kalender block (day, Norwegian month and year, type, city, title). The venue link is the event URL when the card has one; otherwise the homepage. A row with the same normalised title and date already listed by Litteraturhuset, Nasjonalbiblioteket or Polyteknisk is not added again. The arrangementer page is an empty placeholder and is not read."
   },
   {
+   "id": "bien-norge-arrangementer",
+   "name": "BIEN Norge – events (RSS)",
+   "url": "https://www.biennorge.no/category/arrangementer/feed/",
+   "type": "rss",
+   "trusted": false,
+   "organiser": "BIEN Norge",
+   "cohosts": [
+    "Mission Possible 2030"
+   ],
+   "keywords": [
+    "bitcoin",
+    "krypto",
+    "crypto",
+    "blokkjede",
+    "blockchain",
+    "lightning"
+   ],
+   "enabled": true,
+   "status": "ok (checked 18 Oct 2026: one bitcoin item, 26 Sep 2026, already past)",
+   "country": "NO",
+   "method": "WordPress category RSS. Basic-income events; only items matching the keywords and stating a future date are kept. Mission Possible 2030 (missionpossible2030.xyz) publishes no events itself and co-hosts here."
+  },
+  {
    "id": "swedish-bitcoin-meetups",
    "name": "Swedish Bitcoin Meetups (Meetup.com)",
    "country": "SE",
