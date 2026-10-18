@@ -4,6 +4,10 @@
 # Do not upload state/ or site/ as an artifact.
 # After a successful publish, the release job creates a GitHub release for the deployed commit
 # (notes only, no assets).
+# After a successful publish with new stories, the deploy job also sends push notifications:
+# browser push (workers/push, secret PUSH_PUBLISH_TOKEN) and the iOS/Android apps
+# (nordic-crypto-org/nordic-crypto-tv push/, secret APP_PUSH_PUBLISH_TOKEN). Each is skipped
+# with a notice while its secret is not set; a failed call is a warning, not a failed deploy.
 name: Deploy site
 
 on:
@@ -171,7 +175,7 @@ jobs:
             echo "CI has no \`queue/approved.json\`, no \`state/source_status.json\`, and no \`/workspace/nordic-crypto-research/academia.md\`."
             echo "Own stories in \`stories.approve\` are omitted. Rows in \`data/events.json\` are not promoted. Every enabled source counts as ok."
             echo "\`data/news.json\`, \`data/orgchart.json\` and \`data/academia.json\` stay as they are committed on \`main\`."
-            echo "Browser push notifications are still sent only by \`./publish.sh --yes\` on the box."
+            echo "After a publish with new stories, push notifications go to browsers (\`PUSH_PUBLISH_TOKEN\`) and the apps (\`APP_PUSH_PUBLISH_TOKEN\`)."
           } >> "$GITHUB_STEP_SUMMARY"
         env:
           NC_CI_DEPLOY: ${{ vars.NC_CI_DEPLOY }}
@@ -190,6 +194,10 @@ jobs:
             echo "::error::refusing: site/ is a preview build"
             exit 1
           fi
+          # The live news.json before this publish, for the push step (only new story ids are sent).
+          git -C gh-pages fetch -q --depth 1 origin gh-pages
+          git -C gh-pages show FETCH_HEAD:data/news.json > "$RUNNER_TEMP/previous-news.json" 2>/dev/null \
+            || rm -f "$RUNNER_TEMP/previous-news.json"
           msg="Publish $(date -u '+%Y-%m-%d %H:%M UTC') from main@${GITHUB_SHA} [skip ci]"
           tools/ci_gh_pages.sh gh-pages site publish-keep.txt "$msg"
 
@@ -200,6 +208,59 @@ jobs:
           # wait_url prints a warning and does not fail the job.
           source ./publish.sh
           wait_url "https://nordiccrypto.no/" 120
+
+      # At most one notification per publish: browsers get one batch (workers/push), each app
+      # device the newest new story in its countries (the app Worker reads latest.json itself).
+      - name: Push notifications for new stories
+        if: vars.NC_CI_DEPLOY == 'true' && steps.publish.outcome == 'success'
+        env:
+          PUSH_PUBLISH_TOKEN: ${{ secrets.PUSH_PUBLISH_TOKEN }}
+          APP_PUSH_PUBLISH_TOKEN: ${{ secrets.APP_PUSH_PUBLISH_TOKEN }}
+          APP_PUSH_URL: ${{ vars.APP_PUSH_URL || 'https://nordic-crypto-app-push.nordiccrypto.workers.dev' }}
+        run: |
+          set -uo pipefail
+          prev="$RUNNER_TEMP/previous-news.json"
+          if [ ! -s "$prev" ]; then
+            echo "::notice title=Push::No previous news.json; not sending (that would announce the whole archive)."
+            exit 0
+          fi
+          new=$(python3 - "$prev" site/data/news.json <<'PY'
+          import json, sys
+          ids = lambda p: {i.get("id") for i in json.load(open(p, encoding="utf-8")).get("items", []) if i.get("id")}
+          print(len(ids(sys.argv[2]) - ids(sys.argv[1])))
+          PY
+          ) || new=0
+          echo "New stories in this publish: $new"
+          if [ "${new:-0}" = 0 ]; then
+            echo "No new stories; no push notifications." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # Browser push. push_notify.py diffs the two files and skips when the Worker URL
+          # (workers/push/public.json) or PUSH_PUBLISH_TOKEN is not set.
+          python3 tools/push_notify.py --previous "$prev" --current site/data/news.json \
+            || echo "::warning title=Browser push::push_notify.py failed"
+
+          # Apps. Wait until GitHub Pages serves the latest.json built here, so the Worker sees it.
+          if [ -z "$APP_PUSH_PUBLISH_TOKEN" ]; then
+            echo "::notice title=App push::APP_PUSH_PUBLISH_TOKEN is not set; the app Worker's hourly check will pick this up."
+            exit 0
+          fi
+          want=$(python3 -c 'import json;print(json.load(open("site/api/v1/news/latest.json"))["generated_at"])' 2>/dev/null || true)
+          for _ in $(seq 1 40); do
+            got=$(curl -fsS --max-time 15 https://nordiccrypto.no/api/v1/news/latest.json \
+              | python3 -c 'import json,sys;print(json.load(sys.stdin).get("generated_at",""))' 2>/dev/null || true)
+            [ -n "$want" ] && [ "$got" = "$want" ] && break
+            sleep 15
+          done
+          [ "$got" = "$want" ] || echo "::warning title=App push::live latest.json is not this build yet; calling anyway (the hourly check retries)"
+          # The token goes to curl on stdin, never on its command line.
+          if out=$(printf 'Authorization: Bearer %s\n' "$APP_PUSH_PUBLISH_TOKEN" \
+                | curl -fsS --max-time 60 -X POST -H @- "${APP_PUSH_URL%/}/v1/publish"); then
+            echo "App push: $out" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::warning title=App push::POST /v1/publish failed; the app Worker's hourly check will pick this up."
+          fi
 
   # One GitHub release per deployed commit on main. Runs only when the whole deploy job passed
   # (build, privacy gate, text gate, gh-pages push). It does not check out the repository and

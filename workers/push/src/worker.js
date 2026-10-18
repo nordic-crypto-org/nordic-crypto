@@ -9,6 +9,9 @@ const MAX_BATCHES = 30;
 const MAX_STORIES = 40;
 const MAX_BODY = 48 * 1024;
 const ORIGINS = new Set([
+  "https://nordiccrypto.no",
+  "https://www.nordiccrypto.no",
+  "https://nordic-crypto-org.github.io",
   "https://cryptonordic.no",
   "https://www.cryptonordic.no",
   "https://jqrgen.github.io",
@@ -61,11 +64,11 @@ export function notificationFor(stories, lang) {
   const shown = stories.slice(0, 3).map((s) => clip(pick(s.titles, lang, s.title), 80)).filter(Boolean);
   let body = shown.join(" · ");
   if (stories.length > shown.length) body += (body ? " · " : "") + copy.more.replace("{n}", String(stories.length - shown.length));
-  const home = lang === "en" ? "https://cryptonordic.no/" : `https://cryptonordic.no/${lang}/`;
+  // Tapping opens the newest story (the first one), not the front page.
   return {
     title: copy.many.replace("{n}", String(stories.length)),
     body: clip(body, 240),
-    url: home,
+    url: stories[0].url,
     lang,
     tag: "nordic-crypto-latest",
   };

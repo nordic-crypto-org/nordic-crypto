@@ -47,6 +47,7 @@ const SUB = {
 
 test("origin allow list", () => {
   assert.equal(originAllowed("https://cryptonordic.no"), true);
+  assert.equal(originAllowed("https://nordiccrypto.no"), true);
   assert.equal(originAllowed("https://jqrgen.github.io"), true);
   assert.equal(originAllowed("http://127.0.0.1:8765"), true);
   assert.equal(originAllowed("https://evil.example"), false);
@@ -109,7 +110,7 @@ test("country filter and one batched notification", () => {
   assert.equal(many.title, "2 new stories");
   assert.match(many.body, /Oslo/);
   assert.match(many.body, /Stockholm/);
-  assert.equal(many.url, "https://cryptonordic.no/");
+  assert.equal(many.url, "https://cryptonordic.no/a");
   assert.equal(many.tag, "nordic-crypto-latest");
 });
 
