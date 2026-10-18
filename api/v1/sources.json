@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-18T11:58:43+00:00",
+ "generated_at": "2026-10-18T12:04:57+00:00",
  "preview": false,
  "user_agent": "NordicCryptoBot/0.1 (+__SITE__about/; news headline bot)",
  "min_delay_seconds": 2,
@@ -31196,6 +31196,22 @@
    "status": "ok",
    "method": "Homepage Kalender block (day, Norwegian month and year, type, city, title). The venue link is the event URL when the card has one; otherwise the homepage. A row with the same normalised title and date already listed by Litteraturhuset, Nasjonalbiblioteket or Polyteknisk is not added again. The arrangementer page is an empty placeholder and is not read.",
    "intake": "bpi_kalender",
+   "ics": null,
+   "organizer_id": null,
+   "venue_id": null
+  },
+  {
+   "id": "bien-norge-arrangementer",
+   "name": "BIEN Norge – events (RSS)",
+   "url": "https://www.biennorge.no/category/arrangementer/feed/",
+   "country": "NO",
+   "city": null,
+   "organiser": "BIEN Norge",
+   "enabled": true,
+   "trusted": false,
+   "status": "ok (checked 18 Oct 2026: one bitcoin item, 26 Sep 2026, already past)",
+   "method": "WordPress category RSS. Basic-income events; only items matching the keywords and stating a future date are kept. Mission Possible 2030 (missionpossible2030.xyz) publishes no events itself and co-hosts here.",
+   "intake": "rss",
    "ics": null,
    "organizer_id": null,
    "venue_id": null
