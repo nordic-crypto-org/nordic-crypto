@@ -1,0 +1,80 @@
+# Renders YouTube jobs and runs the rule checks. No YouTube access and no secrets in this workflow.
+name: YouTube render
+on:
+  workflow_run:
+    workflows: ["Deploy site"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "Series to render"
+        type: choice
+        options: [weekly]
+        default: weekly
+      issue:
+        description: "Issue id for weekly, e.g. 003 (default: newest)"
+        required: false
+  pull_request:
+    paths:
+      - "tools/youtube_*.py"
+      - "tests/test_youtube.py"
+      - ".github/workflows/youtube-*.yml"
+permissions:
+  contents: read
+concurrency:
+  group: youtube-render
+  cancel-in-progress: false
+jobs:
+  render:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.sha || 'main' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Tests
+        run: python3 -m unittest tests.test_youtube
+      - name: Render
+        if: github.event_name != 'pull_request'
+        env:
+          KIND: ${{ inputs.kind || 'weekly' }}
+          ISSUE: ${{ inputs.issue }}
+        run: |
+          args=()
+          [ -n "$ISSUE" ] && args+=(--issue "$ISSUE")
+          python3 tools/youtube_render.py "$KIND" "${args[@]}"
+      - name: Rule checks
+        id: lint
+        if: github.event_name != 'pull_request'
+        run: |
+          mkdir -p build/youtube
+          set +e
+          python3 tools/youtube_lint.py build/youtube --report build/youtube/lint.json | tee lint.txt
+          status=${PIPESTATUS[0]}
+          { echo "### YouTube rule checks"; echo '```'; cat lint.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          for d in build/youtube/*/; do [ -f "$d/meta.json" ] && python3 -c "import json,sys;m=json.load(open(sys.argv[1]));print(f\"- **{m['title']}** · public at {m['publishAt']}\n\n\`\`\`\n{m['description']}\n\`\`\`\")" "$d/meta.json" >> "$GITHUB_STEP_SUMMARY"; done
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+      - name: Contact sheet
+        if: github.event_name != 'pull_request'
+        run: |
+          for d in build/youtube/*/; do
+            [ -f "$d/video.mp4" ] && ffmpeg -v error -y -i "$d/video.mp4" -vf "fps=1/10,scale=320:-1,tile=4x4" -frames:v 1 "$d/contact-sheet.png" || true
+          done
+      - uses: actions/upload-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          name: youtube-jobs
+          path: build/youtube/
+          retention-days: 14
+          if-no-files-found: ignore
+      - name: Fail when a video failed the rule checks
+        if: github.event_name != 'pull_request' && steps.lint.outputs.status != '0'
+        run: |
+          echo "::error::One or more videos failed the rule checks and will not be uploaded (see summary)."
+          exit 1
