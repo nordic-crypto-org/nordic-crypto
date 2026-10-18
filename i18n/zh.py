@@ -446,6 +446,7 @@ S.update({
 "tip_desc": "向 Nordic Crypto 提供北欧加密货币、比特币或区块链相关文章的线索。",
 "tip_lead": "看到了我们遗漏的、关于挪威、瑞典、丹麦、芬兰或冰岛加密货币、比特币或区块链的报道？请把链接发给我们。",
 "tip_private_soon": "我们正在开发私密提交线索的方式。在其准备好之前，本页面暂不接收线索。",
+"tip_onion_only": "你可以在 Tor Browser 中通过我们的 onion 线索通道私密地提交线索。它无需 JavaScript，线索一到达即被加密，并会给你一个回执码，用于查看我们的回复。",
 "tip_required": "（必填）",
 "tip_honeypot": "请将此字段留空",
 "tip_send": "提交线索",

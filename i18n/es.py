@@ -446,6 +446,7 @@ S.update({
 "tip_desc": "Envía a Nordic Crypto una pista sobre un artículo de cripto, bitcoin o blockchain en los países nórdicos.",
 "tip_lead": "¿Has visto una noticia sobre cripto, bitcoin o blockchain en Noruega, Suecia, Dinamarca, Finlandia o Islandia que se nos haya pasado? Envíanos el enlace.",
 "tip_private_soon": "Estamos trabajando en una forma de enviar pistas de manera privada. Hasta que esté lista, esta página no admite pistas.",
+"tip_onion_only": "Puedes enviar una pista de forma privada a través de nuestra línea de pistas onion en Tor Browser. Funciona sin JavaScript, cifra tu pista en cuanto llega y te da un código de recibo para comprobar si hay respuesta.",
 "tip_required": "(obligatorio)",
 "tip_honeypot": "Deja este campo vacío",
 "tip_send": "Enviar pista",

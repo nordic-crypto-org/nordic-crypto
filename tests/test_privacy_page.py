@@ -38,6 +38,8 @@ def main():
         for k in STORAGE_KEYS + HOSTS:
             check(k in text, f"{name}: names {k}")
         check(text.index('<p class="lead">') < text.index('<div class="prose">'), name + ": lead above the text column")
+        tips = text.split('<h2 id="tips">', 1)[1].split("<h2 ", 1)[0]
+        check("JavaScript" in tips and "64 MB" in tips and "opens only when" not in tips, name + ": tips section describes the onion tip line")
         check("../stats/#data-policy" in text.replace("{{UP}}", "../"), name + ": links the stats data policy")
     for lang in i18n.ALL_LANGS:
         for k in ("pp_title", "pp_desc", "pp_on", "pp_off", "pp_note", "pp_whole"):
@@ -54,6 +56,12 @@ def main():
 
     with tempfile.TemporaryDirectory() as tmp:
         build.SITE = tmp
+        os.environ["TIP_ONION"] = "http://" + "a" * 56 + ".onion"   # an onion tip line switches Private tips on
+        build.LANG = "en"
+        build.build_privacy()
+        html = open(os.path.join(tmp, "privacy", "index.html"), encoding="utf-8").read()
+        check(f'<b>Private tips</b>: <span class="tag">{build.E(build.t("pp_on"))}</span>' in html, "tips: on with an onion tip line")
+        os.environ.pop("TIP_ONION")
         for lang in ("en", "nb", "nn", "de", "ar"):
             build.LANG = lang
             build.build_privacy()

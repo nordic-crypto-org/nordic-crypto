@@ -446,6 +446,7 @@ S.update({
 "tip_desc": "Beri tahu Nordic Crypto tentang artikel kripto, bitcoin, atau blockchain di kawasan Nordik.",
 "tip_lead": "Melihat berita tentang kripto, bitcoin, atau blockchain di Norwegia, Swedia, Denmark, Finlandia, atau Islandia yang terlewat oleh kami? Kirimkan tautannya.",
 "tip_private_soon": "Kami sedang menyiapkan cara untuk mengirim tip secara privat. Sampai siap, halaman ini belum menerima tip.",
+"tip_onion_only": "Anda bisa mengirim tip secara privat melalui jalur tip onion kami di Tor Browser. Jalur ini bekerja tanpa JavaScript, mengenkripsi tip Anda begitu tiba, dan memberi Anda kode tanda terima untuk memeriksa balasan.",
 "tip_required": "(wajib)",
 "tip_honeypot": "Biarkan kolom ini kosong",
 "tip_send": "Kirim tip",
