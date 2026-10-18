@@ -49,6 +49,8 @@ T = {
             why="Þú færð þennan póst vegna þess að þú ert áskrifandi að fréttabréfi Nordic Crypto.",
             unsub="Segja upp áskrift", sign="The Nordic Crypto team"),
 }
+FROM_NC = {"en": "From Nordic Crypto", "nn": "Frå Nordic Crypto", "nb": "Fra Nordic Crypto", "sv": "Från Nordic Crypto", "da": "Fra Nordic Crypto", "fi": "Nordic Cryptolta", "is": "Frá Nordic Crypto"}
+URL_RE = re.compile(r"https?://[^\s<>()]+[^\s<>().,;:!?]")
 NEW_PODS = {"en": "New podcasts", "nn": "Nye podkastar", "nb": "Nye podkaster", "sv": "Nya poddar", "da": "Nye podcasts", "fi": "Uudet podcastit", "is": "Ný hlaðvörp"}
 NO_AIKI = re.compile(r"(?<![\w-])(?:AI|KI)(?![\w])")
 COUNTRY_ORDER = ["NO", "SE", "DK", "FI", "IS", "NORDIC", "EU"]
@@ -67,11 +69,42 @@ def new_podcasts(since, until, path=os.path.join(ROOT, "data", "podcasts.json"))
     rows = json.load(open(path, encoding="utf-8")).get("podcasts") or []
     return [p for p in rows if p.get("added_at") and since <= dt.date.fromisoformat(p["added_at"]) <= until]
 
-def render(items, lang, since, until, pods=()):
+def featured(until, path=os.path.join(ROOT, "newsletter", "featured.json")):
+    """House items (newsletter/featured.json) whose [from, until] window contains this issue's until date."""
+    if not os.path.exists(path): return []
+    rows = json.load(open(path, encoding="utf-8")).get("items") or []
+    return [f for f in rows if dt.date.fromisoformat(f["from"]) <= until <= dt.date.fromisoformat(f["until"])]
+
+def _linkify(text):
+    out, last = [], 0
+    for m in URL_RE.finditer(text):
+        out += [html.escape(text[last:m.start()]), f'<a href="{html.escape(m.group(0))}" style="color:#0f5ea8">{html.escape(m.group(0))}</a>']; last = m.end()
+    return "".join(out) + html.escape(text[last:])
+
+def render_featured(feats, lang):
+    """A 'From Nordic Crypto' block. Titles are <strong>, never the bold story link, so the issue.html story parsers skip it."""
+    md, tx, hm = [], [], []
+    if not feats: return md, tx, hm
+    h = FROM_NC[lang]; md += [f"## {h}", ""]; tx += [h.upper(), ""]; hm.append(f'<h2 style="font-size:18px;margin:20px 0 6px">{html.escape(h)}</h2>')
+    for f in feats:
+        title = f["title"].get(lang) or f["title"]["en"]; paras = f["text"].get(lang) or f["text"]["en"]
+        md += [f"**{title}**", ""]; tx += [title, ""]; hm.append(f'<p style="margin:0 0 8px;text-align:left"><strong>{html.escape(title)}</strong></p>')
+        for para in paras:
+            if isinstance(para, list) or isinstance(para, dict):
+                rows = para if isinstance(para, list) else para["ul"]; tag = "ol" if isinstance(para, list) else "ul"
+                md += [(f"{n}. " if tag == "ol" else "- ") + r for n, r in enumerate(rows, 1)] + [""]
+                tx += [(f"{n}. " if tag == "ol" else "- ") + r for n, r in enumerate(rows, 1)] + [""]
+                hm.append(f'<{tag} style="margin:0 0 10px;text-align:left">' + "".join(f"<li>{_linkify(r)}</li>" for r in rows) + f"</{tag}>")
+            else:
+                md += [para, ""]; tx += [para, ""]; hm.append(f'<p style="margin:0 0 10px;text-align:left">{_linkify(para)}</p>')
+    return md, tx, hm
+
+def render(items, lang, since, until, pods=(), feats=()):
     s = T[lang]; home = BASE + ("" if lang == "en" else lang + "/")
     rng = f"{i18n.short_dm(lang, since)}–{i18n.short_date(lang, until)}"
     md = [f"# {s['h']}", f"*{rng}*", "", s["intro"], ""]; tx = [s["h"], rng, "", s["intro"], ""]
     hm = [f'<h1 style="font-size:24px;margin:0 0 4px">{html.escape(s["h"])}</h1><p style="color:#4B5563;margin:0 0 12px">{html.escape(rng)}</p><p>{html.escape(s["intro"])}</p>']
+    fm, ft, fh = render_featured(feats, lang); md += fm; tx += ft; hm += fh
     cur = None
     for i in items:
         if i["country"] != cur:
@@ -112,7 +145,7 @@ def main(argv=None):
     news = json.load(open(os.path.join(o.site_dir, "data", "news.json"), encoding="utf-8"))
     if news.get("preview"): raise SystemExit("digest: refusing preview data")
     until = dt.date.fromisoformat(o.until) if o.until else dt.datetime.now(OSLO).date(); since = until - dt.timedelta(days=o.days - 1)
-    items = pick(news["items"], since, until); md, tx, hp = render(items, o.lang, since, until, new_podcasts(since, until))
+    items = pick(news["items"], since, until); md, tx, hp = render(items, o.lang, since, until, new_podcasts(since, until), featured(until))
     if o.lang in ("nn", "nb"):
         bad = [m.group(0) for m in NO_AIKI.finditer(re.sub(r"https?://\S+", "", md))]
         own = [b for b in bad if not any(b in i["title"] for i in items)]   # external headlines stay as published
