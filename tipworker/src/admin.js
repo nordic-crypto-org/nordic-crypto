@@ -17,9 +17,12 @@
 //   GET  /api/admin/press-sends (bearer) -> press release sends with their recipients (migrations/0008_press_history.sql).
 //   POST /api/admin/press-sends (bearer ADMIN_DELIVERY_TOKEN) {send:{id, release_id, at, from, dry_run, recipients:[{email,status,error}]}}
 //                               – used by tools/press_history.py; idempotent by send id.
+//   GET  /api/admin/schedule    (bearer) -> campaigns and scheduled posts with next run (src/schedule.js, migrations/0010).
+//   POST /api/admin/schedule    (bearer ADMIN_DELIVERY_TOKEN) {campaigns, schedule} – replaces both; tools/admin_schedule.py.
 // Why bearer and not a cookie: the page is on nordiccrypto.no and the Worker on workers.dev, a different site; browsers
 // (Safari, Firefox strict, Chrome's third-party-cookie limits) drop cross-site cookies. CORS here allows only ADMIN_ORIGIN.
 import { sendMail } from "./mailer.js";
+import { listSchedule, recordSchedule } from "./schedule.js";
 
 export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, ADMIN_RATE_N = 5, CODE_TRIES = 5;
 export const ADMIN_ORIGIN = "https://nordiccrypto.no";
@@ -229,6 +232,15 @@ async function recordPressSend(req, env, h) {
   return json(req, 200, { ok: true, recorded: rs.length });
 }
 
+async function postSchedule(req, env, h) {
+  const t = bearer(req), secret = env.ADMIN_DELIVERY_TOKEN || "";
+  if (!t || secret.length < 32 || !sameStr(t, secret)) return json(req, 401, { ok: false });
+  const raw = await h.readCapped(req, 262144);
+  let f; try { f = JSON.parse(new TextDecoder().decode(raw)); } catch { return json(req, 400, { ok: false }); }
+  const n = await recordSchedule(env, f);
+  return n ? json(req, 200, { ok: true, ...n }) : json(req, 400, { ok: false });
+}
+
 export async function listPressSends(env) {
   const sends = (await env.DB.prepare("SELECT id, release_id, at, from_addr, dry_run, sent, failed FROM press_sends ORDER BY at DESC").all()).results || [];
   const rec = (await env.DB.prepare("SELECT send_id, email, status, error FROM press_send_recipients ORDER BY email").all()).results || [];
@@ -245,11 +257,13 @@ export async function admin(req, env, h, path) {
     if (req.method === "POST" && path === "/api/admin/logout") return await logout(req, env);
     if (req.method === "POST" && path === "/api/admin/deliveries") return await recordDeliveries(req, env, h);
     if (req.method === "POST" && path === "/api/admin/press-sends") return await recordPressSend(req, env, h);
-    if (req.method === "GET" && (path === "/api/admin/me" || path === "/api/admin/subscribers" || path === "/api/admin/press-sends")) {
+    if (req.method === "POST" && path === "/api/admin/schedule") return await postSchedule(req, env, h);
+    if (req.method === "GET" && ["/api/admin/me", "/api/admin/subscribers", "/api/admin/press-sends", "/api/admin/schedule"].includes(path)) {
       const s = await session(req, env);
       if (!s) return json(req, 401, { ok: false, error: "auth" });
       if (path === "/api/admin/me") return json(req, 200, { ok: true, email: s.email });
       if (path === "/api/admin/press-sends") return json(req, 200, { ok: true, ...(await listPressSends(env)) });
+      if (path === "/api/admin/schedule") return json(req, 200, { ok: true, ...(await listSchedule(env)) });
       return json(req, 200, { ok: true, email: s.email, ...(await listSubscribers(env)) });
     }
     return json(req, 404, { ok: false });
