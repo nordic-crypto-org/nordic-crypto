@@ -93,10 +93,19 @@ class TelegramEvents(unittest.TestCase):
         self.gonews(items)
         self.assertEqual(len(self.sender.sent), 1)
         self.assertEqual(self.sender.sent[0][2],
-                         "📰 <b>Nye saker på Nordic Crypto – 9.10.2026</b>\n\n"
+                         "📰 <b>New on Nordic Crypto – 9 Oct 2026</b>\n\n"
                          '🇸🇪 <a href="https://nordiccrypto.no/stories/n1/">A &amp; B</a> – Kaupr\n\n'
                          '🇸🇪 <a href="https://nordiccrypto.no/stories/n2/">Story n2</a> – Kaupr')
         self.gonews(items); self.assertEqual(self.sender.sent, [], "never posted twice")
+
+    def test_news_digest_is_english(self):
+        items = [self.story("i1", "2026-10-08T07:00:00+00:00", title="Sak på svensk", title_en=None,
+                            title_i18n={"en": "English headline", "nb": "Norsk tittel"}),
+                 self.story("i2", "2026-10-08T08:00:00+00:00", title_en="Only English")]
+        (_, text), = te.news_digests(items, NOW)
+        self.assertTrue(text.startswith("📰 <b>New on Nordic Crypto – 9 Oct 2026</b>"))
+        self.assertIn(">English headline</a> – Kaupr", text); self.assertIn(">Only English</a>", text)
+        self.assertNotIn("Sak", text); self.assertNotIn("Nye saker", text)
 
     def test_news_waits_for_the_round_to_settle(self):
         self.gonews([])

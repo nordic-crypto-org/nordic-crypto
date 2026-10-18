@@ -25,6 +25,7 @@ FEED = "https://nordiccrypto.no/api/v1/events.json"
 NEWS_FEED = "https://nordiccrypto.no/api/v1/news.json"
 FLAGS = {"NO": "🇳🇴", "SE": "🇸🇪", "DK": "🇩🇰", "FI": "🇫🇮", "IS": "🇮🇸", "FO": "🇫🇴", "GL": "🇬🇱", "AX": "🇦🇽"}
 OSLO = zoneinfo.ZoneInfo("Europe/Oslo")
+MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 UA = "nordic-crypto-telegram-events/1 (+https://nordiccrypto.no/)"
 
 
@@ -64,7 +65,7 @@ def fresh_news(items, now, max_age_days):
     out = []
     for e in items:
         pub = parse(e.get("published"))
-        if not e.get("id") or not pub or not (e.get("title_en") or e.get("title")):
+        if not e.get("id") or not pub or not en_title(e):
             continue
         if pub < now - dt.timedelta(days=max_age_days):
             continue
@@ -72,14 +73,19 @@ def fresh_news(items, now, max_age_days):
     return [e for _, _, e in sorted(out, key=lambda x: (x[0], x[1]))]
 
 
+def en_title(e):
+    return e.get("title_en") or (e.get("title_i18n") or {}).get("en") or e.get("title")
+
+
 def news_digests(items, now, limit=4096):
     """One HTML digest for the round, oldest first; split into more messages only past Telegram's limit."""
     E = lambda s: html.escape(str(s or ""), quote=False)
-    head = f"📰 <b>Nye saker på Nordic Crypto – {now.astimezone(OSLO).strftime('%-d.%-m.%Y')}</b>"
+    d = now.astimezone(OSLO)
+    head = f"📰 <b>New on Nordic Crypto – {d.day} {MONTHS[d.month - 1]} {d.year}</b>"
     out, ids, text = [], [], head
     for e in items:
         flag = FLAGS.get((e.get("country") or "").upper(), "")
-        title = E(e.get("title_en") or e["title"])
+        title = E(en_title(e))
         link = e.get("html_url") or e.get("url")
         line = (f"{flag} " if flag else "• ") + (f'<a href="{html.escape(link, quote=True)}">{title}</a>' if link else title)
         if e.get("source_name"):
