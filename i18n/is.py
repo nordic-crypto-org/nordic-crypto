@@ -478,6 +478,7 @@ S.update({
 "filters_clear": "Hreinsa síur",
 "n_row1": "1 lína",
 "foot_source": "Frumkóði",
+"foot_tor": "Afrit á Tor (aðeins lestur)",
 "brand_since": "frá 2026",
 })
 

@@ -478,6 +478,7 @@ S.update({
 "filters_clear": "Fjern filtera",
 "n_row1": "1 rad",
 "foot_source": "Kjeldekode",
+"foot_tor": "Kopi på Tor (berre lesing)",
 "brand_since": "sidan 2026",
 })
 

@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "清除筛选",
 "n_row1": "1 行",
 "foot_source": "源代码",
+"foot_tor": "Tor 只读副本",
 "brand_since": "始于 2026 年",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "开发者",

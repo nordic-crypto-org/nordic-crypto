@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "Hapus filter",
 "n_row1": "1 baris",
 "foot_source": "Kode sumber",
+"foot_tor": "Salinan di Tor (hanya baca)",
 "brand_since": "sejak 2026",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "Pengembang",

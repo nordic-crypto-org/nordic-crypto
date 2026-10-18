@@ -6,7 +6,12 @@ The app forwards each tip to the tipworker `POST /api/private-tip` with `Authori
 
 GitHub Pages and Cloudflare cannot host an onion service. This runs on a VPS you control. **Do not start it from this repository's build, and do not commit `.env`.**
 
-The clearnet `/tip/` page mentions Tor. Until `tipserver/config.json` has an `onion` value, the page says the address is not published yet. It does not invent an address.
+Published addresses:
+
+- Tip page: `http://2565h4szq7ddbo7hggz2qr5uykttblef65tyh7zckiqwobvmsul7o2id.onion/` (`onion` in `tipserver/config.json`). `/tip/` links it and carries its `onion-location` meta tag.
+- Read-only copy of nordiccrypto.no: `http://qbj3g5ks73h4swowtcbwm7a47ruonxzmntfym7y4rdqyzg2wpph2fzad.onion/` (`onion` in `site_url.json`). Every other page carries its `onion-location` meta tag and a footer link.
+
+Without an `onion` value, `/tip/` says the address is not published yet. It does not invent an address.
 
 ## What you need
 
@@ -74,7 +79,7 @@ This onion page is not SecureDrop. It is a small form that lands in the same pri
 
 ## Onion-Location
 
-Tor Browser looks for an `Onion-Location` HTTP header, and also for `<meta http-equiv="onion-location">`. The meta tag is emitted on the built `/tip/` page when the address is in `tipserver/config.json`. The header has to be set on `nordiccrypto.no` itself (Cloudflare Snippet or Transform Rule). The steps are below. Leave both off until `docker compose exec tor cat /var/lib/tor/tip/hostname` has been run and the address is the one you intend to publish.
+Tor Browser looks for an `Onion-Location` HTTP header, and also for `<meta http-equiv="onion-location">`. The meta tag is emitted on the built `/tip/` page (tip address) and on every other page (site copy, same path). The header has to be set on `nordiccrypto.no` itself (Cloudflare Snippet or Transform Rule). The steps are below. The header is not set yet.
 
 ## Onion-Location header
 
@@ -82,5 +87,4 @@ GitHub Pages cannot set the header, so it is set in front of the site. In Cloudf
 
 - If the path is `/tip` or `/tip/`, set `Onion-Location` to `http://<address>.onion/en/`.
 - If the path matches `/<lang>/tip`, set `Onion-Location` to `http://<address>.onion/<lang>/`.
-
-Do not send the header while the address is still unpublished. `/tip/` says the address is not published yet until `onion` is set.
+- Other paths: `http://qbj3g5ks73h4swowtcbwm7a47ruonxzmntfym7y4rdqyzg2wpph2fzad.onion` plus the same path.

@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "مسح عوامل التصفية",
 "n_row1": "صف واحد",
 "foot_source": "الشيفرة المصدرية",
+"foot_tor": "نسخة على Tor (للقراءة فقط)",
 "brand_since": "منذ 2026",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "المطورون",

@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 import build
 
-ENV = ("TIP_ENDPOINT", "TIP_TURNSTILE_SITE_KEY", "CHAT_TURNSTILE_SITE_KEY", "TIP_PAGE_SERVER", "TIP_ONION")
+ENV = ("TIP_ENDPOINT", "TIP_TURNSTILE_SITE_KEY", "CHAT_TURNSTILE_SITE_KEY", "TIP_PAGE_SERVER", "TIP_ONION", "SITE_ONION")
 
 class TipPage(unittest.TestCase):
     def setUp(self):
@@ -15,6 +15,7 @@ class TipPage(unittest.TestCase):
         os.environ["TIP_ENDPOINT"] = ""          # ignore whatever tipserver/config.json holds
         os.environ["TIP_TURNSTILE_SITE_KEY"] = ""
         os.environ["TIP_ONION"] = ""
+        os.environ["SITE_ONION"] = ""
         self.tmp = tempfile.mkdtemp(prefix="nc-tip-"); self.old_site = build.SITE; build.SITE = self.tmp
 
     def tearDown(self):
@@ -88,6 +89,26 @@ class TipPage(unittest.TestCase):
         for bad in ("http://short.onion", "https://" + "a" * 56 + ".onion", "http://" + "A" * 56 + ".onion", 'http://x"><script>'):
             os.environ["TIP_ONION"] = bad
             self.assertIsNone(build.tip_onion(), bad)
+
+    def test_site_onion_on_other_pages_not_tip(self):
+        site, tip = "http://" + "b" * 56 + ".onion", "http://" + "a" * 56 + ".onion"
+        os.environ["SITE_ONION"] = site + "/"
+        build.LANG = "sv"
+        build.page("about", "About", "about", "<p>x</p>", "d")
+        with open(os.path.join(self.tmp, "sv", "about", "index.html"), encoding="utf-8") as fh: html = fh.read()
+        self.assertIn(f'<meta http-equiv="onion-location" content="{site}/sv/about/">', html)
+        self.assertIn(f'href="{site}/sv/about/"', html.split("<footer>", 1)[1])
+        self.assertNotIn("onion-location", self.page("en"))
+        os.environ["TIP_ONION"] = tip
+        html = self.page("en")
+        self.assertEqual(html.count("onion-location"), 1); self.assertIn(f'content="{tip}/en/"', html)
+        os.environ["SITE_ONION"] = "http://bad.onion"
+        self.assertIsNone(build.site_onion())
+
+    def test_committed_onion_addresses_are_valid(self):
+        for k in ("TIP_ONION", "SITE_ONION"): os.environ.pop(k)
+        self.assertEqual(build.tip_onion(), "http://2565h4szq7ddbo7hggz2qr5uykttblef65tyh7zckiqwobvmsul7o2id.onion")
+        self.assertEqual(build.site_onion(), "http://qbj3g5ks73h4swowtcbwm7a47ruonxzmntfym7y4rdqyzg2wpph2fzad.onion")
 
     def test_retired_github_template(self):
         with open(os.path.join(ROOT, ".github", "ISSUE_TEMPLATE", "tip.yml"), encoding="utf-8") as fh:

@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "条件をクリア",
 "n_row1": "1行",
 "foot_source": "ソースコード",
+"foot_tor": "Tor 上の閲覧専用コピー",
 "brand_since": "2026年から",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "開発者",

@@ -515,6 +515,7 @@ S.update({
 "filters_clear": "Скинути фільтри",
 "n_row1": "1 рядок",
 "foot_source": "Вихідний код",
+"foot_tor": "Копія в Tor (лише читання)",
 "brand_since": "з 2026",
 })
 

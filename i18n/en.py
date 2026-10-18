@@ -497,6 +497,7 @@ S.update({
 "filters_clear": "Clear filters",
 "n_row1": "1 row",
 "foot_source": "Source code",
+"foot_tor": "Read-only copy on Tor",
 "brand_since": "since 2026",
 })
 

@@ -478,6 +478,7 @@ S.update({
 "filters_clear": "Tyhjennä suodattimet",
 "n_row1": "1 rivi",
 "foot_source": "Lähdekoodi",
+"foot_tor": "Kopio Torissa (vain luku)",
 "brand_since": "vuodesta 2026",
 })
 

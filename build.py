@@ -673,6 +673,20 @@ def source_footer_line():
     the link text is the GitHub path. Not repeated in the page body or in a footer column."""
     return (f'<p class="footsource"><span class="footsource-label">{E(t("foot_source"))}:</span> '
             f'<a href="{SITE_REPO}" rel="noopener"><bdi dir="ltr">github.com/nordic-crypto-org/nordic-crypto</bdi></a></p>')
+def site_onion():
+    """Read-only Tor copy of the site as http://<56 base32 chars>.onion: env SITE_ONION, else site_url.json onion; else None."""
+    o = os.environ.get("SITE_ONION")
+    if o is None: o = (load(P("site_url.json"), {}) or {}).get("onion")
+    o = (o or "").strip().rstrip("/")
+    return o if re.fullmatch(r"http://[a-z2-7]{56}\.onion", o) else None
+def site_onion_url(slug=""):
+    o = site_onion()
+    return o and o + "/" + lp() + (slug + "/" if slug else "")
+def tor_footer_line(slug=""):
+    href = site_onion_url(slug)
+    if not href: return ""
+    return (f'<p class="footsource foottor"><span class="footsource-label">{E(t("foot_tor"))}:</span> '
+            f'<a href="{E(href)}"><bdi dir="ltr">{E(site_onion().split("//", 1)[1])}</bdi></a></p>')
 def site_footer(rel, root, slug=""):
     """Brand, three link columns (the header sections, the pages about the site, where to follow), the newsletter form while
     signup is open, notifications while the Worker is set, the colophon (the i18n footer string), then the source-code line."""
@@ -702,7 +716,7 @@ def site_footer(rel, root, slug=""):
             f'{nlfoot}{pushfoot}<p class="colophon">{t("footer", site=SITE_NAME, rel=rel, root=root, ios_tv=t("ios_tv"), contributors=contributors_link())}</p>'
             f'<p class="colophon">{E(t("logo_disclaimer"))}</p>'
             f'<p class="colophon">{E(t("contact_us"))}: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></p>'
-            f'{source_footer_line()}</div></footer>')
+            f'{tor_footer_line(slug)}{source_footer_line()}</div></footer>')
 PAGES_WRITTEN = set()   # (LANG, slug) of every page written; RSS items link only to story pages that exist
 NL_FEED_TITLE = "Nordic Crypto nyhetsbrev"
 def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="", hero="", og=None, share_text=None):
@@ -713,6 +727,9 @@ def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="
     root = "../" * depth or "./"           # site root (data/, assets/, screen/)
     rel = root + lp()                      # home of this language
     url = BASE + lp() + (slug + "/" if slug else "")
+    onion = site_onion_url(slug)
+    if onion and slug != "tip" and "onion-location" not in head_extra:   # /tip/ points at the onion tip page instead
+        head_extra += f'<meta http-equiv="onion-location" content="{E(onion)}">'
     nl_alt = (f'<link rel="alternate" type="application/rss+xml" title="{E(NL_FEED_TITLE)}" href="{E(rel)}newsletter/rss.xml">'
               if (not slug or slug == "newsletter" or slug.startswith("newsletter/")) and nl_issues() else "")
     s = snippets(url, f"{title} – {SITE_NAME}" if slug else f"{SITE_NAME} – {t('site_desc_suffix')}", share_text)
