@@ -28,7 +28,7 @@ KEYS = (
 )
 COUNTRIES = {"NO", "SE", "DK", "FI", "IS", "FO", "GL", "AX"}
 EARLIEST = dt.date(2008, 10, 31)
-TODAY = dt.date(2026, 10, 7)
+TODAY = dt.date(2026, 10, 18)
 
 
 def check(ok, msg, fails):
