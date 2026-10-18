@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "ফিল্টার মুছুন",
 "n_row1": "১টি সারি",
 "foot_source": "সোর্স কোড",
+"foot_tor": "Tor-এ শুধু পড়ার কপি",
 "brand_since": "২০২৬ থেকে",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "ডেভেলপার",

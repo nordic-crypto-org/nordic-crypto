@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "Futa vichujio",
 "n_row1": "Safu 1",
 "foot_source": "Msimbo chanzo",
+"foot_tor": "Nakala kwenye Tor (kusoma tu)",
 "brand_since": "tangu 2026",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "Wasanidi",

@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "फ़िल्टर हटाएँ",
 "n_row1": "1 पंक्ति",
 "foot_source": "सोर्स कोड",
+"foot_tor": "Tor पर केवल पढ़ने वाली प्रति",
 "brand_since": "2026 से",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "डेवलपर",

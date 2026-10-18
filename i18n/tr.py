@@ -721,6 +721,7 @@ S = {
 "filters_clear": "Filtreleri temizle",
 "n_row1": "1 satır",
 "foot_source": "Kaynak kodu",
+"foot_tor": "Tor'da salt okunur kopya",
 "brand_since": "2026'dan beri",
 "nav_books": "Kitaplar",
 "books_title": "Kitaplar – Bitcoin ve kripto üzerine Nordik kitaplar",

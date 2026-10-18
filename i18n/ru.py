@@ -687,6 +687,7 @@ S.update({
 "filters_clear": "Сбросить фильтры",
 "n_row1": "1 строка",
 "foot_source": "Исходный код",
+"foot_tor": "Копия в Tor (только чтение)",
 "brand_since": "с 2026 года",
 # open-source developers page (/developers/): footer and Who's who link; the page itself falls back to English
 "dev_nav": "Разработчики",
