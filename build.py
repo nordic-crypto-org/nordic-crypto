@@ -230,7 +230,7 @@ SITE_YOUTUBE = "https://www.youtube.com/@NordicCryptoTV"
 # A flag stands for a language, not a nationality; languages without one obvious country keep the neutral globe.
 LANG_FLAG = {"en": "gb", "nn": "no", "nb": "no", "sv": "se", "da": "dk", "fi": "fi", "is": "is", "zh": "cn", "hi": "in",
              "es": "es", "fr": "fr", "ar": None, "bn": "bd", "pt": "pt", "ru": "ru", "ur": "pk", "id": "id", "de": "de",
-             "ja": "jp", "sw": "tz", "mr": "in", "fa": "ir", "uk": "ua"}
+             "ja": "jp", "sw": "tz", "mr": "in", "fa": "ir", "uk": "ua", "tr": "tr"}
 def lang_flag(l, root, lazy=False):
     c = LANG_FLAG.get(l)
     lazy = " loading=\"lazy\"" if lazy else ""
