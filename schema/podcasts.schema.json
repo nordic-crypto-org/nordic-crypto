@@ -1,0 +1,155 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://nordiccrypto.no/api/v1/schema/podcasts.schema.json",
+ "title": "Podcasts",
+ "description": "Nordic podcasts on bitcoin and crypto, in data/podcasts.json. Metadata and links only; audio is never hosted.",
+ "x-nordic": {
+  "id": "podcasts",
+  "order": 65,
+  "files": [
+   "data/podcasts.json"
+  ],
+  "pages": [
+   "/podcasts/"
+  ],
+  "api": [
+   {
+    "path": "/api/v1/podcasts.json",
+    "note": "Every podcast, active first"
+   }
+  ],
+  "relations": [],
+  "derived": [],
+  "omitted_from_api": [],
+  "sections": [
+   {
+    "id": "podcast",
+    "title": "Podcast",
+    "row": "#/$defs/podcast"
+   },
+   {
+    "id": "episode",
+    "title": "Episode",
+    "row": "#/$defs/episode"
+   }
+  ],
+  "row": "#/$defs/podcast"
+ },
+ "type": "object",
+ "required": [
+  "podcasts"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "updated": {
+   "type": "string",
+   "description": "When the episode lists were last refreshed.",
+   "format": "date-time"
+  },
+  "active_days": {
+   "type": "integer",
+   "description": "A podcast with an episode in this many days is active."
+  },
+  "podcasts": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/podcast"
+   }
+  }
+ },
+ "$defs": {
+  "podcast": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "country",
+    "language",
+    "feed"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "type": "string",
+     "description": "Stable slug."
+    },
+    "name": {
+     "type": "string",
+     "description": "Podcast name."
+    },
+    "country": {
+     "type": "string",
+     "description": "ISO country code."
+    },
+    "language": {
+     "type": "string",
+     "description": "ISO language code."
+    },
+    "feed": {
+     "type": "string",
+     "description": "Public RSS feed URL."
+    },
+    "site": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Podcast website."
+    },
+    "flags": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "enum": [
+       "advertiser-paid",
+       "advocacy-group",
+       "affiliate-links",
+       "altcoin-promotion",
+       "exchange-owned",
+       "exchange-partner",
+       "exchange-sponsored",
+       "shop-owned"
+      ]
+     },
+     "description": "Disclosures about ownership, sponsors or promotion."
+    },
+    "active": {
+     "type": "boolean",
+     "description": "Has a recent episode."
+    },
+    "added_at": {
+     "type": "string",
+     "description": "When we added it."
+    },
+    "episodes": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/episode"
+     },
+     "description": "Latest episodes."
+    }
+   }
+  },
+  "episode": {
+   "type": "object",
+   "required": [
+    "title"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "title": {
+     "type": "string",
+     "description": "Episode title."
+    },
+    "date": {
+     "type": "string",
+     "description": "Publication date."
+    },
+    "link": {
+     "type": "string",
+     "description": "Episode page."
+    }
+   }
+  }
+ }
+}
