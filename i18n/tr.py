@@ -828,3 +828,4 @@ S = {
 "pod_flag_advocacy_group": "Savunuculuk grubu",
 "contact_reg": "Tek kişi işletmesi (enkeltpersonforetak), Merkezi Koordinasyon Kayıtları (Enhetsregisteret) ve İşletme Kayıtları (Foretaksregisteret) içinde kayıtlı, KDV'ye tabi",
 }
+S.update({"tos_title": "Kullanım koşulları", "tos_desc": "nordiccrypto.no kullanım koşulları: yalnızca haber ve bilgi, yatırım tavsiyesi değildir.", "tos_note": "Bu sayfa İngilizce ve Norveççe yazılmıştır. Kısacası: Nordic Crypto haber ve bilgi yayımlar, yatırım tavsiyesi vermez."})  # terms of use page (/terms/)
