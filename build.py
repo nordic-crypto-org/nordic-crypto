@@ -3999,7 +3999,7 @@ table.adm th[aria-sort=ascending] button::after{content:" ▲"}table.adm th[aria
 .adm-st.confirmed{background:var(--gold);color:var(--on-gold)}.adm-st.pending{background:var(--soft);color:var(--fg);border:1px solid var(--line-strong)}
 .adm-st.unsubscribed{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
 .adm-st.active{background:var(--gold);color:var(--on-gold)}.adm-st.awaiting_approval{background:var(--soft);color:var(--fg);border:1px solid var(--line-strong)}
-.adm-st.paused,.adm-st.done{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
+.adm-st.paused,.adm-st.awaiting_setup,.adm-st.done{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
 #adm-login{max-width:28rem}.adm-sends{margin:.75rem 0 0}.adm-sends details{margin:.4rem 0}.adm-sends ul{margin:.3rem 0 .6rem;font-family:var(--f-ui);font-size:14px}</style>"""
 
 ADMIN_JS = r"""<script>
