@@ -43,8 +43,10 @@ setting that. If any is missing, the script logs `skipping: missing …` and exi
 ~08:23 Oslo publish, and on manual dispatch (`issue`, `dry_run`). It commits `data/x_posted.json` back to `main`.
 
 ## Daily news digest
-`tools/x_daily.py` (workflow `.github/workflows/x-daily.yml`, about 20:07 Oslo every day) posts one English digest of the
-stories published since the last digest: `📰 New on Nordic Crypto – 18 Oct 2026`, then per story the flag, English
-headline (`title_en`, else `title_i18n.en`) and `https://nordiccrypto.no/stories/<id>/`. Past 280 characters it
-becomes a thread. No new stories: no post. `data/x_daily_posted.json` records each Oslo day, so a day is never posted twice.
+`tools/x_daily.py` (`.github/workflows/x-daily.yml`, after every successful "Deploy site" and hourly at :37) posts one
+English digest per Oslo day of the stories not yet in a digest: `📰 New on Nordic Crypto – 18 Oct 2026`, then per story
+the flag, English headline (`title_en`, else `title_i18n.en`) and `https://nordiccrypto.no/stories/<id>/`. Past 280
+characters it becomes a thread. It waits until every new story has its headline and summary in all site languages (as
+`tools/story_translate.py` plans them) and its page answers 200; from 18:00 Oslo it posts the ready ones and the rest go
+in a later digest. Stories after the day's digest go in the next day's. `data/x_daily_posted.json` records each day.
 Same secrets as above. `python3 tools/x_daily.py --dry-run`; tests: `python3 -m unittest tests.test_x_daily`.
