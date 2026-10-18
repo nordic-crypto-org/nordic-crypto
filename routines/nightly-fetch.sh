@@ -5,7 +5,7 @@
 # The workflow writes the editor queue onto the fetch-queue branch. It does not push main or gh-pages.
 # Exit code != 0 if the fetch fails, if 80% or more of the sources error, if the preview build fails,
 # if this run exceeds NIGHTLY_TIMEOUT_SECS (default 3 h), or if another run still holds a fresh lock.
-# Editor workflow after this run: English summary first, then summary_i18n (nn, nb, sv, da, fi, is) + summary_i18n_source in
+# Editor workflow after this run: English summary first, then summary_i18n and title_i18n (every site language except English) + summary_i18n_source in
 # queue/approved.json; new org rows/people/logos/photos/profiles are "review: pending" until listed in org.approve (see README).
 #
 # Lock: logs/nightly-fetch.lock (override with NIGHTLY_LOCK). The lock is flock, so it dies with the process;
