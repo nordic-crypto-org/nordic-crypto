@@ -3998,6 +3998,8 @@ table.adm th[aria-sort=ascending] button::after{content:" ▲"}table.adm th[aria
 .adm-st{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600}
 .adm-st.confirmed{background:var(--gold);color:var(--on-gold)}.adm-st.pending{background:var(--soft);color:var(--fg);border:1px solid var(--line-strong)}
 .adm-st.unsubscribed{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
+.adm-st.active{background:var(--gold);color:var(--on-gold)}.adm-st.awaiting_approval{background:var(--soft);color:var(--fg);border:1px solid var(--line-strong)}
+.adm-st.paused,.adm-st.done{background:transparent;color:var(--muted);border:1px dashed var(--line-strong)}
 #adm-login{max-width:28rem}.adm-sends{margin:.75rem 0 0}.adm-sends details{margin:.4rem 0}.adm-sends ul{margin:.3rem 0 .6rem;font-family:var(--f-ui);font-size:14px}</style>"""
 
 ADMIN_JS = r"""<script>
@@ -4024,7 +4026,7 @@ function load(){api("/api/admin/subscribers").then(function(r){if(r.status===401
  if(!d)return;if(!d.ok){msg("Could not load the list.",1);return}
  show("app");msg("");$("adm-email").textContent=d.email;rows=d.rows||[];var t=d.totals||{};
  $("adm-tot").innerHTML="";[["All",t.all],["Confirmed",t.confirmed],["Pending",t.pending],["Unsubscribed",t.unsubscribed],["Deliveries",t.deliveries],["Last issue",d.last_issue==null?"–":"#"+d.last_issue]].forEach(function(p){var li=document.createElement("li"),b=document.createElement("b");b.textContent=p[1]==null?"0":p[1];li.appendChild(b);li.appendChild(document.createTextNode(p[0]));$("adm-tot").appendChild(li)});
- render();loadPress()}).catch(function(){msg("The admin service is not reachable.",1)})}
+ render();loadPress();loadSchedule()}).catch(function(){msg("The admin service is not reachable.",1)})}
 function loadPress(){var box=$("adm-sends");api("/api/admin/press-sends").then(function(r){return r.ok?r.json():null}).then(function(d){
  box.textContent="";if(!d||!d.ok){box.textContent="Could not load the sends.";return}
  if(!d.sends.length){box.textContent="No press emails sent yet.";return}
@@ -4032,6 +4034,14 @@ function loadPress(){var box=$("adm-sends");api("/api/admin/press-sends").then(f
   sum.textContent=s.release_id+" · "+s.at.slice(0,16).replace("T"," ")+" (Oslo) · "+s.from_addr+" · sent "+s.sent+", failed "+s.failed+(s.dry_run?" · DRY RUN":"");
   s.recipients.forEach(function(x){var li=document.createElement("li");li.textContent=x.email+" – "+x.status+(x.error?" ("+x.error+")":"");ul.appendChild(li)});
   det.appendChild(sum);det.appendChild(ul);box.appendChild(det)})}).catch(function(){box.textContent="Could not load the sends."})}
+function fill(id,list,cols){var tb=$(id);tb.textContent="";list.forEach(function(r){var tr=document.createElement("tr"),a=cols(r);a.forEach(function(v,i){
+  var td=document.createElement("td");if(i===a.length-1){var b=document.createElement("span");b.className="adm-st "+v;b.textContent=String(v).replace("_"," ");td.appendChild(b)}else td.textContent=v==null?"":v;tr.appendChild(td)});tb.appendChild(tr)})}
+function hm(v){return v?String(v).slice(0,16).replace("T"," "):""}
+function loadSchedule(){api("/api/admin/schedule").then(function(r){return r.ok?r.json():null}).then(function(d){
+ if(!d||!d.ok){$("adm-sched-msg").textContent="Could not load campaigns and schedule.";return}$("adm-sched-msg").textContent="";
+ fill("adm-camp-b",d.campaigns,function(c){return[c.name,c.channels,c.what,hm(c.starts_at)+(c.ends_at?" – "+hm(c.ends_at):""),c.status]});
+ fill("adm-sched-b",d.schedule,function(r){return[r.channel,r.what,r.cron?r.cron+(r.tz==="UTC"?" (UTC)":" (Oslo)"):hm(r.at),hm(r.next_run)||"–",r.status]})
+}).catch(function(){$("adm-sched-msg").textContent="Could not load campaigns and schedule."})}
 document.querySelectorAll("#adm-subs th button").forEach(function(b){b.addEventListener("click",function(){var k=b.parentNode.dataset.k;if(k===key)dir=-dir;else{key=k;dir=1}render()})});
 $("adm-q").addEventListener("input",render);$("adm-f").addEventListener("change",render);
 $("adm-form").addEventListener("submit",function(e){e.preventDefault();var b=$("adm-send");b.disabled=true;
@@ -4089,6 +4099,10 @@ def build_admin():
 """ + admin_press_table() + """
 <h3>Sends</h3><p class="adm-who">Recipients come from the admin service and are shown only to you. Times are Oslo time.</p>
 <div id="adm-sends" class="adm-sends"></div>
+<h2>Campaigns and schedule</h2><p class="adm-who">From the admin service, shown only to you. Times are Oslo time.</p><p id="adm-sched-msg" class="adm-who"></p>
+<div class="adm-wrap"><table class="adm" id="adm-camp"><thead><tr><th>Campaign</th><th>Channels</th><th>What</th><th>Period</th><th>Status</th></tr></thead><tbody id="adm-camp-b"></tbody></table></div>
+<h3>Scheduled posts</h3>
+<div class="adm-wrap"><table class="adm" id="adm-sched"><thead><tr><th>Channel</th><th>What</th><th>When</th><th>Next run</th><th>Status</th></tr></thead><tbody id="adm-sched-b"></tbody></table></div>
 </section>"""
     page("admin", "Admin", "", body, "Admin", langs=["en"], head_extra=grab, extra_script=ADMIN_JS.replace("__EP__", json.dumps(ep)))
 
