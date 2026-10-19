@@ -616,7 +616,7 @@ S = {
 "push_privacy": "Mii vurkkodeimmet dušše du neahttalohkki push-dieđihančujuhusa (čujuhus ja dat guokte čoavddasáni maid geavahat go krypterejat dieđáhusa), dan siiddu giela ja daid riikkaid maid válljet. Ii leat namma, ii ge e-poastačujuhus, ja ii ge leat vejolaš oaidnit maid olmmoš lea lohkan. Jáddat dieđihemiid seamma boaluin; dat sihkká diŋgojumi. Cloudflare Web Analytics rehkenastá galledemiid čoahkkehámis, almmá cookies, ja mii eat vuovdal daid dieđuid.",
 "push_unsupported": "Dát neahttalohkki ii sáhte čájehit dieđihemiid.",
 "push_denied": "Dieđiheamit dán siiddu birra leat jaskkodan.",
-"push_ios": "Jus leat iPhone dahje iPad, de bijat dán siiddu ruovttusiiddu ovddabeallái. iOS 16.4 dahje ođđaset veršuvnna sáhttá dalle geavahit dáid dieđihangaskaomiid. Apple push-bálvalus (APN) ii geavahuvvo.",
+"push_ios": "iPhone dahje iPad (iOS 16.4 dahje ođđaset): Deaddil Safaris Juoge ja vállje Lasit ruovttušearbmii. Raba Nordic Crypto ruovttušearpmas ja čuoggá dieđiheamit doppe.",
 "push_unavailable": "Dieđihanbálvalus ii leat vel doaibmagoahtán.",
 "push_working": "Bargamin...",
 "push_fail": "Ii sáhttán ođasmahttit dieđihemiid. Geahččal fas.",

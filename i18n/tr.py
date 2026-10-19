@@ -615,7 +615,7 @@ S = {
 "push_privacy": "Tarayıcınızdan yalnızca push aboneliği (adres ve mesajı şifrelemek için kullanılan iki anahtar), bu sayfanın dili ve seçtiğiniz ülkeler saklanır. İsim, e-posta adresi ve okuduklarınızın takibi yapılmaz. Bildirimleri aynı düğme ile kapatırsınız; bu aboneliği siler. Cloudflare Web Analytics çerez olmadan, toplu olarak ziyaretleri sayar ve bu verileri satmayız.",
 "push_unsupported": "Bu tarayıcı bildirim gösteremiyor.",
 "push_denied": "Tarayıcı ayarlarında bu site için bildirimler engellendi.",
-"push_ios": "iPhone veya iPad'te önce bu siteyi Ana Ekranınıza ekleyin. iOS 16.4 veya üzeri bu tarayıcı bildirimlerini kullanabilir. Apple'ın push servisi (APNs) kullanılmaz.",
+"push_ios": "iPhone veya iPad'de (iOS 16.4 veya üzeri): Safari'de Paylaş'a, ardından Ana Ekrana Ekle'ye dokunun. Nordic Crypto'yu Ana Ekran'dan açın ve bildirimleri orada açın.",
 "push_unavailable": "Bildirim hizmeti henüz açılmadı.",
 "push_working": "Çalışıyor…",
 "push_fail": "Bildirimler güncellenemedi. Tekrar deneyin.",

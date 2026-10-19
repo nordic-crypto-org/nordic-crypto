@@ -12,7 +12,7 @@ preview_urls = false
 enabled = false
 
 [vars]
-VAPID_SUBJECT = "mailto:push@cryptonordic.no"
+VAPID_SUBJECT = "mailto:jqrgen@nordiccrypto.no"
 
 [[kv_namespaces]]
 binding = "SUBSCRIPTIONS"

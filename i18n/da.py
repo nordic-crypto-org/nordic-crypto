@@ -366,7 +366,7 @@ S.update({
 "push_privacy": "Vi gemmer kun push-abonnementet fra din browser (adressen og de to nøgler, der krypterer beskeden), sproget på denne side og de lande, du vælger. Intet navn, ingen e-mailadresse og ingen sporing af, hvad du læser. Slå notifikationer fra med den samme knap; så slettes abonnementet. Cloudflare Web Analytics tæller besøg samlet, uden cookies, og vi sælger ikke de data.",
 "push_unsupported": "Denne browser kan ikke vise notifikationer.",
 "push_denied": "Notifikationer er blokeret for dette site i browserens indstillinger.",
-"push_ios": "På iPhone eller iPad skal du først føje sitet til hjemmeskærmen. iOS 16.4 eller nyere kan derefter bruge disse browsernotifikationer. Apples egen push-tjeneste (APNs) bruges ikke.",
+"push_ios": "På iPhone eller iPad (iOS 16.4 eller nyere): Tryk på Del i Safari, og vælg Føj til hjemmeskærm. Åbn Nordic Crypto fra hjemmeskærmen, og slå notifikationer til der.",
 "push_unavailable": "Notifikationstjenesten er ikke slået til endnu.",
 "push_working": "Arbejder …",
 "push_fail": "Kunne ikke opdatere notifikationerne. Prøv igen.",

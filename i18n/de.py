@@ -72,7 +72,7 @@ S = {
 "push_privacy": "Wir speichern nur das Push-Abonnement deines Browsers (die Adresse und die zwei Schlüssel, mit denen die Mitteilung verschlüsselt wird), die Sprache dieser Seite und die Länder, die du wählst. Kein Name, keine E-Mail-Adresse und keine Auswertung dessen, was du liest. Dieselbe Schaltfläche schaltet die Mitteilungen aus und löscht das Abonnement. Cloudflare Web Analytics zählt Besuche zusammengefasst, ohne Cookies, und wir verkaufen diese Daten nicht.",
 "push_unsupported": "Dieser Browser kann keine Mitteilungen anzeigen.",
 "push_denied": "Mitteilungen sind für diese Website in den Browser-Einstellungen blockiert.",
-"push_ios": "Auf iPhone oder iPad füge die Website zuerst zum Home-Bildschirm hinzu. iOS 16.4 oder neuer kann diese Browser-Mitteilungen dann nutzen. Apples eigener Push-Dienst (APNs) wird nicht verwendet.",
+"push_ios": "Auf iPhone oder iPad (iOS 16.4 oder neuer): Tippe in Safari auf Teilen und dann auf Zum Home-Bildschirm. Öffne Nordic Crypto vom Home-Bildschirm und schalte die Mitteilungen dort ein.",
 "push_unavailable": "Der Mitteilungsdienst ist noch nicht eingeschaltet.",
 "push_working": "Wird ausgeführt …",
 "push_fail": "Die Mitteilungen konnten nicht aktualisiert werden. Versuch es noch einmal.",

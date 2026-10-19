@@ -52,6 +52,13 @@
   function supported() {
     return "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
   }
+  // Safari on iPhone and iPad offers Web Push only to a site opened from the Home Screen.
+  function iosBrowserTab() {
+    var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var standalone = navigator.standalone === true || (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+    return ios && !standalone;
+  }
+  function notSupported() { return iosBrowserTab() ? (S.ios || S.unsupported || "") : (S.unsupported || ""); }
 
   boxes.forEach(function (el) {
     el.addEventListener("change", function () {
@@ -97,7 +104,7 @@
   function turnOn() {
     var ep = endpoint();
     if (!ep) { say(S.unavailable || ""); return; }
-    if (!supported()) { say(S.unsupported || ""); return; }
+    if (!supported()) { say(notSupported()); return; }
     say(S.working || "");
     Notification.requestPermission().then(function (perm) {
       if (perm !== "granted") { say(S.denied || ""); return; }
@@ -160,7 +167,7 @@
   });
 
   if (!supported()) {
-    say(S.unsupported || "");
+    say(notSupported());
     return;
   }
   navigator.serviceWorker.getRegistration().then(function (reg) {

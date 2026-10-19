@@ -366,7 +366,7 @@ S.update({
 "push_privacy": "Við vistum aðeins push-áskriftina úr vafranum þínum (vistfangið og lyklana tvo sem dulkóða skilaboðin), tungumál þessarar síðu og löndin sem þú velur. Ekkert nafn, ekkert netfang og engin rakning á því sem þú lest. Sami hnappur slekkur á tilkynningum og eyðir áskriftinni. Ein birting sendir ein skilaboð, líka þegar nokkrar fréttir koma saman. Cloudflare Web Analytics telur heimsóknir saman, án vafrakaka, og við seljum ekki þau gögn.",
 "push_unsupported": "Þessi vafri getur ekki sýnt tilkynningar.",
 "push_denied": "Tilkynningar eru læstar fyrir þessa síðu í stillingum vafrans.",
-"push_ios": "Á iPhone eða iPad bætirðu síðunni fyrst við heimaskjáinn. iOS 16.4 eða nýrra getur þá notað þessar vafratilkynningar. Eigin push-þjónusta Apple (APNs) er ekki notuð.",
+"push_ios": "Á iPhone eða iPad (iOS 16.4 eða nýrra): ýttu á Deila í Safari og veldu Bæta á heimaskjá. Opnaðu Nordic Crypto af heimaskjánum og kveiktu á tilkynningum þar.",
 "push_unavailable": "Tilkynningaþjónustan er ekki enn virk.",
 "push_working": "Vinnsla …",
 "push_fail": "Tókst ekki að uppfæra tilkynningar. Reyndu aftur.",

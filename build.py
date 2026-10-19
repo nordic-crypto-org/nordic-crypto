@@ -578,7 +578,7 @@ def push_script():
         return ""
     if _PUSH_JS is None:
         _PUSH_JS = open(P("assets", "push", "client.js"), encoding="utf-8").read()
-    keys = ("on", "off", "on_status", "off_status", "unsupported", "denied", "unavailable", "working", "fail", "saved")
+    keys = ("on", "off", "on_status", "off_status", "unsupported", "denied", "unavailable", "working", "fail", "saved", "ios")
     cfg = {"endpoint": push_endpoint() or "", "lang": LANG, "strings": {k: t("push_" + k) for k in keys}}
     return "<script>window.NC_PUSH=" + json.dumps(cfg, ensure_ascii=False) + ";</script><script>\n" + _PUSH_JS + "\n</script>"
 def write_push_assets():

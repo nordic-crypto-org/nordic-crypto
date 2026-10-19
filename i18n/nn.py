@@ -366,7 +366,7 @@ S.update({
 "push_privacy": "Vi lagrar berre push-abonnementet frå nettlesaren din (adressa og dei to nøklane som krypterer meldinga), språket på denne sida og landa du vel. Ikkje namn, ikkje e-postadresse og inga sporing av kva du les. Slå av varslingar med same knapp; då blir abonnementet sletta. Cloudflare Web Analytics tel besøk samla, utan informasjonskapslar, og vi sel ikkje dei dataa.",
 "push_unsupported": "Denne nettlesaren kan ikkje vise varslingar.",
 "push_denied": "Varslingar er blokkerte for denne nettstaden i innstillingane til nettlesaren.",
-"push_ios": "På iPhone eller iPad må du først leggje nettstaden på heimeskjermen. iOS 16.4 eller nyare kan då bruke desse nettlesarvarslingane. Push-tenesta til Apple (APNs) blir ikkje brukt.",
+"push_ios": "På iPhone eller iPad (iOS 16.4 eller nyare): Trykk på Del i Safari og vel Legg til på Hjem-skjerm. Opne Nordic Crypto frå heimeskjermen og slå på varslingane der.",
 "push_unavailable": "Varslingstenesta er ikkje slått på enno.",
 "push_working": "Arbeider …",
 "push_fail": "Klarte ikkje å oppdatere varslingane. Prøv igjen.",

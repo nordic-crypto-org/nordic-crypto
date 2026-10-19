@@ -72,7 +72,7 @@ S = {
 "push_privacy": "Nous ne conservons que l’abonnement push de votre navigateur (l’adresse et les deux clés qui chiffrent le message), la langue de cette page et les pays que vous choisissez. Pas de nom, pas d’adresse e-mail, et aucun suivi de ce que vous lisez. Le même bouton désactive les notifications et supprime l’abonnement. Cloudflare Web Analytics compte les visites de façon agrégée, sans cookies, et nous ne vendons pas ces données.",
 "push_unsupported": "Ce navigateur ne peut pas afficher de notifications.",
 "push_denied": "Les notifications sont bloquées pour ce site dans les réglages du navigateur.",
-"push_ios": "Sur iPhone ou iPad, ajoutez d’abord le site à l’écran d’accueil. iOS 16.4 ou plus récent peut ensuite utiliser ces notifications du navigateur. Le service push d’Apple (APNs) n’est pas utilisé.",
+"push_ios": "Sur iPhone ou iPad (iOS 16.4 ou plus récent) : dans Safari, touchez Partager, puis Sur l’écran d’accueil. Ouvrez Nordic Crypto depuis l’écran d’accueil et activez-y les notifications.",
 "push_unavailable": "Le service de notification n’est pas encore activé.",
 "push_working": "Patientez …",
 "push_fail": "Impossible de mettre à jour les notifications. Réessayez.",
