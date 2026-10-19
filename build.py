@@ -352,8 +352,8 @@ def nl_copy_assets(iss):
     v = iss.get("video") or {}; d = os.path.join(SITE, "newsletter", iss["id"]); os.makedirs(d, exist_ok=True)
     for k in ("poster", "subs"):
         if v.get(k) and os.path.exists(os.path.join(NL_PUB, iss["id"], v[k])): shutil.copy(os.path.join(NL_PUB, iss["id"], v[k]), os.path.join(d, v[k]))
-    for name in nl_poster_files(iss).values():
-        shutil.copy(os.path.join(NL_PUB, iss["id"], name), os.path.join(d, name))
+    for name in list(nl_poster_files(iss).values()) + ["thumbnail-vertical.png"]:  # vertical: Instagram Reel cover_url
+        if os.path.exists(os.path.join(NL_PUB, iss["id"], name)): shutil.copy(os.path.join(NL_PUB, iss["id"], name), os.path.join(d, name))
     vf = nl_video_file(iss) if v else None
     if vf: shutil.copy(vf, os.path.join(d, v.get("file") or "video.mp4"))
 def nl_i18n(iss, key):

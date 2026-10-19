@@ -50,7 +50,7 @@ class Run(unittest.TestCase):
     def test_posts_once_with_file_url(self):
         for k in fb.ENV: os.environ[k] = "x"
         calls = []
-        fb.graph_post = lambda url, fields, path=None: calls.append((url, fields, path)) or {"id": "99"}
+        fb.graph_post = lambda url, fields, path=None, thumb=None: calls.append((url, fields, path, thumb)) or {"id": "99"}
         live, fb.is_live = fb.is_live, lambda u: True
         try:
             fb.main(["--issue", "002", "--state", self.state]); fb.main(["--issue", "002", "--state", self.state])
@@ -58,6 +58,7 @@ class Run(unittest.TestCase):
             fb.is_live = live
         self.assertEqual(len(calls), 1)
         self.assertTrue(calls[0][0].endswith("/x/videos")); self.assertIn("file_url", calls[0][1])
+        self.assertTrue(calls[0][3].endswith("002/thumbnail.png"))
         self.assertEqual(json.load(open(self.state))["002"]["video_id"], "99")
 
 

@@ -87,3 +87,5 @@ ffmpeg -i thumbnail.png -vf scale=320:180:flags=lanczos t.png && avifenc -q 60 t
 ffmpeg -i thumbnail.png -vf scale=320:180:flags=lanczos -q:v 6 thumbnail-320.jpg
 ffmpeg -i thumbnail.png -c:v libwebp -quality 78 thumbnail.webp
 ```
+
+Copy `thumbnail-vertical.png` into `newsletter/published/003/` too: it is the Instagram Reel cover (`cover_url`).
