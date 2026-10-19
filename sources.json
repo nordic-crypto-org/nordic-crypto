@@ -21282,6 +21282,32 @@
    "enabled": true,
    "status": "used",
    "method": "Squarespace events collection /program read once as ?format=json (title, start, end, room, text). No iCal, RSS or programme sitemap entries with dates; JSON-LD exists only on each event page and is not opened. KÅKÅnomics is an economics festival, so the site-wide crypto filter is used (bitcoin, krypto, blockchain), not the broader crypto-money profile. Checked 2026-10-16."
+  },
+  {
+   "id": "ife-events",
+   "name": "IFE – events",
+   "country": "NO",
+   "url": "https://ife.no/en/",
+   "api": "https://ife.no/wp-json/wp/v2/event",
+   "site": "https://ife.no",
+   "type": "wp-event-pages",
+   "max_cards": 20,
+   "max_links": 8,
+   "trusted": false,
+   "organiser": "Institute for Energy Technology (IFE)",
+   "keywords": [
+    "bitcoin",
+    "krypto",
+    "crypto",
+    "blokkjede",
+    "blockchain",
+    "digital sovereignty",
+    "digital suverenitet"
+   ],
+   "enabled": true,
+   "status": "used",
+   "verified": "2026-10-19",
+   "method": "WordPress event posts (wp/v2/event, 20 most recently changed). Only a keyword hit is opened, for the From/Until/Location lines (Fra/Til/Lokasjon on Norwegian pages). No iCal, events RSS or Event JSON-LD (checked 2026-10-19); the site RSS is news only. Hosts the International Conference on Digital Sovereignty (ICDS)."
   }
  ],
  "fetch_workers": 6
