@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
-"""Post each new Nordic Crypto newsletter issue to X (@nordiccryptobot) as ONE long post (full issue text, up to 25,000 characters, X Premium) with the newsreel video, once.
-If X rejects the length (no long-post entitlement), it falls back to a thread; --thread forces the thread.
+"""Post each new Nordic Crypto newsletter issue to X (@nordiccryptobot) as ONE long post (X Premium) with the newsreel video, once.
 
-Thread shape:
-  1. Headline, short intro, issue link, and the issue's video.mp4 attached natively.
-  2..n. One reply per story: headline, a 1-2 sentence summary, the source link.
-Every post fits 280 characters, with each URL counted as 23 (X's t.co length). Long summaries are cut at a sentence
-or word boundary, never mid-word.
+Post: "Nordic Crypto #N: <headline>" and the issue link, then each story's headline and its nordiccrypto.no story page
+(https://nordiccrypto.no/stories/<id>/, never the original source). X caps the links in one post, so past MAX_URLS
+the remaining headlines are listed without a link. No thread: if X rejects the post, the run fails and nothing is posted.
 
-Source: newsletter/published/issues.json and newsletter/published/<id>/issue.html. The video is the local
-newsletter/published/<id>/video.mp4 when present, otherwise video.url from issues.json (checked against video.sha256).
-Before a real post the issue page on nordiccrypto.no must answer 200, so nothing is posted before the issue is live.
+Source: newsletter/published/issues.json and newsletter/published/<id>/issue.html; story ids from data/news.json and
+archive/articles.json, matched on the source URL. The video is the local newsletter/published/<id>/video.mp4 when
+present, otherwise video.url from issues.json (checked against video.sha256). Before a real post the issue page and
+every story page must answer 200.
 
-State: data/x_posted.json maps issue id -> {"posted_at", "tweet_ids"}. A posted issue is never posted again. If a
-thread fails midway, the posts made so far are saved and the next run continues as replies to the last one.
+State: data/x_posted.json maps issue id -> {"posted_at", "tweet_ids", "mode"}. A posted issue is never posted again.
 
 Secrets (env, never printed): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET (OAuth 1.0a user context of
 @nordiccryptobot, app with Read and Write). If any is missing the script logs one line and exits 0 without posting.
@@ -33,6 +30,7 @@ TWEETS = "https://api.x.com/2/tweets"
 UA = "nordic-crypto-x-newsletter/1 (+https://nordiccrypto.no/)"
 LIMIT, URL_LEN = 280, 23
 LONG_LIMIT = 25000  # X Premium long posts
+MAX_URLS = 20  # issue #1 went out with 20 links; #3 with 64 was refused ("exceeds the number of allowed URLs")
 CHUNK = 4 * 1024 * 1024
 ENV = ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET")
 URL_RE = re.compile(r"https?://\S+")
@@ -50,46 +48,6 @@ def x_len(text):
         n += len(text[last:m.start()]) + URL_LEN
         last = m.end()
     return n + len(text[last:])
-
-
-def clip(text, budget):
-    """Fit text into budget chars: whole sentences first, then whole words plus an ellipsis."""
-    text = " ".join(text.split())
-    if len(text) <= budget:
-        return text
-    out = ""
-    for s in re.split(r"(?<=[.!?])\s+", text):
-        cand = (out + " " + s).strip()
-        if len(cand) > budget:
-            break
-        out = cand
-    if out:
-        return out
-    words, out = text.split(), ""
-    for w in words:
-        cand = (out + " " + w).strip()
-        if len(cand) + 1 > budget:
-            break
-        out = cand
-    return (out.rstrip(",;:—-") + "…") if out else ""
-
-
-def first_sentences(text, n=2):
-    parts = re.split(r"(?<=[.!?])\s+", " ".join(text.split()))
-    return " ".join(parts[:n])
-
-
-def compose(head, body, url, tail=""):
-    """head\n\nbody\n\nurl, clipping body (then head) so x_len <= 280."""
-    fixed = x_len(f"{head}\n\n\n\n{url}") + (len(tail) + 1 if tail else 0)
-    if fixed > LIMIT:
-        head = clip(head, LIMIT - (fixed - len(head)) - 4)
-        fixed = x_len(f"{head}\n\n\n\n{url}") + (len(tail) + 1 if tail else 0)
-    body = clip(body, LIMIT - fixed) if body else ""
-    parts = [head] + ([body] if body else []) + [url]
-    txt = "\n\n".join(parts) + (f"\n{tail}" if tail else "")
-    assert x_len(txt) <= LIMIT, txt
-    return txt
 
 
 # ---------------------------------------------------------------- issue
@@ -128,54 +86,54 @@ def issue_url(meta):
     return f"{SITE}/newsletter/{meta['id']}/"
 
 
-def build_thread(meta):
-    n = meta.get("number") or int(meta["id"])
-    title = meta["title"]
-    title = re.sub(rf"^Nordic Crypto #{n}:\s*", "", title)
-    head = f"Nordic Crypto #{n}: {title}"
-    intro = meta.get("subtitle", "") + " Watch the newsreel below, and the full issue at the link. 🧵"
-    posts = [compose(head, intro, issue_url(meta))]
-    stories = meta["stories_list"]
-    for i, s in enumerate(stories, 1):
-        posts.append(compose(f"{i}/{len(stories)} {s['title']}", first_sentences(s["summary"]), s["url"]))
-    posts.append(compose("That's the week in Nordic crypto.", "Subscribe and read every issue on Nordic Crypto:", f"{SITE}/newsletter/"))
-    return posts
+def _key(url):
+    u = re.sub(r"^https?://(www\.)?", "", (url or "").strip().lower())
+    return u.rstrip("/")
 
 
-def issue_text(issue_html):
-    """The whole issue as plain text: paragraphs, section headings, and each story as headline, summary, source line, link."""
-    h = issue_html.replace("__SITE__", SITE)
-    h = re.sub(r"<img[^>]*>", "", h)
-    h = re.sub(r'<a href="(https?://[^"]+)"[^>]*font-weight:bold[^>]*>(.*?)</a>', r"\2<br>\1", h, flags=re.S)
-    h = re.sub(r"<strong>\s*<a href=\"(https?://[^\"]+)\"[^>]*>(.*?)</a>\s*</strong>", r"\2<br>\1", h, flags=re.S)
-    h = re.sub(r'<a href="(https?://[^"]+)"[^>]*>(.*?)</a>', r"\2 (\1)", h, flags=re.S)
-    blocks = []
-    for m in re.finditer(r"<(h[1-6]|p|li)[^>]*>(.*?)</\1>", h, re.S):
-        lines = [strip_tags(x) for x in re.split(r"<br\s*/?>", m.group(2))]
-        txt = "\n".join(x for x in lines if x)
-        if txt:
-            blocks.append(txt.upper() if m.group(1).startswith("h") else txt)
-    return "\n\n".join(blocks)
+def story_index():
+    """Source URL -> our story page, from data/news.json and archive/articles.json."""
+    idx = {}
+    def add(url, page):
+        if url and str(url).startswith("http"):
+            idx.setdefault(_key(url), page)
+    for path, key in ((os.path.join(ROOT, "data", "news.json"), "items"), (os.path.join(ROOT, "archive", "articles.json"), "articles")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                rows = json.load(fh).get(key, [])
+        except FileNotFoundError:
+            continue
+        for i in rows:
+            if not i.get("id"):
+                continue
+            u = i.get("url") or ""
+            page = f"{SITE}/{u.lstrip('/')}" if i.get("own_story") and u and not u.startswith("http") else f"{SITE}/stories/{i['id']}/"
+            for src in [u, i.get("canonical_url")] + [l.get("url") if isinstance(l, dict) else l for l in i.get("links") or []]:
+                add(src, page)
+    return idx
 
 
-def build_long_post(meta, issue_html):
-    """One long post: headline, the full issue text, the issue link. Clipped by whole blocks to LONG_LIMIT."""
+def story_pages(meta, idx=None):
+    """Our story page for each story in the issue (None when it cannot be found)."""
+    idx = story_index() if idx is None else idx
+    return [s["url"] if s["url"].startswith(SITE + "/") else idx.get(_key(s["url"])) for s in meta["stories_list"]]
+
+
+def build_long_post(meta, pages):
+    """Header with the issue link, then each headline with its story page."""
     n = meta.get("number") or int(meta["id"])
     title = re.sub(rf"^Nordic Crypto #{n}:\s*", "", meta["title"])
-    head = f"Nordic Crypto #{n}: {title}"
-    tail = f"Read it on Nordic Crypto: {issue_url(meta)}"
-    body = issue_text(issue_html)
-    blocks, out = body.split("\n\n"), []
-    for b in blocks:
-        if x_len("\n\n".join([head] + out + [b, tail])) > LONG_LIMIT:
-            break
-        out.append(b)
-    return "\n\n".join([head] + out + [tail])
-
-
-def is_length_error(err):
-    m = str(err).lower()
-    return ("-> 400" in m or "-> 403" in m) and any(k in m for k in ("too long", "length", "characters", "text"))
+    blocks, rest = [f"Nordic Crypto #{n}: {title}\n{issue_url(meta)}"], []
+    links = 1
+    for s, page in zip(meta["stories_list"], pages):
+        if page and links < MAX_URLS:
+            blocks.append(f"{s['title']}\n{page}")
+            links += 1
+        else:
+            rest.append(s["title"])
+    if rest:
+        blocks.append("More in the issue:\n" + "\n".join(rest))
+    return "\n\n".join(blocks)
 
 
 # ---------------------------------------------------------------- state
@@ -318,75 +276,55 @@ def is_live(url):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--issue", help="issue id, e.g. 002 (default: newest)")
-    ap.add_argument("--dry-run", action="store_true", help="print the thread, post nothing, leave the state file alone")
+    ap.add_argument("--dry-run", action="store_true", help="print the post, post nothing, leave the state file alone")
     ap.add_argument("--state", default=STATE)
     ap.add_argument("--no-video", action="store_true", help="post without the video")
-    ap.add_argument("--thread", action="store_true", help="post as a 280-char thread instead of one long post")
     a = ap.parse_args(argv)
 
     meta = load_issue(a.issue)
-    posts = build_thread(meta)
-    with open(os.path.join(PUBLISHED, meta["id"], "issue.html"), encoding="utf-8") as fh:
-        long_post = build_long_post(meta, fh.read())
+    pages = story_pages(meta)
+    post = build_long_post(meta, pages)
+    missing_pages = [s["title"] for s, p in zip(meta["stories_list"], pages) if not p]
     state = load_state(a.state)
     done = state.get(meta["id"], {})
     has_video = bool(meta.get("video")) and not a.no_video
 
     if a.dry_run:
-        print(f"# Issue {meta['id']} ({meta['date']}): {len(posts)} posts{' + video' if has_video else ''}"
+        print(f"# Issue {meta['id']} ({meta['date']}): one long post, {x_len(post)}/{LONG_LIMIT} chars, "
+              f"{len(URL_RE.findall(post))}/{MAX_URLS} links{' + video' if has_video else ''}"
               f"{' [already posted, a real run would skip]' if done.get('complete') else ''}")
-        if not a.thread:
-            print(f"\n--- long post ({x_len(long_post)}/{LONG_LIMIT}){'  [+ video.mp4]' if has_video else ''}\n{long_post}")
-            print("\n# Fallback thread if X rejects the length:")
-        for i, p in enumerate(posts, 1):
-            media = "  [+ video.mp4]" if i == 1 and has_video else ""
-            print(f"\n--- {i}/{len(posts)} ({x_len(p)}/280){media}\n{p}")
+        for t in missing_pages:
+            print(f"# no story page found: {t}")
+        print(f"\n{post}{chr(10) + '[+ video.mp4]' if has_video else ''}")
         return 0
 
     if done.get("complete"):
         log(f"issue {meta['id']} already posted ({done.get('posted_at')}); nothing to do")
         return 0
+    if missing_pages:
+        log(f"no story page for: {'; '.join(missing_pages)}")
+        return 1
     missing = [k for k in ENV if not os.environ.get(k)]
     if missing:
         log(f"skipping: missing {', '.join(missing)}")
         return 0
     creds = tuple(os.environ[k] for k in ENV)
-    if not is_live(issue_url(meta)):
-        log(f"skipping: {issue_url(meta)} is not live yet")
-        return 0
+    for url in [issue_url(meta)] + URL_RE.findall(post)[1:]:
+        if not is_live(url):
+            log(f"skipping: {url} is not live yet")
+            return 0
 
-    ids = list(done.get("tweet_ids", []))
     media_id = None
-    if not ids and has_video:
+    if has_video:
         path = fetch_video(meta)
         if path:
             media_id = upload_video(creds, path)
-    if not ids and not a.thread:
-        try:
-            tid = create_post(creds, long_post, media_id=media_id)
-        except RuntimeError as e:
-            if not is_length_error(e):
-                raise
-            log(f"long post rejected, falling back to a thread: {e}")
-        else:
-            ids = [tid]
-            posts = [long_post]
-            log(f"posted long post: {tid}")
-    for i, text in enumerate(posts):
-        if i < len(ids):
-            continue  # resumed after a partial run
-        tid = create_post(creds, text, reply_to=ids[-1] if ids else None, media_id=media_id if i == 0 else None)
-        ids.append(tid)
-        state[meta["id"]] = {"tweet_ids": ids, "complete": False}
-        save_state(a.state, state)
-        log(f"posted {i + 1}/{len(posts)}: {tid}")
-        time.sleep(2)
-    state[meta["id"]] = {"tweet_ids": ids, "complete": True,
+    tid = create_post(creds, post, media_id=media_id)
+    state[meta["id"]] = {"tweet_ids": [tid], "complete": True, "mode": "long",
                          "posted_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-                         "url": f"https://x.com/nordiccryptobot/status/{ids[0]}",
-                         "mode": "long" if posts == [long_post] else "thread"}
+                         "url": f"https://x.com/nordiccryptobot/status/{tid}"}
     save_state(a.state, state)
-    log(f"done: https://x.com/nordiccryptobot/status/{ids[0]}")
+    log(f"done: https://x.com/nordiccryptobot/status/{tid}")
     return 0
 
 
