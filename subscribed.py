@@ -213,14 +213,14 @@ ICONS = {
 }
 
 SHIELD = ('<svg class="shield" viewBox="6.4 2.4 51.2 60.2" aria-hidden="true" focusable="false">'
-    '<defs><clipPath id="sc"><path d="M8 4H56V30C56 46 46 56 32 61C18 56 8 46 8 30Z"/></clipPath>'
+    '<defs><clipPath id="sc"><path d="M8 4H56V30C56,46 46,56 32,61C18,56 8,46 8,30Z"/></clipPath>'
     '<linearGradient id="gl" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
     '<stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>'
-    '<g clip-path="url(#sc)"><path class="sh-l" fill="#1E3A45" d="M8 4H32V61C18 56 8 46 8 30Z"/><path class="sh-r" fill="#D9A034" d="M32 4H56V30C56 46 46 56 32 61Z"/>'
+    '<g clip-path="url(#sc)"><path class="sh-l" fill="#1E3A45" d="M8 4H32V61C18,56 8,46 8,30Z"/><path class="sh-r" fill="#D9A034" d="M32 4H56V30C56,46 46,56 32,61Z"/>'
     '<g class="sh-key"><path fill="#D9A034" d="M32 8.5A8.5 8.5 0 0 0 32 25.5L32 20.8A3.8 3.8 0 0 1 32 13.2ZM28.6 24H32V49H28.6Z"/>'
     '<path fill="#1E3A45" d="M32 8.5A8.5 8.5 0 0 1 32 25.5L32 20.8A3.8 3.8 0 0 0 32 13.2ZM32 24H35.4V49H32ZM35.4 36.5H45V41H40.5V44.5H45V49H35.4Z"/></g>'
     '<rect class="sh-glint" x="-30" y="0" width="18" height="70" fill="url(#gl)"/></g>'
-    '<path class="sh-o" pathLength="1" fill="none" stroke="#D9A034" stroke-width="2.4" stroke-linejoin="round" d="M8 4H56V30C56 46 46 56 32 61C18 56 8 46 8 30Z"/></svg>')
+    '<path class="sh-o" pathLength="1" fill="none" stroke="#D9A034" stroke-width="2.4" stroke-linejoin="round" d="M8 4H56V30C56,46 46,56 32,61C18,56 8,46 8,30Z"/></svg>')
 
 
 HEAD_JS = ('<script>(function(d){d.classList.add("js");if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("go");window.__ncF=setTimeout(function(){[].forEach.call(document.querySelectorAll(".card,.stats,.cta,.foot"),function(e){e.classList.add("in")})},6000)}})(document.documentElement)</script>')
