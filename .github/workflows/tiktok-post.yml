@@ -1,0 +1,81 @@
+# TikTok @nordiccrypto: renders the due video and publishes it (Direct Post). Skips when the secrets are not set.
+name: TikTok post
+on:
+  schedule:
+    - cron: "0 17 19,21,23 10 *"  # 19:00 Oslo (CEST)
+    - cron: "0 18 26,28,30 10 *"  # 19:00 Oslo (CET)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Render only, post nothing"
+        type: boolean
+        default: true
+  pull_request:
+    paths:
+      - "tools/tiktok_*.py"
+      - "tiktok/**"
+      - "tests/test_tiktok.py"
+      - ".github/workflows/tiktok-post.yml"
+permissions:
+  contents: write
+concurrency:
+  group: tiktok-post
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q Pillow
+      - name: Tests
+        run: python3 -m unittest tests.test_tiktok
+      - name: Render all ready videos
+        if: github.event_name != 'schedule'
+        run: |
+          for d in tiktok/posts/*/; do python3 tools/tiktok_render.py "$(basename "$d")" || [ $? -eq 3 ]; done
+      - uses: actions/upload-artifact@v4
+        if: github.event_name != 'schedule'
+        with:
+          name: tiktok-videos
+          path: build/tiktok/
+          retention-days: 14
+      - name: Load posted state
+        if: github.event_name != 'pull_request'
+        run: git show origin/tiktok-state:tiktok_posted.json > build-state.json 2>/dev/null || echo '{}' > build-state.json
+      - name: Post the due video
+        if: github.event_name != 'pull_request'
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+        run: |
+          args=(--state build-state.json --rotated "$RUNNER_TEMP/rt")
+          [ "${{ inputs.dry_run }}" = "true" ] && args+=(--dry-run)
+          python3 tools/tiktok_post.py "${args[@]}"
+      - name: Store rotated refresh token
+        if: always() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          [ -s "$RUNNER_TEMP/rt" ] || exit 0
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::TikTok issued a new refresh token but GH_SECRETS_PAT is not set; update TIKTOK_REFRESH_TOKEN manually"; exit 0; fi
+          gh secret set TIKTOK_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/rt"
+          rm -f "$RUNNER_TEMP/rt"
+      - name: Save posted state
+        if: always() && github.event_name != 'pull_request'
+        run: |
+          [ -f build-state.json ] || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          cp build-state.json /tmp/s.json
+          git checkout -q origin/tiktok-state 2>/dev/null || git checkout -q --orphan tiktok-state
+          git rm -rqf . 2>/dev/null || true
+          cp /tmp/s.json tiktok_posted.json && git add tiktok_posted.json
+          git diff --cached --quiet || { git commit -qm "TikTok posted state"; git push -q origin HEAD:tiktok-state; }
