@@ -14,7 +14,7 @@ import schema_db
 
 # Internal state, raw inputs and fixtures; not public collections.
 INTERNAL_FILES = {
-    "academia_i18n.json", "event_nft_fixture.json", "events_backfill_state.json", "fb_posted.json", "no_en.json",
+    "academia_i18n.json", "event_nft_fixture.json", "events_backfill_state.json", "fb_posted.json", "ig_posted.json", "no_en.json",
     "orgchart_no_raw.json", "orgchart_nordic.json", "orgchart_speakers.json", "talks-backfill-state.json", "x_posted.json",
     "youtube_posted.json",
 }
