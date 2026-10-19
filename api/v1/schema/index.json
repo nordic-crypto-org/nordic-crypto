@@ -1,13 +1,13 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-19T10:14:58+00:00",
+ "generated_at": "2026-10-19T10:21:17+00:00",
  "title": "Nordic Crypto data model",
  "docs_url": "https://nordiccrypto.no/db/",
- "schema_version": "2026-10-18",
- "commit": "5419d2f",
- "committed_at": "2026-10-18T16:02:27+02:00",
- "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/5419d2f5d44f83710af03b5d868c85b74fe86d5e",
+ "schema_version": "2026-10-19",
+ "commit": "46c1689",
+ "committed_at": "2026-10-19T12:05:32+02:00",
+ "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/46c16897ad0fdb0a9c17557ec66caf850b1a6072",
  "changelog_url": "https://nordiccrypto.no/api/v1/schema/changelog.json",
  "erd_svg_url": "https://nordiccrypto.no/api/v1/schema/erd.svg",
  "erd_mermaid_url": "https://nordiccrypto.no/api/v1/schema/erd.mmd",
@@ -839,6 +839,27 @@
    "derived": [],
    "omitted_from_api": [],
    "schema_url": "https://nordiccrypto.no/api/v1/schema/event-descriptions.schema.json"
+  },
+  {
+   "id": "event-titles",
+   "title": "Event titles",
+   "description": "Event titles in every site language, by event id. Stored in the event_translations table in Cloudflare D1 (field title); data/event_title_i18n.json is the snapshot. source is the original title and lang its language. Every site language except lang. An entry is used only while source is the event's current original title.",
+   "files": [
+    "data/event_title_i18n.json"
+   ],
+   "store": "Cloudflare D1: event_translations",
+   "pages": [],
+   "api": [],
+   "relations": [
+    {
+     "field": "items key",
+     "to": "events",
+     "cardinality": "many-to-one"
+    }
+   ],
+   "derived": [],
+   "omitted_from_api": [],
+   "schema_url": "https://nordiccrypto.no/api/v1/schema/event-titles.schema.json"
   },
   {
    "id": "event-redirects",

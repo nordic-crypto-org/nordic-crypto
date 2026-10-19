@@ -1335,6 +1335,11 @@ components:
         title_original:
           type: string
           nullable: true
+        title_i18n:
+          type: object
+          additionalProperties:
+            type: string
+          description: "The title in each site language other than the original's. A language is omitted when its title is the original."
         start:
           type: string
           description: ISO 8601 date-time with offset.
@@ -1488,6 +1493,11 @@ components:
               title_original:
                 type: string
                 nullable: true
+              title_i18n:
+                type: object
+                additionalProperties:
+                  type: string
+                description: "The title in each site language other than the original's. A language is omitted when its title is the original."
               start:
                 type: string
                 description: ISO 8601 date-time with offset.
