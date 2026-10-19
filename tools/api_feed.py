@@ -1935,7 +1935,7 @@ def schemas():
             "description": {
                 "type": "object",
                 "nullable": True,
-                "description": "The organiser's description. text is the original wording, lang is its language code, source_url is the page it was taken from. i18n holds nn, nb, sv, da, fi and is, and en when the original is not English. A missing translation is omitted. Null when no description was sourced. Kaupr is not included.",
+                "description": "The organiser's description. text is the original wording, lang is its language code, source_url is the page it was taken from. i18n holds every site language except the original's own. A missing translation is omitted. Null when no description was sourced. Kaupr is not included.",
                 "properties": {
                     "text": {"type": "string"},
                     "lang": {"type": "string", "nullable": True},
