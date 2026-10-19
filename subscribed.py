@@ -226,7 +226,7 @@ SHIELD = ('<svg class="shield" viewBox="6.4 2.4 51.2 60.2" aria-hidden="true" fo
 HEAD_JS = ('<script>(function(d){d.classList.add("js");if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("go");window.__ncF=setTimeout(function(){[].forEach.call(document.querySelectorAll(".card,.stats,.cta,.foot"),function(e){e.classList.add("in")})},6000)}})(document.documentElement)</script>')
 
 
-def render(lang, html_lang, rtl, root, rel, latest_url, rss_url, issues, langs, stories, telegram, x_url):
+def render(lang, html_lang, rtl, root, rel, latest_url, rss_url, issues, langs, stories, telegram, x_url, head_extra=""):
     t = S.get(lang) or S["en"]
     perks = "".join(f'<li style="--i:{n}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">{ICONS[k]}</svg><span>{E(t[k])}</span></li>'
                     for n, k in enumerate(("p1", "p2", "p3", "p4")))
@@ -239,7 +239,7 @@ def render(lang, html_lang, rtl, root, rel, latest_url, rss_url, issues, langs, 
 <meta name="robots" content="noindex, nofollow"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0B1B21">
 <title>{E(t["title"])} – Nordic Crypto</title><meta name="description" content="{E(t["desc"])}">
 <link rel="icon" href="{root}favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{root}assets/brand/mark-180.png">
-<link rel="stylesheet" href="{root}assets/subscribed/subscribed.css">
+<link rel="stylesheet" href="{root}assets/subscribed/subscribed.css">{head_extra}
 {HEAD_JS}</head>
 <body>
 <div class="sky-static" aria-hidden="true"></div><canvas id="sky" aria-hidden="true"></canvas><canvas id="fx" aria-hidden="true"></canvas>

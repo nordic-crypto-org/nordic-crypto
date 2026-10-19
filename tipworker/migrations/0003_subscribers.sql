@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS subscribers (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   email TEXT NOT NULL,                       -- lower-cased, trimmed
   site TEXT NOT NULL,                        -- nordic-crypto | kryptonytt
-  lang TEXT NOT NULL,                        -- site language at signup (nordic-crypto: en nn nb sv da fi is; kryptonytt: nn nb en)
+  lang TEXT NOT NULL,                        -- site language at signup (nordic-crypto: every site language; kryptonytt: nn nb en)
   status TEXT NOT NULL DEFAULT 'pending',    -- pending | confirmed | unsubscribed
   token_hash TEXT,                           -- SHA-256(confirmation token), NULL once confirmed/unsubscribed
   token_expires INTEGER,                     -- unix seconds

@@ -3,13 +3,13 @@
 //                             Always the same answer for a valid request (202 {"ok":true,"pending":true}, or 303 to the
 //                             site's newsletter page ?sent=1), whether the address is new, pending or already confirmed,
 //                             so the endpoint can't be used to find out who subscribes.
-//   GET  /api/confirm?token=…&s=<site>&l=<lang>   confirms a pending signup (token valid 7 days) -> 303 ?confirmed=1
+//   GET  /api/confirm?token=…&s=<site>&l=<lang>   confirms a pending signup (token valid 7 days) -> 303 to the site's subscribed/ page (Nordic Crypto) or ?confirmed=1
 //   GET  /api/unsubscribe?id=…&sig=…&s=&l=        small page with a button (so mail scanners can't unsubscribe people)
 //   POST /api/unsubscribe?id=…&sig=…              unsubscribes (also RFC 8058 one-click) -> 303 ?unsubscribed=1 / 200
 // Stored per signup: email, site, lang, status, SHA-256 of the confirmation token, timestamps. No IP, no user agent.
 // Unsubscribe links: sig = HMAC-SHA-256(UNSUB_SECRET, "id|email|site"), nothing stored. Mail goes through mailer.js
 // (provider not chosen; default sends nothing).
-import { SITES, pageUrl, confirmEmail, welcomeEmail, text } from "./messages.js";
+import { SITES, pageUrl, doneUrl, dir, confirmEmail, welcomeEmail, text } from "./messages.js";
 import { sendMail, providerName } from "./mailer.js";
 
 const MAX_BODY = 2048, TOKEN_TTL = 7 * 86400, RESEND_AFTER = 600;
@@ -113,7 +113,7 @@ export async function confirm(req, env, h) {
   if (!row) return go("error=invalid_link");
   const unsub = await unsubscribeUrl(env, new URL(req.url).origin, row);
   if (unsub) await sendMail(env, { to: row.email, site: row.site, lang: row.lang, kind: "welcome", unsubscribe: unsub, ...welcomeEmail(row.site, row.lang, unsub) });
-  return new Response(null, { status: 303, headers: h.headers(req, { Location: pageUrl(row.site, row.lang) + "?confirmed=1" }) });
+  return new Response(null, { status: 303, headers: h.headers(req, { Location: doneUrl(row.site, row.lang) }) });
 }
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -144,7 +144,7 @@ export async function unsubscribe(req, env, h) {
   const body = row
     ? `<p>${esc(text(lang, "uq", v))}</p><form method="post" action="${esc(u.pathname + u.search)}"><button type="submit">${esc(text(lang, "ub", v))}</button></form>`
     : `<p>${esc(text(lang, "ux", v))}</p>`;
-  return new Response(`<!doctype html><html lang="${esc(lang)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(text(lang, "ut", v))} – ${esc(v.name)}</title>` +
+  return new Response(`<!doctype html><html lang="${esc(lang)}"${dir(lang)}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(text(lang, "ut", v))} – ${esc(v.name)}</title>` +
     `<style>body{font:16px/1.5 system-ui,sans-serif;max-width:560px;margin:40px auto;padding:0 16px}button{font-size:16px;padding:8px 14px}</style></head><body><h1>${esc(v.name)}</h1>${body}` +
     `<p><a href="${esc(SITES[site].base + (SITES[site].langs[lang] ?? ""))}">${esc(SITES[site].base)}</a></p></body></html>`,
     { status: row ? 200 : 400, headers: h.headers(req, { "Content-Type": "text/html; charset=utf-8", "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'" }) });

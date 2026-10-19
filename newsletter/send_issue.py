@@ -25,11 +25,12 @@ Usage:
 """
 import argparse, hashlib, hmac, html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert(0, ROOT)
-import site_url
+import site_url, i18n
 SIGN_OFF = "The Nordic Crypto team"
 SIGNED = (SIGN_OFF, "Nordic Crypto-teamet", "Nordic Crypto-laget", "Nordic Crypto-holdet", "Nordic Crypton tiimi", "Nordic Crypto-hópurinn")
 SITE = "nordic-crypto"
-LANGS = ["en", "nn", "nb", "sv", "da", "fi", "is"]
+LANGS = list(i18n.ALL_LANGS) + ([] if "se" in i18n.ALL_LANGS else ["se"])
+RTL = ("ar", "fa", "ur")
 COPY = {
  "en": dict(read="Read this issue on Nordic Crypto", unsub="Unsubscribe", why="You get this email because you subscribed to the Nordic Crypto newsletter."),
  "nn": dict(read="Les utgåva på Nordic Crypto", unsub="Meld deg av", why="Du får denne e-posten fordi du har abonnert på nyheitsbrevet frå Nordic Crypto."),
@@ -38,6 +39,24 @@ COPY = {
  "da": dict(read="Læs udgaven på Nordic Crypto", unsub="Afmeld", why="Du får denne e-mail, fordi du abonnerer på Nordic Cryptos nyhedsbrev."),
  "fi": dict(read="Lue numero Nordic Cryptossa", unsub="Peru tilaus", why="Saat tämän viestin, koska olet tilannut Nordic Crypton uutiskirjeen."),
  "is": dict(read="Lesa tölublaðið á Nordic Crypto", unsub="Segja upp áskrift", why="Þú færð þennan póst vegna þess að þú ert áskrifandi að fréttabréfi Nordic Crypto."),
+ "zh": dict(read="在 Nordic Crypto 阅读本期", unsub="退订", why="您收到这封邮件，是因为您订阅了 Nordic Crypto 新闻通讯。"),
+ "hi": dict(read="यह अंक Nordic Crypto पर पढ़ें", unsub="सदस्यता छोड़ें", why="आपको यह ईमेल इसलिए मिला है क्योंकि आपने Nordic Crypto न्यूज़लेटर की सदस्यता ली है।"),
+ "es": dict(read="Lee este número en Nordic Crypto", unsub="Darse de baja", why="Recibes este correo porque te suscribiste al boletín de Nordic Crypto."),
+ "fr": dict(read="Lire ce numéro sur Nordic Crypto", unsub="Se désabonner", why="Vous recevez cet e-mail parce que vous êtes abonné à la lettre d’information de Nordic Crypto."),
+ "ar": dict(read="اقرأ هذا العدد على Nordic Crypto", unsub="إلغاء الاشتراك", why="تصلك هذه الرسالة لأنك مشترك في النشرة البريدية من Nordic Crypto."),
+ "bn": dict(read="এই সংখ্যাটি Nordic Crypto-তে পড়ুন", unsub="সাবস্ক্রিপশন বাতিল", why="আপনি এই ইমেলটি পাচ্ছেন কারণ আপনি Nordic Crypto নিউজলেটারে সাবস্ক্রাইব করেছেন।"),
+ "pt": dict(read="Leia este número na Nordic Crypto", unsub="Cancelar subscrição", why="Recebe este e-mail porque subscreveu a newsletter da Nordic Crypto."),
+ "ru": dict(read="Читать выпуск на Nordic Crypto", unsub="Отписаться", why="Вы получили это письмо, потому что подписаны на рассылку Nordic Crypto."),
+ "ur": dict(read="یہ شمارہ Nordic Crypto پر پڑھیں", unsub="رکنیت ختم کریں", why="آپ کو یہ ای میل اس لیے ملی ہے کیونکہ آپ نے Nordic Crypto نیوز لیٹر کی رکنیت لی ہے۔"),
+ "id": dict(read="Baca edisi ini di Nordic Crypto", unsub="Berhenti berlangganan", why="Anda menerima email ini karena berlangganan buletin Nordic Crypto."),
+ "de": dict(read="Diese Ausgabe auf Nordic Crypto lesen", unsub="Abmelden", why="Sie erhalten diese E-Mail, weil Sie den Newsletter von Nordic Crypto abonniert haben."),
+ "ja": dict(read="この号を Nordic Crypto で読む", unsub="購読解除", why="このメールは、Nordic Crypto ニュースレターを購読されているためお送りしています。"),
+ "sw": dict(read="Soma toleo hili kwenye Nordic Crypto", unsub="Jiondoe", why="Unapokea barua pepe hii kwa sababu umejisajili kwa jarida la Nordic Crypto."),
+ "mr": dict(read="हा अंक Nordic Crypto वर वाचा", unsub="सदस्यत्व रद्द करा", why="तुम्ही Nordic Crypto वृत्तपत्राचे सदस्य असल्यामुळे तुम्हाला हा ईमेल आला आहे."),
+ "fa": dict(read="این شماره را در Nordic Crypto بخوانید", unsub="لغو اشتراک", why="این ایمیل را دریافت می‌کنید چون مشترک خبرنامهٔ Nordic Crypto هستید."),
+ "uk": dict(read="Читати випуск на Nordic Crypto", unsub="Відписатися", why="Ви отримали цей лист, бо підписані на розсилку Nordic Crypto."),
+ "tr": dict(read="Bu sayıyı Nordic Crypto'da okuyun", unsub="Aboneliği iptal et", why="Bu e-postayı Nordic Crypto bültenine abone olduğunuz için alıyorsunuz."),
+ "se": dict(read="Loga dán nummira Nordic Cryptos", unsub="Heaitte diŋgojumi", why="Oaččut dán e-poastta danin go leat diŋgon Nordic Crypto-ođasreivve."),
 }
 TAG = re.compile(r"<[^>]+>")
 PREFIX = {l: ("" if l == "en" else l + "/") for l in LANGS}
@@ -69,9 +88,10 @@ def compose(body_html, lang, page, unsub, subject, plain=None):
     link = f'<p style="text-align:left"><a href="{html.escape(page)}">{html.escape(c["read"])}</a></p>' if page else ""
     bye = (f'<p style="text-align:left;font-size:13px;color:#4B5563">{html.escape(c["why"])} '
            f'<a href="{html.escape(unsub)}">{html.escape(c["unsub"])}</a></p>') if unsub else f'<p style="text-align:left;font-size:13px;color:#4B5563">{html.escape(c["why"])}</p>'
-    page_html = (f'<!doctype html><html lang="{html.escape(lang)}"><head><meta charset="utf-8"><title>{html.escape(subject)}</title></head>'
+    page_html = (f'<!doctype html><html lang="{html.escape(lang)}"{' dir="rtl"' if lang in RTL else ""}><head><meta charset="utf-8"><title>{html.escape(subject)}</title></head>'
                  f'<body style="margin:0;padding:16px;text-align:left;font:16px/1.5 Arial,sans-serif;color:#111">'
                  f'<div style="max-width:640px;margin:0;text-align:left">{link}{body}{sign}{bye}</div></body></html>')
+    if lang in RTL: page_html = page_html.replace("text-align:left", "text-align:right").replace("margin:0;text-align", "margin:0 0 0 auto;text-align")
     base = (plain or plain_from_html(body)).replace("{{unsubscribe}}", unsub or "")
     bits = []
     if page and page not in base: bits.append(f"{c['read']}: {page}")
