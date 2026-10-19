@@ -52,7 +52,6 @@ def organization(base, email, same_as=()):
         "@type": "NewsMediaOrganization", "@id": base + "#organization", "email": email,
         "publishingPrinciples": base + "editorial/", "ethicsPolicy": base + "ethics/",
         "correctionsPolicy": base + "editorial/#corrections", "masthead": base + "about/#masthead",
-        "parentOrganization": {"@type": "Organization", "name": "jQrgenCorp"},
         "contactPoint": {"@type": "ContactPoint", "contactType": "editorial", "email": email},
     })
     if same_as:
