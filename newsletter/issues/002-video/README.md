@@ -29,8 +29,11 @@ Nordic Crypto mark stays the dominant brand on screen.
 
 ## Upload description footer
 
-Every upload of a newsletter video (YouTube, Facebook, Instagram Reels) ends its description with the links to the
-original sources and this disclaimer, in the issue's language:
+Every upload of a newsletter video (YouTube, Facebook, Instagram Reels) links once to the issue page, which lists
+every source (for example `Read the issue and all sources: https://nordiccrypto.no/newsletter/003/`). Do not list
+the sources in the description: the YouTube apps cut long URLs short. It then ends with this disclaimer, in the
+issue's language, the AI / not-investment-advice line and the social links. `tools/youtube_upload.py` writes this
+description when `--description` is not given:
 
 > Logos and trademarks belong to their respective owners and are used only to identify the source. Nordic Crypto is not affiliated with, sponsored by or endorsed by these media outlets.
 

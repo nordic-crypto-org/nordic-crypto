@@ -9,13 +9,39 @@ Skips (exit 0, prints the existing URL) when the issue already has a video:
 An exclusive file lock (YT_UPLOAD_LOCK, default /tmp/nordic-crypto-youtube-upload.lock) stops two
 runs on one machine; the workflow's concurrency group does the same on GitHub Actions.
 --force skips the checks (not the lock). --record writes the new URL into issues.json.
+Without --description the description is built from issues.json (see description()): the subtitle, one link
+to the issue page (it lists every source), the logos disclaimer, the AI line and the social links. Sources are
+never listed in the description: YouTube's apps cut long URLs short, and the issue page has them all.
 Auth: YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN (or --token-file JSON with refresh_token).
 Never prints secrets."""
 import argparse, fcntl, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
-ISSUES = Path(__file__).resolve().parent.parent / "newsletter" / "published" / "issues.json"
+ROOT = Path(__file__).resolve().parent.parent
+ISSUES = ROOT / "newsletter" / "published" / "issues.json"
 API = "https://www.googleapis.com/youtube/v3/"
+MAX_DESCRIPTION = 5000  # YouTube's limit, in characters
+LOGOS = ("Logos and trademarks belong to their respective owners and are used only to identify the source. "
+         "Nordic Crypto is not affiliated with, sponsored by or endorsed by these media outlets.")
+FOOTER = """Made with the help of artificial intelligence, with human editors. Not investment advice.
+
+Nordic Crypto:
+Website: {base}
+Telegram: https://t.me/nordiccryptochat
+X: https://x.com/nordiccryptobot
+Facebook: https://www.facebook.com/profile.php?id=61595548315551
+Instagram: https://www.instagram.com/nordiccryptonews/"""
+
+
+def description(it, base=None):
+    """The upload description for one issue: no source list, one link to the issue page that has them all."""
+    base = base or json.loads((ROOT / "site_url.json").read_text())["base"]
+    base = base.rstrip("/") + "/"
+    text = "\n\n".join([it.get("subtitle") or it["title"],
+        f"Read the issue and all sources: {base}newsletter/{it['id']}/", LOGOS, FOOTER.format(base=base)])
+    if len(text) > MAX_DESCRIPTION or "<" in text or ">" in text:  # YouTube rejects both
+        sys.exit("description is over 5000 characters or contains < or >")
+    return text
 
 
 def access_token(token_file):
@@ -106,6 +132,7 @@ def main():
     doc = json.loads(ISSUES.read_text())
     it = find_issue(doc, a.issue)
     title = a.title or it["title"]
+    a.description = a.description or description(it)
     if not re.match(rf"Nordic Crypto #{it['number']}:", title):
         sys.exit(f"title must start with «Nordic Crypto #{it['number']}:»")
     if not a.force and (it.get("video") or {}).get("youtube"):
@@ -116,7 +143,7 @@ def main():
         if url:
             print(f"skip: the channel already has #{it['number']} at {url}"); return
     if a.dry_run:
-        print(f"dry run: would upload {a.file} as «{title[:100]}»"); return
+        print(f"dry run: would upload {a.file} as «{title[:100]}» with this description:\n{a.description}"); return
     url = upload(at, a, title)
     print(url)
     if a.record:
