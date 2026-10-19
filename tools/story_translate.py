@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Headline, summary and front-page blurb of every published story in every site language.
 
-The site has 24 languages (i18n.ALL_LANGS). English is the base: title_en (or the source title
+The site has 25 languages (i18n.ALL_LANGS). English is the base: title_en (or the source title
 for an English story), summary and the English blurb. This tool fills what is missing:
 
   data/title_i18n.json        headline per language, except the language the source headline is in
@@ -14,6 +14,7 @@ Existing text is never replaced. A headline entry is redone only when the source
 Model: Cloudflare Workers AI (CF_AI_TOKEN and CF_ACCOUNT_ID; CLOUDFLARE_AI_TOKEN and
 CLOUDFLARE_ACCOUNT_ID also work). STORY_TRANSLATE_MODEL picks the model. Without credentials the
 tool prints one line and exits 0, so a publish never stops on it.
+Northern Sami (se) goes to TartuNLP instead (tools/sami_mt.py), from the English text.
 
   python3 tools/story_translate.py              # fill every published story
   python3 tools/story_translate.py --dry-run    # list what is missing; no model call, writes nothing
@@ -31,6 +32,7 @@ if ROOT not in sys.path:
 import i18n  # noqa: E402
 from tools import headlines  # noqa: E402
 from tools.frontpage_blurbs import sentences  # noqa: E402
+from tools import sami_mt  # noqa: E402
 
 P = lambda *a: os.path.join(ROOT, *a)
 LANGS = [l for l in i18n.ALL_LANGS if l != "en"]
@@ -39,7 +41,7 @@ NAMES = {
     "is": "Icelandic", "zh": "Simplified Chinese (zh-CN)", "hi": "Hindi", "es": "Spanish", "fr": "French",
     "ar": "Modern Standard Arabic", "bn": "Bengali", "pt": "Portuguese", "ru": "Russian", "ur": "Urdu",
     "id": "Indonesian", "de": "German", "ja": "Japanese", "sw": "Swahili", "mr": "Marathi", "fa": "Persian (Farsi)",
-    "uk": "Ukrainian", "tr": "Turkish",
+    "uk": "Ukrainian", "tr": "Turkish", "se": "Northern Sami",
 }
 # A reply must be mostly in the script of its language.
 SCRIPT = {
@@ -188,10 +190,33 @@ def valid(lang, field, text, src):
     return ""
 
 
-def translate_story(item, need, blurb_en, translate=call_model, log=print):
+def translate_sami(src, fields, sami, item_id, log=print, alt=None):
+    keys = [f for f in fields if src.get(f)]
+    got = sami([src[f] for f in keys], "en", alt=[(alt or {}).get(f) or "" for f in keys])
+    row = {}
+    for f, text in zip(keys, got):
+        text = tidy(text)
+        why = valid("se", f, text, src[f]) if text else "no reply"
+        if why:
+            log(f"story-translate {item_id} se {f}: dropped ({why})")
+        else:
+            row[f] = text
+    return row
+
+
+def translate_story(item, need, blurb_en, translate=call_model, log=print, sami=None, blurb_nb=""):
     """{lang: {field: text}} for the languages in need. A failed chunk is retried once, then left out."""
     src = {"headline": english(item), "summary": (item.get("summary") or "").strip(), "blurb": blurb_en}
     out = {}
+    if sami and "se" in need:
+        need = dict(need)
+        nb = {"headline": (item.get("title_i18n") or {}).get("nb") or "", "summary": (item.get("summary_i18n") or {}).get("nb") or "",
+              "blurb": blurb_nb}
+        if (item.get("language") or "") == "Norwegian":
+            nb["headline"] = item.get("title") or ""
+        row = translate_sami(src, need.pop("se"), sami, item["id"], log, nb)
+        if row:
+            out["se"] = row
     langs = sorted(need, key=LANGS.index)
     for n in range(0, len(langs), CHUNK):
         chunk = langs[n:n + CHUNK]
@@ -233,7 +258,7 @@ def translate_story(item, need, blurb_en, translate=call_model, log=print):
     return out
 
 
-def run(root=ROOT, ids=None, dry=False, translate=None, log=print, workers=6):
+def run(root=ROOT, ids=None, dry=False, translate=None, log=print, workers=6, sami=None):
     news_path = os.path.join(root, "data", "news.json")
     title_path = os.path.join(root, "data", "title_i18n.json")
     blurb_path = os.path.join(root, "data", "frontpage_blurbs.json")
@@ -257,13 +282,13 @@ def run(root=ROOT, ids=None, dry=False, translate=None, log=print, workers=6):
         if not all(_endpoint()):
             log("story-translate: CF_AI_TOKEN or CF_ACCOUNT_ID not set, skipped")
             return {}
-        translate = call_model
+        translate, sami = call_model, sami or sami_mt.translate
 
     results = {}
     def one(pair):
         item, need = pair
-        b_en = ((blurbs.get(item["id"]) or {}).get("en") or "").strip()
-        return item["id"], translate_story(item, need, b_en, translate, log)
+        b = blurbs.get(item["id"]) or {}
+        return item["id"], translate_story(item, need, (b.get("en") or "").strip(), translate, log, sami, (b.get("nb") or "").strip())
     with cf.ThreadPoolExecutor(max_workers=workers) as ex:
         for sid, got in ex.map(one, todo):
             results[sid] = got
@@ -274,6 +299,12 @@ def run(root=ROOT, ids=None, dry=False, translate=None, log=print, workers=6):
         item = by_id[sid]
         title = (item.get("title") or "").strip()
         entry = catalogue.get(sid) if isinstance(catalogue.get(sid), dict) else None
+        on_item = item.get("title_i18n") if isinstance(item.get("title_i18n"), dict) else None
+        if not entry and on_item:
+            # headlines the editor set on the item: add the missing ones there, not as a partial catalogue entry
+            for lang, row in got.items():
+                if row.get("headline") and not (on_item.get(lang) or "").strip():
+                    on_item[lang] = row.pop("headline"); added["headline"] += 1
         if not entry or (entry.get("source") or "") != title:
             # keep a headline the editor set on the item; the catalogue entry is rebuilt from the current title
             entry = {"source": title}

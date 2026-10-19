@@ -835,9 +835,43 @@ S["tr"] = _check("tr", {
     "bud_nok_amt": "NOK {n}",
 })
 
+S["se"] = _check("se", {
+    "bud_nav": "Bušeahtta",
+    "bud_title": "Infrastruktuvrra bušeahtta",
+    "bud_desc": "Man ollu Nordic Crypto máksá mánus webhotellii ja domentii. Logut eai siskkil bargiid ja ođasmahttojuvvojit manuálalaččat.",
+    "bud_h1": "Infrastruktuvrra bušeahtta",
+    "bud_lead": "Mainna Nordic Crypto máksá mánus hostinga ja domena ovddas, {date} rájes.",
+    "bud_note": "Diet logut eai fátmmas bargiid ja dat ođasmahttojuvvojit manuálalaččat. Haddi lea merkejuvvon oktan dahje almmá lassiárvodivvaga haga dušše dalle go dat lea mearriduvvon.",
+    "bud_col_item": "Poasta",
+    "bud_col_month": "Mánus",
+    "bud_caption": "Host- ja domenagolut mánus",
+    "bud_server": "Hetzner Cloud server {name}, type {type} ({place})",
+    "bud_runs": "Doaimmaha {what}.",
+    "bud_server_split": "{server} serverii plus {ipv4} vuođđo IPv4:ii.",
+    "bud_volume": "Hetzner Cloud Volume, {gb} GB à {price} GB",
+    "bud_workers": "Cloudflare Workers Paid",
+    "bud_domains": "Domenat {names} {vendor} bokte",
+    "bud_year": "{amount} jahkái",
+    "bud_year_incl": "{amount} jahkái, oktan lassiárvodivvagiin",
+    "bud_year_excl": "{amount} jahkái, earret lassiárvodivvada",
+    "bud_pages": "GitHub Pages -host {host} várás",
+    "bud_dns": "Cloudflare DNS ja Web Analytics",
+    "bud_sub_h": "Oasesupmit",
+    "bud_sub_caption": "Oasesupmi juohke valuhtas, mánus",
+    "bud_col_cur": "Valuhtta",
+    "bud_col_sub": "Oasesupmi",
+    "bud_col_nok": "NOK:s, sullii",
+    "bud_total_h": "Sullii oktiibuot NOK:s",
+    "bud_rates": "Bissovaš kurssat dán siiddus, su. {rates}.",
+    "bud_total_line": "Sullii {amount} mánus.",
+    "bud_conv": "{amount} × {rate} = {nok}",
+    "bud_nok_part": "Juo NOK:s",
+    "bud_nok_amt": "NOK {n}",
+})
+
 _missing_langs = [code for code in (
     "en", "nn", "nb", "sv", "da", "fi", "is",
-    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr",
+    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr", "se",
 ) if code not in S]
 if _missing_langs:
     raise RuntimeError("budget strings missing languages: " + ", ".join(_missing_langs))
