@@ -506,7 +506,7 @@ S.update({
 "nl_soon_short": "L’inscription par e-mail ouvrira bientôt.",
 "nl_fallback": "D’ici là, suivez Nordic Crypto par <a href=\"{rss}\">RSS</a>, sur <a href=\"{tg}\">Telegram</a> ou sur <a href=\"{x}\">X</a>.",
 "nl_sending": "Envoi en cours…",
-"nl_sent": "Presque terminé : consultez votre boîte de réception et ouvrez le lien de confirmation dans les 7 jours.",
+"nl_sent": "Presque terminé : si cette adresse n’est pas déjà abonnée, vous recevrez un lien de confirmation par e-mail. Ouvrez-le dans les 7 jours.",
 "nl_confirmed": "Merci, votre abonnement est confirmé.",
 "nl_unsub": "Vous avez été désabonné de la lettre d’information.",
 "nl_e_email": "Veuillez saisir une adresse e-mail valide.",

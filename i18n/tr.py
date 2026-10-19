@@ -459,7 +459,7 @@ S = {
 "nl_soon_short": "E-posta kaydı yakında açılıyor.",
 "nl_fallback": "O zamana kadar, Nordic Crypto'yu <a href=\"{rss}\">RSS</a> ile, <a href=\"{tg}\">Telegram</a> üzerinden veya <a href=\"{x}\">X</a> üzerinden takip edin.",
 "nl_sending": "Gönderiliyor…",
-"nl_sent": "Neredeyse bitti: gelen kutunuzu kontrol edin ve onay bağlantısını 7 gün içinde açın.",
+"nl_sent": "Neredeyse bitti: bu adres zaten abone değilse, e-postayla bir onay bağlantısı alacaksınız. Bağlantıyı 7 gün içinde açın.",
 "nl_confirmed": "Teşekkürler, aboneliğiniz onaylandı.",
 "nl_unsub": "Bülten aboneliğiniz iptal edildi.",
 "nl_e_email": "Lütfen geçerli bir e-posta adresi girin.",

@@ -506,7 +506,7 @@ S.update({
 "nl_soon_short": "Usajili wa barua pepe utafunguliwa hivi karibuni.",
 "nl_fallback": "Hadi wakati huo, fuata Nordic Crypto kupitia <a href=\"{rss}\">RSS</a>, kwenye <a href=\"{tg}\">Telegram</a>, au kwenye <a href=\"{x}\">X</a>.",
 "nl_sending": "Inatuma…",
-"nl_sent": "Karibu imekamilika: angalia kikasha chako na ufungue kiungo cha uthibitisho ndani ya siku 7.",
+"nl_sent": "Karibu imekamilika: ikiwa anwani hii bado haijajisajili, utapokea kiungo cha uthibitisho kwa barua pepe. Kifungue ndani ya siku 7.",
 "nl_confirmed": "Asante, usajili wako umethibitishwa.",
 "nl_unsub": "Umejiondoa kwenye jarida.",
 "nl_e_email": "Tafadhali weka anwani halali ya barua pepe.",
