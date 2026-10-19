@@ -18,6 +18,7 @@ import event_block
 from tools.frontpage_blurbs import card_text, load as load_blurbs, opening_sentences, substantive
 from tools import event_backfill, event_description, event_nft, event_page, event_select, event_title as event_titles
 from tools.headlines import card_headline, public_title_i18n
+from tools import news_seo
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
 BASE = site_url.BASE
 SITE = os.environ.get("NC_SITE_DIR") or P("site")   # NC_SITE_DIR: scratch build dir (tipworker/publish_tip_page.sh)
@@ -697,7 +698,7 @@ def site_footer(rel, root, slug=""):
     sections = "".join(li(rel + (n + "/" if n else ""), t(k)) for n, k in nav_items()[:NAV_MAIN] if n != "newsletter")   # newsletter is already in the follow column
     sections += li(rel + "archive/", t("nav_archive"))   # with the news section; in the phone menu, not a header tab
     sections += li(rel + "developers/", t("dev_nav"))   # under Who's who; not a header tab
-    site = (li(rel + "about/", t("nav_about")) + li(rel + "sources/", t("nav_sources")) + li(rel + "ethics/", t("ethics_title")) + li(rel + "contact/", t("contact_title"))
+    site = (li(rel + "about/", t("nav_about")) + li(rel + "sources/", t("nav_sources")) + li(rel + "ethics/", t("ethics_title")) + li(rel + "editorial/", t("ed_title")) + li(rel + "contact/", t("contact_title"))
             + li(rel + "budget/", t("bud_nav"))
             + li(rel + "changelog/", t("cl_title")) + li(rel + "stats/", t("vst_title")) + li(rel + "privacy/", t("pp_title")) + li(rel + "terms/", t("tos_title")) + li(rel + "media/", t("media_title")) + li(rel + "columnist/", t("col_title"))
             + li(rel + "tip/", t("nav_tip")) + li(rel + "api/", t("foot_api")) + li(rel + "db/", t("db_nav"))
@@ -719,8 +720,10 @@ def site_footer(rel, root, slug=""):
             f'<p class="colophon">{E(t("contact_us"))}: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></p>'
             f'{tor_footer_line(slug)}{source_footer_line()}</div></footer>')
 PAGES_WRITTEN = set()   # (LANG, slug) of every page written; RSS items link only to story pages that exist
+LASTMOD = {}            # page URL -> a real date for sitemap.xml <lastmod>
+NEWS_PAGES = []         # story pages for news-sitemap.xml
 def nl_feed_title(): return f"{SITE_NAME} – {t('nav_newsletter')}"
-def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="", hero="", og=None, share_text=None):
+def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="", hero="", og=None, share_text=None, modified=None):
     """Writes site/<lang>/<slug>/index.html for the current LANG (English at the root).
     hero: optional full-width band between the header and <main> (the front page title block)."""
     PAGES_WRITTEN.add((LANG, slug))
@@ -728,6 +731,7 @@ def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="
     root = "../" * depth or "./"           # site root (data/, assets/, screen/)
     rel = root + lp()                      # home of this language
     url = BASE + lp() + (slug + "/" if slug else "")
+    if modified: LASTMOD[url] = modified
     onion = site_onion_url(slug)
     if onion and slug != "tip" and "onion-location" not in head_extra:   # /tip/ points at the onion tip page instead
         head_extra += f'<meta http-equiv="onion-location" content="{E(onion)}">'
@@ -1071,7 +1075,7 @@ def build():
     cfg = load(P("sources.json")); status = load(P("state", "source_status.json"), {})
     if os.path.exists(SITE): shutil.rmtree(SITE)
     os.makedirs(os.path.join(SITE, "data"))
-    _COPIED.clear()
+    _COPIED.clear(); LASTMOD.clear(); NEWS_PAGES.clear()
     open(os.path.join(SITE, ".nojekyll"), "w").close()
     write_cname()
     copy_brand()
@@ -1172,7 +1176,7 @@ def build():
     json.dump({"active": act}, open(os.path.join(SITE, "data", "sources.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     robots = "User-agent: *\n" + ("Disallow: /\n" if PREVIEW else "Disallow: /admin/\nAllow: /\n")
     if not PREVIEW:
-        robots += f"Sitemap: {BASE}sitemap.xml\n"
+        robots += f"Sitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}news-sitemap.xml\n"
     open(os.path.join(SITE, "robots.txt"), "w").write(robots)
     write_push_assets()
     emit_api(ctx)
@@ -1501,6 +1505,11 @@ def build_ethics():
     body = text_page(lang_template("ethics"), attrs=template_attrs("ethics"))
     page("ethics", t("ethics_title"), "ethics", body, t("ethics_desc"))
 
+def build_editorial():
+    """Editorial guidelines (editorial/): who runs the site, selection, summaries, sources, corrections, AI use, conflicts of interest."""
+    body = text_page(lang_template("editorial").replace("{{UP}}", "../"), attrs=template_attrs("editorial"))
+    page("editorial", t("ed_title"), "editorial", body, t("ed_desc"))
+
 def _budget_bits(line, bud):
     """Item name and the smaller line under it. Amounts come from the line, not from the translation."""
     kind = line["kind"]
@@ -1591,8 +1600,12 @@ def sitemap():
     for rel in ("api/v1/index.json", "api/v1/openapi.json", "api/v1/schema/index.json", "api/v1/markets.json", "api/v1/markets/aggregated.json", "llms.txt"):
         if os.path.exists(os.path.join(SITE, rel)):
             urls.append(BASE + rel)
-    open(os.path.join(SITE, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"<url><loc>{u}</loc></url>\n" for u in sorted(set(urls))) + "</urlset>\n")
+    open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8").write(news_seo.urlset(urls, LASTMOD))
+    if PREVIEW: return
+    listed = set(urls)
+    news = [e for e in NEWS_PAGES if e["url"] in listed]
+    open(os.path.join(SITE, "news-sitemap.xml"), "w", encoding="utf-8").write(news_seo.news_sitemap(news, dt.datetime.now(dt.timezone.utc)))
+    open(os.path.join(SITE, "sitemap-index.xml"), "w", encoding="utf-8").write(news_seo.sitemap_index(BASE, ("sitemap.xml", "news-sitemap.xml")))
 
 def _mk_when(iso):
     return (iso or "").replace("T", " ").replace("+00:00", " UTC")
@@ -2290,7 +2303,9 @@ def build_lang(ctx):
 </div>
 <div class="notice home-note"><p>{E(t("home_lead", upd=upd, n=len(items), pend=t("home_pend", n=len(pending)) if pending else ""))}</p><p>{E(t("home_notice"))}</p><p><a href="archive/">{E(t("arc_home_link"))}</a></p></div>"""
     body = home_with_chat(body)
-    page("", t("home_title"), "", body, t("home_desc"), front_events_script() + MORE_STORIES_JS, hero=hero)
+    org = news_seo.ld_script(dict({"@context": "https://schema.org"}, **news_seo.organization(BASE, CONTACT_EMAIL, (SITE_X, SITE_TELEGRAM, SITE_FACEBOOK, SITE_YOUTUBE))))
+    newest = max((news_seo.published_here(i) or "" for i in items if i.get("status") == "published"), key=lambda v: news_seo.when(v) or dt.datetime.min.replace(tzinfo=dt.timezone.utc), default=None)
+    page("", t("home_title"), "", body, t("home_desc"), front_events_script() + MORE_STORIES_JS, hero=hero, head_extra=org, modified=newest or None)
     build_coverage_pages(items, ctx["blurbs"])
     build_stories(write=True, latest=items)
     build_external_stories(ctx)
@@ -2320,6 +2335,7 @@ def build_lang(ctx):
     build_about()
     build_media()
     build_ethics()
+    build_editorial()
     build_contact()
     build_privacy()
     build_terms()
@@ -2627,6 +2643,19 @@ def more_news(items, current, back):
     if not rows: return ""
     return (f'<aside class="morenews" aria-labelledby="more-h"><h2 id="more-h">{E(t("more_news_h"))}</h2>'
             f'<ol>{"".join(rows)}</ol><p><a class="allnews" href="{back}">{E(t("all_news"))}</a></p></aside>')
+def desk_byline(when, back):
+    """Visible byline: the Nordic Crypto editorial desk and the time the story went up here."""
+    if not when: return ""
+    desk = f'<a href="{E(back)}editorial/">{E(t("ed_desk"))}</a>'
+    date = f'<time datetime="{E(when)}">{endate(when)}</time>'
+    return f'<p class="meta byline-desk">{t("ed_byline", desk=desk, date=date)}</p>'
+def story_ld(slug, headline, published, description, sources, news=False):
+    """NewsArticle JSON-LD for a story page; news=True also lists the page in news-sitemap.xml."""
+    url = BASE + lp() + slug + "/"
+    if news and published and headline:
+        NEWS_PAGES.append({"url": url, "lang": LANG, "title": headline, "published": published})
+    return news_seo.ld_script(news_seo.news_article(url=url, headline=headline or "", lang=i18n.HTML_LANG[LANG], published=published,
+                              base=BASE, image=f"{BASE}assets/brand/og-image.png", description=description, sources=sources))
 def story_page(article, aside, notice=""):
     """Story layout: the article in a reading column, then the latest stories (beside it on wide screens)."""
     note = f'<p class="storynote">{notice}</p>' if notice else ""
@@ -2642,18 +2671,24 @@ def build_coverage_pages(items, blurbs):
         if not rows: continue
         head, head_l, hl, orig = story_heads(i)
         pend = i.get("status") not in ("published", "owner")
+        txt, tl = "", ""
         if pend:
             summ = f'<p class="sum lede pend">{E(t("sum_pending"))}</p>'
         else:
             txt, tl = card_text(i, LANG, blurbs)
             summ = f'<p class="sum lede"{bidi_attr(tl)}>{E(txt)}</p>'
+        here = news_seo.published_here(i)
         article = (f'<article class="prose story"><p class="backlink"><a href="{back}">{E(t("back_news"))}</a></p><h1{bidi_attr(head_l)}>{E(head)}</h1>{orig}'
                    + f'<p class="meta byline">{flag(i.get("country"), deco=True)} {E(cname(i.get("country")))} · {source_mark(i, root)} · <time datetime="{E(i["published"])}">{endate(i["published"])}</time>'
-                   + (f' <span class="tag pend">{E(t("pending"))}</span>' if pend else "") + '</p>'
+                   + (f' <span class="tag pend">{E(t("pending"))}</span>' if pend else "") + '</p>' + desk_byline(here, back)
                    + summ + read_at_row(rows[0], i.get("paywall")) + cited_source(i)
                    + coverage_block(rows, root) + '</article>')
         body = story_page(article, more_news(items, i.get("id"), back), E(t("home_notice")))
-        page("stories/" + i["id"], head, "", body, (i.get("summary") or head or "")[:200], COV_SORT_JS if len({r.get("country") or "" for r in rows}) > 1 else "")
+        doc = _coverage().editor_primary_source(i.get("primary_source"))
+        ld = story_ld("stories/" + i["id"], head, here, txt if not pend else "", [r.get("url") for r in rows] + [(doc or {}).get("url")],
+                      news=not pend and head_l == LANG and tl == LANG)
+        page("stories/" + i["id"], head, "", body, (i.get("summary") or head or "")[:200], COV_SORT_JS if len({r.get("country") or "" for r in rows}) > 1 else "",
+             head_extra=ld, modified=here)
 def build_stories(write=True, latest=None):
     """Own stories written by the editor (markdown, English). Public build: only slugs in approved.json stories.approve.
     Preview: also stories.ready_for_owner, tagged as awaiting jQrgen's final approval. The 'Editor notes' part is internal and never rendered.
@@ -2692,12 +2727,14 @@ def build_stories(write=True, latest=None):
                        + (f'<p class="notice">{E(note)}</p>' if note and art_l == "en" and LANG != "en" else "")
                        + f'<h1{bd}>{E(title)}</h1>'
                        f'<p class="meta byline">{flag(country, deco=True)} {E(cname(country))} · {source_mark({"source": "nordic-crypto", "source_name": "Nordic Crypto"}, up1() + "../")} · <time datetime="{E(pub)}">{endate(pub)}</time>'
-                       + (f' <span class="tag pend">{E(t("owner"))}</span>' if status == "owner" else "") + '</p>'
+                       + (f' <span class="tag pend">{E(t("owner"))}</span>' if status == "owner" else "") + '</p>' + desk_byline(pub, back)
                        + f'<div class="story-body"{bd}>' + "".join(f'<p{" class=\"lede\"" if n == 0 else ""}>{md_inline(x)}</p>' for n, x in enumerate(paras)) + '</div>'
                        + (f'<h2>{E(t("sources_h"))}</h2><ul class="story-sources"{bd}>' + "".join(f"<li>{md_inline(s)}</li>" for s in srcs) + '</ul>' if srcs else "")
                        + '</article>')
             body = story_page(article, more_news(latest or [], "story-" + slug, back), t("story_notice", rel=back))
-            page("stories/" + slug, title, "stories", body, paras[0][:200] if paras else title)
+            cites = [u for x in srcs for u in re.findall(r"https?://[^\s<;)]+", x)]
+            ld = story_ld("stories/" + slug, title, pub, paras[0] if paras else "", cites, news=status == "published" and art_l == LANG)
+            page("stories/" + slug, title, "stories", body, paras[0][:200] if paras else title, head_extra=ld)   # file mtime: no lastmod
         editor_sum = ((st.get("summaries") or {}).get(slug) or "").strip()
         opening = opening_sentences(" ".join(paras)) if paras else ""
         first = editor_sum if substantive(editor_sum) else (opening or editor_sum or (first_sentence(paras[0]) if paras else ""))

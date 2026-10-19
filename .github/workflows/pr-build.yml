@@ -25,6 +25,8 @@ jobs:
         run: python3 -m unittest tests.test_event_title tests.test_event_translate tests.test_d1_events tests.test_newsletter_langs tests.test_send_issue && python3 tests/test_rss_feeds.py
       - name: Build
         run: python3 build.py
+      - name: Google News checks
+        run: python3 -m unittest -v tests.test_news_seo
       - name: Event titles in the page language
         run: |
           set -euo pipefail

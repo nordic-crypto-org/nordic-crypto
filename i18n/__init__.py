@@ -86,6 +86,10 @@ def strings(lang):
         if not archive:
             raise RuntimeError("archive strings missing for " + lang)
         base.update(archive)
+        editorial = importlib.import_module("i18n.editorial_strings").S.get(lang)   # /editorial/ and the story byline, all languages
+        if not editorial:
+            raise RuntimeError("editorial strings missing for " + lang)
+        base.update(editorial)
         _S[lang] = base
     return _S[lang]
 MISSING = set()
