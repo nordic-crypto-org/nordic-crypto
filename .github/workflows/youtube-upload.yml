@@ -1,0 +1,50 @@
+name: YouTube newsletter upload
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue id, e.g. 004"
+        required: true
+      dry_run:
+        description: "Check only, upload nothing"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  pull-requests: write
+# One upload at a time across all runs; a queued run then sees the first run's video and skips.
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Fetch the newsreel
+        run: |
+          url=$(python3 -c "import json,sys;print(next(i for i in json.load(open('newsletter/published/issues.json'))['issues'] if i['id']==sys.argv[1])['video']['url'])" "${{ inputs.issue }}")
+          curl -fsSL -o /tmp/video.mp4 "$url"
+      - name: Upload once
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          args=(--issue "${{ inputs.issue }}" --record --thumbnail "newsletter/published/${{ inputs.issue }}/thumbnail.png")
+          [ "${{ inputs.dry_run }}" = "true" ] && args+=(--dry-run)
+          python3 tools/youtube_upload.py /tmp/video.mp4 "${args[@]}"
+      - name: Open a PR with the YouTube link
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git diff --quiet && { echo "nothing recorded (skipped)"; exit 0; }
+          b="newsletter-${{ inputs.issue }}-youtube"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$b" && git commit -qam "Newsletter #${{ inputs.issue }}: link the newsreel on YouTube"
+          git push -u origin "$b"
+          gh pr create --title "Newsletter #${{ inputs.issue }}: link the newsreel on YouTube" --body "Recorded by the YouTube upload workflow."
