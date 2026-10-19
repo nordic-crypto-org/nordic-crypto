@@ -8,3 +8,5 @@ table.cal td .d{font-variant-numeric:tabular-nums;color:var(--muted);font-size:1
 table.cal td.out{opacity:.35}table.cal td.today .d{background:var(--gold);color:var(--on-gold);font-weight:700;padding:1px 6px;border-radius:var(--r-xs)}table.cal td.has{background:color-mix(in srgb,var(--foam) 22%,var(--surface))}
 table.cal td a{display:flex;gap:4px;align-items:flex-start;font-size:11.5px;line-height:1.25;margin-top:4px;text-decoration:none}table.cal td a span{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:break-word;hyphens:auto}table.cal td a:hover{text-decoration:underline}
 table.cal td a .flag{width:13px;height:10px;margin-top:1px}ol.past{opacity:.75}
+.evt h3{margin:0}.evt .orig{margin:3px 0 0}
+@media(max-width:640px){#evongoing li,#evlist li,ol.past li{flex-direction:column;gap:6px}}

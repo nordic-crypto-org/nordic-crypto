@@ -3436,7 +3436,7 @@ def build_calendar(ctx):
         badge = f'<p class="evphase">{E(t("ongoing_h"))}</p>' if kind == "ongoing" else ""
         anchor = event_map_anchor(e)
         map_bit = f" · {anchor}" if anchor else ""
-        return (f'<li id="e-{E(e["id"])}" data-c="{E(e.get("country"))}" data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}">{badge}<h3{tl}><a href="{E(e["id"])}/">{E(ttl)}</a></h3>{orig}'
+        return (f'<li id="e-{E(e["id"])}" data-c="{E(e.get("country"))}" data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}">{badge}<div class="evt"><h3{tl}><a href="{E(e["id"])}/">{E(ttl)}</a></h3>{orig}</div>'
                 f'<div class="meta">{flag(e.get("country"))} <time datetime="{E(e["start"])}"><b>{E(when(e))}</b></time> · {E(e.get("place") or t("online"))}{(", " + E(e["city"])) if e.get("city") and e["city"] not in (e.get("place") or "") else ""}{map_bit} {badges(e)}</div>'
                 + f'<div class="meta">{E(t("organiser"))}: {E(e["organiser"])} · {E(t("listed_at"))}: <a href="{E(e["url"])}" rel="noopener" target="_blank">{E(e["source"])}</a></div>'
                 + (f'<p class="sum"{lang_attr(nl)}><b>{E(t("note"))}:</b> {E(note)}</p>' if note else "") + '</li>')
