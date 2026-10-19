@@ -1,28 +1,29 @@
-# Newsletter → X thread (@nordiccryptobot)
+# Newsletter → X long post (@nordiccryptobot)
 
-`tools/x_newsletter.py` posts each new weekly Nordic Crypto issue to X once, as **one long post** (X Premium, up to 25,000 characters)
-with the full issue text and the newsreel video attached. If X rejects the length (no long-post entitlement), the
-run falls back to the thread below, reusing the uploaded video. `--thread` forces thread mode.
+`tools/x_newsletter.py` posts each new weekly Nordic Crypto issue to X once, as **one long post** (X Premium) with the
+newsreel video attached (X API v2 chunked upload `/2/media/upload`). Never a thread: if X rejects the post, the run
+fails and nothing is posted.
 
-Long post: `Nordic Crypto #N: <headline>`, every paragraph, section heading (upper case) and story (headline, link,
-summary, source line) from `issue.html`, then `Read it on Nordic Crypto: <issue link>`.
+```
+Nordic Crypto #N: <headline>
+https://nordiccrypto.no/newsletter/<id>/
 
-Thread fallback:
+<story headline>
+https://nordiccrypto.no/stories/<story id>/
+…
+```
 
-- **Post 1:** `Nordic Crypto #N: <headline>`, the issue subtitle, the issue link, and the newsreel video attached natively
-  (X API v2 chunked upload `/2/media/upload` initialize / append / finalize / status; the v1.1 endpoint returns 401 for pay-per-use apps).
-- **Posts 2…n:** one reply per story: `i/n <headline>`, a 1–2 sentence summary, the source link.
-- **Last post:** link to the newsletter archive.
-- Posts are created with X API v2 `POST /2/tweets` and OAuth 1.0a user context. Each post fits 280 characters with
-  URLs counted as 23; summaries are cut at a sentence, else at a word with `…`.
+Every story links to its page on nordiccrypto.no, never the original source. Story ids come from `data/news.json`
+and `archive/articles.json`, matched on the source URL in `issue.html`. X refuses posts with too many links (issue #3
+with 64 failed, #1 with 20 went through), so the post carries at most 20 (`MAX_URLS`); later stories are listed under
+"More in the issue:" without a link.
 
 Data comes from `newsletter/published/issues.json` and `newsletter/published/<id>/issue.html`. The video is the local
 `video.mp4` or `video.url` (sha256-checked). A real run first checks that `https://nordiccrypto.no/newsletter/<id>/`
-answers 200, so nothing goes out before the issue is live.
+and every story page answer 200, so nothing goes out before they are live. A story with no page found fails the run.
 
 ## State
-`data/x_posted.json` records the post ids per issue (`mode`: `long` or `thread`). A completed issue is never posted again. If a thread breaks
-midway, the next run continues as replies to the last saved post (the video is not re-uploaded).
+`data/x_posted.json` records the post id per issue. A completed issue is never posted again.
 
 ## Run
 ```sh
