@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-19T11:28:24+00:00",
+ "generated_at": "2026-10-19T14:10:51+00:00",
  "preview": false,
  "sign_off": "The Nordic Crypto team",
  "description": "Bitcoin, blockchain and crypto news, events, a who's who, regulation and academia for Norway, Sweden, Denmark, Finland and Iceland.",
@@ -38,7 +38,8 @@
    "mr": "विशेषतः Apple TV ला समर्थन करते.",
    "fa": "به‌ویژه از Apple TV پشتیبانی می‌کند.",
    "uk": "Особливо підтримує Apple TV.",
-   "tr": "Özellikle Apple TV için destek sunar."
+   "tr": "Özellikle Apple TV için destek sunar.",
+   "se": "Doarju erenoamážit Apple TV:a."
   }
  },
  "languages": [
@@ -281,6 +282,16 @@
    "html_lang": "tr",
    "og_locale": "tr_TR",
    "home": "https://nordiccrypto.no/tr/"
+  },
+  {
+   "code": "se",
+   "name": "Davvisámegiella",
+   "native_name": "Davvisámegiella",
+   "english_name": "Northern Sami",
+   "rtl": false,
+   "html_lang": "se",
+   "og_locale": "se_NO",
+   "home": "https://nordiccrypto.no/se/"
   }
  ],
  "language_note": "Site languages, with native_name, english_name and rtl, are listed in languages and in /api/v1/languages.json. Our own text is written in English first. summary_i18n, title_i18n, subtitle_i18n, note_i18n and about_i18n carry published translations, keyed by site language. A language without one falls back to the English field until a translation is published. On a news item, title is the source headline, title_en is our English headline and title_i18n is our headline in every other site language. The site shows the page-language headline first and the source headline underneath when they differ. Outlet headlines inside sources stay in that outlet's language. There is no query string for language: each JSON document already carries every published translation. The language switcher's country default is a guess; see /api/v1/geo-language.json. The nc_lang cookie wins.",

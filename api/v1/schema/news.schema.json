@@ -331,6 +331,9 @@
       },
       "tr": {
        "type": "string"
+      },
+      "se": {
+       "type": "string"
       }
      },
      "additionalProperties": false,
@@ -342,7 +345,7 @@
       "fi",
       "is"
      ],
-     "description": "Our summary in every site language except English (nn, nb, sv, da, fi, is, zh, hi, es, fr, ar, bn, pt, ru, ur, id, de, ja, sw, mr, fa, uk, tr). English is summary. tools/story_translate.py fills missing languages; tools/headlines.py check fails while one is missing."
+     "description": "Our summary in every site language except English (nn, nb, sv, da, fi, is, zh, hi, es, fr, ar, bn, pt, ru, ur, id, de, ja, sw, mr, fa, uk, tr, se). English is summary. tools/story_translate.py fills missing languages; tools/headlines.py check fails while one is missing."
     },
     "summary_i18n_review": {
      "type": "string",
@@ -485,6 +488,9 @@
        "type": "string"
       },
       "tr": {
+       "type": "string"
+      },
+      "se": {
        "type": "string"
       },
       "uk": {

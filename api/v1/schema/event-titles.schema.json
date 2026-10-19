@@ -81,7 +81,8 @@
       "mr",
       "fa",
       "uk",
-      "tr"
+      "tr",
+      "se"
      ],
      "description": "Language of the original title."
     },
@@ -155,6 +156,9 @@
      "type": "string"
     },
     "tr": {
+     "type": "string"
+    },
+    "se": {
      "type": "string"
     }
    },
