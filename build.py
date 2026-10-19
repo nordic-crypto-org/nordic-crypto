@@ -196,10 +196,10 @@ def newsletter_script():
     return """<script>(function(){var M=%s,F=[].slice.call(document.querySelectorAll('form.nlform'));if(!F.length)return;
 function say(f,k){var s=f.querySelector('.nlmsg');s.textContent=M[k]||M.e_fail;s.className='nlmsg '+(k.indexOf('e_')===0?'warn':'ok')}
 var E={email:'e_email',rate:'e_rate',invalid_link:'e_link'},q=new URLSearchParams(location.search),f0=document.querySelector('main form.nlform')||F[0];
-if(q.get('sent'))say(f0,'sent');else if(q.get('confirmed'))say(f0,'confirmed');else if(q.get('unsubscribed'))say(f0,'unsub');else if(q.get('error'))say(f0,E[q.get('error')]||'e_fail');
+if(q.get('sent'))say(f0,'sent');else if(q.get('confirmed')){var p=location.pathname,i=p.lastIndexOf('/newsletter/');if(i<0)say(f0,'confirmed');else{var b=p.slice(0,i+1),l='';try{l=localStorage.getItem('nc_lang')||''}catch(e){}if(__CUR__==='en'&&l!=='en'&&__LANGS__.indexOf(l)>=0)b+=l+'/';location.replace(b+'subscribed/')}}else if(q.get('unsubscribed'))say(f0,'unsub');else if(q.get('error'))say(f0,E[q.get('error')]||'e_fail');
 F.forEach(function(f){f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button'),d={};new FormData(f).forEach(function(v,k){d[k]=v});
 b.disabled=true;say(f,'sending');fetch(f.getAttribute('data-ep')+'/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
-.then(function(r){return r.json().then(function(j){b.disabled=false;if(r.ok){say(f,'sent');f.reset()}else say(f,E[j.error]||'e_fail')})}).catch(function(){b.disabled=false;say(f,'e_fail')})})})})();</script>""" % json.dumps(m, ensure_ascii=False)
+.then(function(r){return r.json().then(function(j){b.disabled=false;if(r.ok){say(f,'sent');f.reset()}else say(f,E[j.error]||'e_fail')})}).catch(function(){b.disabled=false;say(f,'e_fail')})})})})();</script>""".replace("__CUR__", json.dumps(LANG)).replace("__LANGS__", json.dumps(i18n.LANGS)) % json.dumps(m, ensure_ascii=False)
 def newsletter_closed(rel, compact=False):
     """Shown while the Worker is off. There is no email field, so an address cannot be stored or dropped."""
     links = t("nl_fallback", rss=E(rel + "rss.xml"), tg=SITE_TELEGRAM, x=SITE_X)
@@ -1371,6 +1371,20 @@ def build_tiktok_callback():
           'f.select();if(navigator.clipboard)navigator.clipboard.writeText(f.value);else document.execCommand("copy");b.textContent="Copied"})})})();</script>')
     page("tiktok/callback", "TikTok sign-in", "tiktok", body, "TikTok sign-in", langs=["en"], head_extra=head, extra_script=js)
 
+def build_subscribed():
+    """subscribed/ in every language: the page a reader lands on after confirming the newsletter (noindex, not in menus or sitemap.xml)."""
+    if not newsletter_endpoint(): return
+    import subscribed
+    root = "../" * (1 + (0 if LANG == "en" else 1)); rel = root + lp()
+    issues = nl_issues()
+    latest = f"{rel}newsletter/{issues[0]['id']}/" if issues else f"{rel}newsletter/"
+    rss = f"{rel}newsletter/rss.xml" if issues else f"{rel}rss.xml"
+    for n in ("subscribed.css", "subscribed.js"): copy_repo_file(f"assets/subscribed/{n}")
+    doc = subscribed.render(LANG, i18n.HTML_LANG[LANG], i18n.rtl(LANG), root, rel, latest, rss, len(issues), len(i18n.LANGS),
+                            int(issues[0].get("stories") or 0) if issues else 0, SITE_TELEGRAM, SITE_X)
+    d = os.path.join(SITE, lp(), "subscribed"); os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(doc)
+
 CF_PATH = P("data", "crowdfunding.json")
 def _cf_data():
     return load(CF_PATH, {"pilot": {}, "campaigns": []}) or {"pilot": {}, "campaigns": []}
@@ -1569,6 +1583,7 @@ def sitemap():
             if "crowdfunding" in r.split("/"): continue   # closed pilot: noindex
             if r.split("/")[0] == "admin": continue          # private admin page: noindex, Disallow
             if r.split("/")[0] == "tiktok": continue         # TikTok OAuth redirect: noindex
+            if "subscribed" in r.split("/")[:2]: continue    # newsletter celebration page: noindex
             urls.append(BASE + r)
     for rel in ("api/v1/index.json", "api/v1/openapi.json", "api/v1/schema/index.json", "api/v1/markets.json", "api/v1/markets/aggregated.json", "llms.txt"):
         if os.path.exists(os.path.join(SITE, rel)):
@@ -2309,6 +2324,7 @@ def build_lang(ctx):
     build_privacy()
     build_terms()
     build_tiktok_callback()
+    build_subscribed()
     build_budget()
     build_crowdfunding()
     build_chat()
