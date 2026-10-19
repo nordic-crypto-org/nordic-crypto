@@ -133,6 +133,7 @@ if [ "$DRY" = "--yes" ]; then
   export CF_ACCOUNT_ID="${CF_ACCOUNT_ID:-$(gh variable get CF_ACCOUNT_ID -R nordic-crypto-org/nordic-crypto 2>/dev/null || true)}"
   { .venv/bin/python tools/apply_approvals.py && .venv/bin/python tools/story_translate.py; } || echo "warning: story translation failed (cards fall back to English for the missing languages)"
   .venv/bin/python tools/headlines.py check || echo "warning: a published story still lacks a headline or summary in a site language"
+  .venv/bin/python tools/issue_translate.py || echo "warning: issue translation failed (those languages get the English issue)"
 fi
 # build.py also fetches Nordic exchange prices into site/api/v1/markets.json (tools/markets.py)
 # and always writes site/CNAME (nordiccrypto.no)

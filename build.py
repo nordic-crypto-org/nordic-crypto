@@ -180,12 +180,12 @@ NL_N = [0]
 def newsletter_form(compact=False):
     """Signup form (posts to the Worker; works without JavaScript via a 303 back to /newsletter/). Honeypot 'website'.
     The required consent checkbox is the on-page agreement. The Worker confirms by email before anything else is sent.
-    The Worker still accepts the original seven site languages, so a newer UI language posts English."""
+    The page language is stored, so confirmation, welcome mail and issues come in that language."""
     ep = newsletter_endpoint()
     if not ep: return ""
     NL_N[0] += 1; i = NL_N[0]
     return (f'<form class="nlform{" nlc" if compact else ""}" method="post" action="{E(ep)}/api/subscribe" data-ep="{E(ep)}">'
-            f'<input type="hidden" name="site" value="nordic-crypto"><input type="hidden" name="lang" value="{LANG if LANG in ("en", "nn", "nb", "sv", "da", "fi", "is") else "en"}">'
+            f'<input type="hidden" name="site" value="nordic-crypto"><input type="hidden" name="lang" value="{LANG}">'
             f'<label for="nl-email-{i}">{E(t("nl_email"))}</label> <input id="nl-email-{i}" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email">'
             f'<span class="hp" aria-hidden="true"><label for="nl-w-{i}">website</label><input id="nl-w-{i}" name="website" tabindex="-1" autocomplete="off"></span>'
             f'<label class="nlconsent"><input id="nl-c-{i}" name="consent" type="checkbox" value="yes" required> {E(t("nl_consent"))}</label>'
@@ -196,10 +196,10 @@ def newsletter_script():
     return """<script>(function(){var M=%s,F=[].slice.call(document.querySelectorAll('form.nlform'));if(!F.length)return;
 function say(f,k){var s=f.querySelector('.nlmsg');s.textContent=M[k]||M.e_fail;s.className='nlmsg '+(k.indexOf('e_')===0?'warn':'ok')}
 var E={email:'e_email',rate:'e_rate',invalid_link:'e_link'},q=new URLSearchParams(location.search),f0=document.querySelector('main form.nlform')||F[0];
-if(q.get('sent'))say(f0,'sent');else if(q.get('confirmed')){var p=location.pathname,i=p.lastIndexOf('/newsletter/');if(i<0)say(f0,'confirmed');else{var b=p.slice(0,i+1),l='';try{l=localStorage.getItem('nc_lang')||''}catch(e){}if(__CUR__==='en'&&l!=='en'&&__LANGS__.indexOf(l)>=0)b+=l+'/';location.replace(b+'subscribed/')}}else if(q.get('unsubscribed'))say(f0,'unsub');else if(q.get('error'))say(f0,E[q.get('error')]||'e_fail');
+if(q.get('sent'))say(f0,'sent');else if(q.get('confirmed')){var p=location.pathname,i=p.lastIndexOf('/newsletter/');if(i<0)say(f0,'confirmed');else location.replace(p.slice(0,i+1)+'subscribed/')}else if(q.get('unsubscribed'))say(f0,'unsub');else if(q.get('error'))say(f0,E[q.get('error')]||'e_fail');
 F.forEach(function(f){f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelector('button'),d={};new FormData(f).forEach(function(v,k){d[k]=v});
-b.disabled=true;say(f,'sending');fetch(f.getAttribute('data-ep')+'/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
-.then(function(r){return r.json().then(function(j){b.disabled=false;if(r.ok){say(f,'sent');f.reset()}else say(f,E[j.error]||'e_fail')})}).catch(function(){b.disabled=false;say(f,'e_fail')})})})})();</script>""".replace("__CUR__", json.dumps(LANG)).replace("__LANGS__", json.dumps(i18n.LANGS)) % json.dumps(m, ensure_ascii=False)
+b.disabled=true;say(f,'sending');(function post(){fetch(f.getAttribute('data-ep')+'/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+.then(function(r){return r.json().then(function(j){if(!r.ok&&j.error==='lang'&&d.lang!=='en'){d.lang='en';return post()}b.disabled=false;if(r.ok){say(f,'sent');f.reset()}else say(f,E[j.error]||'e_fail')})}).catch(function(){b.disabled=false;say(f,'e_fail')})})()})})})();</script>"""% json.dumps(m, ensure_ascii=False)
 def newsletter_closed(rel, compact=False):
     """Shown while the Worker is off. There is no email field, so an address cannot be stored or dropped."""
     links = t("nl_fallback", rss=E(rel + "rss.xml"), tg=SITE_TELEGRAM, x=SITE_X)
@@ -435,7 +435,7 @@ def nl_follow_box(rel, hid, privacy=False):
     form = newsletter_form()
     top = (form + (f'<p class="notice">{t("nl_priv")}</p>' if privacy else "")) if form else f'<p class="nlsoon">{E(t("nl_soon"))}</p>'
     ways = (f'<p class="nlways"><a href="{E(rel)}rss.xml">{ICON_RSS}{E(t("nl_rss"))}</a>'
-            + (f'<a href="{E(rel)}newsletter/rss.xml" title="{E(NL_FEED_TITLE)}">{ICON_RSS}{E(t("nl_rss_issues"))}</a>' if nl_issues() else "") +
+            + (f'<a href="{E(rel)}newsletter/rss.xml" title="{E(nl_feed_title())}">{ICON_RSS}{E(t("nl_rss_issues"))}</a>' if nl_issues() else "") +
             f'<a href="{SITE_TELEGRAM}" rel="noopener">{ICON_TG}{E(t("tg_btn"))}</a>'
             f'<a href="{SITE_X}" rel="noopener">{ICON_X}{E(t("x_btn"))}</a>'
             f'<a href="{SITE_FACEBOOK}" rel="noopener">{ICON_FB}{E(t("fb_btn"))}</a>'
@@ -467,7 +467,7 @@ def build_newsletter():
     body = f"""<h1>{E(t("nl_title"))}</h1>
 <p class="lead">{E(t("nl_lead"))}</p>
 <section id="signup">{newsletter_offer("../", privacy=True)}</section>
-<p class="nlways nlfeeds"><a href="../rss.xml">{ICON_RSS}{E(t("nl_rss"))}</a><a href="rss.xml" type="application/rss+xml" title="{E(NL_FEED_TITLE)}">{ICON_RSS}{E(t("nl_rss_issues"))}</a></p>
+<p class="nlways nlfeeds"><a href="../rss.xml">{ICON_RSS}{E(t("nl_rss"))}</a><a href="rss.xml" type="application/rss+xml" title="{E(nl_feed_title())}">{ICON_RSS}{E(t("nl_rss_issues"))}</a></p>
 <h2 id="issues">{E(t("nl_issues_h"))}</h2>
 <p class="meta">{E(t("nl_issues_lead"))}</p>
 <ol class="nlissues">{''.join(lis) or f'<li class="empty">{E(t("nl_issues_none"))}</li>'}</ol>
@@ -719,7 +719,7 @@ def site_footer(rel, root, slug=""):
             f'<p class="colophon">{E(t("contact_us"))}: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></p>'
             f'{tor_footer_line(slug)}{source_footer_line()}</div></footer>')
 PAGES_WRITTEN = set()   # (LANG, slug) of every page written; RSS items link only to story pages that exist
-NL_FEED_TITLE = "Nordic Crypto nyhetsbrev"
+def nl_feed_title(): return f"{SITE_NAME} – {t('nav_newsletter')}"
 def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="", hero="", og=None, share_text=None):
     """Writes site/<lang>/<slug>/index.html for the current LANG (English at the root).
     hero: optional full-width band between the header and <main> (the front page title block)."""
@@ -731,8 +731,8 @@ def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="
     onion = site_onion_url(slug)
     if onion and slug != "tip" and "onion-location" not in head_extra:   # /tip/ points at the onion tip page instead
         head_extra += f'<meta http-equiv="onion-location" content="{E(onion)}">'
-    nl_alt = (f'<link rel="alternate" type="application/rss+xml" title="{E(NL_FEED_TITLE)}" href="{E(rel)}newsletter/rss.xml">'
-              if (not slug or slug == "newsletter" or slug.startswith("newsletter/")) and nl_issues() else "")
+    nl_alt = (f'<link rel="alternate" type="application/rss+xml" title="{E(nl_feed_title())}" href="{E(rel)}newsletter/rss.xml">'
+              if nl_issues() else "")
     s = snippets(url, f"{title} – {SITE_NAME}" if slug else f"{SITE_NAME} – {t('site_desc_suffix')}", share_text)
     nav_html = _nav_html(rel, root, nav)
     langs = langs or i18n.LANGS
@@ -1382,7 +1382,9 @@ def build_subscribed():
     rss = f"{rel}newsletter/rss.xml" if issues else f"{rel}rss.xml"
     for n in ("subscribed.css", "subscribed.js"): copy_repo_file(f"assets/subscribed/{n}")
     doc = subscribed.render(LANG, i18n.HTML_LANG[LANG], i18n.rtl(LANG), root, rel, latest, rss, len(issues), len(i18n.LANGS),
-                            int(issues[0].get("stories") or 0) if issues else 0, SITE_TELEGRAM, SITE_X)
+                            int(issues[0].get("stories") or 0) if issues else 0, SITE_TELEGRAM, SITE_X,
+                            f'<link rel="alternate" type="application/rss+xml" title="{E(SITE_NAME)}" href="{E(rel)}rss.xml">'
+                            + (f'<link rel="alternate" type="application/rss+xml" title="{E(nl_feed_title())}" href="{E(rss)}">' if issues else ""))
     d = os.path.join(SITE, lp(), "subscribed"); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(doc)
 
@@ -2118,10 +2120,7 @@ def write_rss(items):
     rows.sort(key=lambda i: i.get("published") or "", reverse=True)
     bits = []
     for i in rows[:40]:
-        if LANG == "en" or i.get("own_story"):
-            title = i.get("title_en") or i.get("title") or ""
-        else:
-            title = i.get("title") or ""
+        title = card_headline(i, LANG)[0] or i.get("title_en") or i.get("title") or ""
         desc = ((i.get("summary_i18n") or {}).get(LANG) or "") if LANG != "en" else ""
         desc = desc or i.get("summary") or ""
         slug = story_path(i).strip("/")
@@ -2176,7 +2175,7 @@ def write_newsletter_rss(issues):
                     f"{pub}<description>{html.escape(summary)}</description></item>")
     xml = ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
            "<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\"><channel>"
-           f"<title>{html.escape(NL_FEED_TITLE)}</title>"
+           f"<title>{html.escape(nl_feed_title())}</title>"
            f"<link>{html.escape(home)}</link>"
            f"<description>{html.escape(t('nl_desc'))}</description>"
            f"<language>{html.escape(i18n.HTML_LANG[LANG])}</language>"

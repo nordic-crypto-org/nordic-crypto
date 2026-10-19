@@ -51,3 +51,13 @@ test("mailer sends nothing unless a provider AND MAIL_SEND_ENABLED=1 are set", a
     assert.equal(called, 0);
   } finally { globalThis.fetch = real; }
 });
+
+test("nordic-crypto takes every site language and confirm lands on subscribed/", async () => {
+  const { doneUrl } = await import("../src/messages.js");
+  for (const l of ["de", "ar", "ja", "tr", "se"]) assert.equal(validateSignup({ email: "a@b.no", site: "nordic-crypto", lang: l })[1], null, l);
+  assert.ok(doneUrl("nordic-crypto", "de").endsWith("/de/subscribed/"));
+  assert.equal(doneUrl("nordic-crypto", "en"), siteUrl.base.replace(/\/?$/, "/") + "subscribed/");
+  assert.ok(doneUrl("kryptonytt", "nb").endsWith("/bm/nyhetsbrev/?confirmed=1"));
+  assert.match(confirmEmail("nordic-crypto", "ar", "https://x.test/c").html, /<html lang="ar" dir="rtl">/);
+  assert.doesNotMatch(confirmEmail("nordic-crypto", "de", "https://x.test/c").html, /dir="rtl"/);
+});
