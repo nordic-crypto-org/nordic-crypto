@@ -3,7 +3,7 @@
 
 Uploads the newsreel with Graph API POST /{page-id}/videos. By default it passes file_url (the issue's video.url), so
 Facebook fetches the file. With --upload, or when there is no video.url, the local/downloaded MP4 is sent as a
-multipart `source`. The title is the headline. The description holds the intro, every story (headline, short summary,
+multipart `source`. The issue poster (thumbnail.png) is sent as `thumb`. The title is the headline. The description holds the intro, every story (headline, short summary,
 link) and the issue link. Facebook has no 280-char limit, so it is a single post.
 
 Before a real post the issue page must answer 200.
@@ -130,12 +130,14 @@ def build_post(meta):
     return {"title": title[:255], "description": "\n".join(lines)}
 
 
-def graph_post(url, fields, file_path=None):
-    if file_path:
+def graph_post(url, fields, file_path=None, thumb=None):
+    files = [(k, n, t, p) for k, n, t, p in (("source", "video.mp4", "video/mp4", file_path), ("thumb", "thumb.png", "image/png", thumb)) if p]
+    if files:
         b = "nc" + secrets.token_hex(12)
         parts = [f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode() for k, v in fields.items()]
-        with open(file_path, "rb") as fh:
-            parts.append(f"--{b}\r\nContent-Disposition: form-data; name=\"source\"; filename=\"video.mp4\"\r\nContent-Type: video/mp4\r\n\r\n".encode() + fh.read() + b"\r\n")
+        for k, name, ct, path in files:
+            with open(path, "rb") as fh:
+                parts.append(f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"; filename=\"{name}\"\r\nContent-Type: {ct}\r\n\r\n".encode() + fh.read() + b"\r\n")
         data, ctype = b"".join(parts) + f"--{b}--\r\n".encode(), f"multipart/form-data; boundary={b}"
     else:
         data, ctype = urllib.parse.urlencode(fields).encode(), "application/x-www-form-urlencoded"
@@ -145,6 +147,11 @@ def graph_post(url, fields, file_path=None):
             return json.load(r)
     except urllib.error.HTTPError as e:
         raise RuntimeError(f"Graph API -> {e.code}: {e.read()[:500].decode('utf-8', 'replace')}")
+
+
+def poster_path(meta):
+    p = os.path.join(PUBLISHED, meta["id"], (meta.get("video") or {}).get("poster") or "thumbnail.png")
+    return p if os.path.exists(p) else None
 
 
 def main(argv=None):
@@ -181,10 +188,11 @@ def main(argv=None):
     page, token = os.environ["FB_PAGE_ID"], os.environ["FB_PAGE_ACCESS_TOKEN"]
     fields = {"title": post["title"], "description": post["description"], "access_token": token}
     url = f"{GRAPH}/{page}/videos"
+    thumb = poster_path(meta)  # the newsreel opens on black, so never let Facebook pick frame 0
     if a.upload or not v.get("url"):
-        res = graph_post(url, fields, fetch_video(meta))
+        res = graph_post(url, fields, fetch_video(meta), thumb=thumb)
     else:
-        res = graph_post(url, dict(fields, file_url=v["url"]))
+        res = graph_post(url, dict(fields, file_url=v["url"]), thumb=thumb)
     vid = res["id"]
     state[meta["id"]] = {"video_id": vid, "posted_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                          "url": f"https://www.facebook.com/{page}/videos/{vid}"}
