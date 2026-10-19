@@ -17,6 +17,20 @@ def _wrap(draw, text, font, width):
     return lines
 
 
+def covers(text):
+    """Whether the title font has a glyph for every character (missing ones draw as the same .notdef box)."""
+    try:
+        from PIL import ImageFont
+    except ImportError:
+        return True
+    font = ImageFont.truetype(FONT_B, 40)
+    def shape(c):
+        m = font.getmask(c)
+        return m.size, bytes(m)
+    blank = shape("\ue000")
+    return all(shape(c) != blank for c in set(text or "") if not c.isspace())
+
+
 def render(path, title, subtitle=""):
     """Write the card to path. Returns True when written, False when Pillow is missing."""
     try:

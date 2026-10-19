@@ -1,0 +1,168 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://nordiccrypto.no/api/v1/schema/event-titles.schema.json",
+ "title": "Event titles",
+ "description": "Event titles in every site language, by event id. Stored in the event_translations table in Cloudflare D1 (field title); data/event_title_i18n.json is the snapshot. source is the original title and lang its language. Every site language except lang. An entry is used only while source is the event's current original title.",
+ "x-nordic": {
+  "id": "event-titles",
+  "order": 221,
+  "store": "Cloudflare D1: event_translations",
+  "files": [
+   "data/event_title_i18n.json"
+  ],
+  "pages": [],
+  "api": [],
+  "relations": [
+   {
+    "field": "items key",
+    "to": "events",
+    "cardinality": "many-to-one"
+   }
+  ],
+  "derived": [],
+  "omitted_from_api": [],
+  "sections": [
+   {
+    "id": "title",
+    "title": "Title",
+    "row": "#/$defs/title"
+   }
+  ],
+  "row": "#/$defs/title"
+ },
+ "type": "object",
+ "properties": {
+  "_note": {
+   "type": "string"
+  },
+  "items": {
+   "type": "object",
+   "additionalProperties": {
+    "$ref": "#/$defs/title"
+   }
+  }
+ },
+ "additionalProperties": false,
+ "required": [
+  "_note",
+  "items"
+ ],
+ "$defs": {
+  "title": {
+   "type": "object",
+   "properties": {
+    "source": {
+     "type": "string",
+     "description": "The original title these translations were made from."
+    },
+    "lang": {
+     "type": "string",
+     "enum": [
+      "en",
+      "nn",
+      "nb",
+      "sv",
+      "da",
+      "fi",
+      "is",
+      "zh",
+      "hi",
+      "es",
+      "fr",
+      "ar",
+      "bn",
+      "pt",
+      "ru",
+      "ur",
+      "id",
+      "de",
+      "ja",
+      "sw",
+      "mr",
+      "fa",
+      "uk",
+      "tr"
+     ],
+     "description": "Language of the original title."
+    },
+    "en": {
+     "type": "string"
+    },
+    "nn": {
+     "type": "string"
+    },
+    "nb": {
+     "type": "string"
+    },
+    "sv": {
+     "type": "string"
+    },
+    "da": {
+     "type": "string"
+    },
+    "fi": {
+     "type": "string"
+    },
+    "is": {
+     "type": "string"
+    },
+    "zh": {
+     "type": "string"
+    },
+    "hi": {
+     "type": "string"
+    },
+    "es": {
+     "type": "string"
+    },
+    "fr": {
+     "type": "string"
+    },
+    "ar": {
+     "type": "string"
+    },
+    "bn": {
+     "type": "string"
+    },
+    "pt": {
+     "type": "string"
+    },
+    "ru": {
+     "type": "string"
+    },
+    "ur": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "de": {
+     "type": "string"
+    },
+    "ja": {
+     "type": "string"
+    },
+    "sw": {
+     "type": "string"
+    },
+    "mr": {
+     "type": "string"
+    },
+    "fa": {
+     "type": "string"
+    },
+    "uk": {
+     "type": "string"
+    },
+    "tr": {
+     "type": "string"
+    }
+   },
+   "additionalProperties": false,
+   "required": [
+    "source",
+    "lang"
+   ]
+  }
+ }
+}
