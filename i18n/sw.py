@@ -72,7 +72,7 @@ S = {
 "push_privacy": "Tunahifadhi usajili wa push wa kivinjari chako tu (anwani na funguo mbili zinazoficha ujumbe), lugha ya ukurasa huu, na nchi unazochagua. Hakuna jina, hakuna barua pepe, na hatufuatilii unachosoma. Kitufe hicho hicho huzima arifa na kufuta usajili. Cloudflare Web Analytics huhesabu ziara kwa jumla, bila vidakuzi, na hatuuzi data hiyo.",
 "push_unsupported": "Kivinjari hiki hakiwezi kuonyesha arifa.",
 "push_denied": "Arifa za tovuti hii zimezuiwa katika mipangilio ya kivinjari.",
-"push_ios": "Kwenye iPhone au iPad, ongeza tovuti kwenye skrini ya nyumbani kwanza. iOS 16.4 au mpya zaidi inaweza kisha kutumia arifa hizi za kivinjari. Huduma ya push ya Apple (APNs) haitumiki.",
+"push_ios": "Kwenye iPhone au iPad (iOS 16.4 au mpya zaidi): katika Safari, gusa Shiriki, kisha Ongeza kwenye Skrini ya Mwanzo. Fungua Nordic Crypto kutoka skrini ya mwanzo na uwashe arifa hapo.",
 "push_unavailable": "Huduma ya arifa bado haijawashwa.",
 "push_working": "Inafanya kazi…",
 "push_fail": "Imeshindwa kusasisha arifa. Jaribu tena.",

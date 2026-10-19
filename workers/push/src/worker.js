@@ -53,13 +53,20 @@ function pick(map, lang, fallback) {
   return (fallback || "").trim();
 }
 
+// Our story pages exist in every site language: /stories/x/ is English, /nb/stories/x/ Bokmål.
+const SITE = "https://nordiccrypto.no";
+export function pageFor(url, lang) {
+  if (lang === "en" || !url.startsWith(SITE + "/stories/")) return url;
+  return SITE + "/" + lang + url.slice(SITE.length);
+}
+
 export function notificationFor(stories, lang) {
   const copy = copyFor(lang);
   if (stories.length === 1) {
     const s = stories[0];
     const title = clip(pick(s.titles, lang, s.title), 120) || copy.one;
     const body = clip(pick(s.summaries, lang, s.summary), 200);
-    return { title, body, url: s.url, lang, tag: "nordic-crypto-latest" };
+    return { title, body, url: pageFor(s.url, lang), lang, tag: "nordic-crypto-latest" };
   }
   const shown = stories.slice(0, 3).map((s) => clip(pick(s.titles, lang, s.title), 80)).filter(Boolean);
   let body = shown.join(" · ");
@@ -68,7 +75,7 @@ export function notificationFor(stories, lang) {
   return {
     title: copy.many.replace("{n}", String(stories.length)),
     body: clip(body, 240),
-    url: stories[0].url,
+    url: pageFor(stories[0].url, lang),
     lang,
     tag: "nordic-crypto-latest",
   };

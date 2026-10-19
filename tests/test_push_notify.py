@@ -23,7 +23,7 @@ class DiffTest(unittest.TestCase):
         prev = {"items": [item("a")]}
         cur = {"items": [item("a"), item("b", country="SE", language="Swedish", url="https://example.se/b")]}
         out = mod.new_stories(prev, cur)
-        self.assertEqual([s["url"] for s in out], ["https://example.se/b"])
+        self.assertEqual([s["url"] for s in out], ["https://nordiccrypto.no/stories/b/"])
         self.assertEqual(out[0]["country"], "SE")
         self.assertIn("nn", out[0]["summaries"])
         self.assertTrue(out[0]["url"].startswith("https://"))
@@ -33,6 +33,14 @@ class DiffTest(unittest.TestCase):
         cur = {"items": [item("s", url="stories/hello/", own_story=True, summary="", title_en="Our piece")]}
         out = mod.new_stories({"items": []}, cur)
         self.assertEqual(out[0]["url"], "https://nordiccrypto.no/stories/hello/")
+
+    def test_translated_headlines(self):
+        mod = load_mod()
+        cur = {"items": [item("t", title_i18n={"de": "Deutsch", "se": "Sámegillii", "fa": ""})]}
+        out = mod.new_stories({"items": []}, cur)
+        self.assertEqual(out[0]["titles"]["de"], "Deutsch")
+        self.assertEqual(out[0]["titles"]["se"], "Sámegillii")
+        self.assertNotIn("fa", out[0]["titles"])
 
     def test_pending_is_not_new(self):
         mod = load_mod()

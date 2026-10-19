@@ -366,7 +366,7 @@ S.update({
 "push_privacy": "Vi sparar bara push-prenumerationen från din webbläsare (adressen och de två nycklarna som krypterar meddelandet), språket på den här sidan och de länder du väljer. Inget namn, ingen e-postadress och ingen spårning av vad du läser. Stäng av aviseringar med samma knapp; då raderas prenumerationen. Cloudflare Web Analytics räknar besök samlat, utan kakor, och vi säljer inte de uppgifterna.",
 "push_unsupported": "Den här webbläsaren kan inte visa aviseringar.",
 "push_denied": "Aviseringar är blockerade för den här webbplatsen i webbläsarens inställningar.",
-"push_ios": "På iPhone eller iPad lägger du först till webbplatsen på hemskärmen. iOS 16.4 eller senare kan då använda de här webbläsaraviseringarna. Apples egen push-tjänst (APNs) används inte.",
+"push_ios": "På iPhone eller iPad (iOS 16.4 eller senare): Tryck på Dela i Safari och välj Lägg till på hemskärmen. Öppna Nordic Crypto från hemskärmen och slå på aviseringarna där.",
 "push_unavailable": "Aviseringstjänsten är inte påslagen än.",
 "push_working": "Arbetar …",
 "push_fail": "Kunde inte uppdatera aviseringarna. Försök igen.",

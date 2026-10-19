@@ -385,7 +385,7 @@ S.update({
 "push_privacy": "We store only the push subscription from your browser (the address and the two keys used to encrypt the message), the language of this page and the countries you pick. No name, no email address and no tracking of what you read. Turn notifications off with the same button; that deletes the subscription. Cloudflare Web Analytics counts visits in aggregate, without cookies, and we do not sell that data.",
 "push_unsupported": "This browser cannot show notifications.",
 "push_denied": "Notifications are blocked for this site in the browser settings.",
-"push_ios": "On iPhone or iPad, add this site to your Home Screen first. iOS 16.4 or newer can then use these browser notifications. Apple’s push service (APNs) is not used.",
+"push_ios": "On iPhone or iPad (iOS 16.4 or newer): in Safari, tap Share, then Add to Home Screen. Open Nordic Crypto from the Home Screen and turn notifications on there.",
 "push_unavailable": "The notification service is not switched on yet.",
 "push_working": "Working…",
 "push_fail": "Could not update notifications. Try again.",

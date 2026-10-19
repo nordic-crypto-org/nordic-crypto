@@ -72,7 +72,7 @@ S = {
 "push_privacy": "我们只保存浏览器给出的推送订阅（地址和用来加密消息的两把密钥）、本页语言以及你选择的国家。不保存姓名、电子邮箱，也不跟踪你读了什么。同一个按钮可以关闭通知并删除订阅。Cloudflare Web Analytics 汇总统计访问，不使用 cookie，我们不出售这些数据。",
 "push_unsupported": "此浏览器无法显示通知。",
 "push_denied": "浏览器设置已禁止本站发送通知。",
-"push_ios": "在 iPhone 或 iPad 上，请先把本站添加到主屏幕。iOS 16.4 或更新版本才能使用这些浏览器通知。不使用 Apple 自己的推送服务（APNs）。",
+"push_ios": "在 iPhone 或 iPad 上（iOS 16.4 或更新版本）：在 Safari 中轻点“分享”，再选“添加到主屏幕”。然后从主屏幕打开 Nordic Crypto，并在那里打开通知。",
 "push_unavailable": "通知服务尚未开启。",
 "push_working": "正在处理…",
 "push_fail": "未能更新通知。请再试一次。",

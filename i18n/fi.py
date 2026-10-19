@@ -366,7 +366,7 @@ S.update({
 "push_privacy": "Tallennamme vain selaimesi push-tilauksen (osoitteen ja kaksi avainta, joilla viesti salataan), tämän sivun kielen ja valitsemasi maat. Emme tallenna nimeä, sähköpostiosoitetta emmekä sitä, mitä luet. Samalla painikkeella poistat ilmoitukset käytöstä, ja tilaus poistetaan. Cloudflare Web Analytics laskee käynnit kootusti, ilman evästeitä, emmekä myy näitä tietoja.",
 "push_unsupported": "Tämä selain ei voi näyttää ilmoituksia.",
 "push_denied": "Ilmoitukset on estetty tältä sivustolta selaimen asetuksissa.",
-"push_ios": "Lisää sivusto iPhonessa tai iPadissa ensin kotinäytölle. iOS 16.4 tai uudempi voi sen jälkeen käyttää näitä selainilmoituksia. Applen oma push-palvelu (APNs) ei ole käytössä.",
+"push_ios": "iPhonessa tai iPadissa (iOS 16.4 tai uudempi): napauta Safarissa Jaa ja valitse Lisää Koti-valikkoon. Avaa Nordic Crypto kotinäytöltä ja ota ilmoitukset käyttöön siellä.",
 "push_unavailable": "Ilmoituspalvelu ei ole vielä käytössä.",
 "push_working": "Käsitellään…",
 "push_fail": "Ilmoituksia ei voitu päivittää. Yritä uudelleen.",

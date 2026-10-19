@@ -57,6 +57,9 @@ def to_payload(item):
     for code in LANG_OF.get(item.get("language") or "", ()):
         if item.get("title"):
             titles[code] = item["title"]
+    for code, text in (item.get("title_i18n") or {}).items():
+        if (text or "").strip():
+            titles[code] = text.strip()
     summaries = {}
     en = short(item.get("summary") or "")
     if en:
@@ -69,7 +72,7 @@ def to_payload(item):
     return {
         "title": title_en,
         "summary": summaries.get("en") or "",
-        "url": absolute(item.get("url")),
+        "url": absolute(item.get("url") if item.get("own_story") or not item.get("id") else f"stories/{item['id']}/"),
         "country": country,
         "titles": titles,
         "summaries": summaries,

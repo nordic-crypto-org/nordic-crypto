@@ -2,7 +2,7 @@
 // feed JSON, and a Web Push encrypt/decrypt round trip. No network.
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import worker, { feedDocument, notificationFor, storiesFor, originAllowed } from "../src/worker.js";
+import worker, { feedDocument, notificationFor, pageFor, storiesFor, originAllowed } from "../src/worker.js";
 import { b64urlToBytes, bytesToB64url, encryptPayload, vapidJwt, importVapidPrivateKey } from "../src/webpush.js";
 
 class MemKV {
@@ -112,6 +112,15 @@ test("country filter and one batched notification", () => {
   assert.match(many.body, /Stockholm/);
   assert.equal(many.url, "https://cryptonordic.no/a");
   assert.equal(many.tag, "nordic-crypto-latest");
+});
+
+test("our story page opens in the subscriber's language", () => {
+  const s = [{ title: "T", url: "https://nordiccrypto.no/stories/abc/", country: "NO", titles: { en: "T", se: "Sámegillii" } }];
+  assert.equal(notificationFor(s, "en").url, "https://nordiccrypto.no/stories/abc/");
+  const se = notificationFor(s, "se");
+  assert.equal(se.url, "https://nordiccrypto.no/se/stories/abc/");
+  assert.equal(se.title, "Sámegillii");
+  assert.equal(pageFor("https://example.no/a", "nb"), "https://example.no/a");
 });
 
 test("publish requires the token and sends one push per matching subscription", async () => {
