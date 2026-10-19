@@ -102,6 +102,41 @@ def translate_lang(lang, items, translate, log):
             for k, v in todo:
                 if ok(lang, v, got.get(k)):
                     done[k] = got[k]
+    rest = [(k, v) for k, v in items if k not in done and k not in ("title", "subtitle")]
+    if rest:
+        done.update(by_pieces(lang, rest, translate))
+    return done
+
+
+def by_pieces(lang, items, translate):
+    """Second pass for blocks that failed whole: translate the text between tags one run at a time.
+    Runs that still fail stay English (mostly names and venues); the block counts when most of its text is translated."""
+    runs = {}
+    for k, inner in items:
+        parts = re.split(r"(<[^>]+>)", inner)
+        runs[k] = parts
+    todo = [(f"{k}.{i}", p.strip()) for k, parts in runs.items() for i, p in enumerate(parts)
+            if not p.startswith("<") and re.search(r"[^\W\d_]{2}", p) and p.strip() not in KEEP]
+    got = {}
+    for i in range(0, len(todo), BATCH):
+        try:
+            got.update(model_batch(lang, todo[i:i + BATCH], translate))
+        except Exception:
+            pass
+    done = {}
+    for k, parts in runs.items():
+        total = hit = 0
+        for i, p in enumerate(parts):
+            src = p.strip()
+            out = got.get(f"{k}.{i}")
+            if f"{k}.{i}" not in dict(todo):
+                continue
+            total += len(src)
+            if isinstance(out, str) and out.strip() and not TAG.search(out) and URL.findall(out) == URL.findall(src):
+                hit += len(src)
+                parts[i] = p[:len(p) - len(p.lstrip())] + out.strip() + p[len(p.rstrip()):]
+        if total and hit >= total / 2:
+            done[k] = "".join(parts)
     return done
 
 

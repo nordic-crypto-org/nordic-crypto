@@ -23,6 +23,16 @@ class NewsletterLangs(unittest.TestCase):
             keys = set(re.findall(r'^  (\w+): \{', js_block(name), re.M))
             self.assertTrue(set(LANGS) <= keys, f"{name} missing {set(LANGS) - keys}")
 
+    def test_form_sends_page_language(self):
+        os.environ.update(NC_NEWSLETTER="1", NEWSLETTER_ENDPOINT="https://w.test")
+        import build
+        for lang in ("se", "de", "ar"):
+            build.LANG = lang
+            self.assertIn(f'name="lang" value="{lang}"', build.newsletter_form())
+        js = build.newsletter_script()
+        self.assertIn("j.error==='lang'", js)
+        self.assertIn("subscribed/", js)
+
     def test_send_copy(self):
         self.assertEqual(set(S.LANGS), set(LANGS))
         self.assertTrue(set(LANGS) <= set(S.COPY))
