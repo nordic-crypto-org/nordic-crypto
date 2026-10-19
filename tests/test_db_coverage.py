@@ -16,6 +16,7 @@ import schema_db
 INTERNAL_FILES = {
     "academia_i18n.json", "event_nft_fixture.json", "events_backfill_state.json", "fb_posted.json", "no_en.json",
     "orgchart_no_raw.json", "orgchart_nordic.json", "orgchart_speakers.json", "talks-backfill-state.json", "x_posted.json",
+    "youtube_posted.json",
 }
 # Discovery/meta endpoints, archive pagination and the flag-gated treasury prototype.
 NON_COLLECTION_API = (

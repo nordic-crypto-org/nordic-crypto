@@ -1,0 +1,67 @@
+# Uploads rendered jobs that pass the rule checks to @NordicCryptoTV, private with publishAt.
+# Secrets live only in the `youtube` environment.
+name: YouTube video upload
+on:
+  workflow_run:
+    workflows: ["YouTube render"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "YouTube render run id to upload from"
+        required: true
+      dry_run:
+        description: "Check only, upload nothing"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: youtube-video-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.event != 'pull_request' && github.event.workflow_run.conclusion != 'cancelled')
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment: youtube
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: youtube-jobs
+          path: build/youtube
+          run-id: ${{ inputs.run_id || github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - name: Upload
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -o pipefail
+          args=()
+          [ "$DRY_RUN" = "true" ] && args+=(--dry-run)
+          python3 tools/youtube_video_upload.py build/youtube "${args[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit upload state
+        if: always()
+        run: |
+          git diff --quiet data/youtube_posted.json newsletter/published/issues.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/youtube_posted.json newsletter/published/issues.json
+          git commit -m "Record YouTube uploads"
+          git pull --rebase origin main
+          git push origin HEAD:main
