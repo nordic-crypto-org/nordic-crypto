@@ -239,7 +239,7 @@ S.update({
 "nl_soon_short": "Skráning með tölvupósti opnar bráðum.",
 "nl_fallback": "Þar til þá geturðu fylgst með Nordic Crypto í <a href=\"{rss}\">RSS</a>, á <a href=\"{tg}\">Telegram</a> eða á <a href=\"{x}\">X</a>.",
 "nl_sending": "Sendi …",
-"nl_sent": "Næstum búið: athugaðu pósthólfið þitt og opnaðu staðfestingartengilinn innan 7 daga.",
+"nl_sent": "Næstum búið: ef netfangið er ekki þegar áskrifandi færðu staðfestingartengil í tölvupósti. Opnaðu hann innan 7 daga.",
 "nl_confirmed": "Takk, áskriftin þín er staðfest.",
 "nl_unsub": "Áskriftinni þinni að fréttabréfinu hefur verið sagt upp.",
 "nl_e_email": "Sláðu inn gilt netfang.",

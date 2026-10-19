@@ -239,7 +239,7 @@ S.update({
 "nl_soon_short": "Sähköpostitilaus avautuu pian.",
 "nl_fallback": "Siihen asti voit seurata Nordic Cryptoa <a href=\"{rss}\">RSS-syötteellä</a>, <a href=\"{tg}\">Telegramissa</a> tai <a href=\"{x}\">X:ssä</a>.",
 "nl_sending": "Lähetetään …",
-"nl_sent": "Melkein valmista: katso saapuneet viestit ja avaa vahvistuslinkki 7 päivän kuluessa.",
+"nl_sent": "Melkein valmista: jos osoite ei ole jo tilaaja, saat vahvistuslinkin sähköpostiin. Avaa se 7 päivän kuluessa.",
 "nl_confirmed": "Kiitos, tilauksesi on vahvistettu.",
 "nl_unsub": "Uutiskirjeen tilauksesi on peruttu.",
 "nl_e_email": "Anna kelvollinen sähköpostiosoite.",

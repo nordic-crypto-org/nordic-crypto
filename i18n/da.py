@@ -239,7 +239,7 @@ S.update({
 "nl_soon_short": "Tilmelding via e-mail åbner snart.",
 "nl_fallback": "Indtil da kan du følge Nordic Crypto via <a href=\"{rss}\">RSS</a>, på <a href=\"{tg}\">Telegram</a> eller på <a href=\"{x}\">X</a>.",
 "nl_sending": "Sender …",
-"nl_sent": "Næsten færdig: tjek din indbakke, og åbn bekræftelseslinket inden for 7 dage.",
+"nl_sent": "Næsten færdig: hvis adressen ikke allerede abonnerer, får du et bekræftelseslink på e-mail. Åbn det inden for 7 dage.",
 "nl_confirmed": "Tak, dit abonnement er bekræftet.",
 "nl_unsub": "Du er nu afmeldt nyhedsbrevet.",
 "nl_e_email": "Indtast en gyldig e-mailadresse.",

@@ -258,7 +258,7 @@ S.update({
 "nl_soon_short": "Email signup opens soon.",
 "nl_fallback": "Until then, follow Nordic Crypto by <a href=\"{rss}\">RSS</a>, on <a href=\"{tg}\">Telegram</a>, or on <a href=\"{x}\">X</a>.",
 "nl_sending": "Sending…",
-"nl_sent": "Almost done: check your inbox and open the confirmation link within 7 days.",
+"nl_sent": "Almost done: if this address is not already subscribed, you will get a confirmation link by email. Open it within 7 days.",
 "nl_confirmed": "Thanks, your subscription is confirmed.",
 "nl_unsub": "You have been unsubscribed from the newsletter.",
 "nl_e_email": "Please enter a valid email address.",

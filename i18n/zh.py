@@ -506,7 +506,7 @@ S.update({
 "nl_soon_short": "邮件订阅即将开放。",
 "nl_fallback": "在此之前，您可以通过 <a href=\"{rss}\">RSS</a>、<a href=\"{tg}\">Telegram</a> 或 <a href=\"{x}\">X</a> 关注 Nordic Crypto。",
 "nl_sending": "发送中…",
-"nl_sent": "即将完成：请查看收件箱，并在 7 天内打开确认链接。",
+"nl_sent": "即将完成：如果该地址尚未订阅，您将收到一封包含确认链接的电子邮件。请在 7 天内打开该链接。",
 "nl_confirmed": "谢谢，您的订阅已确认。",
 "nl_unsub": "您已退订新闻通讯。",
 "nl_e_email": "请输入有效的电子邮箱地址。",
