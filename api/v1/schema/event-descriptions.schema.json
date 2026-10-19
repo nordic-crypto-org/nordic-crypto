@@ -2,7 +2,7 @@
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://nordiccrypto.no/api/v1/schema/event-descriptions.schema.json",
  "title": "Event descriptions",
- "description": "Organiser descriptions and our translations, by event id. Stored in the event_translations table in Cloudflare D1; data/event_description_i18n.json is the snapshot. source is the original wording. A language key is present only when that translation is written.",
+ "description": "Organiser descriptions and our translations, by event id. Stored in the event_translations table in Cloudflare D1; data/event_description_i18n.json is the snapshot. source is the original wording. Every site language except the original's own; a language key is present only when that translation is written.",
  "x-nordic": {
   "id": "event-descriptions",
   "order": 220,
@@ -54,6 +54,9 @@
     "source": {
      "type": "string"
     },
+    "en": {
+     "type": "string"
+    },
     "nn": {
      "type": "string"
     },
@@ -72,7 +75,55 @@
     "is": {
      "type": "string"
     },
-    "en": {
+    "zh": {
+     "type": "string"
+    },
+    "hi": {
+     "type": "string"
+    },
+    "es": {
+     "type": "string"
+    },
+    "fr": {
+     "type": "string"
+    },
+    "ar": {
+     "type": "string"
+    },
+    "bn": {
+     "type": "string"
+    },
+    "pt": {
+     "type": "string"
+    },
+    "ru": {
+     "type": "string"
+    },
+    "ur": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "de": {
+     "type": "string"
+    },
+    "ja": {
+     "type": "string"
+    },
+    "sw": {
+     "type": "string"
+    },
+    "mr": {
+     "type": "string"
+    },
+    "fa": {
+     "type": "string"
+    },
+    "uk": {
+     "type": "string"
+    },
+    "tr": {
      "type": "string"
     }
    },

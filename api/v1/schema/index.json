@@ -1,13 +1,13 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-19T10:21:17+00:00",
+ "generated_at": "2026-10-19T10:37:48+00:00",
  "title": "Nordic Crypto data model",
  "docs_url": "https://nordiccrypto.no/db/",
  "schema_version": "2026-10-19",
- "commit": "46c1689",
- "committed_at": "2026-10-19T12:05:32+02:00",
- "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/46c16897ad0fdb0a9c17557ec66caf850b1a6072",
+ "commit": "e962e54",
+ "committed_at": "2026-10-19T12:31:14+02:00",
+ "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/e962e54d31e6b941aaee0bfbf7504c50996c530f",
  "changelog_url": "https://nordiccrypto.no/api/v1/schema/changelog.json",
  "erd_svg_url": "https://nordiccrypto.no/api/v1/schema/erd.svg",
  "erd_mermaid_url": "https://nordiccrypto.no/api/v1/schema/erd.mmd",
@@ -822,7 +822,7 @@
   {
    "id": "event-descriptions",
    "title": "Event descriptions",
-   "description": "Organiser descriptions and our translations, by event id. Stored in the event_translations table in Cloudflare D1; data/event_description_i18n.json is the snapshot. source is the original wording. A language key is present only when that translation is written.",
+   "description": "Organiser descriptions and our translations, by event id. Stored in the event_translations table in Cloudflare D1; data/event_description_i18n.json is the snapshot. source is the original wording. Every site language except the original's own; a language key is present only when that translation is written.",
    "files": [
     "data/event_description_i18n.json"
    ],
