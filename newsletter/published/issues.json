@@ -2,6 +2,57 @@
  "_how_to": "Published newsletter issues, shown on /newsletter/ (newest first) and as /newsletter/<id>/ in every language. Per issue: <id>/issue.html (English HTML) and <id>/issue.<lang>.html for nn, nb, sv, da, fi, is. title and subtitle are English; title_i18n and subtitle_i18n follow the same shape as summary_i18n. Optional <id>/thumbnail.png (video poster), <id>/subs.vtt (English subtitles) and the video: <id>/video.mp4 is NOT committed (see .gitignore); build.py copies it into site/newsletter/<id>/ once (all languages use that copy) and, when the local file is missing, downloads video.url and checks video.sha256. The video stays one shared English file. Optional video_vertical: the 1080x1920 30 fps Instagram Reels cut of the same video, a release asset only (url, sha256), not copied to the site. Source drafts: newsletter/issues/.",
  "issues": [
   {
+   "id": "003",
+   "number": 3,
+   "date": "2026-10-19",
+   "period": [
+    "2026-10-12",
+    "2026-10-19"
+   ],
+   "lang": "en",
+   "title": "Nordic Crypto #3: Riksbank asks the Riksdag to prepare a digital krona, and a data-centre mining dispute in Norway",
+   "subtitle": "The Nordic crypto news our editor approved from 12 to 19 October 2026.",
+   "title_i18n": {
+    "nn": "Nordic Crypto #3: Riksbanken ber Riksdagen førebu ei digital krone, og ein strid om kryptoutvinning i norske datasenter",
+    "nb": "Nordic Crypto #3: Riksbanken ber Riksdagen forberede en digital krone, og en strid om kryptoutvinning i norske datasentre",
+    "sv": "Nordic Crypto #3: Riksbanken ber Riksdagen förbereda en digital krona, och en tvist om kryptoutvinning i norska datacenter",
+    "da": "Nordic Crypto #3: Riksbanken beder Riksdagen forberede en digital krone, og en strid om kryptoudvinding i norske datacentre",
+    "fi": "Nordic Crypto #3: Riksbank pyytää valtiopäiviä valmistelemaan digitaalista kruunua, ja kiista kryptolouhinnasta Norjan datakeskuksissa",
+    "is": "Nordic Crypto #3: Riksbank biður sænska þingið að undirbúa stafræna krónu, og deila um kryptónám í norsku gagnaverum"
+   },
+   "subtitle_i18n": {
+    "nn": "Dei nordiske kryptonyheitene redaktøren vår har godkjent frå 12. til 19. oktober 2026.",
+    "nb": "De nordiske kryptonyhetene redaktøren vår har godkjent fra 12. til 19. oktober 2026.",
+    "sv": "De nordiska kryptonyheter som vår redaktör har godkänt från den 12 till den 19 oktober 2026.",
+    "da": "De nordiske kryptonyheder, som vores redaktør har godkendt fra den 12. til den 19. oktober 2026.",
+    "fi": "Pohjoismaiset kryptouutiset, jotka toimittajamme on hyväksynyt 12.–19. lokakuuta 2026.",
+    "is": "Norrænu kriptófréttirnar sem ritstjórinn okkar hefur samþykkt frá 12. til 19. október 2026."
+   },
+   "stories": 19,
+   "events": 0,
+   "video": {
+    "file": "video.mp4",
+    "poster": "thumbnail.png",
+    "subs": "subs.vtt",
+    "duration": 180,
+    "width": 1920,
+    "height": 1080,
+    "bytes": 48246655,
+    "sha256": "91d038a495d9275e241566b9e3cc718eedbf90fd137f8b4ef9c2679e4143e26d",
+    "url": "https://github.com/nordic-crypto-org/nordic-crypto/releases/download/newsletter-003-newsreel-1/nordic-crypto-3-newsreel.mp4"
+   },
+   "video_vertical": {
+    "file": "video-vertical.mp4",
+    "duration": 180,
+    "width": 1080,
+    "height": 1920,
+    "bytes": 46674172,
+    "sha256": "af1813875038d4c2e013b477c67722505f4ebaba15892093f335f3565fa20319",
+    "url": "https://github.com/nordic-crypto-org/nordic-crypto/releases/download/newsletter-003-newsreel-1/nordic-crypto-3-newsreel-vertical.mp4",
+    "fps": 30
+   }
+  },
+  {
    "id": "002",
    "number": 2,
    "date": "2026-10-12",
