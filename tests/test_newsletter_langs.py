@@ -43,8 +43,9 @@ class NewsletterLangs(unittest.TestCase):
         html_ar, _ = S.compose("<p>x</p>", "ar", "https://nordiccrypto.no/ar/newsletter/001/", "https://w.test/u", "s")
         self.assertIn('dir="rtl"', html_ar)
         self.assertIn(S.COPY["ar"]["unsub"], html_ar)
-        html_de, _ = S.compose("<p>x</p>", "de", "", "", "s")
+        html_de, text_de = S.compose("<p>Bis bald,<br>Das Nordic Crypto-Team</p>", "de", "", "", "s")
         self.assertNotIn('dir="rtl"', html_de)
+        self.assertNotIn(S.SIGN_OFF, html_de + text_de, "translated sign-off is not repeated in English")
 
     def test_issue_translate(self):
         src = ('<p style="a">Hello <a href="https://x.test/">world</a></p><p>2026</p>'

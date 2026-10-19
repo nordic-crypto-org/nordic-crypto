@@ -84,7 +84,9 @@ def compose(body_html, lang, page, unsub, subject, plain=None):
     """Left-aligned HTML and plain text. Unsubscribe is per recipient. Sign-off is not repeated when the issue already has it."""
     c = COPY.get(lang) or COPY["en"]
     body = site_url.expand(body_html or "").replace("{{unsubscribe}}", unsub or "")
-    sign = "" if any(s in body for s in SIGNED) else f'<p style="text-align:left">{html.escape(SIGN_OFF)}</p>'
+    last = (plain_from_html(body).splitlines() or [""])[-1]
+    signed = any(s in body for s in SIGNED) or "Nordic Crypto" in last   # translated sign-off
+    sign = "" if signed else f'<p style="text-align:left">{html.escape(SIGN_OFF)}</p>'
     link = f'<p style="text-align:left"><a href="{html.escape(page)}">{html.escape(c["read"])}</a></p>' if page else ""
     bye = (f'<p style="text-align:left;font-size:13px;color:#4B5563">{html.escape(c["why"])} '
            f'<a href="{html.escape(unsub)}">{html.escape(c["unsub"])}</a></p>') if unsub else f'<p style="text-align:left;font-size:13px;color:#4B5563">{html.escape(c["why"])}</p>'
@@ -96,7 +98,7 @@ def compose(body_html, lang, page, unsub, subject, plain=None):
     bits = []
     if page and page not in base: bits.append(f"{c['read']}: {page}")
     bits.append(base.strip())
-    if not any(s in base for s in SIGNED): bits.append(SIGN_OFF)
+    if not signed: bits.append(SIGN_OFF)
     if c["why"] not in base: bits.append(c["why"])
     if unsub and unsub not in base: bits.append(unsub)
     return page_html, "\n\n".join(b for b in bits if b)

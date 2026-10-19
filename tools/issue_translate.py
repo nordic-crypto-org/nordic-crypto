@@ -183,8 +183,10 @@ def run(issue=None, langs=None, dry=False, translate=None, log=print, pub=PUB, w
         iss, lang, body, head = job
         html = open(os.path.join(pub, str(iss["id"]), "issue.html"), encoding="utf-8").read()
         segs = segments(html) if body else []
-        items = segs + [(k, iss[k]) for k in head]
+        pre = {k: m.group(1) for k in head for m in [re.match(r"(Nordic Crypto #\d+: )(.+)", iss[k])] if m}
+        items = segs + [(k, iss[k][len(pre.get(k, "")):]) for k in head]
         done = translate_lang(lang, items, translate, log)
+        done.update({k: pre[k] + done[k] for k in pre if k in done})
         miss = [k for k, _ in segs if k not in done]
         with _lock:
             if body and segs and len(miss) <= MAX_MISS * len(segs):
