@@ -39,6 +39,7 @@ import source_logos  # noqa: E402
 import event_block  # noqa: E402
 import event_backfill  # noqa: E402
 import event_description  # noqa: E402
+import event_title  # noqa: E402
 import event_select  # noqa: E402
 import books as books_mod  # noqa: E402
 import podcasts as podcasts_mod  # noqa: E402
@@ -413,6 +414,7 @@ class Feed:
             "id": eid,
             "title": raw.get("title"),
             "title_original": raw.get("title_orig") or raw.get("title_original"),
+            "title_i18n": event_title.titles(raw),
             "start": raw.get("start"),
             "end": raw.get("end"),
             "place": raw.get("place"),
@@ -1916,6 +1918,7 @@ def schemas():
             "id": {"type": "string"},
             "title": {"type": "string"},
             "title_original": {"type": "string", "nullable": True},
+            "title_i18n": dict(i18n_obj, description="The title in each site language other than the original's. A language is omitted when its title is the original."),
             "start": {"type": "string", "description": "ISO 8601 date-time with offset."},
             "end": {"type": "string", "nullable": True},
             "place": {"type": "string", "nullable": True},

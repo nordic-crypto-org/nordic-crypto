@@ -21,6 +21,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MIGRATIONS_DIR = os.path.join(ROOT, "workers", "content", "migrations")
 MIGRATION = os.path.join(MIGRATIONS_DIR, "0001_content.sql")
 EVENT_TRANSLATIONS_FILE = ("data", "event_description_i18n.json")
+EVENT_TITLES_FILE = ("data", "event_title_i18n.json")  # field 'title'; its "lang" key (the original's language) is a row too
 EVENT_REDIRECTS_FILE = ("data", "event_redirects.json")
 DATABASE_NAME = "nordic-crypto-content"
 MAX_DOCUMENT_BYTES = 1_500_000
@@ -724,6 +725,7 @@ def import_root(store, root, at=None, actor="import"):
     sidecars = _event_sidecars(store, root, at, actor)
     return {
         "event_translations": sidecars["translations"],
+        "event_titles": sidecars["titles"],
         "event_redirects": sidecars["redirects"],
         "stories": story_stats,
         "events": event_stats,
@@ -844,7 +846,7 @@ def sync_event(store, payload, at, actor="fetch", review=None):
 CARRY_FIELDS = ("note", "note_i18n", "editor_title_en", "paid", "sponsored")
 
 
-def import_translations(store, items, at):
+def import_translations(store, items, at, field="description"):
     """items: the 'items' map of data/event_description_i18n.json (id -> {source, lang: text}). Upsert only."""
     stats = {"inserted": 0, "updated": 0, "skipped": 0}
     if schema_version(store) < 2:
@@ -855,27 +857,27 @@ def import_translations(store, items, at):
         for lang, text in item.items():
             if lang == "source" or not isinstance(text, str) or not text:
                 continue
-            cur = one(store, "SELECT source_text, text FROM event_translations WHERE event_id = ? AND field = 'description' AND lang = ?", (eid, lang))
+            cur = one(store, "SELECT source_text, text FROM event_translations WHERE event_id = ? AND field = ? AND lang = ?", (eid, field, lang))
             if cur and cur["source_text"] == item["source"] and cur["text"] == text:
                 stats["skipped"] += 1
                 continue
             if cur:
-                store.execute("UPDATE event_translations SET source_text = ?, text = ?, updated_at = ? WHERE event_id = ? AND field = 'description' AND lang = ?",
-                              (item["source"], text, at, eid, lang))
+                store.execute("UPDATE event_translations SET source_text = ?, text = ?, updated_at = ? WHERE event_id = ? AND field = ? AND lang = ?",
+                              (item["source"], text, at, eid, field, lang))
                 stats["updated"] += 1
             else:
-                store.execute("INSERT INTO event_translations (event_id, field, lang, source_text, text, updated_at) VALUES (?, 'description', ?, ?, ?, ?)",
-                              (eid, lang, item["source"], text, at))
+                store.execute("INSERT INTO event_translations (event_id, field, lang, source_text, text, updated_at) VALUES (?, ?, ?, ?, ?, ?)",
+                              (eid, field, lang, item["source"], text, at))
                 stats["inserted"] += 1
     return stats
 
 
-def translations_items(store):
+def translations_items(store, field="description"):
     """event_translations back in the shape of data/event_description_i18n.json items."""
     out = {}
     if schema_version(store) < 2:
         return out
-    for row in store.query("SELECT event_id, lang, source_text, text FROM event_translations WHERE field = 'description' ORDER BY event_id, lang"):
+    for row in store.query("SELECT event_id, lang, source_text, text FROM event_translations WHERE field = ? ORDER BY event_id, lang", (field,)):
         item = out.setdefault(row["event_id"], {"source": row["source_text"]})
         if row["source_text"] == item["source"]:
             item[row["lang"]] = row["text"]
@@ -952,28 +954,34 @@ def redirects_map(store):
 
 def _event_sidecars(store, root, at, actor):
     items = (load_json(os.path.join(root, *EVENT_TRANSLATIONS_FILE), {}) or {}).get("items") or {}
+    titles = (load_json(os.path.join(root, *EVENT_TITLES_FILE), {}) or {}).get("items") or {}
     moved = load_json(os.path.join(root, *EVENT_REDIRECTS_FILE), {}) or {}
-    return {"translations": import_translations(store, items, at), "redirects": import_redirects(store, moved, at, actor)}
+    return {"translations": import_translations(store, items, at), "titles": import_translations(store, titles, at, "title"),
+            "redirects": import_redirects(store, moved, at, actor)}
 
 
 def _write_sidecars(store, root):
     """Snapshot of D1 translations and redirects into the JSON files the build reads.
     Union with what is already on disk, so an offline checkout or a missing table never loses rows."""
     if schema_version(store) < 2:
-        return {"translations": 0, "redirects": 0}
-    tpath = os.path.join(root, *EVENT_TRANSLATIONS_FILE)
-    doc = load_json(tpath, None) or {"_note": "Translations of organiser descriptions (snapshot of D1 event_translations).", "items": {}}
-    items = doc.setdefault("items", {})
-    added_t = 0
-    for eid, item in translations_items(store).items():
-        if eid not in items or items[eid].get("source") != item.get("source"):
-            items[eid] = item; added_t += 1
-        else:
-            for lang, text in item.items():
-                if lang not in items[eid]:
-                    items[eid][lang] = text; added_t += 1
-    if added_t:
-        save_json(tpath, doc)
+        return {"translations": 0, "titles": 0, "redirects": 0}
+    added = {}
+    for key, parts, field, note in (("translations", EVENT_TRANSLATIONS_FILE, "description", "Translations of organiser descriptions (snapshot of D1 event_translations)."),
+                                    ("titles", EVENT_TITLES_FILE, "title", "Event titles in every site language (snapshot of D1 event_translations).")):
+        tpath = os.path.join(root, *parts)
+        doc = load_json(tpath, None) or {"_note": note, "items": {}}
+        items = doc.setdefault("items", {})
+        added_t = 0
+        for eid, item in translations_items(store, field).items():
+            if eid not in items or items[eid].get("source") != item.get("source"):
+                items[eid] = item; added_t += 1
+            else:
+                for lang, text in item.items():
+                    if lang not in items[eid]:
+                        items[eid][lang] = text; added_t += 1
+        if added_t:
+            save_json(tpath, doc)
+        added[key] = added_t
     rpath = os.path.join(root, *EVENT_REDIRECTS_FILE)
     rd = load_json(rpath, None) or {"_note": "Merged duplicate events: removed id -> kept id (snapshot of D1 event_redirects)."}
     added_r = 0
@@ -982,7 +990,7 @@ def _write_sidecars(store, root):
             rd[old] = new; added_r += 1
     if added_r:
         save_json(rpath, rd)
-    return {"translations": added_t, "redirects": added_r}
+    return {**added, "redirects": added_r}
 
 
 def put_document(store, name, obj, at):
@@ -1224,6 +1232,7 @@ def backup_files(store, at=None):
         "sources.json": {"sources": news_sources, "event_sources": event_sources},
         "audit.json": {"exported_at": at, "rows": audit_rows},
         "event_translations.json": {"items": translations_items(store)},
+        "event_titles.json": {"items": translations_items(store, "title")},
         "event_redirects.json": redirects_map(store),
         "manifest.json": {
             "exported_at": at,
@@ -1277,6 +1286,7 @@ def stage_for_gate(root, dest):
         ("data", "news.json"),
         ("data", "events.json"),
         EVENT_TRANSLATIONS_FILE,
+        EVENT_TITLES_FILE,
         EVENT_REDIRECTS_FILE,
         ("state", "teasers.json"),
         ("queue", "review.json"),

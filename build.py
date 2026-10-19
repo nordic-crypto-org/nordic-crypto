@@ -16,7 +16,7 @@ import site_css
 import site_url
 import event_block
 from tools.frontpage_blurbs import card_text, load as load_blurbs, opening_sentences, substantive
-from tools import event_backfill, event_description, event_nft, event_page, event_select
+from tools import event_backfill, event_description, event_nft, event_page, event_select, event_title as event_titles
 from tools.headlines import card_headline, public_title_i18n
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
 BASE = site_url.BASE
@@ -1140,6 +1140,7 @@ def build():
     def _pub_ev(e):
         row = dict(e)
         row["description"] = event_description.public(e)
+        row["title_i18n"] = event_titles.titles(e)
         return row
     _rows = [_pub_ev(e) for e in _evs]
     json.dump({"preview": PREVIEW, "events": [e for e in _rows if e.get("phase") != "past"], "ongoing": [e for e in _rows if e.get("phase") == "ongoing"], "previous": [_pub_ev(e) for e in _prev]}, open(os.path.join(SITE, "data", "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
@@ -2714,7 +2715,13 @@ def _source_line(credit):
     return (f'<p class="evmeta evsrc">{E(t("ev_source"))}: '
             f'<a href="{E(credit["url"])}" rel="noopener">{E(credit["name"])}</a>{tail}</p>')
 def event_title(e):
-    return e["title"] if LANG == "en" or not e.get("title_orig") else e["title_orig"]
+    return event_titles.show(e, LANG)[0]
+def event_heading(e):
+    """(title in the page language, its lang attribute, the original-title line or '')."""
+    head, head_l, orig = event_titles.show(e, LANG)
+    src = event_titles.source_lang(e) or ""
+    line = (f'<p class="orig">{E(t("orig_title_ev"))}<span{bidi_attr(src) if src else ""}>{E(orig)}</span></p>' if orig else "")
+    return head, lang_attr(head_l), line
 def event_place_short(e):
     place = (e.get("place") or "").strip()
     city = (e.get("city") or "").strip()
@@ -2778,8 +2785,9 @@ def event_card(e, hidden=False, href_prefix="", now=None):
         videos = event_backfill.videos_fact(e)
         if videos:
             extra.append(f'<p class="evmeta"><b>{E(t("ev_videos"))}:</b> <a href="{E(videos["url"])}" rel="noopener">{E(t("ev_videos"))}</a></p>' + _source_line(videos["credit"]))
+    head, hl, orig = event_heading(e)
     return (f'<article class="evcard" id="e-{E(e.get("id") or "")}"{hid} data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}" data-id="{E(e.get("id") or "")}">'
-            f'{mark}<h3><a href="{E(event_link(e, href_prefix))}">{E(event_title(e))}</a></h3>'
+            f'{mark}<h3{hl}><a href="{E(event_link(e, href_prefix))}">{E(head)}</a></h3>{orig}'
             f'<p class="meta evplace">{flag(e.get("country"))} <time datetime="{E(e.get("start") or "")}"><b>{E(event_when(e))}</b></time>{place_bit}</p>'
             + "".join(extra) + "</article>")
 def event_when_short(e):
@@ -2798,9 +2806,10 @@ def event_row(e, hidden=False, href_prefix="", now=None):
     hid = " hidden" if hidden else ""
     kind, end, mark = _phase_attrs(e, now)
     where = (e.get("city") or "").strip() or event_place_short(e)
+    head, hl, orig = event_heading(e)
     return (f'<article class="evcard evrow" id="e-{E(e.get("id") or "")}"{hid} data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}" data-id="{E(e.get("id") or "")}">'
             f'<span class="evdate"><b>{a.day}</b> <span>{E(i18n.badge_month(LANG, a))}</span></span>'
-            f'<div class="evbody">{mark}<h3><a href="{E(event_link(e, href_prefix))}">{E(event_title(e))}</a></h3>'
+            f'<div class="evbody">{mark}<h3{hl}><a href="{E(event_link(e, href_prefix))}">{E(head)}</a></h3>{orig}'
             f'<p class="meta evplace">{flag(e.get("country"))} <time datetime="{E(e.get("start") or "")}">{E(event_when_short(e))}</time>{" · " + E(where) if where else ""}</p></div></article>')
 def front_events_block(events, now, compact=False):
     """Hero (only while something is ongoing) and the next events that have not started. compact: rows for the front-page rail."""
@@ -3019,7 +3028,8 @@ def event_og(e, heading, when, place, text):
     ok = False
     try:
         import tools.event_card as cards
-        ok = cards.render(out, heading, lead)
+        drawn = next((x for x in (heading, event_titles.show(e, "en")[0], event_titles.original(e)) if x and cards.covers(x)), heading)
+        ok = cards.render(out, drawn, lead)
         if not ok and not _OG_CARD_WARNED:
             _OG_CARD_WARNED = True
             print("event card: WARNING, Pillow is missing; event pages use the site image")
@@ -3034,7 +3044,7 @@ def build_one_event(e):
     """Full event page: the title, then one block with when, where, who and what (each with its source; one source line when
     they all share it) and the official page as the main button, then the description, the editor's note, topics and talks.
     Fields without a stored value are left out."""
-    heading = event_title(e)
+    heading, heading_l, heading_orig = event_heading(e)
     note, nl = L18(e, "note")
     when = event_when(e)
     place = event_place_short(e)
@@ -3046,7 +3056,7 @@ def build_one_event(e):
     else:
         desc = ". ".join(x for x in (heading, when, place) if x)
     bits = [f'<p class="meta evback"><a href="../">{E(t("ev_cal_link"))}</a> · <a href="../../events/previous/">{E(t("prev_link"))}</a></p>',
-            f'<h1>{E(heading)}</h1>']
+            f'<h1{heading_l}>{E(heading)}</h1>' + heading_orig]
     kind = e.get("phase") or event_select.phase(e, site_now())
     phase_key = {"upcoming": "upcoming_h", "ongoing": "ongoing_h", "past": "past_h"}.get(kind)
     if phase_key:
@@ -3055,8 +3065,6 @@ def build_one_event(e):
             eff = event_select.effective_end(e)
             end = eff.isoformat() if eff else ""
         bits.append(f'<p class="evphase" id="evphase" data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}">{E(t(phase_key))}</p>')
-    if e.get("title_orig") and LANG == "en" and e.get("title_orig") != e.get("title"):
-        bits.append(f'<p class="orig">{E(t("orig_title_ev"))}{E(e["title_orig"])}</p>')
     tags = []
     if e.get("paid"): tags.append(f'<span class="tag paid">{E(t("paid"))}</span>')
     elif e.get("paid") is False: tags.append(f'<span class="tag">{E(t("free"))}</span>')
@@ -3348,13 +3356,11 @@ apply(0)})();</script>""" % json.dumps(t("talks_n", n="{n}"))
         print(f"talks: {len(rows)}")
 def cal_row(e, full=True, href_prefix="", hl="h4"):
     """One event in the calendar or the previous-events list: a date badge, the title, then country, weekday, time, place and
-    labels. full adds the original title, the organiser and where it is listed, and the editor's note."""
+    labels. full adds the organiser and where it is listed, and the editor's note."""
     a = dt.datetime.fromisoformat(e["start"])
-    ttl = event_title(e)
+    ttl, tl, orig = event_heading(e)
     out = [f'<li id="e-{E(e.get("id") or "")}" data-c="{E(e.get("country") or "")}"><span class="evdate"><b>{a.day}</b> <span>{E(i18n.badge_month(LANG, a))}</span></span><div class="evb">'
-           f'<{hl}><a href="{E(href_prefix + e["id"] + "/" if e.get("id") else e.get("url") or "")}">{E(ttl)}</a></{hl}>']
-    if full and e.get("title_orig") and LANG == "en" and e["title_orig"] != e.get("title"):
-        out.append(f'<p class="orig">{E(t("orig_title_ev"))}{E(e["title_orig"])}</p>')
+           f'<{hl}{tl}><a href="{E(href_prefix + e["id"] + "/" if e.get("id") else e.get("url") or "")}">{E(ttl)}</a></{hl}>' + orig]
     place = event_place_short(e) or ((event_select.location_fact(e) or {}).get("text") or "")   # backfill rows keep the place in the credited location
     tags = cal_tags(e) if full else ""
     anchor = event_map_anchor(e)
@@ -3420,8 +3426,7 @@ def build_calendar(ctx):
         if e.get("online"): b.append(f'<span class="tag">{E(t("online"))}</span>')
         return " ".join(b)
     def li(e):
-        # event titles: English pages keep the editor's English title (+ original); other languages show the organiser's original title
-        ttl = e["title"] if LANG == "en" or not e.get("title_orig") else e["title_orig"]
+        ttl, tl, orig = event_heading(e)
         note, nl = L18(e, "note")
         kind = kind_of(e) or ""
         end = e.get("phase_end") or ""
@@ -3431,9 +3436,9 @@ def build_calendar(ctx):
         badge = f'<p class="evphase">{E(t("ongoing_h"))}</p>' if kind == "ongoing" else ""
         anchor = event_map_anchor(e)
         map_bit = f" · {anchor}" if anchor else ""
-        return (f'<li id="e-{E(e["id"])}" data-c="{E(e.get("country"))}" data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}">{badge}<h3><a href="{E(e["id"])}/">{E(ttl)}</a></h3>'
+        return (f'<li id="e-{E(e["id"])}" data-c="{E(e.get("country"))}" data-start="{E(e.get("start") or "")}" data-end="{E(end)}" data-phase="{E(kind)}">{badge}<h3{tl}><a href="{E(e["id"])}/">{E(ttl)}</a></h3>{orig}'
                 f'<div class="meta">{flag(e.get("country"))} <time datetime="{E(e["start"])}"><b>{E(when(e))}</b></time> · {E(e.get("place") or t("online"))}{(", " + E(e["city"])) if e.get("city") and e["city"] not in (e.get("place") or "") else ""}{map_bit} {badges(e)}</div>'
-                + (f'<p class="orig">{E(t("orig_title_ev"))}{E(e["title_orig"])}</p>' if e.get("title_orig") and LANG == "en" else "") + f'<div class="meta">{E(t("organiser"))}: {E(e["organiser"])} · {E(t("listed_at"))}: <a href="{E(e["url"])}" rel="noopener" target="_blank">{E(e["source"])}</a></div>'
+                + f'<div class="meta">{E(t("organiser"))}: {E(e["organiser"])} · {E(t("listed_at"))}: <a href="{E(e["url"])}" rel="noopener" target="_blank">{E(e["source"])}</a></div>'
                 + (f'<p class="sum"{lang_attr(nl)}><b>{E(t("note"))}:</b> {E(note)}</p>' if note else "") + '</li>')
     loc = lambda e: dt.datetime.fromisoformat(e["start"])
     months = sorted({(now.year, now.month)} | {(loc(e).year, loc(e).month) for e in live})[:6]
@@ -3445,7 +3450,7 @@ def build_calendar(ctx):
             for d in wk:
                 de = [e for e in live if loc(e).date() == d]
                 cls = " ".join(c for c in ["out" if d.month != m else "", "today" if d == now.astimezone(OSLO).date() else "", "has" if de else ""] if c)
-                row.append(f'<td class="{cls}"><span class="d">{d.day}</span>' + "".join(f'<a href="{E(e["id"])}/" data-c="{E(e.get("country"))}" title="{E(cname(e.get("country")))}: {E(e["title"] if LANG == "en" else e.get("title_orig") or e["title"])}">{flag(e.get("country"))}<span>{E(e["title"] if LANG == "en" else e.get("title_orig") or e["title"])}</span></a>' for e in de) + '</td>')
+                row.append(f'<td class="{cls}"><span class="d">{d.day}</span>' + "".join(f'<a href="{E(e["id"])}/" data-c="{E(e.get("country"))}" title="{E(cname(e.get("country")))}: {E(event_title(e))}">{flag(e.get("country"))}<span>{E(event_title(e))}</span></a>' for e in de) + '</td>')
             cells.append("<tr>" + "".join(row) + "</tr>")
         grids.append(f'<table class="cal"><caption>{E(i18n.month_caption(LANG, y, m))}</caption><thead><tr>{"".join(f"<th>{E(d)}</th>" for d in i18n.wd_head(LANG))}</tr></thead><tbody>{"".join(cells)}</tbody></table>')
     per_c = {c: sum(e.get("country") == c for e in live) for c in COUNTRY_CODES}
