@@ -557,6 +557,8 @@ def source_keeps(ev, src, trusted, matches):
             lead = ev.get("description") or ""
         return crypto_money_hit(ev.get("title"), lead, ev.get("body") or "")
     text = f"{ev.get('title') or ''} {ev.get('description') or ''} {ev.get('place') or ''}"
+    if (src or {}).get("keywords"):
+        return bool(re.search(r"\b(?:" + "|".join(re.escape(k) for k in src["keywords"]) + r")", text, re.I))
     return bool(matches(text))
 
 
@@ -1268,6 +1270,83 @@ def rss_events(src, xml, tz, now):
     return out
 
 
+_WPEV_LABEL = {"from": "start", "fra": "start", "until": "end", "til": "end", "location": "place", "lokasjon": "place", "sted": "place"}
+_EN_MONTH = {n: i for i, n in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"], 1)}
+_WPEV_WHEN = re.compile(r"(\d{1,2})\.?\s*([A-Za-zæøåÆØÅ]+)\s+(20\d\d)(?:\s+(\d{1,2})[.:](\d{2}))?")
+_WPEV_COUNTRY = re.compile(r",\s*(Norway|Norge|Sweden|Sverige|Denmark|Danmark|Finland|Iceland|Island)\s*$", re.I)
+
+
+def wp_event_when(text, tz, end=False):
+    """«25. November 2026 09:00» or «25. september 2026 18:00». No clock: 00:00, or 23:59 for an end."""
+    m = _WPEV_WHEN.search(text or "")
+    if not m:
+        return None
+    month = _EN_MONTH.get(m.group(2).lower()) or _NO_MONTH.get(m.group(2).lower())
+    if not month:
+        return None
+    h, mi = (int(m.group(4)), int(m.group(5))) if m.group(4) else ((23, 59) if end else (0, 0))
+    try:
+        return dt.datetime(int(m.group(3)), month, int(m.group(1)), h, mi, tzinfo=ZoneInfo(tz))
+    except ValueError:
+        return None
+
+
+def wp_event_page(html, tz):
+    """From/Until/Location (Fra/Til/Lokasjon) lines on a WordPress event page."""
+    out = {}
+    for p in BeautifulSoup(html or "", "lxml").select("p.single-event-block__extra-info"):
+        b = p.find("b")
+        key = _WPEV_LABEL.get(b.get_text(strip=True).rstrip(":").strip().lower()) if b else None
+        if not key or key in out:
+            continue
+        b.extract()
+        out[key] = re.sub(r"\s+", " ", p.get_text(" ", strip=True)).strip()
+    return {"start": wp_event_when(out.get("start"), tz), "end": wp_event_when(out.get("end"), tz, end=True), "place": out.get("place")}
+
+
+def wp_event_pages(src, records, tz, page_html, now):
+    """WordPress event posts (wp/v2/event). The page is opened only for a keyword hit, for the date and place lines."""
+    keys = re.compile(r"\b(?:" + "|".join(re.escape(k) for k in src.get("keywords") or []) + r")", re.I) if src.get("keywords") else None
+    out = []
+    for raw in records or []:
+        if not isinstance(raw, dict) or not raw.get("link"):
+            continue
+        title = html_unescape(BeautifulSoup((raw.get("title") or {}).get("rendered") or "", "lxml").get_text(" ", strip=True))
+        body = BeautifulSoup((raw.get("content") or {}).get("rendered") or "", "lxml")
+        text = re.sub(r"\s+", " ", body.get_text(" ")).strip()
+        if not title or (keys and not keys.search(title + " " + text)):
+            continue
+        f = wp_event_page(page_html(raw["link"]), tz)
+        if not f["start"] or (f["end"] and f["end"] <= f["start"]):
+            continue
+        if (f["end"] or f["start"]) < now:
+            continue
+        place = f["place"]
+        hint = None
+        if place and _WPEV_COUNTRY.search(place):
+            hint = {"norway": "NO", "norge": "NO", "sweden": "SE", "sverige": "SE", "denmark": "DK", "danmark": "DK",
+                    "finland": "FI", "iceland": "IS", "island": "IS"}[_WPEV_COUNTRY.search(place).group(1).lower()]
+            place = _WPEV_COUNTRY.sub("", place).strip() or None
+        lead = []
+        for el in body.find_all(["h2", "p"]):
+            if el.name == "h2":
+                break
+            t = re.sub(r"\s+([.,;:!?])", r"\1", re.sub(r"\s+", " ", el.get_text(" ", strip=True))).strip()
+            if t:
+                lead.append(t)
+        desc = " ".join(lead)
+        out.append({
+            "title": title, "start": f["start"], "end": f["end"], "url": raw["link"],
+            "place": place, "city": None, "country_hint": hint or src.get("country"), "online": False,
+            "organiser": src.get("organiser"), "paid": None,
+            "description": desc, "description_lang": language_of(desc) if desc else None,
+        })
+        if len(out) >= int(src.get("max_links") or 8):
+            break
+    return out
+
+
 def sanity_query_url(src, now):
     stamp = now.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     api = src.get("api") or ""
@@ -1498,6 +1577,14 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
                         src2 = dict(src, page=ev["url"]); take(ev, src2, src.get("trusted", False))
                 elif src["type"] == "rss":
                     evs = rss_events(src, fetch_page(src["url"]).text, tz, now); n_found = len(evs)
+                    for ev in evs:
+                        take(ev, dict(src, page=ev["url"]), src.get("trusted", False))
+                elif src["type"] == "wp-event-pages":
+                    q = urllib.parse.urlencode({"per_page": int(src.get("max_cards") or 20), "orderby": "modified", "order": "desc",
+                                                "_fields": "link,title,content"})
+                    raw = json.loads(fetch_page(src["api"] + "?" + q).text)
+                    evs = wp_event_pages(src, raw if isinstance(raw, list) else [], tz, lambda u: fetch_page(u).text, now)
+                    n_found = len(evs)
                     for ev in evs:
                         take(ev, dict(src, page=ev["url"]), src.get("trusted", False))
                 elif src["type"] == "manual":

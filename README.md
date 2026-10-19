@@ -346,6 +346,10 @@ These programmes are mostly literature. `"keyword_profile": "crypto-money"` keep
 
 KÅKÅ (`kaakaa.no`, Stavanger, home of the KÅKÅnomics economics festival) runs on Squarespace. There is no iCal, RSS or programme feed, and the sitemap has no dates. Each event page has schema.org `Event` JSON-LD, and the `/program` events collection has the standard public `?format=json` view (title, start and end as epoch milliseconds, room, text). The intake (`"type": "squarespace-events"`) reads that one JSON view; event pages and images are not opened. The festival is full of money talk, so the source uses the site-wide crypto filter (bitcoin, krypto, blockchain), not the broader `crypto-money` profile. There is no price field; tickets are sold per event or with a festival pass, so `paid` stays unknown unless a price line is in the text.
 
+### IFE
+
+IFE (`ife.no`, Institute for Energy Technology) hosts the International Conference on Digital Sovereignty (ICDS) in Oslo. The site is WordPress with an `event` post type, but the dates and place are not in the REST record, and there is no iCal, events RSS or Event JSON-LD. The intake (`"type": "wp-event-pages"`) reads the 20 most recently changed posts from `wp/v2/event` once and opens a page only when a source `keyword` matches, for its From/Until/Location lines (Fra/Til/Lokasjon in Norwegian). `keywords` on an untrusted source replace the site-wide crypto filter.
+
 ### Nasjonalbiblioteket
 
 `https://www.nb.no/hva-skjer/` is the upcoming programme. There is no calendar-wide iCal. Each event page has schema.org `Event` JSON-LD (the description there is empty) and a per-event “add to calendar” link, which is not a feed. The same events are the WordPress type `event` (`/wp-json/wp/v2/event`), including `meta.event_start_datetime`, `meta.event_end_datetime` and the price line. That collection is about 1,400 past events and cannot be ordered by the event date, so the past archive is not paged.
