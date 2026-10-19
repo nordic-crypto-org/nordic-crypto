@@ -1,1 +1,1 @@
-es.svg is simplified (no coat of arms) for size at 20px; all others unmodified from flag-icons 7.6.0 (4x3).
+es.svg is simplified (no coat of arms) for size at 20px; sami.svg is the Sami flag (public domain, Wikimedia Commons "Sami flag.svg", cropped to 4x3); all others unmodified from flag-icons 7.6.0 (4x3).

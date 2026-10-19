@@ -228,9 +228,10 @@ SITE_FACEBOOK = "https://www.facebook.com/profile.php?id=61595548315551"
 SITE_YOUTUBE = "https://www.youtube.com/@NordicCryptoTV"
 # Language-switcher flags: self-hosted SVGs from flag-icons 7.6.0 (MIT, assets/flags/LICENSE), not emoji (Windows has none).
 # A flag stands for a language, not a nationality; languages without one obvious country keep the neutral globe.
+# Northern Sami uses the Sami flag (sami.svg, public domain).
 LANG_FLAG = {"en": "gb", "nn": "no", "nb": "no", "sv": "se", "da": "dk", "fi": "fi", "is": "is", "zh": "cn", "hi": "in",
              "es": "es", "fr": "fr", "ar": None, "bn": "bd", "pt": "pt", "ru": "ru", "ur": "pk", "id": "id", "de": "de",
-             "ja": "jp", "sw": "tz", "mr": "in", "fa": "ir", "uk": "ua", "tr": "tr"}
+             "ja": "jp", "sw": "tz", "mr": "in", "fa": "ir", "uk": "ua", "tr": "tr", "se": "sami"}
 def lang_flag(l, root, lazy=False):
     c = LANG_FLAG.get(l)
     lazy = " loading=\"lazy\"" if lazy else ""

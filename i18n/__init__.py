@@ -18,10 +18,11 @@ The IP country → language guess lives in tools/langselect.js (BY_COUNTRY) and 
 import importlib, os
 # Nordic first (en at the root, then nn nb sv da fi is), then the other site languages in
 # approximate number of speakers: Mandarin, Hindi, Spanish, French, Arabic, Bengali, Portuguese,
-# Russian, Urdu, Indonesian, German, Japanese, Swahili, Marathi, Persian, Ukrainian, Turkish. English is already first.
+# Russian, Urdu, Indonesian, German, Japanese, Swahili, Marathi, Persian, Ukrainian, Turkish,
+# then Northern Sami (no country of its own; picked in the switcher, never by IP). English is already first.
 ALL_LANGS = [
     "en", "nn", "nb", "sv", "da", "fi", "is",
-    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr",
+    "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr", "se",
 ]
 LANGS = [l for l in (os.environ.get("NC_LANGS") or ",".join(ALL_LANGS)).split(",") if l in ALL_LANGS]  # NC_LANGS: test builds only
 # Switcher label: the name readers see, in that language.
@@ -29,14 +30,14 @@ NATIVE = {
     "en": "English", "nn": "Nynorsk", "nb": "Bokmål", "sv": "Svenska", "da": "Dansk", "fi": "Suomi", "is": "Íslenska",
     "zh": "中文", "hi": "हिन्दी", "es": "Español", "fr": "Français", "ar": "العربية", "bn": "বাংলা",
     "pt": "Português", "ru": "Русский", "ur": "اردو", "id": "Bahasa Indonesia", "de": "Deutsch",
-    "ja": "日本語", "sw": "Kiswahili", "mr": "मराठी", "fa": "فارسی", "uk": "Українська", "tr": "Türkçe",
+    "ja": "日本語", "sw": "Kiswahili", "mr": "मराठी", "fa": "فارسی", "uk": "Українська", "tr": "Türkçe", "se": "Davvisámegiella",
 }
 ENGLISH = {
     "en": "English", "nn": "Norwegian Nynorsk", "nb": "Norwegian Bokmål", "sv": "Swedish", "da": "Danish",
     "fi": "Finnish", "is": "Icelandic",
     "zh": "Chinese (Mandarin)", "hi": "Hindi", "es": "Spanish", "fr": "French", "ar": "Arabic", "bn": "Bengali",
     "pt": "Portuguese", "ru": "Russian", "ur": "Urdu", "id": "Indonesian", "de": "German", "ja": "Japanese",
-    "sw": "Swahili", "mr": "Marathi", "fa": "Persian", "uk": "Ukrainian", "tr": "Turkish",
+    "sw": "Swahili", "mr": "Marathi", "fa": "Persian", "uk": "Ukrainian", "tr": "Turkish", "se": "Northern Sami",
 }
 NAME = NATIVE
 HTML_LANG = {code: code for code in ALL_LANGS}
@@ -44,7 +45,7 @@ OG_LOCALE = {
     "en": "en_GB", "nn": "nn_NO", "nb": "nb_NO", "sv": "sv_SE", "da": "da_DK", "fi": "fi_FI", "is": "is_IS",
     "zh": "zh_CN", "hi": "hi_IN", "es": "es_ES", "fr": "fr_FR", "ar": "ar_SA", "bn": "bn_BD",
     "pt": "pt_BR", "ru": "ru_RU", "ur": "ur_PK", "id": "id_ID", "de": "de_DE", "ja": "ja_JP",
-    "sw": "sw_KE", "mr": "mr_IN", "fa": "fa_IR", "uk": "uk_UA", "tr": "tr_TR",
+    "sw": "sw_KE", "mr": "mr_IN", "fa": "fa_IR", "uk": "uk_UA", "tr": "tr_TR", "se": "se_NO",
 }
 # Right-to-left UI. Arabic, Urdu and Persian in this set; add a code here when another RTL language is added.
 RTL = {code: code in ("ar", "ur", "fa") for code in ALL_LANGS}
@@ -58,7 +59,7 @@ SAME_LANG = {
     "nn": "Norwegian", "nb": "Norwegian", "sv": "Swedish", "da": "Danish", "fi": "Finnish", "is": "Icelandic", "en": "English",
     "zh": "Chinese", "hi": "Hindi", "es": "Spanish", "fr": "French", "ar": "Arabic", "bn": "Bengali",
     "pt": "Portuguese", "ru": "Russian", "ur": "Urdu", "id": "Indonesian", "de": "German", "ja": "Japanese",
-    "sw": "Swahili", "mr": "Marathi", "fa": "Persian", "uk": "Ukrainian", "tr": "Turkish",
+    "sw": "Swahili", "mr": "Marathi", "fa": "Persian", "uk": "Ukrainian", "tr": "Turkish", "se": "Northern Sami",
 }
 _missing = [f"{table}.{code}" for table, data in (
     ("NATIVE", NATIVE), ("ENGLISH", ENGLISH), ("HTML_LANG", HTML_LANG), ("OG_LOCALE", OG_LOCALE),
@@ -103,7 +104,8 @@ MON = {"en": "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(),
        "da": "jan. feb. mar. apr. maj jun. jul. aug. sep. okt. nov. dec.".split(),
        "fi": None,
        "is": "jan. feb. mar. apr. maí jún. júl. ágú. sep. okt. nóv. des.".split(),
-       "tr": "Oca Şub Mar Nis May Haz Tem Ağu Eyl Eki Kas Ara".split()}
+       "tr": "Oca Şub Mar Nis May Haz Tem Ağu Eyl Eki Kas Ara".split(),
+       "se": "ođđj guov njuk cuoŋ mies geas suoi borg čakč golg skáb juov".split()}
 MONTH = {"en": "January February March April May June July August September October November December".split(),
          "nn": "januar februar mars april mai juni juli august september oktober november desember".split(),
          "nb": "januar februar mars april mai juni juli august september oktober november desember".split(),
@@ -111,7 +113,8 @@ MONTH = {"en": "January February March April May June July August September Octo
          "da": "januar februar marts april maj juni juli august september oktober november december".split(),
          "fi": "tammikuu helmikuu maaliskuu huhtikuu toukokuu kesäkuu heinäkuu elokuu syyskuu lokakuu marraskuu joulukuu".split(),
          "is": "janúar febrúar mars apríl maí júní júlí ágúst september október nóvember desember".split(),
-         "tr": "Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık".split()}
+         "tr": "Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık".split(),
+         "se": "ođđajagemánnu guovvamánnu njukčamánnu cuoŋománnu miessemánnu geassemánnu suoidnemánnu borgemánnu čakčamánnu golggotmánnu skábmamánnu juovlamánnu".split()}
 # Finnish long dates use the partitive month: "3. lokakuuta 2026"
 MONTH_FI_PART = "tammikuuta helmikuuta maaliskuuta huhtikuuta toukokuuta kesäkuuta heinäkuuta elokuuta syyskuuta lokakuuta marraskuuta joulukuuta".split()
 WD = {"en": "Mon Tue Wed Thu Fri Sat Sun".split(),
@@ -121,8 +124,9 @@ WD = {"en": "Mon Tue Wed Thu Fri Sat Sun".split(),
       "da": "man. tir. ons. tor. fre. lør. søn.".split(),
       "fi": "ma ti ke to pe la su".split(),
       "is": "mán. þri. mið. fim. fös. lau. sun.".split(),
-      "tr": "Pzt Sal Çar Per Cum Cmt Paz".split()}
-# Nordic languages and Turkish have their own date forms. Other site languages use the English forms until translated.
+      "tr": "Pzt Sal Çar Per Cum Cmt Paz".split(),
+      "se": "vuos maŋ gask duor bear láv sotn".split()}
+# Nordic languages, Turkish and Northern Sami have their own date forms. Other site languages use the English forms until translated.
 def _dl(lang): return lang if lang in MON else "en"
 def wd_head(lang): return [w.rstrip(".") for w in WD[_dl(lang)]]
 # Month under the day number in a date badge. Finnish dates are numeric elsewhere; the badge uses the usual short month names.
@@ -155,6 +159,7 @@ def hm(lang, t):
     lang = _dl(lang)
     if lang in ("en", "tr"): return f"{t:%H:%M}"
     if lang == "is": return f"kl. {t:%H:%M}"
+    if lang == "se": return f"dii. {t:%H.%M}"
     if lang == "fi": return f"klo {t:%H.%M}"
     return f"kl. {t:%H.%M}"
 def hm_end(lang, t):

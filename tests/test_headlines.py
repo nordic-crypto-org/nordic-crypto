@@ -101,7 +101,7 @@ class Headlines(unittest.TestCase):
         self.assertNotIn("nb", needed_langs("Norwegian"))
         self.assertEqual(needed_langs("English"), [l for l in build.i18n.ALL_LANGS if l != "en"])
         self.assertIn("fa", needed_langs("Norwegian"))
-        self.assertEqual(len(needed_langs("Norwegian")), 22)
+        self.assertEqual(len(needed_langs("Norwegian")), 23)
 
     def test_farsi_card_reads_farsi_with_the_norwegian_original(self):
         # jQrgen 2026-10-17: /fa/ showed the English headline and summary.

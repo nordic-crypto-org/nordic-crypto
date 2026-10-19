@@ -51,12 +51,14 @@
     IR: "fa", AF: "fa",
     UA: "uk",
     TR: "tr"
+    /* Northern Sami (se) has no country row: chosen in the switcher, never by IP. */
   };
   function fromCountry(c) { return BY_COUNTRY[String(c || "").toUpperCase()] || "en"; }
   function fromLanguages(list) {
     for (var i = 0; i < (list || []).length; i++) {
       var p = String(list[i] || "").toLowerCase().split(/[-_]/)[0];
       if (p === "nn" || p === "nb" || p === "no") return "nn";
+      if (p === "sme") p = "se";
       if (LANGS.indexOf(p) >= 0) return p;
     }
     return "en";

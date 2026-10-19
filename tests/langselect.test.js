@@ -3,7 +3,7 @@ const test = require("node:test"), assert = require("node:assert"), fs = require
 const { execFileSync } = require("child_process");
 const root = path.join(__dirname, "..");
 const langs = JSON.parse(execFileSync("python3", ["-c", "import json,i18n; print(json.dumps(i18n.ALL_LANGS))"], { cwd: root, encoding: "utf8" }));
-const NEED = ["en", "nn", "nb", "sv", "da", "fi", "is", "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr"];
+const NEED = ["en", "nn", "nb", "sv", "da", "fi", "is", "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr", "se"];
 const src = fs.readFileSync(path.join(root, "tools", "langselect.js"), "utf8")
   .replace("__LANGS__", JSON.stringify(langs)).replace("__GEO__", JSON.stringify("https://geo.example/api/geo"));
 const m = new Module("langselect"); m._compile(src, "langselect.js"); const L = m.exports;
@@ -37,6 +37,7 @@ test("country map, Nordic kept and new languages added", () => {
   };
   for (const [c, l] of Object.entries(exp)) assert.strictEqual(L.decide({ cookie: "", country: c }).lang, l, c);
   for (const [c, l] of Object.entries(L.BY_COUNTRY)) assert.ok(langs.includes(l), c + " -> " + l);
+  assert.ok(!Object.values(L.BY_COUNTRY).includes("se"), "Northern Sami is never picked by IP");
 });
 test("unknown country gives English", () => {
   for (const c of ["US", "GB", "XX", "AU", "CA", "BE"]) assert.strictEqual(L.decide({ cookie: "", country: c }).lang, "en", c);
@@ -46,6 +47,8 @@ test("navigator fallback when geo is unavailable", () => {
   assert.deepStrictEqual(L.decide({ cookie: "", languages: ["nb-NO", "en"] }), { lang: "nn", why: "navigator" });
   assert.strictEqual(L.decide({ cookie: "", languages: ["no"] }).lang, "nn");
   assert.strictEqual(L.decide({ cookie: "", languages: ["nn-NO"] }).lang, "nn");
+  assert.strictEqual(L.decide({ cookie: "", languages: ["se-NO", "nb-NO"] }).lang, "se");
+  assert.strictEqual(L.decide({ cookie: "", languages: ["sme"] }).lang, "se");
   assert.strictEqual(L.decide({ cookie: "", languages: ["de-DE", "da-DK"] }).lang, "de");
   assert.strictEqual(L.decide({ cookie: "", languages: ["nl", "da-DK"] }).lang, "da");
   assert.strictEqual(L.decide({ cookie: "", languages: ["fi_FI"] }).lang, "fi");

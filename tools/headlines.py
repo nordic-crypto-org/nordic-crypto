@@ -3,7 +3,7 @@
 
 The stored title is the source headline. title_en is our English headline.
 data/title_i18n.json holds a headline in every site language except English
-(nn, nb, sv, da, fi, is, zh, hi, es, fr, ar, bn, pt, ru, ur, id, de, ja, sw, mr, fa, uk, tr)
+(nn, nb, sv, da, fi, is, zh, hi, es, fr, ar, bn, pt, ru, ur, id, de, ja, sw, mr, fa, uk, tr, se)
 for every published story whose source language is not already that site language.
 tools/story_translate.py fills the gaps. An editor can also set title_i18n on the news
 item (queue/approved.json); that copy wins.

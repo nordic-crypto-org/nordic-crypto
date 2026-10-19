@@ -28,7 +28,7 @@ jobs:
       - name: Event titles in the page language
         run: |
           set -euo pipefail
-          for page in calendar/03951f33970c fa/calendar/03951f33970c tr/calendar/03951f33970c nb/calendar/03951f33970c; do
+          for page in calendar/03951f33970c fa/calendar/03951f33970c tr/calendar/03951f33970c se/calendar/03951f33970c nb/calendar/03951f33970c; do
             h1=$(grep -o '<h1[^>]*>[^<]*</h1>' "site/$page/index.html")
             echo "$page: $h1" | tee -a "$GITHUB_STEP_SUMMARY"
           done

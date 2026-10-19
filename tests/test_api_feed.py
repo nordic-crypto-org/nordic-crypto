@@ -460,7 +460,7 @@ def main():
         build.LANG = "en"
         if "/ethics/" not in {p.get("path") for p in meta.get("site_pages") or []}:
             fails.append("ethics page missing from site meta")
-        need = {"en", "nn", "nb", "sv", "da", "fi", "is", "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr"}
+        need = {"en", "nn", "nb", "sv", "da", "fi", "is", "zh", "hi", "es", "fr", "ar", "bn", "pt", "ru", "ur", "id", "de", "ja", "sw", "mr", "fa", "uk", "tr", "se"}
         langs_doc = json.load(open(os.path.join(tmp, "api/v1/languages.json"), encoding="utf-8"))
         got = {row.get("code") for row in langs_doc.get("languages") or []}
         if got != need:
