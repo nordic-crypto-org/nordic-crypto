@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Fill data/event_description_i18n.json for event descriptions and data/event_title_i18n.json for event
-titles (every site language) that have no current translation.
+"""Fill data/event_description_i18n.json (event descriptions) and data/event_title_i18n.json (event titles)
+in every site language that has no current translation.
 
 Cloudflare Workers AI (CF_AI_TOKEN, CF_ACCOUNT_ID; model CF_AI_MODEL).
 Without them, or when a call fails, nothing is written for that event.
@@ -22,8 +22,8 @@ NAMES = {"en": "English", "nn": "Norwegian Nynorsk", "nb": "Norwegian Bokmål", 
 TITLE_PROMPT = ("Translate this event title into each language below. Return JSON only: {{\"lang\": the code of the title's own "
                 "language, then code: title}} for the codes {codes}. Keep names of people, venues, organisers, projects and Nordic "
                 "Crypto unchanged. A headline, not a sentence; nothing added.")
-PROMPT = ("Translate this event description from {src} into each language below. Return JSON only: {{code: text}} for "
-          "the codes {codes}. Keep names of people, venues, organisers and Nordic Crypto unchanged. Plain style, nothing added.")
+PROMPT = ("Translate this event description from {src} into {dst}. Return only the translation. Keep names of people, "
+          "venues and organisations unchanged. Plain style. Add nothing and leave nothing out.")
 
 
 def missing(event, catalogue):
@@ -32,29 +32,40 @@ def missing(event, catalogue):
         return text, src, []
     cur = catalogue.get(event.get("id")) or {}
     have = cur if cur.get("source") == text else {}
-    return text, src, [l for l in ed.KNOWN if l != src and not (have.get(l) or "").strip()]
+    return text, src, [l for l in i18n.ALL_LANGS if l != src and not (have.get(l) or "").strip()]
 
 
-MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+MODEL = "@cf/openai/gpt-oss-120b"
 ENV = ("CF_AI_TOKEN", "CF_ACCOUNT_ID")
 
 
-def call_model(text, src, langs, system=None):
+def _run(system, text):
     account, token = os.environ["CF_ACCOUNT_ID"], os.environ["CF_AI_TOKEN"]
     model = os.environ.get("CF_AI_MODEL") or MODEL
-    codes = ", ".join(f"{l} ({NAMES[l]})" for l in langs)
-    body = {"temperature": 0.2, "max_tokens": 4096,
-            "messages": [{"role": "system", "content": (system or PROMPT).format(src=NAMES.get(src, "the original language"), codes=codes)},
-                         {"role": "user", "content": text}]}
+    if "gpt-oss" in model:  # Responses API
+        body = {"instructions": system, "input": text, "reasoning": {"effort": "medium"}}
+    else:
+        body = {"temperature": 0.2, "max_tokens": 4096, "messages": [{"role": "system", "content": system}, {"role": "user", "content": text}]}
     req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}",
                                  data=json.dumps(body).encode(), method="POST",
                                  headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=180) as r:
-        out = json.load(r)["result"]["response"]
-    if isinstance(out, dict):
-        return out
-    out = re.sub(r"^```(?:json)?|```$", "", out.strip()).strip()
-    return json.loads(out[out.find("{"):out.rfind("}") + 1])
+        res = json.load(r)["result"]
+    if "response" in res:
+        return res["response"]
+    return "".join(c.get("text") or "" for o in res.get("output") or [] if o.get("type") == "message"
+                   for c in o.get("content") or [] if c.get("type") == "output_text")
+
+
+def call_model(text, src, langs):
+    """Description: one plain-text call per language (a long text in many languages does not fit one JSON reply)."""
+    out = {}
+    for l in langs:
+        try:
+            out[l] = str(_run(PROMPT.format(src=NAMES.get(src, "the original language"), dst=NAMES[l]), text)).strip()
+        except Exception as err:
+            print(f"event-translate {l}: {err}")
+    return out
 
 
 def fill(events, catalogue, translate=call_model, log=print):
@@ -82,7 +93,11 @@ def fill(events, catalogue, translate=call_model, log=print):
 
 
 def call_title_model(title, src, langs):
-    return call_model(title, src, langs, TITLE_PROMPT)
+    out = _run(TITLE_PROMPT.format(codes=", ".join(f"{l} ({NAMES[l]})" for l in langs)), title)
+    if isinstance(out, dict):
+        return out
+    out = re.sub(r"^```(?:json)?|```$", "", out.strip()).strip()
+    return json.loads(out[out.find("{"):out.rfind("}") + 1])
 
 
 def fill_titles(events, catalogue, translate=call_title_model, log=print):
@@ -130,14 +145,14 @@ def run(root=ROOT, log=print, translate=None, dry=False, translate_title=None):
     path = os.path.join(root, "data", "event_description_i18n.json")
     doc = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {"items": {}}
     events = json.load(open(os.path.join(root, "data", "events.json"), encoding="utf-8")).get("events", [])
-    changed = fill(events, doc.setdefault("items", {}), translate, log)
+    bpath = os.path.join(root, "data", "events_backfill.json")
+    backfill = json.load(open(bpath, encoding="utf-8")).get("events", []) if os.path.exists(bpath) else []
+    changed = fill(events + backfill, doc.setdefault("items", {}), translate, log)
     if changed and not dry:
         _save(path, doc)
     log(f"event-translate: {len(changed)} descriptions translated")
     tpath = os.path.join(root, "data", "event_title_i18n.json")
     tdoc = json.load(open(tpath, encoding="utf-8")) if os.path.exists(tpath) else {"_note": "Event titles in every site language.", "items": {}}
-    bpath = os.path.join(root, "data", "events_backfill.json")
-    backfill = json.load(open(bpath, encoding="utf-8")).get("events", []) if os.path.exists(bpath) else []
     titled = fill_titles(events + backfill, tdoc.setdefault("items", {}), translate_title or call_title_model, log)
     if titled and not dry:
         _save(tpath, tdoc)
