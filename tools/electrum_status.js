@@ -3,8 +3,9 @@
    reader's browser, so a row shows what that reader can reach. No cookies. */
 (function () {
   var TIMEOUT_MS = 8000;
-  var table = document.getElementById("electrum-status");
-  if (!table || !("WebSocket" in window)) return;
+  var tables = document.querySelectorAll("table.electrum-live");
+  if (!tables.length || !("WebSocket" in window)) return;
+  var table = tables[0];
   var button = document.getElementById("electrum-recheck");
   // status words come from the page language (data-checking / data-up / data-down on the table)
   var L = { checking: table.getAttribute("data-checking") || "Checking…", up: table.getAttribute("data-up") || "Up", down: table.getAttribute("data-down") || "Down",
@@ -80,7 +81,9 @@
   }
 
   function checkAll() {
-    [].forEach.call(table.querySelectorAll("tr[data-url]"), check);
+    [].forEach.call(tables, function (tbl) {
+      [].forEach.call(tbl.querySelectorAll("tr[data-url]"), check);
+    });
   }
 
   if (button) {
