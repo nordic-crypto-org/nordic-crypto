@@ -2628,10 +2628,16 @@ def docs_fragment(index, lang="en"):
 <pre>bc1p7zgqhev2zzn45mefzq59gq983379lr0rsymhl558rza9k05y7vsq9mglx7</pre>
 <h2 id="electrum">{t("h_electrum")}</h2>
 <p>{t("electrum_intro")}</p>
-<div class="tablewrap"><table class="list" id="electrum-status" aria-live="polite"{st}><thead><tr><th>{t("th_server", True)}</th><th>{t("th_status", True)}</th><th>{t("th_height", True)}</th><th class="wide">{t("th_response", True)}</th><th class="wide">{t("th_version", True)}</th></tr></thead><tbody>
+<div class="tablewrap"><table class="list electrum-live" id="electrum-status" aria-live="polite"{st}><thead><tr><th>{t("th_server", True)}</th><th>{t("th_status", True)}</th><th>{t("th_height", True)}</th><th class="wide">{t("th_response", True)}</th><th class="wide">{t("th_version", True)}</th></tr></thead><tbody>
 <tr data-url="wss://electrum-bch.nordiccrypto.no:50004"><td>Bitcoin Cash<br><code class="url">wss://electrum-bch.nordiccrypto.no:50004</code></td><td data-f="state">–</td><td data-f="height">–</td><td data-f="ms" class="wide">–</td><td data-f="version" class="wide">–</td></tr>
 <tr data-url="wss://electrum-nexa.nordiccrypto.no:20004"><td>Nexa<br><code class="url">wss://electrum-nexa.nordiccrypto.no:20004</code></td><td data-f="state">–</td><td data-f="height">–</td><td data-f="ms" class="wide">–</td><td data-f="version" class="wide">–</td></tr>
 </tbody></table></div>
+<h3 id="nexa-testnet">{t("h_nexa_testnet")}</h3>
+<p>{t("nexa_testnet_intro")}</p>
+<div class="tablewrap"><table class="list electrum-live" id="nexa-testnet-status" aria-labelledby="nexa-testnet" aria-live="polite"{st}><thead><tr><th>{t("th_server", True)}</th><th>{t("th_status", True)}</th><th>{t("th_height", True)}</th><th class="wide">{t("th_response", True)}</th><th class="wide">{t("th_version", True)}</th></tr></thead><tbody>
+<tr data-url="wss://electrum-nexa-testnet.nordiccrypto.no:30004"><td>{t("h_nexa_testnet", True)}<br><code class="url">wss://electrum-nexa-testnet.nordiccrypto.no:30004</code></td><td data-f="state">–</td><td data-f="height">–</td><td data-f="ms" class="wide">–</td><td data-f="version" class="wide">–</td></tr>
+</tbody></table></div>
+<p>{t("nexa_testnet_ports")}</p>
 <p class="meta">{t("electrum_note")} <button type="button" id="electrum-recheck" hidden>{t("electrum_recheck", True)}</button></p>
 <script>{_electrum_status_js()}</script>
 <p>{t("electrum_ports")}</p>
