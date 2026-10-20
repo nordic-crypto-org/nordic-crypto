@@ -213,14 +213,104 @@
    "taper": "full"
   },
   {
-   "kind": "talk-links",
-   "retrieved_at": "2026-10-16T10:15:00+00:00",
-   "included": 24,
+   "retrieved_at": "2026-10-20T08:45:00+00:00",
+   "included": 10,
    "by_country": {
-    "NO": 13,
-    "SE": 2,
-    "DK": 1,
-    "FI": 6,
+    "NO": 4,
+    "SE": 1,
+    "DK": 3,
+    "FI": 2,
+    "IS": 0,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2016": 1,
+    "2019": 1,
+    "2018": 2,
+    "2023": 1,
+    "2024": 1,
+    "2015": 2,
+    "2025": 1,
+    "2026": 1
+   },
+   "note": "Ten previous events from organiser, university, press and news pages. Clocks are the source's when it states one. A date with no clock uses 00:00–23:59 local. The 9 May 2023 Bank of Finland Europe Day seminar is invitation-only and was not added. Nordic Blockchain Summit 2019 is described by Version2 and ITU, and neither page states a venue, so it was not added. Blockchain Summit Helsinki 2019 is on Oppia.fi with dates and Finlandia Hall, but that page does not name an organiser. Wakaru Oy only publishes the ticket site, and the page's organiser list is a set of partners, so the summit was not added. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The Bitcoin Walk on 18 October 2026 is already on the calendar. Archive type is conference for the Stockholm fair and the Oslo XRP gathering, and seminar for the Arendal panel and the Aalto lecture. The pages say fair, gathering, panelsamtale and public lecture. Taper level unchanged: full.",
+   "queries": [
+    "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+    "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+    "https://www.aalto.fi/en/locations/dipoli",
+    "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+    "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+    "https://oppia.fi/events/blockchain-summit-helsinki-2018",
+    "https://conf.nordicblockchain.com/conference2023",
+    "https://conf.nordicblockchain.com/conference2024",
+    "https://conf.nordicblockchain.com/conference24-location",
+    "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+    "https://bitcoinist.com/bitcoin-fun-fair-february-14-15/",
+    "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+    "https://www.polyteknisk.no/program/bank-krypto-sant",
+    "https://xrpfamilylive.com/",
+    "Faroe Islands public bitcoin or crypto event since 2008, repeat search",
+    "Greenland public bitcoin or crypto event since 2008, repeat search",
+    "Åland public bitcoin or crypto event since 2008, repeat search"
+   ],
+   "sources_used": [
+    "Senter for rettsinformatikk, University of Oslo",
+    "Aalto University",
+    "DI – Dansk Industri",
+    "Blockchain Forum ry",
+    "Oppia.fi / Wakaru Oy",
+    "Nordic Blockchain Association",
+    "Oslo Bitcoin Meetup",
+    "Bitcoinist",
+    "NewsBTC",
+    "Polyteknisk Forening",
+    "XRP Family Live"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Suomen Pankin Eurooppa-päivän seminaari, 9 May 2023",
+     "reason": "The Bank of Finland page calls it a kutsuvierasseminaari, an invitation-only seminar."
+    },
+    {
+     "name": "Nordic Blockchain Summit, 16 August 2019",
+     "reason": "Version2 and the ITU video page do not state the city or the venue. The newspaper's own street address was not used."
+    },
+    {
+     "name": "Bitcoin Walk i Göteborg, 18 October 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "Nordic Blockchain Conference 2024 delegate and speaker totals",
+     "reason": "The organiser page says 750+ delegates and 100+ speakers. Those are not exact counts."
+    },
+    {
+     "name": "Blockchain Summit Helsinki 2019",
+     "reason": "Oppia.fi states 5–6 November 2019 at Finlandia Hall in Helsinki. It does not name an organiser. Wakaru Oy is the company behind the ticket site."
+    }
+   ],
+   "taper": "full"
+  },
+  {
+   "kind": "talk-links",
+   "retrieved_at": "2026-10-07T22:40:00+00:00",
+   "included": 34,
+   "by_country": {
+    "NO": 17,
+    "SE": 3,
+    "DK": 4,
+    "FI": 8,
     "IS": 2,
     "FO": 0,
     "GL": 0,
@@ -230,34 +320,44 @@
     "2013": 1,
     "2014": 2,
     "2017": 3,
-    "2018": 2,
+    "2018": 4,
     "2022": 2,
-    "2023": 3,
-    "2025": 2,
-    "2026": 7,
-    "2016": 2
+    "2023": 4,
+    "2025": 3,
+    "2026": 8,
+    "2016": 3,
+    "2019": 1,
+    "2024": 1,
+    "2015": 2
    },
    "by_country_year": {
     "NO": {
      "2022": 2,
      "2023": 3,
-     "2016": 1,
+     "2016": 2,
      "2017": 2,
-     "2026": 4,
-     "2025": 1
+     "2026": 5,
+     "2025": 2,
+     "2015": 1
     },
     "SE": {
      "2017": 1,
-     "2014": 1
+     "2014": 1,
+     "2015": 1
     },
     "DK": {
-     "2013": 1
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1
     },
     "FI": {
      "2014": 1,
      "2025": 1,
      "2026": 3,
-     "2016": 1
+     "2016": 1,
+     "2019": 1,
+     "2018": 1
     },
     "IS": {
      "2018": 2
@@ -269,24 +369,27 @@
    "years_with_events": [
     2013,
     2014,
+    2015,
     2016,
     2017,
     2018,
+    2019,
     2022,
     2023,
+    2024,
     2025,
     2026
    ],
    "note": "Talks are matched to an existing calendar or backfill event first (series, date span, city, country and organiser). When none matches, a previous event is created from facts the video page stated: name, day, city, country, venue, organiser and official URL. A talk with no day or no place stays unlinked with unlink_reason. Predatory conference listings are not sources.",
    "talks": {
-    "linked_existing": 30,
+    "linked_existing": 31,
     "created_events": 0,
     "talks_on_new": 0,
-    "unlinked": 74,
+    "unlinked": 87,
     "unlinked_reasons": {
-     "the video page did not state the day": 68,
-     "the video page did not state the city": 1,
-     "the video page did not name the event": 2,
+     "the video page did not state the day": 79,
+     "the video page did not state the city": 2,
+     "the video page did not name the event": 3,
      "the video page did not state the event type": 3
     }
    },
