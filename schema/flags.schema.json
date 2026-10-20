@@ -1,0 +1,37 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://nordiccrypto.no/api/v1/schema/flags.schema.json",
+ "title": "App feature flags",
+ "description": "Remote switches for the apps in data/flags.json. A missing key means off.",
+ "x-nordic": {
+  "id": "flags",
+  "order": 190,
+  "files": [
+   "data/flags.json"
+  ],
+  "pages": [],
+  "api": [
+   {
+    "path": "/api/v1/flags.json"
+   }
+  ],
+  "relations": [],
+  "derived": [],
+  "omitted_from_api": []
+ },
+ "type": "object",
+ "properties": {
+  "nft": {
+   "type": "object",
+   "description": "Nordic Shield NFT tab.",
+   "properties": {
+    "ios": {
+     "type": "boolean",
+     "description": "Show the tab in the iOS app."
+    }
+   },
+   "additionalProperties": false
+  }
+ },
+ "additionalProperties": false
+}
