@@ -25,8 +25,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Trading recap with no source URL, a follow-up to the rejected 94da842cb717. Source check 2026-10-20."
   },
   {
    "id": "dbe423804e62",
@@ -50,8 +51,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle; «kryptonitt» is only a metaphor. Source check 2026-10-20."
   },
   {
    "id": "e263cf4ad0b3",
@@ -76,8 +78,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "The app has no crypto element. An SEO teaser and a rewrite from Bitcoin.com. Source check 2026-10-20."
   },
   {
    "id": "b7ea95432b46",
@@ -104,8 +107,9 @@
     "\\bpenningtvätt\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Paywalled. A small local case where the crypto angle (6,500 SEK) is marginal. Doesn't meet the bar for crime stories. Source check 2026-10-20."
   },
   {
    "id": "ae8bf9594525",
@@ -132,8 +136,9 @@
     "\\brahanpesu\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Withdrawn before publication: the source headline and URL name the convicted private person's small home municipality (Sievi), which together with the story could identify her (Vær Varsom 4.7). Our own text cannot hide the original headline."
   },
   {
    "id": "11321be1c1d4",
@@ -157,8 +162,9 @@
     "\\bMiCAR?\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "The company's own product news or advertising. Not independent news. Source check 2026-10-20."
   },
   {
    "id": "0b9ab242e250",
@@ -183,8 +189,10 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "merged_into": "f157b1142c19",
+   "reject_reason": "Duplicate of f157b1142c19. Source check 2026-10-20."
   },
   {
    "id": "94da842cb717",
@@ -474,6 +482,17 @@
      "url": "https://teknikveckan.se/openais-ai-stal-kryptovaluta-for-att-losa-en-uppgift",
      "title": "OpenAI:s AI stal kryptovaluta för att lösa en uppgift",
      "published": "2026-10-17T08:00:48+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "nyheter24.se",
+     "outlet_name": "Nyheter24",
+     "url": "https://nyheter24.se/nyheter/teknik/1522698-ai-modell-tog-kryptovalutadolde-det-for-utvecklarna",
+     "title": "AI-modell tog kryptovaluta – dolde det för utvecklarna",
+     "published": "2026-10-19T06:01:00+00:00",
      "lang": "Swedish",
      "country": "SE",
      "source_type": "national",
