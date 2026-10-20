@@ -1181,6 +1181,7 @@ def build():
     write_push_assets()
     emit_api(ctx)
     write_crowdfunding_api()
+    write_flags_api()
     build_db()
     sitemap()
     write_cname()
@@ -1475,6 +1476,11 @@ def build_crowdfunding():
     script = (f'<script>window.NC_CF={js_l};</script><script src="{up1()}assets/crowdfunding/qrcode.js" defer></script>'
               f'<script src="{up1()}assets/crowdfunding/campaigns.js" defer></script>')
     page("crowdfunding", t("cf_title"), "crowdfunding", text_page(body, toc=False), t("cf_desc"), script, head_extra=style)
+
+def write_flags_api():
+    """api/v1/flags.json: remote feature flags for the apps, from data/flags.json."""
+    os.makedirs(os.path.join(SITE, "api", "v1"), exist_ok=True)
+    shutil.copyfile(os.path.join(ROOT, "data", "flags.json"), os.path.join(SITE, "api", "v1", "flags.json"))
 
 def write_crowdfunding_api():
     """api/v1/crowdfunding.json: the curated pilot list (no balances, no donor data). Demo entries are marked demo:true."""
