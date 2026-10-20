@@ -19,10 +19,12 @@
 //                               – used by tools/press_history.py; idempotent by send id.
 //   GET  /api/admin/schedule    (bearer) -> campaigns and scheduled posts with next run (src/schedule.js, migrations/0010).
 //   POST /api/admin/schedule    (bearer ADMIN_DELIVERY_TOKEN) {campaigns, schedule} – replaces both; tools/admin_schedule.py.
+//   GET/POST /api/admin/flags   (bearer session) app feature flags, src/flags.js.
 // Why bearer and not a cookie: the page is on nordiccrypto.no and the Worker on workers.dev, a different site; browsers
 // (Safari, Firefox strict, Chrome's third-party-cookie limits) drop cross-site cookies. CORS here allows only ADMIN_ORIGIN.
 import { sendMail } from "./mailer.js";
 import { listSchedule, recordSchedule } from "./schedule.js";
+import { readFlags, writeFlags } from "./flags.js";
 
 export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, ADMIN_RATE_N = 5, CODE_TRIES = 5;
 export const ADMIN_ORIGIN = "https://nordiccrypto.no";
@@ -258,6 +260,15 @@ export async function admin(req, env, h, path) {
     if (req.method === "POST" && path === "/api/admin/deliveries") return await recordDeliveries(req, env, h);
     if (req.method === "POST" && path === "/api/admin/press-sends") return await recordPressSend(req, env, h);
     if (req.method === "POST" && path === "/api/admin/schedule") return await postSchedule(req, env, h);
+    if (path === "/api/admin/flags" && (req.method === "GET" || req.method === "POST")) {
+      const s = await session(req, env);
+      if (!s) return json(req, 401, { ok: false, error: "auth" });
+      if (req.method === "POST") {
+        const f = await body(req, h);
+        if (!f || !(await writeFlags(env, f, s.email))) return json(req, 400, { ok: false });
+      }
+      return json(req, 200, { ok: true, flags: await readFlags(env) });
+    }
     if (req.method === "GET" && ["/api/admin/me", "/api/admin/subscribers", "/api/admin/press-sends", "/api/admin/schedule"].includes(path)) {
       const s = await session(req, env);
       if (!s) return json(req, 401, { ok: false, error: "auth" });
