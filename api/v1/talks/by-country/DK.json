@@ -1,11 +1,73 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-20T06:00:09+00:00",
+ "generated_at": "2026-10-20T09:10:43+00:00",
  "preview": false,
  "country": "DK",
- "count": 5,
+ "count": 11,
  "talks": [
+  {
+   "id": "yt-GFmKj-prLB4",
+   "video_url": "https://www.youtube.com/watch?v=GFmKj-prLB4",
+   "platform": "youtube",
+   "title": "Johannes Schmith: Danmark i fronten af det 21. århundrede ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Johannes Schmith"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-johannes-schmith"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-08-31",
+   "duration": "PT31M47S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Johannes Schmith speaks at Bitcoin Copenhagen 2026 on surplus electricity in Denmark and a Danish bitcoin policy initiative.",
+   "source_url": "https://www.youtube.com/watch?v=GFmKj-prLB4&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-GFmKj-prLB4",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-GFmKj-prLB4.json"
+  },
+  {
+   "id": "yt-b2rCZGP6Bcg",
+   "video_url": "https://www.youtube.com/watch?v=b2rCZGP6Bcg",
+   "platform": "youtube",
+   "title": "Jesper Munk: Muligheder og udfordringer med Bitcoin Mining ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Jesper Munk"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-jesper-munk"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-06-27",
+   "duration": "PT19M53S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Jesper Munk speaks at Bitcoin Copenhagen 2026 on ways bitcoin mining could work with the Danish power grid.",
+   "source_url": "https://www.youtube.com/watch?v=b2rCZGP6Bcg&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-b2rCZGP6Bcg",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-b2rCZGP6Bcg.json"
+  },
   {
    "id": "yt-CV0WndNSP5Q",
    "video_url": "https://www.youtube.com/watch?v=CV0WndNSP5Q",
@@ -36,6 +98,64 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-CV0WndNSP5Q",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-CV0WndNSP5Q.json"
+  },
+  {
+   "id": "yt-MwjLdxO9LVI",
+   "video_url": "https://www.youtube.com/watch?v=MwjLdxO9LVI",
+   "platform": "youtube",
+   "title": "Anders: Min rejse i Bitcoin ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-05-04",
+   "duration": "PT44M29S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "A talk at Bitcoin Copenhagen 2026. The upload names the speaker as Anders and describes his path into bitcoin.",
+   "source_url": "https://www.youtube.com/watch?v=MwjLdxO9LVI&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-MwjLdxO9LVI",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-MwjLdxO9LVI.json"
+  },
+  {
+   "id": "yt-MSuEHhq0q5M",
+   "video_url": "https://www.youtube.com/watch?v=MSuEHhq0q5M",
+   "platform": "youtube",
+   "title": "Rasmus Hansen: Bitcoin genopretter Det Frie Marked ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Rasmus Hansen"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-rasmus-hansen"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-04-24",
+   "duration": "PT43M6S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Rasmus Hansen speaks at Bitcoin Copenhagen 2026 on the free market and bitcoin's place in it.",
+   "source_url": "https://www.youtube.com/watch?v=MSuEHhq0q5M&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-MSuEHhq0q5M",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-MSuEHhq0q5M.json"
   },
   {
    "id": "yt-QPrEQ-_4Aig",
@@ -100,6 +220,39 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-1SxQoVVlK6c.json"
   },
   {
+   "id": "yt-yezxGH2PksA",
+   "video_url": "https://www.youtube.com/watch?v=yezxGH2PksA",
+   "platform": "youtube",
+   "title": "Er Bitcoin mining spild af energi? ⚡  Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Steffen Frølund",
+    "Johannes Schmith"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-steffen-frolund",
+    "spk-johannes-schmith"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-03-23",
+   "duration": "PT46M32S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "A panel at Bitcoin Copenhagen 2026 on whether bitcoin mining wastes energy. The upload names Steffen Frølund and Johannes Schmith on the panel.",
+   "source_url": "https://www.youtube.com/watch?v=yezxGH2PksA&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-yezxGH2PksA",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yezxGH2PksA.json"
+  },
+  {
    "id": "yt-McCMg7UVCIk",
    "video_url": "https://www.youtube.com/watch?v=McCMg7UVCIk",
    "platform": "youtube",
@@ -129,6 +282,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-McCMg7UVCIk",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-McCMg7UVCIk.json"
+  },
+  {
+   "id": "yt-Y4csot4fn5k",
+   "video_url": "https://www.youtube.com/watch?v=Y4csot4fn5k",
+   "platform": "youtube",
+   "title": "Bas Spitters: Smart Contracts and Formal Verification for the Blockchain",
+   "speakers": [
+    "Bas Spitters"
+   ],
+   "event_name": "Aarhus University Digital Innovation Festival 2019",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-bas-spitters"
+   ],
+   "city": "Aarhus",
+   "country": "DK",
+   "date": null,
+   "published": "2019-06-03",
+   "duration": "PT17M55S",
+   "language": null,
+   "channel": "Aarhus Universitet",
+   "description": "Bas Spitters speaks at Aarhus University's Digital Innovation Festival 2019 on smart contracts and formal verification for a blockchain.",
+   "source_url": "https://www.youtube.com/watch?v=Y4csot4fn5k&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-Y4csot4fn5k",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Y4csot4fn5k.json"
   },
   {
    "id": "yt-GiU4b7ldKMs",

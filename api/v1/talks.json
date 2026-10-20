@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-20T06:00:09+00:00",
+ "generated_at": "2026-10-20T09:10:43+00:00",
  "preview": false,
- "count": 104,
+ "count": 118,
  "talks": [
   {
    "id": "yt-jb3YQjX0Wn0",
@@ -163,6 +163,64 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-QPXOVJ2cUNc.json"
   },
   {
+   "id": "yt-1m_9tlfXA7U",
+   "video_url": "https://www.youtube.com/watch?v=1m_9tlfXA7U",
+   "platform": "youtube",
+   "title": "XRP Family Live Oslo 2026 – Ripple Enabling the Internet of Value",
+   "speakers": [],
+   "event_name": "XRP Family Live",
+   "event_url": "https://xrpfamilylive.com/",
+   "calendar_event_id": "808fdb37c7c7",
+   "event_id": "808fdb37c7c7",
+   "unlink_reason": null,
+   "speaker_ids": [],
+   "city": "Oslo",
+   "country": "NO",
+   "date": "2026-09-05",
+   "published": "2026-09-13",
+   "duration": "PT54M56S",
+   "language": null,
+   "channel": "Internet of Value",
+   "description": "A talk at XRP Family Live at Litteraturhuset in Oslo on 5 September 2026 about Ripple, XRP and tokenisation.",
+   "source_url": "https://www.youtube.com/watch?v=1m_9tlfXA7U&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-1m_9tlfXA7U",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-1m_9tlfXA7U.json"
+  },
+  {
+   "id": "yt-GFmKj-prLB4",
+   "video_url": "https://www.youtube.com/watch?v=GFmKj-prLB4",
+   "platform": "youtube",
+   "title": "Johannes Schmith: Danmark i fronten af det 21. århundrede ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Johannes Schmith"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-johannes-schmith"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-08-31",
+   "duration": "PT31M47S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Johannes Schmith speaks at Bitcoin Copenhagen 2026 on surplus electricity in Denmark and a Danish bitcoin policy initiative.",
+   "source_url": "https://www.youtube.com/watch?v=GFmKj-prLB4&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-GFmKj-prLB4",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-GFmKj-prLB4.json"
+  },
+  {
    "id": "yt-ZJHTEXcyePQ",
    "video_url": "https://www.youtube.com/watch?v=ZJHTEXcyePQ",
    "platform": "youtube",
@@ -227,6 +285,43 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-iT2iG3o4qJM.json"
   },
   {
+   "id": "yt-GvCsl4OFa9M",
+   "video_url": "https://www.youtube.com/watch?v=GvCsl4OFa9M",
+   "platform": "youtube",
+   "title": "Kan bitcoin bli penger i Palestina?",
+   "speakers": [
+    "Cecilie Hellestveit",
+    "Rami Samandar",
+    "Gunnar Garfors",
+    "Morten Søberg"
+   ],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not name the event",
+   "speaker_ids": [
+    "spk-cecilie-hellestveit",
+    "spk-rami-samandar",
+    "spk-gunnar-garfors",
+    "spk-morten-soberg"
+   ],
+   "city": "Arendal",
+   "country": "NO",
+   "date": "2026-08-10",
+   "published": "2026-08-18",
+   "duration": "PT46M28S",
+   "language": null,
+   "channel": "Bitcoinpolitisk Institutt Norge",
+   "description": "A conversation hosted by Bitcoinpolitisk Institutt Norge at Arendal on 10 August 2026 about whether bitcoin could be used in Palestine.",
+   "source_url": "https://www.youtube.com/watch?v=GvCsl4OFa9M&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-GvCsl4OFa9M",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-GvCsl4OFa9M.json"
+  },
+  {
    "id": "yt-4A-whJseWvI",
    "video_url": "https://www.youtube.com/watch?v=4A-whJseWvI",
    "platform": "youtube",
@@ -256,6 +351,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-4A-whJseWvI",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-4A-whJseWvI.json"
+  },
+  {
+   "id": "yt-b2rCZGP6Bcg",
+   "video_url": "https://www.youtube.com/watch?v=b2rCZGP6Bcg",
+   "platform": "youtube",
+   "title": "Jesper Munk: Muligheder og udfordringer med Bitcoin Mining ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Jesper Munk"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-jesper-munk"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-06-27",
+   "duration": "PT19M53S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Jesper Munk speaks at Bitcoin Copenhagen 2026 on ways bitcoin mining could work with the Danish power grid.",
+   "source_url": "https://www.youtube.com/watch?v=b2rCZGP6Bcg&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-b2rCZGP6Bcg",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-b2rCZGP6Bcg.json"
   },
   {
    "id": "yt-sDb2GJTIpPo",
@@ -1072,6 +1198,64 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-2k1-AGfp75o.json"
   },
   {
+   "id": "yt-MwjLdxO9LVI",
+   "video_url": "https://www.youtube.com/watch?v=MwjLdxO9LVI",
+   "platform": "youtube",
+   "title": "Anders: Min rejse i Bitcoin ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-05-04",
+   "duration": "PT44M29S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "A talk at Bitcoin Copenhagen 2026. The upload names the speaker as Anders and describes his path into bitcoin.",
+   "source_url": "https://www.youtube.com/watch?v=MwjLdxO9LVI&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-MwjLdxO9LVI",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-MwjLdxO9LVI.json"
+  },
+  {
+   "id": "yt-MSuEHhq0q5M",
+   "video_url": "https://www.youtube.com/watch?v=MSuEHhq0q5M",
+   "platform": "youtube",
+   "title": "Rasmus Hansen: Bitcoin genopretter Det Frie Marked ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Rasmus Hansen"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-rasmus-hansen"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-04-24",
+   "duration": "PT43M6S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Rasmus Hansen speaks at Bitcoin Copenhagen 2026 on the free market and bitcoin's place in it.",
+   "source_url": "https://www.youtube.com/watch?v=MSuEHhq0q5M&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-MSuEHhq0q5M",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-MSuEHhq0q5M.json"
+  },
+  {
    "id": "yt-QPrEQ-_4Aig",
    "video_url": "https://www.youtube.com/watch?v=QPrEQ-_4Aig",
    "platform": "youtube",
@@ -1132,6 +1316,39 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-1SxQoVVlK6c",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-1SxQoVVlK6c.json"
+  },
+  {
+   "id": "yt-yezxGH2PksA",
+   "video_url": "https://www.youtube.com/watch?v=yezxGH2PksA",
+   "platform": "youtube",
+   "title": "Er Bitcoin mining spild af energi? ⚡  Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Steffen Frølund",
+    "Johannes Schmith"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-steffen-frolund",
+    "spk-johannes-schmith"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-03-23",
+   "duration": "PT46M32S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "A panel at Bitcoin Copenhagen 2026 on whether bitcoin mining wastes energy. The upload names Steffen Frølund and Johannes Schmith on the panel.",
+   "source_url": "https://www.youtube.com/watch?v=yezxGH2PksA&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-yezxGH2PksA",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yezxGH2PksA.json"
   },
   {
    "id": "yt-0q2kmQuA5PE",
@@ -1233,6 +1450,45 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-NrF-rcWIpsU.json"
   },
   {
+   "id": "yt-Drv3fd5NnO4",
+   "video_url": "https://www.youtube.com/watch?v=Drv3fd5NnO4",
+   "platform": "youtube",
+   "title": "Bank + krypto = sant?",
+   "speakers": [
+    "Are Jansrud",
+    "Torbjørn Bull Jensen",
+    "Endre Jo Reite",
+    "Svein Ølnes",
+    "Morten Søberg"
+   ],
+   "event_name": "Bank + krypto = sant?",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-are-jansrud",
+    "spk-torbjorn-bull-jensen",
+    "spk-endre-jo-reite",
+    "spk-svein-olnes",
+    "spk-morten-soberg"
+   ],
+   "city": null,
+   "country": "NO",
+   "date": null,
+   "published": "2025-08-12",
+   "duration": "PT36M15S",
+   "language": null,
+   "channel": "Polyteknisk Forening*Norway's Polytechnic Society",
+   "description": "A Polyteknisk Forening panel on Norway's crypto-asset law and whether banks will offer services that involve crypto.",
+   "source_url": "https://www.youtube.com/watch?v=Drv3fd5NnO4&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-Drv3fd5NnO4",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Drv3fd5NnO4.json"
+  },
+  {
    "id": "yt-7TLMmGGSIOA",
    "video_url": "https://www.youtube.com/watch?v=7TLMmGGSIOA",
    "platform": "youtube",
@@ -1330,6 +1586,60 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-NVPhJ0aCKOw",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-NVPhJ0aCKOw.json"
+  },
+  {
+   "id": "yt-chqfWTcV-1Q",
+   "video_url": "https://www.youtube.com/watch?v=chqfWTcV-1Q",
+   "platform": "youtube",
+   "title": "Beyond Encryption: The Power of Privacy-Enhancing Technologies",
+   "speakers": [],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [],
+   "city": null,
+   "country": null,
+   "date": null,
+   "published": "2025-04-02",
+   "duration": "PT46M52S",
+   "language": null,
+   "channel": "Nordic Blockchain Association",
+   "description": "A public webinar by the Nordic Blockchain Association on privacy-enhancing technology.",
+   "source_url": "https://www.youtube.com/watch?v=chqfWTcV-1Q&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-chqfWTcV-1Q",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-chqfWTcV-1Q.json"
+  },
+  {
+   "id": "yt-jUK82SR3OuU",
+   "video_url": "https://www.youtube.com/watch?v=jUK82SR3OuU",
+   "platform": "youtube",
+   "title": "Combating Crypto Crime: Strategies for Mitigation and Compliance",
+   "speakers": [],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [],
+   "city": null,
+   "country": null,
+   "date": null,
+   "published": "2025-01-23",
+   "duration": "PT52M15S",
+   "language": null,
+   "channel": "Nordic Blockchain Association",
+   "description": "A public webinar by the Nordic Blockchain Association on limiting crypto crime and on compliance.",
+   "source_url": "https://www.youtube.com/watch?v=jUK82SR3OuU&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-jUK82SR3OuU",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-jUK82SR3OuU.json"
   },
   {
    "id": "yt-DBKNHVjX_Zc",
@@ -1518,6 +1828,37 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-gn50NxhPk-0.json"
   },
   {
+   "id": "yt-07ceY-VKsvw",
+   "video_url": "https://www.youtube.com/watch?v=07ceY-VKsvw",
+   "platform": "youtube",
+   "title": "Web3 is a pyramid of dumpster fires - Odin Standal - NDC Oslo 2022",
+   "speakers": [
+    "Odin Standal"
+   ],
+   "event_name": "NDC Oslo 2022",
+   "event_url": "https://ndcoslo.com/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-odin-standal"
+   ],
+   "city": "Oslo",
+   "country": "NO",
+   "date": null,
+   "published": "2022-12-14",
+   "duration": "PT47M28S",
+   "language": null,
+   "channel": "NDC Conferences",
+   "description": "Odin Standal speaks at NDC Oslo 2022 on blockchains, smart contracts and why web3 had not replaced the web.",
+   "source_url": "https://www.youtube.com/watch?v=07ceY-VKsvw&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-07ceY-VKsvw",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-07ceY-VKsvw.json"
+  },
+  {
    "id": "yt-8UUXKBprVE4",
    "video_url": "https://www.youtube.com/watch?v=8UUXKBprVE4",
    "platform": "youtube",
@@ -1629,6 +1970,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-f4ePT_GRGUk",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-f4ePT_GRGUk.json"
+  },
+  {
+   "id": "yt-vM2ZiwQMjRc",
+   "video_url": "https://www.youtube.com/watch?v=vM2ZiwQMjRc",
+   "platform": "youtube",
+   "title": "17.5.2022 Digitaalinen euro – mitä se voisi olla?",
+   "speakers": [
+    "Aleksi Grym"
+   ],
+   "event_name": "Suomen Pankin rahamuseon luentotilaisuus",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the city",
+   "speaker_ids": [
+    "spk-aleksi-grym"
+   ],
+   "city": null,
+   "country": "FI",
+   "date": "2022-05-17",
+   "published": "2022-05-17",
+   "duration": "PT1H0M45S",
+   "language": null,
+   "channel": "Suomen Pankki",
+   "description": "Aleksi Grym of the Bank of Finland lectures on what a digital euro could be, at a Money Museum lecture on 17 May 2022.",
+   "source_url": "https://www.youtube.com/watch?v=vM2ZiwQMjRc&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-vM2ZiwQMjRc",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-vM2ZiwQMjRc.json"
   },
   {
    "id": "yt-McCMg7UVCIk",
@@ -1871,6 +2243,37 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Revpbwe_SfA.json"
   },
   {
+   "id": "yt-Y4csot4fn5k",
+   "video_url": "https://www.youtube.com/watch?v=Y4csot4fn5k",
+   "platform": "youtube",
+   "title": "Bas Spitters: Smart Contracts and Formal Verification for the Blockchain",
+   "speakers": [
+    "Bas Spitters"
+   ],
+   "event_name": "Aarhus University Digital Innovation Festival 2019",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-bas-spitters"
+   ],
+   "city": "Aarhus",
+   "country": "DK",
+   "date": null,
+   "published": "2019-06-03",
+   "duration": "PT17M55S",
+   "language": null,
+   "channel": "Aarhus Universitet",
+   "description": "Bas Spitters speaks at Aarhus University's Digital Innovation Festival 2019 on smart contracts and formal verification for a blockchain.",
+   "source_url": "https://www.youtube.com/watch?v=Y4csot4fn5k&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-Y4csot4fn5k",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Y4csot4fn5k.json"
+  },
+  {
    "id": "yt-L1xCEyn2a8s",
    "video_url": "https://www.youtube.com/watch?v=L1xCEyn2a8s",
    "platform": "youtube",
@@ -2016,6 +2419,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-J5Vdn-1i7cE",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-J5Vdn-1i7cE.json"
+  },
+  {
+   "id": "yt-0zflwm3EXRM",
+   "video_url": "https://www.youtube.com/watch?v=0zflwm3EXRM",
+   "platform": "youtube",
+   "title": "Vad är Blockchain? Öppen föreläsning med Stefan Forsström, Mittuniversitetet",
+   "speakers": [
+    "Stefan Forsström"
+   ],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-stefan-forsstrom"
+   ],
+   "city": null,
+   "country": "SE",
+   "date": null,
+   "published": "2018-12-13",
+   "duration": "PT1H17M22S",
+   "language": null,
+   "channel": "Mid Sweden University",
+   "description": "An open lecture by Stefan Forsström of Mid Sweden University on how a blockchain works.",
+   "source_url": "https://www.youtube.com/watch?v=0zflwm3EXRM&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-0zflwm3EXRM",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-0zflwm3EXRM.json"
   },
   {
    "id": "yt-Z7FA53GIE34",

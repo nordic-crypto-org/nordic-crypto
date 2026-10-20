@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-20T06:00:09+00:00",
+ "generated_at": "2026-10-20T09:10:43+00:00",
  "preview": false,
  "country": "NO",
- "count": 54,
+ "count": 58,
  "talks": [
   {
    "id": "yt-jb3YQjX0Wn0",
@@ -164,6 +164,33 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-QPXOVJ2cUNc.json"
   },
   {
+   "id": "yt-1m_9tlfXA7U",
+   "video_url": "https://www.youtube.com/watch?v=1m_9tlfXA7U",
+   "platform": "youtube",
+   "title": "XRP Family Live Oslo 2026 – Ripple Enabling the Internet of Value",
+   "speakers": [],
+   "event_name": "XRP Family Live",
+   "event_url": "https://xrpfamilylive.com/",
+   "calendar_event_id": "808fdb37c7c7",
+   "event_id": "808fdb37c7c7",
+   "unlink_reason": null,
+   "speaker_ids": [],
+   "city": "Oslo",
+   "country": "NO",
+   "date": "2026-09-05",
+   "published": "2026-09-13",
+   "duration": "PT54M56S",
+   "language": null,
+   "channel": "Internet of Value",
+   "description": "A talk at XRP Family Live at Litteraturhuset in Oslo on 5 September 2026 about Ripple, XRP and tokenisation.",
+   "source_url": "https://www.youtube.com/watch?v=1m_9tlfXA7U&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-1m_9tlfXA7U",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-1m_9tlfXA7U.json"
+  },
+  {
    "id": "yt-iT2iG3o4qJM",
    "video_url": "https://www.youtube.com/watch?v=iT2iG3o4qJM",
    "platform": "youtube",
@@ -199,6 +226,43 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-iT2iG3o4qJM",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-iT2iG3o4qJM.json"
+  },
+  {
+   "id": "yt-GvCsl4OFa9M",
+   "video_url": "https://www.youtube.com/watch?v=GvCsl4OFa9M",
+   "platform": "youtube",
+   "title": "Kan bitcoin bli penger i Palestina?",
+   "speakers": [
+    "Cecilie Hellestveit",
+    "Rami Samandar",
+    "Gunnar Garfors",
+    "Morten Søberg"
+   ],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not name the event",
+   "speaker_ids": [
+    "spk-cecilie-hellestveit",
+    "spk-rami-samandar",
+    "spk-gunnar-garfors",
+    "spk-morten-soberg"
+   ],
+   "city": "Arendal",
+   "country": "NO",
+   "date": "2026-08-10",
+   "published": "2026-08-18",
+   "duration": "PT46M28S",
+   "language": null,
+   "channel": "Bitcoinpolitisk Institutt Norge",
+   "description": "A conversation hosted by Bitcoinpolitisk Institutt Norge at Arendal on 10 August 2026 about whether bitcoin could be used in Palestine.",
+   "source_url": "https://www.youtube.com/watch?v=GvCsl4OFa9M&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-GvCsl4OFa9M",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-GvCsl4OFa9M.json"
   },
   {
    "id": "yt-n5gpUEGfQV4",
@@ -368,6 +432,45 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-NrF-rcWIpsU",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-NrF-rcWIpsU.json"
+  },
+  {
+   "id": "yt-Drv3fd5NnO4",
+   "video_url": "https://www.youtube.com/watch?v=Drv3fd5NnO4",
+   "platform": "youtube",
+   "title": "Bank + krypto = sant?",
+   "speakers": [
+    "Are Jansrud",
+    "Torbjørn Bull Jensen",
+    "Endre Jo Reite",
+    "Svein Ølnes",
+    "Morten Søberg"
+   ],
+   "event_name": "Bank + krypto = sant?",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-are-jansrud",
+    "spk-torbjorn-bull-jensen",
+    "spk-endre-jo-reite",
+    "spk-svein-olnes",
+    "spk-morten-soberg"
+   ],
+   "city": null,
+   "country": "NO",
+   "date": null,
+   "published": "2025-08-12",
+   "duration": "PT36M15S",
+   "language": null,
+   "channel": "Polyteknisk Forening*Norway's Polytechnic Society",
+   "description": "A Polyteknisk Forening panel on Norway's crypto-asset law and whether banks will offer services that involve crypto.",
+   "source_url": "https://www.youtube.com/watch?v=Drv3fd5NnO4&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-Drv3fd5NnO4",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Drv3fd5NnO4.json"
   },
   {
    "id": "yt-7TLMmGGSIOA",
@@ -564,6 +667,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-gn50NxhPk-0",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-gn50NxhPk-0.json"
+  },
+  {
+   "id": "yt-07ceY-VKsvw",
+   "video_url": "https://www.youtube.com/watch?v=07ceY-VKsvw",
+   "platform": "youtube",
+   "title": "Web3 is a pyramid of dumpster fires - Odin Standal - NDC Oslo 2022",
+   "speakers": [
+    "Odin Standal"
+   ],
+   "event_name": "NDC Oslo 2022",
+   "event_url": "https://ndcoslo.com/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-odin-standal"
+   ],
+   "city": "Oslo",
+   "country": "NO",
+   "date": null,
+   "published": "2022-12-14",
+   "duration": "PT47M28S",
+   "language": null,
+   "channel": "NDC Conferences",
+   "description": "Odin Standal speaks at NDC Oslo 2022 on blockchains, smart contracts and why web3 had not replaced the web.",
+   "source_url": "https://www.youtube.com/watch?v=07ceY-VKsvw&hl=en",
+   "retrieved_at": "2026-10-20T08:45:00Z",
+   "added_at": "2026-10-20T08:45:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-07ceY-VKsvw",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-07ceY-VKsvw.json"
   },
   {
    "id": "yt-HwznOY5BhGI",

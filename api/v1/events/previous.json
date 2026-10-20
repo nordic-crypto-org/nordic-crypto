@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-20T06:00:09+00:00",
+ "generated_at": "2026-10-20T09:10:43+00:00",
  "preview": false,
- "count": 30,
+ "count": 40,
  "events": [
   {
    "id": "16b9aa68f972",
@@ -1114,6 +1114,116 @@
    }
   },
   {
+   "id": "808fdb37c7c7",
+   "title": "XRP Family Live",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2026-09-05T10:30:00+02:00",
+   "end": "2026-09-05T16:00:00+02:00",
+   "place": "Litteraturhuset",
+   "city": "Oslo",
+   "country": "NO",
+   "online": false,
+   "organiser": "XRP Family Live",
+   "url": "https://xrpfamilylive.com/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2026-09-05T16:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/808fdb37c7c7/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/808fdb37c7c7/",
+    "nn": "https://nordiccrypto.no/nn/calendar/808fdb37c7c7/",
+    "nb": "https://nordiccrypto.no/nb/calendar/808fdb37c7c7/",
+    "sv": "https://nordiccrypto.no/sv/calendar/808fdb37c7c7/",
+    "da": "https://nordiccrypto.no/da/calendar/808fdb37c7c7/",
+    "fi": "https://nordiccrypto.no/fi/calendar/808fdb37c7c7/",
+    "is": "https://nordiccrypto.no/is/calendar/808fdb37c7c7/",
+    "zh": "https://nordiccrypto.no/zh/calendar/808fdb37c7c7/",
+    "hi": "https://nordiccrypto.no/hi/calendar/808fdb37c7c7/",
+    "es": "https://nordiccrypto.no/es/calendar/808fdb37c7c7/",
+    "fr": "https://nordiccrypto.no/fr/calendar/808fdb37c7c7/",
+    "ar": "https://nordiccrypto.no/ar/calendar/808fdb37c7c7/",
+    "bn": "https://nordiccrypto.no/bn/calendar/808fdb37c7c7/",
+    "pt": "https://nordiccrypto.no/pt/calendar/808fdb37c7c7/",
+    "ru": "https://nordiccrypto.no/ru/calendar/808fdb37c7c7/",
+    "ur": "https://nordiccrypto.no/ur/calendar/808fdb37c7c7/",
+    "id": "https://nordiccrypto.no/id/calendar/808fdb37c7c7/",
+    "de": "https://nordiccrypto.no/de/calendar/808fdb37c7c7/",
+    "ja": "https://nordiccrypto.no/ja/calendar/808fdb37c7c7/",
+    "sw": "https://nordiccrypto.no/sw/calendar/808fdb37c7c7/",
+    "mr": "https://nordiccrypto.no/mr/calendar/808fdb37c7c7/",
+    "fa": "https://nordiccrypto.no/fa/calendar/808fdb37c7c7/",
+    "uk": "https://nordiccrypto.no/uk/calendar/808fdb37c7c7/",
+    "tr": "https://nordiccrypto.no/tr/calendar/808fdb37c7c7/",
+    "se": "https://nordiccrypto.no/se/calendar/808fdb37c7c7/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/808fdb37c7c7.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "XRP Family Live",
+     "source_url": "https://xrpfamilylive.com/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "XRP Family Live",
+    "url": "https://xrpfamilylive.com/",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   },
+   "talk_ids": [
+    "yt-1m_9tlfXA7U"
+   ]
+  },
+  {
    "id": "71149f675741",
    "title": "Arne Ryde Conference on Crypto, Fintech and Payments",
    "title_original": null,
@@ -2137,6 +2247,322 @@
    ]
   },
   {
+   "id": "ed27423eefe3",
+   "title": "Bank + krypto = sant?",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2025-08-11T17:00:00+02:00",
+   "end": "2025-08-11T17:45:00+02:00",
+   "place": "Impact Hub Agder/ Bærekraftshuset, Torvgaten 7",
+   "city": "Arendal",
+   "country": "NO",
+   "online": false,
+   "organiser": "Polyteknisk Forening",
+   "url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2025-08-11T17:45:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/ed27423eefe3/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/ed27423eefe3/",
+    "nn": "https://nordiccrypto.no/nn/calendar/ed27423eefe3/",
+    "nb": "https://nordiccrypto.no/nb/calendar/ed27423eefe3/",
+    "sv": "https://nordiccrypto.no/sv/calendar/ed27423eefe3/",
+    "da": "https://nordiccrypto.no/da/calendar/ed27423eefe3/",
+    "fi": "https://nordiccrypto.no/fi/calendar/ed27423eefe3/",
+    "is": "https://nordiccrypto.no/is/calendar/ed27423eefe3/",
+    "zh": "https://nordiccrypto.no/zh/calendar/ed27423eefe3/",
+    "hi": "https://nordiccrypto.no/hi/calendar/ed27423eefe3/",
+    "es": "https://nordiccrypto.no/es/calendar/ed27423eefe3/",
+    "fr": "https://nordiccrypto.no/fr/calendar/ed27423eefe3/",
+    "ar": "https://nordiccrypto.no/ar/calendar/ed27423eefe3/",
+    "bn": "https://nordiccrypto.no/bn/calendar/ed27423eefe3/",
+    "pt": "https://nordiccrypto.no/pt/calendar/ed27423eefe3/",
+    "ru": "https://nordiccrypto.no/ru/calendar/ed27423eefe3/",
+    "ur": "https://nordiccrypto.no/ur/calendar/ed27423eefe3/",
+    "id": "https://nordiccrypto.no/id/calendar/ed27423eefe3/",
+    "de": "https://nordiccrypto.no/de/calendar/ed27423eefe3/",
+    "ja": "https://nordiccrypto.no/ja/calendar/ed27423eefe3/",
+    "sw": "https://nordiccrypto.no/sw/calendar/ed27423eefe3/",
+    "mr": "https://nordiccrypto.no/mr/calendar/ed27423eefe3/",
+    "fa": "https://nordiccrypto.no/fa/calendar/ed27423eefe3/",
+    "uk": "https://nordiccrypto.no/uk/calendar/ed27423eefe3/",
+    "tr": "https://nordiccrypto.no/tr/calendar/ed27423eefe3/",
+    "se": "https://nordiccrypto.no/se/calendar/ed27423eefe3/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/ed27423eefe3.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Polyteknisk Forening",
+     "source_url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Polyteknisk Forening",
+    "url": "https://www.polyteknisk.no/program/bank-krypto-sant",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "1ecb90ba0a90",
+   "title": "Nordic Blockchain Conference",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2024-06-19T00:00:00+02:00",
+   "end": "2024-06-20T23:59:00+02:00",
+   "place": "Matrikel 1 - MESH Community, Højbro Plads 10",
+   "city": "Copenhagen",
+   "country": "DK",
+   "online": false,
+   "organiser": "Nordic Blockchain Association",
+   "url": "https://conf.nordicblockchain.com/conference2024",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2024-06-20T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/1ecb90ba0a90/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/1ecb90ba0a90/",
+    "nn": "https://nordiccrypto.no/nn/calendar/1ecb90ba0a90/",
+    "nb": "https://nordiccrypto.no/nb/calendar/1ecb90ba0a90/",
+    "sv": "https://nordiccrypto.no/sv/calendar/1ecb90ba0a90/",
+    "da": "https://nordiccrypto.no/da/calendar/1ecb90ba0a90/",
+    "fi": "https://nordiccrypto.no/fi/calendar/1ecb90ba0a90/",
+    "is": "https://nordiccrypto.no/is/calendar/1ecb90ba0a90/",
+    "zh": "https://nordiccrypto.no/zh/calendar/1ecb90ba0a90/",
+    "hi": "https://nordiccrypto.no/hi/calendar/1ecb90ba0a90/",
+    "es": "https://nordiccrypto.no/es/calendar/1ecb90ba0a90/",
+    "fr": "https://nordiccrypto.no/fr/calendar/1ecb90ba0a90/",
+    "ar": "https://nordiccrypto.no/ar/calendar/1ecb90ba0a90/",
+    "bn": "https://nordiccrypto.no/bn/calendar/1ecb90ba0a90/",
+    "pt": "https://nordiccrypto.no/pt/calendar/1ecb90ba0a90/",
+    "ru": "https://nordiccrypto.no/ru/calendar/1ecb90ba0a90/",
+    "ur": "https://nordiccrypto.no/ur/calendar/1ecb90ba0a90/",
+    "id": "https://nordiccrypto.no/id/calendar/1ecb90ba0a90/",
+    "de": "https://nordiccrypto.no/de/calendar/1ecb90ba0a90/",
+    "ja": "https://nordiccrypto.no/ja/calendar/1ecb90ba0a90/",
+    "sw": "https://nordiccrypto.no/sw/calendar/1ecb90ba0a90/",
+    "mr": "https://nordiccrypto.no/mr/calendar/1ecb90ba0a90/",
+    "fa": "https://nordiccrypto.no/fa/calendar/1ecb90ba0a90/",
+    "uk": "https://nordiccrypto.no/uk/calendar/1ecb90ba0a90/",
+    "tr": "https://nordiccrypto.no/tr/calendar/1ecb90ba0a90/",
+    "se": "https://nordiccrypto.no/se/calendar/1ecb90ba0a90/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/1ecb90ba0a90.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference24-location",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference24-location",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference24-location",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2024",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Nordic Blockchain Association",
+    "url": "https://conf.nordicblockchain.com/conference24-location",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "ad8378e8fcc0",
+   "title": "Nordic Blockchain Conference",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2023-09-06T00:00:00+02:00",
+   "end": "2023-09-07T23:59:00+02:00",
+   "place": null,
+   "city": "Copenhagen",
+   "country": "DK",
+   "online": false,
+   "organiser": "Nordic Blockchain Association",
+   "url": "https://conf.nordicblockchain.com/conference2023",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2023-09-07T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/ad8378e8fcc0/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/ad8378e8fcc0/",
+    "nn": "https://nordiccrypto.no/nn/calendar/ad8378e8fcc0/",
+    "nb": "https://nordiccrypto.no/nb/calendar/ad8378e8fcc0/",
+    "sv": "https://nordiccrypto.no/sv/calendar/ad8378e8fcc0/",
+    "da": "https://nordiccrypto.no/da/calendar/ad8378e8fcc0/",
+    "fi": "https://nordiccrypto.no/fi/calendar/ad8378e8fcc0/",
+    "is": "https://nordiccrypto.no/is/calendar/ad8378e8fcc0/",
+    "zh": "https://nordiccrypto.no/zh/calendar/ad8378e8fcc0/",
+    "hi": "https://nordiccrypto.no/hi/calendar/ad8378e8fcc0/",
+    "es": "https://nordiccrypto.no/es/calendar/ad8378e8fcc0/",
+    "fr": "https://nordiccrypto.no/fr/calendar/ad8378e8fcc0/",
+    "ar": "https://nordiccrypto.no/ar/calendar/ad8378e8fcc0/",
+    "bn": "https://nordiccrypto.no/bn/calendar/ad8378e8fcc0/",
+    "pt": "https://nordiccrypto.no/pt/calendar/ad8378e8fcc0/",
+    "ru": "https://nordiccrypto.no/ru/calendar/ad8378e8fcc0/",
+    "ur": "https://nordiccrypto.no/ur/calendar/ad8378e8fcc0/",
+    "id": "https://nordiccrypto.no/id/calendar/ad8378e8fcc0/",
+    "de": "https://nordiccrypto.no/de/calendar/ad8378e8fcc0/",
+    "ja": "https://nordiccrypto.no/ja/calendar/ad8378e8fcc0/",
+    "sw": "https://nordiccrypto.no/sw/calendar/ad8378e8fcc0/",
+    "mr": "https://nordiccrypto.no/mr/calendar/ad8378e8fcc0/",
+    "fa": "https://nordiccrypto.no/fa/calendar/ad8378e8fcc0/",
+    "uk": "https://nordiccrypto.no/uk/calendar/ad8378e8fcc0/",
+    "tr": "https://nordiccrypto.no/tr/calendar/ad8378e8fcc0/",
+    "se": "https://nordiccrypto.no/se/calendar/ad8378e8fcc0/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/ad8378e8fcc0.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference2023",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "backfill",
+    "url": "https://conf.nordicblockchain.com/conference2023",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
    "id": "c4dd9c6f0526",
    "title": "CBDC hackathon with Fintech Norway and Virke",
    "title_original": null,
@@ -2937,6 +3363,113 @@
    }
   },
   {
+   "id": "c5860bd420d3",
+   "title": "HAIC Talks: Bitcoin, Blockchains and Smart Contracts",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2019-02-06T17:30:00+02:00",
+   "end": "2019-02-06T18:30:00+02:00",
+   "place": "Dipoli, Lumituuli Auditorium",
+   "city": "Espoo",
+   "country": "FI",
+   "online": false,
+   "organiser": "Aalto University",
+   "url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2019-02-06T18:30:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/c5860bd420d3/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/c5860bd420d3/",
+    "nn": "https://nordiccrypto.no/nn/calendar/c5860bd420d3/",
+    "nb": "https://nordiccrypto.no/nb/calendar/c5860bd420d3/",
+    "sv": "https://nordiccrypto.no/sv/calendar/c5860bd420d3/",
+    "da": "https://nordiccrypto.no/da/calendar/c5860bd420d3/",
+    "fi": "https://nordiccrypto.no/fi/calendar/c5860bd420d3/",
+    "is": "https://nordiccrypto.no/is/calendar/c5860bd420d3/",
+    "zh": "https://nordiccrypto.no/zh/calendar/c5860bd420d3/",
+    "hi": "https://nordiccrypto.no/hi/calendar/c5860bd420d3/",
+    "es": "https://nordiccrypto.no/es/calendar/c5860bd420d3/",
+    "fr": "https://nordiccrypto.no/fr/calendar/c5860bd420d3/",
+    "ar": "https://nordiccrypto.no/ar/calendar/c5860bd420d3/",
+    "bn": "https://nordiccrypto.no/bn/calendar/c5860bd420d3/",
+    "pt": "https://nordiccrypto.no/pt/calendar/c5860bd420d3/",
+    "ru": "https://nordiccrypto.no/ru/calendar/c5860bd420d3/",
+    "ur": "https://nordiccrypto.no/ur/calendar/c5860bd420d3/",
+    "id": "https://nordiccrypto.no/id/calendar/c5860bd420d3/",
+    "de": "https://nordiccrypto.no/de/calendar/c5860bd420d3/",
+    "ja": "https://nordiccrypto.no/ja/calendar/c5860bd420d3/",
+    "sw": "https://nordiccrypto.no/sw/calendar/c5860bd420d3/",
+    "mr": "https://nordiccrypto.no/mr/calendar/c5860bd420d3/",
+    "fa": "https://nordiccrypto.no/fa/calendar/c5860bd420d3/",
+    "uk": "https://nordiccrypto.no/uk/calendar/c5860bd420d3/",
+    "tr": "https://nordiccrypto.no/tr/calendar/c5860bd420d3/",
+    "se": "https://nordiccrypto.no/se/calendar/c5860bd420d3/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/c5860bd420d3.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/locations/dipoli",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Aalto University",
+     "source_url": "https://www.aalto.fi/en/locations/dipoli",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Aalto University",
+    "url": "https://www.aalto.fi/en/events/haic-talks-colin-boyd-ntnu-bitcoin-blockchains-and-smart-contracts-understanding-the-crypto-in",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
    "id": "419358586d18",
    "title": "Er bálkakeðja framtíðin?",
    "title_original": null,
@@ -3067,6 +3600,215 @@
     "name": "Rafmyntaráð Íslands",
     "url": "https://medium.com/rafmyntar%C3%A1%C3%B0/fyrirlestur-%C3%AD-hr-27-n%C3%B3vember-99b06030f92f",
     "retrieved": "2026-10-07T21:00:00+00:00"
+   }
+  },
+  {
+   "id": "e7f9e0c5493e",
+   "title": "Blockchain Summit Helsinki 2018",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2018-11-21T00:00:00+02:00",
+   "end": "2018-11-22T23:59:00+02:00",
+   "place": "Messukeskus, Messuaukio 1",
+   "city": "Helsinki",
+   "country": "FI",
+   "online": false,
+   "organiser": "Blockchain Forum ry",
+   "url": "https://oppia.fi/events/blockchain-summit-helsinki-2018",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-11-22T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/e7f9e0c5493e/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/e7f9e0c5493e/",
+    "nn": "https://nordiccrypto.no/nn/calendar/e7f9e0c5493e/",
+    "nb": "https://nordiccrypto.no/nb/calendar/e7f9e0c5493e/",
+    "sv": "https://nordiccrypto.no/sv/calendar/e7f9e0c5493e/",
+    "da": "https://nordiccrypto.no/da/calendar/e7f9e0c5493e/",
+    "fi": "https://nordiccrypto.no/fi/calendar/e7f9e0c5493e/",
+    "is": "https://nordiccrypto.no/is/calendar/e7f9e0c5493e/",
+    "zh": "https://nordiccrypto.no/zh/calendar/e7f9e0c5493e/",
+    "hi": "https://nordiccrypto.no/hi/calendar/e7f9e0c5493e/",
+    "es": "https://nordiccrypto.no/es/calendar/e7f9e0c5493e/",
+    "fr": "https://nordiccrypto.no/fr/calendar/e7f9e0c5493e/",
+    "ar": "https://nordiccrypto.no/ar/calendar/e7f9e0c5493e/",
+    "bn": "https://nordiccrypto.no/bn/calendar/e7f9e0c5493e/",
+    "pt": "https://nordiccrypto.no/pt/calendar/e7f9e0c5493e/",
+    "ru": "https://nordiccrypto.no/ru/calendar/e7f9e0c5493e/",
+    "ur": "https://nordiccrypto.no/ur/calendar/e7f9e0c5493e/",
+    "id": "https://nordiccrypto.no/id/calendar/e7f9e0c5493e/",
+    "de": "https://nordiccrypto.no/de/calendar/e7f9e0c5493e/",
+    "ja": "https://nordiccrypto.no/ja/calendar/e7f9e0c5493e/",
+    "sw": "https://nordiccrypto.no/sw/calendar/e7f9e0c5493e/",
+    "mr": "https://nordiccrypto.no/mr/calendar/e7f9e0c5493e/",
+    "fa": "https://nordiccrypto.no/fa/calendar/e7f9e0c5493e/",
+    "uk": "https://nordiccrypto.no/uk/calendar/e7f9e0c5493e/",
+    "tr": "https://nordiccrypto.no/tr/calendar/e7f9e0c5493e/",
+    "se": "https://nordiccrypto.no/se/calendar/e7f9e0c5493e/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/e7f9e0c5493e.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Blockchain Forum ry",
+     "source_url": "https://www.epressi.com/tiedotteet/tietokoneet/tulossa-suomen-suurin-lohkoketjuteknologian-tapahtuma-blockchain-summit-helsinki-2018.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Oppia.fi",
+     "source_url": "https://oppia.fi/events/blockchain-summit-helsinki-2018",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Oppia.fi",
+     "source_url": "https://oppia.fi/events/blockchain-summit-helsinki-2018",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Oppia.fi",
+    "url": "https://oppia.fi/events/blockchain-summit-helsinki-2018",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "5b870c45399b",
+   "title": "Nordic Blockchain Conference",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2018-11-16T08:50:00+01:00",
+   "end": null,
+   "place": "Industriens Hus, H.C. Andersens Boulevard 18",
+   "city": "København",
+   "country": "DK",
+   "online": false,
+   "organiser": "Nordic Blockchain Association and DI Digital",
+   "url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-11-16T11:50:00+01:00",
+   "html_url": "https://nordiccrypto.no/calendar/5b870c45399b/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/5b870c45399b/",
+    "nn": "https://nordiccrypto.no/nn/calendar/5b870c45399b/",
+    "nb": "https://nordiccrypto.no/nb/calendar/5b870c45399b/",
+    "sv": "https://nordiccrypto.no/sv/calendar/5b870c45399b/",
+    "da": "https://nordiccrypto.no/da/calendar/5b870c45399b/",
+    "fi": "https://nordiccrypto.no/fi/calendar/5b870c45399b/",
+    "is": "https://nordiccrypto.no/is/calendar/5b870c45399b/",
+    "zh": "https://nordiccrypto.no/zh/calendar/5b870c45399b/",
+    "hi": "https://nordiccrypto.no/hi/calendar/5b870c45399b/",
+    "es": "https://nordiccrypto.no/es/calendar/5b870c45399b/",
+    "fr": "https://nordiccrypto.no/fr/calendar/5b870c45399b/",
+    "ar": "https://nordiccrypto.no/ar/calendar/5b870c45399b/",
+    "bn": "https://nordiccrypto.no/bn/calendar/5b870c45399b/",
+    "pt": "https://nordiccrypto.no/pt/calendar/5b870c45399b/",
+    "ru": "https://nordiccrypto.no/ru/calendar/5b870c45399b/",
+    "ur": "https://nordiccrypto.no/ur/calendar/5b870c45399b/",
+    "id": "https://nordiccrypto.no/id/calendar/5b870c45399b/",
+    "de": "https://nordiccrypto.no/de/calendar/5b870c45399b/",
+    "ja": "https://nordiccrypto.no/ja/calendar/5b870c45399b/",
+    "sw": "https://nordiccrypto.no/sw/calendar/5b870c45399b/",
+    "mr": "https://nordiccrypto.no/mr/calendar/5b870c45399b/",
+    "fa": "https://nordiccrypto.no/fa/calendar/5b870c45399b/",
+    "uk": "https://nordiccrypto.no/uk/calendar/5b870c45399b/",
+    "tr": "https://nordiccrypto.no/tr/calendar/5b870c45399b/",
+    "se": "https://nordiccrypto.no/se/calendar/5b870c45399b/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/5b870c45399b.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "DI – Dansk Industri",
+     "source_url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "DI – Dansk Industri",
+    "url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
+    "retrieved": "2026-10-20T08:45:00+00:00"
    }
   },
   {
@@ -3917,6 +4659,327 @@
     "yt-rf9C6qr7ew0",
     "yt-wogzCQdqoUA"
    ]
+  },
+  {
+   "id": "5d427556dcae",
+   "title": "Jon Bing Memorial Seminar: Bitcoin and Blockchain: Perspectives and Legal Implications",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2016-04-19T12:00:00+02:00",
+   "end": "2016-04-19T16:00:00+02:00",
+   "place": "Hotel Bristol, Kristian IV's gate 7",
+   "city": "Oslo",
+   "country": "NO",
+   "online": false,
+   "organiser": "Senter for rettsinformatikk",
+   "url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2016-04-19T16:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/5d427556dcae/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/5d427556dcae/",
+    "nn": "https://nordiccrypto.no/nn/calendar/5d427556dcae/",
+    "nb": "https://nordiccrypto.no/nb/calendar/5d427556dcae/",
+    "sv": "https://nordiccrypto.no/sv/calendar/5d427556dcae/",
+    "da": "https://nordiccrypto.no/da/calendar/5d427556dcae/",
+    "fi": "https://nordiccrypto.no/fi/calendar/5d427556dcae/",
+    "is": "https://nordiccrypto.no/is/calendar/5d427556dcae/",
+    "zh": "https://nordiccrypto.no/zh/calendar/5d427556dcae/",
+    "hi": "https://nordiccrypto.no/hi/calendar/5d427556dcae/",
+    "es": "https://nordiccrypto.no/es/calendar/5d427556dcae/",
+    "fr": "https://nordiccrypto.no/fr/calendar/5d427556dcae/",
+    "ar": "https://nordiccrypto.no/ar/calendar/5d427556dcae/",
+    "bn": "https://nordiccrypto.no/bn/calendar/5d427556dcae/",
+    "pt": "https://nordiccrypto.no/pt/calendar/5d427556dcae/",
+    "ru": "https://nordiccrypto.no/ru/calendar/5d427556dcae/",
+    "ur": "https://nordiccrypto.no/ur/calendar/5d427556dcae/",
+    "id": "https://nordiccrypto.no/id/calendar/5d427556dcae/",
+    "de": "https://nordiccrypto.no/de/calendar/5d427556dcae/",
+    "ja": "https://nordiccrypto.no/ja/calendar/5d427556dcae/",
+    "sw": "https://nordiccrypto.no/sw/calendar/5d427556dcae/",
+    "mr": "https://nordiccrypto.no/mr/calendar/5d427556dcae/",
+    "fa": "https://nordiccrypto.no/fa/calendar/5d427556dcae/",
+    "uk": "https://nordiccrypto.no/uk/calendar/5d427556dcae/",
+    "tr": "https://nordiccrypto.no/tr/calendar/5d427556dcae/",
+    "se": "https://nordiccrypto.no/se/calendar/5d427556dcae/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/5d427556dcae.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Senter for rettsinformatikk, University of Oslo",
+     "source_url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Senter for rettsinformatikk, University of Oslo",
+    "url": "https://www.jus.uio.no/ifp/om/organisasjon/seri/arrangementer/jon-bings-minneseminar.html",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "f0e143f65079",
+   "title": "Friday After Work at Ophelia!",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2015-06-05T17:00:00+02:00",
+   "end": "2015-06-05T20:00:00+02:00",
+   "place": "Ophelia Bar & Club, Holbergs gate 19",
+   "city": "Oslo",
+   "country": "NO",
+   "online": false,
+   "organiser": "Oslo Bitcoin Meetup",
+   "url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2015-06-05T20:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/f0e143f65079/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/f0e143f65079/",
+    "nn": "https://nordiccrypto.no/nn/calendar/f0e143f65079/",
+    "nb": "https://nordiccrypto.no/nb/calendar/f0e143f65079/",
+    "sv": "https://nordiccrypto.no/sv/calendar/f0e143f65079/",
+    "da": "https://nordiccrypto.no/da/calendar/f0e143f65079/",
+    "fi": "https://nordiccrypto.no/fi/calendar/f0e143f65079/",
+    "is": "https://nordiccrypto.no/is/calendar/f0e143f65079/",
+    "zh": "https://nordiccrypto.no/zh/calendar/f0e143f65079/",
+    "hi": "https://nordiccrypto.no/hi/calendar/f0e143f65079/",
+    "es": "https://nordiccrypto.no/es/calendar/f0e143f65079/",
+    "fr": "https://nordiccrypto.no/fr/calendar/f0e143f65079/",
+    "ar": "https://nordiccrypto.no/ar/calendar/f0e143f65079/",
+    "bn": "https://nordiccrypto.no/bn/calendar/f0e143f65079/",
+    "pt": "https://nordiccrypto.no/pt/calendar/f0e143f65079/",
+    "ru": "https://nordiccrypto.no/ru/calendar/f0e143f65079/",
+    "ur": "https://nordiccrypto.no/ur/calendar/f0e143f65079/",
+    "id": "https://nordiccrypto.no/id/calendar/f0e143f65079/",
+    "de": "https://nordiccrypto.no/de/calendar/f0e143f65079/",
+    "ja": "https://nordiccrypto.no/ja/calendar/f0e143f65079/",
+    "sw": "https://nordiccrypto.no/sw/calendar/f0e143f65079/",
+    "mr": "https://nordiccrypto.no/mr/calendar/f0e143f65079/",
+    "fa": "https://nordiccrypto.no/fa/calendar/f0e143f65079/",
+    "uk": "https://nordiccrypto.no/uk/calendar/f0e143f65079/",
+    "tr": "https://nordiccrypto.no/tr/calendar/f0e143f65079/",
+    "se": "https://nordiccrypto.no/se/calendar/f0e143f65079/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/f0e143f65079.json",
+   "backfill": true,
+   "event_type": "meetup",
+   "credits": {
+    "title": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Oslo Bitcoin Meetup",
+     "source_url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Oslo Bitcoin Meetup",
+    "url": "https://www.meetup.com/oslo-bitcoin-meetup/events/222431213/",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "3368cb59d8ec",
+   "title": "Bitcoin Fun Fair",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2015-02-14T00:00:00+01:00",
+   "end": "2015-02-15T23:59:00+01:00",
+   "place": "Sodra Theatre",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "The Forumist",
+   "url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2015-02-15T23:59:00+01:00",
+   "html_url": "https://nordiccrypto.no/calendar/3368cb59d8ec/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/3368cb59d8ec/",
+    "nn": "https://nordiccrypto.no/nn/calendar/3368cb59d8ec/",
+    "nb": "https://nordiccrypto.no/nb/calendar/3368cb59d8ec/",
+    "sv": "https://nordiccrypto.no/sv/calendar/3368cb59d8ec/",
+    "da": "https://nordiccrypto.no/da/calendar/3368cb59d8ec/",
+    "fi": "https://nordiccrypto.no/fi/calendar/3368cb59d8ec/",
+    "is": "https://nordiccrypto.no/is/calendar/3368cb59d8ec/",
+    "zh": "https://nordiccrypto.no/zh/calendar/3368cb59d8ec/",
+    "hi": "https://nordiccrypto.no/hi/calendar/3368cb59d8ec/",
+    "es": "https://nordiccrypto.no/es/calendar/3368cb59d8ec/",
+    "fr": "https://nordiccrypto.no/fr/calendar/3368cb59d8ec/",
+    "ar": "https://nordiccrypto.no/ar/calendar/3368cb59d8ec/",
+    "bn": "https://nordiccrypto.no/bn/calendar/3368cb59d8ec/",
+    "pt": "https://nordiccrypto.no/pt/calendar/3368cb59d8ec/",
+    "ru": "https://nordiccrypto.no/ru/calendar/3368cb59d8ec/",
+    "ur": "https://nordiccrypto.no/ur/calendar/3368cb59d8ec/",
+    "id": "https://nordiccrypto.no/id/calendar/3368cb59d8ec/",
+    "de": "https://nordiccrypto.no/de/calendar/3368cb59d8ec/",
+    "ja": "https://nordiccrypto.no/ja/calendar/3368cb59d8ec/",
+    "sw": "https://nordiccrypto.no/sw/calendar/3368cb59d8ec/",
+    "mr": "https://nordiccrypto.no/mr/calendar/3368cb59d8ec/",
+    "fa": "https://nordiccrypto.no/fa/calendar/3368cb59d8ec/",
+    "uk": "https://nordiccrypto.no/uk/calendar/3368cb59d8ec/",
+    "tr": "https://nordiccrypto.no/tr/calendar/3368cb59d8ec/",
+    "se": "https://nordiccrypto.no/se/calendar/3368cb59d8ec/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/3368cb59d8ec.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Bitcoinist",
+     "source_url": "https://bitcoinist.com/bitcoin-fun-fair-february-14-15/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "start": {
+     "source_name": "Bitcoinist",
+     "source_url": "https://bitcoinist.com/bitcoin-fun-fair-february-14-15/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "end": {
+     "source_name": "Bitcoinist",
+     "source_url": "https://bitcoinist.com/bitcoin-fun-fair-february-14-15/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "city": {
+     "source_name": "Bitcoinist",
+     "source_url": "https://bitcoinist.com/bitcoin-fun-fair-february-14-15/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "place": {
+     "source_name": "NewsBTC",
+     "source_url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "country": {
+     "source_name": "NewsBTC",
+     "source_url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "organiser": {
+     "source_name": "NewsBTC",
+     "source_url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "url": {
+     "source_name": "NewsBTC",
+     "source_url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    },
+    "event_type": {
+     "source_name": "NewsBTC",
+     "source_url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+     "retrieved_at": "2026-10-20T08:45:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "NewsBTC",
+    "url": "https://www.newsbtc.com/news/stockholm-brings-fun-bitcoin-together-bitcoin-funfair/",
+    "retrieved": "2026-10-20T08:45:00+00:00"
+   }
   },
   {
    "id": "f079c7652ed9",
