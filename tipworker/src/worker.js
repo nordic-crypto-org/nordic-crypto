@@ -20,6 +20,7 @@
 // Admin page (magic link, bearer session, subscriber list): /api/admin/* – see src/admin.js (migrations/0007_admin.sql).
 // Private tip inbox (the /tip/ form, free text, Turnstile): POST /api/private-tip, newsroom GET /api/private-tips and
 // POST /api/private-tips/:id (bearer) – see src/private_tips.js (migrations/0005_private_tips.sql).
+import { publicFlags } from "./flags.js";
 import { postColumnist } from "./columnist.js";
 import { subscribe, confirm, unsubscribe } from "./newsletter.js";
 import { shouts } from "./shouts.js";
@@ -173,6 +174,7 @@ export default {
     }
     if (req.method === "GET" || req.method === "HEAD") {
       if (path === "/api/shouts" || path === "/api/shouts/admin") return shouts(req, env, H);
+      if (path === "/api/flags") return publicFlags(env);
       if (path === "/api/geo") return send(req, 200, { country: geo(req, env) });
       if (path === "/api/private-tips" && req.method === "GET") return listPrivateTips(req, env);
       if ((path === "/api/confirm" || path === "/api/unsubscribe") && req.method === "HEAD") return new Response(null, { status: 200, headers: headers(req) });  // HEAD never acts
