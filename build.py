@@ -2695,9 +2695,18 @@ def build_stories(write=True, latest=None):
     Per-language summaries for the news list: stories.summaries_i18n {slug: {lang: text}}. The article itself is English only
     (other languages show a note) until the editor adds a translated file in stories.files_i18n {slug: {lang: path}}."""
     st = (load(P("queue", "approved.json"), {}) or {}).get("stories", {}) or {}
+    files = dict(st.get("files") or {})
+    committed = (load(P("data", "stories", "approved.json"), {}) or {}).get("approve") or {}   # committed: survives CI builds
+    for slug, a in committed.items():
+        files[slug] = P("data", "stories", slug + ".md")
+        tr18 = load(P("data", "stories", slug + ".i18n.json"), {}) or {}
+        st.setdefault("summaries", {})[slug] = (tr18.get("summary") or {}).get("en", "")
+        st.setdefault("summaries_i18n", {})[slug] = {k: v for k, v in (tr18.get("summary") or {}).items() if k != "en"}
+        st.setdefault("titles_i18n", {})[slug] = tr18.get("title") or {}
+        st.setdefault("approved_at", {})[slug] = a.get("approved_at")
     out = []
-    for slug, path in (st.get("files") or {}).items():
-        if slug in st.get("approve", []): status = "published"
+    for slug, path in files.items():
+        if slug in st.get("approve", []) or slug in committed: status = "published"
         elif PREVIEW and slug in st.get("ready_for_owner", []): status = "owner"
         else: continue
         tr = ((st.get("files_i18n") or {}).get(slug) or {}).get(LANG)
@@ -2718,7 +2727,8 @@ def build_stories(write=True, latest=None):
                 continue
             cur.append(l)
         if cur: paras.append(" ".join(cur))
-        pub = dt.datetime.fromtimestamp(os.path.getmtime(path), OSLO).replace(microsecond=0).isoformat()
+        at = (st.get("approved_at") or {}).get(slug) if slug in committed else None
+        pub = dt.datetime.fromisoformat(at).astimezone(OSLO).isoformat() if at else dt.datetime.fromtimestamp(os.path.getmtime(path), OSLO).replace(microsecond=0).isoformat()
         if write:
             note = t("story_only_en")
             back = "../../"
@@ -2740,7 +2750,8 @@ def build_stories(write=True, latest=None):
         first = editor_sum if substantive(editor_sum) else (opening or editor_sum or (first_sentence(paras[0]) if paras else ""))
         out.append({"id": "story-" + slug, "url": f"stories/{slug}/", "title": title, "source": "nordic-crypto", "source_name": "Nordic Crypto",
                     "country": country, "language": "English", "published": pub, "topics": ["regulation"], "summary": first,
-                    "summary_i18n": (st.get("summaries_i18n") or {}).get(slug) or {}, "status": status, "own_story": True})
+                    "summary_i18n": (st.get("summaries_i18n") or {}).get(slug) or {},
+                    "title_i18n": (st.get("titles_i18n") or {}).get(slug) or {}, "status": status, "own_story": True})
     return out
 
 def event_when(e):
