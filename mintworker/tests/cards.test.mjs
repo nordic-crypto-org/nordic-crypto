@@ -6,6 +6,7 @@ import { Address, AddressType, GroupToken, Networks, PrivateKey } from "libnexa-
 import { fetchCards, findCard, resetCardCache, usableEdition, windowState } from "../src/cards.js";
 import { performMint, releaseEdition, reserveEdition } from "../src/mint.js";
 import { signNexaChallenge } from "../src/nexa/message.js";
+import { turnstileOk } from "../src/turnstile.js";
 import { NOW, testCards } from "./fixtures.mjs";
 
 const caps = JSON.parse(readFileSync(new URL("../caps.json", import.meta.url)));
@@ -191,4 +192,35 @@ test("the card index is cached and a bad fetch keeps the last good copy", async 
   assert.equal(calls, 2);
   resetCardCache();
   assert.equal(await fetchCards({}, 0, bad), null);
+});
+
+test("a Bitcoin Cash mint needs a Turnstile token that Cloudflare accepts", async () => {
+  const sent = [];
+  const answer = (success) => async (url, init) => {
+    sent.push({ url, body: String(init.body) });
+    return new Response(JSON.stringify({ success }));
+  };
+  const env = { TURNSTILE_SECRET: "turnstile-secret-for-tests" };
+  assert.equal(await turnstileOk(env, "", answer(true)), "missing");
+  assert.equal(sent.length, 0);
+  assert.equal(await turnstileOk(env, "anything-at-all", answer(false)), "bad");
+  assert.equal(sent[0].url, "https://challenges.cloudflare.com/turnstile/v0/siteverify");
+  assert.equal(sent[0].body.includes("response=anything-at-all"), true);
+  assert.equal(await turnstileOk(env, "real-token", answer(true)), "ok");
+  assert.equal(await turnstileOk(env, "real-token", async () => { throw new Error("down"); }), "bad");
+  assert.equal(await turnstileOk({}, "real-token", answer(true)), "unconfigured");
+
+  const body = { chain: "bch", event_id: "evt", kind: "ongoing", identity: "bchtest:zsomeone" };
+  const deps = { now: () => new Date(NOW), loadCards: async () => testCards() };
+  const forged = await performMint(env, { ...body, turnstile: "forged" }, caps, {
+    ...deps, verifyTurnstile: (e, t) => turnstileOk(e, t, answer(false)),
+  });
+  assert.equal(forged.reason, "turnstile_failed");
+  const missing = await performMint(env, body, caps, { ...deps, verifyTurnstile: (e, t) => turnstileOk(e, t, answer(true)) });
+  assert.equal(missing.reason, "turnstile_required");
+  const passed = await performMint(env, { ...body, turnstile: "real-token" }, caps, {
+    ...deps, verifyTurnstile: (e, t) => turnstileOk(e, t, answer(true)),
+  });
+  assert.notEqual(passed.reason, "turnstile_failed");
+  assert.notEqual(passed.reason, "turnstile_required");
 });

@@ -14,6 +14,7 @@ import { verifyBchChallenge } from "./bch/message.js";
 import { readObservedSats, writeObservedSats } from "./balance.js";
 import { policyAmount, recordLedger } from "./history.js";
 import { tokenConfig } from "./setup.js";
+import { turnstileOk } from "./turnstile.js";
 import { editionOf, fetchCards, findCard, usableEdition, validKind, windowState } from "./cards.js";
 
 const hex = (buf) => [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
@@ -81,8 +82,10 @@ export async function performMint(env, body, caps, deps = {}) {
   const identity = body && typeof body.identity === "string" ? body.identity.trim() : "";
   const kind = body && body.kind;
   if (!caps[chain] || !eventId || !identity || !validKind(kind)) return fail("bad_request");
-  if (chain === "bch" && caps.bch.turnstile && env && env.TURNSTILE_SECRET && !body.turnstile) {
-    return fail("turnstile_required", { needs_funding: false });
+  if (chain === "bch" && caps.bch.turnstile && env && env.TURNSTILE_SECRET) {
+    const gate = await (deps.verifyTurnstile || turnstileOk)(env, body.turnstile);
+    if (gate === "missing") return fail("turnstile_required", { needs_funding: false });
+    if (gate !== "ok") return fail("turnstile_failed", { needs_funding: false });
   }
   const now = deps.now ? deps.now() : new Date();
   const cards = await (deps.loadCards || ((e) => fetchCards(e, now.getTime())))(env);

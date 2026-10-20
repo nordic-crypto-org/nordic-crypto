@@ -240,7 +240,7 @@ The float makes this a faucet. The limits, enforced in `mintworker/src/policy.js
 - one mint per NexaID per event, and one per Bitcoin Cash address per event (the D1 unique hash; kind does not add a mint)
 - the per-day and per-event caps in the table above
 - the reserve, so the last coins are not spent
-- Turnstile on Bitcoin Cash when `TURNSTILE_SECRET` is set
+- Turnstile on Bitcoin Cash when `TURNSTILE_SECRET` is set: the Worker sends the token to Cloudflare siteverify and refuses unless it answers success (`turnstile_required`, `turnstile_failed`)
 - an in-memory IP limit on the login endpoint, still to be wired with the signer
 - the server re-checks that the event is actually upcoming or ongoing
 
