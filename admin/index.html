@@ -514,6 +514,8 @@ body.th-aurora .leadstory::after{content:"";position:absolute;inset:0;background
 <p><button id="adm-send" class="btn" type="submit">Send sign-in link</button></p></form></section>
 <section id="adm-app" hidden>
 <div class="adm-top"><p class="adm-who">Signed in as <b id="adm-email"></b></p><button id="adm-out" class="btn" type="button">Sign out</button></div>
+<h2>App settings</h2>
+<p><label><input id="adm-nft-ios" type="checkbox" disabled> NFT tab in iOS app</label> <span id="adm-flags-msg" class="adm-who"></span></p>
 <h2>Newsletter subscribers</h2>
 <ul id="adm-tot" class="adm-tot"></ul>
 <div class="adm-tools"><label for="adm-q" class="vh">Search</label><input id="adm-q" type="search" placeholder="Search email, language, issue">
@@ -558,7 +560,7 @@ function load(){api("/api/admin/subscribers").then(function(r){if(r.status===401
  if(!d)return;if(!d.ok){msg("Could not load the list.",1);return}
  show("app");msg("");$("adm-email").textContent=d.email;rows=d.rows||[];var t=d.totals||{};
  $("adm-tot").innerHTML="";[["All",t.all],["Confirmed",t.confirmed],["Pending",t.pending],["Unsubscribed",t.unsubscribed],["Deliveries",t.deliveries],["Last issue",d.last_issue==null?"–":"#"+d.last_issue]].forEach(function(p){var li=document.createElement("li"),b=document.createElement("b");b.textContent=p[1]==null?"0":p[1];li.appendChild(b);li.appendChild(document.createTextNode(p[0]));$("adm-tot").appendChild(li)});
- render();loadPress();loadSchedule()}).catch(function(){msg("The admin service is not reachable.",1)})}
+ render();loadPress();loadSchedule();loadFlags()}).catch(function(){msg("The admin service is not reachable.",1)})}
 function loadPress(){var box=$("adm-sends");api("/api/admin/press-sends").then(function(r){return r.ok?r.json():null}).then(function(d){
  box.textContent="";if(!d||!d.ok){box.textContent="Could not load the sends.";return}
  if(!d.sends.length){box.textContent="No press emails sent yet.";return}
@@ -568,6 +570,11 @@ function loadPress(){var box=$("adm-sends");api("/api/admin/press-sends").then(f
   det.appendChild(sum);det.appendChild(ul);box.appendChild(det)})}).catch(function(){box.textContent="Could not load the sends."})}
 function fill(id,list,cols){var tb=$(id);tb.textContent="";list.forEach(function(r){var tr=document.createElement("tr"),a=cols(r);a.forEach(function(v,i){
   var td=document.createElement("td");if(i===a.length-1){var b=document.createElement("span");b.className="adm-st "+v;b.textContent=String(v).replace("_"," ");td.appendChild(b)}else td.textContent=v==null?"":v;tr.appendChild(td)});tb.appendChild(tr)})}
+function loadFlags(){var c=$("adm-nft-ios"),m=$("adm-flags-msg");api("/api/admin/flags").then(function(r){return r.ok?r.json():null}).then(function(d){
+ if(!d||!d.ok){m.textContent="Could not load app settings.";return}c.checked=!!d.flags.nft_ios;c.disabled=false;m.textContent=""}).catch(function(){m.textContent="Could not load app settings."})}
+$("adm-nft-ios").addEventListener("change",function(){var c=$("adm-nft-ios"),m=$("adm-flags-msg"),want=c.checked;c.disabled=true;
+ api("/api/admin/flags",{method:"POST",body:JSON.stringify({nft_ios:want})}).then(function(r){return r.ok?r.json():null}).then(function(d){
+  if(!d||!d.ok){c.checked=!want;m.textContent="Not saved.";return}c.checked=!!d.flags.nft_ios;m.textContent="Saved."}).catch(function(){c.checked=!want;m.textContent="Not saved."}).finally(function(){c.disabled=false})});
 function hm(v){return v?String(v).slice(0,16).replace("T"," "):""}
 function loadSchedule(){api("/api/admin/schedule").then(function(r){return r.ok?r.json():null}).then(function(d){
  if(!d||!d.ok){$("adm-sched-msg").textContent="Could not load campaigns and schedule.";return}$("adm-sched-msg").textContent="";
