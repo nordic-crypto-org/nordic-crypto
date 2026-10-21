@@ -19,13 +19,13 @@ Without both it is a dry run: it prints what it would post and does not change t
 
   python3 tools/telegram_events.py --ledger .telegram/ledger.json [--feed URL_OR_PATH] [--max 5] [--dry-run]
 """
-import argparse, datetime as dt, html, json, os, sys, urllib.parse, urllib.request, zoneinfo
+import argparse, datetime as dt, html, json, os, re, sys, urllib.parse, urllib.request, zoneinfo
 
 FEED = "https://nordiccrypto.no/api/v1/events.json"
 NEWS_FEED = "https://nordiccrypto.no/api/v1/news.json"
 FLAGS = {"NO": "🇳🇴", "SE": "🇸🇪", "DK": "🇩🇰", "FI": "🇫🇮", "IS": "🇮🇸", "FO": "🇫🇴", "GL": "🇬🇱", "AX": "🇦🇽"}
 OSLO = zoneinfo.ZoneInfo("Europe/Oslo")
-MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+SITE = "https://nordiccrypto.no"
 UA = "nordic-crypto-telegram-events/1 (+https://nordiccrypto.no/)"
 
 
@@ -74,22 +74,28 @@ def fresh_news(items, now, max_age_days):
 
 
 def en_title(e):
-    return e.get("title_en") or (e.get("title_i18n") or {}).get("en") or e.get("title")
+    i18n = e.get("title_i18n") if isinstance(e.get("title_i18n"), dict) else {}
+    return e.get("title_en") or i18n.get("en") or (e.get("title") if e.get("language_code", "en") == "en" else None)
+
+
+def en_link(e):
+    """English story page on nordiccrypto.no, never the source or a /<lang>/ page."""
+    m = re.match(r"https://nordiccrypto\.no/(?:[a-z]{2}/)?stories/([^/?#]+)/?", e.get("html_url") or "")
+    return f"{SITE}/stories/{m.group(1)}/" if m else None
 
 
 def news_digests(items, now, limit=4096):
     """One HTML digest for the round, oldest first; split into more messages only past Telegram's limit."""
     E = lambda s: html.escape(str(s or ""), quote=False)
-    d = now.astimezone(OSLO)
-    head = f"📰 <b>New on Nordic Crypto – {d.day} {MONTHS[d.month - 1]} {d.year}</b>"
+    head = f"📰 <b>New stories on Nordic Crypto – {now.astimezone(OSLO).strftime('%-d.%-m.%Y')}</b>"
     out, ids, text = [], [], head
     for e in items:
         flag = FLAGS.get((e.get("country") or "").upper(), "")
         title = E(en_title(e))
-        link = e.get("html_url") or e.get("url")
+        link = en_link(e)
         line = (f"{flag} " if flag else "• ") + (f'<a href="{html.escape(link, quote=True)}">{title}</a>' if link else title)
         if e.get("source_name"):
-            line += f" – {E(e['source_name'])}"
+            line += f" – Source: {E(e['source_name'])}"
         if ids and len(text) + 2 + len(line) > limit:
             out.append((ids, text)); ids, text = [], head
         ids.append(e["id"]); text += "\n\n" + line

@@ -93,9 +93,9 @@ class TelegramEvents(unittest.TestCase):
         self.gonews(items)
         self.assertEqual(len(self.sender.sent), 1)
         self.assertEqual(self.sender.sent[0][2],
-                         "📰 <b>New on Nordic Crypto – 9 Oct 2026</b>\n\n"
-                         '🇸🇪 <a href="https://nordiccrypto.no/stories/n1/">A &amp; B</a> – Kaupr\n\n'
-                         '🇸🇪 <a href="https://nordiccrypto.no/stories/n2/">Story n2</a> – Kaupr')
+                         "📰 <b>New stories on Nordic Crypto – 9.10.2026</b>\n\n"
+                         '🇸🇪 <a href="https://nordiccrypto.no/stories/n1/">A &amp; B</a> – Source: Kaupr\n\n'
+                         '🇸🇪 <a href="https://nordiccrypto.no/stories/n2/">Story n2</a> – Source: Kaupr')
         self.gonews(items); self.assertEqual(self.sender.sent, [], "never posted twice")
 
     def test_news_digest_is_english(self):
@@ -103,9 +103,15 @@ class TelegramEvents(unittest.TestCase):
                             title_i18n={"en": "English headline", "nb": "Norsk tittel"}),
                  self.story("i2", "2026-10-08T08:00:00+00:00", title_en="Only English")]
         (_, text), = te.news_digests(items, NOW)
-        self.assertTrue(text.startswith("📰 <b>New on Nordic Crypto – 9 Oct 2026</b>"))
-        self.assertIn(">English headline</a> – Kaupr", text); self.assertIn(">Only English</a>", text)
+        self.assertTrue(text.startswith("📰 <b>New stories on Nordic Crypto – 9.10.2026</b>"))
+        self.assertIn(">English headline</a> – Source: Kaupr", text); self.assertIn(">Only English</a>", text)
         self.assertNotIn("Sak", text); self.assertNotIn("Nye saker", text)
+
+    def test_news_links_english_story_page(self):
+        e = self.story("l1", "2026-10-08T07:00:00+00:00", url="https://kaupr.io/x",
+                       html_url="https://nordiccrypto.no/nb/stories/l1/")
+        (_, text), = te.news_digests([e], NOW)
+        self.assertIn('href="https://nordiccrypto.no/stories/l1/"', text); self.assertNotIn("kaupr.io", text)
 
     def test_news_waits_for_the_round_to_settle(self):
         self.gonews([])
