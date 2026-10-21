@@ -173,7 +173,7 @@ jobs:
             fi
             echo
             echo "CI has no \`queue/approved.json\`, no \`state/source_status.json\`, and no \`/workspace/nordic-crypto-research/academia.md\`."
-            echo "Own stories in \`stories.approve\` are omitted. Rows in \`data/events.json\` are not promoted. Every enabled source counts as ok."
+            echo "Own stories come from \`data/stories/approved.json\`; the local \`stories.approve\` queue is omitted. Rows in \`data/events.json\` are not promoted. Every enabled source counts as ok."
             echo "\`data/news.json\`, \`data/orgchart.json\` and \`data/academia.json\` stay as they are committed on \`main\`."
             echo "After a publish with new stories, push notifications go to browsers (\`PUSH_PUBLISH_TOKEN\`) and the apps (\`APP_PUSH_PUBLISH_TOKEN\`)."
           } >> "$GITHUB_STEP_SUMMARY"
