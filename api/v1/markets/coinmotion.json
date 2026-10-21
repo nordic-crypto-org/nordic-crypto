@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-21T13:04:00+00:00",
+ "generated_at": "2026-10-21T13:53:52+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": true,
   "note": "Finnish broker. Public rates include EUR and SEK. There is no last-trade field, so last is null. bid is the buy field (the price Coinmotion pays for the asset) and ask is the sell field (the price Coinmotion charges). Pairs quoted in BTC or USDC are left out. The response sends Access-Control-Allow-Origin: *.",
   "status": "error",
-  "fetched_at": "2026-10-21T13:02:48+00:00",
+  "fetched_at": "2026-10-21T13:53:52+00:00",
   "error": "HTTP 403 from https://api.coinmotion.com/v2/rates",
   "ticker_count": 0
  },
