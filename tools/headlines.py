@@ -105,7 +105,8 @@ def card_headline(item, lang, catalogue=None):
     """
     title = (item.get("title") or "").strip()
     if item.get("own_story"):
-        return title, "en", ""
+        own = (title_map(item, catalogue).get(lang) or "").strip()
+        return (own, lang, "") if own else (title, "en", "")
     src = SOURCE_SITE.get(item.get("language") or "")
     src_code = _source_code(item)
     translated = title_map(item, catalogue)
