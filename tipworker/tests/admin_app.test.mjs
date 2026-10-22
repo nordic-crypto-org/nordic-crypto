@@ -16,7 +16,7 @@ class SqliteD1 {
 }
 function env() {
   const db = new DatabaseSync(":memory:");
-  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql", "0009_admin_app_code.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
+  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql", "0009_admin_app_code.sql", "0012_admin_login_requester.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
   return { DB: new SqliteD1(db), raw: db, SUBSCRIBE_TEST: "1" };
 }
 let ipn = 1;
