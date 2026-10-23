@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-23T06:17:31+00:00",
+ "generated_at": "2026-10-23T09:00:00+00:00",
  "preview": false,
  "item": {
   "id": "magnus-jones",
@@ -54,6 +54,12 @@
     "title": "Oslo Kulturnatt: Der krypto skaper kunst og verdier hos 'verse",
     "source_name": "Polyteknisk Forening",
     "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+    "title": "Regulatory challenges! – An update of the Norwegian and European market",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
    }
   ],
   "logo": null,
@@ -62,7 +68,11 @@
   "talk_ids": [
    "yt--4I2b_hFG0A",
    "yt-HwznOY5BhGI",
+   "yt-lsb-GKybHPo",
    "yt-rfLLR9vhoYI"
+  ],
+  "event_ids": [
+   "81fdbff37e4c"
   ],
   "talks": [
    {
@@ -79,6 +89,13 @@
     "id": "yt--4I2b_hFG0A",
     "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 1 (Part 1)",
     "video_url": "https://www.youtube.com/watch?v=-4I2b_hFG0A"
+   },
+   {
+    "id": "yt-lsb-GKybHPo",
+    "title": "Regulatory challenges! – An update of the Norwegian and European market",
+    "video_url": "https://www.youtube.com/watch?v=lsb-GKybHPo",
+    "event_id": "81fdbff37e4c",
+    "date": "2019-04-30"
    }
   ],
   "affiliations": [

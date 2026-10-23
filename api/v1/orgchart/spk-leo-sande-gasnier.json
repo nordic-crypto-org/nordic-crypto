@@ -1,0 +1,55 @@
+{
+ "api_version": "1",
+ "name": "Nordic Crypto",
+ "generated_at": "2026-10-23T09:00:00+00:00",
+ "preview": false,
+ "item": {
+  "id": "spk-leo-sande-gasnier",
+  "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-leo-sande-gasnier.json",
+  "html_url": "https://nordiccrypto.no/org-chart/#spk-leo-sande-gasnier",
+  "name": "Leo Sande Gasnier",
+  "type": "person",
+  "sector": "private",
+  "country": null,
+  "description": null,
+  "role": null,
+  "org": null,
+  "group": null,
+  "profile_url": null,
+  "provenance": "Talks archive",
+  "caveat": false,
+  "sources": [
+   {
+    "url": "https://www.youtube.com/watch?v=G1IPKTD_nb4&hl=en",
+    "title": "Introducing Blockchain to National Registries by Leo Sande Gasnier",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
+   }
+  ],
+  "logo": null,
+  "image": null,
+  "profiles": [],
+  "talk_ids": [
+   "yt-0qb0RfKg_FU",
+   "yt-G1IPKTD_nb4"
+  ],
+  "talks": [
+   {
+    "id": "yt-G1IPKTD_nb4",
+    "title": "Introducing Blockchain to National Registries by Leo Sande Gasnier",
+    "video_url": "https://www.youtube.com/watch?v=G1IPKTD_nb4"
+   },
+   {
+    "id": "yt-0qb0RfKg_FU",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+   }
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-23T06:17:31+00:00",
+ "generated_at": "2026-10-23T09:00:00+00:00",
  "preview": false,
  "item": {
   "id": "spk-silvija-seres",
@@ -24,12 +24,19 @@
     "title": "Arendalsuka: Bitcoin-mining i Norge. For vanskelig å forstå, for lett å forby?",
     "source_name": "Bitcoinpolitisk Institutt Norge",
     "date": "2026-10-16"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
    }
   ],
   "logo": null,
   "image": null,
   "profiles": [],
   "talk_ids": [
+   "yt-0qb0RfKg_FU",
    "yt-7TLMmGGSIOA"
   ],
   "event_ids": [
@@ -42,6 +49,11 @@
     "video_url": "https://www.youtube.com/watch?v=7TLMmGGSIOA",
     "event_id": "0af4e2d6e963",
     "date": "2025-08-12"
+   },
+   {
+    "id": "yt-0qb0RfKg_FU",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
    }
   ]
  }

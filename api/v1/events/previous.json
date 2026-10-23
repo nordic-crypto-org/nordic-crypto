@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-23T06:17:31+00:00",
+ "generated_at": "2026-10-23T09:00:00+00:00",
  "preview": false,
- "count": 40,
+ "count": 44,
  "events": [
   {
    "id": "16b9aa68f972",
@@ -1114,6 +1114,120 @@
    }
   },
   {
+   "id": "37b2abaebcaf",
+   "title": "Göteborg Bitcoin Meetup #48",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2026-09-10T18:00:00+02:00",
+   "end": "2026-09-10T21:00:00+02:00",
+   "place": "Ölrepubliken, Kronhusgatan 2B",
+   "city": "Göteborg",
+   "country": "SE",
+   "online": false,
+   "organiser": "Swedish Bitcoin Meetups",
+   "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": {
+    "text": "We want to provide friendly and open events where we discuss bitcoin and its current and potential role in the global economy. If you're new to the idea, this is the place to go for educated discussions from both professionals and experienced amateurs in the space.",
+    "lang": "en",
+    "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+    "source_name": "Swedish Bitcoin Meetups",
+    "retrieved": "2026-10-23T09:40:00+00:00",
+    "i18n": {}
+   },
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2026-09-10T21:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/37b2abaebcaf/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/37b2abaebcaf/",
+    "nn": "https://nordiccrypto.no/nn/calendar/37b2abaebcaf/",
+    "nb": "https://nordiccrypto.no/nb/calendar/37b2abaebcaf/",
+    "sv": "https://nordiccrypto.no/sv/calendar/37b2abaebcaf/",
+    "da": "https://nordiccrypto.no/da/calendar/37b2abaebcaf/",
+    "fi": "https://nordiccrypto.no/fi/calendar/37b2abaebcaf/",
+    "is": "https://nordiccrypto.no/is/calendar/37b2abaebcaf/",
+    "zh": "https://nordiccrypto.no/zh/calendar/37b2abaebcaf/",
+    "hi": "https://nordiccrypto.no/hi/calendar/37b2abaebcaf/",
+    "es": "https://nordiccrypto.no/es/calendar/37b2abaebcaf/",
+    "fr": "https://nordiccrypto.no/fr/calendar/37b2abaebcaf/",
+    "ar": "https://nordiccrypto.no/ar/calendar/37b2abaebcaf/",
+    "bn": "https://nordiccrypto.no/bn/calendar/37b2abaebcaf/",
+    "pt": "https://nordiccrypto.no/pt/calendar/37b2abaebcaf/",
+    "ru": "https://nordiccrypto.no/ru/calendar/37b2abaebcaf/",
+    "ur": "https://nordiccrypto.no/ur/calendar/37b2abaebcaf/",
+    "id": "https://nordiccrypto.no/id/calendar/37b2abaebcaf/",
+    "de": "https://nordiccrypto.no/de/calendar/37b2abaebcaf/",
+    "ja": "https://nordiccrypto.no/ja/calendar/37b2abaebcaf/",
+    "sw": "https://nordiccrypto.no/sw/calendar/37b2abaebcaf/",
+    "mr": "https://nordiccrypto.no/mr/calendar/37b2abaebcaf/",
+    "fa": "https://nordiccrypto.no/fa/calendar/37b2abaebcaf/",
+    "uk": "https://nordiccrypto.no/uk/calendar/37b2abaebcaf/",
+    "tr": "https://nordiccrypto.no/tr/calendar/37b2abaebcaf/",
+    "se": "https://nordiccrypto.no/se/calendar/37b2abaebcaf/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/37b2abaebcaf.json",
+   "backfill": true,
+   "event_type": "meetup",
+   "credits": {
+    "title": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "start": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "end": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "place": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "city": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "country": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "url": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Swedish Bitcoin Meetups",
+    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+    "retrieved": "2026-10-23T09:40:00+00:00"
+   }
+  },
+  {
    "id": "808fdb37c7c7",
    "title": "XRP Family Live",
    "title_original": null,
@@ -1668,6 +1782,120 @@
    "talk_ids": [
     "yt-iT2iG3o4qJM"
    ]
+  },
+  {
+   "id": "24b47a160f3c",
+   "title": "Stockholm Bitcoin Meetup #51",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2026-08-06T17:30:00+02:00",
+   "end": "2026-08-06T23:00:00+02:00",
+   "place": "Sue Ellen, Tulegatan 17",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "Swedish Bitcoin Meetups",
+   "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": {
+    "text": "We want to provide friendly and open events where we discuss bitcoin and its current and potential role in the global economy. If you're new to the idea, this is the place to go for educated discussions from both professionals and experienced amateurs in the space.",
+    "lang": "en",
+    "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+    "source_name": "Swedish Bitcoin Meetups",
+    "retrieved": "2026-10-23T09:40:00+00:00",
+    "i18n": {}
+   },
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2026-08-06T23:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/24b47a160f3c/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/24b47a160f3c/",
+    "nn": "https://nordiccrypto.no/nn/calendar/24b47a160f3c/",
+    "nb": "https://nordiccrypto.no/nb/calendar/24b47a160f3c/",
+    "sv": "https://nordiccrypto.no/sv/calendar/24b47a160f3c/",
+    "da": "https://nordiccrypto.no/da/calendar/24b47a160f3c/",
+    "fi": "https://nordiccrypto.no/fi/calendar/24b47a160f3c/",
+    "is": "https://nordiccrypto.no/is/calendar/24b47a160f3c/",
+    "zh": "https://nordiccrypto.no/zh/calendar/24b47a160f3c/",
+    "hi": "https://nordiccrypto.no/hi/calendar/24b47a160f3c/",
+    "es": "https://nordiccrypto.no/es/calendar/24b47a160f3c/",
+    "fr": "https://nordiccrypto.no/fr/calendar/24b47a160f3c/",
+    "ar": "https://nordiccrypto.no/ar/calendar/24b47a160f3c/",
+    "bn": "https://nordiccrypto.no/bn/calendar/24b47a160f3c/",
+    "pt": "https://nordiccrypto.no/pt/calendar/24b47a160f3c/",
+    "ru": "https://nordiccrypto.no/ru/calendar/24b47a160f3c/",
+    "ur": "https://nordiccrypto.no/ur/calendar/24b47a160f3c/",
+    "id": "https://nordiccrypto.no/id/calendar/24b47a160f3c/",
+    "de": "https://nordiccrypto.no/de/calendar/24b47a160f3c/",
+    "ja": "https://nordiccrypto.no/ja/calendar/24b47a160f3c/",
+    "sw": "https://nordiccrypto.no/sw/calendar/24b47a160f3c/",
+    "mr": "https://nordiccrypto.no/mr/calendar/24b47a160f3c/",
+    "fa": "https://nordiccrypto.no/fa/calendar/24b47a160f3c/",
+    "uk": "https://nordiccrypto.no/uk/calendar/24b47a160f3c/",
+    "tr": "https://nordiccrypto.no/tr/calendar/24b47a160f3c/",
+    "se": "https://nordiccrypto.no/se/calendar/24b47a160f3c/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/24b47a160f3c.json",
+   "backfill": true,
+   "event_type": "meetup",
+   "credits": {
+    "title": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "start": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "end": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "place": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "city": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "country": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "url": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Swedish Bitcoin Meetups",
+     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Swedish Bitcoin Meetups",
+    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+    "retrieved": "2026-10-23T09:40:00+00:00"
+   }
   },
   {
    "id": "9e5346069673",
@@ -3388,6 +3616,111 @@
    }
   },
   {
+   "id": "81fdbff37e4c",
+   "title": "Oslo Blockchain Day",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2019-04-30T00:00:00+02:00",
+   "end": "2019-04-30T23:59:00+02:00",
+   "place": null,
+   "city": "Oslo",
+   "country": "NO",
+   "online": false,
+   "organiser": "Blockchangers",
+   "url": "https://www.youtube.com/watch?v=lsb-GKybHPo",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2019-04-30T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/81fdbff37e4c/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/81fdbff37e4c/",
+    "nn": "https://nordiccrypto.no/nn/calendar/81fdbff37e4c/",
+    "nb": "https://nordiccrypto.no/nb/calendar/81fdbff37e4c/",
+    "sv": "https://nordiccrypto.no/sv/calendar/81fdbff37e4c/",
+    "da": "https://nordiccrypto.no/da/calendar/81fdbff37e4c/",
+    "fi": "https://nordiccrypto.no/fi/calendar/81fdbff37e4c/",
+    "is": "https://nordiccrypto.no/is/calendar/81fdbff37e4c/",
+    "zh": "https://nordiccrypto.no/zh/calendar/81fdbff37e4c/",
+    "hi": "https://nordiccrypto.no/hi/calendar/81fdbff37e4c/",
+    "es": "https://nordiccrypto.no/es/calendar/81fdbff37e4c/",
+    "fr": "https://nordiccrypto.no/fr/calendar/81fdbff37e4c/",
+    "ar": "https://nordiccrypto.no/ar/calendar/81fdbff37e4c/",
+    "bn": "https://nordiccrypto.no/bn/calendar/81fdbff37e4c/",
+    "pt": "https://nordiccrypto.no/pt/calendar/81fdbff37e4c/",
+    "ru": "https://nordiccrypto.no/ru/calendar/81fdbff37e4c/",
+    "ur": "https://nordiccrypto.no/ur/calendar/81fdbff37e4c/",
+    "id": "https://nordiccrypto.no/id/calendar/81fdbff37e4c/",
+    "de": "https://nordiccrypto.no/de/calendar/81fdbff37e4c/",
+    "ja": "https://nordiccrypto.no/ja/calendar/81fdbff37e4c/",
+    "sw": "https://nordiccrypto.no/sw/calendar/81fdbff37e4c/",
+    "mr": "https://nordiccrypto.no/mr/calendar/81fdbff37e4c/",
+    "fa": "https://nordiccrypto.no/fa/calendar/81fdbff37e4c/",
+    "uk": "https://nordiccrypto.no/uk/calendar/81fdbff37e4c/",
+    "tr": "https://nordiccrypto.no/tr/calendar/81fdbff37e4c/",
+    "se": "https://nordiccrypto.no/se/calendar/81fdbff37e4c/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/81fdbff37e4c.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "start": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "end": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "city": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "country": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "url": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Blockchangers",
+     "source_url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "backfill",
+    "url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+    "retrieved": "2026-10-23T09:40:00+00:00"
+   },
+   "talk_ids": [
+    "yt-lsb-GKybHPo"
+   ]
+  },
+  {
    "id": "c5860bd420d3",
    "title": "HAIC Talks: Bitcoin, Blockchains and Smart Contracts",
    "title_original": null,
@@ -3859,6 +4192,145 @@
     "name": "DI – Dansk Industri",
     "url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
     "retrieved": "2026-10-20T08:45:00+00:00"
+   }
+  },
+  {
+   "id": "df4cbf08565d",
+   "title": "Blockkedjor – en teknologi med potential att förändra många branscher!",
+   "title_original": null,
+   "title_i18n": {
+    "en": "Blockchains – a technology with the potential to change many industries!",
+    "nn": "Blokkjeder – ein teknologi med potensial til å endra mange bransjar!",
+    "nb": "Blokkjeder – en teknologi med potensial til å endre mange bransjer!",
+    "da": "Blockchains – en teknologi med potentiale til at forandre mange brancher!",
+    "fi": "Lohkoketjut – teknologia, joka voi muuttaa monia toimialoja",
+    "is": "Blokkkeðjur – tækni sem getur breytt mörgum atvinnugreinum",
+    "zh": "区块链：有潜力改变许多行业的技术",
+    "hi": "ब्लॉकचेन – कई उद्योगों को बदलने की क्षमता वाली तकनीक",
+    "es": "Cadenas de bloques: una tecnología con potencial para cambiar muchos sectores",
+    "fr": "Chaînes de blocs : une technologie capable de changer de nombreux secteurs",
+    "ar": "سلاسل الكتل – تقنية قادرة على تغيير قطاعات كثيرة",
+    "bn": "ব্লকচেইন – অনেক শিল্প বদলানোর সম্ভাবনাময় একটি প্রযুক্তি",
+    "pt": "Blockchains: uma tecnologia com potencial para mudar muitos setores",
+    "ru": "Блокчейны — технология, способная изменить многие отрасли",
+    "ur": "بلاک چین – ایک ٹیکنالوجی جو کئی صنعتیں بدل سکتی ہے",
+    "id": "Blockchain – teknologi yang berpotensi mengubah banyak industri",
+    "de": "Blockchains – eine Technologie mit Potenzial, viele Branchen zu verändern",
+    "ja": "ブロックチェーン――多くの産業を変えうる技術",
+    "sw": "Blockchain – teknolojia yenye uwezo wa kubadilisha viwanda vingi",
+    "mr": "ब्लॉकचेन – अनेक उद्योग बदलण्याची क्षमता असलेले तंत्रज्ञान",
+    "fa": "بلاک‌چین – فناوری‌ای با توان تغییر صنایع بسیار",
+    "uk": "Блокчейни — технологія, здатна змінити багато галузей",
+    "tr": "Blokzincirler – birçok sektörü değiştirme potansiyeline sahip bir teknoloji",
+    "se": "Blockchains - teknologiija mas lea vejolašvuohta rievdadit ollu ealáhusaid!"
+   },
+   "start": "2018-05-14T16:30:00+02:00",
+   "end": "2018-05-14T18:00:00+02:00",
+   "place": "Råbylundsgård, Prästavägen 12",
+   "city": "Lund",
+   "country": "SE",
+   "online": false,
+   "organiser": "Hjärntrusten",
+   "url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": {
+    "text": "Fredrik Harrysson är Lead Developer på ett av de ledande företagen inom blockkedjeteknik, Parity Technologies. Under denna work shop förklarar han vad blockkedjor är och vilka möjligheter som öppnar sig med den nya tekniken.",
+    "lang": "sv",
+    "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+    "source_name": "Hjärntrusten",
+    "retrieved": "2026-10-23T09:40:00+00:00",
+    "i18n": {}
+   },
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-05-14T18:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/df4cbf08565d/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/df4cbf08565d/",
+    "nn": "https://nordiccrypto.no/nn/calendar/df4cbf08565d/",
+    "nb": "https://nordiccrypto.no/nb/calendar/df4cbf08565d/",
+    "sv": "https://nordiccrypto.no/sv/calendar/df4cbf08565d/",
+    "da": "https://nordiccrypto.no/da/calendar/df4cbf08565d/",
+    "fi": "https://nordiccrypto.no/fi/calendar/df4cbf08565d/",
+    "is": "https://nordiccrypto.no/is/calendar/df4cbf08565d/",
+    "zh": "https://nordiccrypto.no/zh/calendar/df4cbf08565d/",
+    "hi": "https://nordiccrypto.no/hi/calendar/df4cbf08565d/",
+    "es": "https://nordiccrypto.no/es/calendar/df4cbf08565d/",
+    "fr": "https://nordiccrypto.no/fr/calendar/df4cbf08565d/",
+    "ar": "https://nordiccrypto.no/ar/calendar/df4cbf08565d/",
+    "bn": "https://nordiccrypto.no/bn/calendar/df4cbf08565d/",
+    "pt": "https://nordiccrypto.no/pt/calendar/df4cbf08565d/",
+    "ru": "https://nordiccrypto.no/ru/calendar/df4cbf08565d/",
+    "ur": "https://nordiccrypto.no/ur/calendar/df4cbf08565d/",
+    "id": "https://nordiccrypto.no/id/calendar/df4cbf08565d/",
+    "de": "https://nordiccrypto.no/de/calendar/df4cbf08565d/",
+    "ja": "https://nordiccrypto.no/ja/calendar/df4cbf08565d/",
+    "sw": "https://nordiccrypto.no/sw/calendar/df4cbf08565d/",
+    "mr": "https://nordiccrypto.no/mr/calendar/df4cbf08565d/",
+    "fa": "https://nordiccrypto.no/fa/calendar/df4cbf08565d/",
+    "uk": "https://nordiccrypto.no/uk/calendar/df4cbf08565d/",
+    "tr": "https://nordiccrypto.no/tr/calendar/df4cbf08565d/",
+    "se": "https://nordiccrypto.no/se/calendar/df4cbf08565d/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/df4cbf08565d.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "start": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "end": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "place": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "city": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "country": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "url": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Hjärntrusten",
+     "source_url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+     "retrieved_at": "2026-10-23T09:40:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Hjärntrusten",
+    "url": "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+    "retrieved": "2026-10-23T09:40:00+00:00"
    }
   },
   {

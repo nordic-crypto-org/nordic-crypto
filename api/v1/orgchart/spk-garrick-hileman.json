@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-23T06:17:31+00:00",
+ "generated_at": "2026-10-23T09:00:00+00:00",
  "preview": false,
  "item": {
   "id": "spk-garrick-hileman",
@@ -24,12 +24,33 @@
     "title": "State of blockchain. Oslo Blockchain Day",
     "source_name": "Blockchangers",
     "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=ZNKybjLZmtg&hl=en",
+    "title": "The state of cryptocurrencies and stablecoins with Garrick Hileman",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+    "title": "Web 3.0 Business Models",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "source_name": "Blockchangers",
+    "date": "2026-10-23"
    }
   ],
   "logo": null,
   "image": null,
   "profiles": [],
   "talk_ids": [
+   "yt-0qb0RfKg_FU",
+   "yt-IY9EnoAyPcM",
+   "yt-ZNKybjLZmtg",
    "yt-oWjsqKmIPLo"
   ],
   "event_ids": [
@@ -42,6 +63,21 @@
     "video_url": "https://www.youtube.com/watch?v=oWjsqKmIPLo",
     "event_id": "92041cfcb99c",
     "date": "2016-04-19"
+   },
+   {
+    "id": "yt-ZNKybjLZmtg",
+    "title": "The state of cryptocurrencies and stablecoins with Garrick Hileman",
+    "video_url": "https://www.youtube.com/watch?v=ZNKybjLZmtg"
+   },
+   {
+    "id": "yt-IY9EnoAyPcM",
+    "title": "Web 3.0 Business Models",
+    "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+   },
+   {
+    "id": "yt-0qb0RfKg_FU",
+    "title": "Blockchain anno 2019: Where do we go now?",
+    "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
    }
   ]
  }
