@@ -78,6 +78,25 @@
    ],
    "notes": "The Bitcoin Walk on 18 October 2026 has no public recording. No talk published after 18 October 2026 met the rules. Fourteen talks were kept from backfill. The BIEN Norge upload of the 26 September 2026 basic-income event is the same length as the Mission Possible 2030 full recording already listed, so it was not added again. The Bank of Finland Europe Day seminar on 9 May 2023 is described by the bank as invitation-only. A KnC Miner clip is labelled a copy. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-10-23",
+   "candidates_checked": 17,
+   "watch_pages_opened": 16,
+   "new_talks": 15,
+   "new_from_calendar": 0,
+   "new_from_backfill": 15,
+   "areas_exhausted": [
+    "playlist: Oslo Blockchain Day 2019 (17 videos; one already listed; one Twitter-thread cut left out)"
+   ],
+   "areas_sampled": [
+    "Calendar events ended since 20 October 2026: none. The next calendar events start on 24 October 2026.",
+    "Blockchangers playlist Oslo Blockchain Day 2019",
+    "Aalto HAIC talks list, read for a cryptocurrency lecture beyond the one already archived",
+    "Web search for a public Nordic crypto talk in 2008. None kept. The year stays not_searched."
+   ],
+   "notes": "No calendar event ended between 20 October 2026 and this run. YouTube results pages returned HTTP 429, so no new first-page query was counted. Seventeen playlist videos were screened and sixteen watch pages were opened. Fifteen talks were kept. Durations are null because the watch-page player did not give lengthSeconds and search was rate-limited. The Elon Musk and Vitalik Buterin upload describes a Twitter thread and was not kept. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -128,7 +147,7 @@
    },
    "2019": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year."
+    "note": "Covered only where an event or institution query returned a video from this year. The Blockchangers playlist Oslo Blockchain Day 2019 was opened on 2026-10-23."
    },
    "2020": {
     "status": "sampled",
@@ -162,7 +181,7 @@
   "countries": {
    "NO": {
     "status": "sampled",
-    "talks": 58
+    "talks": 73
    },
    "SE": {
     "status": "sampled",
@@ -1144,6 +1163,14 @@
     "status": "sampled",
     "included_from_this_query": null,
     "note": "No blockchain talk on the first page."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Oslo Blockchain Day 2019 playlist",
+    "results_on_first_page": 17,
+    "status": "exhausted",
+    "included_from_this_query": 15,
+    "note": "Every video on the Blockchangers playlist Oslo Blockchain Day 2019 was opened. One was already listed. One watch page describes a Twitter thread and was not kept. Fifteen talks were kept. YouTube search pages returned HTTP 429, so duration was not taken from a search result and is null. The city and the event name are the playlist title. Only the Magnus Jones page states the day, 30 April 2019."
    }
   ],
   "channels_sampled": [
@@ -1288,6 +1315,11 @@
     "name": "Øredev blockchain sessions",
     "status": "sampled",
     "note": "2017, 2018 and 2019 uploads on the Øredev channel. The pages do not state Malmö or Sweden."
+   },
+   {
+    "name": "Oslo Blockchain Day 2019",
+    "status": "sampled",
+    "note": "Fifteen talks from the organiser playlist. One page states 30 April 2019. The other pages do not state the day."
    }
   ]
  }

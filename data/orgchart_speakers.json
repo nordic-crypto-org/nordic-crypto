@@ -1,6 +1,6 @@
 {
  "_note": "Speakers named on a talk in data/talks.json. An existing who's who name or handle is matched, not copied. affiliations are copied only from the video page, one per talk, with date, source URL and retrieved_at. A missing affiliation was not stated. No photo is stored. from_talks rows are published with the talks archive. tools/import_orgchart.py merges this file, so a later who's who build keeps the links.",
- "retrieved_at": "2026-10-18T11:38:06+00:00",
+ "retrieved_at": "2026-10-23T09:40:00+00:00",
  "entities": [
   {
    "id": "spk-rebecca-koskinen",
@@ -6995,10 +6995,24 @@
      "title": "Blockchain in the Scandinavian social contract. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
     }
    ],
    "talk_ids": [
+    "yt-0qb0RfKg_FU",
     "yt-5Nt0v-_PA04",
+    "yt-IY9EnoAyPcM",
     "yt-L1xCEyn2a8s",
     "yt-Z7FA53GIE34"
    ],
@@ -7022,6 +7036,16 @@
      "id": "yt-L1xCEyn2a8s",
      "title": "Vinay Gupta - Oslo Blockchain Day - Merging the Physical and the Digital using blockchains",
      "video_url": "https://www.youtube.com/watch?v=L1xCEyn2a8s"
+    },
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
     }
    ],
    "affiliations": [],
@@ -7865,9 +7889,30 @@
      "title": "State of blockchain. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=ZNKybjLZmtg&hl=en",
+     "title": "The state of cryptocurrencies and stablecoins with Garrick Hileman",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
     }
    ],
    "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM",
+    "yt-ZNKybjLZmtg",
     "yt-oWjsqKmIPLo"
    ],
    "event_ids": [
@@ -7880,6 +7925,21 @@
      "video_url": "https://www.youtube.com/watch?v=oWjsqKmIPLo",
      "event_id": "92041cfcb99c",
      "date": "2016-04-19"
+    },
+    {
+     "id": "yt-ZNKybjLZmtg",
+     "title": "The state of cryptocurrencies and stablecoins with Garrick Hileman",
+     "video_url": "https://www.youtube.com/watch?v=ZNKybjLZmtg"
+    },
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
     }
    ],
    "affiliations": [],
@@ -9207,9 +9267,16 @@
      "title": "Arendalsuka: Bitcoin-mining i Norge. For vanskelig å forstå, for lett å forby?",
      "source_name": "Bitcoinpolitisk Institutt Norge",
      "date": "2026-10-16"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
     }
    ],
    "talk_ids": [
+    "yt-0qb0RfKg_FU",
     "yt-7TLMmGGSIOA"
    ],
    "event_ids": [
@@ -9222,6 +9289,11 @@
      "video_url": "https://www.youtube.com/watch?v=7TLMmGGSIOA",
      "event_id": "0af4e2d6e963",
      "date": "2025-08-12"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
     }
    ],
    "affiliations": [],
@@ -10233,6 +10305,546 @@
    "origin": "Talks archive",
    "caveat": false,
    "status": "published"
+  },
+  {
+   "id": "spk-vibeke-huynh",
+   "name": "Vibeke Huynh",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9Ioffwk3rgk&hl=en",
+     "title": "Selling City Blocks on the Blockchain by Vibeke Huynh",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-9Ioffwk3rgk"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-9Ioffwk3rgk",
+     "title": "Selling City Blocks on the Blockchain by Vibeke Huynh",
+     "video_url": "https://www.youtube.com/watch?v=9Ioffwk3rgk"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-charles-hamel",
+   "name": "Charles Hamel",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=oA8DjuddOds&hl=en",
+     "title": "Built-in crypto wallet in Opera Touch with Charles Hamel",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM",
+    "yt-oA8DjuddOds"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-oA8DjuddOds",
+     "title": "Built-in crypto wallet in Opera Touch with Charles Hamel",
+     "video_url": "https://www.youtube.com/watch?v=oA8DjuddOds"
+    },
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-stein-bjornstad",
+   "name": "Stein Bjørnstad",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=dM0bPKmkjeI&hl=en",
+     "title": "How the government should use blockchain by Stein Bjørnstad",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-dM0bPKmkjeI"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-dM0bPKmkjeI",
+     "title": "How the government should use blockchain by Stein Bjørnstad",
+     "video_url": "https://www.youtube.com/watch?v=dM0bPKmkjeI"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-kieran-brown",
+   "name": "Kieran Brown",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=If4bAyfN0fU&hl=en",
+     "title": "Should we regulate blockchain? by Kieran Brown",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=o4BdpHag5BY&hl=en",
+     "title": "Panel: Should we regulate blockchain?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-If4bAyfN0fU",
+    "yt-o4BdpHag5BY"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-o4BdpHag5BY",
+     "title": "Panel: Should we regulate blockchain?",
+     "video_url": "https://www.youtube.com/watch?v=o4BdpHag5BY"
+    },
+    {
+     "id": "yt-If4bAyfN0fU",
+     "title": "Should we regulate blockchain? by Kieran Brown",
+     "video_url": "https://www.youtube.com/watch?v=If4bAyfN0fU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-katie-mills",
+   "name": "Katie Mills",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=Lble4oqwUtg&hl=en",
+     "title": "Blockchain Bullshit with Katie Mills",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM",
+    "yt-Lble4oqwUtg"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-Lble4oqwUtg",
+     "title": "Blockchain Bullshit with Katie Mills",
+     "video_url": "https://www.youtube.com/watch?v=Lble4oqwUtg"
+    },
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-rune-christensen",
+   "name": "Rune Christensen",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=aWewIR3HYBI&hl=en",
+     "title": "Deep into the details of MakerDAO and DAI with Rune Christensen",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM",
+    "yt-aWewIR3HYBI"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-aWewIR3HYBI",
+     "title": "Deep into the details of MakerDAO and DAI with Rune Christensen",
+     "video_url": "https://www.youtube.com/watch?v=aWewIR3HYBI"
+    },
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-edward-thomson",
+   "name": "Edward Thomson",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-jon-ramvi",
+   "name": "Jon Ramvi",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=IY9EnoAyPcM&hl=en",
+     "title": "Web 3.0 Business Models",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-IY9EnoAyPcM"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-IY9EnoAyPcM",
+     "title": "Web 3.0 Business Models",
+     "video_url": "https://www.youtube.com/watch?v=IY9EnoAyPcM"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-mads-stolberg-larsen",
+   "name": "Mads Stolberg-Larsen",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=PpOz9I1liGI&hl=en",
+     "title": "How Tradeshift are working on self-executing smart invoices by Mads Stolberg-Larsen",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-PpOz9I1liGI"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-PpOz9I1liGI",
+     "title": "How Tradeshift are working on self-executing smart invoices by Mads Stolberg-Larsen",
+     "video_url": "https://www.youtube.com/watch?v=PpOz9I1liGI"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-leo-sande-gasnier",
+   "name": "Leo Sande Gasnier",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=G1IPKTD_nb4&hl=en",
+     "title": "Introducing Blockchain to National Registries by Leo Sande Gasnier",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=0qb0RfKg_FU&hl=en",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-0qb0RfKg_FU",
+    "yt-G1IPKTD_nb4"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-G1IPKTD_nb4",
+     "title": "Introducing Blockchain to National Registries by Leo Sande Gasnier",
+     "video_url": "https://www.youtube.com/watch?v=G1IPKTD_nb4"
+    },
+    {
+     "id": "yt-0qb0RfKg_FU",
+     "title": "Blockchain anno 2019: Where do we go now?",
+     "video_url": "https://www.youtube.com/watch?v=0qb0RfKg_FU"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-fabian-gompf",
+   "name": "Fabian Gompf",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=u5NsdOgN-3M&hl=en",
+     "title": "Ethereum Technology in Humanitarian Aid by Fabian Gompf",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-u5NsdOgN-3M"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-u5NsdOgN-3M",
+     "title": "Ethereum Technology in Humanitarian Aid by Fabian Gompf",
+     "video_url": "https://www.youtube.com/watch?v=u5NsdOgN-3M"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-tom-grogan",
+   "name": "Tom Grogan",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=o4BdpHag5BY&hl=en",
+     "title": "Panel: Should we regulate blockchain?",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
+    }
+   ],
+   "talk_ids": [
+    "yt-o4BdpHag5BY"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-o4BdpHag5BY",
+     "title": "Panel: Should we regulate blockchain?",
+     "video_url": "https://www.youtube.com/watch?v=o4BdpHag5BY"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
   }
  ],
  "matched": {
@@ -10270,9 +10882,12 @@
    "talk_ids": [
     "yt--4I2b_hFG0A",
     "yt-HwznOY5BhGI",
+    "yt-lsb-GKybHPo",
     "yt-rfLLR9vhoYI"
    ],
-   "event_ids": [],
+   "event_ids": [
+    "81fdbff37e4c"
+   ],
    "affiliations": [
     {
      "talk_id": "yt--4I2b_hFG0A",
@@ -10304,6 +10919,13 @@
      "id": "yt--4I2b_hFG0A",
      "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 1 (Part 1)",
      "video_url": "https://www.youtube.com/watch?v=-4I2b_hFG0A"
+    },
+    {
+     "id": "yt-lsb-GKybHPo",
+     "title": "Regulatory challenges! – An update of the Norwegian and European market",
+     "video_url": "https://www.youtube.com/watch?v=lsb-GKybHPo",
+     "event_id": "81fdbff37e4c",
+     "date": "2019-04-30"
     }
    ],
    "sources": [
@@ -10324,6 +10946,12 @@
      "title": "Oslo Kulturnatt: Der krypto skaper kunst og verdier hos 'verse",
      "source_name": "Polyteknisk Forening",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en",
+     "title": "Regulatory challenges! – An update of the Norwegian and European market",
+     "source_name": "Blockchangers",
+     "date": "2026-10-23"
     }
    ]
   },
