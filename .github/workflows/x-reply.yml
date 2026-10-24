@@ -1,0 +1,39 @@
+name: X reply
+on:
+  workflow_dispatch:
+    inputs:
+      reply_to:
+        description: "Tweet id to reply to"
+        required: true
+      text:
+        description: "Reply text"
+        required: true
+      dry_run:
+        description: "Print only, post nothing"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: x-reply
+  cancel-in-progress: false
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Post reply
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          REPLY_TO: ${{ inputs.reply_to }}
+          TEXT: ${{ inputs.text }}
+        run: |
+          args=(--reply-to "$REPLY_TO" --text "$TEXT")
+          [ "${{ inputs.dry_run }}" = "true" ] && args+=(--dry-run)
+          python3 tools/x_reply.py "${args[@]}"
