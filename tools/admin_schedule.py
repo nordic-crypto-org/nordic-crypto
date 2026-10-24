@@ -7,7 +7,7 @@ never in the repo or on the site. Times of GitHub Actions jobs are read from .gi
   {"campaigns": [{id, name, channels, what, starts_at, ends_at, status}],
    "schedule":  [{id, channel, what, cron | at, tz?, status, source?, campaign_id?}],     # routines outside the repo
    "workflows": {"x-newsletter.yml": {"channel": "X", "what": "...", "status": "active"}}}
-status: active | paused | awaiting_approval | done. cron is in tz (default Europe/Oslo); at is Oslo time.
+status: active | paused | awaiting_approval | awaiting_setup | done. cron is in tz (default Europe/Oslo); at is Oslo time.
 
   python3 tools/admin_schedule.py [--config PATH] [--check]   --check: validate and count, post nothing
 Needs NEWSLETTER_WORKER_ORIGIN and ADMIN_DELIVERY_TOKEN (never printed).
@@ -37,7 +37,8 @@ def post(data, env=None):
     origin, tok = (env.get("NEWSLETTER_WORKER_ORIGIN") or "").rstrip("/"), env.get("ADMIN_DELIVERY_TOKEN") or ""
     if not origin.startswith("https://") or len(tok) < 32: return None
     req = urllib.request.Request(origin + "/api/admin/schedule", data=json.dumps(data).encode(), method="POST",
-                                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+                                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json",
+                                          "User-Agent": "nordic-crypto-admin-schedule/1"})   # Cloudflare 1010 blocks Python-urllib
     try:
         with urllib.request.urlopen(req, timeout=30) as r: return 200 <= r.status < 300
     except (urllib.error.URLError, OSError): return False
