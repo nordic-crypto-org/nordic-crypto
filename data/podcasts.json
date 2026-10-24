@@ -1,7 +1,87 @@
 {
- "updated": "2026-10-23T02:17:00+00:00",
+ "updated": "2026-10-24T02:26:45+00:00",
  "active_days": 90,
  "podcasts": [
+  {
+   "id": "bitcoinpodden",
+   "name": "Bitcoinpodden",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://anchor.fm/s/3cb12d94/podcast/rss",
+   "site": "https://news.trijo.co",
+   "flags": [
+    "exchange-sponsored"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "134. Ska Satoshis bitcoin frysas?",
+     "date": "2026-10-23",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/134--Ska-Satoshis-bitcoin-frysas-e3qtbji"
+    },
+    {
+     "title": "133. Bitcoin och ett längre liv – med Ioni Appelberg",
+     "date": "2026-10-09",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/133--Bitcoin-och-ett-lngre-liv--med-Ioni-Appelberg-e3q5f7t"
+    },
+    {
+     "title": "132. H100 - Nordens största Bitcoin-treasury bolag",
+     "date": "2026-09-25",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/132--H100---Nordens-strsta-Bitcoin-treasury-bolag-e3pco50"
+    },
+    {
+     "title": "131. Vad är pengar?",
+     "date": "2026-09-11",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/131--Vad-r-pengar-e3olgvq"
+    },
+    {
+     "title": "130. KDU: \"Vi vill utreda en svensk bitcoinreserv\"",
+     "date": "2026-09-04",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/130--KDU-Vi-vill-utreda-en-svensk-bitcoinreserv-e3obbih"
+    }
+   ],
+   "added_at": "2026-10-16"
+  },
+  {
+   "id": "firi-ugens-kryptosnak",
+   "name": "Firi – Ugens Kryptosnak",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://anchor.fm/s/e28ae304/podcast/rss",
+   "site": "https://firi.com/dk",
+   "flags": [
+    "exchange-owned"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "Solana er nu lige så hurtig som en kortbetaling",
+     "date": "2026-10-23",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Solana-er-nu-lige-s-hurtig-som-en-kortbetaling-e3qvd34"
+    },
+    {
+     "title": "Hvordan beskattes tokeniserede aktier?",
+     "date": "2026-10-14",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Hvordan-beskattes-tokeniserede-aktier-e3qfvb9"
+    },
+    {
+     "title": "Tokeniserede aktiver vokser",
+     "date": "2026-10-09",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Tokeniserede-aktiver-vokser-e3q7sqn"
+    },
+    {
+     "title": "Ingen stablecoin uden en kryptovaluta",
+     "date": "2026-10-01",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Ingen-stablecoin-uden-en-kryptovaluta-e3pn496"
+    },
+    {
+     "title": "Nu snakker bankerne om krypto og AI",
+     "date": "2026-09-24",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Nu-snakker-bankerne-om-krypto-og-AI-e3pb8bo"
+    }
+   ],
+   "added_at": "2026-10-16"
+  },
   {
    "id": "en-og-tyve-tanker",
    "name": "En og tyve tanker / Twenty One Thoughts",
@@ -79,46 +159,6 @@
    "added_at": "2026-10-16"
   },
   {
-   "id": "firi-ugens-kryptosnak",
-   "name": "Firi – Ugens Kryptosnak",
-   "country": "DK",
-   "language": "da",
-   "feed": "https://anchor.fm/s/e28ae304/podcast/rss",
-   "site": "https://firi.com/dk",
-   "flags": [
-    "exchange-owned"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "Hvordan beskattes tokeniserede aktier?",
-     "date": "2026-10-14",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Hvordan-beskattes-tokeniserede-aktier-e3qfvb9"
-    },
-    {
-     "title": "Tokeniserede aktiver vokser",
-     "date": "2026-10-09",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Tokeniserede-aktiver-vokser-e3q7sqn"
-    },
-    {
-     "title": "Ingen stablecoin uden en kryptovaluta",
-     "date": "2026-10-01",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Ingen-stablecoin-uden-en-kryptovaluta-e3pn496"
-    },
-    {
-     "title": "Nu snakker bankerne om krypto og AI",
-     "date": "2026-09-24",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Nu-snakker-bankerne-om-krypto-og-AI-e3pb8bo"
-    },
-    {
-     "title": "CLARITY nedstemt, men krypto kører videre",
-     "date": "2026-09-18",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/CLARITY-nedstemt--men-krypto-krer-videre-e3p1s86"
-    }
-   ],
-   "added_at": "2026-10-16"
-  },
-  {
    "id": "shop21",
    "name": "SHOP21.DK – Bitcoin • Samfund • Frihed",
    "country": "DK",
@@ -154,46 +194,6 @@
      "title": "7 mill. i skattesmæk uden overskud – med Morten Green Hermansen #043",
      "date": "2026-05-28",
      "link": "https://shop21.dk/podcast-skats-slave/"
-    }
-   ],
-   "added_at": "2026-10-16"
-  },
-  {
-   "id": "bitcoinpodden",
-   "name": "Bitcoinpodden",
-   "country": "SE",
-   "language": "sv",
-   "feed": "https://anchor.fm/s/3cb12d94/podcast/rss",
-   "site": "https://news.trijo.co",
-   "flags": [
-    "exchange-sponsored"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "133. Bitcoin och ett längre liv – med Ioni Appelberg",
-     "date": "2026-10-09",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/133--Bitcoin-och-ett-lngre-liv--med-Ioni-Appelberg-e3q5f7t"
-    },
-    {
-     "title": "132. H100 - Nordens största Bitcoin-treasury bolag",
-     "date": "2026-09-25",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/132--H100---Nordens-strsta-Bitcoin-treasury-bolag-e3pco50"
-    },
-    {
-     "title": "131. Vad är pengar?",
-     "date": "2026-09-11",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/131--Vad-r-pengar-e3olgvq"
-    },
-    {
-     "title": "130. KDU: \"Vi vill utreda en svensk bitcoinreserv\"",
-     "date": "2026-09-04",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/130--KDU-Vi-vill-utreda-en-svensk-bitcoinreserv-e3obbih"
-    },
-    {
-     "title": "129. Är Trump ett problem för Bitcoin?",
-     "date": "2026-08-28",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/129--r-Trump-ett-problem-fr-Bitcoin-e3nvdnm"
     }
    ],
    "added_at": "2026-10-16"

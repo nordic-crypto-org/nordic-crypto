@@ -1,6 +1,34 @@
 {
  "items": [
   {
+   "id": "f8324ec4557d",
+   "url": "https://finansavisen.no/finans/2026/10/23/8390193/wall-street-snur-ned-oljeaksje-stiger",
+   "title": "Wall Street snur ned: Oljeaksje stiger",
+   "title_en": null,
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-10-23T17:00:00+00:00",
+   "fetched": "2026-10-24T01:49:16+00:00",
+   "topics": [
+    "bitcoin",
+    "companies"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "published_unverified": true
+  },
+  {
    "id": "2953291cb08a",
    "url": "https://hurbra.se/e-krona-per-jansson-22-oktober-2026",
    "title": "Riksbanken vill förbereda e-kronan – Jansson varnar för att Sverige halkar efter",
@@ -127,6 +155,32 @@
    "summary": null,
    "published_unverified": true,
    "merged_into": "2953291cb08a"
+  },
+  {
+   "id": "a16a3dbea442",
+   "url": "https://vg.no/forbrukertips/i/kwlKE6/hvilken-tradingplattform-passer-best-for-deg",
+   "title": "Vil du prøve trading? Sjekk disse plattformene",
+   "title_en": null,
+   "source": "vg",
+   "source_name": "VG",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn"
+   ],
+   "published": "2026-10-22T13:45:05+00:00",
+   "fetched": "2026-10-24T01:49:16+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
   },
   {
    "id": "e1da8c7c729b",
@@ -7721,5 +7775,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-10-23T01:41:49+00:00"
+ "updated": "2026-10-24T01:49:16+00:00"
 }
