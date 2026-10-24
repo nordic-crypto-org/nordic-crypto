@@ -10,5 +10,6 @@
 .api-docs,.api-docs p,.api-docs li,.api-docs td,.api-docs th{text-align:start}
 /* Electrum servers table: the URL sits under the chain name, and on a phone only server, status and height are shown.
    The Lightning table hides the implementation column on a phone the same way. */
-.api-docs #electrum-status code.url{display:inline-block;margin-top:2px;font-size:.8em;overflow-wrap:anywhere}
-@media (max-width:640px){.api-docs #electrum-status .wide,.api-docs #lightning-status .wide{display:none}.api-docs #electrum-status td:first-child,.api-docs #lightning-status td:first-child{min-width:0}}
+.api-docs h3{font-size:clamp(20px,2vw,24px);margin:28px 0 8px}
+.api-docs .electrum-live code.url{display:inline-block;margin-top:2px;font-size:.8em;overflow-wrap:anywhere}
+@media (max-width:640px){.api-docs .electrum-live .wide,.api-docs #lightning-status .wide{display:none}.api-docs .electrum-live td:first-child,.api-docs #lightning-status td:first-child{min-width:0}}
