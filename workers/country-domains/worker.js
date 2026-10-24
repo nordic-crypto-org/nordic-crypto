@@ -122,7 +122,11 @@ async function handle(req) {
     return new Response(null, { status: r.status, headers: { Location: `https://${host}${r.redirect}${url.search}`, "Cache-Control": r.status === 302 ? "no-store" : "public, max-age=3600" } });
   }
 
-  const target = new URL(r.origin + url.search, ORIGIN);
+  // Set the path on a URL built from ORIGIN, so a path like "//host/x" can't change the host.
+  const target = new URL(ORIGIN);
+  target.pathname = r.origin;
+  target.search = url.search;
+  if (target.origin !== ORIGIN) return new Response("Bad request", { status: 400 });
   const headers = new Headers(req.headers);
   for (const k of [...headers.keys()]) if (k.startsWith("cf-") || k === "x-forwarded-proto" || k === "x-real-ip") headers.delete(k);
   headers.delete("host");

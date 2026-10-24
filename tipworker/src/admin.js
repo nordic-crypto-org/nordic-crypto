@@ -26,7 +26,7 @@ import { sendMail } from "./mailer.js";
 import { listSchedule, recordSchedule } from "./schedule.js";
 import { readFlags, writeFlags } from "./flags.js";
 
-export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, ADMIN_RATE_N = 5, CODE_TRIES = 5;
+export const LOGIN_TTL = 15 * 60, SESSION_TTL = 7 * 86400, PER_EMAIL_N = 3, PER_EMAIL_TOTAL_N = 20, ADMIN_RATE_N = 5, CODE_TRIES = 5;
 export const ADMIN_ORIGIN = "https://nordiccrypto.no";
 const enc = new TextEncoder();
 const hex = (b) => [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join("");
@@ -116,18 +116,23 @@ async function login(req, env, h) {
   if (!email) return generic();
   const t = now();
   await env.DB.prepare("DELETE FROM admin_login_tokens WHERE expires_at < ?").bind(t - 86400).run();
-  const c = await env.DB.prepare("SELECT COUNT(*) AS n FROM admin_login_tokens WHERE email = ? AND created_at > ?").bind(email, t - LOGIN_TTL).first();
-  if (c.n >= PER_EMAIL_N) return generic();   // per-address cap, silent (no enumeration)
+  // Per-address caps, both silent (no enumeration): PER_EMAIL_N per requester, so others can't use up the owner's sign-ins,
+  // and PER_EMAIL_TOTAL_N overall against mail floods. rateOk above has just made sure today's salt row exists.
+  const salt = await env.DB.prepare("SELECT salt FROM rate_salt WHERE day = ?").bind(new Date().toISOString().slice(0, 10)).first();
+  const requester = await sha256((salt ? salt.salt : "") + "|admin-login|" + ip);
+  const c = await env.DB.prepare("SELECT COUNT(*) AS n, COALESCE(SUM(requester = ?), 0) AS mine FROM admin_login_tokens WHERE email = ? AND created_at > ?")
+    .bind(requester, email, t - LOGIN_TTL).first();
+  if (c.mine >= PER_EMAIL_N || c.n >= PER_EMAIL_TOTAL_N) return generic();
   const token = newToken();
   if (app) {   // the row's token is never sent; only the code (bound to the challenge) can redeem it
     const code = newCode(), th = await sha256(token);
-    await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at, challenge, code_hash) VALUES (?, ?, ?, ?, ?, ?)")
-      .bind(th, email, t, t + LOGIN_TTL, f.challenge, await sha256(th + ":" + code)).run();
+    await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at, challenge, code_hash, requester) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .bind(th, email, t, t + LOGIN_TTL, f.challenge, await sha256(th + ":" + code), requester).run();
     await sendMail(env, { to: email, site: "nordic-crypto", lang: "en", kind: "admin-login-code", ...codeEmail(code) });
     return generic();
   }
-  await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at) VALUES (?, ?, ?, ?)")
-    .bind(await sha256(token), email, t, t + LOGIN_TTL).run();
+  await env.DB.prepare("INSERT INTO admin_login_tokens (token_hash, email, created_at, expires_at, requester) VALUES (?, ?, ?, ?, ?)")
+    .bind(await sha256(token), email, t, t + LOGIN_TTL, requester).run();
   const link = `${ADMIN_ORIGIN}/admin/#t=${token}`;
   await sendMail(env, { to: email, site: "nordic-crypto", lang: "en", kind: "admin-login", ...loginEmail(link) });
   return generic();
