@@ -3,7 +3,7 @@
 // GET  /api/treasury               caps, refill address, observed balance, history.
 // POST /api/treasury/observe       admin token. Read each hot-wallet balance.
 // GET  /api/treasury/history       refills, mints, and the balance series.
-// POST /api/mint                   rate limit, then caps, then (testnet) sign.
+// POST /api/mint                   rate limit, card index and window, caps, then (testnet) sign.
 // POST /api/admin/setup-tokens     admin token. One testnet group or category.
 //
 // The hourly cron stores each chain's balance before any mint, including when
