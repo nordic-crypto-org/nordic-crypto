@@ -24,9 +24,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Stock market report; crypto only a passing mention of Strategy. Price/market commentary."
   },
   {
    "id": "2953291cb08a",
@@ -179,8 +180,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Consumer guide comparing trading platforms IG and eToro; not crypto news (platform-comparison/affiliate-style content)."
   },
   {
    "id": "e1da8c7c729b",
