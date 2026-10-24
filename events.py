@@ -66,6 +66,7 @@ from event_block import blocked_event, blocked_source
 import site_url
 from tools.event_description import language_of, prefer as prefer_description, record as description_record
 from tools.event_select import explicit_attendee_count, explicit_ics_count
+from tools import location_check
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
 TZ = {"NO": "Europe/Oslo", "SE": "Europe/Stockholm", "DK": "Europe/Copenhagen", "FI": "Europe/Helsinki", "IS": "Atlantic/Reykjavik"}
 UTC = dt.timezone.utc
@@ -1426,6 +1427,7 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
             prefer_description(by[i], description_record(ev.get("description"), ev.get("description_lang"), page, src.get("name"), retrieved, ev.get("title")))
             return
         if (ev.get("end") or ev["start"]) < now: return  # do not add a finished event; ones already stored stay
+        if ev.get("place"): ev["place"] = location_check.with_address(ev["place"], ev.get("city"))
         complete = bool(ev.get("place") or ev.get("online")) and bool(ev.get("organiser"))
         rec = {"id": i, "title": ev["title"], "start": ev["start"].isoformat(), "end": ev["end"].isoformat() if ev.get("end") else None,
                "place": ev.get("place"), "city": ev.get("city"), "country": country, "online": bool(ev.get("online")), "organiser": ev.get("organiser"),
@@ -1433,6 +1435,8 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
                "sponsored": clear_kaupr_sponsor(None),
                "trusted_source": bool(trusted), "found": retrieved, "status": "pending",
                "note": None if complete else "missing place or organiser – check the organiser's page"}
+        where = location_check.issue(rec)
+        if where: rec["note"] = f"location: {where} – add the street address"
         if attendees: rec["attendees"] = attendees
         if place_source: rec["place_source"] = place_source
         desc = description_record(ev.get("description"), ev.get("description_lang"), page, src.get("name"), retrieved, ev.get("title"))
