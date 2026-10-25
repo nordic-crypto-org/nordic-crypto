@@ -22,8 +22,9 @@
     "\\bdigitale penger\\b"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Children and cashless payments; no confirmed crypto angle. Researcher 25.10."
   },
   {
    "id": "f20bca2f8118",
@@ -47,14 +48,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Football story; «kryptonitt» is a false keyword match. Researcher 25.10."
   },
   {
    "id": "7d26551e212c",
    "url": "https://dn.se/varlden/netanyahu-far-kritik-efter-utspel-om-kryptovalutor-ett-attentat",
    "title": "Netanyahu får kritik efter utspel om kryptovalutor: ”Ett attentat”",
-   "title_en": null,
+   "title_en": "Netanyahu suggests using crypto to get around possible sanctions; Bank of Israel pushes back",
    "source": "dagens-nyheter",
    "source_name": "Dagens Nyheter",
    "country": "SE",
@@ -66,14 +68,72 @@
    "published": "2026-10-24T13:35:29+00:00",
    "fetched": "2026-10-25T02:50:25+00:00",
    "topics": [
-    "crypto"
+    "policy",
+    "sanctions"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Israeli Prime Minister Benjamin Netanyahu said in a TV interview on 23 October 2026 that Israel should prepare for possible international bank sanctions, agreeing when the interviewer suggested crypto and saying he had asked advisers for a plan to use blockchain to get around them, according to the Times of Israel and i24NEWS. The Bank of Israel replied that cryptocurrencies cannot serve as a means of circumventing sanctions, and ministries said they knew of no such plan, Ynetnews reports. Following the criticism, Netanyahu said he would take it into account but would do what he thinks is best. Swedish daily Dagens Nyheter reported on the criticism.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-25T04:50:00+01:00",
+   "primary_source": {
+    "name": "Dagens Nyheter",
+    "url": "https://dn.se/varlden/netanyahu-far-kritik-efter-utspel-om-kryptovalutor-ett-attentat"
+   },
+   "title_i18n": {
+    "nn": "Netanyahu vil bruke krypto for å kome rundt moglege sanksjonar – Israels sentralbank avviser",
+    "nb": "Netanyahu vil bruke krypto for å komme rundt mulige sanksjoner – Israels sentralbank avviser",
+    "da": "Netanyahu vil bruge krypto til at omgå mulige sanktioner – Israels centralbank afviser",
+    "fi": "Netanjahu ehdottaa kryptoa mahdollisten pakotteiden kiertämiseen – Israelin keskuspankki torjuu",
+    "is": "Netanyahu vill nota rafmyntir til að komast fram hjá mögulegum refsiaðgerðum – seðlabanki Ísraels hafnar",
+    "zh": "内塔尼亚胡提议用加密货币规避可能的制裁，以色列央行予以反驳",
+    "hi": "नेतन्याहू ने संभावित प्रतिबंधों से बचने के लिए क्रिप्टो का सुझाव दिया, बैंक ऑफ़ इज़राइल ने खंडन किया",
+    "es": "Netanyahu sugiere usar cripto para sortear posibles sanciones; el Banco de Israel lo rechaza",
+    "fr": "Netanyahou suggère la crypto pour contourner d'éventuelles sanctions ; la Banque d'Israël s'y oppose",
+    "ar": "نتنياهو يقترح استخدام العملات المشفرة للالتفاف على عقوبات محتملة وبنك إسرائيل يرد",
+    "bn": "সম্ভাব্য নিষেধাজ্ঞা এড়াতে ক্রিপ্টোর প্রস্তাব নেতানিয়াহুর, আপত্তি ব্যাংক অব ইসরায়েলের",
+    "pt": "Netanyahu sugere usar cripto para contornar possíveis sanções; Banco de Israel rejeita",
+    "ru": "Нетаньяху предложил использовать криптовалюту для обхода возможных санкций; Банк Израиля возразил",
+    "ur": "نیتن یاہو کی ممکنہ پابندیوں سے بچنے کے لیے کرپٹو کی تجویز، بینک آف اسرائیل کا جواب",
+    "id": "Netanyahu usul pakai kripto untuk hindari kemungkinan sanksi; Bank Israel menolak",
+    "de": "Netanjahu schlägt Krypto zur Umgehung möglicher Sanktionen vor – Bank of Israel widerspricht",
+    "ja": "ネタニヤフ氏、制裁回避に暗号資産活用を示唆 イスラエル中銀は反論",
+    "sw": "Netanyahu apendekeza kutumia kripto kukwepa vikwazo vinavyowezekana; Benki ya Israel yapinga",
+    "mr": "संभाव्य निर्बंध टाळण्यासाठी नेतन्याहूंचा क्रिप्टोचा प्रस्ताव; बँक ऑफ इस्रायलचा आक्षेप",
+    "fa": "نتانیاهو استفاده از رمزارز برای دور زدن تحریم‌های احتمالی را مطرح کرد؛ بانک اسرائیل مخالفت کرد",
+    "uk": "Нетаньягу запропонував використати криптовалюту для обходу можливих санкцій; Банк Ізраїлю заперечив",
+    "tr": "Netanyahu olası yaptırımları aşmak için kripto önerdi; İsrail Merkez Bankası karşı çıktı"
+   },
+   "title_i18n_source": "Netanyahu får kritik efter utspel om kryptovalutor: ”Ett attentat”",
+   "summary_i18n": {
+    "nn": "Israels statsminister Benjamin Netanyahu sa i eit TV-intervju 23. oktober 2026 at Israel bør førebu seg på moglege internasjonale banksanksjonar. Han sa seg einig då intervjuaren føreslo krypto, og sa at han hadde bede rådgjevarar om ein plan for å bruke blokkjede for å kome rundt dei, ifølgje Times of Israel og i24NEWS. Israels sentralbank svarte at kryptovaluta ikkje kan brukast til å omgå sanksjonar, og departementa kjende ikkje til nokon slik plan, melder Ynetnews. Etter kritikken sa Netanyahu at han vil ta omsyn til han, men gjere det han meiner er best; svenske Dagens Nyheter omtalte kritikken.",
+    "nb": "Israels statsminister Benjamin Netanyahu sa i et TV-intervju 23. oktober 2026 at Israel bør forberede seg på mulige internasjonale banksanksjoner. Han sa seg enig da intervjueren foreslo krypto, og sa at han hadde bedt rådgivere om en plan for å bruke blokkjede for å komme rundt dem, ifølge Times of Israel og i24NEWS. Israels sentralbank svarte at kryptovaluta ikke kan brukes til å omgå sanksjoner, og departementene kjente ikke til noen slik plan, melder Ynetnews. Etter kritikken sa Netanyahu at han vil ta hensyn til den, men gjøre det han mener er best; svenske Dagens Nyheter omtalte kritikken.",
+    "sv": "Israels premiärminister Benjamin Netanyahu sade i en tv-intervju den 23 oktober 2026 att Israel bör förbereda sig på möjliga internationella banksanktioner. Han höll med när intervjuaren föreslog krypto och sade att han bett rådgivare om en plan för att använda blockkedjeteknik för att kringgå dem, enligt Times of Israel och i24NEWS. Israels centralbank svarade att kryptovalutor inte kan användas för att kringgå sanktioner, och departementen kände inte till någon sådan plan, rapporterar Ynetnews. Efter kritiken sade Netanyahu att han tar hänsyn till den men gör det han anser är bäst; Dagens Nyheter rapporterade om kritiken.",
+    "da": "Israels premierminister Benjamin Netanyahu sagde i et tv-interview den 23. oktober 2026, at Israel bør forberede sig på mulige internationale banksanktioner. Han var enig, da intervieweren foreslog krypto, og sagde, at han havde bedt rådgivere om en plan for at bruge blockchain til at omgå dem, ifølge Times of Israel og i24NEWS. Israels centralbank svarede, at kryptovalutaer ikke kan bruges til at omgå sanktioner, og ministerierne kendte ikke til en sådan plan, melder Ynetnews. Efter kritikken sagde Netanyahu, at han vil tage hensyn til den, men gøre det, han mener er bedst; svenske Dagens Nyheter omtalte kritikken.",
+    "fi": "Israelin pääministeri Benjamin Netanjahu sanoi tv-haastattelussa 23. lokakuuta 2026, että Israelin pitäisi varautua mahdollisiin kansainvälisiin pankkipakotteisiin. Hän myönsi haastattelijan ehdottaessa kryptoa ja kertoi pyytäneensä neuvonantajilta suunnitelmaa lohkoketjun käyttämisestä pakotteiden kiertämiseen, kertovat Times of Israel ja i24NEWS. Israelin keskuspankki vastasi, ettei kryptovaluuttoja voi käyttää pakotteiden kiertämiseen, eivätkä ministeriöt tienneet tällaisesta suunnitelmasta, kertoo Ynetnews. Kritiikin jälkeen Netanjahu sanoi ottavansa sen huomioon mutta toimivansa parhaaksi katsomallaan tavalla; ruotsalainen Dagens Nyheter uutisoi kritiikistä.",
+    "is": "Benjamin Netanyahu, forsætisráðherra Ísraels, sagði í sjónvarpsviðtali 23. október 2026 að Ísrael ætti að búa sig undir mögulegar alþjóðlegar refsiaðgerðir gegn bönkum. Hann tók undir þegar spyrillinn nefndi rafmyntir og sagðist hafa beðið ráðgjafa um áætlun um að nota bálkakeðju til að komast fram hjá þeim, samkvæmt Times of Israel og i24NEWS. Seðlabanki Ísraels svaraði að rafmyntir gætu ekki þjónað sem leið til að sniðganga refsiaðgerðir og ráðuneytin vissu ekki af slíkri áætlun, segir Ynetnews. Eftir gagnrýnina sagðist Netanyahu taka tillit til hennar en gera það sem hann teldi best; sænska Dagens Nyheter fjallaði um gagnrýnina.",
+    "zh": "据《以色列时报》和i24NEWS报道，以色列总理内塔尼亚胡在2026年10月23日的电视采访中表示，以色列应为可能的国际银行制裁做准备；当主持人提到加密货币时他表示认同，并称已要求顾问制定利用区块链规避制裁的计划。据Ynetnews报道，以色列央行回应称加密货币不能作为规避制裁的手段，各部委也表示不知道有此计划。受到批评后，内塔尼亚胡表示会考虑这些意见，但会按自己认为最好的方式行事；瑞典《每日新闻》报道了相关批评。",
+    "hi": "Times of Israel और i24NEWS के अनुसार, इज़राइल के प्रधानमंत्री बेंजामिन नेतन्याहू ने 23 अक्टूबर 2026 को एक टीवी साक्षात्कार में कहा कि इज़राइल को संभावित अंतरराष्ट्रीय बैंक प्रतिबंधों के लिए तैयार रहना चाहिए; साक्षात्कारकर्ता के क्रिप्टो सुझाने पर वे सहमत हुए और कहा कि उन्होंने सलाहकारों से इन्हें दरकिनार करने के लिए ब्लॉकचेन के उपयोग की योजना माँगी है। Ynetnews के अनुसार बैंक ऑफ़ इज़राइल ने जवाब दिया कि क्रिप्टोकरेंसी प्रतिबंधों से बचने का साधन नहीं बन सकती, और मंत्रालयों को ऐसी किसी योजना की जानकारी नहीं थी। आलोचना के बाद नेतन्याहू ने कहा कि वे इसे ध्यान में रखेंगे, पर वही करेंगे जो उन्हें सबसे अच्छा लगे; स्वीडिश अख़बार Dagens Nyheter ने आलोचना की ख़बर दी।",
+    "es": "El primer ministro israelí, Benjamin Netanyahu, dijo en una entrevista televisiva el 23 de octubre de 2026 que Israel debe prepararse para posibles sanciones bancarias internacionales; se mostró de acuerdo cuando el entrevistador sugirió las criptomonedas y dijo que había pedido a sus asesores un plan para usar blockchain para sortearlas, según Times of Israel e i24NEWS. El Banco de Israel respondió que las criptomonedas no pueden servir para eludir sanciones, y los ministerios dijeron no conocer tal plan, informa Ynetnews. Tras las críticas, Netanyahu dijo que las tendrá en cuenta pero hará lo que considere mejor; el diario sueco Dagens Nyheter informó de las críticas.",
+    "fr": "Le Premier ministre israélien Benjamin Netanyahou a déclaré dans une interview télévisée le 23 octobre 2026 qu'Israël devait se préparer à d'éventuelles sanctions bancaires internationales ; il a acquiescé lorsque l'intervieweur a évoqué les cryptomonnaies et a dit avoir demandé à ses conseillers un plan pour utiliser la blockchain afin de les contourner, selon le Times of Israel et i24NEWS. La Banque d'Israël a répondu que les cryptomonnaies ne peuvent pas servir à contourner des sanctions, et les ministères ont dit ne connaître aucun plan de ce type, rapporte Ynetnews. Après les critiques, Netanyahou a dit qu'il en tiendrait compte mais ferait ce qu'il juge le mieux ; le quotidien suédois Dagens Nyheter a rapporté ces critiques.",
+    "ar": "قال رئيس الوزراء الإسرائيلي بنيامين نتنياهو في مقابلة تلفزيونية في 23 أكتوبر 2026 إن على إسرائيل الاستعداد لعقوبات مصرفية دولية محتملة، ووافق عندما اقترح المحاور العملات المشفرة، وقال إنه طلب من مستشاريه خطة لاستخدام البلوك تشين للالتفاف عليها، بحسب تايمز أوف إسرائيل وi24NEWS. وردّ بنك إسرائيل بأن العملات المشفرة لا يمكن أن تكون وسيلة للتحايل على العقوبات، وقالت الوزارات إنها لا تعلم بأي خطة كهذه، وفق Ynetnews. وبعد الانتقادات قال نتنياهو إنه سيأخذها في الاعتبار لكنه سيفعل ما يراه الأفضل؛ وقد نقلت صحيفة داغنز نيهيتر السويدية هذه الانتقادات.",
+    "bn": "Times of Israel ও i24NEWS জানিয়েছে, ইসরায়েলের প্রধানমন্ত্রী বেনিয়ামিন নেতানিয়াহু ২০২৬ সালের ২৩ অক্টোবর একটি টিভি সাক্ষাৎকারে বলেন, সম্ভাব্য আন্তর্জাতিক ব্যাংক নিষেধাজ্ঞার জন্য ইসরায়েলের প্রস্তুত থাকা উচিত; সাক্ষাৎকারগ্রহীতা ক্রিপ্টোর কথা তুললে তিনি সম্মতি দেন এবং বলেন, নিষেধাজ্ঞা এড়াতে ব্লকচেইন ব্যবহারের পরিকল্পনা তিনি উপদেষ্টাদের কাছে চেয়েছেন। Ynetnews জানায়, ব্যাংক অব ইসরায়েল বলেছে ক্রিপ্টোকারেন্সি নিষেধাজ্ঞা এড়ানোর উপায় হতে পারে না, এবং মন্ত্রণালয়গুলো এমন কোনো পরিকল্পনার কথা জানে না। সমালোচনার পর নেতানিয়াহু বলেন তিনি তা বিবেচনা করবেন, তবে যা ভালো মনে করেন তাই করবেন; সুইডিশ দৈনিক Dagens Nyheter সমালোচনার খবর দিয়েছে।",
+    "pt": "O primeiro-ministro israelita, Benjamin Netanyahu, disse numa entrevista televisiva a 23 de outubro de 2026 que Israel deve preparar-se para possíveis sanções bancárias internacionais; concordou quando o entrevistador sugeriu as criptomoedas e disse ter pedido aos seus conselheiros um plano para usar a blockchain para as contornar, segundo o Times of Israel e a i24NEWS. O Banco de Israel respondeu que as criptomoedas não podem servir para contornar sanções, e os ministérios disseram desconhecer tal plano, noticia o Ynetnews. Após as críticas, Netanyahu disse que as terá em conta, mas fará o que considera melhor; o diário sueco Dagens Nyheter noticiou as críticas.",
+    "ru": "Премьер-министр Израиля Биньямин Нетаньяху заявил в телеинтервью 23 октября 2026 года, что Израилю следует готовиться к возможным международным банковским санкциям; он согласился, когда интервьюер предложил криптовалюту, и сказал, что поручил советникам подготовить план использования блокчейна для их обхода, сообщают Times of Israel и i24NEWS. Банк Израиля ответил, что криптовалюты не могут служить средством обхода санкций, а министерства заявили, что не знают о таком плане, пишет Ynetnews. После критики Нетаньяху сказал, что учтёт её, но будет делать то, что считает лучшим; о критике сообщила шведская газета Dagens Nyheter.",
+    "ur": "Times of Israel اور i24NEWS کے مطابق اسرائیلی وزیر اعظم بنیامین نیتن یاہو نے 23 اکتوبر 2026 کو ایک ٹی وی انٹرویو میں کہا کہ اسرائیل کو ممکنہ بین الاقوامی بینکاری پابندیوں کے لیے تیار رہنا چاہیے؛ انٹرویو لینے والے کے کرپٹو کی تجویز پر انہوں نے اتفاق کیا اور کہا کہ انہوں نے مشیروں سے ان سے بچنے کے لیے بلاک چین استعمال کرنے کا منصوبہ طلب کیا ہے۔ Ynetnews کے مطابق بینک آف اسرائیل نے جواب دیا کہ کرپٹو کرنسیاں پابندیوں سے بچنے کا ذریعہ نہیں بن سکتیں، اور وزارتوں کو ایسے کسی منصوبے کا علم نہیں تھا۔ تنقید کے بعد نیتن یاہو نے کہا کہ وہ اسے مدنظر رکھیں گے لیکن وہی کریں گے جو بہتر سمجھتے ہیں؛ سویڈش اخبار Dagens Nyheter نے تنقید کی خبر دی۔",
+    "id": "Perdana Menteri Israel Benjamin Netanyahu mengatakan dalam wawancara TV pada 23 Oktober 2026 bahwa Israel harus bersiap menghadapi kemungkinan sanksi perbankan internasional; ia setuju ketika pewawancara menyebut kripto dan mengatakan telah meminta penasihat menyusun rencana memakai blockchain untuk menghindarinya, menurut Times of Israel dan i24NEWS. Bank Israel menjawab bahwa mata uang kripto tidak dapat menjadi sarana menghindari sanksi, dan kementerian mengaku tidak mengetahui rencana tersebut, lapor Ynetnews. Setelah dikritik, Netanyahu mengatakan akan mempertimbangkannya tetapi tetap melakukan yang menurutnya terbaik; harian Swedia Dagens Nyheter memberitakan kritik itu.",
+    "de": "Israels Ministerpräsident Benjamin Netanjahu sagte am 23. Oktober 2026 in einem TV-Interview, Israel solle sich auf mögliche internationale Banksanktionen vorbereiten; als der Interviewer Krypto vorschlug, stimmte er zu und sagte, er habe Berater um einen Plan gebeten, Blockchain zur Umgehung zu nutzen, berichten Times of Israel und i24NEWS. Die Bank of Israel antwortete, Kryptowährungen könnten nicht zur Umgehung von Sanktionen dienen, und die Ministerien kannten keinen solchen Plan, meldet Ynetnews. Nach der Kritik sagte Netanjahu, er werde sie berücksichtigen, aber tun, was er für richtig halte; die schwedische Zeitung Dagens Nyheter berichtete über die Kritik.",
+    "ja": "Times of Israelとi24NEWSによると、イスラエルのネタニヤフ首相は2026年10月23日のテレビインタビューで、国際的な銀行制裁の可能性に備えるべきだと述べ、聞き手が暗号資産を提案すると同意し、制裁回避にブロックチェーンを使う計画を顧問に求めたと語った。Ynetnewsによると、イスラエル銀行は暗号資産は制裁回避の手段にならないと反論し、各省もそのような計画は知らないとした。批判を受け、ネタニヤフ氏は考慮はするが最善と考えることを行うと述べた。スウェーデン紙ダーゲンス・ニュヘテルが批判を報じた。",
+    "sw": "Waziri Mkuu wa Israel Benjamin Netanyahu alisema katika mahojiano ya televisheni tarehe 23 Oktoba 2026 kuwa Israel inapaswa kujiandaa kwa vikwazo vinavyowezekana vya kimataifa vya kibenki; alikubali mhojaji alipopendekeza kripto na kusema aliwaomba washauri mpango wa kutumia blockchain kuvikwepa, kwa mujibu wa Times of Israel na i24NEWS. Benki ya Israel ilijibu kuwa sarafu za kripto haziwezi kutumika kukwepa vikwazo, na wizara zilisema hazijui mpango kama huo, inaripoti Ynetnews. Baada ya ukosoaji, Netanyahu alisema atauzingatia lakini atafanya anachoona ni bora; gazeti la Uswidi Dagens Nyheter liliripoti ukosoaji huo.",
+    "mr": "Times of Israel आणि i24NEWS नुसार, इस्रायलचे पंतप्रधान बेंजामिन नेतन्याहू यांनी २३ ऑक्टोबर २०२६ रोजी एका टीव्ही मुलाखतीत सांगितले की इस्रायलने संभाव्य आंतरराष्ट्रीय बँक निर्बंधांसाठी तयार राहावे; मुलाखतकाराने क्रिप्टो सुचवल्यावर त्यांनी सहमती दर्शवली आणि निर्बंध टाळण्यासाठी ब्लॉकचेन वापराची योजना सल्लागारांकडे मागितल्याचे सांगितले. Ynetnews नुसार बँक ऑफ इस्रायलने उत्तर दिले की क्रिप्टोकरन्सी निर्बंध टाळण्याचे साधन होऊ शकत नाहीत, आणि मंत्रालयांना अशा योजनेची माहिती नव्हती. टीकेनंतर नेतन्याहू म्हणाले की ते तिचा विचार करतील, पण त्यांना जे योग्य वाटते तेच करतील; स्वीडिश दैनिक Dagens Nyheter ने टीकेचे वृत्त दिले.",
+    "fa": "به گزارش تایمز اسرائیل و i24NEWS، بنیامین نتانیاهو، نخست‌وزیر اسرائیل، در مصاحبه‌ای تلویزیونی در ۲۳ اکتبر ۲۰۲۶ گفت اسرائیل باید برای تحریم‌های بانکی بین‌المللی احتمالی آماده شود؛ او وقتی مصاحبه‌گر رمزارز را پیشنهاد کرد موافقت کرد و گفت از مشاورانش طرحی برای استفاده از بلاک‌چین برای دور زدن آن‌ها خواسته است. به گزارش Ynetnews، بانک اسرائیل پاسخ داد که رمزارزها نمی‌توانند ابزاری برای دور زدن تحریم‌ها باشند و وزارتخانه‌ها از چنین طرحی اطلاع نداشتند. پس از انتقادها، نتانیاهو گفت آن‌ها را در نظر می‌گیرد اما آنچه را بهترین می‌داند انجام می‌دهد؛ روزنامه سوئدی داگنز نیهتر این انتقادها را گزارش کرد.",
+    "uk": "Прем'єр-міністр Ізраїлю Біньямін Нетаньягу заявив у телеінтерв'ю 23 жовтня 2026 року, що Ізраїлю слід готуватися до можливих міжнародних банківських санкцій; він погодився, коли інтерв'юер запропонував криптовалюту, і сказав, що доручив радникам підготувати план використання блокчейну для їх обходу, повідомляють Times of Israel та i24NEWS. Банк Ізраїлю відповів, що криптовалюти не можуть слугувати засобом обходу санкцій, а міністерства заявили, що не знають про такий план, пише Ynetnews. Після критики Нетаньягу сказав, що врахує її, але робитиме те, що вважає найкращим; про критику повідомила шведська газета Dagens Nyheter.",
+    "tr": "Times of Israel ve i24NEWS'e göre İsrail Başbakanı Binyamin Netanyahu 23 Ekim 2026'daki bir televizyon röportajında İsrail'in olası uluslararası bankacılık yaptırımlarına hazırlanması gerektiğini söyledi; röportajı yapan kripto önerince buna katıldı ve danışmanlarından yaptırımları aşmak için blokzincir kullanımına dair bir plan istediğini belirtti. Ynetnews'e göre İsrail Merkez Bankası kripto paraların yaptırımları aşmanın aracı olamayacağını söyledi, bakanlıklar da böyle bir plandan haberdar olmadıklarını açıkladı. Eleştirilerin ardından Netanyahu bunları dikkate alacağını ama en iyisi olduğunu düşündüğü şeyi yapacağını söyledi; İsveç gazetesi Dagens Nyheter eleştirileri haberleştirdi."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "f8324ec4557d",
