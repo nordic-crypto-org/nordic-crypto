@@ -36,7 +36,7 @@ STORIES = {
             src="Realtid (Sweden) · 21 Oct", big="$1.8M", kicker="A LAWSUIT · NOT A RULING", art="scan", logo="realtid"),
  "s6": dict(section="MARKETS", head="BlackRock files for a bitcoin ETF designed to limit losses",
             src="Kryptovalutaguiden (Sweden) · 20 Oct", big="PBIT", kicker="FILING · NOT YET EFFECTIVE", art="bars", logo="kryptovalutaguiden"),
- "s7": dict(section="NORDIC", head="Tiny Vikings unveils a giant figure at the Marfa art weekend",
+ "s7": dict(section="NORDIC", head="Tiny Vikings planned a giant figure for the Marfa art weekend",
             src="Nordic Crypto · 20 Oct", big="VIKING", kicker="BITCOIN ORDINALS ART", art="stars"),
 }
 END_DISCLOSURE = "Nothing here is investment advice."
@@ -49,7 +49,7 @@ TICKER = [
  "Bank of Israel: cryptocurrencies cannot be used to get around sanctions (Dagens Nyheter)",
  "Apple asks a US court to dismiss a lawsuit over a fake Sparrow Wallet app (Realtid, citing Law360)",
  "BlackRock files for the iShares Bitcoin Managed Protection ETF, ticker PBIT. Not yet effective (Kryptovalutaguiden)",
- "Tiny Vikings reveals a giant figure in Marfa, Texas",
+ "Tiny Vikings planned to unveil a giant figure in Marfa, Texas, on 22 October",
  "All stories at " + SITE,
 ]
 
@@ -62,7 +62,7 @@ VO = {
  "s4": "Dagens Nyheter reports on criticism after Israel's prime minister Benjamin Netanyahu suggested crypto could help get around possible sanctions. The Bank of Israel replied that cryptocurrencies cannot serve that purpose.",
  "s5": "Realtid reports that Apple has asked a US court to dismiss a lawsuit from three investors who say they lost one point eight million dollars through a fake bitcoin wallet app in the App Store. Apple says it cannot be held responsible for outside fraudsters.",
  "s6": "And BlackRock has filed for a bitcoin fund designed to limit losses, ticker P-BIT, Kryptovalutaguiden reports. The filing is incomplete, and the shares may not be sold until it becomes effective.",
- "s7": "Finally, the Bitcoin Ordinals art project Tiny Vikings unveiled what it calls the world's largest Tiny Viking, in Marfa, Texas.",
+ "s7": "Finally, the Bitcoin Ordinals art project Tiny Vikings planned to unveil what it calls the world's largest Tiny Viking in Marfa, Texas, on the 22nd of October, according to its event page.",
  "close": "That's all for issue number four. Every story, with a link to the original source, is at nordiccrypto.no. Nothing here is investment advice.",
  "signoff": "I'm Anders Fjell. See you next week.",
 }
