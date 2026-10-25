@@ -1,6 +1,6 @@
 # Nordic Crypto issue #4 — newsreel (site cut)
 
-Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good evening, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, and signs off ("I'm Anders Fjell. See you next week."). Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
+Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good morning, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, and signs off ("I'm Anders Fjell. See you next week."). Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
 
 The live site uses this cut. `newsletter/published/issues.json` points at the
 public release file. `video.mp4` itself stays gitignored; `build.py` downloads it.
@@ -41,11 +41,25 @@ description when `--description` is not given:
 
 Custom thumbnails follow the same rule as the cover images: no third-party logos.
 
+## On-camera anchor (v2 cut)
+
+Anders Fjell reads the whole bulletin on camera. `clips/` holds one image-to-video clip per script block
+(at most 15 s, long stories split at sentence ends), each made from `anchor-v1.jpg` with the speech in the clip.
+`anchor_clips.json` lists every clip, the exact script text it carries, where its speech ends, and sentence
+timings for the subtitles. Each clip was checked with speech-to-text against the script before it was kept
+(legal wording exact: "charged, and have not been convicted"; Tiny Vikings "planned to unveil"); failed takes
+were regenerated. Norwegian and Swedish names were spelled phonetically in the generation prompts only.
+`anchor_clips.py` replaces `tts.py`: it trims each clip at the end of its speech, joins clips inside a story
+with a 0.2 s crossfade, and writes the voice (`build/<seg>.mp3` + sentence JSON) and the picture
+(`build/anchor_<seg>.mp4`). `render.py` draws every overlay (lower thirds, story panel, source chips, ticker,
+clock, wipes) on top of that picture; the video model never draws text. The final mix is loudness-normalised
+to -16 LUFS in `concat.sh`.
+
 ## Rebuild the site cut
 
 ```bash
 python3 -m pip install -r requirements.txt
-python3 tts.py
+python3 anchor_clips.py   # or tts.py for a voice-over cut
 python3 timeline.py
 python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
 bash render_all.sh

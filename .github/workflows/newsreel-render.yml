@@ -40,7 +40,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build
-          python3 tts.py
+          # On-camera anchor: voice and picture from the verified lip-sync clips when the issue has them.
+          if [ -f anchor_clips.json ]; then python3 anchor_clips.py; else python3 tts.py; fi
           python3 timeline.py
           python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
           python3 -c "import json; print('\n'.join(s['name'] for s in json.load(open('build/timeline.json'))['segs']))" \
@@ -61,7 +62,8 @@ jobs:
           NUM: ${{ steps.pick.outputs.num }}
         run: |
           tag="newsletter-$ID-newsreel-${{ github.run_number }}"
-          gh release create "$tag" --target "$GITHUB_SHA" --title "Nordic Crypto #$NUM newsreel" \
+          # Draft only: a person reviews and publishes the release by hand.
+          gh release create "$tag" --draft --target "$GITHUB_SHA" --title "Nordic Crypto #$NUM newsreel" \
             --notes "Newsreel for newsletter issue #$NUM." \
             newsletter/issues/$ID-video/out/nordic-crypto-$NUM-newsreel.mp4
           echo "### $tag" >> "$GITHUB_STEP_SUMMARY"
