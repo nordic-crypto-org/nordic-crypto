@@ -151,9 +151,9 @@ def draw_clock(base, T):
     pulse = 0.5 + 0.5 * math.cos(T * 2 * math.pi * 0.8); r = 9
     d.ellipse((x0 + 18 - r, y0 + 33 - r, x0 + 18 + r, y0 + 33 + r), fill=tuple(int(c * (0.55 + 0.45 * pulse)) for c in GOLD) + (255,))
     d.text((x0 + 36, y0 + 14), 'OSLO', font=F('cx', 32), fill=FOAM); x = x0 + 50 + tw(d, 'OSLO', F('cx', 32))
-    sec = int(T); hh, mm, ss = 19, sec // 60, sec % 60
+    sec = int(T); hh, mm, ss = 7, sec // 60, sec % 60  # a morning bulletin
     d.text((x, y0 + 10), f'{hh:02d}:{mm:02d}:{ss:02d}', font=F('cx', 38), fill=SAIL); x += 12 + tw(d, '00:00:00', F('cx', 38))
-    d.text((x, y0 + 22), 'CEST', font=F('cs', 22), fill=FOAM)
+    d.text((x, y0 + 22), 'CET', font=F('cs', 22), fill=FOAM)
     d.rectangle((x0, y0 + 70, 1860, y0 + 104), fill=NIGHT + (235,))
     spaced(d, (x0 + 14, y0 + 74), C.BUG_LINE, F('cs', 20), GOLD, 1)
 TICK_Y, TICK_H, TICK_SPEED = (1500 if V else 1012), 68, 140
@@ -308,6 +308,29 @@ def draw_lt(base, lt, t, dur):
     if getattr(src, 'has_logo', False): c = 1 if c >= .5 else 0  # a logo is cut in and out whole, never wiped
     if c > 0: base.paste(src.crop((0, 0, src.width, int(src.height * c)) if c < 1 else (0, 0, src.width, src.height)), (x0, ys))
 
+# ---------- on-camera anchor clips (build/anchor_<seg>.mp4 from anchor_clips.py) ----------
+def has_clip(name): return os.path.exists(ROOT + f'anchor_{name}.mp4')
+class Clip:  # sequential frame reader; holds the last frame when the clip runs out
+    def __init__(self, name):
+        self.p = subprocess.Popen(['ffmpeg', '-v', 'error', '-threads', '1', '-i', ROOT + f'anchor_{name}.mp4', '-vf',
+                                   f'fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}',
+                                   '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=W * H * 3)
+        self.i, self.im = -1, None
+    def at(self, i):
+        while self.i < i and self.p:
+            b = self.p.stdout.read(W * H * 3)
+            if len(b) < W * H * 3: self.p.stdout.close(); self.p.wait(); self.p = None; break
+            self.im = Image.frombytes('RGB', (W, H), b); self.i += 1
+        return self.im.copy()
+# Over-the-shoulder panel and right-hand column beside the presenter (his face sits at x 815-1080).
+PNL_X, PNL_Y, PNL_W, PNL_H = 1150, 176, 700, 394
+def draw_panel(im, src, t, dur, in_at=0.45):
+    k = eback((t - in_at) / 0.5) * (1 - eio(clamp((t - (dur - 0.75)) / 0.35)))
+    if k <= 0.02: return
+    w, h = max(2, int(PNL_W * k)), max(2, int(PNL_H * k)); x, y = PNL_X + (PNL_W - w) // 2, PNL_Y + (PNL_H - h) // 2
+    d = ImageDraw.Draw(im); d.rectangle((x - 6, y - 6, x + w + 5, y + h + 5), fill=GOLD)
+    im.paste(src.resize((w, h), Image.BILINEAR), (x, y))
+
 # ---------- segment renderers ----------
 def seg_bumper(s): return seg_bumper_core(s)
 def seg_bumper_core(s, vertical=False):
@@ -383,6 +406,26 @@ def seg_tonight(s):
         hit = cue_at(sents, vo, needle)
         if hit is None and i < len(sents): hit = vo + sents[i][0]
         starts.append(0.2 + i * 1.6 if hit is None else hit)
+    lab = getattr(C, 'TONIGHT_LABEL', 'TONIGHT')
+    if has_clip(s['name']) and not V:
+        clip = Clip(s['name']); x0 = PNL_X; cw = PNL_W
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
+            out = eio(clamp((t - (s['dur'] - 0.6)) / 0.35))
+            u = eo(t / 0.45) * (1 - out); tf = F('cx', 46); bw = spaced_w(lab, tf, 5) + 44
+            if u > 0:
+                d.rectangle((x0 + (1 - u) * 900, 172, x0 + (1 - u) * 900 + bw, 240), fill=GOLD)
+                spaced(d, (x0 + 22 + (1 - u) * 900, 180), lab, tf, TAR, 5)
+            for i in range(3):
+                a = eo((t - starts[i]) / 0.42) * (1 - out)
+                if a <= 0: continue
+                y = 262 + i * 188; x = x0 + (1 - a) * 900
+                d.rectangle((x, y, x + cw, y + 170), fill=NIGHT); d.rectangle((x, y, x + 12, y + 170), fill=GOLD)
+                d.text((x + 36, y + 16), tags[i], font=F('cx', 26), fill=GOLD)
+                hf = F('cb', 42); lines = wrap(heads[i], hf, cw - 70)[:2]
+                for k, ln in enumerate(lines): d.text((x + 36, y + 54 + k * 50), ln, font=hf, fill=SAIL)
+            return im
+        return frame, {}
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im)
         u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w('TONIGHT', tf, 6) + 60
@@ -434,6 +477,13 @@ def seg_section(s):
     return frame, {}
 def seg_story(s):
     st = C.STORIES[s['name']]; bg = art_bg(st); lt = make_lt(st); dirx = 1 if int(s['name'][1]) % 2 else -1
+    if has_clip(s['name']) and not V:
+        clip = Clip(s['name'])
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); u = t / s['dur']
+            if t > 0.3: draw_panel(im, kb(bg, u, dirx, 0.5), t, s['dur'])
+            draw_lt(im, lt, t, s['dur']); return im
+        return frame, {}
     def frame(t, T):
         im = kb(bg, t / s['dur'], dirx, -1 if V else 0.5); draw_lt(im, lt, t, s['dur']); return im
     return frame, {}
@@ -476,6 +526,30 @@ def seg_end(s):
     if site_t is None and len(sents) > 1: site_t = s['voff'] + sents[1][0]
     if advice_t is None and len(sents) > 2: advice_t = s['voff'] + sents[2][0]
     if team_t is None and sents: team_t = s['voff'] + sents[-1][0]
+    if has_clip(s['name']) and not V:
+        clip = Clip(s['name']); x0 = PNL_X; cw = PNL_W
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
+            a = eo((t - 0.3) / 0.5); xa = x0 + (1 - a) * 900
+            if a > 0:
+                d.rectangle((xa, 176, xa + cw, 290), fill=NIGHT); d.rectangle((xa, 176, xa + 12, 290), fill=GOLD)
+                tf = fit(C.END_HEAD, 'cb', 60, cw - 70, 34); d.text((xa + 36, 196), C.END_HEAD, font=tf, fill=SAIL)
+            if site_t is not None:
+                b = eo((t - site_t) / 0.45)
+                if b > 0:
+                    f1 = F('m', 30); l1 = 'Every story, with a link to the original source'
+                    d.rectangle((x0, 310, x0 + cw * b, 470), fill=NIGHT)
+                    if b > .85:
+                        d.text((x0 + 30, 322), l1, font=f1, fill=FOAM)
+                        f2 = F('cx', 56); w2 = tw(d, C.SITE, f2); d.rectangle((x0 + 30, 370, x0 + 30 + w2 + 56, 456), fill=GOLD)
+                        d.text((x0 + 58, 380), C.SITE, font=f2, fill=TAR)
+            if advice_t is not None:
+                c = eo((t - advice_t) / 0.4)
+                if c > 0:
+                    f3 = F('cs', 30); d.rectangle((x0, 490, x0 + cw * c, 556), fill=SEA)
+                    if c > .85: d.text((x0 + 30, 502), C.END_DISCLOSURE, font=f3, fill=SAIL)
+            return im
+        return frame, dict(ticker_out=False, last=False)
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im); cx = W / 2
         u = eback((t - 0.1) / 0.55); sz = 130 * u
@@ -515,13 +589,14 @@ def seg_anchor(s):
     last = s.get('last', False); lt_on = s.get('lower_third', True)
     nf = F('cb', 68); rf = F('cx', 28)
     nw = tw(DUMMY, C.ANCHOR, nf) + 80; rw = int(spaced_w(C.ANCHOR_ROLE, rf, 4)) + 44
+    clip = Clip(s['name']) if has_clip(s['name']) else None
     def frame(t, T):
         u = t / s['dur']
         # slow push-in towards the presenter, a touch of drift so the shot is never static
         zoom = 1 + 0.07 * eio(u); bw = BW_ / zoom; bh = bw * H / W
         cx = BW_ / 2 + 14 * math.sin(t * 0.6); cy = BH_ * 0.47 - (BH_ - bh) * 0.25 * eio(u)
         cy = max(bh / 2, min(BH_ - bh / 2, cy)); cx = max(bw / 2, min(BW_ - bw / 2, cx))
-        im = bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
+        im = clip.at(round(t * FPS)) if clip else bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
         d = ImageDraw.Draw(im)
         if lt_on:
             a = eo((t - 0.4) / 0.45) * (1 - eio(clamp((t - (s['dur'] - 0.7)) / 0.4)))
