@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-25T21:58:20+00:00",
+ "generated_at": "2026-10-25T22:07:04+00:00",
  "preview": false,
  "title": "Nordic Crypto data API",
  "sign_off": "The Nordic Crypto team",
@@ -39,7 +39,7 @@
    "NORDIC": 1,
    "EU": 0
   },
-  "newsletters": 4,
+  "newsletters": 3,
   "events": 22,
   "events_upcoming": 15,
   "events_ongoing": 0,
@@ -138,8 +138,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/newsletters.json",
    "summary": "Published newsletter issues, newest first. The list omits the HTML body; the issue URL includes text and html.",
    "schema": "NewsletterList",
-   "example_url": "https://nordiccrypto.no/api/v1/newsletters/004.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/newsletters/004.json",
+   "example_url": "https://nordiccrypto.no/api/v1/newsletters/003.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/newsletters/003.json",
    "item_path": "/api/v1/newsletters/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/newsletters/{id}.json"
   },
@@ -567,7 +567,7 @@
   },
   {
    "description": "One newsletter issue, with text",
-   "url": "https://nordiccrypto.no/api/v1/newsletters/004.json"
+   "url": "https://nordiccrypto.no/api/v1/newsletters/003.json"
   }
  ]
 }
