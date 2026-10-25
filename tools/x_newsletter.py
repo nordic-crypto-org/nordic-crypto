@@ -60,6 +60,7 @@ STORY_RE = re.compile(r'<p[^>]*>\s*<a href="(?P<url>https?://[^"]+)"[^>]*font-we
 
 def parse_stories(issue_html):
     out = []
+    issue_html = issue_html.replace('__SITE__/', SITE + '/')   # own stories link via the site placeholder
     for m in STORY_RE.finditer(issue_html):
         segs = re.split(r"<br\s*/?>", m.group("rest"))
         summary = strip_tags(segs[1]) if len(segs) > 1 else ""
