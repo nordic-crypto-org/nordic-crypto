@@ -22,8 +22,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Opinion presented as news; same event as 7d26551e212c. researcher 26.10"
   },
   {
    "id": "e46be4115627",
@@ -48,8 +49,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "7d26551e212c"
   },
   {
    "id": "90c756ae35cf",
@@ -76,14 +78,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "7d26551e212c"
   },
   {
    "id": "06231a56090b",
    "url": "https://kryptovalutaguiden.se/2026/10/rysslands-digitala-rubel-nar-270-000-konton-succe-eller-fiasko",
    "title": "Rysslands digitala rubel når 270 000 konton – succé eller fiasko?",
-   "title_en": null,
+   "title_en": "Russia's digital rouble reaches 270,000 accounts, central bank says",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -95,20 +98,78 @@
    "published": "2026-10-25T10:47:56+00:00",
    "fetched": "2026-10-26T02:48:44+00:00",
    "topics": [
-    "regulation"
+    "policy",
+    "banking"
    ],
    "matched": [
     "\\bCBDC\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Russia's digital rouble had 270,000 open accounts, 15,000 of them held by legal entities and sole proprietors, Bank of Russia Governor Elvira Nabiullina said at a press conference on 23 October 2026, RIA Novosti reports. She said interest had been higher than the central bank expected at launch. The Bank of Russia plans to launch a subscription service by the end of November and to test offline payments in digital roubles in 2027.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-26T04:55:00+01:00",
+   "primary_source": {
+    "name": "RIA Novosti, 23 Oct 2026 (Bank of Russia press conference)",
+    "url": "https://ria.ru/20261023/nabiullina-2126589818.html"
+   },
+   "title_i18n": {
+    "nn": "Russlands digitale rubel har nådd 270 000 kontoar, seier sentralbanken",
+    "nb": "Russlands digitale rubel har nådd 270 000 kontoer, sier sentralbanken",
+    "da": "Ruslands digitale rubel har nået 270.000 konti, siger centralbanken",
+    "fi": "Venäjän digitaalisella ruplalla 270 000 tiliä, kertoo keskuspankki",
+    "is": "Stafræn rúbla Rússlands komin í 270.000 reikninga, segir seðlabankinn",
+    "zh": "俄央行：数字卢布账户数达27万",
+    "hi": "केंद्रीय बैंक के अनुसार रूस के डिजिटल रूबल खाते 2.7 लाख पहुँचे",
+    "es": "El rublo digital de Rusia alcanza las 270.000 cuentas, según el banco central",
+    "fr": "Le rouble numérique russe atteint 270 000 comptes, selon la banque centrale",
+    "ar": "البنك المركزي: حسابات الروبل الرقمي الروسي تبلغ 270 ألفاً",
+    "bn": "কেন্দ্রীয় ব্যাংক বলছে, রাশিয়ার ডিজিটাল রুবলের অ্যাকাউন্ট ২ লাখ ৭০ হাজারে",
+    "pt": "Rublo digital da Rússia chega a 270 mil contas, diz o banco central",
+    "ru": "Число счетов цифрового рубля достигло 270 тысяч, сообщил ЦБ",
+    "ur": "مرکزی بینک کے مطابق روس کے ڈیجیٹل روبل کے اکاؤنٹس 2 لاکھ 70 ہزار ہو گئے",
+    "id": "Rubel digital Rusia capai 270.000 akun, kata bank sentral",
+    "de": "Russlands digitaler Rubel erreicht 270.000 Konten, so die Zentralbank",
+    "ja": "ロシアのデジタルルーブル口座、27万件に 中銀が公表",
+    "sw": "Rubo ya kidijitali ya Urusi yafikia akaunti 270,000, yasema benki kuu",
+    "mr": "केंद्रीय बँकेनुसार रशियाच्या डिजिटल रूबलची खाती २.७ लाखांवर",
+    "fa": "بانک مرکزی: حساب‌های روبل دیجیتال روسیه به ۲۷۰ هزار رسید",
+    "uk": "Кількість рахунків цифрового рубля в Росії сягнула 270 тисяч, заявив центробанк",
+    "tr": "Merkez bankası: Rusya'nın dijital rublesi 270 bin hesaba ulaştı"
+   },
+   "title_i18n_source": "Rysslands digitala rubel når 270 000 konton – succé eller fiasko?",
+   "summary_i18n": {
+    "nn": "Den digitale rubelen i Russland hadde 270 000 opne kontoar, av dei 15 000 hos juridiske personar og enkeltpersonføretak, sa sentralbanksjef Elvira Nabiullina på ein pressekonferanse 23. oktober 2026, melder RIA Novosti. Ho sa at interessa var større enn sentralbanken venta ved lanseringa. Bank of Russia vil lansere ei abonnementsteneste innan utgangen av november og teste fråkopla betaling med digitale rublar i 2027.",
+    "nb": "Den digitale rubelen i Russland hadde 270 000 åpne kontoer, hvorav 15 000 hos juridiske personer og enkeltpersonforetak, sa sentralbanksjef Elvira Nabiullina på en pressekonferanse 23. oktober 2026, melder RIA Novosti. Hun sa at interessen var større enn sentralbanken ventet ved lanseringen. Bank of Russia vil lansere en abonnementstjeneste innen utgangen av november og teste frakoblet betaling med digitale rubler i 2027.",
+    "sv": "Rysslands digitala rubel hade 270 000 öppna konton, varav 15 000 hos juridiska personer och enskilda näringsidkare, sade centralbankschefen Elvira Nabiullina vid en presskonferens den 23 oktober 2026, rapporterar RIA Novosti. Hon sade att intresset varit större än centralbanken väntat vid lanseringen. Bank of Russia planerar att lansera en abonnemangstjänst före slutet av november och att testa offlinebetalningar med digitala rubel 2027.",
+    "da": "Ruslands digitale rubel havde 270.000 åbne konti, heraf 15.000 hos juridiske personer og enkeltmandsvirksomheder, sagde centralbankchef Elvira Nabiullina på et pressemøde den 23. oktober 2026, melder RIA Novosti. Hun sagde, at interessen havde været større, end centralbanken ventede ved lanceringen. Bank of Russia vil lancere en abonnementstjeneste inden udgangen af november og teste offlinebetalinger med digitale rubler i 2027.",
+    "fi": "Venäjän digitaalisella ruplalla oli 270 000 avointa tiliä, joista 15 000 oikeushenkilöillä ja yksityisyrittäjillä, sanoi keskuspankin pääjohtaja Elvira Nabiullina tiedotustilaisuudessa 23. lokakuuta 2026, kertoo RIA Novosti. Hänen mukaansa kiinnostus oli ollut suurempaa kuin keskuspankki odotti käyttöönotossa. Venäjän keskuspankki aikoo ottaa käyttöön tilauspalvelun marraskuun loppuun mennessä ja testata offline-maksuja digitaalisilla ruplilla vuonna 2027.",
+    "is": "Stafræna rúblan í Rússlandi var með 270.000 opna reikninga, þar af 15.000 í eigu lögaðila og einyrkja, sagði Elvira Nabiullina seðlabankastjóri á blaðamannafundi 23. október 2026, segir RIA Novosti. Hún sagði áhugann meiri en seðlabankinn bjóst við í upphafi. Seðlabanki Rússlands hyggst opna áskriftarþjónustu fyrir lok nóvember og prófa ónettengdar greiðslur með stafrænum rúblum árið 2027.",
+    "zh": "据俄新社报道，俄罗斯央行行长纳比乌琳娜在2026年10月23日的新闻发布会上表示，数字卢布已开立27万个账户，其中1.5万个属于法人和个体经营者。她说，市场兴趣高于央行在推出时的预期。俄罗斯央行计划在11月底前推出订阅服务，并于2027年测试数字卢布离线支付。",
+    "hi": "RIA Novosti के अनुसार, बैंक ऑफ़ रशिया की गवर्नर एल्विरा नबिउल्लिना ने 23 अक्टूबर 2026 को प्रेस कॉन्फ़्रेंस में कहा कि डिजिटल रूबल के 2,70,000 खाते खुल चुके हैं, जिनमें 15,000 क़ानूनी संस्थाओं और व्यक्तिगत उद्यमियों के हैं। उन्होंने कहा कि रुचि शुरुआत में केंद्रीय बैंक की अपेक्षा से अधिक रही। बैंक ऑफ़ रशिया नवंबर के अंत तक सब्सक्रिप्शन सेवा शुरू करने और 2027 में डिजिटल रूबल से ऑफ़लाइन भुगतान का परीक्षण करने की योजना बना रहा है।",
+    "es": "El rublo digital de Rusia contaba con 270.000 cuentas abiertas, 15.000 de ellas de personas jurídicas y empresarios individuales, dijo la gobernadora del Banco de Rusia, Elvira Nabiúllina, en una rueda de prensa el 23 de octubre de 2026, según RIA Novosti. Afirmó que el interés había superado lo que el banco central esperaba en el lanzamiento. El Banco de Rusia prevé lanzar un servicio de suscripciones antes de finales de noviembre y probar pagos sin conexión en rublos digitales en 2027.",
+    "fr": "Le rouble numérique russe comptait 270 000 comptes ouverts, dont 15 000 détenus par des personnes morales et des entrepreneurs individuels, a déclaré la gouverneure de la Banque de Russie, Elvira Nabioullina, lors d'une conférence de presse le 23 octobre 2026, rapporte RIA Novosti. Elle a dit que l'intérêt avait dépassé les attentes de la banque centrale au lancement. La Banque de Russie prévoit de lancer un service d'abonnement d'ici fin novembre et de tester des paiements hors ligne en roubles numériques en 2027.",
+    "ar": "قالت محافظة بنك روسيا إلفيرا نابيولينا في مؤتمر صحفي في 23 أكتوبر 2026 إن عدد حسابات الروبل الرقمي المفتوحة بلغ 270 ألفاً، منها 15 ألفاً لكيانات قانونية وأصحاب أعمال فردية، وفق وكالة ريا نوفوستي. وأضافت أن الاهتمام فاق توقعات البنك المركزي عند الإطلاق. ويخطط بنك روسيا لإطلاق خدمة اشتراكات بحلول نهاية نوفمبر واختبار المدفوعات غير المتصلة بالروبل الرقمي في 2027.",
+    "bn": "RIA Novosti জানিয়েছে, ব্যাংক অব রাশিয়ার গভর্নর এলভিরা নাবিউল্লিনা ২০২৬ সালের ২৩ অক্টোবর সংবাদ সম্মেলনে বলেন, ডিজিটাল রুবলের ২ লাখ ৭০ হাজার অ্যাকাউন্ট খোলা হয়েছে, যার ১৫ হাজার আইনি প্রতিষ্ঠান ও একক উদ্যোক্তাদের। তিনি বলেন, চালুর সময় কেন্দ্রীয় ব্যাংক যতটা আশা করেছিল আগ্রহ তার চেয়ে বেশি। ব্যাংক অব রাশিয়া নভেম্বরের শেষ নাগাদ সাবস্ক্রিপশন সেবা চালু এবং ২০২৭ সালে ডিজিটাল রুবলে অফলাইন পেমেন্ট পরীক্ষার পরিকল্পনা করছে।",
+    "pt": "O rublo digital da Rússia tinha 270 mil contas abertas, 15 mil delas de pessoas coletivas e empresários em nome individual, afirmou a governadora do Banco da Rússia, Elvira Nabiullina, numa conferência de imprensa a 23 de outubro de 2026, noticia a RIA Novosti. Disse que o interesse foi maior do que o banco central esperava no lançamento. O Banco da Rússia planeia lançar um serviço de subscrições até ao fim de novembro e testar pagamentos offline em rublos digitais em 2027.",
+    "ru": "Количество открытых счетов цифрового рубля достигло 270 тысяч, из них 15 тысяч приходится на юридических лиц и индивидуальных предпринимателей, заявила глава Банка России Эльвира Набиуллина на пресс-конференции 23 октября 2026 года, сообщает РИА Новости. По её словам, интерес оказался выше, чем ЦБ ожидал на старте. Банк России планирует запустить сервис подписок к концу ноября и протестировать офлайн-платежи в цифровых рублях в 2027 году.",
+    "ur": "RIA Novosti کے مطابق بینک آف رشیا کی گورنر ایلویرا نبیولینا نے 23 اکتوبر 2026 کو پریس کانفرنس میں کہا کہ ڈیجیٹل روبل کے 2 لاکھ 70 ہزار اکاؤنٹس کھل چکے ہیں، جن میں 15 ہزار قانونی اداروں اور انفرادی کاروباری افراد کے ہیں۔ انہوں نے کہا کہ دلچسپی آغاز پر مرکزی بینک کی توقع سے زیادہ رہی۔ بینک آف رشیا نومبر کے آخر تک سبسکرپشن سروس شروع کرنے اور 2027 میں ڈیجیٹل روبل سے آف لائن ادائیگیوں کی آزمائش کا ارادہ رکھتا ہے۔",
+    "id": "Rubel digital Rusia memiliki 270.000 akun terbuka, 15.000 di antaranya milik badan hukum dan pengusaha perorangan, kata Gubernur Bank Rusia Elvira Nabiullina dalam konferensi pers pada 23 Oktober 2026, lapor RIA Novosti. Ia mengatakan minat lebih tinggi daripada perkiraan bank sentral saat peluncuran. Bank Rusia berencana meluncurkan layanan langganan pada akhir November dan menguji pembayaran luring dengan rubel digital pada 2027.",
+    "de": "Der digitale Rubel in Russland zählte 270.000 eröffnete Konten, davon 15.000 von juristischen Personen und Einzelunternehmern, sagte Zentralbankchefin Elvira Nabiullina am 23. Oktober 2026 auf einer Pressekonferenz, berichtet RIA Nowosti. Das Interesse sei höher gewesen, als die Zentralbank zum Start erwartet habe. Die Bank of Russia will bis Ende November einen Abo-Dienst starten und 2027 Offline-Zahlungen mit digitalen Rubeln testen.",
+    "ja": "RIAノーボスチによると、ロシア中央銀行のナビウリナ総裁は2026年10月23日の記者会見で、デジタルルーブルの口座数が27万件に達し、うち1万5000件が法人・個人事業主のものだと述べた。関心は導入時の中銀の想定を上回ったという。ロシア中銀は11月末までにサブスクリプションサービスを開始し、2027年にデジタルルーブルのオフライン決済を試験する計画だ。",
+    "sw": "Rubo ya kidijitali ya Urusi ilikuwa na akaunti 270,000 zilizofunguliwa, 15,000 kati yake zikiwa za mashirika na wafanyabiashara binafsi, alisema Gavana wa Benki ya Urusi Elvira Nabiullina katika mkutano na wanahabari tarehe 23 Oktoba 2026, inaripoti RIA Novosti. Alisema hamasa ilikuwa juu kuliko benki kuu ilivyotarajia wakati wa uzinduzi. Benki ya Urusi inapanga kuzindua huduma ya usajili kufikia mwisho wa Novemba na kujaribu malipo bila mtandao kwa rubo za kidijitali mwaka 2027.",
+    "mr": "RIA Novosti नुसार, बँक ऑफ रशियाच्या गव्हर्नर एल्विरा नबिउल्लिना यांनी २३ ऑक्टोबर २०२६ रोजी पत्रकार परिषदेत सांगितले की डिजिटल रूबलची २,७०,००० खाती उघडली गेली असून त्यापैकी १५,००० कायदेशीर संस्था व वैयक्तिक उद्योजकांची आहेत. सुरुवातीला केंद्रीय बँकेच्या अपेक्षेपेक्षा रस जास्त होता, असे त्या म्हणाल्या. बँक ऑफ रशिया नोव्हेंबरअखेर सबस्क्रिप्शन सेवा सुरू करण्याची आणि २०२७ मध्ये डिजिटल रूबलमधील ऑफलाइन पेमेंटची चाचणी घेण्याची योजना आखत आहे.",
+    "fa": "به گزارش ریا نووستی، الویرا نابیولینا، رئیس بانک مرکزی روسیه، در کنفرانس خبری ۲۳ اکتبر ۲۰۲۶ گفت تعداد حساب‌های باز روبل دیجیتال به ۲۷۰ هزار رسیده که ۱۵ هزار مورد آن متعلق به اشخاص حقوقی و کارآفرینان انفرادی است. او گفت علاقه بیش از انتظار بانک مرکزی در زمان راه‌اندازی بوده است. بانک مرکزی روسیه قصد دارد تا پایان نوامبر سرویس اشتراک راه‌اندازی کند و در ۲۰۲۷ پرداخت‌های آفلاین با روبل دیجیتال را آزمایش کند.",
+    "uk": "Кількість відкритих рахунків цифрового рубля в Росії сягнула 270 тисяч, з них 15 тисяч належать юридичним особам та індивідуальним підприємцям, заявила голова Банку Росії Ельвіра Набіулліна на пресконференції 23 жовтня 2026 року, повідомляє РІА Новини. За її словами, інтерес виявився вищим, ніж центробанк очікував на старті. Банк Росії планує запустити сервіс підписок до кінця листопада та протестувати офлайн-платежі в цифрових рублях у 2027 році.",
+    "tr": "RIA Novosti'nin haberine göre Rusya Merkez Bankası Başkanı Elvira Nabiullina 23 Ekim 2026'daki basın toplantısında dijital rublenin 270 bin açık hesaba ulaştığını, bunların 15 bininin tüzel kişilere ve şahıs işletmelerine ait olduğunu söyledi. İlginin lansmanda merkez bankasının beklediğinden yüksek olduğunu belirtti. Rusya Merkez Bankası kasım sonuna kadar bir abonelik hizmeti başlatmayı ve 2027'de dijital rubleyle çevrim dışı ödemeleri test etmeyi planlıyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "692fd118e8ba",
    "url": "https://kryptovalutaguiden.se/2026/10/brasilien-pushar-fram-tokenisering-av-finansmarknaden-med-ai-och-blockchain",
    "title": "Brasilien pushar fram tokenisering av finansmarknaden med AI och blockchain",
-   "title_en": null,
+   "title_en": "Brazil's securities regulator launches pilot programme for testing tokenised securities",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -120,15 +181,73 @@
    "published": "2026-10-25T10:04:23+00:00",
    "fetched": "2026-10-26T02:48:44+00:00",
    "topics": [
-    "blockchain"
+    "tokenisation",
+    "regulation"
    ],
    "matched": [
     "\\bblockchain\\w*",
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Brazil's securities regulator CVM has created an experimental pilot programme for securities on distributed ledger technology (DLT) through Resolution 249, published on 14 October 2026. The programme will test issuing, offering, trading, custody and settlement of securities such as shares, debentures and fund units on DLT networks, but without real investors, real securities or real money, and it does not authorise any regulated activity. According to CVM, the results will feed into its tokenisation working group and possible future rules.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-26T04:55:00+01:00",
+   "primary_source": {
+    "name": "CVM – Resolução 249 cria o Programa Piloto DLT CVM (14 Oct 2026)",
+    "url": "https://www.gov.br/cvm/pt-br/assuntos/noticias/2026/resolucao-249-cria-o-programa-piloto-dlt-cvm"
+   },
+   "title_i18n": {
+    "nn": "Brasils verdipapirtilsyn startar pilot for testing av tokeniserte verdipapir",
+    "nb": "Brasils verdipapirtilsyn starter pilot for testing av tokeniserte verdipapirer",
+    "da": "Brasiliens værdipapirtilsyn starter pilot for test af tokeniserede værdipapirer",
+    "fi": "Brasilian arvopaperivalvoja käynnistää pilotin tokenisoitujen arvopapereiden testaamiseen",
+    "is": "Verðbréfaeftirlit Brasilíu hefur tilraunaverkefni um táknvædd verðbréf",
+    "zh": "巴西证券监管机构启动代币化证券测试试点",
+    "hi": "ब्राज़ील के प्रतिभूति नियामक ने टोकनाइज़्ड प्रतिभूतियों के परीक्षण का पायलट शुरू किया",
+    "es": "El regulador de valores de Brasil lanza un programa piloto para probar valores tokenizados",
+    "fr": "Le régulateur boursier brésilien lance un programme pilote pour tester des titres tokenisés",
+    "ar": "هيئة الأوراق المالية في البرازيل تطلق برنامجاً تجريبياً لاختبار الأوراق المالية المرمّزة",
+    "bn": "টোকেনাইজড সিকিউরিটিজ পরীক্ষায় পাইলট চালু করল ব্রাজিলের সিকিউরিটিজ নিয়ন্ত্রক",
+    "pt": "CVM lança programa piloto para testar valores mobiliários tokenizados",
+    "ru": "Регулятор рынка ценных бумаг Бразилии запустил пилот по тестированию токенизированных бумаг",
+    "ur": "برازیل کے سیکیورٹیز ریگولیٹر نے ٹوکنائزڈ سیکیورٹیز کی جانچ کا پائلٹ شروع کیا",
+    "id": "Regulator efek Brasil luncurkan program percontohan uji efek tertokenisasi",
+    "de": "Brasiliens Wertpapieraufsicht startet Pilotprogramm für tokenisierte Wertpapiere",
+    "ja": "ブラジル証券当局、トークン化証券の試験パイロットを開始",
+    "sw": "Mdhibiti wa dhamana wa Brazil azindua mpango wa majaribio wa dhamana zilizowekwa tokeni",
+    "mr": "ब्राझीलच्या रोखे नियामकाने टोकनाइज्ड रोख्यांच्या चाचणीसाठी पायलट सुरू केला",
+    "fa": "نهاد ناظر اوراق بهادار برزیل برنامه آزمایشی اوراق بهادار توکنیزه را آغاز کرد",
+    "uk": "Регулятор цінних паперів Бразилії запустив пілот для тестування токенізованих паперів",
+    "tr": "Brezilya sermaye piyasası düzenleyicisi tokenize menkul kıymetler için pilot program başlattı"
+   },
+   "title_i18n_source": "Brasilien pushar fram tokenisering av finansmarknaden med AI och blockchain",
+   "summary_i18n": {
+    "nn": "Det brasilianske verdipapirtilsynet CVM har oppretta eit eksperimentelt pilotprogram for verdipapir på distribuert registerteknologi (DLT) gjennom resolusjon 249, publisert 14. oktober 2026. Programmet skal teste utferding, tilbod, handel, forvaring og oppgjer av verdipapir som aksjar, obligasjonar og fondsdelar på DLT-nettverk, men utan verkelege investorar, verkelege verdipapir eller verkelege pengar, og det gir ikkje løyve til regulert verksemd. Ifølgje CVM skal resultata inngå i arbeidet til tokeniseringsgruppa og eventuelle framtidige reglar.",
+    "nb": "Det brasilianske verdipapirtilsynet CVM har opprettet et eksperimentelt pilotprogram for verdipapirer på distribuert registerteknologi (DLT) gjennom resolusjon 249, publisert 14. oktober 2026. Programmet skal teste utstedelse, tilbud, handel, forvaring og oppgjør av verdipapirer som aksjer, obligasjoner og fondsandeler på DLT-nettverk, men uten virkelige investorer, virkelige verdipapirer eller virkelige penger, og det gir ikke tillatelse til regulert virksomhet. Ifølge CVM skal resultatene inngå i arbeidet til tokeniseringsgruppen og eventuelle fremtidige regler.",
+    "sv": "Brasiliens värdepappersmyndighet CVM har inrättat ett experimentellt pilotprogram för värdepapper på distribuerad registerteknik (DLT) genom resolution 249, publicerad den 14 oktober 2026. Programmet ska testa emission, erbjudande, handel, förvaring och avveckling av värdepapper som aktier, obligationer och fondandelar på DLT-nätverk, men utan riktiga investerare, riktiga värdepapper eller riktiga pengar, och det ger inget tillstånd för reglerad verksamhet. Enligt CVM ska resultaten ingå i arbetsgruppen för tokenisering och eventuella framtida regler.",
+    "da": "Brasiliens værdipapirtilsyn CVM har oprettet et eksperimentelt pilotprogram for værdipapirer på distribueret registerteknologi (DLT) gennem resolution 249, offentliggjort den 14. oktober 2026. Programmet skal teste udstedelse, udbud, handel, opbevaring og afvikling af værdipapirer som aktier, obligationer og fondsandele på DLT-netværk, men uden rigtige investorer, rigtige værdipapirer eller rigtige penge, og det giver ikke tilladelse til reguleret virksomhed. Ifølge CVM skal resultaterne indgå i arbejdsgruppen for tokenisering og eventuelle fremtidige regler.",
+    "fi": "Brasilian arvopaperivalvoja CVM on perustanut päätöksellä 249, joka julkaistiin 14. lokakuuta 2026, kokeellisen pilottiohjelman hajautetulla tilikirjateknologialla (DLT) toteutettaville arvopapereille. Ohjelmassa testataan osakkeiden, joukkovelkakirjojen ja rahasto-osuuksien kaltaisten arvopapereiden liikkeeseenlaskua, tarjoamista, kaupankäyntiä, säilytystä ja selvitystä DLT-verkoissa ilman todellisia sijoittajia, arvopapereita tai rahaa, eikä se anna lupaa säänneltyyn toimintaan. CVM:n mukaan tulokset hyödynnetään tokenisointityöryhmässä ja mahdollisissa tulevissa säännöissä.",
+    "is": "Verðbréfaeftirlit Brasilíu, CVM, hefur sett á fót tilraunaverkefni um verðbréf á dreifðri færsluskrártækni (DLT) með ályktun 249, sem birt var 14. október 2026. Verkefnið á að prófa útgáfu, útboð, viðskipti, vörslu og uppgjör verðbréfa á borð við hlutabréf, skuldabréf og sjóðshluti á DLT-netum, en án raunverulegra fjárfesta, verðbréfa eða peninga, og það veitir ekki leyfi til leyfisskyldrar starfsemi. Að sögn CVM munu niðurstöðurnar nýtast vinnuhópi um táknvæðingu og mögulegum reglum síðar.",
+    "zh": "巴西证券监管机构CVM通过2026年10月14日公布的第249号决议，设立了基于分布式账本技术（DLT）的证券实验性试点计划。该计划将在DLT网络上测试股票、债券和基金份额等证券的发行、发售、交易、托管和结算，但不涉及真实投资者、真实证券或真实资金，也不授权任何受监管活动。CVM表示，结果将用于其代币化工作组及未来可能的规则制定。",
+    "hi": "ब्राज़ील के प्रतिभूति नियामक CVM ने 14 अक्टूबर 2026 को प्रकाशित संकल्प 249 के ज़रिए डिस्ट्रिब्यूटेड लेजर टेक्नोलॉजी (DLT) पर प्रतिभूतियों का एक प्रायोगिक पायलट कार्यक्रम बनाया है। इसमें DLT नेटवर्क पर शेयर, डिबेंचर और फ़ंड यूनिट जैसी प्रतिभूतियों के जारी करने, पेशकश, व्यापार, अभिरक्षा और निपटान का परीक्षण होगा, लेकिन असली निवेशकों, असली प्रतिभूतियों या असली पैसे के बिना, और यह किसी विनियमित गतिविधि की अनुमति नहीं देता। CVM के अनुसार परिणाम उसके टोकनाइज़ेशन कार्य समूह और संभावित भावी नियमों में काम आएँगे।",
+    "es": "La Comisión de Valores Mobiliarios de Brasil (CVM) ha creado un programa piloto experimental para valores en tecnología de registro distribuido (DLT) mediante la Resolución 249, publicada el 14 de octubre de 2026. El programa probará la emisión, oferta, negociación, custodia y liquidación de valores como acciones, obligaciones y participaciones de fondos en redes DLT, pero sin inversores, valores ni dinero reales, y no autoriza ninguna actividad regulada. Según la CVM, los resultados alimentarán su grupo de trabajo de tokenización y posibles normas futuras.",
+    "fr": "Le régulateur boursier brésilien CVM a créé un programme pilote expérimental pour les titres sur technologie de registre distribué (DLT) par la résolution 249, publiée le 14 octobre 2026. Le programme testera l'émission, l'offre, la négociation, la conservation et le règlement de titres comme des actions, des obligations et des parts de fonds sur des réseaux DLT, mais sans investisseurs, titres ni argent réels, et il n'autorise aucune activité réglementée. Selon la CVM, les résultats alimenteront son groupe de travail sur la tokenisation et d'éventuelles règles futures.",
+    "ar": "أنشأت هيئة الأوراق المالية البرازيلية CVM برنامجاً تجريبياً للأوراق المالية القائمة على تقنية السجلات الموزعة (DLT) بموجب القرار 249 المنشور في 14 أكتوبر 2026. وسيختبر البرنامج إصدار الأوراق المالية مثل الأسهم والسندات ووحدات الصناديق وطرحها وتداولها وحفظها وتسويتها على شبكات DLT، لكن دون مستثمرين أو أوراق مالية أو أموال حقيقية، ولا يمنح أي ترخيص لنشاط منظَّم. وبحسب الهيئة، ستُستخدم النتائج في عمل فريق الترميز وفي قواعد مستقبلية محتملة.",
+    "bn": "ব্রাজিলের সিকিউরিটিজ নিয়ন্ত্রক CVM ২০২৬ সালের ১৪ অক্টোবর প্রকাশিত রেজোলিউশন ২৪৯-এর মাধ্যমে ডিস্ট্রিবিউটেড লেজার প্রযুক্তি (DLT)-তে সিকিউরিটিজের একটি পরীক্ষামূলক পাইলট কর্মসূচি চালু করেছে। এতে DLT নেটওয়ার্কে শেয়ার, ডিবেঞ্চার ও ফান্ড ইউনিটের মতো সিকিউরিটিজ ইস্যু, অফার, লেনদেন, হেফাজত ও নিষ্পত্তি পরীক্ষা করা হবে, তবে আসল বিনিয়োগকারী, আসল সিকিউরিটিজ বা আসল অর্থ ছাড়াই, এবং এটি কোনো নিয়ন্ত্রিত কার্যক্রমের অনুমোদন দেয় না। CVM জানায়, ফলাফল তাদের টোকেনাইজেশন ওয়ার্কিং গ্রুপ ও ভবিষ্যৎ সম্ভাব্য নিয়মে কাজে লাগবে।",
+    "pt": "A Comissão de Valores Mobiliários (CVM) criou um programa piloto experimental para valores mobiliários em tecnologia de registo distribuído (DLT) através da Resolução 249, publicada a 14 de outubro de 2026. O programa vai testar emissão, oferta, negociação, custódia e liquidação de valores mobiliários como ações, debêntures e cotas de fundos em redes DLT, mas sem investidores, valores mobiliários ou dinheiro reais, e não autoriza qualquer atividade regulada. Segundo a CVM, os resultados vão alimentar o seu grupo de trabalho de tokenização e eventuais regras futuras.",
+    "ru": "Комиссия по ценным бумагам Бразилии (CVM) резолюцией 249, опубликованной 14 октября 2026 года, создала экспериментальную пилотную программу для ценных бумаг на технологии распределённого реестра (DLT). В рамках программы на DLT-сетях будут тестироваться выпуск, размещение, торговля, хранение и расчёты по таким бумагам, как акции, облигации и паи фондов, но без реальных инвесторов, реальных бумаг и реальных денег; программа не даёт разрешения на регулируемую деятельность. По данным CVM, результаты пойдут в работу её группы по токенизации и возможные будущие правила.",
+    "ur": "برازیل کے سیکیورٹیز ریگولیٹر CVM نے 14 اکتوبر 2026 کو شائع ہونے والی قرارداد 249 کے ذریعے ڈسٹری بیوٹڈ لیجر ٹیکنالوجی (DLT) پر سیکیورٹیز کا ایک تجرباتی پائلٹ پروگرام قائم کیا ہے۔ اس میں DLT نیٹ ورکس پر حصص، ڈبینچرز اور فنڈ یونٹس جیسی سیکیورٹیز کے اجرا، پیشکش، تجارت، تحویل اور تصفیے کی جانچ ہوگی، مگر حقیقی سرمایہ کاروں، حقیقی سیکیورٹیز یا حقیقی رقم کے بغیر، اور یہ کسی ریگولیٹڈ سرگرمی کی اجازت نہیں دیتا۔ CVM کے مطابق نتائج اس کے ٹوکنائزیشن ورکنگ گروپ اور ممکنہ مستقبل کے قواعد میں استعمال ہوں گے۔",
+    "id": "Regulator efek Brasil CVM membentuk program percontohan eksperimental untuk efek berbasis teknologi buku besar terdistribusi (DLT) melalui Resolusi 249 yang diterbitkan 14 Oktober 2026. Program ini akan menguji penerbitan, penawaran, perdagangan, kustodi, dan penyelesaian efek seperti saham, obligasi, dan unit reksa dana di jaringan DLT, tetapi tanpa investor, efek, atau uang sungguhan, dan tidak memberi izin untuk kegiatan yang diatur. Menurut CVM, hasilnya akan menjadi masukan bagi kelompok kerja tokenisasi dan kemungkinan aturan di masa depan.",
+    "de": "Brasiliens Wertpapieraufsicht CVM hat mit der am 14. Oktober 2026 veröffentlichten Resolution 249 ein experimentelles Pilotprogramm für Wertpapiere auf Distributed-Ledger-Technologie (DLT) geschaffen. Darin sollen Emission, Angebot, Handel, Verwahrung und Abwicklung von Wertpapieren wie Aktien, Anleihen und Fondsanteilen auf DLT-Netzwerken getestet werden, jedoch ohne echte Anleger, echte Wertpapiere oder echtes Geld; eine Erlaubnis für regulierte Tätigkeiten ist damit nicht verbunden. Laut CVM fließen die Ergebnisse in ihre Arbeitsgruppe zur Tokenisierung und mögliche künftige Regeln ein.",
+    "ja": "ブラジル証券取引委員会（CVM）は、2026年10月14日公表の決議249により、分散型台帳技術（DLT）上の証券に関する実験的なパイロットプログラムを創設した。株式、社債、ファンド持分などの証券の発行、募集、取引、保管、決済をDLTネットワーク上で試験するが、実際の投資家や証券、資金は使わず、規制対象業務を認めるものでもない。CVMによると、結果はトークン化作業部会や将来の規則づくりに生かされる。",
+    "sw": "Mdhibiti wa dhamana wa Brazil, CVM, ameanzisha mpango wa majaribio wa dhamana kwenye teknolojia ya leja iliyosambazwa (DLT) kupitia Azimio 249, lililochapishwa tarehe 14 Oktoba 2026. Mpango huo utajaribu utoaji, uuzaji, biashara, uhifadhi na ulipaji wa dhamana kama hisa, hati fungani na vipande vya mifuko kwenye mitandao ya DLT, lakini bila wawekezaji, dhamana au pesa halisi, na hautoi idhini kwa shughuli yoyote inayodhibitiwa. Kwa mujibu wa CVM, matokeo yatatumika katika kikundi kazi cha uwekaji tokeni na kanuni zinazowezekana siku zijazo.",
+    "mr": "ब्राझीलचे रोखे नियामक CVM यांनी १४ ऑक्टोबर २०२६ रोजी प्रसिद्ध केलेल्या ठराव २४९ द्वारे डिस्ट्रिब्युटेड लेजर तंत्रज्ञानावरील (DLT) रोख्यांसाठी प्रायोगिक पायलट कार्यक्रम तयार केला आहे. यात DLT नेटवर्कवर शेअर्स, डिबेंचर आणि फंड युनिट्ससारख्या रोख्यांचे वितरण, प्रस्ताव, व्यापार, ताबा आणि निपटारा तपासला जाईल, मात्र खरे गुंतवणूकदार, खरे रोखे किंवा खरे पैसे न वापरता, आणि त्याने कोणत्याही नियमन केलेल्या व्यवहाराला परवानगी मिळत नाही. CVM नुसार निकाल त्यांच्या टोकनायझेशन कार्यगटाला आणि संभाव्य भावी नियमांना उपयोगी पडतील.",
+    "fa": "نهاد ناظر اوراق بهادار برزیل (CVM) با مصوبه ۲۴۹ که ۱۴ اکتبر ۲۰۲۶ منتشر شد، یک برنامه آزمایشی برای اوراق بهادار بر بستر فناوری دفتر کل توزیع‌شده (DLT) ایجاد کرده است. در این برنامه انتشار، عرضه، معامله، نگهداری و تسویه اوراقی مانند سهام، اوراق قرضه و واحدهای صندوق روی شبکه‌های DLT آزمایش می‌شود، اما بدون سرمایه‌گذار، اوراق یا پول واقعی، و هیچ مجوزی برای فعالیت تحت نظارت نمی‌دهد. به گفته CVM، نتایج در کار گروه توکنیزه‌سازی و قواعد احتمالی آینده به کار می‌رود.",
+    "uk": "Комісія з цінних паперів Бразилії (CVM) резолюцією 249, опублікованою 14 жовтня 2026 року, створила експериментальну пілотну програму для цінних паперів на технології розподіленого реєстру (DLT). У її межах на DLT-мережах тестуватимуть випуск, розміщення, торгівлю, зберігання й розрахунки за такими паперами, як акції, облігації та паї фондів, але без реальних інвесторів, реальних паперів і реальних грошей; програма не дає дозволу на регульовану діяльність. За даними CVM, результати використають у роботі її групи з токенізації та можливих майбутніх правилах.",
+    "tr": "Brezilya sermaye piyasası düzenleyicisi CVM, 14 Ekim 2026'da yayımlanan 249 sayılı kararla dağıtık defter teknolojisi (DLT) üzerindeki menkul kıymetler için deneysel bir pilot program oluşturdu. Program, hisse, tahvil ve fon payı gibi menkul kıymetlerin DLT ağlarında ihracını, arzını, alım satımını, saklanmasını ve takasını test edecek; ancak gerçek yatırımcı, gerçek menkul kıymet ya da gerçek para kullanılmayacak ve düzenlenmiş hiçbir faaliyete izin verilmiyor. CVM'ye göre sonuçlar tokenizasyon çalışma grubuna ve olası gelecekteki kurallara girdi sağlayacak."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2ef8cbe95bb4",
@@ -153,8 +272,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Betting/leveraged trading content. researcher 26.10"
   },
   {
    "id": "04db212b5d85",
@@ -290,7 +410,31 @@
     "tr": "Times of Israel ve i24NEWS'e göre İsrail Başbakanı Binyamin Netanyahu 23 Ekim 2026'daki bir televizyon röportajında İsrail'in olası uluslararası bankacılık yaptırımlarına hazırlanması gerektiğini söyledi; röportajı yapan kripto önerince buna katıldı ve danışmanlarından yaptırımları aşmak için blokzincir kullanımına dair bir plan istediğini belirtti. Ynetnews'e göre İsrail Merkez Bankası kripto paraların yaptırımları aşmanın aracı olamayacağını söyledi, bakanlıklar da böyle bir plandan haberdar olmadıklarını açıkladı. Eleştirilerin ardından Netanyahu bunları dikkate alacağını ama en iyisi olduğunu düşündüğü şeyi yapacağını söyledi; İsveç gazetesi Dagens Nyheter eleştirileri haberleştirdi.",
     "se": "Israela stáhtaministtar Benjamin Netanyahu dajai TV-jearahallamis golggotmánu 23. b. 2026 ahte Israel berre ráhkkanit vejolaš riikkaidgaskasaš báŋkosankšuvnnaide, ja guorrasii dalle go jearahalli evttohii crypto ja dajai son lei bivdán ráđđeaddiid ráhkadit plána geavahit blockchain beassat daid birra, The Times of Israel ja i24NEWS mielde. Israela báŋku vástidii ahte kryptovaluttat eai sáhte geavahuvvot sankšuvnnaid garvimii, ja ministeriijat dadje ahte eai diehtán dakkár plána birra, dieđiha Ynetnews. Maŋŋil dán moaitama dajai Netanyahu ahte son váldá dan vuhtii, muhto son áigu dahkat dan mii su mielas lea buoremus. Ruoŧŧilaš beaivválaš aviisa Dagens Nyheter čálii dán moaitámuša birra."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "e24",
+     "outlet_name": "E24",
+     "url": "https://e24.no/boers-og-finans/i/WgP8Rr/netanyahu-vil-bruke-krypto-for-aa-unngaa-sanksjoner-faar-kraftig-kritikk",
+     "title": "Strid om kryptoplan: Frykter at Israel blir økonomisk paria",
+     "published": "2026-10-25T11:16:30+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/nyheter/vaxande-kritik-mot-netanyahus-kryptoplan",
+     "title": "Växande kritik mot Netanyahus kryptoplan",
+     "published": "2026-10-25T14:59:27+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
   },
   {
    "id": "f8324ec4557d",
@@ -325,7 +469,7 @@
    "id": "dab17e5b9c99",
    "url": "https://kryptovalutaguiden.se/2026/10/circle-aktieagare-stammer-donald-trump-pa-2-miljarder-for-uae-affarer",
    "title": "Circle-aktieägare stämmer Donald Trump på $2 miljarder för UAE affärer…",
-   "title_en": null,
+   "title_en": "Circle shareholder sues Trump and World Liberty Financial over UAE-linked crypto deals",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -337,12 +481,71 @@
    "published": "2026-10-23T12:32:06+00:00",
    "fetched": "2026-10-26T02:48:44+00:00",
    "topics": [
-    "regulation"
+    "stablecoins",
+    "crime",
+    "policy"
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "A shareholder of stablecoin issuer Circle filed a derivative lawsuit on the company's behalf on 22 October 2026 in the US District Court for the District of Columbia against Donald Trump, World Liberty Financial, US envoy Steve Witkoff and related companies. The complaint alleges that two UAE-linked deals – a $500 million purchase of a 49% stake in World Liberty and the Abu Dhabi fund MGX's $2 billion investment in Binance settled in World Liberty's USD1 stablecoin – violated the US Constitution's Foreign Emoluments Clause and diverted business from Circle's USDC. These are allegations in a lawsuit, and no court has ruled on them.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-26T04:55:00+01:00",
+   "primary_source": {
+    "name": "Complaint, U.S. District Court for the District of Columbia, case 1:26-cv-03686, filed 22 Oct 2026 (via CourtListener)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.297877/gov.uscourts.dcd.297877.1.0.pdf"
+   },
+   "title_i18n": {
+    "nn": "Circle-aksjonær saksøkjer Trump og World Liberty Financial over kryptoavtalar med tilknyting til UAE",
+    "nb": "Circle-aksjonær saksøker Trump og World Liberty Financial over kryptoavtaler med tilknytning til UAE",
+    "da": "Circle-aktionær sagsøger Trump og World Liberty Financial over kryptoaftaler med tilknytning til UAE",
+    "fi": "Circlen osakkeenomistaja haastaa Trumpin ja World Liberty Financialin oikeuteen Arabiemiirikuntiin liittyvistä kryptokaupoista",
+    "is": "Hluthafi í Circle stefnir Trump og World Liberty Financial vegna rafmyntasamninga tengdra SAF",
+    "zh": "Circle股东就涉阿联酋加密交易起诉特朗普和World Liberty Financial",
+    "hi": "UAE से जुड़े क्रिप्टो सौदों पर Circle के शेयरधारक ने ट्रंप और World Liberty Financial पर मुक़दमा किया",
+    "es": "Un accionista de Circle demanda a Trump y World Liberty Financial por acuerdos cripto vinculados a EAU",
+    "fr": "Un actionnaire de Circle poursuit Trump et World Liberty Financial pour des accords crypto liés aux EAU",
+    "ar": "مساهم في Circle يقاضي ترامب وWorld Liberty Financial بسبب صفقات عملات مشفرة مرتبطة بالإمارات",
+    "bn": "আমিরাত-সংশ্লিষ্ট ক্রিপ্টো চুক্তি নিয়ে ট্রাম্প ও World Liberty Financial-এর বিরুদ্ধে Circle শেয়ারহোল্ডারের মামলা",
+    "pt": "Acionista da Circle processa Trump e a World Liberty Financial por negócios cripto ligados aos EAU",
+    "ru": "Акционер Circle подал иск против Трампа и World Liberty Financial из-за криптосделок, связанных с ОАЭ",
+    "ur": "امارات سے منسلک کرپٹو سودوں پر Circle کے شیئر ہولڈر کا ٹرمپ اور World Liberty Financial کے خلاف مقدمہ",
+    "id": "Pemegang saham Circle gugat Trump dan World Liberty Financial atas kesepakatan kripto terkait UEA",
+    "de": "Circle-Aktionär verklagt Trump und World Liberty Financial wegen Krypto-Deals mit VAE-Bezug",
+    "ja": "Circle株主、UAE関連の暗号資産取引巡りトランプ氏とWorld Liberty Financialを提訴",
+    "sw": "Mwanahisa wa Circle amshtaki Trump na World Liberty Financial kuhusu mikataba ya kripto inayohusiana na UAE",
+    "mr": "UAE शी संबंधित क्रिप्टो व्यवहारांवरून Circle भागधारकाचा ट्रम्प व World Liberty Financial विरुद्ध खटला",
+    "fa": "سهامدار Circle به‌خاطر معاملات رمزارزی مرتبط با امارات از ترامپ و World Liberty Financial شکایت کرد",
+    "uk": "Акціонер Circle подав позов проти Трампа та World Liberty Financial через криптоугоди, пов'язані з ОАЕ",
+    "tr": "Circle hissedarı, BAE bağlantılı kripto anlaşmaları nedeniyle Trump ve World Liberty Financial'a dava açtı"
+   },
+   "title_i18n_source": "Circle-aktieägare stämmer Donald Trump på $2 miljarder för UAE affärer…",
+   "summary_i18n": {
+    "nn": "Ein aksjonær i stablecoin-utferdaren Circle leverte 22. oktober 2026 eit avleidd søksmål på vegner av selskapet i den føderale domstolen i District of Columbia mot Donald Trump, World Liberty Financial, det amerikanske sendebodet Steve Witkoff og tilknytte selskap. Stemninga hevdar at to avtalar med tilknyting til Dei sameinte arabiske emirata – kjøpet av 49 prosent av World Liberty for 500 millionar dollar og Abu Dhabi-fondet MGX si investering på 2 milliardar dollar i Binance, gjord opp i World Libertys stablecoin USD1 – braut grunnlova sitt forbod mot utanlandske ytingar og tok forretningar frå Circles USDC. Dette er påstandar i eit søksmål, og ingen domstol har teke stilling til dei.",
+    "nb": "En aksjonær i stablecoin-utstederen Circle leverte 22. oktober 2026 et avledet søksmål på vegne av selskapet i den føderale domstolen i District of Columbia mot Donald Trump, World Liberty Financial, det amerikanske sendebudet Steve Witkoff og tilknyttede selskaper. Stevningen hevder at to avtaler med tilknytning til De forente arabiske emirater – kjøpet av 49 prosent av World Liberty for 500 millioner dollar og Abu Dhabi-fondet MGX' investering på 2 milliarder dollar i Binance, gjort opp i World Libertys stablecoin USD1 – brøt grunnlovens forbud mot utenlandske ytelser og tok forretninger fra Circles USDC. Dette er påstander i et søksmål, og ingen domstol har tatt stilling til dem.",
+    "sv": "En aktieägare i stablecoin-utgivaren Circle lämnade den 22 oktober 2026 in en härledd talan för bolagets räkning i den federala domstolen i District of Columbia mot Donald Trump, World Liberty Financial, det amerikanska sändebudet Steve Witkoff och närstående bolag. Stämningen hävdar att två affärer med koppling till Förenade Arabemiraten – köpet av 49 procent av World Liberty för 500 miljoner dollar och Abu Dhabi-fonden MGX investering på 2 miljarder dollar i Binance, reglerad i World Libertys stablecoin USD1 – bröt mot konstitutionens förbud mot utländska förmåner och tog affärer från Circles USDC. Det rör sig om påståenden i en stämning, och ingen domstol har prövat dem.",
+    "da": "En aktionær i stablecoin-udstederen Circle anlagde den 22. oktober 2026 et afledt søgsmål på selskabets vegne ved den føderale domstol i District of Columbia mod Donald Trump, World Liberty Financial, den amerikanske udsending Steve Witkoff og tilknyttede selskaber. Stævningen hævder, at to aftaler med tilknytning til De Forenede Arabiske Emirater – købet af 49 procent af World Liberty for 500 millioner dollar og Abu Dhabi-fonden MGX' investering på 2 milliarder dollar i Binance, afregnet i World Libertys stablecoin USD1 – overtrådte forfatningens forbud mod udenlandske ydelser og tog forretning fra Circles USDC. Der er tale om påstande i et søgsmål, og ingen domstol har taget stilling til dem.",
+    "fi": "Vakaakolikon liikkeeseenlaskija Circlen osakkeenomistaja nosti 22. lokakuuta 2026 yhtiön puolesta johdetun kanteen District of Columbian liittovaltion tuomioistuimessa Donald Trumpia, World Liberty Financialia, Yhdysvaltain erityislähettiläs Steve Witkoffia ja niihin liittyviä yhtiöitä vastaan. Kanteen mukaan kaksi Arabiemiirikuntiin liittyvää kauppaa – 49 prosentin osuuden osto World Libertystä 500 miljoonalla dollarilla ja Abu Dhabin MGX-rahaston 2 miljardin dollarin sijoitus Binanceen World Libertyn USD1-vakaakolikolla maksettuna – rikkoivat perustuslain ulkomaisia etuja koskevaa kieltoa ja veivät liiketoimintaa Circlen USDC:ltä. Kyse on kanteen väitteistä, eikä mikään tuomioistuin ole ratkaissut niitä.",
+    "is": "Hluthafi í Circle, útgefanda stöðugleikamyntar, höfðaði 22. október 2026 afleitt mál fyrir hönd félagsins við alríkisdómstólinn í District of Columbia gegn Donald Trump, World Liberty Financial, bandaríska sendifulltrúanum Steve Witkoff og tengdum félögum. Í stefnunni er því haldið fram að tveir samningar tengdir Sameinuðu arabísku furstadæmunum – kaup á 49 % hlut í World Liberty fyrir 500 milljónir dala og 2 milljarða dala fjárfesting Abú Dabí-sjóðsins MGX í Binance, greidd í USD1-stöðugleikamynt World Liberty – hafi brotið gegn banni stjórnarskrárinnar við erlendum greiðslum og tekið viðskipti frá USDC frá Circle. Um er að ræða fullyrðingar í dómsmáli og enginn dómstóll hefur skorið úr þeim.",
+    "zh": "稳定币发行商Circle的一名股东于2026年10月22日代表公司在美国哥伦比亚特区联邦地区法院提起派生诉讼，被告包括唐纳德·特朗普、World Liberty Financial、美国特使史蒂夫·威特科夫及相关公司。诉状称，两笔与阿联酋有关的交易——以5亿美元收购World Liberty 49%股份，以及阿布扎比基金MGX以World Liberty的稳定币USD1结算对Binance的20亿美元投资——违反了美国宪法的外国薪酬条款，并使Circle的USDC失去业务。这些是诉讼中的指控，尚无法院作出裁决。",
+    "hi": "स्टेबलकॉइन जारीकर्ता Circle के एक शेयरधारक ने 22 अक्टूबर 2026 को कंपनी की ओर से अमेरिकी डिस्ट्रिक्ट कोर्ट (डिस्ट्रिक्ट ऑफ़ कोलंबिया) में डोनाल्ड ट्रंप, World Liberty Financial, अमेरिकी दूत स्टीव विटकॉफ़ और संबंधित कंपनियों के ख़िलाफ़ व्युत्पन्न मुक़दमा दायर किया। शिकायत का आरोप है कि UAE से जुड़े दो सौदे — World Liberty की 49% हिस्सेदारी की 50 करोड़ डॉलर में ख़रीद और अबू धाबी फ़ंड MGX का Binance में 2 अरब डॉलर का निवेश, जिसका निपटान World Liberty के USD1 स्टेबलकॉइन में हुआ — अमेरिकी संविधान के विदेशी लाभ खंड का उल्लंघन थे और Circle के USDC से कारोबार छीन लिया। ये मुक़दमे के आरोप हैं, और किसी अदालत ने इन पर फ़ैसला नहीं दिया है।",
+    "es": "Un accionista del emisor de stablecoins Circle presentó el 22 de octubre de 2026 una demanda derivada en nombre de la empresa ante el tribunal federal del Distrito de Columbia contra Donald Trump, World Liberty Financial, el enviado estadounidense Steve Witkoff y empresas vinculadas. La demanda alega que dos acuerdos vinculados a Emiratos Árabes Unidos —la compra del 49 % de World Liberty por 500 millones de dólares y la inversión de 2.000 millones de dólares del fondo de Abu Dabi MGX en Binance, liquidada con la stablecoin USD1 de World Liberty— violaron la cláusula de emolumentos extranjeros de la Constitución y restaron negocio al USDC de Circle. Son acusaciones de una demanda y ningún tribunal se ha pronunciado sobre ellas.",
+    "fr": "Un actionnaire de l'émetteur de stablecoins Circle a déposé le 22 octobre 2026, au nom de la société, une action dérivée devant le tribunal fédéral du district de Columbia contre Donald Trump, World Liberty Financial, l'envoyé américain Steve Witkoff et des sociétés liées. La plainte affirme que deux opérations liées aux Émirats arabes unis — l'achat de 49 % de World Liberty pour 500 millions de dollars et l'investissement de 2 milliards de dollars du fonds d'Abou Dhabi MGX dans Binance, réglé en stablecoin USD1 de World Liberty — ont violé la clause constitutionnelle sur les émoluments étrangers et privé l'USDC de Circle d'activité. Il s'agit d'allégations dans une plainte, et aucun tribunal ne s'est prononcé.",
+    "ar": "رفع مساهم في شركة Circle المصدرة للعملات المستقرة في 22 أكتوبر 2026 دعوى مشتقة نيابة عن الشركة أمام المحكمة الفيدرالية في مقاطعة كولومبيا ضد دونالد ترامب وWorld Liberty Financial والمبعوث الأمريكي ستيف ويتكوف وشركات مرتبطة. وتزعم الدعوى أن صفقتين مرتبطتين بالإمارات — شراء 49% من World Liberty مقابل 500 مليون دولار، واستثمار صندوق MGX في أبوظبي بملياري دولار في Binance سُوّي بعملة USD1 المستقرة التابعة لـWorld Liberty — انتهكتا بند المكافآت الأجنبية في الدستور الأمريكي وحرمتا عملة USDC من Circle من أعمال. هذه ادعاءات في دعوى قضائية ولم تبتّ فيها أي محكمة.",
+    "bn": "স্টেবলকয়েন ইস্যুকারী Circle-এর একজন শেয়ারহোল্ডার ২০২৬ সালের ২২ অক্টোবর কোম্পানির পক্ষে ডিস্ট্রিক্ট অব কলাম্বিয়ার মার্কিন ফেডারেল আদালতে ডোনাল্ড ট্রাম্প, World Liberty Financial, মার্কিন দূত স্টিভ উইটকফ ও সংশ্লিষ্ট কোম্পানির বিরুদ্ধে ডেরিভেটিভ মামলা করেছেন। অভিযোগে বলা হয়েছে, আমিরাত-সংশ্লিষ্ট দুটি চুক্তি — ৫০ কোটি ডলারে World Liberty-র ৪৯% শেয়ার কেনা এবং আবুধাবির তহবিল MGX-এর Binance-এ ২০০ কোটি ডলারের বিনিয়োগ, যা World Liberty-র USD1 স্টেবলকয়েনে নিষ্পত্তি হয় — মার্কিন সংবিধানের বিদেশি সুবিধা ধারা লঙ্ঘন করেছে এবং Circle-এর USDC থেকে ব্যবসা সরিয়ে নিয়েছে। এগুলো মামলার অভিযোগ, কোনো আদালত এখনো রায় দেয়নি।",
+    "pt": "Um acionista da emissora de stablecoins Circle apresentou a 22 de outubro de 2026, em nome da empresa, uma ação derivada no tribunal federal do Distrito de Columbia contra Donald Trump, a World Liberty Financial, o enviado norte-americano Steve Witkoff e empresas ligadas. A ação alega que dois negócios ligados aos Emirados Árabes Unidos — a compra de 49 % da World Liberty por 500 milhões de dólares e o investimento de 2 mil milhões de dólares do fundo de Abu Dhabi MGX na Binance, liquidado na stablecoin USD1 da World Liberty — violaram a cláusula constitucional sobre emolumentos estrangeiros e desviaram negócio do USDC da Circle. São alegações numa ação judicial e nenhum tribunal se pronunciou.",
+    "ru": "Акционер эмитента стейблкоинов Circle 22 октября 2026 года подал от имени компании производный иск в федеральный суд округа Колумбия против Дональда Трампа, World Liberty Financial, спецпосланника США Стива Уиткоффа и связанных компаний. В иске утверждается, что две сделки, связанные с ОАЭ, — покупка 49 % World Liberty за 500 млн долларов и инвестиция абудабийского фонда MGX в Binance на 2 млрд долларов, проведённая в стейблкоине World Liberty USD1, — нарушили конституционный запрет на иностранные вознаграждения и отняли бизнес у USDC от Circle. Это утверждения в иске, и ни один суд их не рассматривал.",
+    "ur": "اسٹیبل کوائن جاری کرنے والی کمپنی Circle کے ایک شیئر ہولڈر نے 22 اکتوبر 2026 کو کمپنی کی جانب سے ڈسٹرکٹ آف کولمبیا کی امریکی وفاقی عدالت میں ڈونلڈ ٹرمپ، World Liberty Financial، امریکی ایلچی اسٹیو وٹکوف اور متعلقہ کمپنیوں کے خلاف ماخوذ مقدمہ دائر کیا۔ شکایت میں الزام ہے کہ امارات سے منسلک دو سودے — World Liberty کے 49 فیصد حصص کی 50 کروڑ ڈالر میں خریداری اور ابوظہبی فنڈ MGX کی Binance میں 2 ارب ڈالر کی سرمایہ کاری، جس کا تصفیہ World Liberty کے USD1 اسٹیبل کوائن میں ہوا — امریکی آئین کی غیر ملکی مراعات کی شق کی خلاف ورزی تھے اور Circle کے USDC سے کاروبار چھین لیا۔ یہ مقدمے کے الزامات ہیں اور کسی عدالت نے ان پر فیصلہ نہیں دیا۔",
+    "id": "Seorang pemegang saham penerbit stablecoin Circle mengajukan gugatan derivatif atas nama perusahaan pada 22 Oktober 2026 di pengadilan federal Distrik Columbia terhadap Donald Trump, World Liberty Financial, utusan AS Steve Witkoff, dan perusahaan terkait. Gugatan itu menuduh dua kesepakatan terkait UEA — pembelian 49 % saham World Liberty senilai 500 juta dolar AS dan investasi 2 miliar dolar AS dana Abu Dhabi MGX di Binance yang diselesaikan dengan stablecoin USD1 milik World Liberty — melanggar klausul emolumen asing Konstitusi AS dan mengalihkan bisnis dari USDC milik Circle. Ini adalah tuduhan dalam gugatan, dan belum ada putusan pengadilan.",
+    "de": "Ein Aktionär des Stablecoin-Emittenten Circle hat am 22. Oktober 2026 im Namen des Unternehmens eine abgeleitete Klage beim Bundesgericht im District of Columbia gegen Donald Trump, World Liberty Financial, den US-Sondergesandten Steve Witkoff und verbundene Firmen eingereicht. Die Klage behauptet, zwei Geschäfte mit VAE-Bezug – der Kauf von 49 % an World Liberty für 500 Millionen Dollar und die in World Libertys Stablecoin USD1 abgewickelte 2-Milliarden-Dollar-Investition des Abu-Dhabi-Fonds MGX in Binance – hätten gegen die Emoluments-Klausel der US-Verfassung verstoßen und Circles USDC Geschäft entzogen. Es handelt sich um Vorwürfe in einer Klage; ein Gericht hat darüber nicht entschieden.",
+    "ja": "ステーブルコイン発行会社Circleの株主が2026年10月22日、同社に代わる代表訴訟をコロンビア特別区連邦地裁に起こし、トランプ氏、World Liberty Financial、スティーブ・ウィトコフ米特使、関連会社を訴えた。訴状は、UAE関連の2件の取引——World Libertyの株式49%を5億ドルで取得した件と、アブダビのファンドMGXによるBinanceへの20億ドルの投資をWorld LibertyのステーブルコインUSD1で決済した件——が米憲法の外国報酬条項に違反し、CircleのUSDCから事業を奪ったと主張している。これらは訴訟上の主張で、裁判所の判断は出ていない。",
+    "sw": "Mwanahisa wa Circle, mtoaji wa stablecoin, aliwasilisha tarehe 22 Oktoba 2026 kesi ya niaba ya kampuni katika Mahakama ya Shirikisho ya Wilaya ya Columbia dhidi ya Donald Trump, World Liberty Financial, mjumbe wa Marekani Steve Witkoff na kampuni zinazohusiana. Kesi inadai kuwa mikataba miwili inayohusiana na UAE — ununuzi wa asilimia 49 ya World Liberty kwa dola milioni 500 na uwekezaji wa dola bilioni 2 wa mfuko wa Abu Dhabi MGX katika Binance uliolipwa kwa stablecoin ya World Liberty USD1 — ilikiuka kifungu cha Katiba ya Marekani kuhusu manufaa ya kigeni na kuondoa biashara kutoka USDC ya Circle. Haya ni madai katika kesi, na hakuna mahakama iliyotoa uamuzi.",
+    "mr": "स्टेबलकॉइन जारी करणाऱ्या Circle च्या एका भागधारकाने २२ ऑक्टोबर २०२६ रोजी कंपनीच्या वतीने डिस्ट्रिक्ट ऑफ कोलंबियाच्या अमेरिकन संघीय न्यायालयात डोनाल्ड ट्रम्प, World Liberty Financial, अमेरिकन दूत स्टीव्ह विटकॉफ आणि संबंधित कंपन्यांविरुद्ध व्युत्पन्न खटला दाखल केला. तक्रारीत आरोप आहे की UAE शी संबंधित दोन व्यवहार — World Liberty मधील ४९% हिस्सा ५० कोटी डॉलरला खरेदी आणि अबुधाबी फंड MGX ची Binance मधील २ अब्ज डॉलरची गुंतवणूक, जिचा निपटारा World Liberty च्या USD1 स्टेबलकॉइनमध्ये झाला — अमेरिकन संविधानातील परकीय लाभ कलमाचे उल्लंघन करणारे होते आणि त्यांनी Circle च्या USDC चा व्यवसाय हिरावला. हे खटल्यातील आरोप आहेत आणि कोणत्याही न्यायालयाने त्यावर निर्णय दिलेला नाही.",
+    "fa": "یکی از سهامداران Circle، ناشر استیبل‌کوین، در ۲۲ اکتبر ۲۰۲۶ از طرف شرکت دعوای مشتقه‌ای در دادگاه فدرال ناحیه کلمبیا علیه دونالد ترامپ، World Liberty Financial، استیو ویتکاف فرستاده آمریکا و شرکت‌های مرتبط اقامه کرد. در شکایت ادعا شده دو معامله مرتبط با امارات — خرید ۴۹ درصد World Liberty به مبلغ ۵۰۰ میلیون دلار و سرمایه‌گذاری ۲ میلیارد دلاری صندوق ابوظبی MGX در Binance که با استیبل‌کوین USD1 متعلق به World Liberty تسویه شد — بند پاداش‌های خارجی قانون اساسی آمریکا را نقض کرده و کسب‌وکار را از USDC متعلق به Circle گرفته است. این‌ها ادعاهای یک دعوای حقوقی است و هیچ دادگاهی درباره آن‌ها حکم نداده است.",
+    "uk": "Акціонер емітента стейблкоїнів Circle 22 жовтня 2026 року подав від імені компанії похідний позов до федерального суду округу Колумбія проти Дональда Трампа, World Liberty Financial, спецпосланця США Стіва Віткоффа та пов'язаних компаній. У позові стверджується, що дві угоди, пов'язані з ОАЕ, — купівля 49 % World Liberty за 500 млн доларів та інвестиція абудабійського фонду MGX у Binance на 2 млрд доларів, проведена у стейблкоїні World Liberty USD1, — порушили конституційну заборону на іноземні винагороди й відібрали бізнес у USDC від Circle. Це твердження в позові, і жоден суд їх не розглядав.",
+    "tr": "Stablecoin ihraççısı Circle'ın bir hissedarı, 22 Ekim 2026'da şirket adına Columbia Bölgesi federal mahkemesinde Donald Trump, World Liberty Financial, ABD özel temsilcisi Steve Witkoff ve bağlantılı şirketlere karşı türev dava açtı. Dava, BAE bağlantılı iki anlaşmanın — World Liberty'nin yüzde 49'unun 500 milyon dolara satın alınması ve Abu Dabi fonu MGX'in Binance'e World Liberty'nin USD1 stablecoin'iyle ödenen 2 milyar dolarlık yatırımı — ABD Anayasası'nın yabancı menfaat hükmünü ihlal ettiğini ve Circle'ın USDC'sinden iş götürdüğünü iddia ediyor. Bunlar bir davadaki iddialar olup henüz hiçbir mahkeme karar vermedi."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2953291cb08a",
