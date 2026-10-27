@@ -496,6 +496,127 @@
      "reason": "Predatory conference listing. Greenland search hits on this host were not opened and not included."
     }
    ]
+  },
+  {
+   "retrieved_at": "2026-10-27T10:30:00+00:00",
+   "included": 2,
+   "by_country": {
+    "NO": 19,
+    "SE": 7,
+    "DK": 4,
+    "FI": 8,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 2,
+    "2017": 3,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 4,
+    "2026": 10,
+    "2016": 3,
+    "2019": 2,
+    "2024": 1,
+    "2015": 2
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 3,
+     "2015": 1,
+     "2019": 1
+    },
+    "SE": {
+     "2017": 1,
+     "2014": 1,
+     "2015": 1,
+     "2026": 2,
+     "2018": 1,
+     "2023": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Two previous events from the organiser's own pages. The University of Gothenburg states the book launch on 20 June 2023 at 15:00–17:00 in C33, Handelshögskolan, Vasagatan 1, Göteborg, arranged by Institutionen för ekonomi och samhälle. Skatteetaten states the crypto seminar on Tuesday 28 October 2025 at 10–16 at Mesh Youngstorget in Oslo. The press page does not give a street number, so none was added. The registration page's mingling hour after 16:00 was not used as the end. The two KÅKÅ sessions on 24 October 2026 are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were not searched again as a fresh results page this run; no dated public event there was added. The counts below are the whole archive, so the file check can read them. Two events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://www.gu.se/evenemang/bokslapp-en-samhallsvetenskaplig-introduktion-till-bitcoin-och-kryptovalutor",
+    "https://www.skatteetaten.no/presse/nyhetsrommet/skatteetaten-inviterer-til-kryptoseminar/",
+    "Faroe Islands, Greenland and Åland: not a fresh results page this run"
+   ],
+   "sources_used": [
+    "Göteborgs universitet",
+    "Skatteetaten"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Barnas KÅKÅnomics and Har bankene kuppet kryptorevolusjonen, 24 October 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "FI roundtable on MiCA, 26 November 2024",
+     "reason": "Finansinspektionen invited firms that plan to apply, at most two people per firm. Not added as a public seminar."
+    },
+    {
+     "name": "Blockfest Finland as a blockchain conference",
+     "reason": "blockfest.fi is a music festival. A page that described a blockchain Blockfest in Helsinki did not match the organiser site and was not used."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

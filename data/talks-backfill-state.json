@@ -97,6 +97,30 @@
    ],
    "notes": "No calendar event ended between 20 October 2026 and this run. YouTube results pages returned HTTP 429, so no new first-page query was counted. Seventeen playlist videos were screened and sixteen watch pages were opened. Fifteen talks were kept. Durations are null because the watch-page player did not give lengthSeconds and search was rate-limited. The Elon Musk and Vitalik Buterin upload describes a Twitter thread and was not kept. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-10-27",
+   "candidates_checked": 772,
+   "watch_pages_opened": 22,
+   "new_talks": 13,
+   "new_from_calendar": 0,
+   "new_from_backfill": 13,
+   "areas_exhausted": [
+    "query: Har bankene kuppet kryptorevolusjonen (0 results)",
+    "query: KÅKÅ krypto Stavanger 2026 (0 results)"
+   ],
+   "areas_sampled": [
+    "Calendar events ended since 23 October 2026: Barnas KÅKÅnomics and Har bankene kuppet kryptorevolusjonen, both in Stavanger on 24 October",
+    "YouTube this-week pages for bitcoin, kryptovaluta, blockchain Oslo, blockchain Stockholm, bitcoin Copenhagen, bitcoin Helsinki, krypto Norge, Nordic Blockchain, Kaupr and KÅKÅ",
+    "Slush 2017 and one further Slush 2018 session",
+    "Oslo Freedom Forum 2018 blockchain panel",
+    "Oslo Blockchain Day consortium panel",
+    "Handelshögskolan vid Göteborgs universitet, IT University of Copenhagen, BI Norwegian Business School, Bergen Global and NUPI",
+    "Finansinspektionen MiCA forum and a Swedish House of Finance conversation on stablecoins",
+    "CreativeMornings Copenhagen"
+   ],
+   "notes": "No calendar event that ended after 23 October 2026 has a public recording. The two KÅKÅ sessions in Stavanger on 24 October were checked on YouTube. Thirteen talks were kept from backfill. Slush Tokyo was not kept. A re-upload of an IOTA meetup in Trondheim was not kept. A short festival clip and a trading video were not kept. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -181,19 +205,19 @@
   "countries": {
    "NO": {
     "status": "sampled",
-    "talks": 73
+    "talks": 78
    },
    "SE": {
     "status": "sampled",
-    "talks": 11
+    "talks": 14
    },
    "DK": {
     "status": "sampled",
-    "talks": 11
+    "talks": 13
    },
    "FI": {
     "status": "sampled",
-    "talks": 11
+    "talks": 14
    },
    "IS": {
     "status": "sampled",
@@ -1171,6 +1195,102 @@
     "status": "exhausted",
     "included_from_this_query": 15,
     "note": "Every video on the Blockchangers playlist Oslo Blockchain Day 2019 was opened. One was already listed. One watch page describes a Twitter thread and was not kept. Fifteen talks were kept. YouTube search pages returned HTTP 429, so duration was not taken from a search result and is null. The city and the event name are the playlist title. Only the Magnus Jones page states the day, 30 April 2019."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Har bankene kuppet kryptorevolusjonen",
+    "results_on_first_page": 0,
+    "status": "exhausted",
+    "included_from_this_query": null,
+    "note": "No YouTube result for the KÅKÅ session on 24 October 2026."
+   },
+   {
+    "country_tag": "NO",
+    "query": "KÅKÅ krypto Stavanger 2026",
+    "results_on_first_page": 0,
+    "status": "exhausted",
+    "included_from_this_query": null,
+    "note": "No YouTube result."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Barnas KÅKÅnomics",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The first page was older KÅKÅ videos, not the 24 October 2026 session."
+   },
+   {
+    "country_tag": "FI",
+    "query": "Slush 2017 bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "Two Helsinki talks were kept. A Slush Tokyo upload on a later page was not."
+   },
+   {
+    "country_tag": "FI",
+    "query": "The Democratisation of Financial Services Antonopoulos Slush",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "Opened from the Slush channel. The page places Slush 2017 in Helsinki."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Handelshögskolan bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The Gothenburg lunch talk was kept."
+   },
+   {
+    "country_tag": "DK",
+    "query": "IT University of Copenhagen Roman Beck blockchain",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The university upload was kept."
+   },
+   {
+    "country_tag": "DK",
+    "query": "CreativeMornings Copenhagen Bitcoin",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "Morten Heick's October 2017 talk was kept. The page does not state the day."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Finansinspektionen krypto seminarium",
+    "results_on_first_page": 7,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The MiCA forum upload was kept. The page does not state the day or the room."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Stablecoins och digital euro Swedish House of Finance",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The SNS upload was kept."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Bergen Global crypto explained",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The breakfast forum was kept. The page does not name the room."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Oslo Blockchain Day consortium blockchains",
+    "results_on_first_page": null,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The Blockchangers panel from 19 April 2016 was kept and linked to the existing event."
    }
   ],
   "channels_sampled": [
@@ -1206,7 +1326,15 @@
    "Internet of Value",
    "Aarhus Universitet",
    "NDC Conferences",
-   "Mid Sweden University"
+   "Mid Sweden University",
+   "Handelshögskolan vid Göteborgs universitet",
+   "IT University of Copenhagen",
+   "CreativeMornings",
+   "Krypto Labs",
+   "Finansinspektionen",
+   "SNSkunskap",
+   "Bergen Global CMI/UiB",
+   "Norwegian Institute of International Affairs"
   ],
   "universities": [
    {
@@ -1258,6 +1386,16 @@
     "name": "Mid Sweden University",
     "status": "sampled",
     "note": "One open lecture on blockchain. The city was not stated."
+   },
+   {
+    "name": "University of Gothenburg",
+    "status": "sampled",
+    "note": "Oskar Broberg's public lunch talk on bitcoin and cryptocurrencies. The upload does not state the day."
+   },
+   {
+    "name": "BI Norwegian Business School",
+    "status": "sampled",
+    "note": "Krypto Labs at the BISO Web3 Society. The page does not name the campus."
    }
   ],
   "events": [
@@ -1320,6 +1458,16 @@
     "name": "Oslo Blockchain Day 2019",
     "status": "sampled",
     "note": "Fifteen talks from the organiser playlist. One page states 30 April 2019. The other pages do not state the day."
+   },
+   {
+    "name": "Slush 2017",
+    "status": "sampled",
+    "note": "Two official Slush uploads whose pages place the 2017 event in Helsinki. The session day is not stated."
+   },
+   {
+    "name": "Oslo Freedom Forum 2018 blockchain panel",
+    "status": "sampled",
+    "note": "The official upload of the blockchain panel. The page does not state the day."
    }
   ]
  }
