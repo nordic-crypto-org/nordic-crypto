@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T07:08:38+00:00",
+ "generated_at": "2026-10-27T10:04:13+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 431,
+ "count": 448,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -6181,6 +6181,12 @@
      "title": "Direktionen",
      "source_name": "Sveriges Riksbank",
      "date": "2026-10-03"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "source_name": "SNSkunskap",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
@@ -6197,6 +6203,16 @@
      "label": "Wikidata",
      "url": "https://www.wikidata.org/wiki/Q115675909",
      "source_url": "https://www.wikidata.org/wiki/Q115675909"
+    }
+   ],
+   "talk_ids": [
+    "yt-nloVC4ab7Hs"
+   ],
+   "talks": [
+    {
+     "id": "yt-nloVC4ab7Hs",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "video_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs"
     }
    ]
   },
@@ -7623,12 +7639,19 @@
      "title": "Nordic Blockchain Conference 2026 - Day 2 - Stage 2 (Closing Sessions)",
      "source_name": "Nordic Blockchain Association",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "title": "Crypto explained",
+     "source_name": "Bergen Global CMI/UiB",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
+    "yt-PJWm-qYhZh0",
     "yt-rfLLR9vhoYI"
    ],
    "talks": [
@@ -7636,6 +7659,11 @@
      "id": "yt-rfLLR9vhoYI",
      "title": "Nordic Blockchain Conference 2026 - Day 2 - Stage 2 (Closing Sessions)",
      "video_url": "https://www.youtube.com/watch?v=rfLLR9vhoYI"
+    },
+    {
+     "id": "yt-PJWm-qYhZh0",
+     "title": "Crypto explained",
+     "video_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0"
     }
    ],
    "affiliations": [
@@ -7645,6 +7673,13 @@
      "source_url": "https://www.youtube.com/watch?v=rfLLR9vhoYI&hl=en",
      "source_name": "Nordic Blockchain Association",
      "retrieved_at": "2026-10-18T11:38:06+00:00"
+    },
+    {
+     "talk_id": "yt-PJWm-qYhZh0",
+     "organisation": "NTNU",
+     "source_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "source_name": "Bergen Global CMI/UiB",
+     "retrieved_at": "2026-10-27T10:30:00+00:00"
     }
    ]
   },
@@ -12748,14 +12783,28 @@
      "title": "Less Trust Is More  Bitcoin, Blockchains, and the Future of Decentralized Technology",
      "source_name": "Slush",
      "date": "2026-10-16"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "title": "Blockchain Forks and Economic Competition",
+     "source_name": "Slush",
+     "date": "2026-10-27"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=h8SdNpRnB-o&hl=en",
+     "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+     "source_name": "Slush",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
+    "yt-4HIsJikjb30",
     "yt-4lJCE0dzoRs",
-    "yt-aYlA0ADZbQc"
+    "yt-aYlA0ADZbQc",
+    "yt-h8SdNpRnB-o"
    ],
    "talks": [
     {
@@ -12767,6 +12816,16 @@
      "id": "yt-4lJCE0dzoRs",
      "title": "Less Trust Is More  Bitcoin, Blockchains, and the Future of Decentralized Technology",
      "video_url": "https://www.youtube.com/watch?v=4lJCE0dzoRs"
+    },
+    {
+     "id": "yt-h8SdNpRnB-o",
+     "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+     "video_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o"
+    },
+    {
+     "id": "yt-4HIsJikjb30",
+     "title": "Blockchain Forks and Economic Competition",
+     "video_url": "https://www.youtube.com/watch?v=4HIsJikjb30"
     }
    ],
    "affiliations": [
@@ -12785,6 +12844,14 @@
      "source_name": "Oslo Freedom Forum",
      "retrieved_at": "2026-10-18T11:38:06+00:00",
      "role": "CEO"
+    },
+    {
+     "talk_id": "yt-4HIsJikjb30",
+     "organisation": "Lightning",
+     "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "source_name": "Slush",
+     "retrieved_at": "2026-10-27T10:30:00+00:00",
+     "role": "Co-founder & CEO"
     }
    ]
   },
@@ -13276,19 +13343,31 @@
      "title": "The Future of Money with Yale's Professor Gary Gorton and Sveriges Riksbank's Governor Stefan Ingves",
      "source_name": "Swedish House of Finance",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "source_name": "SNSkunskap",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-8UUXKBprVE4"
+    "yt-8UUXKBprVE4",
+    "yt-nloVC4ab7Hs"
    ],
    "talks": [
     {
      "id": "yt-8UUXKBprVE4",
      "title": "The Future of Money with Yale's Professor Gary Gorton and Sveriges Riksbank's Governor Stefan Ingves",
      "video_url": "https://www.youtube.com/watch?v=8UUXKBprVE4"
+    },
+    {
+     "id": "yt-nloVC4ab7Hs",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "video_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs"
     }
    ],
    "affiliations": [
@@ -14391,6 +14470,12 @@
      "title": "Bitcoin & Blockchain in Norway - Interview with Andreas M. Antonopoulos",
      "source_name": "aantonop",
      "date": "2026-10-16"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=uqVU1iMJPzA&hl=en",
+     "title": "The Democratisation of Financial Services by Andreas M. Antonopoulos",
+     "source_name": "Slush",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
@@ -14398,7 +14483,8 @@
    "profiles": [],
    "talk_ids": [
     "yt-5ODDCx6VL2Y",
-    "yt-eo-0BgrKxiI"
+    "yt-eo-0BgrKxiI",
+    "yt-uqVU1iMJPzA"
    ],
    "event_ids": [
     "30569783bb01"
@@ -14416,6 +14502,20 @@
      "video_url": "https://www.youtube.com/watch?v=eo-0BgrKxiI",
      "event_id": "30569783bb01",
      "date": "2017-04-25"
+    },
+    {
+     "id": "yt-uqVU1iMJPzA",
+     "title": "The Democratisation of Financial Services by Andreas M. Antonopoulos",
+     "video_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-uqVU1iMJPzA",
+     "organisation": "Blockchain expert",
+     "source_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA&hl=en",
+     "source_name": "Slush",
+     "retrieved_at": "2026-10-27T10:30:00+00:00"
     }
    ]
   },
@@ -15184,13 +15284,20 @@
      "title": "5 Reasons Why Blockchain can revolutionize the financial industry. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-_OWFROsjBVI"
+    "yt-_OWFROsjBVI",
+    "yt-knfmJ0ds2L4"
    ],
    "event_ids": [
     "92041cfcb99c"
@@ -15200,6 +15307,13 @@
      "id": "yt-_OWFROsjBVI",
      "title": "5 Reasons Why Blockchain can revolutionize the financial industry. Oslo Blockchain Day",
      "video_url": "https://www.youtube.com/watch?v=_OWFROsjBVI",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    },
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
      "event_id": "92041cfcb99c",
      "date": "2016-04-19"
     }
@@ -15520,13 +15634,20 @@
      "title": "Segregated Witness. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-5qOqPd5KcxQ"
+    "yt-5qOqPd5KcxQ",
+    "yt-knfmJ0ds2L4"
    ],
    "event_ids": [
     "92041cfcb99c"
@@ -15536,6 +15657,13 @@
      "id": "yt-5qOqPd5KcxQ",
      "title": "Segregated Witness. Oslo Blockchain Day",
      "video_url": "https://www.youtube.com/watch?v=5qOqPd5KcxQ",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    },
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
      "event_id": "92041cfcb99c",
      "date": "2016-04-19"
     }
@@ -15562,13 +15690,20 @@
      "title": "Lightning Network. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-5jGIiwLS4yc"
+    "yt-5jGIiwLS4yc",
+    "yt-knfmJ0ds2L4"
    ],
    "event_ids": [
     "92041cfcb99c"
@@ -15578,6 +15713,13 @@
      "id": "yt-5jGIiwLS4yc",
      "title": "Lightning Network. Oslo Blockchain Day",
      "video_url": "https://www.youtube.com/watch?v=5jGIiwLS4yc",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    },
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
      "event_id": "92041cfcb99c",
      "date": "2016-04-19"
     }
@@ -15688,13 +15830,20 @@
      "title": "Ethereum Project. Oslo Blockchain Day",
      "source_name": "Blockchangers",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-0iXX02OYI5s"
+    "yt-0iXX02OYI5s",
+    "yt-knfmJ0ds2L4"
    ],
    "event_ids": [
     "92041cfcb99c"
@@ -15704,6 +15853,13 @@
      "id": "yt-0iXX02OYI5s",
      "title": "Ethereum Project. Oslo Blockchain Day",
      "video_url": "https://www.youtube.com/watch?v=0iXX02OYI5s",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    },
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
      "event_id": "92041cfcb99c",
      "date": "2016-04-19"
     }
@@ -17943,6 +18099,714 @@
      "id": "yt-o4BdpHag5BY",
      "title": "Panel: Should we regulate blockchain?",
      "video_url": "https://www.youtube.com/watch?v=o4BdpHag5BY"
+    }
+   ]
+  },
+  {
+   "id": "spk-christoffer-hernaes",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-christoffer-hernaes.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-christoffer-hernaes",
+   "name": "Christoffer Hernæs",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-knfmJ0ds2L4"
+   ],
+   "event_ids": [
+    "92041cfcb99c"
+   ],
+   "talks": [
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    }
+   ]
+  },
+  {
+   "id": "spk-peter-froystad",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-peter-froystad.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-peter-froystad",
+   "name": "Peter Frøystad",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "source_name": "Blockchangers",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-knfmJ0ds2L4"
+   ],
+   "event_ids": [
+    "92041cfcb99c"
+   ],
+   "talks": [
+    {
+     "id": "yt-knfmJ0ds2L4",
+     "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+     "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
+     "event_id": "92041cfcb99c",
+     "date": "2016-04-19"
+    }
+   ]
+  },
+  {
+   "id": "spk-ryan-shea",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-ryan-shea.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-ryan-shea",
+   "name": "Ryan Shea",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=G8vIl9UhASM&hl=en",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-G8vIl9UhASM"
+   ],
+   "talks": [
+    {
+     "id": "yt-G8vIl9UhASM",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "video_url": "https://www.youtube.com/watch?v=G8vIl9UhASM"
+    }
+   ]
+  },
+  {
+   "id": "spk-galia-benartzi",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-galia-benartzi.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-galia-benartzi",
+   "name": "Galia Benartzi",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=G8vIl9UhASM&hl=en",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-G8vIl9UhASM"
+   ],
+   "talks": [
+    {
+     "id": "yt-G8vIl9UhASM",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "video_url": "https://www.youtube.com/watch?v=G8vIl9UhASM"
+    }
+   ]
+  },
+  {
+   "id": "spk-steve-waterhouse",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-steve-waterhouse.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-steve-waterhouse",
+   "name": "Steve Waterhouse",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=G8vIl9UhASM&hl=en",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-10-27"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "title": "Blockchain Forks and Economic Competition",
+     "source_name": "Slush",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-4HIsJikjb30",
+    "yt-G8vIl9UhASM"
+   ],
+   "talks": [
+    {
+     "id": "yt-G8vIl9UhASM",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "video_url": "https://www.youtube.com/watch?v=G8vIl9UhASM"
+    },
+    {
+     "id": "yt-4HIsJikjb30",
+     "title": "Blockchain Forks and Economic Competition",
+     "video_url": "https://www.youtube.com/watch?v=4HIsJikjb30"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-4HIsJikjb30",
+     "organisation": "Orchid Labs Inc",
+     "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "source_name": "Slush",
+     "retrieved_at": "2026-10-27T10:30:00+00:00",
+     "role": "Co-founder"
+    }
+   ]
+  },
+  {
+   "id": "spk-arthur-breitman",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-arthur-breitman.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-arthur-breitman",
+   "name": "Arthur Breitman",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=G8vIl9UhASM&hl=en",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-G8vIl9UhASM"
+   ],
+   "talks": [
+    {
+     "id": "yt-G8vIl9UhASM",
+     "title": "BLOCKCHAIN VS. THE SURVEILLANCE STATE | PANEL DISCUSSION | 2018",
+     "video_url": "https://www.youtube.com/watch?v=G8vIl9UhASM"
+    }
+   ]
+  },
+  {
+   "id": "spk-paul-puey",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-paul-puey.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-paul-puey",
+   "name": "Paul Puey",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "title": "Blockchain Forks and Economic Competition",
+     "source_name": "Slush",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-4HIsJikjb30"
+   ],
+   "talks": [
+    {
+     "id": "yt-4HIsJikjb30",
+     "title": "Blockchain Forks and Economic Competition",
+     "video_url": "https://www.youtube.com/watch?v=4HIsJikjb30"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-4HIsJikjb30",
+     "organisation": "Airbitz",
+     "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+     "source_name": "Slush",
+     "retrieved_at": "2026-10-27T10:30:00+00:00",
+     "role": "Co-founder & CEO"
+    }
+   ]
+  },
+  {
+   "id": "spk-soona-amhaz",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-soona-amhaz.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-soona-amhaz",
+   "name": "Soona Amhaz",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=h8SdNpRnB-o&hl=en",
+     "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+     "source_name": "Slush",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-h8SdNpRnB-o"
+   ],
+   "talks": [
+    {
+     "id": "yt-h8SdNpRnB-o",
+     "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+     "video_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o"
+    }
+   ]
+  },
+  {
+   "id": "spk-oskar-broberg",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-oskar-broberg.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-oskar-broberg",
+   "name": "Oskar Broberg",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=Vwf_S0uIWZ4&hl=en",
+     "title": "Bitcoin, kryptovalutor och andra kaninhål - Kunskapslunch",
+     "source_name": "Handelshögskolan vid Göteborgs universitet",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-Vwf_S0uIWZ4"
+   ],
+   "talks": [
+    {
+     "id": "yt-Vwf_S0uIWZ4",
+     "title": "Bitcoin, kryptovalutor och andra kaninhål - Kunskapslunch",
+     "video_url": "https://www.youtube.com/watch?v=Vwf_S0uIWZ4"
+    }
+   ]
+  },
+  {
+   "id": "spk-roman-beck",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-roman-beck.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-roman-beck",
+   "name": "Roman Beck",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=ozIqh3bz4AE&hl=en",
+     "title": "ROMAN BECK: BLOCKCHAIN",
+     "source_name": "IT UNIVERSITY OF COPENHAGEN",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-ozIqh3bz4AE"
+   ],
+   "talks": [
+    {
+     "id": "yt-ozIqh3bz4AE",
+     "title": "ROMAN BECK: BLOCKCHAIN",
+     "video_url": "https://www.youtube.com/watch?v=ozIqh3bz4AE"
+    }
+   ]
+  },
+  {
+   "id": "spk-morten-heick",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-morten-heick.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-morten-heick",
+   "name": "Morten Heick",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=mrIMoWa3gFc&hl=en",
+     "title": "Morten Heick: Bitcoin 101",
+     "source_name": "CreativeMornings HQ",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-mrIMoWa3gFc"
+   ],
+   "talks": [
+    {
+     "id": "yt-mrIMoWa3gFc",
+     "title": "Morten Heick: Bitcoin 101",
+     "video_url": "https://www.youtube.com/watch?v=mrIMoWa3gFc"
+    }
+   ]
+  },
+  {
+   "id": "spk-adrien-d-avernas",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-adrien-d-avernas.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-adrien-d-avernas",
+   "name": "Adrien d'Avernas",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "source_name": "SNSkunskap",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-nloVC4ab7Hs"
+   ],
+   "talks": [
+    {
+     "id": "yt-nloVC4ab7Hs",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "video_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs"
+    }
+   ]
+  },
+  {
+   "id": "spk-kristian-garder",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-kristian-garder.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-kristian-garder",
+   "name": "Kristian Gårder",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "source_name": "SNSkunskap",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-nloVC4ab7Hs"
+   ],
+   "talks": [
+    {
+     "id": "yt-nloVC4ab7Hs",
+     "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+     "video_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-nloVC4ab7Hs",
+     "organisation": "SEB",
+     "source_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+     "source_name": "SNSkunskap",
+     "retrieved_at": "2026-10-27T10:30:00+00:00",
+     "role": "Co-Head of Equities"
+    }
+   ]
+  },
+  {
+   "id": "spk-chunlei-li",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-chunlei-li.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-chunlei-li",
+   "name": "Chunlei Li",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "title": "Crypto explained",
+     "source_name": "Bergen Global CMI/UiB",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-PJWm-qYhZh0"
+   ],
+   "talks": [
+    {
+     "id": "yt-PJWm-qYhZh0",
+     "title": "Crypto explained",
+     "video_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-PJWm-qYhZh0",
+     "organisation": "UiB",
+     "source_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "source_name": "Bergen Global CMI/UiB",
+     "retrieved_at": "2026-10-27T10:30:00+00:00"
+    }
+   ]
+  },
+  {
+   "id": "spk-jacob-morch",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-jacob-morch.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-jacob-morch",
+   "name": "Jacob Mørch",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "title": "Crypto explained",
+     "source_name": "Bergen Global CMI/UiB",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-PJWm-qYhZh0"
+   ],
+   "talks": [
+    {
+     "id": "yt-PJWm-qYhZh0",
+     "title": "Crypto explained",
+     "video_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-PJWm-qYhZh0",
+     "organisation": "Braver",
+     "source_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "source_name": "Bergen Global CMI/UiB",
+     "retrieved_at": "2026-10-27T10:30:00+00:00"
+    }
+   ]
+  },
+  {
+   "id": "spk-kasper-vagle",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-kasper-vagle.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-kasper-vagle",
+   "name": "Kasper Vagle",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "title": "Crypto explained",
+     "source_name": "Bergen Global CMI/UiB",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-PJWm-qYhZh0"
+   ],
+   "talks": [
+    {
+     "id": "yt-PJWm-qYhZh0",
+     "title": "Crypto explained",
+     "video_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-PJWm-qYhZh0",
+     "organisation": "NHH",
+     "source_url": "https://www.youtube.com/watch?v=PJWm-qYhZh0&hl=en",
+     "source_name": "Bergen Global CMI/UiB",
+     "retrieved_at": "2026-10-27T10:30:00+00:00"
+    }
+   ]
+  },
+  {
+   "id": "spk-walid-al-saqaf",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-walid-al-saqaf.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-walid-al-saqaf",
+   "name": "Walid Al-Saqaf",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=eKNLcrtHqgQ&hl=en",
+     "title": "Can blockchain save journalism?",
+     "source_name": "Norwegian Institute of International Affairs, NUPI",
+     "date": "2026-10-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-eKNLcrtHqgQ"
+   ],
+   "talks": [
+    {
+     "id": "yt-eKNLcrtHqgQ",
+     "title": "Can blockchain save journalism?",
+     "video_url": "https://www.youtube.com/watch?v=eKNLcrtHqgQ"
     }
    ]
   }

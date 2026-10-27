@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T07:08:38+00:00",
+ "generated_at": "2026-10-27T10:04:13+00:00",
  "preview": false,
  "country": "FI",
- "count": 11,
+ "count": 14,
  "talks": [
   {
    "id": "yt-DBKNHVjX_Zc",
@@ -177,6 +177,39 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-J5Vdn-1i7cE.json"
   },
   {
+   "id": "yt-h8SdNpRnB-o",
+   "video_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o",
+   "platform": "youtube",
+   "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+   "speakers": [
+    "Elizabeth Stark",
+    "Soona Amhaz"
+   ],
+   "event_name": "Slush 2018",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-elizabeth-stark",
+    "spk-soona-amhaz"
+   ],
+   "city": "Helsinki",
+   "country": "FI",
+   "date": null,
+   "published": "2018-12-07",
+   "duration": "PT22M35S",
+   "language": null,
+   "channel": "Slush",
+   "description": "Elizabeth Stark speaks with Soona Amhaz at Slush 2018 in Helsinki about bitcoin and Lightning.",
+   "source_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o&hl=en",
+   "retrieved_at": "2026-10-27T10:30:00Z",
+   "added_at": "2026-10-27T10:30:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-h8SdNpRnB-o",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-h8SdNpRnB-o.json"
+  },
+  {
    "id": "yt-Z7FA53GIE34",
    "video_url": "https://www.youtube.com/watch?v=Z7FA53GIE34",
    "platform": "youtube",
@@ -212,6 +245,72 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-Z7FA53GIE34",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Z7FA53GIE34.json"
+  },
+  {
+   "id": "yt-uqVU1iMJPzA",
+   "video_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA",
+   "platform": "youtube",
+   "title": "The Democratisation of Financial Services by Andreas M. Antonopoulos",
+   "speakers": [
+    "Andreas M. Antonopoulos"
+   ],
+   "event_name": "Slush 2017",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-andreas-m-antonopoulos"
+   ],
+   "city": "Helsinki",
+   "country": "FI",
+   "date": null,
+   "published": "2017-12-19",
+   "duration": "PT11M29S",
+   "language": null,
+   "channel": "Slush",
+   "description": "Andreas M. Antonopoulos speaks at Slush 2017 in Helsinki on wider access to financial services.",
+   "source_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA&hl=en",
+   "retrieved_at": "2026-10-27T10:30:00Z",
+   "added_at": "2026-10-27T10:30:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-uqVU1iMJPzA",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-uqVU1iMJPzA.json"
+  },
+  {
+   "id": "yt-4HIsJikjb30",
+   "video_url": "https://www.youtube.com/watch?v=4HIsJikjb30",
+   "platform": "youtube",
+   "title": "Blockchain Forks and Economic Competition",
+   "speakers": [
+    "Paul Puey",
+    "Elizabeth Stark",
+    "Steve Waterhouse"
+   ],
+   "event_name": "Slush 2017",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-paul-puey",
+    "spk-elizabeth-stark",
+    "spk-steve-waterhouse"
+   ],
+   "city": "Helsinki",
+   "country": "FI",
+   "date": null,
+   "published": "2017-12-05",
+   "duration": "PT28M18S",
+   "language": null,
+   "channel": "Slush",
+   "description": "Paul Puey, Elizabeth Stark and Steve Waterhouse discuss bitcoin and ethereum forks at Slush 2017 in Helsinki.",
+   "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+   "retrieved_at": "2026-10-27T10:30:00Z",
+   "added_at": "2026-10-27T10:30:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-4HIsJikjb30",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-4HIsJikjb30.json"
   },
   {
    "id": "yt-kmizKAmfsWU",

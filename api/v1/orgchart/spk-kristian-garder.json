@@ -1,0 +1,53 @@
+{
+ "api_version": "1",
+ "name": "Nordic Crypto",
+ "generated_at": "2026-10-27T10:04:13+00:00",
+ "preview": false,
+ "item": {
+  "id": "spk-kristian-garder",
+  "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-kristian-garder.json",
+  "html_url": "https://nordiccrypto.no/org-chart/#spk-kristian-garder",
+  "name": "Kristian Gårder",
+  "type": "person",
+  "sector": "private",
+  "country": null,
+  "description": null,
+  "role": null,
+  "org": null,
+  "group": null,
+  "profile_url": null,
+  "provenance": "Talks archive",
+  "caveat": false,
+  "sources": [
+   {
+    "url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+    "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+    "source_name": "SNSkunskap",
+    "date": "2026-10-27"
+   }
+  ],
+  "logo": null,
+  "image": null,
+  "profiles": [],
+  "talk_ids": [
+   "yt-nloVC4ab7Hs"
+  ],
+  "talks": [
+   {
+    "id": "yt-nloVC4ab7Hs",
+    "title": "Stablecoins och digital euro – hur påverkar utvecklingen Sverige",
+    "video_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs"
+   }
+  ],
+  "affiliations": [
+   {
+    "talk_id": "yt-nloVC4ab7Hs",
+    "organisation": "SEB",
+    "source_url": "https://www.youtube.com/watch?v=nloVC4ab7Hs&hl=en",
+    "source_name": "SNSkunskap",
+    "retrieved_at": "2026-10-27T10:30:00+00:00",
+    "role": "Co-Head of Equities"
+   }
+  ]
+ }
+}

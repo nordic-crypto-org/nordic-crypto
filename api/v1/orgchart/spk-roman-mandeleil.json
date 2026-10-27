@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T07:08:38+00:00",
+ "generated_at": "2026-10-27T10:04:13+00:00",
  "preview": false,
  "item": {
   "id": "spk-roman-mandeleil",
@@ -24,13 +24,20 @@
     "title": "Ethereum Project. Oslo Blockchain Day",
     "source_name": "Blockchangers",
     "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=knfmJ0ds2L4&hl=en",
+    "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+    "source_name": "Blockchangers",
+    "date": "2026-10-27"
    }
   ],
   "logo": null,
   "image": null,
   "profiles": [],
   "talk_ids": [
-   "yt-0iXX02OYI5s"
+   "yt-0iXX02OYI5s",
+   "yt-knfmJ0ds2L4"
   ],
   "event_ids": [
    "92041cfcb99c"
@@ -40,6 +47,13 @@
     "id": "yt-0iXX02OYI5s",
     "title": "Ethereum Project. Oslo Blockchain Day",
     "video_url": "https://www.youtube.com/watch?v=0iXX02OYI5s",
+    "event_id": "92041cfcb99c",
+    "date": "2016-04-19"
+   },
+   {
+    "id": "yt-knfmJ0ds2L4",
+    "title": "Panel discussion: Consortium blockchains. Oslo Blockchain Day",
+    "video_url": "https://www.youtube.com/watch?v=knfmJ0ds2L4",
     "event_id": "92041cfcb99c",
     "date": "2016-04-19"
    }

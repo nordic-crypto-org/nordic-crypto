@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T07:08:38+00:00",
+ "generated_at": "2026-10-27T10:04:13+00:00",
  "preview": false,
  "item": {
   "id": "spk-andreas-m-antonopoulos",
@@ -30,6 +30,12 @@
     "title": "Bitcoin & Blockchain in Norway - Interview with Andreas M. Antonopoulos",
     "source_name": "aantonop",
     "date": "2026-10-16"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=uqVU1iMJPzA&hl=en",
+    "title": "The Democratisation of Financial Services by Andreas M. Antonopoulos",
+    "source_name": "Slush",
+    "date": "2026-10-27"
    }
   ],
   "logo": null,
@@ -37,7 +43,8 @@
   "profiles": [],
   "talk_ids": [
    "yt-5ODDCx6VL2Y",
-   "yt-eo-0BgrKxiI"
+   "yt-eo-0BgrKxiI",
+   "yt-uqVU1iMJPzA"
   ],
   "event_ids": [
    "30569783bb01"
@@ -55,6 +62,20 @@
     "video_url": "https://www.youtube.com/watch?v=eo-0BgrKxiI",
     "event_id": "30569783bb01",
     "date": "2017-04-25"
+   },
+   {
+    "id": "yt-uqVU1iMJPzA",
+    "title": "The Democratisation of Financial Services by Andreas M. Antonopoulos",
+    "video_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA"
+   }
+  ],
+  "affiliations": [
+   {
+    "talk_id": "yt-uqVU1iMJPzA",
+    "organisation": "Blockchain expert",
+    "source_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA&hl=en",
+    "source_name": "Slush",
+    "retrieved_at": "2026-10-27T10:30:00+00:00"
    }
   ]
  }
