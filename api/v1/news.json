@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T06:42:47+00:00",
+ "generated_at": "2026-10-27T06:51:01+00:00",
  "preview": false,
- "updated": "2026-10-27T06:41:22+00:00",
+ "updated": "2026-10-27T06:48:57+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
  "count": 88,
@@ -16,6 +16,7 @@
    "title": "ESMA ber om faktagrunnlag: Tokenisering av sikkerheit som blir stilt overfor sentrale motpartar (CCP)",
    "title_en": "ESMA seeks input on tokenisation of collateral posted to central counterparties",
    "title_i18n": {
+    "se": "ESMA háliida árvalusaid dan birra mo tokeniseret dáhkádusaid maid guovddáš gávpeoasseváldit bidjet",
     "ar": "ESMA تطلب مساهمات بشأن ترميز الضمانات المقدّمة للأطراف المقابلة المركزية",
     "bn": "কেন্দ্রীয় প্রতিপক্ষকে দেওয়া জামানতের টোকেনাইজেশন নিয়ে ESMA-র তথ্য আহ্বান",
     "da": "ESMA beder om input om tokenisering af sikkerhedsstillelse over for centrale modparter",
@@ -176,6 +177,7 @@
    "title": "Oppgjørsgigant bak Wall Street setter tokenisering av verdipapirer i drift",
    "title_en": "DTCC plans commercial launch of tokenisation service for 25 securities",
    "title_i18n": {
+    "se": "DTCC áigu gávpemárkanii álggahit tokenisašuvdna bálvalusa 25 árvobáhpárii",
     "ar": "DTCC تخطط لإطلاق تجاري لخدمة ترميز تشمل 25 ورقة مالية",
     "bn": "২৫টি সিকিউরিটিজের জন্য টোকেনাইজেশন সেবার বাণিজ্যিক চালুর পরিকল্পনা DTCC-র",
     "da": "DTCC planlægger kommerciel lancering af tokeniseringstjeneste for 25 værdipapirer",
@@ -338,6 +340,7 @@
    "title": "Slik skal Futureproof rebalansere bitcoin og gull automatisk",
    "title_en": "Goobit presents planned Futureproof savings product combining bitcoin and gold",
    "title_i18n": {
+    "se": "Goobit ovdanbuktá plánejuvvon Futureproof seastinbuvtta mii ovttastahttá bitcoin ja golli",
     "ar": "Goobit تعرض Futureproof، منتج ادخار مخطط يجمع البيتكوين والذهب",
     "bn": "বিটকয়েন ও সোনা মেলানো পরিকল্পিত সঞ্চয় পণ্য Futureproof উপস্থাপন করল Goobit",
     "da": "Goobit præsenterer Futureproof, et planlagt opsparingsprodukt med bitcoin og guld",
@@ -500,6 +503,7 @@
    "title": "Latvia vil tokenisere næringseiendom fra 2027",
    "title_en": "Latvia's economy minister aims for tokenisation rules in 2027",
    "title_i18n": {
+    "se": "Latvia ealáhusministtar háliida tokenisašuvnna jagi 2027",
     "ar": "وزير الاقتصاد اللاتفي يستهدف قواعد للترميز في 2027",
     "bn": "২০২৭ সালে টোকেনাইজেশন নিয়ম চান লাটভিয়ার অর্থনীতিমন্ত্রী",
     "da": "Letlands økonomiminister sigter mod regler for tokenisering i 2027",
@@ -662,6 +666,7 @@
    "title": "Rysslands digitala rubel når 270 000 konton – succé eller fiasko?",
    "title_en": "Russia's digital rouble reaches 270,000 accounts, central bank says",
    "title_i18n": {
+    "se": "Ruošša digitála ruhta lea olahan 270 000 kontu, cealká guovddášbanka",
     "ar": "البنك المركزي: حسابات الروبل الرقمي الروسي تبلغ 270 ألفاً",
     "bn": "কেন্দ্রীয় ব্যাংক বলছে, রাশিয়ার ডিজিটাল রুবলের অ্যাকাউন্ট ২ লাখ ৭০ হাজারে",
     "da": "Ruslands digitale rubel har nået 270.000 konti, siger centralbanken",
@@ -822,6 +827,7 @@
    "title": "Brasilien pushar fram tokenisering av finansmarknaden med AI och blockchain",
    "title_en": "Brazil's securities regulator launches pilot programme for testing tokenised securities",
    "title_i18n": {
+    "se": "Brasila árvobáberreguláhtor álggaha ovddasmanni prográmma, man olis testejuvvo tokeniserejuvvon árvobábir",
     "ar": "هيئة الأوراق المالية في البرازيل تطلق برنامجاً تجريبياً لاختبار الأوراق المالية المرمّزة",
     "bn": "টোকেনাইজড সিকিউরিটিজ পরীক্ষায় পাইলট চালু করল ব্রাজিলের সিকিউরিটিজ নিয়ন্ত্রক",
     "da": "Brasiliens værdipapirtilsyn starter pilot for test af tokeniserede værdipapirer",
@@ -1223,6 +1229,7 @@
    "title": "Circle-aktieägare stämmer Donald Trump på $2 miljarder för UAE affärer…",
    "title_en": "Circle shareholder sues Trump and World Liberty Financial over UAE-linked crypto deals",
    "title_i18n": {
+    "se": "Circle oasuseaiggát áššáskuhttá Trumpa ja World Liberty Financial crypto-šiehtadusaid geažil mat čatnasit Dubaiii",
     "ar": "مساهم في Circle يقاضي ترامب وWorld Liberty Financial بسبب صفقات عملات مشفرة مرتبطة بالإمارات",
     "bn": "আমিরাত-সংশ্লিষ্ট ক্রিপ্টো চুক্তি নিয়ে ট্রাম্প ও World Liberty Financial-এর বিরুদ্ধে Circle শেয়ারহোল্ডারের মামলা",
     "da": "Circle-aktionær sagsøger Trump og World Liberty Financial over kryptoaftaler med tilknytning til UAE",
