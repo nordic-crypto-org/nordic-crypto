@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-27T03:45:31+00:00",
+ "generated_at": "2026-10-27T06:36:00+00:00",
  "preview": false,
  "topics": [
   {
@@ -21,12 +21,12 @@
   },
   {
    "id": "bitcoin",
-   "count": 5,
+   "count": 6,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/bitcoin.json"
   },
   {
    "id": "business",
-   "count": 21,
+   "count": 22,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/business.json"
   },
   {
@@ -70,6 +70,11 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/funds.json"
   },
   {
+   "id": "markets",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/markets.json"
+  },
+  {
    "id": "mica",
    "count": 17,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/mica.json"
@@ -91,7 +96,7 @@
   },
   {
    "id": "regulation",
-   "count": 17,
+   "count": 19,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/regulation.json"
   },
   {
@@ -116,7 +121,7 @@
   },
   {
    "id": "tokenisation",
-   "count": 9,
+   "count": 12,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenisation.json"
   },
   {
