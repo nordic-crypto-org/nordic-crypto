@@ -22,14 +22,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle (KVG sidebar false match). Researcher 27.10."
   },
   {
    "id": "bbd6dd0ec478",
    "url": "https://finanstilsynet.no/nyhetsarkiv/horinger/2026/esma-ber-om-faktagrunnlag-tokenisering-av-sikkerheit-som-blir-stilt-overfor-sentrale-motpartar-ccp",
    "title": "ESMA ber om faktagrunnlag: Tokenisering av sikkerheit som blir stilt overfor sentrale motpartar (CCP)",
-   "title_en": null,
+   "title_en": "ESMA seeks input on tokenisation of collateral posted to central counterparties",
    "source": "finanstilsynet",
    "source_name": "Finanstilsynet",
    "country": "NO",
@@ -41,15 +42,72 @@
    "published": "2026-10-26T10:07:26+00:00",
    "fetched": "2026-10-27T02:49:48+00:00",
    "topics": [
-    "blockchain",
-    "regulation"
+    "regulation",
+    "tokenisation"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "The European Securities and Markets Authority (ESMA) has published a call for evidence on the tokenisation of collateral posted to central counterparties (CCPs). ESMA wants to understand how tokenisation would affect the collateral CCPs collect and to gather information for deciding whether it needs to act. Stakeholders can respond until 15 January 2027. Norway's Finanstilsynet, which reported on the call, says it wants to hear about matters that are important for the Norwegian market.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-27T04:55:00+01:00",
+   "primary_source": {
+    "name": "ESMA – Call for evidence on CCP collateral tokenisation",
+    "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation"
+   },
+   "title_i18n": {
+    "nn": "ESMA ber om innspel om tokenisering av sikkerheit stilt overfor sentrale motpartar",
+    "da": "ESMA beder om input om tokenisering af sikkerhedsstillelse over for centrale modparter",
+    "sv": "ESMA ber om underlag om tokenisering av säkerheter som ställs hos centrala motparter",
+    "fi": "ESMA pyytää näkemyksiä keskusvastapuolille annettavien vakuuksien tokenisoinnista",
+    "is": "ESMA óskar eftir upplýsingum um táknvæðingu trygginga hjá miðlægum mótaðilum",
+    "zh": "ESMA就中央对手方抵押品代币化征求意见",
+    "hi": "ESMA ने केंद्रीय प्रतिपक्षों को दी जाने वाली संपार्श्विक के टोकनाइज़ेशन पर जानकारी माँगी",
+    "es": "ESMA solicita información sobre la tokenización de garantías aportadas a entidades de contrapartida central",
+    "fr": "L'ESMA lance un appel à contributions sur la tokenisation des garanties déposées auprès des contreparties centrales",
+    "ar": "ESMA تطلب مساهمات بشأن ترميز الضمانات المقدّمة للأطراف المقابلة المركزية",
+    "bn": "কেন্দ্রীয় প্রতিপক্ষকে দেওয়া জামানতের টোকেনাইজেশন নিয়ে ESMA-র তথ্য আহ্বান",
+    "pt": "ESMA pede contributos sobre a tokenização de garantias prestadas a contrapartes centrais",
+    "ru": "ESMA запросила информацию о токенизации обеспечения, предоставляемого центральным контрагентам",
+    "ur": "ESMA نے مرکزی فریقِ مقابل کو دی جانے والی ضمانت کی ٹوکنائزیشن پر آراء طلب کیں",
+    "id": "ESMA minta masukan tentang tokenisasi agunan yang ditempatkan pada pihak lawan sentral",
+    "de": "ESMA holt Informationen zur Tokenisierung von bei zentralen Gegenparteien hinterlegten Sicherheiten ein",
+    "ja": "ESMA、中央清算機関に差し入れる担保のトークン化で意見募集",
+    "sw": "ESMA yaomba maoni kuhusu uwekaji tokeni wa dhamana zinazowekwa kwa wahusika wakuu wa kati",
+    "mr": "केंद्रीय प्रतिपक्षांकडे ठेवल्या जाणाऱ्या तारणाच्या टोकनायझेशनवर ESMA ने माहिती मागवली",
+    "fa": "ESMA درباره توکنیزه‌سازی وثیقه‌های سپرده‌شده نزد طرف‌های مقابل مرکزی نظرخواهی کرد",
+    "uk": "ESMA запитує думки щодо токенізації забезпечення, що надається центральним контрагентам",
+    "tr": "ESMA, merkezi karşı taraflara verilen teminatların tokenizasyonu için görüş istedi"
+   },
+   "title_i18n_source": "ESMA ber om faktagrunnlag: Tokenisering av sikkerheit som blir stilt overfor sentrale motpartar (CCP)",
+   "summary_i18n": {
+    "nn": "Den europeiske verdipapir- og marknadstilsynsmyndigheita (ESMA) har publisert ei innhenting av fakta om tokenisering av sikkerheit som blir stilt overfor sentrale motpartar (CCP-ar). ESMA vil forstå korleis tokenisering vil påverke sikkerheita CCP-ane hentar inn, og samle informasjon for å vurdere om tilsynet må gripe inn. Interessentar kan svare innan 15. januar 2027. Finanstilsynet i Noreg, som melde om saka, seier at dei vil høyre om forhold som er viktige for den norske marknaden.",
+    "nb": "Den europeiske verdipapir- og markedstilsynsmyndigheten (ESMA) har publisert en innhenting av fakta om tokenisering av sikkerhet som stilles overfor sentrale motparter (CCP-er). ESMA vil forstå hvordan tokenisering vil påvirke sikkerhetene CCP-ene innhenter, og samle informasjon for å vurdere om tilsynet må gripe inn. Interessenter kan svare innen 15. januar 2027. Finanstilsynet i Norge, som meldte om saken, sier at de vil høre om forhold som er viktige for det norske markedet.",
+    "sv": "Europeiska värdepappers- och marknadsmyndigheten (ESMA) har publicerat en inbjudan att lämna underlag om tokenisering av säkerheter som ställs hos centrala motparter (CCP:er). ESMA vill förstå hur tokenisering skulle påverka de säkerheter som CCP:erna tar emot och samla information för att bedöma om myndigheten behöver agera. Berörda kan svara senast den 15 januari 2027. Norska Finanstilsynet, som rapporterade om saken, säger att det vill höra om frågor som är viktiga för den norska marknaden.",
+    "da": "Den europæiske værdipapir- og markedstilsynsmyndighed (ESMA) har offentliggjort en indkaldelse af input om tokenisering af sikkerhedsstillelse over for centrale modparter (CCP'er). ESMA vil forstå, hvordan tokenisering vil påvirke den sikkerhed, CCP'erne modtager, og indsamle oplysninger til at vurdere, om tilsynet skal handle. Interessenter kan svare senest den 15. januar 2027. Norges Finanstilsynet, som omtalte sagen, siger, at det vil høre om forhold, der er vigtige for det norske marked.",
+    "fi": "Euroopan arvopaperi- ja markkinaviranomainen ESMA on julkaissut tietopyynnön keskusvastapuolille (CCP) annettavien vakuuksien tokenisoinnista. ESMA haluaa ymmärtää, miten tokenisointi vaikuttaisi keskusvastapuolten keräämiin vakuuksiin, ja koota tietoa arvioidakseen, tarvitseeko sen toimia. Sidosryhmät voivat vastata 15. tammikuuta 2027 asti. Norjan Finanstilsynet, joka kertoi asiasta, haluaa kuulla Norjan markkinoille tärkeistä seikoista.",
+    "is": "Evrópska verðbréfa- og markaðseftirlitið (ESMA) hefur birt ákall um upplýsingar um táknvæðingu trygginga sem lagðar eru fram hjá miðlægum mótaðilum (CCP). ESMA vill skilja hvernig táknvæðing myndi hafa áhrif á tryggingar sem CCP-aðilar taka við og safna upplýsingum til að meta hvort stofnunin þurfi að bregðast við. Hagsmunaaðilar geta svarað til 15. janúar 2027. Norska fjármálaeftirlitið Finanstilsynet, sem greindi frá málinu, segist vilja heyra um atriði sem skipta norskan markað máli.",
+    "zh": "欧洲证券和市场管理局（ESMA）发布了关于中央对手方（CCP）抵押品代币化的征求意见文件。ESMA希望了解代币化将如何影响中央对手方收取的抵押品，并收集信息以判断自身是否需要采取行动。利益相关方可在2027年1月15日前回复。报道此事的挪威金融监管局（Finanstilsynet）表示，希望了解对挪威市场重要的事项。",
+    "hi": "यूरोपीय प्रतिभूति एवं बाज़ार प्राधिकरण (ESMA) ने केंद्रीय प्रतिपक्षों (CCP) को दी जाने वाली संपार्श्विक के टोकनाइज़ेशन पर जानकारी के लिए आह्वान प्रकाशित किया है। ESMA समझना चाहता है कि टोकनाइज़ेशन से CCP द्वारा ली जाने वाली संपार्श्विक पर क्या असर पड़ेगा, और यह तय करने के लिए जानकारी जुटाना चाहता है कि उसे कार्रवाई करनी चाहिए या नहीं। हितधारक 15 जनवरी 2027 तक जवाब दे सकते हैं। इस बारे में बताने वाले नॉर्वे के Finanstilsynet ने कहा कि वह नॉर्वेजियन बाज़ार के लिए महत्वपूर्ण बातों के बारे में सुनना चाहता है।",
+    "es": "La Autoridad Europea de Valores y Mercados (ESMA) ha publicado una solicitud de información sobre la tokenización de las garantías aportadas a entidades de contrapartida central (ECC). ESMA quiere entender cómo afectaría la tokenización a las garantías que recaudan las ECC y reunir información para decidir si debe actuar. Las partes interesadas pueden responder hasta el 15 de enero de 2027. El Finanstilsynet noruego, que informó del asunto, dice que quiere conocer los aspectos importantes para el mercado noruego.",
+    "fr": "L'Autorité européenne des marchés financiers (ESMA) a publié un appel à contributions sur la tokenisation des garanties déposées auprès des contreparties centrales (CCP). L'ESMA veut comprendre l'effet de la tokenisation sur les garanties collectées par les CCP et recueillir des informations pour décider si elle doit agir. Les parties prenantes peuvent répondre jusqu'au 15 janvier 2027. Le Finanstilsynet norvégien, qui a relayé l'appel, dit vouloir connaître les points importants pour le marché norvégien.",
+    "ar": "نشرت الهيئة الأوروبية للأوراق المالية والأسواق (ESMA) دعوة لتقديم معلومات حول ترميز الضمانات المقدّمة إلى الأطراف المقابلة المركزية (CCP). وتريد الهيئة فهم كيف سيؤثر الترميز على الضمانات التي تجمعها هذه الأطراف، وجمع معلومات لتقرير ما إذا كانت بحاجة إلى التحرك. يمكن لأصحاب المصلحة الرد حتى 15 يناير 2027. وقالت هيئة الرقابة المالية النرويجية Finanstilsynet، التي أعلنت عن الدعوة، إنها تريد معرفة المسائل المهمة للسوق النرويجية.",
+    "bn": "ইউরোপীয় সিকিউরিটিজ ও বাজার কর্তৃপক্ষ (ESMA) কেন্দ্রীয় প্রতিপক্ষ (CCP)-কে দেওয়া জামানতের টোকেনাইজেশন নিয়ে তথ্য আহ্বান প্রকাশ করেছে। টোকেনাইজেশন CCP-গুলোর সংগৃহীত জামানতে কী প্রভাব ফেলবে তা বুঝতে এবং ESMA-র পদক্ষেপ দরকার কি না তা ঠিক করতে তথ্য সংগ্রহ করতে চায় সংস্থাটি। অংশীজনরা ২০২৭ সালের ১৫ জানুয়ারি পর্যন্ত সাড়া দিতে পারবেন। বিষয়টি জানানো নরওয়ের Finanstilsynet বলেছে, তারা নরওয়ের বাজারের জন্য গুরুত্বপূর্ণ বিষয়গুলো জানতে চায়।",
+    "pt": "A Autoridade Europeia dos Valores Mobiliários e dos Mercados (ESMA) publicou um pedido de contributos sobre a tokenização das garantias prestadas a contrapartes centrais (CCP). A ESMA quer perceber como a tokenização afetaria as garantias que as CCP recolhem e reunir informação para decidir se precisa de agir. As partes interessadas podem responder até 15 de janeiro de 2027. O Finanstilsynet norueguês, que noticiou o pedido, diz que quer ouvir sobre questões importantes para o mercado norueguês.",
+    "ru": "Европейский орган по ценным бумагам и рынкам (ESMA) опубликовал запрос информации о токенизации обеспечения, предоставляемого центральным контрагентам (ЦК). ESMA хочет понять, как токенизация повлияет на обеспечение, которое собирают ЦК, и собрать данные, чтобы решить, нужны ли ей меры. Заинтересованные стороны могут ответить до 15 января 2027 года. Норвежский Finanstilsynet, сообщивший об этом, говорит, что хочет узнать о вопросах, важных для норвежского рынка.",
+    "ur": "یورپی سیکیورٹیز اینڈ مارکیٹس اتھارٹی (ESMA) نے مرکزی فریقِ مقابل (CCP) کو دی جانے والی ضمانت کی ٹوکنائزیشن پر معلومات کے لیے دعوت شائع کی ہے۔ ESMA سمجھنا چاہتی ہے کہ ٹوکنائزیشن سے CCP کی جمع کردہ ضمانت پر کیا اثر پڑے گا، اور یہ طے کرنے کے لیے معلومات جمع کرنا چاہتی ہے کہ اسے اقدام کرنا چاہیے یا نہیں۔ متعلقہ فریق 15 جنوری 2027 تک جواب دے سکتے ہیں۔ اس کی خبر دینے والے ناروے کے Finanstilsynet نے کہا کہ وہ نارویجن مارکیٹ کے لیے اہم امور کے بارے میں سننا چاہتا ہے۔",
+    "id": "Otoritas Sekuritas dan Pasar Eropa (ESMA) menerbitkan permintaan masukan tentang tokenisasi agunan yang ditempatkan pada pihak lawan sentral (CCP). ESMA ingin memahami bagaimana tokenisasi akan memengaruhi agunan yang dihimpun CCP dan mengumpulkan informasi untuk menilai apakah perlu bertindak. Para pemangku kepentingan dapat menanggapi hingga 15 Januari 2027. Finanstilsynet Norwegia, yang melaporkan permintaan ini, mengatakan ingin mendengar hal-hal yang penting bagi pasar Norwegia.",
+    "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat einen Aufruf zur Stellungnahme zur Tokenisierung von bei zentralen Gegenparteien (CCPs) hinterlegten Sicherheiten veröffentlicht. ESMA will verstehen, wie sich die Tokenisierung auf die von CCPs eingeholten Sicherheiten auswirken würde, und Informationen sammeln, um zu entscheiden, ob sie tätig werden muss. Beteiligte können bis zum 15. Januar 2027 antworten. Norwegens Finanstilsynet, das über den Aufruf berichtete, möchte von Punkten hören, die für den norwegischen Markt wichtig sind.",
+    "ja": "欧州証券市場監督機構（ESMA）は、中央清算機関（CCP）に差し入れる担保のトークン化について情報提供を求める文書を公表した。ESMAは、トークン化がCCPの受け入れる担保にどう影響するかを理解し、自らの対応が必要かを判断するための情報を集めたいとしている。関係者は2027年1月15日まで回答できる。この件を伝えたノルウェー金融監督庁（Finanstilsynet）は、ノルウェー市場にとって重要な事項について意見を聞きたいとしている。",
+    "sw": "Mamlaka ya Ulaya ya Dhamana na Masoko (ESMA) imechapisha wito wa taarifa kuhusu uwekaji tokeni wa dhamana zinazowekwa kwa wahusika wakuu wa kati (CCP). ESMA inataka kuelewa jinsi uwekaji tokeni utakavyoathiri dhamana zinazokusanywa na CCP na kukusanya taarifa za kuamua kama inahitaji kuchukua hatua. Wadau wanaweza kujibu hadi tarehe 15 Januari 2027. Finanstilsynet ya Norway, iliyoripoti wito huo, inasema inataka kusikia kuhusu mambo muhimu kwa soko la Norway.",
+    "mr": "युरोपियन सिक्युरिटीज अँड मार्केट्स अथॉरिटीने (ESMA) केंद्रीय प्रतिपक्षांकडे (CCP) ठेवल्या जाणाऱ्या तारणाच्या टोकनायझेशनबाबत माहितीसाठी आवाहन प्रसिद्ध केले आहे. टोकनायझेशनचा CCP द्वारे घेतल्या जाणाऱ्या तारणावर काय परिणाम होईल हे समजून घेण्याचा आणि कारवाईची गरज आहे का हे ठरवण्यासाठी माहिती गोळा करण्याचा ESMA चा हेतू आहे. संबंधित घटक १५ जानेवारी २०२७ पर्यंत उत्तर देऊ शकतात. याची बातमी देणाऱ्या नॉर्वेच्या Finanstilsynet ने सांगितले की नॉर्वेजियन बाजारासाठी महत्त्वाच्या बाबींबद्दल त्यांना ऐकायचे आहे.",
+    "fa": "مرجع اوراق بهادار و بازارهای اروپا (ESMA) فراخوانی برای ارائه اطلاعات درباره توکنیزه‌سازی وثیقه‌های سپرده‌شده نزد طرف‌های مقابل مرکزی (CCP) منتشر کرده است. ESMA می‌خواهد بفهمد توکنیزه‌سازی چه تأثیری بر وثیقه‌هایی که CCPها دریافت می‌کنند خواهد داشت و اطلاعاتی گردآوری کند تا تصمیم بگیرد آیا نیاز به اقدام دارد. ذی‌نفعان تا ۱۵ ژانویه ۲۰۲۷ می‌توانند پاسخ دهند. Finanstilsynet نروژ که این فراخوان را گزارش کرد می‌گوید می‌خواهد درباره موضوعات مهم برای بازار نروژ بشنود.",
+    "uk": "Європейський орган з цінних паперів і ринків (ESMA) опублікував запит інформації щодо токенізації забезпечення, що надається центральним контрагентам (ЦК). ESMA хоче зрозуміти, як токенізація вплине на забезпечення, яке збирають ЦК, і зібрати дані, щоб вирішити, чи потрібні їй дії. Зацікавлені сторони можуть відповісти до 15 січня 2027 року. Норвезький Finanstilsynet, що повідомив про запит, каже, що хоче почути про питання, важливі для норвезького ринку.",
+    "tr": "Avrupa Menkul Kıymetler ve Piyasalar Otoritesi (ESMA), merkezi karşı taraflara (CCP) verilen teminatların tokenizasyonu konusunda bir bilgi çağrısı yayımladı. ESMA, tokenizasyonun CCP'lerin topladığı teminatı nasıl etkileyeceğini anlamak ve harekete geçmesi gerekip gerekmediğine karar vermek için bilgi toplamak istiyor. Paydaşlar 15 Ocak 2027'ye kadar yanıt verebilir. Çağrıyı haberleştiren Norveç Finanstilsynet, Norveç piyasası için önemli konuları duymak istediğini söylüyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "246e8cb31621",
@@ -74,8 +132,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle (SpaceX AI loan). Researcher 27.10."
   },
   {
    "id": "52ee7a062342",
@@ -100,14 +159,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Betting/prediction-market content, excluded. Researcher 27.10."
   },
   {
    "id": "c944b711d94a",
    "url": "https://kaupr.io/nyheter/slik-skal-futureproof-rebalansere-bitcoin-og-gull-automatisk",
    "title": "Slik skal Futureproof rebalansere bitcoin og gull automatisk",
-   "title_en": null,
+   "title_en": "Goobit presents planned Futureproof savings product combining bitcoin and gold",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -119,21 +179,79 @@
    "published": "2026-10-26",
    "fetched": "2026-10-27T02:49:48+00:00",
    "topics": [
+    "business",
     "bitcoin"
    ],
    "matched": [
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Goobit Group, a listed Swedish company, is presenting Futureproof, a planned savings product that, the company says, automatically rebalances between bitcoin, gold and an interest-bearing part according to the customer's risk profile. Return figures shown for the product, such as a median return of about 25 % over three years, are the company's own calculations and have not been independently verified. Goobit says a rights issue of units is running until 5 November 2026; this is not a recommendation to subscribe and not investment advice.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-27T04:55:00+01:00",
+   "primary_source": {
+    "name": "Goobit Group – press release 22 Oct 2026: subscription period in the rights issue of units begins today (MFN)",
+    "url": "https://mfn.se/all/a/goobit/teckningsperioden-i-goobits-foretradesemission-av-units-inleds-idag"
+   },
+   "title_i18n": {
+    "nn": "Goobit viser fram Futureproof, eit planlagt sparetilbod med bitcoin og gull",
+    "da": "Goobit præsenterer Futureproof, et planlagt opsparingsprodukt med bitcoin og guld",
+    "sv": "Goobit presenterar Futureproof, en planerad sparprodukt med bitcoin och guld",
+    "fi": "Goobit esittelee suunnitellun Futureproof-säästötuotteen, jossa yhdistyvät bitcoin ja kulta",
+    "is": "Goobit kynnir Futureproof, fyrirhugaða sparnaðarvöru með bitcoin og gulli",
+    "zh": "Goobit介绍计划推出的比特币加黄金储蓄产品Futureproof",
+    "hi": "Goobit ने बिटकॉइन और सोने वाले प्रस्तावित बचत उत्पाद Futureproof को पेश किया",
+    "es": "Goobit presenta Futureproof, un producto de ahorro previsto que combina bitcoin y oro",
+    "fr": "Goobit présente Futureproof, un produit d'épargne en projet associant bitcoin et or",
+    "ar": "Goobit تعرض Futureproof، منتج ادخار مخطط يجمع البيتكوين والذهب",
+    "bn": "বিটকয়েন ও সোনা মেলানো পরিকল্পিত সঞ্চয় পণ্য Futureproof উপস্থাপন করল Goobit",
+    "pt": "Goobit apresenta o Futureproof, um produto de poupança previsto que combina bitcoin e ouro",
+    "ru": "Goobit представила планируемый сберегательный продукт Futureproof с биткоином и золотом",
+    "ur": "Goobit نے بٹ کوائن اور سونے والا مجوزہ بچت پروڈکٹ Futureproof پیش کیا",
+    "id": "Goobit perkenalkan Futureproof, produk tabungan yang direncanakan dengan bitcoin dan emas",
+    "de": "Goobit stellt Futureproof vor, ein geplantes Sparprodukt aus Bitcoin und Gold",
+    "ja": "Goobit、ビットコインと金を組み合わせる計画中の貯蓄商品「Futureproof」を紹介",
+    "sw": "Goobit yawasilisha Futureproof, bidhaa ya akiba iliyopangwa yenye bitcoin na dhahabu",
+    "mr": "Goobit कडून बिटकॉइन व सोन्याचे नियोजित बचत उत्पादन Futureproof सादर",
+    "fa": "Goobit محصول پس‌انداز برنامه‌ریزی‌شده Futureproof با بیت‌کوین و طلا را معرفی کرد",
+    "uk": "Goobit представила плановий ощадний продукт Futureproof із біткоїном і золотом",
+    "tr": "Goobit, bitcoin ve altını birleştiren planlanan tasarruf ürünü Futureproof'u tanıttı"
+   },
+   "title_i18n_source": "Slik skal Futureproof rebalansere bitcoin og gull automatisk",
+   "summary_i18n": {
+    "nn": "Goobit Group, eit børsnotert svensk selskap, viser fram Futureproof, eit planlagt sparetilbod som ifølgje selskapet automatisk rebalanserer mellom bitcoin, gull og ein rentebærande del ut frå risikoprofilen til kunden. Avkastningstal som er viste for produktet, til dømes ei medianavkastning på om lag 25 prosent over tre år, er selskapet sine eigne utrekningar og er ikkje uavhengig kontrollerte. Goobit seier at ei fortrinnsrettsemisjon av units går til 5. november 2026; dette er ikkje ei tilråding om å tegne og ikkje investeringsråd.",
+    "nb": "Goobit Group, et børsnotert svensk selskap, viser frem Futureproof, et planlagt sparetilbud som ifølge selskapet automatisk rebalanserer mellom bitcoin, gull og en rentebærende del ut fra kundens risikoprofil. Avkastningstall som vises for produktet, for eksempel en medianavkastning på rundt 25 prosent over tre år, er selskapets egne beregninger og er ikke uavhengig kontrollert. Goobit sier at en fortrinnsrettsemisjon av units pågår til 5. november 2026; dette er ikke en anbefaling om å tegne og ikke investeringsråd.",
+    "sv": "Goobit Group, ett börsnoterat svenskt bolag, presenterar Futureproof, en planerad sparprodukt som enligt bolaget automatiskt omviktar mellan bitcoin, guld och en räntebärande del utifrån kundens riskprofil. Avkastningssiffror som visas för produkten, till exempel en medianavkastning på cirka 25 procent över tre år, är bolagets egna beräkningar och har inte kontrollerats oberoende. Goobit säger att en företrädesemission av units pågår till den 5 november 2026; detta är ingen rekommendation att teckna och inget investeringsråd.",
+    "da": "Goobit Group, et børsnoteret svensk selskab, præsenterer Futureproof, et planlagt opsparingsprodukt, der ifølge selskabet automatisk omfordeler mellem bitcoin, guld og en rentebærende del ud fra kundens risikoprofil. Afkastningstal, der vises for produktet, for eksempel et medianafkast på omkring 25 procent over tre år, er selskabets egne beregninger og er ikke uafhængigt kontrolleret. Goobit siger, at en fortegningsemission af units kører til 5. november 2026; det er ikke en anbefaling om at tegne og ikke investeringsrådgivning.",
+    "fi": "Pörssilistattu ruotsalainen Goobit Group esittelee Futureproof-tuotetta, suunniteltua säästötuotetta, joka yhtiön mukaan tasapainottaa automaattisesti bitcoinin, kullan ja korkoa tuottavan osan välillä asiakkaan riskiprofiilin mukaan. Tuotteelle esitetyt tuottoluvut, kuten noin 25 prosentin mediaanituotto kolmessa vuodessa, ovat yhtiön omia laskelmia, eikä niitä ole tarkistettu riippumattomasti. Goobit kertoo, että unit-yksiköiden merkintäetuoikeusanti on käynnissä 5. marraskuuta 2026 asti; tämä ei ole suositus merkitä eikä sijoitusneuvo.",
+    "is": "Goobit Group, skráð sænskt félag, kynnir Futureproof, fyrirhugaða sparnaðarvöru sem að sögn félagsins endurjafnar sjálfkrafa milli bitcoin, gulls og vaxtaberandi hluta eftir áhættusniði viðskiptavinar. Ávöxtunartölur sem sýndar eru fyrir vöruna, til dæmis miðgildisávöxtun um 25 % á þremur árum, eru eigin útreikningar félagsins og hafa ekki verið staðfestir óháð. Goobit segir að forgangsréttarútboð á einingum standi til 5. nóvember 2026; þetta er hvorki ráðlegging um að skrá sig fyrir né fjárfestingarráðgjöf.",
+    "zh": "上市的瑞典公司Goobit Group正在介绍计划推出的储蓄产品Futureproof，公司称该产品会根据客户风险偏好在比特币、黄金和生息部分之间自动再平衡。为该产品展示的回报数据，例如三年中位回报约25%，是公司自己的测算，未经独立核实。Goobit称，一项面向现有股东的单位配股正在进行，至2026年11月5日；这不是认购建议，也不构成投资建议。",
+    "hi": "सूचीबद्ध स्वीडिश कंपनी Goobit Group प्रस्तावित बचत उत्पाद Futureproof पेश कर रही है, जो कंपनी के अनुसार ग्राहक की जोखिम प्रोफ़ाइल के आधार पर बिटकॉइन, सोने और ब्याज वाले हिस्से के बीच अपने-आप संतुलन बदलता है। उत्पाद के लिए दिखाए गए रिटर्न आँकड़े, जैसे तीन साल में लगभग 25 % का माध्यिका रिटर्न, कंपनी की अपनी गणनाएँ हैं और स्वतंत्र रूप से सत्यापित नहीं हैं। Goobit के अनुसार यूनिट्स का राइट्स इश्यू 5 नवंबर 2026 तक चल रहा है; यह सब्सक्राइब करने की सिफ़ारिश या निवेश सलाह नहीं है।",
+    "es": "Goobit Group, una empresa sueca cotizada, presenta Futureproof, un producto de ahorro previsto que, según la compañía, reequilibra automáticamente entre bitcoin, oro y una parte con intereses según el perfil de riesgo del cliente. Las cifras de rentabilidad mostradas para el producto, como una rentabilidad mediana de cerca del 25 % en tres años, son cálculos propios de la empresa y no han sido verificadas de forma independiente. Goobit dice que una emisión de derechos de unidades está en curso hasta el 5 de noviembre de 2026; esto no es una recomendación de suscribir ni asesoramiento de inversión.",
+    "fr": "Goobit Group, société suédoise cotée, présente Futureproof, un produit d'épargne en projet qui, selon l'entreprise, rééquilibre automatiquement entre bitcoin, or et une part rémunérée selon le profil de risque du client. Les chiffres de rendement présentés pour le produit, comme un rendement médian d'environ 25 % sur trois ans, sont les calculs de l'entreprise et n'ont pas été vérifiés de manière indépendante. Goobit indique qu'une émission avec droits de souscription d'unités est en cours jusqu'au 5 novembre 2026 ; ce n'est ni une recommandation de souscrire ni un conseil en investissement.",
+    "ar": "تعرض شركة Goobit Group السويدية المدرجة في البورصة منتج الادخار المخطط Futureproof، الذي تقول الشركة إنه يعيد التوازن تلقائياً بين البيتكوين والذهب وجزء يدرّ فائدة بحسب ملف مخاطر العميل. أما أرقام العائد المعروضة للمنتج، مثل عائد وسيط يبلغ نحو 25% على ثلاث سنوات، فهي حسابات الشركة نفسها ولم يجرِ التحقق منها بشكل مستقل. وتقول Goobit إن إصدار حقوق للوحدات جارٍ حتى 5 نوفمبر 2026؛ وهذا ليس توصية بالاكتتاب ولا نصيحة استثمارية.",
+    "bn": "তালিকাভুক্ত সুইডিশ কোম্পানি Goobit Group পরিকল্পিত সঞ্চয় পণ্য Futureproof উপস্থাপন করছে, যা কোম্পানির ভাষ্যে গ্রাহকের ঝুঁকি প্রোফাইল অনুযায়ী বিটকয়েন, সোনা ও সুদবাহী অংশের মধ্যে স্বয়ংক্রিয়ভাবে ভারসাম্য বদলায়। পণ্যটির জন্য দেখানো রিটার্নের সংখ্যা, যেমন তিন বছরে প্রায় ২৫ % মধ্যমা রিটার্ন, কোম্পানির নিজস্ব হিসাব এবং স্বাধীনভাবে যাচাই করা হয়নি। Goobit বলছে ইউনিটের রাইটস ইস্যু ২০২৬ সালের ৫ নভেম্বর পর্যন্ত চলছে; এটি সাবস্ক্রাইব করার সুপারিশ বা বিনিয়োগ পরামর্শ নয়।",
+    "pt": "A Goobit Group, empresa sueca cotada, apresenta o Futureproof, um produto de poupança previsto que, segundo a empresa, reequilibra automaticamente entre bitcoin, ouro e uma parte com juros consoante o perfil de risco do cliente. Os números de rendibilidade mostrados para o produto, como uma rendibilidade mediana de cerca de 25 % em três anos, são cálculos da própria empresa e não foram verificados de forma independente. A Goobit diz que uma emissão com direitos de subscrição de unidades decorre até 5 de novembro de 2026; isto não é uma recomendação de subscrição nem aconselhamento de investimento.",
+    "ru": "Goobit Group, котирующаяся шведская компания, представляет Futureproof — планируемый сберегательный продукт, который, по словам компании, автоматически перебалансирует портфель между биткоином, золотом и процентной частью в зависимости от риск-профиля клиента. Показатели доходности, приведённые для продукта, например медианная доходность около 25 % за три года, — это собственные расчёты компании, они не проверены независимо. Goobit сообщает, что эмиссия юнитов с правом преимущественной подписки идёт до 5 ноября 2026 года; это не рекомендация подписываться и не инвестиционный совет.",
+    "ur": "درج شدہ سویڈش کمپنی Goobit Group مجوزہ بچت پروڈکٹ Futureproof پیش کر رہی ہے، جو کمپنی کے مطابق صارف کے رسک پروفائل کے مطابق بٹ کوائن، سونے اور سود دینے والے حصے کے درمیان خود بخود توازن بدلتی ہے۔ پروڈکٹ کے لیے دکھائے گئے منافع کے اعداد، جیسے تین سال میں تقریباً 25 فیصد وسطانی منافع، کمپنی کے اپنے حساب ہیں اور آزادانہ طور پر تصدیق شدہ نہیں۔ Goobit کے مطابق یونٹس کا رائٹس ایشو 5 نومبر 2026 تک جاری ہے؛ یہ سبسکرائب کرنے کی سفارش یا سرمایہ کاری کا مشورہ نہیں۔",
+    "id": "Goobit Group, perusahaan Swedia yang tercatat di bursa, memperkenalkan Futureproof, produk tabungan yang direncanakan dan, menurut perusahaan, secara otomatis menyeimbangkan kembali antara bitcoin, emas, dan bagian berbunga sesuai profil risiko nasabah. Angka imbal hasil yang ditampilkan untuk produk ini, misalnya imbal hasil median sekitar 25 % dalam tiga tahun, adalah perhitungan perusahaan sendiri dan belum diverifikasi secara independen. Goobit mengatakan penawaran umum terbatas (rights issue) unit berlangsung hingga 5 November 2026; ini bukan rekomendasi untuk berlangganan dan bukan saran investasi.",
+    "de": "Die börsennotierte schwedische Goobit Group stellt Futureproof vor, ein geplantes Sparprodukt, das laut Unternehmen je nach Risikoprofil des Kunden automatisch zwischen Bitcoin, Gold und einem verzinsten Teil umschichtet. Die für das Produkt gezeigten Renditezahlen, etwa eine Medianrendite von rund 25 % über drei Jahre, sind eigene Berechnungen des Unternehmens und nicht unabhängig geprüft. Goobit sagt, eine Bezugsrechtsemission von Units laufe bis zum 5. November 2026; dies ist keine Empfehlung zur Zeichnung und keine Anlageberatung.",
+    "ja": "スウェーデンの上場企業Goobit Groupは、計画中の貯蓄商品「Futureproof」を紹介している。同社によると、顧客のリスクプロファイルに応じてビットコイン、金、利付き部分の間で自動的にリバランスするという。商品について示されたリターン数値（3年間の中央値で約25％など）は同社独自の計算で、独立した検証はされていない。Goobitは、ユニットの株主割当増資が2026年11月5日まで行われていると述べている。これは申し込みの推奨でも投資助言でもない。",
+    "sw": "Goobit Group, kampuni ya Uswidi iliyoorodheshwa sokoni, inawasilisha Futureproof, bidhaa ya akiba iliyopangwa ambayo, kampuni inasema, hurekebisha kiotomatiki kati ya bitcoin, dhahabu na sehemu yenye riba kulingana na wasifu wa hatari wa mteja. Takwimu za marejesho zinazoonyeshwa kwa bidhaa hiyo, kama marejesho ya wastani ya karibu asilimia 25 kwa miaka mitatu, ni hesabu za kampuni yenyewe na hazijathibitishwa kwa kujitegemea. Goobit inasema utoaji wa haki wa vipande unaendelea hadi tarehe 5 Novemba 2026; hii si pendekezo la kujisajili wala ushauri wa uwekezaji.",
+    "mr": "सूचीबद्ध स्वीडिश कंपनी Goobit Group नियोजित बचत उत्पादन Futureproof सादर करत आहे, जे कंपनीच्या म्हणण्यानुसार ग्राहकाच्या जोखीम प्रोफाइलनुसार बिटकॉइन, सोने आणि व्याज देणाऱ्या भागामध्ये आपोआप समतोल बदलते. उत्पादनासाठी दाखवलेले परताव्याचे आकडे, उदा. तीन वर्षांत सुमारे २५ % मध्यक परतावा, हे कंपनीचे स्वतःचे गणित आहे आणि स्वतंत्रपणे पडताळलेले नाही. Goobit च्या म्हणण्यानुसार युनिट्सचा राइट्स इश्यू ५ नोव्हेंबर २०२६ पर्यंत सुरू आहे; ही सबस्क्राइब करण्याची शिफारस किंवा गुंतवणूक सल्ला नाही.",
+    "fa": "Goobit Group، شرکت سوئدی پذیرفته‌شده در بورس، محصول پس‌انداز برنامه‌ریزی‌شده Futureproof را معرفی می‌کند که به گفته شرکت، بر اساس نمایه ریسک مشتری به‌طور خودکار میان بیت‌کوین، طلا و بخش سودده توازن را تنظیم می‌کند. ارقام بازده نمایش‌داده‌شده برای این محصول، مثلاً بازده میانه حدود ۲۵ درصد در سه سال، محاسبات خود شرکت است و به‌طور مستقل راستی‌آزمایی نشده است. Goobit می‌گوید افزایش سرمایه حق‌تقدمی واحدها تا ۵ نوامبر ۲۰۲۶ ادامه دارد؛ این توصیه‌ای برای پذیره‌نویسی یا مشاوره سرمایه‌گذاری نیست.",
+    "uk": "Goobit Group, шведська компанія, чиї акції котируються на біржі, представляє Futureproof — плановий ощадний продукт, який, за словами компанії, автоматично ребалансує між біткоїном, золотом і частиною з відсотками залежно від ризик-профілю клієнта. Показники дохідності, наведені для продукту, зокрема медіанна дохідність близько 25 % за три роки, є власними розрахунками компанії й не перевірені незалежно. Goobit повідомляє, що емісія юнітів із правом пріоритетної підписки триває до 5 листопада 2026 року; це не рекомендація підписуватися й не інвестиційна порада.",
+    "tr": "Borsada işlem gören İsveçli Goobit Group, şirkete göre müşterinin risk profiline göre bitcoin, altın ve faiz getiren bölüm arasında otomatik dengeleme yapan, planlanan bir tasarruf ürünü olan Futureproof'u tanıtıyor. Ürün için gösterilen getiri rakamları, örneğin üç yılda yaklaşık yüzde 25 medyan getiri, şirketin kendi hesaplamalarıdır ve bağımsız olarak doğrulanmamıştır. Goobit, birimlerin hak kullanımlı ihracının 5 Kasım 2026'ya kadar sürdüğünü söylüyor; bu, abone olma önerisi ya da yatırım tavsiyesi değildir."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "d570281c8dfb",
    "url": "https://kaupr.io/nyheter/latvia-vil-tokenisere-naeringseiendom-fra-2027",
    "title": "Latvia vil tokenisere næringseiendom fra 2027",
-   "title_en": null,
+   "title_en": "Latvia's economy minister aims for tokenisation rules in 2027",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -145,21 +263,79 @@
    "published": "2026-10-26",
    "fetched": "2026-10-27T02:49:48+00:00",
    "topics": [
-    "blockchain"
+    "tokenisation",
+    "regulation"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Latvia's economy minister, Viktors Valainis, said at the UN:BLOCK conference in Riga that he aims to have rules for the tokenisation of real-world assets ready in the first half of 2027, with commercial real estate as a possible starting point, CoinDesk reported on 25 October 2026. This is the minister's goal, not adopted policy: an assessment that was due on 1 October is still ongoing, and a new government is being formed. Norwegian site Kaupr also reported the story.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-27T04:55:00+01:00",
+   "primary_source": {
+    "name": "CoinDesk, 25 Oct 2026: Latvia targets tokenization rules in 2027 with commercial property in focus",
+    "url": "https://www.coindesk.com/business/2026/10/25/latvia-targets-tokenization-rules-in-2027-with-commercial-property-in-focus"
+   },
+   "title_i18n": {
+    "nn": "Latvias økonomiminister vil ha reglar for tokenisering på plass i 2027",
+    "da": "Letlands økonomiminister sigter mod regler for tokenisering i 2027",
+    "sv": "Lettlands ekonomiminister vill ha regler för tokenisering på plats 2027",
+    "fi": "Latvian talousministeri tähtää tokenisointisääntöihin vuonna 2027",
+    "is": "Efnahagsráðherra Lettlands stefnir að reglum um táknvæðingu árið 2027",
+    "zh": "拉脱维亚经济部长力争2027年出台代币化规则",
+    "hi": "लातविया के अर्थव्यवस्था मंत्री का लक्ष्य 2027 में टोकनाइज़ेशन नियम",
+    "es": "El ministro de Economía de Letonia aspira a tener normas de tokenización en 2027",
+    "fr": "Le ministre letton de l'Économie vise des règles sur la tokenisation en 2027",
+    "ar": "وزير الاقتصاد اللاتفي يستهدف قواعد للترميز في 2027",
+    "bn": "২০২৭ সালে টোকেনাইজেশন নিয়ম চান লাটভিয়ার অর্থনীতিমন্ত্রী",
+    "pt": "Ministro da Economia da Letónia quer regras de tokenização em 2027",
+    "ru": "Министр экономики Латвии нацелен на правила токенизации в 2027 году",
+    "ur": "لیٹویا کے وزیرِ معیشت کا ہدف 2027 میں ٹوکنائزیشن کے قواعد",
+    "id": "Menteri Ekonomi Latvia targetkan aturan tokenisasi pada 2027",
+    "de": "Lettlands Wirtschaftsminister strebt Tokenisierungsregeln für 2027 an",
+    "ja": "ラトビア経済相、2027年のトークン化ルール整備を目指す",
+    "sw": "Waziri wa Uchumi wa Latvia analenga kanuni za uwekaji tokeni mwaka 2027",
+    "mr": "लॅटव्हियाच्या अर्थमंत्र्यांचे २०२७ मध्ये टोकनायझेशन नियमांचे उद्दिष्ट",
+    "fa": "وزیر اقتصاد لتونی هدف‌گذاری قواعد توکنیزه‌سازی در ۲۰۲۷ را دارد",
+    "uk": "Міністр економіки Латвії прагне до правил токенізації у 2027 році",
+    "tr": "Letonya Ekonomi Bakanı 2027'de tokenizasyon kurallarını hedefliyor"
+   },
+   "title_i18n_source": "Latvia vil tokenisere næringseiendom fra 2027",
+   "summary_i18n": {
+    "nn": "Latvias økonomiminister Viktors Valainis sa på konferansen UN:BLOCK i Riga at han vil ha reglar for tokenisering av reelle eigedelar klare i første halvår 2027, med næringseigedom som mogleg startpunkt, melde CoinDesk 25. oktober 2026. Dette er målet til ministeren, ikkje vedteken politikk: ei vurdering som skulle vore ferdig 1. oktober held framleis på, og ei ny regjering er under dannelse. Den norske nettstaden Kaupr omtalte òg saka.",
+    "nb": "Latvias økonomiminister Viktors Valainis sa på konferansen UN:BLOCK i Riga at han vil ha regler for tokenisering av reelle eiendeler klare i første halvår 2027, med næringseiendom som mulig startpunkt, meldte CoinDesk 25. oktober 2026. Dette er ministerens mål, ikke vedtatt politikk: en vurdering som skulle vært ferdig 1. oktober pågår fortsatt, og en ny regjering er under dannelse. Den norske nettsiden Kaupr omtalte også saken.",
+    "sv": "Lettlands ekonomiminister Viktors Valainis sade på konferensen UN:BLOCK i Riga att han vill ha regler för tokenisering av verkliga tillgångar färdiga under första halvåret 2027, med kommersiella fastigheter som möjlig startpunkt, rapporterade CoinDesk den 25 oktober 2026. Det är ministerns mål, inte beslutad politik: en bedömning som skulle varit klar den 1 oktober pågår fortfarande, och en ny regering bildas. Den norska sajten Kaupr rapporterade också om saken.",
+    "da": "Letlands økonomiminister Viktors Valainis sagde på konferencen UN:BLOCK i Riga, at han sigter mod, at regler for tokenisering af reelle aktiver er klar i første halvår af 2027, med erhvervsejendomme som muligt udgangspunkt, rapporterede CoinDesk den 25. oktober 2026. Det er ministerens mål, ikke vedtaget politik: en vurdering, der skulle have været klar den 1. oktober, er stadig i gang, og en ny regering er under dannelse. Det norske medie Kaupr omtalte også sagen.",
+    "fi": "Latvian talousministeri Viktors Valainis sanoi UN:BLOCK-konferenssissa Riiassa pyrkivänsä saamaan reaalimaailman omaisuuserien tokenisointia koskevat säännöt valmiiksi vuoden 2027 ensimmäisellä puoliskolla, ja liikekiinteistöt voisivat olla mahdollinen aloituskohta, kertoi CoinDesk 25. lokakuuta 2026. Kyse on ministerin tavoitteesta, ei hyväksytystä politiikasta: arviointi, jonka piti valmistua 1. lokakuuta, on yhä kesken, ja uutta hallitusta muodostetaan. Norjalainen Kaupr uutisoi asiasta myös.",
+    "is": "Viktors Valainis, efnahagsráðherra Lettlands, sagði á ráðstefnunni UN:BLOCK í Riga að hann stefni að því að reglur um táknvæðingu raunverulegra eigna verði tilbúnar á fyrri helmingi 2027, með atvinnuhúsnæði sem mögulegan upphafspunkt, að sögn CoinDesk 25. október 2026. Þetta er markmið ráðherrans, ekki samþykkt stefna: mat sem átti að vera tilbúið 1. október stendur enn yfir og ný ríkisstjórn er í myndun. Norski vefurinn Kaupr fjallaði einnig um málið.",
+    "zh": "据CoinDesk 2026年10月25日报道，拉脱维亚经济部长维克托斯·瓦莱尼斯在里加的UN:BLOCK会议上表示，他力争在2027年上半年出台现实世界资产代币化规则，商业地产可能是起点。这是部长的目标而非已通过的政策：原定10月1日完成的评估仍在进行，新政府正在组建。挪威网站Kaupr也报道了此事。",
+    "hi": "CoinDesk ने 25 अक्टूबर 2026 को बताया कि लातविया के अर्थव्यवस्था मंत्री Viktors Valainis ने रीगा में UN:BLOCK सम्मेलन में कहा कि वे 2027 की पहली छमाही में वास्तविक संपत्तियों के टोकनाइज़ेशन के नियम तैयार करना चाहते हैं, और वाणिज्यिक रियल एस्टेट संभावित शुरुआती बिंदु हो सकता है। यह मंत्री का लक्ष्य है, अपनाई गई नीति नहीं: 1 अक्टूबर तक पूरा होने वाला मूल्यांकन अभी जारी है और नई सरकार बन रही है। नॉर्वेजियन साइट Kaupr ने भी यह ख़बर दी।",
+    "es": "El ministro de Economía de Letonia, Viktors Valainis, dijo en la conferencia UN:BLOCK de Riga que aspira a tener listas en el primer semestre de 2027 normas para la tokenización de activos del mundo real, con el inmueble comercial como posible punto de partida, informó CoinDesk el 25 de octubre de 2026. Es el objetivo del ministro, no una política adoptada: una evaluación que debía estar lista el 1 de octubre sigue en curso y se está formando un nuevo gobierno. El sitio noruego Kaupr también informó del asunto.",
+    "fr": "Le ministre letton de l'Économie, Viktors Valainis, a déclaré à la conférence UN:BLOCK à Riga qu'il vise des règles sur la tokenisation d'actifs du monde réel au premier semestre 2027, avec l'immobilier commercial comme point de départ possible, a rapporté CoinDesk le 25 octobre 2026. C'est l'objectif du ministre, non une politique adoptée : une évaluation attendue pour le 1er octobre est toujours en cours et un nouveau gouvernement est en formation. Le site norvégien Kaupr a aussi relayé l'information.",
+    "ar": "قال وزير الاقتصاد اللاتفي فيكتورس فالينيس في مؤتمر UN:BLOCK في ريغا إنه يستهدف جاهزية قواعد لترميز الأصول الحقيقية في النصف الأول من 2027، مع العقارات التجارية كنقطة انطلاق محتملة، بحسب CoinDesk في 25 أكتوبر 2026. هذا هدف الوزير وليس سياسة معتمدة: فالتقييم الذي كان مقرراً في 1 أكتوبر لا يزال جارياً وتجري تشكيل حكومة جديدة. ونقل الموقع النرويجي Kaupr الخبر أيضاً.",
+    "bn": "CoinDesk ২০২৬ সালের ২৫ অক্টোবর জানায়, লাটভিয়ার অর্থনীতিমন্ত্রী Viktors Valainis রিগায় UN:BLOCK সম্মেলনে বলেছেন, তিনি ২০২৭ সালের প্রথমার্ধে বাস্তব সম্পদের টোকেনাইজেশনের নিয়ম প্রস্তুত করতে চান, বাণিজ্যিক রিয়েল এস্টেট সম্ভাব্য শুরুর বিন্দু হতে পারে। এটি মন্ত্রীর লক্ষ্য, গৃহীত নীতি নয়: ১ অক্টোবর শেষ হওয়ার কথা থাকা মূল্যায়ন এখনো চলছে এবং নতুন সরকার গঠিত হচ্ছে। নরওয়েজিয়ান সাইট Kaupr-ও খবরটি দিয়েছে।",
+    "pt": "O ministro da Economia da Letónia, Viktors Valainis, disse na conferência UN:BLOCK, em Riga, que pretende ter prontas no primeiro semestre de 2027 regras para a tokenização de ativos do mundo real, com o imobiliário comercial como possível ponto de partida, noticiou a CoinDesk a 25 de outubro de 2026. É o objetivo do ministro, não uma política adotada: uma avaliação que devia estar pronta a 1 de outubro continua em curso e está a ser formado um novo governo. O site norueguês Kaupr também noticiou o caso.",
+    "ru": "Министр экономики Латвии Виктор Валайнис заявил на конференции UN:BLOCK в Риге, что стремится подготовить правила токенизации реальных активов в первой половине 2027 года, а коммерческая недвижимость может стать отправной точкой, сообщила CoinDesk 25 октября 2026 года. Это цель министра, а не принятая политика: оценка, которая должна была быть готова к 1 октября, всё ещё продолжается, а новое правительство формируется. О новости также сообщил норвежский сайт Kaupr.",
+    "ur": "CoinDesk نے 25 اکتوبر 2026 کو بتایا کہ لیٹویا کے وزیرِ معیشت Viktors Valainis نے ریگا میں UN:BLOCK کانفرنس میں کہا کہ وہ 2027 کی پہلی छमاہی میں حقیقی اثاثوں کی ٹوکنائزیشن کے قواعد تیار کرنا چاہتے ہیں، اور تجارتی رئیل اسٹیٹ ممکنہ آغاز ہو سکتی ہے۔ یہ وزیر کا ہدف ہے، منظور شدہ پالیسی نہیں: یکم اکتوبر تک مکمل ہونے والا جائزہ ابھی جاری ہے اور نئی حکومت بن رہی ہے۔ ناروے کی سائٹ Kaupr نے بھی خبر دی۔",
+    "id": "Menteri Ekonomi Latvia Viktors Valainis mengatakan di konferensi UN:BLOCK di Riga bahwa ia menargetkan aturan tokenisasi aset dunia nyata siap pada semester pertama 2027, dengan properti komersial sebagai titik awal yang mungkin, lapor CoinDesk pada 25 Oktober 2026. Ini adalah target menteri, bukan kebijakan yang telah diadopsi: kajian yang seharusnya selesai 1 Oktober masih berlangsung dan pemerintahan baru sedang dibentuk. Situs Norwegia Kaupr juga memberitakannya.",
+    "de": "Lettlands Wirtschaftsminister Viktors Valainis sagte auf der Konferenz UN:BLOCK in Riga, er strebe an, Regeln für die Tokenisierung realer Vermögenswerte im ersten Halbjahr 2027 fertig zu haben, mit Gewerbeimmobilien als möglichem Startpunkt, berichtete CoinDesk am 25. Oktober 2026. Das ist das Ziel des Ministers, keine beschlossene Politik: Eine bis zum 1. Oktober erwartete Prüfung läuft noch, und eine neue Regierung wird gebildet. Auch die norwegische Seite Kaupr berichtete über die Sache.",
+    "ja": "CoinDeskは2026年10月25日、ラトビアのヴァレニス経済相がリガで開かれたUN:BLOCK会議で、2027年上半期に実物資産のトークン化ルールを整えたい考えを示し、商業不動産が出発点になり得ると述べたと報じた。これは大臣の目標であり、採択された政策ではない。10月1日に終わる予定だった評価は続いており、新政権が発足途上だ。ノルウェーのKauprも報じた。",
+    "sw": "Waziri wa Uchumi wa Latvia, Viktors Valainis, alisema katika mkutano wa UN:BLOCK mjini Riga kwamba analenga kuwa na kanuni za uwekaji tokeni wa mali halisi tayari katika nusu ya kwanza ya 2027, huku mali isiyohamishika ya kibiashara ikiwa mwanzo unaowezekana, iliripoti CoinDesk tarehe 25 Oktoba 2026. Hili ni lengo la waziri, si sera iliyopitishwa: tathmini iliyopaswa kukamilika tarehe 1 Oktoba bado inaendelea na serikali mpya inaundwa. Tovuti ya Norway Kaupr pia iliripoti.",
+    "mr": "CoinDesk ने २५ ऑक्टोबर २०२६ रोजी वृत्त दिले की लॅटव्हियाचे अर्थमंत्री Viktors Valainis यांनी रीगातील UN:BLOCK परिषदेत सांगितले की २०२७ च्या पहिल्या सहामाहीत वास्तविक मालमत्तांच्या टोकनायझेशनचे नियम तयार करण्याचे त्यांचे उद्दिष्ट आहे, आणि व्यावसायिक रिअल इस्टेट ही संभाव्य सुरुवात असू शकते. हे मंत्र्यांचे उद्दिष्ट आहे, स्वीकारलेले धोरण नाही: १ ऑक्टोबरपर्यंत पूर्ण व्हायचे मूल्यमापन अजून सुरू आहे आणि नवे सरकार स्थापन होत आहे. नॉर्वेजियन साइट Kaupr ने देखील बातमी दिली.",
+    "fa": "به گزارش CoinDesk در ۲۵ اکتبر ۲۰۲۶، ویکتورس والاینیس، وزیر اقتصاد لتونی، در کنفرانس UN:BLOCK در ریگا گفت می‌خواهد قواعد توکنیزه‌سازی دارایی‌های واقعی در نیمه نخست ۲۰۲۷ آماده شود و املاک تجاری می‌تواند نقطه شروع باشد. این هدف وزیر است، نه سیاست تصویب‌شده: ارزیابی‌ای که باید تا ۱ اکتبر آماده می‌شد هنوز ادامه دارد و دولت جدید در حال تشکیل است. سایت نروژی Kaupr نیز این خبر را گزارش کرد.",
+    "uk": "Міністр економіки Латвії Вікторс Валайніс заявив на конференції UN:BLOCK у Ризі, що прагне підготувати правила токенізації реальних активів у першій половині 2027 року, а комерційна нерухомість може стати відправною точкою, повідомив CoinDesk 25 жовтня 2026 року. Це мета міністра, а не ухвалена політика: оцінка, яка мала бути готова до 1 жовтня, триває, а новий уряд формується. Про це також повідомив норвезький сайт Kaupr.",
+    "tr": "CoinDesk'in 25 Ekim 2026 tarihli haberine göre Letonya Ekonomi Bakanı Viktors Valainis, Riga'daki UN:BLOCK konferansında gerçek dünya varlıklarının tokenizasyonuna ilişkin kuralları 2027'nin ilk yarısında hazır hale getirmeyi hedeflediğini, ticari gayrimenkulün olası bir başlangıç noktası olabileceğini söyledi. Bu, bakanın hedefidir, kabul edilmiş bir politika değil: 1 Ekim'de hazır olması gereken bir değerlendirme sürüyor ve yeni bir hükümet kuruluyor. Norveçli site Kaupr da haberi verdi."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "20313bef6d59",
    "url": "https://kaupr.io/nyheter/oppgjorsgigant-bak-wall-street-setter-tokenisering-av-verdipapirer-i-drift",
    "title": "Oppgjørsgigant bak Wall Street setter tokenisering av verdipapirer i drift",
-   "title_en": null,
+   "title_en": "DTCC plans commercial launch of tokenisation service for 25 securities",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -171,18 +347,76 @@
    "published": "2026-10-26",
    "fetched": "2026-10-27T02:49:48+00:00",
    "topics": [
-    "blockchain"
+    "tokenisation",
+    "markets"
    ],
    "matched": [
     "\\bblokkjede\\w*",
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "US securities settlement group DTCC has announced a blockchain-based tokenisation service that it plans to bring into commercial use in October 2026, according to DTCC and secondary reports. The service is planned to cover 25 securities at launch and to run on the Canton and Hyperledger Besu networks, with Stellar and Circle's Arc expected in 2027. Kaupr, which reported the story, says the securities include US Treasuries, ETFs and Russell 1000 shares. We have not confirmed that the service is already live.",
    "published_date_only": true,
    "possible_duplicate_of": "bbd6dd0ec478",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-27T04:55:00+01:00",
+   "primary_source": {
+    "name": "DTCC – Tokenization service",
+    "url": "https://www.dtcc.com/products-and-services/digital-assets/tokenization"
+   },
+   "title_i18n": {
+    "nn": "DTCC planlegg kommersiell lansering av tokeniseringsteneste for 25 verdipapir",
+    "da": "DTCC planlægger kommerciel lancering af tokeniseringstjeneste for 25 værdipapirer",
+    "sv": "DTCC planerar kommersiell lansering av tokeniseringstjänst för 25 värdepapper",
+    "fi": "DTCC suunnittelee tokenisointipalvelun kaupallista käynnistämistä 25 arvopaperille",
+    "is": "DTCC áformar viðskiptalega opnun táknvæðingarþjónustu fyrir 25 verðbréf",
+    "zh": "DTCC计划商业推出涵盖25种证券的代币化服务",
+    "hi": "DTCC 25 प्रतिभूतियों के लिए टोकनाइज़ेशन सेवा की व्यावसायिक शुरुआत की योजना बना रहा है",
+    "es": "DTCC prevé lanzar comercialmente un servicio de tokenización para 25 valores",
+    "fr": "DTCC prévoit le lancement commercial d'un service de tokenisation pour 25 titres",
+    "ar": "DTCC تخطط لإطلاق تجاري لخدمة ترميز تشمل 25 ورقة مالية",
+    "bn": "২৫টি সিকিউরিটিজের জন্য টোকেনাইজেশন সেবার বাণিজ্যিক চালুর পরিকল্পনা DTCC-র",
+    "pt": "DTCC planeia lançamento comercial de serviço de tokenização para 25 valores mobiliários",
+    "ru": "DTCC планирует коммерческий запуск сервиса токенизации для 25 ценных бумаг",
+    "ur": "DTCC کا 25 سیکیورٹیز کے لیے ٹوکنائزیشن سروس کے تجارتی آغاز کا منصوبہ",
+    "id": "DTCC rencanakan peluncuran komersial layanan tokenisasi untuk 25 efek",
+    "de": "DTCC plant kommerziellen Start eines Tokenisierungsdienstes für 25 Wertpapiere",
+    "ja": "DTCC、25銘柄対象のトークン化サービスを商用開始へ計画",
+    "sw": "DTCC inapanga uzinduzi wa kibiashara wa huduma ya uwekaji tokeni kwa dhamana 25",
+    "mr": "DTCC ची २५ रोख्यांसाठी टोकनायझेशन सेवा व्यावसायिकरित्या सुरू करण्याची योजना",
+    "fa": "DTCC راه‌اندازی تجاری سرویس توکنیزه‌سازی برای ۲۵ اوراق بهادار را برنامه‌ریزی کرده است",
+    "uk": "DTCC планує комерційний запуск сервісу токенізації для 25 цінних паперів",
+    "tr": "DTCC, 25 menkul kıymet için tokenizasyon hizmetinin ticari lansmanını planlıyor"
+   },
+   "title_i18n_source": "Oppgjørsgigant bak Wall Street setter tokenisering av verdipapirer i drift",
+   "summary_i18n": {
+    "nn": "Den amerikanske oppgjerskonsernen DTCC har kunngjort ei blokkjedebasert tokeniseringsteneste som han planlegg å ta i kommersiell bruk i oktober 2026, ifølgje DTCC og sekundære kjelder. Tenesta skal ved lansering dekkje 25 verdipapir og køyre på nettverka Canton og Hyperledger Besu, med Stellar og Circles Arc venta i 2027. Kaupr, som melde om saka, seier at verdipapira mellom anna er amerikanske statsobligasjonar, ETF-ar og aksjar i Russell 1000. Vi har ikkje stadfesta at tenesta alt er i drift.",
+    "nb": "Den amerikanske oppgjørskonsernen DTCC har kunngjort en blokkjedebasert tokeniseringstjeneste som den planlegger å ta i kommersiell bruk i oktober 2026, ifølge DTCC og sekundære kilder. Tjenesten skal ved lansering dekke 25 verdipapirer og kjøre på nettverkene Canton og Hyperledger Besu, med Stellar og Circles Arc ventet i 2027. Kaupr, som meldte om saken, sier at verdipapirene blant annet er amerikanske statsobligasjoner, ETF-er og aksjer i Russell 1000. Vi har ikke bekreftet at tjenesten allerede er i drift.",
+    "sv": "Det amerikanska clearingkoncernen DTCC har meddelat en blockkedjebaserad tokeniseringstjänst som den planerar att ta i kommersiell drift i oktober 2026, enligt DTCC och sekundära källor. Tjänsten ska vid lanseringen omfatta 25 värdepapper och köra på nätverken Canton och Hyperledger Besu, med Stellar och Circles Arc väntade 2027. Kaupr, som rapporterade om saken, säger att värdepapperen bland annat är amerikanska statsobligationer, börshandlade fonder och aktier i Russell 1000. Vi har inte bekräftat att tjänsten redan är i drift.",
+    "da": "Den amerikanske clearingkoncern DTCC har meddelt en blockchainbaseret tokeniseringstjeneste, som den planlægger at tage i kommerciel brug i oktober 2026, ifølge DTCC og sekundære kilder. Tjenesten skal ved lanceringen dække 25 værdipapirer og køre på netværkene Canton og Hyperledger Besu, med Stellar og Circles Arc ventet i 2027. Kaupr, som omtalte sagen, siger, at værdipapirerne blandt andet er amerikanske statsobligationer, ETF'er og aktier i Russell 1000. Vi har ikke bekræftet, at tjenesten allerede er i drift.",
+    "fi": "Yhdysvaltalainen selvitysyhtiö DTCC on ilmoittanut lohkoketjupohjaisesta tokenisointipalvelusta, jonka se aikoo ottaa kaupalliseen käyttöön lokakuussa 2026, kertovat DTCC ja toissijaiset lähteet. Palvelun on määrä kattaa käynnistyessään 25 arvopaperia ja toimia Canton- ja Hyperledger Besu -verkoissa, ja Stellarin sekä Circlen Arcin odotetaan tulevan mukaan 2027. Asiasta kertonut Kaupr sanoo arvopapereiden olevan muun muassa Yhdysvaltain valtion obligaatioita, pörssinoteerattuja rahastoja ja Russell 1000 -osakkeita. Emme ole vahvistaneet, että palvelu on jo käytössä.",
+    "is": "Bandaríska uppgjörsfyrirtækið DTCC hefur tilkynnt blokkkeðjubyggða táknvæðingarþjónustu sem það áformar að taka í viðskiptanotkun í október 2026, samkvæmt DTCC og öðrum heimildum. Þjónustan á að ná yfir 25 verðbréf við opnun og keyra á netunum Canton og Hyperledger Besu, en Stellar og Arc frá Circle eru væntanleg 2027. Kaupr, sem greindi frá málinu, segir að verðbréfin séu meðal annars bandarísk ríkisskuldabréf, kauphallarsjóðir og hlutabréf í Russell 1000. Við höfum ekki staðfest að þjónustan sé þegar komin í gagnið.",
+    "zh": "据DTCC和其他报道，美国证券结算集团DTCC宣布了一项基于区块链的代币化服务，计划于2026年10月投入商业使用。该服务计划在上线时覆盖25种证券，运行在Canton和Hyperledger Besu网络上，Stellar和Circle的Arc预计在2027年加入。报道此事的挪威网站Kaupr称，这些证券包括美国国债、ETF和罗素1000指数成分股。我们尚未确认该服务已经上线。",
+    "hi": "DTCC और द्वितीयक स्रोतों के अनुसार, अमेरिकी प्रतिभूति निपटान समूह DTCC ने ब्लॉकचेन-आधारित टोकनाइज़ेशन सेवा की घोषणा की है, जिसे वह अक्टूबर 2026 में व्यावसायिक उपयोग में लाने की योजना बना रहा है। शुरुआत में यह सेवा 25 प्रतिभूतियों को कवर करने और Canton तथा Hyperledger Besu नेटवर्क पर चलने की योजना है, जबकि Stellar और Circle का Arc 2027 में अपेक्षित हैं। यह ख़बर देने वाली Kaupr के अनुसार इनमें अमेरिकी ट्रेज़री, ETF और Russell 1000 के शेयर शामिल हैं। हमने यह पुष्टि नहीं की है कि सेवा पहले से चालू है।",
+    "es": "El grupo estadounidense de liquidación DTCC ha anunciado un servicio de tokenización basado en blockchain que planea poner en uso comercial en octubre de 2026, según DTCC y fuentes secundarias. El servicio prevé cubrir 25 valores en el lanzamiento y funcionar en las redes Canton y Hyperledger Besu, con Stellar y Arc de Circle previstos para 2027. Kaupr, que informó del asunto, dice que los valores incluyen bonos del Tesoro de EE. UU., ETF y acciones del Russell 1000. No hemos confirmado que el servicio ya esté en funcionamiento.",
+    "fr": "Le groupe américain de règlement-livraison DTCC a annoncé un service de tokenisation fondé sur la blockchain qu'il prévoit de mettre en service commercial en octobre 2026, selon DTCC et des sources secondaires. Le service doit couvrir 25 titres au lancement et fonctionner sur les réseaux Canton et Hyperledger Besu, Stellar et Arc de Circle étant attendus en 2027. Kaupr, qui a relayé l'information, indique que les titres comprennent des bons du Trésor américain, des ETF et des actions du Russell 1000. Nous n'avons pas confirmé que le service est déjà en service.",
+    "ar": "أعلنت مجموعة التسوية الأمريكية DTCC عن خدمة ترميز قائمة على البلوك تشين تخطط لتشغيلها تجارياً في أكتوبر 2026، بحسب DTCC ومصادر ثانوية. ومن المخطط أن تغطي الخدمة 25 ورقة مالية عند الإطلاق وأن تعمل على شبكتي Canton وHyperledger Besu، مع توقع انضمام Stellar وشبكة Arc التابعة لـCircle في 2027. وتقول Kaupr التي نقلت الخبر إن الأوراق تشمل سندات الخزانة الأمريكية وصناديق المؤشرات وأسهماً من Russell 1000. لم نؤكد أن الخدمة تعمل بالفعل.",
+    "bn": "DTCC ও দ্বিতীয় সূত্র অনুযায়ী, মার্কিন সিকিউরিটিজ নিষ্পত্তি গ্রুপ DTCC একটি ব্লকচেইন-ভিত্তিক টোকেনাইজেশন সেবার ঘোষণা দিয়েছে, যা ২০২৬ সালের অক্টোবরে বাণিজ্যিক ব্যবহারে আনার পরিকল্পনা রয়েছে। চালুর সময় সেবাটি ২৫টি সিকিউরিটিজ কভার করে Canton ও Hyperledger Besu নেটওয়ার্কে চলার কথা, আর Stellar ও Circle-এর Arc আসার কথা ২০২৭ সালে। খবরটি দেওয়া Kaupr বলছে এতে মার্কিন ট্রেজারি, ETF ও Russell 1000 শেয়ার রয়েছে। সেবাটি ইতিমধ্যে চালু হয়েছে কি না তা আমরা নিশ্চিত করিনি।",
+    "pt": "O grupo norte-americano de liquidação DTCC anunciou um serviço de tokenização baseado em blockchain que planeia pôr em uso comercial em outubro de 2026, segundo a DTCC e fontes secundárias. O serviço deverá abranger 25 valores mobiliários no lançamento e funcionar nas redes Canton e Hyperledger Besu, com Stellar e a Arc da Circle esperadas em 2027. A Kaupr, que noticiou o caso, diz que os valores incluem obrigações do Tesouro dos EUA, ETF e ações do Russell 1000. Não confirmámos que o serviço já esteja em funcionamento.",
+    "ru": "Американская расчётная группа DTCC объявила о сервисе токенизации на основе блокчейна, который планирует ввести в коммерческую эксплуатацию в октябре 2026 года, сообщают DTCC и вторичные источники. На старте сервис должен охватывать 25 ценных бумаг и работать в сетях Canton и Hyperledger Besu, а Stellar и Arc от Circle ожидаются в 2027 году. Kaupr, сообщивший об этом, пишет, что среди бумаг — казначейские облигации США, ETF и акции индекса Russell 1000. Мы не подтвердили, что сервис уже работает.",
+    "ur": "DTCC اور ثانوی ذرائع کے مطابق امریکی سیکیورٹیز سیٹلمنٹ گروپ DTCC نے بلاک چین پر مبنی ٹوکنائزیشن سروس کا اعلان کیا ہے جسے وہ اکتوبر 2026 میں تجارتی استعمال میں لانے کا ارادہ رکھتا ہے۔ آغاز پر سروس 25 سیکیورٹیز کا احاطہ کرے گی اور Canton اور Hyperledger Besu نیٹ ورکس پر چلے گی، جبکہ Stellar اور Circle کا Arc 2027 میں متوقع ہیں۔ خبر دینے والی Kaupr کے مطابق ان میں امریکی ٹریژری، ETF اور Russell 1000 کے حصص شامل ہیں۔ ہم نے تصدیق نہیں کی کہ سروس پہلے سے چل رہی ہے۔",
+    "id": "Grup penyelesaian AS DTCC mengumumkan layanan tokenisasi berbasis blockchain yang direncanakan beroperasi secara komersial pada Oktober 2026, menurut DTCC dan laporan sekunder. Layanan ini direncanakan mencakup 25 efek saat peluncuran dan berjalan di jaringan Canton dan Hyperledger Besu, dengan Stellar dan Arc milik Circle diharapkan pada 2027. Kaupr, yang melaporkan kabar ini, mengatakan efek tersebut mencakup surat utang AS, ETF, dan saham Russell 1000. Kami belum memastikan bahwa layanan ini sudah beroperasi.",
+    "de": "Die US-Abwicklungsgruppe DTCC hat einen blockchainbasierten Tokenisierungsdienst angekündigt, den sie laut DTCC und Sekundärquellen im Oktober 2026 kommerziell in Betrieb nehmen will. Der Dienst soll zum Start 25 Wertpapiere abdecken und auf den Netzwerken Canton und Hyperledger Besu laufen, Stellar und Circles Arc werden für 2027 erwartet. Kaupr, das über die Sache berichtete, sagt, die Papiere umfassten US-Staatsanleihen, ETFs und Aktien des Russell 1000. Wir haben nicht bestätigt, dass der Dienst bereits läuft.",
+    "ja": "米証券決済大手DTCCは、2026年10月に商用利用を始める計画のブロックチェーン基盤のトークン化サービスを発表したと、DTCCや二次報道は伝えている。サービスは開始時に25銘柄を対象とし、CantonとHyperledger Besuのネットワーク上で稼働する計画で、StellarとCircleのArcは2027年に見込まれる。報じたKauprは、銘柄に米国債、ETF、ラッセル1000の株式が含まれるとしている。サービスがすでに稼働しているかは確認していない。",
+    "sw": "Kikundi cha malipo ya dhamana cha Marekani DTCC kimetangaza huduma ya uwekaji tokeni inayotegemea blockchain ambayo kinapanga kuianzisha kibiashara Oktoba 2026, kwa mujibu wa DTCC na ripoti za pili. Huduma imepangwa kujumuisha dhamana 25 wakati wa uzinduzi na kufanya kazi kwenye mitandao ya Canton na Hyperledger Besu, huku Stellar na Arc ya Circle zikitarajiwa 2027. Kaupr, iliyoripoti habari hiyo, inasema dhamana hizo ni pamoja na hati fungani za Hazina ya Marekani, ETF na hisa za Russell 1000. Hatujathibitisha kuwa huduma tayari inafanya kazi.",
+    "mr": "DTCC आणि दुय्यम स्रोतांनुसार, अमेरिकन रोखे निपटारा समूह DTCC ने ब्लॉकचेनवर आधारित टोकनायझेशन सेवा जाहीर केली आहे, जी ऑक्टोबर २०२६ मध्ये व्यावसायिक वापरात आणण्याची योजना आहे. सुरुवातीला ही सेवा २५ रोख्यांना लागू होऊन Canton आणि Hyperledger Besu नेटवर्कवर चालेल, तर Stellar आणि Circle चे Arc २०२७ मध्ये अपेक्षित आहेत. बातमी देणाऱ्या Kaupr च्या म्हणण्यानुसार यात अमेरिकन ट्रेझरी, ETF आणि Russell 1000 चे शेअर्स आहेत. सेवा आधीच सुरू आहे याची आम्ही पुष्टी केलेली नाही.",
+    "fa": "به گفته DTCC و منابع ثانویه، گروه تسویه آمریکایی DTCC خدمت توکنیزه‌سازی مبتنی بر بلاک‌چین را اعلام کرده که قصد دارد در اکتبر ۲۰۲۶ به‌صورت تجاری راه‌اندازی کند. قرار است این خدمت هنگام راه‌اندازی ۲۵ اوراق بهادار را پوشش دهد و روی شبکه‌های Canton و Hyperledger Besu اجرا شود و Stellar و Arc متعلق به Circle در ۲۰۲۷ انتظار می‌روند. Kaupr که خبر را گزارش کرد می‌گوید این اوراق شامل اوراق خزانه آمریکا، ETFها و سهام Russell 1000 است. ما تأیید نکرده‌ایم که این خدمت هم‌اکنون فعال باشد.",
+    "uk": "Американська розрахункова група DTCC оголосила про сервіс токенізації на основі блокчейну, який планує ввести в комерційну експлуатацію в жовтні 2026 року, повідомляють DTCC і вторинні джерела. На старті сервіс має охоплювати 25 цінних паперів і працювати в мережах Canton та Hyperledger Besu, а Stellar і Arc від Circle очікуються у 2027 році. Kaupr, що повідомив про це, пише, що серед паперів — казначейські облігації США, ETF і акції індексу Russell 1000. Ми не підтвердили, що сервіс уже працює.",
+    "tr": "ABD'li takas grubu DTCC, kendisinin ve ikincil kaynakların aktardığına göre, Ekim 2026'da ticari kullanıma almayı planladığı blokzincir tabanlı bir tokenizasyon hizmeti duyurdu. Hizmetin lansmanda 25 menkul kıymeti kapsaması ve Canton ile Hyperledger Besu ağlarında çalışması planlanıyor; Stellar ve Circle'ın Arc'ının 2027'de gelmesi bekleniyor. Haberi veren Kaupr, menkul kıymetler arasında ABD Hazine tahvilleri, ETF'ler ve Russell 1000 hisseleri olduğunu söylüyor. Hizmetin halihazırda canlı olduğunu doğrulamadık."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2c3624becac0",
@@ -208,9 +442,10 @@
     "\\bethereum\\b"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Price/technical analysis, excluded. Researcher 27.10."
   },
   {
    "id": "67f81a3437ac",
