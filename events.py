@@ -56,7 +56,11 @@ No clock is published on the card, so the row is that civil day. No images.
 
 type rss: a WordPress category feed. An item is kept when a source keyword matches and the post
 states a day and month (kl. HH:MM–HH:MM and the venue after "på" when given) that has not passed.
-A missing year is the first such day on or after the publication date. No date, no row."""
+A missing year is the first such day on or after the publication date. No date, no row.
+
+type tip-html (events.kaupr.io): a tip/lead source only. No iCal; the sitemap's event pages are read for
+JSON-LD. A page with template text (Lorem ipsum) is skipped. Every row stays pending with tip_only set and
+must be checked against the organiser's own page or a stream/venue link before approval."""
 import argparse, datetime as dt, hashlib, json, os, re, sys, time, urllib.parse
 from zoneinfo import ZoneInfo
 from html import unescape as html_unescape
@@ -331,6 +335,10 @@ def eventbrite_api_events(kind, ident, token, robots_ok, pause, ua, tz):
         if not pag.get("has_more_items") or not cont: break
         url = f"https://www.eventbriteapi.com/v3/{kind}/{ident}/events/?{q}&continuation={urllib.parse.quote(cont)}"
     return out
+TIP_NOTE = "tip only: verify against the organiser's own page or a stream/venue link before approving"
+def tip_page_ok(html): return not re.search(r"lorem\s+ipsum", html or "", re.I)
+def tip_links(xml, pattern, limit):
+    return list(dict.fromkeys(u for u in re.findall(r"<loc>\s*([^<\s]+)", xml or "") if re.search(pattern, u)))[:limit]
 def eid(e): return hashlib.sha1(f"{(e.get('url') or '').split('?')[0]}|{e['start'].date() if e.get('start') else ''}|{(e.get('title') or '').lower()}".encode()).hexdigest()[:12]
 _LIST_MON = {m: i for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 def listing_blocked(html):
@@ -1441,6 +1449,7 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
         if place_source: rec["place_source"] = place_source
         desc = description_record(ev.get("description"), ev.get("description_lang"), page, src.get("name"), retrieved, ev.get("title"))
         if desc: rec["description"] = desc
+        if src.get("tip_only"): rec["tip_only"] = True; rec["note"] = TIP_NOTE
         data["events"].append(rec); by[i] = rec; new.append(rec)
     def fetch_page(u):
         if not robots_ok(u): raise RuntimeError("robots.txt disallows")
@@ -1591,6 +1600,12 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
                     n_found = len(evs)
                     for ev in evs:
                         take(ev, dict(src, page=ev["url"]), src.get("trusted", False))
+                elif src["type"] == "tip-html":
+                    for u in tip_links(fetch_page(src["url"]).text, src.get("link_pattern") or ".", int(src.get("max_links") or 10)):
+                        time.sleep(pause); html = fetch_page(u).text
+                        if not tip_page_ok(html): log(f"event {src['id']}: skipped {u} (Lorem ipsum template text)"); continue
+                        evs = jsonld_events(html, tz); n_found += len(evs)
+                        for ev in evs: take(ev, dict(src, page=u), False)
                 elif src["type"] == "manual":
                     n_found = 0
                 else:
