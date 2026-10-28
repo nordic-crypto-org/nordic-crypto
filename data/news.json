@@ -1,6 +1,272 @@
 {
  "items": [
   {
+   "id": "efb569fa2f14",
+   "url": "https://finans.dk/erhverv/ECE19775659/att-betaler-erstatning-til-kunder-efter-hackerangreb",
+   "title": "AT&T betaler erstatning til kunder efter hackerangreb",
+   "title_en": null,
+   "source": "finans-dk",
+   "source_name": "Finans.dk",
+   "country": "DK",
+   "language": "Danish",
+   "via": "finans-dk",
+   "seen_via": [
+    "finans-dk"
+   ],
+   "published": "2026-10-27T19:17:00+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bdark\\s?webs?\\b"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "6c7d749299a8",
+   "url": "https://kryptovalutaguiden.se/2026/10/polymarket-63-chans-att-netanyahu-forlorar-makten",
+   "title": "Polymarket: 63% chans att Netanyahu förlorar makten",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-27T18:48:10+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "cd7909192ca9",
+   "url": "https://investornytt.no/krypto/lunde-varsler-bitcoinuro-etter-sjelden-stillstand/548989",
+   "title": "Stille før stormen",
+   "title_en": null,
+   "source": "investornytt",
+   "source_name": "Investornytt",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "investornytt",
+   "seen_via": [
+    "investornytt"
+   ],
+   "published": "2026-10-27T17:19:50+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "bitcoin",
+    "companies"
+   ],
+   "matched": [
+    "\\bK33\\b",
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "49f494364f1c",
+   "url": "https://vg.no/nyheter/i/QgAMKq/drapet-paa-nokas-raner-metkel-betew-har-faatt-info-om-millionbetaling-til-stig-millehaugen",
+   "title": "Polititeori: Millehaugen skulle få over fem millioner for å drepe Betew",
+   "title_en": null,
+   "source": "vg",
+   "source_name": "VG",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn"
+   ],
+   "published": "2026-10-27T15:51:13+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "81ff26251524",
+   "url": "https://kryptovalutaguiden.se/2026/10/zcash-grundare-i-oppet-brak-om-fond-vard-125-miljoner-dollar",
+   "title": "Zcash-grundare i öppet bråk om fond värd 125 miljoner dollar",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-27T15:46:49+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "3e76986114ea",
+   "url": "https://kryptovalutaguiden.se/2026/10/solana-val-dumpade-49-miljoner-sol-faller-under-100",
+   "title": "Solana-val dumpade $49 miljoner – SOL faller under $100",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-27T13:01:26+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "blockchain"
+   ],
+   "matched": [
+    "\\bsolana\\b"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "6ba5ec0374ec",
+   "url": "https://kryptovalutaguiden.se/2026/10/tva-bitcoin-valar-flyttar-206-miljoner-till-coinbase-prime",
+   "title": "Två bitcoin-valar flyttar $206 miljoner till Coinbase Prime",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-27T11:36:24+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "b39fd80b3e28",
+   "url": "https://inderes.se/articles/virtune-kryptotillgangarnas-stablecoinernas-och-tokeniseringens-framtid",
+   "title": "Virtune&#58; kryptotillg&#229;ngarnas&#44; stablecoinernas och tokeniseringens framtid",
+   "title_en": null,
+   "source": "nbx-ir",
+   "source_name": "NBX børsmeldinger",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "nbx-ir",
+   "seen_via": [
+    "nbx-ir"
+   ],
+   "published": "2026-10-27T10:31:38+00:00",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "blockchain",
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bVirtune\\b",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bstablecoin\\w*",
+    "\\btokeni[sz]\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "bbd6dd0ec478",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "9ac10e05dc69",
+   "url": "https://kaupr.io/nyheter/vialet-henter-tokeniserte-pengemarkedsfond-via-axiology",
+   "title": "VIALET henter tokeniserte pengemarkedsfond via Axiology",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-10-27",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "blockchain"
+   ],
+   "matched": [
+    "\\btokeni[sz]\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
+   "id": "43f49e7b2f10",
+   "url": "https://kaupr.io/nyheter/etf-ene-har-tatt-over-som-bitcoins-viktigste-kjopere",
+   "title": "ETF-ene har tatt over som bitcoins viktigste kjøpere",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-10-27",
+   "fetched": "2026-10-28T02:43:54+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
    "id": "b27cac9af27f",
    "url": "https://kryptovalutaguiden.se/2026/10/regeringskansliet-sparrar-chat-gpt-och-claude",
    "title": "Regeringskansliet spärrar Chat GPT och Claude",
@@ -8749,5 +9015,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-10-27T02:49:48+00:00"
+ "updated": "2026-10-28T02:43:54+00:00"
 }
