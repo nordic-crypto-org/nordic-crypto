@@ -1,9 +1,14 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-28T03:32:28+00:00",
+ "generated_at": "2026-10-28T06:33:41+00:00",
  "preview": false,
  "topics": [
+  {
+   "id": "Zcash",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/Zcash.json"
+  },
   {
    "id": "ai",
    "count": 1,
@@ -70,6 +75,11 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/funds.json"
   },
   {
+   "id": "governance",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/governance.json"
+  },
+  {
    "id": "markets",
    "count": 1,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/markets.json"
@@ -96,7 +106,7 @@
   },
   {
    "id": "regulation",
-   "count": 19,
+   "count": 20,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/regulation.json"
   },
   {
@@ -121,7 +131,7 @@
   },
   {
    "id": "tokenisation",
-   "count": 12,
+   "count": 13,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenisation.json"
   },
   {
