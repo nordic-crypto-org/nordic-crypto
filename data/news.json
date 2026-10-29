@@ -1,6 +1,142 @@
 {
  "items": [
   {
+   "id": "4bc601c3469c",
+   "url": "https://ekuriren.se/nyheter/strangnas/artikel/strangnasbo-doms-for-grovt-penningtvattsbrott/r9m757xl",
+   "title": "Miljoner slussades utomlands – 76-åring får fängelse",
+   "title_en": null,
+   "source": "eskilstuna-kuriren",
+   "source_name": "Eskilstuna-Kuriren",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "eskilstuna-kuriren",
+   "seen_via": [
+    "eskilstuna-kuriren"
+   ],
+   "published": "2026-10-28T13:12:00+00:00",
+   "fetched": "2026-10-29T02:59:21+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "703d7bd50e92",
+   "url": "https://sagat.no/kryptoselskapet-enna-inne/19.60232",
+   "title": "– Datasenter-tomt avgjort politisk: Kryptoselskapet fortsatt «inne»",
+   "title_en": null,
+   "source": "sagat",
+   "source_name": "Ságat",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "sagat",
+   "seen_via": [
+    "sagat"
+   ],
+   "published": "2026-10-28T09:48:45+00:00",
+   "fetched": "2026-10-29T02:59:21+00:00",
+   "topics": [
+    "crypto",
+    "regulation",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "2f529b54d178",
+   "url": "https://kryptovalutaguiden.se/2026/10/anthropic-gar-mot-rekordnotering-enligt-hyperliquid",
+   "title": "Anthropic går mot rekordnotering enligt Hyperliquid",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-28T09:17:25+00:00",
+   "fetched": "2026-10-29T02:59:21+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "fec26d4d170c",
+   "url": "https://kaupr.io/nyheter/uvedkommende-fikk-tilgang-til-kundedata-i-northcrypto",
+   "title": "Uvedkommende fikk tilgang til kundedata i NorthCrypto",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "SE",
+   "language": "Norwegian",
+   "via": "kaupr-se",
+   "seen_via": [
+    "kaupr-se"
+   ],
+   "published": "2026-10-28",
+   "fetched": "2026-10-29T02:59:21+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bGreenMerc\\b",
+    "\\bNorthcrypto\\b",
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
+   "id": "73a8c658cb53",
+   "url": "https://kaupr.io/nyheter/bitpanda-og-danske-coop-bank-apner-kontoen-for-ai-agenter",
+   "title": "Bitpanda og danske Coop Bank åpner kontoen for AI-agenter",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "DK",
+   "language": "Norwegian",
+   "via": "kaupr-dk",
+   "seen_via": [
+    "kaupr-dk",
+    "kaupr"
+   ],
+   "published": "2026-10-28",
+   "fetched": "2026-10-29T02:59:21+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
    "id": "efb569fa2f14",
    "url": "https://finans.dk/erhverv/ECE19775659/att-betaler-erstatning-til-kunder-efter-hackerangreb",
    "title": "AT&T betaler erstatning til kunder efter hackerangreb",
@@ -9140,5 +9276,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-10-28T02:43:54+00:00"
+ "updated": "2026-10-29T02:59:21+00:00"
 }
