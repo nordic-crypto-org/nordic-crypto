@@ -160,8 +160,11 @@
      ]
     },
     "city": {
-     "type": "string",
-     "description": "City name.",
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "City name. null for online-only events.",
      "examples": [
       "Göteborg"
      ]
@@ -280,7 +283,10 @@
      "description": "Our short note, in English."
     },
     "description": {
-     "type": "object",
+     "type": [
+      "object",
+      "null"
+     ],
      "properties": {
       "text": {
        "type": "string"
@@ -876,6 +882,27 @@
       [
        "yt-zi2JsPOm5HE"
       ]
+     ]
+    },
+    "tip_only": {
+     "type": "boolean",
+     "description": "Came from a tip-only source; stays pending until checked.",
+     "examples": [
+      true
+     ]
+    },
+    "held": {
+     "type": "boolean",
+     "description": "Held back from publishing until a check passes.",
+     "examples": [
+      true
+     ]
+    },
+    "source_check": {
+     "type": "string",
+     "description": "Who checked the event against its source, and when.",
+     "examples": [
+      "researcher 28.10"
      ]
     }
    },

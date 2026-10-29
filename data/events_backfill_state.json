@@ -303,12 +303,84 @@
    "taper": "full"
   },
   {
+   "retrieved_at": "2026-10-23T09:40:00+00:00",
+   "included": 3,
+   "by_country": {
+    "NO": 0,
+    "SE": 3,
+    "DK": 0,
+    "FI": 0,
+    "IS": 0,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2018": 1,
+    "2026": 2
+   },
+   "note": "Three previous events from organiser pages. Stockholm Bitcoin Meetup #51 on 6 August 2026 and Göteborg Bitcoin Meetup #48 on 10 September 2026 are on the Swedish Bitcoin Meetups pages, with start and end clocks. The Hjärntrusten seminar on 14 May 2018 states 16:30–18:00 at Råbylundsgård in Lund. Meetup RSVP figures were not stored. The Aalto news item on a 1 October cryptocurrency seminar does not state the year next to the day or a venue, so it was not added. The Danmarks Nationalbank page on Karsten Biltoft's 1 February 2018 remarks does not state a venue. A Segwit2x listing on Underskog names the organiser and The Kasbah Hub and does not name the city. CRYPTOPIA 21 is described on a LinkedIn company page in Tórshavn and that page does not state a date or a venue. No dated public crypto event in the Faroe Islands, Greenland or Åland was added. YouTube search pages returned HTTP 429, so talk candidates this run came from a playlist and watch pages. Taper level unchanged: full.",
+   "queries": [
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/312669043/",
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/316047035/",
+    "https://hjarntrusten.se/blockkedjor-en-teknologi-med-potential-att-forandra-manga-branscher/",
+    "https://www.aalto.fi/en/news/will-the-future-bring-pyramid-scams-like-onecoin",
+    "https://www.nationalbanken.dk/da/viden-og-nyheder/publikationer-og-taler/arkiv-taler/2018/vicedirektoer-karsten-biltofts-indlaeg-paa-finans-danmarks-brief-kryptovalutaer-fremtid-eller-boble",
+    "https://underskog.no/kalender/113968-segwit2x-panel-debate-q-a-about-bitcoin-scaling/forestilling/194656",
+    "https://haic.aalto.fi/talks/",
+    "Faroe Islands public bitcoin or crypto event, including CRYPTOPIA 21",
+    "Greenland public bitcoin or crypto event since 2008, not repeated as a fresh results page this run",
+    "Åland public bitcoin or crypto event since 2008, not repeated as a fresh results page this run"
+   ],
+   "sources_used": [
+    "Swedish Bitcoin Meetups",
+    "Hjärntrusten"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Aalto seminar on cryptocurrencies, 1 October",
+     "reason": "The university news page does not state the year beside the day or a venue. The postal address in the footer was not used."
+    },
+    {
+     "name": "Finans Danmarks brief Kryptovalutaer – fremtid eller boble, 1 February 2018",
+     "reason": "Danmarks Nationalbank states the date of Karsten Biltoft's remarks and does not state a venue."
+    },
+    {
+     "name": "Segwit2x panel, 1 August 2017",
+     "reason": "Underskog names Norges Bitcoin- og Blockchainforening and The Kasbah Hub. The page does not name the city."
+    },
+    {
+     "name": "CRYPTOPIA 21, Tórshavn",
+     "reason": "The LinkedIn company page describes a conference and does not state a date or a venue."
+    },
+    {
+     "name": "HAIC talks on applied cryptography",
+     "reason": "Public lectures on cryptography, not on bitcoin, cryptocurrency or blockchain. Colin Boyd's 2019 lecture is already archived."
+    },
+    {
+     "name": "Discussing Ethereum's future with Elon Musk and Vitalik Buterin",
+     "reason": "On the Oslo Blockchain Day 2019 playlist. The watch page describes a Twitter thread, not a talk given at the conference."
+    }
+   ],
+   "taper": "full"
+  },
+  {
    "kind": "talk-links",
    "retrieved_at": "2026-10-07T22:40:00+00:00",
-   "included": 34,
+   "included": 38,
    "by_country": {
-    "NO": 17,
-    "SE": 3,
+    "NO": 18,
+    "SE": 6,
     "DK": 4,
     "FI": 8,
     "IS": 2,
@@ -320,13 +392,13 @@
     "2013": 1,
     "2014": 2,
     "2017": 3,
-    "2018": 4,
+    "2018": 5,
     "2022": 2,
     "2023": 4,
     "2025": 3,
-    "2026": 8,
+    "2026": 10,
     "2016": 3,
-    "2019": 1,
+    "2019": 2,
     "2024": 1,
     "2015": 2
    },
@@ -338,12 +410,15 @@
      "2017": 2,
      "2026": 5,
      "2025": 2,
-     "2015": 1
+     "2015": 1,
+     "2019": 1
     },
     "SE": {
      "2017": 1,
      "2014": 1,
-     "2015": 1
+     "2015": 1,
+     "2026": 2,
+     "2018": 1
     },
     "DK": {
      "2013": 1,
@@ -383,18 +458,22 @@
    "note": "Talks are matched to an existing calendar or backfill event first (series, date span, city, country and organiser). When none matches, a previous event is created from facts the video page stated: name, day, city, country, venue, organiser and official URL. A talk with no day or no place stays unlinked with unlink_reason. Predatory conference listings are not sources.",
    "talks": {
     "linked_existing": 31,
-    "created_events": 0,
-    "talks_on_new": 0,
-    "unlinked": 87,
+    "created_events": 1,
+    "talks_on_new": 1,
+    "unlinked": 101,
     "unlinked_reasons": {
-     "the video page did not state the day": 79,
+     "the video page did not state the day": 93,
      "the video page did not state the city": 2,
      "the video page did not name the event": 3,
      "the video page did not state the event type": 3
     }
    },
-   "queries": [],
-   "sources_used": [],
+   "queries": [
+    "https://www.youtube.com/watch?v=lsb-GKybHPo&hl=en"
+   ],
+   "sources_used": [
+    "Blockchangers"
+   ],
    "rejected": [
     {
      "host": "internationalconferencealerts.com",
@@ -417,6 +496,127 @@
      "reason": "Predatory conference listing. Greenland search hits on this host were not opened and not included."
     }
    ]
+  },
+  {
+   "retrieved_at": "2026-10-27T10:30:00+00:00",
+   "included": 2,
+   "by_country": {
+    "NO": 19,
+    "SE": 7,
+    "DK": 4,
+    "FI": 8,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 2,
+    "2017": 3,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 4,
+    "2026": 10,
+    "2016": 3,
+    "2019": 2,
+    "2024": 1,
+    "2015": 2
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 3,
+     "2015": 1,
+     "2019": 1
+    },
+    "SE": {
+     "2017": 1,
+     "2014": 1,
+     "2015": 1,
+     "2026": 2,
+     "2018": 1,
+     "2023": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Two previous events from the organiser's own pages. The University of Gothenburg states the book launch on 20 June 2023 at 15:00–17:00 in C33, Handelshögskolan, Vasagatan 1, Göteborg, arranged by Institutionen för ekonomi och samhälle. Skatteetaten states the crypto seminar on Tuesday 28 October 2025 at 10–16 at Mesh Youngstorget in Oslo. The press page does not give a street number, so none was added. The registration page's mingling hour after 16:00 was not used as the end. The two KÅKÅ sessions on 24 October 2026 are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were not searched again as a fresh results page this run; no dated public event there was added. The counts below are the whole archive, so the file check can read them. Two events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://www.gu.se/evenemang/bokslapp-en-samhallsvetenskaplig-introduktion-till-bitcoin-och-kryptovalutor",
+    "https://www.skatteetaten.no/presse/nyhetsrommet/skatteetaten-inviterer-til-kryptoseminar/",
+    "Faroe Islands, Greenland and Åland: not a fresh results page this run"
+   ],
+   "sources_used": [
+    "Göteborgs universitet",
+    "Skatteetaten"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Barnas KÅKÅnomics and Har bankene kuppet kryptorevolusjonen, 24 October 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "FI roundtable on MiCA, 26 November 2024",
+     "reason": "Finansinspektionen invited firms that plan to apply, at most two people per firm. Not added as a public seminar."
+    },
+    {
+     "name": "Blockfest Finland as a blockchain conference",
+     "reason": "blockfest.fi is a music festival. A page that described a blockchain Blockfest in Helsinki did not match the organiser site and was not used."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

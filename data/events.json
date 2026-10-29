@@ -150,7 +150,7 @@
    "title": "Barnas KÅKÅnomics: Hvordan investere ukelønna?",
    "start": "2026-10-24T12:30:00+02:00",
    "end": "2026-10-24T13:00:00+02:00",
-   "place": "Vingtor",
+   "place": "Vingtor, Børehaugen 1A, 4006 Stavanger",
    "city": "Stavanger",
    "country": "NO",
    "online": false,
@@ -182,7 +182,7 @@
    "title": "Har bankene kuppet kryptorevolusjonen?",
    "start": "2026-10-24T18:30:00+02:00",
    "end": "2026-10-24T19:15:00+02:00",
-   "place": "Vingtor",
+   "place": "Vingtor, Børehaugen 1A, 4006 Stavanger",
    "city": "Stavanger",
    "country": "NO",
    "online": false,
@@ -301,6 +301,48 @@
    }
   },
   {
+   "id": "568131609e50",
+   "title": "Hvem lytter til Bitcoin i Norge?",
+   "start": "2026-10-31T14:00:00+01:00",
+   "end": "2026-10-31T15:30:00+01:00",
+   "place": "Online (Kaupr.io / YouTube)",
+   "city": null,
+   "country": "NO",
+   "online": true,
+   "organiser": "Kaupr Events in cooperation with Bitcoinpolitisk Institutt Norge (BPI)",
+   "url": "https://events.kaupr.io/products/hvem-lytter-til-bitcoin-i-norge",
+   "source": "Kaupr Events",
+   "source_url": "https://events.kaupr.io/products/hvem-lytter-til-bitcoin-i-norge",
+   "paid": false,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-23T16:30:00+00:00",
+   "status": "pending",
+   "note": null
+  },
+  {
+   "id": "fb0847fb538e",
+   "title": "Impact Onchain: from hackathon to real projects",
+   "start": "2026-11-04T11:00:00+01:00",
+   "end": "2026-11-04T12:30:00+01:00",
+   "place": "Online (Kaupr.io / YouTube)",
+   "city": null,
+   "country": "SE",
+   "online": true,
+   "organiser": "Kaupr in cooperation with FirstBlock-athon Stockholm",
+   "url": "https://events.kaupr.io/",
+   "source": "Kaupr Events (tip source)",
+   "source_url": "https://events.kaupr.io/",
+   "paid": false,
+   "sponsored": false,
+   "trusted_source": false,
+   "tip_only": true,
+   "found": "2026-10-28T20:50:00+01:00",
+   "status": "published",
+   "note": "Stream link and speakers not yet announced by the organiser.",
+   "source_check": "researcher 28.10"
+  },
+  {
    "id": "a6cadcf35c22",
    "title": "Stockholm Bitcoin Meetup #54",
    "start": "2026-11-05T17:30:00+01:00",
@@ -352,6 +394,38 @@
     "source_url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgyjcpbjb/",
     "source_name": "Helsinki Bitcoin Hobbyists (Meetup.com)",
     "retrieved": "2026-10-07T23:50:00+00:00"
+   }
+  },
+  {
+   "id": "030500f31612",
+   "title": "Netlight x OWASP Stockholm",
+   "start": "2026-11-09T17:00:00+01:00",
+   "end": null,
+   "place": "Netlight Consulting AB, Regeringsgatan 25, 111 53 Stockholm, Sweden, Stockholm",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "OWASP Stockholm",
+   "url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+   "source": "Meetup.com search: blockchain, Stockholm",
+   "source_url": "https://www.meetup.com/find/?keywords=blockchain&location=se--Stockholm&source=EVENTS",
+   "paid": null,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-26T03:26:57+00:00",
+   "status": "rejected",
+   "note": null,
+   "place_source": {
+    "name": "Meetup.com search: blockchain, Stockholm",
+    "url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+    "retrieved": "2026-10-26T03:26:57+00:00"
+   },
+   "description": {
+    "text": "Important news:** Meetup will be decommissioned at the end of the year, so RSVP will be moving to our OWASP Chapter page then. To stay updated on future events, join the chapter here: Join us for an exciting afterwork event in collaboration with Netlight. In attendance will be leaders from the OWASP Stockholm chapter, Netlight clients, security professionals from Stockholm and the OWASP Stockholm community!",
+    "lang": "en",
+    "source_url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+    "source_name": "Meetup.com search: blockchain, Stockholm",
+    "retrieved": "2026-10-26T03:26:57+00:00"
    }
   },
   {
@@ -423,7 +497,7 @@
    "title": "3rd International Conference on Digital Sovereignty (ICDS) 2026",
    "start": "2026-11-25T09:00:00+01:00",
    "end": "2026-11-27T16:00:00+01:00",
-   "place": "Oslo Science Park, Oslo",
+   "place": "Oslo Science Park, Gaustadalléen 21, 0349 Oslo",
    "city": "Oslo",
    "country": "NO",
    "online": false,
@@ -613,5 +687,5 @@
    }
   }
  ],
- "updated": "2026-10-20T02:28:35+00:00"
+ "updated": "2026-10-29T03:40:48+00:00"
 }
