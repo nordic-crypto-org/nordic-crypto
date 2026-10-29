@@ -1,8 +1,16 @@
 {
- "schema_version": "2026-10-19",
- "commit": "768bd5d",
- "committed_at": "2026-10-19T16:09:19+02:00",
+ "schema_version": "2026-10-29",
+ "commit": "65c9ef7",
+ "committed_at": "2026-10-29T16:37:43+01:00",
  "entries": [
+  {
+   "sha": "65c9ef78a979ba3c6f9e544c089966418046a4de",
+   "short": "65c9ef7",
+   "committed_at": "2026-10-29T16:37:43+01:00",
+   "date": "2026-10-29",
+   "subject": "Schema: allow null city and description on events (#252)",
+   "url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/65c9ef78a979ba3c6f9e544c089966418046a4de"
+  },
   {
    "sha": "768bd5d3f695278f3486fdd1eddf2675530ea069",
    "short": "768bd5d",
