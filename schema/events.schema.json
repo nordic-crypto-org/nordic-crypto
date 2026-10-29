@@ -883,6 +883,27 @@
        "yt-zi2JsPOm5HE"
       ]
      ]
+    },
+    "tip_only": {
+     "type": "boolean",
+     "description": "Came from a tip-only source; stays pending until checked.",
+     "examples": [
+      true
+     ]
+    },
+    "held": {
+     "type": "boolean",
+     "description": "Held back from publishing until a check passes.",
+     "examples": [
+      true
+     ]
+    },
+    "source_check": {
+     "type": "string",
+     "description": "Who checked the event against its source, and when.",
+     "examples": [
+      "researcher 28.10"
+     ]
     }
    },
    "additionalProperties": false,
