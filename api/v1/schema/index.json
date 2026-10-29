@@ -1,13 +1,13 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-29T16:21:43+00:00",
+ "generated_at": "2026-10-29T16:31:16+00:00",
  "title": "Nordic Crypto data model",
  "docs_url": "https://nordiccrypto.no/db/",
  "schema_version": "2026-10-29",
- "commit": "65c9ef7",
- "committed_at": "2026-10-29T16:37:43+01:00",
- "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/65c9ef78a979ba3c6f9e544c089966418046a4de",
+ "commit": "9d66f54",
+ "committed_at": "2026-10-29T16:38:10+01:00",
+ "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/9d66f54d256e3e4f293cac79762cc7d1f1849181",
  "changelog_url": "https://nordiccrypto.no/api/v1/schema/changelog.json",
  "erd_svg_url": "https://nordiccrypto.no/api/v1/schema/erd.svg",
  "erd_mermaid_url": "https://nordiccrypto.no/api/v1/schema/erd.mmd",
@@ -101,7 +101,9 @@
     "suggested_status",
     "suggested_at",
     "summary_i18n_review",
-    "origin"
+    "origin",
+    "possible_duplicate_of",
+    "possible_duplicate_reason"
    ],
    "schema_url": "https://nordiccrypto.no/api/v1/schema/news.schema.json"
   },
