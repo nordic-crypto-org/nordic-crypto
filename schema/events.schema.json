@@ -160,8 +160,11 @@
      ]
     },
     "city": {
-     "type": "string",
-     "description": "City name.",
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "City name. null for online-only events.",
      "examples": [
       "Göteborg"
      ]
@@ -280,7 +283,10 @@
      "description": "Our short note, in English."
     },
     "description": {
-     "type": "object",
+     "type": [
+      "object",
+      "null"
+     ],
      "properties": {
       "text": {
        "type": "string"
