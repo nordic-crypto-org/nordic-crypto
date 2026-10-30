@@ -22,8 +22,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "97506fa00a24",
@@ -48,8 +49,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "7683b88f9f18",
@@ -74,8 +76,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "834690eca159",
@@ -101,7 +104,7 @@
     "\\bkryptovaluutta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -115,7 +118,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "3997074e461e",
@@ -139,8 +143,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "3bfc8ca28632",
@@ -166,7 +171,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -180,7 +185,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "f718e76049c9",
@@ -206,7 +212,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -231,7 +237,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "3c582996b57b",
@@ -257,14 +264,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "9b8a70e6faee",
    "url": "https://investornytt.no/krypto/binance-stanser-uttak-etter-mulig-rekordhack/549386",
    "title": "Binance stanser uttak etter mulig rekordhack",
-   "title_en": null,
+   "title_en": "Binance halts withdrawals after possible major hack",
    "source": "investornytt",
    "source_name": "Investornytt",
    "country": "NO",
@@ -276,14 +284,162 @@
    "published": "2026-10-29T22:37:54+00:00",
    "fetched": "2026-10-30T02:46:23+00:00",
    "topics": [
-    "bitcoin"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Binance paused withdrawals on 29 October 2026 while investigating a security incident, and later stopped all deposits and withdrawals. Estimates of the possible losses range from about 5.8 to 6.3 billion US dollars, depending on the source: Investornytt cites about 5.8 billion in wallets labelled by Arkham, while VG and B.T. report 6.3 billion; the figures are not confirmed. Binance says user funds are safe and that it will cover all losses, and its preliminary findings point to a compromised employee computer that gave access to a service container, with no evidence that private keys were leaked.",
+   "also_covered_by": [
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/8GyK8W/attack-mot-kryptobors-bitcoin-ned",
+     "title": "Utreder attack mot kryptobörs – stoppar handel",
+     "published": "2026-10-30T00:29:30+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "dn",
+     "outlet_name": "Dagens Næringsliv",
+     "url": "https://dn.no/utenriks/binance/kryptovaluta/hacking/kryptotyveri-kan-sla-alle-tidligere-rekorder/2-1-2066534",
+     "title": "Kryptotyveri kan slå alle tidligere rekorder",
+     "published": "2026-10-30T01:44:33+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/a/74-20254143?origin=rss",
+     "title": "Maailman suurin kryptovaluuttapörssi historiallisen laajan hakkeroinnin kohteena",
+     "published": "2026-10-30T02:27:36+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "vg",
+     "outlet_name": "VG",
+     "url": "https://vg.no/nyheter/i/ElVgEA/binance-stanser-handelen-paa-binance-alpha",
+     "title": "Mulig hackerangrep: Anslår omfanget til 6,3 milliarder dollar",
+     "published": "2026-10-29T23:40:16+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "kryptovalutaguiden",
+     "outlet_name": "Kryptovalutaguiden",
+     "url": "https://kryptovalutaguiden.se/2026/10/binance-utsatt-for-tidernas-storsta-hack-pa-59-miljarder",
+     "title": "Binance utsatt för tidernas största hack på $5,9 miljarder",
+     "published": "2026-10-30T02:40:40+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "tv4.se",
+     "outlet_name": "TV4",
+     "url": "https://tv4.se/artikel/tt-261030-bitcoin1-fc560431/attack-mot-kryptobors-bitcoin-ned",
+     "title": "Attack mot kryptobörs – bitcoin ned",
+     "published": "2026-10-30T00:29:31+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "ilta-sanomat",
+     "outlet_name": "Ilta-Sanomat",
+     "url": "https://is.fi/taloussanomat/art-2000012376874.html",
+     "title": "Maailman suurin krypto­pörssi saatettiin hakkeroida – miljardeja dollareita jäädytettiin",
+     "published": "2026-10-30T02:49:00+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/udland/verdens-stoerste-kryptoboers-ramt-af-muligt-hackerangreb",
+     "title": "Verdens største kryptobørs ramt af muligt hackerangreb",
+     "published": "2026-10-30T02:54:44+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Binance on X (29–30 Oct 2026)",
+    "url": "https://x.com/binance/status/2115960292115124558"
+   },
+   "title_i18n": {
+    "nn": "Binance stansar uttak etter mogleg stort hack",
+    "sv": "Binance stoppar uttag efter möjligt stort hack",
+    "da": "Binance stopper udbetalinger efter muligt stort hack",
+    "fi": "Binance keskeytti nostot mahdollisen suuren hakkeroinnin jälkeen",
+    "is": "Binance stöðvar úttektir eftir mögulegt stórt tölvuinnbrot",
+    "zh": "Binance在可能遭遇重大黑客攻击后暂停提现",
+    "hi": "संभावित बड़े हैक के बाद Binance ने निकासी रोकी",
+    "es": "Binance suspende los retiros tras un posible hackeo de gran escala",
+    "fr": "Binance suspend les retraits après un possible piratage d'ampleur",
+    "ar": "Binance توقف السحب بعد اختراق كبير محتمل",
+    "bn": "সম্ভাব্য বড় হ্যাকের পর উত্তোলন বন্ধ করল Binance",
+    "pt": "Binance suspende levantamentos após possível ataque informático de grande escala",
+    "ru": "Binance приостановила вывод средств после возможного крупного взлома",
+    "ur": "ممکنہ بڑے ہیک کے بعد Binance نے رقوم نکلوانا روک دیا",
+    "id": "Binance hentikan penarikan setelah kemungkinan peretasan besar",
+    "de": "Binance stoppt Auszahlungen nach möglichem großem Hack",
+    "ja": "Binance、大規模ハッキングの可能性で出金を停止",
+    "sw": "Binance yasitisha utoaji wa fedha baada ya udukuzi mkubwa unaowezekana",
+    "mr": "संभाव्य मोठ्या हॅकनंतर Binance ने पैसे काढणे थांबवले",
+    "fa": "Binance پس از هک بزرگ احتمالی برداشت‌ها را متوقف کرد",
+    "uk": "Binance зупинила виведення коштів після можливого масштабного злому",
+    "tr": "Binance olası büyük bir hack sonrası para çekimlerini durdurdu"
+   },
+   "title_i18n_source": "Binance stanser uttak etter mulig rekordhack",
+   "summary_i18n": {
+    "nn": "Binance sette uttak på pause 29. oktober 2026 medan børsen undersøkte ei tryggleikshending, og stansa seinare alle innskot og uttak. Anslaga over moglege tap varierer frå om lag 5,8 til 6,3 milliardar amerikanske dollar etter kjelde: Investornytt viser til om lag 5,8 milliardar i lommebøker merkte av Arkham, medan VG og B.T. melder om 6,3 milliardar; tala er ikkje stadfesta. Binance seier at midlane til brukarane er trygge og at børsen vil dekkje alle tap, og dei førebelse funna peikar på ei kompromittert datamaskin hos ein tilsett som gav tilgang til ein tenestecontainer, utan prov for at private nøklar er lekne.",
+    "nb": "Binance satte uttak på pause 29. oktober 2026 mens børsen undersøkte en sikkerhetshendelse, og stanset senere alle innskudd og uttak. Anslagene over mulige tap varierer fra rundt 5,8 til 6,3 milliarder amerikanske dollar etter kilde: Investornytt viser til rundt 5,8 milliarder i lommebøker merket av Arkham, mens VG og B.T. melder om 6,3 milliarder; tallene er ikke bekreftet. Binance sier at brukernes midler er trygge og at børsen vil dekke alle tap, og de foreløpige funnene peker på en kompromittert datamaskin hos en ansatt som ga tilgang til en tjenestecontainer, uten bevis for at private nøkler er lekket.",
+    "sv": "Binance pausade uttag den 29 oktober 2026 medan börsen utredde en säkerhetsincident och stoppade senare alla insättningar och uttag. Uppskattningarna av möjliga förluster varierar mellan cirka 5,8 och 6,3 miljarder amerikanska dollar beroende på källa: Investornytt hänvisar till cirka 5,8 miljarder i plånböcker märkta av Arkham, medan VG och B.T. rapporterar 6,3 miljarder; siffrorna är inte bekräftade. Binance säger att användarnas medel är säkra och att börsen täcker alla förluster, och de preliminära fynden pekar på en komprometterad dator hos en anställd som gav åtkomst till en tjänstecontainer, utan bevis för att privata nycklar har läckt.",
+    "da": "Binance satte udbetalinger på pause den 29. oktober 2026, mens børsen undersøgte en sikkerhedshændelse, og stoppede senere alle ind- og udbetalinger. Skønnene over mulige tab varierer fra omkring 5,8 til 6,3 milliarder amerikanske dollar afhængigt af kilden: Investornytt henviser til omkring 5,8 milliarder i wallets mærket af Arkham, mens VG og B.T. melder om 6,3 milliarder; tallene er ikke bekræftet. Binance siger, at brugernes midler er sikre, og at børsen dækker alle tab, og de foreløbige fund peger på en kompromitteret computer hos en medarbejder, der gav adgang til en servicecontainer, uden bevis for at private nøgler er lækket.",
+    "fi": "Binance keskeytti nostot 29. lokakuuta 2026 tutkiessaan tietoturvapoikkeamaa ja pysäytti myöhemmin kaikki talletukset ja nostot. Arviot mahdollisista tappioista vaihtelevat lähteestä riippuen noin 5,8:sta 6,3 miljardiin Yhdysvaltain dollariin: Investornytt viittaa noin 5,8 miljardiin Arkhamin merkitsemissä lompakoissa, kun taas VG ja B.T. kertovat 6,3 miljardista; lukuja ei ole vahvistettu. Binance sanoo käyttäjien varojen olevan turvassa ja korvaavansa kaikki tappiot, ja alustavat havainnot viittaavat työntekijän vaarantuneeseen tietokoneeseen, jonka kautta saatiin pääsy palvelukonttiin, ilman näyttöä yksityisten avainten vuotamisesta.",
+    "is": "Binance setti úttektir á bið 29. október 2026 á meðan kauphöllin rannsakaði öryggisatvik og stöðvaði síðar allar innlagnir og úttektir. Mat á mögulegu tapi er á bilinu um 5,8 til 6,3 milljarðar Bandaríkjadala eftir heimildum: Investornytt vísar til um 5,8 milljarða í veskjum sem Arkham hefur merkt, en VG og B.T. greina frá 6,3 milljörðum; tölurnar eru óstaðfestar. Binance segir fé notenda öruggt og að kauphöllin muni bæta allt tap, og bráðabirgðaniðurstöður benda til þess að tölva starfsmanns hafi verið brotin upp og veitt aðgang að þjónustugámi, án vísbendinga um að einkalyklar hafi lekið.",
+    "zh": "Binance于2026年10月29日在调查一起安全事件期间暂停提现，随后停止所有充值和提现。不同来源对可能损失的估计在约58亿至63亿美元之间：Investornytt援引Arkham标记的钱包中约58亿美元，而VG和B.T.报道为63亿美元；这些数字尚未得到证实。Binance表示用户资金安全，并将承担全部损失；其初步调查显示，一名员工的电脑遭入侵，从而获得了一个服务容器的访问权限，目前没有证据表明私钥泄露。",
+    "hi": "Binance ने 29 अक्टूबर 2026 को एक सुरक्षा घटना की जाँच के दौरान निकासी रोक दी और बाद में सभी जमा और निकासी बंद कर दीं। स्रोत के अनुसार संभावित नुकसान का अनुमान लगभग 5.8 से 6.3 अरब अमेरिकी डॉलर के बीच है: Investornytt, Arkham द्वारा चिह्नित वॉलेट में लगभग 5.8 अरब का हवाला देता है, जबकि VG और B.T. 6.3 अरब बताते हैं; आँकड़ों की पुष्टि नहीं हुई है। Binance का कहना है कि उपयोगकर्ताओं का धन सुरक्षित है और वह सभी नुकसान की भरपाई करेगा, और प्रारंभिक निष्कर्षों के अनुसार एक कर्मचारी का कंप्यूटर हैक हुआ जिससे एक सर्विस कंटेनर तक पहुँच मिली; निजी कुंजियाँ लीक होने का कोई सबूत नहीं है।",
+    "es": "Binance suspendió los retiros el 29 de octubre de 2026 mientras investigaba un incidente de seguridad y después detuvo todos los depósitos y retiros. Las estimaciones de las posibles pérdidas van de unos 5.800 a 6.300 millones de dólares según la fuente: Investornytt cita unos 5.800 millones en monederos etiquetados por Arkham, mientras que VG y B.T. informan de 6.300 millones; las cifras no están confirmadas. Binance afirma que los fondos de los usuarios están a salvo y que cubrirá todas las pérdidas, y sus conclusiones preliminares apuntan a un ordenador de un empleado comprometido que dio acceso a un contenedor de servicio, sin pruebas de que se filtraran claves privadas.",
+    "fr": "Binance a suspendu les retraits le 29 octobre 2026 pendant l'examen d'un incident de sécurité, puis a arrêté tous les dépôts et retraits. Les estimations des pertes possibles vont d'environ 5,8 à 6,3 milliards de dollars selon les sources : Investornytt cite environ 5,8 milliards dans des portefeuilles identifiés par Arkham, tandis que VG et B.T. évoquent 6,3 milliards ; ces chiffres ne sont pas confirmés. Binance affirme que les fonds des utilisateurs sont en sécurité et qu'elle couvrira toutes les pertes ; ses premières constatations désignent l'ordinateur compromis d'un employé ayant donné accès à un conteneur de service, sans preuve de fuite de clés privées.",
+    "ar": "أوقفت Binance عمليات السحب مؤقتاً في 29 أكتوبر 2026 أثناء التحقيق في حادث أمني، ثم أوقفت لاحقاً جميع الإيداعات والسحوبات. وتتراوح تقديرات الخسائر المحتملة بين نحو 5.8 و6.3 مليار دولار أمريكي بحسب المصدر: إذ تشير Investornytt إلى نحو 5.8 مليار في محافظ صنّفتها Arkham، بينما تذكر VG وB.T. رقم 6.3 مليار؛ ولم تُؤكَّد هذه الأرقام. وتقول Binance إن أموال المستخدمين آمنة وإنها ستغطي جميع الخسائر، وتشير نتائجها الأولية إلى حاسوب موظف مخترق أتاح الوصول إلى حاوية خدمة، دون دليل على تسرّب مفاتيح خاصة.",
+    "bn": "একটি নিরাপত্তা ঘটনার তদন্তের সময় Binance ২০২৬ সালের ২৯ অক্টোবর উত্তোলন স্থগিত করে এবং পরে সব জমা ও উত্তোলন বন্ধ করে দেয়। সূত্রভেদে সম্ভাব্য ক্ষতির অনুমান প্রায় ৫.৮ থেকে ৬.৩ বিলিয়ন মার্কিন ডলার: Investornytt, Arkham-চিহ্নিত ওয়ালেটে প্রায় ৫.৮ বিলিয়নের কথা বলেছে, আর VG ও B.T. ৬.৩ বিলিয়ন জানিয়েছে; সংখ্যাগুলো নিশ্চিত নয়। Binance বলছে ব্যবহারকারীদের অর্থ নিরাপদ এবং তারা সব ক্ষতি পূরণ করবে; প্রাথমিক তথ্যে দেখা যাচ্ছে একজন কর্মীর কম্পিউটার আপসকৃত হয়ে একটি সার্ভিস কন্টেইনারে প্রবেশাধিকার দিয়েছিল, তবে প্রাইভেট কি ফাঁসের কোনো প্রমাণ নেই।",
+    "pt": "A Binance suspendeu os levantamentos a 29 de outubro de 2026 enquanto investigava um incidente de segurança e, mais tarde, parou todos os depósitos e levantamentos. As estimativas das possíveis perdas variam entre cerca de 5,8 e 6,3 mil milhões de dólares, consoante a fonte: a Investornytt cita cerca de 5,8 mil milhões em carteiras identificadas pela Arkham, enquanto o VG e o B.T. referem 6,3 mil milhões; os números não estão confirmados. A Binance diz que os fundos dos utilizadores estão seguros e que cobrirá todas as perdas, e as conclusões preliminares apontam para o computador comprometido de um funcionário que deu acesso a um contentor de serviço, sem provas de fuga de chaves privadas.",
+    "ru": "Binance приостановила вывод средств 29 октября 2026 года, расследуя инцидент безопасности, а затем остановила все вводы и выводы. Оценки возможных потерь в зависимости от источника составляют примерно от 5,8 до 6,3 млрд долларов США: Investornytt ссылается примерно на 5,8 млрд в кошельках, помеченных Arkham, а VG и B.T. сообщают о 6,3 млрд; цифры не подтверждены. Binance заявляет, что средства пользователей в безопасности и что биржа покроет все потери; по предварительным данным, был скомпрометирован компьютер сотрудника, через который получили доступ к сервисному контейнеру, при этом доказательств утечки приватных ключей нет.",
+    "ur": "Binance نے 29 اکتوبر 2026 کو ایک سیکیورٹی واقعے کی تحقیقات کے دوران رقوم نکلوانا روک دیا اور بعد میں تمام جمع اور نکلوانے کی سہولت بند کر دی۔ ذرائع کے مطابق ممکنہ نقصان کے اندازے تقریباً 5.8 سے 6.3 ارب امریکی ڈالر کے درمیان ہیں: Investornytt، Arkham کے نشان زدہ والیٹس میں تقریباً 5.8 ارب کا حوالہ دیتا ہے جبکہ VG اور B.T. 6.3 ارب بتاتے ہیں؛ یہ اعداد تصدیق شدہ نہیں۔ Binance کا کہنا ہے کہ صارفین کی رقوم محفوظ ہیں اور وہ تمام نقصانات پورے کرے گا، اور ابتدائی نتائج کے مطابق ایک ملازم کا کمپیوٹر ہیک ہوا جس سے ایک سروس کنٹینر تک رسائی ملی؛ نجی کلیدیں لیک ہونے کا کوئی ثبوت نہیں۔",
+    "id": "Binance menghentikan sementara penarikan pada 29 Oktober 2026 saat menyelidiki insiden keamanan, lalu menghentikan semua setoran dan penarikan. Perkiraan kemungkinan kerugian berkisar sekitar 5,8 hingga 6,3 miliar dolar AS tergantung sumbernya: Investornytt menyebut sekitar 5,8 miliar di dompet yang ditandai Arkham, sementara VG dan B.T. melaporkan 6,3 miliar; angka-angka itu belum dikonfirmasi. Binance mengatakan dana pengguna aman dan pihaknya akan menanggung semua kerugian, dan temuan awal menunjukkan komputer seorang karyawan yang disusupi memberi akses ke sebuah kontainer layanan, tanpa bukti kunci privat bocor.",
+    "de": "Binance setzte am 29. Oktober 2026 Auszahlungen aus, während die Börse einen Sicherheitsvorfall untersuchte, und stoppte später alle Ein- und Auszahlungen. Die Schätzungen möglicher Verluste reichen je nach Quelle von etwa 5,8 bis 6,3 Milliarden US-Dollar: Investornytt verweist auf rund 5,8 Milliarden in von Arkham markierten Wallets, VG und B.T. berichten von 6,3 Milliarden; die Zahlen sind nicht bestätigt. Binance erklärt, die Nutzergelder seien sicher und man werde alle Verluste decken; vorläufige Erkenntnisse deuten auf den kompromittierten Rechner eines Mitarbeiters, über den Zugriff auf einen Service-Container erlangt wurde, ohne Hinweise auf abgeflossene private Schlüssel.",
+    "ja": "Binanceは2026年10月29日、セキュリティ事案の調査中に出金を一時停止し、その後すべての入出金を停止した。損失の可能性に関する推計は情報源によって約58億〜63億ドルと幅がある。Investornyttは Arkhamが特定したウォレット内の約58億ドルを挙げ、VGとB.T.は63億ドルと報じているが、数字は確認されていない。Binanceは利用者の資金は安全で、すべての損失を補償するとしており、暫定調査では従業員のコンピューターが侵害されてサービスコンテナへのアクセスを許したことが示されている一方、秘密鍵が漏えいした証拠はないという。",
+    "sw": "Binance ilisitisha kwa muda utoaji wa fedha tarehe 29 Oktoba 2026 ikichunguza tukio la usalama, na baadaye ikasimamisha amana na utoaji wote. Makadirio ya hasara inayowezekana ni kati ya takriban dola bilioni 5.8 na 6.3 za Marekani kulingana na chanzo: Investornytt inataja takriban bilioni 5.8 katika pochi zilizowekwa alama na Arkham, huku VG na B.T. zikiripoti bilioni 6.3; takwimu hizo hazijathibitishwa. Binance inasema fedha za watumiaji ziko salama na itafidia hasara zote, na matokeo ya awali yanaonyesha kompyuta ya mfanyakazi iliyoingiliwa ilitoa ufikiaji wa kontena la huduma, bila ushahidi wa kuvuja kwa funguo za siri.",
+    "mr": "एका सुरक्षा घटनेची चौकशी करताना Binance ने २९ ऑक्टोबर २०२६ रोजी पैसे काढणे थांबवले आणि नंतर सर्व ठेवी व पैसे काढणे बंद केले. स्रोतानुसार संभाव्य नुकसानाचे अंदाज सुमारे ५.८ ते ६.३ अब्ज अमेरिकन डॉलर आहेत: Investornytt ने Arkham ने चिन्हांकित केलेल्या वॉलेटमधील सुमारे ५.८ अब्जांचा उल्लेख केला, तर VG आणि B.T. ने ६.३ अब्ज सांगितले; हे आकडे पुष्टी झालेले नाहीत. वापरकर्त्यांचे पैसे सुरक्षित असून सर्व नुकसान भरून काढले जाईल, असे Binance सांगते; प्राथमिक निष्कर्षांनुसार एका कर्मचाऱ्याचा संगणक हॅक होऊन सर्व्हिस कंटेनरमध्ये प्रवेश मिळाला, मात्र खासगी की लीक झाल्याचा पुरावा नाही.",
+    "fa": "Binance در ۲۹ اکتبر ۲۰۲۶ هنگام بررسی یک رخداد امنیتی برداشت‌ها را متوقف کرد و سپس همه واریزها و برداشت‌ها را بست. برآوردهای زیان احتمالی بسته به منبع بین حدود ۵٫۸ تا ۶٫۳ میلیارد دلار آمریکا است: Investornytt به حدود ۵٫۸ میلیارد در کیف‌پول‌های برچسب‌خورده توسط Arkham اشاره می‌کند و VG و B.T. رقم ۶٫۳ میلیارد را گزارش می‌دهند؛ این ارقام تأیید نشده‌اند. Binance می‌گوید دارایی کاربران امن است و همه زیان‌ها را جبران می‌کند، و یافته‌های اولیه به رایانه آلوده یک کارمند اشاره دارد که دسترسی به یک کانتینر سرویس را ممکن کرد، بدون شواهدی از نشت کلیدهای خصوصی.",
+    "uk": "Binance призупинила виведення коштів 29 жовтня 2026 року, розслідуючи інцидент безпеки, а згодом зупинила всі депозити й виведення. Оцінки можливих втрат залежно від джерела становлять приблизно від 5,8 до 6,3 млрд доларів США: Investornytt посилається приблизно на 5,8 млрд у гаманцях, позначених Arkham, а VG і B.T. повідомляють про 6,3 млрд; цифри не підтверджені. Binance заявляє, що кошти користувачів у безпеці й біржа покриє всі втрати; за попередніми даними, було скомпрометовано комп'ютер працівника, через який отримали доступ до сервісного контейнера, але доказів витоку приватних ключів немає.",
+    "tr": "Binance, 29 Ekim 2026'da bir güvenlik olayını incelerken para çekimlerini durdurdu ve daha sonra tüm yatırma ve çekme işlemlerini askıya aldı. Olası kayıp tahminleri kaynağa göre yaklaşık 5,8 ile 6,3 milyar ABD doları arasında değişiyor: Investornytt, Arkham'ın etiketlediği cüzdanlardaki yaklaşık 5,8 milyara atıfta bulunurken VG ve B.T. 6,3 milyar bildiriyor; rakamlar doğrulanmadı. Binance kullanıcı fonlarının güvende olduğunu ve tüm kayıpları karşılayacağını söylüyor; ön bulgular, bir çalışanın ele geçirilen bilgisayarının bir hizmet konteynerine erişim sağladığına işaret ediyor, özel anahtarların sızdığına dair kanıt yok."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "eaf30d45891b",
@@ -309,8 +465,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Evergreen guide with gambling angle; comparison-site content, excluded. researcher 30.10"
   },
   {
    "id": "52db823fd74c",
@@ -334,8 +491,9 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9ac10e05dc69"
   },
   {
    "id": "67362b60bf32",
@@ -357,14 +515,15 @@
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Rich list, no real crypto news or Nordic angle. researcher 30.10"
   },
   {
    "id": "5daa28c853be",
    "url": "https://kryptovalutaguiden.se/2026/10/galaxy-digital-q3-rapport-visar-vinst-pa-323-miljoner-och-aktien-rusar",
    "title": "Galaxy Digital Q3 Rapport visar vinst på $323 miljoner och aktien rusar",
-   "title_en": null,
+   "title_en": "Galaxy Digital reports third-quarter net income of 323 million dollars",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -376,21 +535,78 @@
    "published": "2026-10-29T08:24:00+00:00",
    "fetched": "2026-10-30T02:46:23+00:00",
    "topics": [
-    "crypto"
+    "business"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "US crypto and data-centre company Galaxy Digital reported net income of 323 million dollars for the third quarter of 2026, after a loss of 85 million dollars in the second quarter. The company attributes the result to its digital-assets business, gains on its investment portfolio and the first full quarter of leasing revenue from its data-centre business.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Galaxy – Third Quarter 2026 Financial Results (27 Oct 2026)",
+    "url": "https://investor.galaxy.com/news-releases/news-release-details/galaxy-announces-third-quarter-2026-financial-results"
+   },
+   "title_i18n": {
+    "nn": "Galaxy Digital melder eit nettoresultat på 323 millionar dollar i tredje kvartal",
+    "nb": "Galaxy Digital melder et nettoresultat på 323 millioner dollar i tredje kvartal",
+    "da": "Galaxy Digital melder et nettoresultat på 323 millioner dollar i tredje kvartal",
+    "fi": "Galaxy Digitalin kolmannen neljänneksen nettotulos 323 miljoonaa dollaria",
+    "is": "Galaxy Digital skilar 323 milljóna dala hagnaði á þriðja ársfjórðungi",
+    "zh": "Galaxy Digital第三季度净利润3.23亿美元",
+    "hi": "Galaxy Digital ने तीसरी तिमाही में 32.3 करोड़ डॉलर का शुद्ध लाभ दर्ज किया",
+    "es": "Galaxy Digital registra un beneficio neto de 323 millones de dólares en el tercer trimestre",
+    "fr": "Galaxy Digital publie un bénéfice net de 323 millions de dollars au troisième trimestre",
+    "ar": "Galaxy Digital تعلن صافي دخل 323 مليون دولار في الربع الثالث",
+    "bn": "তৃতীয় প্রান্তিকে ৩২.৩ কোটি ডলার নিট আয় জানাল Galaxy Digital",
+    "pt": "Galaxy Digital apresenta lucro líquido de 323 milhões de dólares no terceiro trimestre",
+    "ru": "Galaxy Digital отчиталась о чистой прибыли 323 млн долларов в третьем квартале",
+    "ur": "Galaxy Digital نے تیسری سہ ماہی میں 32.3 کروڑ ڈالر خالص آمدنی ظاہر کی",
+    "id": "Galaxy Digital bukukan laba bersih 323 juta dolar pada kuartal ketiga",
+    "de": "Galaxy Digital meldet Nettogewinn von 323 Millionen Dollar im dritten Quartal",
+    "ja": "Galaxy Digital、第3四半期の純利益は3億2300万ドル",
+    "sw": "Galaxy Digital yaripoti mapato halisi ya dola milioni 323 robo ya tatu",
+    "mr": "Galaxy Digital चा तिसऱ्या तिमाहीत ३२.३ कोटी डॉलरचा निव्वळ नफा",
+    "fa": "Galaxy Digital سود خالص ۳۲۳ میلیون دلاری در سه‌ماهه سوم گزارش کرد",
+    "uk": "Galaxy Digital звітувала про чистий прибуток 323 млн доларів у третьому кварталі",
+    "tr": "Galaxy Digital üçüncü çeyrekte 323 milyon dolar net kâr açıkladı"
+   },
+   "title_i18n_source": "Galaxy Digital Q3 Rapport visar vinst på $323 miljoner och aktien rusar",
+   "summary_i18n": {
+    "nn": "Det amerikanske krypto- og datasenterselskapet Galaxy Digital melde eit nettoresultat på 323 millionar dollar for tredje kvartal 2026, etter eit tap på 85 millionar dollar i andre kvartal. Selskapet forklarer resultatet med verksemda innan digitale eigedelar, gevinstar i investeringsporteføljen og det første heile kvartalet med leigeinntekter frå datasenterverksemda.",
+    "nb": "Det amerikanske krypto- og datasenterselskapet Galaxy Digital meldte et nettoresultat på 323 millioner dollar for tredje kvartal 2026, etter et tap på 85 millioner dollar i andre kvartal. Selskapet forklarer resultatet med virksomheten innen digitale eiendeler, gevinster i investeringsporteføljen og det første hele kvartalet med leieinntekter fra datasentervirksomheten.",
+    "sv": "Det amerikanska krypto- och datacenterbolaget Galaxy Digital redovisade ett nettoresultat på 323 miljoner dollar för tredje kvartalet 2026, efter en förlust på 85 miljoner dollar i andra kvartalet. Bolaget förklarar resultatet med verksamheten inom digitala tillgångar, vinster i investeringsportföljen och det första hela kvartalet med hyresintäkter från datacenterverksamheten.",
+    "da": "Det amerikanske krypto- og datacenterselskab Galaxy Digital rapporterede et nettoresultat på 323 millioner dollar for tredje kvartal 2026 efter et tab på 85 millioner dollar i andet kvartal. Selskabet forklarer resultatet med forretningen inden for digitale aktiver, gevinster i investeringsporteføljen og det første hele kvartal med lejeindtægter fra datacenterforretningen.",
+    "fi": "Yhdysvaltalainen krypto- ja datakeskusyhtiö Galaxy Digital raportoi vuoden 2026 kolmannelta neljännekseltä 323 miljoonan dollarin nettotuloksen, kun toisella neljänneksellä tappio oli 85 miljoonaa dollaria. Yhtiö selittää tulosta digitaalisten varojen liiketoiminnalla, sijoitussalkun arvonnousulla ja datakeskusliiketoiminnan ensimmäisellä kokonaisella vuokratuloneljänneksellä.",
+    "is": "Bandaríska rafmynta- og gagnaversfyrirtækið Galaxy Digital skilaði 323 milljóna dala hagnaði á þriðja ársfjórðungi 2026, eftir 85 milljóna dala tap á öðrum ársfjórðungi. Fyrirtækið rekur afkomuna til starfsemi á sviði stafrænna eigna, hagnaðar af fjárfestingasafni og fyrsta heila ársfjórðungs með leigutekjum af gagnaversstarfseminni.",
+    "zh": "美国加密与数据中心公司Galaxy Digital公布2026年第三季度净利润3.23亿美元，而第二季度亏损8500万美元。公司将业绩归因于数字资产业务、投资组合收益以及数据中心业务首个完整季度的租赁收入。",
+    "hi": "अमेरिकी क्रिप्टो और डेटा सेंटर कंपनी Galaxy Digital ने 2026 की तीसरी तिमाही में 32.3 करोड़ डॉलर का शुद्ध लाभ दर्ज किया, जबकि दूसरी तिमाही में 8.5 करोड़ डॉलर का घाटा था। कंपनी इस नतीजे का श्रेय अपने डिजिटल एसेट्स कारोबार, निवेश पोर्टफ़ोलियो में बढ़त और डेटा सेंटर कारोबार से लीज़िंग राजस्व की पहली पूरी तिमाही को देती है।",
+    "es": "La empresa estadounidense de cripto y centros de datos Galaxy Digital registró un beneficio neto de 323 millones de dólares en el tercer trimestre de 2026, tras una pérdida de 85 millones en el segundo. La compañía atribuye el resultado a su negocio de activos digitales, a las ganancias de su cartera de inversiones y al primer trimestre completo de ingresos por arrendamiento de su negocio de centros de datos.",
+    "fr": "La société américaine de crypto et de centres de données Galaxy Digital a publié un bénéfice net de 323 millions de dollars au troisième trimestre 2026, après une perte de 85 millions au deuxième. L'entreprise attribue ce résultat à son activité d'actifs numériques, aux gains de son portefeuille d'investissements et au premier trimestre complet de revenus locatifs de son activité de centres de données.",
+    "ar": "أعلنت شركة Galaxy Digital الأمريكية للعملات المشفرة ومراكز البيانات صافي دخل قدره 323 مليون دولار للربع الثالث من 2026، بعد خسارة 85 مليون دولار في الربع الثاني. وتعزو الشركة النتيجة إلى أعمال الأصول الرقمية ومكاسب محفظتها الاستثمارية وأول ربع كامل من إيرادات التأجير من أعمال مراكز البيانات.",
+    "bn": "মার্কিন ক্রিপ্টো ও ডেটা সেন্টার কোম্পানি Galaxy Digital ২০২৬ সালের তৃতীয় প্রান্তিকে ৩২.৩ কোটি ডলার নিট আয় জানিয়েছে, যেখানে দ্বিতীয় প্রান্তিকে ৮.৫ কোটি ডলার লোকসান ছিল। কোম্পানি এই ফলের কারণ হিসেবে ডিজিটাল সম্পদ ব্যবসা, বিনিয়োগ পোর্টফোলিওর লাভ এবং ডেটা সেন্টার ব্যবসা থেকে লিজ আয়ের প্রথম পূর্ণ প্রান্তিকের কথা বলছে।",
+    "pt": "A empresa norte-americana de cripto e centros de dados Galaxy Digital apresentou um lucro líquido de 323 milhões de dólares no terceiro trimestre de 2026, após um prejuízo de 85 milhões no segundo. A empresa atribui o resultado ao negócio de ativos digitais, aos ganhos da carteira de investimentos e ao primeiro trimestre completo de receitas de arrendamento do negócio de centros de dados.",
+    "ru": "Американская компания в сфере криптовалют и дата-центров Galaxy Digital отчиталась о чистой прибыли 323 млн долларов за третий квартал 2026 года после убытка 85 млн во втором. Компания объясняет результат бизнесом цифровых активов, доходами инвестиционного портфеля и первым полным кварталом арендной выручки от дата-центров.",
+    "ur": "امریکی کرپٹو اور ڈیٹا سینٹر کمپنی Galaxy Digital نے 2026 کی تیسری سہ ماہی میں 32.3 کروڑ ڈالر خالص آمدنی ظاہر کی، جبکہ دوسری سہ ماہی میں 8.5 کروڑ ڈالر کا نقصان ہوا تھا۔ کمپنی اس نتیجے کو اپنے ڈیجیٹل اثاثوں کے کاروبار، سرمایہ کاری پورٹ فولیو کے منافع اور ڈیٹا سینٹر کاروبار سے کرایہ آمدنی کی پہلی مکمل سہ ماہی سے منسوب کرتی ہے۔",
+    "id": "Perusahaan kripto dan pusat data AS Galaxy Digital membukukan laba bersih 323 juta dolar pada kuartal ketiga 2026, setelah rugi 85 juta dolar pada kuartal kedua. Perusahaan mengaitkan hasil ini dengan bisnis aset digital, keuntungan portofolio investasi, dan kuartal penuh pertama pendapatan sewa dari bisnis pusat datanya.",
+    "de": "Das US-Krypto- und Rechenzentrumsunternehmen Galaxy Digital meldete für das dritte Quartal 2026 einen Nettogewinn von 323 Millionen Dollar nach einem Verlust von 85 Millionen Dollar im zweiten Quartal. Das Unternehmen führt das Ergebnis auf sein Digital-Assets-Geschäft, Gewinne im Anlageportfolio und das erste volle Quartal mit Mieteinnahmen aus dem Rechenzentrumsgeschäft zurück.",
+    "ja": "米国の暗号資産・データセンター企業Galaxy Digitalは、2026年第3四半期の純利益が3億2300万ドルだったと発表した。第2四半期は8500万ドルの赤字だった。同社は、デジタル資産事業、投資ポートフォリオの評価益、データセンター事業のリース収入が初めて丸一四半期計上されたことを要因に挙げている。",
+    "sw": "Kampuni ya Marekani ya kripto na vituo vya data Galaxy Digital iliripoti mapato halisi ya dola milioni 323 kwa robo ya tatu ya 2026, baada ya hasara ya dola milioni 85 katika robo ya pili. Kampuni inahusisha matokeo hayo na biashara yake ya mali za kidijitali, faida katika portfolio ya uwekezaji na robo kamili ya kwanza ya mapato ya kukodisha kutoka biashara ya vituo vya data.",
+    "mr": "अमेरिकन क्रिप्टो व डेटा सेंटर कंपनी Galaxy Digital ने २०२६ च्या तिसऱ्या तिमाहीत ३२.३ कोटी डॉलरचा निव्वळ नफा नोंदवला, तर दुसऱ्या तिमाहीत ८.५ कोटी डॉलरचा तोटा होता. कंपनी या निकालाचे श्रेय डिजिटल मालमत्ता व्यवसाय, गुंतवणूक पोर्टफोलिओतील वाढ आणि डेटा सेंटर व्यवसायातील भाडे उत्पन्नाच्या पहिल्या पूर्ण तिमाहीला देते.",
+    "fa": "شرکت آمریکایی رمزارز و مرکز داده Galaxy Digital برای سه‌ماهه سوم ۲۰۲۶ سود خالص ۳۲۳ میلیون دلار گزارش کرد، پس از زیان ۸۵ میلیون دلاری در سه‌ماهه دوم. شرکت این نتیجه را به کسب‌وکار دارایی‌های دیجیتال، سود سبد سرمایه‌گذاری و نخستین سه‌ماهه کامل درآمد اجاره از کسب‌وکار مرکز داده نسبت می‌دهد.",
+    "uk": "Американська компанія у сфері криптовалют і дата-центрів Galaxy Digital звітувала про чистий прибуток 323 млн доларів за третій квартал 2026 року після збитку 85 млн у другому. Компанія пояснює результат бізнесом цифрових активів, прибутками інвестиційного портфеля та першим повним кварталом орендних доходів від дата-центрів.",
+    "tr": "ABD'li kripto ve veri merkezi şirketi Galaxy Digital, 2026'nın üçüncü çeyreğinde ikinci çeyrekteki 85 milyon dolarlık zararın ardından 323 milyon dolar net kâr açıkladı. Şirket sonucu dijital varlık işine, yatırım portföyündeki kazançlara ve veri merkezi işinden elde edilen kira gelirinin ilk tam çeyreğine bağlıyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "5672fc124704",
    "url": "https://fi.se/sv/publicerat/nyheter/2026/anmal-intresse-att-delta-i-vagledningsprojekt-om-tokeniserade-pengar",
    "title": "Anmäl intresse att delta i vägledningsprojekt om tokeniserade pengar",
-   "title_en": null,
+   "title_en": "Sweden's Finansinspektionen seeks participants for guidance project on tokenised money",
    "source": "fi-se",
    "source_name": "Finansinspektionen",
    "country": "SE",
@@ -402,14 +618,85 @@
    "published": "2026-10-29T06:45:00+00:00",
    "fetched": "2026-10-30T02:46:23+00:00",
    "topics": [
-    "blockchain"
+    "regulation",
+    "tokenisation"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Sweden's Finansinspektionen (FI) is inviting interested parties to join a reference group for a new guidance project on tokenised money under its Innovation Compass. The project covers questions that can arise when payments are made using distributed ledger technology (DLT), such as tokenised bank deposits, e-money tokens under MiCA and central bank money on DLT. Kaupr reports that the deadline to register interest is 22 November.",
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/finansinspektionen-apner-for-innspill-om-tokeniserte-penger",
+     "title": "Finansinspektionen åpner for innspill om tokeniserte penger",
+     "published": "2026-10-29",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Finansinspektionen",
+    "url": "https://fi.se/sv/publicerat/nyheter/2026/anmal-intresse-att-delta-i-vagledningsprojekt-om-tokeniserade-pengar"
+   },
+   "title_i18n": {
+    "nn": "Finansinspektionen i Sverige søkjer deltakarar til rettleiingsprosjekt om tokeniserte pengar",
+    "nb": "Finansinspektionen i Sverige søker deltakere til veiledningsprosjekt om tokeniserte penger",
+    "da": "Sveriges Finansinspektionen søger deltagere til vejledningsprojekt om tokeniserede penge",
+    "fi": "Ruotsin Finansinspektionen hakee osallistujia tokenisoitua rahaa koskevaan ohjeistushankkeeseen",
+    "is": "Sænska fjármálaeftirlitið leitar þátttakenda í leiðbeiningaverkefni um táknvædda peninga",
+    "zh": "瑞典金融监管局为代币化货币指导项目征集参与者",
+    "hi": "स्वीडन के Finansinspektionen ने टोकनाइज़्ड मुद्रा पर मार्गदर्शन परियोजना के लिए प्रतिभागी आमंत्रित किए",
+    "es": "La Finansinspektionen sueca busca participantes para un proyecto de orientación sobre dinero tokenizado",
+    "fr": "La Finansinspektionen suédoise cherche des participants pour un projet d'orientation sur la monnaie tokenisée",
+    "ar": "هيئة الرقابة المالية السويدية تبحث عن مشاركين في مشروع إرشادي حول النقود المرمّزة",
+    "bn": "টোকেনাইজড অর্থ নিয়ে নির্দেশনা প্রকল্পে অংশগ্রহণকারী খুঁজছে সুইডেনের Finansinspektionen",
+    "pt": "A Finansinspektionen sueca procura participantes para projeto de orientação sobre dinheiro tokenizado",
+    "ru": "Шведская Finansinspektionen ищет участников проекта рекомендаций по токенизированным деньгам",
+    "ur": "سویڈن کی Finansinspektionen ٹوکنائزڈ رقم پر رہنمائی منصوبے کے لیے شرکا کی تلاش میں",
+    "id": "Finansinspektionen Swedia cari peserta proyek panduan uang tertokenisasi",
+    "de": "Schwedens Finansinspektionen sucht Teilnehmer für Leitfadenprojekt zu tokenisiertem Geld",
+    "ja": "スウェーデン金融監督庁、トークン化マネーの指針プロジェクトの参加者を募集",
+    "sw": "Finansinspektionen ya Uswidi yatafuta washiriki wa mradi wa mwongozo kuhusu pesa zilizowekwa tokeni",
+    "mr": "स्वीडनच्या Finansinspektionen कडून टोकनाइज्ड पैशांवरील मार्गदर्शन प्रकल्पासाठी सहभागींची मागणी",
+    "fa": "Finansinspektionen سوئد برای پروژه راهنمایی درباره پول توکنیزه شرکت‌کننده می‌خواهد",
+    "uk": "Шведська Finansinspektionen шукає учасників проєкту настанов щодо токенізованих грошей",
+    "tr": "İsveç Finansinspektionen, tokenize para rehberlik projesi için katılımcı arıyor"
+   },
+   "title_i18n_source": "Anmäl intresse att delta i vägledningsprojekt om tokeniserade pengar",
+   "summary_i18n": {
+    "nn": "Finansinspektionen (FI) i Sverige inviterer interesserte til å bli med i ei referansegruppe for eit nytt rettleiingsprosjekt om tokeniserte pengar under Innovationskompassen. Prosjektet tek for seg spørsmål som kan oppstå når betalingar skjer ved hjelp av distribuert liggjarteknologi (DLT), som tokeniserte bankinnskot, e-pengetoken under MiCA og sentralbankpengar på DLT. Kaupr melder at fristen for å melde interesse er 22. november.",
+    "nb": "Finansinspektionen (FI) i Sverige inviterer interesserte til å bli med i en referansegruppe for et nytt veiledningsprosjekt om tokeniserte penger under Innovationskompassen. Prosjektet tar for seg spørsmål som kan oppstå når betalinger skjer ved hjelp av distribuert liggerteknologi (DLT), som tokeniserte bankinnskudd, e-pengetoken under MiCA og sentralbankpenger på DLT. Kaupr melder at fristen for å melde interesse er 22. november.",
+    "sv": "Finansinspektionen (FI) bjuder in intresserade att delta i en referensgrupp för ett nytt vägledningsprojekt om tokeniserade pengar inom Innovationskompassen. Projektet gäller frågor som kan uppstå när betalningar genomförs med distribuerade liggare (DLT), som tokeniserade bankinlåning, e-pengatoken enligt MiCA och centralbankspengar på DLT. Kaupr rapporterar att sista dag för intresseanmälan är den 22 november.",
+    "da": "Sveriges Finansinspektionen (FI) inviterer interesserede til at deltage i en referencegruppe for et nyt vejledningsprojekt om tokeniserede penge under Innovationskompassen. Projektet handler om spørgsmål, der kan opstå, når betalinger gennemføres med distribueret ledger-teknologi (DLT), såsom tokeniserede bankindskud, e-pengetokens under MiCA og centralbankpenge på DLT. Kaupr skriver, at fristen for at tilmelde sig er 22. november.",
+    "fi": "Ruotsin Finansinspektionen (FI) kutsuu kiinnostuneita mukaan referenssiryhmään uuteen tokenisoitua rahaa koskevaan ohjeistushankkeeseen osana Innovationskompassen-palveluaan. Hanke käsittelee kysymyksiä, joita voi syntyä, kun maksuja tehdään hajautetun tilikirjateknologian (DLT) avulla, kuten tokenisoidut pankkitalletukset, MiCA:n mukaiset sähköraha­tokenit ja keskuspankkiraha DLT:ssä. Kaupr kertoo, että kiinnostuksen voi ilmoittaa 22. marraskuuta asti.",
+    "is": "Sænska fjármálaeftirlitið (FI) býður áhugasömum að taka þátt í viðmiðunarhópi fyrir nýtt leiðbeiningaverkefni um táknvædda peninga innan Innovationskompassen. Verkefnið fjallar um álitamál sem geta komið upp þegar greiðslur fara fram með dreifðri færsluskrártækni (DLT), svo sem táknvæddar bankainnstæður, rafeyristákn samkvæmt MiCA og seðlabankafé á DLT. Kaupr greinir frá því að frestur til að skrá áhuga sé 22. nóvember.",
+    "zh": "瑞典金融监管局（FI）邀请有意者加入其“创新指南针”框架下一个关于代币化货币的新指导项目的参考小组。该项目涉及使用分布式账本技术（DLT）进行支付时可能出现的问题，例如代币化银行存款、MiCA下的电子货币代币以及DLT上的央行货币。据Kaupr报道，报名截止日期为11月22日。",
+    "hi": "स्वीडन का Finansinspektionen (FI) अपने इनोवेशन कंपास के तहत टोकनाइज़्ड मुद्रा पर एक नई मार्गदर्शन परियोजना के संदर्भ समूह में शामिल होने के लिए इच्छुक पक्षों को आमंत्रित कर रहा है। परियोजना उन सवालों को देखती है जो वितरित लेजर तकनीक (DLT) से भुगतान करते समय उठ सकते हैं, जैसे टोकनाइज़्ड बैंक जमा, MiCA के तहत ई-मनी टोकन और DLT पर केंद्रीय बैंक मुद्रा। Kaupr के अनुसार रुचि दर्ज करने की अंतिम तिथि 22 नवंबर है।",
+    "es": "La Finansinspektionen (FI) de Suecia invita a los interesados a unirse a un grupo de referencia para un nuevo proyecto de orientación sobre dinero tokenizado dentro de su Brújula de Innovación. El proyecto aborda cuestiones que pueden surgir al realizar pagos con tecnología de registro distribuido (DLT), como depósitos bancarios tokenizados, tokens de dinero electrónico bajo MiCA y dinero de banco central en DLT. Kaupr informa de que el plazo para inscribirse es el 22 de noviembre.",
+    "fr": "La Finansinspektionen (FI) suédoise invite les parties intéressées à rejoindre un groupe de référence pour un nouveau projet d'orientation sur la monnaie tokenisée, dans le cadre de sa Boussole de l'innovation. Le projet porte sur les questions pouvant se poser lorsque des paiements passent par la technologie des registres distribués (DLT), comme les dépôts bancaires tokenisés, les jetons de monnaie électronique au titre de MiCA et la monnaie de banque centrale sur DLT. Selon Kaupr, la date limite d'inscription est le 22 novembre.",
+    "ar": "تدعو هيئة الرقابة المالية السويدية (FI) الجهات المهتمة إلى الانضمام إلى مجموعة مرجعية لمشروع إرشادي جديد حول النقود المرمّزة ضمن «بوصلة الابتكار». ويتناول المشروع المسائل التي قد تنشأ عند تنفيذ المدفوعات بتقنية السجلات الموزعة (DLT)، مثل الودائع المصرفية المرمّزة ورموز النقود الإلكترونية بموجب MiCA وأموال البنك المركزي على DLT. وتفيد Kaupr بأن آخر موعد لإبداء الاهتمام هو 22 نوفمبر.",
+    "bn": "সুইডেনের Finansinspektionen (FI) তাদের ইনোভেশন কম্পাসের অধীনে টোকেনাইজড অর্থ নিয়ে একটি নতুন নির্দেশনা প্রকল্পের রেফারেন্স গ্রুপে যোগ দিতে আগ্রহীদের আমন্ত্রণ জানাচ্ছে। প্রকল্পটি বিতরণকৃত লেজার প্রযুক্তি (DLT) দিয়ে পেমেন্ট করার সময় যে প্রশ্ন উঠতে পারে তা নিয়ে, যেমন টোকেনাইজড ব্যাংক আমানত, MiCA-র অধীনে ই-মানি টোকেন ও DLT-তে কেন্দ্রীয় ব্যাংকের অর্থ। Kaupr জানিয়েছে আগ্রহ নিবন্ধনের শেষ তারিখ ২২ নভেম্বর।",
+    "pt": "A Finansinspektionen (FI) sueca convida os interessados a integrar um grupo de referência para um novo projeto de orientação sobre dinheiro tokenizado no âmbito da sua Bússola de Inovação. O projeto aborda questões que podem surgir quando os pagamentos são feitos com tecnologia de registo distribuído (DLT), como depósitos bancários tokenizados, tokens de moeda eletrónica ao abrigo do MiCA e dinheiro de banco central em DLT. A Kaupr refere que o prazo para manifestar interesse é 22 de novembro.",
+    "ru": "Шведская Finansinspektionen (FI) приглашает заинтересованных войти в референтную группу нового проекта рекомендаций по токенизированным деньгам в рамках «Компаса инноваций». Проект касается вопросов, которые могут возникать при платежах с использованием технологии распределённого реестра (DLT), — токенизированных банковских депозитов, токенов электронных денег по MiCA и денег центрального банка на DLT. Kaupr сообщает, что заявки принимаются до 22 ноября.",
+    "ur": "سویڈن کی Finansinspektionen (FI) اپنے انوویشن کمپاس کے تحت ٹوکنائزڈ رقم پر ایک نئے رہنمائی منصوبے کے ریفرنس گروپ میں شامل ہونے کے لیے دلچسپی رکھنے والوں کو مدعو کر رہی ہے۔ منصوبہ ان سوالات کا احاطہ کرتا ہے جو تقسیم شدہ لیجر ٹیکنالوجی (DLT) سے ادائیگیوں میں پیدا ہو سکتے ہیں، جیسے ٹوکنائزڈ بینک ڈپازٹس، MiCA کے تحت ای-منی ٹوکنز اور DLT پر مرکزی بینک کی رقم۔ Kaupr کے مطابق دلچسپی ظاہر کرنے کی آخری تاریخ 22 نومبر ہے۔",
+    "id": "Finansinspektionen (FI) Swedia mengundang pihak yang berminat bergabung dalam kelompok referensi untuk proyek panduan baru tentang uang tertokenisasi di bawah Innovation Compass. Proyek ini membahas persoalan yang dapat muncul saat pembayaran dilakukan dengan teknologi buku besar terdistribusi (DLT), seperti simpanan bank tertokenisasi, token uang elektronik berdasarkan MiCA, dan uang bank sentral di DLT. Kaupr melaporkan batas pendaftaran minat adalah 22 November.",
+    "de": "Schwedens Finansinspektionen (FI) lädt Interessierte ein, einer Referenzgruppe für ein neues Leitfadenprojekt zu tokenisiertem Geld im Rahmen ihres Innovationskompasses beizutreten. Das Projekt behandelt Fragen, die bei Zahlungen mit Distributed-Ledger-Technologie (DLT) entstehen können, etwa tokenisierte Bankeinlagen, E-Geld-Token nach MiCA und Zentralbankgeld auf DLT. Laut Kaupr läuft die Frist zur Interessenbekundung bis zum 22. November.",
+    "ja": "スウェーデン金融監督庁（FI）は「イノベーション・コンパス」の下で、トークン化マネーに関する新たな指針プロジェクトの参照グループへの参加者を募っている。プロジェクトは、トークン化預金、MiCA上の電子マネートークン、DLT上の中央銀行マネーなど、分散型台帳技術（DLT）で決済する際に生じ得る論点を扱う。Kauprによると、申し込み期限は11月22日。",
+    "sw": "Finansinspektionen (FI) ya Uswidi inawaalika wanaovutiwa kujiunga na kikundi cha marejeo cha mradi mpya wa mwongozo kuhusu pesa zilizowekwa tokeni chini ya Innovation Compass. Mradi unashughulikia maswali yanayoweza kujitokeza malipo yanapofanywa kwa teknolojia ya leja iliyosambazwa (DLT), kama amana za benki zilizowekwa tokeni, tokeni za pesa za kielektroniki chini ya MiCA na pesa za benki kuu kwenye DLT. Kaupr inaripoti kuwa mwisho wa kujiandikisha ni tarehe 22 Novemba.",
+    "mr": "स्वीडनची Finansinspektionen (FI) आपल्या इनोव्हेशन कंपासअंतर्गत टोकनाइज्ड पैशांवरील नव्या मार्गदर्शन प्रकल्पाच्या संदर्भ गटात सामील होण्यासाठी इच्छुकांना आमंत्रित करत आहे. वितरित लेजर तंत्रज्ञानाद्वारे (DLT) देयके करताना उद्भवू शकणारे प्रश्न, जसे टोकनाइज्ड बँक ठेवी, MiCA अंतर्गत ई-मनी टोकन आणि DLT वरील मध्यवर्ती बँकेचे पैसे, हा प्रकल्प हाताळतो. Kaupr नुसार नोंदणीची अंतिम तारीख २२ नोव्हेंबर आहे.",
+    "fa": "Finansinspektionen (FI) سوئد از علاقه‌مندان دعوت می‌کند به گروه مرجع یک پروژه راهنمایی جدید درباره پول توکنیزه در چارچوب «قطب‌نمای نوآوری» بپیوندند. این پروژه به پرسش‌هایی می‌پردازد که هنگام پرداخت با فناوری دفتر کل توزیع‌شده (DLT) پیش می‌آید، مانند سپرده‌های بانکی توکنیزه، توکن‌های پول الکترونیک طبق MiCA و پول بانک مرکزی روی DLT. به گزارش Kaupr، مهلت اعلام علاقه ۲۲ نوامبر است.",
+    "uk": "Шведська Finansinspektionen (FI) запрошує охочих приєднатися до референтної групи нового проєкту настанов щодо токенізованих грошей у межах «Компаса інновацій». Проєкт стосується питань, що можуть виникати під час платежів із використанням технології розподіленого реєстру (DLT), як-от токенізовані банківські депозити, токени електронних грошей за MiCA та гроші центрального банку на DLT. Kaupr повідомляє, що заявки приймаються до 22 листопада.",
+    "tr": "İsveç Finansinspektionen (FI), İnovasyon Pusulası kapsamında tokenize para üzerine yeni bir rehberlik projesinin referans grubuna katılmak isteyenleri davet ediyor. Proje, tokenize banka mevduatları, MiCA kapsamındaki e-para tokenleri ve DLT üzerindeki merkez bankası parası gibi dağıtık defter teknolojisiyle (DLT) yapılan ödemelerde ortaya çıkabilecek soruları ele alıyor. Kaupr'a göre ilgi bildirmek için son tarih 22 Kasım."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "5a1616d5f7bc",
@@ -434,17 +721,18 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_date_only": true,
    "possible_duplicate_of": "5672fc124704",
-   "possible_duplicate_reason": "same institution, same day"
+   "possible_duplicate_reason": "same institution, same day",
+   "merged_into": "5672fc124704"
   },
   {
    "id": "9aa59f3b2093",
    "url": "https://kaupr.io/nyheter/kryptos-apner-kryptoportefoljen-for-chatgpt",
    "title": "Kryptos åpner kryptoporteføljen for ChatGPT",
-   "title_en": null,
+   "title_en": "Crypto tax service Kryptos launches ChatGPT plugin for portfolio questions",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -456,21 +744,79 @@
    "published": "2026-10-29",
    "fetched": "2026-10-30T02:46:23+00:00",
    "topics": [
-    "crypto"
+    "tax",
+    "business"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Crypto portfolio and tax service Kryptos has launched a ChatGPT plugin that lets users ask about portfolio value, cost basis, gains and tax figures, with answers drawn from the wallets and exchanges they have connected. According to Kryptos, the plugin cannot trade, transfer or withdraw assets, and using it requires a paid Kryptos plan.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Kryptos – Kryptos for ChatGPT",
+    "url": "https://kryptos.io/chatgpt"
+   },
+   "title_i18n": {
+    "nn": "Kryptoskattetenesta Kryptos lanserer ChatGPT-tillegg for spørsmål om porteføljen",
+    "da": "Kryptoskattetjenesten Kryptos lancerer ChatGPT-plugin til spørgsmål om porteføljen",
+    "sv": "Kryptoskattetjänsten Kryptos lanserar ChatGPT-tillägg för frågor om portföljen",
+    "fi": "Kryptoverotuspalvelu Kryptos julkaisi ChatGPT-lisäosan salkkukysymyksiin",
+    "is": "Rafmyntaskattþjónustan Kryptos kynnir ChatGPT-viðbót fyrir spurningar um eignasafn",
+    "zh": "加密税务服务Kryptos推出用于投资组合问答的ChatGPT插件",
+    "hi": "क्रिप्टो टैक्स सेवा Kryptos ने पोर्टफ़ोलियो सवालों के लिए ChatGPT प्लगइन लॉन्च किया",
+    "es": "El servicio de impuestos cripto Kryptos lanza un complemento de ChatGPT para consultas sobre la cartera",
+    "fr": "Le service fiscal crypto Kryptos lance un plugin ChatGPT pour interroger son portefeuille",
+    "ar": "خدمة ضرائب العملات المشفرة Kryptos تطلق إضافة ChatGPT للاستفسار عن المحفظة",
+    "bn": "পোর্টফোলিও প্রশ্নের জন্য ChatGPT প্লাগইন চালু করল ক্রিপ্টো কর সেবা Kryptos",
+    "pt": "Serviço fiscal cripto Kryptos lança plugin do ChatGPT para perguntas sobre a carteira",
+    "ru": "Криптоналоговый сервис Kryptos запустил плагин ChatGPT для вопросов о портфеле",
+    "ur": "کرپٹو ٹیکس سروس Kryptos نے پورٹ فولیو سوالات کے لیے ChatGPT پلگ اِن متعارف کرایا",
+    "id": "Layanan pajak kripto Kryptos luncurkan plugin ChatGPT untuk pertanyaan portofolio",
+    "de": "Krypto-Steuerdienst Kryptos startet ChatGPT-Plugin für Portfoliofragen",
+    "ja": "暗号資産税務サービスKryptos、ポートフォリオ照会用のChatGPTプラグインを公開",
+    "sw": "Huduma ya kodi ya kripto Kryptos yazindua programu-jalizi ya ChatGPT kwa maswali ya portfolio",
+    "mr": "क्रिप्टो कर सेवा Kryptos कडून पोर्टफोलिओ प्रश्नांसाठी ChatGPT प्लगइन",
+    "fa": "سرویس مالیات رمزارز Kryptos افزونه ChatGPT برای پرسش درباره سبد دارایی عرضه کرد",
+    "uk": "Криптоподатковий сервіс Kryptos запустив плагін ChatGPT для запитань про портфель",
+    "tr": "Kripto vergi hizmeti Kryptos, portföy soruları için ChatGPT eklentisi sundu"
+   },
+   "title_i18n_source": "Kryptos åpner kryptoporteføljen for ChatGPT",
+   "summary_i18n": {
+    "nn": "Kryptos, ei teneste for kryptoporteføljar og skatt, har lansert eit tillegg til ChatGPT som lèt brukarane spørje om porteføljeverdi, inngangsverdi, gevinst og skattetal, med svar henta frå lommebøkene og børsane dei har kopla til. Ifølgje Kryptos kan tillegget ikkje handle, overføre eller ta ut eigedelar, og bruken krev eit betalt Kryptos-abonnement.",
+    "nb": "Kryptos, en tjeneste for kryptoporteføljer og skatt, har lansert et tillegg til ChatGPT som lar brukerne spørre om porteføljeverdi, inngangsverdi, gevinst og skattetall, med svar hentet fra lommebøkene og børsene de har koblet til. Ifølge Kryptos kan tillegget ikke handle, overføre eller ta ut eiendeler, og bruken krever et betalt Kryptos-abonnement.",
+    "sv": "Kryptos, en tjänst för kryptoportföljer och skatt, har lanserat ett tillägg till ChatGPT som låter användare fråga om portföljvärde, anskaffningsvärde, vinster och skattesiffror, med svar hämtade från de plånböcker och börser de har kopplat in. Enligt Kryptos kan tillägget inte handla, överföra eller ta ut tillgångar, och det kräver ett betalt Kryptos-abonnemang.",
+    "da": "Kryptos, en tjeneste til kryptoporteføljer og skat, har lanceret et ChatGPT-plugin, der lader brugere spørge om porteføljeværdi, anskaffelsessum, gevinster og skattetal, med svar hentet fra de wallets og børser, de har tilsluttet. Ifølge Kryptos kan pluginnet ikke handle, overføre eller hæve aktiver, og det kræver et betalt Kryptos-abonnement.",
+    "fi": "Kryptosalkku- ja verotuspalvelu Kryptos on julkaissut ChatGPT-lisäosan, jolla käyttäjät voivat kysyä salkun arvosta, hankintamenosta, voitoista ja verotiedoista, ja vastaukset haetaan heidän liittämistään lompakoista ja pörsseistä. Kryptoksen mukaan lisäosa ei voi käydä kauppaa, siirtää tai nostaa varoja, ja sen käyttö edellyttää maksullista Kryptos-tilausta.",
+    "is": "Kryptos, þjónusta fyrir rafmyntasöfn og skatta, hefur kynnt ChatGPT-viðbót sem gerir notendum kleift að spyrja um verðmæti safns, kostnaðarverð, hagnað og skattatölur, með svörum úr veskjum og kauphöllum sem þeir hafa tengt. Að sögn Kryptos getur viðbótin hvorki átt viðskipti, millifært né tekið út eignir, og notkun hennar krefst greiddrar Kryptos-áskriftar.",
+    "zh": "加密投资组合与税务服务Kryptos推出了一款ChatGPT插件，用户可询问投资组合价值、成本基础、收益和税务数据，答案来自其已连接的钱包和交易所。据Kryptos称，该插件不能交易、转账或提取资产，使用需付费订阅Kryptos。",
+    "hi": "क्रिप्टो पोर्टफ़ोलियो और टैक्स सेवा Kryptos ने एक ChatGPT प्लगइन लॉन्च किया है, जिससे उपयोगकर्ता पोर्टफ़ोलियो मूल्य, लागत आधार, लाभ और टैक्स आँकड़ों के बारे में पूछ सकते हैं, और जवाब उनके जोड़े गए वॉलेट और एक्सचेंज से आते हैं। Kryptos के अनुसार प्लगइन ट्रेड, ट्रांसफ़र या निकासी नहीं कर सकता, और इसके लिए Kryptos का सशुल्क प्लान चाहिए।",
+    "es": "Kryptos, servicio de carteras e impuestos cripto, ha lanzado un complemento para ChatGPT que permite preguntar por el valor de la cartera, el coste de adquisición, las ganancias y los datos fiscales, con respuestas basadas en los monederos y exchanges conectados. Según Kryptos, el complemento no puede operar, transferir ni retirar activos, y requiere un plan de pago de Kryptos.",
+    "fr": "Kryptos, service de suivi de portefeuilles et de fiscalité crypto, a lancé un plugin ChatGPT permettant d'interroger la valeur du portefeuille, le prix de revient, les plus-values et les données fiscales, à partir des portefeuilles et plateformes connectés. Selon Kryptos, le plugin ne peut ni négocier, ni transférer, ni retirer d'actifs, et son utilisation exige un abonnement payant.",
+    "ar": "أطلقت Kryptos، وهي خدمة لمحافظ العملات المشفرة وضرائبها، إضافة لـChatGPT تتيح للمستخدمين السؤال عن قيمة المحفظة وأساس التكلفة والأرباح وأرقام الضرائب، مع إجابات مأخوذة من المحافظ والمنصات التي ربطوها. ووفقاً لـKryptos، لا تستطيع الإضافة التداول أو التحويل أو سحب الأصول، ويتطلب استخدامها اشتراكاً مدفوعاً في Kryptos.",
+    "bn": "ক্রিপ্টো পোর্টফোলিও ও কর সেবা Kryptos একটি ChatGPT প্লাগইন চালু করেছে, যার মাধ্যমে ব্যবহারকারীরা পোর্টফোলিও মূল্য, ক্রয়মূল্য, লাভ ও করের তথ্য জানতে পারেন, উত্তর আসে তাদের সংযুক্ত ওয়ালেট ও এক্সচেঞ্জ থেকে। Kryptos বলছে প্লাগইনটি লেনদেন, স্থানান্তর বা সম্পদ উত্তোলন করতে পারে না, এবং এটি ব্যবহারে Kryptos-এর পেইড প্ল্যান লাগে।",
+    "pt": "A Kryptos, serviço de carteiras e impostos cripto, lançou um plugin do ChatGPT que permite perguntar sobre o valor da carteira, custo de aquisição, ganhos e dados fiscais, com respostas tiradas das carteiras e plataformas ligadas. Segundo a Kryptos, o plugin não pode negociar, transferir nem levantar ativos, e exige um plano pago da Kryptos.",
+    "ru": "Сервис учёта криптопортфелей и налогов Kryptos запустил плагин для ChatGPT, позволяющий спрашивать о стоимости портфеля, себестоимости, прибыли и налоговых показателях на основе подключённых кошельков и бирж. По словам Kryptos, плагин не может торговать, переводить или выводить активы, а для его использования нужен платный тариф Kryptos.",
+    "ur": "کرپٹو پورٹ فولیو اور ٹیکس سروس Kryptos نے ChatGPT کا ایک پلگ اِن متعارف کرایا ہے جس سے صارفین پورٹ فولیو کی قدر، لاگت، منافع اور ٹیکس کے اعداد کے بارے میں پوچھ سکتے ہیں، اور جواب ان کے منسلک والیٹس اور ایکسچینجز سے آتے ہیں۔ Kryptos کے مطابق پلگ اِن تجارت، منتقلی یا اثاثے نکالنے کا کام نہیں کر سکتا، اور اس کے لیے Kryptos کا ادا شدہ پلان درکار ہے۔",
+    "id": "Kryptos, layanan portofolio dan pajak kripto, meluncurkan plugin ChatGPT yang memungkinkan pengguna bertanya tentang nilai portofolio, harga perolehan, keuntungan, dan angka pajak, dengan jawaban dari dompet dan bursa yang mereka hubungkan. Menurut Kryptos, plugin itu tidak dapat berdagang, mentransfer, atau menarik aset, dan memerlukan paket berbayar Kryptos.",
+    "de": "Der Krypto-Portfolio- und Steuerdienst Kryptos hat ein ChatGPT-Plugin gestartet, mit dem Nutzer Portfoliowert, Anschaffungskosten, Gewinne und Steuerzahlen abfragen können; die Antworten stammen aus den verbundenen Wallets und Börsen. Laut Kryptos kann das Plugin keine Vermögenswerte handeln, übertragen oder abheben, und es setzt ein kostenpflichtiges Kryptos-Abo voraus.",
+    "ja": "暗号資産のポートフォリオ・税務サービスKryptosは、ChatGPT向けプラグインを公開した。利用者は接続したウォレットや取引所のデータをもとに、ポートフォリオ評価額、取得原価、損益、税務数値について質問できる。Kryptosによると、プラグインは取引、送金、出金はできず、利用には有料プランが必要。",
+    "sw": "Kryptos, huduma ya portfolio na kodi ya kripto, imezindua programu-jalizi ya ChatGPT inayowaruhusu watumiaji kuuliza kuhusu thamani ya portfolio, gharama ya ununuzi, faida na takwimu za kodi, majibu yakitoka kwenye pochi na masoko waliyounganisha. Kwa mujibu wa Kryptos, programu-jalizi hiyo haiwezi kufanya biashara, kuhamisha au kutoa mali, na inahitaji mpango wa kulipia wa Kryptos.",
+    "mr": "क्रिप्टो पोर्टफोलिओ व कर सेवा Kryptos ने ChatGPT प्लगइन सुरू केले आहे, ज्याद्वारे वापरकर्ते पोर्टफोलिओ मूल्य, खरेदी किंमत, नफा आणि कराचे आकडे विचारू शकतात; उत्तरे त्यांनी जोडलेल्या वॉलेट व एक्स्चेंजमधून मिळतात. Kryptos नुसार प्लगइन व्यापार, हस्तांतरण किंवा मालमत्ता काढू शकत नाही, आणि त्यासाठी Kryptos चा सशुल्क प्लॅन लागतो.",
+    "fa": "Kryptos، سرویس سبد و مالیات رمزارز، افزونه‌ای برای ChatGPT عرضه کرده که کاربران با آن درباره ارزش سبد، بهای تمام‌شده، سود و ارقام مالیاتی می‌پرسند و پاسخ‌ها از کیف‌پول‌ها و صرافی‌های متصل‌شده گرفته می‌شود. به گفته Kryptos، افزونه نمی‌تواند معامله، انتقال یا برداشت دارایی انجام دهد و استفاده از آن به اشتراک پولی Kryptos نیاز دارد.",
+    "uk": "Сервіс обліку криптопортфелів і податків Kryptos запустив плагін для ChatGPT, що дає змогу запитувати про вартість портфеля, собівартість, прибуток і податкові показники на основі підключених гаманців і бірж. За словами Kryptos, плагін не може торгувати, переказувати чи виводити активи, а для користування потрібен платний тариф Kryptos.",
+    "tr": "Kripto portföy ve vergi hizmeti Kryptos, kullanıcıların bağladıkları cüzdan ve borsalardaki verilere dayanarak portföy değeri, maliyet esası, kazançlar ve vergi rakamlarını sorabildiği bir ChatGPT eklentisi sundu. Kryptos'a göre eklenti alım satım, transfer veya varlık çekme işlemi yapamıyor ve kullanımı ücretli bir Kryptos planı gerektiriyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "d1325f9bb260",
    "url": "https://kaupr.io/nyheter/bitcoin-suisse-klar-til-lansering-i-norden",
    "title": "Bitcoin Suisse klar til lansering i Norden",
-   "title_en": null,
+   "title_en": "Bitcoin Suisse prepares Nordic launch under MiCA licence",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -482,15 +828,73 @@
    "published": "2026-10-29",
    "fetched": "2026-10-30T02:46:23+00:00",
    "topics": [
-    "bitcoin"
+    "regulation",
+    "business"
    ],
    "matched": [
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Bitcoin Suisse (Europe), the EU arm of the Swiss crypto company Bitcoin Suisse, received a MiCA licence in June 2026, which allows it to offer crypto-asset services in the European Economic Area. According to a LinkedIn post by the company's Nordic general manager, cited by Kaupr, it plans to launch in the Nordic countries in early November, ahead of an event in Stockholm on 19 November.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Bitcoin Suisse – MiCAR licence and European expansion",
+    "url": "https://bitcoinsuisse.com/eu/news/bitcoin-suisse-receives-micar-license-and-launches-european-expansion"
+   },
+   "title_i18n": {
+    "nn": "Bitcoin Suisse førebur nordisk lansering med MiCA-løyve",
+    "sv": "Bitcoin Suisse förbereder nordisk lansering med MiCA-licens",
+    "da": "Bitcoin Suisse forbereder nordisk lancering med MiCA-licens",
+    "fi": "Bitcoin Suisse valmistelee Pohjoismaiden avausta MiCA-toimiluvalla",
+    "is": "Bitcoin Suisse undirbýr opnun á Norðurlöndum með MiCA-leyfi",
+    "zh": "Bitcoin Suisse凭MiCA牌照筹备进入北欧市场",
+    "hi": "Bitcoin Suisse, MiCA लाइसेंस के साथ नॉर्डिक लॉन्च की तैयारी में",
+    "es": "Bitcoin Suisse prepara su lanzamiento nórdico con licencia MiCA",
+    "fr": "Bitcoin Suisse prépare son lancement nordique sous licence MiCA",
+    "ar": "Bitcoin Suisse تستعد للانطلاق في دول الشمال بترخيص MiCA",
+    "bn": "MiCA লাইসেন্স নিয়ে নর্ডিক অঞ্চলে চালুর প্রস্তুতি Bitcoin Suisse-এর",
+    "pt": "Bitcoin Suisse prepara lançamento nórdico ao abrigo de licença MiCA",
+    "ru": "Bitcoin Suisse готовит запуск в Северных странах по лицензии MiCA",
+    "ur": "Bitcoin Suisse، MiCA لائسنس کے تحت نارڈک لانچ کی تیاری میں",
+    "id": "Bitcoin Suisse siapkan peluncuran di Nordik dengan lisensi MiCA",
+    "de": "Bitcoin Suisse bereitet nordischen Start mit MiCA-Lizenz vor",
+    "ja": "Bitcoin Suisse、MiCAライセンスで北欧進出を準備",
+    "sw": "Bitcoin Suisse yajiandaa kuzindua Nordiki chini ya leseni ya MiCA",
+    "mr": "MiCA परवान्याखाली Bitcoin Suisse ची नॉर्डिक प्रारंभाची तयारी",
+    "fa": "Bitcoin Suisse با مجوز MiCA برای ورود به کشورهای شمال اروپا آماده می‌شود",
+    "uk": "Bitcoin Suisse готує запуск у Північних країнах за ліцензією MiCA",
+    "tr": "Bitcoin Suisse, MiCA lisansıyla İskandinav lansmanına hazırlanıyor"
+   },
+   "title_i18n_source": "Bitcoin Suisse klar til lansering i Norden",
+   "summary_i18n": {
+    "nn": "Bitcoin Suisse (Europe), EU-delen av det sveitsiske kryptoselskapet Bitcoin Suisse, fekk MiCA-løyve i juni 2026, som gjer at selskapet kan tilby kryptotenester i EØS. Ifølgje eit LinkedIn-innlegg frå den nordiske dagleg leiaren i selskapet, som Kaupr viser til, planlegg selskapet å lansere i Norden i byrjinga av november, før eit arrangement i Stockholm 19. november.",
+    "nb": "Bitcoin Suisse (Europe), EU-delen av det sveitsiske kryptoselskapet Bitcoin Suisse, fikk MiCA-lisens i juni 2026, som gjør at selskapet kan tilby kryptotjenester i EØS. Ifølge et LinkedIn-innlegg fra selskapets nordiske daglige leder, som Kaupr viser til, planlegger selskapet å lansere i Norden i begynnelsen av november, før et arrangement i Stockholm 19. november.",
+    "sv": "Bitcoin Suisse (Europe), EU-delen av det schweiziska kryptobolaget Bitcoin Suisse, fick en MiCA-licens i juni 2026, vilket gör att bolaget kan erbjuda kryptotjänster inom EES. Enligt ett LinkedIn-inlägg från bolagets nordiska chef, som Kaupr hänvisar till, planerar bolaget att lansera i Norden i början av november, inför ett evenemang i Stockholm den 19 november.",
+    "da": "Bitcoin Suisse (Europe), EU-delen af det schweiziske kryptoselskab Bitcoin Suisse, fik en MiCA-licens i juni 2026, så selskabet kan tilbyde kryptotjenester i EØS. Ifølge et LinkedIn-opslag fra selskabets nordiske direktør, som Kaupr henviser til, planlægger selskabet at lancere i Norden i begyndelsen af november, forud for et arrangement i Stockholm den 19. november.",
+    "fi": "Sveitsiläisen kryptoyhtiö Bitcoin Suissen EU-yksikkö Bitcoin Suisse (Europe) sai MiCA-toimiluvan kesäkuussa 2026, minkä ansiosta se voi tarjota kryptopalveluja ETA-alueella. Kauprin siteeraaman, yhtiön Pohjoismaiden johtajan LinkedIn-julkaisun mukaan yhtiö aikoo aloittaa Pohjoismaissa marraskuun alussa ennen Tukholmassa 19. marraskuuta järjestettävää tilaisuutta.",
+    "is": "Bitcoin Suisse (Europe), ESB-armur svissneska rafmyntafyrirtækisins Bitcoin Suisse, fékk MiCA-leyfi í júní 2026, sem gerir því kleift að bjóða rafmyntaþjónustu á EES-svæðinu. Samkvæmt LinkedIn-færslu framkvæmdastjóra félagsins á Norðurlöndum, sem Kaupr vísar til, hyggst félagið hefja starfsemi á Norðurlöndum í byrjun nóvember, fyrir viðburð í Stokkhólmi 19. nóvember.",
+    "zh": "瑞士加密公司Bitcoin Suisse的欧盟子公司Bitcoin Suisse (Europe)于2026年6月获得MiCA牌照，可在欧洲经济区提供加密资产服务。据Kaupr援引该公司北欧总经理在LinkedIn上的帖子，公司计划于11月初在北欧推出服务，之后将于11月19日在斯德哥尔摩举办活动。",
+    "hi": "स्विस क्रिप्टो कंपनी Bitcoin Suisse की ईयू इकाई Bitcoin Suisse (Europe) को जून 2026 में MiCA लाइसेंस मिला, जिससे वह यूरोपीय आर्थिक क्षेत्र में क्रिप्टो सेवाएँ दे सकती है। Kaupr द्वारा उद्धृत कंपनी के नॉर्डिक महाप्रबंधक की LinkedIn पोस्ट के अनुसार कंपनी नवंबर की शुरुआत में नॉर्डिक देशों में लॉन्च करने की योजना बना रही है, 19 नवंबर को स्टॉकहोम में एक कार्यक्रम से पहले।",
+    "es": "Bitcoin Suisse (Europe), la filial europea de la empresa cripto suiza Bitcoin Suisse, obtuvo una licencia MiCA en junio de 2026, que le permite ofrecer servicios de criptoactivos en el Espacio Económico Europeo. Según una publicación en LinkedIn de su director general para los países nórdicos, citada por Kaupr, la empresa prevé lanzarse en los países nórdicos a principios de noviembre, antes de un evento en Estocolmo el 19 de noviembre.",
+    "fr": "Bitcoin Suisse (Europe), branche européenne de la société crypto suisse Bitcoin Suisse, a obtenu une licence MiCA en juin 2026, ce qui lui permet de proposer des services sur crypto-actifs dans l'Espace économique européen. Selon un message LinkedIn de son directeur général pour les pays nordiques, cité par Kaupr, l'entreprise prévoit de se lancer dans les pays nordiques début novembre, avant un événement à Stockholm le 19 novembre.",
+    "ar": "حصلت Bitcoin Suisse (Europe)، الذراع الأوروبية لشركة العملات المشفرة السويسرية Bitcoin Suisse، على ترخيص MiCA في يونيو 2026، ما يتيح لها تقديم خدمات الأصول المشفرة في المنطقة الاقتصادية الأوروبية. ووفقاً لمنشور على LinkedIn لمديرها العام لدول الشمال، نقلته Kaupr، تعتزم الشركة الانطلاق في دول الشمال مطلع نوفمبر، قبل فعالية في ستوكهولم في 19 نوفمبر.",
+    "bn": "সুইস ক্রিপ্টো কোম্পানি Bitcoin Suisse-এর ইইউ শাখা Bitcoin Suisse (Europe) ২০২৬ সালের জুনে MiCA লাইসেন্স পেয়েছে, যার ফলে তারা ইউরোপীয় অর্থনৈতিক অঞ্চলে ক্রিপ্টো সেবা দিতে পারে। Kaupr-এর উদ্ধৃত কোম্পানির নর্ডিক মহাব্যবস্থাপকের LinkedIn পোস্ট অনুযায়ী, ১৯ নভেম্বর স্টকহোমে একটি অনুষ্ঠানের আগে নভেম্বরের শুরুতে নর্ডিক দেশগুলোতে চালুর পরিকল্পনা রয়েছে।",
+    "pt": "A Bitcoin Suisse (Europe), braço europeu da empresa cripto suíça Bitcoin Suisse, obteve uma licença MiCA em junho de 2026, que lhe permite oferecer serviços de criptoativos no Espaço Económico Europeu. Segundo uma publicação no LinkedIn do seu diretor-geral para os países nórdicos, citada pela Kaupr, a empresa planeia lançar-se nos países nórdicos no início de novembro, antes de um evento em Estocolmo a 19 de novembro.",
+    "ru": "Bitcoin Suisse (Europe), европейское подразделение швейцарской криптокомпании Bitcoin Suisse, получило лицензию MiCA в июне 2026 года, что позволяет ему оказывать услуги с криптоактивами в Европейской экономической зоне. Согласно посту в LinkedIn генерального менеджера компании по Северным странам, на который ссылается Kaupr, компания планирует запуск в Северных странах в начале ноября, перед мероприятием в Стокгольме 19 ноября.",
+    "ur": "سوئس کرپٹو کمپنی Bitcoin Suisse کی یورپی شاخ Bitcoin Suisse (Europe) کو جون 2026 میں MiCA لائسنس ملا، جس سے وہ یورپی اقتصادی علاقے میں کرپٹو خدمات پیش کر سکتی ہے۔ Kaupr کے حوالے سے کمپنی کے نارڈک جنرل مینیجر کی LinkedIn پوسٹ کے مطابق کمپنی 19 نومبر کو اسٹاک ہوم میں ایک تقریب سے پہلے نومبر کے آغاز میں نارڈک ممالک میں آغاز کا ارادہ رکھتی ہے۔",
+    "id": "Bitcoin Suisse (Europe), cabang Uni Eropa dari perusahaan kripto Swiss Bitcoin Suisse, memperoleh lisensi MiCA pada Juni 2026 yang memungkinkannya menawarkan layanan aset kripto di Kawasan Ekonomi Eropa. Menurut unggahan LinkedIn manajer umum Nordik perusahaan itu yang dikutip Kaupr, perusahaan berencana meluncur di negara-negara Nordik pada awal November, menjelang acara di Stockholm pada 19 November.",
+    "de": "Bitcoin Suisse (Europe), der EU-Arm des Schweizer Kryptounternehmens Bitcoin Suisse, erhielt im Juni 2026 eine MiCA-Lizenz, mit der es Kryptowerte-Dienstleistungen im Europäischen Wirtschaftsraum anbieten kann. Laut einem LinkedIn-Beitrag des nordischen Geschäftsführers, den Kaupr zitiert, plant das Unternehmen den Start in den nordischen Ländern Anfang November, vor einer Veranstaltung in Stockholm am 19. November.",
+    "ja": "スイスの暗号資産企業Bitcoin SuisseのEU部門Bitcoin Suisse (Europe)は2026年6月にMiCAライセンスを取得し、欧州経済領域で暗号資産サービスを提供できるようになった。Kauprが引用した同社北欧担当ゼネラルマネジャーのLinkedIn投稿によると、11月19日のストックホルムでのイベントに先立ち、11月初めに北欧でサービスを開始する計画だという。",
+    "sw": "Bitcoin Suisse (Europe), tawi la EU la kampuni ya kripto ya Uswisi Bitcoin Suisse, ilipata leseni ya MiCA Juni 2026, inayoiruhusu kutoa huduma za mali za kripto katika Eneo la Kiuchumi la Ulaya. Kwa mujibu wa chapisho la LinkedIn la meneja mkuu wa kampuni kwa nchi za Nordiki, lililonukuliwa na Kaupr, kampuni inapanga kuzindua katika nchi za Nordiki mwanzoni mwa Novemba, kabla ya hafla mjini Stockholm tarehe 19 Novemba.",
+    "mr": "स्विस क्रिप्टो कंपनी Bitcoin Suisse ची युरोपियन शाखा Bitcoin Suisse (Europe) ला जून २०२६ मध्ये MiCA परवाना मिळाला, ज्यामुळे ती युरोपियन आर्थिक क्षेत्रात क्रिप्टो सेवा देऊ शकते. Kaupr ने उद्धृत केलेल्या कंपनीच्या नॉर्डिक महाव्यवस्थापकांच्या LinkedIn पोस्टनुसार, १९ नोव्हेंबरला स्टॉकहोममधील कार्यक्रमापूर्वी नोव्हेंबरच्या सुरुवातीला नॉर्डिक देशांत सेवा सुरू करण्याची योजना आहे.",
+    "fa": "Bitcoin Suisse (Europe)، شاخه اروپایی شرکت رمزارزی سوئیسی Bitcoin Suisse، در ژوئن ۲۰۲۶ مجوز MiCA گرفت که به آن امکان ارائه خدمات دارایی رمزنگاری در منطقه اقتصادی اروپا را می‌دهد. به گفته یک پست لینکدین از مدیرکل شرکت در کشورهای شمال اروپا که Kaupr به آن استناد کرده، شرکت قصد دارد در اوایل نوامبر و پیش از رویدادی در استکهلم در ۱۹ نوامبر در این کشورها آغاز به کار کند.",
+    "uk": "Bitcoin Suisse (Europe), європейський підрозділ швейцарської криптокомпанії Bitcoin Suisse, отримав ліцензію MiCA у червні 2026 року, що дає змогу надавати послуги з криптоактивами в Європейській економічній зоні. Згідно з дописом у LinkedIn генерального менеджера компанії для Північних країн, на який посилається Kaupr, компанія планує запуск у Північних країнах на початку листопада, перед заходом у Стокгольмі 19 листопада.",
+    "tr": "İsviçreli kripto şirketi Bitcoin Suisse'in AB kolu Bitcoin Suisse (Europe), Haziran 2026'da Avrupa Ekonomik Alanı'nda kripto varlık hizmetleri sunmasına olanak tanıyan MiCA lisansı aldı. Kaupr'un aktardığı, şirketin İskandinav genel müdürünün LinkedIn paylaşımına göre şirket, 19 Kasım'da Stockholm'de yapılacak bir etkinlik öncesinde Kasım başında İskandinav ülkelerinde faaliyete başlamayı planlıyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "4bc601c3469c",
@@ -516,14 +920,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Crime case with only a peripheral crypto angle; privacy (Vaer Varsom). researcher 30.10"
   },
   {
    "id": "703d7bd50e92",
    "url": "https://sagat.no/kryptoselskapet-enna-inne/19.60232",
    "title": "– Datasenter-tomt avgjort politisk: Kryptoselskapet fortsatt «inne»",
-   "title_en": null,
+   "title_en": "Kautokeino: data-centre plot decided politically, crypto company Arctic Core still involved",
    "source": "sagat",
    "source_name": "Ságat",
    "country": "NO",
@@ -535,16 +940,72 @@
    "published": "2026-10-28T09:48:45+00:00",
    "fetched": "2026-10-29T02:59:21+00:00",
    "topics": [
-    "crypto",
-    "regulation",
-    "companies"
+    "mining",
+    "local"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "In Kautokeino, the mayor says the allocation of a plot for a planned data centre was handled politically, and the crypto company Arctic Core AS is still part of the plans, Ságat reports. According to the municipal director, the company is to test the possibility of a data centre over two years. The story follows earlier Ságat coverage of the company's plans in the municipality.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Ságat",
+    "url": "https://sagat.no/kryptoselskapet-enna-inne/19.60232"
+   },
+   "title_i18n": {
+    "nn": "Kautokeino: Datasentertomt avgjord politisk, kryptoselskapet Arctic Core framleis med",
+    "da": "Kautokeino: Grund til datacenter afgjort politisk, kryptoselskabet Arctic Core stadig med",
+    "sv": "Kautokeino: Tomt för datacenter avgjord politiskt, kryptobolaget Arctic Core fortfarande med",
+    "fi": "Koutokeino: Datakeskustontti ratkaistiin poliittisesti, kryptoyhtiö Arctic Core yhä mukana",
+    "is": "Kautokeino: Lóð fyrir gagnaver ákveðin pólitískt, rafmyntafyrirtækið Arctic Core enn með",
+    "zh": "考图凯努：数据中心用地经政治决定，加密公司Arctic Core仍在其中",
+    "hi": "कौटोकेइनो: डेटा सेंटर भूखंड का फ़ैसला राजनीतिक, क्रिप्टो कंपनी Arctic Core अब भी शामिल",
+    "es": "Kautokeino: la parcela del centro de datos se decidió políticamente y la empresa cripto Arctic Core sigue implicada",
+    "fr": "Kautokeino : le terrain du centre de données décidé politiquement, la société crypto Arctic Core toujours impliquée",
+    "ar": "كاوتوكينو: قطعة أرض مركز البيانات قُرّرت سياسياً وشركة Arctic Core للعملات المشفرة لا تزال مشاركة",
+    "bn": "কাউতোকেইনো: ডেটা সেন্টারের জমির সিদ্ধান্ত রাজনৈতিক, ক্রিপ্টো কোম্পানি Arctic Core এখনো যুক্ত",
+    "pt": "Kautokeino: terreno do centro de dados decidido politicamente, empresa cripto Arctic Core continua envolvida",
+    "ru": "Каутокейно: участок под дата-центр решён политически, криптокомпания Arctic Core по-прежнему участвует",
+    "ur": "کاؤتوکینو: ڈیٹا سینٹر کے پلاٹ کا فیصلہ سیاسی، کرپٹو کمپنی Arctic Core اب بھی شامل",
+    "id": "Kautokeino: lahan pusat data diputuskan secara politik, perusahaan kripto Arctic Core masih terlibat",
+    "de": "Kautokeino: Grundstück für Rechenzentrum politisch entschieden, Kryptofirma Arctic Core weiter beteiligt",
+    "ja": "カウトケイノ：データセンター用地は政治的に決定、暗号資産企業Arctic Coreは引き続き関与",
+    "sw": "Kautokeino: kiwanja cha kituo cha data kiliamuliwa kisiasa, kampuni ya kripto Arctic Core bado inahusika",
+    "mr": "काउतोकेइनो: डेटा सेंटर भूखंडाचा निर्णय राजकीय, क्रिप्टो कंपनी Arctic Core अजूनही सहभागी",
+    "fa": "کائوتوکینو: زمین مرکز داده به‌صورت سیاسی تعیین شد، شرکت رمزارزی Arctic Core همچنان در طرح است",
+    "uk": "Каутокейно: ділянку під дата-центр вирішено політично, криптокомпанія Arctic Core і далі залучена",
+    "tr": "Kautokeino: Veri merkezi arsası siyasi olarak karara bağlandı, kripto şirketi Arctic Core hâlâ planda"
+   },
+   "title_i18n_source": "– Datasenter-tomt avgjort politisk: Kryptoselskapet fortsatt «inne»",
+   "summary_i18n": {
+    "nn": "I Kautokeino seier ordføraren at tildelinga av ei tomt til eit planlagt datasenter vart handsama politisk, og kryptoselskapet Arctic Core AS er framleis med i planane, melder Ságat. Ifølgje kommunedirektøren skal selskapet prøve ut moglegheita for eit datasenter i to år. Saka følgjer opp tidlegare dekning i Ságat av planane til selskapet i kommunen.",
+    "nb": "I Kautokeino sier ordføreren at tildelingen av en tomt til et planlagt datasenter ble behandlet politisk, og kryptoselskapet Arctic Core AS er fortsatt med i planene, melder Ságat. Ifølge kommunedirektøren skal selskapet teste ut muligheten for et datasenter i to år. Saken følger opp Ságats tidligere dekning av selskapets planer i kommunen.",
+    "sv": "I Kautokeino säger kommunens ordförande att tilldelningen av en tomt för ett planerat datacenter behandlades politiskt, och kryptobolaget Arctic Core AS är fortfarande med i planerna, rapporterar Ságat. Enligt kommundirektören ska bolaget under två år testa möjligheten till ett datacenter. Artikeln följer upp Ságats tidigare bevakning av bolagets planer i kommunen.",
+    "da": "I Kautokeino siger borgmesteren, at tildelingen af en grund til et planlagt datacenter blev behandlet politisk, og kryptoselskabet Arctic Core AS er stadig med i planerne, skriver Ságat. Ifølge kommunaldirektøren skal selskabet i to år afprøve muligheden for et datacenter. Artiklen følger op på Ságats tidligere dækning af selskabets planer i kommunen.",
+    "fi": "Koutokeinon kunnanvaltuuston puheenjohtaja sanoo, että tontin luovutus suunnitellulle datakeskukselle käsiteltiin poliittisesti, ja kryptoyhtiö Arctic Core AS on yhä mukana suunnitelmissa, kertoo Ságat. Kunnanjohtajan mukaan yhtiö testaa datakeskuksen mahdollisuutta kahden vuoden ajan. Juttu jatkaa Ságatin aiempaa uutisointia yhtiön suunnitelmista kunnassa.",
+    "is": "Í Kautokeino segir bæjarstjórinn að úthlutun lóðar fyrir fyrirhugað gagnaver hafi verið afgreidd pólitískt og að rafmyntafyrirtækið Arctic Core AS sé enn hluti af áformunum, að sögn Ságat. Samkvæmt sveitarstjóra á fyrirtækið að kanna möguleika á gagnaveri í tvö ár. Fréttin fylgir eftir fyrri umfjöllun Ságat um áform fyrirtækisins í sveitarfélaginu.",
+    "zh": "据Ságat报道，考图凯努市长表示，为一个计划中的数据中心分配用地是经过政治程序处理的，加密公司Arctic Core AS仍在计划之中。据市政主管称，该公司将用两年时间测试建设数据中心的可能性。这篇报道是Ságat此前对该公司在当地计划的系列报道的后续。",
+    "hi": "Ságat की ख़बर के अनुसार कौटोकेइनो के मेयर का कहना है कि एक प्रस्तावित डेटा सेंटर के लिए भूखंड आवंटन पर राजनीतिक रूप से फ़ैसला हुआ था, और क्रिप्टो कंपनी Arctic Core AS अब भी योजनाओं में शामिल है। नगर निदेशक के अनुसार कंपनी दो साल तक डेटा सेंटर की संभावना परखेगी। यह ख़बर कंपनी की योजनाओं पर Ságat की पिछली रिपोर्टों का अनुवर्ती है।",
+    "es": "En Kautokeino, el alcalde afirma que la asignación de una parcela para un centro de datos previsto se tramitó políticamente y que la empresa cripto Arctic Core AS sigue formando parte de los planes, informa Ságat. Según la directora municipal, la empresa probará durante dos años la posibilidad de un centro de datos. La noticia da continuidad a la cobertura previa de Ságat sobre los planes de la empresa en el municipio.",
+    "fr": "À Kautokeino, le maire affirme que l'attribution d'un terrain pour un centre de données en projet a été traitée politiquement et que la société crypto Arctic Core AS fait toujours partie des plans, rapporte Ságat. Selon la direction municipale, l'entreprise testera pendant deux ans la possibilité d'un centre de données. L'article fait suite aux précédents reportages de Ságat sur les projets de l'entreprise dans la commune.",
+    "ar": "في كاوتوكينو، يقول رئيس البلدية إن تخصيص قطعة أرض لمركز بيانات مخطط له جرى بقرار سياسي، وإن شركة العملات المشفرة Arctic Core AS لا تزال ضمن الخطط، بحسب Ságat. ووفقاً لمديرة البلدية، ستختبر الشركة إمكانية إقامة مركز بيانات على مدى عامين. ويأتي التقرير متابعةً لتغطية Ságat السابقة لخطط الشركة في البلدية.",
+    "bn": "Ságat জানিয়েছে, কাউতোকেইনোর মেয়র বলছেন একটি পরিকল্পিত ডেটা সেন্টারের জন্য জমি বরাদ্দ রাজনৈতিকভাবে নিষ্পন্ন হয়েছে, এবং ক্রিপ্টো কোম্পানি Arctic Core AS এখনো পরিকল্পনায় রয়েছে। পৌর পরিচালকের ভাষ্যে কোম্পানিটি দুই বছর ধরে ডেটা সেন্টারের সম্ভাবনা পরীক্ষা করবে। খবরটি পৌরসভায় কোম্পানির পরিকল্পনা নিয়ে Ságat-এর আগের প্রতিবেদনের ধারাবাহিকতা।",
+    "pt": "Em Kautokeino, o presidente da câmara diz que a atribuição de um terreno para um centro de dados previsto foi tratada politicamente e que a empresa cripto Arctic Core AS continua nos planos, noticia o Ságat. Segundo a diretora municipal, a empresa vai testar durante dois anos a possibilidade de um centro de dados. A notícia dá seguimento à cobertura anterior do Ságat sobre os planos da empresa no município.",
+    "ru": "В Каутокейно мэр заявил, что выделение участка под планируемый дата-центр было решено политически, а криптокомпания Arctic Core AS по-прежнему участвует в планах, сообщает Ságat. По словам директора муниципалитета, компания в течение двух лет будет проверять возможность создания дата-центра. Материал продолжает прежние публикации Ságat о планах компании в коммуне.",
+    "ur": "Ságat کے مطابق کاؤتوکینو کے میئر کا کہنا ہے کہ ایک مجوزہ ڈیٹا سینٹر کے لیے پلاٹ کی الاٹمنٹ سیاسی طور پر طے ہوئی تھی، اور کرپٹو کمپنی Arctic Core AS اب بھی منصوبوں میں شامل ہے۔ میونسپل ڈائریکٹر کے مطابق کمپنی دو سال تک ڈیٹا سینٹر کے امکان کی جانچ کرے گی۔ یہ خبر کمپنی کے منصوبوں پر Ságat کی سابقہ رپورٹنگ کا تسلسل ہے۔",
+    "id": "Di Kautokeino, wali kota mengatakan pemberian lahan untuk rencana pusat data diputuskan secara politik, dan perusahaan kripto Arctic Core AS masih menjadi bagian dari rencana itu, lapor Ságat. Menurut direktur kota, perusahaan tersebut akan menguji kemungkinan pusat data selama dua tahun. Berita ini lanjutan liputan Ságat sebelumnya tentang rencana perusahaan di kotamadya tersebut.",
+    "de": "In Kautokeino sagt der Bürgermeister, die Vergabe eines Grundstücks für ein geplantes Rechenzentrum sei politisch behandelt worden, und das Kryptounternehmen Arctic Core AS sei weiterhin Teil der Pläne, berichtet Ságat. Laut der Gemeindedirektorin soll das Unternehmen zwei Jahre lang die Möglichkeit eines Rechenzentrums erproben. Der Bericht knüpft an frühere Ságat-Berichte über die Pläne des Unternehmens in der Gemeinde an.",
+    "ja": "Ságatによると、カウトケイノの首長は、計画中のデータセンター用地の割り当ては政治的に処理されたと述べ、暗号資産企業Arctic Core ASは引き続き計画に含まれている。自治体の事務局長によると、同社は2年間かけてデータセンターの可能性を試験する。記事は、同社の地元での計画に関するSágatの過去の報道の続報である。",
+    "sw": "Huko Kautokeino, meya anasema ugawaji wa kiwanja kwa kituo cha data kilichopangwa ulishughulikiwa kisiasa, na kampuni ya kripto Arctic Core AS bado iko katika mipango, linaripoti Ságat. Kwa mujibu wa mkurugenzi wa manispaa, kampuni hiyo itajaribu uwezekano wa kituo cha data kwa miaka miwili. Habari hii ni mwendelezo wa ripoti za awali za Ságat kuhusu mipango ya kampuni katika manispaa hiyo.",
+    "mr": "Ságat च्या वृत्तानुसार, काउतोकेइनोचे महापौर म्हणतात की नियोजित डेटा सेंटरसाठी भूखंड वाटपाचा निर्णय राजकीय पातळीवर झाला, आणि क्रिप्टो कंपनी Arctic Core AS अजूनही योजनांमध्ये आहे. नगर संचालकांच्या मते कंपनी दोन वर्षे डेटा सेंटरची शक्यता तपासेल. ही बातमी कंपनीच्या योजनांवरील Ságat च्या आधीच्या वृत्तांकनाचा पाठपुरावा आहे.",
+    "fa": "به گزارش Ságat، شهردار کائوتوکینو می‌گوید واگذاری زمین برای یک مرکز داده برنامه‌ریزی‌شده به‌صورت سیاسی بررسی شده و شرکت رمزارزی Arctic Core AS همچنان در برنامه‌ها حضور دارد. به گفته مدیر شهرداری، این شرکت امکان ایجاد مرکز داده را دو سال آزمایش خواهد کرد. این گزارش ادامه پوشش پیشین Ságat از برنامه‌های شرکت در این شهر است.",
+    "uk": "У Каутокейно мер каже, що виділення ділянки під запланований дата-центр вирішувалося політично, а криптокомпанія Arctic Core AS і далі є частиною планів, повідомляє Ságat. За словами директорки муніципалітету, компанія протягом двох років перевірятиме можливість створення дата-центру. Матеріал продовжує попередні публікації Ságat про плани компанії в комуні.",
+    "tr": "Ságat'ın haberine göre Kautokeino belediye başkanı, planlanan bir veri merkezi için arsa tahsisinin siyasi olarak ele alındığını ve kripto şirketi Arctic Core AS'nin hâlâ planlarda yer aldığını söylüyor. Belediye müdürüne göre şirket, iki yıl boyunca bir veri merkezi olasılığını test edecek. Haber, Ságat'ın şirketin belediyedeki planlarına ilişkin önceki haberlerinin devamı."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2f529b54d178",
@@ -569,14 +1030,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price/derivatives content (pre-IPO perpetuals), excluded. researcher 30.10"
   },
   {
    "id": "fec26d4d170c",
    "url": "https://kaupr.io/nyheter/uvedkommende-fikk-tilgang-til-kundedata-i-northcrypto",
    "title": "Uvedkommende fikk tilgang til kundedata i NorthCrypto",
-   "title_en": null,
+   "title_en": "GreenMerc reports unauthorised access to customer data at crypto subsidiary NorthCrypto",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -588,8 +1050,8 @@
    "published": "2026-10-28",
    "fetched": "2026-10-29T02:59:21+00:00",
    "topics": [
-    "crypto",
-    "companies"
+    "security",
+    "business"
    ],
    "matched": [
     "\\bGreenMerc\\b",
@@ -597,15 +1059,72 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Swedish company GreenMerc says unauthorised parties gained access to customer data at its Finnish crypto subsidiary NorthCrypto through a vulnerability in a third-party reporting tool, and that personal data may have been exposed. According to the company, crypto keys were not affected, and one unauthorised withdrawal was caused by human error; the customer will be compensated.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "GreenMerc AB (publ) – MAR release, 28 Oct 2026 (Cision)",
+    "url": "https://news.cision.com/se/greenmerc-ab--publ-/r/obehorig-atkomst-till-kunddata-i-dotterbolaget-northcrypto,c4416454"
+   },
+   "title_i18n": {
+    "nn": "GreenMerc melder om uautorisert tilgang til kundedata i kryptodotterselskapet NorthCrypto",
+    "sv": "GreenMerc rapporterar obehörig åtkomst till kunddata i kryptodotterbolaget NorthCrypto",
+    "da": "GreenMerc melder om uautoriseret adgang til kundedata i kryptodatterselskabet NorthCrypto",
+    "fi": "GreenMerc kertoo luvattomasta pääsystä asiakastietoihin kryptotytäryhtiö NorthCryptossa",
+    "is": "GreenMerc greinir frá óheimilum aðgangi að viðskiptavinagögnum hjá rafmyntadótturfélaginu NorthCrypto",
+    "zh": "GreenMerc称加密子公司NorthCrypto客户数据遭未授权访问",
+    "hi": "GreenMerc ने क्रिप्टो सहायक कंपनी NorthCrypto में ग्राहक डेटा तक अनधिकृत पहुँच की जानकारी दी",
+    "es": "GreenMerc informa de un acceso no autorizado a datos de clientes en su filial cripto NorthCrypto",
+    "fr": "GreenMerc signale un accès non autorisé aux données clients de sa filiale crypto NorthCrypto",
+    "ar": "GreenMerc تبلّغ عن وصول غير مصرّح به إلى بيانات العملاء في شركتها التابعة للعملات المشفرة NorthCrypto",
+    "bn": "ক্রিপ্টো সহায়ক প্রতিষ্ঠান NorthCrypto-তে গ্রাহক তথ্যে অননুমোদিত প্রবেশের কথা জানাল GreenMerc",
+    "pt": "GreenMerc relata acesso não autorizado a dados de clientes na filial cripto NorthCrypto",
+    "ru": "GreenMerc сообщила о несанкционированном доступе к данным клиентов криптодочки NorthCrypto",
+    "ur": "GreenMerc نے کرپٹو ذیلی کمپنی NorthCrypto میں صارفین کے ڈیٹا تک غیر مجاز رسائی کی اطلاع دی",
+    "id": "GreenMerc laporkan akses tidak sah ke data nasabah di anak usaha kripto NorthCrypto",
+    "de": "GreenMerc meldet unbefugten Zugriff auf Kundendaten bei Krypto-Tochter NorthCrypto",
+    "ja": "GreenMerc、暗号資産子会社NorthCryptoの顧客データへの不正アクセスを報告",
+    "sw": "GreenMerc yaripoti ufikiaji usioidhinishwa wa data za wateja katika kampuni tanzu ya kripto NorthCrypto",
+    "mr": "GreenMerc ने क्रिप्टो उपकंपनी NorthCrypto मधील ग्राहक डेटावर अनधिकृत प्रवेशाची माहिती दिली",
+    "fa": "GreenMerc از دسترسی غیرمجاز به داده‌های مشتریان در زیرمجموعه رمزارزی NorthCrypto خبر داد",
+    "uk": "GreenMerc повідомила про несанкціонований доступ до даних клієнтів у криптодочірній NorthCrypto",
+    "tr": "GreenMerc, kripto iştiraki NorthCrypto'da müşteri verilerine yetkisiz erişim bildirdi"
+   },
+   "title_i18n_source": "Uvedkommende fikk tilgang til kundedata i NorthCrypto",
+   "summary_i18n": {
+    "nn": "Det svenske selskapet GreenMerc seier at uvedkomande fekk tilgang til kundedata hos det finske kryptodotterselskapet NorthCrypto gjennom ein sårbarheit i eit rapportverktøy frå ein tredjepart, og at personopplysningar kan ha vorte eksponerte. Ifølgje selskapet vart kryptonøklane ikkje råka, og eitt uautorisert uttak skuldast menneskeleg feil; kunden får kompensasjon.",
+    "nb": "Det svenske selskapet GreenMerc sier at uvedkommende fikk tilgang til kundedata hos det finske kryptodatterselskapet NorthCrypto gjennom en sårbarhet i et rapportverktøy fra en tredjepart, og at personopplysninger kan ha blitt eksponert. Ifølge selskapet ble kryptonøklene ikke berørt, og ett uautorisert uttak skyldtes menneskelig feil; kunden får kompensasjon.",
+    "sv": "Det svenska bolaget GreenMerc uppger att obehöriga fick åtkomst till kunddata hos det finska kryptodotterbolaget NorthCrypto genom en sårbarhet i ett rapportverktyg från tredje part, och att personuppgifter kan ha exponerats. Enligt bolaget påverkades inte kryptonycklarna, och ett obehörigt uttag berodde på mänskligt fel; kunden kompenseras.",
+    "da": "Det svenske selskab GreenMerc oplyser, at uvedkommende fik adgang til kundedata hos det finske kryptodatterselskab NorthCrypto gennem en sårbarhed i et rapportværktøj fra en tredjepart, og at personoplysninger kan være blevet eksponeret. Ifølge selskabet blev kryptonøglerne ikke berørt, og én uautoriseret udbetaling skyldtes menneskelig fejl; kunden kompenseres.",
+    "fi": "Ruotsalainen GreenMerc kertoo, että ulkopuoliset pääsivät käsiksi suomalaisen kryptotytäryhtiö NorthCrypton asiakastietoihin kolmannen osapuolen raportointityökalun haavoittuvuuden kautta ja että henkilötietoja on voinut paljastua. Yhtiön mukaan kryptoavaimiin ei kohdistunut vaikutuksia, ja yksi luvaton nosto johtui inhimillisestä virheestä; asiakkaalle maksetaan korvaus.",
+    "is": "Sænska fyrirtækið GreenMerc segir að óviðkomandi hafi fengið aðgang að viðskiptavinagögnum hjá finnska rafmyntadótturfélaginu NorthCrypto í gegnum veikleika í skýrslutóli frá þriðja aðila og að persónuupplýsingar kunni að hafa komist í ljós. Að sögn félagsins urðu rafmyntalyklar ekki fyrir áhrifum og ein óheimil úttekt stafaði af mannlegum mistökum; viðskiptavinurinn fær bætur.",
+    "zh": "瑞典公司GreenMerc表示，未经授权的人员通过第三方报告工具中的一个漏洞访问了其芬兰加密子公司NorthCrypto的客户数据，个人信息可能已被泄露。公司称加密密钥未受影响，一笔未经授权的提款是人为失误所致，该客户将获得赔偿。",
+    "hi": "स्वीडिश कंपनी GreenMerc का कहना है कि एक तृतीय-पक्ष रिपोर्टिंग टूल की कमज़ोरी के ज़रिए अनधिकृत लोगों ने उसकी फ़िनिश क्रिप्टो सहायक कंपनी NorthCrypto के ग्राहक डेटा तक पहुँच बनाई, और व्यक्तिगत डेटा उजागर हुआ हो सकता है। कंपनी के अनुसार क्रिप्टो कुंजियाँ प्रभावित नहीं हुईं, और एक अनधिकृत निकासी मानवीय त्रुटि से हुई; ग्राहक को मुआवज़ा दिया जाएगा।",
+    "es": "La empresa sueca GreenMerc afirma que personas no autorizadas accedieron a datos de clientes de su filial cripto finlandesa NorthCrypto a través de una vulnerabilidad en una herramienta de informes de un tercero, y que pueden haberse expuesto datos personales. Según la empresa, las claves cripto no se vieron afectadas y un retiro no autorizado se debió a un error humano; el cliente será compensado.",
+    "fr": "La société suédoise GreenMerc indique que des personnes non autorisées ont accédé aux données clients de sa filiale crypto finlandaise NorthCrypto via une vulnérabilité d'un outil de reporting tiers, et que des données personnelles ont pu être exposées. Selon l'entreprise, les clés crypto n'ont pas été touchées et un retrait non autorisé résulte d'une erreur humaine ; le client sera indemnisé.",
+    "ar": "تقول الشركة السويدية GreenMerc إن جهات غير مصرّح لها وصلت إلى بيانات عملاء شركتها التابعة الفنلندية للعملات المشفرة NorthCrypto عبر ثغرة في أداة تقارير تابعة لطرف ثالث، وإن بيانات شخصية ربما انكشفت. وبحسب الشركة، لم تتأثر مفاتيح العملات المشفرة، وكانت عملية سحب واحدة غير مصرّح بها ناتجة عن خطأ بشري، وسيُعوَّض العميل.",
+    "bn": "সুইডিশ কোম্পানি GreenMerc জানিয়েছে, একটি তৃতীয় পক্ষের রিপোর্টিং টুলের দুর্বলতার মাধ্যমে অননুমোদিত ব্যক্তিরা তাদের ফিনিশ ক্রিপ্টো সহায়ক প্রতিষ্ঠান NorthCrypto-র গ্রাহক তথ্যে প্রবেশ করেছে এবং ব্যক্তিগত তথ্য প্রকাশ পেয়ে থাকতে পারে। কোম্পানির ভাষ্যে ক্রিপ্টো কি ক্ষতিগ্রস্ত হয়নি, আর একটি অননুমোদিত উত্তোলন মানবিক ভুলের কারণে হয়েছে; গ্রাহককে ক্ষতিপূরণ দেওয়া হবে।",
+    "pt": "A empresa sueca GreenMerc diz que pessoas não autorizadas acederam a dados de clientes da sua filial cripto finlandesa NorthCrypto através de uma vulnerabilidade numa ferramenta de relatórios de terceiros, e que dados pessoais podem ter sido expostos. Segundo a empresa, as chaves cripto não foram afetadas e um levantamento não autorizado deveu-se a erro humano; o cliente será compensado.",
+    "ru": "Шведская компания GreenMerc сообщает, что посторонние получили доступ к данным клиентов её финской криптодочки NorthCrypto через уязвимость в стороннем инструменте отчётности и что персональные данные могли быть раскрыты. По словам компании, криптоключи не пострадали, а один несанкционированный вывод средств произошёл из-за человеческой ошибки; клиенту выплатят компенсацию.",
+    "ur": "سویڈش کمپنی GreenMerc کا کہنا ہے کہ ایک تیسرے فریق کے رپورٹنگ ٹول کی کمزوری کے ذریعے غیر مجاز افراد نے اس کی فن لینڈ کی کرپٹو ذیلی کمپنی NorthCrypto کے صارفین کے ڈیٹا تک رسائی حاصل کی، اور ذاتی معلومات افشا ہو سکتی ہیں۔ کمپنی کے مطابق کرپٹو کلیدیں متاثر نہیں ہوئیں، اور ایک غیر مجاز رقم نکلوانا انسانی غلطی کا نتیجہ تھا؛ صارف کو معاوضہ دیا جائے گا۔",
+    "id": "Perusahaan Swedia GreenMerc mengatakan pihak tak berwenang mengakses data nasabah anak usaha kriptonya di Finlandia, NorthCrypto, melalui celah pada alat pelaporan pihak ketiga, dan data pribadi mungkin telah terekspos. Menurut perusahaan, kunci kripto tidak terdampak, dan satu penarikan tidak sah terjadi karena kesalahan manusia; nasabah tersebut akan diberi kompensasi.",
+    "de": "Das schwedische Unternehmen GreenMerc teilt mit, dass Unbefugte über eine Schwachstelle in einem Berichtswerkzeug eines Drittanbieters auf Kundendaten seiner finnischen Krypto-Tochter NorthCrypto zugegriffen haben und personenbezogene Daten offengelegt worden sein könnten. Laut Unternehmen waren die Krypto-Schlüssel nicht betroffen; eine unbefugte Auszahlung ging auf menschliches Versagen zurück, der Kunde wird entschädigt.",
+    "ja": "スウェーデンのGreenMercは、第三者製レポートツールの脆弱性を通じて、フィンランドの暗号資産子会社NorthCryptoの顧客データに不正アクセスがあり、個人情報が流出した可能性があると発表した。同社によると暗号鍵は影響を受けておらず、1件の不正出金は人為的ミスによるもので、顧客には補償するという。",
+    "sw": "Kampuni ya Uswidi GreenMerc inasema watu wasioidhinishwa walipata data za wateja wa kampuni yake tanzu ya kripto ya Finland, NorthCrypto, kupitia udhaifu katika zana ya ripoti ya mtu wa tatu, na kwamba taarifa binafsi huenda zimefichuka. Kwa mujibu wa kampuni, funguo za kripto hazikuathiriwa, na utoaji mmoja usioidhinishwa ulisababishwa na kosa la kibinadamu; mteja atafidiwa.",
+    "mr": "स्वीडिश कंपनी GreenMerc च्या मते, तृतीय-पक्ष अहवाल साधनातील त्रुटीमुळे अनधिकृत व्यक्तींनी तिच्या फिनिश क्रिप्टो उपकंपनी NorthCrypto च्या ग्राहक डेटामध्ये प्रवेश मिळवला आणि वैयक्तिक माहिती उघड झाली असू शकते. कंपनीनुसार क्रिप्टो की प्रभावित झाल्या नाहीत, आणि एक अनधिकृत पैसे काढणे मानवी चुकीमुळे झाले; ग्राहकाला भरपाई दिली जाईल.",
+    "fa": "شرکت سوئدی GreenMerc می‌گوید افراد غیرمجاز از طریق آسیب‌پذیری در یک ابزار گزارش‌گیری شخص ثالث به داده‌های مشتریان زیرمجموعه رمزارزی فنلاندی‌اش NorthCrypto دسترسی یافتند و ممکن است اطلاعات شخصی افشا شده باشد. به گفته شرکت، کلیدهای رمزارزی آسیبی ندیدند و یک برداشت غیرمجاز ناشی از خطای انسانی بود؛ به مشتری غرامت پرداخت می‌شود.",
+    "uk": "Шведська компанія GreenMerc повідомляє, що сторонні особи отримали доступ до даних клієнтів її фінської криптодочірньої NorthCrypto через вразливість у сторонньому інструменті звітності, і персональні дані могли бути розкриті. За словами компанії, криптоключі не постраждали, а одне несанкціоноване виведення сталося через людську помилку; клієнт отримає компенсацію.",
+    "tr": "İsveçli şirket GreenMerc, üçüncü taraf bir raporlama aracındaki açık nedeniyle yetkisiz kişilerin Finlandiyalı kripto iştiraki NorthCrypto'nun müşteri verilerine eriştiğini ve kişisel verilerin açığa çıkmış olabileceğini açıkladı. Şirkete göre kripto anahtarları etkilenmedi; yetkisiz bir para çekimi insan hatasından kaynaklandı ve müşteriye tazminat ödenecek."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "73a8c658cb53",
    "url": "https://kaupr.io/nyheter/bitpanda-og-danske-coop-bank-apner-kontoen-for-ai-agenter",
    "title": "Bitpanda og danske Coop Bank åpner kontoen for AI-agenter",
-   "title_en": null,
+   "title_en": "Danish Coop Bank opens read-only AI access to investment accounts; Bitpanda adds AI tools",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "DK",
@@ -618,15 +1137,72 @@
    "published": "2026-10-28",
    "fetched": "2026-10-29T02:59:21+00:00",
    "topics": [
-    "crypto"
+    "business"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Danish Coop Bank lets customers connect AI assistants to their investment accounts through an MCP connection, but the bank says the connection is read-only: it can answer questions about holdings but cannot place orders. Coop Bank's investment service covers shares and funds, not crypto. Kaupr also reports that the Austrian crypto platform Bitpanda is opening customer portfolios to ChatGPT and other AI assistants.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-30T04:50:00+01:00",
+   "primary_source": {
+    "name": "Coop Bank – Spørg din AI om dine investeringer (26 Oct 2026)",
+    "url": "https://coopbank.dk/nyheder-og-presse/spoerg-din-ai-om-dine-investeringer"
+   },
+   "title_i18n": {
+    "nn": "Danske Coop Bank opnar investeringskontoar for kunstig intelligens med berre lesetilgang; Bitpanda legg til liknande verktøy",
+    "da": "Danske Coop Bank åbner for AI-adgang med kun læseadgang til investeringskonti; Bitpanda tilføjer AI-værktøjer",
+    "sv": "Danska Coop Bank öppnar AI-åtkomst med enbart läsrätt till investeringskonton; Bitpanda lägger till AI-verktyg",
+    "fi": "Tanskalainen Coop Bank avaa sijoitustileille vain lukuoikeudella toimivan tekoälyyhteyden; Bitpanda lisää tekoälytyökaluja",
+    "is": "Danski Coop Bank opnar lesaðgang gervigreindar að fjárfestingarreikningum; Bitpanda bætir við gervigreindartólum",
+    "zh": "丹麦Coop Bank向投资账户开放只读AI访问；Bitpanda新增AI工具",
+    "hi": "डेनिश Coop Bank ने निवेश खातों के लिए केवल-पठन AI पहुँच खोली; Bitpanda ने AI टूल जोड़े",
+    "es": "El danés Coop Bank abre acceso de IA de solo lectura a cuentas de inversión; Bitpanda añade herramientas de IA",
+    "fr": "La danoise Coop Bank ouvre un accès IA en lecture seule aux comptes d'investissement ; Bitpanda ajoute des outils d'IA",
+    "ar": "بنك Coop Bank الدنماركي يتيح وصولاً للذكاء الاصطناعي للقراءة فقط إلى حسابات الاستثمار؛ وBitpanda تضيف أدوات ذكاء اصطناعي",
+    "bn": "বিনিয়োগ অ্যাকাউন্টে শুধু-পড়ার এআই প্রবেশাধিকার দিল ডেনমার্কের Coop Bank; এআই টুল যোগ করল Bitpanda",
+    "pt": "Dinamarquês Coop Bank abre acesso de IA só de leitura às contas de investimento; Bitpanda acrescenta ferramentas de IA",
+    "ru": "Датский Coop Bank открыл ИИ доступ к инвестсчетам только для чтения; Bitpanda добавила ИИ-инструменты",
+    "ur": "ڈنمارک کے Coop Bank نے سرمایہ کاری اکاؤنٹس تک صرف پڑھنے والی AI رسائی کھولی؛ Bitpanda نے AI ٹولز شامل کیے",
+    "id": "Coop Bank Denmark buka akses AI baca-saja ke rekening investasi; Bitpanda tambah alat AI",
+    "de": "Dänische Coop Bank öffnet Anlagekonten lesend für KI; Bitpanda ergänzt KI-Werkzeuge",
+    "ja": "デンマークのCoop Bank、投資口座に読み取り専用のAI接続を開放　BitpandaもAIツール追加",
+    "sw": "Coop Bank ya Denmark yafungua ufikiaji wa AI wa kusoma tu kwa akaunti za uwekezaji; Bitpanda yaongeza zana za AI",
+    "mr": "डेन्मार्कच्या Coop Bank कडून गुंतवणूक खात्यांसाठी केवळ-वाचन AI प्रवेश; Bitpanda कडून AI साधने",
+    "fa": "Coop Bank دانمارک دسترسی فقط‌خواندنی هوش مصنوعی به حساب‌های سرمایه‌گذاری را باز کرد؛ Bitpanda ابزارهای هوش مصنوعی افزود",
+    "uk": "Данський Coop Bank відкрив ШІ доступ до інвестрахунків лише для читання; Bitpanda додала ШІ-інструменти",
+    "tr": "Danimarkalı Coop Bank yatırım hesaplarına salt okunur yapay zekâ erişimi açtı; Bitpanda yapay zekâ araçları ekledi"
+   },
+   "title_i18n_source": "Bitpanda og danske Coop Bank åpner kontoen for AI-agenter",
+   "summary_i18n": {
+    "nn": "Danske Coop Bank lèt kundane kople assistentar med kunstig intelligens til investeringskontoen gjennom ei MCP-kopling, men banken seier at koplinga berre kan lese: ho kan svare på spørsmål om behaldninga, men kan ikkje leggje inn ordrar. Investeringstenesta til Coop Bank gjeld aksjar og fond, ikkje krypto. Kaupr melder òg at den austerrikske kryptoplattforma Bitpanda opnar kundeporteføljane for ChatGPT og andre assistentar med kunstig intelligens.",
+    "nb": "Danske Coop Bank lar kundene koble assistenter med kunstig intelligens til investeringskontoen gjennom en MCP-kobling, men banken sier at koblingen bare kan lese: den kan svare på spørsmål om beholdningen, men kan ikke legge inn ordrer. Coop Banks investeringstjeneste gjelder aksjer og fond, ikke krypto. Kaupr melder også at den østerrikske kryptoplattformen Bitpanda åpner kundeporteføljene for ChatGPT og andre assistenter med kunstig intelligens.",
+    "sv": "Danska Coop Bank låter kunder koppla AI-assistenter till sina investeringskonton via en MCP-anslutning, men banken säger att anslutningen bara kan läsa: den kan svara på frågor om innehav men inte lägga order. Coop Banks investeringstjänst gäller aktier och fonder, inte krypto. Kaupr rapporterar också att den österrikiska kryptoplattformen Bitpanda öppnar kundernas portföljer för ChatGPT och andra AI-assistenter.",
+    "da": "Danske Coop Bank lader kunder forbinde AI-assistenter til deres investeringskonti via en MCP-forbindelse, men banken siger, at forbindelsen kun kan læse: den kan svare på spørgsmål om beholdninger, men kan ikke afgive ordrer. Coop Banks investeringstjeneste omfatter aktier og fonde, ikke krypto. Kaupr melder også, at den østrigske kryptoplatform Bitpanda åbner kundernes porteføljer for ChatGPT og andre AI-assistenter.",
+    "fi": "Tanskalainen Coop Bank antaa asiakkaiden liittää tekoälyavustajia sijoitustileihinsä MCP-yhteydellä, mutta pankin mukaan yhteys on vain lukuoikeudellinen: se voi vastata omistuksia koskeviin kysymyksiin mutta ei voi tehdä toimeksiantoja. Coop Bankin sijoituspalvelu kattaa osakkeet ja rahastot, ei kryptoja. Kaupr kertoo myös, että itävaltalainen kryptoalusta Bitpanda avaa asiakkaiden salkut ChatGPT:lle ja muille tekoälyavustajille.",
+    "is": "Danski Coop Bank leyfir viðskiptavinum að tengja gervigreindaraðstoðarmenn við fjárfestingarreikninga sína með MCP-tengingu, en bankinn segir tenginguna eingöngu lesaðgang: hún getur svarað spurningum um eignir en ekki lagt inn pantanir. Fjárfestingarþjónusta Coop Bank nær til hlutabréfa og sjóða, ekki rafmynta. Kaupr greinir einnig frá því að austurríski rafmyntavettvangurinn Bitpanda opni eignasöfn viðskiptavina fyrir ChatGPT og öðrum gervigreindaraðstoðarmönnum.",
+    "zh": "丹麦Coop Bank允许客户通过MCP连接将AI助手接入其投资账户，但该行表示该连接为只读：可回答有关持仓的问题，但不能下单。Coop Bank的投资服务涵盖股票和基金，不包括加密资产。Kaupr还报道，奥地利加密平台Bitpanda正向ChatGPT等AI助手开放客户投资组合。",
+    "hi": "डेनमार्क का Coop Bank ग्राहकों को MCP कनेक्शन के ज़रिए AI सहायकों को अपने निवेश खातों से जोड़ने देता है, लेकिन बैंक का कहना है कि यह कनेक्शन केवल पढ़ सकता है: यह होल्डिंग्स से जुड़े सवालों के जवाब दे सकता है, पर ऑर्डर नहीं दे सकता। Coop Bank की निवेश सेवा शेयर और फ़ंड तक सीमित है, क्रिप्टो नहीं। Kaupr के अनुसार ऑस्ट्रियाई क्रिप्टो प्लेटफ़ॉर्म Bitpanda भी ग्राहकों के पोर्टफ़ोलियो ChatGPT और अन्य AI सहायकों के लिए खोल रहा है।",
+    "es": "El danés Coop Bank permite a sus clientes conectar asistentes de IA a sus cuentas de inversión mediante una conexión MCP, pero el banco afirma que la conexión es de solo lectura: puede responder preguntas sobre las posiciones, pero no dar órdenes. El servicio de inversión de Coop Bank abarca acciones y fondos, no cripto. Kaupr informa además de que la plataforma cripto austriaca Bitpanda abre las carteras de sus clientes a ChatGPT y otros asistentes de IA.",
+    "fr": "La banque danoise Coop Bank permet à ses clients de connecter des assistants IA à leurs comptes d'investissement via une connexion MCP, mais précise que celle-ci est en lecture seule : elle peut répondre aux questions sur les avoirs mais ne peut pas passer d'ordres. Le service d'investissement de Coop Bank porte sur les actions et les fonds, pas sur les cryptos. Kaupr rapporte aussi que la plateforme crypto autrichienne Bitpanda ouvre les portefeuilles de ses clients à ChatGPT et à d'autres assistants IA.",
+    "ar": "يتيح بنك Coop Bank الدنماركي للعملاء ربط مساعدي الذكاء الاصطناعي بحسابات الاستثمار عبر اتصال MCP، لكن البنك يقول إن الاتصال للقراءة فقط: يمكنه الإجابة عن أسئلة حول المقتنيات لكنه لا يستطيع تنفيذ أوامر. وتشمل خدمة الاستثمار لدى Coop Bank الأسهم والصناديق وليس العملات المشفرة. وتفيد Kaupr أيضاً بأن منصة العملات المشفرة النمساوية Bitpanda تفتح محافظ عملائها أمام ChatGPT ومساعدين آخرين.",
+    "bn": "ডেনমার্কের Coop Bank গ্রাহকদের MCP সংযোগের মাধ্যমে বিনিয়োগ অ্যাকাউন্টে এআই সহকারী যুক্ত করতে দিচ্ছে, তবে ব্যাংক বলছে সংযোগটি শুধু পড়তে পারে: এটি হোল্ডিং নিয়ে প্রশ্নের উত্তর দিতে পারে, কিন্তু অর্ডার দিতে পারে না। Coop Bank-এর বিনিয়োগ সেবা শেয়ার ও ফান্ডে সীমিত, ক্রিপ্টো নয়। Kaupr আরও জানিয়েছে, অস্ট্রিয়ার ক্রিপ্টো প্ল্যাটফর্ম Bitpanda গ্রাহকদের পোর্টফোলিও ChatGPT ও অন্যান্য এআই সহকারীর জন্য খুলে দিচ্ছে।",
+    "pt": "O dinamarquês Coop Bank permite aos clientes ligar assistentes de IA às contas de investimento através de uma ligação MCP, mas o banco diz que a ligação é só de leitura: pode responder a perguntas sobre as posições, mas não dar ordens. O serviço de investimento do Coop Bank abrange ações e fundos, não cripto. A Kaupr refere ainda que a plataforma cripto austríaca Bitpanda está a abrir as carteiras dos clientes ao ChatGPT e a outros assistentes de IA.",
+    "ru": "Датский Coop Bank позволяет клиентам подключать ИИ-ассистентов к инвестиционным счетам через MCP-соединение, но банк подчёркивает, что доступ только для чтения: ассистент может отвечать на вопросы о портфеле, но не может выставлять заявки. Инвестиционный сервис Coop Bank охватывает акции и фонды, а не криптовалюты. Kaupr также сообщает, что австрийская криптоплатформа Bitpanda открывает портфели клиентов для ChatGPT и других ИИ-ассистентов.",
+    "ur": "ڈنمارک کا Coop Bank صارفین کو MCP کنکشن کے ذریعے AI معاونین کو اپنے سرمایہ کاری اکاؤنٹس سے جوڑنے دیتا ہے، لیکن بینک کے مطابق یہ کنکشن صرف پڑھ سکتا ہے: یہ ہولڈنگز کے بارے میں سوالات کے جواب دے سکتا ہے مگر آرڈر نہیں دے سکتا۔ Coop Bank کی سرمایہ کاری سروس حصص اور فنڈز پر مشتمل ہے، کرپٹو نہیں۔ Kaupr کے مطابق آسٹریا کا کرپٹو پلیٹ فارم Bitpanda بھی صارفین کے پورٹ فولیو ChatGPT اور دیگر AI معاونین کے لیے کھول رہا ہے۔",
+    "id": "Coop Bank Denmark memungkinkan nasabah menghubungkan asisten AI ke rekening investasi melalui koneksi MCP, tetapi bank itu menegaskan koneksi tersebut hanya bisa membaca: dapat menjawab pertanyaan tentang kepemilikan tetapi tidak dapat memasang order. Layanan investasi Coop Bank mencakup saham dan reksa dana, bukan kripto. Kaupr juga melaporkan platform kripto Austria Bitpanda membuka portofolio nasabah bagi ChatGPT dan asisten AI lainnya.",
+    "de": "Die dänische Coop Bank lässt Kunden KI-Assistenten über eine MCP-Verbindung an ihre Anlagekonten anbinden, betont aber, dass die Verbindung nur lesend ist: Sie kann Fragen zu Beständen beantworten, aber keine Aufträge erteilen. Der Anlagedienst der Coop Bank umfasst Aktien und Fonds, keine Kryptowerte. Kaupr berichtet zudem, dass die österreichische Kryptoplattform Bitpanda Kundenportfolios für ChatGPT und andere KI-Assistenten öffnet.",
+    "ja": "デンマークのCoop Bankは、顧客がMCP接続を通じてAIアシスタントを投資口座に接続できるようにしたが、接続は読み取り専用で、保有資産に関する質問には答えられるものの注文はできないとしている。Coop Bankの投資サービスは株式とファンドが対象で、暗号資産は含まれない。Kauprはまた、オーストリアの暗号資産プラットフォームBitpandaが顧客のポートフォリオをChatGPTなどのAIアシスタントに開放していると伝えている。",
+    "sw": "Coop Bank ya Denmark inawaruhusu wateja kuunganisha wasaidizi wa AI na akaunti zao za uwekezaji kupitia muunganisho wa MCP, lakini benki inasema muunganisho huo ni wa kusoma tu: unaweza kujibu maswali kuhusu mali lakini hauwezi kuweka oda. Huduma ya uwekezaji ya Coop Bank inahusu hisa na mifuko, si kripto. Kaupr pia inaripoti kuwa jukwaa la kripto la Austria Bitpanda linafungua portfolio za wateja kwa ChatGPT na wasaidizi wengine wa AI.",
+    "mr": "डेन्मार्कची Coop Bank ग्राहकांना MCP कनेक्शनद्वारे AI सहाय्यक आपल्या गुंतवणूक खात्यांशी जोडू देते, मात्र हे कनेक्शन केवळ वाचू शकते असे बँक सांगते: ते होल्डिंग्सबद्दलच्या प्रश्नांची उत्तरे देऊ शकते, पण ऑर्डर देऊ शकत नाही. Coop Bank ची गुंतवणूक सेवा शेअर्स आणि फंडांपुरती आहे, क्रिप्टो नाही. ऑस्ट्रियाचा क्रिप्टो प्लॅटफॉर्म Bitpanda ग्राहकांचे पोर्टफोलिओ ChatGPT आणि इतर AI सहाय्यकांसाठी खुले करत असल्याचेही Kaupr सांगते.",
+    "fa": "Coop Bank دانمارک به مشتریان اجازه می‌دهد دستیارهای هوش مصنوعی را از طریق اتصال MCP به حساب‌های سرمایه‌گذاری خود وصل کنند، اما بانک می‌گوید این اتصال فقط‌خواندنی است: می‌تواند به پرسش‌ها درباره دارایی‌ها پاسخ دهد اما نمی‌تواند سفارش ثبت کند. خدمت سرمایه‌گذاری Coop Bank شامل سهام و صندوق‌هاست، نه رمزارز. Kaupr همچنین گزارش می‌دهد که پلتفرم رمزارزی اتریشی Bitpanda سبد مشتریان را برای ChatGPT و دیگر دستیارهای هوش مصنوعی باز می‌کند.",
+    "uk": "Данський Coop Bank дозволяє клієнтам підключати ШІ-асистентів до інвестиційних рахунків через MCP-з'єднання, але банк наголошує, що доступ лише для читання: асистент може відповідати на запитання про активи, але не може виставляти заявки. Інвестиційний сервіс Coop Bank охоплює акції та фонди, а не криптовалюти. Kaupr також повідомляє, що австрійська криптоплатформа Bitpanda відкриває портфелі клієнтів для ChatGPT та інших ШІ-асистентів.",
+    "tr": "Danimarkalı Coop Bank, müşterilerin yapay zekâ asistanlarını bir MCP bağlantısıyla yatırım hesaplarına bağlamasına izin veriyor; ancak banka bağlantının salt okunur olduğunu söylüyor: varlıklarla ilgili soruları yanıtlayabiliyor, emir veremiyor. Coop Bank'ın yatırım hizmeti hisse ve fonları kapsıyor, kriptoyu değil. Kaupr ayrıca Avusturyalı kripto platformu Bitpanda'nın müşteri portföylerini ChatGPT ve diğer yapay zekâ asistanlarına açtığını bildiriyor."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "efb569fa2f14",
@@ -990,7 +1566,20 @@
     "tr": "Şirketlerin 27 Ekim 2026'da duyurduğuna göre Litvanyalı elektronik para kuruluşu VIALET, müşteri fonlarını korumak ve hazine yönetimi için tokenize para piyasası fonlarını kullanmak üzere Axiology ile ortaklık kurdu. Axiology, AB'nin DLT Pilot Rejimi kapsamında Litvanya Merkez Bankası denetiminde bir DLT alım satım ve takas sistemi işletiyor. Bir likidite sağlayıcıyla yapılan ayrı bir düzenleme, fonların itfa koşullarını değiştirmeden VIALET'e gün içinde nakde erişim sağlamayı amaçlıyor. VIALET yaklaşık 150 milyon euro varlık yönettiğini söylüyor.",
     "se": "VIALET, Lietuvas elektrovnnalaš ruhtainstitušuvdna, lea álggahan ovttasbarggu Axiologiijain geavahit tokeniserejuvvon ruhtamárkanfoanddaid suddjemii kundariid ruđaid ja treasury hálddašeapmái, fitnodagat almmuhedje golggotmánu 27. beaivvi 2026. Axiology jođiha DLT-gávppašan- ja soabadansystema EU DLT-geahččalanortnegis, maid Bank of Lithuania bearráigeahččá. VIALET galgá sierra šiehtadusaiguin máksinlágideaddjiin beassat geavahit reaidoruđa beaivet, almmá ahte dat váikkuha foandda olggosváldima áigemearrái. VIALET muitala ahte dat hálddaša sullii 150 miljovnna euro sturrosaš opmodaga."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "arcticstartup",
+     "outlet_name": "ArcticStartup",
+     "url": "https://arcticstartup.com/axiology-and-vialet-partner",
+     "title": "Lithuanian companies partner on tokenised money market funds for client fund safeguarding",
+     "published": "2026-10-29T13:08:01+00:00",
+     "lang": "English",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
   },
   {
    "id": "43f49e7b2f10",
