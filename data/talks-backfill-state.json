@@ -121,6 +121,25 @@
    ],
    "notes": "No calendar event that ended after 23 October 2026 has a public recording. The two KÅKÅ sessions in Stavanger on 24 October were checked on YouTube. Thirteen talks were kept from backfill. Slush Tokyo was not kept. A re-upload of an IOTA meetup in Trondheim was not kept. A short festival clip and a trading video were not kept. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-10-30",
+   "candidates_checked": 239,
+   "watch_pages_opened": 5,
+   "new_talks": 3,
+   "new_from_calendar": 0,
+   "new_from_backfill": 3,
+   "areas_exhausted": [
+    "query: Oslo Blockchain Meetup Nexa (0 results)",
+    "query: Universitetet i Bergen bitcoin (0 results)"
+   ],
+   "areas_sampled": [
+    "Calendar events ended since 27 October 2026: Oslo Blockchain Meetup - Nexa, Lund Bitcoin Meetup #1, Cantillon-effekten & pengar",
+    "Luleå University of Technology, Tampere University, Copenhagen Business School, Reykjavik University, Stockholm University, Uppsala University",
+    "JavaZone and Slush 2019 first pages"
+   ],
+   "notes": "No public recording of the three calendar events that ended on 28 and 29 October 2026. Litteraturhuset says the Cantillon talk will be released as a podcast after the event; it was not up. A members' meeting podcast from Bitcoinpolitisk Institutt Norge on 1 June 2026 was not kept. A Kaupr stream for 31 October 2026 had not been held. A UCL seminar by a Copenhagen Business School researcher was not held in the Nordics. Three talks were kept from backfill. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -159,7 +178,7 @@
    },
    "2016": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year."
+    "note": "Covered only where an event or institution query returned a video from this year. A Luleå University of Technology upload from 2017 introduces blockchain; the Dataföreningen lunch on 2 November 2016 is archived as an event."
    },
    "2017": {
     "status": "sampled",
@@ -175,7 +194,7 @@
    },
    "2020": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year."
+    "note": "Covered only where an event or institution query returned a video from this year. A Tampere University lecture on 20 January 2020 was kept."
    },
    "2021": {
     "status": "sampled",
@@ -209,7 +228,7 @@
    },
    "SE": {
     "status": "sampled",
-    "talks": 14
+    "talks": 15
    },
    "DK": {
     "status": "sampled",
@@ -217,7 +236,7 @@
    },
    "FI": {
     "status": "sampled",
-    "talks": 14
+    "talks": 16
    },
    "IS": {
     "status": "sampled",
@@ -1291,6 +1310,126 @@
     "status": "sampled",
     "included_from_this_query": null,
     "note": "The Blockchangers panel from 19 April 2016 was kept and linked to the existing event."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Oslo Blockchain Meetup Nexa",
+    "results_on_first_page": 0,
+    "status": "exhausted",
+    "included_from_this_query": null,
+    "note": "No YouTube result for the 28 October 2026 meetup."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Cantillon-effekten pengar",
+    "results_on_first_page": 12,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The first page was not a recording of the 29 October 2026 talk at Litteraturhuset."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Lund Bitcoin Meetup",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The first page was not a recording of Lund Bitcoin Meetup #1 on 28 October 2026."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Nexa Oslo October 2026",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No recording of the 28 October 2026 Oslo meetup."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Bitcoinpolitisk Institutt Norge 2026",
+    "results_on_first_page": 11,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The new hits were talks already listed, a members' annual-meeting podcast, and a Kaupr stream dated 31 October 2026 that had not been held."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Lunds universitet blockchain föreläsning",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "The Luleå University of Technology upload was kept. A Lund University lecture was not on the first page."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Uppsala universitet bitcoin blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No new public talk held at Uppsala University."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Universitetet i Bergen bitcoin",
+    "results_on_first_page": 0,
+    "status": "exhausted",
+    "included_from_this_query": null,
+    "note": "No YouTube result."
+   },
+   {
+    "country_tag": "DK",
+    "query": "Copenhagen Business School blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "A CBS speaker's talk on the UCL channel does not place the talk in Copenhagen."
+   },
+   {
+    "country_tag": "IS",
+    "query": "Reykjavik University blockchain lecture",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No new lecture the page places in Reykjavík."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Stockholms universitet blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No new public talk. A one-minute Swedish House of Finance clip was not kept."
+   },
+   {
+    "country_tag": "FI",
+    "query": "Tampere bitcoin luento",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "Two Tampere University lectures were kept."
+   },
+   {
+    "country_tag": "NO",
+    "query": "NHH bitcoin blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No new talk. The Bergen Global forum was already listed."
+   },
+   {
+    "country_tag": "NO",
+    "query": "JavaZone blockchain Oslo",
+    "results_on_first_page": 16,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No blockchain talk on the first page."
+   },
+   {
+    "country_tag": "FI",
+    "query": "Slush 2019 blockchain Helsinki",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "No blockchain session from Slush 2019 in Helsinki on the first page."
    }
   ],
   "channels_sampled": [
@@ -1334,7 +1473,8 @@
    "Finansinspektionen",
    "SNSkunskap",
    "Bergen Global CMI/UiB",
-   "Norwegian Institute of International Affairs"
+   "Norwegian Institute of International Affairs",
+   "Luleå tekniska universitet"
   ],
   "universities": [
    {
@@ -1396,6 +1536,16 @@
     "name": "BI Norwegian Business School",
     "status": "sampled",
     "note": "Krypto Labs at the BISO Web3 Society. The page does not name the campus."
+   },
+   {
+    "name": "Luleå University of Technology",
+    "status": "sampled",
+    "note": "The university upload Block-chains for dummies. The page does not state the day."
+   },
+   {
+    "name": "Tampere University",
+    "status": "sampled",
+    "note": "Two Thinklair lectures for the Emerging Technologies group. One page states 20 January 2020. The other says the lecture was given that day and does not give a calendar date."
    }
   ],
   "events": [
@@ -1468,6 +1618,16 @@
     "name": "Oslo Freedom Forum 2018 blockchain panel",
     "status": "sampled",
     "note": "The official upload of the blockchain panel. The page does not state the day."
+   },
+   {
+    "name": "Dataföreningen Luleå lunch on blockchain",
+    "status": "sampled",
+    "note": "The 2 November 2016 lunch is in the past-events archive. The university upload does not state that day, so the talk is not linked to it."
+   },
+   {
+    "name": "Tampere University blockchain lectures",
+    "status": "sampled",
+    "note": "Two lectures. The 20 January 2020 lecture is linked. The later upload does not state a calendar day."
    }
   ]
  }
