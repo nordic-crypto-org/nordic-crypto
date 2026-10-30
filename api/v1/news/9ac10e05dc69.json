@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-30T03:31:29+00:00",
+ "generated_at": "2026-10-30T06:36:43+00:00",
  "preview": false,
  "item": {
   "id": "9ac10e05dc69",
@@ -105,7 +105,31 @@
    "name": "VIALET – VIALET Partners With Axiology to Use Tokenized Money Market Funds for Treasury Management",
    "url": "https://vialet.eu/article/vialet-partners-with-axiology-to-use-tokenized-money-market-funds-for-treasury-management/"
   },
-  "also_covered_by": [],
+  "also_covered_by": [
+   {
+    "outlet": "arcticstartup",
+    "outlet_name": "ArcticStartup",
+    "url": "https://arcticstartup.com/axiology-and-vialet-partner",
+    "title": "Lithuanian companies partner on tokenised money market funds for client fund safeguarding",
+    "published": "2026-10-29T13:08:01+00:00",
+    "lang": "English",
+    "language_code": "en",
+    "country": "FI",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/arcticstartup.webp",
+     "source_url": "https://arcticstartup.com/wp-content/uploads/2021/09/arcticstartupb-white-logo.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/arcticstartup.webp"
+    }
+   }
+  ],
   "sources": [
    {
     "outlet": "kaupr",
@@ -130,21 +154,49 @@
      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
     },
     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+   },
+   {
+    "outlet": "arcticstartup",
+    "outlet_name": "ArcticStartup",
+    "url": "https://arcticstartup.com/axiology-and-vialet-partner",
+    "title": "Lithuanian companies partner on tokenised money market funds for client fund safeguarding",
+    "published": "2026-10-29T13:08:01+00:00",
+    "lang": "English",
+    "language_code": "en",
+    "country": "FI",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/arcticstartup.webp",
+     "source_url": "https://arcticstartup.com/wp-content/uploads/2021/09/arcticstartupb-white-logo.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/arcticstartup.webp"
+    }
    }
   ],
   "coverage": {
-   "count": 1,
+   "count": 2,
    "by_country": [
     {
      "country": "NO",
      "count": 1,
-     "share": 1.0
+     "share": 0.5
+    },
+    {
+     "country": "FI",
+     "count": 1,
+     "share": 0.5
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 1,
+     "count": 2,
      "share": 1.0
     },
     {
