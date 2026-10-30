@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-30T07:17:17+00:00",
+ "generated_at": "2026-10-30T09:59:48+00:00",
  "preview": false,
  "country": "SE",
- "count": 14,
+ "count": 15,
  "talks": [
   {
    "id": "yt-4A-whJseWvI",
@@ -348,6 +348,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-iPnfu4okwr0",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-iPnfu4okwr0.json"
+  },
+  {
+   "id": "yt-yhxcnLX55FQ",
+   "video_url": "https://www.youtube.com/watch?v=yhxcnLX55FQ",
+   "platform": "youtube",
+   "title": "Block-chains for dummies - Martin Lundgren, Luleå tekniska universitet",
+   "speakers": [
+    "Martin Lundgren"
+   ],
+   "event_name": null,
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-martin-lundgren"
+   ],
+   "city": "Luleå",
+   "country": "SE",
+   "date": null,
+   "published": "2017-03-03",
+   "duration": "PT50M23S",
+   "language": null,
+   "channel": "Luleå tekniska universitet",
+   "description": "Martin Lundgren of Luleå University of Technology gives an introduction to how a blockchain works.",
+   "source_url": "https://www.youtube.com/watch?v=yhxcnLX55FQ&hl=en",
+   "retrieved_at": "2026-10-30T12:00:00Z",
+   "added_at": "2026-10-30T12:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-yhxcnLX55FQ",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yhxcnLX55FQ.json"
   },
   {
    "id": "yt-vefoJLmk88g",
