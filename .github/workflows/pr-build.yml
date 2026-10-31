@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: requirements.txt
       - run: python3 -m pip install -r requirements.txt
       - name: Tests
-        run: python3 -m unittest tests.test_event_title tests.test_event_translate tests.test_d1_events tests.test_newsletter_langs tests.test_send_issue && python3 tests/test_rss_feeds.py
+        run: python3 -m unittest tests.test_event_title tests.test_event_translate tests.test_d1_events tests.test_newsletter_langs tests.test_send_issue tests.test_calendar_grid && python3 tests/test_rss_feeds.py
       - name: Browser push tests
         run: |
           python3 -m unittest tests.test_push_notify

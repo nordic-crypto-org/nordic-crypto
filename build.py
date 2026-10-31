@@ -3505,6 +3505,9 @@ def build_calendar(ctx):
                 + f'<div class="meta">{E(t("organiser"))}: {E(e["organiser"])} · {E(t("listed_at"))}: <a href="{E(e["url"])}" rel="noopener" target="_blank">{E(e["source"])}</a></div>'
                 + (f'<p class="sum"{lang_attr(nl)}><b>{E(t("note"))}:</b> {E(note)}</p>' if note else "") + '</li>')
     loc = lambda e: dt.datetime.fromisoformat(e["start"])
+    def last_day(e):
+        end = event_select.end_of(e)
+        return max(loc(e).date(), (end - dt.timedelta(microseconds=1)).date()) if end else loc(e).date()
     months = sorted({(now.year, now.month)} | {(loc(e).year, loc(e).month) for e in live})[:6]
     grids = []
     for y, m in months:
@@ -3512,7 +3515,7 @@ def build_calendar(ctx):
         for wk in calendar.Calendar(0).monthdatescalendar(y, m):
             row = []
             for d in wk:
-                de = [e for e in live if loc(e).date() == d]
+                de = [e for e in live if loc(e).date() <= d <= last_day(e)]
                 cls = " ".join(c for c in ["out" if d.month != m else "", "today" if d == now.astimezone(OSLO).date() else "", "has" if de else ""] if c)
                 row.append(f'<td class="{cls}"><span class="d">{d.day}</span>' + "".join(f'<a href="{E(e["id"])}/" data-c="{E(e.get("country"))}" title="{E(cname(e.get("country")))}: {E(event_title(e))}">{flag(e.get("country"))}<span>{E(event_title(e))}</span></a>' for e in de) + '</td>')
             cells.append("<tr>" + "".join(row) + "</tr>")
