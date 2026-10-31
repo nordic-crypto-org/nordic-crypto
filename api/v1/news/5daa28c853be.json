@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-31T03:38:39+00:00",
+ "generated_at": "2026-10-31T06:35:01+00:00",
  "preview": false,
  "item": {
   "id": "5daa28c853be",
@@ -103,7 +103,22 @@
    "name": "Galaxy – Third Quarter 2026 Financial Results (27 Oct 2026)",
    "url": "https://investor.galaxy.com/news-releases/news-release-details/galaxy-announces-third-quarter-2026-financial-results"
   },
-  "also_covered_by": [],
+  "also_covered_by": [
+   {
+    "outlet": "investornytt",
+    "outlet_name": "Investornytt",
+    "url": "https://investornytt.no/bors/galaxy-overrasket-i-tredje-kvartal-men-resultatet-forteller-bare-halve-historien/549433",
+    "title": "Galaxy overrasket i tredje kvartal – men resultatet forteller bare halve historien",
+    "published": "2026-10-30T12:36:18+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
+   }
+  ],
   "sources": [
    {
     "outlet": "kryptovalutaguiden",
@@ -127,21 +142,40 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp"
     }
+   },
+   {
+    "outlet": "investornytt",
+    "outlet_name": "Investornytt",
+    "url": "https://investornytt.no/bors/galaxy-overrasket-i-tredje-kvartal-men-resultatet-forteller-bare-halve-historien/549433",
+    "title": "Galaxy overrasket i tredje kvartal – men resultatet forteller bare halve historien",
+    "published": "2026-10-30T12:36:18+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
    }
   ],
   "coverage": {
-   "count": 1,
+   "count": 2,
    "by_country": [
+    {
+     "country": "NO",
+     "count": 1,
+     "share": 0.5
+    },
     {
      "country": "SE",
      "count": 1,
-     "share": 1.0
+     "share": 0.5
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 1,
+     "count": 2,
      "share": 1.0
     },
     {
