@@ -23,8 +23,9 @@
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "00aeaa7d0980",
@@ -50,8 +51,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "511ec8e2b939",
@@ -75,8 +77,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "4fc9a277b0ae",
@@ -100,14 +103,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle (stock market story). researcher 31.10"
   },
   {
    "id": "2ba8ad647f8e",
    "url": "https://e24.no/internasjonal-oekonomi/i/1o2k7J/nord-korea-faar-skylden-etter-milliardkupp",
    "title": "Nord-Korea får skylden etter milliardkupp",
-   "title_en": null,
+   "title_en": "Analytics firms link Binance hack to North Korea's Lazarus group",
    "source": "e24",
    "source_name": "E24",
    "country": "NO",
@@ -121,14 +125,15 @@
    "published": "2026-10-30T20:39:19+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "The blockchain analytics firms TRM Labs and Chainalysis link the theft of about 6.3 billion US dollars from Binance to North Korea's Lazarus group, also known as TraderTraitor. TRM Labs says most of the funds were moved out within about 20 minutes, and Chainalysis says it has high confidence in its assessment. The FBI is involved in the investigation but has not itself attributed the attack, and Binance has not commented on the attribution.",
    "also_covered_by": [
     {
      "outlet": "e24",
@@ -140,8 +145,153 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "breakit",
+     "outlet_name": "Breakit",
+     "url": "https://breakit.se/artikel/47878/gigantisk-kryptostold-misstankarna-pekar-mot-nordkorea",
+     "title": "Gigantisk kryptostöld – misstankarna pekar mot Nordkorea",
+     "published": "2026-10-30T07:05:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/a/74-20254346?origin=rss",
+     "title": "Kryptovaluuttapörssi Binance joutui hakkeroinnin kohteeksi – CNN: Jäljet johtavat Pohjois-Koreaan",
+     "published": "2026-10-30T19:28:44+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/uutiset/lyhyesti/74-20254346",
+     "title": "CNN: Pohjois-Korea todennäköisesti Binancen kryptovaluutta­varkauden takana",
+     "published": "2026-10-30T19:28:44+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "verkkouutiset",
+     "outlet_name": "Verkkouutiset",
+     "url": "https://verkkouutiset.fi/a/jattimainen-kryptosaalis-voi-paatya-pohjois-korean-aseohjelmaan",
+     "title": "Jättimäinen kryptosaalis voi päätyä Pohjois-Korean aseohjelmaan",
+     "published": "2026-10-30T16:42:20+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "efn.se",
+     "outlet_name": "efn",
+     "url": "https://efn.se/fbi-inkopplat-i-katt-och-ratta-lek-efter-kryptokuppen",
+     "title": "FBI inkopplat i ”katt och råtta-lek” efter kryptokuppen",
+     "published": "2026-10-30T21:37:38+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "tv2",
+     "outlet_name": "TV 2",
+     "url": "https://tv2.no/nyheter/dette-skjer-med-pengene-na-da-er-de-borte/19376498",
+     "title": "Dette skjer med pengene nå: – Da er de borte",
+     "published": "2026-10-30T10:24:41+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "computersweden.se",
+     "outlet_name": "Computer Sweden",
+     "url": "https://computersweden.se/article/4242646/nordkoreanska-hackare-har-stulit-miljarder-fran-kryptoborsen-binance.html",
+     "title": "Nordkoreanska hackare har stulit miljarder från kryptobörsen Binance",
+     "published": "2026-10-30T09:10:23+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "hufvudstadsbladet",
+     "outlet_name": "Hufvudstadsbladet",
+     "url": "https://hbl.fi/ekonomi/stal-6-miljarder-pa-20-minuter-nordkorea-pekas-ut",
+     "title": "Stal 6 miljarder på 20 minuter – Nordkorea pekas ut",
+     "published": "2026-10-30T06:08:45+00:00",
+     "lang": "Swedish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": true
     }
-   ]
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-31T04:50:00+01:00",
+   "primary_source": {
+    "name": "TRM Labs – North Korea steals USD 6.36 billion from Binance",
+    "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+   },
+   "title_i18n": {
+    "nn": "Analyseselskap knyter Binance-hackinga til nordkoreanske Lazarus",
+    "sv": "Analysbolag kopplar Binance-attacken till nordkoreanska Lazarus",
+    "da": "Analysefirmaer forbinder Binance-hackerangrebet med nordkoreanske Lazarus",
+    "fi": "Analyysiyhtiöt yhdistävät Binancen hakkeroinnin Pohjois-Korean Lazarus-ryhmään",
+    "is": "Greiningarfyrirtæki tengja árásina á Binance við norðurkóreska hópinn Lazarus",
+    "zh": "分析公司将币安黑客事件与朝鲜Lazarus组织联系起来",
+    "hi": "विश्लेषण फर्मों ने Binance हैक को उत्तर कोरिया के Lazarus समूह से जोड़ा",
+    "es": "Firmas de análisis vinculan el hackeo de Binance con el grupo norcoreano Lazarus",
+    "fr": "Des sociétés d'analyse relient le piratage de Binance au groupe nord-coréen Lazarus",
+    "ar": "شركات تحليل تربط اختراق بينانس بمجموعة لازاروس الكورية الشمالية",
+    "bn": "বিশ্লেষণ সংস্থাগুলি Binance হ্যাককে উত্তর কোরিয়ার Lazarus গোষ্ঠীর সঙ্গে যুক্ত করছে",
+    "pt": "Empresas de análise associam o ataque à Binance ao grupo norte-coreano Lazarus",
+    "ru": "Аналитические компании связывают взлом Binance с северокорейской группой Lazarus",
+    "ur": "تجزیاتی کمپنیوں نے بائنانس ہیک کو شمالی کوریا کے لازارس گروپ سے جوڑا",
+    "id": "Firma analitik kaitkan peretasan Binance dengan kelompok Lazarus Korea Utara",
+    "de": "Analysefirmen bringen Binance-Hack mit nordkoreanischer Lazarus-Gruppe in Verbindung",
+    "ja": "分析企業、バイナンスへのハッキングを北朝鮮のラザルスと関連付け",
+    "sw": "Kampuni za uchambuzi zahusisha udukuzi wa Binance na kundi la Lazarus la Korea Kaskazini",
+    "mr": "विश्लेषण कंपन्यांनी Binance हॅकचा संबंध उत्तर कोरियाच्या Lazarus गटाशी जोडला",
+    "fa": "شرکت‌های تحلیلی هک بایننس را به گروه لازاروس کره شمالی مرتبط می‌دانند",
+    "uk": "Аналітичні компанії пов'язують злам Binance з північнокорейським угрупованням Lazarus",
+    "tr": "Analiz şirketleri Binance saldırısını Kuzey Kore'nin Lazarus grubuyla ilişkilendiriyor"
+   },
+   "title_i18n_source": "Nord-Korea får skylden etter milliardkupp",
+   "summary_i18n": {
+    "nn": "Analyseselskapa TRM Labs og Chainalysis knyter tjuveriet av om lag 6,3 milliardar amerikanske dollar frå Binance til den nordkoreanske gruppa Lazarus, også kjend som TraderTraitor. TRM Labs seier at mesteparten av midlane vart flytta ut i løpet av om lag 20 minutt, og Chainalysis seier at selskapet har stor tiltru til vurderinga si. FBI er involvert i etterforskinga, men har ikkje sjølv peika ut kven som står bak, og Binance har ikkje kommentert koplinga.",
+    "nb": "Analyseselskapene TRM Labs og Chainalysis knytter tyveriet av om lag 6,3 milliarder amerikanske dollar fra Binance til den nordkoreanske gruppen Lazarus, også kjent som TraderTraitor. TRM Labs sier at mesteparten av midlene ble flyttet ut i løpet av om lag 20 minutter, og Chainalysis sier at selskapet har stor tiltro til vurderingen sin. FBI er involvert i etterforskningen, men har ikke selv pekt ut hvem som står bak, og Binance har ikke kommentert koblingen.",
+    "sv": "Analysbolagen TRM Labs och Chainalysis kopplar stölden av omkring 6,3 miljarder amerikanska dollar från Binance till den nordkoreanska gruppen Lazarus, även känd som TraderTraitor. TRM Labs uppger att merparten av medlen flyttades ut inom omkring 20 minuter, och Chainalysis säger att bolaget har stort förtroende för sin bedömning. FBI deltar i utredningen men har inte själv pekat ut någon gärningsman, och Binance har inte kommenterat kopplingen.",
+    "da": "Analysefirmaerne TRM Labs og Chainalysis forbinder tyveriet af omkring 6,3 milliarder amerikanske dollar fra Binance med den nordkoreanske gruppe Lazarus, også kendt som TraderTraitor. TRM Labs oplyser, at størstedelen af midlerne blev flyttet ud inden for omkring 20 minutter, og Chainalysis siger, at firmaet har stor tillid til sin vurdering. FBI deltager i efterforskningen, men har ikke selv udpeget en gerningsmand, og Binance har ikke kommenteret forbindelsen.",
+    "fi": "Analyysiyhtiöt TRM Labs ja Chainalysis yhdistävät noin 6,3 miljardin Yhdysvaltain dollarin varkauden Binancelta Pohjois-Korean Lazarus-ryhmään, joka tunnetaan myös nimellä TraderTraitor. TRM Labsin mukaan suurin osa varoista siirrettiin pois noin 20 minuutissa, ja Chainalysis sanoo luottavansa arvioonsa vahvasti. FBI osallistuu tutkintaan, mutta ei ole itse nimennyt tekijää, eikä Binance ole kommentoinut yhteyttä.",
+    "is": "Greiningarfyrirtækin TRM Labs og Chainalysis tengja þjófnaðinn á um 6,3 milljörðum Bandaríkjadala frá Binance við norðurkóreska hópinn Lazarus, einnig þekktan sem TraderTraitor. TRM Labs segir að megnið af fénu hafi verið flutt út á um 20 mínútum og Chainalysis segist bera mikið traust til mats síns. FBI tekur þátt í rannsókninni en hefur sjálf ekki eignað neinum árásina og Binance hefur ekki tjáð sig um tenginguna.",
+    "zh": "区块链分析公司TRM Labs和Chainalysis将币安约63亿美元被盗事件与朝鲜Lazarus组织（又称TraderTraitor）联系起来。TRM Labs称大部分资金在约20分钟内被转出，Chainalysis表示对其判断有很高信心。美国联邦调查局参与了调查，但尚未自行认定攻击者，币安也未就这一归因发表评论。",
+    "hi": "ब्लॉकचेन विश्लेषण फर्म TRM Labs और Chainalysis ने Binance से लगभग 6.3 अरब अमेरिकी डॉलर की चोरी को उत्तर कोरिया के Lazarus समूह से जोड़ा है, जिसे TraderTraitor भी कहा जाता है। TRM Labs के अनुसार अधिकांश धन लगभग 20 मिनट में बाहर ले जाया गया, और Chainalysis का कहना है कि उसे अपने आकलन पर उच्च भरोसा है। FBI जांच में शामिल है, लेकिन उसने स्वयं हमले का ज़िम्मेदार किसी को नहीं ठहराया है, और Binance ने इस संबंध पर टिप्पणी नहीं की है।",
+    "es": "Las firmas de análisis de blockchain TRM Labs y Chainalysis vinculan el robo de unos 6.300 millones de dólares estadounidenses a Binance con el grupo norcoreano Lazarus, también conocido como TraderTraitor. TRM Labs afirma que la mayor parte de los fondos se sacó en unos 20 minutos, y Chainalysis dice tener una alta confianza en su evaluación. El FBI participa en la investigación, pero no ha atribuido el ataque por sí mismo, y Binance no ha comentado la atribución.",
+    "fr": "Les sociétés d'analyse de blockchain TRM Labs et Chainalysis relient le vol d'environ 6,3 milliards de dollars américains chez Binance au groupe nord-coréen Lazarus, aussi appelé TraderTraitor. Selon TRM Labs, l'essentiel des fonds a été transféré en une vingtaine de minutes, et Chainalysis se dit très confiante dans son évaluation. Le FBI participe à l'enquête mais n'a pas lui-même attribué l'attaque, et Binance n'a pas commenté cette attribution.",
+    "ar": "تربط شركتا تحليل سلاسل الكتل TRM Labs وChainalysis سرقة نحو 6.3 مليار دولار أمريكي من بينانس بمجموعة لازاروس الكورية الشمالية، المعروفة أيضًا باسم TraderTraitor. وتقول TRM Labs إن معظم الأموال نُقلت خلال نحو 20 دقيقة، فيما تقول Chainalysis إنها على ثقة عالية بتقييمها. ويشارك مكتب التحقيقات الفيدرالي في التحقيق لكنه لم ينسب الهجوم بنفسه إلى أي جهة، ولم تعلّق بينانس على هذا الربط.",
+    "bn": "ব্লকচেইন বিশ্লেষণ সংস্থা TRM Labs ও Chainalysis Binance থেকে প্রায় ৬.৩ বিলিয়ন মার্কিন ডলার চুরির ঘটনাকে উত্তর কোরিয়ার Lazarus গোষ্ঠীর (TraderTraitor নামেও পরিচিত) সঙ্গে যুক্ত করছে। TRM Labs বলছে, বেশিরভাগ অর্থ প্রায় ২০ মিনিটের মধ্যে সরিয়ে নেওয়া হয়, আর Chainalysis জানিয়েছে তারা নিজেদের মূল্যায়নে অত্যন্ত আস্থাশীল। FBI তদন্তে যুক্ত থাকলেও নিজে হামলার দায় কারও ওপর চাপায়নি, এবং Binance এ বিষয়ে মন্তব্য করেনি।",
+    "pt": "As empresas de análise de blockchain TRM Labs e Chainalysis associam o roubo de cerca de 6,3 mil milhões de dólares americanos à Binance ao grupo norte-coreano Lazarus, também conhecido como TraderTraitor. A TRM Labs diz que a maior parte dos fundos foi retirada em cerca de 20 minutos, e a Chainalysis afirma ter elevada confiança na sua avaliação. O FBI participa na investigação mas não atribuiu ele próprio o ataque, e a Binance não comentou a atribuição.",
+    "ru": "Аналитические компании TRM Labs и Chainalysis связывают кражу около 6,3 млрд долларов США у Binance с северокорейской группой Lazarus, известной также как TraderTraitor. По данным TRM Labs, большая часть средств была выведена примерно за 20 минут, а Chainalysis заявляет о высокой уверенности в своей оценке. ФБР участвует в расследовании, но само не установило причастность какой-либо стороны, а Binance не комментировала эту версию.",
+    "ur": "بلاک چین تجزیاتی کمپنیاں TRM Labs اور Chainalysis بائنانس سے تقریباً 6.3 ارب امریکی ڈالر کی چوری کو شمالی کوریا کے لازارس گروپ سے جوڑ رہی ہیں، جسے TraderTraitor بھی کہا جاتا ہے۔ TRM Labs کے مطابق زیادہ تر رقم تقریباً 20 منٹ میں منتقل کی گئی، اور Chainalysis کا کہنا ہے کہ اسے اپنے جائزے پر زیادہ اعتماد ہے۔ ایف بی آئی تحقیقات میں شامل ہے لیکن اس نے خود حملے کی ذمہ داری کسی پر عائد نہیں کی، اور بائنانس نے اس تعلق پر تبصرہ نہیں کیا۔",
+    "id": "Firma analitik blockchain TRM Labs dan Chainalysis mengaitkan pencurian sekitar 6,3 miliar dolar AS dari Binance dengan kelompok Lazarus Korea Utara, yang juga dikenal sebagai TraderTraitor. TRM Labs mengatakan sebagian besar dana dipindahkan dalam sekitar 20 menit, dan Chainalysis menyatakan sangat yakin dengan penilaiannya. FBI terlibat dalam penyelidikan tetapi belum menetapkan sendiri pelakunya, dan Binance belum berkomentar soal atribusi itu.",
+    "de": "Die Blockchain-Analysefirmen TRM Labs und Chainalysis bringen den Diebstahl von rund 6,3 Milliarden US-Dollar bei Binance mit der nordkoreanischen Gruppe Lazarus, auch bekannt als TraderTraitor, in Verbindung. Laut TRM Labs wurde der Großteil der Mittel innerhalb von etwa 20 Minuten abgezogen, und Chainalysis gibt an, großes Vertrauen in seine Einschätzung zu haben. Das FBI ist an den Ermittlungen beteiligt, hat den Angriff aber nicht selbst zugeordnet, und Binance hat sich zur Zuordnung nicht geäußert.",
+    "ja": "ブロックチェーン分析企業のTRM LabsとChainalysisは、バイナンスから約63億米ドルが盗まれた事件を、TraderTraitorとも呼ばれる北朝鮮のラザルスと関連付けている。TRM Labsによると資金の大半は約20分で持ち出され、Chainalysisは自社の評価に高い確信を持っているとしている。FBIは捜査に関与しているが、自ら攻撃者を特定してはおらず、バイナンスもこの関連付けについてコメントしていない。",
+    "sw": "Kampuni za uchambuzi wa blockchain TRM Labs na Chainalysis zinahusisha wizi wa takriban dola bilioni 6.3 za Marekani kutoka Binance na kundi la Lazarus la Korea Kaskazini, linalojulikana pia kama TraderTraitor. TRM Labs inasema sehemu kubwa ya fedha ilihamishwa ndani ya takriban dakika 20, na Chainalysis inasema ina imani kubwa na tathmini yake. FBI inashiriki katika uchunguzi lakini yenyewe haijamtaja aliyehusika na shambulio, na Binance haijatoa maoni kuhusu uhusishaji huo.",
+    "mr": "ब्लॉकचेन विश्लेषण कंपन्या TRM Labs आणि Chainalysis यांनी Binance मधून सुमारे 6.3 अब्ज अमेरिकी डॉलरच्या चोरीचा संबंध उत्तर कोरियाच्या Lazarus गटाशी (TraderTraitor म्हणूनही ओळखला जातो) जोडला आहे. TRM Labs नुसार बहुतांश निधी सुमारे 20 मिनिटांत बाहेर हलवला गेला, आणि Chainalysis ला आपल्या मूल्यांकनावर उच्च विश्वास असल्याचे ती सांगते. FBI तपासात सहभागी आहे पण तिने स्वतः हल्ल्याचा दोष कोणावर ठेवलेला नाही, आणि Binance ने या संबंधावर भाष्य केलेले नाही.",
+    "fa": "شرکت‌های تحلیل بلاک‌چین TRM Labs و Chainalysis سرقت حدود ۶٫۳ میلیارد دلار آمریکا از بایننس را به گروه لازاروس کره شمالی، که با نام TraderTraitor نیز شناخته می‌شود، مرتبط می‌دانند. TRM Labs می‌گوید بیشتر وجوه در حدود ۲۰ دقیقه خارج شد و Chainalysis می‌گوید به ارزیابی خود اطمینان بالایی دارد. اف‌بی‌آی در تحقیقات مشارکت دارد اما خود حمله را به کسی نسبت نداده است و بایننس نیز درباره این انتساب اظهارنظر نکرده است.",
+    "uk": "Аналітичні компанії TRM Labs і Chainalysis пов'язують крадіжку близько 6,3 млрд доларів США з Binance з північнокорейським угрупованням Lazarus, відомим також як TraderTraitor. За даними TRM Labs, більшість коштів було виведено приблизно за 20 хвилин, а Chainalysis заявляє про високу впевненість у своїй оцінці. ФБР бере участь у розслідуванні, але саме не встановило причетність будь-кого, а Binance не коментувала цю версію.",
+    "tr": "Blokzincir analiz şirketleri TRM Labs ve Chainalysis, Binance'ten yaklaşık 6,3 milyar ABD dolarının çalınmasını TraderTraitor olarak da bilinen Kuzey Koreli Lazarus grubuyla ilişkilendiriyor. TRM Labs, fonların büyük kısmının yaklaşık 20 dakika içinde çıkarıldığını söylüyor; Chainalysis ise değerlendirmesine yüksek düzeyde güvendiğini belirtiyor. FBI soruşturmaya dahil olsa da saldırıyı kendisi kimseye atfetmedi, Binance de bu ilişkilendirme hakkında yorum yapmadı."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "d642a77b5362",
@@ -167,9 +317,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "1fb615cac80c",
@@ -195,7 +346,7 @@
     "\\bkryptovaluutta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -209,7 +360,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "502debd2bb3a",
@@ -234,10 +386,11 @@
     "\\bkryptovaluutta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "1fb615cac80c",
-   "possible_duplicate_reason": "same institution, same day"
+   "possible_duplicate_reason": "same institution, same day",
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "13224d5232da",
@@ -262,8 +415,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "2f34e635762a",
@@ -287,7 +441,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -301,7 +455,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "fb6e7079391b",
@@ -326,8 +481,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "6c71728f9b31",
@@ -352,8 +508,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "84e0a3dde666",
@@ -379,7 +536,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -393,7 +550,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "c5a8c89437d4",
@@ -418,8 +576,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "9e70d67598d6",
@@ -445,10 +604,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "possible_duplicate_of": "424500e04171",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "reject_reason": "Price story. researcher 31.10"
   },
   {
    "id": "2ce4b30e56a0",
@@ -474,8 +634,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "a31502845b83",
@@ -500,8 +661,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "54a4078cfa97",
@@ -526,8 +688,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "296fda2a37b2",
@@ -551,8 +714,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "5daa28c853be"
   },
   {
    "id": "424500e04171",
@@ -576,8 +740,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "5a863a080e9b",
@@ -601,8 +766,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "59c637468d39",
@@ -626,8 +792,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "26eeb99187bc",
@@ -652,8 +819,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "b61a72bb8333",
@@ -678,8 +846,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "073a538cb0db",
@@ -705,7 +874,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e5a90ecb5d7e",
    "possible_duplicate_reason": "rare headline word",
@@ -743,7 +912,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "a42fd022545b",
@@ -767,7 +937,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -781,7 +951,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "38e08f64d76d",
@@ -806,10 +977,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "dd9efe763b0e",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "649ed6814109",
@@ -833,7 +1005,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -847,7 +1019,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "fb407a1abdb3",
@@ -871,9 +1044,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "19b31c3216d7",
@@ -897,8 +1071,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "e433f05b717e",
@@ -923,8 +1098,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "fdabd6ba6059",
@@ -949,7 +1125,7 @@
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -963,7 +1139,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "92b58e858430",
@@ -988,10 +1165,11 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "2ce4b30e56a0",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "c8369ae52b6e",
@@ -1015,14 +1193,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "821ef96a53e2",
    "url": "https://hurbra.se/coinbase-rapport-q3-2026",
    "title": "Coinbase rapport Q3 2026: Kryptovinster lyfter resultatet",
-   "title_en": null,
+   "title_en": "Coinbase reports third-quarter net income of 719 million dollars, mostly from crypto gains",
    "source": "hurbra.se",
    "source_name": "hurbra",
    "country": "SE",
@@ -1034,14 +1213,72 @@
    "published": "2026-10-30T06:17:37+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
    "topics": [
-    "crypto"
+    "business",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Coinbase reported net income of 718.7 million US dollars for the third quarter of 2026, up from 432.6 million a year earlier. About 715 million dollars of that came from gains on crypto assets the company holds as investments. Total revenue fell 35 percent from a year earlier to about 1.22 billion dollars.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-31T04:50:00+01:00",
+   "primary_source": {
+    "name": "Coinbase Global – Form 10-Q, Q3 2026 (SEC)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm"
+   },
+   "title_i18n": {
+    "nn": "Coinbase melder om eit resultat på 719 millionar dollar i tredje kvartal, mest frå kryptogevinstar",
+    "nb": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
+    "da": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
+    "fi": "Coinbasen kolmannen neljänneksen tulos 719 miljoonaa dollaria, enimmäkseen kryptovoitoista",
+    "is": "Coinbase skilar 719 milljóna dala hagnaði á þriðja ársfjórðungi, mest af rafmyntahagnaði",
+    "zh": "Coinbase第三季度净利润7.19亿美元，主要来自加密资产收益",
+    "hi": "Coinbase का तीसरी तिमाही का शुद्ध लाभ 71.9 करोड़ डॉलर, ज़्यादातर क्रिप्टो लाभ से",
+    "es": "Coinbase registra un beneficio neto de 719 millones de dólares en el tercer trimestre, sobre todo por ganancias en cripto",
+    "fr": "Coinbase affiche un bénéfice net de 719 millions de dollars au troisième trimestre, surtout grâce aux gains crypto",
+    "ar": "كوين بيس تعلن صافي دخل 719 مليون دولار في الربع الثالث معظمه من مكاسب العملات المشفرة",
+    "bn": "তৃতীয় প্রান্তিকে Coinbase-এর নিট আয় ৭১৯ মিলিয়ন ডলার, বেশিরভাগই ক্রিপ্টো লাভ থেকে",
+    "pt": "Coinbase regista lucro líquido de 719 milhões de dólares no terceiro trimestre, sobretudo com ganhos em cripto",
+    "ru": "Чистая прибыль Coinbase в третьем квартале составила 719 млн долларов, в основном за счёт криптоактивов",
+    "ur": "کوائن بیس کی تیسری سہ ماہی کی خالص آمدنی 71 کروڑ 90 لاکھ ڈالر، زیادہ تر کرپٹو منافع سے",
+    "id": "Coinbase laporkan laba bersih kuartal ketiga 719 juta dolar, sebagian besar dari keuntungan kripto",
+    "de": "Coinbase meldet Quartalsgewinn von 719 Millionen Dollar, überwiegend aus Krypto-Gewinnen",
+    "ja": "コインベース、第3四半期純利益7億1900万ドル　大半は暗号資産の評価益",
+    "sw": "Coinbase yaripoti faida halisi ya dola milioni 719 robo ya tatu, nyingi kutoka faida za kripto",
+    "mr": "Coinbase चा तिसऱ्या तिमाहीतील निव्वळ नफा 71.9 कोटी डॉलर, बहुतांश क्रिप्टो नफ्यातून",
+    "fa": "سود خالص ۷۱۹ میلیون دلاری کوین‌بیس در سه‌ماهه سوم، عمدتاً از سود رمزارزها",
+    "uk": "Чистий прибуток Coinbase у третьому кварталі — 719 млн доларів, переважно завдяки криптоактивам",
+    "tr": "Coinbase üçüncü çeyrekte çoğu kripto kazançlarından gelen 719 milyon dolar net kâr açıkladı"
+   },
+   "title_i18n_source": "Coinbase rapport Q3 2026: Kryptovinster lyfter resultatet",
+   "summary_i18n": {
+    "nn": "Coinbase melde om eit nettoresultat på 718,7 millionar amerikanske dollar for tredje kvartal 2026, opp frå 432,6 millionar året før. Om lag 715 millionar dollar av dette kom frå gevinst på kryptoaktiva som selskapet held som investering. Dei samla inntektene fall med 35 prosent frå året før, til om lag 1,22 milliardar dollar.",
+    "nb": "Coinbase meldte om et nettoresultat på 718,7 millioner amerikanske dollar for tredje kvartal 2026, opp fra 432,6 millioner året før. Om lag 715 millioner dollar av dette kom fra gevinst på kryptoaktiva som selskapet holder som investering. De samlede inntektene falt med 35 prosent fra året før, til om lag 1,22 milliarder dollar.",
+    "sv": "Coinbase redovisade ett nettoresultat på 718,7 miljoner amerikanska dollar för tredje kvartalet 2026, upp från 432,6 miljoner året innan. Omkring 715 miljoner dollar av detta kom från vinster på kryptotillgångar som bolaget innehar som investering. De totala intäkterna sjönk med 35 procent jämfört med året innan, till omkring 1,22 miljarder dollar.",
+    "da": "Coinbase rapporterede et nettoresultat på 718,7 millioner amerikanske dollar for tredje kvartal 2026, op fra 432,6 millioner året før. Omkring 715 millioner dollar heraf kom fra gevinster på kryptoaktiver, som selskabet ejer som investering. Den samlede omsætning faldt 35 procent i forhold til året før til omkring 1,22 milliarder dollar.",
+    "fi": "Coinbasen nettotulos vuoden 2026 kolmannella neljänneksellä oli 718,7 miljoonaa Yhdysvaltain dollaria, kun se vuotta aiemmin oli 432,6 miljoonaa. Noin 715 miljoonaa dollaria tästä tuli sijoituksina pidettyjen kryptovarojen voitoista. Kokonaisliikevaihto laski 35 prosenttia vuodentakaisesta noin 1,22 miljardiin dollariin.",
+    "is": "Coinbase skilaði 718,7 milljóna Bandaríkjadala hreinum hagnaði á þriðja ársfjórðungi 2026, samanborið við 432,6 milljónir ári fyrr. Um 715 milljónir dala af því komu frá hagnaði af rafmyntum sem félagið á sem fjárfestingu. Heildartekjur lækkuðu um 35 prósent frá fyrra ári í um 1,22 milljarða dala.",
+    "zh": "Coinbase公布2026年第三季度净利润为7.187亿美元，高于上年同期的4.326亿美元。其中约7.15亿美元来自公司作为投资持有的加密资产收益。总收入同比下降35%，至约12.2亿美元。",
+    "hi": "Coinbase ने 2026 की तीसरी तिमाही में 71.87 करोड़ अमेरिकी डॉलर का शुद्ध लाभ दर्ज किया, जो एक साल पहले 43.26 करोड़ डॉलर था। इसमें से लगभग 71.5 करोड़ डॉलर कंपनी के निवेश के रूप में रखे क्रिप्टो एसेट पर लाभ से आए। कुल राजस्व एक साल पहले की तुलना में 35 प्रतिशत घटकर लगभग 1.22 अरब डॉलर रह गया।",
+    "es": "Coinbase registró un beneficio neto de 718,7 millones de dólares estadounidenses en el tercer trimestre de 2026, frente a 432,6 millones un año antes. Unos 715 millones de esa cifra procedieron de ganancias en criptoactivos que la empresa mantiene como inversión. Los ingresos totales cayeron un 35 % interanual, hasta unos 1.220 millones de dólares.",
+    "fr": "Coinbase a publié un bénéfice net de 718,7 millions de dollars américains pour le troisième trimestre 2026, contre 432,6 millions un an plus tôt. Environ 715 millions de dollars proviennent de gains sur les cryptoactifs que l'entreprise détient comme investissement. Le chiffre d'affaires total a reculé de 35 % sur un an, à environ 1,22 milliard de dollars.",
+    "ar": "أعلنت كوين بيس صافي دخل قدره 718.7 مليون دولار أمريكي للربع الثالث من 2026، مقارنة بـ432.6 مليون قبل عام. وجاء نحو 715 مليون دولار من ذلك من مكاسب على أصول مشفرة تحتفظ بها الشركة كاستثمار. وتراجعت الإيرادات الإجمالية بنسبة 35 في المئة على أساس سنوي إلى نحو 1.22 مليار دولار.",
+    "bn": "Coinbase ২০২৬ সালের তৃতীয় প্রান্তিকে ৭১৮.৭ মিলিয়ন মার্কিন ডলার নিট আয় জানিয়েছে, যা এক বছর আগে ছিল ৪৩২.৬ মিলিয়ন। এর মধ্যে প্রায় ৭১৫ মিলিয়ন ডলার এসেছে কোম্পানির বিনিয়োগ হিসেবে রাখা ক্রিপ্টো সম্পদের লাভ থেকে। মোট আয় আগের বছরের তুলনায় ৩৫ শতাংশ কমে প্রায় ১.২২ বিলিয়ন ডলারে দাঁড়িয়েছে।",
+    "pt": "A Coinbase registou um lucro líquido de 718,7 milhões de dólares americanos no terceiro trimestre de 2026, face a 432,6 milhões um ano antes. Cerca de 715 milhões de dólares vieram de ganhos em criptoativos que a empresa detém como investimento. As receitas totais caíram 35 % em termos homólogos, para cerca de 1,22 mil milhões de dólares.",
+    "ru": "Coinbase сообщила о чистой прибыли в размере 718,7 млн долларов США за третий квартал 2026 года против 432,6 млн годом ранее. Около 715 млн долларов из этой суммы пришлось на доход от криптоактивов, которые компания держит в качестве инвестиций. Общая выручка сократилась на 35% в годовом выражении, примерно до 1,22 млрд долларов.",
+    "ur": "کوائن بیس نے 2026 کی تیسری سہ ماہی میں 71 کروڑ 87 لاکھ امریکی ڈالر کی خالص آمدنی ظاہر کی، جو ایک سال پہلے 43 کروڑ 26 لاکھ ڈالر تھی۔ اس میں سے تقریباً 71 کروڑ 50 لاکھ ڈالر کمپنی کے سرمایہ کاری کے طور پر رکھے گئے کرپٹو اثاثوں پر منافع سے آئے۔ کل آمدنی گزشتہ سال کے مقابلے میں 35 فیصد کم ہو کر تقریباً 1.22 ارب ڈالر رہ گئی۔",
+    "id": "Coinbase melaporkan laba bersih 718,7 juta dolar AS untuk kuartal ketiga 2026, naik dari 432,6 juta setahun sebelumnya. Sekitar 715 juta dolar di antaranya berasal dari keuntungan aset kripto yang dimiliki perusahaan sebagai investasi. Total pendapatan turun 35 persen dibanding tahun sebelumnya menjadi sekitar 1,22 miliar dolar.",
+    "de": "Coinbase meldete für das dritte Quartal 2026 einen Nettogewinn von 718,7 Millionen US-Dollar nach 432,6 Millionen ein Jahr zuvor. Rund 715 Millionen Dollar davon stammten aus Gewinnen auf Krypto-Vermögenswerte, die das Unternehmen als Investition hält. Der Gesamtumsatz sank gegenüber dem Vorjahr um 35 Prozent auf rund 1,22 Milliarden Dollar.",
+    "ja": "コインベースは2026年第3四半期の純利益が7億1870万米ドルだったと発表した。前年同期は4億3260万ドルだった。このうち約7億1500万ドルは、同社が投資として保有する暗号資産の利益によるものだった。総収益は前年同期比35％減の約12億2000万ドルだった。",
+    "sw": "Coinbase iliripoti faida halisi ya dola milioni 718.7 za Marekani kwa robo ya tatu ya 2026, kutoka milioni 432.6 mwaka uliotangulia. Takriban dola milioni 715 kati ya hizo zilitokana na faida ya mali za kripto ambazo kampuni inazishikilia kama uwekezaji. Mapato yote yalishuka kwa asilimia 35 ikilinganishwa na mwaka uliopita hadi takriban dola bilioni 1.22.",
+    "mr": "Coinbase ने 2026 च्या तिसऱ्या तिमाहीत 71.87 कोटी अमेरिकी डॉलरचा निव्वळ नफा नोंदवला, जो वर्षभरापूर्वी 43.26 कोटी डॉलर होता. यापैकी सुमारे 71.5 कोटी डॉलर कंपनीने गुंतवणूक म्हणून ठेवलेल्या क्रिप्टो मालमत्तेवरील नफ्यातून आले. एकूण महसूल वर्षभरापूर्वीच्या तुलनेत 35 टक्क्यांनी घटून सुमारे 1.22 अब्ज डॉलर झाला.",
+    "fa": "کوین‌بیس برای سه‌ماهه سوم ۲۰۲۶ سود خالص ۷۱۸٫۷ میلیون دلار آمریکا گزارش کرد که یک سال پیش‌تر ۴۳۲٫۶ میلیون بود. حدود ۷۱۵ میلیون دلار از این رقم از سود دارایی‌های رمزارزی به دست آمد که شرکت به‌عنوان سرمایه‌گذاری نگه می‌دارد. کل درآمد نسبت به سال قبل ۳۵ درصد کاهش یافت و به حدود ۱٫۲۲ میلیارد دلار رسید.",
+    "uk": "Coinbase повідомила про чистий прибуток 718,7 млн доларів США за третій квартал 2026 року проти 432,6 млн роком раніше. Близько 715 млн доларів із цієї суми припало на прибуток від криптоактивів, які компанія тримає як інвестиції. Загальна виручка скоротилася на 35% у річному вимірі, приблизно до 1,22 млрд доларів.",
+    "tr": "Coinbase, 2026'nın üçüncü çeyreğinde bir yıl önceki 432,6 milyon dolara karşılık 718,7 milyon ABD doları net kâr açıkladı. Bunun yaklaşık 715 milyon doları, şirketin yatırım olarak tuttuğu kripto varlıklardan elde edilen kazançlardan geldi. Toplam gelir bir önceki yıla göre yüzde 35 düşerek yaklaşık 1,22 milyar dolara geriledi."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "e5a90ecb5d7e",
@@ -1068,7 +1305,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -1104,7 +1341,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "900b1719644d",
@@ -1128,8 +1366,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "38171320ad2f",
@@ -1154,8 +1393,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "790542ad6bb6",
@@ -1180,8 +1420,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "4455dbe071d1",
@@ -1206,10 +1447,11 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e5a90ecb5d7e",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "96e3e9ee3c32",
@@ -1233,8 +1475,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "91fe513d3619",
@@ -1258,7 +1501,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e433f05b717e",
    "possible_duplicate_reason": "rare headline word",
@@ -1274,7 +1517,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "07f137e30c60",
@@ -1299,8 +1543,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "29a402a46e8f",
@@ -1324,10 +1569,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e5a90ecb5d7e",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "585b6c77d686",
@@ -1352,8 +1598,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "08f0770958db",
@@ -1378,7 +1625,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "2ce4b30e56a0",
    "possible_duplicate_reason": "rare headline word",
@@ -1394,7 +1641,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "c112fb864a90",
@@ -1418,10 +1666,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e433f05b717e",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "cf192043e9d7",
@@ -1447,8 +1696,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price story. researcher 31.10"
   },
   {
    "id": "7e2b2d8694b4",
@@ -1472,8 +1722,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "cb9763f6cbaa",
@@ -1497,7 +1748,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e5a90ecb5d7e",
    "possible_duplicate_reason": "rare headline word",
@@ -1524,7 +1775,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "03750a4b98ca",
@@ -1669,8 +1921,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "3997074e461e",
@@ -1815,15 +2068,16 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Token price analysis (trading angle). researcher 31.10"
   },
   {
    "id": "dd9efe763b0e",
    "url": "https://kaupr.io/nyheter/norsk-justisminister-og-svenske-tech-eksperter-bekymret",
    "title": "Norsk justisminister og svenske tech-eksperter bekymret",
-   "title_en": null,
+   "title_en": "Norwegian justice minister and Swedish experts concerned after Binance hack",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -1835,15 +2089,97 @@
    "published": "2026-10-30",
    "fetched": "2026-10-31T02:45:22+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "regulation"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Norway's Minister of Justice and Public Security, Astri Aas-Hansen, told Aftenposten and NTB that the Binance theft shows that cybersecurity can in the most serious cases be a matter of public security, and pointed to the government's proposal to strengthen the Norwegian National Security Authority (NSM). Niklas Arvidsson, a professor at KTH Royal Institute of Technology, told SvD that crypto exchanges lack the safeguards of the banking system, such as deposit guarantees and financial supervision. Journalists at TV4 and Dagens Industri said the incident damages trust in the system as a whole.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "aftenposten",
+     "outlet_name": "Aftenposten",
+     "url": "https://aftenposten.no/okonomi/i/4OPwJE/justisministeren-bekymret-for-stort-kryptotyveri",
+     "title": "Justisministeren bekymret for stort kryptotyveri",
+     "published": "2026-10-30T07:40:57+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "vg",
+     "outlet_name": "VG",
+     "url": "https://vg.no/nyheter/i/GrV9VJ/tidenes-stoerste-kryptotyveri-jeg-er-bekymret",
+     "title": "Tidenes største kryptotyveri: –⁠ Jeg er bekymret",
+     "published": "2026-10-30T09:07:21+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-10-31T04:50:00+01:00",
+   "primary_source": {
+    "name": "Aftenposten",
+    "url": "https://aftenposten.no/okonomi/i/4OPwJE/justisministeren-bekymret-for-stort-kryptotyveri"
+   },
+   "title_i18n": {
+    "nn": "Justisministeren og svenske ekspertar uroa etter Binance-hackinga",
+    "sv": "Norges justitieminister och svenska experter oroade efter Binance-attacken",
+    "da": "Norges justitsminister og svenske eksperter bekymrede efter Binance-hackerangrebet",
+    "fi": "Norjan oikeusministeri ja ruotsalaiset asiantuntijat huolissaan Binancen hakkeroinnista",
+    "is": "Dómsmálaráðherra Noregs og sænskir sérfræðingar áhyggjufull eftir árásina á Binance",
+    "zh": "币安遭黑客攻击后，挪威司法大臣和瑞典专家表示担忧",
+    "hi": "Binance हैक के बाद नॉर्वे की न्याय मंत्री और स्वीडिश विशेषज्ञ चिंतित",
+    "es": "La ministra de Justicia noruega y expertos suecos, preocupados tras el hackeo de Binance",
+    "fr": "La ministre norvégienne de la Justice et des experts suédois inquiets après le piratage de Binance",
+    "ar": "وزيرة العدل النرويجية وخبراء سويديون قلقون بعد اختراق بينانس",
+    "bn": "Binance হ্যাকের পর নরওয়ের বিচারমন্ত্রী ও সুইডিশ বিশেষজ্ঞরা উদ্বিগ্ন",
+    "pt": "Ministra da Justiça norueguesa e especialistas suecos preocupados após ataque à Binance",
+    "ru": "Министр юстиции Норвегии и шведские эксперты обеспокоены после взлома Binance",
+    "ur": "بائنانس ہیک کے بعد ناروے کی وزیر انصاف اور سویڈش ماہرین تشویش میں",
+    "id": "Menteri kehakiman Norwegia dan pakar Swedia khawatir setelah peretasan Binance",
+    "de": "Norwegens Justizministerin und schwedische Experten nach Binance-Hack besorgt",
+    "ja": "バイナンスへのハッキングを受け、ノルウェー法相とスウェーデンの専門家が懸念",
+    "sw": "Waziri wa sheria wa Norway na wataalamu wa Uswidi wasikitishwa baada ya udukuzi wa Binance",
+    "mr": "Binance हॅकनंतर नॉर्वेच्या न्यायमंत्री आणि स्वीडिश तज्ज्ञ चिंतेत",
+    "fa": "نگرانی وزیر دادگستری نروژ و کارشناسان سوئدی پس از هک بایننس",
+    "uk": "Міністерка юстиції Норвегії та шведські експерти стурбовані після злому Binance",
+    "tr": "Binance saldırısının ardından Norveç Adalet Bakanı ve İsveçli uzmanlar endişeli"
+   },
+   "title_i18n_source": "Norsk justisminister og svenske tech-eksperter bekymret",
+   "summary_i18n": {
+    "nn": "Justis- og beredskapsminister Astri Aas-Hansen sa til Aftenposten og NTB at Binance-tjuveriet viser at digital tryggleik i dei mest alvorlege tilfella kan handle om samfunnstryggleik, og viste til at regjeringa har føreslått å styrkje Nasjonal sikkerheitsmyndigheit (NSM). Niklas Arvidsson, professor ved KTH, sa til SvD at kryptobørsar manglar tryggleiksmekanismane i banksystemet, som innskotsgaranti og finanstilsyn. Journalistar i TV4 og Dagens Industri sa at hendinga skadar tilliten til systemet som heilskap.",
+    "nb": "Justis- og beredskapsminister Astri Aas-Hansen sa til Aftenposten og NTB at Binance-tyveriet viser at digital sikkerhet i de mest alvorlige tilfellene kan handle om samfunnssikkerhet, og viste til at regjeringen har foreslått å styrke Nasjonal sikkerhetsmyndighet (NSM). Niklas Arvidsson, professor ved KTH, sa til SvD at kryptobørser mangler sikkerhetsmekanismene i banksystemet, som innskuddsgaranti og finanstilsyn. Journalister i TV4 og Dagens Industri sa at hendelsen skader tilliten til systemet som helhet.",
+    "sv": "Norges justitie- och beredskapsminister Astri Aas-Hansen sade till Aftenposten och NTB att Binance-stölden visar att it-säkerhet i de allvarligaste fallen kan handla om samhällssäkerhet, och hänvisade till regeringens förslag om att stärka Nasjonal sikkerhetsmyndighet (NSM). Niklas Arvidsson, professor vid KTH, sade till SvD att kryptobörser saknar banksystemets skyddsmekanismer, som insättningsgaranti och finansiell tillsyn. Journalister på TV4 och Dagens Industri sade att händelsen skadar förtroendet för systemet som helhet.",
+    "da": "Norges justits- og beredskabsminister Astri Aas-Hansen sagde til Aftenposten og NTB, at Binance-tyveriet viser, at it-sikkerhed i de alvorligste tilfælde kan handle om samfundssikkerhed, og henviste til regeringens forslag om at styrke den norske sikkerhedsmyndighed NSM. Niklas Arvidsson, professor ved KTH, sagde til SvD, at kryptobørser mangler banksystemets sikkerhedsmekanismer som indskydergaranti og finanstilsyn. Journalister fra TV4 og Dagens Industri sagde, at hændelsen skader tilliden til systemet som helhed.",
+    "fi": "Norjan oikeus- ja valmiusministeri Astri Aas-Hansen sanoi Aftenpostenille ja NTB:lle, että Binancen varkaus osoittaa kyberturvallisuuden voivan vakavimmissa tapauksissa olla yhteiskunnan turvallisuuskysymys, ja viittasi hallituksen esitykseen Norjan turvallisuusviranomaisen NSM:n vahvistamisesta. KTH:n professori Niklas Arvidsson sanoi SvD:lle, että kryptopörsseiltä puuttuvat pankkijärjestelmän turvamekanismit, kuten talletussuoja ja finanssivalvonta. TV4:n ja Dagens Industrin toimittajat sanoivat tapauksen heikentävän luottamusta koko järjestelmään.",
+    "is": "Astri Aas-Hansen, dóms- og viðbúnaðarráðherra Noregs, sagði við Aftenposten og NTB að þjófnaðurinn hjá Binance sýni að netöryggi geti í alvarlegustu tilvikum snúist um öryggi samfélagsins og vísaði til tillögu ríkisstjórnarinnar um að efla norsku öryggisstofnunina NSM. Niklas Arvidsson, prófessor við KTH, sagði við SvD að rafmyntakauphallir skorti varnir bankakerfisins, svo sem innstæðutryggingu og fjármálaeftirlit. Blaðamenn hjá TV4 og Dagens Industri sögðu atvikið skaða traust á kerfinu í heild.",
+    "zh": "挪威司法与应急大臣阿斯特丽·奥斯-汉森对《晚邮报》和挪威通讯社表示，币安被盗事件表明，网络安全在最严重的情况下可能关乎社会安全，并提到政府已提议加强挪威国家安全局（NSM）。瑞典皇家理工学院教授尼克拉斯·阿维德松对《瑞典日报》表示，加密货币交易所缺乏银行体系中的存款保险和金融监管等保障机制。TV4和《每日工业报》的记者表示，这一事件损害了人们对整个体系的信任。",
+    "hi": "नॉर्वे की न्याय एवं आपात तैयारी मंत्री Astri Aas-Hansen ने Aftenposten और NTB से कहा कि Binance चोरी दिखाती है कि सबसे गंभीर मामलों में साइबर सुरक्षा सामाजिक सुरक्षा का विषय हो सकती है, और उन्होंने नॉर्वे के राष्ट्रीय सुरक्षा प्राधिकरण (NSM) को मज़बूत करने के सरकार के प्रस्ताव का ज़िक्र किया। KTH के प्रोफेसर Niklas Arvidsson ने SvD से कहा कि क्रिप्टो एक्सचेंजों में बैंकिंग प्रणाली जैसे सुरक्षा उपाय, जैसे जमा गारंटी और वित्तीय निगरानी, नहीं हैं। TV4 और Dagens Industri के पत्रकारों ने कहा कि इस घटना से पूरी प्रणाली पर भरोसा कमज़ोर होता है।",
+    "es": "La ministra noruega de Justicia y Preparación ante Emergencias, Astri Aas-Hansen, dijo a Aftenposten y NTB que el robo a Binance demuestra que la ciberseguridad puede ser, en los casos más graves, una cuestión de seguridad pública, y se refirió a la propuesta del Gobierno de reforzar la Autoridad Nacional de Seguridad noruega (NSM). Niklas Arvidsson, profesor del KTH, dijo a SvD que los exchanges de criptomonedas carecen de las salvaguardas del sistema bancario, como la garantía de depósitos y la supervisión financiera. Periodistas de TV4 y Dagens Industri afirmaron que el incidente daña la confianza en el sistema en su conjunto.",
+    "fr": "La ministre norvégienne de la Justice et de la Sécurité civile, Astri Aas-Hansen, a déclaré à Aftenposten et à NTB que le vol chez Binance montre que la cybersécurité peut, dans les cas les plus graves, relever de la sécurité publique, et a rappelé la proposition du gouvernement de renforcer l'Autorité nationale de sécurité norvégienne (NSM). Niklas Arvidsson, professeur au KTH, a déclaré à SvD que les plateformes crypto ne disposent pas des garde-fous du système bancaire, comme la garantie des dépôts et la supervision financière. Des journalistes de TV4 et de Dagens Industri ont estimé que l'incident nuit à la confiance dans le système dans son ensemble.",
+    "ar": "قالت وزيرة العدل والتأهب النرويجية أستري أوس-هانسن لصحيفة أفتنبوستن ووكالة NTB إن سرقة بينانس تُظهر أن الأمن السيبراني قد يكون في أخطر الحالات مسألة أمن مجتمعي، وأشارت إلى مقترح الحكومة لتعزيز هيئة الأمن الوطني النرويجية (NSM). وقال نيكلاس أرفيدسون، الأستاذ في المعهد الملكي للتكنولوجيا KTH، لصحيفة SvD إن منصات العملات المشفرة تفتقر إلى ضمانات النظام المصرفي مثل ضمان الودائع والرقابة المالية. وقال صحفيون في TV4 وDagens Industri إن الحادث يضر بالثقة في النظام ككل.",
+    "bn": "নরওয়ের বিচার ও জরুরি প্রস্তুতিমন্ত্রী Astri Aas-Hansen Aftenposten ও NTB-কে বলেন, Binance চুরি দেখায় যে সবচেয়ে গুরুতর ক্ষেত্রে সাইবার নিরাপত্তা সামাজিক নিরাপত্তার বিষয় হয়ে উঠতে পারে, এবং তিনি নরওয়ের জাতীয় নিরাপত্তা কর্তৃপক্ষ (NSM) শক্তিশালী করার সরকারি প্রস্তাবের কথা উল্লেখ করেন। KTH-এর অধ্যাপক Niklas Arvidsson SvD-কে বলেন, ক্রিপ্টো এক্সচেঞ্জে ব্যাংক ব্যবস্থার মতো আমানত নিশ্চয়তা ও আর্থিক তদারকির সুরক্ষা নেই। TV4 ও Dagens Industri-র সাংবাদিকরা বলেন, এই ঘটনা পুরো ব্যবস্থার প্রতি আস্থা ক্ষুণ্ন করে।",
+    "pt": "A ministra norueguesa da Justiça e da Preparação para Emergências, Astri Aas-Hansen, disse ao Aftenposten e à NTB que o roubo à Binance mostra que a cibersegurança pode, nos casos mais graves, ser uma questão de segurança pública, e referiu a proposta do governo para reforçar a Autoridade Nacional de Segurança norueguesa (NSM). Niklas Arvidsson, professor no KTH, disse ao SvD que as plataformas de criptomoedas não têm as salvaguardas do sistema bancário, como a garantia de depósitos e a supervisão financeira. Jornalistas da TV4 e do Dagens Industri disseram que o incidente prejudica a confiança no sistema como um todo.",
+    "ru": "Министр юстиции и готовности к чрезвычайным ситуациям Норвегии Астри Ос-Хансен заявила Aftenposten и NTB, что кража у Binance показывает: в самых серьёзных случаях кибербезопасность может быть вопросом общественной безопасности, и напомнила о предложении правительства усилить Национальное управление безопасности Норвегии (NSM). Профессор KTH Никлас Арвидссон сказал SvD, что у криптобирж нет защитных механизмов банковской системы, таких как гарантирование вкладов и финансовый надзор. Журналисты TV4 и Dagens Industri заявили, что инцидент подрывает доверие к системе в целом.",
+    "ur": "ناروے کی وزیر انصاف و ہنگامی تیاری Astri Aas-Hansen نے Aftenposten اور NTB کو بتایا کہ بائنانس کی چوری ظاہر کرتی ہے کہ انتہائی سنگین صورتوں میں سائبر سکیورٹی معاشرتی سلامتی کا معاملہ بن سکتی ہے، اور انہوں نے ناروے کی قومی سلامتی اتھارٹی (NSM) کو مضبوط کرنے کی حکومتی تجویز کا حوالہ دیا۔ KTH کے پروفیسر Niklas Arvidsson نے SvD کو بتایا کہ کرپٹو ایکسچینجز میں بینکاری نظام جیسے تحفظات، مثلاً ڈپازٹ گارنٹی اور مالیاتی نگرانی، موجود نہیں۔ TV4 اور Dagens Industri کے صحافیوں نے کہا کہ اس واقعے سے پورے نظام پر اعتماد کو نقصان پہنچتا ہے۔",
+    "id": "Menteri Kehakiman dan Kesiapsiagaan Norwegia, Astri Aas-Hansen, mengatakan kepada Aftenposten dan NTB bahwa pencurian di Binance menunjukkan keamanan siber dalam kasus paling serius bisa menjadi soal keamanan publik, dan merujuk usulan pemerintah untuk memperkuat Otoritas Keamanan Nasional Norwegia (NSM). Niklas Arvidsson, profesor di KTH, mengatakan kepada SvD bahwa bursa kripto tidak memiliki pengaman sistem perbankan seperti penjaminan simpanan dan pengawasan keuangan. Jurnalis TV4 dan Dagens Industri mengatakan insiden ini merusak kepercayaan terhadap sistem secara keseluruhan.",
+    "de": "Norwegens Ministerin für Justiz und Bereitschaft, Astri Aas-Hansen, sagte Aftenposten und NTB, der Diebstahl bei Binance zeige, dass Cybersicherheit in den schwersten Fällen eine Frage der öffentlichen Sicherheit sein könne, und verwies auf den Vorschlag der Regierung, die norwegische Sicherheitsbehörde NSM zu stärken. Niklas Arvidsson, Professor an der KTH, sagte SvD, Kryptobörsen fehlten die Schutzmechanismen des Bankensystems wie Einlagensicherung und Finanzaufsicht. Journalisten von TV4 und Dagens Industri sagten, der Vorfall schade dem Vertrauen in das System als Ganzes.",
+    "ja": "ノルウェーのアストリ・オース＝ハンセン法務・危機管理相はアフテンポステンとNTBに対し、バイナンスでの盗難は、最も深刻な場合にはサイバーセキュリティが社会の安全に関わることを示していると述べ、ノルウェー国家安全保障局（NSM）を強化する政府案に言及した。王立工科大学（KTH）のニクラス・アルヴィドソン教授はSvDに、暗号資産取引所には預金保険や金融監督といった銀行システムの安全装置がないと語った。TV4とダーゲンス・インドゥストリの記者は、この事件がシステム全体への信頼を損なうと述べた。",
+    "sw": "Waziri wa Sheria na Maandalizi ya Dharura wa Norway, Astri Aas-Hansen, aliiambia Aftenposten na NTB kwamba wizi wa Binance unaonyesha kuwa usalama wa mtandao, katika hali mbaya zaidi, unaweza kuwa suala la usalama wa umma, na akataja pendekezo la serikali la kuimarisha Mamlaka ya Usalama wa Taifa ya Norway (NSM). Niklas Arvidsson, profesa katika KTH, aliiambia SvD kwamba masoko ya kripto hayana kinga za mfumo wa benki kama dhamana ya amana na usimamizi wa kifedha. Waandishi wa habari wa TV4 na Dagens Industri walisema tukio hilo linadhoofisha imani katika mfumo mzima.",
+    "mr": "नॉर्वेच्या न्याय व आपत्कालीन सज्जता मंत्री Astri Aas-Hansen यांनी Aftenposten आणि NTB ला सांगितले की Binance चोरी दाखवते की सर्वात गंभीर प्रकरणांत सायबर सुरक्षा हा सार्वजनिक सुरक्षेचा प्रश्न ठरू शकतो, आणि त्यांनी नॉर्वेच्या राष्ट्रीय सुरक्षा प्राधिकरणाला (NSM) बळकट करण्याच्या सरकारच्या प्रस्तावाचा उल्लेख केला. KTH मधील प्राध्यापक Niklas Arvidsson यांनी SvD ला सांगितले की क्रिप्टो एक्सचेंजमध्ये ठेव हमी आणि वित्तीय देखरेख यांसारखी बँकिंग प्रणालीची सुरक्षा नाही. TV4 आणि Dagens Industri च्या पत्रकारांनी सांगितले की या घटनेमुळे संपूर्ण प्रणालीवरील विश्वासाला धक्का बसतो.",
+    "fa": "آستری اوس-هانسن، وزیر دادگستری و آمادگی اضطراری نروژ، به آفتن‌پوستن و NTB گفت سرقت از بایننس نشان می‌دهد امنیت سایبری در جدی‌ترین موارد می‌تواند به امنیت عمومی مربوط شود و به پیشنهاد دولت برای تقویت سازمان امنیت ملی نروژ (NSM) اشاره کرد. نیکلاس آرویدسون، استاد KTH، به SvD گفت صرافی‌های رمزارز از سازوکارهای حفاظتی نظام بانکی مانند ضمانت سپرده و نظارت مالی بی‌بهره‌اند. روزنامه‌نگارانی از TV4 و Dagens Industri گفتند این رخداد به اعتماد به کل نظام آسیب می‌زند.",
+    "uk": "Міністерка юстиції та готовності до надзвичайних ситуацій Норвегії Астрі Ос-Гансен заявила Aftenposten і NTB, що крадіжка в Binance показує: у найсерйозніших випадках кібербезпека може бути питанням суспільної безпеки, і нагадала про пропозицію уряду посилити Національне управління безпеки Норвегії (NSM). Професор KTH Нікласс Арвідссон сказав SvD, що криптобіржам бракує захисних механізмів банківської системи, як-от гарантування вкладів і фінансового нагляду. Журналісти TV4 і Dagens Industri заявили, що інцидент підриває довіру до системи загалом.",
+    "tr": "Norveç Adalet ve Acil Durum Hazırlık Bakanı Astri Aas-Hansen, Aftenposten ve NTB'ye yaptığı açıklamada Binance'teki hırsızlığın siber güvenliğin en ciddi durumlarda kamu güvenliği meselesi olabileceğini gösterdiğini söyledi ve hükümetin Norveç Ulusal Güvenlik Otoritesi'ni (NSM) güçlendirme önerisine değindi. KTH'de profesör olan Niklas Arvidsson, SvD'ye kripto borsalarında mevduat güvencesi ve finansal denetim gibi bankacılık sistemi güvencelerinin bulunmadığını söyledi. TV4 ve Dagens Industri gazetecileri, olayın sisteme duyulan güveni bir bütün olarak zedelediğini belirtti."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "ab6ece8874f6",
@@ -1867,9 +2203,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "1fba216d0996",
@@ -1893,9 +2230,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Background explainer, not news. researcher 31.10"
   },
   {
    "id": "f2cda148ea6d",
@@ -1919,9 +2257,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "b382ee04eedf",
@@ -1947,9 +2286,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Price/liquidation story. researcher 31.10"
   },
   {
    "id": "3c582996b57b",
@@ -1983,7 +2323,7 @@
    "id": "9b8a70e6faee",
    "url": "https://investornytt.no/krypto/binance-stanser-uttak-etter-mulig-rekordhack/549386",
    "title": "Binance stanser uttak etter mulig rekordhack",
-   "title_en": "Binance halts withdrawals after possible major hack",
+   "title_en": "Binance confirms about 6.3 billion dollar loss in hack",
    "source": "investornytt",
    "source_name": "Investornytt",
    "country": "NO",
@@ -2003,7 +2343,7 @@
    ],
    "paywall": false,
    "status": "published",
-   "summary": "Binance paused withdrawals on 29 October 2026 while investigating a security incident, and later stopped all deposits and withdrawals. Estimates of the possible losses range from about 5.8 to 6.3 billion US dollars, depending on the source: Investornytt cites about 5.8 billion in wallets labelled by Arkham, while VG and B.T. report 6.3 billion; the figures are not confirmed. Binance says user funds are safe and that it will cover all losses, and its preliminary findings point to a compromised employee computer that gave access to a service container, with no evidence that private keys were leaked.",
+   "summary": "Binance confirms that it lost about 6.3 billion US dollars in the security incident on 29 October 2026, and says about 3 billion of that has been frozen. According to Binance, deposits are working normally and withdrawals are expected to reopen within 48 hours. The exchange says its investigation has found additional points of breach beyond the compromised employee computer identified earlier, and that user losses will be covered from its SAFU emergency fund and its own funds.",
    "also_covered_by": [
     {
      "outlet": "svd",
@@ -2092,64 +2432,481 @@
      "country": "DK",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "digi-krypto",
+     "outlet_name": "Digi.no",
+     "url": "https://digi.no/it-bransjen/verdier-for-mer-enn-6-milliarder-dollar-stjalet-fra-verdens-storste-kryptobors/7179897",
+     "title": "Verdier for mer enn 6 milliarder dollar stjålet fra verdens største kryptobørs",
+     "published": "2026-10-30T06:13:15+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/live/binance-grundaren-rasar-efter-elon-musks-han",
+     "title": "Binance-grundaren rasar efter Elon Musks hån",
+     "published": "2026-10-30T18:46:38+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/n9q6MB/binance-hackat-det-hander-med-stulna-krypton",
+     "title": "Expert om stöldkuppen: ”Väcker en större fråga”",
+     "published": "2026-10-30T12:54:41+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "realtid",
+     "outlet_name": "Realtid",
+     "url": "https://realtid.se/bors-finans/jobbdator-kapades-av-hackare-nu-ar-62-miljarder-kronor-borta",
+     "title": "Jobbdator kapades av hackare – nu är 62 miljarder kronor borta",
+     "published": "2026-10-30T13:47:36+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "dn",
+     "outlet_name": "Dagens Næringsliv",
+     "url": "https://dn.no/marked/elon-musk/binance/krypto/kryptotopp-i-munnhuggeri-med-elon-musk-darlig-tidspunkt-a-trolle/2-1-2067063",
+     "title": "Kryptotopp i munnhuggeri med Elon Musk: – Dårlig tidspunkt å trolle",
+     "published": "2026-10-30T17:19:53+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/a/7-10107850?origin=rss",
+     "title": "AI gör hackarna snabbare och effektivare",
+     "published": "2026-10-30T14:17:45+00:00",
+     "lang": "Swedish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "mbl",
+     "outlet_name": "mbl.is",
+     "url": "https://mbl.is/vidskipti/frettir/2026/10/30/769_milljardar_undir_hvernig_komust_tolvuthrjotarni",
+     "title": "769 milljarðar undir: Hvernig komust tölvuþrjótarnir inn?",
+     "published": "2026-10-30T23:45:00+00:00",
+     "lang": "Icelandic",
+     "country": "IS",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "visir",
+     "outlet_name": "Vísir",
+     "url": "https://visir.is/g/20262955815d/-staersta-tolvuinnbrot-sogunnar-hja-rafmyntarisa",
+     "title": "„Stærsta tölvu­inn­brot sögunnar“ hjá raf­myntarisa",
+     "published": "2026-10-30T06:40:10+00:00",
+     "lang": "Icelandic",
+     "country": "IS",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/hackerangreb-pa-verdens-storste-kryptobors-kan-skraemme-potentielle-investorer-vaek",
+     "title": "Hackerangreb på verdens største kryptobørs – kan skræmme potentielle investorer væk",
+     "published": "2026-10-30T13:48:33+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "dr-penge",
+     "outlet_name": "DR",
+     "url": "https://dr.dk/nyheder/seneste/verdens-stoerste-kryptoboers-ramt-af-muligt-hackerangreb",
+     "title": "Verdens største kryptobørs ramt af muligt hackerangreb",
+     "published": "2026-10-30T05:15:07+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-bekrefter-storst-i-krypto-historien",
+     "title": "Binance bekrefter: Størst i krypto-historien",
+     "published": "2026-10-30",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "aftenposten",
+     "outlet_name": "Aftenposten",
+     "url": "https://aftenposten.no/okonomi/i/GrVLAQ/mer-enn-6-milliarder-dollar-stjaalet-i-tidenes-stoerste-kryptotyveri-kobles-til-nord-korea",
+     "title": "Mer enn 6 milliarder dollar stjålet i tidenes største kryptotyveri – kobles til Nord-Korea",
+     "published": "2026-10-30T08:38:22+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-lover-a-dekke-tap-etter-milliardhacket",
+     "title": "Binance lover å dekke tap etter milliardhacket",
+     "published": "2026-10-30",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-hacket-for-over-5-5-mrd-dollar",
+     "title": "Binance hacket for over 5,5 mrd. dollar",
+     "published": "2026-10-29",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "itavisen",
+     "outlet_name": "ITavisen",
+     "url": "https://itavisen.no/2026/10/30/binance-hacket-58-milliarder-kroner-nord-korea",
+     "title": "Én laptop kan ha utløst historiens største kryptotyveri",
+     "published": "2026-10-30T06:21:41+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "adressa",
+     "outlet_name": "Adresseavisen",
+     "url": "https://adressa.no/mn24/i/xlqk6V/kryptoverdier-for-naer-6-milliarder-dollar-kan-vaere-stjaalet-fra-verdens-stoerste-kryptoboers",
+     "title": "Stjal verdier for 50 mrd. kroner",
+     "published": "2026-10-30T05:54:15+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/binance-grundarens-ilska-mot-musk-trolla-inte/a/d73OWJ",
+     "title": "Binance-grundarens ilska mot Musk: ”Trolla inte”",
+     "published": "2026-10-30T22:31:52+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "tv4.se",
+     "outlet_name": "TV4",
+     "url": "https://tv4.se/artikel/34pp15BjcIu74BPjr9vcnO/hackningen-avsloejar-branschens-svagheter-foer-sarbara",
+     "title": "Experterna eniga • ”Ett misslyckande för resten av världen”",
+     "published": "2026-10-30T12:09:51+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "dagensps.se",
+     "outlet_name": "Dagens PS",
+     "url": "https://dagensps.se/bors-finans/binance-stoppar-alla-uttag-efter-rekordstor-kryptostold-sa-paverkas-svenska-sparare",
+     "title": "Binance stoppar alla uttag efter rekordstor kryptostöld – så påverkas svenska sparare",
+     "published": "2026-10-30T06:45:58+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/rekordstort-cyberangrepp-mot-binance-60-miljarder-befaras-vara-borta/a/X9V71g",
+     "title": "Rekordstort cyberangrepp mot Binance – 60 miljarder befaras vara borta",
+     "published": "2026-10-30T05:14:49+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "aftonbladet",
+     "outlet_name": "Aftonbladet",
+     "url": "https://aftonbladet.se/nyheter/a/eGVxGl/binance-utsatt-for-hackerattack-miljarder-forsvann",
+     "title": "Kryptojätte utsatt för attack: ”Största någonsin”",
+     "published": "2026-10-30T02:11:47+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/valuta/2026/10/30/8392072/binance-gruender-ber-musk-slutte-a-trolle",
+     "title": "Binance-gründer ber Musk slutte å trolle",
+     "published": "2026-10-30T20:32:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/analytiker-angreppet-pa-binance-skadar-fortroendet/a/gdq9Ga",
+     "title": "Analytiker: Angreppet på Binance skadar förtroendet",
+     "published": "2026-10-30T08:58:24+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "feber.se",
+     "outlet_name": "Feber",
+     "url": "https://feber.se/samhalle/stor-hackerattack-mot-binance/497937",
+     "title": "Över 60 miljarder kronor i fara",
+     "published": "2026-10-30T07:00:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "nyheder.tv2.dk",
+     "outlet_name": "TV 2 Nyheder",
+     "url": "https://nyheder.tv2.dk/business/2026-10-30-verdenshistoriens-dyreste-bankroeveri-skete-paa-20-minutter-og-kan-traekke-traade-til-nordkorea",
+     "title": "Verdenshistoriens dyreste bankrøveri skete på 20 minutter og kan trække tråde til Nordkorea",
+     "published": "2026-10-30T15:20:28+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/erhverv/verdens-stoerste-kryptotyveri-skete-via-ansats-computer",
+     "title": "Verdens største kryptotyveri skete via ansats computer",
+     "published": "2026-10-30T14:41:44+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/udland/beskrives-som-det-stoerste-hackerangreb-i-historien-nu-peger-pilen-i-en-retning",
+     "title": "Beskrives som 'det største hackerangreb i historien': Nu peger pilen i én retning",
+     "published": "2026-10-30T06:26:49+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "e24",
+     "outlet_name": "E24",
+     "url": "https://e24.no/teknologi/i/ylqdoR/binance-stanser-handelen-paa-binance-alpha",
+     "title": "Mulig hackerangrep: Milliarder kan være stjålet",
+     "published": "2026-10-30T05:39:29+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "finanswatch.se",
+     "outlet_name": "finanswatch",
+     "url": "https://finanswatch.se/news/fintech/article19784548.ece",
+     "title": "Rekordkupp skakar tilltron till krypto",
+     "published": "2026-10-30T06:02:14+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "sydsvenskan",
+     "outlet_name": "Sydsvenskan",
+     "url": "https://sydsvenskan.se/ekonomi/utreder-attack-mot-kryptobors-stoppar-handel",
+     "title": "Attack mot kryptobörs utreds – stoppar handel",
+     "published": "2026-10-30T05:26:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "euroinvestor",
+     "outlet_name": "Euroinvestor",
+     "url": "https://euroinvestor.dk/nyheder/verdens-stoerste-kryptoboers-er-blevet-hacket-over-42-mia-kr-kan-vaere-blevet-ramt",
+     "title": "Verdens største kryptobørs er blevet hacket - over 42 mia. kr. kan være blevet ramt",
+     "published": "2026-10-30T06:47:28+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/artikkel/nesten-60-milliarder-kroner-stjalet-fra-kryptobank-1531335",
+     "title": "Nesten 60 milliarder kroner stjålet fra kryptobank",
+     "published": "2026-10-30T06:02:44+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "dagbladet",
+     "outlet_name": "Dagbladet",
+     "url": "https://dagbladet.no/nyheter/gigantisk-tyveri-tidenes-storste/85357205",
+     "title": "Gigantisk tyveri: - Tidenes største",
+     "published": "2026-10-30T04:01:12+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/nyheter/verdens-storste-kryptobors-utsatt-for-tyveri-6-milliarder-dollar-mangler/s/80-95-204554",
+     "title": "Verdens største kryptobørs utsatt for mega-tyveri – kobles til Nord-Korea",
+     "published": "2026-10-30T06:02:47+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "osterbottens-tidning",
+     "outlet_name": "Österbottens Tidning",
+     "url": "https://osterbottenstidning.fi/ekonomi/storsta-kryptoborsen-hackad-tillgangar-frysta",
+     "title": "Största kryptobörsen hackad – tillgångar frysta",
+     "published": "2026-10-30T08:10:00+00:00",
+     "lang": "Swedish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "verkkouutiset",
+     "outlet_name": "Verkkouutiset",
+     "url": "https://verkkouutiset.fi/a/maailman-suurin-kryptoporssi-hakkeroitiin-vahingot-yli-6-miljardia",
+     "title": "Maailman suurin kryptopörssi hakkeroitiin – vahingot yli kuusi miljardia",
+     "published": "2026-10-30T06:05:46+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "tv2",
+     "outlet_name": "TV 2",
+     "url": "https://tv2.no/nyheter/kryptoverdier-for-naer-6-milliarder-dollar-kan-vaere-stjalet/19375957",
+     "title": "Kryptoverdier for nær 6 milliarder dollar kan være stjålet",
+     "published": "2026-10-30T03:41:17+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "smalandsposten",
+     "outlet_name": "Smålandsposten",
+     "url": "https://smp.se/attack-mot-kryptojatte-62-miljarder-paverkas",
+     "title": "Rekordstor cyberkupp mot största kryptobörsen",
+     "published": "2026-10-30T05:54:26+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
    "approved_at": "2026-10-30T04:50:00+01:00",
    "primary_source": {
-    "name": "Binance on X (29–30 Oct 2026)",
-    "url": "https://x.com/binance/status/2115960292115124558"
+    "name": "Binance on X – update, 30 Oct 2026",
+    "url": "https://x.com/binance/status/2116089661408108712"
    },
    "title_i18n": {
-    "nn": "Binance stansar uttak etter mogleg stort hack",
-    "sv": "Binance stoppar uttag efter möjligt stort hack",
-    "da": "Binance stopper udbetalinger efter muligt stort hack",
-    "fi": "Binance keskeytti nostot mahdollisen suuren hakkeroinnin jälkeen",
-    "is": "Binance stöðvar úttektir eftir mögulegt stórt tölvuinnbrot",
-    "zh": "Binance在可能遭遇重大黑客攻击后暂停提现",
-    "hi": "संभावित बड़े हैक के बाद Binance ने निकासी रोकी",
-    "es": "Binance suspende los retiros tras un posible hackeo de gran escala",
-    "fr": "Binance suspend les retraits après un possible piratage d'ampleur",
-    "ar": "Binance توقف السحب بعد اختراق كبير محتمل",
-    "bn": "সম্ভাব্য বড় হ্যাকের পর উত্তোলন বন্ধ করল Binance",
-    "pt": "Binance suspende levantamentos após possível ataque informático de grande escala",
-    "ru": "Binance приостановила вывод средств после возможного крупного взлома",
-    "ur": "ممکنہ بڑے ہیک کے بعد Binance نے رقوم نکلوانا روک دیا",
-    "id": "Binance hentikan penarikan setelah kemungkinan peretasan besar",
-    "de": "Binance stoppt Auszahlungen nach möglichem großem Hack",
-    "ja": "Binance、大規模ハッキングの可能性で出金を停止",
-    "sw": "Binance yasitisha utoaji wa fedha baada ya udukuzi mkubwa unaowezekana",
-    "mr": "संभाव्य मोठ्या हॅकनंतर Binance ने पैसे काढणे थांबवले",
-    "fa": "Binance پس از هک بزرگ احتمالی برداشت‌ها را متوقف کرد",
-    "uk": "Binance зупинила виведення коштів після можливого масштабного злому",
-    "tr": "Binance olası büyük bir hack sonrası para çekimlerini durdurdu"
+    "nn": "Binance stadfestar tap på om lag 6,3 milliardar dollar etter hacking",
+    "sv": "Binance bekräftar förlust på omkring 6,3 miljarder dollar efter hackerattack",
+    "da": "Binance bekræfter tab på omkring 6,3 milliarder dollar efter hackerangreb",
+    "fi": "Binance vahvistaa noin 6,3 miljardin dollarin menetyksen hakkeroinnissa",
+    "is": "Binance staðfestir um 6,3 milljarða dala tap eftir tölvuárás",
+    "zh": "币安确认黑客事件损失约63亿美元",
+    "hi": "Binance ने हैक में लगभग 6.3 अरब डॉलर के नुकसान की पुष्टि की",
+    "es": "Binance confirma una pérdida de unos 6.300 millones de dólares por el hackeo",
+    "fr": "Binance confirme une perte d'environ 6,3 milliards de dollars après le piratage",
+    "ar": "بينانس تؤكد خسارة نحو 6.3 مليار دولار في عملية الاختراق",
+    "bn": "হ্যাকে প্রায় ৬.৩ বিলিয়ন ডলার ক্ষতি নিশ্চিত করল Binance",
+    "pt": "Binance confirma perda de cerca de 6,3 mil milhões de dólares no ataque",
+    "ru": "Binance подтвердила потерю около 6,3 млрд долларов в результате взлома",
+    "ur": "بائنانس نے ہیک میں تقریباً 6.3 ارب ڈالر کے نقصان کی تصدیق کر دی",
+    "id": "Binance konfirmasi kerugian sekitar 6,3 miliar dolar akibat peretasan",
+    "de": "Binance bestätigt Verlust von rund 6,3 Milliarden Dollar durch Hackerangriff",
+    "ja": "バイナンス、ハッキングで約63億ドルの損失を確認",
+    "sw": "Binance yathibitisha hasara ya takriban dola bilioni 6.3 kutokana na udukuzi",
+    "mr": "Binance ने हॅकमध्ये सुमारे 6.3 अब्ज डॉलरच्या नुकसानीला दुजोरा दिला",
+    "fa": "بایننس زیان حدود ۶٫۳ میلیارد دلاری در هک را تأیید کرد",
+    "uk": "Binance підтвердила втрату близько 6,3 млрд доларів унаслідок злому",
+    "tr": "Binance, saldırıda yaklaşık 6,3 milyar dolarlık kaybı doğruladı"
    },
    "title_i18n_source": "Binance stanser uttak etter mulig rekordhack",
    "summary_i18n": {
-    "nn": "Binance sette uttak på pause 29. oktober 2026 medan børsen undersøkte ei tryggleikshending, og stansa seinare alle innskot og uttak. Anslaga over moglege tap varierer frå om lag 5,8 til 6,3 milliardar amerikanske dollar etter kjelde: Investornytt viser til om lag 5,8 milliardar i lommebøker merkte av Arkham, medan VG og B.T. melder om 6,3 milliardar; tala er ikkje stadfesta. Binance seier at midlane til brukarane er trygge og at børsen vil dekkje alle tap, og dei førebelse funna peikar på ei kompromittert datamaskin hos ein tilsett som gav tilgang til ein tenestecontainer, utan prov for at private nøklar er lekne.",
-    "nb": "Binance satte uttak på pause 29. oktober 2026 mens børsen undersøkte en sikkerhetshendelse, og stanset senere alle innskudd og uttak. Anslagene over mulige tap varierer fra rundt 5,8 til 6,3 milliarder amerikanske dollar etter kilde: Investornytt viser til rundt 5,8 milliarder i lommebøker merket av Arkham, mens VG og B.T. melder om 6,3 milliarder; tallene er ikke bekreftet. Binance sier at brukernes midler er trygge og at børsen vil dekke alle tap, og de foreløpige funnene peker på en kompromittert datamaskin hos en ansatt som ga tilgang til en tjenestecontainer, uten bevis for at private nøkler er lekket.",
-    "sv": "Binance pausade uttag den 29 oktober 2026 medan börsen utredde en säkerhetsincident och stoppade senare alla insättningar och uttag. Uppskattningarna av möjliga förluster varierar mellan cirka 5,8 och 6,3 miljarder amerikanska dollar beroende på källa: Investornytt hänvisar till cirka 5,8 miljarder i plånböcker märkta av Arkham, medan VG och B.T. rapporterar 6,3 miljarder; siffrorna är inte bekräftade. Binance säger att användarnas medel är säkra och att börsen täcker alla förluster, och de preliminära fynden pekar på en komprometterad dator hos en anställd som gav åtkomst till en tjänstecontainer, utan bevis för att privata nycklar har läckt.",
-    "da": "Binance satte udbetalinger på pause den 29. oktober 2026, mens børsen undersøgte en sikkerhedshændelse, og stoppede senere alle ind- og udbetalinger. Skønnene over mulige tab varierer fra omkring 5,8 til 6,3 milliarder amerikanske dollar afhængigt af kilden: Investornytt henviser til omkring 5,8 milliarder i wallets mærket af Arkham, mens VG og B.T. melder om 6,3 milliarder; tallene er ikke bekræftet. Binance siger, at brugernes midler er sikre, og at børsen dækker alle tab, og de foreløbige fund peger på en kompromitteret computer hos en medarbejder, der gav adgang til en servicecontainer, uden bevis for at private nøgler er lækket.",
-    "fi": "Binance keskeytti nostot 29. lokakuuta 2026 tutkiessaan tietoturvapoikkeamaa ja pysäytti myöhemmin kaikki talletukset ja nostot. Arviot mahdollisista tappioista vaihtelevat lähteestä riippuen noin 5,8:sta 6,3 miljardiin Yhdysvaltain dollariin: Investornytt viittaa noin 5,8 miljardiin Arkhamin merkitsemissä lompakoissa, kun taas VG ja B.T. kertovat 6,3 miljardista; lukuja ei ole vahvistettu. Binance sanoo käyttäjien varojen olevan turvassa ja korvaavansa kaikki tappiot, ja alustavat havainnot viittaavat työntekijän vaarantuneeseen tietokoneeseen, jonka kautta saatiin pääsy palvelukonttiin, ilman näyttöä yksityisten avainten vuotamisesta.",
-    "is": "Binance setti úttektir á bið 29. október 2026 á meðan kauphöllin rannsakaði öryggisatvik og stöðvaði síðar allar innlagnir og úttektir. Mat á mögulegu tapi er á bilinu um 5,8 til 6,3 milljarðar Bandaríkjadala eftir heimildum: Investornytt vísar til um 5,8 milljarða í veskjum sem Arkham hefur merkt, en VG og B.T. greina frá 6,3 milljörðum; tölurnar eru óstaðfestar. Binance segir fé notenda öruggt og að kauphöllin muni bæta allt tap, og bráðabirgðaniðurstöður benda til þess að tölva starfsmanns hafi verið brotin upp og veitt aðgang að þjónustugámi, án vísbendinga um að einkalyklar hafi lekið.",
-    "zh": "Binance于2026年10月29日在调查一起安全事件期间暂停提现，随后停止所有充值和提现。不同来源对可能损失的估计在约58亿至63亿美元之间：Investornytt援引Arkham标记的钱包中约58亿美元，而VG和B.T.报道为63亿美元；这些数字尚未得到证实。Binance表示用户资金安全，并将承担全部损失；其初步调查显示，一名员工的电脑遭入侵，从而获得了一个服务容器的访问权限，目前没有证据表明私钥泄露。",
-    "hi": "Binance ने 29 अक्टूबर 2026 को एक सुरक्षा घटना की जाँच के दौरान निकासी रोक दी और बाद में सभी जमा और निकासी बंद कर दीं। स्रोत के अनुसार संभावित नुकसान का अनुमान लगभग 5.8 से 6.3 अरब अमेरिकी डॉलर के बीच है: Investornytt, Arkham द्वारा चिह्नित वॉलेट में लगभग 5.8 अरब का हवाला देता है, जबकि VG और B.T. 6.3 अरब बताते हैं; आँकड़ों की पुष्टि नहीं हुई है। Binance का कहना है कि उपयोगकर्ताओं का धन सुरक्षित है और वह सभी नुकसान की भरपाई करेगा, और प्रारंभिक निष्कर्षों के अनुसार एक कर्मचारी का कंप्यूटर हैक हुआ जिससे एक सर्विस कंटेनर तक पहुँच मिली; निजी कुंजियाँ लीक होने का कोई सबूत नहीं है।",
-    "es": "Binance suspendió los retiros el 29 de octubre de 2026 mientras investigaba un incidente de seguridad y después detuvo todos los depósitos y retiros. Las estimaciones de las posibles pérdidas van de unos 5.800 a 6.300 millones de dólares según la fuente: Investornytt cita unos 5.800 millones en monederos etiquetados por Arkham, mientras que VG y B.T. informan de 6.300 millones; las cifras no están confirmadas. Binance afirma que los fondos de los usuarios están a salvo y que cubrirá todas las pérdidas, y sus conclusiones preliminares apuntan a un ordenador de un empleado comprometido que dio acceso a un contenedor de servicio, sin pruebas de que se filtraran claves privadas.",
-    "fr": "Binance a suspendu les retraits le 29 octobre 2026 pendant l'examen d'un incident de sécurité, puis a arrêté tous les dépôts et retraits. Les estimations des pertes possibles vont d'environ 5,8 à 6,3 milliards de dollars selon les sources : Investornytt cite environ 5,8 milliards dans des portefeuilles identifiés par Arkham, tandis que VG et B.T. évoquent 6,3 milliards ; ces chiffres ne sont pas confirmés. Binance affirme que les fonds des utilisateurs sont en sécurité et qu'elle couvrira toutes les pertes ; ses premières constatations désignent l'ordinateur compromis d'un employé ayant donné accès à un conteneur de service, sans preuve de fuite de clés privées.",
-    "ar": "أوقفت Binance عمليات السحب مؤقتاً في 29 أكتوبر 2026 أثناء التحقيق في حادث أمني، ثم أوقفت لاحقاً جميع الإيداعات والسحوبات. وتتراوح تقديرات الخسائر المحتملة بين نحو 5.8 و6.3 مليار دولار أمريكي بحسب المصدر: إذ تشير Investornytt إلى نحو 5.8 مليار في محافظ صنّفتها Arkham، بينما تذكر VG وB.T. رقم 6.3 مليار؛ ولم تُؤكَّد هذه الأرقام. وتقول Binance إن أموال المستخدمين آمنة وإنها ستغطي جميع الخسائر، وتشير نتائجها الأولية إلى حاسوب موظف مخترق أتاح الوصول إلى حاوية خدمة، دون دليل على تسرّب مفاتيح خاصة.",
-    "bn": "একটি নিরাপত্তা ঘটনার তদন্তের সময় Binance ২০২৬ সালের ২৯ অক্টোবর উত্তোলন স্থগিত করে এবং পরে সব জমা ও উত্তোলন বন্ধ করে দেয়। সূত্রভেদে সম্ভাব্য ক্ষতির অনুমান প্রায় ৫.৮ থেকে ৬.৩ বিলিয়ন মার্কিন ডলার: Investornytt, Arkham-চিহ্নিত ওয়ালেটে প্রায় ৫.৮ বিলিয়নের কথা বলেছে, আর VG ও B.T. ৬.৩ বিলিয়ন জানিয়েছে; সংখ্যাগুলো নিশ্চিত নয়। Binance বলছে ব্যবহারকারীদের অর্থ নিরাপদ এবং তারা সব ক্ষতি পূরণ করবে; প্রাথমিক তথ্যে দেখা যাচ্ছে একজন কর্মীর কম্পিউটার আপসকৃত হয়ে একটি সার্ভিস কন্টেইনারে প্রবেশাধিকার দিয়েছিল, তবে প্রাইভেট কি ফাঁসের কোনো প্রমাণ নেই।",
-    "pt": "A Binance suspendeu os levantamentos a 29 de outubro de 2026 enquanto investigava um incidente de segurança e, mais tarde, parou todos os depósitos e levantamentos. As estimativas das possíveis perdas variam entre cerca de 5,8 e 6,3 mil milhões de dólares, consoante a fonte: a Investornytt cita cerca de 5,8 mil milhões em carteiras identificadas pela Arkham, enquanto o VG e o B.T. referem 6,3 mil milhões; os números não estão confirmados. A Binance diz que os fundos dos utilizadores estão seguros e que cobrirá todas as perdas, e as conclusões preliminares apontam para o computador comprometido de um funcionário que deu acesso a um contentor de serviço, sem provas de fuga de chaves privadas.",
-    "ru": "Binance приостановила вывод средств 29 октября 2026 года, расследуя инцидент безопасности, а затем остановила все вводы и выводы. Оценки возможных потерь в зависимости от источника составляют примерно от 5,8 до 6,3 млрд долларов США: Investornytt ссылается примерно на 5,8 млрд в кошельках, помеченных Arkham, а VG и B.T. сообщают о 6,3 млрд; цифры не подтверждены. Binance заявляет, что средства пользователей в безопасности и что биржа покроет все потери; по предварительным данным, был скомпрометирован компьютер сотрудника, через который получили доступ к сервисному контейнеру, при этом доказательств утечки приватных ключей нет.",
-    "ur": "Binance نے 29 اکتوبر 2026 کو ایک سیکیورٹی واقعے کی تحقیقات کے دوران رقوم نکلوانا روک دیا اور بعد میں تمام جمع اور نکلوانے کی سہولت بند کر دی۔ ذرائع کے مطابق ممکنہ نقصان کے اندازے تقریباً 5.8 سے 6.3 ارب امریکی ڈالر کے درمیان ہیں: Investornytt، Arkham کے نشان زدہ والیٹس میں تقریباً 5.8 ارب کا حوالہ دیتا ہے جبکہ VG اور B.T. 6.3 ارب بتاتے ہیں؛ یہ اعداد تصدیق شدہ نہیں۔ Binance کا کہنا ہے کہ صارفین کی رقوم محفوظ ہیں اور وہ تمام نقصانات پورے کرے گا، اور ابتدائی نتائج کے مطابق ایک ملازم کا کمپیوٹر ہیک ہوا جس سے ایک سروس کنٹینر تک رسائی ملی؛ نجی کلیدیں لیک ہونے کا کوئی ثبوت نہیں۔",
-    "id": "Binance menghentikan sementara penarikan pada 29 Oktober 2026 saat menyelidiki insiden keamanan, lalu menghentikan semua setoran dan penarikan. Perkiraan kemungkinan kerugian berkisar sekitar 5,8 hingga 6,3 miliar dolar AS tergantung sumbernya: Investornytt menyebut sekitar 5,8 miliar di dompet yang ditandai Arkham, sementara VG dan B.T. melaporkan 6,3 miliar; angka-angka itu belum dikonfirmasi. Binance mengatakan dana pengguna aman dan pihaknya akan menanggung semua kerugian, dan temuan awal menunjukkan komputer seorang karyawan yang disusupi memberi akses ke sebuah kontainer layanan, tanpa bukti kunci privat bocor.",
-    "de": "Binance setzte am 29. Oktober 2026 Auszahlungen aus, während die Börse einen Sicherheitsvorfall untersuchte, und stoppte später alle Ein- und Auszahlungen. Die Schätzungen möglicher Verluste reichen je nach Quelle von etwa 5,8 bis 6,3 Milliarden US-Dollar: Investornytt verweist auf rund 5,8 Milliarden in von Arkham markierten Wallets, VG und B.T. berichten von 6,3 Milliarden; die Zahlen sind nicht bestätigt. Binance erklärt, die Nutzergelder seien sicher und man werde alle Verluste decken; vorläufige Erkenntnisse deuten auf den kompromittierten Rechner eines Mitarbeiters, über den Zugriff auf einen Service-Container erlangt wurde, ohne Hinweise auf abgeflossene private Schlüssel.",
-    "ja": "Binanceは2026年10月29日、セキュリティ事案の調査中に出金を一時停止し、その後すべての入出金を停止した。損失の可能性に関する推計は情報源によって約58億〜63億ドルと幅がある。Investornyttは Arkhamが特定したウォレット内の約58億ドルを挙げ、VGとB.T.は63億ドルと報じているが、数字は確認されていない。Binanceは利用者の資金は安全で、すべての損失を補償するとしており、暫定調査では従業員のコンピューターが侵害されてサービスコンテナへのアクセスを許したことが示されている一方、秘密鍵が漏えいした証拠はないという。",
-    "sw": "Binance ilisitisha kwa muda utoaji wa fedha tarehe 29 Oktoba 2026 ikichunguza tukio la usalama, na baadaye ikasimamisha amana na utoaji wote. Makadirio ya hasara inayowezekana ni kati ya takriban dola bilioni 5.8 na 6.3 za Marekani kulingana na chanzo: Investornytt inataja takriban bilioni 5.8 katika pochi zilizowekwa alama na Arkham, huku VG na B.T. zikiripoti bilioni 6.3; takwimu hizo hazijathibitishwa. Binance inasema fedha za watumiaji ziko salama na itafidia hasara zote, na matokeo ya awali yanaonyesha kompyuta ya mfanyakazi iliyoingiliwa ilitoa ufikiaji wa kontena la huduma, bila ushahidi wa kuvuja kwa funguo za siri.",
-    "mr": "एका सुरक्षा घटनेची चौकशी करताना Binance ने २९ ऑक्टोबर २०२६ रोजी पैसे काढणे थांबवले आणि नंतर सर्व ठेवी व पैसे काढणे बंद केले. स्रोतानुसार संभाव्य नुकसानाचे अंदाज सुमारे ५.८ ते ६.३ अब्ज अमेरिकन डॉलर आहेत: Investornytt ने Arkham ने चिन्हांकित केलेल्या वॉलेटमधील सुमारे ५.८ अब्जांचा उल्लेख केला, तर VG आणि B.T. ने ६.३ अब्ज सांगितले; हे आकडे पुष्टी झालेले नाहीत. वापरकर्त्यांचे पैसे सुरक्षित असून सर्व नुकसान भरून काढले जाईल, असे Binance सांगते; प्राथमिक निष्कर्षांनुसार एका कर्मचाऱ्याचा संगणक हॅक होऊन सर्व्हिस कंटेनरमध्ये प्रवेश मिळाला, मात्र खासगी की लीक झाल्याचा पुरावा नाही.",
-    "fa": "Binance در ۲۹ اکتبر ۲۰۲۶ هنگام بررسی یک رخداد امنیتی برداشت‌ها را متوقف کرد و سپس همه واریزها و برداشت‌ها را بست. برآوردهای زیان احتمالی بسته به منبع بین حدود ۵٫۸ تا ۶٫۳ میلیارد دلار آمریکا است: Investornytt به حدود ۵٫۸ میلیارد در کیف‌پول‌های برچسب‌خورده توسط Arkham اشاره می‌کند و VG و B.T. رقم ۶٫۳ میلیارد را گزارش می‌دهند؛ این ارقام تأیید نشده‌اند. Binance می‌گوید دارایی کاربران امن است و همه زیان‌ها را جبران می‌کند، و یافته‌های اولیه به رایانه آلوده یک کارمند اشاره دارد که دسترسی به یک کانتینر سرویس را ممکن کرد، بدون شواهدی از نشت کلیدهای خصوصی.",
-    "uk": "Binance призупинила виведення коштів 29 жовтня 2026 року, розслідуючи інцидент безпеки, а згодом зупинила всі депозити й виведення. Оцінки можливих втрат залежно від джерела становлять приблизно від 5,8 до 6,3 млрд доларів США: Investornytt посилається приблизно на 5,8 млрд у гаманцях, позначених Arkham, а VG і B.T. повідомляють про 6,3 млрд; цифри не підтверджені. Binance заявляє, що кошти користувачів у безпеці й біржа покриє всі втрати; за попередніми даними, було скомпрометовано комп'ютер працівника, через який отримали доступ до сервісного контейнера, але доказів витоку приватних ключів немає.",
-    "tr": "Binance, 29 Ekim 2026'da bir güvenlik olayını incelerken para çekimlerini durdurdu ve daha sonra tüm yatırma ve çekme işlemlerini askıya aldı. Olası kayıp tahminleri kaynağa göre yaklaşık 5,8 ile 6,3 milyar ABD doları arasında değişiyor: Investornytt, Arkham'ın etiketlediği cüzdanlardaki yaklaşık 5,8 milyara atıfta bulunurken VG ve B.T. 6,3 milyar bildiriyor; rakamlar doğrulanmadı. Binance kullanıcı fonlarının güvende olduğunu ve tüm kayıpları karşılayacağını söylüyor; ön bulgular, bir çalışanın ele geçirilen bilgisayarının bir hizmet konteynerine erişim sağladığına işaret ediyor, özel anahtarların sızdığına dair kanıt yok.",
-    "se": "Binance bisánii máksimiin golggotmánu 29. b. 2026 dan botta go guorahalle sihkarvuođarihkkuma, ja maŋŋel bissehii buot sisabidjama ja máksimiid. Vejolaš massimat leat meroštallojuvvon leat gaskal 5,8 ja 6,3 miljárdda dollara, vuolgá das guđe gáldus váldá vuođu: Investornytt namuha 5,8 miljárdda dollara Arkhamas, ja VG ja B.T. 6,3 miljárdda dollara. Raporta 6.3 miljárda; logut eai leat duođaštuvvon. Binance dadjá ahte geavaheaddji ruđat leat sihkkarat ja ahte sii gokčet visot massimiid, ja sin gaskaboddosaš bohtosat čujuhit dasa ahte boasttogeavaheaddji dihtora bokte lea beassan bálvaluskonteinerii, ii ge leat mihkkege mii čájeha ahte priváhta čoavddasánit leat lekket."
+    "nn": "Binance stadfestar at børsen tapte om lag 6,3 milliardar amerikanske dollar i sikkerheitshendinga 29. oktober 2026, og seier at om lag 3 milliardar av dette er frose. Ifølgje Binance fungerer innskot som normalt, og uttak er venta å opne igjen innan 48 timar. Børsen seier at etterforskinga har funne fleire innbrotspunkt enn den kompromitterte datamaskina til ein tilsett som vart nemnd tidlegare, og at tapa til brukarane skal dekkjast frå naudfondet SAFU og eigne midlar.",
+    "nb": "Binance bekrefter at børsen tapte om lag 6,3 milliarder amerikanske dollar i sikkerhetshendelsen 29. oktober 2026, og sier at om lag 3 milliarder av dette er frosset. Ifølge Binance fungerer innskudd som normalt, og uttak ventes å åpne igjen innen 48 timer. Børsen sier at etterforskningen har funnet flere innbruddspunkter enn den kompromitterte datamaskinen til en ansatt som ble nevnt tidligere, og at brukernes tap skal dekkes fra nødfondet SAFU og egne midler.",
+    "sv": "Binance bekräftar att börsen förlorade omkring 6,3 miljarder amerikanska dollar i säkerhetsincidenten den 29 oktober 2026 och uppger att omkring 3 miljarder av detta har frysts. Enligt Binance fungerar insättningar normalt och uttag väntas öppna igen inom 48 timmar. Börsen säger att utredningen har hittat fler intrångspunkter än den komprometterade dator hos en anställd som nämndes tidigare, och att användarnas förluster ska täckas ur nödfonden SAFU och egna medel.",
+    "da": "Binance bekræfter, at børsen tabte omkring 6,3 milliarder amerikanske dollar ved sikkerhedshændelsen den 29. oktober 2026, og oplyser, at omkring 3 milliarder af beløbet er indefrosset. Ifølge Binance fungerer indbetalinger normalt, og udbetalinger ventes at åbne igen inden for 48 timer. Børsen siger, at undersøgelsen har fundet flere indbrudspunkter end den kompromitterede computer hos en medarbejder, som blev nævnt tidligere, og at brugernes tab dækkes af nødfonden SAFU og egne midler.",
+    "fi": "Binance vahvistaa menettäneensä noin 6,3 miljardia Yhdysvaltain dollaria 29. lokakuuta 2026 sattuneessa tietoturvaloukkauksessa ja kertoo, että noin 3 miljardia siitä on jäädytetty. Binancen mukaan talletukset toimivat normaalisti, ja nostojen odotetaan avautuvan uudelleen 48 tunnin kuluessa. Pörssi kertoo, että tutkinnassa on löytynyt muitakin murtautumiskohtia kuin aiemmin mainittu työntekijän vaarantunut tietokone, ja että käyttäjien tappiot katetaan SAFU-hätärahastosta ja yhtiön omista varoista.",
+    "is": "Binance staðfestir að kauphöllin hafi tapað um 6,3 milljörðum Bandaríkjadala í öryggisatvikinu 29. október 2026 og segir að um 3 milljarðar af því hafi verið frystir. Samkvæmt Binance virka innlagnir eðlilega og búist er við að úttektir opni aftur innan 48 klukkustunda. Kauphöllin segir að rannsóknin hafi leitt í ljós fleiri innbrotsleiðir en tölvu starfsmanns sem áður var nefnd, og að tap notenda verði bætt úr neyðarsjóðnum SAFU og eigin fé.",
+    "zh": "币安确认，在2026年10月29日的安全事件中损失约63亿美元，并表示其中约30亿美元已被冻结。据币安称，充值运作正常，提现预计将在48小时内恢复。该交易所表示，调查发现除此前提到的一名员工被入侵的电脑外，还存在其他入侵点，用户损失将由其SAFU紧急基金和自有资金承担。",
+    "hi": "Binance ने पुष्टि की है कि 29 अक्टूबर 2026 की सुरक्षा घटना में उसे लगभग 6.3 अरब अमेरिकी डॉलर का नुकसान हुआ, और कहा है कि इसमें से लगभग 3 अरब डॉलर फ्रीज़ कर दिए गए हैं। Binance के अनुसार जमा सामान्य रूप से काम कर रहे हैं और निकासी 48 घंटों के भीतर फिर से खुलने की उम्मीद है। एक्सचेंज का कहना है कि जांच में पहले बताए गए एक कर्मचारी के हैक हुए कंप्यूटर के अलावा और भी सेंधमारी के बिंदु मिले हैं, और उपयोगकर्ताओं के नुकसान की भरपाई उसके SAFU आपात कोष और अपने धन से की जाएगी।",
+    "es": "Binance confirma que perdió unos 6.300 millones de dólares estadounidenses en el incidente de seguridad del 29 de octubre de 2026 y afirma que unos 3.000 millones de esa cantidad han sido congelados. Según Binance, los depósitos funcionan con normalidad y se espera que los retiros se reabran en un plazo de 48 horas. El exchange dice que su investigación ha encontrado otros puntos de intrusión además del ordenador comprometido de un empleado mencionado antes, y que las pérdidas de los usuarios se cubrirán con su fondo de emergencia SAFU y fondos propios.",
+    "fr": "Binance confirme avoir perdu environ 6,3 milliards de dollars américains lors de l'incident de sécurité du 29 octobre 2026 et indique qu'environ 3 milliards ont été gelés. Selon Binance, les dépôts fonctionnent normalement et les retraits devraient rouvrir d'ici 48 heures. La plateforme affirme que son enquête a mis au jour d'autres points d'intrusion que l'ordinateur compromis d'un employé évoqué précédemment, et que les pertes des utilisateurs seront couvertes par son fonds d'urgence SAFU et ses fonds propres.",
+    "ar": "تؤكد بينانس أنها خسرت نحو 6.3 مليار دولار أمريكي في الحادث الأمني الذي وقع في 29 أكتوبر 2026، وتقول إن نحو 3 مليارات من هذا المبلغ جرى تجميدها. ووفقًا لبينانس، تعمل الإيداعات بشكل طبيعي ومن المتوقع أن تُستأنف عمليات السحب خلال 48 ساعة. وتقول المنصة إن تحقيقها كشف نقاط اختراق إضافية غير حاسوب الموظف المخترق الذي ذُكر سابقًا، وإن خسائر المستخدمين ستُغطّى من صندوق الطوارئ SAFU ومن أموالها الخاصة.",
+    "bn": "Binance নিশ্চিত করেছে যে ২০২৬ সালের ২৯ অক্টোবরের নিরাপত্তা ঘটনায় তাদের প্রায় ৬.৩ বিলিয়ন মার্কিন ডলার ক্ষতি হয়েছে, এবং জানিয়েছে যে এর মধ্যে প্রায় ৩ বিলিয়ন ডলার জব্দ করা হয়েছে। Binance-এর মতে জমা স্বাভাবিকভাবে চলছে এবং ৪৮ ঘণ্টার মধ্যে উত্তোলন আবার চালু হবে বলে আশা করা হচ্ছে। এক্সচেঞ্জটি বলছে, তদন্তে আগে উল্লেখ করা এক কর্মীর আক্রান্ত কম্পিউটার ছাড়াও আরও অনুপ্রবেশের পথ পাওয়া গেছে, এবং ব্যবহারকারীদের ক্ষতি SAFU জরুরি তহবিল ও নিজস্ব অর্থ থেকে পূরণ করা হবে।",
+    "pt": "A Binance confirma que perdeu cerca de 6,3 mil milhões de dólares americanos no incidente de segurança de 29 de outubro de 2026 e afirma que cerca de 3 mil milhões foram congelados. Segundo a Binance, os depósitos funcionam normalmente e os levantamentos deverão reabrir dentro de 48 horas. A plataforma diz que a investigação encontrou outros pontos de intrusão além do computador comprometido de um funcionário mencionado anteriormente, e que as perdas dos utilizadores serão cobertas pelo fundo de emergência SAFU e por fundos próprios.",
+    "ru": "Binance подтвердила, что в результате инцидента безопасности 29 октября 2026 года потеряла около 6,3 млрд долларов США, и сообщила, что около 3 млрд из этой суммы заморожены. По данным Binance, пополнения работают в обычном режиме, а вывод средств, как ожидается, возобновится в течение 48 часов. Биржа заявляет, что расследование выявило и другие точки проникновения помимо ранее упомянутого скомпрометированного компьютера сотрудника, а убытки пользователей будут покрыты из резервного фонда SAFU и собственных средств.",
+    "ur": "بائنانس نے تصدیق کی ہے کہ 29 اکتوبر 2026 کے سکیورٹی واقعے میں اسے تقریباً 6.3 ارب امریکی ڈالر کا نقصان ہوا، اور کہا ہے کہ اس میں سے تقریباً 3 ارب ڈالر منجمد کر دیے گئے ہیں۔ بائنانس کے مطابق جمع کرانے کا عمل معمول کے مطابق جاری ہے اور رقم نکالنے کی سہولت 48 گھنٹوں میں دوبارہ کھلنے کی توقع ہے۔ ایکسچینج کا کہنا ہے کہ تحقیقات میں پہلے بتائے گئے ایک ملازم کے متاثرہ کمپیوٹر کے علاوہ مزید نقب کے مقامات ملے ہیں، اور صارفین کے نقصانات SAFU ہنگامی فنڈ اور اپنے وسائل سے پورے کیے جائیں گے۔",
+    "id": "Binance mengonfirmasi kehilangan sekitar 6,3 miliar dolar AS dalam insiden keamanan pada 29 Oktober 2026, dan menyatakan sekitar 3 miliar di antaranya telah dibekukan. Menurut Binance, setoran berjalan normal dan penarikan diperkirakan dibuka kembali dalam 48 jam. Bursa itu mengatakan penyelidikan menemukan titik pembobolan lain selain komputer karyawan yang disusupi yang disebut sebelumnya, dan kerugian pengguna akan ditutup dari dana darurat SAFU serta dana sendiri.",
+    "de": "Binance bestätigt, beim Sicherheitsvorfall am 29. Oktober 2026 rund 6,3 Milliarden US-Dollar verloren zu haben, und gibt an, dass davon rund 3 Milliarden eingefroren wurden. Laut Binance funktionieren Einzahlungen normal, und Auszahlungen sollen innerhalb von 48 Stunden wieder möglich sein. Die Börse erklärt, ihre Untersuchung habe weitere Einbruchsstellen neben dem zuvor genannten kompromittierten Rechner eines Mitarbeiters gefunden, und die Verluste der Nutzer würden aus dem Notfallfonds SAFU und eigenen Mitteln gedeckt.",
+    "ja": "バイナンスは、2026年10月29日のセキュリティインシデントで約63億米ドルを失ったことを確認し、そのうち約30億ドルが凍結されたと述べた。バイナンスによると入金は通常どおり機能しており、出金は48時間以内に再開される見込みだ。同取引所は、調査で以前に挙げた従業員の侵害されたコンピューター以外にも侵入経路が見つかったとし、利用者の損失は緊急基金SAFUと自己資金で補填するとしている。",
+    "sw": "Binance inathibitisha kwamba ilipoteza takriban dola bilioni 6.3 za Marekani katika tukio la kiusalama la tarehe 29 Oktoba 2026, na inasema takriban bilioni 3 kati ya hizo zimezuiliwa. Kwa mujibu wa Binance, uwekaji fedha unafanya kazi kama kawaida na utoaji fedha unatarajiwa kufunguliwa tena ndani ya saa 48. Soko hilo linasema uchunguzi umegundua sehemu nyingine za uvamizi zaidi ya kompyuta ya mfanyakazi iliyoingiliwa iliyotajwa awali, na kwamba hasara za watumiaji zitalipwa kutoka mfuko wa dharura wa SAFU na fedha zake yenyewe.",
+    "mr": "Binance ने पुष्टी केली आहे की 29 ऑक्टोबर 2026 च्या सुरक्षा घटनेत सुमारे 6.3 अब्ज अमेरिकी डॉलरचे नुकसान झाले, आणि त्यापैकी सुमारे 3 अब्ज डॉलर गोठवले गेले आहेत असे सांगितले आहे. Binance नुसार जमा सामान्यपणे सुरू आहेत आणि पैसे काढणे 48 तासांत पुन्हा सुरू होण्याची अपेक्षा आहे. एक्सचेंजचे म्हणणे आहे की तपासात आधी उल्लेख केलेल्या एका कर्मचाऱ्याच्या बाधित संगणकाव्यतिरिक्त आणखी घुसखोरीचे मार्ग सापडले आहेत, आणि वापरकर्त्यांचे नुकसान SAFU आपत्कालीन निधी व स्वतःच्या निधीतून भरून काढले जाईल.",
+    "fa": "بایننس تأیید می‌کند که در رخداد امنیتی ۲۹ اکتبر ۲۰۲۶ حدود ۶٫۳ میلیارد دلار آمریکا از دست داده است و می‌گوید حدود ۳ میلیارد از این مبلغ مسدود شده است. به گفته بایننس، واریزها به‌طور عادی انجام می‌شود و انتظار می‌رود برداشت‌ها ظرف ۴۸ ساعت دوباره باز شود. این صرافی می‌گوید تحقیقاتش نقاط نفوذ دیگری جز رایانه آلوده یکی از کارکنان که پیش‌تر به آن اشاره شده بود یافته است و زیان کاربران از صندوق اضطراری SAFU و منابع خود صرافی جبران خواهد شد.",
+    "uk": "Binance підтвердила, що внаслідок інциденту безпеки 29 жовтня 2026 року втратила близько 6,3 млрд доларів США, і повідомила, що близько 3 млрд із цієї суми заморожено. За даними Binance, поповнення працюють у звичайному режимі, а виведення коштів, як очікується, відновиться протягом 48 годин. Біржа заявляє, що розслідування виявило інші точки проникнення, окрім раніше згаданого скомпрометованого комп'ютера працівника, а збитки користувачів буде покрито з резервного фонду SAFU та власних коштів.",
+    "tr": "Binance, 29 Ekim 2026'daki güvenlik olayında yaklaşık 6,3 milyar ABD doları kaybettiğini doğruladı ve bunun yaklaşık 3 milyar dolarının dondurulduğunu açıkladı. Binance'e göre para yatırma işlemleri normal çalışıyor ve para çekme işlemlerinin 48 saat içinde yeniden açılması bekleniyor. Borsa, soruşturmanın daha önce belirtilen bir çalışanın ele geçirilmiş bilgisayarı dışında başka sızma noktaları da bulduğunu ve kullanıcı kayıplarının SAFU acil durum fonu ile kendi kaynaklarından karşılanacağını söylüyor."
    },
    "summary_i18n_review": "pending"
   },
@@ -2313,7 +3070,20 @@
     "tr": "ABD'li kripto ve veri merkezi şirketi Galaxy Digital, 2026'nın üçüncü çeyreğinde ikinci çeyrekteki 85 milyon dolarlık zararın ardından 323 milyon dolar net kâr açıkladı. Şirket sonucu dijital varlık işine, yatırım portföyündeki kazançlara ve veri merkezi işinden elde edilen kira gelirinin ilk tam çeyreğine bağlıyor.",
     "se": "US-kryptovaluta- ja dihtorguovddášfitnodat Galaxy Digital dieđihii 323 miljovnna dollára badjebáhcagis 2026 goalmmát kvartálas, maŋŋel go nuppi kvartálas lei 85 miljovnna dollara vuolláibáza. Fitnodat čujuha bohtosii iežas digitála-resurssafitnodahkii, vuoittu iežas investerenporteføljii ja vuosttaš olles njealjádasjahkái láigohanboađuin iežas dihtorguovddášfitnodahkii."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "investornytt",
+     "outlet_name": "Investornytt",
+     "url": "https://investornytt.no/bors/galaxy-overrasket-i-tredje-kvartal-men-resultatet-forteller-bare-halve-historien/549433",
+     "title": "Galaxy overrasket i tredje kvartal – men resultatet forteller bare halve historien",
+     "published": "2026-10-30T12:36:18+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
   },
   {
    "id": "5672fc124704",
@@ -2634,9 +3404,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "4bc601c3469c",
