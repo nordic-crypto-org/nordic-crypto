@@ -3,9 +3,16 @@
 import json, os, sys, unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
-from tools.frontpage_blurbs import LANGS, card_text, check, load, opening_sentences, own_summary, sentences, substantive
+from tools.frontpage_blurbs import teaser, LANGS, card_text, check, load, opening_sentences, own_summary, sentences, substantive
 
 class FrontPageBlurbs(unittest.TestCase):
+    def test_teaser_keeps_whole_sentences(self):
+        self.assertEqual(teaser("One fact. Another fact."), "One fact. Another fact.")
+        long = "First sentence here. " + "Word " * 60 + "end."
+        self.assertEqual(teaser(long), "First sentence here.")
+        cut = teaser("word " * 80)
+        self.assertTrue(cut.endswith("…") and len(cut) <= 241 and not cut[:-1].endswith(" "))
+
     def test_catalogue(self):
         self.assertEqual(check(), 0)
 
