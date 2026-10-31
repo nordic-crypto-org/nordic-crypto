@@ -4,7 +4,7 @@ Policy Worker for event-NFT mints. It is not the tip Worker (`tipworker/`).
 
 The tip Worker takes reader tips and newsletter signups, and its database holds email addresses. A key that can spend does not belong in that process.
 
-When `NC_EVENT_NFT=1` and `MINT_NETWORK=testnet`, this Worker signs a Nexa NFT plus the 1,000 NEXA airdrop, or a Bitcoin Cash CashTokens mint plus the 10,000 sat airdrop, and broadcasts it. The key is the Worker secret. UTXOs are read from the testnet electrum nodes, not from the client. A mainnet address is refused. With the flag off, `signs` in `/api/health` is false and nothing is broadcast. The Worker has not been deployed.
+When `NC_EVENT_NFT=1` and `MINT_NETWORK=testnet`, this Worker signs a numbered Nexa NFT edition plus the 1,000 NEXA airdrop, or a Bitcoin Cash CashTokens mint plus the 10,000 sat airdrop, and broadcasts it. The key is the Worker secret. UTXOs are read from the testnet electrum nodes, not from the client. A mainnet address is refused. With the flag off, `signs` in `/api/health` is false and nothing is broadcast. The Worker has been deployed to testnet for the token setup. Nothing is on mainnet.
 
 The Bitcoin Cash signer is pure JavaScript (`@noble/curves` and `@noble/hashes`, plus a small CashAddr and transaction codec in `src/bch/`). It does not import `@bitauth/libauth`. That library compiles WASM from bytes when the module loads, and workerd rejects that (`Wasm code generation disallowed by embedder`, then `Top-level await in module is unsettled`). `libnexa-ts` is also pure JavaScript. It uses `Buffer`, so `wrangler.toml` sets `compatibility_flags = ["nodejs_compat"]`.
 
@@ -44,6 +44,12 @@ Nexa needs a plain coin of at least 5,000 sats. Bitcoin Cash needs a vout-0 coin
 
 `scripts/setup-tokens.mjs` remains for a machine that has the key locally. It refuses mainnet. The deployed keys are not in that script.
 
+## Cards and editions
+
+The site build publishes `/assets/nft/cards.json` (see `tools/event_nft.py`). `POST /api/mint` takes `chain`, `event_id`, `kind` (`pre` or `ongoing`), `identity` and `signature`. The Worker looks the card up in that index (`CARD_INDEX_URL` overrides the URL; the copy is cached for five minutes per isolate) and refuses an unknown card (`unknown_card`) or a time outside its window (`outside_window`). A `zip_url` or `zip_hash` in the request is ignored.
+
+Every mint takes the next free edition of its card, so each minted NFT is its own token with its own image. The claim row (identity hash, kind, edition) is reserved in one statement before signing and deleted if the mint does not go out. When every edition is taken the mint stops with `editions_exhausted`. Migration `0004_editions.sql` adds the columns and the unique index.
+
 ## Caps
 
 `caps.json` is the source of the numbers. `src/policy.js` refuses a mint when:
@@ -54,7 +60,7 @@ Nexa needs a plain coin of at least 5,000 sats. Bitcoin Cash needs a vout-0 coin
 
 The reserve is 2,040 NEXA and 23,000 sats. A balance equal to the reserve is refused, so the wallet has to sit strictly above it. One Nexa mint draws 1,020 NEXA (1,000 airdrop plus up to 20 NEXA of fee). One Bitcoin Cash mint draws 11,500 sats.
 
-Tests: `npm test` (no network, no key).
+Tests: `npm test` (no network, no key). `tests/cards.test.mjs` runs the claim SQL against the real migrations on `node:sqlite` (Node 22.5 or newer).
 
 ## Electrum
 
