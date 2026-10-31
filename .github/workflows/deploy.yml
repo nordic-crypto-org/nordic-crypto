@@ -27,6 +27,7 @@ on:
       - ".github/ISSUE_TEMPLATE/**"
       - "assets/logo-concepts/**"
       - "README.md"
+      - "data/x_daily_posted.json"
   workflow_dispatch:
 
 permissions:
