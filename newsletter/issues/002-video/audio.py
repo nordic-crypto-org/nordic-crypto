@@ -1,4 +1,4 @@
-"""Original synthesized jingle, stingers and music bed (numpy only), mixed under the edge-tts voice."""
+"""Original synthesized "Signal" jingle, stingers and music bed (numpy only), mixed under the edge-tts voice."""
 import numpy as np, json, wave
 SR = 48000; B = 'build/'
 rng = np.random.default_rng(7)
@@ -34,19 +34,45 @@ def cymbal(dur, amp=0.15, swell=False):
 def put(buf, x, at):
     i = int(at * SR); j = min(len(buf), i + len(x)); buf[i:j] += x[:j - i]
 
-def jingle():  # ~5.5 s original fanfare in D major
-    y = np.zeros(int(5.5 * SR), np.float32)
-    put(y, cymbal(1.0, 0.12, True), 0.0)
-    beat = 0.25
-    motif = [(62, 0, .5), (69, 2, .5), (74, 3, 1.0), (66, 4, .5), (69, 5, .5), (74, 6, .5), (78, 7, 1.0)]
-    for m, b, d in motif:
-        put(y, brass(m, d * 1.4 * beat * 4 / 2 + .1, .28), 1.0 + b * beat)
-        put(y, brass(m - 12, d * beat * 2 + .1, .14, 5), 1.0 + b * beat)
-    put(y, timp(38), 1.0); put(y, timp(45, .8, .4), 1.5); put(y, timp(38), 1.75)
-    # final chord D major, held
-    for m in (62, 66, 69, 74, 78): put(y, brass(m, 2.4, .2), 3.0)
-    put(y, timp(38, 2.0, .8), 3.0); put(y, cymbal(2.2, .2), 3.0); put(y, bandnoise(1.0, 300, 6000, .12), 0.0)
+# "Signal" bumper jingle (4.0 s): data blips and a riser into one wide A minor hit at JINGLE_HIT.
+JINGLE_LEN, JINGLE_HIT = 4.0, 1.0
+_srng = np.random.default_rng(11)
+def _t(d): return np.arange(int(d * SR)) / SR
+def _lp(x, fc):  # one-pole lowpass; fc scalar or per-sample
+    fc = np.broadcast_to(fc, x.shape); a = np.exp(-2 * np.pi * fc / SR); y = np.zeros_like(x); s = 0.
+    for i in range(len(x)): s = (1 - a[i]) * x[i] + a[i] * s; y[i] = s
     return y
+def _saw(f, t, voices=5, det=.012):
+    y = 0
+    for k in range(voices):
+        ff = f * (1 + det * (k - (voices - 1) / 2) / voices); y = y + 2 * ((ff * t + _srng.random()) % 1) - 1
+    return y / voices
+def _kick(amp=.9, d=.45):
+    t = _t(d); f = 45 + 110 * np.exp(-t * 28)
+    return (np.tanh(2.2 * np.sin(2 * np.pi * np.cumsum(f) / SR)) * np.exp(-t * 7) * amp).astype(np.float32)
+def _stab(notes, d, amp=.25, bright=6000, dec=6):
+    t = _t(d); y = sum(_saw(mtof(m), t) for m in notes) / len(notes)
+    y = _lp(y, 300 + bright * np.exp(-t * dec)); e = np.minimum(t / .004, 1) * np.exp(-t * 1.2) * np.clip((d - t) / .15, 0, 1)
+    return (y * e * amp).astype(np.float32)
+def _riser(d, f0=200, f1=9000, amp=.2):
+    t = _t(d); fc = f0 * (f1 / f0) ** (t / d)
+    return (_lp(_srng.standard_normal(len(t)), fc) * (t / d) ** 2 * amp * 3).astype(np.float32)
+def _impact(amp=.8, d=2.0):
+    t = _t(d); sub = np.sin(2 * np.pi * np.cumsum(38 + 60 * np.exp(-t * 12)) / SR) * np.exp(-t * 2.2)
+    nz = _lp(_srng.standard_normal(len(t)), 1800) * np.exp(-t * 4) * 2
+    return ((np.tanh(1.5 * sub) + nz * .5) * amp).astype(np.float32)
+def jingle():
+    y = np.zeros(int(JINGLE_LEN * SR), np.float32); hit = JINGLE_HIT
+    for i, m in enumerate((86, 81, 86, 89, 86, 93)):
+        t = _t(.07); put(y, (np.sin(2 * np.pi * mtof(m) * t) * np.exp(-t * 40) * .18).astype(np.float32), .08 + i * .11)
+    put(y, _riser(.9, 150, 12000, .22), .1)
+    put(y, _kick(.6, .2), hit - .22); put(y, _kick(.6, .2), hit - .11)
+    put(y, _stab([45, 57, 60, 64, 69, 72], 3.0, .34, 5000, 2.2), hit)
+    put(y, _impact(.95, 3.0), hit)
+    t = _t(3.0); put(y, (_lp(np.diff(np.r_[0, _srng.standard_normal(len(t))]), 9000) * np.exp(-t * 1.5) * .12).astype(np.float32), hit)
+    put(y, _stab([76, 81], .5, .14, 8000, 6), hit + .55)
+    y = np.tanh(y / (np.abs(y).max() + 1e-9) * 1.3) / np.tanh(1.3)  # same soft clip as the approved reference
+    return (y * 1.2).astype(np.float32)  # about the loudness of the old 5.5 s fanfare in the mix
 def stinger():  # ~2.2 s section sting
     y = np.zeros(int(2.2 * SR), np.float32)
     put(y, bandnoise(0.5, 400, 7000, .18), 0.0)
