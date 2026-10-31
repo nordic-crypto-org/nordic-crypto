@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-31T06:35:01+00:00",
+ "generated_at": "2026-10-31T06:43:40+00:00",
  "preview": false,
  "updated": "2026-10-31T02:45:22+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
@@ -37,7 +37,8 @@
     "mr": "विश्लेषण कंपन्यांनी Binance हॅकचा संबंध उत्तर कोरियाच्या Lazarus गटाशी जोडला",
     "fa": "شرکت‌های تحلیلی هک بایننس را به گروه لازاروس کره شمالی مرتبط می‌دانند",
     "uk": "Аналітичні компанії пов'язують злам Binance з північнокорейським угрупованням Lazarus",
-    "tr": "Analiz şirketleri Binance saldırısını Kuzey Kore'nin Lazarus grubuyla ilişkilendiriyor"
+    "tr": "Analiz şirketleri Binance saldırısını Kuzey Kore'nin Lazarus grubuyla ilişkilendiriyor",
+    "se": "Analysajoavku čatná Binance-hákkema Davvi-Korea Lazarus-jovkui"
    },
    "source": "e24",
    "source_name": "E24",
@@ -550,7 +551,8 @@
     "mr": "Coinbase चा तिसऱ्या तिमाहीतील निव्वळ नफा 71.9 कोटी डॉलर, बहुतांश क्रिप्टो नफ्यातून",
     "fa": "سود خالص ۷۱۹ میلیون دلاری کوین‌بیس در سه‌ماهه سوم، عمدتاً از سود رمزارزها",
     "uk": "Чистий прибуток Coinbase у третьому кварталі — 719 млн доларів, переважно завдяки криптоактивам",
-    "tr": "Coinbase üçüncü çeyrekte çoğu kripto kazançlarından gelen 719 milyon dolar net kâr açıkladı"
+    "tr": "Coinbase üçüncü çeyrekte çoğu kripto kazançlarından gelen 719 milyon dolar net kâr açıkladı",
+    "se": "Coinbase almmuha goalmmat kvartálas 719 miljovnna dollara badjelbáhcaga, eanaš crypto-vuoittuid geažil"
    },
    "source": "hurbra.se",
    "source_name": "hurbra",
@@ -683,7 +685,8 @@
     "mr": "Binance हॅकनंतर नॉर्वेच्या न्यायमंत्री आणि स्वीडिश तज्ज्ञ चिंतेत",
     "fa": "نگرانی وزیر دادگستری نروژ و کارشناسان سوئدی پس از هک بایننس",
     "uk": "Міністерка юстиції Норвегії та шведські експерти стурбовані після злому Binance",
-    "tr": "Binance saldırısının ardından Norveç Adalet Bakanı ve İsveçli uzmanlar endişeli"
+    "tr": "Binance saldırısının ardından Norveç Adalet Bakanı ve İsveçli uzmanlar endişeli",
+    "se": "Norgga justiisaministtar ja ruoŧŧilaš ekspearttat vuorjašuvvet Binance-háhkama geažil"
    },
    "source": "kaupr",
    "source_name": "Kaupr",
