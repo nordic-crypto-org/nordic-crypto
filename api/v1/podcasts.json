@@ -1,11 +1,93 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-10-30T20:03:49+00:00",
+ "generated_at": "2026-10-31T03:38:39+00:00",
  "preview": false,
- "updated": "2026-10-30T03:16:28+00:00",
+ "updated": "2026-10-31T03:20:20+00:00",
  "count": 25,
  "podcasts": [
+  {
+   "id": "bpi",
+   "name": "Bitcoinpolitisk institutt Norge",
+   "country": "NO",
+   "language": "no",
+   "feed": "https://anchor.fm/s/109ebeac4/podcast/rss",
+   "site": "https://bpinorge.no",
+   "flags": [
+    "advocacy-group"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "Can­til­lon-ef­fek­ten & pengar",
+     "date": "2026-10-30",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Cantillon-effekten--pengar-e3re058"
+    },
+    {
+     "title": "Norway Wants to Ban Bitcoin Mining. The Miners Already Left | Rachel Geyer, EBEA",
+     "date": "2026-09-17",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Norway-Wants-to-Ban-Bitcoin-Mining--The-Miners-Already-Left--Rachel-Geyer--EBEA-e3p0bb8"
+    },
+    {
+     "title": "Er bitcoin vinnaren av krigen mot Iran? | Arendalsuka 2026",
+     "date": "2026-09-03",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Er-bitcoin-vinnaren-av-krigen-mot-Iran---Arendalsuka-2026-e3o9q3j"
+    },
+    {
+     "title": "Kan bitcoin bli penger i Palestina?",
+     "date": "2026-08-18",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Kan-bitcoin-bli-penger-i-Palestina-e3niksq"
+    },
+    {
+     "title": "Kan Bitcoin-utvinning bli en samfunnsnyttig tjeneste? – Anders Lie Brenna",
+     "date": "2026-07-14",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Kan-Bitcoin-utvinning-bli-en-samfunnsnyttig-tjeneste---Anders-Lie-Brenna-e3m2gst"
+    }
+   ],
+   "added_at": "2026-10-16",
+   "html_url": "https://nordiccrypto.no/podcasts/#bpi"
+  },
+  {
+   "id": "firi-ugens-kryptosnak",
+   "name": "Firi – Ugens Kryptosnak",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://anchor.fm/s/e28ae304/podcast/rss",
+   "site": "https://firi.com/dk",
+   "flags": [
+    "exchange-owned"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "Det er Binance og ikke blockchains der er hacket!",
+     "date": "2026-10-30",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Det-er-Binance-og-ikke-blockchains-der-er-hacket-e3rdtup"
+    },
+    {
+     "title": "Solana er nu lige så hurtig som en kortbetaling",
+     "date": "2026-10-23",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Solana-er-nu-lige-s-hurtig-som-en-kortbetaling-e3qvd34"
+    },
+    {
+     "title": "Hvordan beskattes tokeniserede aktier?",
+     "date": "2026-10-14",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Hvordan-beskattes-tokeniserede-aktier-e3qfvb9"
+    },
+    {
+     "title": "Tokeniserede aktiver vokser",
+     "date": "2026-10-09",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Tokeniserede-aktiver-vokser-e3q7sqn"
+    },
+    {
+     "title": "Ingen stablecoin uden en kryptovaluta",
+     "date": "2026-10-01",
+     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Ingen-stablecoin-uden-en-kryptovaluta-e3pn496"
+    }
+   ],
+   "added_at": "2026-10-16",
+   "html_url": "https://nordiccrypto.no/podcasts/#firi-ugens-kryptosnak"
+  },
   {
    "id": "bitcoinsnakk",
    "name": "Bitcoinsnakk",
@@ -85,47 +167,6 @@
    ],
    "added_at": "2026-10-16",
    "html_url": "https://nordiccrypto.no/podcasts/#bitcoinpodden"
-  },
-  {
-   "id": "firi-ugens-kryptosnak",
-   "name": "Firi – Ugens Kryptosnak",
-   "country": "DK",
-   "language": "da",
-   "feed": "https://anchor.fm/s/e28ae304/podcast/rss",
-   "site": "https://firi.com/dk",
-   "flags": [
-    "exchange-owned"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "Solana er nu lige så hurtig som en kortbetaling",
-     "date": "2026-10-23",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Solana-er-nu-lige-s-hurtig-som-en-kortbetaling-e3qvd34"
-    },
-    {
-     "title": "Hvordan beskattes tokeniserede aktier?",
-     "date": "2026-10-14",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Hvordan-beskattes-tokeniserede-aktier-e3qfvb9"
-    },
-    {
-     "title": "Tokeniserede aktiver vokser",
-     "date": "2026-10-09",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Tokeniserede-aktiver-vokser-e3q7sqn"
-    },
-    {
-     "title": "Ingen stablecoin uden en kryptovaluta",
-     "date": "2026-10-01",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Ingen-stablecoin-uden-en-kryptovaluta-e3pn496"
-    },
-    {
-     "title": "Nu snakker bankerne om krypto og AI",
-     "date": "2026-09-24",
-     "link": "https://podcasters.spotify.com/pod/show/firi/episodes/Nu-snakker-bankerne-om-krypto-og-AI-e3pb8bo"
-    }
-   ],
-   "added_at": "2026-10-16",
-   "html_url": "https://nordiccrypto.no/podcasts/#firi-ugens-kryptosnak"
   },
   {
    "id": "en-og-tyve-tanker",
@@ -245,47 +286,6 @@
    ],
    "added_at": "2026-10-16",
    "html_url": "https://nordiccrypto.no/podcasts/#shop21"
-  },
-  {
-   "id": "bpi",
-   "name": "Bitcoinpolitisk institutt Norge",
-   "country": "NO",
-   "language": "no",
-   "feed": "https://anchor.fm/s/109ebeac4/podcast/rss",
-   "site": "https://bpinorge.no",
-   "flags": [
-    "advocacy-group"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "Norway Wants to Ban Bitcoin Mining. The Miners Already Left | Rachel Geyer, EBEA",
-     "date": "2026-09-17",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Norway-Wants-to-Ban-Bitcoin-Mining--The-Miners-Already-Left--Rachel-Geyer--EBEA-e3p0bb8"
-    },
-    {
-     "title": "Er bitcoin vinnaren av krigen mot Iran? | Arendalsuka 2026",
-     "date": "2026-09-03",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Er-bitcoin-vinnaren-av-krigen-mot-Iran---Arendalsuka-2026-e3o9q3j"
-    },
-    {
-     "title": "Kan bitcoin bli penger i Palestina?",
-     "date": "2026-08-18",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Kan-bitcoin-bli-penger-i-Palestina-e3niksq"
-    },
-    {
-     "title": "Kan Bitcoin-utvinning bli en samfunnsnyttig tjeneste? – Anders Lie Brenna",
-     "date": "2026-07-14",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Kan-Bitcoin-utvinning-bli-en-samfunnsnyttig-tjeneste---Anders-Lie-Brenna-e3m2gst"
-    },
-    {
-     "title": "Pengetrykking og inflasjon Korleis påverkar pengesystemet vårt inflasjonen i riket? I kva grad er bitcoin eit \"alternativ\"?",
-     "date": "2026-06-19",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinsnakk9/episodes/Pengetrykking-og-inflasjon-Korleis-pverkar-pengesystemet-vrt-inflasjonen-i-riket--I-kva-grad-er-bitcoin-eit-alternativ-e3l0c2t"
-    }
-   ],
-   "added_at": "2026-10-16",
-   "html_url": "https://nordiccrypto.no/podcasts/#bpi"
   },
   {
    "id": "kryptoskeptikerne",
