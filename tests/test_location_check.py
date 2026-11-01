@@ -27,6 +27,8 @@ class LocationCheck(unittest.TestCase):
     def test_stored_events(self):
         for f in ("data/events.json", "archive/events.json"):
             for e in json.load(open(os.path.join(ROOT, f), encoding="utf-8"))["events"]:
+                if e.get("status") == "pending" and (e.get("note") or "").startswith("location:"):
+                    continue  # held by the fetcher until the editor adds the address
                 self.assertIsNone(lc.issue(e), f"{f} {e.get('id')}")
 
 
