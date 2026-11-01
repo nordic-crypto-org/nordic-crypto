@@ -1,6 +1,6 @@
 # Event NFTs
 
-A generated card for a public event, minted once per identity, paid for by a treasury anyone can fund. The person minting pays nothing. This document is the design. The public site stays off until the flag is on. The mint worker can sign and broadcast on testnet when that flag is on and `MINT_NETWORK` is `testnet`. No key is in git, and nothing here is deployed.
+A generated card for a public event, minted once per identity, paid for by a treasury anyone can fund. The person minting pays nothing. This document is the design. The public site stays off until the flag is on. The mint worker can sign and broadcast on testnet when that flag is on and `MINT_NETWORK` is `testnet`. No key is in git. The Worker has been deployed to testnet (the Nexa testnet group was created through it); nothing is on mainnet.
 
 Two chains, two moments:
 
@@ -9,7 +9,7 @@ Two chains, two moments:
 | Nexa | Pre-event card, "I'm going". Received in Wally Wallet. | Ongoing card, "I was there". Received in Wally Wallet. |
 | Bitcoin Cash | Pre-event card, "I'm going". CashTokens NFT. | Ongoing card, "I was there". CashTokens NFT. |
 
-That is four cards per event. Each chain has its own treasury. The hard rule is one mint per identity, per chain, per event. The card kind does not grant a second mint: the same NexaID cannot take both the pre-event card and the ongoing card. Widening that to one card per kind is an open choice.
+That is four cards per event. Every mint of a card is its own numbered edition with its own image, so no two minted NFTs are the same token. Each chain has its own treasury. The hard rule is one mint per identity, per chain, per event. The card kind does not grant a second mint: the same NexaID cannot take both the pre-event card and the ongoing card. Widening that to one card per kind is an open choice.
 
 ## What's on the NFT and visible in Wally
 
@@ -73,13 +73,13 @@ This is a real row in `data/events.json` (`019f42a4506c`). The source record doe
 
 When a source does state a count, `registered.count` is that integer and `source_name`, `source_url` and `retrieved_at` name where it came from. Capacity, "spots left" and estimates are not a count and are not used. That rule already exists in `tools/event_select.py`.
 
-The pre-event card for the same event uses `series` "Nordic Crypto · I'm going" and the sentence "I'm going." The Bitcoin Cash description is the same paragraph. Its on-chain commitment is the SHA-256 of those public facts, hex-encoded. That hash identifies the card, not a person.
+The pre-event card for the same event uses `series` "Nordic Crypto · I'm going" and the sentence "I'm going." The Bitcoin Cash description is the same paragraph. The example above is the card preview. A minted edition's `info.json` also has `"edition": {"number": n, "of": total}` in `data` and ends its `info` with "Edition n of total." Its on-chain commitment on Bitcoin Cash is the SHA-256 of those public facts including the kind and the edition, hex-encoded. That hash identifies the edition, not a person.
 
 ## Bitcoin Cash
 
 CashTokens (CHIP-2022-02, final) gives Bitcoin Cash a native non-fungible token: a 32-byte category, a commitment of 0 to 40 bytes, and a capability of `minting`, `mutable` or `none`. The category id is the genesis transaction. A minting-capability output can be spent to create further NFTs in that category. The child we give the minter is `none` (immutable). The minting output returns to the treasury.
 
-Metadata does not fit in 40 bytes. CHIP-2022-10 BCMR is the JSON registry wallets read for name, description, symbol and icon. Sequential NFTs map a commitment to a type in that registry. This design uses one type per event per kind. The commitment is the content hash above, so a wallet that understands BCMR shows the same facts as Wally's `info`.
+Metadata does not fit in 40 bytes. CHIP-2022-10 BCMR is the JSON registry wallets read for name, description, symbol and icon. Sequential NFTs map a commitment to a type in that registry. This design uses one type per edition. The commitment is the content hash above, so a wallet that understands BCMR shows the same facts as Wally's `info`.
 
 Wallets that receive and display CashTokens, and that can attach a BCMR when a token is created:
 
@@ -99,7 +99,13 @@ No photograph is composited. This repository has no rights-cleared event photogr
 
 The `license` field on the token is CC BY 4.0 for the generated card. The event name and the facts stay attributed to the organiser and the listed source. Whether that licence is the one the owner wants is an open question.
 
-Every copy of one card is the same zip, so on Nexa they share one subgroup and on Bitcoin Cash they share one commitment. The marketplace sees one card, not a portrait of the holder. A public edition number ("copy 12") would make each zip unique and would reveal mint order. It would still not name the holder. The prototype uses identical copies. Numbered editions are an open question.
+### Numbered editions
+
+Every minted NFT is unique, with its own image. The owner decided this on 2026-10-20 so the cards are unique non-fungible tokens and not a fungible series under MiCA. Each card has as many editions as its per-event cap in `mintworker/caps.json` (20 on Nexa, 8 on Bitcoin Cash). Edition n has "No. n / total" on the front and a 16 × 3 grid of cells drawn from the SHA-256 of the event id, the kind, the chain and n. The back repeats the facts and is shared by a card's editions. The edition number shows mint order. It does not name the holder.
+
+On Nexa each edition is its own NFT v2 zip (`info.json`, `cardf.png`, `cardb.png`, `public.png`, 300 px, stored with fixed timestamps so the bytes are reproducible) at `/assets/nft/<event>-<kind>-nexa-<nnn>.zip`, and so its own subgroup. On Bitcoin Cash each edition is its own commitment with its own icon at `/assets/nft/<event>-<kind>-bch-<nnn>-front.png`.
+
+The build writes `/assets/nft/cards.json`: per chain, event and kind, the mint window and every edition (`zip_url` and `zip_hash`, or `commitment_hex`). The mint Worker reads that file. It mints only the editions listed there, inside those windows. Nothing about the card comes from the request. `zip_hash` is the double SHA-256 of the zip in display (reversed) byte order, the form `libnexa-ts` `buildNFTDescription` takes. Whether Wally derives the same subgroup from it has to be confirmed on the first testnet mint.
 
 Files for a live mint are hosted at `https://nordiccrypto.no/assets/nft/`, which is this site. The token's `appuri` and the BCMR web URI point at the event page. The prototype writes those images only when the feature flag is on.
 
@@ -109,10 +115,10 @@ The minter pays nothing. The treasury signs and broadcasts. The wallet's job is 
 
 Nexa:
 
-1. The mint button is shown on the event page (`/calendar/<id>/`) while the event is running, and the pre-event button is shown there before the start. After the end, neither button is offered. The server checks the same window. The page clock is not the authority.
+1. The mint button is shown on the event page (`/calendar/<id>/`) while the event is running, and the pre-event button is shown there before the start. After the end, neither button is offered. The Worker checks the window from `cards.json` and refuses with `outside_window`. The page clock is not the authority. Presence is not checked: anyone may mint "I was there" while the event runs, from anywhere. The owner decided this on 2026-10-20.
 2. Wally answers a NexaID login (`nexid://` challenge, wallet returns an address and a signature). That proves control of the address. It is not written onto the NFT.
-3. The worker refuses the mint if `SHA-256(chain | identity | event id)` is already stored. The kind is not part of the hash.
-4. The worker builds one transaction: treasury inputs pay the network fee; a new NFT output of this card's subgroup goes to the NexaID address; about 1000 NEXA goes to that same address; the mint authority and the change stay with the treasury.
+3. The worker reserves the claim row (`SHA-256(chain | identity | event id)`, the kind and the next free edition number) in one statement before it signs. A second claim for that hash is refused as `identity_used`. The kind is not part of the hash. If signing or the broadcast fails, the row is deleted again.
+4. The worker builds one transaction: treasury inputs pay the network fee; a new NFT output of this edition's subgroup goes to the NexaID address; about 1000 NEXA goes to that same address; the mint authority and the change stay with the treasury.
 5. The worker broadcasts. The minter does not sign a payment. TDPP is the wrong tool here, because TDPP is how a wallet approves a transaction it pays for. A "watch for the card in Wally" state is enough.
 
 Bitcoin Cash:
@@ -120,13 +126,13 @@ Bitcoin Cash:
 1. The same windows: pre-event before the start, ongoing while it runs.
 2. The wallet signs a challenge for a Bitcoin Cash address (a signed message, or CashID where the wallet still speaks it). Paytaca, Cashonize and Electron Cash can hold the resulting NFT. Wally cannot, as shipped today.
 3. The same one-per-event check, with the BCH address as the identity. The proof is a signature over `nordic-crypto-mint|bch|<event id>|<address>`, the message Electron Cash and CashConnect's `bch_signMessage` produce. The worker checks that signature when testnet signing is on. The browser WalletConnect pairing screen is not in this draft.
-4. The worker spends the minting-capability NFT, sends an immutable NFT with this card's commitment to the address, returns the minting NFT to the treasury, and adds the sat float in the same transaction.
+4. The worker spends the minting-capability NFT, sends an immutable NFT with this edition's commitment to the address, returns the minting NFT to the treasury, and adds the sat float in the same transaction.
 
 The prototype does none of this. The button opens a preview, a QR code and a link to this site. The label says nothing is minted and no wallet is opened.
 
 ## One per identity
 
-Store only `SHA-256(chain | identity | event id)` in the mint Worker's D1, with the time of the first mint. A unique constraint on the hash closes the race. The card kind is not in the hash, so one NexaID gets one Nexa mint for that event. Do not store the raw NexaID, the raw address, or an IP address on that row. The worker may rate-limit by IP on the login request itself, in memory, and then forget it. This draft does not insert the claim row, because it does not sign. A later signer inserts the row in the same step as the broadcast.
+Store only `SHA-256(chain | identity | event id)` in the mint Worker's D1, with the card kind, the edition number and the time of the first mint. The hash is the primary key and `(chain, event, kind, edition)` is a unique index, so two requests at once cannot take one identity or one edition twice. The card kind is not in the hash, so one NexaID gets one Nexa mint for that event. Do not store the raw NexaID, the raw address, or an IP address on that row. The worker may rate-limit by IP on the login request itself, in memory, and then forget it. The signer reserves the row before it signs and deletes it if the mint does not go out. With signing off, no row is written.
 
 NexaID is the Nexa identity. It is the address Wally returns from the login, not a second account.
 
@@ -234,7 +240,7 @@ The float makes this a faucet. The limits, enforced in `mintworker/src/policy.js
 - one mint per NexaID per event, and one per Bitcoin Cash address per event (the D1 unique hash; kind does not add a mint)
 - the per-day and per-event caps in the table above
 - the reserve, so the last coins are not spent
-- Turnstile on Bitcoin Cash when `TURNSTILE_SECRET` is set
+- Turnstile on Bitcoin Cash when `TURNSTILE_SECRET` is set: the Worker sends the token to Cloudflare siteverify and refuses unless it answers success (`turnstile_required`, `turnstile_failed`)
 - an in-memory IP limit on the login endpoint, still to be wired with the signer
 - the server re-checks that the event is actually upcoming or ongoing
 
@@ -267,15 +273,14 @@ Copy is in `i18n/event_nft_strings.py` for all 25 site languages. The brand name
 
 The public token is the event, not the person. The worker's dedupe table is a hash. Logs for a mint should keep the event id, the chain and the success or refusal, not the address and not the IP. The hot key never appears in a log or a response.
 
-Abuse of the float is limited by the caps above. The worker must not mint when the event is outside its window, even if a modified page still shows the button. The static site does not mint. The worker will sign a testnet transaction when the flag is on. It has not been deployed, and a mainnet broadcast is refused. A confirming testnet mint still needs a funded hot wallet; the public nodes parsed a signed mint and rejected it for missing inputs.
+Abuse of the float is limited by the caps above. The worker must not mint when the event is outside its window, even if a modified page still shows the button. The static site does not mint. The worker will sign a testnet transaction when the flag is on. A mainnet broadcast is refused. A confirming testnet mint still needs a funded hot wallet; the public nodes parsed a signed mint and rejected it for missing inputs.
 
 ## Open questions for the owner
 
-Custody is decided: a small hot key in the Worker secret store, refilled by hand, persisted across redeploy. The cap defaults in `mintworker/caps.json` are accepted. The Bitcoin Cash check is a signature over the challenge, verified by the worker on the testnet path; the browser WalletConnect session is not built. These are still open:
+Custody is decided: a small hot key in the Worker secret store, refilled by hand, persisted across redeploy. The cap defaults in `mintworker/caps.json` are accepted. Every minted NFT is a numbered edition with its own image (decided 2026-10-20). "I was there" needs no proof of presence, only a mint while the event runs (decided 2026-10-20). The Bitcoin Cash check is a signature over the challenge, verified by the worker on the testnet path; the browser WalletConnect session is not built. These are still open:
 
 1. Is there a monthly cap per identity, on top of the day cap and the one-per-event rule?
 2. Keep one mint per NexaID per event (what the code does), or allow the pre-event card and the ongoing card as two mints.
-3. Identical cards for every minter (this design), or public edition numbers that do not name the holder.
-4. Is CC BY 4.0 the licence for the generated card?
-5. The mint panel sits on the existing event page (`/calendar/<id>/`), not on the front page or the calendar list. Is that the right place when minting goes live?
-6. The apps need a small change to read `needs_funding`. The app source is not in this repo.
+3. Is CC BY 4.0 the licence for the generated card?
+4. The mint panel sits on the existing event page (`/calendar/<id>/`), not on the front page or the calendar list. Is that the right place when minting goes live?
+5. The apps need a small change to read `needs_funding`. The app source is not in this repo.

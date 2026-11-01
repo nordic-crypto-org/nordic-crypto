@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { claimTable, loadTestCards, NOW } from "./fixtures.mjs";
 import { readFileSync } from "node:fs";
 import { Address, AddressType, GroupToken, Networks, PrivateKey, Transaction } from "libnexa-ts";
 import { signNexaMint } from "../src/nexa/sign.js";
@@ -130,7 +131,7 @@ test("a CashConnect signature does not pass for a different event", async () => 
 
 function memDb(balance = { nexa: 5000000, bch: 200000 }) {
   const ledger = [];
-  const claims = [];
+  const claims = claimTable();
   return {
     ledger,
     prepare(sql) {
@@ -139,12 +140,13 @@ function memDb(balance = { nexa: 5000000, bch: 200000 }) {
           return {
             async first() {
               if (sql.includes("hot_observed")) return { amount: balance[args[0]] };
-              if (sql.includes("mint_claim WHERE h")) return claims.includes(args[0]) ? { x: 1 } : null;
+              const claim = claims.first(sql, args);
+              if (claim !== undefined) return claim;
               if (sql.includes("COUNT(*)")) return { n: 0 };
               return null;
             },
             async run() {
-              if (sql.includes("mint_claim")) claims.push(args[0]);
+              if (claims.run(sql, args)) return;
               if (sql.includes("treasury_ledger")) {
                 ledger.push({ txid: args[0], chain: args[1], kind: args[2], amount: args[3], at: args[4], event_id: args[5] });
               }
@@ -164,8 +166,8 @@ function memDb(balance = { nexa: 5000000, bch: 200000 }) {
 test("the flag off does not sign", async () => {
   const db = memDb();
   const result = await performMint({ DB: db, MINT_NETWORK: "testnet" }, {
-    chain: "nexa", event_id: "evt", identity: "nexatest:someone",
-  }, caps, {});
+    chain: "nexa", event_id: "evt", kind: "ongoing", identity: "nexatest:someone",
+  }, caps, { loadCards: loadTestCards, now: () => new Date(NOW) });
   assert.equal(result.allow, true);
   assert.equal(result.signed, false);
   assert.equal(result.broadcast, false);
@@ -186,9 +188,10 @@ test("a bad signature is not broadcast", async () => {
     event_id: "evt",
     identity: visitor.toAddress().toString(),
     signature: "not-a-signature",
-    zip_url: "https://nordiccrypto.no/assets/nft/card.zip",
-    zip_hash: "ab".repeat(32),
+    kind: "ongoing",
   }, caps, {
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     fetchUtxos: async () => ({}),
     broadcast: async () => { broadcasts += 1; return { ok: true }; },
   });
@@ -214,10 +217,10 @@ test("an accepted testnet mint is recorded without the key", async () => {
     event_id: "evt",
     identity: address,
     signature: signNexaChallenge(visitor.toWIF(), "evt", address),
-    zip_url: "https://nordiccrypto.no/assets/nft/card.zip",
-    zip_hash: "cd".repeat(32),
+    kind: "ongoing",
   }, caps, {
-    now: () => new Date("2026-10-07T12:00:00.000Z"),
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     fetchUtxos: async () => ({
       authority: { outpoint: "11".repeat(32), satoshis: 2000, groupAmount: auth },
       funds: [{ outpoint: "22".repeat(32), satoshis: 500000 }],

@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Event NFT prototype: public facts only, placeholder treasury, flag off by default.
    python3 tests/test_event_nft.py"""
+import datetime as dt
+import io
 import json
 import os
 import sys
+import tempfile
+import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
@@ -119,7 +123,73 @@ def main():
     img = event_nft.render_card(ev, "ongoing", "nexa", "front")
     if img.size != (640, 640):
         fail("card size")
+
+    editions(ev)
     print("event nft: OK")
+
+
+def editions(ev):
+    """Every edition is its own token with its own image (MiCA: unique, not a fungible series)."""
+    page = "https://nordiccrypto.no/calendar/" + ev["id"] + "/"
+    f1 = event_nft.edition_front(ev, "ongoing", "nexa", 1, 20)
+    f2 = event_nft.edition_front(ev, "ongoing", "nexa", 2, 20)
+    if f1 == f2:
+        fail("two editions share an image")
+    if event_nft.edition_front(ev, "ongoing", "nexa", 1, 20) != f1:
+        fail("edition art must be deterministic")
+    back = event_nft.card_back(ev, "ongoing", "nexa")
+    z1 = event_nft.nexa_zip(event_nft.nexa_edition_info(ev, "ongoing", 1, 20, page), f1, back)
+    z1b = event_nft.nexa_zip(event_nft.nexa_edition_info(ev, "ongoing", 1, 20, page), f1, back)
+    z2 = event_nft.nexa_zip(event_nft.nexa_edition_info(ev, "ongoing", 2, 20, page), f2, back)
+    if z1 != z1b:
+        fail("the same edition must give the same zip bytes")
+    if event_nft.zip_hash(z1) == event_nft.zip_hash(z2) or len(event_nft.zip_hash(z1)) != 64:
+        fail("each edition needs its own zip hash")
+    names = zipfile.ZipFile(io.BytesIO(z1)).namelist()
+    if names != ["info.json", "cardf.png", "cardb.png", "public.png"]:
+        fail("NFT v2 zip layout: " + str(names))
+    info = json.loads(zipfile.ZipFile(io.BytesIO(z1)).read("info.json"))
+    if info["data"]["edition"] != {"number": 1, "of": 20} or "Edition 1 of 20" not in info["info"]:
+        fail("info.json should state the edition")
+    for banned in ("nexaid", "email", "attendee", "nexatest:", "bchtest:"):
+        if banned in json.dumps(info).lower():
+            fail("zip info leaked " + banned)
+    if event_nft.bch_edition_commitment(ev, "ongoing", 1, 8) == event_nft.bch_edition_commitment(ev, "ongoing", 2, 8):
+        fail("each BCH edition needs its own commitment")
+    if event_nft.bch_edition_commitment(ev, "pre", 1, 8) == event_nft.bch_edition_commitment(ev, "ongoing", 1, 8):
+        fail("the kind must change the BCH commitment")
+
+    win = event_nft.card_window(ev, "ongoing")
+    if win["from"] != ev["start"] or not win["to"]:
+        fail("ongoing window runs from the start to the end")
+    if event_nft.card_window(ev, "pre") != {"from": None, "to": ev["start"]}:
+        fail("pre window ends at the start")
+
+    os.environ["NC_EVENT_NFT"] = "1"
+    real_counts = event_nft.edition_counts
+    event_nft.edition_counts = lambda: {"nexa": 2, "bch": 2}
+    try:
+        with tempfile.TemporaryDirectory() as site:
+            before = dt.datetime.fromisoformat(ev["start"]) - dt.timedelta(days=1)
+            event_nft.prepare(site, "https://nordiccrypto.no", [ev], before)
+            index = json.load(open(os.path.join(site, "assets", "nft", "cards.json"), encoding="utf-8"))
+            rows = {(c["chain"], c["kind"]): c for c in index["cards"]}
+            if set(rows) != {("nexa", "pre"), ("nexa", "ongoing"), ("bch", "pre"), ("bch", "ongoing")}:
+                fail("an upcoming event lists all four cards")
+            nexa = rows[("nexa", "ongoing")]["editions"]
+            if [e["n"] for e in nexa] != [1, 2] or not os.path.exists(os.path.join(site, "assets", "nft", nexa[0]["zip_url"].rsplit("/", 1)[1])):
+                fail("nexa editions and their zips")
+            data = open(os.path.join(site, "assets", "nft", nexa[1]["zip_url"].rsplit("/", 1)[1]), "rb").read()
+            if event_nft.zip_hash(data) != nexa[1]["zip_hash"]:
+                fail("index hash must match the published zip")
+            during = dt.datetime.fromisoformat(ev["start"]) + dt.timedelta(minutes=5)
+            event_nft.prepare(site, "https://nordiccrypto.no", [ev], during)
+            index = json.load(open(os.path.join(site, "assets", "nft", "cards.json"), encoding="utf-8"))
+            if {c["kind"] for c in index["cards"]} != {"ongoing"}:
+                fail("a running event no longer lists the pre-event card")
+    finally:
+        event_nft.edition_counts = real_counts
+        os.environ.pop("NC_EVENT_NFT", None)
 
 
 if __name__ == "__main__":
