@@ -21,6 +21,13 @@ The narration does not say the programme is made with artificial intelligence.
 Look: the media kit at nordiccrypto.no/media. The key shield is drawn from `assets/brand/shield-band.svg`;
 wordmark "Nordic" in Sailcloth and "Crypto" in Shield Gold, Cormorant Garamond Bold; text in Schibsted Grotesk;
 North Sea, Shield Gold, Sailcloth, Pine Tar and Sea Foam. The published #2 cut predates this and used the old crest.
+Grounds are the site's North Sea band with the lattice; cards are white with a hairline and the site radius; gold tags
+carry Pine Tar text, and gold text on a light card is dark gold. The intro shows the lockup from `lockup-band.svg`
+(shield left of the name).
+
+Intro jingle: "Signal" (`audio.jingle()`), 4.0 s with the big hit at 1.0 s (`JINGLE_HIT`). The bumper is 4.0 s; the
+shield lands by 0.55 s, the name by 0.9 s, and the flash and tagline on the hit. Later issues that copy this
+directory keep it.
 
 Source logos (legal note, 17 Oct 2026): a story's `logo` (key in `assets/img/logos/logos.json`) is shown only on
 that story's source chip, after «Kilde:» (`LANG = "nb"`) or "Source:" (`LANG = "en"`), unchanged and at most 10% of
