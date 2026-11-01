@@ -1,0 +1,67 @@
+# Renders a newsletter newsreel (newsletter/issues/<id>-video) on a runner and attaches it to a release.
+name: Newsreel render
+on:
+  push:
+    branches: ["newsletter/**"]
+    paths: ["newsletter/issues/*-video/**", ".github/workflows/newsreel-render.yml"]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue id, e.g. 004"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: newsreel-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pick issue
+        id: pick
+        env:
+          IN: ${{ inputs.issue }}
+        run: |
+          id="$IN"
+          [ -z "$id" ] && id=$(ls -d newsletter/issues/*-video | sed 's#.*/##; s/-video$//' | sort | tail -1)
+          echo "id=$id" >> "$GITHUB_OUTPUT"; echo "num=$((10#$id))" >> "$GITHUB_OUTPUT"
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install -q -r newsletter/issues/${{ steps.pick.outputs.id }}-video/requirements.txt
+      - name: Render
+        working-directory: newsletter/issues/${{ steps.pick.outputs.id }}-video
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          python3 tts.py
+          python3 timeline.py
+          python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
+          python3 -c "import json; print('\n'.join(s['name'] for s in json.load(open('build/timeline.json'))['segs']))" \
+            | xargs -P "$(nproc)" -I{} python3 render.py {}
+          bash concat.sh build/timeline.json build build/mix.wav "build/nordic-crypto-${{ steps.pick.outputs.num }}-newsreel.mp4"
+          python3 render.py thumb
+          mkdir -p out && cp build/*-newsreel.mp4 thumbnail.png subs.srt script.txt build/subs.vtt out/
+          ffmpeg -v error -y -i build/*-newsreel.mp4 -vf "fps=1/8,scale=320:-1,tile=5x4" -frames:v 1 out/contact-sheet.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: newsreel-${{ steps.pick.outputs.id }}
+          path: newsletter/issues/${{ steps.pick.outputs.id }}-video/out/
+          retention-days: 14
+      - name: Release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ID: ${{ steps.pick.outputs.id }}
+          NUM: ${{ steps.pick.outputs.num }}
+        run: |
+          tag="newsletter-$ID-newsreel-${{ github.run_number }}"
+          gh release create "$tag" --target "$GITHUB_SHA" --title "Nordic Crypto #$NUM newsreel" \
+            --notes "Newsreel for newsletter issue #$NUM." \
+            newsletter/issues/$ID-video/out/nordic-crypto-$NUM-newsreel.mp4
+          echo "### $tag" >> "$GITHUB_STEP_SUMMARY"

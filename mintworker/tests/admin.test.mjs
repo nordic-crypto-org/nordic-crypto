@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { claimTable, loadTestCards, NOW } from "./fixtures.mjs";
 import { readFileSync } from "node:fs";
 import { GroupToken, PrivateKey } from "libnexa-ts";
 import { adminAuthorized, tokensEqual } from "../src/admin.js";
@@ -16,7 +17,7 @@ const TOKEN = "admin-token-value-0123456789";
 function memDb() {
   const setup = {};
   const observed = {};
-  const claims = [];
+  const claims = claimTable();
   const ledger = [];
   return {
     setup,
@@ -31,7 +32,8 @@ function memDb() {
                 const amount = observed[args[0]];
                 return amount == null ? null : { amount };
               }
-              if (sql.includes("mint_claim WHERE h")) return claims.includes(args[0]) ? { x: 1 } : null;
+              const claim = claims.first(sql, args);
+              if (claim !== undefined) return claim;
               if (sql.includes("COUNT(*)")) return { n: 0 };
               return null;
             },
@@ -40,7 +42,7 @@ function memDb() {
                 setup[args[0]] = { public_id: args[1], txid: args[2], created_at: args[3] };
               }
               if (sql.includes("hot_observed")) observed[args[0]] = args[1];
-              if (sql.includes("mint_claim")) claims.push(args[0]);
+              if (claims.run(sql, args)) return;
               if (sql.includes("treasury_ledger")) ledger.push(args);
             },
             async all() {
@@ -200,10 +202,10 @@ test("a Nexa group id is recorded and a mint can read it without the var", async
     event_id: "evt",
     identity: address,
     signature: signNexaChallenge(visitor.toWIF(), "evt", address),
-    zip_url: "https://nordiccrypto.no/assets/nft/card.zip",
-    zip_hash: "cd".repeat(32),
+    kind: "ongoing",
   }, caps, {
-    now: () => new Date("2026-10-08T00:00:00.000Z"),
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     fetchUtxos: async () => ({
       authority: { outpoint: "33".repeat(32), satoshis: 2000, groupAmount: auth },
       funds: [{ outpoint: "44".repeat(32), satoshis: 500000 }],
@@ -223,7 +225,7 @@ test("the mint rate limit is enforced before a utxo lookup", async () => {
 
   let calls = 0;
   const res = await handleFetch(post("/api/mint", "", {
-    chain: "nexa", event_id: "evt", identity: "nexatest:someone",
+    chain: "nexa", event_id: "evt", kind: "ongoing", identity: "nexatest:someone",
   }), signingEnv(), {
     rateAllow: async () => false,
     fetchUtxos: async () => { calls += 1; return null; },

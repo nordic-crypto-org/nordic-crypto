@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { claimTable, loadTestCards, NOW } from "./fixtures.mjs";
 import { readFileSync } from "node:fs";
 import { Address, AddressType, GroupToken, Networks, PrivateKey } from "libnexa-ts";
 import { fetchBalanceSats, hotAddress, observeChain } from "../src/balance.js";
@@ -15,7 +16,7 @@ function memDb() {
   const observed = {};
   const snapshots = [];
   const ledger = [];
-  const claims = [];
+  const claims = claimTable();
   return {
     observed,
     snapshots,
@@ -29,7 +30,8 @@ function memDb() {
                 const amount = observed[args[0]];
                 return amount == null ? null : { amount };
               }
-              if (sql.includes("mint_claim WHERE h")) return claims.includes(args[0]) ? { x: 1 } : null;
+              const claim = claims.first(sql, args);
+              if (claim !== undefined) return claim;
               if (sql.includes("COUNT(*)")) return { n: 0 };
               return null;
             },
@@ -39,7 +41,7 @@ function memDb() {
               if (sql.includes("treasury_ledger")) {
                 ledger.push({ txid: args[0], chain: args[1], kind: args[2], amount: args[3] });
               }
-              if (sql.includes("mint_claim")) claims.push(args[0]);
+              if (claims.run(sql, args)) return;
             },
             async all() {
               return { results: [] };
@@ -115,8 +117,10 @@ test("a missing balance is refused before any utxo lookup", async () => {
   const db = memDb();
   let calls = 0;
   const quiet = await performMint({ DB: db, MINT_NETWORK: "testnet", NC_EVENT_NFT: "1" }, {
-    chain: "nexa", event_id: "evt", identity: "nexatest:someone",
+    chain: "nexa", event_id: "evt", kind: "ongoing", identity: "nexatest:someone",
   }, caps, {
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     observeBalance: async () => { calls += 1; return 5000000; },
     fetchUtxos: async () => { calls += 1; return {}; },
     broadcast: async () => { calls += 1; return { ok: true }; },
@@ -141,10 +145,10 @@ test("a missing balance is refused before any utxo lookup", async () => {
     event_id: "evt",
     identity: address,
     signature: signNexaChallenge(visitor.toWIF(), "evt", address),
-    zip_url: "https://nordiccrypto.no/assets/nft/card.zip",
-    zip_hash: "cd".repeat(32),
+    kind: "ongoing",
   }, caps, {
-    now: () => new Date("2026-10-07T12:00:00.000Z"),
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     fetchUtxos: async () => ({
       authority: { outpoint: "11".repeat(32), satoshis: 2000, groupAmount: auth },
       funds: [{ outpoint: "22".repeat(32), satoshis: 500000 }],
@@ -167,8 +171,10 @@ test("a balance under the reserve does not open a socket", async () => {
     NEXA_HOT_KEY: "nexa-hot-key-material-not-for-logs-0123456789",
     NEXA_PARENT_GROUP: "nexatest:tq",
   }, {
-    chain: "nexa", event_id: "evt", identity: "nexatest:someone",
+    chain: "nexa", event_id: "evt", kind: "ongoing", identity: "nexatest:someone",
   }, caps, {
+    loadCards: loadTestCards,
+    now: () => new Date(NOW),
     fetchUtxos: async () => { calls += 1; return {}; },
     broadcast: async () => { calls += 1; return { ok: true }; },
   });

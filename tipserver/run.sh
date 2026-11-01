@@ -14,7 +14,7 @@ fixed() { python3 -c 'import json;print(json.load(open("config.json")).get("publ
 quick() { python3 -c 'import json;print("1" if json.load(open("config.json")).get("quick_tunnel") else "")'; }
 pubhealth() { local u; u=$(python3 endpoint.py); [[ -n $u ]] && curl -fsS --max-time 15 "$u/api/health" >/dev/null 2>&1; }
 start_one() { # pidfile script logfile
-  if alive "$1"; then echo "$2 already running (pid $(cat "$1"))"; else setsid nohup bash "$2" >>"$3" 2>&1 < /dev/null & echo $! > "$1"; echo "$2 started (pid $(cat "$1"))"; fi; }
+  if alive "$1"; then echo "$2 already running (pid $(cat "$1"))"; else setsid nohup bash "$2" >>"$3" 2>&1 < /dev/null 9>&- & echo $! > "$1"; echo "$2 started (pid $(cat "$1"))"; fi; }
 case "${1:-status}" in
   start|ensure)
     start_one supervise.pid supervise.sh server.log

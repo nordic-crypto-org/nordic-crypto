@@ -539,3 +539,7 @@ No health or private financial data about anyone, no org numbers, LEIs, addresse
 ## Press releases
 
 See [docs/press-releases.md](docs/press-releases.md).
+
+## Own stories
+
+Approved own stories are committed under `data/stories/`: `<slug>.md`, `<slug>.i18n.json` (`title` and `summary` per site language) and `approved.json`. CI builds read them; the local `queue/approved.json` `stories` block still works for drafts and previews. To publish one approved story (its `stories.summaries`, `summaries_i18n` and `titles_i18n` filled in): `python3 tools/publish_story.py <slug> --push`. The push to main runs the normal deploy.

@@ -150,7 +150,7 @@
    "title": "Barnas KÅKÅnomics: Hvordan investere ukelønna?",
    "start": "2026-10-24T12:30:00+02:00",
    "end": "2026-10-24T13:00:00+02:00",
-   "place": "Vingtor",
+   "place": "Vingtor, Børehaugen 1A, 4006 Stavanger",
    "city": "Stavanger",
    "country": "NO",
    "online": false,
@@ -182,7 +182,7 @@
    "title": "Har bankene kuppet kryptorevolusjonen?",
    "start": "2026-10-24T18:30:00+02:00",
    "end": "2026-10-24T19:15:00+02:00",
-   "place": "Vingtor",
+   "place": "Vingtor, Børehaugen 1A, 4006 Stavanger",
    "city": "Stavanger",
    "country": "NO",
    "online": false,
@@ -301,6 +301,75 @@
    }
   },
   {
+   "id": "568131609e50",
+   "title": "Hvem lytter til Bitcoin i Norge?",
+   "start": "2026-10-31T14:00:00+01:00",
+   "end": "2026-10-31T15:30:00+01:00",
+   "place": "Online (Kaupr.io / YouTube)",
+   "city": null,
+   "country": "NO",
+   "online": true,
+   "organiser": "Kaupr Events in cooperation with Bitcoinpolitisk Institutt Norge (BPI)",
+   "url": "https://events.kaupr.io/products/hvem-lytter-til-bitcoin-i-norge",
+   "source": "Kaupr Events",
+   "source_url": "https://events.kaupr.io/products/hvem-lytter-til-bitcoin-i-norge",
+   "paid": false,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-23T16:30:00+00:00",
+   "status": "pending",
+   "note": null
+  },
+  {
+   "id": "a52506182657",
+   "title": "Hva skjer på IFE i november?",
+   "start": "2026-11-01T00:00:00+01:00",
+   "end": "2026-11-30T00:00:00+01:00",
+   "place": null,
+   "city": null,
+   "country": "NO",
+   "online": false,
+   "organiser": "Institute for Energy Technology (IFE)",
+   "url": "https://ife.no/event/hva-skjer-pa-ife-i-november/",
+   "source": "IFE – events",
+   "source_url": "https://ife.no/event/hva-skjer-pa-ife-i-november/",
+   "paid": null,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-31T03:21:00+00:00",
+   "status": "pending",
+   "note": "location: no place – add the street address",
+   "description": {
+    "text": "Her finner du en oversikt over noe av det som skjer på IFE i mai 2026. IFE står på stand under Farlig avfallskonferansen 2026. Konferansen samler bransjen rundt aktuelle temaer innen farlig avfall, fra regelverk og avfallshåndtering til batterier, PFAS og nye løsninger. Trykk her for påmelding: Påmelding og priser IFE deltar på Elektroteknikk i fremtidens kraftsystem 2026, som samler ingeniører, teknologer og beslutningstakere fra kraftbransjen. Konferansen setter søkelys på teknologi og løsninger for blant annet fornybar energiproduksjon, energilagring, kraftoverføring og nettilknytning.",
+    "lang": "nb",
+    "source_url": "https://ife.no/event/hva-skjer-pa-ife-i-november/",
+    "source_name": "IFE – events",
+    "retrieved": "2026-10-31T03:21:00+00:00"
+   }
+  },
+  {
+   "id": "fb0847fb538e",
+   "title": "Impact Onchain: from hackathon to real projects",
+   "start": "2026-11-04T11:00:00+01:00",
+   "end": "2026-11-04T12:30:00+01:00",
+   "place": "Online (Kaupr.io / YouTube)",
+   "city": null,
+   "country": "SE",
+   "online": true,
+   "organiser": "Kaupr in cooperation with FirstBlock-athon Stockholm",
+   "url": "https://events.kaupr.io/",
+   "source": "Kaupr Events (tip source)",
+   "source_url": "https://events.kaupr.io/",
+   "paid": false,
+   "sponsored": false,
+   "trusted_source": false,
+   "tip_only": true,
+   "found": "2026-10-28T20:50:00+01:00",
+   "status": "published",
+   "note": "Stream link and speakers not yet announced by the organiser.",
+   "source_check": "researcher 28.10"
+  },
+  {
    "id": "a6cadcf35c22",
    "title": "Stockholm Bitcoin Meetup #54",
    "start": "2026-11-05T17:30:00+01:00",
@@ -352,6 +421,70 @@
     "source_url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgyjcpbjb/",
     "source_name": "Helsinki Bitcoin Hobbyists (Meetup.com)",
     "retrieved": "2026-10-07T23:50:00+00:00"
+   }
+  },
+  {
+   "id": "030500f31612",
+   "title": "Netlight x OWASP Stockholm",
+   "start": "2026-11-09T17:00:00+01:00",
+   "end": null,
+   "place": "Netlight Consulting AB, Regeringsgatan 25, 111 53 Stockholm, Sweden, Stockholm",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "OWASP Stockholm",
+   "url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+   "source": "Meetup.com search: blockchain, Stockholm",
+   "source_url": "https://www.meetup.com/find/?keywords=blockchain&location=se--Stockholm&source=EVENTS",
+   "paid": null,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-26T03:26:57+00:00",
+   "status": "rejected",
+   "note": null,
+   "place_source": {
+    "name": "Meetup.com search: blockchain, Stockholm",
+    "url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+    "retrieved": "2026-10-26T03:26:57+00:00"
+   },
+   "description": {
+    "text": "Important news:** Meetup will be decommissioned at the end of the year, so RSVP will be moving to our OWASP Chapter page then. To stay updated on future events, join the chapter here: Join us for an exciting afterwork event in collaboration with Netlight. In attendance will be leaders from the OWASP Stockholm chapter, Netlight clients, security professionals from Stockholm and the OWASP Stockholm community!",
+    "lang": "en",
+    "source_url": "https://www.meetup.com/owasp-stockholm/events/317131207/",
+    "source_name": "Meetup.com search: blockchain, Stockholm",
+    "retrieved": "2026-10-26T03:26:57+00:00"
+   }
+  },
+  {
+   "id": "99163da9ccc8",
+   "title": "Statens pensjonsfond utland",
+   "start": "2026-11-11T14:00:00+01:00",
+   "end": "2026-11-11T15:30:00+01:00",
+   "place": "Vesaas, Litteraturhuset, Wergelandsveien 29",
+   "city": "Oslo",
+   "country": "NO",
+   "online": false,
+   "organiser": "Statsøkonomisk Forening",
+   "url": "https://www.litteraturhuset.no/nb/arrangement/statens-pensjonsfond-utland",
+   "source": "Litteraturhuset Oslo",
+   "source_url": "https://www.litteraturhuset.no/nb/kalender",
+   "paid": null,
+   "sponsored": null,
+   "trusted_source": false,
+   "found": "2026-10-30T03:17:11+00:00",
+   "status": "pending",
+   "note": null,
+   "place_source": {
+    "name": "Litteraturhuset Oslo",
+    "url": "https://www.litteraturhuset.no/nb/arrangement/statens-pensjonsfond-utland",
+    "retrieved": "2026-10-30T03:17:11+00:00"
+   },
+   "description": {
+    "text": "Det etiske rammeverket for Statens pensjonsfond utland Statsøkonomisk forening inviterer til møte i Litteraturhuset, Skram-salen, onsdag 11. november 2026 kl. 14:00-15:30. Tema: «Det etiske rammeverket for Statens pensjonsfond utland». Et offentlig utvalg leverte sin rapport til Finansdepartementet 15. oktober 2026. Utvalgsleder Svein Gjedrem, tidligere sentralbanksjef og finansråd, innleder. Dørene åpner kl 13:00. Møtet er åpent for alle interesserte. Ikke-medlemmer anmodes om å betale kr. 150 via Vipps 13445. Gratis for studenter. Velkommen!",
+    "lang": "nb",
+    "source_url": "https://www.litteraturhuset.no/nb/arrangement/statens-pensjonsfond-utland",
+    "source_name": "Litteraturhuset Oslo",
+    "retrieved": "2026-10-30T03:17:11+00:00"
    }
   },
   {
@@ -419,11 +552,43 @@
    }
   },
   {
+   "id": "eec0d2d82253",
+   "title": "Lund Bitcoin Meetup #2",
+   "start": "2026-11-16T17:00:00+01:00",
+   "end": "2026-11-16T19:00:00+01:00",
+   "place": "Lunds stadsbibliotek, Sankt Petri kyrkogata 6, 222 21 Lund",
+   "city": "Lund",
+   "country": "SE",
+   "online": false,
+   "organiser": "Bitcoin Malmö",
+   "url": "https://www.meetup.com/bitcoin-malmo/events/317188314/",
+   "source": "Meetup.com search: bitcoin, Copenhagen",
+   "source_url": "https://www.meetup.com/find/?keywords=bitcoin&location=dk--Copenhagen&source=EVENTS",
+   "paid": false,
+   "sponsored": false,
+   "trusted_source": false,
+   "found": "2026-10-30T03:17:11+00:00",
+   "status": "pending",
+   "note": "Speakers not yet announced by the organiser.",
+   "place_source": {
+    "name": "Meetup.com search: bitcoin, Copenhagen",
+    "url": "https://www.meetup.com/bitcoin-malmo/events/317188314/",
+    "retrieved": "2026-10-30T03:17:11+00:00"
+   },
+   "description": {
+    "text": "We aim to host welcoming and inclusive meetups where people can discuss Bitcoin and its role in today’s and tomorrow’s economy. If you're new to Bitcoin, this is a great opportunity to learn through thoughtful conversations with experienced Bitcoiners and curious newcomers alike. If you already know the space, this is your chance to go deeper and connect with like-minded people. Please note:** this is a Bitcoin-only event. We will not cover NFTs, altcoins, or general blockchain topics. Please RSVP if you plan to attend.",
+    "lang": "en",
+    "source_url": "https://www.meetup.com/bitcoin-malmo/events/317188314/",
+    "source_name": "Meetup.com search: bitcoin, Copenhagen",
+    "retrieved": "2026-10-30T03:17:11+00:00"
+   }
+  },
+  {
    "id": "63d4fce1ecd7",
    "title": "3rd International Conference on Digital Sovereignty (ICDS) 2026",
    "start": "2026-11-25T09:00:00+01:00",
    "end": "2026-11-27T16:00:00+01:00",
-   "place": "Oslo Science Park, Oslo",
+   "place": "Oslo Science Park, Gaustadalléen 21, 0349 Oslo",
    "city": "Oslo",
    "country": "NO",
    "online": false,
@@ -613,5 +778,5 @@
    }
   }
  ],
- "updated": "2026-10-20T02:28:35+00:00"
+ "updated": "2026-11-01T03:18:14+00:00"
 }

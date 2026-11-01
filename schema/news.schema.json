@@ -77,7 +77,9 @@
    "suggested_status",
    "suggested_at",
    "summary_i18n_review",
-   "origin"
+   "origin",
+   "possible_duplicate_of",
+   "possible_duplicate_reason"
   ],
   "sections": [
    {
@@ -509,6 +511,19 @@
     "title_i18n_source": {
      "type": "string",
      "description": "The source headline the translations in title_i18n were made from, so a changed headline is translated again."
+    },
+    "possible_duplicate_of": {
+     "type": "string",
+     "description": "Editor hint: id of a story that may cover the same event.",
+     "examples": [
+      "bbd6dd0ec478"
+     ]
+    },
+    "possible_duplicate_reason": {
+     "type": "string",
+     "examples": [
+      "rare headline word"
+     ]
     }
    },
    "additionalProperties": false,

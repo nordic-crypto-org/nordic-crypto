@@ -549,6 +549,13 @@
     },
     "verified": {
      "type": "string"
+    },
+    "tip_only": {
+     "type": "boolean",
+     "description": "Leads only; every event found stays pending.",
+     "examples": [
+      true
+     ]
     }
    },
    "additionalProperties": false,
