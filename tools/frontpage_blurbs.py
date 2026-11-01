@@ -81,6 +81,22 @@ def opening_sentences(text, n_max=4):
         return " ".join(parts).strip()
     return " ".join(parts[:n_max]).strip()
 
+def teaser(text, max_chars=240):
+    """Front-page teaser: whole sentences up to ~240 characters (about 25-40 words); a long first sentence is cut at a word."""
+    parts = sentences(text)
+    if not parts:
+        return ""
+    out = parts[0]
+    for p in parts[1:]:
+        if len(out) + 1 + len(p) > max_chars:
+            break
+        out += " " + p
+    if len(out) <= max_chars:
+        return out
+    cut = out[:max_chars]
+    space = cut.rfind(" ")
+    return (cut[:space] if space > max_chars // 2 else cut[:max_chars // 2]).rstrip(" ,;:–-") + "…"
+
 def check(path=None):
     """Exit 1 if a published story lacks a 2–4 sentence blurb in a front-page language whose summary is one sentence."""
     news = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))

@@ -43,3 +43,4 @@ ol.news h3{font-size:23px;line-height:1.16;margin:0 0 4px}ol.news h3 a{text-deco
 .cov-logo{display:inline-flex;align-items:center;justify-content:flex-start;gap:6px;text-decoration:none}
 .cov-more{font-size:12.5px;color:var(--fg);border:1px solid var(--line-strong);border-radius:999px;padding:1px 10px;background:var(--surface);text-decoration:none}
 .cov-more:hover,.cov-more:focus-visible{border-color:var(--gold)}
+.leadstory .sum,.storycard .sum{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}

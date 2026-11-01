@@ -15,7 +15,7 @@ import i18n
 import site_css
 import site_url
 import event_block
-from tools.frontpage_blurbs import card_text, load as load_blurbs, opening_sentences, substantive
+from tools.frontpage_blurbs import card_text, teaser, load as load_blurbs, opening_sentences, substantive
 from tools import event_backfill, event_description, event_nft, event_page, event_select, event_title as event_titles
 from tools.headlines import card_headline, public_title_i18n
 from tools import news_seo
@@ -2219,7 +2219,8 @@ def cited_source(item):
     return (f'<p class="primary-src">{E(t("primary_source"))}: '
             f'<a href="{E(doc["url"])}" rel="noopener" target="_blank">{E(doc["name"])}</a></p>')
 def front_card(i, blurbs, asset, lead=False):
-    """One front-page story. No picture. Headline, original title, summary, source, date. Left-aligned."""
+    """One front-page story. No picture. Headline, short teaser, source, date. Left-aligned.
+    The original title and the full summary are on the story page only."""
     pend = i.get("status") not in ("published", "owner")
     own = i.get("status") == "owner"
     rows = story_outlets(i)
@@ -2236,6 +2237,7 @@ def front_card(i, blurbs, asset, lead=False):
         lang = f' · {E(t("lang_" + lname))}' if foreign else ""
     else:
         txt, tl = card_text(i, LANG, blurbs)
+        txt = teaser(txt)
         if foreign and tl == LANG and (txt or "").strip():
             # No «This story is in Swedish. In short:» line (removed 8 Oct 2026); the original-title line names the language.
             lang = ""
@@ -2257,7 +2259,7 @@ def front_card(i, blurbs, asset, lead=False):
         for l in (i.get("links") or []) if l.get("url"))
     return (
         f'<article class="{klass}">'
-        f'<{title_tag}><a href="{E(href)}"{ext_attr}{hl}>{E(head)}</a></{title_tag}>{orig}'
+        f'<{title_tag}><a href="{E(href)}"{ext_attr}{hl}>{E(head)}</a></{title_tag}>'
         f'{summ}'
         f'<p class="meta">{flag(i.get("country"), deco=True)} {E(cname(i.get("country")))} · {source_mark(i, asset)} · '
         f'<time datetime="{E(i.get("published") or "")}">{endate(i["published"])}</time>{lang}{pw} {tags}{badges}</p>'
