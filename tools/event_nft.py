@@ -9,8 +9,10 @@ name, or any other personal data. See docs/event-nft-design.md.
 """
 import hashlib
 import html
+import io
 import json
 import os
+import zipfile
 
 import event_select
 
@@ -338,6 +340,133 @@ def media_urls(base, event_id, kind, chain):
     }
 
 
+ZIP_SIZE = 300   # Wally's live NFT format: a square card of at most 300 px
+ZIP_TIME = (1980, 1, 1, 0, 0, 0)
+
+
+def edition_counts():
+    """One edition per possible mint: the per-event cap from mintworker/caps.json."""
+    caps = load_caps()
+    return {chain: int(caps[chain]["per_event"]) for chain in CHAINS}
+
+
+def edition_stem(event_id, kind, chain, n):
+    return f"{file_stem(event_id, kind, chain)}-{n:03d}"
+
+
+def _edition_facts(facts, n, total):
+    out = dict(facts)
+    out["edition"] = {"number": n, "of": total}
+    return out
+
+
+def _png(im):
+    """A 64-colour palette PNG: the card is flat colour and text, so this keeps
+    each file small without visible loss."""
+    from PIL import Image
+    buf = io.BytesIO()
+    im.quantize(colors=64, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE).save(buf, "PNG")
+    return buf.getvalue()
+
+
+def _small(im):
+    from PIL import Image
+    return _png(im.resize((ZIP_SIZE, ZIP_SIZE), Image.BILINEAR, reducing_gap=2.0))
+
+
+def edition_front(event, kind, chain, n, total):
+    """The front is unique per edition. The back repeats the facts and is shared by a card's editions."""
+    return _small(render_card(event, kind, chain, "front", edition=n, editions=total))
+
+
+def card_back(event, kind, chain):
+    return _small(render_card(event, kind, chain, "back"))
+
+
+def nexa_edition_info(event, kind, n, total, page_url):
+    """info.json inside the zip. Same Wally fields as nexa_metadata, plus the edition."""
+    facts = _edition_facts(_facts(event, kind), n, total)
+    meta = nexa_metadata(event, kind, {"page": page_url, "front": "", "back": ""})
+    meta.pop("media", None)
+    meta["data"] = facts
+    text = info_text(facts) + f" Edition {n} of {total}."
+    meta["info"] = "<p>" + html.escape(text, quote=False) + "</p>"
+    return meta
+
+
+def nexa_zip(info, front, back):
+    """NFT v2 zip: info.json, cardf, cardb and public. Stored, fixed times, fixed order,
+    so the same inputs always give the same bytes and the same hash."""
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_STORED) as z:
+        for name, data in (
+            ("info.json", json.dumps(info, ensure_ascii=False, sort_keys=True, indent=1).encode("utf-8")),
+            ("cardf.png", front),
+            ("cardb.png", back),
+            ("public.png", front),
+        ):
+            zi = zipfile.ZipInfo(name, ZIP_TIME)
+            zi.external_attr = 0o644 << 16
+            z.writestr(zi, data)
+    return buf.getvalue()
+
+
+def zip_hash(data):
+    """Double SHA-256 of the zip, hex in display order (reversed), the form
+    libnexa-ts buildNFTDescription takes and reverses back for the OP_RETURN."""
+    return hashlib.sha256(hashlib.sha256(data).digest()).digest()[::-1].hex()
+
+
+def bch_edition_commitment(event, kind, n, total):
+    facts = _edition_facts(_facts(event, kind), n, total)
+    body = json.dumps(facts, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+
+def card_window(event, kind):
+    """The mint window the Worker enforces. "pre" ends at the start, "ongoing"
+    runs from the start to the effective end, both instants included."""
+    start = event_select.start_of(event)
+    end = event_select.effective_end(event)
+    if start is None or end is None:
+        return None
+    if kind == "pre":
+        return {"from": None, "to": start.isoformat()}
+    return {"from": start.isoformat(), "to": end.isoformat()}
+
+
+def write_editions(folder, base, event, kind, chain, total):
+    """Write every edition of one card and return its card-index row."""
+    eid = event["id"]
+    window = card_window(event, kind)
+    if window is None:
+        return None
+    page = media_urls(base, eid, kind, chain)["page"]
+    root = base.rstrip("/") + "/assets/nft/"
+    editions = []
+    back = card_back(event, kind, chain)
+    if chain == "bch":
+        with open(os.path.join(folder, file_stem(eid, kind, chain) + "-card-back.png"), "wb") as fh:
+            fh.write(back)
+    for n in range(1, total + 1):
+        stem = edition_stem(eid, kind, chain, n)
+        front = edition_front(event, kind, chain, n, total)
+        if chain == "nexa":
+            data = nexa_zip(nexa_edition_info(event, kind, n, total, page), front, back)
+            with open(os.path.join(folder, stem + ".zip"), "wb") as fh:
+                fh.write(data)
+            editions.append({"n": n, "zip_url": root + stem + ".zip", "zip_hash": zip_hash(data)})
+        else:
+            with open(os.path.join(folder, stem + "-front.png"), "wb") as fh:
+                fh.write(front)
+            editions.append({
+                "n": n,
+                "commitment_hex": bch_edition_commitment(event, kind, n, total),
+                "icon": root + stem + "-front.png",
+            })
+    return {"chain": chain, "event_id": eid, "kind": kind, "window": window, "editions": editions}
+
+
 def _font(size, bold=False):
     from PIL import ImageFont
     name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
@@ -362,8 +491,12 @@ def _wrap(draw, text, font, width):
     return lines[:5]
 
 
-def render_card(event, kind, chain, face, size=640):
-    """Square card. Geometry comes from the event id. No photographs and no people."""
+def render_card(event, kind, chain, face, size=640, edition=None, editions=None):
+    """Square card. Geometry comes from the event id. No photographs and no people.
+
+    With an edition number the card also carries "No. n / total" and a grid of
+    cells drawn from the hash of the event, the kind, the chain and that number,
+    so every minted edition has its own image."""
     from PIL import Image, ImageDraw
     facts = _facts(event, kind)
     accent = "#0f5ea8" if chain == "nexa" else "#0b7a4b"
@@ -397,8 +530,25 @@ def render_card(event, kind, chain, face, size=640):
             continue
         dr.text((28, y), line[:72], font=body, fill="#4B5563")
         y += 28
+    if edition is not None:
+        dr.text((size - 220, 92), f"No. {edition} / {editions}", font=_font(16, True), fill="#111111")
+        _edition_grid(dr, f"{event.get('id')}|{kind}|{chain}|{edition}", accent, size)
     dr.text((28, size - 36), "General event facts only", font=_font(14), fill="#4B5563")
     return im
+
+
+def _edition_grid(dr, seed_text, accent, size):
+    """16 x 3 cells, four shades each: 4^48 patterns, one per edition."""
+    seed = hashlib.sha256(("edition|" + seed_text).encode()).digest()
+    shades = (accent, "#111111", "#9CA3AF", "#E5E7EB")
+    cols, rows = 16, 3
+    left, top, right = 28, size - 150, size - 60
+    cell = (right - left) // cols
+    for i in range(cols * rows):
+        shade = shades[(seed[i // 4] >> ((i % 4) * 2)) & 3]
+        x = left + (i % cols) * cell
+        y = top + (i // cols) * cell
+        dr.rectangle([x, y, x + cell - 3, y + cell - 3], fill=shade)
 
 
 def render_qr(url, path):
@@ -415,6 +565,8 @@ def prepare(site, base, events, now):
     raw = load_fixture()
     for chain, addr in (("nexa", raw["nexa"]["address"]), ("bch", raw["bch"]["address"])):
         render_qr(addr, os.path.join(folder, f"treasury-{chain}.png"))
+    counts = edition_counts()
+    cards = []
     for event in events or []:
         if event_select.classify(event, now) not in ("upcoming", "ongoing"):
             continue
@@ -433,6 +585,17 @@ def prepare(site, base, events, now):
                     "bch": bch_metadata(event, kind, urls),
                 }
                 json.dump(doc, open(os.path.join(folder, stem + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                if kind == "pre" and event_select.classify(event, now) == "ongoing":
+                    continue
+                row = write_editions(folder, base, event, kind, chain, counts[chain])
+                if row:
+                    cards.append(row)
+    index = {
+        "version": 1,
+        "note": "Mintable cards. The mint Worker reads this file and mints only these editions, inside these windows.",
+        "cards": cards,
+    }
+    json.dump(index, open(os.path.join(folder, "cards.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
 def _status_label(t, status):

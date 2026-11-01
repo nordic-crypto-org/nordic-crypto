@@ -617,6 +617,167 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-10-30T12:00:00+00:00",
+   "included": 4,
+   "by_country": {
+    "NO": 19,
+    "SE": 9,
+    "DK": 5,
+    "FI": 9,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 2,
+    "2017": 4,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 4,
+    "2026": 10,
+    "2016": 4,
+    "2019": 3,
+    "2024": 1,
+    "2015": 2,
+    "2020": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 3,
+     "2015": 1,
+     "2019": 1
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 1,
+     "2015": 1,
+     "2026": 2,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Four previous events. Dataföreningen states the Luleå lunch on Wednesday 2 November at 11:30–13:00; the page was published on 10 October 2016, and 2 November 2016 was a Wednesday, at Luleå Energi Arena. The companion article calls it Dataföreningen Luleå's lunch seminar. The European Blockchain Convention page states EBC Copenhagen on 20 May 2019 and does not state a venue or a clock, so the row is the day in Copenhagen and the venue is empty. 500+ on that page is not an exact count. CySeP states the summer school in Stockholm on 19–22 June 2017, and the agenda states Bart Preneel's lecture Bitcoin and Blockchain on 19 June at 09:00–10:30. The agenda does not name a room. Thinklair states a lecture at Tampere University on 20 January 2020 and does not state a clock or a room. The three calendar events that ended on 28 and 29 October 2026 are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were not searched again as a fresh results page this run. The counts below are the whole archive. Four events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://dfs.se/pa_gang/blockchain-for-dummies/",
+    "https://dfs.se/det-unika-med-blockkedjan/",
+    "https://eblockchainconvention.com/copenhagen2019/",
+    "https://people.kth.se/~papadim/cysep/",
+    "https://people.kth.se/~papadim/cysep/agenda.html",
+    "https://www.youtube.com/watch?v=Le5P6l15dPc",
+    "https://www.youtube.com/watch?v=cKMK7MuVyA4",
+    "https://www.youtube.com/watch?v=yhxcnLX55FQ",
+    "https://www.meetup.com/oslo-blockchain-meetup/events/316768752/",
+    "https://www.meetup.com/bitcoin-malmo/events/316993795/",
+    "https://www.litteraturhuset.no/nb/arrangement/cantillon-effekten-and-pengar",
+    "Faroe Islands, Greenland and Åland: not a fresh results page this run"
+   ],
+   "sources_used": [
+    "Dataföreningen",
+    "European Blockchain Convention",
+    "CySeP",
+    "Thinklair"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "icoholder.com",
+     "reason": "Event listing site. The venue it showed for EBC Copenhagen 2019 was not on the organiser page, so it was not used."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Oslo Blockchain Meetup - Nexa, 28 October 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "Lund Bitcoin Meetup #1, 28 October 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "Cantillon-effekten & pengar, 29 October 2026",
+     "reason": "Already on the calendar. Litteraturhuset says a podcast will follow. No recording was up."
+    },
+    {
+     "name": "Hvem lytter til Bitcoin i Norge?, 31 October 2026",
+     "reason": "The event has not been held. The Kaupr page is tip-only."
+    },
+    {
+     "name": "BPI årsmøte, 1 June 2026",
+     "reason": "The podcast page says the annual meeting was for members."
+    },
+    {
+     "name": "José Parra Moyano at UCL, Bitcoin investment",
+     "reason": "The UCL upload names Copenhagen Business School as the speaker's affiliation. It does not place the talk in Copenhagen."
+    },
+    {
+     "name": "CySeP Summer School 2017 as a whole",
+     "reason": "A security and privacy summer school. The bitcoin lecture on 19 June is archived. The other lectures are not about crypto."
+    },
+    {
+     "name": "Nordic Blockchain Summit 2019",
+     "reason": "Already skipped. The ITU page still does not state the venue of the summit."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

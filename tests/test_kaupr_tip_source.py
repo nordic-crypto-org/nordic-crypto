@@ -17,8 +17,8 @@ class KauprTipSource(unittest.TestCase):
 
     def test_config_tip_only(self):
         cfg = json.load(open(os.path.join(ROOT, "sources.json"), encoding="utf-8"))
-        s = next(x for x in cfg["event_sources"] if x["id"] == "kaupr-events-tips")
-        self.assertTrue(s["tip_only"]); self.assertFalse(s["trusted"])
+        for s in (x for x in cfg["event_sources"] if x["id"] in ("kaupr-events", "kaupr-events-tips")):
+            self.assertTrue(s["tip_only"]); self.assertFalse(s["trusted"])
 
     def test_kaupr_never_sponsor(self):
         self.assertIsNone(events.clear_kaupr_sponsor("Kaupr"))
