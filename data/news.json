@@ -1,6 +1,764 @@
 {
  "items": [
   {
+   "id": "d0a01fc48edb",
+   "url": "https://yle.fi/a/74-20254430?origin=rss",
+   "title": "FBI: Binancen kryptovaluuttavarkauden takana oli Pohjois-Korea",
+   "title_en": null,
+   "source": "yle",
+   "source_name": "Yle Uutiset",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "yle",
+   "seen_via": [
+    "yle"
+   ],
+   "published": "2026-11-01T02:06:43+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluutta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "salon-seudun-sanomat",
+     "outlet_name": "Salon Seudun Sanomat",
+     "url": "https://sss.fi/2026/11/fbi-binancen-kryptovaluuttavarkauden-takana-oli-pohjois-korea",
+     "title": "FBI: Binancen kryptovaluuttavarkauden takana oli Pohjois-Korea",
+     "published": "2026-11-01T01:42:18+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "931749d66494",
+   "url": "https://svd.se/a/AbOMJ3/fbi-nordkorea-bakom-cyberkupp",
+   "title": "FBI: Nordkorea bakom miljardkupp mot kryptobörs",
+   "title_en": null,
+   "source": "svd",
+   "source_name": "Svenska Dagbladet",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "svd",
+   "seen_via": [
+    "svd",
+    "bing-se"
+   ],
+   "published": "2026-10-31T23:25:12+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "tv4.se",
+     "outlet_name": "TV4",
+     "url": "https://tv4.se/artikel/tt-261101-bitcoin1-984fa773/fbi-nordkorea-bakom-miljardkupp-mot-kryptobors",
+     "title": "FBI: Nordkorea bakom miljardkupp mot kryptobörs",
+     "published": "2026-10-31T23:25:12+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
+  },
+  {
+   "id": "cc3bf0438682",
+   "url": "https://tv4.se/artikel/tt-261101-bitcoin1-984fa773/fbi-nordkorea-bakom-cyberkupp",
+   "title": "FBI: Nordkorea bakom cyberkupp",
+   "title_en": null,
+   "source": "tv4.se",
+   "source_name": "TV4",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-10-31T23:25:12+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "931749d66494",
+   "possible_duplicate_reason": "same institution, same day"
+  },
+  {
+   "id": "fdc23a295450",
+   "url": "https://dr.dk/nyheder/seneste/fbi-nordkorea-stod-bag-kryptotyveri-i-milliardklassen",
+   "title": "FBI: Nordkorea stod bag kryptotyveri i milliardklassen",
+   "title_en": null,
+   "source": "dr-penge",
+   "source_name": "DR",
+   "country": "DK",
+   "language": "Danish",
+   "via": "dr-seneste",
+   "seen_via": [
+    "dr-seneste"
+   ],
+   "published": "2026-10-31T22:05:00+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "6bcf90907124",
+   "possible_duplicate_reason": "same institution, same day",
+   "also_covered_by": [
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/udland/fbi-gruppe-fra-nordkorea-stod-bag-kryptotyveri-i-milliardklassen",
+     "title": "FBI: Gruppe fra Nordkorea stod bag kryptotyveri i milliardklassen",
+     "published": "2026-10-31T22:39:47+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "f8f0a385cf87",
+   "url": "https://aftenposten.no/verden/i/Jr0gj4/fbi-nord-korea-sto-bak-tidenes-stoerste-krypto-tyveri",
+   "title": "FBI: Nord-Korea sto bak tidenes største krypto-tyveri",
+   "title_en": null,
+   "source": "aftenposten",
+   "source_name": "Aftenposten",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "aftenposten",
+   "seen_via": [
+    "aftenposten",
+    "bing-no-kn"
+   ],
+   "published": "2026-10-31T21:52:30+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "2ba8ad647f8e",
+   "possible_duplicate_reason": "same institution, same day",
+   "also_covered_by": [
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/fbi-nord-korea-sto-bak-tidenes-storste-krypto-tyveri/1717853",
+     "title": "FBI: Nord-Korea sto bak tidenes største krypto-tyveri",
+     "published": "2026-10-31T15:31:46+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
+  },
+  {
+   "id": "bd11a010e604",
+   "url": "https://nrk.no/nyheter/fbi_-nord-korea-stod-bak-tjuveriet-av-nesten-60-milliardar-kroner-i-kryptovaluta-1.18070245",
+   "title": "FBI: Nord-Korea stod bak tjuveriet av nesten 60 milliardar kroner i kryptovaluta",
+   "title_en": null,
+   "source": "nrk",
+   "source_name": "NRK",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "nrk-siste",
+   "seen_via": [
+    "nrk-siste",
+    "bing-no-kn"
+   ],
+   "published": "2026-10-31T21:48:31+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "blockchain",
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bethereum\\b",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "2ba8ad647f8e",
+   "possible_duplicate_reason": "same institution, same day"
+  },
+  {
+   "id": "6bcf90907124",
+   "url": "https://politiken.dk/internationalt/art11043715/FBI-Nordkorea-st%C3%A5r-bag-kryptotyveri-i-milliardklassen",
+   "title": "FBI: Nordkorea står bag kryptotyveri i milliardklassen",
+   "title_en": null,
+   "source": "politiken",
+   "source_name": "Politiken",
+   "country": "DK",
+   "language": "Danish",
+   "via": "politiken",
+   "seen_via": [
+    "politiken"
+   ],
+   "published": "2026-10-31T21:44:35+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "77b4104e5b61",
+   "url": "https://ekstrabladet.dk/penge/kryptoboers-efter-milliardtyveri-90-procent-erstattes/11339082",
+   "title": "Kryptobørs efter milliardtyveri: 90 procent erstattes",
+   "title_en": null,
+   "source": "ekstra-bladet",
+   "source_name": "Ekstra Bladet",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-10-31T21:29:34+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "46ed2ea253b0",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "116a9d89f55a",
+   "url": "https://svt.se/nyheter/utrikes/binance-tacker-90-procent-av-forlusterna-efter-jattehack",
+   "title": "Binance täcker 90 procent av förlusterna efter jättehack",
+   "title_en": null,
+   "source": "svt",
+   "source_name": "SVT Nyheter",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-10-31T20:26:42+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "4dd35a8e3218",
+   "url": "https://dawn.fi/uutiset/2026/10/31/binance-maailman-suurin-kryptovaluutta-varkaus",
+   "title": "Maailman suurin kryptovarkaus tapahtui: kuusi miljardia euroa varkaiden haltuun",
+   "title_en": null,
+   "source": "dawn.fi",
+   "source_name": "dawn.fi",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "bing-fi",
+   "seen_via": [
+    "bing-fi"
+   ],
+   "published": "2026-10-31T19:18:47+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluutta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "82b35e31bdd7",
+   "url": "https://di.se/nyheter/kryptoborsen-efter-stolden-90-procent-aterbetalat",
+   "title": "Kryptobörsen efter stölden: 90 procent återbetalat",
+   "title_en": null,
+   "source": "di",
+   "source_name": "Dagens industri",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "di",
+   "seen_via": [
+    "di"
+   ],
+   "published": "2026-10-31T19:15:19+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "helsingborgs-dagblad",
+     "outlet_name": "Helsingborgs dagblad",
+     "url": "https://hd.se/ekonomi/kryptoborsen-efter-stolden-90-procent-aterbetalat",
+     "title": "Kryptobörsen efter stölden: 90 procent återbetalat",
+     "published": "2026-10-31T17:45:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "sydsvenskan",
+     "outlet_name": "Sydsvenskan",
+     "url": "https://sydsvenskan.se/ekonomi/kryptoborsen-efter-stolden-90-procent-aterbetalat",
+     "title": "Kryptobörsen efter stölden: 90 procent återbetalat",
+     "published": "2026-10-31T17:45:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "8d5fe68791b4",
+   "url": "https://aftonbladet.se/nyheter/a/X9yaGg/elon-musks-han-mitt-i-kryptokrisen",
+   "title": "Elon Musks hån mitt i kryptokrisen",
+   "title_en": null,
+   "source": "aftonbladet",
+   "source_name": "Aftonbladet",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "aftonbladet",
+   "seen_via": [
+    "aftonbladet"
+   ],
+   "published": "2026-10-31T19:02:56+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "4777ee70abed",
+   "url": "https://omni.se/binance-tackt-upp-for-90-procent-av-det-som-stulits/a/xlnyll",
+   "title": "Binance: Täckt upp för 90 procent av det som stulits",
+   "title_en": null,
+   "source": "omni.se",
+   "source_name": "Omni",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-10-31T17:47:43+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "46ed2ea253b0",
+   "url": "https://borsen.dk/nyheder/finans/kryptobors-efter-milliardtyveri-90-pct-af-de-stjalne-aktiver-erstattes",
+   "title": "Kryptobørs efter milliardtyveri: 90 pct. af de stjålne aktiver erstattes",
+   "title_en": null,
+   "source": "borsen",
+   "source_name": "Børsen",
+   "country": "DK",
+   "language": "Danish",
+   "via": "borsen",
+   "seen_via": [
+    "borsen",
+    "bing-dk"
+   ],
+   "published": "2026-10-31T16:39:13+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "politiken",
+     "outlet_name": "Politiken",
+     "url": "https://politiken.dk/internationalt/art11043639/Kryptob%C3%B8rs-efter-milliardtyveri-90-procent-af-de-stj%C3%A5lne-aktiver-erstattes",
+     "title": "Kryptobørs efter milliardtyveri: 90 procent af de stjålne aktiver erstattes",
+     "published": "2026-10-31T16:14:53+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "dr-penge",
+     "outlet_name": "DR",
+     "url": "https://dr.dk/nyheder/seneste/kryptoboers-erstatter-90-procent-af-stjaalne-aktiver-efter-milliardtyveri",
+     "title": "Kryptobørs erstatter 90 procent af stjålne aktiver efter milliardtyveri",
+     "published": "2026-10-31T16:54:43+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/kryptobors-efter-milliardtyveri-90-pct-af-de-stjalne-aktiver-erstattes?b_source=borsen&b_medium=row_21&b_campaign=list_6",
+     "title": "Kryptobørs efter milliardtyveri: 90 pct. af de stjålne aktiver erstattes",
+     "published": "2026-10-31T16:39:13+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/udland/kryptoboers-efter-milliardtyveri-90-procent-af-de-stjaalne-aktiver-erstattes",
+     "title": "Kryptobørs efter milliardtyveri: 90 procent af de stjålne aktiver erstattes",
+     "published": "2026-10-31T16:33:44+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "sjaellandske-nyheder",
+     "outlet_name": "Sjællandske Nyheder",
+     "url": "https://sjaellandske.sn.dk/article/6672260/udland/kryptoboers-efter-milliardtyveri-90-procent-af-de-stjaalne-aktiver-erstattes",
+     "title": "Kryptobørs efter milliardtyveri: 90 procent af de stjålne aktiver erstattes",
+     "published": "2026-10-31T16:33:45+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
+  },
+  {
+   "id": "8a92e3cf15e0",
+   "url": "https://adressa.no/nyheter/innenriks/i/lKdbOM/kryptoboers-dekker-selv-tapet-etter-milliardtyveri",
+   "title": "Kryptobørs dekker selv tapet etter milliardtyveri",
+   "title_en": null,
+   "source": "adressa",
+   "source_name": "Adresseavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-10-31T15:32:00+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "2ba8ad647f8e",
+   "possible_duplicate_reason": "same institution, same day",
+   "also_covered_by": [
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/nyheter/kryptobors-dekker-selv-tapet-etter-milliardtyveri/s/80-95-208577",
+     "title": "Kryptobørs dekker selv tapet etter milliardtyveri",
+     "published": "2026-10-31T15:38:37+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "c8795b93a982",
+   "url": "https://nyheder.tv2.dk/live/kort-nyt/90-procent-genoprettet-efter-stort-kryptotyveri?entry=57525453-df1a-4574-8d14-48c4c88017de",
+   "title": "90 procent genoprettet efter stort kryptotyveri",
+   "title_en": null,
+   "source": "nyheder.tv2.dk",
+   "source_name": "TV 2 Nyheder",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-10-31T15:09:56+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "ba58141d7134",
+   "url": "https://nrk.no/nyheter/binance_-_-90-prosent-av-alle-midlar-er-gjenoppretta-1.18070147",
+   "title": "Binance: – 90 prosent av alle midlar er gjenoppretta",
+   "title_en": null,
+   "source": "nrk",
+   "source_name": "NRK",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "nrk-siste",
+   "seen_via": [
+    "nrk-siste",
+    "bing-no-kn"
+   ],
+   "published": "2026-10-31T14:51:14+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "04fb22d683b0",
+   "url": "https://ruv.is/frettir/erlent/2026-10-31-hakkarar-fra-nordur-koreu-blekktu-starfsmann-rafmyntamidlara-491380",
+   "title": "Hakkarar frá Norður-Kóreu blekktu starfsmann rafmyntamiðlara",
+   "title_en": null,
+   "source": "ruv",
+   "source_name": "RÚV",
+   "country": "IS",
+   "language": "Icelandic",
+   "via": "ruv",
+   "seen_via": [
+    "ruv"
+   ],
+   "published": "2026-10-31T14:38:42+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\brafmynt\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "430cc8ea5e28",
+   "url": "https://finanstid.se/kryptostolder-sakerhet-kryptoborser-risker",
+   "title": "Kryptostölder för miljarder – experter varnar för riskerna",
+   "title_en": null,
+   "source": "finanstid.se",
+   "source_name": "finanstid",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-10-31T14:32:02+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "702a9d701e21",
+   "url": "https://finans.dk/finans/ECE19788499/stjal-426-mia-kr-paa-20-minutter-nu-reagerer-global-finansraadgiver-paa-verdenshistoriens-stoerste-kryptotyveri",
+   "title": "Hackere stjal 42 mia. kr. på 20 minutter: Nu reagerer global finansrådgiver på verdens største kryptotyveri",
+   "title_en": null,
+   "source": "finans-dk",
+   "source_name": "Finans.dk",
+   "country": "DK",
+   "language": "Danish",
+   "via": "finans-dk",
+   "seen_via": [
+    "finans-dk"
+   ],
+   "published": "2026-10-31T14:00:00+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "063f97e82ac3",
+   "url": "https://aftonbladet.se/nyheter/a/PgV107/experten-sa-kunde-nordkoreas-cyberarme-utfora-historiska-kuppen-enligt-experten",
+   "title": "Experten: Så kunde Nordkoreas cyberarmé utföra historiska kuppen",
+   "title_en": null,
+   "source": "aftonbladet",
+   "source_name": "Aftonbladet",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se",
+    "aftonbladet"
+   ],
+   "published": "2026-10-31T13:05:42+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "0663a92d6b4d",
+   "url": "https://kryptovalutaguiden.se/2026/10/elon-musk-retas-med-cz-som-slar-tillbaka",
+   "title": "Elon Musk retas med CZ som slår tillbaka",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-10-31T12:25:54+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "3134c54cbbe9",
+   "url": "https://sss.fi/2026/10/media-kryptoporssi-binancesta-anastettu-bitcoin-potti-vetaa-vertoja-elon-muskin-yhtioiden-omistuksille",
+   "title": "Media: Kryptopörssi Binancesta anastettu bitcoin-potti vetää vertoja Elon Muskin yhtiöiden omistuksille",
+   "title_en": null,
+   "source": "salon-seudun-sanomat",
+   "source_name": "Salon Seudun Sanomat",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "salon-seudun-sanomat",
+   "seen_via": [
+    "salon-seudun-sanomat"
+   ],
+   "published": "2026-10-31T12:03:13+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluutta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
    "id": "34d75f80568f",
    "url": "https://mbl.is/vidskipti/frettir/2026/10/30/769_milljardar_undir_hvernig_komust_tolvuthrjotarni",
    "title": "769 milljarðar undir: Hvernig komust tölvuþrjótarnir inn?",
@@ -26,6 +784,31 @@
    "status": "merged",
    "summary": null,
    "merged_into": "9b8a70e6faee"
+  },
+  {
+   "id": "9a2ebb3b915a",
+   "url": "https://mbl.is/vidskipti/frettir/2026/10/30/769_milljardar_undir_hvernig_komust_tolvuthrjotarni?origin=helstu",
+   "title": "769 milljarðar undir: Hvernig komust tölvuþrjótarnir inn?",
+   "title_en": null,
+   "source": "mbl",
+   "source_name": "mbl.is",
+   "country": "IS",
+   "language": "Icelandic",
+   "via": "bing-is",
+   "seen_via": [
+    "bing-is"
+   ],
+   "published": "2026-10-30T23:45:00+00:00",
+   "fetched": "2026-11-01T02:43:08+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\brafmynt\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
   },
   {
    "id": "00aeaa7d0980",
@@ -120,7 +903,8 @@
    "seen_via": [
     "e24",
     "bing-no",
-    "bing-no-kn"
+    "bing-no-kn",
+    "aftenposten"
    ],
    "published": "2026-10-30T20:39:19+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -335,7 +1119,8 @@
    "language": "Finnish",
    "via": "yle",
    "seen_via": [
-    "yle"
+    "yle",
+    "bing-fi"
    ],
    "published": "2026-10-30T19:28:44+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -432,7 +1217,8 @@
    "language": "Norwegian",
    "via": "dn",
    "seen_via": [
-    "dn"
+    "dn",
+    "dagens-nyheter"
    ],
    "published": "2026-10-30T17:19:53+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -928,7 +1714,8 @@
    "language": "Swedish",
    "via": "osterbottens-tidning",
    "seen_via": [
-    "osterbottens-tidning"
+    "osterbottens-tidning",
+    "vasabladet"
    ],
    "published": "2026-10-30T08:10:00+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -996,7 +1783,8 @@
    "language": "Swedish",
    "via": "breakit",
    "seen_via": [
-    "breakit"
+    "breakit",
+    "bing-se"
    ],
    "published": "2026-10-30T07:05:00+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -1115,7 +1903,8 @@
    "language": "Icelandic",
    "via": "visir",
    "seen_via": [
-    "visir"
+    "visir",
+    "bing-is"
    ],
    "published": "2026-10-30T06:40:10+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -1297,7 +2086,9 @@
    "seen_via": [
     "digi-krypto",
     "digi",
-    "bing-no-kn"
+    "bing-no-kn",
+    "dr-penge",
+    "agderposten-no"
    ],
    "published": "2026-10-30T06:13:15+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -1562,7 +2353,8 @@
    "language": "Norwegian",
    "via": "bing-no-kn",
    "seen_via": [
-    "bing-no-kn"
+    "bing-no-kn",
+    "e24"
    ],
    "published": "2026-10-30T05:39:29+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -1617,7 +2409,8 @@
    "language": "Danish",
    "via": "dr-seneste",
    "seen_via": [
-    "dr-seneste"
+    "dr-seneste",
+    "bing-dk"
    ],
    "published": "2026-10-30T05:15:07+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -12880,5 +13673,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-10-31T02:45:22+00:00"
+ "updated": "2026-11-01T02:43:08+00:00"
 }
