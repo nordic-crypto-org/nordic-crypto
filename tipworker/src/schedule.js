@@ -2,7 +2,7 @@
 //   GET  /api/admin/schedule (admin session)          -> {campaigns, schedule} with next_run in Oslo time
 //   POST /api/admin/schedule (ADMIN_DELIVERY_TOKEN)   {campaigns, schedule} replaces both tables (tools/admin_schedule.py)
 export const OSLO = "Europe/Oslo";
-export const STATUSES = new Set(["active", "paused", "awaiting_approval", "done"]);
+export const STATUSES = new Set(["active", "paused", "awaiting_approval", "awaiting_setup", "done"]);
 const RANGES = [[0, 59], [0, 23], [1, 31], [1, 12], [0, 7]];
 
 // 5-field cron -> [minutes, hours, days, months, weekdays] as sorted number arrays (+ flags for day-of-month/week "*"), or null.

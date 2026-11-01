@@ -30,7 +30,7 @@ async function signIn(e) {
 }
 const DATA = { campaigns: [{ id: "c1", name: "Campaign", channels: "Telegram,X", status: "active", starts_at: "2026-10-18T20:00", ends_at: "2026-10-31T23:59" }],
   schedule: [{ id: "daily", channel: "Site", what: "Daily", cron: "15 8 * * *", status: "active", source: "routine" },
-    { id: "gha", channel: "X", what: "Weekly", cron: "45 6 * * 1", tz: "UTC", status: "paused", source: "workflow:x-newsletter.yml" },
+    { id: "gha", channel: "X", what: "Weekly", cron: "45 6 * * 1", tz: "UTC", status: "awaiting_setup", source: "workflow:x-newsletter.yml" },
     { id: "once", channel: "Web", what: "One-off", at: "2026-10-20T13:00", status: "awaiting_approval", source: "campaign", campaign_id: "c1" }] };
 
 test("cron next run in Oslo time, across the DST change", () => {
