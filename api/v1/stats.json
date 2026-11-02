@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-01T10:38:34Z",
+ "generated_at": "2026-11-02T11:26:19Z",
  "preview": false,
  "source": "Cloudflare Web Analytics",
  "status": "ok",
@@ -9,8 +9,8 @@
  "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
  "schema": 1,
  "first_date": "2026-10-17",
- "last_date": "2026-11-01",
- "updated_at": "2026-11-01T10:38:34Z",
+ "last_date": "2026-11-02",
+ "updated_at": "2026-11-02T11:26:19Z",
  "daily": [
   {
    "date": "2026-10-17",
@@ -90,6 +90,11 @@
   {
    "date": "2026-11-01",
    "visits": 0,
+   "pageviews": 0
+  },
+  {
+   "date": "2026-11-02",
+   "visits": 0,
    "pageviews": 0,
    "partial": true
   }
@@ -120,6 +125,15 @@
    "visits": 10,
    "pageviews": 10,
    "end": "2026-11-01",
+   "partial": false
+  },
+  {
+   "week": "2026-W45",
+   "start": "2026-11-02",
+   "days": 1,
+   "visits": 0,
+   "pageviews": 0,
+   "end": "2026-11-08",
    "partial": true
   }
  ],
@@ -133,7 +147,7 @@
   },
   {
    "month": "2026-11",
-   "days": 1,
+   "days": 2,
    "visits": 0,
    "pageviews": 0,
    "partial": true
