@@ -25,7 +25,7 @@
     "\\bvirtuaalivaluut\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -39,7 +39,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "4ca3b1983c78",
@@ -61,8 +62,9 @@
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "9ca1a44777a3",
@@ -88,8 +90,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "8e42feda94a5",
@@ -114,8 +117,9 @@
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "187b25a2a520",
@@ -139,8 +143,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "371ccdec7bdb",
@@ -164,7 +169,7 @@
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -178,7 +183,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "f65722049a0b",
@@ -203,11 +209,12 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_unverified": true,
    "possible_duplicate_of": "2ba8ad647f8e",
-   "possible_duplicate_reason": "same institution, same day"
+   "possible_duplicate_reason": "same institution, same day",
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "062de2555e1b",
@@ -232,8 +239,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "552fa22e84d4",
@@ -257,8 +265,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "80a7e9147d9b",
@@ -283,16 +292,17 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "4ca3b1983c78",
-   "possible_duplicate_reason": "same institution, same day"
+   "possible_duplicate_reason": "same institution, same day",
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "9774e8944c29",
    "url": "https://aftenposten.no/okonomi/i/p1wyrj/binance-aapner-for-uttak-etter-massivt-kryptotyveri",
    "title": "Binance åpner for uttak etter massivt kryptotyveri",
-   "title_en": null,
+   "title_en": "Binance reopens withdrawals in stages after the hack",
    "source": "aftenposten",
    "source_name": "Aftenposten",
    "country": "NO",
@@ -305,14 +315,15 @@
    "published": "2026-11-01T07:04:47+00:00",
    "fetched": "2026-11-02T02:48:08+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "Binance began reopening withdrawals in stages from 07:00 CET on 1 November 2026, and by 13:36 CET all 15 networks in the first phase were open, including Bitcoin, Ethereum, BNB Smart Chain and Solana, according to the exchange. Binance says withdrawals now go out from new wallet addresses and that its Proof of Reserves address list has been updated. The exchange also says that 6 billion US dollars of the loss from the 29 October hack has been covered.",
    "also_covered_by": [
     {
      "outlet": "investornytt",
@@ -368,8 +379,122 @@
      "country": "NO",
      "source_type": "national",
      "paywall": false
+    },
+    {
+     "outlet": "ruv",
+     "outlet_name": "RÚV",
+     "url": "https://ruv.is/frettir/erlent/2026-11-01-binance-opnar-fyrir-uttektir-a-ny-491422",
+     "title": "Binance opnar fyrir úttektir á ný",
+     "published": "2026-11-01T09:12:18+00:00",
+     "lang": "Icelandic",
+     "country": "IS",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "finans-dk",
+     "outlet_name": "Finans.dk",
+     "url": "https://finans.dk/erhverv/ECE19788891/kryptoboers-vil-genoptage-udbetalinger-efter-hackerangreb",
+     "title": "Kryptobørs vil genoptage udbetalinger efter hackerangreb",
+     "published": "2026-11-01T07:51:25+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/binance-tillater-uttag-av-bitcoin-igen-efter-kuppen/a/lKdGz9",
+     "title": "Binance tillåter uttag av bitcoin igen efter kuppen",
+     "published": "2026-11-01T09:41:09+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "hurbra.se",
+     "outlet_name": "hurbra",
+     "url": "https://hurbra.se/binance-uttag-1-november-2026",
+     "title": "Binance öppnar bitcoinuttag igen efter miljardstölden",
+     "published": "2026-11-01T08:40:11+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/finans/2026/11/01/8392156/binance-ble-hacket-for-58-mrd.-apner-for-uttak",
+     "title": "Ble hacket for 58 mrd. – åpner for uttak",
+     "published": "2026-11-01T08:03:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
     }
-   ]
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-02T04:50:00+01:00",
+   "primary_source": {
+    "name": "Binance on X – Recovery Update #4: Withdrawals Resume in Phases (1 Nov 2026)",
+    "url": "https://x.com/binance/status/2116744986096292263"
+   },
+   "title_i18n": {
+    "nn": "Binance opnar for uttak att trinnvis etter hackinga",
+    "sv": "Binance öppnar för uttag igen i etapper efter attacken",
+    "da": "Binance genåbner for udbetalinger i etaper efter hackerangrebet",
+    "fi": "Binance avaa nostot uudelleen vaiheittain hakkeroinnin jälkeen",
+    "is": "Binance opnar fyrir úttektir á ný í áföngum eftir árásina",
+    "zh": "币安在黑客事件后分阶段恢复提现",
+    "hi": "हैक के बाद Binance ने चरणबद्ध तरीके से निकासी फिर शुरू की",
+    "es": "Binance reabre los retiros por fases tras el hackeo",
+    "fr": "Binance rouvre les retraits par étapes après le piratage",
+    "ar": "بينانس تعيد فتح السحوبات على مراحل بعد الاختراق",
+    "bn": "হ্যাকের পর ধাপে ধাপে উত্তোলন আবার চালু করল Binance",
+    "pt": "Binance reabre levantamentos por fases após o ataque",
+    "ru": "Binance поэтапно возобновляет вывод средств после взлома",
+    "ur": "ہیک کے بعد بائنانس نے مرحلہ وار رقم نکالنے کی سہولت بحال کر دی",
+    "id": "Binance membuka kembali penarikan secara bertahap setelah peretasan",
+    "de": "Binance öffnet Auszahlungen nach dem Hack schrittweise wieder",
+    "ja": "バイナンス、ハッキング後に出金を段階的に再開",
+    "sw": "Binance yafungua tena utoaji fedha kwa awamu baada ya udukuzi",
+    "mr": "हॅकनंतर Binance ने टप्प्याटप्प्याने पैसे काढणे पुन्हा सुरू केले",
+    "fa": "بایننس پس از هک، برداشت‌ها را مرحله‌به‌مرحله دوباره باز کرد",
+    "uk": "Binance поетапно відновлює виведення коштів після злому",
+    "tr": "Binance saldırının ardından para çekme işlemlerini aşamalı olarak yeniden açtı",
+    "se": "Binance rahpá fas ruovttoluotta geassima ceahkkálagaid maŋŋel falleheami"
+   },
+   "title_i18n_source": "Binance åpner for uttak etter massivt kryptotyveri",
+   "summary_i18n": {
+    "nn": "Binance byrja å opne for uttak att trinnvis frå klokka 07.00 norsk tid 1. november 2026, og klokka 13.36 var alle dei 15 nettverka i første fase opna, mellom anna Bitcoin, Ethereum, BNB Smart Chain og Solana, ifølgje børsen. Binance seier at uttak no går frå nye lommebokadresser, og at adresselista for Proof of Reserves er oppdatert. Børsen seier òg at 6 milliardar amerikanske dollar av tapet frå hackinga 29. oktober er dekt.",
+    "nb": "Binance begynte å åpne for uttak igjen trinnvis fra klokken 07.00 norsk tid 1. november 2026, og klokken 13.36 var alle de 15 nettverkene i første fase åpnet, blant annet Bitcoin, Ethereum, BNB Smart Chain og Solana, ifølge børsen. Binance sier at uttak nå går fra nye lommebokadresser, og at adresselisten for Proof of Reserves er oppdatert. Børsen sier også at 6 milliarder amerikanske dollar av tapet fra hackingen 29. oktober er dekket.",
+    "sv": "Binance började öppna för uttag igen i etapper från klockan 07.00 CET den 1 november 2026, och klockan 13.36 var alla 15 nätverk i första fasen öppna, bland annat Bitcoin, Ethereum, BNB Smart Chain och Solana, enligt börsen. Binance uppger att uttag nu görs från nya plånboksadresser och att adresslistan för Proof of Reserves har uppdaterats. Börsen uppger också att 6 miljarder amerikanska dollar av förlusten från attacken den 29 oktober har täckts.",
+    "da": "Binance begyndte at genåbne for udbetalinger i etaper fra klokken 07.00 CET den 1. november 2026, og klokken 13.36 var alle 15 netværk i første fase åbnet, blandt andet Bitcoin, Ethereum, BNB Smart Chain og Solana, ifølge børsen. Binance oplyser, at udbetalinger nu sker fra nye wallet-adresser, og at adresselisten for Proof of Reserves er opdateret. Børsen oplyser også, at 6 milliarder amerikanske dollar af tabet fra angrebet den 29. oktober er dækket.",
+    "fi": "Binance alkoi avata nostoja uudelleen vaiheittain 1. marraskuuta 2026 kello 7.00 Keski-Euroopan aikaa, ja kello 13.36 kaikki ensimmäisen vaiheen 15 verkkoa olivat auki, muun muassa Bitcoin, Ethereum, BNB Smart Chain ja Solana, pörssin mukaan. Binance kertoo, että nostot tehdään nyt uusista lompakko-osoitteista ja että Proof of Reserves -osoitelista on päivitetty. Pörssi kertoo myös, että 29. lokakuuta tapahtuneen hakkeroinnin tappioista 6 miljardia Yhdysvaltain dollaria on katettu.",
+    "is": "Binance hóf að opna fyrir úttektir á ný í áföngum frá klukkan 07.00 að mið-evrópskum tíma 1. nóvember 2026 og klukkan 13.36 voru öll 15 netin í fyrsta áfanga opin, þar á meðal Bitcoin, Ethereum, BNB Smart Chain og Solana, samkvæmt kauphöllinni. Binance segir að úttektir fari nú fram frá nýjum veskisföngum og að vistfangalisti Proof of Reserves hafi verið uppfærður. Kauphöllin segir einnig að 6 milljarðar Bandaríkjadala af tapinu vegna árásarinnar 29. október hafi verið bættir.",
+    "zh": "据币安称，该交易所自2026年11月1日欧洲中部时间07:00起分阶段恢复提现，到13:36时第一阶段的全部15个网络均已开放，包括比特币、以太坊、BNB智能链和Solana。币安表示，提现现在从新的钱包地址发出，其储备金证明地址列表也已更新。该交易所还表示，10月29日黑客事件造成的损失中已有60亿美元得到弥补。",
+    "hi": "एक्सचेंज के अनुसार Binance ने 1 नवंबर 2026 को CET सुबह 07:00 से चरणबद्ध तरीके से निकासी फिर खोलनी शुरू की, और 13:36 CET तक पहले चरण के सभी 15 नेटवर्क खुल चुके थे, जिनमें Bitcoin, Ethereum, BNB Smart Chain और Solana शामिल हैं। Binance का कहना है कि निकासी अब नए वॉलेट पतों से होती है और उसकी Proof of Reserves पता सूची अपडेट कर दी गई है। एक्सचेंज का यह भी कहना है कि 29 अक्टूबर के हैक से हुए नुकसान में से 6 अरब अमेरिकी डॉलर की भरपाई कर दी गई है।",
+    "es": "Binance comenzó a reabrir los retiros por fases a partir de las 07:00 CET del 1 de noviembre de 2026, y a las 13:36 CET las 15 redes de la primera fase estaban abiertas, entre ellas Bitcoin, Ethereum, BNB Smart Chain y Solana, según el exchange. Binance afirma que los retiros salen ahora de nuevas direcciones de monedero y que ha actualizado su lista de direcciones de prueba de reservas. El exchange también dice que se han cubierto 6.000 millones de dólares estadounidenses de las pérdidas del hackeo del 29 de octubre.",
+    "fr": "Binance a commencé à rouvrir les retraits par étapes à partir de 07h00 CET le 1er novembre 2026, et à 13h36 CET les 15 réseaux de la première phase étaient ouverts, dont Bitcoin, Ethereum, BNB Smart Chain et Solana, selon la plateforme. Binance indique que les retraits partent désormais de nouvelles adresses de portefeuille et que sa liste d'adresses de preuve de réserves a été mise à jour. La plateforme affirme aussi que 6 milliards de dollars américains de la perte liée au piratage du 29 octobre ont été couverts.",
+    "ar": "بدأت بينانس إعادة فتح السحوبات على مراحل اعتبارًا من الساعة 07:00 بتوقيت وسط أوروبا في 1 نوفمبر 2026، وبحلول الساعة 13:36 كانت جميع الشبكات الـ15 في المرحلة الأولى مفتوحة، ومنها بيتكوين وإيثريوم وBNB Smart Chain وسولانا، وفقًا للمنصة. وتقول بينانس إن السحوبات تتم الآن من عناوين محافظ جديدة وإن قائمة عناوين إثبات الاحتياطيات حُدّثت. وتقول المنصة أيضًا إنه جرى تغطية 6 مليارات دولار أمريكي من خسائر اختراق 29 أكتوبر.",
+    "bn": "এক্সচেঞ্জটির তথ্যমতে, Binance ২০২৬ সালের ১ নভেম্বর CET সকাল ০৭:০০ থেকে ধাপে ধাপে উত্তোলন আবার চালু করতে শুরু করে, এবং CET ১৩:৩৬-এর মধ্যে প্রথম ধাপের ১৫টি নেটওয়ার্কই খুলে যায়, যার মধ্যে Bitcoin, Ethereum, BNB Smart Chain ও Solana আছে। Binance বলছে, উত্তোলন এখন নতুন ওয়ালেট ঠিকানা থেকে হচ্ছে এবং Proof of Reserves ঠিকানার তালিকা হালনাগাদ করা হয়েছে। এক্সচেঞ্জটি আরও বলছে, ২৯ অক্টোবরের হ্যাকের ক্ষতির মধ্যে ৬ বিলিয়ন মার্কিন ডলার পূরণ করা হয়েছে।",
+    "pt": "A Binance começou a reabrir os levantamentos por fases a partir das 07:00 CET de 1 de novembro de 2026, e às 13:36 CET as 15 redes da primeira fase estavam abertas, incluindo Bitcoin, Ethereum, BNB Smart Chain e Solana, segundo a plataforma. A Binance diz que os levantamentos saem agora de novos endereços de carteira e que a lista de endereços da prova de reservas foi atualizada. A plataforma afirma ainda que 6 mil milhões de dólares americanos da perda do ataque de 29 de outubro foram cobertos.",
+    "ru": "Binance начала поэтапно возобновлять вывод средств с 07:00 по центральноевропейскому времени 1 ноября 2026 года, и к 13:36 все 15 сетей первой фазы были открыты, включая Bitcoin, Ethereum, BNB Smart Chain и Solana, сообщает биржа. По словам Binance, вывод теперь идёт с новых адресов кошельков, а список адресов для подтверждения резервов (Proof of Reserves) обновлён. Биржа также заявляет, что 6 млрд долларов США из убытков от взлома 29 октября покрыты.",
+    "ur": "ایکسچینج کے مطابق بائنانس نے یکم نومبر 2026 کو وسطی یورپی وقت صبح 07:00 بجے سے مرحلہ وار رقم نکالنے کی سہولت بحال کرنا شروع کی، اور 13:36 بجے تک پہلے مرحلے کے تمام 15 نیٹ ورک کھل چکے تھے، جن میں بٹ کوائن، ایتھیریم، BNB Smart Chain اور سولانا شامل ہیں۔ بائنانس کا کہنا ہے کہ رقم اب نئے والٹ پتوں سے نکالی جاتی ہے اور Proof of Reserves کے پتوں کی فہرست اپ ڈیٹ کر دی گئی ہے۔ ایکسچینج کا یہ بھی کہنا ہے کہ 29 اکتوبر کے ہیک کے نقصان میں سے 6 ارب امریکی ڈالر پورے کر دیے گئے ہیں۔",
+    "id": "Binance mulai membuka kembali penarikan secara bertahap sejak pukul 07.00 CET pada 1 November 2026, dan pada pukul 13.36 CET seluruh 15 jaringan tahap pertama telah dibuka, termasuk Bitcoin, Ethereum, BNB Smart Chain, dan Solana, menurut bursa itu. Binance mengatakan penarikan kini dilakukan dari alamat dompet baru dan daftar alamat Proof of Reserves telah diperbarui. Bursa itu juga menyatakan 6 miliar dolar AS dari kerugian akibat peretasan 29 Oktober telah ditutup.",
+    "de": "Binance hat am 1. November 2026 ab 07:00 Uhr MEZ begonnen, Auszahlungen schrittweise wieder freizugeben, und um 13:36 Uhr MEZ waren laut der Börse alle 15 Netzwerke der ersten Phase geöffnet, darunter Bitcoin, Ethereum, BNB Smart Chain und Solana. Binance erklärt, Auszahlungen erfolgten nun von neuen Wallet-Adressen, und die Adressliste für den Proof of Reserves sei aktualisiert worden. Die Börse gibt zudem an, dass 6 Milliarden US-Dollar des Verlusts aus dem Hack vom 29. Oktober gedeckt seien.",
+    "ja": "バイナンスによると、同取引所は2026年11月1日の中央ヨーロッパ時間7時から出金を段階的に再開し始め、13時36分までに第1段階の15ネットワークすべてが開かれた。対象にはビットコイン、イーサリアム、BNBスマートチェーン、ソラナなどが含まれる。バイナンスは、出金は新しいウォレットアドレスから行われ、準備金証明（Proof of Reserves）のアドレス一覧を更新したとしている。また、10月29日のハッキングによる損失のうち60億米ドルを補填したと述べている。",
+    "sw": "Binance ilianza kufungua tena utoaji fedha kwa awamu kuanzia saa 07:00 CET tarehe 1 Novemba 2026, na kufikia saa 13:36 CET mitandao yote 15 ya awamu ya kwanza ilikuwa wazi, ikiwemo Bitcoin, Ethereum, BNB Smart Chain na Solana, kwa mujibu wa soko hilo. Binance inasema utoaji fedha sasa unafanyika kutoka anwani mpya za pochi na orodha ya anwani za Proof of Reserves imesasishwa. Soko hilo pia linasema dola bilioni 6 za Marekani za hasara iliyotokana na udukuzi wa tarehe 29 Oktoba zimefidiwa.",
+    "mr": "एक्सचेंजनुसार Binance ने 1 नोव्हेंबर 2026 रोजी CET सकाळी 07:00 पासून टप्प्याटप्प्याने पैसे काढणे पुन्हा सुरू करण्यास सुरुवात केली, आणि CET 13:36 पर्यंत पहिल्या टप्प्यातील सर्व 15 नेटवर्क खुले झाले होते, ज्यात Bitcoin, Ethereum, BNB Smart Chain आणि Solana यांचा समावेश आहे. Binance चे म्हणणे आहे की पैसे काढणे आता नवीन वॉलेट पत्त्यांवरून होते आणि Proof of Reserves पत्त्यांची यादी अद्ययावत केली आहे. 29 ऑक्टोबरच्या हॅकमधील नुकसानीपैकी 6 अब्ज अमेरिकी डॉलर भरून काढल्याचेही एक्सचेंज सांगते.",
+    "fa": "به گفته بایننس، این صرافی از ساعت ۰۷:۰۰ به وقت مرکز اروپا در ۱ نوامبر ۲۰۲۶ بازگشایی مرحله‌به‌مرحله برداشت‌ها را آغاز کرد و تا ساعت ۱۳:۳۶ هر ۱۵ شبکه مرحله نخست، از جمله بیت‌کوین، اتریوم، BNB Smart Chain و سولانا، باز شده بود. بایننس می‌گوید برداشت‌ها اکنون از نشانی‌های کیف پول جدید انجام می‌شود و فهرست نشانی‌های اثبات ذخایر به‌روز شده است. این صرافی همچنین می‌گوید ۶ میلیارد دلار آمریکا از زیان هک ۲۹ اکتبر پوشش داده شده است.",
+    "uk": "Binance почала поетапно відновлювати виведення коштів із 07:00 за центральноєвропейським часом 1 листопада 2026 року, і до 13:36 усі 15 мереж першої фази було відкрито, зокрема Bitcoin, Ethereum, BNB Smart Chain і Solana, повідомляє біржа. За словами Binance, виведення тепер іде з нових адрес гаманців, а список адрес для підтвердження резервів (Proof of Reserves) оновлено. Біржа також заявляє, що 6 млрд доларів США зі збитків від злому 29 жовтня покрито.",
+    "tr": "Binance, 1 Kasım 2026'da CET saatiyle 07:00'den itibaren para çekme işlemlerini aşamalı olarak yeniden açmaya başladı ve borsaya göre CET 13:36 itibarıyla Bitcoin, Ethereum, BNB Smart Chain ve Solana dahil ilk aşamadaki 15 ağın tamamı açılmıştı. Binance, para çekme işlemlerinin artık yeni cüzdan adreslerinden yapıldığını ve Proof of Reserves adres listesinin güncellendiğini söylüyor. Borsa ayrıca 29 Ekim saldırısından kaynaklanan kaybın 6 milyar ABD dolarının karşılandığını belirtiyor.",
+    "se": "Binance álggahii fas ruovttoluotta geassima cehkiid mielde 07:00 CET skábmamánu 1. b. 2026, ja 13:36 CET rádjái ledje buot 15 fierpmádaga vuosttaš muttus rahpasat, maiddái Bitcoin, Ethereum, BNB Smart Chain ja Solana, lonuhanguovddáža dieđuid mielde. Binance dadjá ahte ruovttoluottamáksimat dál mannet ođđa lombačujuhusain ja ahte dan Proof of Reserves čujuhuslistu lea ođasmahttojuvvon. Báŋkosiiddus čuožžu maid ahte 6 miljárdda US dollár massimiid ovddas mii lei golggotmánu 29. b. falleheamis, lea gokčojuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "6700aa7b819f",
@@ -394,7 +519,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "2ba8ad647f8e",
    "possible_duplicate_reason": "same institution, same day",
@@ -410,7 +535,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "decb50fd6654",
@@ -434,7 +560,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -448,7 +574,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "2ba8ad647f8e"
   },
   {
    "id": "d0a01fc48edb",
@@ -1202,7 +1329,8 @@
     "mr": "Binance: चोरीला गेलेल्या मालमत्तेपैकी सुमारे 90 टक्के भरून काढली",
     "fa": "بایننس: حدود ۹۰ درصد دارایی‌های سرقت‌شده جایگزین شده است",
     "uk": "Binance: близько 90% викрадених активів відшкодовано",
-    "tr": "Binance: Çalınan varlıkların yaklaşık yüzde 90'ı yerine konuldu"
+    "tr": "Binance: Çalınan varlıkların yaklaşık yüzde 90'ı yerine konuldu",
+    "se": "Binance muitala ahte sullii 90 proseantta suoláduvvon dávviriin leat buhtaduvvon"
    },
    "title_i18n_source": "Binance: – 90 prosent av alle midlar er gjenoppretta",
    "summary_i18n": {
@@ -1418,8 +1546,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "d0ea3cd24d57",
@@ -1443,9 +1572,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Anniversary/background piece with price history; no news. researcher 02.11"
   },
   {
    "id": "e38d1df138fe",
@@ -1471,9 +1601,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Sentiment/price index (fear index); market story. researcher 02.11"
   },
   {
    "id": "99a3ee8747d5",
@@ -1498,9 +1629,10 @@
     "\\bblokkjede\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "34d75f80568f",
@@ -1883,6 +2015,61 @@
      "country": "NO",
      "source_type": "national",
      "paywall": false
+    },
+    {
+     "outlet": "mbl",
+     "outlet_name": "mbl.is",
+     "url": "https://mbl.is/frettir/erlent/2026/11/01/fbi_segir_nordur_koreu_standa_ad_baki_rafmyntathjof",
+     "title": "FBI segir Norður-Kóreu standa að baki rafmyntaþjófnaði",
+     "published": "2026-11-01T08:38:33+00:00",
+     "lang": "Icelandic",
+     "country": "IS",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/fbi-gruppe-fra-nordkorea-stod-bag-kryptotyveri-i-milliardklassen",
+     "title": "FBI: Gruppe fra Nordkorea stod bag kryptotyveri i milliardklassen",
+     "published": "2026-11-01T06:42:38+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "bt",
+     "outlet_name": "Bergens Tidende",
+     "url": "https://bt.no/innenriks/i/ylPA6r/fbi-nord-korea-sto-bak-tidenes-stoerste-krypto-tyveri",
+     "title": "FBI: Nord-Korea sto bak tidenes største krypto-tyveri",
+     "published": "2026-11-01T06:52:30+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "kryptovalutaguiden",
+     "outlet_name": "Kryptovalutaguiden",
+     "url": "https://kryptovalutaguiden.se/2026/11/trump-tvekar-men-fbi-pekar-ut-nordkorea-bakom-binance-hacket",
+     "title": "Trump tvekar men FBI pekar ut Nordkorea bakom Binance-hacket",
+     "published": "2026-11-01T13:11:34+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/nyheter/fbi-nordkorea-bakom-miljardkupp-mot-kryptobors",
+     "title": "FBI: Nordkorea bakom miljardkupp mot kryptobörs",
+     "published": "2026-11-01T07:12:27+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -1913,7 +2100,8 @@
     "mr": "FBI: Binance हॅकमागे उत्तर कोरियाचा TraderTraitor",
     "fa": "اف‌بی‌آی: TraderTraitor کره شمالی پشت هک بایننس بود",
     "uk": "ФБР: за зламом Binance стоїть північнокорейське угруповання TraderTraitor",
-    "tr": "FBI: Binance saldırısının arkasında Kuzey Kore'nin TraderTraitor grubu var"
+    "tr": "FBI: Binance saldırısının arkasında Kuzey Kore'nin TraderTraitor grubu var",
+    "se": "FBI dadjá ahte Davvi-Korea TraderTraitor lei duogábealde Binance-háhkamis"
    },
    "title_i18n_source": "Nord-Korea får skylden etter milliardkupp",
    "summary_i18n": {
@@ -2660,10 +2848,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "dd9efe763b0e",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "649ed6814109",
@@ -3811,6 +4000,28 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-hacket-var-et-brudd-hos-selskapet---ikke-i-blokkjeden",
+     "title": "Binance-hacket var et brudd hos selskapet – ikke i blokkjeden",
+     "published": "2026-10-31",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "altaposten-no",
+     "outlet_name": "altaposten.no",
+     "url": "https://altaposten.no/norgeogverden/n/0B1dz2/justisministeren-bekymret-for-stort-kryptotyveri",
+     "title": "Justisministeren bekymret for stort kryptotyveri",
+     "published": "2026-10-30T07:38:11+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -4597,6 +4808,39 @@
      "country": "SE",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/a/74-20254456?origin=rss",
+     "title": "Historian suurin virtuaalivaluuttoihin kohdistunut tietomurto osui Binanceen ja paljasti alan tietoturvariskit",
+     "published": "2026-11-01T18:38:21+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kryptovalutaguiden",
+     "outlet_name": "Kryptovalutaguiden",
+     "url": "https://kryptovalutaguiden.se/2026/11/tidernas-storsta-krypto-hack-binance-toppar-listan",
+     "title": "Tidernas största krypto hack – Binance toppar listan",
+     "published": "2026-11-01T08:00:55+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "dagensps.se",
+     "outlet_name": "Dagens PS",
+     "url": "https://dagensps.se/bors-finans/60-miljarder-kronor-stulna-nu-hanar-elon-musk-offret",
+     "title": "60 miljarder kronor stulna – nu hånar Elon Musk offret",
+     "published": "2026-10-31T08:01:51+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -4627,7 +4871,8 @@
     "mr": "Binance ने हॅकमध्ये सुमारे 6.3 अब्ज डॉलरच्या नुकसानीला दुजोरा दिला",
     "fa": "بایننس زیان حدود ۶٫۳ میلیارد دلاری در هک را تأیید کرد",
     "uk": "Binance підтвердила втрату близько 6,3 млрд доларів унаслідок злому",
-    "tr": "Binance, saldırıda yaklaşık 6,3 milyar dolarlık kaybı doğruladı"
+    "tr": "Binance, saldırıda yaklaşık 6,3 milyar dolarlık kaybı doğruladı",
+    "se": "Binance duođašta sullii 6,3 miljárdda dollara massimiid häkkas"
    },
    "title_i18n_source": "Binance stanser uttak etter mulig rekordhack",
    "summary_i18n": {
