@@ -337,6 +337,17 @@
      "examples": [
       "robots.txt disallows the homepage, so no logo was fetched. Text only."
      ]
+    },
+    "note": {
+     "type": "string",
+     "description": "Editorial note on how the source may be used, or why it is paused."
+    },
+    "source_role": {
+     "type": "string",
+     "enum": [
+      "company"
+     ],
+     "description": "company = a company's own channel; label stories as a company source."
     }
    },
    "additionalProperties": false,
