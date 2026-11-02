@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-02T03:45:56+00:00",
+ "generated_at": "2026-11-02T06:34:58+00:00",
  "preview": false,
  "item": {
   "id": "9b8a70e6faee",
@@ -33,7 +33,7 @@
    "fa": "بایننس زیان حدود ۶٫۳ میلیارد دلاری در هک را تأیید کرد",
    "uk": "Binance підтвердила втрату близько 6,3 млрд доларів унаслідок злому",
    "tr": "Binance, saldırıda yaklaşık 6,3 milyar dolarlık kaybı doğruladı",
-   "se": "Binance bisseha geassima maŋŋá vejolaš stuorra häkkema"
+   "se": "Binance duođašta sullii 6,3 miljárdda dollara massimiid häkkas"
   },
   "source": "investornytt",
   "source_name": "Investornytt",
@@ -1109,6 +1109,66 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/aftonbladet.png"
     }
+   },
+   {
+    "outlet": "yle",
+    "outlet_name": "Yle Uutiset",
+    "url": "https://yle.fi/a/74-20254456?origin=rss",
+    "title": "Historian suurin virtuaalivaluuttoihin kohdistunut tietomurto osui Binanceen ja paljasti alan tietoturvariskit",
+    "published": "2026-11-01T18:38:21+00:00",
+    "lang": "Finnish",
+    "language_code": "fi",
+    "country": "FI",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/yle.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Yle_Uutiset_Logo_2024.svg",
+     "author": "Yleisradio",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/yle.png"
+    }
+   },
+   {
+    "outlet": "kryptovalutaguiden",
+    "outlet_name": "Kryptovalutaguiden",
+    "url": "https://kryptovalutaguiden.se/2026/11/tidernas-storsta-krypto-hack-binance-toppar-listan",
+    "title": "Tidernas största krypto hack – Binance toppar listan",
+    "published": "2026-11-01T08:00:55+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp",
+     "source_url": "https://kryptovalutaguiden.se/wp-content/uploads/2021/08/Gradient-Inline-LOGO-11.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp"
+    }
+   },
+   {
+    "outlet": "dagensps.se",
+    "outlet_name": "Dagens PS",
+    "url": "https://dagensps.se/bors-finans/60-miljarder-kronor-stulna-nu-hanar-elon-musk-offret",
+    "title": "60 miljarder kronor stulna – nu hånar Elon Musk offret",
+    "published": "2026-10-31T08:01:51+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
    }
   ],
   "sources": [
@@ -2148,41 +2208,101 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/aftonbladet.png"
     }
+   },
+   {
+    "outlet": "yle",
+    "outlet_name": "Yle Uutiset",
+    "url": "https://yle.fi/a/74-20254456?origin=rss",
+    "title": "Historian suurin virtuaalivaluuttoihin kohdistunut tietomurto osui Binanceen ja paljasti alan tietoturvariskit",
+    "published": "2026-11-01T18:38:21+00:00",
+    "lang": "Finnish",
+    "language_code": "fi",
+    "country": "FI",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/yle.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Yle_Uutiset_Logo_2024.svg",
+     "author": "Yleisradio",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/yle.png"
+    }
+   },
+   {
+    "outlet": "kryptovalutaguiden",
+    "outlet_name": "Kryptovalutaguiden",
+    "url": "https://kryptovalutaguiden.se/2026/11/tidernas-storsta-krypto-hack-binance-toppar-listan",
+    "title": "Tidernas största krypto hack – Binance toppar listan",
+    "published": "2026-11-01T08:00:55+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp",
+     "source_url": "https://kryptovalutaguiden.se/wp-content/uploads/2021/08/Gradient-Inline-LOGO-11.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp"
+    }
+   },
+   {
+    "outlet": "dagensps.se",
+    "outlet_name": "Dagens PS",
+    "url": "https://dagensps.se/bors-finans/60-miljarder-kronor-stulna-nu-hanar-elon-musk-offret",
+    "title": "60 miljarder kronor stulna – nu hånar Elon Musk offret",
+    "published": "2026-10-31T08:01:51+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
    }
   ],
   "coverage": {
-   "count": 52,
+   "count": 55,
    "by_country": [
     {
      "country": "NO",
      "count": 17,
-     "share": 0.3269
+     "share": 0.3091
     },
     {
      "country": "SE",
-     "count": 19,
-     "share": 0.3654
+     "count": 21,
+     "share": 0.3818
     },
     {
      "country": "DK",
      "count": 7,
-     "share": 0.1346
+     "share": 0.1273
     },
     {
      "country": "FI",
-     "count": 6,
-     "share": 0.1154
+     "count": 7,
+     "share": 0.1273
     },
     {
      "country": "IS",
      "count": 3,
-     "share": 0.0577
+     "share": 0.0545
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 52,
+     "count": 55,
      "share": 1.0
     },
     {
