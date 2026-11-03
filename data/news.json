@@ -4,7 +4,7 @@
    "id": "4e239c7ceaf9",
    "url": "https://aftenposten.no/okonomi/i/zlarKr/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
    "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
-   "title_en": null,
+   "title_en": "North Korea rejects the FBI's attribution of the Binance hack",
    "source": "aftenposten",
    "source_name": "Aftenposten",
    "country": "NO",
@@ -17,14 +17,15 @@
    "published": "2026-11-02T22:36:56+00:00",
    "fetched": "2026-11-03T02:47:09+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "North Korea has rejected the FBI's statement that North Korean hackers were behind the theft from Binance, calling it an 'absurd fabrication' in a statement by Kim Yo-jong carried by the state news agency KCNA, according to Yonhap and Bloomberg. The statement calls the attribution a political provocation and suggests it could affect dialogue between North Korea and the United States. The FBI said on 31 October that North Korea's TraderTraitor was responsible and published addresses linked to the stolen funds; the denial is North Korea's position, not a new finding.",
    "also_covered_by": [
     {
      "outlet": "adressa",
@@ -58,8 +59,88 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/nyheter/historiens-storste-kryptotyveri-nord-korea-avviser-anklagene/s/80-95-214055",
+     "title": "Nord-Korea avviser anklagene: – Absurd fabrikkering",
+     "published": "2026-11-02T22:33:11+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
     }
-   ]
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-03T04:50:00+01:00",
+   "primary_source": {
+    "name": "Yonhap via Nocutnews – North Korea's statement (KCNA)",
+    "url": "https://en.nocutnews.co.kr/news/6601039"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance hack: main story"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/",
+     "label": "FBI attributes the hack to North Korea's TraderTraitor"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Nord-Korea avviser FBI si kopling til Binance-hackinga",
+    "sv": "Nordkorea avvisar FBI:s uppgift om Binance-attacken",
+    "da": "Nordkorea afviser FBI's udpegning i sagen om Binance-hackerangrebet",
+    "fi": "Pohjois-Korea kiistää FBI:n arvion Binancen hakkeroinnin tekijästä",
+    "is": "Norður-Kórea hafnar því mati FBI að hún standi að árásinni á Binance",
+    "zh": "朝鲜否认美国联邦调查局对币安黑客事件的归因",
+    "hi": "उत्तर कोरिया ने Binance हैक पर FBI के आरोप को खारिज किया",
+    "es": "Corea del Norte rechaza la atribución del FBI del hackeo de Binance",
+    "fr": "La Corée du Nord rejette l'attribution du piratage de Binance par le FBI",
+    "ar": "كوريا الشمالية ترفض نسب مكتب التحقيقات الفيدرالي اختراق بينانس إليها",
+    "bn": "Binance হ্যাক নিয়ে FBI-এর দায় আরোপ প্রত্যাখ্যান করল উত্তর কোরিয়া",
+    "pt": "Coreia do Norte rejeita atribuição do FBI no ataque à Binance",
+    "ru": "Северная Корея отвергает заявление ФБР о её причастности к взлому Binance",
+    "ur": "شمالی کوریا نے بائنانس ہیک کا الزام عائد کرنے کا ایف بی آئی کا مؤقف مسترد کر دیا",
+    "id": "Korea Utara tolak atribusi FBI atas peretasan Binance",
+    "de": "Nordkorea weist die Zuordnung des Binance-Hacks durch das FBI zurück",
+    "ja": "北朝鮮、バイナンスへのハッキングに関するFBIの見解を否定",
+    "sw": "Korea Kaskazini yakanusha madai ya FBI kuhusu udukuzi wa Binance",
+    "mr": "Binance हॅकबाबत FBI चा दावा उत्तर कोरियाने फेटाळला",
+    "fa": "کره شمالی انتساب هک بایننس از سوی اف‌بی‌آی را رد کرد",
+    "uk": "Північна Корея відкидає твердження ФБР щодо зламу Binance",
+    "tr": "Kuzey Kore, Binance saldırısıyla ilgili FBI'ın suçlamasını reddetti",
+    "se": "Davvi-Korea hilgu FBI:a Binance-háhkama čatnaseami"
+   },
+   "title_i18n_source": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+   "summary_i18n": {
+    "nn": "Nord-Korea har avvist FBI si utsegn om at nordkoreanske hackarar stod bak tjuveriet frå Binance, og kallar ho ei «absurd fabrikkering» i ei fråsegn frå Kim Yo-jong gjengitt av det statlege nyheitsbyrået KCNA, ifølgje Yonhap og Bloomberg. Fråsegna kallar koplinga ein politisk provokasjon og antydar at ho kan påverke dialogen mellom Nord-Korea og USA. FBI sa 31. oktober at Nord-Koreas TraderTraitor stod bak, og publiserte adresser knytte til dei stolne midlane; avvisinga er Nord-Koreas standpunkt, ikkje eit nytt funn.",
+    "nb": "Nord-Korea har avvist FBIs uttalelse om at nordkoreanske hackere sto bak tyveriet fra Binance, og kaller den en «absurd fabrikkering» i en uttalelse fra Kim Yo-jong gjengitt av det statlige nyhetsbyrået KCNA, ifølge Yonhap og Bloomberg. Uttalelsen kaller koblingen en politisk provokasjon og antyder at den kan påvirke dialogen mellom Nord-Korea og USA. FBI sa 31. oktober at Nord-Koreas TraderTraitor sto bak, og publiserte adresser knyttet til de stjålne midlene; avvisningen er Nord-Koreas standpunkt, ikke et nytt funn.",
+    "sv": "Nordkorea har avvisat FBI:s uppgift att nordkoreanska hackare låg bakom stölden från Binance och kallar den ”absurt påhitt” i ett uttalande från Kim Yo-jong som återges av den statliga nyhetsbyrån KCNA, enligt Yonhap och Bloomberg. Uttalandet kallar kopplingen en politisk provokation och antyder att den kan påverka dialogen mellan Nordkorea och USA. FBI uppgav den 31 oktober att Nordkoreas TraderTraitor låg bakom och publicerade adresser kopplade till de stulna medlen; avvisandet är Nordkoreas ståndpunkt, inte ett nytt fynd.",
+    "da": "Nordkorea har afvist FBI's udmelding om, at nordkoreanske hackere stod bag tyveriet fra Binance, og kalder den et »absurd opspind« i en udtalelse fra Kim Yo-jong gengivet af det statslige nyhedsbureau KCNA, ifølge Yonhap og Bloomberg. Udtalelsen kalder forbindelsen en politisk provokation og antyder, at den kan påvirke dialogen mellem Nordkorea og USA. FBI oplyste den 31. oktober, at Nordkoreas TraderTraitor stod bag, og offentliggjorde adresser knyttet til de stjålne midler; afvisningen er Nordkoreas standpunkt, ikke et nyt fund.",
+    "fi": "Pohjois-Korea on kiistänyt FBI:n väitteen, jonka mukaan pohjoiskorealaiset hakkerit olivat Binancen varkauden takana, ja kutsuu sitä ”absurdiksi sepitteeksi” Kim Yo-jongin lausunnossa, jonka valtiollinen uutistoimisto KCNA välitti, kertovat Yonhap ja Bloomberg. Lausunnossa yhteyttä kutsutaan poliittiseksi provokaatioksi ja vihjataan, että se voi vaikuttaa Pohjois-Korean ja Yhdysvaltojen väliseen vuoropuheluun. FBI kertoi 31. lokakuuta, että Pohjois-Korean TraderTraitor oli vastuussa, ja julkaisi varastettuihin varoihin liittyviä osoitteita; kiisto on Pohjois-Korean kanta, ei uusi havainto.",
+    "is": "Norður-Kórea hefur hafnað yfirlýsingu FBI um að norðurkóreskir tölvuþrjótar hafi staðið að þjófnaðinum frá Binance og kallar hana „fáránlegan uppspuna“ í yfirlýsingu frá Kim Yo-jong sem ríkisfréttastofan KCNA birti, samkvæmt Yonhap og Bloomberg. Í yfirlýsingunni er tengingin kölluð pólitísk ögrun og gefið í skyn að hún geti haft áhrif á samskipti Norður-Kóreu og Bandaríkjanna. FBI sagði 31. október að TraderTraitor frá Norður-Kóreu bæri ábyrgð og birti vistföng tengd stolnu fénu; neitunin er afstaða Norður-Kóreu, ekki ný niðurstaða.",
+    "zh": "据韩联社和彭博社报道，朝鲜否认了美国联邦调查局关于朝鲜黑客策划币安盗窃案的说法，金与正在朝中社发布的声明中称其为“荒谬的捏造”。声明称这一归因是政治挑衅，并暗示可能影响朝美对话。联邦调查局于10月31日表示朝鲜的TraderTraitor应对此负责，并公布了与被盗资金相关的地址；这一否认是朝鲜的立场，而非新的调查结论。",
+    "hi": "Yonhap और Bloomberg के अनुसार, उत्तर कोरिया ने FBI के इस बयान को खारिज कर दिया है कि Binance से चोरी के पीछे उत्तर कोरियाई हैकर थे, और सरकारी समाचार एजेंसी KCNA द्वारा जारी Kim Yo-jong के बयान में इसे 'बेतुकी मनगढ़ंत बात' कहा है। बयान में इस आरोप को राजनीतिक उकसावा बताया गया है और संकेत दिया गया है कि इससे उत्तर कोरिया और अमेरिका के बीच बातचीत प्रभावित हो सकती है। FBI ने 31 अक्टूबर को कहा था कि उत्तर कोरिया का TraderTraitor ज़िम्मेदार था और चोरी के धन से जुड़े पते प्रकाशित किए थे; यह खंडन उत्तर कोरिया का रुख है, कोई नई जांच का निष्कर्ष नहीं।",
+    "es": "Corea del Norte ha rechazado la afirmación del FBI de que hackers norcoreanos estuvieron detrás del robo a Binance y la califica de «fabricación absurda» en un comunicado de Kim Yo-jong difundido por la agencia estatal KCNA, según Yonhap y Bloomberg. El comunicado califica la atribución de provocación política y sugiere que podría afectar al diálogo entre Corea del Norte y Estados Unidos. El FBI afirmó el 31 de octubre que el grupo norcoreano TraderTraitor fue el responsable y publicó direcciones vinculadas a los fondos robados; el desmentido es la postura de Corea del Norte, no un nuevo hallazgo.",
+    "fr": "La Corée du Nord a rejeté l'affirmation du FBI selon laquelle des pirates nord-coréens seraient derrière le vol chez Binance, la qualifiant de « fabrication absurde » dans une déclaration de Kim Yo-jong relayée par l'agence officielle KCNA, selon Yonhap et Bloomberg. La déclaration qualifie l'attribution de provocation politique et laisse entendre qu'elle pourrait peser sur le dialogue entre la Corée du Nord et les États-Unis. Le FBI a déclaré le 31 octobre que le groupe nord-coréen TraderTraitor était responsable et a publié des adresses liées aux fonds volés ; ce démenti est la position de la Corée du Nord, pas un nouvel élément d'enquête.",
+    "ar": "رفضت كوريا الشمالية قول مكتب التحقيقات الفيدرالي إن قراصنة كوريين شماليين يقفون وراء السرقة من بينانس، ووصفته بأنه «تلفيق سخيف» في بيان لكيم يو جونغ نقلته وكالة الأنباء الرسمية KCNA، بحسب يونهاب وبلومبرغ. ويصف البيان هذا النسب بأنه استفزاز سياسي ويلمّح إلى أنه قد يؤثر في الحوار بين كوريا الشمالية والولايات المتحدة. وكان المكتب قد قال في 31 أكتوبر إن مجموعة TraderTraitor الكورية الشمالية مسؤولة ونشر عناوين مرتبطة بالأموال المسروقة؛ والنفي هو موقف كوريا الشمالية وليس نتيجة جديدة.",
+    "bn": "Yonhap ও Bloomberg-এর তথ্যমতে, Binance থেকে চুরির পেছনে উত্তর কোরীয় হ্যাকাররা ছিল—FBI-এর এই বক্তব্য প্রত্যাখ্যান করেছে উত্তর কোরিয়া, এবং রাষ্ট্রীয় সংবাদ সংস্থা KCNA-তে প্রকাশিত Kim Yo-jong-এর বিবৃতিতে একে 'অযৌক্তিক বানোয়াট' বলা হয়েছে। বিবৃতিতে এই দায় আরোপকে রাজনৈতিক উসকানি বলা হয়েছে এবং ইঙ্গিত দেওয়া হয়েছে যে এটি উত্তর কোরিয়া ও যুক্তরাষ্ট্রের সংলাপে প্রভাব ফেলতে পারে। FBI ৩১ অক্টোবর জানিয়েছিল যে উত্তর কোরিয়ার TraderTraitor দায়ী এবং চুরি যাওয়া অর্থের সঙ্গে যুক্ত ঠিকানা প্রকাশ করেছিল; এই অস্বীকৃতি উত্তর কোরিয়ার অবস্থান, নতুন কোনো তদন্তের ফল নয়।",
+    "pt": "A Coreia do Norte rejeitou a afirmação do FBI de que piratas informáticos norte-coreanos estiveram por trás do roubo à Binance, chamando-lhe uma «fabricação absurda» numa declaração de Kim Yo-jong divulgada pela agência estatal KCNA, segundo a Yonhap e a Bloomberg. A declaração classifica a atribuição como uma provocação política e sugere que pode afetar o diálogo entre a Coreia do Norte e os Estados Unidos. O FBI afirmou a 31 de outubro que o grupo norte-coreano TraderTraitor foi o responsável e publicou endereços ligados aos fundos roubados; o desmentido é a posição da Coreia do Norte, não uma nova conclusão.",
+    "ru": "Северная Корея отвергла заявление ФБР о том, что за кражей у Binance стоят северокорейские хакеры, назвав его «абсурдной фальсификацией» в заявлении Ким Ё Чжон, распространённом государственным агентством ЦТАК (KCNA), сообщают Yonhap и Bloomberg. В заявлении эта версия названа политической провокацией и намекается, что она может повлиять на диалог между КНДР и США. ФБР 31 октября заявило, что ответственность лежит на северокорейской группе TraderTraitor, и опубликовало адреса, связанные с похищенными средствами; отрицание — позиция Северной Кореи, а не новый вывод расследования.",
+    "ur": "یونہاپ اور بلومبرگ کے مطابق، شمالی کوریا نے ایف بی آئی کے اس بیان کو مسترد کر دیا ہے کہ بائنانس سے چوری کے پیچھے شمالی کوریائی ہیکرز تھے، اور سرکاری خبر رساں ادارے KCNA کے ذریعے جاری Kim Yo-jong کے بیان میں اسے 'مضحکہ خیز من گھڑت بات' قرار دیا ہے۔ بیان میں اس الزام کو سیاسی اشتعال انگیزی کہا گیا ہے اور اشارہ دیا گیا ہے کہ اس سے شمالی کوریا اور امریکہ کے درمیان بات چیت متاثر ہو سکتی ہے۔ ایف بی آئی نے 31 اکتوبر کو کہا تھا کہ شمالی کوریا کا TraderTraitor ذمہ دار ہے اور چوری شدہ رقم سے منسلک پتے جاری کیے تھے؛ یہ تردید شمالی کوریا کا مؤقف ہے، کوئی نئی دریافت نہیں۔",
+    "id": "Korea Utara menolak pernyataan FBI bahwa peretas Korea Utara berada di balik pencurian dari Binance, dan menyebutnya 'rekayasa yang absurd' dalam pernyataan Kim Yo-jong yang disiarkan kantor berita negara KCNA, menurut Yonhap dan Bloomberg. Pernyataan itu menyebut atribusi tersebut sebagai provokasi politik dan mengisyaratkan bahwa hal itu dapat memengaruhi dialog antara Korea Utara dan Amerika Serikat. FBI menyatakan pada 31 Oktober bahwa TraderTraitor Korea Utara bertanggung jawab dan menerbitkan alamat yang terkait dengan dana curian; penolakan ini adalah sikap Korea Utara, bukan temuan baru.",
+    "de": "Nordkorea hat die Aussage des FBI zurückgewiesen, nordkoreanische Hacker steckten hinter dem Diebstahl bei Binance, und nennt sie in einer von der staatlichen Nachrichtenagentur KCNA verbreiteten Erklärung von Kim Yo-jong eine „absurde Erfindung“, wie Yonhap und Bloomberg berichten. Die Erklärung bezeichnet die Zuordnung als politische Provokation und deutet an, sie könne den Dialog zwischen Nordkorea und den USA beeinträchtigen. Das FBI hatte am 31. Oktober erklärt, Nordkoreas TraderTraitor sei verantwortlich, und Adressen veröffentlicht, die mit den gestohlenen Mitteln in Verbindung stehen; das Dementi ist Nordkoreas Position, kein neuer Befund.",
+    "ja": "聯合ニュースとブルームバーグによると、北朝鮮は、バイナンスからの盗難に北朝鮮のハッカーが関与したとするFBIの発表を否定した。国営の朝鮮中央通信（KCNA）が伝えた金与正氏の談話は、これを「荒唐無稽なでっち上げ」と呼んだ。談話はこの見解を政治的挑発とし、米朝対話に影響しかねないと示唆している。FBIは10月31日、北朝鮮のTraderTraitorに責任があるとして、盗まれた資金に関連するアドレスを公表していた。今回の否定は北朝鮮の立場であり、新たな調査結果ではない。",
+    "sw": "Korea Kaskazini imekanusha kauli ya FBI kwamba wadukuzi wa Korea Kaskazini walihusika na wizi kutoka Binance, ikiiita 'uzushi wa kipuuzi' katika taarifa ya Kim Yo-jong iliyotolewa na shirika la habari la serikali KCNA, kwa mujibu wa Yonhap na Bloomberg. Taarifa hiyo inaita uhusishaji huo uchokozi wa kisiasa na inadokeza kuwa unaweza kuathiri mazungumzo kati ya Korea Kaskazini na Marekani. FBI ilisema tarehe 31 Oktoba kwamba TraderTraitor ya Korea Kaskazini ndiyo iliyohusika na ikachapisha anwani zinazohusiana na fedha zilizoibwa; ukanushaji huo ni msimamo wa Korea Kaskazini, si ugunduzi mpya.",
+    "mr": "Yonhap आणि Bloomberg नुसार, Binance मधील चोरीमागे उत्तर कोरियाचे हॅकर होते हे FBI चे विधान उत्तर कोरियाने फेटाळले असून, सरकारी वृत्तसंस्था KCNA ने प्रसिद्ध केलेल्या Kim Yo-jong यांच्या निवेदनात त्याला 'हास्यास्पद बनाव' म्हटले आहे. निवेदनात या आरोपाला राजकीय चिथावणी म्हटले असून त्याचा उत्तर कोरिया-अमेरिका संवादावर परिणाम होऊ शकतो असे सूचित केले आहे. FBI ने 31 ऑक्टोबर रोजी उत्तर कोरियाचा TraderTraitor जबाबदार असल्याचे सांगून चोरीच्या निधीशी संबंधित पत्ते प्रसिद्ध केले होते; हा नकार उत्तर कोरियाची भूमिका आहे, नवीन निष्कर्ष नाही.",
+    "fa": "به گزارش یونهاپ و بلومبرگ، کره شمالی اظهارات اف‌بی‌آی مبنی بر اینکه هکرهای کره شمالی پشت سرقت از بایننس بودند را رد کرده و در بیانیه‌ای از کیم یو-جونگ که خبرگزاری دولتی KCNA منتشر کرد، آن را «جعلی مضحک» خوانده است. این بیانیه انتساب را تحریکی سیاسی می‌نامد و اشاره می‌کند که می‌تواند بر گفت‌وگوی کره شمالی و آمریکا اثر بگذارد. اف‌بی‌آی در ۳۱ اکتبر گفته بود TraderTraitor کره شمالی مسئول است و نشانی‌های مرتبط با وجوه سرقت‌شده را منتشر کرده بود؛ این تکذیب موضع کره شمالی است، نه یافته‌ای تازه.",
+    "uk": "Північна Корея відкинула заяву ФБР про те, що за крадіжкою в Binance стоять північнокорейські хакери, назвавши її «абсурдною фальсифікацією» в заяві Кім Йо Чжон, поширеній державним агентством ЦТАК (KCNA), повідомляють Yonhap і Bloomberg. У заяві цю версію названо політичною провокацією й натякнуто, що вона може вплинути на діалог між КНДР і США. ФБР 31 жовтня заявило, що відповідальність несе північнокорейське угруповання TraderTraitor, і оприлюднило адреси, пов'язані з викраденими коштами; заперечення — це позиція Північної Кореї, а не новий висновок.",
+    "tr": "Yonhap ve Bloomberg'e göre Kuzey Kore, Binance'teki hırsızlığın arkasında Kuzey Koreli hackerların olduğu yönündeki FBI açıklamasını reddetti ve devlet haber ajansı KCNA'nın yayımladığı Kim Yo-jong imzalı açıklamada bunu 'saçma bir uydurma' olarak nitelendirdi. Açıklama, bu suçlamayı siyasi bir provokasyon olarak tanımlıyor ve Kuzey Kore ile ABD arasındaki diyaloğu etkileyebileceğini ima ediyor. FBI 31 Ekim'de Kuzey Kore'nin TraderTraitor grubunun sorumlu olduğunu açıklamış ve çalınan fonlarla bağlantılı adresleri yayımlamıştı; bu ret Kuzey Kore'nin tutumu, yeni bir bulgu değil.",
+    "se": "Davvi-Korea lea hilgon FBI čilgehusa ahte davvi-korealaš hákkit ledje duogábealde Binance suoládeamis, ja gohčoda dan 'absurdalaš fabrihkas' Kim Yo-jong KCNA, Yonhap ja Bloomberg dieđuid mielde. Cealkámuša mielde atribušuvdna lea politihkalaš provokašuvdna ja dat sáhttá váikkuhit Davvi-Korea ja Amerihká Ovttastuvvon Stáhtaid gaskasaš dialoga. FBI dajai golggotmánu 31. beaivvi ahte Davvi-Korea TraderTraitor lei ovddasvástideaddjin ja almmostahtii adreassaid mat ledje čadnojuvvon suoláduvvon ruđaide; biehttaleapmi lea Davvi-Korea oaidnu, ii ge ođđa gávnnus."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2fbab9c2f0c5",
@@ -83,8 +164,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4e239c7ceaf9"
   },
   {
    "id": "c2e3981dbbc1",
@@ -108,8 +190,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4525f8afaf7b"
   },
   {
    "id": "cc694db059dc",
@@ -159,8 +242,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "a0dc060c980c",
@@ -184,8 +268,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Routine treasury purchase with price/market angle. researcher 03.11"
   },
   {
    "id": "eeab3eac1026",
@@ -209,9 +294,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Price commentary. researcher 03.11"
   },
   {
    "id": "e0e1160d142e",
@@ -236,9 +322,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Trading incentive / promotional. researcher 03.11"
   },
   {
    "id": "45a18ac7d799",
@@ -264,16 +351,17 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "possible_duplicate_of": "51dac1cc2e8d",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "reject_reason": "Platform's own tax guide (PR/evergreen), not news. researcher 03.11"
   },
   {
    "id": "4525f8afaf7b",
    "url": "https://e24.no/boers-og-finans/i/Jrzm57/binance-kunder-har-tatt-ut-3-64-milliarder-dollar",
    "title": "Binance-kunder har tatt ut 3,64 milliarder dollar",
-   "title_en": null,
+   "title_en": "Binance reports net outflows of about 3.64 billion dollars after reopening withdrawals",
    "source": "e24",
    "source_name": "E24",
    "country": "NO",
@@ -286,14 +374,130 @@
    "published": "2026-11-02T12:30:23+00:00",
    "fetched": "2026-11-03T02:47:09+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "According to Binance, customers withdrew a net of about 3.64 billion US dollars between 07:00 and 16:30 CET on 1 November 2026, after the exchange reopened withdrawals following the hack: about 4.65 billion went out and 1.01 billion came in. Binance says this equals about 2.1 percent of its 171 billion dollars in assets and that withdrawals are levelling off. According to CNBC, the stablecoin issuer Circle has now frozen more than 1.1 billion USDC. The analytics service DefiLlama reports higher outflow figures, which Binance disputes because they do not account for its own transfers to new wallets.",
+   "also_covered_by": [
+    {
+     "outlet": "breakit",
+     "outlet_name": "Breakit",
+     "url": "https://breakit.se/artikel/47894/nordkorea-hackare-slog-till-mot-binance-kunder-rusade-att-ta-ut-35-miljarder",
+     "title": "Nordkorea-hackare slog till mot Binance – kunder rusade att ta ut 35 miljarder",
+     "published": "2026-11-02T08:56:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/kunder-tog-ut-miljarder-efter-historisk-kryptostold/a/Qg12V8",
+     "title": "Kunder tog ut miljarder efter historisk kryptostöld",
+     "published": "2026-11-02T07:47:14+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "ekstra-bladet",
+     "outlet_name": "Ekstra Bladet",
+     "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptohack-kunder-flygter-med-24-milliarder/11340546",
+     "title": "Efter historisk kryptohack: Kunder flygter med 24 milliarder",
+     "published": "2026-11-02T20:00:47+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "dagensps.se",
+     "outlet_name": "Dagens PS",
+     "url": "https://dagensps.se/bors-finans/kunderna-flyr-binance-efter-rekordkuppen-36-miljarder-dollar-ut",
+     "title": "Kunderna flyr Binance efter rekordkuppen – 3,6 miljarder dollar ut",
+     "published": "2026-11-02T07:28:17+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-03T04:50:00+01:00",
+   "primary_source": {
+    "name": "Binance on X – withdrawal status, 1 Nov 2026",
+    "url": "https://x.com/binance/status/2116926305254133892"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance hack: main story"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/",
+     "label": "FBI attributes the hack to North Korea's TraderTraitor"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Binance melder om netto utstrøyming på om lag 3,64 milliardar dollar etter at uttak opna att",
+    "sv": "Binance redovisar nettoutflöde på omkring 3,64 miljarder dollar efter att uttagen öppnat igen",
+    "da": "Binance oplyser nettoudstrømning på omkring 3,64 milliarder dollar efter genåbning af udbetalinger",
+    "fi": "Binance kertoo noin 3,64 miljardin dollarin nettoulosvirtauksesta nostojen avauduttua",
+    "is": "Binance greinir frá nettóútflæði upp á um 3,64 milljarða dala eftir að úttektir opnuðu á ný",
+    "zh": "币安称恢复提现后净流出约36.4亿美元",
+    "hi": "निकासी फिर खुलने के बाद Binance ने लगभग 3.64 अरब डॉलर के शुद्ध बहिर्वाह की जानकारी दी",
+    "es": "Binance informa de salidas netas de unos 3.640 millones de dólares tras reabrir los retiros",
+    "fr": "Binance fait état de sorties nettes d'environ 3,64 milliards de dollars après la réouverture des retraits",
+    "ar": "بينانس تعلن صافي تدفقات خارجة بنحو 3.64 مليار دولار بعد إعادة فتح السحوبات",
+    "bn": "উত্তোলন আবার চালুর পর প্রায় ৩.৬৪ বিলিয়ন ডলার নিট বহিঃপ্রবাহের কথা জানাল Binance",
+    "pt": "Binance reporta saídas líquidas de cerca de 3,64 mil milhões de dólares após reabrir levantamentos",
+    "ru": "Binance сообщает о чистом оттоке около 3,64 млрд долларов после возобновления вывода",
+    "ur": "رقم نکالنے کی بحالی کے بعد بائنانس نے تقریباً 3.64 ارب ڈالر کے خالص اخراج کی اطلاع دی",
+    "id": "Binance laporkan arus keluar bersih sekitar 3,64 miliar dolar setelah membuka kembali penarikan",
+    "de": "Binance meldet Nettoabflüsse von rund 3,64 Milliarden Dollar nach Wiederöffnung der Auszahlungen",
+    "ja": "バイナンス、出金再開後の純流出は約36億4000万ドルと報告",
+    "sw": "Binance yaripoti utokaji halisi wa takriban dola bilioni 3.64 baada ya kufungua tena utoaji",
+    "mr": "पैसे काढणे पुन्हा सुरू झाल्यानंतर Binance कडून सुमारे 3.64 अब्ज डॉलरच्या निव्वळ बहिर्गमनाची माहिती",
+    "fa": "بایننس از خروج خالص حدود ۳٫۶۴ میلیارد دلار پس از بازگشایی برداشت‌ها خبر داد",
+    "uk": "Binance повідомляє про чистий відтік близько 3,64 млрд доларів після відновлення виведення",
+    "tr": "Binance, para çekme işlemlerini yeniden açtıktan sonra yaklaşık 3,64 milyar dolarlık net çıkış bildirdi",
+    "se": "Binance dieđiha 3,64 miljárdda dollara netto olggosváldimiid maŋŋel go geassimat leat fas rahppojuvvon"
+   },
+   "title_i18n_source": "Binance-kunder har tatt ut 3,64 milliarder dollar",
+   "summary_i18n": {
+    "nn": "Ifølgje Binance tok kundane ut netto om lag 3,64 milliardar amerikanske dollar mellom klokka 07.00 og 16.30 norsk tid 1. november 2026, etter at børsen opna for uttak att etter hackinga: om lag 4,65 milliardar gjekk ut og 1,01 milliardar kom inn. Binance seier at dette svarar til om lag 2,1 prosent av eigedelane på 171 milliardar dollar, og at uttaka flatar ut. Ifølgje CNBC har stablecoin-utferdaren Circle no frose meir enn 1,1 milliardar USDC. Analysetenesta DefiLlama oppgir høgare tal for utstrøyminga, men Binance bestrid dei fordi dei ikkje tek omsyn til børsen sine eigne overføringar til nye lommebøker.",
+    "nb": "Ifølge Binance tok kundene ut netto om lag 3,64 milliarder amerikanske dollar mellom klokken 07.00 og 16.30 norsk tid 1. november 2026, etter at børsen åpnet for uttak igjen etter hackingen: om lag 4,65 milliarder gikk ut og 1,01 milliarder kom inn. Binance sier at dette tilsvarer om lag 2,1 prosent av eiendelene på 171 milliarder dollar, og at uttakene flater ut. Ifølge CNBC har stablecoin-utstederen Circle nå frosset mer enn 1,1 milliarder USDC. Analysetjenesten DefiLlama oppgir høyere tall for utstrømningen, men Binance bestrider dem fordi de ikke tar hensyn til børsens egne overføringer til nye lommebøker.",
+    "sv": "Enligt Binance tog kunderna ut netto omkring 3,64 miljarder amerikanska dollar mellan klockan 07.00 och 16.30 CET den 1 november 2026, efter att börsen öppnat för uttag igen efter attacken: omkring 4,65 miljarder gick ut och 1,01 miljarder kom in. Binance uppger att detta motsvarar omkring 2,1 procent av tillgångarna på 171 miljarder dollar och att uttagen planar ut. Enligt CNBC har stablecoin-utgivaren Circle nu fryst mer än 1,1 miljarder USDC. Analystjänsten DefiLlama anger högre utflödessiffror, men Binance bestrider dem eftersom de inte tar hänsyn till börsens egna överföringar till nya plånböcker.",
+    "da": "Ifølge Binance hævede kunderne netto omkring 3,64 milliarder amerikanske dollar mellem klokken 07.00 og 16.30 CET den 1. november 2026, efter at børsen genåbnede for udbetalinger efter angrebet: omkring 4,65 milliarder gik ud og 1,01 milliarder kom ind. Binance oplyser, at det svarer til omkring 2,1 procent af aktiverne på 171 milliarder dollar, og at udbetalingerne flader ud. Ifølge CNBC har stablecoin-udstederen Circle nu indefrosset mere end 1,1 milliarder USDC. Analysetjenesten DefiLlama angiver højere tal for udstrømningen, men Binance bestrider dem, fordi de ikke tager højde for børsens egne overførsler til nye wallets.",
+    "fi": "Binancen mukaan asiakkaat nostivat nettona noin 3,64 miljardia Yhdysvaltain dollaria 1. marraskuuta 2026 kello 7.00–16.30 Keski-Euroopan aikaa, kun pörssi oli avannut nostot uudelleen hakkeroinnin jälkeen: ulos meni noin 4,65 miljardia ja sisään tuli 1,01 miljardia. Binancen mukaan tämä vastaa noin 2,1 prosenttia sen 171 miljardin dollarin varoista, ja nostot ovat tasaantumassa. CNBC:n mukaan vakaakolikon liikkeeseenlaskija Circle on nyt jäädyttänyt yli 1,1 miljardia USDC:tä. Analyysipalvelu DefiLlama ilmoittaa suurempia ulosvirtauslukuja, mutta Binance kiistää ne, koska niissä ei huomioida pörssin omia siirtoja uusiin lompakoihin.",
+    "is": "Samkvæmt Binance tóku viðskiptavinir út nettó um 3,64 milljarða Bandaríkjadala milli klukkan 07.00 og 16.30 að mið-evrópskum tíma 1. nóvember 2026, eftir að kauphöllin opnaði fyrir úttektir á ný eftir árásina: um 4,65 milljarðar fóru út og 1,01 milljarður kom inn. Binance segir þetta svara til um 2,1 prósents af 171 milljarðs dala eignum sínum og að úttektir séu að jafnast út. Samkvæmt CNBC hefur útgefandi stöðugmyntarinnar, Circle, nú fryst meira en 1,1 milljarð USDC. Greiningarþjónustan DefiLlama gefur upp hærri tölur um útflæði, en Binance mótmælir þeim þar sem þær taki ekki tillit til eigin millifærslna kauphallarinnar í ný veski.",
+    "zh": "据币安称，在黑客事件后恢复提现后，2026年11月1日欧洲中部时间07:00至16:30期间，客户净提取约36.4亿美元：流出约46.5亿美元，流入10.1亿美元。币安表示，这约占其1710亿美元资产的2.1%，提现正在趋于平稳。据CNBC报道，稳定币发行商Circle目前已冻结超过11亿USDC。分析服务DefiLlama给出的流出数字更高，但币安对此提出异议，称这些数字未计入交易所自身向新钱包的转账。",
+    "hi": "Binance के अनुसार, हैक के बाद निकासी फिर खुलने पर 1 नवंबर 2026 को CET 07:00 से 16:30 के बीच ग्राहकों ने शुद्ध रूप से लगभग 3.64 अरब अमेरिकी डॉलर निकाले: लगभग 4.65 अरब बाहर गए और 1.01 अरब अंदर आए। Binance का कहना है कि यह उसकी 171 अरब डॉलर की संपत्ति का लगभग 2.1 प्रतिशत है और निकासी अब स्थिर हो रही है। CNBC के अनुसार स्टेबलकॉइन जारीकर्ता Circle ने अब 1.1 अरब से अधिक USDC फ्रीज़ कर दिए हैं। विश्लेषण सेवा DefiLlama बहिर्वाह के अधिक आंकड़े बताती है, लेकिन Binance उन्हें खारिज करता है क्योंकि उनमें नए वॉलेट में उसके अपने हस्तांतरण शामिल नहीं किए गए हैं।",
+    "es": "Según Binance, los clientes retiraron en términos netos unos 3.640 millones de dólares estadounidenses entre las 07:00 y las 16:30 CET del 1 de noviembre de 2026, después de que el exchange reabriera los retiros tras el hackeo: salieron unos 4.650 millones y entraron 1.010 millones. Binance afirma que esto equivale a cerca del 2,1 % de sus 171.000 millones de dólares en activos y que los retiros se están estabilizando. Según CNBC, el emisor de stablecoins Circle ha congelado ya más de 1.100 millones de USDC. El servicio de análisis DefiLlama da cifras de salidas más altas, que Binance rechaza porque no tienen en cuenta sus propias transferencias a nuevos monederos.",
+    "fr": "Selon Binance, les clients ont retiré en net environ 3,64 milliards de dollars américains entre 07h00 et 16h30 CET le 1er novembre 2026, après la réouverture des retraits consécutive au piratage : environ 4,65 milliards sont sortis et 1,01 milliard est entré. Binance indique que cela représente environ 2,1 % de ses 171 milliards de dollars d'actifs et que les retraits se stabilisent. Selon CNBC, l'émetteur de stablecoins Circle a désormais gelé plus de 1,1 milliard d'USDC. Le service d'analyse DefiLlama avance des chiffres de sorties plus élevés, que Binance conteste car ils ne tiennent pas compte de ses propres transferts vers de nouveaux portefeuilles.",
+    "ar": "وفقًا لبينانس، سحب العملاء صافي نحو 3.64 مليار دولار أمريكي بين الساعة 07:00 و16:30 بتوقيت وسط أوروبا في 1 نوفمبر 2026، بعد أن أعادت المنصة فتح السحوبات عقب الاختراق: خرج نحو 4.65 مليار ودخل 1.01 مليار. وتقول بينانس إن ذلك يعادل نحو 2.1 في المئة من أصولها البالغة 171 مليار دولار، وإن السحوبات بدأت تستقر. ووفقًا لشبكة CNBC، جمّدت شركة Circle المصدرة للعملة المستقرة أكثر من 1.1 مليار USDC حتى الآن. وتورد خدمة التحليل DefiLlama أرقامًا أعلى للتدفقات الخارجة، لكن بينانس تعترض عليها لأنها لا تأخذ في الحسبان تحويلات المنصة نفسها إلى محافظ جديدة.",
+    "bn": "Binance-এর তথ্যমতে, হ্যাকের পর উত্তোলন আবার চালু হলে ২০২৬ সালের ১ নভেম্বর CET ০৭:০০ থেকে ১৬:৩০-এর মধ্যে গ্রাহকরা নিট প্রায় ৩.৬৪ বিলিয়ন মার্কিন ডলার তুলে নেন: প্রায় ৪.৬৫ বিলিয়ন বেরিয়ে যায় এবং ১.০১ বিলিয়ন জমা হয়। Binance বলছে, এটি তাদের ১৭১ বিলিয়ন ডলারের সম্পদের প্রায় ২.১ শতাংশ এবং উত্তোলন স্থিতিশীল হয়ে আসছে। CNBC-র তথ্যমতে স্টেবলকয়েন ইস্যুকারী Circle এখন ১.১ বিলিয়নের বেশি USDC জব্দ করেছে। বিশ্লেষণ সেবা DefiLlama বহিঃপ্রবাহের আরও বেশি সংখ্যা দেখায়, কিন্তু Binance তা মানে না, কারণ সেখানে নতুন ওয়ালেটে এক্সচেঞ্জের নিজস্ব স্থানান্তর হিসাবে ধরা হয়নি।",
+    "pt": "Segundo a Binance, os clientes levantaram em termos líquidos cerca de 3,64 mil milhões de dólares americanos entre as 07:00 e as 16:30 CET de 1 de novembro de 2026, depois de a plataforma reabrir os levantamentos após o ataque: saíram cerca de 4,65 mil milhões e entraram 1,01 mil milhões. A Binance diz que isto equivale a cerca de 2,1 % dos seus 171 mil milhões de dólares em ativos e que os levantamentos estão a estabilizar. Segundo a CNBC, a emissora de stablecoins Circle já congelou mais de 1,1 mil milhões de USDC. O serviço de análise DefiLlama indica valores de saída mais elevados, que a Binance contesta por não terem em conta as suas próprias transferências para novas carteiras.",
+    "ru": "По данным Binance, 1 ноября 2026 года с 07:00 до 16:30 по центральноевропейскому времени, после возобновления вывода средств вслед за взломом, клиенты вывели в чистом выражении около 3,64 млрд долларов США: около 4,65 млрд ушло и 1,01 млрд поступило. Binance заявляет, что это около 2,1% её активов в 171 млрд долларов и что вывод стабилизируется. По данным CNBC, эмитент стейблкоинов Circle к настоящему времени заморозил более 1,1 млрд USDC. Аналитический сервис DefiLlama приводит более высокие цифры оттока, но Binance их оспаривает, поскольку они не учитывают собственные переводы биржи на новые кошельки.",
+    "ur": "بائنانس کے مطابق، ہیک کے بعد رقم نکالنے کی سہولت بحال ہونے پر یکم نومبر 2026 کو وسطی یورپی وقت 07:00 سے 16:30 کے درمیان صارفین نے خالص تقریباً 3.64 ارب امریکی ڈالر نکالے: تقریباً 4.65 ارب باہر گئے اور 1.01 ارب آئے۔ بائنانس کا کہنا ہے کہ یہ اس کے 171 ارب ڈالر کے اثاثوں کا تقریباً 2.1 فیصد ہے اور رقم نکالنے کا رجحان مستحکم ہو رہا ہے۔ CNBC کے مطابق اسٹیبل کوائن جاری کرنے والی کمپنی Circle اب تک 1.1 ارب سے زائد USDC منجمد کر چکی ہے۔ تجزیاتی سروس DefiLlama اخراج کے زیادہ اعداد بتاتی ہے، لیکن بائنانس انہیں مسترد کرتا ہے کیونکہ ان میں نئے والٹس میں ایکسچینج کی اپنی منتقلیاں شامل نہیں کی گئیں۔",
+    "id": "Menurut Binance, nasabah menarik secara bersih sekitar 3,64 miliar dolar AS antara pukul 07.00 dan 16.30 CET pada 1 November 2026, setelah bursa membuka kembali penarikan pascaperetasan: sekitar 4,65 miliar keluar dan 1,01 miliar masuk. Binance mengatakan jumlah itu setara sekitar 2,1 persen dari asetnya yang bernilai 171 miliar dolar dan penarikan mulai mereda. Menurut CNBC, penerbit stablecoin Circle kini telah membekukan lebih dari 1,1 miliar USDC. Layanan analitik DefiLlama melaporkan angka arus keluar yang lebih tinggi, tetapi Binance membantahnya karena tidak memperhitungkan transfer bursa sendiri ke dompet baru.",
+    "de": "Laut Binance haben Kunden am 1. November 2026 zwischen 07:00 und 16:30 Uhr MEZ, nach der Wiederöffnung der Auszahlungen infolge des Hacks, netto rund 3,64 Milliarden US-Dollar abgezogen: rund 4,65 Milliarden flossen ab, 1,01 Milliarden kamen hinzu. Binance zufolge entspricht das etwa 2,1 Prozent seiner Vermögenswerte von 171 Milliarden Dollar, und die Auszahlungen flachen ab. Laut CNBC hat der Stablecoin-Emittent Circle inzwischen mehr als 1,1 Milliarden USDC eingefroren. Der Analysedienst DefiLlama nennt höhere Abflusszahlen, die Binance bestreitet, weil sie die eigenen Überweisungen der Börse auf neue Wallets nicht berücksichtigen.",
+    "ja": "バイナンスによると、ハッキング後に出金を再開した2026年11月1日の中央ヨーロッパ時間7時から16時30分までに、顧客は差し引き約36億4000万米ドルを引き出した。流出は約46億5000万ドル、流入は10億1000万ドルだった。バイナンスは、これは同社の資産1710億ドルの約2.1％に当たり、出金は落ち着きつつあるとしている。CNBCによると、ステーブルコイン発行元のCircleはこれまでに11億USDC超を凍結した。分析サービスのDefiLlamaはより大きな流出額を示しているが、バイナンスは自社の新しいウォレットへの移管が考慮されていないとして異議を唱えている。",
+    "sw": "Kwa mujibu wa Binance, wateja walitoa kwa jumla halisi takriban dola bilioni 3.64 za Marekani kati ya saa 07:00 na 16:30 CET tarehe 1 Novemba 2026, baada ya soko kufungua tena utoaji kufuatia udukuzi: takriban bilioni 4.65 zilitoka na bilioni 1.01 ziliingia. Binance inasema kiasi hicho ni takriban asilimia 2.1 ya mali zake za dola bilioni 171 na kwamba utoaji unaanza kutulia. Kwa mujibu wa CNBC, mtoaji wa stablecoin Circle sasa amezuia zaidi ya USDC bilioni 1.1. Huduma ya uchambuzi DefiLlama inatoa takwimu za juu zaidi za utokaji, lakini Binance inazipinga kwa kuwa hazizingatii uhamisho wa soko lenyewe kwenda pochi mpya.",
+    "mr": "Binance नुसार, हॅकनंतर पैसे काढणे पुन्हा सुरू झाल्यावर 1 नोव्हेंबर 2026 रोजी CET 07:00 ते 16:30 दरम्यान ग्राहकांनी निव्वळ सुमारे 3.64 अब्ज अमेरिकी डॉलर काढले: सुमारे 4.65 अब्ज बाहेर गेले आणि 1.01 अब्ज आले. Binance चे म्हणणे आहे की हे तिच्या 171 अब्ज डॉलरच्या मालमत्तेच्या सुमारे 2.1 टक्के आहे आणि पैसे काढणे स्थिरावत आहे. CNBC नुसार स्टेबलकॉइन जारीकर्ता Circle ने आतापर्यंत 1.1 अब्जहून अधिक USDC गोठवले आहेत. विश्लेषण सेवा DefiLlama बहिर्गमनाचे अधिक आकडे देते, पण Binance त्यांना आक्षेप घेते कारण त्यात नवीन वॉलेटमध्ये एक्सचेंजचे स्वतःचे हस्तांतरण विचारात घेतलेले नाही.",
+    "fa": "به گفته بایننس، پس از بازگشایی برداشت‌ها در پی هک، مشتریان در ۱ نوامبر ۲۰۲۶ بین ساعت ۰۷:۰۰ تا ۱۶:۳۰ به وقت مرکز اروپا به‌طور خالص حدود ۳٫۶۴ میلیارد دلار آمریکا برداشت کردند: حدود ۴٫۶۵ میلیارد خارج و ۱٫۰۱ میلیارد وارد شد. بایننس می‌گوید این رقم حدود ۲٫۱ درصد از دارایی‌های ۱۷۱ میلیارد دلاری آن است و برداشت‌ها رو به ثبات است. به گزارش CNBC، شرکت Circle، ناشر استیبل‌کوین، تاکنون بیش از ۱٫۱ میلیارد USDC را مسدود کرده است. سرویس تحلیلی DefiLlama ارقام بالاتری برای خروج گزارش می‌کند، اما بایننس آن‌ها را رد می‌کند، زیرا انتقال‌های خود صرافی به کیف پول‌های جدید در آن لحاظ نشده است.",
+    "uk": "За даними Binance, 1 листопада 2026 року з 07:00 до 16:30 за центральноєвропейським часом, після відновлення виведення коштів у зв'язку зі зламом, клієнти вивели в чистому вимірі близько 3,64 млрд доларів США: близько 4,65 млрд пішло й 1,01 млрд надійшло. Binance заявляє, що це близько 2,1% її активів у 171 млрд доларів і що виведення стабілізується. За даними CNBC, емітент стейблкоїнів Circle наразі заморозив понад 1,1 млрд USDC. Аналітичний сервіс DefiLlama наводить вищі цифри відтоку, але Binance їх оскаржує, бо вони не враховують власні перекази біржі на нові гаманці.",
+    "tr": "Binance'e göre, saldırının ardından para çekme işlemleri yeniden açıldıktan sonra 1 Kasım 2026'da CET saatiyle 07:00 ile 16:30 arasında müşteriler net yaklaşık 3,64 milyar ABD doları çekti: yaklaşık 4,65 milyar çıktı, 1,01 milyar girdi. Binance, bunun 171 milyar dolarlık varlıklarının yaklaşık yüzde 2,1'ine denk geldiğini ve çekimlerin yavaşladığını söylüyor. CNBC'ye göre stablecoin ihraççısı Circle şu ana kadar 1,1 milyardan fazla USDC'yi dondurdu. Analiz hizmeti DefiLlama daha yüksek çıkış rakamları veriyor, ancak Binance bu rakamlara borsanın yeni cüzdanlara yaptığı kendi transferlerini hesaba katmadıkları için itiraz ediyor.",
+    "se": "Binance dieđuid mielde geassádedje kundarat oktiibuot sullii 3,64 miljárdda dollara 07:00 ja 16:30 gaskka CET skábmamánu 1. b. 2026, maŋŋil go lonohallan fas rahppui hacka geažil: sullii 4,65 miljárdda dollara olggos ja 1,01 miljárdda dollara sisa. Binance dadjá ahte dat vástida sullii 2,1 proseantta dan 171 miljárdda dollára sturrosaš aktiivva ja ahte olggosváldimat leat dássálagaid. CNBC dieđiha, ahte stablecoin-ruhtadeaddji Circle lea dál jásskan badjel 1,1 miljárdda USD. Analysabálvalus DefiLlama raportere stuorit olggosmanni loguid, maid Binance vuostálasttá, go dat eai váldde vuhtii iežas sirdimat ođđa ruhtasiidduide."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "51dac1cc2e8d",
@@ -320,8 +524,9 @@
     "\\bkryptovaluutta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Blog platform post (opinion), not news. researcher 03.11"
   },
   {
    "id": "fed1d3976f0e",
@@ -345,8 +550,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9b8a70e6faee"
   },
   {
    "id": "b64da3163844",
@@ -370,8 +576,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4525f8afaf7b"
   },
   {
    "id": "ce0dbb0195f6",
@@ -395,8 +602,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4525f8afaf7b"
   },
   {
    "id": "5879ddc69997",
@@ -423,8 +631,9 @@
     "\\bkryptotillgång\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "ddaadc7d6164",
@@ -448,8 +657,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4525f8afaf7b"
   },
   {
    "id": "9c1435ca4076",
@@ -478,9 +688,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "dd9efe763b0e"
   },
   {
    "id": "a88470535fb2",
@@ -918,6 +1129,28 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-gjenapner-uttak-etter-hacket",
+     "title": "Binance gjenåpner uttak etter hacket",
+     "published": "2026-11-01",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/live/binance-aterupptar-uttag-efter-rekordstolden",
+     "title": "Binance återupptar uttag efter rekordstölden",
+     "published": "2026-11-02T07:47:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -1211,11 +1444,12 @@
     "\\bblokkjede\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "published_date_only": true,
    "possible_duplicate_of": "4525f8afaf7b",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "reject_reason": "Opinion/commentary from the source's own podcast. researcher 03.11"
   },
   {
    "id": "1ac7b0bc575e",
@@ -1242,9 +1476,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "9774e8944c29"
   },
   {
    "id": "931749d66494",
@@ -4635,6 +4870,28 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-hacket-styrker-mica-argumentet-mener-virtune",
+     "title": "Binance-hacket styrker MiCA-argumentet, mener Virtune",
+     "published": "2026-11-02",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "finans-dk",
+     "outlet_name": "Finans.dk",
+     "url": "https://finans.dk/finans/ECE19791848/danske-bank-maner-til-ro-efter-milliardroeveri-paa-kryptoplatform-vi-kan-ikke-bare-sige-at-dine-penge-er-vaek",
+     "title": "Danske Bank maner til ro efter milliardrøveri på kryptoplatform: Vi kan ikke bare sige, at dine penge er væk",
+     "published": "2026-11-02T19:30:00+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -5454,6 +5711,17 @@
      "country": "SE",
      "source_type": "national",
      "paywall": false
+    },
+    {
+     "outlet": "politiken",
+     "outlet_name": "Politiken",
+     "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+     "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+     "published": "2026-11-02T09:25:34+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
