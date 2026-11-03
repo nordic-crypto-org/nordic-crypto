@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-02T17:15:47+00:00",
+ "generated_at": "2026-11-03T03:41:20+00:00",
  "preview": false,
  "topic": "exchanges",
  "count": 5,
@@ -779,6 +779,29 @@
       "credit": "Official website",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/tv2-dk.webp"
      }
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/nyheter/nord-korea-nekter-for-a-sta-bak-krypto-tyveri-1.18071405",
+     "title": "Nord-Korea nekter for å stå bak krypto-tyveri",
+     "published": "2026-11-02T21:28:33+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/nrk.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NRK_Norsk_rikskringkasting_corporate_logo.svg",
+      "author": "™/®Norsk rikskringkasting AS, typeface designed by Typotheque",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/nrk.png"
+     }
     }
    ],
    "sources": [
@@ -929,31 +952,54 @@
       "credit": "Official website",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/tv2-dk.webp"
      }
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/nyheter/nord-korea-nekter-for-a-sta-bak-krypto-tyveri-1.18071405",
+     "title": "Nord-Korea nekter for å stå bak krypto-tyveri",
+     "published": "2026-11-02T21:28:33+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/nrk.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NRK_Norsk_rikskringkasting_corporate_logo.svg",
+      "author": "™/®Norsk rikskringkasting AS, typeface designed by Typotheque",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/nrk.png"
+     }
     }
    ],
    "coverage": {
-    "count": 8,
+    "count": 9,
     "by_country": [
      {
       "country": "NO",
-      "count": 2,
-      "share": 0.25
+      "count": 3,
+      "share": 0.3333
      },
      {
       "country": "SE",
       "count": 3,
-      "share": 0.375
+      "share": 0.3333
      },
      {
       "country": "DK",
       "count": 3,
-      "share": 0.375
+      "share": 0.3333
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 8,
+      "count": 9,
       "share": 1.0
      },
      {

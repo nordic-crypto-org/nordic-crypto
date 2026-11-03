@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-03T01:39:11+00:00",
+ "generated_at": "2026-11-03T03:41:20+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": true,
   "note": "Norwegian exchange (also lists DKK pairs). last, high, low, volume and change come from GET /v2/markets/{market}. bid and ask come from GET /v2/markets/tickers. The public payload does not name a 24-hour window on those fields.",
   "status": "ok",
-  "fetched_at": "2026-11-03T01:39:09+00:00",
+  "fetched_at": "2026-11-03T03:38:34+00:00",
   "error": null,
   "ticker_count": 6
  },
@@ -37,15 +37,15 @@
    "exchange_symbol": "BTCNOK",
    "base": "BTC",
    "quote": "NOK",
-   "last": "719885.44",
-   "bid": "713474.6600000000000000",
-   "ask": "720822.6800000000000000",
+   "last": "719221.03",
+   "bid": "713000.0000000000000000",
+   "ask": "716645.3900000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/BTCNOK",
    "volume_base": "3.67",
    "volume_quote": null,
@@ -53,7 +53,7 @@
    "volume_quote_24h": null,
    "high": "728057.33",
    "low": "711000.02",
-   "change_pct": "-1.04"
+   "change_pct": "-1.13"
   },
   {
    "id": "firi:ETH-NOK",
@@ -62,14 +62,14 @@
    "base": "ETH",
    "quote": "NOK",
    "last": "21016.51",
-   "bid": "20766.1300000000000000",
-   "ask": "21239.3800000000000000",
+   "bid": "20675.7400000000000000",
+   "ask": "21203.3900000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/ETHNOK",
    "volume_base": "0.48",
    "volume_quote": null,
@@ -86,14 +86,14 @@
    "base": "SOL",
    "quote": "NOK",
    "last": "860.00",
-   "bid": "855.4100000000000000",
-   "ask": "863.1700000000000000",
+   "bid": "855.4000000000000000",
+   "ask": "859.1000000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/SOLNOK",
    "volume_base": "441.28",
    "volume_quote": null,
@@ -110,14 +110,14 @@
    "base": "XRP",
    "quote": "NOK",
    "last": "11.66",
-   "bid": "11.5700000000000000",
+   "bid": "11.5100000000000000",
    "ask": "11.7600000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/XRPNOK",
    "volume_base": "2170.74",
    "volume_quote": null,
@@ -134,14 +134,14 @@
    "base": "ADA",
    "quote": "NOK",
    "last": "1.72",
-   "bid": "1.7300000000000000",
-   "ask": "1.8000000000000000",
+   "bid": "1.7400000000000000",
+   "ask": "1.7600000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/ADANOK",
    "volume_base": "2482.44",
    "volume_quote": null,
@@ -159,13 +159,13 @@
    "quote": "NOK",
    "last": "9.31",
    "bid": "9.2500000000000000",
-   "ask": "9.3300000000000000",
+   "ask": "9.3200000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-03T01:39:09+00:00",
+   "fetched_at": "2026-11-03T03:38:34+00:00",
    "source_url": "https://api.firi.com/v2/markets/USDCNOK",
    "volume_base": "6606.40",
    "volume_quote": null,
