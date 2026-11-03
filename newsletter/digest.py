@@ -52,6 +52,16 @@ T = {
 FROM_NC = {"en": "From Nordic Crypto", "nn": "Frå Nordic Crypto", "nb": "Fra Nordic Crypto", "sv": "Från Nordic Crypto", "da": "Fra Nordic Crypto", "fi": "Nordic Cryptolta", "is": "Frá Nordic Crypto"}
 URL_RE = re.compile(r"https?://[^\s<>()]+[^\s<>().,;:!?]")
 NEW_PODS = {"en": "New podcasts", "nn": "Nye podkastar", "nb": "Nye podkaster", "sv": "Nya poddar", "da": "Nye podcasts", "fi": "Uudet podcastit", "is": "Ný hlaðvörp"}
+NEW_RESEARCH = {"en": "New research", "nn": "Ny forsking", "nb": "Ny forskning", "sv": "Ny forskning", "da": "Ny forskning", "fi": "Uutta tutkimusta", "is": "Nýjar rannsóknir"}
+RESEARCH_KIND = {
+ "en": {"master": "Master's thesis", "project": "Project thesis", "phd": "PhD thesis", "paper": "Paper", "conference": "Conference paper"},
+ "nn": {"master": "Masteroppgåve", "project": "Prosjektoppgåve", "phd": "Doktoravhandling", "paper": "Artikkel", "conference": "Konferanseartikkel"},
+ "nb": {"master": "Masteroppgave", "project": "Prosjektoppgave", "phd": "Doktoravhandling", "paper": "Artikkel", "conference": "Konferanseartikkel"},
+ "sv": {"master": "Masteruppsats", "project": "Projektuppsats", "phd": "Doktorsavhandling", "paper": "Artikel", "conference": "Konferensartikel"},
+ "da": {"master": "Speciale", "project": "Projektopgave", "phd": "Ph.d.-afhandling", "paper": "Artikel", "conference": "Konferenceartikel"},
+ "fi": {"master": "Maisterintutkielma", "project": "Projektityö", "phd": "Väitöskirja", "paper": "Artikkeli", "conference": "Konferenssiartikkeli"},
+ "is": {"master": "Meistararitgerð", "project": "Verkefni", "phd": "Doktorsritgerð", "paper": "Grein", "conference": "Ráðstefnugrein"},
+}
 NO_AIKI = re.compile(r"(?<![\w-])(?:AI|KI)(?![\w])")
 COUNTRY_ORDER = ["NO", "SE", "DK", "FI", "IS", "NORDIC", "EU"]
 
@@ -74,6 +84,17 @@ def featured(until, path=os.path.join(ROOT, "newsletter", "featured.json")):
     if not os.path.exists(path): return []
     rows = json.load(open(path, encoding="utf-8")).get("items") or []
     return [f for f in rows if dt.date.fromisoformat(f["from"]) <= until <= dt.date.fromisoformat(f["until"])]
+
+def research_items(until, path=os.path.join(ROOT, "data", "newsletter_queue.json")):
+    """Academic works queued for the next weekly issue. An item is included when this issue's until date falls in its [from, until] window."""
+    if not os.path.exists(path): return []
+    rows = json.load(open(path, encoding="utf-8")).get("items") or []
+    out = []
+    for row in rows:
+        if not row.get("title") or not row.get("url") or not row.get("from") or not row.get("until"): continue
+        if dt.date.fromisoformat(row["from"]) <= until <= dt.date.fromisoformat(row["until"]):
+            out.append(row)
+    return out
 
 def _linkify(text):
     out, last = [], 0
@@ -99,7 +120,24 @@ def render_featured(feats, lang):
                 md += [para, ""]; tx += [para, ""]; hm.append(f'<p style="margin:0 0 10px;text-align:left">{_linkify(para)}</p>')
     return md, tx, hm
 
-def render(items, lang, since, until, pods=(), feats=()):
+def render_research(rows, lang):
+    """A 'Ny forskning' block. Plain list links, not the bold story-link format, so story parsers skip it."""
+    md, tx, hm = [], [], []
+    if not rows: return md, tx, hm
+    h = NEW_RESEARCH[lang]; kinds = RESEARCH_KIND[lang]
+    md += [f"## {h}", ""]; tx += [h.upper(), ""]; hm.append(f'<h2 style="font-size:18px;margin:20px 0 6px">{html.escape(h)}</h2><ul>')
+    for r in rows:
+        authors = ", ".join(a for a in (r.get("authors") or []) if a)
+        kind = kinds.get(r.get("type") or "", r.get("type") or "")
+        bits = [b for b in (authors, r.get("institution") or "", str(r.get("year") or ""), kind) if b]
+        line = f"[{r['title']}]({r['url']})" + (f" — {'. '.join(bits)}." if bits else "")
+        md.append(f"- {line}")
+        tx.append(f"{r['title']} ({' '.join(bits)}): {r['url']}")
+        hm.append(f'<li><a href="{html.escape(r["url"])}">{html.escape(r["title"])}</a>' + (f' — {html.escape(". ".join(bits))}.' if bits else "") + "</li>")
+    md.append(""); tx.append(""); hm.append("</ul>")
+    return md, tx, hm
+
+def render(items, lang, since, until, pods=(), feats=(), research=()):
     s = T[lang]; home = BASE + ("" if lang == "en" else lang + "/")
     rng = f"{i18n.short_dm(lang, since)}–{i18n.short_date(lang, until)}"
     md = [f"# {s['h']}", f"*{rng}*", "", s["intro"], ""]; tx = [s["h"], rng, "", s["intro"], ""]
@@ -128,6 +166,7 @@ def render(items, lang, since, until, pods=(), feats=()):
         md += [f"## {h}", ""] + [f"- [{p['name']}]({url}#{p['id']}) ({p['country']})" for p in pods] + [""]
         tx += [h.upper(), ""] + [f"{p['name']} ({p['country']}): {url}#{p['id']}" for p in pods] + [""]
         hm.append(f'<h2 style="font-size:18px;margin:20px 0 6px">{html.escape(h)}</h2><ul>' + "".join(f'<li><a href="{html.escape(url)}#{html.escape(p["id"])}">{html.escape(p["name"])}</a> ({p["country"]})</li>' for p in pods) + "</ul>")
+    rm, rt, rh = render_research(research, lang); md += rm; tx += rt; hm += rh
     md += [f"[{s['more']}]({home})", "", "---", "", s["foot"], "", s["sign"], "", f"*{s['why']}*", ""]
     tx += [f"{s['more']}: {home}", "", "--", s["foot"], "", s["sign"], "", s["why"], "{{unsubscribe}}", ""]
     hm.append(f'<p style="text-align:left"><a href="{home}">{html.escape(s["more"])}</a></p><hr style="border:0;border-top:1px solid #d1d5db">'
@@ -145,7 +184,8 @@ def main(argv=None):
     news = json.load(open(os.path.join(o.site_dir, "data", "news.json"), encoding="utf-8"))
     if news.get("preview"): raise SystemExit("digest: refusing preview data")
     until = dt.date.fromisoformat(o.until) if o.until else dt.datetime.now(OSLO).date(); since = until - dt.timedelta(days=o.days - 1)
-    items = pick(news["items"], since, until); md, tx, hp = render(items, o.lang, since, until, new_podcasts(since, until), featured(until))
+    items = pick(news["items"], since, until)
+    md, tx, hp = render(items, o.lang, since, until, new_podcasts(since, until), featured(until), research_items(until))
     if o.lang in ("nn", "nb"):
         bad = [m.group(0) for m in NO_AIKI.finditer(re.sub(r"https?://\S+", "", md))]
         own = [b for b in bad if not any(b in i["title"] for i in items)]   # external headlines stay as published
