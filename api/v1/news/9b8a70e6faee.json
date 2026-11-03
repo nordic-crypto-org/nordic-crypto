@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-03T03:41:20+00:00",
+ "generated_at": "2026-11-03T06:39:33+00:00",
  "preview": false,
  "item": {
   "id": "9b8a70e6faee",
@@ -1169,6 +1169,29 @@
     "paywall": false,
     "primary": false,
     "logo": null
+   },
+   {
+    "outlet": "politiken",
+    "outlet_name": "Politiken",
+    "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+    "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+    "published": "2026-11-02T09:25:34+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/politiken.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Politiken-Logo.svg",
+     "author": "Politiken",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/politiken.png"
+    }
    }
   ],
   "sources": [
@@ -2268,41 +2291,64 @@
     "paywall": false,
     "primary": false,
     "logo": null
+   },
+   {
+    "outlet": "politiken",
+    "outlet_name": "Politiken",
+    "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+    "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+    "published": "2026-11-02T09:25:34+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/politiken.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Politiken-Logo.svg",
+     "author": "Politiken",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/politiken.png"
+    }
    }
   ],
   "coverage": {
-   "count": 55,
+   "count": 56,
    "by_country": [
     {
      "country": "NO",
      "count": 17,
-     "share": 0.3091
+     "share": 0.3036
     },
     {
      "country": "SE",
      "count": 21,
-     "share": 0.3818
+     "share": 0.375
     },
     {
      "country": "DK",
-     "count": 7,
-     "share": 0.1273
+     "count": 8,
+     "share": 0.1429
     },
     {
      "country": "FI",
      "count": 7,
-     "share": 0.1273
+     "share": 0.125
     },
     {
      "country": "IS",
      "count": 3,
-     "share": 0.0545
+     "share": 0.0536
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 55,
+     "count": 56,
      "share": 1.0
     },
     {

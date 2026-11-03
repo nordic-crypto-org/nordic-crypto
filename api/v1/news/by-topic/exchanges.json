@@ -1,11 +1,677 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-03T03:41:20+00:00",
+ "generated_at": "2026-11-03T06:39:33+00:00",
  "preview": false,
  "topic": "exchanges",
- "count": 5,
+ "count": 7,
  "items": [
+  {
+   "id": "4e239c7ceaf9",
+   "url": "https://aftenposten.no/okonomi/i/zlarKr/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+   "html_url": "https://nordiccrypto.no/stories/4e239c7ceaf9/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/4e239c7ceaf9.json",
+   "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+   "title_en": "North Korea rejects the FBI's attribution of the Binance hack",
+   "title_i18n": {
+    "nn": "Nord-Korea avviser FBI si kopling til Binance-hackinga",
+    "sv": "Nordkorea avvisar FBI:s uppgift om Binance-attacken",
+    "da": "Nordkorea afviser FBI's udpegning i sagen om Binance-hackerangrebet",
+    "fi": "Pohjois-Korea kiistää FBI:n arvion Binancen hakkeroinnin tekijästä",
+    "is": "Norður-Kórea hafnar því mati FBI að hún standi að árásinni á Binance",
+    "zh": "朝鲜否认美国联邦调查局对币安黑客事件的归因",
+    "hi": "उत्तर कोरिया ने Binance हैक पर FBI के आरोप को खारिज किया",
+    "es": "Corea del Norte rechaza la atribución del FBI del hackeo de Binance",
+    "fr": "La Corée du Nord rejette l'attribution du piratage de Binance par le FBI",
+    "ar": "كوريا الشمالية ترفض نسب مكتب التحقيقات الفيدرالي اختراق بينانس إليها",
+    "bn": "Binance হ্যাক নিয়ে FBI-এর দায় আরোপ প্রত্যাখ্যান করল উত্তর কোরিয়া",
+    "pt": "Coreia do Norte rejeita atribuição do FBI no ataque à Binance",
+    "ru": "Северная Корея отвергает заявление ФБР о её причастности к взлому Binance",
+    "ur": "شمالی کوریا نے بائنانس ہیک کا الزام عائد کرنے کا ایف بی آئی کا مؤقف مسترد کر دیا",
+    "id": "Korea Utara tolak atribusi FBI atas peretasan Binance",
+    "de": "Nordkorea weist die Zuordnung des Binance-Hacks durch das FBI zurück",
+    "ja": "北朝鮮、バイナンスへのハッキングに関するFBIの見解を否定",
+    "sw": "Korea Kaskazini yakanusha madai ya FBI kuhusu udukuzi wa Binance",
+    "mr": "Binance हॅकबाबत FBI चा दावा उत्तर कोरियाने फेटाळला",
+    "fa": "کره شمالی انتساب هک بایننس از سوی اف‌بی‌آی را رد کرد",
+    "uk": "Північна Корея відкидає твердження ФБР щодо зламу Binance",
+    "tr": "Kuzey Kore, Binance saldırısıyla ilgili FBI'ın suçlamasını reddetti",
+    "se": "Davvi-Korea hilgu FBI:a Binance-háhkama čatnaseami"
+   },
+   "source": "aftenposten",
+   "source_name": "Aftenposten",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.svg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Aftenposten_logo.svg",
+    "author": "Aftenposten",
+    "license": "Public domain",
+    "license_url": null,
+    "credit": "Wikimedia Commons",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.png"
+   },
+   "source_note": null,
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-02T22:36:56+00:00",
+   "topics": [
+    "security",
+    "exchanges"
+   ],
+   "summary": "North Korea has rejected the FBI's statement that North Korean hackers were behind the theft from Binance, calling it an 'absurd fabrication' in a statement by Kim Yo-jong carried by the state news agency KCNA, according to Yonhap and Bloomberg. The statement calls the attribution a political provocation and suggests it could affect dialogue between North Korea and the United States. The FBI said on 31 October that North Korea's TraderTraitor was responsible and published addresses linked to the stolen funds; the denial is North Korea's position, not a new finding.",
+   "summary_i18n": {},
+   "paywall": true,
+   "links": [
+    {
+     "label": "Binance hack: main story",
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/"
+    },
+    {
+     "label": "FBI attributes the hack to North Korea's TraderTraitor",
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/"
+    }
+   ],
+   "own_story": false,
+   "illustration": {
+    "id": "commons-no",
+    "kind": "commons",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/commons-no.webp",
+    "width": 960,
+    "height": 348,
+    "alt": "The Storting building in Oslo.",
+    "source": "Wikimedia Commons",
+    "author": "Alexander Ottesen",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Stortinget_2009.jpg",
+    "credit": "Photo: Alexander Ottesen. Licence: CC BY 2.0. Source: Wikimedia Commons. Cropped.",
+    "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
+    "terms": null
+   },
+   "primary_source": {
+    "outlet": "aftenposten",
+    "outlet_name": "Aftenposten",
+    "url": "https://aftenposten.no/okonomi/i/zlarKr/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+    "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+    "published": "2026-11-02T22:36:56+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Aftenposten_logo.svg",
+     "author": "Aftenposten",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.png"
+    }
+   },
+   "primary_source_document": {
+    "name": "Yonhap via Nocutnews – North Korea's statement (KCNA)",
+    "url": "https://en.nocutnews.co.kr/news/6601039"
+   },
+   "also_covered_by": [
+    {
+     "outlet": "adressa",
+     "outlet_name": "Adresseavisen",
+     "url": "https://adressa.no/nyheter/innenriks/i/8GnBVQ/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:50+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
+    },
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri/1719898",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:38+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+      "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+     }
+    },
+    {
+     "outlet": "document-no",
+     "outlet_name": "Document.no",
+     "url": "https://document.no/2026/11/03/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T23:29:32+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/document-no.webp",
+      "source_url": "https://media.document.no/web-no/2020/12/cropped-favicon.jpg?size=byline",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/document-no.webp"
+     }
+    },
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/nyheter/historiens-storste-kryptotyveri-nord-korea-avviser-anklagene/s/80-95-214055",
+     "title": "Nord-Korea avviser anklagene: – Absurd fabrikkering",
+     "published": "2026-11-02T22:33:11+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nettavisen_logo.svg",
+      "author": "Nettavisen",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
+     }
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "aftenposten",
+     "outlet_name": "Aftenposten",
+     "url": "https://aftenposten.no/okonomi/i/zlarKr/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:36:56+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aftenposten_logo.svg",
+      "author": "Aftenposten",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.png"
+     }
+    },
+    {
+     "outlet": "adressa",
+     "outlet_name": "Adresseavisen",
+     "url": "https://adressa.no/nyheter/innenriks/i/8GnBVQ/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:50+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
+    },
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri/1719898",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:38+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+      "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+     }
+    },
+    {
+     "outlet": "document-no",
+     "outlet_name": "Document.no",
+     "url": "https://document.no/2026/11/03/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T23:29:32+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/document-no.webp",
+      "source_url": "https://media.document.no/web-no/2020/12/cropped-favicon.jpg?size=byline",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/document-no.webp"
+     }
+    },
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/nyheter/historiens-storste-kryptotyveri-nord-korea-avviser-anklagene/s/80-95-214055",
+     "title": "Nord-Korea avviser anklagene: – Absurd fabrikkering",
+     "published": "2026-11-02T22:33:11+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nettavisen_logo.svg",
+      "author": "Nettavisen",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
+     }
+    }
+   ],
+   "coverage": {
+    "count": 5,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 5,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 5,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/aftenposten.png"
+  },
+  {
+   "id": "4525f8afaf7b",
+   "url": "https://e24.no/boers-og-finans/i/Jrzm57/binance-kunder-har-tatt-ut-3-64-milliarder-dollar",
+   "html_url": "https://nordiccrypto.no/stories/4525f8afaf7b/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/4525f8afaf7b.json",
+   "title": "Binance-kunder har tatt ut 3,64 milliarder dollar",
+   "title_en": "Binance reports net outflows of about 3.64 billion dollars after reopening withdrawals",
+   "title_i18n": {
+    "nn": "Binance melder om netto utstrøyming på om lag 3,64 milliardar dollar etter at uttak opna att",
+    "sv": "Binance redovisar nettoutflöde på omkring 3,64 miljarder dollar efter att uttagen öppnat igen",
+    "da": "Binance oplyser nettoudstrømning på omkring 3,64 milliarder dollar efter genåbning af udbetalinger",
+    "fi": "Binance kertoo noin 3,64 miljardin dollarin nettoulosvirtauksesta nostojen avauduttua",
+    "is": "Binance greinir frá nettóútflæði upp á um 3,64 milljarða dala eftir að úttektir opnuðu á ný",
+    "zh": "币安称恢复提现后净流出约36.4亿美元",
+    "hi": "निकासी फिर खुलने के बाद Binance ने लगभग 3.64 अरब डॉलर के शुद्ध बहिर्वाह की जानकारी दी",
+    "es": "Binance informa de salidas netas de unos 3.640 millones de dólares tras reabrir los retiros",
+    "fr": "Binance fait état de sorties nettes d'environ 3,64 milliards de dollars après la réouverture des retraits",
+    "ar": "بينانس تعلن صافي تدفقات خارجة بنحو 3.64 مليار دولار بعد إعادة فتح السحوبات",
+    "bn": "উত্তোলন আবার চালুর পর প্রায় ৩.৬৪ বিলিয়ন ডলার নিট বহিঃপ্রবাহের কথা জানাল Binance",
+    "pt": "Binance reporta saídas líquidas de cerca de 3,64 mil milhões de dólares após reabrir levantamentos",
+    "ru": "Binance сообщает о чистом оттоке около 3,64 млрд долларов после возобновления вывода",
+    "ur": "رقم نکالنے کی بحالی کے بعد بائنانس نے تقریباً 3.64 ارب ڈالر کے خالص اخراج کی اطلاع دی",
+    "id": "Binance laporkan arus keluar bersih sekitar 3,64 miliar dolar setelah membuka kembali penarikan",
+    "de": "Binance meldet Nettoabflüsse von rund 3,64 Milliarden Dollar nach Wiederöffnung der Auszahlungen",
+    "ja": "バイナンス、出金再開後の純流出は約36億4000万ドルと報告",
+    "sw": "Binance yaripoti utokaji halisi wa takriban dola bilioni 3.64 baada ya kufungua tena utoaji",
+    "mr": "पैसे काढणे पुन्हा सुरू झाल्यानंतर Binance कडून सुमारे 3.64 अब्ज डॉलरच्या निव्वळ बहिर्गमनाची माहिती",
+    "fa": "بایننس از خروج خالص حدود ۳٫۶۴ میلیارد دلار پس از بازگشایی برداشت‌ها خبر داد",
+    "uk": "Binance повідомляє про чистий відтік близько 3,64 млрд доларів після відновлення виведення",
+    "tr": "Binance, para çekme işlemlerini yeniden açtıktan sonra yaklaşık 3,64 milyar dolarlık net çıkış bildirdi",
+    "se": "Binance dieđiha 3,64 miljárdda dollara netto olggosváldimiid maŋŋel go geassimat leat fas rahppojuvvon"
+   },
+   "source": "e24",
+   "source_name": "E24",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/e24.webp",
+    "source_url": "https://e24.no/vgc/gfx/icon-180x180-1.0.png",
+    "author": null,
+    "license": null,
+    "license_url": null,
+    "credit": "Official website",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/e24.webp"
+   },
+   "source_note": null,
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-02T12:30:23+00:00",
+   "topics": [
+    "security",
+    "exchanges"
+   ],
+   "summary": "According to Binance, customers withdrew a net of about 3.64 billion US dollars between 07:00 and 16:30 CET on 1 November 2026, after the exchange reopened withdrawals following the hack: about 4.65 billion went out and 1.01 billion came in. Binance says this equals about 2.1 percent of its 171 billion dollars in assets and that withdrawals are levelling off. According to CNBC, the stablecoin issuer Circle has now frozen more than 1.1 billion USDC. The analytics service DefiLlama reports higher outflow figures, which Binance disputes because they do not account for its own transfers to new wallets.",
+   "summary_i18n": {},
+   "paywall": true,
+   "links": [
+    {
+     "label": "Binance hack: main story",
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/"
+    },
+    {
+     "label": "FBI attributes the hack to North Korea's TraderTraitor",
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/"
+    }
+   ],
+   "own_story": false,
+   "illustration": {
+    "id": "commons-no",
+    "kind": "commons",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/commons-no.webp",
+    "width": 960,
+    "height": 348,
+    "alt": "The Storting building in Oslo.",
+    "source": "Wikimedia Commons",
+    "author": "Alexander Ottesen",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Stortinget_2009.jpg",
+    "credit": "Photo: Alexander Ottesen. Licence: CC BY 2.0. Source: Wikimedia Commons. Cropped.",
+    "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
+    "terms": null
+   },
+   "primary_source": {
+    "outlet": "e24",
+    "outlet_name": "E24",
+    "url": "https://e24.no/boers-og-finans/i/Jrzm57/binance-kunder-har-tatt-ut-3-64-milliarder-dollar",
+    "title": "Binance-kunder har tatt ut 3,64 milliarder dollar",
+    "published": "2026-11-02T12:30:23+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/e24.webp",
+     "source_url": "https://e24.no/vgc/gfx/icon-180x180-1.0.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/e24.webp"
+    }
+   },
+   "primary_source_document": {
+    "name": "Binance on X – withdrawal status, 1 Nov 2026",
+    "url": "https://x.com/binance/status/2116926305254133892"
+   },
+   "also_covered_by": [
+    {
+     "outlet": "breakit",
+     "outlet_name": "Breakit",
+     "url": "https://breakit.se/artikel/47894/nordkorea-hackare-slog-till-mot-binance-kunder-rusade-att-ta-ut-35-miljarder",
+     "title": "Nordkorea-hackare slog till mot Binance – kunder rusade att ta ut 35 miljarder",
+     "published": "2026-11-02T08:56:00+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/breakit.svg",
+      "source_url": "https://www.breakit.se/_next/static/media/breakit-logo-red.7dda7fae.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/breakit.png"
+     }
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/kunder-tog-ut-miljarder-efter-historisk-kryptostold/a/Qg12V8",
+     "title": "Kunder tog ut miljarder efter historisk kryptostöld",
+     "published": "2026-11-02T07:47:14+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": null
+    },
+    {
+     "outlet": "ekstra-bladet",
+     "outlet_name": "Ekstra Bladet",
+     "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptohack-kunder-flygter-med-24-milliarder/11340546",
+     "title": "Efter historisk kryptohack: Kunder flygter med 24 milliarder",
+     "published": "2026-11-02T20:00:47+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+      "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+     }
+    },
+    {
+     "outlet": "dagensps.se",
+     "outlet_name": "Dagens PS",
+     "url": "https://dagensps.se/bors-finans/kunderna-flyr-binance-efter-rekordkuppen-36-miljarder-dollar-ut",
+     "title": "Kunderna flyr Binance efter rekordkuppen – 3,6 miljarder dollar ut",
+     "published": "2026-11-02T07:28:17+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": null
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "e24",
+     "outlet_name": "E24",
+     "url": "https://e24.no/boers-og-finans/i/Jrzm57/binance-kunder-har-tatt-ut-3-64-milliarder-dollar",
+     "title": "Binance-kunder har tatt ut 3,64 milliarder dollar",
+     "published": "2026-11-02T12:30:23+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/e24.webp",
+      "source_url": "https://e24.no/vgc/gfx/icon-180x180-1.0.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/e24.webp"
+     }
+    },
+    {
+     "outlet": "breakit",
+     "outlet_name": "Breakit",
+     "url": "https://breakit.se/artikel/47894/nordkorea-hackare-slog-till-mot-binance-kunder-rusade-att-ta-ut-35-miljarder",
+     "title": "Nordkorea-hackare slog till mot Binance – kunder rusade att ta ut 35 miljarder",
+     "published": "2026-11-02T08:56:00+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/breakit.svg",
+      "source_url": "https://www.breakit.se/_next/static/media/breakit-logo-red.7dda7fae.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/breakit.png"
+     }
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/kunder-tog-ut-miljarder-efter-historisk-kryptostold/a/Qg12V8",
+     "title": "Kunder tog ut miljarder efter historisk kryptostöld",
+     "published": "2026-11-02T07:47:14+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": null
+    },
+    {
+     "outlet": "ekstra-bladet",
+     "outlet_name": "Ekstra Bladet",
+     "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptohack-kunder-flygter-med-24-milliarder/11340546",
+     "title": "Efter historisk kryptohack: Kunder flygter med 24 milliarder",
+     "published": "2026-11-02T20:00:47+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+      "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+     }
+    },
+    {
+     "outlet": "dagensps.se",
+     "outlet_name": "Dagens PS",
+     "url": "https://dagensps.se/bors-finans/kunderna-flyr-binance-efter-rekordkuppen-36-miljarder-dollar-ut",
+     "title": "Kunderna flyr Binance efter rekordkuppen – 3,6 miljarder dollar ut",
+     "published": "2026-11-02T07:28:17+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": null
+    }
+   ],
+   "coverage": {
+    "count": 5,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 1,
+      "share": 0.2
+     },
+     {
+      "country": "SE",
+      "count": 3,
+      "share": 0.6
+     },
+     {
+      "country": "DK",
+      "count": 1,
+      "share": 0.2
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 5,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/e24.webp"
+  },
   {
    "id": "9774e8944c29",
    "url": "https://aftenposten.no/okonomi/i/p1wyrj/binance-aapner-for-uttak-etter-massivt-kryptotyveri",
@@ -14,29 +680,29 @@
    "title": "Binance åpner for uttak etter massivt kryptotyveri",
    "title_en": "Binance reopens withdrawals in stages after the hack",
    "title_i18n": {
+    "nn": "Binance opnar for uttak att trinnvis etter hackinga",
+    "sv": "Binance öppnar för uttag igen i etapper efter attacken",
+    "da": "Binance genåbner for udbetalinger i etaper efter hackerangrebet",
+    "fi": "Binance avaa nostot uudelleen vaiheittain hakkeroinnin jälkeen",
+    "is": "Binance opnar fyrir úttektir á ný í áföngum eftir árásina",
+    "zh": "币安在黑客事件后分阶段恢复提现",
+    "hi": "हैक के बाद Binance ने चरणबद्ध तरीके से निकासी फिर शुरू की",
+    "es": "Binance reabre los retiros por fases tras el hackeo",
+    "fr": "Binance rouvre les retraits par étapes après le piratage",
     "ar": "بينانس تعيد فتح السحوبات على مراحل بعد الاختراق",
     "bn": "হ্যাকের পর ধাপে ধাপে উত্তোলন আবার চালু করল Binance",
-    "da": "Binance genåbner for udbetalinger i etaper efter hackerangrebet",
-    "de": "Binance öffnet Auszahlungen nach dem Hack schrittweise wieder",
-    "es": "Binance reabre los retiros por fases tras el hackeo",
-    "fa": "بایننس پس از هک، برداشت‌ها را مرحله‌به‌مرحله دوباره باز کرد",
-    "fi": "Binance avaa nostot uudelleen vaiheittain hakkeroinnin jälkeen",
-    "fr": "Binance rouvre les retraits par étapes après le piratage",
-    "hi": "हैक के बाद Binance ने चरणबद्ध तरीके से निकासी फिर शुरू की",
-    "id": "Binance membuka kembali penarikan secara bertahap setelah peretasan",
-    "is": "Binance opnar fyrir úttektir á ný í áföngum eftir árásina",
-    "ja": "バイナンス、ハッキング後に出金を段階的に再開",
-    "mr": "हॅकनंतर Binance ने टप्प्याटप्प्याने पैसे काढणे पुन्हा सुरू केले",
-    "nn": "Binance opnar for uttak att trinnvis etter hackinga",
     "pt": "Binance reabre levantamentos por fases após o ataque",
     "ru": "Binance поэтапно возобновляет вывод средств после взлома",
-    "se": "Binance rahpá fas ruovttoluotta geassima ceahkkálagaid maŋŋel falleheami",
-    "sv": "Binance öppnar för uttag igen i etapper efter attacken",
-    "sw": "Binance yafungua tena utoaji fedha kwa awamu baada ya udukuzi",
-    "tr": "Binance saldırının ardından para çekme işlemlerini aşamalı olarak yeniden açtı",
-    "uk": "Binance поетапно відновлює виведення коштів після злому",
     "ur": "ہیک کے بعد بائنانس نے مرحلہ وار رقم نکالنے کی سہولت بحال کر دی",
-    "zh": "币安在黑客事件后分阶段恢复提现"
+    "id": "Binance membuka kembali penarikan secara bertahap setelah peretasan",
+    "de": "Binance öffnet Auszahlungen nach dem Hack schrittweise wieder",
+    "ja": "バイナンス、ハッキング後に出金を段階的に再開",
+    "sw": "Binance yafungua tena utoaji fedha kwa awamu baada ya udukuzi",
+    "mr": "हॅकनंतर Binance ने टप्प्याटप्प्याने पैसे काढणे पुन्हा सुरू केले",
+    "fa": "بایننس پس از هک، برداشت‌ها را مرحله‌به‌مرحله دوباره باز کرد",
+    "uk": "Binance поетапно відновлює виведення коштів після злому",
+    "tr": "Binance saldırının ardından para çekme işlemlerini aşamalı olarak yeniden açtı",
+    "se": "Binance rahpá fas ruovttoluotta geassima ceahkkálagaid maŋŋel falleheami"
    },
    "source": "aftenposten",
    "source_name": "Aftenposten",
@@ -292,6 +958,44 @@
      "paywall": true,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-gjenapner-uttak-etter-hacket",
+     "title": "Binance gjenåpner uttak etter hacket",
+     "published": "2026-11-01",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/live/binance-aterupptar-uttag-efter-rekordstolden",
+     "title": "Binance återupptar uttag efter rekordstölden",
+     "published": "2026-11-02T07:47:00+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
     }
    ],
    "sources": [
@@ -502,36 +1206,74 @@
      "paywall": true,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/binance-gjenapner-uttak-etter-hacket",
+     "title": "Binance gjenåpner uttak etter hacket",
+     "published": "2026-11-01",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    },
+    {
+     "outlet": "di",
+     "outlet_name": "Dagens industri",
+     "url": "https://di.se/live/binance-aterupptar-uttag-efter-rekordstolden",
+     "title": "Binance återupptar uttag efter rekordstölden",
+     "published": "2026-11-02T07:47:00+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
     }
    ],
    "coverage": {
-    "count": 11,
+    "count": 13,
     "by_country": [
      {
       "country": "NO",
-      "count": 7,
-      "share": 0.6364
+      "count": 8,
+      "share": 0.6154
      },
      {
       "country": "SE",
-      "count": 2,
-      "share": 0.1818
+      "count": 3,
+      "share": 0.2308
      },
      {
       "country": "DK",
       "count": 1,
-      "share": 0.0909
+      "share": 0.0769
      },
      {
       "country": "IS",
       "count": 1,
-      "share": 0.0909
+      "share": 0.0769
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 11,
+      "count": 13,
       "share": 1.0
      },
      {
@@ -561,29 +1303,29 @@
    "title": "Binance: – 90 prosent av alle midlar er gjenoppretta",
    "title_en": "Binance says about 90 percent of stolen assets have been replaced",
    "title_i18n": {
+    "nn": "Binance seier om lag 90 prosent av dei stolne midlane er erstatta",
+    "sv": "Binance: omkring 90 procent av de stulna tillgångarna har ersatts",
+    "da": "Binance: omkring 90 procent af de stjålne aktiver er erstattet",
+    "fi": "Binance: noin 90 prosenttia varastetuista varoista on korvattu",
+    "is": "Binance segir um 90 prósent stolnu eignanna hafa verið bætt",
+    "zh": "币安称约90%的被盗资产已被补足",
+    "hi": "Binance का कहना है कि चोरी हुई लगभग 90 प्रतिशत संपत्ति की भरपाई कर दी गई है",
+    "es": "Binance afirma haber repuesto cerca del 90 % de los activos robados",
+    "fr": "Binance affirme avoir remplacé environ 90 % des actifs volés",
     "ar": "بينانس: تعويض نحو 90 في المئة من الأصول المسروقة",
     "bn": "Binance বলছে চুরি যাওয়া সম্পদের প্রায় ৯০ শতাংশ পূরণ করা হয়েছে",
-    "da": "Binance: omkring 90 procent af de stjålne aktiver er erstattet",
-    "de": "Binance: Rund 90 Prozent der gestohlenen Vermögenswerte ersetzt",
-    "es": "Binance afirma haber repuesto cerca del 90 % de los activos robados",
-    "fa": "بایننس: حدود ۹۰ درصد دارایی‌های سرقت‌شده جایگزین شده است",
-    "fi": "Binance: noin 90 prosenttia varastetuista varoista on korvattu",
-    "fr": "Binance affirme avoir remplacé environ 90 % des actifs volés",
-    "hi": "Binance का कहना है कि चोरी हुई लगभग 90 प्रतिशत संपत्ति की भरपाई कर दी गई है",
-    "id": "Binance: sekitar 90 persen aset curian telah diganti",
-    "is": "Binance segir um 90 prósent stolnu eignanna hafa verið bætt",
-    "ja": "バイナンス、盗まれた資産の約9割を補填したと発表",
-    "mr": "Binance: चोरीला गेलेल्या मालमत्तेपैकी सुमारे 90 टक्के भरून काढली",
-    "nn": "Binance seier om lag 90 prosent av dei stolne midlane er erstatta",
     "pt": "Binance diz ter reposto cerca de 90 % dos ativos roubados",
     "ru": "Binance: около 90% похищенных активов возмещено",
-    "se": "Binance muitala ahte sullii 90 proseantta suoláduvvon dávviriin leat buhtaduvvon",
-    "sv": "Binance: omkring 90 procent av de stulna tillgångarna har ersatts",
-    "sw": "Binance yasema takriban asilimia 90 ya mali zilizoibwa zimefidiwa",
-    "tr": "Binance: Çalınan varlıkların yaklaşık yüzde 90'ı yerine konuldu",
-    "uk": "Binance: близько 90% викрадених активів відшкодовано",
     "ur": "بائنانس: چوری شدہ اثاثوں میں سے تقریباً 90 فیصد کی تلافی کر دی گئی",
-    "zh": "币安称约90%的被盗资产已被补足"
+    "id": "Binance: sekitar 90 persen aset curian telah diganti",
+    "de": "Binance: Rund 90 Prozent der gestohlenen Vermögenswerte ersetzt",
+    "ja": "バイナンス、盗まれた資産の約9割を補填したと発表",
+    "sw": "Binance yasema takriban asilimia 90 ya mali zilizoibwa zimefidiwa",
+    "mr": "Binance: चोरीला गेलेल्या मालमत्तेपैकी सुमारे 90 टक्के भरून काढली",
+    "fa": "بایننس: حدود ۹۰ درصد دارایی‌های سرقت‌شده جایگزین شده است",
+    "uk": "Binance: близько 90% викрадених активів відшкодовано",
+    "tr": "Binance: Çalınan varlıkların yaklaşık yüzde 90'ı yerine konuldu",
+    "se": "Binance muitala ahte sullii 90 proseantta suoláduvvon dávviriin leat buhtaduvvon"
    },
    "source": "nrk",
    "source_name": "NRK",
@@ -1029,29 +1771,29 @@
    "title": "Nord-Korea får skylden etter milliardkupp",
    "title_en": "FBI says North Korea's TraderTraitor was behind the Binance hack",
    "title_i18n": {
+    "nn": "FBI: Nord-Koreas TraderTraitor stod bak Binance-hackinga",
+    "sv": "FBI: Nordkoreas TraderTraitor låg bakom Binance-attacken",
+    "da": "FBI: Nordkoreas TraderTraitor stod bag Binance-hackerangrebet",
+    "fi": "FBI: Pohjois-Korean TraderTraitor oli Binancen hakkeroinnin takana",
+    "is": "FBI: TraderTraitor frá Norður-Kóreu stóð að baki árásinni á Binance",
+    "zh": "美国联邦调查局：朝鲜TraderTraitor是币安黑客事件幕后黑手",
+    "hi": "FBI: Binance हैक के पीछे उत्तर कोरिया का TraderTraitor था",
+    "es": "El FBI afirma que el grupo norcoreano TraderTraitor estuvo detrás del hackeo de Binance",
+    "fr": "Selon le FBI, le nord-coréen TraderTraitor est derrière le piratage de Binance",
     "ar": "مكتب التحقيقات الفيدرالي: مجموعة TraderTraitor الكورية الشمالية وراء اختراق بينانس",
     "bn": "FBI: Binance হ্যাকের পেছনে উত্তর কোরিয়ার TraderTraitor",
-    "da": "FBI: Nordkoreas TraderTraitor stod bag Binance-hackerangrebet",
-    "de": "FBI: Nordkoreas TraderTraitor steckt hinter dem Binance-Hack",
-    "es": "El FBI afirma que el grupo norcoreano TraderTraitor estuvo detrás del hackeo de Binance",
-    "fa": "اف‌بی‌آی: TraderTraitor کره شمالی پشت هک بایننس بود",
-    "fi": "FBI: Pohjois-Korean TraderTraitor oli Binancen hakkeroinnin takana",
-    "fr": "Selon le FBI, le nord-coréen TraderTraitor est derrière le piratage de Binance",
-    "hi": "FBI: Binance हैक के पीछे उत्तर कोरिया का TraderTraitor था",
-    "id": "FBI: TraderTraitor Korea Utara berada di balik peretasan Binance",
-    "is": "FBI: TraderTraitor frá Norður-Kóreu stóð að baki árásinni á Binance",
-    "ja": "FBI、バイナンスへのハッキングは北朝鮮のTraderTraitorによるものと発表",
-    "mr": "FBI: Binance हॅकमागे उत्तर कोरियाचा TraderTraitor",
-    "nn": "FBI: Nord-Koreas TraderTraitor stod bak Binance-hackinga",
     "pt": "FBI diz que o norte-coreano TraderTraitor esteve por trás do ataque à Binance",
     "ru": "ФБР: за взломом Binance стоит северокорейская группа TraderTraitor",
-    "se": "FBI dadjá ahte Davvi-Korea TraderTraitor lei duogábealde Binance-háhkamis",
-    "sv": "FBI: Nordkoreas TraderTraitor låg bakom Binance-attacken",
-    "sw": "FBI: TraderTraitor ya Korea Kaskazini ndiyo iliyohusika na udukuzi wa Binance",
-    "tr": "FBI: Binance saldırısının arkasında Kuzey Kore'nin TraderTraitor grubu var",
-    "uk": "ФБР: за зламом Binance стоїть північнокорейське угруповання TraderTraitor",
     "ur": "ایف بی آئی: بائنانس ہیک کے پیچھے شمالی کوریا کا TraderTraitor تھا",
-    "zh": "美国联邦调查局：朝鲜TraderTraitor是币安黑客事件幕后黑手"
+    "id": "FBI: TraderTraitor Korea Utara berada di balik peretasan Binance",
+    "de": "FBI: Nordkoreas TraderTraitor steckt hinter dem Binance-Hack",
+    "ja": "FBI、バイナンスへのハッキングは北朝鮮のTraderTraitorによるものと発表",
+    "sw": "FBI: TraderTraitor ya Korea Kaskazini ndiyo iliyohusika na udukuzi wa Binance",
+    "mr": "FBI: Binance हॅकमागे उत्तर कोरियाचा TraderTraitor",
+    "fa": "اف‌بی‌آی: TraderTraitor کره شمالی پشت هک بایننس بود",
+    "uk": "ФБР: за зламом Binance стоїть північнокорейське угруповання TraderTraitor",
+    "tr": "FBI: Binance saldırısının arkasında Kuzey Kore'nin TraderTraitor grubu var",
+    "se": "FBI dadjá ahte Davvi-Korea TraderTraitor lei duogábealde Binance-háhkamis"
    },
    "source": "e24",
    "source_name": "E24",
@@ -2181,29 +2923,29 @@
    "title": "Coinbase rapport Q3 2026: Kryptovinster lyfter resultatet",
    "title_en": "Coinbase reports third-quarter net income of 719 million dollars, mostly from crypto gains",
    "title_i18n": {
+    "nn": "Coinbase melder om eit resultat på 719 millionar dollar i tredje kvartal, mest frå kryptogevinstar",
+    "nb": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
+    "da": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
+    "fi": "Coinbasen kolmannen neljänneksen tulos 719 miljoonaa dollaria, enimmäkseen kryptovoitoista",
+    "is": "Coinbase skilar 719 milljóna dala hagnaði á þriðja ársfjórðungi, mest af rafmyntahagnaði",
+    "zh": "Coinbase第三季度净利润7.19亿美元，主要来自加密资产收益",
+    "hi": "Coinbase का तीसरी तिमाही का शुद्ध लाभ 71.9 करोड़ डॉलर, ज़्यादातर क्रिप्टो लाभ से",
+    "es": "Coinbase registra un beneficio neto de 719 millones de dólares en el tercer trimestre, sobre todo por ganancias en cripto",
+    "fr": "Coinbase affiche un bénéfice net de 719 millions de dollars au troisième trimestre, surtout grâce aux gains crypto",
     "ar": "كوين بيس تعلن صافي دخل 719 مليون دولار في الربع الثالث معظمه من مكاسب العملات المشفرة",
     "bn": "তৃতীয় প্রান্তিকে Coinbase-এর নিট আয় ৭১৯ মিলিয়ন ডলার, বেশিরভাগই ক্রিপ্টো লাভ থেকে",
-    "da": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
-    "de": "Coinbase meldet Quartalsgewinn von 719 Millionen Dollar, überwiegend aus Krypto-Gewinnen",
-    "es": "Coinbase registra un beneficio neto de 719 millones de dólares en el tercer trimestre, sobre todo por ganancias en cripto",
-    "fa": "سود خالص ۷۱۹ میلیون دلاری کوین‌بیس در سه‌ماهه سوم، عمدتاً از سود رمزارزها",
-    "fi": "Coinbasen kolmannen neljänneksen tulos 719 miljoonaa dollaria, enimmäkseen kryptovoitoista",
-    "fr": "Coinbase affiche un bénéfice net de 719 millions de dollars au troisième trimestre, surtout grâce aux gains crypto",
-    "hi": "Coinbase का तीसरी तिमाही का शुद्ध लाभ 71.9 करोड़ डॉलर, ज़्यादातर क्रिप्टो लाभ से",
-    "id": "Coinbase laporkan laba bersih kuartal ketiga 719 juta dolar, sebagian besar dari keuntungan kripto",
-    "is": "Coinbase skilar 719 milljóna dala hagnaði á þriðja ársfjórðungi, mest af rafmyntahagnaði",
-    "ja": "コインベース、第3四半期純利益7億1900万ドル　大半は暗号資産の評価益",
-    "mr": "Coinbase चा तिसऱ्या तिमाहीतील निव्वळ नफा 71.9 कोटी डॉलर, बहुतांश क्रिप्टो नफ्यातून",
-    "nb": "Coinbase melder om et resultat på 719 millioner dollar i tredje kvartal, mest fra kryptogevinster",
-    "nn": "Coinbase melder om eit resultat på 719 millionar dollar i tredje kvartal, mest frå kryptogevinstar",
     "pt": "Coinbase regista lucro líquido de 719 milhões de dólares no terceiro trimestre, sobretudo com ganhos em cripto",
     "ru": "Чистая прибыль Coinbase в третьем квартале составила 719 млн долларов, в основном за счёт криптоактивов",
-    "se": "Coinbase almmuha goalmmat kvartálas 719 miljovnna dollara badjelbáhcaga, eanaš crypto-vuoittuid geažil",
-    "sw": "Coinbase yaripoti faida halisi ya dola milioni 719 robo ya tatu, nyingi kutoka faida za kripto",
-    "tr": "Coinbase üçüncü çeyrekte çoğu kripto kazançlarından gelen 719 milyon dolar net kâr açıkladı",
-    "uk": "Чистий прибуток Coinbase у третьому кварталі — 719 млн доларів, переважно завдяки криптоактивам",
     "ur": "کوائن بیس کی تیسری سہ ماہی کی خالص آمدنی 71 کروڑ 90 لاکھ ڈالر، زیادہ تر کرپٹو منافع سے",
-    "zh": "Coinbase第三季度净利润7.19亿美元，主要来自加密资产收益"
+    "id": "Coinbase laporkan laba bersih kuartal ketiga 719 juta dolar, sebagian besar dari keuntungan kripto",
+    "de": "Coinbase meldet Quartalsgewinn von 719 Millionen Dollar, überwiegend aus Krypto-Gewinnen",
+    "ja": "コインベース、第3四半期純利益7億1900万ドル　大半は暗号資産の評価益",
+    "sw": "Coinbase yaripoti faida halisi ya dola milioni 719 robo ya tatu, nyingi kutoka faida za kripto",
+    "mr": "Coinbase चा तिसऱ्या तिमाहीतील निव्वळ नफा 71.9 कोटी डॉलर, बहुतांश क्रिप्टो नफ्यातून",
+    "fa": "سود خالص ۷۱۹ میلیون دلاری کوین‌بیس در سه‌ماهه سوم، عمدتاً از سود رمزارزها",
+    "uk": "Чистий прибуток Coinbase у третьому кварталі — 719 млн доларів, переважно завдяки криптоактивам",
+    "tr": "Coinbase üçüncü çeyrekte çoğu kripto kazançlarından gelen 719 milyon dolar net kâr açıkladı",
+    "se": "Coinbase almmuha goalmmat kvartálas 719 miljovnna dollara badjelbáhcaga, eanaš crypto-vuoittuid geažil"
    },
    "source": "hurbra.se",
    "source_name": "hurbra",
@@ -3473,6 +4215,29 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "politiken",
+     "outlet_name": "Politiken",
+     "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+     "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+     "published": "2026-11-02T09:25:34+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/politiken.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Politiken-Logo.svg",
+      "author": "Politiken",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/politiken.png"
+     }
     }
    ],
    "sources": [
@@ -4572,41 +5337,64 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "politiken",
+     "outlet_name": "Politiken",
+     "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+     "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+     "published": "2026-11-02T09:25:34+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/politiken.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Politiken-Logo.svg",
+      "author": "Politiken",
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/politiken.png"
+     }
     }
    ],
    "coverage": {
-    "count": 55,
+    "count": 56,
     "by_country": [
      {
       "country": "NO",
       "count": 17,
-      "share": 0.3091
+      "share": 0.3036
      },
      {
       "country": "SE",
       "count": 21,
-      "share": 0.3818
+      "share": 0.375
      },
      {
       "country": "DK",
-      "count": 7,
-      "share": 0.1273
+      "count": 8,
+      "share": 0.1429
      },
      {
       "country": "FI",
       "count": 7,
-      "share": 0.1273
+      "share": 0.125
      },
      {
       "country": "IS",
       "count": 3,
-      "share": 0.0545
+      "share": 0.0536
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 55,
+      "count": 56,
       "share": 1.0
      },
      {
