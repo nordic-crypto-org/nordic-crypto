@@ -140,13 +140,33 @@
    ],
    "notes": "No public recording of the three calendar events that ended on 28 and 29 October 2026. Litteraturhuset says the Cantillon talk will be released as a podcast after the event; it was not up. A members' meeting podcast from Bitcoinpolitisk Institutt Norge on 1 June 2026 was not kept. A Kaupr stream for 31 October 2026 had not been held. A UCL seminar by a Copenhagen Business School researcher was not held in the Nordics. Three talks were kept from backfill. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-11-03",
+   "candidates_checked": 116,
+   "watch_pages_opened": 12,
+   "new_talks": 4,
+   "new_from_calendar": 1,
+   "new_from_backfill": 3,
+   "areas_exhausted": [
+    "query: Universitetet i Oslo bitcoin blockchain foredrag (0 results)"
+   ],
+   "areas_sampled": [
+    "Calendar event ended since 30 October 2026: Hvem lytter til Bitcoin i Norge?",
+    "Kaupr Media videos tab, first eight uploads",
+    "Linköping University, Stockholm School of Economics, University of Jyväskylä, University of Copenhagen DIKU, Hanken, Åbo Akademi, Umeå, OsloMet",
+    "YouTube first pages for bitcoin Oslo 2008 and bitcoin Stockholm 2008",
+    "Nordic Fintech Week, Øredev, NDC Oslo, JavaZone, Reykjavik bitcoin meetup, Helsinki meetup 2013"
+   ],
+   "notes": "One calendar event ended after 30 October 2026: the Kaupr and Bitcoinpolitisk Institutt Norge conversation on 31 October. Kaupr Media published the recording. The page names Morten Søberg and states 31 October. It does not name a city, so the talk is not linked. Three talks were kept from backfill. The UppLYSning lecture on 11 February 2014 is linked to a new past event. The Stockholm School of Economics lecture and the Nordic Fintech Week 2024 session do not state the day. A Juho Lindman lecture on the Startuplab JYU channel does not state the day or that the lecture was held in Jyväskylä. Øredev pages still do not state Malmö. A Natalie Brunell upload says Live in Oslo and is a podcast interview. First pages for 2008 named no public Nordic talk. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
   "years": {
    "2008": {
     "status": "not_searched",
-    "note": "No year-by-year sweep. Hits before 2016 only if a later query happened to return them."
+    "note": "No year-by-year sweep. On 2026-11-03 a first YouTube page for bitcoin Oslo 2008 and bitcoin Stockholm 2008 was opened. No public Nordic talk from 2008 was kept."
    },
    "2009": {
     "status": "sampled",
@@ -224,11 +244,11 @@
   "countries": {
    "NO": {
     "status": "sampled",
-    "talks": 78
+    "talks": 79
    },
    "SE": {
     "status": "sampled",
-    "talks": 15
+    "talks": 17
    },
    "DK": {
     "status": "sampled",
@@ -258,7 +278,7 @@
     "note": "First pages did not show a public crypto talk held in Åland."
    },
    "unset_country": {
-    "talks": 21,
+    "talks": 22,
     "note": "Nordic Blockchain Conference uploads that name the conference and not a city. They stay in the list and match no country filter."
    }
   },
@@ -1430,6 +1450,86 @@
     "status": "sampled",
     "included_from_this_query": null,
     "note": "No blockchain session from Slush 2019 in Helsinki on the first page."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Hvem lytter til Bitcoin i Norge",
+    "results_on_first_page": 8,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "The Kaupr Media upload of the 31 October 2026 broadcast was kept. The page does not name a city, so the talk is not linked."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Universitetet i Oslo bitcoin blockchain foredrag",
+    "results_on_first_page": 0,
+    "status": "exhausted",
+    "included_from_this_query": 0,
+    "note": "No YouTube result. The 16 January 2014 department seminar is archived as an event. No recording was on this query."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Linköpings universitet bitcoin",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "Jonathan Fors's UppLYSning lecture of 11 February 2014 was kept. A thesis-nailing clip was not a talk."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Handelshögskolan i Stockholm bitcoin",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "The Bankless SE lecture at the Stockholm School of Economics was kept. The page does not state the day."
+   },
+   {
+    "country_tag": "DK",
+    "query": "Nordic Fintech Week blockchain talk",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "The Concordium session at Nordic Fintech Week 2024 was kept. The page does not state the city."
+   },
+   {
+    "country_tag": "NO",
+    "query": "bitcoin Oslo 2008",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "No public Nordic talk from 2008. Later Oslo videos were not from that year."
+   },
+   {
+    "country_tag": "SE",
+    "query": "bitcoin Stockholm 2008",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "No public Nordic talk from 2008."
+   },
+   {
+    "country_tag": "FI",
+    "query": "Åbo Akademi blockchain",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "No public crypto talk held at Åbo Akademi."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Umeå universitet blockchain",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "No public crypto talk. A study webinar on 20 October 2026 was not about crypto."
+   },
+   {
+    "country_tag": "DK",
+    "query": "Københavns Universitet blockchain",
+    "results_on_first_page": 5,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "A three-minute highlight reel of the 2017 Blockchain School was not kept as a talk. The DIKU welcome session page had no description."
    }
   ],
   "channels_sampled": [
@@ -1474,7 +1574,10 @@
    "SNSkunskap",
    "Bergen Global CMI/UiB",
    "Norwegian Institute of International Affairs",
-   "Luleå tekniska universitet"
+   "Luleå tekniska universitet",
+   "Kaupr Media",
+   "Bankless SE",
+   "Jonathan Jogenfors (Jonathan Fors)"
   ],
   "universities": [
    {
@@ -1485,7 +1588,7 @@
    {
     "name": "University of Oslo",
     "status": "sampled",
-    "note": "UiO queries returned a first page. No lecture with a stated UiO venue was included."
+    "note": "UiO queries returned a first page. No lecture with a stated UiO venue was included as a video. The department's 16 January 2014 seminar is in the past-events archive."
    },
    {
     "name": "KTH",
@@ -1546,6 +1649,16 @@
     "name": "Tampere University",
     "status": "sampled",
     "note": "Two Thinklair lectures for the Emerging Technologies group. One page states 20 January 2020. The other says the lecture was given that day and does not give a calendar date."
+   },
+   {
+    "name": "Linköping University",
+    "status": "sampled",
+    "note": "Jonathan Fors's open UppLYSning lecture on 11 February 2014. Lysator organises the series."
+   },
+   {
+    "name": "Stockholm School of Economics",
+    "status": "sampled",
+    "note": "One Bankless SE lecture. The page does not state the day."
    }
   ],
   "events": [
@@ -1628,6 +1741,16 @@
     "name": "Tampere University blockchain lectures",
     "status": "sampled",
     "note": "Two lectures. The 20 January 2020 lecture is linked. The later upload does not state a calendar day."
+   },
+   {
+    "name": "UppLYSning digital currencies",
+    "status": "sampled",
+    "note": "The 11 February 2014 lecture. The speaker's upload is linked to the Lysator event."
+   },
+   {
+    "name": "Hvem lytter til Bitcoin i Norge",
+    "status": "sampled",
+    "note": "The 31 October 2026 online broadcast. The Kaupr Media recording is in the talks archive. The page does not name a city, so it is not linked."
    }
   ]
  }

@@ -778,6 +778,158 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-03T09:50:00+00:00",
+   "included": 2,
+   "by_country": {
+    "NO": 20,
+    "SE": 10,
+    "DK": 5,
+    "FI": 9,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 4,
+    "2017": 4,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 4,
+    "2026": 10,
+    "2016": 4,
+    "2019": 3,
+    "2024": 1,
+    "2015": 2,
+    "2020": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 3,
+     "2015": 1,
+     "2019": 1,
+     "2014": 1
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 2,
+     "2015": 1,
+     "2026": 2,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Two previous events from university pages. The Department of Informatics at the University of Oslo states Mikal Villa's talk on Thursday 16 January at 14:00 in Meeting Room Awk, Ole-Johan Dahls Hus. The page was published on 13 January 2014, and 16 January 2014 was a Thursday. It does not state a closing time, so the row has no end. Lysator states the UppLYSning seminar Digitala valutor - mer än bara Bitcoin! on 11 February 2014. The programme page does not set a clock, so the row uses the day bounds. The announcement says talks are usually in Ada Lovelace and does not say this one was, so the room is empty. The programme page's words Hundra deltagare were not stored as a count. The 31 October 2026 Kaupr broadcast is already on the calendar. Its recording is in the talks archive and is not linked, because the video page does not state a city. Faroe Islands, Greenland and Åland were not searched again as a fresh results page this run. The counts below are the whole archive. Two events were added. Taper level unchanged: full. The announcement says the seminar is held in Swedish. That was not stored in the language field.",
+   "queries": [
+    "https://www.mn.uio.no/ifi/forskning/grupper/psy/aktuelle-saker/news-Mikal-Villa-on-Bitcoin.html",
+    "https://www.lysator.liu.se/upplysning/20140211.html",
+    "https://upplysning.lysator.liu.se/program/2014-02-11/",
+    "https://people.isy.liu.se/icg/jonfo33/archive/",
+    "Faroe Islands, Greenland and Åland: not a fresh results page this run",
+    "https://events.kaupr.io/products/hvem-lytter-til-bitcoin-i-norge",
+    "https://www.kaupr.io/hvem-lytter-til-bitcoin-i-norge",
+    "https://www.youtube.com/watch?v=QQji459IHIY"
+   ],
+   "sources_used": [
+    "Department of Informatics, University of Oslo",
+    "Lysator"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Hvem lytter til Bitcoin i Norge?, 31 October 2026",
+     "reason": "Already on the calendar. The recording is in the talks archive. The video page does not state a city, so the talk is not linked."
+    },
+    {
+     "name": "UppLYSning room Ada Lovelace",
+     "reason": "The announcement says talks are usually held there. It does not say this seminar was."
+    },
+    {
+     "name": "Hundra deltagare on the UppLYSning programme page",
+     "reason": "The page shows those words beside an unset time. It was not stored as a count."
+    },
+    {
+     "name": "Linköping internal seminar, December 2013",
+     "reason": "The speaker's archive calls it an internal seminar."
+    },
+    {
+     "name": "Public seminar on digital currencies, 31 January 2014",
+     "reason": "The speaker's archive names the day and does not state a room or a city."
+    },
+    {
+     "name": "Nordic Fintech Week 2024 as a whole",
+     "reason": "A fintech conference. One blockchain session is archived as a talk. The video page does not state the city."
+    },
+    {
+     "name": "Juho Lindman lecture on the Startuplab JYU channel",
+     "reason": "The page does not state the day or that this lecture was held at the University of Jyväskylä."
+    },
+    {
+     "name": "UppLYSning spoken language",
+     "reason": "The announcement says the seminar is held in Swedish. The language field was left empty."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }
