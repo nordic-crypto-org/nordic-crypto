@@ -1,6 +1,488 @@
 {
  "items": [
   {
+   "id": "4e239c7ceaf9",
+   "url": "https://aftenposten.no/okonomi/i/zlarKr/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+   "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+   "title_en": null,
+   "source": "aftenposten",
+   "source_name": "Aftenposten",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "aftenposten",
+   "seen_via": [
+    "aftenposten",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-02T22:36:56+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "adressa",
+     "outlet_name": "Adresseavisen",
+     "url": "https://adressa.no/nyheter/innenriks/i/8GnBVQ/nord-korea-avviser-at-de-staar-bak-historiens-stoerste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:50+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri/1719898",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T22:29:38+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "document-no",
+     "outlet_name": "Document.no",
+     "url": "https://document.no/2026/11/03/nord-korea-avviser-at-de-star-bak-historiens-storste-kryptotyveri",
+     "title": "Nord-Korea avviser at de står bak historiens største kryptotyveri",
+     "published": "2026-11-02T23:29:32+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "2fbab9c2f0c5",
+   "url": "https://nettavisen.no/nyheter/historiens-storste-kryptotyveri-nord-korea-avviser-anklagene/s/80-95-214055",
+   "title": "Nord-Korea avviser anklagene: – Absurd fabrikkering",
+   "title_en": null,
+   "source": "nettavisen",
+   "source_name": "Nettavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "nettavisen",
+   "seen_via": [
+    "nettavisen"
+   ],
+   "published": "2026-11-02T22:33:11+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "c2e3981dbbc1",
+   "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptohack-kunder-flygter-med-24-milliarder/11340546",
+   "title": "Efter historisk kryptohack: Kunder flygter med 24 milliarder",
+   "title_en": null,
+   "source": "ekstra-bladet",
+   "source_name": "Ekstra Bladet",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-02T20:00:47+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "cc694db059dc",
+   "url": "https://kryptovalutaguiden.se/2026/11/50-bolag-sager-nej-till-okx-och-ices-tokeniserade-aktier-nvidia-och-nike-ansluter",
+   "title": "50 bolag säger nej till OKX och ICE:s tokeniserade aktier – Nvidia och Nike ansluter",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-02T19:56:47+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "blockchain",
+    "companies"
+   ],
+   "matched": [
+    "\\btokeni[sz]\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "cae25c56582e",
+   "url": "https://finans.dk/finans/ECE19791848/danske-bank-maner-til-ro-efter-milliardroeveri-paa-kryptoplatform-vi-kan-ikke-bare-sige-at-dine-penge-er-vaek",
+   "title": "Danske Bank maner til ro efter milliardrøveri på kryptoplatform: Vi kan ikke bare sige, at dine penge er væk",
+   "title_en": null,
+   "source": "finans-dk",
+   "source_name": "Finans.dk",
+   "country": "DK",
+   "language": "Danish",
+   "via": "finans-dk",
+   "seen_via": [
+    "finans-dk"
+   ],
+   "published": "2026-11-02T19:30:00+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "a0dc060c980c",
+   "url": "https://kryptovalutaguiden.se/2026/11/strategy-koper-ytterligare-811-bitcoin-innehavet-nara-850-000",
+   "title": "Strategy köper ytterligare 811 bitcoin – innehavet nära 850 000",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-02T18:11:53+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "eeab3eac1026",
+   "url": "https://kauppalehti.fi/uutiset/a/38acffdc-fcc5-4123-a52f-a450f9fa9d71",
+   "title": "Bitcoin selvisi miljardien ennätysryöstöstä ilman romahdusta – Tästä se johtuu",
+   "title_en": null,
+   "source": "kauppalehti",
+   "source_name": "Kauppalehti",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "bing-fi",
+   "seen_via": [
+    "bing-fi"
+   ],
+   "published": "2026-11-02T18:09:00+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "published_unverified": true
+  },
+  {
+   "id": "e0e1160d142e",
+   "url": "https://finansavisen.no/teknologi/2026/11/02/8392468/binance-lokker-tradere-etter-rekordhack",
+   "title": "Binance lokker tradere etter rekordhack",
+   "title_en": null,
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-02T16:26:00+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "published_unverified": true
+  },
+  {
+   "id": "45a18ac7d799",
+   "url": "https://coinmotion.com/fi/kryptovaluuttojen-verotus",
+   "title": "Kryptovaluuttojen verotus – Coinmotionin verotusohje kryptosijoittajalle",
+   "title_en": null,
+   "source": "coinmotion-blog",
+   "source_name": "Coinmotion",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "coinmotion-blog",
+   "seen_via": [
+    "coinmotion-blog"
+   ],
+   "published": "2026-11-02T13:44:33+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto",
+    "regulation",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "51dac1cc2e8d",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "4525f8afaf7b",
+   "url": "https://e24.no/boers-og-finans/i/Jrzm57/binance-kunder-har-tatt-ut-3-64-milliarder-dollar",
+   "title": "Binance-kunder har tatt ut 3,64 milliarder dollar",
+   "title_en": null,
+   "source": "e24",
+   "source_name": "E24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "e24",
+   "seen_via": [
+    "e24",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-02T12:30:23+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "51dac1cc2e8d",
+   "url": "https://puheenvuoro.uusisuomi.fi/jarmonahkamaki/suomen-datakeskuksista-8ssa-louhittiin-kryptovaluuttaa",
+   "title": "Suomen datakeskuksista 8:ssa louhittiin kryptovaluuttaa",
+   "title_en": null,
+   "source": "uusi-suomi",
+   "source_name": "Uusi Suomi",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "bing-fi",
+   "seen_via": [
+    "bing-fi"
+   ],
+   "published": "2026-11-02T09:51:24+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluutta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "fed1d3976f0e",
+   "url": "https://politiken.dk/internationalt/art11043813/Da-nyheden-om-milliardkuppet-spredte-sig-samlede-den-%C3%B8verste-ledelse-sig-i-al-hast-i-et-krigsrum",
+   "title": "Da nyheden om milliardkuppet spredte sig, samlede den øverste ledelse sig i al hast i et krigsrum",
+   "title_en": null,
+   "source": "politiken",
+   "source_name": "Politiken",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-02T09:25:34+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "b64da3163844",
+   "url": "https://breakit.se/artikel/47894/nordkorea-hackare-slog-till-mot-binance-kunder-rusade-att-ta-ut-35-miljarder",
+   "title": "Nordkorea-hackare slog till mot Binance – kunder rusade att ta ut 35 miljarder",
+   "title_en": null,
+   "source": "breakit",
+   "source_name": "Breakit",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "breakit",
+   "seen_via": [
+    "breakit"
+   ],
+   "published": "2026-11-02T08:56:00+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "ce0dbb0195f6",
+   "url": "https://omni.se/kunder-tog-ut-miljarder-efter-historisk-kryptostold/a/Qg12V8",
+   "title": "Kunder tog ut miljarder efter historisk kryptostöld",
+   "title_en": null,
+   "source": "omni.se",
+   "source_name": "Omni",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-11-02T07:47:14+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "5879ddc69997",
+   "url": "https://di.se/live/binance-aterupptar-uttag-efter-rekordstolden",
+   "title": "Binance återupptar uttag efter rekordstölden",
+   "title_en": null,
+   "source": "di",
+   "source_name": "Dagens industri",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-11-02T07:47:00+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptotillgång\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "ddaadc7d6164",
+   "url": "https://dagensps.se/bors-finans/kunderna-flyr-binance-efter-rekordkuppen-36-miljarder-dollar-ut",
+   "title": "Kunderna flyr Binance efter rekordkuppen – 3,6 miljarder dollar ut",
+   "title_en": null,
+   "source": "dagensps.se",
+   "source_name": "Dagens PS",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-11-02T07:28:17+00:00",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "9c1435ca4076",
+   "url": "https://kaupr.io/nyheter/binance-hacket-styrker-mica-argumentet-mener-virtune",
+   "title": "Binance-hacket styrker MiCA-argumentet, mener Virtune",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr",
+    "kaupr-no"
+   ],
+   "published": "2026-11-02",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "crypto",
+    "regulation",
+    "companies"
+   ],
+   "matched": [
+    "\\bMiCAR?\\b",
+    "\\bVirtune\\b",
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
    "id": "a88470535fb2",
    "url": "https://yle.fi/a/74-20254456?origin=rss",
    "title": "Historian suurin virtuaalivaluuttoihin kohdistunut tietomurto osui Binanceen ja paljasti alan tietoturvariskit",
@@ -158,7 +640,8 @@
    "language": "Icelandic",
    "via": "mbl",
    "seen_via": [
-    "mbl"
+    "mbl",
+    "bing-is"
    ],
    "published": "2026-11-01T08:38:33+00:00",
    "fetched": "2026-11-02T02:48:08+00:00",
@@ -310,7 +793,8 @@
    "via": "aftenposten",
    "seen_via": [
     "aftenposten",
-    "bing-no-kn"
+    "bing-no-kn",
+    "investornytt"
    ],
    "published": "2026-11-01T07:04:47+00:00",
    "fetched": "2026-11-02T02:48:08+00:00",
@@ -508,7 +992,8 @@
    "via": "bt",
    "seen_via": [
     "bt",
-    "bing-no-kn"
+    "bing-no-kn",
+    "bing-dk"
    ],
    "published": "2026-11-01T06:52:30+00:00",
    "fetched": "2026-11-02T02:48:08+00:00",
@@ -622,7 +1107,7 @@
    "id": "88914b984eac",
    "url": "https://kaupr.io/nyheter/bpi-ber-oljefondet-og-folketrygdfondet-se-pa-bitcoin",
    "title": "BPI ber Oljefondet og Folketrygdfondet se på bitcoin",
-   "title_en": null,
+   "title_en": "BPI lobbies for Norway's oil fund and Folketrygdfondet to look at bitcoin",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -635,10 +1120,126 @@
    "published": "2026-11-01",
    "fetched": "2026-11-02T02:48:08+00:00",
    "topics": [
-    "bitcoin"
+    "regulation"
    ],
    "matched": [
     "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "published",
+   "summary": "The bitcoin interest group BPI Norge says it has sent two proposals to the Storting as part of its lobbying: that the Government Pension Fund Global report more openly on its indirect bitcoin holdings, and that Folketrygdfondet invest in bitcoin and digital assets, according to Kaupr's report from a BPI webinar on 31 October 2026. BPI says its membership has grown from 150 to 265 and that its secretary general is due to meet the Ministry of Finance; these figures come from BPI and have not been independently verified. Disclosure: Nordic Crypto's publisher, Jørgen S. Notland, shared a referral link to this BPI contest; Kaupr, the source, partners with him and with Nexa, where the publisher's company does development work as a contractor.",
+   "published_date_only": true,
+   "approved_by": "jQrgen (publisher)",
+   "approved_at": "2026-11-02T08:40:00+01:00",
+   "primary_source": {
+    "name": "Kaupr (report from BPI webinar, 31 Oct 2026)",
+    "url": "https://kaupr.io/nyheter/bpi-ber-oljefondet-og-folketrygdfondet-se-pa-bitcoin"
+   },
+   "title_i18n": {
+    "nn": "BPI lobbyerer for at Oljefondet og Folketrygdfondet skal sjå på bitcoin",
+    "sv": "BPI lobbar för att Norges oljefond och Folketrygdfondet ska titta på bitcoin",
+    "da": "BPI lobbyer for, at Norges oliefond og Folketrygdfondet ser på bitcoin",
+    "fi": "BPI lobbaa, että Norjan öljyrahasto ja Folketrygdfondet tarkastelisivat bitcoinia",
+    "is": "BPI beitir sér fyrir því að norski olíusjóðurinn og Folketrygdfondet skoði bitcoin",
+    "zh": "BPI游说挪威石油基金和Folketrygdfondet关注比特币",
+    "hi": "BPI की लॉबिंग: नॉर्वे का तेल कोष और Folketrygdfondet बिटकॉइन पर विचार करें",
+    "es": "BPI presiona para que el fondo petrolero noruego y Folketrygdfondet estudien el bitcoin",
+    "fr": "BPI fait pression pour que le fonds pétrolier norvégien et Folketrygdfondet s'intéressent au bitcoin",
+    "ar": "BPI تضغط كي يدرس صندوق النفط النرويجي وFolketrygdfondet البيتكوين",
+    "bn": "নরওয়ের তেল তহবিল ও Folketrygdfondet যেন বিটকয়েন বিবেচনা করে, সেজন্য BPI-এর লবিং",
+    "pt": "BPI faz lóbi para que o fundo petrolífero norueguês e o Folketrygdfondet analisem a bitcoin",
+    "ru": "BPI лоббирует, чтобы нефтяной фонд Норвегии и Folketrygdfondet рассмотрели биткоин",
+    "ur": "BPI کی لابنگ: ناروے کا تیل فنڈ اور Folketrygdfondet بٹ کوائن پر غور کریں",
+    "id": "BPI melobi agar dana minyak Norwegia dan Folketrygdfondet melirik bitcoin",
+    "de": "BPI wirbt dafür, dass Norwegens Ölfonds und Folketrygdfondet Bitcoin prüfen",
+    "ja": "BPI、ノルウェー石油基金とFolketrygdfondetにビットコイン検討を働きかけ",
+    "sw": "BPI yashawishi mfuko wa mafuta wa Norway na Folketrygdfondet kuangalia bitcoin",
+    "mr": "नॉर्वेचा तेल निधी व Folketrygdfondet यांनी बिटकॉइनचा विचार करावा यासाठी BPI ची लॉबिंग",
+    "fa": "لابی BPI برای بررسی بیت‌کوین از سوی صندوق نفتی نروژ و Folketrygdfondet",
+    "uk": "BPI лобіює, щоб нафтовий фонд Норвегії та Folketrygdfondet розглянули біткоїн",
+    "tr": "BPI, Norveç petrol fonu ve Folketrygdfondet'in bitcoin'i incelemesi için lobi yapıyor",
+    "se": "BPI viggá oažžut Norgga oljofoandda ja Álbmotoadjofoandda geahčadit Bitcoin"
+   },
+   "title_i18n_source": "BPI ber Oljefondet og Folketrygdfondet se på bitcoin",
+   "summary_i18n": {
+    "nn": "Interesseorganisasjonen BPI Norge seier at ho har sendt to forslag til Stortinget som ein del av lobbyarbeidet sitt: at Oljefondet rapporterer meir ope om dei indirekte bitcoinbehaldningane sine, og at Folketrygdfondet investerer i bitcoin og digitale eigedelar, ifølgje Kaupr si omtale av eit BPI-webinar 31. oktober 2026. BPI seier at medlemstalet har auka frå 150 til 265, og at generalsekretæren skal ha møte i Finansdepartementet; tala kjem frå BPI og er ikkje stadfesta av andre. Opplysning: Utgjevaren av Nordic Crypto, Jørgen S. Notland, delte ei vervelenkje til denne BPI-konkurransen; Kaupr, som er kjelda, samarbeider med han og med Nexa, der selskapet til utgjevaren gjer utviklingsarbeid som oppdragstakar.",
+    "nb": "Interesseorganisasjonen BPI Norge sier at den har sendt to forslag til Stortinget som en del av lobbyarbeidet sitt: at Oljefondet rapporterer mer åpent om sine indirekte bitcoinbeholdninger, og at Folketrygdfondet investerer i bitcoin og digitale eiendeler, ifølge Kauprs omtale av et BPI-webinar 31. oktober 2026. BPI sier at medlemstallet har økt fra 150 til 265, og at generalsekretæren skal ha møte i Finansdepartementet; tallene kommer fra BPI og er ikke bekreftet av andre. Opplysning: Utgiveren av Nordic Crypto, Jørgen S. Notland, delte en vervelenke til denne BPI-konkurransen; Kaupr, som er kilden, samarbeider med ham og med Nexa, der utgiverens selskap gjør utviklingsarbeid som oppdragstaker.",
+    "sv": "Intresseorganisationen BPI Norge uppger att den har skickat två förslag till Stortinget som en del av sitt lobbyarbete: att Norges oljefond rapporterar öppnare om sina indirekta bitcoininnehav och att Folketrygdfondet investerar i bitcoin och digitala tillgångar, enligt Kauprs rapport från ett BPI-webbinarium den 31 oktober 2026. BPI uppger att medlemsantalet har ökat från 150 till 265 och att generalsekreteraren ska träffa finansdepartementet; siffrorna kommer från BPI och har inte bekräftats av andra. Upplysning: Nordic Cryptos utgivare, Jørgen S. Notland, delade en värvningslänk till denna BPI-tävling; Kaupr, som är källan, samarbetar med honom och med Nexa, där utgivarens bolag utför utvecklingsarbete som konsult.",
+    "da": "Interesseorganisationen BPI Norge oplyser, at den har sendt to forslag til Stortinget som led i sit lobbyarbejde: at Norges oliefond rapporterer mere åbent om sine indirekte bitcoinbeholdninger, og at Folketrygdfondet investerer i bitcoin og digitale aktiver, ifølge Kauprs omtale af et BPI-webinar den 31. oktober 2026. BPI oplyser, at medlemstallet er steget fra 150 til 265, og at generalsekretæren skal mødes med finansministeriet; tallene kommer fra BPI og er ikke bekræftet af andre. Oplysning: Nordic Cryptos udgiver, Jørgen S. Notland, delte et hvervelink til denne BPI-konkurrence; Kaupr, som er kilden, samarbejder med ham og med Nexa, hvor udgiverens selskab udfører udviklingsarbejde som underleverandør.",
+    "fi": "Etujärjestö BPI Norge kertoo lähettäneensä osana lobbaustaan kaksi ehdotusta suurkäräjille: että Norjan öljyrahasto raportoisi avoimemmin epäsuorista bitcoin-omistuksistaan ja että Folketrygdfondet sijoittaisi bitcoiniin ja digitaalisiin varoihin, kertoo Kaupr BPI:n 31. lokakuuta 2026 pidetystä webinaarista. BPI:n mukaan sen jäsenmäärä on kasvanut 150:stä 265:een ja sen pääsihteeri tapaa valtiovarainministeriön; luvut ovat BPI:n omia, eikä niitä ole vahvistettu muualta. Tiedoksi: Nordic Cryptön julkaisija Jørgen S. Notland jakoi suosittelulinkin tähän BPI:n kilpailuun; lähteenä oleva Kaupr tekee yhteistyötä hänen kanssaan ja Nexan kanssa, jolle julkaisijan yhtiö tekee kehitystyötä toimeksiantajana.",
+    "is": "Hagsmunasamtökin BPI Norge segjast hafa sent Stórþinginu tvær tillögur sem hluta af hagsmunagæslu sinni: að norski olíusjóðurinn greini opnar frá óbeinni bitcoin-eign sinni og að Folketrygdfondet fjárfesti í bitcoin og stafrænum eignum, samkvæmt umfjöllun Kaupr um vefnámskeið BPI 31. október 2026. BPI segir að félagsmönnum hafi fjölgað úr 150 í 265 og að framkvæmdastjórinn eigi fund með fjármálaráðuneytinu; tölurnar koma frá BPI og hafa ekki verið staðfestar annars staðar. Upplýsing: Útgefandi Nordic Crypto, Jørgen S. Notland, deildi tilvísunartengli á þessa keppni BPI; Kaupr, sem er heimildin, á í samstarfi við hann og við Nexa, þar sem fyrirtæki útgefandans sinnir þróunarvinnu sem verktaki.",
+    "zh": "据Kaupr对2026年10月31日BPI网络研讨会的报道，比特币利益团体BPI Norge表示，作为其游说工作的一部分，已向挪威议会提交两项提案：要求挪威政府全球养老基金（石油基金）更公开地报告其间接持有的比特币，并让Folketrygdfondet投资比特币和数字资产。BPI称其会员人数已从150人增至265人，秘书长将与财政部会面；这些数字来自BPI，未经独立核实。 披露：Nordic Crypto的出版人Jørgen S. Notland曾分享此次BPI竞赛的推荐链接；消息来源Kaupr与他以及Nexa有合作关系，出版人的公司以承包商身份为Nexa从事开发工作。",
+    "hi": "Kaupr की 31 अक्टूबर 2026 के BPI वेबिनार पर रिपोर्ट के अनुसार, बिटकॉइन हित समूह BPI Norge का कहना है कि उसने अपनी लॉबिंग के तहत नॉर्वे की संसद को दो प्रस्ताव भेजे हैं: कि सरकारी पेंशन फंड ग्लोबल (तेल कोष) अपनी अप्रत्यक्ष बिटकॉइन होल्डिंग्स पर अधिक खुलकर रिपोर्ट करे, और Folketrygdfondet बिटकॉइन व डिजिटल संपत्तियों में निवेश करे। BPI का कहना है कि उसकी सदस्य संख्या 150 से बढ़कर 265 हो गई है और उसके महासचिव वित्त मंत्रालय से मिलने वाले हैं; ये आंकड़े BPI के हैं और स्वतंत्र रूप से सत्यापित नहीं हैं। खुलासा: Nordic Crypto के प्रकाशक Jørgen S. Notland ने इस BPI प्रतियोगिता का रेफ़रल लिंक साझा किया था; स्रोत Kaupr उनके साथ और Nexa के साथ साझेदारी करता है, जहाँ प्रकाशक की कंपनी ठेकेदार के रूप में विकास कार्य करता है।",
+    "es": "El grupo de interés bitcoin BPI Norge afirma haber enviado dos propuestas al Storting como parte de su labor de presión: que el fondo soberano noruego informe con más transparencia sobre sus tenencias indirectas de bitcoin y que Folketrygdfondet invierta en bitcoin y activos digitales, según la crónica de Kaupr sobre un seminario web de BPI el 31 de octubre de 2026. BPI dice que sus socios han pasado de 150 a 265 y que su secretario general se reunirá con el Ministerio de Finanzas; estas cifras proceden de BPI y no se han verificado de forma independiente. Aviso: el editor de Nordic Crypto, Jørgen S. Notland, compartió un enlace de referido a este concurso de BPI; Kaupr, la fuente, colabora con él y con Nexa, donde la empresa del editor realiza trabajos de desarrollo como contratista.",
+    "fr": "Le groupe d'intérêt bitcoin BPI Norge dit avoir adressé deux propositions au Storting dans le cadre de son lobbying : que le fonds souverain norvégien rende compte plus ouvertement de ses avoirs indirects en bitcoin, et que Folketrygdfondet investisse dans le bitcoin et les actifs numériques, selon le compte rendu par Kaupr d'un webinaire de BPI le 31 octobre 2026. BPI affirme que ses adhérents sont passés de 150 à 265 et que son secrétaire général doit rencontrer le ministère des Finances ; ces chiffres proviennent de BPI et n'ont pas été vérifiés de façon indépendante. Transparence : l'éditeur de Nordic Crypto, Jørgen S. Notland, a partagé un lien de parrainage vers ce concours de BPI ; Kaupr, la source, est partenaire de lui et de Nexa, pour qui la société de l'éditeur réalise des travaux de développement en tant que prestataire.",
+    "ar": "تقول مجموعة المصالح المعنية بالبيتكوين BPI Norge إنها أرسلت مقترحين إلى البرلمان النرويجي في إطار نشاطها الضاغط: أن يفصح صندوق التقاعد الحكومي العالمي (صندوق النفط) بشفافية أكبر عن حيازاته غير المباشرة من البيتكوين، وأن يستثمر Folketrygdfondet في البيتكوين والأصول الرقمية، وذلك بحسب تقرير Kaupr عن ندوة عبر الإنترنت نظمتها BPI في 31 أكتوبر 2026. وتقول BPI إن عدد أعضائها ارتفع من 150 إلى 265 وإن أمينها العام سيلتقي وزارة المالية؛ وهذه الأرقام صادرة عن BPI ولم يتم التحقق منها بشكل مستقل. إفصاح: شارك ناشر Nordic Crypto، يورغن س. نوتلاند، رابط إحالة إلى مسابقة BPI هذه؛ وتتعاون Kaupr، وهي المصدر، معه ومع Nexa، حيث تؤدي شركة الناشر أعمال تطوير بصفتها متعاقدًا.",
+    "bn": "২০২৬ সালের ৩১ অক্টোবরের একটি BPI ওয়েবিনার নিয়ে Kaupr-এর প্রতিবেদন অনুযায়ী, বিটকয়েন স্বার্থগোষ্ঠী BPI Norge বলছে, লবিংয়ের অংশ হিসেবে তারা নরওয়ের সংসদে দুটি প্রস্তাব পাঠিয়েছে: সরকারি পেনশন ফান্ড গ্লোবাল (তেল তহবিল) যেন পরোক্ষ বিটকয়েন হোল্ডিং নিয়ে আরও খোলাখুলি প্রতিবেদন দেয়, এবং Folketrygdfondet যেন বিটকয়েন ও ডিজিটাল সম্পদে বিনিয়োগ করে। BPI জানায়, তাদের সদস্য সংখ্যা ১৫০ থেকে বেড়ে ২৬৫ হয়েছে এবং মহাসচিব অর্থ মন্ত্রণালয়ের সঙ্গে বৈঠক করবেন; এই সংখ্যাগুলি BPI-এর এবং স্বাধীনভাবে যাচাই করা হয়নি। প্রকাশ: Nordic Crypto-র প্রকাশক Jørgen S. Notland এই BPI প্রতিযোগিতার একটি রেফারেল লিঙ্ক শেয়ার করেছিলেন; সূত্র Kaupr তাঁর সঙ্গে এবং Nexa-র সঙ্গে অংশীদার, যেখানে প্রকাশকের প্রতিষ্ঠান ঠিকাদার হিসেবে উন্নয়নকাজ করে।",
+    "pt": "O grupo de interesse da bitcoin BPI Norge diz ter enviado duas propostas ao Storting no âmbito do seu lóbi: que o fundo soberano norueguês informe de forma mais aberta sobre as suas participações indiretas em bitcoin e que o Folketrygdfondet invista em bitcoin e ativos digitais, segundo a reportagem da Kaupr sobre um webinar da BPI a 31 de outubro de 2026. A BPI diz que os seus membros passaram de 150 para 265 e que o seu secretário-geral vai reunir-se com o Ministério das Finanças; estes números vêm da BPI e não foram verificados de forma independente. Declaração: o editor da Nordic Crypto, Jørgen S. Notland, partilhou uma ligação de referência para este concurso da BPI; a Kaupr, a fonte, é parceira dele e da Nexa, onde a a empresa do editor faz trabalho de desenvolvimento como prestadora de serviços.",
+    "ru": "Биткоин-лобби BPI Norge заявляет, что в рамках своей лоббистской работы направило в стортинг два предложения: чтобы Государственный пенсионный фонд Норвегии (нефтяной фонд) открыто отчитывался о своих косвенных вложениях в биткоин и чтобы Folketrygdfondet инвестировал в биткоин и цифровые активы, — сообщает Kaupr по итогам вебинара BPI 31 октября 2026 года. По словам BPI, число её членов выросло со 150 до 265, а генеральный секретарь встретится с Министерством финансов; эти данные исходят от BPI и не проверены независимо. Раскрытие информации: издатель Nordic Crypto Йорген С. Нотланд поделился реферальной ссылкой на этот конкурс BPI; Kaupr, источник новости, сотрудничает с ним и с Nexa, где компания издателя выполняет работы по разработке как подрядчик.",
+    "ur": "Kaupr کی 31 اکتوبر 2026 کے BPI ویبینار سے متعلق رپورٹ کے مطابق، بٹ کوائن مفاداتی گروپ BPI Norge کا کہنا ہے کہ اس نے اپنی لابنگ کے حصے کے طور پر ناروے کی پارلیمنٹ کو دو تجاویز بھیجی ہیں: کہ سرکاری پنشن فنڈ گلوبل (تیل فنڈ) اپنی بالواسطہ بٹ کوائن ہولڈنگز کے بارے میں زیادہ کھل کر رپورٹ کرے، اور Folketrygdfondet بٹ کوائن اور ڈیجیٹل اثاثوں میں سرمایہ کاری کرے۔ BPI کا کہنا ہے کہ اس کے اراکین کی تعداد 150 سے بڑھ کر 265 ہو گئی ہے اور اس کے سیکرٹری جنرل وزارت خزانہ سے ملاقات کریں گے؛ یہ اعداد BPI کے ہیں اور آزادانہ طور پر تصدیق شدہ نہیں۔ انکشاف: Nordic Crypto کے ناشر Jørgen S. Notland نے BPI کے اس مقابلے کا ریفرل لنک شیئر کیا تھا؛ ماخذ Kaupr ان کے ساتھ اور Nexa کے ساتھ شراکت رکھتا ہے، جہاں ناشر کی کمپنی بطور ٹھیکیدار ترقیاتی کام کرتا ہے۔",
+    "id": "Kelompok kepentingan bitcoin BPI Norge mengatakan telah mengirim dua usulan ke Storting sebagai bagian dari lobinya: agar Dana Pensiun Pemerintah Global (dana minyak) melaporkan kepemilikan bitcoin tidak langsungnya secara lebih terbuka, dan agar Folketrygdfondet berinvestasi dalam bitcoin dan aset digital, menurut laporan Kaupr dari webinar BPI pada 31 Oktober 2026. BPI mengatakan jumlah anggotanya naik dari 150 menjadi 265 dan sekretaris jenderalnya akan bertemu Kementerian Keuangan; angka-angka ini berasal dari BPI dan belum diverifikasi secara independen. Pengungkapan: Penerbit Nordic Crypto, Jørgen S. Notland, membagikan tautan rujukan ke kontes BPI ini; Kaupr, sumber berita ini, bermitra dengannya dan dengan Nexa, tempat perusahaan milik penerbit melakukan pekerjaan pengembangan sebagai kontraktor.",
+    "de": "Die Bitcoin-Interessengruppe BPI Norge gibt an, im Rahmen ihrer Lobbyarbeit zwei Vorschläge an das Storting geschickt zu haben: dass der staatliche Pensionsfonds Global (Ölfonds) offener über seine indirekten Bitcoin-Bestände berichtet und dass Folketrygdfondet in Bitcoin und digitale Vermögenswerte investiert, so Kaupr in einem Bericht über ein BPI-Webinar am 31. Oktober 2026. BPI sagt, die Mitgliederzahl sei von 150 auf 265 gestiegen und der Generalsekretär werde das Finanzministerium treffen; diese Zahlen stammen von BPI und wurden nicht unabhängig überprüft. Offenlegung: Der Herausgeber von Nordic Crypto, Jørgen S. Notland, hat einen Empfehlungslink zu diesem BPI-Wettbewerb geteilt; Kaupr, die Quelle, ist Partner von ihm und von Nexa, wo das Unternehmen des Herausgebers als Auftragnehmer Entwicklungsarbeit leistet.",
+    "ja": "Kauprが2026年10月31日のBPIウェビナーについて報じたところによると、ビットコイン推進団体BPI Norgeは、ロビー活動の一環としてノルウェー国会に2つの提案を送ったという。政府年金基金グローバル（石油基金）が間接的なビットコイン保有についてより透明に報告すること、そしてFolketrygdfondetがビットコインとデジタル資産に投資することだ。BPIは会員数が150人から265人に増え、事務局長が財務省と会談する予定だとしているが、これらの数字はBPIによるもので、独自に検証されていない。 開示：Nordic Cryptoの発行人Jørgen S. NotlandはこのBPIコンテストの紹介リンクを共有した。情報源のKauprは同氏およびNexaと提携しており、発行人の会社は請負業者としてNexaの開発業務を行っている。",
+    "sw": "Kundi la maslahi la bitcoin BPI Norge linasema limetuma mapendekezo mawili kwa Storting kama sehemu ya ushawishi wake: kwamba Mfuko wa Pensheni wa Serikali Duniani (mfuko wa mafuta) uripoti kwa uwazi zaidi kuhusu umiliki wake usio wa moja kwa moja wa bitcoin, na kwamba Folketrygdfondet iwekeze katika bitcoin na mali za kidijitali, kwa mujibu wa ripoti ya Kaupr kuhusu mtandao-semina wa BPI tarehe 31 Oktoba 2026. BPI inasema wanachama wake wameongezeka kutoka 150 hadi 265 na katibu mkuu wake atakutana na Wizara ya Fedha; takwimu hizi zinatoka BPI na hazijathibitishwa kwa uhuru. Ufichuzi: Mchapishaji wa Nordic Crypto, Jørgen S. Notland, alishiriki kiungo cha rufaa cha shindano hili la BPI; Kaupr, ambayo ndiyo chanzo, inashirikiana naye na Nexa, ambapo kampuni ya mchapishaji hufanya kazi ya uundaji kama mkandarasi.",
+    "mr": "Kaupr ने 31 ऑक्टोबर 2026 च्या BPI वेबिनारबद्दल दिलेल्या वृत्तानुसार, बिटकॉइन हितसंबंधी गट BPI Norge चे म्हणणे आहे की त्यांनी लॉबिंगचा भाग म्हणून नॉर्वेच्या संसदेला दोन प्रस्ताव पाठवले आहेत: सरकारी पेन्शन फंड ग्लोबल (तेल निधी) ने आपल्या अप्रत्यक्ष बिटकॉइन धारणेबद्दल अधिक खुलेपणाने अहवाल द्यावा, आणि Folketrygdfondet ने बिटकॉइन व डिजिटल मालमत्तेत गुंतवणूक करावी. BPI नुसार सदस्यसंख्या 150 वरून 265 झाली आहे आणि महासचिव अर्थ मंत्रालयाला भेटणार आहेत; हे आकडे BPI चे असून स्वतंत्रपणे पडताळलेले नाहीत. प्रकटीकरण: Nordic Crypto चे प्रकाशक Jørgen S. Notland यांनी या BPI स्पर्धेची रेफरल लिंक शेअर केली होती; स्रोत असलेले Kaupr त्यांच्याशी आणि Nexa शी भागीदारी करते, जिथे प्रकाशकांची कंपनी कंत्राटदार म्हणून विकासकाम करते.",
+    "fa": "به گزارش Kaupr از وبیناری که BPI در ۳۱ اکتبر ۲۰۲۶ برگزار کرد، گروه ذی‌نفع بیت‌کوین BPI Norge می‌گوید در چارچوب لابی‌گری خود دو پیشنهاد به پارلمان نروژ فرستاده است: اینکه صندوق بازنشستگی دولتی جهانی (صندوق نفت) درباره دارایی‌های غیرمستقیم بیت‌کوینی خود شفاف‌تر گزارش دهد و اینکه Folketrygdfondet در بیت‌کوین و دارایی‌های دیجیتال سرمایه‌گذاری کند. BPI می‌گوید شمار اعضایش از ۱۵۰ به ۲۶۵ رسیده و دبیرکل آن با وزارت دارایی دیدار خواهد کرد؛ این ارقام از BPI است و به‌طور مستقل تأیید نشده است. افشا: ناشر Nordic Crypto، یورگن اس. نوتلاند، پیوند معرفی این مسابقه BPI را به اشتراک گذاشت؛ Kaupr، منبع این خبر، با او و با Nexa همکاری دارد؛ شرکت ناشر به‌عنوان پیمانکار برای Nexa کار توسعه انجام می‌دهد.",
+    "uk": "Біткоїн-лобі BPI Norge заявляє, що в межах своєї лобістської роботи надіслало до стортингу дві пропозиції: щоб Державний пенсійний фонд Норвегії (нафтовий фонд) відкритіше звітував про свої непрямі вкладення в біткоїн і щоб Folketrygdfondet інвестував у біткоїн і цифрові активи, — повідомляє Kaupr за підсумками вебінару BPI 31 жовтня 2026 року. За словами BPI, кількість її членів зросла зі 150 до 265, а генеральний секретар зустрінеться з Міністерством фінансів; ці дані походять від BPI і не перевірені незалежно. Розкриття інформації: видавець Nordic Crypto Йорґен С. Нотланд поширив реферальне посилання на цей конкурс BPI; Kaupr, джерело новини, співпрацює з ним і з Nexa, де компанія видавця виконує розробку як підрядник.",
+    "tr": "Kaupr'un 31 Ekim 2026'daki bir BPI web seminerine ilişkin haberine göre, bitcoin çıkar grubu BPI Norge, lobi faaliyetleri kapsamında Norveç parlamentosuna iki öneri gönderdiğini söylüyor: Küresel Devlet Emeklilik Fonu'nun (petrol fonu) dolaylı bitcoin varlıkları hakkında daha açık rapor vermesi ve Folketrygdfondet'in bitcoin ile dijital varlıklara yatırım yapması. BPI, üye sayısının 150'den 265'e çıktığını ve genel sekreterinin Maliye Bakanlığı ile görüşeceğini söylüyor; bu rakamlar BPI'ya ait olup bağımsız olarak doğrulanmadı. Açıklama: Nordic Crypto'nun yayıncısı Jørgen S. Notland bu BPI yarışmasının bir davet bağlantısını paylaştı; kaynak olan Kaupr, kendisiyle ve yayıncının şirketi'un yüklenici olarak geliştirme işi yaptığı Nexa ile ortaklık içinde.",
+    "se": "Bitcoin beroštupmijoavku BPI Norge dadjá ahte sii leat sádden guokte evttohusa Stuoradiggái oassin sin lobbemis: ahte Stáhta penšunfoanda - Olgoriikkat raportere eanet rahpasit iežas eahpenjuolggo bitcoin-dolliid birra, ja ahte Álbmotoadjofoanda investere bitcoin:i ja digitála assetaide, Kaupr raportta mielde BPI webinára bokte golggotmánu 31. beaivvi 2026. BPI dadjá ahte miellahttolohku lea lassánan 150:s 265:ii ja ahte čállingoddi galgá deaivvadit Ruhtadandepartemeanttain; dát logut bohtet BPI:s ja eai leat iehčanasat dárkkistuvvon. Almmuheapmi: Nordic Crypto almmuheaddji, Jørgen S. Notland, lea juogadan čujuhanlihkosa dán BPI-gilvui; Gáldu, gáldu, ovttasbargá suinna ja Nexain, mas almmuheaddji fitnodat bargá ovddidanbargguid go lea kontraktor."
+   },
+   "summary_i18n_review": "pending"
+  },
+  {
+   "id": "e426b4fe9def",
+   "url": "https://kaupr.io/nyheter/binance-mistet-6-3-milliarder-dollar---svakheten-var-ikke-blokkjeden",
+   "title": "Binance mistet 6,3 milliarder dollar – svakheten var ikke blokkjeden",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-01",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "blockchain"
+   ],
+   "matched": [
+    "\\bblokkjede\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true,
+   "possible_duplicate_of": "4525f8afaf7b",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "1ac7b0bc575e",
+   "url": "https://kaupr.io/nyheter/binance-gjenapner-uttak-etter-hacket",
+   "title": "Binance gjenåpner uttak etter hacket",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-01",
+   "fetched": "2026-11-03T02:47:09+00:00",
+   "topics": [
+    "bitcoin",
+    "blockchain",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
    "status": "pending",
@@ -1297,6 +1898,17 @@
      "published": "2026-10-31T15:09:56+00:00",
      "lang": "Danish",
      "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/nyheter/nord-korea-nekter-for-a-sta-bak-krypto-tyveri-1.18071405",
+     "title": "Nord-Korea nekter for å stå bak krypto-tyveri",
+     "published": "2026-11-02T21:28:33+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
      "source_type": "national",
      "paywall": false
     }
@@ -2866,7 +3478,8 @@
    "via": "breakit",
    "seen_via": [
     "breakit",
-    "bing-se"
+    "bing-se",
+    "nyteknik-bitcoin"
    ],
    "published": "2026-10-30T07:05:00+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -11943,7 +12556,8 @@
    "language": "Swedish",
    "via": "bing-se",
    "seen_via": [
-    "bing-se"
+    "bing-se",
+    "nyteknik-bitcoin"
    ],
    "published": "2026-09-28T08:45:00+00:00",
    "fetched": "2026-10-03T15:11:52+00:00",
@@ -14866,5 +15480,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-02T02:48:08+00:00"
+ "updated": "2026-11-03T02:47:09+00:00"
 }
