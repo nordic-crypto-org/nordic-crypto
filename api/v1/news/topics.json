@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-04T03:42:07+00:00",
+ "generated_at": "2026-11-04T06:43:42+00:00",
  "preview": false,
  "topics": [
   {
@@ -40,6 +40,11 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/community.json"
   },
   {
+   "id": "companies",
+   "count": 4,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/companies.json"
+  },
+  {
    "id": "consumer protection",
    "count": 3,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/consumer-protection.json"
@@ -71,7 +76,7 @@
   },
   {
    "id": "exchanges",
-   "count": 7,
+   "count": 12,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/exchanges.json"
   },
   {
@@ -115,8 +120,13 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/policy.json"
   },
   {
+   "id": "products",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/products.json"
+  },
+  {
    "id": "regulation",
-   "count": 24,
+   "count": 26,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/regulation.json"
   },
   {
@@ -126,7 +136,7 @@
   },
   {
    "id": "security",
-   "count": 12,
+   "count": 13,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/security.json"
   },
   {
@@ -143,6 +153,11 @@
    "id": "tokenisation",
    "count": 14,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenisation.json"
+  },
+  {
+   "id": "tokenization",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenization.json"
   },
   {
    "id": "wallets",
