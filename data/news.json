@@ -22,14 +22,15 @@
     "\\bValuno\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9ce6e4d42086"
   },
   {
    "id": "e36f90afacd8",
    "url": "https://kryptovalutaguiden.se/2026/11/elon-musk-stoppar-tesla-och-spacex-fran-tokeniserade-aktier",
    "title": "Elon Musk stoppar Tesla och SpaceX från tokeniserade aktier",
-   "title_en": null,
+   "title_en": "Objections to OKXICE's tokenised shares rise to 56 companies, including Tesla and SpaceX",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -41,8 +42,8 @@
    "published": "2026-11-03T21:58:02+00:00",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
-    "blockchain",
-    "crypto"
+    "tokenization",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
@@ -50,16 +51,88 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "Tesla, SpaceX, Amazon, Netflix, SoFi and Lam Research are among the companies that have objected to their shares being offered as tokens on OKXICE. According to CoinDesk, Decrypt and CoinMarketCap, the number of disclosed objections rose from 50 in a notice on 30 October to 56 in a notice on 2 November. By CoinDesk's tally, 49 of 62 companies have objected.",
    "possible_duplicate_of": "cc694db059dc",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "also_covered_by": [
+    {
+     "outlet": "kryptovalutaguiden",
+     "outlet_name": "Kryptovalutaguiden",
+     "url": "https://kryptovalutaguiden.se/2026/11/50-bolag-sager-nej-till-okx-och-ices-tokeniserade-aktier-nvidia-och-nike-ansluter",
+     "title": "50 bolag säger nej till OKX och ICE:s tokeniserade aktier – Nvidia och Nike ansluter",
+     "published": "2026-11-02T19:56:47+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "OKX – OKXICE tokenised stocks",
+    "url": "https://www.okx.com/en-us/okxicetsv"
+   },
+   "title_i18n": {
+    "nb": "Innsigelsene mot OKXICEs tokeniserte aksjer øker til 56 selskaper, blant dem Tesla og SpaceX",
+    "nn": "Innseiingane mot OKXICE sine tokeniserte aksjar aukar til 56 selskap, mellom dei Tesla og SpaceX",
+    "da": "Indsigelserne mod OKXICE's tokeniserede aktier stiger til 56 selskaber, heriblandt Tesla og SpaceX",
+    "fi": "Vastalauseet OKXICEn tokenisoiduille osakkeille nousevat 56 yhtiöön, mukana Tesla ja SpaceX",
+    "is": "Andmæli gegn tókenvæddum hlutabréfum OKXICE ná til 56 félaga, þar á meðal Tesla og SpaceX",
+    "zh": "反对OKXICE代币化股票的公司增至56家，包括特斯拉和SpaceX",
+    "hi": "OKXICE के टोकनाइज़्ड शेयरों पर आपत्ति जताने वाली कंपनियां 56 हुईं, Tesla और SpaceX भी शामिल",
+    "es": "Las objeciones a las acciones tokenizadas de OKXICE suben a 56 empresas, entre ellas Tesla y SpaceX",
+    "fr": "Les objections aux actions tokenisées d'OKXICE montent à 56 entreprises, dont Tesla et SpaceX",
+    "ar": "ارتفاع عدد الشركات المعترضة على أسهم OKXICE المرمّزة إلى 56، بينها Tesla وSpaceX",
+    "bn": "OKXICE-এর টোকেনাইজড শেয়ারে আপত্তি জানানো কোম্পানি বেড়ে ৫৬, Tesla ও SpaceX-ও আছে",
+    "pt": "Objeções às ações tokenizadas da OKXICE sobem para 56 empresas, incluindo Tesla e SpaceX",
+    "ru": "Число компаний, возражающих против токенизированных акций OKXICE, выросло до 56, среди них Tesla и SpaceX",
+    "ur": "OKXICE کے ٹوکنائزڈ شیئرز پر اعتراض کرنے والی کمپنیاں 56 ہو گئیں، Tesla اور SpaceX بھی شامل",
+    "id": "Keberatan atas saham tokenisasi OKXICE naik menjadi 56 perusahaan, termasuk Tesla dan SpaceX",
+    "de": "Einwände gegen tokenisierte Aktien bei OKXICE steigen auf 56 Unternehmen, darunter Tesla und SpaceX",
+    "ja": "OKXICEのトークン化株式への異議、テスラやSpaceXなど56社に拡大",
+    "sw": "Pingamizi dhidi ya hisa za tokeni za OKXICE zafikia kampuni 56, zikiwemo Tesla na SpaceX",
+    "mr": "OKXICE च्या टोकनाइज्ड शेअर्सवर आक्षेप घेणाऱ्या कंपन्या 56 वर, Tesla आणि SpaceX यांचाही समावेश",
+    "fa": "شمار شرکت‌های معترض به سهام توکنی‌شده OKXICE به ۵۶ رسید، از جمله تسلا و اسپیس‌ایکس",
+    "uk": "Кількість компаній, що заперечують проти токенізованих акцій OKXICE, зросла до 56, серед них Tesla і SpaceX",
+    "tr": "OKXICE'ın tokenize hisselerine itiraz eden şirket sayısı Tesla ve SpaceX dahil 56'ya çıktı",
+    "se": "Vuosttaldeamit OKXICE tokeniserejuvvon ossosiidda lassánit 56 fitnodahkii, earret eará Tesla ja SpaceX"
+   },
+   "title_i18n_source": "Elon Musk stoppar Tesla och SpaceX från tokeniserade aktier",
+   "summary_i18n": {
+    "sv": "Tesla, SpaceX, Amazon, Netflix, SoFi och Lam Research är bland de bolag som har invänt mot att deras aktier erbjuds som tokens på OKXICE. Enligt CoinDesk, Decrypt och CoinMarketCap ökade antalet redovisade invändningar från 50 i ett meddelande den 30 oktober till 56 i ett meddelande den 2 november. Enligt CoinDesks sammanställning har 49 av 62 bolag invänt.",
+    "nb": "Tesla, SpaceX, Amazon, Netflix, SoFi og Lam Research er blant selskapene som har motsatt seg at aksjene deres tilbys som tokens på OKXICE. Ifølge CoinDesk, Decrypt og CoinMarketCap økte antallet oppgitte innsigelser fra 50 i en kunngjøring 30. oktober til 56 i en kunngjøring 2. november. Etter CoinDesks opptelling har 49 av 62 selskaper protestert.",
+    "nn": "Tesla, SpaceX, Amazon, Netflix, SoFi og Lam Research er mellom selskapa som har motsett seg at aksjane deira blir tilbodne som tokens på OKXICE. Ifølgje CoinDesk, Decrypt og CoinMarketCap auka talet på oppgjevne innseiingar frå 50 i ei kunngjering 30. oktober til 56 i ei kunngjering 2. november. Etter CoinDesk si oppteljing har 49 av 62 selskap protestert.",
+    "da": "Tesla, SpaceX, Amazon, Netflix, SoFi og Lam Research er blandt de selskaber, der har gjort indsigelse mod, at deres aktier udbydes som tokens på OKXICE. Ifølge CoinDesk, Decrypt og CoinMarketCap steg antallet af oplyste indsigelser fra 50 i en meddelelse den 30. oktober til 56 i en meddelelse den 2. november. Efter CoinDesks optælling har 49 af 62 selskaber gjort indsigelse.",
+    "fi": "Tesla, SpaceX, Amazon, Netflix, SoFi ja Lam Research ovat niiden yhtiöiden joukossa, jotka vastustavat osakkeidensa tarjoamista tokeneina OKXICEssä. CoinDeskin, Decryptin ja CoinMarketCapin mukaan ilmoitettujen vastalauseiden määrä nousi 30. lokakuuta julkaistun ilmoituksen 50:stä 2. marraskuuta julkaistun ilmoituksen 56:een. CoinDeskin laskelman mukaan 49 yhtiötä 62:sta on vastustanut.",
+    "is": "Tesla, SpaceX, Amazon, Netflix, SoFi og Lam Research eru meðal félaga sem hafa andmælt því að hlutabréf þeirra séu boðin sem tókenar á OKXICE. Samkvæmt CoinDesk, Decrypt og CoinMarketCap fjölgaði birtum andmælum úr 50 í tilkynningu 30. október í 56 í tilkynningu 2. nóvember. Samkvæmt talningu CoinDesk hafa 49 af 62 félögum andmælt.",
+    "zh": "特斯拉、SpaceX、亚马逊、Netflix、SoFi和Lam Research等公司反对其股票以代币形式在OKXICE上提供。据CoinDesk、Decrypt和CoinMarketCap报道，公开的反对数量从10月30日公告中的50家增至11月2日公告中的56家。按CoinDesk的统计，62家公司中有49家提出反对。",
+    "hi": "Tesla, SpaceX, Amazon, Netflix, SoFi और Lam Research उन कंपनियों में हैं जिन्होंने OKXICE पर अपने शेयरों को टोकन के रूप में पेश किए जाने पर आपत्ति जताई है। CoinDesk, Decrypt और CoinMarketCap के अनुसार, घोषित आपत्तियों की संख्या 30 अक्टूबर की सूचना में 50 से बढ़कर 2 नवंबर की सूचना में 56 हो गई। CoinDesk की गिनती के अनुसार 62 में से 49 कंपनियों ने आपत्ति जताई है।",
+    "es": "Tesla, SpaceX, Amazon, Netflix, SoFi y Lam Research figuran entre las empresas que se han opuesto a que sus acciones se ofrezcan como tokens en OKXICE. Según CoinDesk, Decrypt y CoinMarketCap, el número de objeciones divulgadas pasó de 50 en un aviso del 30 de octubre a 56 en un aviso del 2 de noviembre. Según el recuento de CoinDesk, 49 de 62 empresas se han opuesto.",
+    "fr": "Tesla, SpaceX, Amazon, Netflix, SoFi et Lam Research font partie des entreprises qui se sont opposées à ce que leurs actions soient proposées sous forme de jetons sur OKXICE. Selon CoinDesk, Decrypt et CoinMarketCap, le nombre d'objections publiées est passé de 50 dans un avis du 30 octobre à 56 dans un avis du 2 novembre. Selon le décompte de CoinDesk, 49 entreprises sur 62 se sont opposées.",
+    "ar": "تُعد Tesla وSpaceX وAmazon وNetflix وSoFi وLam Research من بين الشركات التي اعترضت على طرح أسهمها كرموز على OKXICE. ووفقًا لـCoinDesk وDecrypt وCoinMarketCap، ارتفع عدد الاعتراضات المعلنة من 50 في إشعار بتاريخ 30 أكتوبر إلى 56 في إشعار بتاريخ 2 نوفمبر. وبحسب إحصاء CoinDesk، اعترضت 49 شركة من أصل 62.",
+    "bn": "Tesla, SpaceX, Amazon, Netflix, SoFi ও Lam Research সেই কোম্পানিগুলোর মধ্যে রয়েছে যারা OKXICE-এ তাদের শেয়ার টোকেন হিসেবে দেওয়ার বিরুদ্ধে আপত্তি জানিয়েছে। CoinDesk, Decrypt ও CoinMarketCap-এর তথ্যমতে, প্রকাশিত আপত্তির সংখ্যা ৩০ অক্টোবরের নোটিশে ৫০ থেকে বেড়ে ২ নভেম্বরের নোটিশে ৫৬ হয়েছে। CoinDesk-এর হিসাবে ৬২টির মধ্যে ৪৯টি কোম্পানি আপত্তি জানিয়েছে।",
+    "pt": "Tesla, SpaceX, Amazon, Netflix, SoFi e Lam Research estão entre as empresas que se opuseram à oferta das suas ações como tokens na OKXICE. Segundo a CoinDesk, a Decrypt e a CoinMarketCap, o número de objeções divulgadas passou de 50 num aviso de 30 de outubro para 56 num aviso de 2 de novembro. Pela contagem da CoinDesk, 49 de 62 empresas opuseram-se.",
+    "ru": "Tesla, SpaceX, Amazon, Netflix, SoFi и Lam Research входят в число компаний, возразивших против предложения их акций в виде токенов на OKXICE. По данным CoinDesk, Decrypt и CoinMarketCap, число раскрытых возражений выросло с 50 в уведомлении от 30 октября до 56 в уведомлении от 2 ноября. По подсчёту CoinDesk, возражения выдвинули 49 из 62 компаний.",
+    "ur": "Tesla، SpaceX، Amazon، Netflix، SoFi اور Lam Research ان کمپنیوں میں شامل ہیں جنہوں نے OKXICE پر اپنے شیئرز کو ٹوکن کے طور پر پیش کیے جانے پر اعتراض کیا ہے۔ CoinDesk، Decrypt اور CoinMarketCap کے مطابق ظاہر کیے گئے اعتراضات کی تعداد 30 اکتوبر کے نوٹس میں 50 سے بڑھ کر 2 نومبر کے نوٹس میں 56 ہو گئی۔ CoinDesk کی گنتی کے مطابق 62 میں سے 49 کمپنیوں نے اعتراض کیا ہے۔",
+    "id": "Tesla, SpaceX, Amazon, Netflix, SoFi, dan Lam Research termasuk perusahaan yang keberatan sahamnya ditawarkan sebagai token di OKXICE. Menurut CoinDesk, Decrypt, dan CoinMarketCap, jumlah keberatan yang diungkapkan naik dari 50 dalam pemberitahuan 30 Oktober menjadi 56 dalam pemberitahuan 2 November. Menurut hitungan CoinDesk, 49 dari 62 perusahaan telah mengajukan keberatan.",
+    "de": "Tesla, SpaceX, Amazon, Netflix, SoFi und Lam Research gehören zu den Unternehmen, die Einwände dagegen erhoben haben, dass ihre Aktien als Token auf OKXICE angeboten werden. Laut CoinDesk, Decrypt und CoinMarketCap stieg die Zahl der offengelegten Einwände von 50 in einer Mitteilung vom 30. Oktober auf 56 in einer Mitteilung vom 2. November. Nach Zählung von CoinDesk haben 49 von 62 Unternehmen widersprochen.",
+    "ja": "テスラ、SpaceX、アマゾン、ネットフリックス、SoFi、ラムリサーチなどが、自社株式がOKXICEでトークンとして提供されることに異議を唱えている。CoinDesk、Decrypt、CoinMarketCapによると、公表された異議の数は10月30日の通知の50社から11月2日の通知の56社に増えた。CoinDeskの集計では、62社中49社が異議を唱えている。",
+    "sw": "Tesla, SpaceX, Amazon, Netflix, SoFi na Lam Research ni miongoni mwa kampuni zilizopinga hisa zao kutolewa kama tokeni kwenye OKXICE. Kwa mujibu wa CoinDesk, Decrypt na CoinMarketCap, idadi ya pingamizi zilizotangazwa iliongezeka kutoka 50 katika taarifa ya tarehe 30 Oktoba hadi 56 katika taarifa ya tarehe 2 Novemba. Kwa hesabu ya CoinDesk, kampuni 49 kati ya 62 zimepinga.",
+    "mr": "Tesla, SpaceX, Amazon, Netflix, SoFi आणि Lam Research या कंपन्यांनी OKXICE वर त्यांचे शेअर्स टोकन म्हणून देण्यास आक्षेप घेतला आहे. CoinDesk, Decrypt आणि CoinMarketCap नुसार जाहीर आक्षेपांची संख्या 30 ऑक्टोबरच्या सूचनेतील 50 वरून 2 नोव्हेंबरच्या सूचनेत 56 झाली. CoinDesk च्या मोजणीनुसार 62 पैकी 49 कंपन्यांनी आक्षेप घेतला आहे.",
+    "fa": "تسلا، اسپیس‌ایکس، آمازون، نتفلیکس، SoFi و Lam Research از جمله شرکت‌هایی هستند که با عرضه سهامشان به‌صورت توکن در OKXICE مخالفت کرده‌اند. به گزارش CoinDesk، Decrypt و CoinMarketCap، شمار اعتراض‌های اعلام‌شده از ۵۰ در اطلاعیه ۳۰ اکتبر به ۵۶ در اطلاعیه ۲ نوامبر رسید. طبق شمارش CoinDesk، ۴۹ شرکت از ۶۲ شرکت اعتراض کرده‌اند.",
+    "uk": "Tesla, SpaceX, Amazon, Netflix, SoFi і Lam Research — серед компаній, які заперечили проти пропозиції їхніх акцій у вигляді токенів на OKXICE. За даними CoinDesk, Decrypt і CoinMarketCap, кількість оприлюднених заперечень зросла з 50 у повідомленні від 30 жовтня до 56 у повідомленні від 2 листопада. За підрахунком CoinDesk, заперечення висунули 49 із 62 компаній.",
+    "tr": "Tesla, SpaceX, Amazon, Netflix, SoFi ve Lam Research, hisselerinin OKXICE'ta token olarak sunulmasına itiraz eden şirketler arasında. CoinDesk, Decrypt ve CoinMarketCap'e göre açıklanan itiraz sayısı 30 Ekim tarihli duyurudaki 50'den 2 Kasım tarihli duyuruda 56'ya yükseldi. CoinDesk'in sayımına göre 62 şirketten 49'u itiraz etti.",
+    "se": "Tesla, SpaceX, Amazon, Netflix, SoFi ja Lam Research leat searvvis fitnodagain mat leat vuosttaldan ahte sin ossosat fállojuvvojit tokenin OKXICE:s. CoinDesk, Decrypt ja CoinMarketCap dieđuid mielde váidagiid lohku lassánii golggotmánu 30. b. almmuhusas 50:s 56:ii skábmamánu 2. b. almmuhusas. CoinDesk loguid mielde leat 49 fitnodaga 62 fitnodagas vuosttaldan dan."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "f47e76863444",
    "url": "https://dr.dk/nyheder/penge/verdens-stoerste-kryptoboers-hackere-brugte-falske-jobsamtaler-til-milliardtyveri",
    "title": "Verdens største kryptobørs: Hackere brugte falske jobsamtaler til milliardtyveri",
-   "title_en": null,
+   "title_en": "Binance says hackers used fake job interviews and an internal AI tool",
    "source": "dr-penge",
    "source_name": "DR",
    "country": "DK",
@@ -71,14 +144,88 @@
    "published": "2026-11-03T20:38:24+00:00",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "According to a Binance post on X on 3 November, the attackers behind the recent theft approached an engineer in September with a fake job interview and got him to download a \"task\" containing malware. Binance says the attackers then used his laptop and misused an internal AI tool to take over the computers of two other engineers. DR reports that Binance has covered 98 percent of the losses; on 31 October Binance said about 90 percent had been replaced.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Binance on X, 3 Nov 2026",
+    "url": "https://x.com/binance/status/2117626126214504729"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance hack: main story"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/",
+     "label": "FBI attributes the hack to North Korea's TraderTraitor"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/ba58141d7134/",
+     "label": "Binance: about 90 percent replaced (31 Oct)"
+    }
+   ],
+   "title_i18n": {
+    "nb": "Binance: Hackere brukte falske jobbintervjuer og et internt verktøy for kunstig intelligens",
+    "nn": "Binance: Hackarar nytta falske jobbintervju og eit internt verktøy for kunstig intelligens",
+    "sv": "Binance: Hackare använde falska jobbintervjuer och ett internt AI-verktyg",
+    "fi": "Binance: Hakkerit käyttivät valetyöhaastatteluja ja sisäistä tekoälytyökalua",
+    "is": "Binance: Tölvuþrjótar notuðu fölsk atvinnuviðtöl og innra gervigreindartól",
+    "zh": "币安称黑客利用虚假求职面试和内部AI工具",
+    "hi": "Binance: हैकरों ने नकली नौकरी इंटरव्यू और आंतरिक AI टूल का इस्तेमाल किया",
+    "es": "Binance dice que los hackers usaron entrevistas de trabajo falsas y una herramienta interna de IA",
+    "fr": "Binance affirme que les pirates ont utilisé de faux entretiens d'embauche et un outil d'IA interne",
+    "ar": "Binance: المخترقون استخدموا مقابلات عمل مزيفة وأداة ذكاء اصطناعي داخلية",
+    "bn": "Binance: হ্যাকাররা ভুয়া চাকরির ইন্টারভিউ ও অভ্যন্তরীণ AI টুল ব্যবহার করেছে",
+    "pt": "Binance diz que hackers usaram entrevistas de emprego falsas e uma ferramenta interna de IA",
+    "ru": "Binance: хакеры использовали фальшивые собеседования и внутренний ИИ-инструмент",
+    "ur": "Binance: ہیکرز نے جعلی ملازمت انٹرویوز اور اندرونی AI ٹول استعمال کیا",
+    "id": "Binance: Peretas memakai wawancara kerja palsu dan alat AI internal",
+    "de": "Binance: Hacker nutzten gefälschte Bewerbungsgespräche und ein internes KI-Werkzeug",
+    "ja": "バイナンス、ハッカーが偽の採用面接と社内AIツールを悪用と説明",
+    "sw": "Binance: Wadukuzi walitumia mahojiano ya kazi bandia na zana ya ndani ya AI",
+    "mr": "Binance: हॅकर्सनी बनावट नोकरी मुलाखती आणि अंतर्गत AI साधन वापरले",
+    "fa": "بایننس: هکرها از مصاحبه‌های شغلی جعلی و ابزار داخلی هوش مصنوعی استفاده کردند",
+    "uk": "Binance: хакери використали фальшиві співбесіди та внутрішній ШІ-інструмент",
+    "tr": "Binance: Hackerlar sahte iş görüşmeleri ve şirket içi yapay zekâ aracı kullandı",
+    "se": "Binance dadjá ahte hákkit geavahedje boasttojearahallamiid ja siskkáldas AI-reaiddu"
+   },
+   "title_i18n_source": "Verdens største kryptobørs: Hackere brugte falske jobsamtaler til milliardtyveri",
+   "summary_i18n": {
+    "da": "Ifølge et opslag fra Binance på X den 3. november kontaktede angriberne bag det nylige tyveri en ingeniør i september med en falsk jobsamtale og fik ham til at downloade en \"opgave\" med skadelig software. Binance oplyser, at angriberne derefter brugte hans bærbare computer og misbrugte et internt AI-værktøj til at overtage to andre ingeniørers computere. DR skriver, at Binance har dækket 98 procent af tabene; den 31. oktober oplyste Binance, at omkring 90 procent var erstattet.",
+    "nb": "Ifølge et innlegg fra Binance på X 3. november kontaktet angriperne bak det nylige tyveriet en ingeniør i september med et falskt jobbintervju og fikk ham til å laste ned en «oppgave» med skadevare. Binance opplyser at angriperne deretter brukte den bærbare datamaskinen hans og misbrukte et internt verktøy for kunstig intelligens til å ta over datamaskinene til to andre ingeniører. DR skriver at Binance har dekket 98 prosent av tapene; 31. oktober opplyste Binance at rundt 90 prosent var erstattet.",
+    "nn": "Ifølgje eit innlegg frå Binance på X 3. november kontakta angriparane bak det nylege tjuveriet ein ingeniør i september med eit falskt jobbintervju og fekk han til å laste ned ei «oppgåve» med skadevare. Binance opplyser at angriparane deretter nytta den berbare datamaskina hans og misbrukte eit internt verktøy for kunstig intelligens til å ta over datamaskinene til to andre ingeniørar. DR skriv at Binance har dekt 98 prosent av tapa; 31. oktober opplyste Binance at rundt 90 prosent var erstatta.",
+    "sv": "Enligt ett inlägg från Binance på X den 3 november kontaktade angriparna bakom den senaste stölden en ingenjör i september med en falsk anställningsintervju och fick honom att ladda ner en \"uppgift\" med skadlig kod. Binance uppger att angriparna sedan använde hans bärbara dator och missbrukade ett internt AI-verktyg för att ta över två andra ingenjörers datorer. DR rapporterar att Binance har täckt 98 procent av förlusterna; den 31 oktober uppgav Binance att omkring 90 procent hade ersatts.",
+    "fi": "Binancen 3. marraskuuta X:ssä julkaiseman viestin mukaan äskettäisen varkauden tekijät lähestyivät syyskuussa insinööriä valetyöhaastattelulla ja saivat hänet lataamaan haittaohjelmaa sisältäneen \"tehtävän\". Binancen mukaan hyökkääjät käyttivät sitten hänen kannettavaansa ja väärinkäyttivät sisäistä tekoälytyökalua kahden muun insinöörin tietokoneiden kaappaamiseen. DR:n mukaan Binance on korvannut 98 prosenttia tappioista; 31. lokakuuta Binance kertoi korvanneensa noin 90 prosenttia.",
+    "is": "Samkvæmt færslu Binance á X 3. nóvember höfðu árásarmennirnir að baki nýlegum þjófnaði samband við verkfræðing í september með fölsku atvinnuviðtali og fengu hann til að sækja „verkefni“ með spilliforriti. Binance segir að árásarmennirnir hafi síðan notað fartölvu hans og misnotað innra gervigreindartól til að ná tölvum tveggja annarra verkfræðinga á sitt vald. DR greinir frá því að Binance hafi bætt 98 prósent tjónsins; 31. október sagði Binance að um 90 prósent hefðu verið bætt.",
+    "zh": "根据币安11月3日在X上发布的帖子，近期盗窃事件的攻击者于9月以虚假求职面试接触一名工程师，诱使其下载一个含恶意软件的“任务”。币安称，攻击者随后利用其笔记本电脑并滥用一个内部AI工具，控制了另外两名工程师的电脑。DR报道称币安已弥补98%的损失；币安在10月31日曾表示约90%已获补偿。",
+    "hi": "Binance की 3 नवंबर की X पोस्ट के अनुसार, हाल की चोरी के पीछे के हमलावरों ने सितंबर में एक नकली नौकरी इंटरव्यू के जरिए एक इंजीनियर से संपर्क किया और उससे मैलवेयर वाला एक \"टास्क\" डाउनलोड करवाया। Binance का कहना है कि हमलावरों ने फिर उसके लैपटॉप का इस्तेमाल किया और एक आंतरिक AI टूल का दुरुपयोग करके दो अन्य इंजीनियरों के कंप्यूटरों पर कब्जा कर लिया। DR के अनुसार Binance ने 98 प्रतिशत नुकसान की भरपाई कर दी है; 31 अक्टूबर को Binance ने कहा था कि लगभग 90 प्रतिशत की भरपाई हो चुकी है।",
+    "es": "Según una publicación de Binance en X del 3 de noviembre, los atacantes detrás del reciente robo contactaron en septiembre a un ingeniero con una entrevista de trabajo falsa y lograron que descargara una \"tarea\" con software malicioso. Binance afirma que los atacantes usaron después su portátil y abusaron de una herramienta interna de IA para tomar el control de los ordenadores de otros dos ingenieros. DR informa de que Binance ha cubierto el 98 % de las pérdidas; el 31 de octubre Binance dijo que se había repuesto alrededor del 90 %.",
+    "fr": "Selon une publication de Binance sur X le 3 novembre, les auteurs du récent vol ont approché un ingénieur en septembre via un faux entretien d'embauche et l'ont amené à télécharger une « tâche » contenant un logiciel malveillant. Binance indique que les attaquants ont ensuite utilisé son ordinateur portable et détourné un outil d'IA interne pour prendre le contrôle des ordinateurs de deux autres ingénieurs. DR rapporte que Binance a couvert 98 % des pertes ; le 31 octobre, Binance avait indiqué qu'environ 90 % avaient été remplacés.",
+    "ar": "وفقًا لمنشور لـBinance على X في 3 نوفمبر، تواصل المهاجمون المسؤولون عن السرقة الأخيرة مع مهندس في سبتمبر عبر مقابلة عمل مزيفة ودفعوه إلى تنزيل \"مهمة\" تحتوي على برنامج خبيث. وتقول Binance إن المهاجمين استخدموا بعد ذلك حاسوبه المحمول وأساؤوا استخدام أداة ذكاء اصطناعي داخلية للسيطرة على حواسيب مهندسَين آخرَين. وتفيد DR بأن Binance غطّت 98 بالمئة من الخسائر؛ وفي 31 أكتوبر قالت Binance إن نحو 90 بالمئة قد عُوّضت.",
+    "bn": "Binance-এর ৩ নভেম্বরের X পোস্ট অনুযায়ী, সাম্প্রতিক চুরির পেছনের আক্রমণকারীরা সেপ্টেম্বরে ভুয়া চাকরির ইন্টারভিউয়ের মাধ্যমে এক প্রকৌশলীর সঙ্গে যোগাযোগ করে এবং তাকে ম্যালওয়্যারযুক্ত একটি \"টাস্ক\" ডাউনলোড করায়। Binance জানায়, আক্রমণকারীরা এরপর তার ল্যাপটপ ব্যবহার করে এবং একটি অভ্যন্তরীণ AI টুলের অপব্যবহার করে আরও দুই প্রকৌশলীর কম্পিউটার দখল করে। DR জানায়, Binance ক্ষতির ৯৮ শতাংশ পূরণ করেছে; ৩১ অক্টোবর Binance বলেছিল প্রায় ৯০ শতাংশ পূরণ করা হয়েছে।",
+    "pt": "Segundo uma publicação da Binance no X a 3 de novembro, os atacantes por trás do recente roubo abordaram um engenheiro em setembro com uma entrevista de emprego falsa e levaram-no a descarregar uma \"tarefa\" com software malicioso. A Binance diz que os atacantes usaram depois o seu portátil e abusaram de uma ferramenta interna de IA para assumir o controlo dos computadores de outros dois engenheiros. A DR noticia que a Binance cobriu 98% das perdas; a 31 de outubro, a Binance disse que cerca de 90% tinham sido repostos.",
+    "ru": "Согласно публикации Binance в X от 3 ноября, злоумышленники, стоящие за недавней кражей, в сентябре вышли на инженера под видом собеседования и убедили его скачать «задание» с вредоносной программой. По словам Binance, затем атакующие использовали его ноутбук и злоупотребили внутренним ИИ-инструментом, чтобы захватить компьютеры ещё двух инженеров. DR сообщает, что Binance покрыла 98% потерь; 31 октября Binance заявляла, что возмещено около 90%.",
+    "ur": "Binance کی 3 نومبر کی X پوسٹ کے مطابق، حالیہ چوری کے پیچھے حملہ آوروں نے ستمبر میں ایک جعلی ملازمت انٹرویو کے ذریعے ایک انجینئر سے رابطہ کیا اور اس سے میلویئر والا ایک \"ٹاسک\" ڈاؤن لوڈ کروایا۔ Binance کا کہنا ہے کہ حملہ آوروں نے پھر اس کا لیپ ٹاپ استعمال کیا اور ایک اندرونی AI ٹول کا غلط استعمال کر کے دو دیگر انجینئرز کے کمپیوٹرز پر قبضہ کر لیا۔ DR کے مطابق Binance نے 98 فیصد نقصانات پورے کر دیے ہیں؛ 31 اکتوبر کو Binance نے کہا تھا کہ تقریباً 90 فیصد کی تلافی ہو چکی ہے۔",
+    "id": "Menurut unggahan Binance di X pada 3 November, para penyerang di balik pencurian baru-baru ini mendekati seorang insinyur pada September melalui wawancara kerja palsu dan membuatnya mengunduh sebuah \"tugas\" berisi malware. Binance mengatakan para penyerang kemudian menggunakan laptopnya dan menyalahgunakan alat AI internal untuk mengambil alih komputer dua insinyur lain. DR melaporkan bahwa Binance telah menutup 98 persen kerugian; pada 31 Oktober Binance menyebut sekitar 90 persen telah diganti.",
+    "de": "Laut einem Beitrag von Binance auf X vom 3. November sprachen die Angreifer hinter dem jüngsten Diebstahl im September einen Ingenieur mit einem gefälschten Bewerbungsgespräch an und brachten ihn dazu, eine „Aufgabe“ mit Schadsoftware herunterzuladen. Binance zufolge nutzten die Angreifer danach seinen Laptop und missbrauchten ein internes KI-Werkzeug, um die Rechner zweier weiterer Ingenieure zu übernehmen. DR berichtet, Binance habe 98 Prozent der Verluste gedeckt; am 31. Oktober hatte Binance erklärt, rund 90 Prozent seien ersetzt.",
+    "ja": "バイナンスが11月3日にXに投稿した説明によると、最近の盗難事件の攻撃者は9月、偽の採用面接を装ってエンジニア1人に接触し、マルウェアを含む「課題」をダウンロードさせた。バイナンスによると、攻撃者はその後、このエンジニアのノートPCを使い、社内のAIツールを悪用して別のエンジニア2人のコンピューターを乗っ取った。DRは、バイナンスが損失の98％を補填したと報じている。バイナンスは10月31日時点で約90％を補填したとしていた。",
+    "sw": "Kwa mujibu wa chapisho la Binance kwenye X tarehe 3 Novemba, washambuliaji waliohusika na wizi wa hivi karibuni walimfikia mhandisi mmoja Septemba kwa mahojiano ya kazi bandia na kumfanya apakue \"kazi\" iliyokuwa na programu hasidi. Binance inasema washambuliaji kisha walitumia kompyuta yake ndogo na kutumia vibaya zana ya ndani ya AI kuchukua udhibiti wa kompyuta za wahandisi wengine wawili. DR inaripoti kwamba Binance imefidia asilimia 98 ya hasara; tarehe 31 Oktoba Binance ilisema takriban asilimia 90 ilikuwa imerejeshwa.",
+    "mr": "Binance च्या 3 नोव्हेंबरच्या X पोस्टनुसार, अलीकडील चोरीमागील हल्लेखोरांनी सप्टेंबरमध्ये बनावट नोकरी मुलाखतीद्वारे एका अभियंत्याशी संपर्क साधला आणि त्याला मालवेअर असलेले एक \"टास्क\" डाउनलोड करायला लावले. Binance च्या म्हणण्यानुसार हल्लेखोरांनी नंतर त्याचा लॅपटॉप वापरला आणि अंतर्गत AI साधनाचा गैरवापर करून आणखी दोन अभियंत्यांचे संगणक ताब्यात घेतले. DR नुसार Binance ने 98 टक्के नुकसान भरून काढले आहे; 31 ऑक्टोबरला Binance ने सुमारे 90 टक्के भरपाई झाल्याचे सांगितले होते.",
+    "fa": "بر اساس پست بایننس در X در ۳ نوامبر، مهاجمان سرقت اخیر در سپتامبر با یک مصاحبه شغلی جعلی با یک مهندس تماس گرفتند و او را به دانلود یک «تکلیف» حاوی بدافزار واداشتند. بایننس می‌گوید مهاجمان سپس از لپ‌تاپ او استفاده کردند و با سوءاستفاده از یک ابزار داخلی هوش مصنوعی کنترل رایانه‌های دو مهندس دیگر را به دست گرفتند. DR گزارش می‌دهد که بایننس ۹۸ درصد زیان‌ها را پوشش داده است؛ بایننس در ۳۱ اکتبر گفته بود حدود ۹۰ درصد جبران شده است.",
+    "uk": "Згідно з дописом Binance в X від 3 листопада, зловмисники, що стоять за нещодавньою крадіжкою, у вересні вийшли на інженера під виглядом співбесіди й переконали його завантажити «завдання» зі шкідливою програмою. За словами Binance, потім нападники використали його ноутбук і зловжили внутрішнім ШІ-інструментом, щоб захопити комп'ютери ще двох інженерів. DR повідомляє, що Binance покрила 98% збитків; 31 жовтня Binance заявляла, що відшкодовано близько 90%.",
+    "tr": "Binance'in 3 Kasım'da X'te yaptığı paylaşıma göre, son hırsızlığın arkasındaki saldırganlar eylülde sahte bir iş görüşmesiyle bir mühendise ulaştı ve onu kötü amaçlı yazılım içeren bir \"görev\" indirmeye ikna etti. Binance, saldırganların ardından onun dizüstü bilgisayarını kullandığını ve şirket içi bir yapay zekâ aracını kötüye kullanarak iki mühendisin daha bilgisayarını ele geçirdiğini söylüyor. DR, Binance'in kayıpların yüzde 98'ini karşıladığını bildiriyor; Binance 31 Ekim'de yaklaşık yüzde 90'ının karşılandığını açıklamıştı.",
+    "se": "Skábmamánu 3. b. Binance-artihkkalis X muitaluvvo ahte falleheamit mat dáhpáhuvve gieskat, fallehedje ovtta inšenevrra čakčamánu, ja sii válde sutnje bargogohččosa mas ledje malware-fiillat maid son fertii viežžat. Binance lohká ahte falleheaddjit de geavahedje su laptiha ja boasttogeavahedje siskkáldas AI-reaiddu váldit badjelasáset guokte eará inšenevrra dihtoriid. DR dieđiha ahte Binance lea gokčan 98 proseantta massimiin; golggotmánu 31. beaivvi dajai Binance ahte sullii 90 proseantta ledje buhtaduvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "fda696aea9af",
@@ -104,8 +251,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price commentary based on K33's own weekly report. researcher 04.11"
   },
   {
    "id": "913c8b6e3095",
@@ -129,8 +277,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Exchange blog/marketing with price angle, not a news source. researcher 04.11"
   },
   {
    "id": "3f70acaf452e",
@@ -155,14 +304,15 @@
     "datasenter"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Data-centre power proposal with no crypto angle. researcher 04.11"
   },
   {
    "id": "8b6d4ef4e175",
    "url": "https://investornytt.no/krypto/kryptogruender-ryster-borsgigantene-sikter-mot-usa/549751",
    "title": "Kryptoplattformen utfordrer børsene døgnet rundt",
-   "title_en": null,
+   "title_en": "Hyperliquid's founder wants to reach US traders through regulated partners",
    "source": "investornytt",
    "source_name": "Investornytt",
    "country": "NO",
@@ -174,20 +324,80 @@
    "published": "2026-11-03T11:03:10+00:00",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
-    "crypto"
+    "exchanges",
+    "regulation"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Hyperliquid had revenue of 713 million US dollars over the past 12 months, Investornytt reports, citing Bloomberg Businessweek. Founder Jeff Yan wants to reach US traders through regulated partners, while CME and ICE have pressed regulators about such platforms; ICE has itself invested in Trade.xyz. According to Event Horizon Labs, fewer than one in four accounts on the platform are profitable.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Investornytt",
+    "url": "https://investornytt.no/krypto/kryptogruender-ryster-borsgigantene-sikter-mot-usa/549751"
+   },
+   "title_i18n": {
+    "nn": "Hyperliquid-gründaren vil nå amerikanske tradarar gjennom regulerte partnarar",
+    "sv": "Hyperliquids grundare vill nå amerikanska handlare via reglerade partner",
+    "da": "Hyperliquids stifter vil nå amerikanske tradere gennem regulerede partnere",
+    "fi": "Hyperliquidin perustaja haluaa tavoittaa yhdysvaltalaiset kaupankävijät säänneltyjen kumppanien kautta",
+    "is": "Stofnandi Hyperliquid vill ná til bandarískra kaupmanna í gegnum eftirlitsskylda samstarfsaðila",
+    "zh": "Hyperliquid创始人希望通过受监管合作伙伴触达美国交易者",
+    "hi": "Hyperliquid के संस्थापक विनियमित साझेदारों के जरिए अमेरिकी ट्रेडरों तक पहुंचना चाहते हैं",
+    "es": "El fundador de Hyperliquid quiere llegar a operadores de EE. UU. a través de socios regulados",
+    "fr": "Le fondateur d'Hyperliquid veut atteindre les traders américains via des partenaires régulés",
+    "ar": "مؤسس Hyperliquid يسعى للوصول إلى المتداولين الأمريكيين عبر شركاء خاضعين للتنظيم",
+    "bn": "Hyperliquid-এর প্রতিষ্ঠাতা নিয়ন্ত্রিত অংশীদারদের মাধ্যমে মার্কিন ট্রেডারদের কাছে পৌঁছাতে চান",
+    "pt": "Fundador da Hyperliquid quer chegar aos traders dos EUA através de parceiros regulados",
+    "ru": "Основатель Hyperliquid хочет выйти на американских трейдеров через регулируемых партнёров",
+    "ur": "Hyperliquid کے بانی ریگولیٹڈ شراکت داروں کے ذریعے امریکی تاجروں تک پہنچنا چاہتے ہیں",
+    "id": "Pendiri Hyperliquid ingin menjangkau trader AS lewat mitra teregulasi",
+    "de": "Hyperliquid-Gründer will US-Händler über regulierte Partner erreichen",
+    "ja": "Hyperliquid創業者、規制下のパートナー経由で米国トレーダー獲得目指す",
+    "sw": "Mwanzilishi wa Hyperliquid ataka kuwafikia wafanyabiashara wa Marekani kupitia washirika wanaodhibitiwa",
+    "mr": "Hyperliquid चे संस्थापक नियमन असलेल्या भागीदारांमार्फत अमेरिकन ट्रेडर्सपर्यंत पोहोचू इच्छितात",
+    "fa": "بنیان‌گذار Hyperliquid می‌خواهد از طریق شرکای تحت نظارت به معامله‌گران آمریکایی برسد",
+    "uk": "Засновник Hyperliquid хоче вийти на американських трейдерів через регульованих партнерів",
+    "tr": "Hyperliquid'in kurucusu ABD'li yatırımcılara düzenlemeye tabi ortaklar üzerinden ulaşmak istiyor",
+    "se": "Hyperliquid-vuođđudeaddji háliida olahit US-aktevrraid muddejuvvon ovttasbargoguimmiiguin"
+   },
+   "title_i18n_source": "Kryptoplattformen utfordrer børsene døgnet rundt",
+   "summary_i18n": {
+    "nb": "Hyperliquid hadde inntekter på 713 millioner amerikanske dollar de siste tolv månedene, skriver Investornytt med henvisning til Bloomberg Businessweek. Gründer Jeff Yan vil nå amerikanske tradere gjennom regulerte partnere, mens CME og ICE har presset regulatorene om slike plattformer; ICE har selv investert i Trade.xyz. Ifølge Event Horizon Labs går færre enn én av fire kontoer på plattformen med overskudd.",
+    "nn": "Hyperliquid hadde inntekter på 713 millionar amerikanske dollar dei siste tolv månadene, skriv Investornytt med tilvising til Bloomberg Businessweek. Gründer Jeff Yan vil nå amerikanske tradarar gjennom regulerte partnarar, medan CME og ICE har pressa regulatorane om slike plattformer; ICE har sjølv investert i Trade.xyz. Ifølgje Event Horizon Labs går færre enn éin av fire kontoar på plattforma med overskot.",
+    "sv": "Hyperliquid hade intäkter på 713 miljoner amerikanska dollar de senaste tolv månaderna, skriver Investornytt med hänvisning till Bloomberg Businessweek. Grundaren Jeff Yan vill nå amerikanska handlare via reglerade partner, medan CME och ICE har pressat tillsynsmyndigheterna om sådana plattformar; ICE har själv investerat i Trade.xyz. Enligt Event Horizon Labs går färre än ett av fyra konton på plattformen med vinst.",
+    "da": "Hyperliquid havde indtægter på 713 millioner amerikanske dollar de seneste tolv måneder, skriver Investornytt med henvisning til Bloomberg Businessweek. Stifteren Jeff Yan vil nå amerikanske tradere gennem regulerede partnere, mens CME og ICE har presset tilsynsmyndighederne om sådanne platforme; ICE har selv investeret i Trade.xyz. Ifølge Event Horizon Labs giver færre end hver fjerde konto på platformen overskud.",
+    "fi": "Hyperliquidin tulot olivat 713 miljoonaa Yhdysvaltain dollaria viimeisten 12 kuukauden aikana, Investornytt kertoo Bloomberg Businessweekiin viitaten. Perustaja Jeff Yan haluaa tavoittaa yhdysvaltalaiset kaupankävijät säänneltyjen kumppanien kautta, kun taas CME ja ICE ovat painostaneet sääntelijöitä tällaisista alustoista; ICE on itse sijoittanut Trade.xyz:ään. Event Horizon Labsin mukaan alle joka neljäs alustan tili on voitollinen.",
+    "is": "Tekjur Hyperliquid námu 713 milljónum Bandaríkjadala síðustu 12 mánuði, segir Investornytt og vísar í Bloomberg Businessweek. Stofnandinn Jeff Yan vill ná til bandarískra kaupmanna í gegnum eftirlitsskylda samstarfsaðila, á meðan CME og ICE hafa þrýst á eftirlitsaðila vegna slíkra vettvanga; ICE hefur sjálft fjárfest í Trade.xyz. Samkvæmt Event Horizon Labs skila færri en einn af hverjum fjórum reikningum á vettvanginum hagnaði.",
+    "zh": "Investornytt援引《彭博商业周刊》报道，Hyperliquid过去12个月收入为7.13亿美元。创始人Jeff Yan希望通过受监管的合作伙伴触达美国交易者，而CME和ICE已就此类平台向监管机构施压；ICE本身投资了Trade.xyz。据Event Horizon Labs统计，该平台上盈利的账户不到四分之一。",
+    "hi": "Investornytt ने Bloomberg Businessweek के हवाले से बताया कि Hyperliquid की पिछले 12 महीनों की आय 71.3 करोड़ अमेरिकी डॉलर रही। संस्थापक Jeff Yan विनियमित साझेदारों के जरिए अमेरिकी ट्रेडरों तक पहुंचना चाहते हैं, जबकि CME और ICE ने ऐसे प्लेटफॉर्मों को लेकर नियामकों पर दबाव डाला है; ICE ने खुद Trade.xyz में निवेश किया है। Event Horizon Labs के अनुसार प्लेटफॉर्म पर चार में से एक से भी कम खाते मुनाफे में हैं।",
+    "es": "Hyperliquid tuvo ingresos de 713 millones de dólares estadounidenses en los últimos 12 meses, informa Investornytt citando a Bloomberg Businessweek. Su fundador, Jeff Yan, quiere llegar a los operadores de EE. UU. a través de socios regulados, mientras CME e ICE han presionado a los reguladores sobre este tipo de plataformas; ICE ha invertido a su vez en Trade.xyz. Según Event Horizon Labs, menos de una de cada cuatro cuentas de la plataforma es rentable.",
+    "fr": "Hyperliquid a réalisé un chiffre d'affaires de 713 millions de dollars américains sur les 12 derniers mois, rapporte Investornytt en citant Bloomberg Businessweek. Son fondateur, Jeff Yan, veut atteindre les traders américains via des partenaires régulés, tandis que CME et ICE ont fait pression sur les régulateurs au sujet de ces plateformes ; ICE a lui-même investi dans Trade.xyz. Selon Event Horizon Labs, moins d'un compte sur quatre sur la plateforme est rentable.",
+    "ar": "حققت Hyperliquid إيرادات بلغت 713 مليون دولار أمريكي خلال الاثني عشر شهرًا الماضية، وفق ما نقلته Investornytt عن Bloomberg Businessweek. ويسعى المؤسس جيف يان إلى الوصول إلى المتداولين الأمريكيين عبر شركاء خاضعين للتنظيم، بينما ضغطت CME وICE على الجهات التنظيمية بشأن هذه المنصات؛ وقد استثمرت ICE نفسها في Trade.xyz. ووفقًا لـEvent Horizon Labs، فإن أقل من حساب واحد من كل أربعة على المنصة رابح.",
+    "bn": "Investornytt, Bloomberg Businessweek-এর উদ্ধৃতি দিয়ে জানায়, গত ১২ মাসে Hyperliquid-এর আয় ছিল ৭১ কোটি ৩০ লাখ মার্কিন ডলার। প্রতিষ্ঠাতা Jeff Yan নিয়ন্ত্রিত অংশীদারদের মাধ্যমে মার্কিন ট্রেডারদের কাছে পৌঁছাতে চান, আর CME ও ICE এ ধরনের প্ল্যাটফর্ম নিয়ে নিয়ন্ত্রকদের ওপর চাপ দিয়েছে; ICE নিজেই Trade.xyz-এ বিনিয়োগ করেছে। Event Horizon Labs-এর মতে প্ল্যাটফর্মের চারটির মধ্যে একটিরও কম অ্যাকাউন্ট লাভে আছে।",
+    "pt": "A Hyperliquid teve receitas de 713 milhões de dólares americanos nos últimos 12 meses, noticia a Investornytt citando a Bloomberg Businessweek. O fundador, Jeff Yan, quer chegar aos traders dos EUA através de parceiros regulados, enquanto a CME e a ICE pressionaram os reguladores sobre estas plataformas; a própria ICE investiu na Trade.xyz. Segundo a Event Horizon Labs, menos de uma em cada quatro contas na plataforma é lucrativa.",
+    "ru": "Выручка Hyperliquid за последние 12 месяцев составила 713 млн долларов США, сообщает Investornytt со ссылкой на Bloomberg Businessweek. Основатель Джефф Ян хочет выйти на американских трейдеров через регулируемых партнёров, тогда как CME и ICE оказывали давление на регуляторов в отношении подобных платформ; сама ICE инвестировала в Trade.xyz. По данным Event Horizon Labs, прибыльны менее чем каждый четвёртый счёт на платформе.",
+    "ur": "Investornytt نے Bloomberg Businessweek کے حوالے سے بتایا کہ Hyperliquid کی گزشتہ 12 ماہ کی آمدنی 71 کروڑ 30 لاکھ امریکی ڈالر رہی۔ بانی Jeff Yan ریگولیٹڈ شراکت داروں کے ذریعے امریکی تاجروں تک پہنچنا چاہتے ہیں، جبکہ CME اور ICE نے ایسے پلیٹ فارمز کے بارے میں ریگولیٹرز پر دباؤ ڈالا ہے؛ ICE نے خود Trade.xyz میں سرمایہ کاری کی ہے۔ Event Horizon Labs کے مطابق پلیٹ فارم پر چار میں سے ایک سے بھی کم اکاؤنٹس منافع میں ہیں۔",
+    "id": "Hyperliquid membukukan pendapatan 713 juta dolar AS dalam 12 bulan terakhir, lapor Investornytt mengutip Bloomberg Businessweek. Pendiri Jeff Yan ingin menjangkau trader AS melalui mitra teregulasi, sementara CME dan ICE telah menekan regulator terkait platform semacam ini; ICE sendiri berinvestasi di Trade.xyz. Menurut Event Horizon Labs, kurang dari satu dari empat akun di platform itu yang menguntungkan.",
+    "de": "Hyperliquid erzielte in den vergangenen zwölf Monaten Einnahmen von 713 Millionen US-Dollar, berichtet Investornytt unter Berufung auf Bloomberg Businessweek. Gründer Jeff Yan will US-Händler über regulierte Partner erreichen, während CME und ICE bei den Aufsichtsbehörden Druck wegen solcher Plattformen gemacht haben; ICE selbst hat in Trade.xyz investiert. Laut Event Horizon Labs ist weniger als jedes vierte Konto auf der Plattform profitabel.",
+    "ja": "Investornyttが米ブルームバーグ・ビジネスウィークを引用して報じたところでは、Hyperliquidの過去12カ月の収入は7億1300万米ドルだった。創業者のジェフ・ヤン氏は規制下のパートナーを通じて米国のトレーダーにアプローチしたい考えだが、CMEとICEはこうしたプラットフォームについて規制当局に働きかけてきた。ICE自身はTrade.xyzに出資している。Event Horizon Labsによると、同プラットフォームで利益を出している口座は4つに1つ未満だ。",
+    "sw": "Hyperliquid ilikuwa na mapato ya dola za Marekani milioni 713 katika miezi 12 iliyopita, Investornytt inaripoti ikinukuu Bloomberg Businessweek. Mwanzilishi Jeff Yan anataka kuwafikia wafanyabiashara wa Marekani kupitia washirika wanaodhibitiwa, huku CME na ICE zikiwashinikiza wadhibiti kuhusu majukwaa kama hayo; ICE yenyewe imewekeza katika Trade.xyz. Kwa mujibu wa Event Horizon Labs, chini ya akaunti moja kati ya nne kwenye jukwaa hilo zinapata faida.",
+    "mr": "Investornytt ने Bloomberg Businessweek चा हवाला देत सांगितले की Hyperliquid चे गेल्या 12 महिन्यांतील उत्पन्न 71.3 कोटी अमेरिकी डॉलर होते. संस्थापक Jeff Yan नियमन असलेल्या भागीदारांमार्फत अमेरिकन ट्रेडर्सपर्यंत पोहोचू इच्छितात, तर CME आणि ICE यांनी अशा प्लॅटफॉर्मबाबत नियामकांवर दबाव आणला आहे; ICE ने स्वतः Trade.xyz मध्ये गुंतवणूक केली आहे. Event Horizon Labs नुसार प्लॅटफॉर्मवरील चारपैकी एकापेक्षा कमी खाती नफ्यात आहेत.",
+    "fa": "Investornytt به نقل از Bloomberg Businessweek گزارش می‌دهد که درآمد Hyperliquid در ۱۲ ماه گذشته ۷۱۳ میلیون دلار آمریکا بوده است. جف یان، بنیان‌گذار، می‌خواهد از طریق شرکای تحت نظارت به معامله‌گران آمریکایی برسد، در حالی که CME و ICE درباره چنین پلتفرم‌هایی بر نهادهای ناظر فشار آورده‌اند؛ ICE خود در Trade.xyz سرمایه‌گذاری کرده است. به گفته Event Horizon Labs، کمتر از یک حساب از هر چهار حساب این پلتفرم سودده است.",
+    "uk": "Виручка Hyperliquid за останні 12 місяців становила 713 млн доларів США, повідомляє Investornytt із посиланням на Bloomberg Businessweek. Засновник Джефф Ян хоче вийти на американських трейдерів через регульованих партнерів, тоді як CME та ICE тиснули на регуляторів щодо таких платформ; сама ICE інвестувала в Trade.xyz. За даними Event Horizon Labs, прибуткові менше ніж кожен четвертий рахунок на платформі.",
+    "tr": "Investornytt'in Bloomberg Businessweek'e dayandırdığı habere göre Hyperliquid son 12 ayda 713 milyon ABD doları gelir elde etti. Kurucu Jeff Yan, ABD'li yatırımcılara düzenlemeye tabi ortaklar üzerinden ulaşmak isterken CME ve ICE bu tür platformlar konusunda düzenleyicilere baskı yaptı; ICE'ın kendisi de Trade.xyz'e yatırım yaptı. Event Horizon Labs'e göre platformdaki hesapların dörtte birinden azı kârda.",
+    "se": "Hyperliquid dietnasa lei 713 miljon US dollara maŋemus 12 mánus, čállá Investornytt go sitere Bloomberg Businessweek. Founders Jeff Yan háliida olahit US-aktevrraid muddejuvvon ovttasbargoguimmiid bokte, seammás go CME ja ICE leat ávžžuhan reguláhtoriid dakkár ortnegiid birra; ICE lea ieš investeren Trade.xyz:i. Event Horizon Labs dieđuid mielde leat uhcit go juohke njealját konto fitnodagas gánnáhahtti."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "60bdd64f457a",
    "url": "https://kaupr.io/nyheter/firi-permitterer-til-2027---og-henter-ny-produktdirektor",
    "title": "Firi permitterer til 2027 – og henter ny produktdirektør",
-   "title_en": null,
+   "title_en": "Firi extends lay-offs to March 2027 and hires a new chief product officer",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -199,21 +409,81 @@
    "published": "2026-11-03",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
+    "exchanges",
     "companies"
    ],
    "matched": [
     "\\bFiri\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "The Norwegian crypto exchange Firi says the temporary lay-offs it announced in August will last until the end of March 2027, the maximum of 26 weeks allowed under Norwegian rules, chief executive Thuc Hoang told Kaupr. Hoang says trading activity in 2026 has been lower than the company had planned for. Firi has hired Dino Cehajic, previously at Eika, as chief product officer, and according to Kaupr three key employees have left for other jobs since September.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/firi-permitterer-til-2027---og-henter-ny-produktdirektor"
+   },
+   "title_i18n": {
+    "nn": "Firi permitterer til mars 2027 og hentar ny produktdirektør",
+    "sv": "Firi förlänger permitteringarna till mars 2027 och anställer ny produktchef",
+    "da": "Firi forlænger hjemsendelser til marts 2027 og ansætter ny produktdirektør",
+    "fi": "Firi jatkaa lomautuksia maaliskuuhun 2027 ja palkkaa uuden tuotejohtajan",
+    "is": "Firi framlengir tímabundnar uppsagnir til mars 2027 og ræður nýjan vörustjóra",
+    "zh": "Firi将临时裁员延长至2027年3月并聘请新任首席产品官",
+    "hi": "Firi ने अस्थायी छंटनी मार्च 2027 तक बढ़ाई, नया मुख्य उत्पाद अधिकारी नियुक्त",
+    "es": "Firi prolonga los despidos temporales hasta marzo de 2027 y ficha a un nuevo director de producto",
+    "fr": "Firi prolonge ses mises à pied jusqu'en mars 2027 et recrute un nouveau directeur produit",
+    "ar": "Firi تمدد التسريح المؤقت حتى مارس 2027 وتعيّن مديرًا جديدًا للمنتجات",
+    "bn": "Firi অস্থায়ী ছাঁটাই মার্চ ২০২৭ পর্যন্ত বাড়াল, নতুন প্রধান পণ্য কর্মকর্তা নিয়োগ",
+    "pt": "Firi prolonga layoff até março de 2027 e contrata novo diretor de produto",
+    "ru": "Firi продлевает временные увольнения до марта 2027 года и нанимает нового директора по продукту",
+    "ur": "Firi نے عارضی برطرفیاں مارچ 2027 تک بڑھا دیں، نیا چیف پروڈکٹ آفیسر مقرر",
+    "id": "Firi perpanjang pemberhentian sementara hingga Maret 2027 dan rekrut kepala produk baru",
+    "de": "Firi verlängert Freistellungen bis März 2027 und holt neuen Produktchef",
+    "ja": "Firi、一時帰休を2027年3月まで延長　新たな最高製品責任者を採用",
+    "sw": "Firi yaongeza likizo ya lazima hadi Machi 2027 na kuajiri mkuu mpya wa bidhaa",
+    "mr": "Firi ने तात्पुरती कामबंदी मार्च 2027 पर्यंत वाढवली, नवा मुख्य उत्पादन अधिकारी नेमला",
+    "fa": "Firi تعلیق موقت کارکنان را تا مارس ۲۰۲۷ تمدید کرد و مدیر محصول جدید استخدام کرد",
+    "uk": "Firi продовжує тимчасове звільнення до березня 2027 року й наймає нового директора з продукту",
+    "tr": "Firi geçici işten uzaklaştırmaları Mart 2027'ye uzattı, yeni ürün direktörü atadı",
+    "se": "Firi guhkida virgeluomuid njukčamánu 2027 rádjái ja virgáda ođđa váldobuvttaovddasvástideaddji"
+   },
+   "title_i18n_source": "Firi permitterer til 2027 – og henter ny produktdirektør",
+   "summary_i18n": {
+    "nn": "Den norske kryptobørsen Firi seier at permitteringane som vart varsla i august, varer til slutten av mars 2027, som er maksgrensa på 26 veker etter regelverket, sa administrerande direktør Thuc Hoang til Kaupr. Hoang seier at handelsaktiviteten i 2026 har vore lågare enn selskapet la til grunn. Firi har tilsett Dino Cehajic, som kjem frå Eika, som produktdirektør, og ifølgje Kaupr har tre sentrale tilsette gått til nye jobbar sidan september.",
+    "nb": "Den norske kryptobørsen Firi sier at permitteringene som ble varslet i august, varer til slutten av mars 2027, som er maksgrensen på 26 uker etter regelverket, sa administrerende direktør Thuc Hoang til Kaupr. Hoang sier at handelsaktiviteten i 2026 har vært lavere enn selskapet la til grunn. Firi har ansatt Dino Cehajic, som kommer fra Eika, som produktdirektør, og ifølge Kaupr har tre sentrale ansatte gått til nye jobber siden september.",
+    "sv": "Den norska kryptobörsen Firi uppger att permitteringarna som aviserades i augusti varar till slutet av mars 2027, den längsta tiden på 26 veckor som reglerna tillåter, sade vd Thuc Hoang till Kaupr. Hoang säger att handelsaktiviteten under 2026 har varit lägre än bolaget räknat med. Firi har anställt Dino Cehajic, tidigare på Eika, som produktchef, och enligt Kaupr har tre nyckelpersoner gått till nya jobb sedan september.",
+    "da": "Den norske kryptobørs Firi oplyser, at hjemsendelserne, der blev varslet i august, varer til udgangen af marts 2027, som er den maksimale periode på 26 uger efter de norske regler, sagde administrerende direktør Thuc Hoang til Kaupr. Hoang siger, at handelsaktiviteten i 2026 har været lavere, end selskabet havde regnet med. Firi har ansat Dino Cehajic, tidligere i Eika, som produktdirektør, og ifølge Kaupr har tre centrale medarbejdere skiftet til nye job siden september.",
+    "fi": "Norjalainen kryptopörssi Firi kertoo, että elokuussa ilmoitetut lomautukset kestävät maaliskuun 2027 loppuun, mikä on Norjan sääntöjen sallima 26 viikon enimmäisaika, toimitusjohtaja Thuc Hoang sanoi Kauprille. Hoangin mukaan kaupankäynti on vuonna 2026 ollut vähäisempää kuin yhtiö oletti. Firi on palkannut tuotejohtajaksi Dino Cehajicin, joka tulee Eikasta, ja Kauprin mukaan kolme avainhenkilöä on siirtynyt uusiin töihin syyskuun jälkeen.",
+    "is": "Norska rafmyntakauphöllin Firi segir að tímabundnu uppsagnirnar sem tilkynntar voru í ágúst standi til loka mars 2027, sem er hámarkið, 26 vikur, samkvæmt norskum reglum, sagði forstjórinn Thuc Hoang við Kaupr. Hoang segir að viðskipti árið 2026 hafi verið minni en félagið gerði ráð fyrir. Firi hefur ráðið Dino Cehajic, sem áður starfaði hjá Eika, sem vörustjóra, og samkvæmt Kaupr hafa þrír lykilstarfsmenn farið í önnur störf frá því í september.",
+    "zh": "挪威加密货币交易所Firi首席执行官Thuc Hoang对Kaupr表示，8月宣布的临时裁员将持续到2027年3月底，即挪威规定允许的最长26周。Hoang称，2026年的交易活跃度低于公司预期。Firi已聘请此前就职于Eika的Dino Cehajic担任首席产品官；据Kaupr报道，自9月以来已有三名核心员工离职另谋他职。",
+    "hi": "नॉर्वे के क्रिप्टो एक्सचेंज Firi के मुख्य कार्यकारी Thuc Hoang ने Kaupr को बताया कि अगस्त में घोषित अस्थायी छंटनी मार्च 2027 के अंत तक चलेगी, जो नॉर्वे के नियमों के तहत अधिकतम 26 सप्ताह की सीमा है। Hoang के अनुसार 2026 में ट्रेडिंग गतिविधि कंपनी के अनुमान से कम रही है। Firi ने पहले Eika में काम कर चुके Dino Cehajic को मुख्य उत्पाद अधिकारी नियुक्त किया है, और Kaupr के अनुसार सितंबर से तीन प्रमुख कर्मचारी दूसरी नौकरियों में जा चुके हैं।",
+    "es": "El exchange noruego de criptomonedas Firi afirma que los despidos temporales anunciados en agosto durarán hasta finales de marzo de 2027, el máximo de 26 semanas que permiten las normas noruegas, según dijo su consejero delegado, Thuc Hoang, a Kaupr. Hoang afirma que la actividad de negociación en 2026 ha sido menor de lo que la empresa había previsto. Firi ha contratado como director de producto a Dino Cehajic, procedente de Eika, y según Kaupr tres empleados clave se han ido a otros trabajos desde septiembre.",
+    "fr": "La plateforme norvégienne de cryptomonnaies Firi indique que les mises à pied temporaires annoncées en août dureront jusqu'à fin mars 2027, soit le maximum de 26 semaines autorisé par la réglementation norvégienne, a déclaré son directeur général, Thuc Hoang, à Kaupr. Selon Hoang, l'activité de négociation en 2026 a été inférieure aux prévisions de l'entreprise. Firi a recruté Dino Cehajic, venu d'Eika, comme directeur produit, et selon Kaupr trois employés clés sont partis vers d'autres postes depuis septembre.",
+    "ar": "قال الرئيس التنفيذي لمنصة العملات المشفرة النرويجية Firi، ثوك هوانغ، لـKaupr إن التسريح المؤقت الذي أُعلن في أغسطس سيستمر حتى نهاية مارس 2027، وهو الحد الأقصى البالغ 26 أسبوعًا بموجب القواعد النرويجية. ويقول هوانغ إن نشاط التداول في 2026 كان أقل مما توقعته الشركة. وعيّنت Firi دينو تشيهايتش، القادم من Eika، مديرًا للمنتجات، وبحسب Kaupr غادر ثلاثة موظفين رئيسيين إلى وظائف أخرى منذ سبتمبر.",
+    "bn": "নরওয়ের ক্রিপ্টো এক্সচেঞ্জ Firi-র প্রধান নির্বাহী Thuc Hoang Kaupr-কে বলেন, আগস্টে ঘোষিত অস্থায়ী ছাঁটাই ২০২৭ সালের মার্চের শেষ পর্যন্ত চলবে, যা নরওয়ের নিয়মে সর্বোচ্চ ২৬ সপ্তাহ। Hoang বলেন, ২০২৬ সালে লেনদেন কোম্পানির প্রত্যাশার চেয়ে কম হয়েছে। Firi আগে Eika-তে কাজ করা Dino Cehajic-কে প্রধান পণ্য কর্মকর্তা হিসেবে নিয়োগ দিয়েছে, এবং Kaupr-এর তথ্যমতে সেপ্টেম্বর থেকে তিনজন গুরুত্বপূর্ণ কর্মী অন্য চাকরিতে চলে গেছেন।",
+    "pt": "A plataforma norueguesa de criptomoedas Firi diz que o layoff anunciado em agosto vai durar até ao fim de março de 2027, o máximo de 26 semanas permitido pelas regras norueguesas, disse o presidente executivo, Thuc Hoang, à Kaupr. Hoang afirma que a atividade de negociação em 2026 foi inferior ao previsto pela empresa. A Firi contratou Dino Cehajic, vindo da Eika, como diretor de produto, e segundo a Kaupr três funcionários-chave saíram para outros empregos desde setembro.",
+    "ru": "Норвежская криптобиржа Firi сообщает, что временные увольнения, объявленные в августе, продлятся до конца марта 2027 года — максимального срока в 26 недель по норвежским правилам, сказал Kaupr генеральный директор Тук Хоанг. По словам Хоанга, торговая активность в 2026 году оказалась ниже, чем рассчитывала компания. Firi наняла директором по продукту Дино Чехайича, ранее работавшего в Eika, а по данным Kaupr, с сентября трое ключевых сотрудников перешли на другую работу.",
+    "ur": "ناروے کے کرپٹو ایکسچینج Firi کے چیف ایگزیکٹو Thuc Hoang نے Kaupr کو بتایا کہ اگست میں اعلان کردہ عارضی برطرفیاں مارچ 2027 کے آخر تک جاری رہیں گی، جو ناروے کے قواعد کے تحت زیادہ سے زیادہ 26 ہفتوں کی حد ہے۔ Hoang کے مطابق 2026 میں تجارتی سرگرمی کمپنی کی توقع سے کم رہی۔ Firi نے Eika سے آنے والے Dino Cehajic کو چیف پروڈکٹ آفیسر مقرر کیا ہے، اور Kaupr کے مطابق ستمبر سے تین اہم ملازمین دوسری ملازمتوں پر جا چکے ہیں۔",
+    "id": "Bursa kripto Norwegia Firi mengatakan pemberhentian sementara yang diumumkan pada Agustus akan berlangsung hingga akhir Maret 2027, batas maksimum 26 minggu menurut aturan Norwegia, kata CEO Thuc Hoang kepada Kaupr. Hoang mengatakan aktivitas perdagangan pada 2026 lebih rendah dari perkiraan perusahaan. Firi telah merekrut Dino Cehajic, sebelumnya di Eika, sebagai kepala produk, dan menurut Kaupr tiga karyawan kunci telah pindah ke pekerjaan lain sejak September.",
+    "de": "Die norwegische Kryptobörse Firi teilt mit, dass die im August angekündigten Freistellungen bis Ende März 2027 dauern, dem nach norwegischen Regeln zulässigen Höchstmaß von 26 Wochen, wie Vorstandschef Thuc Hoang Kaupr sagte. Laut Hoang lag die Handelsaktivität 2026 unter den Annahmen des Unternehmens. Firi hat Dino Cehajic, zuvor bei Eika, als Produktchef eingestellt, und laut Kaupr sind seit September drei Schlüsselmitarbeiter zu anderen Arbeitgebern gewechselt.",
+    "ja": "ノルウェーの暗号資産取引所Firiのトゥク・ホアン最高経営責任者はKauprに対し、8月に発表した一時帰休は、ノルウェーの規則で認められる最長26週間に当たる2027年3月末まで続くと述べた。ホアン氏によると、2026年の取引は会社の想定を下回った。FiriはEika出身のディノ・チェハイッチ氏を最高製品責任者に迎え、Kauprによると9月以降、主要な社員3人が他社に移った。",
+    "sw": "Soko la kripto la Norway Firi linasema likizo ya lazima iliyotangazwa Agosti itaendelea hadi mwisho wa Machi 2027, ambao ni muda wa juu wa wiki 26 unaoruhusiwa na kanuni za Norway, mkurugenzi mtendaji Thuc Hoang aliiambia Kaupr. Hoang anasema shughuli za biashara mwaka 2026 zimekuwa chini kuliko kampuni ilivyotarajia. Firi imemwajiri Dino Cehajic, aliyekuwa Eika, kuwa mkuu wa bidhaa, na kwa mujibu wa Kaupr wafanyakazi watatu muhimu wamehamia kazi nyingine tangu Septemba.",
+    "mr": "नॉर्वेच्या क्रिप्टो एक्सचेंज Firi चे मुख्य कार्यकारी अधिकारी Thuc Hoang यांनी Kaupr ला सांगितले की ऑगस्टमध्ये जाहीर केलेली तात्पुरती कामबंदी मार्च 2027 अखेरपर्यंत चालेल, जी नॉर्वेच्या नियमांनुसार कमाल 26 आठवड्यांची मर्यादा आहे. Hoang यांच्या मते 2026 मधील व्यवहार कंपनीच्या अपेक्षेपेक्षा कमी राहिले. Firi ने यापूर्वी Eika मध्ये असलेले Dino Cehajic यांना मुख्य उत्पादन अधिकारी नेमले आहे, आणि Kaupr नुसार सप्टेंबरपासून तीन प्रमुख कर्मचारी इतर नोकऱ्यांत गेले आहेत.",
+    "fa": "توک هوانگ، مدیرعامل صرافی رمزارز نروژی Firi، به Kaupr گفت تعلیق موقت کارکنان که در اوت اعلام شد تا پایان مارس ۲۰۲۷ ادامه می‌یابد که حداکثر ۲۶ هفته مجاز طبق مقررات نروژ است. به گفته هوانگ، فعالیت معاملاتی در ۲۰۲۶ کمتر از پیش‌بینی شرکت بوده است. Firi دینو چهایچ را که پیش‌تر در Eika کار می‌کرد به‌عنوان مدیر محصول استخدام کرده و به گزارش Kaupr از سپتامبر تاکنون سه کارمند کلیدی به مشاغل دیگر رفته‌اند.",
+    "uk": "Норвезька криптобіржа Firi повідомляє, що тимчасові звільнення, оголошені в серпні, триватимуть до кінця березня 2027 року — максимального строку в 26 тижнів за норвезькими правилами, сказав Kaupr генеральний директор Тук Хоанг. За словами Хоанга, торгова активність у 2026 році була нижчою, ніж розраховувала компанія. Firi найняла директором із продукту Діно Чехайича, який раніше працював в Eika, а за даними Kaupr, із вересня троє ключових працівників перейшли на іншу роботу.",
+    "tr": "Norveçli kripto borsası Firi'nin CEO'su Thuc Hoang, Kaupr'a ağustosta duyurulan geçici işten uzaklaştırmaların Norveç kurallarının izin verdiği en uzun süre olan 26 haftaya denk gelecek şekilde Mart 2027 sonuna kadar süreceğini söyledi. Hoang'a göre 2026'daki işlem hacmi şirketin öngördüğünün altında kaldı. Firi, daha önce Eika'da çalışan Dino Cehajic'i ürün direktörü olarak işe aldı; Kaupr'a göre eylülden bu yana üç kilit çalışan başka işlere geçti.",
+    "se": "Norgga crypto-lonohallan Firi dadjá ahte gaskaboddasaš virgeluopmut maid dat almmuhii borgemánus bistet njukčamánu lohppii 2027, eanemusat 26 vahku, maid norgga njuolggadusat dahket vejolažžan, oaivehoavda Thuc Hoang muitalii Kaupr:i. Hoang dadjá ahte gávpejohtu 2026:s lea leamaš unnit go dan maid fitnodat lei plánen. Firi lea virgádan Dino Cehajic, gii ovdal lea bargan Eikas, váldobuvttavirgái ja Kaupr oaivila mielde leat golbma guovddášbargi mannan eará bargguide čakčamánu rájes."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "9ce6e4d42086",
    "url": "https://kaupr.io/nyheter/to-tidligere-valuno-ledere-tiltalt-for-grov-innsidehandel",
    "title": "To tidligere Valuno-ledere tiltalt for grov innsidehandel",
-   "title_en": null,
+   "title_en": "Two former Valuno executives charged with aggravated insider trading",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -233,9 +503,81 @@
     "\\bValuno\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Sweden's Economic Crime Authority has charged Valuno Group's former chief executive and a former finance director with aggravated insider trading, according to Kaupr and Kryptovalutaguiden. According to the prosecutor, the two learned on 3 July 2025 that Finansinspektionen had refused the subsidiary QB Europe a MiCA licence and sold large parts of their shares before the decision was made public on 4 July, after which the share price fell about 33 percent. Valuno says it is assisting the legal process as needed; no one has been convicted.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "kryptovalutaguiden",
+     "outlet_name": "Kryptovalutaguiden",
+     "url": "https://kryptovalutaguiden.se/2026/11/fore-detta-valuno-vd-atalas-for-grovt-insiderbrott",
+     "title": "Före detta Valuno-vd åtalas för grovt insiderbrott",
+     "published": "2026-11-04T00:37:06+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/to-tidligere-valuno-ledere-tiltalt-for-grov-innsidehandel"
+   },
+   "title_i18n": {
+    "nn": "To tidlegare Valuno-leiarar tiltalte for grov innsidehandel",
+    "sv": "Två tidigare Valuno-chefer åtalade för grovt insiderbrott",
+    "da": "To tidligere Valuno-ledere tiltalt for grov insiderhandel",
+    "fi": "Kaksi Valunon entistä johtajaa syytteeseen törkeästä sisäpiirikaupasta",
+    "is": "Tveir fyrrverandi stjórnendur Valuno ákærðir fyrir stórfelld innherjasvik",
+    "zh": "两名Valuno前高管被控严重内幕交易",
+    "hi": "Valuno के दो पूर्व अधिकारियों पर गंभीर इनसाइडर ट्रेडिंग का आरोप",
+    "es": "Acusados dos exdirectivos de Valuno de uso agravado de información privilegiada",
+    "fr": "Deux anciens dirigeants de Valuno inculpés pour délit d'initié aggravé",
+    "ar": "توجيه اتهام لمسؤولَين سابقَين في Valuno بالتداول الداخلي المشدد",
+    "bn": "Valuno-র দুই সাবেক কর্মকর্তার বিরুদ্ধে গুরুতর ইনসাইডার ট্রেডিংয়ের অভিযোগ",
+    "pt": "Dois ex-dirigentes da Valuno acusados de abuso de informação privilegiada agravado",
+    "ru": "Двум бывшим руководителям Valuno предъявлено обвинение в инсайдерской торговле",
+    "ur": "Valuno کے دو سابق عہدیداروں پر سنگین اندرونی تجارت کی فردِ جرم",
+    "id": "Dua mantan eksekutif Valuno didakwa melakukan perdagangan orang dalam berat",
+    "de": "Zwei frühere Valuno-Manager wegen schweren Insiderhandels angeklagt",
+    "ja": "Valuno元幹部2人、重大なインサイダー取引で起訴",
+    "sw": "Viongozi wawili wa zamani wa Valuno washtakiwa kwa biashara ya ndani iliyokithiri",
+    "mr": "Valuno च्या दोन माजी अधिकाऱ्यांवर गंभीर इनसायडर ट्रेडिंगचा आरोप",
+    "fa": "دو مدیر سابق Valuno به معامله با اطلاعات نهانی شدید متهم شدند",
+    "uk": "Двом колишнім керівникам Valuno висунуто обвинувачення в інсайдерській торгівлі",
+    "tr": "Valuno'nun iki eski yöneticisi ağır içeriden bilgi ticaretiyle suçlandı",
+    "se": "Guokte ovddeš Valuno jođihead dji leat áššáskuhttojuvvon vearredoaimmaheamis"
+   },
+   "title_i18n_source": "To tidligere Valuno-ledere tiltalt for grov innsidehandel",
+   "summary_i18n": {
+    "nn": "Den svenske Ekobrottsmyndigheten har tiltalt den tidlegare administrerande direktøren i Valuno Group og ein tidlegare finansdirektør for grov innsidehandel, ifølgje Kaupr og Kryptovalutaguiden. Ifølgje påtalemakta fekk dei to vite 3. juli 2025 at Finansinspektionen hadde avslått MiCA-søknaden til dotterselskapet QB Europe, og selde store delar av aksjane sine før vedtaket vart offentleggjort 4. juli, då kursen fall om lag 33 prosent. Valuno seier selskapet bistår rettsprosessen ved behov; ingen er dømde.",
+    "nb": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov innsidehandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge påtalemyndigheten fikk de to vite 3. juli 2025 at Finansinspektionen hadde avslått datterselskapet QB Europes MiCA-søknad, og solgte store deler av aksjene sine før vedtaket ble offentliggjort 4. juli, da kursen falt om lag 33 prosent. Valuno sier selskapet bistår rettsprosessen ved behov; ingen er dømt.",
+    "sv": "Ekobrottsmyndigheten har åtalat Valuno Groups tidigare vd och en tidigare finanschef för grovt insiderbrott, enligt Kaupr och Kryptovalutaguiden. Enligt åklagaren fick de två den 3 juli 2025 veta att Finansinspektionen hade avslagit dotterbolaget QB Europes MiCA-ansökan och sålde stora delar av sina aktier innan beslutet offentliggjordes den 4 juli, då kursen föll omkring 33 procent. Valuno uppger att bolaget bistår rättsprocessen vid behov; ingen är dömd.",
+    "da": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov insiderhandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge anklagemyndigheden fik de to den 3. juli 2025 at vide, at Finansinspektionen havde afslået datterselskabet QB Europes MiCA-ansøgning, og solgte store dele af deres aktier, før afgørelsen blev offentliggjort den 4. juli, hvorefter kursen faldt omkring 33 procent. Valuno siger, at selskabet bistår retsprocessen efter behov; ingen er dømt.",
+    "fi": "Ruotsin talousrikosviranomainen Ekobrottsmyndigheten on nostanut syytteen törkeästä sisäpiirikaupasta Valuno Groupin entistä toimitusjohtajaa ja entistä talousjohtajaa vastaan, kertovat Kaupr ja Kryptovalutaguiden. Syyttäjän mukaan kaksikko sai 3. heinäkuuta 2025 tietää, että Finansinspektionen oli hylännyt tytäryhtiö QB Europen MiCA-hakemuksen, ja myi suuren osan osakkeistaan ennen kuin päätös julkistettiin 4. heinäkuuta, minkä jälkeen kurssi laski noin 33 prosenttia. Valuno kertoo avustavansa oikeusprosessia tarvittaessa; ketään ei ole tuomittu.",
+    "is": "Sænska efnahagsbrotastofnunin Ekobrottsmyndigheten hefur ákært fyrrverandi forstjóra Valuno Group og fyrrverandi fjármálastjóra fyrir stórfelld innherjasvik, samkvæmt Kaupr og Kryptovalutaguiden. Samkvæmt saksóknara fréttu þeir 3. júlí 2025 að Finansinspektionen hefði hafnað MiCA-umsókn dótturfélagsins QB Europe og seldu stóran hluta hlutabréfa sinna áður en ákvörðunin var birt 4. júlí, en þá féll gengið um 33 prósent. Valuno segist aðstoða við réttarferlið eftir þörfum; enginn hefur verið sakfelldur.",
+    "zh": "据Kaupr和Kryptovalutaguiden报道，瑞典经济犯罪局已以严重内幕交易罪起诉Valuno Group前首席执行官和一名前财务总监。检方称，两人于2025年7月3日得知瑞典金融监管局拒绝了子公司QB Europe的MiCA牌照申请，并在该决定于7月4日公布前出售了大部分股份，消息公布后股价下跌约33%。Valuno表示将视需要协助司法程序；目前无人被定罪。",
+    "hi": "Kaupr और Kryptovalutaguiden के अनुसार, स्वीडन के आर्थिक अपराध प्राधिकरण ने Valuno Group के पूर्व मुख्य कार्यकारी और एक पूर्व वित्त निदेशक पर गंभीर इनसाइडर ट्रेडिंग का आरोप लगाया है। अभियोजक के अनुसार, दोनों को 3 जुलाई 2025 को पता चला कि Finansinspektionen ने सहायक कंपनी QB Europe का MiCA लाइसेंस आवेदन खारिज कर दिया है, और उन्होंने 4 जुलाई को निर्णय सार्वजनिक होने से पहले अपने शेयरों का बड़ा हिस्सा बेच दिया, जिसके बाद शेयर मूल्य लगभग 33 प्रतिशत गिरा। Valuno का कहना है कि वह आवश्यकता पड़ने पर कानूनी प्रक्रिया में सहयोग कर रहा है; किसी को दोषी नहीं ठहराया गया है।",
+    "es": "La Autoridad de Delitos Económicos de Suecia ha acusado al exconsejero delegado de Valuno Group y a un exdirector financiero de uso agravado de información privilegiada, según Kaupr y Kryptovalutaguiden. Según la fiscalía, ambos supieron el 3 de julio de 2025 que Finansinspektionen había denegado la licencia MiCA a la filial QB Europe y vendieron gran parte de sus acciones antes de que la decisión se hiciera pública el 4 de julio, tras lo cual la cotización cayó cerca de un 33 %. Valuno afirma que colabora con el proceso judicial cuando es necesario; nadie ha sido condenado.",
+    "fr": "L'Autorité suédoise de lutte contre la criminalité économique a inculpé l'ancien directeur général de Valuno Group et un ancien directeur financier pour délit d'initié aggravé, selon Kaupr et Kryptovalutaguiden. Selon le procureur, tous deux ont appris le 3 juillet 2025 que Finansinspektionen avait refusé la licence MiCA de la filiale QB Europe et ont vendu une grande partie de leurs actions avant que la décision ne soit rendue publique le 4 juillet, après quoi le cours a chuté d'environ 33 %. Valuno indique apporter son concours à la procédure si nécessaire ; personne n'a été condamné.",
+    "ar": "وجّهت هيئة الجرائم الاقتصادية السويدية اتهامًا بالتداول الداخلي المشدد إلى الرئيس التنفيذي السابق لمجموعة Valuno ومدير مالي سابق، وفقًا لـKaupr وKryptovalutaguiden. وبحسب الادعاء، علم الاثنان في 3 يوليو 2025 أن هيئة الرقابة المالية السويدية رفضت طلب ترخيص MiCA للشركة التابعة QB Europe، فباعا جزءًا كبيرًا من أسهمهما قبل إعلان القرار في 4 يوليو، الذي هبط بعده سعر السهم بنحو 33 في المئة. وتقول Valuno إنها تساعد الإجراءات القضائية عند الحاجة؛ ولم تتم إدانة أحد.",
+    "bn": "Kaupr ও Kryptovalutaguiden-এর তথ্যমতে, সুইডেনের অর্থনৈতিক অপরাধ কর্তৃপক্ষ Valuno Group-এর সাবেক প্রধান নির্বাহী ও একজন সাবেক অর্থ পরিচালকের বিরুদ্ধে গুরুতর ইনসাইডার ট্রেডিংয়ের অভিযোগ এনেছে। প্রসিকিউটরের মতে, তাঁরা ২০২৫ সালের ৩ জুলাই জানতে পারেন যে Finansinspektionen সহযোগী প্রতিষ্ঠান QB Europe-এর MiCA লাইসেন্স আবেদন নাকচ করেছে, এবং ৪ জুলাই সিদ্ধান্ত প্রকাশের আগে নিজেদের শেয়ারের বড় অংশ বিক্রি করেন; এরপর শেয়ারদর প্রায় ৩৩ শতাংশ পড়ে যায়। Valuno জানিয়েছে, প্রয়োজনে তারা আইনি প্রক্রিয়ায় সহায়তা করছে; কেউ দোষী সাব্যস্ত হননি।",
+    "pt": "A Autoridade de Crimes Económicos da Suécia acusou o antigo presidente executivo da Valuno Group e um antigo diretor financeiro de abuso de informação privilegiada agravado, segundo a Kaupr e o Kryptovalutaguiden. Segundo o Ministério Público, ambos souberam a 3 de julho de 2025 que a Finansinspektionen tinha recusado a licença MiCA à subsidiária QB Europe e venderam grande parte das suas ações antes de a decisão ser tornada pública a 4 de julho, após o que a cotação caiu cerca de 33 %. A Valuno diz que colabora com o processo judicial quando necessário; ninguém foi condenado.",
+    "ru": "Шведское управление по экономическим преступлениям предъявило бывшему генеральному директору Valuno Group и бывшему финансовому директору обвинение в инсайдерской торговле при отягчающих обстоятельствах, сообщают Kaupr и Kryptovalutaguiden. По версии обвинения, 3 июля 2025 года оба узнали, что Finansinspektionen отказала дочерней компании QB Europe в лицензии MiCA, и продали значительную часть своих акций до того, как решение было обнародовано 4 июля, после чего курс упал примерно на 33%. Valuno заявляет, что при необходимости содействует судебному процессу; никто не осуждён.",
+    "ur": "Kaupr اور Kryptovalutaguiden کے مطابق، سویڈن کی اقتصادی جرائم اتھارٹی نے Valuno Group کے سابق چیف ایگزیکٹو اور ایک سابق فنانس ڈائریکٹر پر سنگین اندرونی تجارت کی فردِ جرم عائد کی ہے۔ استغاثہ کے مطابق دونوں کو 3 جولائی 2025 کو معلوم ہوا کہ Finansinspektionen نے ذیلی کمپنی QB Europe کی MiCA لائسنس درخواست مسترد کر دی ہے، اور انہوں نے 4 جولائی کو فیصلہ عام ہونے سے پہلے اپنے حصص کا بڑا حصہ فروخت کر دیا، جس کے بعد شیئر کی قیمت تقریباً 33 فیصد گر گئی۔ Valuno کا کہنا ہے کہ وہ ضرورت پڑنے پر قانونی عمل میں تعاون کر رہی ہے؛ کسی کو سزا نہیں ہوئی۔",
+    "id": "Otoritas Kejahatan Ekonomi Swedia telah mendakwa mantan CEO Valuno Group dan seorang mantan direktur keuangan atas perdagangan orang dalam berat, menurut Kaupr dan Kryptovalutaguiden. Menurut jaksa, keduanya mengetahui pada 3 Juli 2025 bahwa Finansinspektionen menolak izin MiCA anak usaha QB Europe dan menjual sebagian besar saham mereka sebelum keputusan itu diumumkan pada 4 Juli, setelah itu harga saham turun sekitar 33 persen. Valuno mengatakan membantu proses hukum bila diperlukan; belum ada yang divonis.",
+    "de": "Die schwedische Behörde für Wirtschaftskriminalität hat den früheren Vorstandschef von Valuno Group und einen früheren Finanzchef wegen schweren Insiderhandels angeklagt, berichten Kaupr und Kryptovalutaguiden. Laut Staatsanwaltschaft erfuhren beide am 3. Juli 2025, dass Finansinspektionen der Tochter QB Europe die MiCA-Lizenz verweigert hatte, und verkauften große Teile ihrer Aktien, bevor die Entscheidung am 4. Juli veröffentlicht wurde; danach fiel der Kurs um rund 33 Prozent. Valuno erklärt, das Verfahren bei Bedarf zu unterstützen; verurteilt ist niemand.",
+    "ja": "KauprとKryptovalutaguidenによると、スウェーデン経済犯罪庁はValuno Groupの元最高経営責任者と元財務責任者を重大なインサイダー取引の罪で起訴した。検察によると、2人は2025年7月3日にスウェーデン金融監督庁が子会社QB EuropeのMiCA申請を却下したことを知り、7月4日に決定が公表される前に保有株の大部分を売却した。公表後、株価は約33％下落した。Valunoは必要に応じて司法手続きに協力するとしている。有罪判決を受けた者はいない。",
+    "sw": "Mamlaka ya Uhalifu wa Kiuchumi ya Uswidi imemshtaki aliyekuwa mkurugenzi mtendaji wa Valuno Group na aliyekuwa mkurugenzi wa fedha kwa biashara ya ndani iliyokithiri, kwa mujibu wa Kaupr na Kryptovalutaguiden. Kwa mujibu wa mwendesha mashtaka, wawili hao walijua tarehe 3 Julai 2025 kwamba Finansinspektionen ilikataa ombi la leseni ya MiCA la kampuni tanzu QB Europe, na wakauza sehemu kubwa ya hisa zao kabla uamuzi haujatangazwa tarehe 4 Julai, baada ya hapo bei ya hisa ilishuka takriban asilimia 33. Valuno inasema inasaidia mchakato wa kisheria inapohitajika; hakuna aliyetiwa hatiani.",
+    "mr": "Kaupr आणि Kryptovalutaguiden नुसार, स्वीडनच्या आर्थिक गुन्हे प्राधिकरणाने Valuno Group चे माजी मुख्य कार्यकारी अधिकारी आणि एक माजी वित्त संचालक यांच्यावर गंभीर इनसायडर ट्रेडिंगचा आरोप ठेवला आहे. अभियोक्त्यांनुसार, दोघांना 3 जुलै 2025 रोजी समजले की Finansinspektionen ने उपकंपनी QB Europe चा MiCA परवाना अर्ज नाकारला आहे, आणि 4 जुलै रोजी निर्णय जाहीर होण्यापूर्वी त्यांनी आपल्या समभागांचा मोठा भाग विकला; त्यानंतर समभागाचा भाव सुमारे 33 टक्क्यांनी घसरला. आवश्यकतेनुसार कायदेशीर प्रक्रियेत सहकार्य करत असल्याचे Valuno सांगते; कोणालाही दोषी ठरवलेले नाही.",
+    "fa": "به گزارش Kaupr و Kryptovalutaguiden، سازمان جرائم اقتصادی سوئد مدیرعامل سابق Valuno Group و یک مدیر مالی سابق را به معامله شدید با اطلاعات نهانی متهم کرده است. به گفته دادستان، این دو در ۳ ژوئیه ۲۰۲۵ مطلع شدند که Finansinspektionen درخواست مجوز MiCA شرکت تابعه QB Europe را رد کرده است و پیش از اعلام عمومی تصمیم در ۴ ژوئیه بخش بزرگی از سهام خود را فروختند؛ پس از آن قیمت سهم حدود ۳۳ درصد افت کرد. Valuno می‌گوید در صورت نیاز به روند قضایی کمک می‌کند؛ هیچ‌کس محکوم نشده است.",
+    "uk": "Шведське управління з економічних злочинів висунуло колишньому генеральному директорові Valuno Group і колишньому фінансовому директорові обвинувачення в інсайдерській торгівлі за обтяжувальних обставин, повідомляють Kaupr і Kryptovalutaguiden. За версією обвинувачення, 3 липня 2025 року обидва дізналися, що Finansinspektionen відмовила дочірній компанії QB Europe в ліцензії MiCA, і продали значну частину своїх акцій до оприлюднення рішення 4 липня, після чого курс упав приблизно на 33%. Valuno заявляє, що за потреби сприяє судовому процесу; нікого не засуджено.",
+    "tr": "Kaupr ve Kryptovalutaguiden'e göre İsveç Ekonomik Suçlar Kurumu, Valuno Group'un eski CEO'su ile eski bir finans direktörünü ağır içeriden bilgi ticareti suçlamasıyla yargılanmak üzere iddianame düzenledi. Savcılığa göre ikili, 3 Temmuz 2025'te Finansinspektionen'in iştirak QB Europe'un MiCA lisans başvurusunu reddettiğini öğrendi ve karar 4 Temmuz'da açıklanmadan önce hisselerinin büyük kısmını sattı; açıklamanın ardından hisse fiyatı yaklaşık yüzde 33 düştü. Valuno, gerektiğinde yargı sürecine yardımcı olduğunu söylüyor; kimse mahkûm edilmedi.",
+    "se": "Ruoŧa ekonomalaš rihkuspolesdoaimmahat lea áššáskuhttán Valuno Gruppa ovddeš jođihanhoavdda ja ovddeš ruhtadanhoavdda čavgejuvvon siskkáldas gávppašeamis, muitala Kaupr ja Kryptovalutaguiden. Siviilaáittardeaddji dadjá ahte soai oaččuiga dieđu suoidnemánu 3. beaivvi 2025 ahte Finansinspekšuvdna lei biehttalan subsidiára QB Europe MiCA-liseanssa ja vuovdán stuora osiid sin ossosiin ovdal go mearrádus almmuhuvvui suoidnemánu 4. beaivvi, man maŋŋá ossosiid haddi gahčai sullii 33 proseantta. Valuno dadjá ahte sii veahkehit riekteproseassa go dasa lea dárbu; ii oktage leat dubmejuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "6d1e70338edd",
@@ -263,9 +605,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Kvarn X Embedded: no factual development beyond marketing of an existing product (close to 9750ec7bf5d8). researcher 04.11"
   },
   {
    "id": "8c63a4c9df83",
@@ -296,15 +639,16 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "d1325f9bb260"
   },
   {
    "id": "ee816a083fda",
    "url": "https://kaupr.io/nyheter/nbx-har-hentet-34-millioner-kroner-fra-lda-capital",
    "title": "NBX har hentet 34 millioner kroner fra LDA Capital",
-   "title_en": null,
+   "title_en": "NBX has raised at least 34 million kroner from LDA Capital, according to Kaupr's count",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -317,8 +661,7 @@
    "published": "2026-11-03",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
-    "bitcoin",
-    "regulation",
+    "exchanges",
     "companies"
    ],
    "matched": [
@@ -326,9 +669,68 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "The Norwegian crypto exchange NBX has raised at least 34 million Norwegian kroner from the US investor LDA Capital through ten share issues since 2022, according to Kaupr's tally of the company's stock exchange announcements; the latest, closed on 3 November 2026, raised 6.8 million kroner at 0.47 kroner per share. According to NBX's announcements, the money has funded bitcoin purchases and the capital requirements for its e-money licence and its MiCA licence. Under the agreement, NBX decides when to draw on the facility.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/nbx-har-hentet-34-millioner-kroner-fra-lda-capital"
+   },
+   "title_i18n": {
+    "nn": "NBX har henta minst 34 millionar kroner frå LDA Capital, ifølgje Kaupr si oppteljing",
+    "sv": "NBX har tagit in minst 34 miljoner norska kronor från LDA Capital, enligt Kauprs sammanräkning",
+    "da": "NBX har hentet mindst 34 millioner norske kroner fra LDA Capital, ifølge Kauprs optælling",
+    "fi": "NBX on kerännyt LDA Capitalilta vähintään 34 miljoonaa kruunua Kauprin laskelman mukaan",
+    "is": "NBX hefur aflað að minnsta kosti 34 milljóna norskra króna frá LDA Capital, samkvæmt talningu Kaupr",
+    "zh": "据Kaupr统计，NBX已从LDA Capital筹集至少3400万挪威克朗",
+    "hi": "Kaupr की गणना के अनुसार NBX ने LDA Capital से कम से कम 3.4 करोड़ क्रोनर जुटाए",
+    "es": "NBX ha captado al menos 34 millones de coronas de LDA Capital, según el recuento de Kaupr",
+    "fr": "NBX a levé au moins 34 millions de couronnes auprès de LDA Capital, selon le décompte de Kaupr",
+    "ar": "NBX جمعت 34 مليون كرونة على الأقل من LDA Capital وفق إحصاء Kaupr",
+    "bn": "Kaupr-এর হিসাবে LDA Capital থেকে অন্তত ৩.৪ কোটি ক্রোনার তুলেছে NBX",
+    "pt": "NBX captou pelo menos 34 milhões de coroas da LDA Capital, segundo a contagem da Kaupr",
+    "ru": "NBX привлекла у LDA Capital не менее 34 млн крон, по подсчётам Kaupr",
+    "ur": "Kaupr کے حساب کے مطابق NBX نے LDA Capital سے کم از کم 3 کروڑ 40 لاکھ کرونر حاصل کیے",
+    "id": "NBX himpun setidaknya 34 juta krone dari LDA Capital, menurut hitungan Kaupr",
+    "de": "NBX hat laut Kaupr mindestens 34 Millionen Kronen von LDA Capital eingeworben",
+    "ja": "Kauprの集計によると、NBXはLDA Capitalから少なくとも3400万クローネを調達",
+    "sw": "NBX imekusanya angalau krone milioni 34 kutoka LDA Capital, kwa hesabu ya Kaupr",
+    "mr": "Kaupr च्या गणनेनुसार NBX ने LDA Capital कडून किमान 3.4 कोटी क्रोनर उभारले",
+    "fa": "به حساب Kaupr، NBX دست‌کم ۳۴ میلیون کرون از LDA Capital جذب کرده است",
+    "uk": "NBX залучила від LDA Capital щонайменше 34 млн крон, за підрахунком Kaupr",
+    "tr": "Kaupr'un hesabına göre NBX, LDA Capital'den en az 34 milyon kron topladı",
+    "se": "NBX lea viežžan unnimusat 34 miljovnna ruvnno LDA Capital:s, lohká Kaupr"
+   },
+   "title_i18n_source": "NBX har hentet 34 millioner kroner fra LDA Capital",
+   "summary_i18n": {
+    "nn": "Den norske kryptobørsen NBX har sidan 2022 henta minst 34 millionar kroner frå den amerikanske investoren LDA Capital gjennom ti emisjonar, ifølgje Kaupr si oppteljing av selskapet sine børsmeldingar; den siste, avslutta 3. november 2026, gav 6,8 millionar kroner til 0,47 kroner per aksje. Ifølgje NBX sine meldingar har pengane finansiert bitcoinkjøp og kapitalkrava for e-pengeløyvet og MiCA-løyvet. Etter avtalen er det NBX som avgjer når selskapet trekkjer på fasiliteten.",
+    "nb": "Den norske kryptobørsen NBX har siden 2022 hentet minst 34 millioner kroner fra den amerikanske investoren LDA Capital gjennom ti emisjoner, ifølge Kauprs opptelling av selskapets børsmeldinger; den siste, avsluttet 3. november 2026, ga 6,8 millioner kroner til 0,47 kroner per aksje. Ifølge NBX' meldinger har pengene finansiert bitcoinkjøp og kapitalkravene for e-pengetillatelsen og MiCA-tillatelsen. Etter avtalen er det NBX som bestemmer når selskapet trekker på fasiliteten.",
+    "sv": "Den norska kryptobörsen NBX har sedan 2022 tagit in minst 34 miljoner norska kronor från den amerikanska investeraren LDA Capital genom tio emissioner, enligt Kauprs sammanräkning av bolagets börsmeddelanden; den senaste, avslutad den 3 november 2026, gav 6,8 miljoner kronor till 0,47 kronor per aktie. Enligt NBX meddelanden har pengarna finansierat bitcoinköp och kapitalkraven för e-pengatillståndet och MiCA-tillståndet. Enligt avtalet är det NBX som bestämmer när bolaget drar på faciliteten.",
+    "da": "Den norske kryptobørs NBX har siden 2022 hentet mindst 34 millioner norske kroner fra den amerikanske investor LDA Capital gennem ti emissioner, ifølge Kauprs optælling af selskabets børsmeddelelser; den seneste, afsluttet den 3. november 2026, gav 6,8 millioner kroner til 0,47 kroner pr. aktie. Ifølge NBX' meddelelser har pengene finansieret bitcoinkøb og kapitalkravene til e-pengetilladelsen og MiCA-tilladelsen. Ifølge aftalen er det NBX, der bestemmer, hvornår selskabet trækker på faciliteten.",
+    "fi": "Norjalainen kryptopörssi NBX on kerännyt vuodesta 2022 lähtien yhdysvaltalaiselta sijoittajalta LDA Capitalilta vähintään 34 miljoonaa Norjan kruunua kymmenellä osakeannilla, Kauprin yhtiön pörssitiedotteista tekemän laskelman mukaan; viimeisin, 3. marraskuuta 2026 päättynyt anti tuotti 6,8 miljoonaa kruunua 0,47 kruunun osakehintaan. NBX:n tiedotteiden mukaan rahoilla on rahoitettu bitcoin-ostoja sekä sähköisen rahan luvan ja MiCA-luvan pääomavaatimuksia. Sopimuksen mukaan NBX päättää itse, milloin se käyttää rahoitusjärjestelyä.",
+    "is": "Norska rafmyntakauphöllin NBX hefur frá 2022 aflað að minnsta kosti 34 milljóna norskra króna frá bandaríska fjárfestinum LDA Capital í tíu hlutafjárútboðum, samkvæmt talningu Kaupr á tilkynningum félagsins til kauphallar; það síðasta, sem lauk 3. nóvember 2026, skilaði 6,8 milljónum króna á 0,47 krónur á hlut. Samkvæmt tilkynningum NBX hefur féð fjármagnað bitcoin-kaup og eiginfjárkröfur vegna rafeyrisleyfis og MiCA-leyfis. Samkvæmt samningnum ákveður NBX sjálft hvenær það dregur á fjármögnunina.",
+    "zh": "据Kaupr对公司证券交易所公告的统计，挪威加密货币交易所NBX自2022年以来通过十次增发从美国投资者LDA Capital筹集了至少3400万挪威克朗；最近一次于2026年11月3日完成，以每股0.47克朗筹得680万克朗。根据NBX的公告，这些资金用于购买比特币，以及满足其电子货币牌照和MiCA牌照的资本要求。根据协议，由NBX决定何时动用这一融资安排。",
+    "hi": "Kaupr द्वारा कंपनी की स्टॉक एक्सचेंज घोषणाओं की गिनती के अनुसार, नॉर्वे के क्रिप्टो एक्सचेंज NBX ने 2022 से अमेरिकी निवेशक LDA Capital से दस शेयर निर्गमों के माध्यम से कम से कम 3.4 करोड़ नॉर्वेजियन क्रोनर जुटाए हैं; 3 नवंबर 2026 को पूरा हुआ नवीनतम निर्गम 0.47 क्रोनर प्रति शेयर पर 68 लाख क्रोनर लाया। NBX की घोषणाओं के अनुसार, इस धन से बिटकॉइन खरीद और उसके ई-मनी लाइसेंस व MiCA लाइसेंस की पूंजी आवश्यकताओं को पूरा किया गया है। समझौते के तहत, सुविधा का उपयोग कब करना है यह NBX तय करता है।",
+    "es": "El exchange noruego de criptomonedas NBX ha captado desde 2022 al menos 34 millones de coronas noruegas del inversor estadounidense LDA Capital mediante diez ampliaciones de capital, según el recuento de Kaupr de los comunicados bursátiles de la empresa; la última, cerrada el 3 de noviembre de 2026, aportó 6,8 millones de coronas a 0,47 coronas por acción. Según los comunicados de NBX, el dinero ha financiado compras de bitcoin y los requisitos de capital de su licencia de dinero electrónico y su licencia MiCA. Según el acuerdo, es NBX quien decide cuándo utilizar la línea.",
+    "fr": "La plateforme norvégienne de cryptomonnaies NBX a levé depuis 2022 au moins 34 millions de couronnes norvégiennes auprès de l'investisseur américain LDA Capital via dix augmentations de capital, selon le décompte par Kaupr des communiqués boursiers de la société ; la dernière, clôturée le 3 novembre 2026, a rapporté 6,8 millions de couronnes à 0,47 couronne par action. Selon les communiqués de NBX, ces fonds ont financé des achats de bitcoin et les exigences de fonds propres liées à sa licence de monnaie électronique et à sa licence MiCA. Aux termes de l'accord, c'est NBX qui décide quand tirer sur la facilité.",
+    "ar": "جمعت منصة العملات المشفرة النرويجية NBX منذ 2022 ما لا يقل عن 34 مليون كرونة نرويجية من المستثمر الأمريكي LDA Capital عبر عشر عمليات إصدار أسهم، وفقًا لإحصاء Kaupr لإعلانات الشركة في البورصة؛ وجلبت آخرها، التي أُغلقت في 3 نوفمبر 2026، 6.8 مليون كرونة بسعر 0.47 كرونة للسهم. ووفقًا لإعلانات NBX، موّلت الأموال مشتريات بيتكوين ومتطلبات رأس المال لترخيص النقود الإلكترونية وترخيص MiCA. وبموجب الاتفاق، تقرر NBX متى تسحب من التسهيل.",
+    "bn": "Kaupr-এর করা কোম্পানির স্টক এক্সচেঞ্জ ঘোষণার হিসাব অনুযায়ী, নরওয়ের ক্রিপ্টো এক্সচেঞ্জ NBX ২০২২ সাল থেকে দশটি শেয়ার ইস্যুর মাধ্যমে মার্কিন বিনিয়োগকারী LDA Capital থেকে অন্তত ৩.৪ কোটি নরওয়েজীয় ক্রোনার তুলেছে; সর্বশেষটি ২০২৬ সালের ৩ নভেম্বর শেষ হয়, শেয়ারপ্রতি ০.৪৭ ক্রোনারে ৬৮ লাখ ক্রোনার এনে। NBX-এর ঘোষণা অনুযায়ী, এই অর্থ বিটকয়েন কেনা এবং ই-মানি লাইসেন্স ও MiCA লাইসেন্সের মূলধন চাহিদা মেটাতে ব্যবহার হয়েছে। চুক্তি অনুযায়ী কখন অর্থ তোলা হবে, তা NBX নিজেই ঠিক করে।",
+    "pt": "A plataforma norueguesa de criptomoedas NBX captou desde 2022 pelo menos 34 milhões de coroas norueguesas do investidor norte-americano LDA Capital através de dez aumentos de capital, segundo a contagem da Kaupr dos comunicados bolsistas da empresa; o mais recente, concluído a 3 de novembro de 2026, rendeu 6,8 milhões de coroas a 0,47 coroas por ação. Segundo os comunicados da NBX, o dinheiro financiou compras de bitcoin e os requisitos de capital da licença de moeda eletrónica e da licença MiCA. Nos termos do acordo, é a NBX que decide quando recorrer à linha.",
+    "ru": "Норвежская криптобиржа NBX с 2022 года привлекла у американского инвестора LDA Capital не менее 34 млн норвежских крон в ходе десяти эмиссий, согласно подсчётам Kaupr по биржевым сообщениям компании; последняя, завершённая 3 ноября 2026 года, принесла 6,8 млн крон по 0,47 кроны за акцию. Согласно сообщениям NBX, деньги пошли на покупку биткоинов и выполнение требований к капиталу для лицензии на электронные деньги и лицензии MiCA. По условиям соглашения NBX сама решает, когда использовать эту линию.",
+    "ur": "Kaupr کی جانب سے کمپنی کے اسٹاک ایکسچینج اعلانات کی گنتی کے مطابق، ناروے کے کرپٹو ایکسچینج NBX نے 2022 سے امریکی سرمایہ کار LDA Capital سے دس شیئر اجرا کے ذریعے کم از کم 3 کروڑ 40 لاکھ نارویجن کرونر حاصل کیے ہیں؛ تازہ ترین اجرا، جو 3 نومبر 2026 کو مکمل ہوا، 0.47 کرونر فی شیئر پر 68 لاکھ کرونر لایا۔ NBX کے اعلانات کے مطابق یہ رقم بٹ کوائن کی خریداری اور ای منی لائسنس اور MiCA لائسنس کی سرمائے کی ضروریات پر خرچ ہوئی۔ معاہدے کے تحت سہولت کب استعمال کرنی ہے، اس کا فیصلہ NBX کرتی ہے۔",
+    "id": "Bursa kripto Norwegia NBX sejak 2022 telah menghimpun setidaknya 34 juta krone Norwegia dari investor AS LDA Capital melalui sepuluh penerbitan saham, menurut hitungan Kaupr atas pengumuman bursa perusahaan; yang terbaru, ditutup pada 3 November 2026, menghasilkan 6,8 juta krone dengan harga 0,47 krone per saham. Menurut pengumuman NBX, dana itu membiayai pembelian bitcoin serta persyaratan modal untuk lisensi uang elektronik dan lisensi MiCA. Berdasarkan perjanjian, NBX yang memutuskan kapan menarik fasilitas tersebut.",
+    "de": "Die norwegische Kryptobörse NBX hat seit 2022 laut Kaupr, das die Börsenmitteilungen des Unternehmens ausgewertet hat, über zehn Kapitalerhöhungen mindestens 34 Millionen norwegische Kronen vom US-Investor LDA Capital eingeworben; die jüngste, am 3. November 2026 abgeschlossen, brachte 6,8 Millionen Kronen zu 0,47 Kronen je Aktie. Laut den Mitteilungen von NBX finanzierte das Geld Bitcoin-Käufe sowie die Kapitalanforderungen der E-Geld-Lizenz und der MiCA-Lizenz. Nach der Vereinbarung entscheidet NBX selbst, wann es die Fazilität in Anspruch nimmt.",
+    "ja": "Kauprが同社の取引所開示を集計したところによると、ノルウェーの暗号資産取引所NBXは2022年以降、10回の新株発行を通じて米投資会社LDA Capitalから少なくとも3400万ノルウェー・クローネを調達した。直近の発行は2026年11月3日に完了し、1株0.47クローネで680万クローネを調達した。NBXの開示によると、資金はビットコインの購入や、電子マネー免許とMiCA免許の資本要件に充てられた。契約上、いつ資金を引き出すかはNBXが決める。",
+    "sw": "Soko la kripto la Norway NBX limekusanya tangu 2022 angalau krone milioni 34 za Norway kutoka kwa mwekezaji wa Marekani LDA Capital kupitia matoleo kumi ya hisa, kwa mujibu wa hesabu ya Kaupr ya matangazo ya kampuni kwenye soko la hisa; la hivi karibuni, lililokamilika tarehe 3 Novemba 2026, lilileta krone milioni 6.8 kwa krone 0.47 kwa hisa. Kwa mujibu wa matangazo ya NBX, fedha hizo zimegharamia ununuzi wa bitcoin na mahitaji ya mtaji ya leseni yake ya pesa za kielektroniki na leseni ya MiCA. Chini ya makubaliano, NBX ndiyo huamua lini kutumia mpango huo.",
+    "mr": "Kaupr ने कंपनीच्या शेअर बाजार घोषणांची केलेल्या मोजणीनुसार, नॉर्वेच्या क्रिप्टो एक्सचेंज NBX ने 2022 पासून दहा समभाग विक्रीद्वारे अमेरिकी गुंतवणूकदार LDA Capital कडून किमान 3.4 कोटी नॉर्वेजियन क्रोनर उभारले आहेत; 3 नोव्हेंबर 2026 रोजी पूर्ण झालेल्या ताज्या फेरीत प्रति समभाग 0.47 क्रोनर दराने 68 लाख क्रोनर मिळाले. NBX च्या घोषणांनुसार हा निधी बिटकॉइन खरेदी आणि ई-मनी परवाना व MiCA परवान्याच्या भांडवली गरजांसाठी वापरला गेला. करारानुसार सुविधा कधी वापरायची हे NBX ठरवते.",
+    "fa": "به حساب Kaupr از اطلاعیه‌های بورسی شرکت، صرافی رمزارز نروژی NBX از سال ۲۰۲۲ از طریق ده نوبت انتشار سهام دست‌کم ۳۴ میلیون کرون نروژ از سرمایه‌گذار آمریکایی LDA Capital جذب کرده است؛ آخرین نوبت که در ۳ نوامبر ۲۰۲۶ بسته شد، ۶٫۸ میلیون کرون با قیمت ۰٫۴۷ کرون برای هر سهم به دست آورد. طبق اطلاعیه‌های NBX، این پول صرف خرید بیت‌کوین و الزامات سرمایه برای مجوز پول الکترونیک و مجوز MiCA شده است. بر اساس قرارداد، NBX خود تصمیم می‌گیرد چه زمانی از این تسهیلات استفاده کند.",
+    "uk": "Норвезька криптобіржа NBX з 2022 року залучила від американського інвестора LDA Capital щонайменше 34 млн норвезьких крон у межах десяти емісій, згідно з підрахунком Kaupr за біржовими повідомленнями компанії; остання, завершена 3 листопада 2026 року, принесла 6,8 млн крон за ціною 0,47 крони за акцію. Згідно з повідомленнями NBX, кошти пішли на купівлю біткоїнів і виконання вимог до капіталу для ліцензії на електронні гроші та ліцензії MiCA. За угодою саме NBX вирішує, коли використовувати цю лінію.",
+    "tr": "Kaupr'un şirketin borsa duyurularından yaptığı hesaba göre Norveçli kripto borsası NBX, 2022'den bu yana ABD'li yatırımcı LDA Capital'den on hisse ihracıyla en az 34 milyon Norveç kronu topladı; 3 Kasım 2026'da tamamlanan son ihraç, hisse başına 0,47 kron fiyatla 6,8 milyon kron getirdi. NBX'in duyurularına göre para bitcoin alımlarını ve elektronik para lisansı ile MiCA lisansının sermaye gerekliliklerini finanse etti. Anlaşma uyarınca kaynağın ne zaman kullanılacağına NBX karar veriyor.",
+    "se": "Norgga crypto-valuta NBX lea 2022 rájes ožžon uhcimusat 34 miljovnna ruvnno US investoras LDA Capital bokte logi oasusemissuvnna bokte, Kaupr loguid mielde fitnodaga oasusemissuvdnaalmmuhemiin; maŋemus, mii loahpahuvvui skábmamánu 3. b. 2026, oaččui 6,8 miljovnna ruvnno 0,47 ruvnno ovddas ovtta ossosi. NBX almmuhusaid mielde ruhta lea ruhtadan bitcoin oastimiid ja kapitála gáibádusaid iežas e-ruhtalobi ja MiCA-lobi várás. Šiehtadusa mielde mearrida NBX goas sáhttá geavahit rusttega."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "4e239c7ceaf9",
@@ -547,8 +949,9 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "e36f90afacd8"
   },
   {
    "id": "cae25c56582e",
@@ -1027,7 +1430,7 @@
    "id": "4e5e466813f0",
    "url": "https://kaupr.io/nyheter/goobit-sikrer-gull-til-spareplattformen-futureproof",
    "title": "Goobit sikrer gull til spareplattformen Futureproof",
-   "title_en": null,
+   "title_en": "Goobit signs agreement with Kvarn Metals for gold in its Futureproof platform",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -1041,16 +1444,75 @@
    "published": "2026-11-02",
    "fetched": "2026-11-04T02:50:45+00:00",
    "topics": [
-    "bitcoin",
-    "companies"
+    "companies",
+    "products"
    ],
    "matched": [
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Goobit has signed an agreement with Kvarn Metals, which will be the counterparty for gold in its Futureproof savings platform, the company told Kaupr. According to Goobit, the gold is backed 1:1 by physical gold, while bitcoin comes from Kvarn Capital under an agreement made in September. Goobit says both asset classes it needs for launch are now in place.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-04T04:41:00+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/goobit-sikrer-gull-til-spareplattformen-futureproof"
+   },
+   "title_i18n": {
+    "nn": "Goobit har signert avtale med Kvarn Metals om gull til Futureproof-plattforma",
+    "sv": "Goobit tecknar avtal med Kvarn Metals om guld till plattformen Futureproof",
+    "da": "Goobit indgår aftale med Kvarn Metals om guld til platformen Futureproof",
+    "fi": "Goobit sopi Kvarn Metalsin kanssa kullasta Futureproof-alustalleen",
+    "is": "Goobit semur við Kvarn Metals um gull fyrir Futureproof-vettvanginn",
+    "zh": "Goobit与Kvarn Metals签署协议，为Futureproof平台提供黄金",
+    "hi": "Goobit ने Futureproof प्लेटफॉर्म में सोने के लिए Kvarn Metals से समझौता किया",
+    "es": "Goobit firma un acuerdo con Kvarn Metals para el oro de su plataforma Futureproof",
+    "fr": "Goobit signe un accord avec Kvarn Metals pour l'or de sa plateforme Futureproof",
+    "ar": "Goobit توقّع اتفاقًا مع Kvarn Metals لتوفير الذهب في منصة Futureproof",
+    "bn": "Futureproof প্ল্যাটফর্মে সোনার জন্য Goobit-এর Kvarn Metals-এর সঙ্গে চুক্তি",
+    "pt": "Goobit assina acordo com a Kvarn Metals para o ouro da plataforma Futureproof",
+    "ru": "Goobit подписала соглашение с Kvarn Metals о золоте для платформы Futureproof",
+    "ur": "Goobit نے Futureproof پلیٹ فارم میں سونے کے لیے Kvarn Metals سے معاہدہ کیا",
+    "id": "Goobit teken perjanjian dengan Kvarn Metals untuk emas di platform Futureproof",
+    "de": "Goobit schließt Vereinbarung mit Kvarn Metals über Gold für die Plattform Futureproof",
+    "ja": "Goobit、Futureproofの金でKvarn Metalsと契約",
+    "sw": "Goobit yasaini makubaliano na Kvarn Metals kuhusu dhahabu kwa jukwaa la Futureproof",
+    "mr": "Futureproof प्लॅटफॉर्ममधील सोन्यासाठी Goobit चा Kvarn Metals सोबत करार",
+    "fa": "Goobit برای طلای پلتفرم Futureproof با Kvarn Metals قرارداد امضا کرد",
+    "uk": "Goobit підписала угоду з Kvarn Metals щодо золота для платформи Futureproof",
+    "tr": "Goobit, Futureproof platformundaki altın için Kvarn Metals ile anlaşma imzaladı",
+    "se": "Goobit vuolláičállá soahpamuša Kvarn Metals:in gollis iežas Futureproof-vuođus"
+   },
+   "title_i18n_source": "Goobit sikrer gull til spareplattformen Futureproof",
+   "summary_i18n": {
+    "nb": "Goobit har signert en avtale med Kvarn Metals, som blir motpart for gull i spareplattformen Futureproof, opplyser selskapet til Kaupr. Ifølge Goobit er gullet dekket 1:1 av fysisk gull, mens bitcoin kommer fra Kvarn Capital etter en avtale inngått i september. Goobit sier at begge aktivaklassene selskapet trenger for lansering, nå er på plass.",
+    "nn": "Goobit har signert ein avtale med Kvarn Metals, som blir motpart for gull i spareplattforma Futureproof, opplyser selskapet til Kaupr. Ifølgje Goobit er gullet dekt 1:1 av fysisk gull, medan bitcoin kjem frå Kvarn Capital etter ein avtale inngått i september. Goobit seier at begge aktivaklassane selskapet treng for lansering, no er på plass.",
+    "sv": "Goobit har tecknat ett avtal med Kvarn Metals, som blir motpart för guld i sparplattformen Futureproof, uppger bolaget för Kaupr. Enligt Goobit täcks guldet 1:1 av fysiskt guld, medan bitcoin kommer från Kvarn Capital enligt ett avtal från september. Goobit säger att båda tillgångsslagen som behövs för lanseringen nu är på plats.",
+    "da": "Goobit har indgået en aftale med Kvarn Metals, som bliver modpart for guld i opsparingsplatformen Futureproof, oplyser selskabet til Kaupr. Ifølge Goobit er guldet dækket 1:1 af fysisk guld, mens bitcoin kommer fra Kvarn Capital efter en aftale indgået i september. Goobit siger, at begge aktivklasser, der skal bruges til lanceringen, nu er på plads.",
+    "fi": "Goobit on allekirjoittanut sopimuksen Kvarn Metalsin kanssa, joka toimii kullan vastapuolena Futureproof-säästöalustalla, yhtiö kertoo Kauprille. Goobitin mukaan kulta on katettu 1:1 fyysisellä kullalla, ja bitcoin tulee Kvarn Capitalilta syyskuussa tehdyn sopimuksen perusteella. Goobitin mukaan molemmat lanseeraukseen tarvittavat omaisuuslajit ovat nyt valmiina.",
+    "is": "Goobit hefur samið við Kvarn Metals, sem verður mótaðili fyrir gull á sparnaðarvettvanginum Futureproof, segir félagið við Kaupr. Samkvæmt Goobit er gullið tryggt 1:1 með efnislegu gulli, en bitcoin kemur frá Kvarn Capital samkvæmt samningi frá september. Goobit segir að báðir eignaflokkarnir sem þarf fyrir opnun séu nú tilbúnir.",
+    "zh": "Goobit向Kaupr表示，已与Kvarn Metals签署协议，后者将成为其储蓄平台Futureproof的黄金交易对手方。据Goobit称，黄金由实物黄金1:1支持，比特币则根据9月达成的协议由Kvarn Capital提供。Goobit表示，上线所需的两类资产现已到位。",
+    "hi": "Goobit ने Kaupr को बताया कि उसने Kvarn Metals के साथ समझौता किया है, जो उसके बचत प्लेटफॉर्म Futureproof में सोने के लिए प्रतिपक्ष होगी। Goobit के अनुसार सोना 1:1 भौतिक सोने से समर्थित है, जबकि बिटकॉइन सितंबर में हुए समझौते के तहत Kvarn Capital से आता है। Goobit का कहना है कि लॉन्च के लिए जरूरी दोनों परिसंपत्ति वर्ग अब तैयार हैं।",
+    "es": "Goobit ha firmado un acuerdo con Kvarn Metals, que será la contraparte del oro en su plataforma de ahorro Futureproof, según dijo la empresa a Kaupr. Según Goobit, el oro está respaldado 1:1 por oro físico, mientras que el bitcoin procede de Kvarn Capital en virtud de un acuerdo de septiembre. Goobit afirma que ya tiene las dos clases de activos que necesita para el lanzamiento.",
+    "fr": "Goobit a signé un accord avec Kvarn Metals, qui sera la contrepartie pour l'or de sa plateforme d'épargne Futureproof, a indiqué l'entreprise à Kaupr. Selon Goobit, l'or est adossé 1:1 à de l'or physique, tandis que le bitcoin provient de Kvarn Capital en vertu d'un accord conclu en septembre. Goobit affirme que les deux classes d'actifs nécessaires au lancement sont désormais en place.",
+    "ar": "قالت Goobit لـKaupr إنها وقّعت اتفاقًا مع Kvarn Metals التي ستكون الطرف المقابل للذهب في منصة الادخار Futureproof. ووفقًا لـGoobit، فإن الذهب مغطى بنسبة 1:1 بذهب مادي، بينما يأتي البيتكوين من Kvarn Capital بموجب اتفاق أُبرم في سبتمبر. وتقول Goobit إن فئتي الأصول اللازمتين للإطلاق أصبحتا جاهزتين.",
+    "bn": "Goobit Kaupr-কে জানিয়েছে, তারা Kvarn Metals-এর সঙ্গে চুক্তি করেছে, যা Futureproof সঞ্চয় প্ল্যাটফর্মে সোনার প্রতিপক্ষ হবে। Goobit-এর মতে সোনা ১:১ ভৌত সোনা দিয়ে সমর্থিত, আর বিটকয়েন আসে সেপ্টেম্বরের চুক্তি অনুযায়ী Kvarn Capital থেকে। Goobit বলছে, চালুর জন্য প্রয়োজনীয় দুটি সম্পদশ্রেণিই এখন প্রস্তুত।",
+    "pt": "A Goobit assinou um acordo com a Kvarn Metals, que será a contraparte do ouro na sua plataforma de poupança Futureproof, disse a empresa à Kaupr. Segundo a Goobit, o ouro é garantido 1:1 por ouro físico, enquanto a bitcoin vem da Kvarn Capital ao abrigo de um acordo de setembro. A Goobit diz que as duas classes de ativos necessárias para o lançamento estão agora asseguradas.",
+    "ru": "Goobit сообщила Kaupr, что подписала соглашение с Kvarn Metals, которая станет контрагентом по золоту на сберегательной платформе Futureproof. По данным Goobit, золото обеспечено физическим золотом в соотношении 1:1, а биткоин поступает от Kvarn Capital по соглашению, заключённому в сентябре. Goobit заявляет, что оба класса активов, необходимых для запуска, теперь на месте.",
+    "ur": "Goobit نے Kaupr کو بتایا کہ اس نے Kvarn Metals کے ساتھ معاہدہ کیا ہے، جو اس کے بچت پلیٹ فارم Futureproof میں سونے کے لیے فریقِ مقابل ہوگی۔ Goobit کے مطابق سونا 1:1 جسمانی سونے سے محفوظ ہے، جبکہ بٹ کوائن ستمبر کے معاہدے کے تحت Kvarn Capital سے آتا ہے۔ Goobit کا کہنا ہے کہ لانچ کے لیے درکار دونوں اثاثہ جات اب تیار ہیں۔",
+    "id": "Goobit telah meneken perjanjian dengan Kvarn Metals, yang akan menjadi pihak lawan untuk emas di platform tabungan Futureproof, kata perusahaan itu kepada Kaupr. Menurut Goobit, emas tersebut dijamin 1:1 dengan emas fisik, sementara bitcoin berasal dari Kvarn Capital berdasarkan perjanjian September. Goobit mengatakan kedua kelas aset yang dibutuhkan untuk peluncuran kini sudah tersedia.",
+    "de": "Goobit hat eine Vereinbarung mit Kvarn Metals geschlossen, das Gegenpartei für Gold auf der Sparplattform Futureproof wird, wie das Unternehmen Kaupr mitteilte. Laut Goobit ist das Gold 1:1 durch physisches Gold gedeckt, während Bitcoin im Rahmen einer Vereinbarung vom September von Kvarn Capital kommt. Goobit zufolge sind nun beide für den Start nötigen Anlageklassen vorhanden.",
+    "ja": "GoobitはKauprに対し、貯蓄プラットフォームFutureproofの金の取引相手となるKvarn Metalsと契約したと明らかにした。Goobitによると、金は現物の金で1対1で裏付けられ、ビットコインは9月の契約に基づきKvarn Capitalから供給される。Goobitは、サービス開始に必要な2つの資産クラスがそろったとしている。",
+    "sw": "Goobit imesaini makubaliano na Kvarn Metals, ambayo itakuwa mshirika wa upande wa pili kwa dhahabu kwenye jukwaa la akiba la Futureproof, kampuni iliiambia Kaupr. Kwa mujibu wa Goobit, dhahabu hiyo inaungwa mkono 1:1 na dhahabu halisi, huku bitcoin ikitoka Kvarn Capital chini ya makubaliano ya Septemba. Goobit inasema aina zote mbili za mali zinazohitajika kwa uzinduzi sasa zipo.",
+    "mr": "Goobit ने Kaupr ला सांगितले की त्यांनी Kvarn Metals सोबत करार केला आहे, जी Futureproof बचत प्लॅटफॉर्मवरील सोन्यासाठी प्रतिपक्ष असेल. Goobit नुसार सोने 1:1 प्रत्यक्ष सोन्याने समर्थित आहे, तर बिटकॉइन सप्टेंबरच्या करारानुसार Kvarn Capital कडून येते. लॉन्चसाठी आवश्यक दोन्ही मालमत्ता वर्ग आता तयार असल्याचे Goobit म्हणते.",
+    "fa": "Goobit به Kaupr گفت با Kvarn Metals قراردادی امضا کرده که طرف معامله طلا در پلتفرم پس‌انداز Futureproof خواهد بود. به گفته Goobit، طلا به نسبت ۱:۱ با طلای فیزیکی پشتیبانی می‌شود و بیت‌کوین طبق قراردادی که در سپتامبر بسته شد از Kvarn Capital تأمین می‌شود. Goobit می‌گوید هر دو دسته دارایی لازم برای راه‌اندازی اکنون فراهم است.",
+    "uk": "Goobit повідомила Kaupr, що підписала угоду з Kvarn Metals, яка стане контрагентом щодо золота на ощадній платформі Futureproof. За даними Goobit, золото забезпечене фізичним золотом у співвідношенні 1:1, а біткоїн надходить від Kvarn Capital за угодою, укладеною у вересні. Goobit заявляє, що обидва класи активів, потрібні для запуску, тепер є.",
+    "tr": "Goobit, Kaupr'a Futureproof tasarruf platformunda altın için karşı taraf olacak Kvarn Metals ile anlaşma imzaladığını söyledi. Goobit'e göre altın 1:1 oranında fiziki altınla destekleniyor, bitcoin ise eylülde yapılan anlaşma kapsamında Kvarn Capital'den geliyor. Goobit, lansman için gereken iki varlık sınıfının da artık hazır olduğunu söylüyor.",
+    "se": "Goobit lea vuolláičállán šiehtadusa Kvarn Metals fitnodagain, mii galgá doaibmat Goobita Futureproof seastinbáŋkku golli vuostebeallin, muitala fitnodat Kaupr:ii. Goobit muitala, ahte golli doarju 1:1 fysihkalaš golli, ja bitcoin boahtá Kvarn Capitalis soahpamuša vuođul, mii dahkkojuvvui čakčamánus. Goobit lohká ahte goappašat opmodatluohkát maid son dárbbaša álggahit, leat dál sajis."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "a88470535fb2",
@@ -6703,7 +7165,20 @@
     "tr": "İsviçreli kripto şirketi Bitcoin Suisse'in AB kolu Bitcoin Suisse (Europe), Haziran 2026'da Avrupa Ekonomik Alanı'nda kripto varlık hizmetleri sunmasına olanak tanıyan MiCA lisansı aldı. Kaupr'un aktardığı, şirketin İskandinav genel müdürünün LinkedIn paylaşımına göre şirket, 19 Kasım'da Stockholm'de yapılacak bir etkinlik öncesinde Kasım başında İskandinav ülkelerinde faaliyete başlamayı planlıyor.",
     "se": "Bitcoin Suisse (Europe), mii lea Bitcoin Suisse, sveitsalaš kryptovalutafitnodaga EU-oassi, oaččui MiCA-liseanssa geassemánus 2026, mii dahká vejolažžan fállat kryptovaluhttabálvalusaid Eurohpá ekonomalaš guovllus. LinkedIn-čállosa mielde maid fitnodaga Nordic-váldohoavda lea almmuhan, ja maid Kaupr lea siteren, de dat áigu álggahit doaimmas Davviriikkain skábmamánu álgogeahčen, ovdalgo doallá lágideami Stockholmas skábmamánu 19. beaivvi."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/bitcoin-suisse-satser-pa-formuende-investorer-i-norden",
+     "title": "Bitcoin Suisse satser på formuende investorer i Norden",
+     "published": "2026-11-03",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
   },
   {
    "id": "b0493e03a4e8",
