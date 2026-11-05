@@ -41,3 +41,24 @@ setting that. If any is missing, the script logs `skipping: missing …` and exi
 ## CI
 `.github/workflows/x-newsletter.yml` runs after every successful "Deploy site" run, on Monday mornings after the
 ~08:23 Oslo publish, and on manual dispatch (`issue`, `dry_run`). It commits `data/x_posted.json` back to `main`.
+
+## Events and news digests (Telegram mirror)
+`tools/x_feed.py` (`.github/workflows/x-feed.yml`) mirrors the Telegram bot on X:
+
+- **News:** one English digest of new stories (`📰 New stories on Nordic Crypto – D.M.YYYY`), each with flag,
+  English headline, `Source: <name>`, and `https://nordiccrypto.no/stories/<id>/`.
+- **Events:** one post per new upcoming event (title, date/time, venue/address, organiser, Nordic Crypto calendar page).
+
+Same selection rules and Actions-cache ledgers as `telegram-events.yml` (a missing ledger re-seeds and posts nothing).
+Triggers after every successful "Deploy site" and on a half-hourly schedule. Manual dispatch supports `news_ids` /
+`event_ids` backfill and `dry_run`. Same X secrets as above. Operator name in copy is always "Nordic Crypto" (never
+a company suffix); no phone numbers.
+
+```sh
+python3 tools/x_feed.py --kind news --ledger /tmp/n.json --dry-run
+python3 tools/x_feed.py --kind events --ledger /tmp/e.json --dry-run
+python3 -m unittest tests.test_x_feed
+```
+
+This supersedes the unmerged digest-only approach in PR #206 (that branch never shipped; this also covers events).
+
