@@ -3,6 +3,46 @@
  "active_days": 90,
  "podcasts": [
   {
+   "id": "bitcoin-infinity-show",
+   "name": "The Bitcoin Infinity Show",
+   "country": "SE",
+   "language": "en",
+   "feed": "https://feeds.fountain.fm/PGQg9eWxyOcGhx0uXamY",
+   "site": "https://www.bitcoininfinityshow.com/",
+   "flags": [
+    "affiliate-links"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "A Master’s Degree in Bitcoin with Kristyna Mazankova | Bitcoin Infinity Show #227",
+     "date": "2026-11-02",
+     "link": "https://fountain.fm/episode/YuhvvQqYx38Zfk0o6zeM"
+    },
+    {
+     "title": "Why Every Bitcoiner Needs Two Stacks | Matouš Ledvina | BIS #226",
+     "date": "2026-10-26",
+     "link": "https://fountain.fm/episode/LCBFlvuIOfH0OwBT68Ic"
+    },
+    {
+     "title": "You Don’t Own Your Bitcoin | Stephan Kinsella | BIS #225",
+     "date": "2026-10-19",
+     "link": "https://fountain.fm/episode/pK9ea5rMNjKS1gMhFRKW"
+    },
+    {
+     "title": "What If You Could Fire Your Government? | Brendan Guest | BIS #224",
+     "date": "2026-10-12",
+     "link": "https://fountain.fm/episode/ziNikowwA7Myi6a7wkw0"
+    },
+    {
+     "title": "Why Bitcoin Miners Ignored BIP-110 with Bob Burnett | Bitcoin Infinity Show #223",
+     "date": "2026-10-05",
+     "link": "https://fountain.fm/episode/LKVLxYdPp0s0tnAQgUTF"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
    "id": "en-og-tyve-tanker",
    "name": "En og tyve tanker / Twenty One Thoughts",
    "country": "NO",
@@ -39,6 +79,46 @@
     }
    ],
    "added_at": "2026-10-16"
+  },
+  {
+   "id": "hladvarp-myntkaupa",
+   "name": "Hlaðvarp Myntkaupa",
+   "country": "IS",
+   "language": "is",
+   "feed": "https://anchor.fm/s/da65c338/podcast/rss",
+   "site": "https://myntkaup.is",
+   "flags": [
+    "exchange-owned"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "Stærsta rán crypto sögunnar - Markaðir nötra af hræðslu",
+     "date": "2026-10-31",
+     "link": "https://podcasters.spotify.com/pod/show/myntkaup/episodes/Strsta-rn-crypto-sgunnar---Markair-ntra-af-hrslu-e3rg8rb"
+    },
+    {
+     "title": "Markaðir fá skell - Bitcoin berst við að halda 80k",
+     "date": "2026-10-24",
+     "link": "https://podcasters.spotify.com/pod/show/myntkaup/episodes/Markair-f-skell---Bitcoin-berst-vi-a-halda-80k-e3r167h"
+    },
+    {
+     "title": "Áhyggjur af gervigreindinni hjaðna - Útflæði heldur áfram úr kauphallarsjóðum",
+     "date": "2026-10-17",
+     "link": "https://podcasters.spotify.com/pod/show/myntkaup/episodes/hyggjur-af-gervigreindinni-hjana---tfli-heldur-fram-r-kauphallarsjum-e3qlf6e"
+    },
+    {
+     "title": "Bitcoin slær aðeins til baka - Gætu framfarir gervigreindar falið í sér ógn við crypto?",
+     "date": "2026-10-11",
+     "link": "https://podcasters.spotify.com/pod/show/myntkaup/episodes/Bitcoin-slr-aeins-til-baka---Gtu-framfarir-gervigreindar-fali--sr-gn-vi-crypto-e3qasvt"
+    },
+    {
+     "title": "Bitcoin heldur velli yfir 80k - Ekkert lát á innflæði kauphallarsjóða",
+     "date": "2026-10-03",
+     "link": "https://podcasters.spotify.com/pod/show/myntkaup/episodes/Bitcoin-heldur-velli-yfir-80k---Ekkert-lt--innfli-kauphallarsja-e3pqc79"
+    }
+   ],
+   "added_at": "2026-11-05"
   },
   {
    "id": "bpi",
@@ -199,6 +279,46 @@
    "added_at": "2026-10-16"
   },
   {
+   "id": "k33-ahead-of-the-curve",
+   "name": "Ahead of the Curve by K33",
+   "country": "NO",
+   "language": "en",
+   "feed": "https://feeds.transistor.fm/ahead-of-the-curve-by-k33",
+   "site": "https://podcast.k33.com/",
+   "flags": [
+    "exchange-owned"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "Strategy Faces MSCI Exclusion as We Pause the Podcast | Ahead of the Curve",
+     "date": "2026-10-16",
+     "link": "https://share.transistor.fm/s/a0e8cf63"
+    },
+    {
+     "title": "Bitcoin’s Recovery Needs Fresh Demand | Ahead of the Curve",
+     "date": "2026-10-14",
+     "link": "https://share.transistor.fm/s/f7e40edf"
+    },
+    {
+     "title": "U.S. Bitcoin Transfers and AI Security Fears | Ahead of the Curve",
+     "date": "2026-10-09",
+     "link": "https://share.transistor.fm/s/7a714cf2"
+    },
+    {
+     "title": "Few Buyers, Even Fewer Sellers | Ahead of the Curve",
+     "date": "2026-10-07",
+     "link": "https://share.transistor.fm/s/8ea6435c"
+    },
+    {
+     "title": "SEC Custody Rules, Kalshi Scrutiny and Tether in Iran | Ahead of the Curve",
+     "date": "2026-10-05",
+     "link": "https://share.transistor.fm/s/ef203b94"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
    "id": "allt-om-bitcoin",
    "name": "Allt om Bitcoin",
    "country": "SE",
@@ -275,6 +395,84 @@
     }
    ],
    "added_at": "2026-10-16"
+  },
+  {
+   "id": "women-and-bitcoin",
+   "name": "Women and Bitcoin",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://anchor.fm/s/10083c72c/podcast/rss",
+   "site": "https://bt.cx/en/women-and-bitcoin/",
+   "flags": [
+    "exchange-sponsored"
+   ],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Avsnitt 21: Hästar, frihet och ett resilient samhälle – med Zarina Björklund Rehn",
+     "date": "2026-07-24",
+     "link": "https://podcasters.spotify.com/pod/show/womenandbitcoin/episodes/Avsnitt-21-Hstar--frihet-och-ett-resilient-samhlle--med-Zarina-Bjrklund-Rehn-e3mfuim"
+    },
+    {
+     "title": "Avsnitt 20: From Stockholm to Karachi - The Comeback",
+     "date": "2026-06-17",
+     "link": "https://podcasters.spotify.com/pod/show/womenandbitcoin/episodes/Avsnitt-20-From-Stockholm-to-Karachi---The-Comeback-e3kt8mf"
+    },
+    {
+     "title": "Avsnitt 19: Sverige Har En Unik Chans med Melissa Persson",
+     "date": "2025-12-17",
+     "link": "https://podcasters.spotify.com/pod/show/womenandbitcoin/episodes/Avsnitt-19-Sverige-Har-En-Unik-Chans-med-Melissa-Persson-e3cfn3v"
+    },
+    {
+     "title": "Popart Princess Sent Art to the Moon via NASA Inspired by Britney Spears",
+     "date": "2025-11-14",
+     "link": "https://podcasters.spotify.com/pod/show/womenandbitcoin/episodes/Popart-Princess-Sent-Art-to-the-Moon-via-NASA-Inspired-by-Britney-Spears-e3av0q5"
+    },
+    {
+     "title": "Avsnitt 17: Bitcoin Gave Us Back Our Time with Clair",
+     "date": "2025-10-24",
+     "link": "https://podcasters.spotify.com/pod/show/womenandbitcoin/episodes/Avsnitt-17-Bitcoin-Gave-Us-Back-Our-Time-with-Clair-e39v88i"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "kryptoteket",
+   "name": "Kryptoteket",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://feed.pod.space/domkallarosskrypto",
+   "site": "https://podcasts.apple.com/se/podcast/kryptoteket/id1561725313",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "\"Jag kommer aldrig bli frälst av krypto\" – med Elinor Odeberg, chefsekonom på fackförbundet Handels",
+     "date": "2026-06-12",
+     "link": "https://pod.space/domkallarosskrypto/elinor-odeberg"
+    },
+    {
+     "title": "\"Hål i huvudet att skapa inflation för sakens skull\" – Gustav träffar vänsterekonomen Max Jerneck",
+     "date": "2026-06-05",
+     "link": "https://pod.space/domkallarosskrypto/max-jerneck"
+    },
+    {
+     "title": "\"Folk förstår inte pengar\" – med Claes Berg",
+     "date": "2026-05-29",
+     "link": "https://pod.space/domkallarosskrypto/claes-berg-v2622"
+    },
+    {
+     "title": "Philip Syrén, Slöseriombudsmannen",
+     "date": "2026-05-22",
+     "link": "https://pod.space/domkallarosskrypto/sloseriombudsmannen"
+    },
+    {
+     "title": "Fredrik Segerfeldt, liberal debattör",
+     "date": "2026-05-15",
+     "link": "https://pod.space/domkallarosskrypto/fredrik-segerfeldt"
+    }
+   ],
+   "added_at": "2026-11-05"
   },
   {
    "id": "kryptoskeptikerne",
@@ -529,6 +727,46 @@
    "added_at": "2026-10-16"
   },
   {
+   "id": "bitcoin-paivakirja",
+   "name": "Bitcoin Päiväkirja",
+   "country": "FI",
+   "language": "fi",
+   "feed": "https://anchor.fm/s/ecc48f3c/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja",
+   "flags": [
+    "affiliate-links"
+   ],
+   "active": false,
+   "episodes": [
+    {
+     "title": "32. Mikä ihme bitcoin on? OSA 2",
+     "date": "2024-09-26",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja/episodes/32--Mik-ihme-bitcoin-on--OSA-2-e2ojcer"
+    },
+    {
+     "title": "31. Mikä ihme bitcoin on? OSA 1",
+     "date": "2024-09-19",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja/episodes/31--Mik-ihme-bitcoin-on--OSA-1-e2ojcal"
+    },
+    {
+     "title": "30. Ostaisitko bitcoinia sun lapselle?",
+     "date": "2024-07-30",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja/episodes/30--Ostaisitko-bitcoinia-sun-lapselle-e2mklsb"
+    },
+    {
+     "title": "29. Kesäkuulumisia: Sijoittamisen unohtaminen, tylsyydensieto, nuorison bitcoin-into & podcastin reflektoitia",
+     "date": "2024-06-13",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja/episodes/29--Keskuulumisia-Sijoittamisen-unohtaminen--tylsyydensieto--nuorison-bitcoin-into--podcastin-reflektoitia-e2kredm"
+    },
+    {
+     "title": "28. Kesäkuulumisia: Bitcoin meemit, huijarit, louhinta Suomessa & Trumpetin vaalikampanja",
+     "date": "2024-06-06",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoin-pvkirja/episodes/28--Keskuulumisia-Bitcoin-meemit--huijarit--louhinta-Suomessa--Trumpetin-vaalikampanja-e2kilg2"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
    "id": "kryptopodi",
    "name": "Kryptopodi (Coinmotion)",
    "country": "FI",
@@ -607,6 +845,82 @@
    "added_at": "2026-10-16"
   },
   {
+   "id": "fremtidspenger",
+   "name": "Fremtidspenger",
+   "country": "NO",
+   "language": "no",
+   "feed": "https://anchor.fm/s/f013db0c/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/kiip",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "We’ll be back soon",
+     "date": "2024-04-15",
+     "link": "https://podcasters.spotify.com/pod/show/kiip/episodes/Well-be-back-soon-e2ie1p4"
+    },
+    {
+     "title": "Blockchain and environmental impact",
+     "date": "2024-04-08",
+     "link": "https://podcasters.spotify.com/pod/show/kiip/episodes/Blockchain-and-environmental-impact-e2i4s36"
+    },
+    {
+     "title": "25 år i fengsel og on-chain AI-agenter",
+     "date": "2024-04-02",
+     "link": "https://podcasters.spotify.com/pod/show/kiip/episodes/25-r-i-fengsel-og-on-chain-AI-agenter-e2hsoht"
+    },
+    {
+     "title": "Påskespesial",
+     "date": "2024-03-25",
+     "link": "https://podcasters.spotify.com/pod/show/kiip/episodes/Pskespesial-e2hi7gu"
+    },
+    {
+     "title": "Kryptohistorie",
+     "date": "2024-03-18",
+     "link": "https://podcasters.spotify.com/pod/show/kiip/episodes/Kryptohistorie-e2h889d"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "lohkoketju",
+   "name": "Lohkoketju",
+   "country": "FI",
+   "language": "fi",
+   "feed": "https://anchor.fm/s/73109bcc/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/lohkoketjutv",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Bitcoin ETF, Ethereum, Solana, EigenLayer ja SEC | Lohkoketju Uutiset",
+     "date": "2024-02-18",
+     "link": "https://podcasters.spotify.com/pod/show/lohkoketjutv/episodes/Bitcoin-ETF--Ethereum--Solana--EigenLayer-ja-SEC--Lohkoketju-Uutiset-e2fuvd5"
+    },
+    {
+     "title": "Lohkoketjujen kilpailu ja voittava teknologia (Mikko Ohtamaa) | Lohkoketju 32",
+     "date": "2024-02-16",
+     "link": "https://podcasters.spotify.com/pod/show/lohkoketjutv/episodes/Lohkoketjujen-kilpailu-ja-voittava-teknologia-Mikko-Ohtamaa--Lohkoketju-32-e2friq0"
+    },
+    {
+     "title": "STRGL, palvelumuotoilu, web3 ja tokenisaatio (Kasper Karimaa) | Lohkoketju 31",
+     "date": "2024-02-05",
+     "link": "https://podcasters.spotify.com/pod/show/lohkoketjutv/episodes/STRGL--palvelumuotoilu--web3-ja-tokenisaatio-Kasper-Karimaa--Lohkoketju-31-e2fc1p3"
+    },
+    {
+     "title": "Bitcoinin historia: Krypto-anarkismi, Satoshi Nakamoto ja Mt. Gox (Elias Ahonen) | Lohkoketju 30",
+     "date": "2024-01-21",
+     "link": "https://podcasters.spotify.com/pod/show/lohkoketjutv/episodes/Bitcoinin-historia-Krypto-anarkismi--Satoshi-Nakamoto-ja-Mt--Gox-Elias-Ahonen--Lohkoketju-30-e2enrtb"
+    },
+    {
+     "title": "MiCA: Soveltaminen, viranomaiset, pankit ja Suomi | Lohkoketju Uutiset",
+     "date": "2024-01-10",
+     "link": "https://podcasters.spotify.com/pod/show/lohkoketjutv/episodes/MiCA-Soveltaminen--viranomaiset--pankit-ja-Suomi--Lohkoketju-Uutiset-e2e89ts"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
    "id": "bitcoin-for-breakfast",
    "name": "Bitcoin for Breakfast",
    "country": "NO",
@@ -643,6 +957,110 @@
     }
    ],
    "added_at": "2026-10-16"
+  },
+  {
+   "id": "kryptograferne",
+   "name": "Kryptograferne",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://feeds.soundcloud.com/users/soundcloud:users:1053056023/sounds.rss",
+   "site": "https://podcasts.apple.com/dk/podcast/kryptograferne/id1596361037",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Episode 34 nytår 23-24",
+     "date": "2023-12-30",
+     "link": "https://soundcloud.com/user-974903760/episode-34-nyta-r-23-24"
+    },
+    {
+     "title": "Episode 33 - 6 months later",
+     "date": "2023-09-03",
+     "link": "https://soundcloud.com/user-974903760/episode-33-6-months-later"
+    },
+    {
+     "title": "Episode 32 - En snak med praktikanten",
+     "date": "2023-03-07",
+     "link": "https://soundcloud.com/user-974903760/episode-32-en-snak-med"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "en-ny-aftale",
+   "name": "En Ny Aftale",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://anchor.fm/s/a27a126c/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/ennyaftale",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "#64 - Bull market signals, Bitcoin fees, AI video, genterapi, cancel culture, Ethereum vs. Solana mm.",
+     "date": "2023-12-05",
+     "link": "https://podcasters.spotify.com/pod/show/ennyaftale/episodes/64---Bull-market-signals--Bitcoin-fees--AI-video--genterapi--cancel-culture--Ethereum-vs--Solana-mm-e2cs6vf"
+    },
+    {
+     "title": "#63 - Binance vs. DOJ, Kraken vs. SEC, Javier Milei, Blast L2, Kyber hack, Ethereum ETF, Bitcoin som religion mm.",
+     "date": "2023-11-28",
+     "link": "https://podcasters.spotify.com/pod/show/ennyaftale/episodes/63---Binance-vs--DOJ--Kraken-vs--SEC--Javier-Milei--Blast-L2--Kyber-hack--Ethereum-ETF--Bitcoin-som-religion-mm-e2chidp"
+    },
+    {
+     "title": "#62 - Frygt, usikkerhed og tvivl: Hvorfor bliver Bitcoin, Ethereum og Chainlink IKKE en succes?",
+     "date": "2023-11-14",
+     "link": "https://podcasters.spotify.com/pod/show/ennyaftale/episodes/62---Frygt--usikkerhed-og-tvivl-Hvorfor-bliver-Bitcoin--Ethereum-og-Chainlink-IKKE-en-succes-e2btm0b"
+    },
+    {
+     "title": "#61 - Hvorfor Bitcoin? + SBF dømt skyldig, Ordinals, Lightning Network som skaleringsmetode mm., feat. Lars fra Bitcoinskolen",
+     "date": "2023-11-07",
+     "link": "https://podcasters.spotify.com/pod/show/ennyaftale/episodes/61---Hvorfor-Bitcoin---SBF-dmt-skyldig--Ordinals--Lightning-Network-som-skaleringsmetode-mm---feat--Lars-fra-Bitcoinskolen-e2bk1a9"
+    },
+    {
+     "title": "#60 - Status på markedet: WW3, statsgæld, inflation og renter, Bitcoin halving, ETFer mm.",
+     "date": "2023-10-31",
+     "link": "https://podcasters.spotify.com/pod/show/ennyaftale/episodes/60---Status-p-markedet-WW3--statsgld--inflation-og-renter--Bitcoin-halving--ETFer-mm-e2b9tel"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "hopium-fi",
+   "name": "Hopium.fi",
+   "country": "FI",
+   "language": "fi",
+   "feed": "https://anchor.fm/s/2ceb4ac/podcast/rss",
+   "site": "https://hopium.fi",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Hopium #46 - Kvarn Capital, vieraina Joonas Järvinen ja Tuomas Maksimainen",
+     "date": "2023-10-04",
+     "link": "https://podcasters.spotify.com/pod/show/hopium-fi/episodes/Hopium-46---Kvarn-Capital--vieraina-Joonas-Jrvinen-ja-Tuomas-Maksimainen-e2a4ukv"
+    },
+    {
+     "title": "Hopium #45 - Treidaaminen, vieraana jjoale",
+     "date": "2023-07-28",
+     "link": "https://podcasters.spotify.com/pod/show/hopium-fi/episodes/Hopium-45---Treidaaminen--vieraana-jjoale-e2798tq"
+    },
+    {
+     "title": "Hopium #44 - Polkadotin ekosysteemi, vieraana Tomi Astikainen",
+     "date": "2023-07-20",
+     "link": "https://podcasters.spotify.com/pod/show/hopium-fi/episodes/Hopium-44---Polkadotin-ekosysteemi--vieraana-Tomi-Astikainen-e27685k"
+    },
+    {
+     "title": "Hopium #43 - AI vs kryptot, makro-talous, Hong Kongin kryptopörssit",
+     "date": "2023-06-03",
+     "link": "https://podcasters.spotify.com/pod/show/hopium-fi/episodes/Hopium-43---AI-vs-kryptot--makro-talous--Hong-Kongin-kryptoprssit-e25593q"
+    },
+    {
+     "title": "Hopium #42 - Meemikolikot, BRC-20 ja CLAMM-pörssit",
+     "date": "2023-06-03",
+     "link": "https://podcasters.spotify.com/pod/show/hopium-fi/episodes/Hopium-42---Meemikolikot--BRC-20-ja-CLAMM-prssit-e2557j1"
+    }
+   ],
+   "added_at": "2026-11-05"
   },
   {
    "id": "balki",
@@ -683,6 +1101,44 @@
    "added_at": "2026-10-16"
   },
   {
+   "id": "kryptoulottuvuus",
+   "name": "Kryptoulottuvuus",
+   "country": "FI",
+   "language": "fi",
+   "feed": "https://anchor.fm/s/d9ee1040/podcast/rss",
+   "site": "https://podcast.kryptoulottuvuus.fi",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Kryptoulottuvuus #29 - Digitaalinen identiteetti lohkoketjussa - Onko passien aika ohi?",
+     "date": "2023-05-18",
+     "link": "https://podcasters.spotify.com/pod/show/kryptoulottuvuus/episodes/Kryptoulottuvuus-29---Digitaalinen-identiteetti-lohkoketjussa---Onko-passien-aika-ohi-e248ub2"
+    },
+    {
+     "title": "Jakso 28 - Bitcoin louhinta on teollisuutta!",
+     "date": "2023-05-06",
+     "link": "https://podcasters.spotify.com/pod/show/kryptoulottuvuus/episodes/Jakso-28---Bitcoin-louhinta-on-teollisuutta-e23igsp"
+    },
+    {
+     "title": "Kryptoulottuvuus #27 - Ethereumin Shanghai-päivitys, FTX:n comeback ja onko Steve Jobs Satoshi Nakamoto?",
+     "date": "2023-04-13",
+     "link": "https://podcasters.spotify.com/pod/show/kryptoulottuvuus/episodes/Kryptoulottuvuus-27---Ethereumin-Shanghai-pivitys--FTXn-comeback-ja-onko-Steve-Jobs-Satoshi-Nakamoto-e229p4k"
+    },
+    {
+     "title": "Kryptoulottuvuus #26 - Spotifyn ja YouTuben korvaajat - Syrjäyttävätkö Web3 sovellukset nykyiset?",
+     "date": "2023-04-08",
+     "link": "https://podcasters.spotify.com/pod/show/kryptoulottuvuus/episodes/Kryptoulottuvuus-26---Spotifyn-ja-YouTuben-korvaajat---Syrjyttvtk-Web3-sovellukset-nykyiset-e2202sn"
+    },
+    {
+     "title": "Kryptoulottuvuus #25 - Huijareita ja Yhdysvaltojen regulaatiosekoilua",
+     "date": "2023-03-28",
+     "link": "https://podcasters.spotify.com/pod/show/kryptoulottuvuus/episodes/Kryptoulottuvuus-25---Huijareita-ja-Yhdysvaltojen-regulaatiosekoilua-e219j96"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
    "id": "kryptopia",
    "name": "Kryptopia",
    "country": "DK",
@@ -719,6 +1175,46 @@
     }
    ],
    "added_at": "2026-10-16"
+  },
+  {
+   "id": "kryptokammaren",
+   "name": "Kryptokammaren",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://anchor.fm/s/4a75b6d4/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/kryptokammaren",
+   "flags": [
+    "altcoin-promotion"
+   ],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Hur gick det för mina top 25 krypto prognoser för 2021?",
+     "date": "2022-06-09",
+     "link": "https://podcasters.spotify.com/pod/show/kryptokammaren/episodes/Hur-gick-det-fr-mina-top-25-krypto-prognoser-fr-2021-e1j3ml1"
+    },
+    {
+     "title": "Top 10 Legacy coins att investera i (hall of mirror metoden)",
+     "date": "2022-06-02",
+     "link": "https://podcasters.spotify.com/pod/show/kryptokammaren/episodes/Top-10-Legacy-coins-att-investera-i-hall-of-mirror-metoden-e1j3mkr"
+    },
+    {
+     "title": "4 coins jag köpte i maj (2000% ROI potential)",
+     "date": "2022-05-31",
+     "link": "https://podcasters.spotify.com/pod/show/kryptokammaren/episodes/4-coins-jag-kpte-i-maj-2000-ROI-potential-e1j3mkn"
+    },
+    {
+     "title": "Vilka kryptovalutor hade jag investerat i om jag bara hade haft 10000kr",
+     "date": "2022-05-26",
+     "link": "https://podcasters.spotify.com/pod/show/kryptokammaren/episodes/Vilka-kryptovalutor-hade-jag-investerat-i-om-jag-bara-hade-haft-10000kr-e1j3mfb"
+    },
+    {
+     "title": "Då kommer nästa krypto Bullrun",
+     "date": "2022-05-14",
+     "link": "https://podcasters.spotify.com/pod/show/kryptokammaren/episodes/D-kommer-nsta-krypto-Bullrun-e1iha25"
+    }
+   ],
+   "added_at": "2026-11-05"
   },
   {
    "id": "morgendagens-krypto",
@@ -870,6 +1366,196 @@
     }
    ],
    "added_at": "2026-10-16"
+  },
+  {
+   "id": "oispa-pitkoo",
+   "name": "OispaPitkoo",
+   "country": "FI",
+   "language": "fi",
+   "feed": "https://anchor.fm/s/5bfa1224/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/oispa-pitkoo",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "#12 Lukemisia - Viimeinen sana Bitcoinin energiankulutuksesta.",
+     "date": "2021-09-19",
+     "link": "https://podcasters.spotify.com/pod/show/oispa-pitkoo/episodes/12-Lukemisia---Viimeinen-sana-Bitcoinin-energiankulutuksesta-e17ih77"
+    },
+    {
+     "title": "#11 Lukemisia - Deflaatio ja vapaus",
+     "date": "2021-09-15",
+     "link": "https://podcasters.spotify.com/pod/show/oispa-pitkoo/episodes/11-Lukemisia---Deflaatio-ja-vapaus-e179109"
+    },
+    {
+     "title": "#10 Lukemisia - Oikeita nimiä ei vaadita.",
+     "date": "2021-08-14",
+     "link": "https://podcasters.spotify.com/pod/show/oispa-pitkoo/episodes/10-Lukemisia---Oikeita-nimi-ei-vaadita-e15tmeb"
+    },
+    {
+     "title": "#9 Monologi - Miksi Bitcoinilla on arvoa?",
+     "date": "2021-07-24",
+     "link": "https://podcasters.spotify.com/pod/show/oispa-pitkoo/episodes/9-Monologi---Miksi-Bitcoinilla-on-arvoa-e14ujfg"
+    },
+    {
+     "title": "#8 Lukemisia - Kirje kaikille, joilla ei vieläkään ole bitcoineja.",
+     "date": "2021-07-10",
+     "link": "https://podcasters.spotify.com/pod/show/oispa-pitkoo/episodes/8-Lukemisia---Kirje-kaikille--joilla-ei-vielkn-ole-bitcoineja-e147qlp"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "kryptografen",
+   "name": "Kryptografen",
+   "country": "NO",
+   "language": "no",
+   "feed": "https://feeds.soundcloud.com/users/soundcloud:users:600694554/sounds.rss",
+   "site": "https://podcasts.apple.com/no/podcast/kryptografen/id1455822359",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Richard sin avslutningspodcast - #94",
+     "date": "2021-07-01",
+     "link": "https://soundcloud.com/kryptografen/richard-sin-avslutningspodcast-94"
+    },
+    {
+     "title": "Sebastian Lykke i Enter.Art - #93",
+     "date": "2021-06-27",
+     "link": "https://soundcloud.com/kryptografen/sebastian-lykke-i-enterart-93"
+    },
+    {
+     "title": "Nikolai Gobel om kryptomarkedet #93",
+     "date": "2021-06-08",
+     "link": "https://soundcloud.com/kryptografen/nikolai-gobel-om-kryptomarkedet-93"
+    },
+    {
+     "title": "Torkel om Hagen-saken, Elon Musk og Taproot - #91",
+     "date": "2021-05-27",
+     "link": "https://soundcloud.com/kryptografen/torkel-om-hagen-saken-elon-musk-og-taproot-91"
+    },
+    {
+     "title": "Roger Valestrand om bitcoinkrakk og strømforbruk - #90",
+     "date": "2021-05-20",
+     "link": "https://soundcloud.com/kryptografen/roger-valestrand-om-bitcoinkrakk-og-stromforbruk-90"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "merkletree",
+   "name": "MerkleTree",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://anchor.fm/s/c4ff784/podcast/rss",
+   "site": "https://podcasts.apple.com/no/podcast/merkletree/id1470627422",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "#6 Benjamin 02",
+     "date": "2019-09-09",
+     "link": "https://podcasters.spotify.com/pod/show/merkletree/episodes/6-Benjamin-02-e4su73"
+    },
+    {
+     "title": "#5 Kristoffer Nærland 02",
+     "date": "2019-09-09",
+     "link": "https://podcasters.spotify.com/pod/show/merkletree/episodes/5-Kristoffer-Nrland-02-e4su6o"
+    },
+    {
+     "title": "#4 Kristoffer Nærland 01",
+     "date": "2019-09-09",
+     "link": "https://podcasters.spotify.com/pod/show/merkletree/episodes/4-Kristoffer-Nrland-01-e4ssc8"
+    },
+    {
+     "title": "#3 Bloomberg on blockchain",
+     "date": "2019-07-08",
+     "link": "https://podcasters.spotify.com/pod/show/merkletree/episodes/3-Bloomberg-on-blockchain-e4go9b"
+    },
+    {
+     "title": "#2 Nikolaj & blockchain",
+     "date": "2019-07-08",
+     "link": "https://podcasters.spotify.com/pod/show/merkletree/episodes/2-Nikolaj--blockchain-e4egfm"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "block21",
+   "name": "BLOCK21",
+   "country": "DK",
+   "language": "da",
+   "feed": "https://anchor.fm/s/69749b4/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/block21dk",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "Episode 12/ sæson 2: Sådan virker MakerDAO: Governance og Token dynamik",
+     "date": "2019-06-16",
+     "link": "https://podcasters.spotify.com/pod/show/block21dk/episodes/Episode-12-sson-2-Sdan-virker-MakerDAO-Governance-og-Token-dynamik-e4bqag"
+    },
+    {
+     "title": "Episode 11/ sæson 2: Oplev MakerDAO, en vision om fremtidens finansielle virkelighed med danske rødder · Del 1/3",
+     "date": "2019-05-10",
+     "link": "https://podcasters.spotify.com/pod/show/block21dk/episodes/Episode-11-sson-2-Oplev-MakerDAO--en-vision-om-fremtidens-finansielle-virkelighed-med-danske-rdder--Del-13-e409q7"
+    },
+    {
+     "title": "Episode 10: Fra Hype til Øjenhøjde. Bliv del af Blockchain projektkaldet hos Industriens Fond!",
+     "date": "2019-01-13",
+     "link": "https://podcasters.spotify.com/pod/show/block21dk/episodes/Episode-10-Fra-Hype-til-jenhjde--Bliv-del-af-Blockchain-projektkaldet-hos-Industriens-Fond-e2udnq"
+    },
+    {
+     "title": "Episode 9: Lad Blockchain vise vejen til Oprigtig Digital Innovation",
+     "date": "2018-11-16",
+     "link": "https://podcasters.spotify.com/pod/show/block21dk/episodes/Episode-9-Lad-Blockchain-vise-vejen-til-Oprigtig-Digital-Innovation-e2jg68"
+    },
+    {
+     "title": "Episode 8: Blockchain i Shipping, Tokens og hvordan Autonome Agenter kan disrupte Disrupterne",
+     "date": "2018-10-19",
+     "link": "https://podcasters.spotify.com/pod/show/block21dk/episodes/Episode-8-Blockchain-i-Shipping--Tokens-og-hvordan-Autonome-Agenter-kan-disrupte-Disrupterne-e2ebse"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
+  {
+   "id": "what-the-block",
+   "name": "What The Block?!",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://anchor.fm/s/7ff4018/podcast/rss",
+   "site": "https://podcasters.spotify.com/pod/show/whattheblock",
+   "flags": [],
+   "active": false,
+   "episodes": [
+    {
+     "title": "025 - Kinesisk blockchain",
+     "date": "2019-06-05",
+     "link": "https://podcasters.spotify.com/pod/show/whattheblock/episodes/025---Kinesisk-blockchain-e48bm0"
+    },
+    {
+     "title": "024 - Är bull-marknaden här?",
+     "date": "2019-05-15",
+     "link": "https://podcasters.spotify.com/pod/show/whattheblock/episodes/024---r-bull-marknaden-hr-e41j2m"
+    },
+    {
+     "title": "023 - Nobelpristagare vill få bort krypto!",
+     "date": "2019-05-08",
+     "link": "https://podcasters.spotify.com/pod/show/whattheblock/episodes/023---Nobelpristagare-vill-f-bort-krypto-e3vcif"
+    },
+    {
+     "title": "022 - HTCs Krypto-mobil",
+     "date": "2019-05-03",
+     "link": "https://podcasters.spotify.com/pod/show/whattheblock/episodes/022---HTCs-Krypto-mobil-e3ttke"
+    },
+    {
+     "title": "021 - Craig (Satoshi) Wright",
+     "date": "2019-04-24",
+     "link": "https://podcasters.spotify.com/pod/show/whattheblock/episodes/021---Craig-Satoshi-Wright-e3r3j3"
+    }
+   ],
+   "added_at": "2026-11-05"
   },
   {
    "id": "konsensus",

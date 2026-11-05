@@ -10,7 +10,7 @@ class Podcasts(unittest.TestCase):
     def test_data(self):
         self.assertEqual(podcasts.problems(), [])
         rows = podcasts.rows()
-        self.assertEqual(len(rows), 25)
+        self.assertEqual(len(rows), 43)
         act = [r["active"] for r in rows]
         self.assertEqual(act, sorted(act, reverse=True))
         by = {r["id"]: r for r in rows}
