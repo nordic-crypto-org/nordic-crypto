@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-04T15:36:51+00:00",
+ "generated_at": "2026-11-05T03:42:28+00:00",
  "preview": false,
- "updated": "2026-11-04T15:34:00+00:00",
+ "updated": "2026-11-05T03:39:36+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
  "count": 114,
@@ -1253,6 +1253,43 @@
       "credit": "Wikimedia Commons",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
      }
+    },
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/historiens-storste-kryptotyveri-nord-korea-nekter-for-at-de-star-bak/1722377",
+     "title": "Historiens største kryptotyveri: Nord-Korea nekter for at de står bak",
+     "published": "2026-11-04T18:14:22+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+      "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+     }
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/politikk/2026/11/03/8392560/nord-korea-nekter-for-at-de-star-bak-historiens-storste-kryptotyveri",
+     "title": "Nord-Korea: Nekter for at de står bak historiens største kryptotyveri",
+     "published": "2026-11-03T00:00:00+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
     }
    ],
    "sources": [
@@ -1361,21 +1398,58 @@
       "credit": "Wikimedia Commons",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
      }
+    },
+    {
+     "outlet": "abcnyheter",
+     "outlet_name": "ABC Nyheter",
+     "url": "https://abcnyheter.no/nyheter/historiens-storste-kryptotyveri-nord-korea-nekter-for-at-de-star-bak/1722377",
+     "title": "Historiens største kryptotyveri: Nord-Korea nekter for at de står bak",
+     "published": "2026-11-04T18:14:22+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+      "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+     }
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/politikk/2026/11/03/8392560/nord-korea-nekter-for-at-de-star-bak-historiens-storste-kryptotyveri",
+     "title": "Nord-Korea: Nekter for at de står bak historiens største kryptotyveri",
+     "published": "2026-11-03T00:00:00+00:00",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": null
     }
    ],
    "coverage": {
-    "count": 5,
+    "count": 7,
     "by_country": [
      {
       "country": "NO",
-      "count": 5,
+      "count": 7,
       "share": 1.0
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 5,
+      "count": 7,
       "share": 1.0
      },
      {
