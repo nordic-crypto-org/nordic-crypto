@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-05T06:39:28+00:00",
+ "generated_at": "2026-11-05T06:51:50+00:00",
  "preview": false,
  "title": "Nordic Crypto data API",
  "sign_off": "The Nordic Crypto team",
@@ -40,11 +40,11 @@
    "EU": 0
   },
   "newsletters": 5,
-  "events": 23,
+  "events": 25,
   "events_upcoming": 13,
   "events_ongoing": 0,
-  "events_past": 10,
-  "events_previous": 56,
+  "events_past": 12,
+  "events_previous": 58,
   "talks": 153,
   "sources": 1042,
   "academia": {
@@ -151,8 +151,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/events.json",
    "summary": "Public events, soonest start first, including past events.",
    "schema": "EventList",
-   "example_url": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
+   "example_url": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
    "item_path": "/api/v1/events/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/events/{id}.json"
   },
