@@ -22,8 +22,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Football reportage; 'kryptonit' wordplay, no crypto angle. researcher 05.11"
   },
   {
    "id": "d18b2ff12cba",
@@ -48,14 +49,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price commentary on Trump-linked tokens. researcher 05.11"
   },
   {
    "id": "6a0bc0c01d46",
    "url": "https://e24.no/boers-og-finans/i/581Jd1/handelsrush-hos-firi-etter-binance-angrep",
    "title": "Handelsrush hos Firi etter Binance-angrep",
-   "title_en": null,
+   "title_en": "Trading at Firi more than doubled the day after the Binance hack, E24 reports",
    "source": "e24",
    "source_name": "E24",
    "country": "NO",
@@ -69,7 +71,7 @@
    "published": "2026-11-04T15:55:37+00:00",
    "fetched": "2026-11-05T02:49:38+00:00",
    "topics": [
-    "crypto",
+    "exchanges",
     "companies"
    ],
    "matched": [
@@ -78,8 +80,77 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "The Norwegian crypto exchange Firi recorded 19.8 million kroner in crypto trading the day after the Binance hack — more than double a typical day — according to figures Firi shared with E24. Activity stayed high over the weekend at 15.4 million kroner, 50 percent above the next-busiest weekend so far this year, chief executive Thuc Hoang told E24. Hoang says it is too early to know whether customers are permanently moving funds from foreign exchanges.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-05T04:40:00+01:00",
+   "primary_source": {
+    "name": "E24",
+    "url": "https://e24.no/boers-og-finans/i/581Jd1/handelsrush-hos-firi-etter-binance-angrep"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance hack: main story"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/60bdd64f457a/",
+     "label": "Firi lay-offs and new CPO"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Handelen hos Firi meir enn dobla seg dagen etter Binance-hackinga, ifølgje E24",
+    "sv": "Handeln hos Firi mer än fördubblades dagen efter Binance-hackingen, enligt E24",
+    "da": "Handelen hos Firi mere end fordobledes dagen efter Binance-hacket, ifølge E24",
+    "fi": "Kaupankäynti Firissä yli kaksinkertaistui Binance-hakkerin jälkeisenä päivänä, E24 kertoo",
+    "is": "Viðskipti hjá Firi meira en tvöfölduðust daginn eftir Binance-árásina, að sögn E24",
+    "zh": "E24报道：币安被黑次日Firi交易量翻倍有余",
+    "hi": "E24: Binance हैक के अगले दिन Firi पर ट्रेडिंग दोगुनी से अधिक",
+    "es": "La negociación en Firi se más que duplicó el día después del hack de Binance, según E24",
+    "fr": "Les échanges sur Firi ont plus que doublé le lendemain du piratage de Binance, selon E24",
+    "ar": "التداول في Firi تضاعف بأكثر من الضعف في اليوم التالي لاختراق Binance، بحسب E24",
+    "bn": "E24: Binance হ্যাকের পরের দিন Firi-তে লেনদেন দ্বিগুণেরও বেশি",
+    "pt": "Negociação na Firi mais do que duplicou no dia após o ataque à Binance, segundo a E24",
+    "ru": "Торги на Firi более чем удвоились на следующий день после взлома Binance, сообщает E24",
+    "ur": "E24: Binance ہیک کے اگلے دن Firi پر تجارت دو گنا سے زیادہ",
+    "id": "Perdagangan di Firi lebih dari dua kali lipat sehari setelah peretasan Binance, menurut E24",
+    "de": "Handel bei Firi mehr als verdoppelt am Tag nach dem Binance-Hack, laut E24",
+    "ja": "E24報道：バイナンス攻撃翌日、Firiの取引高が通常の2倍超",
+    "sw": "Biashara katika Firi ilizidi kuongezeka mara mbili siku baada ya uvamizi wa Binance, E24 inaripoti",
+    "mr": "E24: Binance हॅकनंतरच्या दिवशी Firi वरील व्यवहार दुप्पटपेक्षा जास्त",
+    "fa": "به گزارش E24، معاملات در Firi روز پس از هک بایننس بیش از دو برابر شد",
+    "uk": "Торгівля на Firi більш ніж подвоїлася наступного дня після зламу Binance, повідомляє E24",
+    "tr": "E24'e göre Binance saldırısının ertesi günü Firi'de işlem hacmi iki kattan fazla arttı",
+    "se": "Gávppašeapmi Firis eanet go duoplojuvvui Binance-hákkema maŋŋá beaivvi, muitala E24"
+   },
+   "title_i18n_source": "Handelsrush hos Firi etter Binance-angrep",
+   "summary_i18n": {
+    "nb": "Den norske kryptobørsen Firi omsatte kryptovaluta for 19,8 millioner kroner dagen etter Binance-hackinga – mer enn dobbelt så mye som på et vanlig døgn – ifølge tall Firi har delt med E24. Aktiviteten holdt seg høy gjennom helgen på 15,4 millioner kroner, 50 prosent mer enn den nest travleste helgen så langt i år, sa administrerende direktør Thuc Hoang til E24. Hoang sier det er for tidlig å vite om kundene permanent flytter midler fra utenlandske børser.",
+    "nn": "Den norske kryptobørsen Firi omsette kryptovaluta for 19,8 millionar kroner dagen etter Binance-hackinga – meir enn dobbelt så mykje som på eit vanleg døgn – ifølgje tal Firi har delt med E24. Aktiviteten heldt seg høg gjennom helga på 15,4 millionar kroner, 50 prosent meir enn den nest travlaste helga så langt i år, sa administrerande direktør Thuc Hoang til E24. Hoang seier det er for tidleg å vite om kundane permanent flyttar midlar frå utanlandske børser.",
+    "sv": "Den norska kryptobörsen Firi omsatte kryptovaluta för 19,8 miljoner kronor dagen efter Binance-hackingen – mer än dubbelt så mycket som en vanlig dag – enligt siffror Firi delat med E24. Aktiviteten höll sig hög över helgen på 15,4 miljoner kronor, 50 procent mer än den näst mest intensiva helgen hittills i år, sade vd Thuc Hoang till E24. Hoang säger att det är för tidigt att veta om kunderna permanent flyttar medel från utländska börser.",
+    "da": "Den norske kryptobørs Firi omsatte kryptovaluta for 19,8 millioner kroner dagen efter Binance-hacket – mere end dobbelt så meget som på en almindelig dag – ifølge tal, Firi har delt med E24. Aktiviteten holdt sig høj i weekenden på 15,4 millioner kroner, 50 procent mere end den næstmest travle weekend hidtil i år, sagde administrerende direktør Thuc Hoang til E24. Hoang siger, at det er for tidligt at vide, om kunderne permanent flytter midler fra udenlandske børser.",
+    "fi": "Norjalainen kryptopörssi Firi välitti kryptovaluuttaa 19,8 miljoonalla kruunulla Binance-hakkerin jälkeisenä päivänä – yli kaksinkertainen määrä tavalliseen päivään verrattuna – Firin E24:lle antamien lukujen mukaan. Viikonlopun vaihto oli 15,4 miljoonaa kruunua, 50 prosenttia enemmän kuin tähänastisen vuoden toiseksi vilkkain viikonloppu, toimitusjohtaja Thuc Hoang sanoi E24:lle. Hoangin mukaan on liian aikaista tietää, siirtävätkö asiakkaat varoja pysyvästi ulkomaisilta pörsseiltä.",
+    "is": "Norska rafmyntakauphöllin Firi miðlaði rafmyntum fyrir 19,8 milljónir króna daginn eftir Binance-árásina – meira en tvöfalt venjulegan dag – samkvæmt tölum sem Firi deildi með E24. Virknin hélst mikil um helgina, 15,4 milljónir króna, 50 prósentum meira en næstumfangsmesta helgin hingað til á árinu, sagði forstjórinn Thuc Hoang við E24. Hoang segir að það sé of snemmt að vita hvort viðskiptavinir flytji fjármuni varanlega frá erlendum kauphöllum.",
+    "zh": "据Firi向E24提供的数据，挪威加密货币交易所Firi在币安被黑客攻击后的次日加密货币成交额达1980万克朗，超过平常一天的两倍。首席执行官Thuc Hoang对E24表示，周末成交额仍达1540万克朗，比今年迄今第二忙碌的周末高出50%。Hoang称，目前仍难判断客户是否会长期从境外交易所转移资金。",
+    "hi": "E24 को Firi द्वारा साझा किए गए आंकड़ों के अनुसार, नॉर्वे के क्रिप्टो एक्सचेंज Firi ने Binance हैक के अगले दिन 1.98 करोड़ क्रोनर का क्रिप्टो ट्रेडिंग वॉल्यूम दर्ज किया — सामान्य दिन से दोगुने से अधिक। मुख्य कार्यकारी Thuc Hoang ने E24 को बताया कि सप्ताहांत में गतिविधि 1.54 करोड़ क्रोनर रही, जो इस वर्ष के अब तक के दूसरे व्यस्ततम सप्ताहांत से 50 प्रतिशत अधिक है। Hoang कहते हैं कि यह जानना अभी जल्दबाजी होगी कि क्या ग्राहक विदेशी एक्सचेंजों से स्थायी रूप से फंड स्थानांतरित कर रहे हैं।",
+    "es": "El exchange noruego de criptomonedas Firi registró 19,8 millones de coronas en negociación de cripto el día después del hack de Binance —más del doble de un día típico—, según cifras que Firi compartió con E24. La actividad se mantuvo alta el fin de semana, con 15,4 millones de coronas, un 50 % por encima del segundo fin de semana más activo del año hasta ahora, dijo el consejero delegado Thuc Hoang a E24. Hoang afirma que es pronto para saber si los clientes están trasladando fondos de forma permanente desde exchanges extranjeros.",
+    "fr": "La plateforme norvégienne de cryptomonnaies Firi a enregistré 19,8 millions de couronnes d'échanges crypto le lendemain du piratage de Binance — plus du double d'une journée typique — selon des chiffres communiqués à E24. L'activité est restée élevée le week-end, à 15,4 millions de couronnes, soit 50 % de plus que le deuxième week-end le plus actif de l'année jusqu'ici, a déclaré le directeur général Thuc Hoang à E24. Selon Hoang, il est trop tôt pour savoir si les clients déplacent durablement des fonds depuis des plateformes étrangères.",
+    "ar": "سجّلت منصة العملات المشفرة النرويجية Firi تداولاً بقيمة 19.8 مليون كرونة في اليوم التالي لاختراق Binance — أي أكثر من ضعف يوم عادي — وفق أرقام شاركتها Firi مع E24. وظل النشاط مرتفعًا خلال عطلة نهاية الأسبوع عند 15.4 مليون كرونة، بزيادة 50 بالمئة عن ثاني أكثر عطلة ازدحامًا حتى الآن هذا العام، وفق ما قاله الرئيس التنفيذي ثوك هوانغ لـE24. ويقول هوانغ إنه من المبكر معرفة ما إذا كان العملاء ينقلون أموالهم بشكل دائم من منصات أجنبية.",
+    "bn": "E24-কে Firi-এর দেওয়া তথ্য অনুযায়ী, নরওয়ের ক্রিপ্টো এক্সচেঞ্জ Firi Binance হ্যাকের পরের দিন ১.৯৮ কোটি ক্রোনারের ক্রিপ্টো লেনদেন করেছে — সাধারণ দিনের দ্বিগুণেরও বেশি। প্রধান নির্বাহী Thuc Hoang E24-কে বলেন, সপ্তাহান্তে কার্যক্রম ছিল ১.৫৪ কোটি ক্রোনার, যা এ বছর এখন পর্যন্ত দ্বিতীয় ব্যস্ততম সপ্তাহান্তের চেয়ে ৫০ শতাংশ বেশি। Hoang বলেন, গ্রাহকরা বিদেশি এক্সচেঞ্জ থেকে স্থায়ীভাবে তহবিল সরচ্ছে কি না, তা জানতে এখনও তাড়াতাড়ি।",
+    "pt": "A plataforma norueguesa de criptomoedas Firi registou 19,8 milhões de coroas em negociação de cripto no dia após o ataque à Binance — mais do dobro de um dia típico — segundo números partilhados com a E24. A atividade manteve-se elevada no fim de semana, com 15,4 milhões de coroas, 50% acima do segundo fim de semana mais movimentado do ano até agora, disse o presidente executivo Thuc Hoang à E24. Hoang afirma que é cedo demais para saber se os clientes estão a transferir fundos de forma permanente de exchanges estrangeiras.",
+    "ru": "Норвежская криптобиржа Firi зафиксировала оборот криптовалюты в 19,8 млн крон на следующий день после взлома Binance — более чем вдвое больше обычного дня — по данным, которыми Firi поделилась с E24. Активность оставалась высокой на выходных: 15,4 млн крон, на 50% выше второго по загруженности уик-энда в этом году, сказал E24 генеральный директор Тук Хоанг. По словам Хоанга, рано говорить о том, переводят ли клиенты средства с зарубежных бирж на постоянной основе.",
+    "ur": "E24 کو Firi کی فراہم کردہ اعداد و شمار کے مطابق، ناروے کے کرپٹو ایکسچینج Firi نے Binance ہیک کے اگلے دن 1.98 کروڑ کرونا کا کرپٹو ٹریڈنگ والیوم ریکارڈ کیا — عام دن سے دو گنا سے زیادہ۔ چیف ایگزیکٹو Thuc Hoang نے E24 کو بتایا کہ ویک اینڈ پر سرگرمی 1.54 کروڑ کرونا رہی، جو اس سال اب تک کے دوسرے مصروف ترین ویک اینڈ سے 50 فیصد زیادہ ہے۔ Hoang کہتے ہیں کہ یہ جاننا ابھی جلد بازی ہوگی کہ کیا صارفین غیر ملکی ایکسچینجز سے مستقل طور پر فنڈز منتقل کر رہے ہیں۔",
+    "id": "Bursa kripto Norwegia Firi mencatat perdagangan kripto 19,8 juta kroner sehari setelah peretasan Binance — lebih dari dua kali lipat hari biasa — menurut angka yang dibagikan Firi kepada E24. Aktivitas tetap tinggi selama akhir pekan sebesar 15,4 juta kroner, 50 persen di atas akhir pekan tersibuk kedua sejauh ini tahun ini, kata CEO Thuc Hoang kepada E24. Hoang mengatakan masih terlalu dini untuk mengetahui apakah pelanggan secara permanen memindahkan dana dari bursa luar negeri.",
+    "de": "Die norwegische Kryptobörse Firi verzeichnete am Tag nach dem Binance-Hack einen Kryptoumsatz von 19,8 Millionen Kronen — mehr als das Doppelte eines normalen Tages — laut Zahlen, die Firi E24 mitgeteilt hat. Das Wochenende blieb mit 15,4 Millionen Kronen stark, 50 Prozent über dem bislang zweitstärksten Wochenende des Jahres, sagte Vorstandschef Thuc Hoang E24. Ob Kunden dauerhaft Mittel von ausländischen Börsen verlagern, sei laut Hoang noch zu früh zu sagen.",
+    "ja": "E24にFiriが示した数字によると、ノルウェーの暗号資産取引所Firiはバイナンス攻撃の翌日に1980万クローネの暗号資産取引高を記録し、通常の一日の2倍を超えた。最高経営責任者トゥク・ホアン氏はE24に対し、週末も1540万クローネと、今年これまでに2番目に忙しい週末を50％上回ったと述べた。ホアン氏は、顧客が海外取引所から恒久的に資金を移しているかは判断するには早いとしている。",
+    "sw": "Soko la kripto la Norway Firi lilirekodi biashara ya kripto ya kroner milioni 19.8 siku baada ya uvamizi wa Binance — zaidi ya mara mbili ya siku ya kawaida — kulingana na takwimu Firi ilizoshiriki na E24. Shughuli zilibaki juu wikendi kwa kroner milioni 15.4, asilimia 50 juu ya wikendi ya pili yenye shughuli nyingi zaidi hadi sasa mwaka huu, mkurugenzi mtendaji Thuc Hoang aliiambia E24. Hoang anasema bado ni mapema kujua kama wateja wanahamisha fedha kwa kudumu kutoka masoko ya nje.",
+    "mr": "E24 ला Firi ने दिलेल्या आकडेवारीनुसार, नॉर्वेच्या क्रिप्टो एक्सचेंज Firi ने Binance हॅकनंतरच्या दिवशी 1.98 कोटी क्रोनरचे क्रिप्टो व्यवहार नोंदवले — सामान्य दिवसाच्या दुपटीहून अधिक. मुख्य कार्यकारी Thuc Hoang यांनी E24 ला सांगितले की आठवड्याच्या शेवटी व्यवहार 1.54 कोटी क्रोनर राहिले, जे या वर्षातील आतापर्यंतच्या दुसऱ्या सर्वाधिक व्यस्त शनिवार-रविवारापेक्षा 50 टक्के जास्त आहे. Hoang म्हणतात की ग्राहक परदेशी एक्सचेंजवरून कायमचे निधी हलवत आहेत का, हे सांगणे अजून लवकर आहे.",
+    "fa": "به گفته ارقامی که Firi با E24 در میان گذاشته، صرافی رمزارز نروژی Firi روز پس از هک بایننس ۱۹٫۸ میلیون کرون معامله رمزارز ثبت کرد — بیش از دو برابر یک روز معمولی. توک هوانگ، مدیرعامل، به E24 گفت فعالیت در آخر هفته با ۱۵٫۴ میلیون کرون ادامه داشت که ۵۰ درصد بیشتر از دومین آخر هفته پرمشغله امسال تاکنون است. هوانگ می‌گوید هنوز زود است بدانیم آیا مشتریان به‌طور دائم وجوه را از صرافی‌های خارجی جابه‌جا می‌کنند.",
+    "uk": "Норвезька криптобіржа Firi зафіксувала оборот криптовалюти 19,8 млн крон наступного дня після зламу Binance — більш ніж удвічі більше звичайного дня — за даними, якими Firi поділилася з E24. Активність лишалася високою на вихідних: 15,4 млн крон, на 50% вище другого за завантаженістю вікенду цього року, сказав E24 генеральний директор Тук Хоанг. За словами Хоанга, рано говорити про те, чи переказують клієнти кошти із зарубіжних бірж на постійній основі.",
+    "tr": "Norveçli kripto borsası Firi, Binance saldırısının ertesi günü 19,8 milyon kron kripto işlem hacmi kaydetti — tipik bir günün iki katından fazla — Firi'nin E24 ile paylaştığı rakamlara göre. CEO Thuc Hoang, E24'e aktivitenin hafta sonunda 15,4 milyon kronla yüksek kaldığını, bunun bu yıl şimdiye kadarki ikinci en yoğun hafta sonundan yüzde 50 fazla olduğunu söyledi. Hoang, müşterilerin yabancı borsalardan kalıcı olarak fon kaydırıp kaydırmadığını bilmek için henüz erken olduğunu belirtti.",
+    "se": "Norgga crypto-lonohallan Firi registrerii 19,8 miljovnna ruvnno crypto-gávppašeami Binance-hákkema maŋŋá beaivvi — eanet go duoplojuvvon dábálaš beaivái — Firi loguid mielde maid dat juogai E24:ain. Doaimma vuođđu bisui allin vahkkoloahpa 15,4 miljovnna ruvnnuin, 50 proseantta eanet go nuppi eanemus doaimmalaš vahkkoloahpa dán jagi, muitala váldostivrahoavda Thuc Hoang E24:ii. Hoang dadjá ahte lea beare árrat diehtit jos áššehasat bissovaččat sirdet ruđaid olgoriikka lonohallamiin."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "dc340484083c",
@@ -104,10 +175,11 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "f47e76863444",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "f47e76863444"
   },
   {
    "id": "e17f32a6f100",
@@ -132,8 +204,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "f47e76863444"
   },
   {
    "id": "e3989e6da7c2",
@@ -165,7 +238,7 @@
    "id": "9248a4954c15",
    "url": "https://kaupr.io/nyheter/virtune-lanserer-ai-indeks-for-krypto-i-agentokonomien",
    "title": "Virtune lanserer AI-indeks for krypto i agentøkonomien",
-   "title_en": null,
+   "title_en": "Virtune lists an AI crypto index ETP on Nasdaq Stockholm and Xetra",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -177,8 +250,7 @@
    "published": "2026-11-04",
    "fetched": "2026-11-05T02:49:38+00:00",
    "topics": [
-    "blockchain",
-    "crypto",
+    "products",
     "companies"
    ],
    "matched": [
@@ -188,9 +260,68 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Nordic ETP issuer Virtune listed its Virtune AI Crypto Index ETP on 3 November 2026 under the tickers VIRAI on Nasdaq Stockholm and VRTI on Deutsche Börse Xetra, according to Kaupr. The product tracks an index of 13 crypto assets linked to what the industry calls the agent economy. In an interview with Kaupr, Virtune chief sales officer Andreas Severin said the listing reflects the company's view that software agents using blockchain services are becoming a growth driver alongside tokenisation.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-05T04:40:00+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/virtune-lanserer-ai-indeks-for-krypto-i-agentokonomien"
+   },
+   "title_i18n": {
+    "nn": "Virtune noterer indeks-ETP for kunstig intelligens og krypto på Nasdaq Stockholm og Xetra",
+    "sv": "Virtune noterar AI-kryptoindex-ETP på Nasdaq Stockholm och Xetra",
+    "da": "Virtune noterer AI-kryptoindeks-ETP på Nasdaq Stockholm og Xetra",
+    "fi": "Virtune listaa tekoälyyn liittyvän kryptoindeksi-ETP:n Nasdaq Tukholmaan ja Xetraan",
+    "is": "Virtune skráir gervigreindar-rafmyntavísitölu-ETP á Nasdaq Stockholm og Xetra",
+    "zh": "Virtune在纳斯达克斯德哥尔摩和Xetra上市AI加密指数ETP",
+    "hi": "Virtune ने Nasdaq Stockholm और Xetra पर AI क्रिप्टो इंडेक्स ETP सूचीबद्ध किया",
+    "es": "Virtune cotiza un ETP de índice cripto de IA en Nasdaq Stockholm y Xetra",
+    "fr": "Virtune cote un ETP d'indice crypto lié à l'IA sur Nasdaq Stockholm et Xetra",
+    "ar": "Virtune تُدرج منتج ETP لمؤشر عملات مشفرة مرتبط بالذكاء الاصطناعي في ناسداك ستوكهولم وXetra",
+    "bn": "Virtune Nasdaq Stockholm ও Xetra-তে AI ক্রিপ্টো সূচক ETP তালিকাভুক্ত করেছে",
+    "pt": "Virtune lista ETP de índice cripto de IA na Nasdaq Stockholm e na Xetra",
+    "ru": "Virtune размещает ИИ-криптоиндексный ETP на Nasdaq Stockholm и Xetra",
+    "ur": "Virtune نے Nasdaq Stockholm اور Xetra پر AI کرپٹو انڈیکس ETP فہرست کر لیا",
+    "id": "Virtune mencatatkan ETP indeks kripto AI di Nasdaq Stockholm dan Xetra",
+    "de": "Virtune notiert KI-Krypto-Index-ETP an Nasdaq Stockholm und Xetra",
+    "ja": "Virtune、AI暗号資産指数ETPをナスダック・ストックホルムとXetraに上場",
+    "sw": "Virtune yorodhesha ETP ya faharasa ya kripto ya AI kwenye Nasdaq Stockholm na Xetra",
+    "mr": "Virtune ने Nasdaq Stockholm आणि Xetra वर AI क्रिप्टो निर्देशांक ETP सूचीबद्ध केले",
+    "fa": "Virtune یک ETP شاخص رمزارز مرتبط با هوش مصنوعی را در Nasdaq Stockholm و Xetra پذیرفت",
+    "uk": "Virtune розміщує ШІ-криптоіндексний ETP на Nasdaq Stockholm і Xetra",
+    "tr": "Virtune, Nasdaq Stockholm ve Xetra'da yapay zekâ kripto endeksi ETP'sini listeledi",
+    "se": "Virtune listá crypto-indeksa-ETP mii čuovvu árvvuid mat gullet álbmogiid vuođđoduvvon árvvostallamiidda Nasdaq Stockholm:s ja Xetra:s"
+   },
+   "title_i18n_source": "Virtune lanserer AI-indeks for krypto i agentøkonomien",
+   "summary_i18n": {
+    "nb": "Den nordiske ETP-utstederen Virtune noterte 3. november 2026 en indeks-ETP for kunstig intelligens og krypto under tickeren VIRAI på Nasdaq Stockholm og VRTI på Deutsche Börse Xetra, ifølge Kaupr. Produktet følger en indeks med 13 kryptoaktiva knyttet til det bransjen kaller agentøkonomien. I et intervju med Kaupr sier salgsdirektør Andreas Severin i Virtune at noteringen speiler selskapets syn på at programvareagenter som bruker blokkjedetjenester, blir en vekstdriver sammen med tokenisering.",
+    "nn": "Den nordiske ETP-utstedaren Virtune noterte 3. november 2026 ein indeks-ETP for kunstig intelligens og krypto under tickeren VIRAI på Nasdaq Stockholm og VRTI på Deutsche Börse Xetra, ifølgje Kaupr. Produktet følgjer ein indeks med 13 kryptoaktiva knytte til det bransjen kallar agentøkonomien. I eit intervju med Kaupr seier salsdirektør Andreas Severin i Virtune at noteringa speglar selskapet sitt syn på at programvareagentar som brukar blokkjedetenester, blir ein vekstdrivar saman med tokenisering.",
+    "sv": "Den nordiska ETP-emittenten Virtune noterade den 3 november 2026 produkten Virtune AI Crypto Index ETP under tickrarna VIRAI på Nasdaq Stockholm och VRTI på Deutsche Börse Xetra, enligt Kaupr. Produkten följer ett index med 13 krypto tillgångar kopplade till det branschen kallar agenteekonomin. I en intervju med Kaupr säger Virtunes försäljningschef Andreas Severin att noteringen speglar bolagets syn på att mjukvaruagenter som använder blockkedjetjänster blir en tillväxtmotor tillsammans med tokenisering.",
+    "da": "Den nordiske ETP-udsteder Virtune noterede den 3. november 2026 produktet Virtune AI Crypto Index ETP under tickere VIRAI på Nasdaq Stockholm og VRTI på Deutsche Börse Xetra, ifølge Kaupr. Produktet følger et indeks med 13 kryptoaktiver knyttet til det, branchen kalder agenteøkonomien. I et interview med Kaupr siger salgsdirektør Andreas Severin fra Virtune, at noteringen afspejler selskabets syn på, at softwareagenter, der bruger blockchain-tjenester, bliver en vækstdriver sammen med tokenisering.",
+    "fi": "Pohjoismainen ETP-liikkeeseenlaskija Virtune listasi 3. marraskuuta 2026 Virtune AI Crypto Index ETP -tuotteen tickereillä VIRAI Nasdaq Tukholmassa ja VRTI Deutsche Börse Xetrassa, Kaupr kertoo. Tuote seuraa 13 kryptovarallisuuden indeksiä, joka liittyy siihen, mitä ala kutsuu agenttitaloudeksi. Kauprin haastattelussa Virtunen myyntijohtaja Andreas Severin sanoo listauksen heijastavan yhtiön näkemystä, että lohkoketjupalveluja käyttävistä ohjelmistoagenteista on tulossa kasvumoottori tokenisoinnin rinnalle.",
+    "is": "Norræni ETP-útgefandinn Virtune skráði 3. nóvember 2026 vöruna Virtune AI Crypto Index ETP undir auðkennunum VIRAI á Nasdaq Stockholm og VRTI á Deutsche Börse Xetra, samkvæmt Kaupr. Varan fylgir vísitölu með 13 rafmyntaeignum sem tengjast því sem greinin kallar umboðsmannahagkerfið. Í viðtali við Kaupr segir Andreas Severin, söluforstjóri Virtune, að skráningin spegli sýn félagsins á að hugbúnaðarumboðsmenn sem nota bálkakeðjuþjónustu verði vaxtarhvati ásamt tókenvæðingu.",
+    "zh": "据Kaupr报道，北欧ETP发行商Virtune于2026年11月3日将其Virtune AI Crypto Index ETP以上市代码VIRAI在纳斯达克斯德哥尔摩、以VRTI在德意志交易所Xetra上市。该产品跟踪由13种加密资产组成、与行业所称“智能体经济”相关的指数。Virtune首席销售官Andreas Severin在接受Kaupr采访时表示，此次上市反映了公司的判断：使用区块链服务的软件智能体正与代币化一道成为增长动力。",
+    "hi": "Kaupr के अनुसार, नॉर्डिक ETP जारीकर्ता Virtune ने 3 नवंबर 2026 को अपना Virtune AI Crypto Index ETP Nasdaq Stockholm पर टिकर VIRAI और Deutsche Börse Xetra पर VRTI के तहत सूचीबद्ध किया। उत्पाद 13 क्रिप्टो परिसंपत्तियों वाले एक इंडेक्स को ट्रैक करता है, जो उद्योग द्वारा एजेंट अर्थव्यवस्था कहे जाने वाले क्षेत्र से जुड़ा है। Kaupr से बातचीत में Virtune के मुख्य बिक्री अधिकारी Andreas Severin ने कहा कि लिस्टिंग कंपनी के इस दृष्टिकोण को दर्शाती है कि ब्लॉकचेन सेवाओं का उपयोग करने वाले सॉफ़्टवेयर एजेंट टोकनाइज़ेशन के साथ एक वृद्धि चालक बन रहे हैं।",
+    "es": "El emisor nórdico de ETP Virtune cotizó el 3 de noviembre de 2026 su Virtune AI Crypto Index ETP con los tickers VIRAI en Nasdaq Stockholm y VRTI en Deutsche Börse Xetra, según Kaupr. El producto sigue un índice de 13 criptoactivos vinculados a lo que el sector llama la economía de agentes. En una entrevista con Kaupr, el director de ventas de Virtune, Andreas Severin, dijo que la cotización refleja la visión de la empresa de que los agentes de software que usan servicios de cadena de bloques se están convirtiendo en un motor de crecimiento junto con la tokenización.",
+    "fr": "L'émetteur nordique d'ETP Virtune a coté le 3 novembre 2026 son Virtune AI Crypto Index ETP sous les tickers VIRAI sur Nasdaq Stockholm et VRTI sur Deutsche Börse Xetra, selon Kaupr. Le produit suit un indice de 13 cryptoactifs liés à ce que le secteur appelle l'économie des agents. Dans un entretien avec Kaupr, le directeur des ventes de Virtune, Andreas Severin, a déclaré que la cotation reflète la vision de l'entreprise selon laquelle les agents logiciels utilisant des services de blockchain deviennent un moteur de croissance aux côtés de la tokenisation.",
+    "ar": "أدرج مُصدر منتجات ETP الشمالي Virtune في 3 نوفمبر 2026 منتج Virtune AI Crypto Index ETP تحت الرمزين VIRAI في ناسداك ستوكهولم وVRTI في Deutsche Börse Xetra، وفقًا لـKaupr. ويتتبع المنتج مؤشرًا يضم 13 أصلاً مشفرًا مرتبطًا بما تسميه الصناعة اقتصاد الوكلاء. وفي مقابلة مع Kaupr قال مدير المبيعات في Virtune، أندرياس سيفيرين، إن الإدراج يعكس رؤية الشركة بأن وكلاء البرمجيات الذين يستخدمون خدمات سلسلة الكتل يصبحون محرك نمو إلى جانب الترميز.",
+    "bn": "Kaupr-এর তথ্যমতে, নর্ডিক ETP ইস্যুকারী Virtune ৩ নভেম্বর ২০২৬ তার Virtune AI Crypto Index ETP Nasdaq Stockholm-এ VIRAI এবং Deutsche Börse Xetra-তে VRTI টিকারে তালিকাভুক্ত করেছে। পণ্যটি ১৩টি ক্রিপ্টো সম্পদের একটি সূচক অনুসরণ করে, যা শিল্পে এজেন্ট অর্থনীতি নামে পরিচিত ক্ষেত্রের সঙ্গে যুক্ত। Kaupr-এর সাক্ষাৎকারে Virtune-এর প্রধান বিক্রয় কর্মকর্তা Andreas Severin বলেন, তালিকাভুক্তি কোম্পানির এই দৃষ্টিভঙ্গি প্রতিফলিত করে যে ব্লকচেইন সেবা ব্যবহারকারী সফটওয়্যার এজেন্ট টোকেনাইজেশনের পাশাপাশি প্রবৃদ্ধির চালক হয়ে উঠছে।",
+    "pt": "O emitente nórdico de ETP Virtune listou a 3 de novembro de 2026 o seu Virtune AI Crypto Index ETP sob os tickers VIRAI na Nasdaq Stockholm e VRTI na Deutsche Börse Xetra, segundo a Kaupr. O produto segue um índice de 13 criptoativos ligados ao que o setor chama de economia de agentes. Numa entrevista à Kaupr, o diretor de vendas da Virtune, Andreas Severin, afirmou que a listagem reflecte a visão da empresa de que os agentes de software que usam serviços de blockchain se estão a tornar um motor de crescimento a par da tokenização.",
+    "ru": "Северный эмитент ETP Virtune 3 ноября 2026 года разместил продукт Virtune AI Crypto Index ETP под тикерами VIRAI на Nasdaq Stockholm и VRTI на Deutsche Börse Xetra, сообщает Kaupr. Продукт отслеживает индекс из 13 криптоактивов, связанных с тем, что отрасль называет экономикой агентов. В интервью Kaupr директор по продажам Virtune Андреас Северин заявил, что листинг отражает взгляд компании: программные агенты, использующие блокчейн-сервисы, становятся драйвером роста наряду с токенизацией.",
+    "ur": "Kaupr کے مطابق، نورڈک ETP جاری کنندہ Virtune نے 3 نومبر 2026 کو اپنا Virtune AI Crypto Index ETP Nasdaq Stockholm پر ٹکر VIRAI اور Deutsche Börse Xetra پر VRTI کے تحت فہرست کر لیا۔ یہ پروڈکٹ 13 کرپٹو اثاثوں والے ایک انڈیکس کو ٹریک کرتا ہے جو صنعت کی اصطلاح میں ایجنٹ اکانومی سے منسلک ہے۔ Kaupr سے بات کرتے ہوئے Virtune کے چیف سیلز آفیسر Andreas Severin نے کہا کہ فہرست بندی کمپنی کے اس نظریے کی عکاسی کرتی ہے کہ بلاک چین سروسز استعمال کرنے والے سافٹ ویئر ایجنٹس ٹوکنائزیشن کے ساتھ ترقی کا محرک بن رہے ہیں۔",
+    "id": "Penerbit ETP Nordik Virtune mencatatkan Virtune AI Crypto Index ETP pada 3 November 2026 dengan ticker VIRAI di Nasdaq Stockholm dan VRTI di Deutsche Börse Xetra, menurut Kaupr. Produk itu mengikuti indeks 13 aset kripto yang terkait dengan apa yang industri sebut ekonomi agen. Dalam wawancara dengan Kaupr, kepala penjualan Virtune Andreas Severin mengatakan pencatatan itu mencerminkan pandangan perusahaan bahwa agen perangkat lunak yang memakai layanan blockchain menjadi pendorong pertumbuhan bersama tokenisasi.",
+    "de": "Der nordische ETP-Emittent Virtune notierte am 3. November 2026 sein Virtune AI Crypto Index ETP unter den Tickern VIRAI an der Nasdaq Stockholm und VRTI an der Deutschen Börse Xetra, laut Kaupr. Das Produkt folgt einem Index aus 13 Krypto-Assets, die mit dem verbunden sind, was die Branche die Agentenökonomie nennt. Im Gespräch mit Kaupr sagte Virtune-Vertriebschef Andreas Severin, die Notierung spiegele die Einschätzung des Unternehmens wider, dass Software-Agenten, die Blockchain-Dienste nutzen, neben der Tokenisierung zu einem Wachstumstreiber werden.",
+    "ja": "Kauprによると、北欧のETP発行体Virtuneは2026年11月3日、Virtune AI Crypto Index ETPをナスダック・ストックホルムではVIRAI、ドイツ取引所XetraではVRTIのティッカーで上場した。同商品は、業界がエージェント経済と呼ぶ領域に関連する13の暗号資産の指数に連動する。Virtuneの最高販売責任者アンドレアス・セヴェリン氏はKauprの取材に対し、ブロックチェーンサービスを使うソフトウェアエージェントがトークン化と並ぶ成長要因になっているという会社の見方を上場が映していると述べた。",
+    "sw": "Mtoa ETP wa Nordic Virtune aliorodhesha Virtune AI Crypto Index ETP tarehe 3 Novemba 2026 chini ya alama VIRAI kwenye Nasdaq Stockholm na VRTI kwenye Deutsche Börse Xetra, kwa mujibu wa Kaupr. Bidhaa hiyo inafuatilia faharasa ya mali 13 za kripto zinazohusiana na kile sekta inakiita uchumi wa mawakala. Katika mahojiano na Kaupr, mkuu wa mauzo wa Virtune Andreas Severin alisema orodheshaji huo unaonyesha mtazamo wa kampuni kwamba mawakala wa programu wanaotumia huduma za blockchain wanakuwa kichocheo cha ukuaji pamoja na utokenishaji.",
+    "mr": "Kaupr नुसार, नॉर्डिक ETP जारीकर्ता Virtune ने 3 नोव्हेंबर 2026 रोजी Virtune AI Crypto Index ETP Nasdaq Stockholm वर VIRAI आणि Deutsche Börse Xetra वर VRTI टिकर अंतर्गत सूचीबद्ध केले. हे उत्पादन 13 क्रिप्टो मालमत्तांच्या निर्देशांकाचे अनुसरण करते, जे उद्योग एजंट अर्थव्यवस्था म्हणतो त्याशी संबंधित आहे. Kaupr शी बोलताना Virtune चे मुख्य विक्री अधिकारी Andreas Severin म्हणाले की यादी कंपनीच्या या दृष्टिकोनाचे प्रतिबिंब आहे की ब्लॉकचेन सेवा वापरणारे सॉफ्टवेअर एजंट टोकनायझेशनसोबत वाढीचे चालक होत आहेत.",
+    "fa": "به گزارش Kaupr، ناشر نوردیک ETP یعنی Virtune در ۳ نوامبر ۲۰۲۶ محصول Virtune AI Crypto Index ETP را با نماد VIRAI در Nasdaq Stockholm و VRTI در Deutsche Börse Xetra پذیرفت. این محصول شاخصی از ۱۳ دارایی رمزارزی مرتبط با آنچه صنعت اقتصاد عامل می‌نامد را دنبال می‌کند. آندریاس سِوِرین، مدیر فروش Virtune، در گفت‌وگو با Kaupr گفت این پذیرش بازتاب دیدگاه شرکت است که عامل‌های نرم‌افزاری استفاده‌کننده از خدمات بلاک‌چین در کنار توکنی‌سازی به محرک رشد تبدیل می‌شوند.",
+    "uk": "Північний емітент ETP Virtune 3 листопада 2026 року розмістив продукт Virtune AI Crypto Index ETP під тікерами VIRAI на Nasdaq Stockholm і VRTI на Deutsche Börse Xetra, повідомляє Kaupr. Продукт відстежує індекс із 13 криптоактивів, пов'язаних із тим, що галузь називає економікою агентів. В інтерв'ю Kaupr директор із продажів Virtune Андреас Северін заявив, що лістинг відображає погляд компанії: програмні агенти, які користуються блокчейн-сервісами, стають драйвером зростання разом із токенізацією.",
+    "tr": "Kaupr'a göre Kuzey Avrupalı ETP ihraççısı Virtune, 3 Kasım 2026'da Virtune AI Crypto Index ETP'sini Nasdaq Stockholm'de VIRAI ve Deutsche Börse Xetra'da VRTI kodlarıyla listeledi. Ürün, sektörün ajan ekonomisi dediği alana bağlı 13 kripto varlıktan oluşan bir endeksi takip ediyor. Virtune satış direktörü Andreas Severin, Kaupr'a verdiği röportajda listenin, blokzincir hizmetlerini kullanan yazılım ajanlarının tokenizasyonla birlikte bir büyüme motoru haline geldiği yönündeki şirket görüşünü yansıttığını söyledi.",
+    "se": "Davviriikka ETP-almmuheaddji Virtune listtii 3. skábmamánu 2026 indeksa-ETP mii čuovvu 13 crypto-opmodaga mat gullet dasa maid industriija gohčoda agent-ekonomiijan, tickeriiguin VIRAI Nasdaq Stockholm:s ja VRTI Deutsche Börse Xetra:s, muitala Kaupr. Kaupr jearahallamis dadjá Virtune vuovdinjođiheaddji Andreas Severin ahte listin čájeha fitnodaga oainnu ahte prográmmaágentar mat geavahit blockchain-bálvalusaid šaddet ovdáneami vuodđun ovttas tokeniseremiin."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "221a99e45adc",
@@ -216,8 +347,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Evergreen explainer with Skilling affiliate link, not news. researcher 05.11"
   },
   {
    "id": "e36f90afacd8",
@@ -343,10 +475,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e17f32a6f100",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "f47e76863444"
   },
   {
    "id": "f47e76863444",
@@ -445,7 +578,42 @@
     "tr": "Binance'in 3 Kasım'da X'te yaptığı paylaşıma göre, son hırsızlığın arkasındaki saldırganlar eylülde sahte bir iş görüşmesiyle bir mühendise ulaştı ve onu kötü amaçlı yazılım içeren bir \"görev\" indirmeye ikna etti. Binance, saldırganların ardından onun dizüstü bilgisayarını kullandığını ve şirket içi bir yapay zekâ aracını kötüye kullanarak iki mühendisin daha bilgisayarını ele geçirdiğini söylüyor. DR, Binance'in kayıpların yüzde 98'ini karşıladığını bildiriyor; Binance 31 Ekim'de yaklaşık yüzde 90'ının karşılandığını açıklamıştı.",
     "se": "Skábmamánu 3. b. Binance-artihkkalis X muitaluvvo ahte falleheamit mat dáhpáhuvve gieskat, fallehedje ovtta inšenevrra čakčamánu, ja sii válde sutnje bargogohččosa mas ledje malware-fiillat maid son fertii viežžat. Binance lohká ahte falleheaddjit de geavahedje su laptiha ja boasttogeavahedje siskkáldas AI-reaiddu váldit badjelasáset guokte eará inšenevrra dihtoriid. DR dieđiha ahte Binance lea gokčan 98 proseantta massimiin; golggotmánu 31. beaivvi dajai Binance ahte sullii 90 proseantta ledje buhtaduvvon."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "breakit",
+     "outlet_name": "Breakit",
+     "url": "https://breakit.se/artikel/47931/binance-avslojar-falska-jobbintervjuer-bakom-miljardstolden",
+     "title": "Binance avslöjar: Falska jobbintervjuer bakom miljardstölden",
+     "published": "2026-11-04T10:04:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "computerworld-dk",
+     "outlet_name": "Computerworld Danmark",
+     "url": "https://computerworld.dk/art/297437/hackere-bag-verdens-stoerste-datatyveri-fik-adgang-til-milliarder-af-kroner-med-falsk-jobsamtale-her-er-metoden",
+     "title": "Hackere bag verdens største datatyveri fik adgang til milliarder af kroner med falsk jobsamtale: Her er metoden",
+     "published": "2026-11-04T10:06:00+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "omni.se",
+     "outlet_name": "Omni",
+     "url": "https://omni.se/binance-hackades-med-fejkade-jobbintervjuer/a/zladK1",
+     "title": "Binance hackades med fejkade jobbintervjuer",
+     "published": "2026-11-03T21:02:15+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
   },
   {
    "id": "fda696aea9af",
@@ -692,8 +860,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "DI opinion/debate piece, not news. researcher 05.11"
   },
   {
    "id": "810fb7f656f9",
@@ -717,8 +886,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "4e239c7ceaf9"
   },
   {
    "id": "60bdd64f457a",
@@ -1147,6 +1317,17 @@
      "url": "https://finansavisen.no/politikk/2026/11/03/8392560/nord-korea-nekter-for-at-de-star-bak-historiens-storste-kryptotyveri",
      "title": "Nord-Korea: Nekter for at de står bak historiens største kryptotyveri",
      "published": "2026-11-03T00:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "dagsavisen",
+     "outlet_name": "Dagsavisen",
+     "url": "https://dagsavisen.no/notice/10613153",
+     "title": "Nord-Korea nekter for å stå bak kryptotyveri",
+     "published": "2026-11-03T06:14:36+00:00",
      "lang": "Norwegian",
      "country": "NO",
      "source_type": "national",
