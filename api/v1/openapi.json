@@ -1583,6 +1583,36 @@
        }
       }
      },
+     "image": {
+      "type": "object",
+      "nullable": true,
+      "description": "This story's own illustration. url is the public picture (R2, served by the content Worker). The story page uses it as the hero and og:image. Null when the story has none; the page then keeps the brand image. Never a newspaper photograph. The generation prompt is not included.",
+      "properties": {
+       "url": {
+        "type": "string"
+       },
+       "width": {
+        "type": "integer"
+       },
+       "height": {
+        "type": "integer"
+       },
+       "alt": {
+        "type": "string"
+       },
+       "style": {
+        "type": "string",
+        "nullable": true
+       },
+       "kind": {
+        "type": "string",
+        "enum": [
+         "original",
+         "fallback"
+        ]
+       }
+      }
+     },
      "source_logo_url": {
       "type": "string",
       "nullable": true,
@@ -1837,6 +1867,36 @@
           "terms": {
            "type": "string",
            "nullable": true
+          }
+         }
+        },
+        "image": {
+         "type": "object",
+         "nullable": true,
+         "description": "This story's own illustration. url is the public picture (R2, served by the content Worker). The story page uses it as the hero and og:image. Null when the story has none; the page then keeps the brand image. Never a newspaper photograph. The generation prompt is not included.",
+         "properties": {
+          "url": {
+           "type": "string"
+          },
+          "width": {
+           "type": "integer"
+          },
+          "height": {
+           "type": "integer"
+          },
+          "alt": {
+           "type": "string"
+          },
+          "style": {
+           "type": "string",
+           "nullable": true
+          },
+          "kind": {
+           "type": "string",
+           "enum": [
+            "original",
+            "fallback"
+           ]
           }
          }
         },

@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-06T11:05:59+00:00",
+ "generated_at": "2026-11-06T12:50:06+00:00",
  "preview": false,
- "updated": "2026-11-06T10:57:45+00:00",
- "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
+ "updated": "2026-11-06T12:37:53+00:00",
+ "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. image is this story's own illustration when one has been generated: url, width, height, alt, style and kind. The story page uses that url as the hero and as og:image, in every language. Null means the page keeps the Nordic Crypto brand image. The picture is not a newspaper photograph. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
  "count": 116,
  "items": [
@@ -91,6 +91,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "e24",
     "outlet_name": "E24",
@@ -252,6 +253,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -415,6 +417,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -636,6 +639,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "dr-penge",
     "outlet_name": "DR",
@@ -914,6 +918,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "investornytt",
     "outlet_name": "Investornytt",
@@ -1057,6 +1062,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -1220,6 +1226,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -1430,6 +1437,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -1602,6 +1610,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "aftenposten",
     "outlet_name": "Aftenposten",
@@ -2059,6 +2068,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "e24",
     "outlet_name": "E24",
@@ -2379,6 +2389,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -2542,6 +2553,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "aftenposten",
     "outlet_name": "Aftenposten",
@@ -3164,6 +3176,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -3327,6 +3340,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "nrk",
     "outlet_name": "NRK",
@@ -3795,6 +3809,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "e24",
     "outlet_name": "E24",
@@ -4938,6 +4953,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "hurbra.se",
     "outlet_name": "hurbra",
@@ -5081,6 +5097,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -5521,6 +5538,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "investornytt",
     "outlet_name": "Investornytt",
@@ -7906,6 +7924,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "stortinget",
     "outlet_name": "Stortinget",
@@ -8066,6 +8085,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -8261,6 +8281,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "fi-se",
     "outlet_name": "Finansinspektionen",
@@ -8471,6 +8492,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -8634,6 +8656,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -8837,6 +8860,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -8979,6 +9003,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -9142,6 +9167,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -9305,6 +9331,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -9466,6 +9493,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -9681,6 +9709,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finanstilsynet",
     "outlet_name": "Finanstilsynet",
@@ -9842,6 +9871,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -10005,6 +10035,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -10168,6 +10199,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -10331,6 +10363,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -10492,6 +10525,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -10653,6 +10687,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "dagens-nyheter",
     "outlet_name": "Dagens Nyheter",
@@ -10895,6 +10930,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -11072,6 +11108,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "hurbra.se",
     "outlet_name": "hurbra",
@@ -11266,6 +11303,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -11435,6 +11473,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "realtid",
     "outlet_name": "Realtid",
@@ -11612,6 +11651,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "nordic-crypto",
     "outlet_name": "Nordic Crypto",
@@ -11767,6 +11807,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "tv2",
     "outlet_name": "TV 2",
@@ -11935,6 +11976,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -12122,6 +12164,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -12300,6 +12343,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "hurbra.se",
     "outlet_name": "hurbra",
@@ -12516,6 +12560,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -12681,6 +12726,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kryptovalutaguiden",
     "outlet_name": "Kryptovalutaguiden",
@@ -12864,6 +12910,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "altaposten-no",
     "outlet_name": "altaposten.no",
@@ -13048,6 +13095,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finanstilsynet",
     "outlet_name": "Finanstilsynet",
@@ -13234,6 +13282,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finanswatch",
     "outlet_name": "Finanswatch",
@@ -13418,6 +13467,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -13606,6 +13656,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "yle",
     "outlet_name": "Yle Uutiset",
@@ -13882,6 +13933,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "realtid",
     "outlet_name": "Realtid",
@@ -14112,6 +14164,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "digi-krypto",
     "outlet_name": "Digi.no",
@@ -14296,6 +14349,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. Norges Bank's copyright page allows copying from norges-bank.no when Norges Bank is named as the source, the content is not changed, and it is not used in advertising. This is the daytime facade from the press-photo page (photo: Esten Borgos). It is scaled to 960 pixels wide and saved as WebP, not cropped or recoloured. Portraits and pictures of notes and coins from the same page are not used."
    },
+   "image": null,
    "primary_source": {
     "outlet": "finanswatch",
     "outlet_name": "Finanswatch",
@@ -14470,6 +14524,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "efn.se",
     "outlet_name": "efn",
@@ -14625,6 +14680,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -14781,6 +14837,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "dagensps.se",
     "outlet_name": "Dagens PS",
@@ -14937,6 +14994,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "investornytt",
     "outlet_name": "Investornytt",
@@ -15102,6 +15160,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "realtid",
     "outlet_name": "Realtid",
@@ -15285,6 +15344,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "borsen",
     "outlet_name": "Børsen",
@@ -15467,6 +15527,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -15643,6 +15704,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -15799,6 +15861,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "dagensps.se",
     "outlet_name": "Dagens PS",
@@ -15963,6 +16026,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -16139,6 +16203,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "investornytt",
     "outlet_name": "Investornytt",
@@ -16294,6 +16359,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out people in the square.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "investornytt",
     "outlet_name": "Investornytt",
@@ -16449,6 +16515,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. Norges Bank's copyright page allows copying from norges-bank.no when Norges Bank is named as the source, the content is not changed, and it is not used in advertising. This is the daytime facade from the press-photo page (photo: Esten Borgos). It is scaled to 960 pixels wide and saved as WebP, not cropped or recoloured. Portraits and pictures of notes and coins from the same page are not used."
    },
+   "image": null,
    "primary_source": {
     "outlet": "finfacts.no",
     "outlet_name": "FinFacts",
@@ -16604,6 +16671,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sagat",
     "outlet_name": "Ságat",
@@ -16760,6 +16828,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "nyheter24.se",
     "outlet_name": "Nyheter24",
@@ -16928,6 +16997,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "fi-se",
     "outlet_name": "Finansinspektionen (SE FSA)",
@@ -17101,6 +17171,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finansavisen",
     "outlet_name": "Finansavisen",
@@ -17266,6 +17337,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -17454,6 +17526,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "stortinget",
     "outlet_name": "Stortinget",
@@ -17637,6 +17710,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "stortinget",
     "outlet_name": "Stortinget",
@@ -17820,6 +17894,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "realtid",
     "outlet_name": "Realtid",
@@ -18002,6 +18077,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "sydsvenskan.se",
     "outlet_name": "Sydsvenskan",
@@ -18184,6 +18260,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "aftenposten",
     "outlet_name": "Aftenposten",
@@ -18414,6 +18491,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "realtid",
     "outlet_name": "Realtid",
@@ -18588,6 +18666,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "dagensps.se",
     "outlet_name": "Dagens PS",
@@ -18753,6 +18832,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. The Riksbank image bank says these pictures may be downloaded and used freely if Sveriges Riksbank is credited. Pictures of banknotes and coins on the same site are not free in that way and are not used. This file is the building, scaled to 960 pixels wide and saved as WebP. It is not cropped or recoloured."
    },
+   "image": null,
    "primary_source": {
     "outlet": "fi-se",
     "outlet_name": "Finansinspektionen (SE FSA)",
@@ -18935,6 +19015,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -19109,6 +19190,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. Norges Bank's copyright page allows copying from norges-bank.no when Norges Bank is named as the source, the content is not changed, and it is not used in advertising. This is the daytime facade from the press-photo page (photo: Esten Borgos). It is scaled to 960 pixels wide and saved as WebP, not cropped or recoloured. Portraits and pictures of notes and coins from the same page are not used."
    },
+   "image": null,
    "primary_source": {
     "outlet": "finansavisen",
     "outlet_name": "Finansavisen",
@@ -19274,6 +19356,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "yle",
     "outlet_name": "Yle Uutiset (latest)",
@@ -19456,6 +19539,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "nettavisen",
     "outlet_name": "Nettavisen",
@@ -19639,6 +19723,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -19824,6 +19909,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -20008,6 +20094,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "oa",
     "outlet_name": "Oppland Arbeiderblad",
@@ -20190,6 +20277,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -20375,6 +20463,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "berlingske.dk",
     "outlet_name": "Berlingske",
@@ -20558,6 +20647,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -20743,6 +20833,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "ekstrabladet.dk",
     "outlet_name": "Ekstra Bladet",
@@ -20926,6 +21017,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "berlingske.dk",
     "outlet_name": "Berlingske",
@@ -21097,6 +21189,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finansavisen",
     "outlet_name": "Finansavisen",
@@ -21251,6 +21344,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finansavisen",
     "outlet_name": "Finansavisen",
@@ -21415,6 +21509,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "e24",
     "outlet_name": "E24",
@@ -21598,6 +21693,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "stortinget",
     "outlet_name": "Stortinget",
@@ -21781,6 +21877,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -21966,6 +22063,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "bpi",
     "outlet_name": "Bitcoinpolitisk institutt",
@@ -22149,6 +22247,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -22334,6 +22433,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -22519,6 +22619,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "nbx-ir",
     "outlet_name": "NBX (børsmelding)",
@@ -22702,6 +22803,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. Norges Bank's copyright page allows copying from norges-bank.no when Norges Bank is named as the source, the content is not changed, and it is not used in advertising. This is the daytime facade from the press-photo page (photo: Esten Borgos). It is scaled to 960 pixels wide and saved as WebP, not cropped or recoloured. Portraits and pictures of notes and coins from the same page are not used."
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -22886,6 +22988,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -23071,6 +23174,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -23255,6 +23359,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -23440,6 +23545,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "shifter",
     "outlet_name": "Shifter",
@@ -23623,6 +23729,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -23807,6 +23914,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -23992,6 +24100,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -24177,6 +24286,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -24362,6 +24472,7 @@
     "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -24547,6 +24658,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -24731,6 +24843,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -24916,6 +25029,7 @@
     "modifications": null,
     "terms": "Checked 2026-10-06. Norges Bank's copyright page allows copying from norges-bank.no when Norges Bank is named as the source, the content is not changed, and it is not used in advertising. This is the daytime facade from the press-photo page (photo: Esten Borgos). It is scaled to 960 pixels wide and saved as WebP, not cropped or recoloured. Portraits and pictures of notes and coins from the same page are not used."
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -25101,6 +25215,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "kaupr",
     "outlet_name": "Kaupr",
@@ -25287,6 +25402,7 @@
     "modifications": null,
     "terms": null
    },
+   "image": null,
    "primary_source": {
     "outlet": "finanssivalvonta",
     "outlet_name": "Finanssivalvonta",
