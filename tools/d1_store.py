@@ -339,7 +339,7 @@ def apply_schema(store):
 
 
 def schema_version(store):
-    """2 when 0002_events.sql has been applied. Cached on the store object."""
+    """schema_meta version. 3 after 0003_story_images.sql. Cached on the store object."""
     if not hasattr(store, "_nc_version"):
         try:
             row = one(store, "SELECT value FROM schema_meta WHERE key = 'version'")

@@ -10,6 +10,9 @@
 .story h1{margin:6px 0 10px}
 .story .orig{margin:0 0 6px}
 .story .byline{margin:12px 0 0;line-height:1.9}
+.story-hero{margin:18px 0 0}
+.story-hero img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#1E3A45}
+.story-hero figcaption{margin-top:8px}
 .story .lede{text-align:start;font-size:clamp(17.5px,1.1vw + 13px,19px);line-height:1.65;margin:20px 0 0;max-width:64ch;color:var(--fg)}
 .story-body p{font-size:17.5px;line-height:1.75;margin:16px 0 0}
 .story-body .lede{margin-top:20px;font-size:clamp(17.5px,1.1vw + 13px,19.5px)}

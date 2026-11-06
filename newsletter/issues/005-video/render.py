@@ -8,6 +8,8 @@ import os, re, sys, json, math, random, subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, '.'); import content as C
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'tools')))
+import newsreel_still
 V = os.environ.get('VERTICAL') == '1'
 W, H = (1080, 1920) if V else (1920, 1080)
 ROOT = 'build/'
@@ -346,6 +348,19 @@ def anchor_still(t, dur):
     cy = max(bh / 2, min(BH_ - bh / 2, cy)); cx = max(bw / 2, min(BW_ - bw / 2, cx))
     return bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
 
+def story_still(st, w, h):
+    """The stored illustration for this segment, or None so the current art stays."""
+    nid = st.get('news_id')
+    if not nid:
+        return None
+    path = newsreel_still.cached_path(nid, os.path.join(ROOT, 'story-images'))
+    if not path:
+        return None
+    try:
+        return newsreel_still.cover(Image.open(path), w, h)
+    except Exception:
+        return None
+
 # ---------- segment renderers ----------
 def seg_bumper(s): return seg_bumper_core(s)
 def seg_bumper_core(s, vertical=False):
@@ -491,12 +506,18 @@ def seg_section(s):
         return im
     return frame, {}
 def seg_story(s):
-    st = C.STORIES[s['name']]; bg = art_bg(st); lt = make_lt(st); dirx = 1 if int(s['name'][1:]) % 2 else -1
+    st = dict(C.STORIES[s['name']])
+    panel = None if V else story_still(st, PNL_W, PNL_H)
+    full = story_still(st, BW_, BH_) if V else None
+    if panel is not None or full is not None:
+        st['logo'] = None  # the story illustration replaces the outlet logo on this segment
+    bg = full if full is not None else (None if panel is not None else art_bg(st))
+    lt = make_lt(st); dirx = 1 if int(s['name'][1:]) % 2 else -1
     if not V:
         clip = Clip(s['name']) if has_clip(s['name']) else None
         def frame(t, T):
             im = clip.at(round(t * FPS)) if clip else anchor_still(t, s['dur']); u = t / s['dur']
-            if t > 0.3: draw_panel(im, kb(bg, u, dirx, 0.5), t, s['dur'])
+            if t > 0.3: draw_panel(im, panel if panel is not None else kb(bg, u, dirx, 0.5), t, s['dur'])
             draw_lt(im, lt, t, s['dur']); return im
         return frame, {}
     def frame(t, T):
@@ -816,10 +837,11 @@ def main():
         raise SystemExit(f'ffmpeg failed on {name} rc={rc}\n{err}')
     print('done', name, s['frames'], 'frames', flush=True)
 
-def thumb():  # no source logos on covers
+def thumb():  # no source logos on covers; the story illustration replaces the art when that story has one
     st = dict(C.STORIES[C.THUMB_STORY], logo=None); st['big'] = C.THUMB_BIG; st['kicker'] = C.THUMB_KICKER
     if V: st['big'] = ''; return thumb_vertical(st)
-    im = art_bg(st).resize((W, H), Image.LANCZOS, box=(96, 54, 96 + 1920, 54 + 1080)); d = ImageDraw.Draw(im)
+    still = story_still(st, BW_, BH_)
+    im = (still if still is not None else art_bg(st)).resize((W, H), Image.LANCZOS, box=(96, 54, 96 + 1920, 54 + 1080)); d = ImageDraw.Draw(im)
     d.rectangle((90, 680, 1830, 900), fill=SAIL); d.rectangle((90, 680, 104, 900), fill=GOLD)
     lines = wrap(C.THUMB_HEAD, F('cb', 80), 1640)
     for k, ln in enumerate(lines[:2]): d.text((130, 694 + k * 90), ln, font=F('cb', 80), fill=TAR)
@@ -829,7 +851,8 @@ def thumb():  # no source logos on covers
     im.resize((1280, 720), Image.LANCZOS).save('thumbnail.png'); print('thumbnail.png')
 
 def thumb_vertical(st):  # Reels cover, 1080x1920
-    im = kb(art_bg(st), 0.5, 1, 0.5); d = ImageDraw.Draw(im); f = F('cb', 76); lines = wrap(C.THUMB_HEAD, f, W - 220)[:3]
+    still = story_still(st, BW_, BH_)
+    im = kb(still if still is not None else art_bg(st), 0.5, 1, 0.5); d = ImageDraw.Draw(im); f = F('cb', 76); lines = wrap(C.THUMB_HEAD, f, W - 220)[:3]
     hh = 40 + 86 * len(lines); y = TICK_Y - 60 - 58 - hh
     d.rectangle((80, y, W - 80, y + hh), fill=SAIL); d.rectangle((80, y, 94, y + hh), fill=GOLD)
     for k, ln in enumerate(lines): d.text((120, y + 16 + k * 86), ln, font=f, fill=TAR)

@@ -234,8 +234,9 @@ def upload_video(creds, path):
 
 
 def upload_image(creds, path):
-    """v2 simple upload for a PNG/JPEG still. Returns media id. Same endpoint family as upload_video."""
-    data = open(path, "rb").read()
+    """v2 simple upload for a PNG or JPEG. Returns the media id."""
+    with open(path, "rb") as fh:
+        data = fh.read()
     ext = os.path.splitext(path)[1].lower()
     mime = "image/png" if ext == ".png" else "image/jpeg"
     mid = x_json(creds, UPLOAD + "/initialize", {
@@ -255,12 +256,15 @@ def upload_image(creds, path):
     return mid
 
 
-def create_post(creds, text, reply_to=None, media_id=None):
+def create_post(creds, text, reply_to=None, media_id=None, media_ids=None):
     payload = {"text": text}
     if reply_to:
         payload["reply"] = {"in_reply_to_tweet_id": reply_to}
-    if media_id:
-        payload["media"] = {"media_ids": [media_id]}
+    ids = [i for i in (media_ids or []) if i]
+    if media_id and media_id not in ids:
+        ids.insert(0, media_id)
+    if ids:
+        payload["media"] = {"media_ids": ids[:4]}
     req = urllib.request.Request(TWEETS, data=json.dumps(payload).encode(), method="POST", headers={
         "Authorization": oauth_header("POST", TWEETS, creds), "Content-Type": "application/json", "User-Agent": UA})
     return _call(req)["data"]["id"]

@@ -790,6 +790,8 @@ def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="
     og_title, og_desc, og_type = og.get("title") or title, og.get("description") or desc, og.get("type") or "website"
     og_img = og.get("image") or f"{BASE}assets/brand/og-image.png"
     og_alt = og.get("image_alt") or "Nordic Crypto"
+    og_w = str(og.get("image_width") or "1200")
+    og_h = str(og.get("image_height") or "630")
     th_color = f'<meta name="theme-color" content="{th.get("theme_color") or "#1E3A45"}">'
     doc = f"""<!doctype html>
 <html lang="{i18n.HTML_LANG[LANG]}"{" dir=\"rtl\"" if i18n.rtl(LANG) else ""}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -804,8 +806,8 @@ def page(slug, title, nav, body, desc, extra_script="", langs=None, head_extra="
 <link rel="icon" href="{root}assets/brand/mark-64.png?v={ICON_V}" sizes="64x64" type="image/png">
 {th_color}
 <meta property="og:image" content="{E(og_img)}">{f'<meta property="og:image:secure_url" content="{E(og_img)}">' if str(og_img).startswith("https://") else ""}
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="{E(og_w)}">
+<meta property="og:image:height" content="{E(og_h)}">
 <meta property="og:image:alt" content="{E(og_alt)}">{'<meta property="og:image:type" content="image/png">' if str(og_img).split("?", 1)[0].lower().endswith(".png") else ""}
 <style>{CSS}{s['css']}{th.get('css', '')}</style></head>
 <body{' class="' + th['body_class'] + '"' if th else ''}><a class="skip" href="#main">{E(t("skip"))}</a>{th.get('deco', '')}{banner}<header class="top"><div class="wrap"><div class="brandrow"><a class="brand" href="{rel}"><img class="brandmark" src="{root}assets/brand/shield-band.svg" width="34" height="40" alt="Nordic Crypto"><span aria-hidden="true">Nordic <span class="w">Crypto</span></span></a><span class="since"><span class="since-dot" aria-hidden="true"></span>{E(t("brand_since"))}</span></div><div class="hdrtools"><span class="hdrbtns">{header_buttons(rel)}</span>{theme_btn}{switcher}{nav_btn}</div><nav id="sitenav" class="main" aria-label="{E(t("main_menu"))}">{nav_html}</nav></div></header>{hero}
@@ -1052,6 +1054,42 @@ def story_figure(i, slug, href=None):
     if not rec:
         return ""
     return _illustrations().figure_html(rec, asset_prefix(slug), ill_labels(), href=href)
+def _story_images():
+    sys.path.insert(0, P("tools"))
+    import story_images
+    return story_images
+def story_image_of(i):
+    """The generated illustration, when this story has one. Otherwise the page keeps the brand image."""
+    rec = (i or {}).get("story_image") or {}
+    return rec if rec.get("url") else None
+def story_hero(i, alt):
+    """Hero on the story page, every language. The file is the same; the alt is the headline in this language."""
+    rec = story_image_of(i)
+    if not rec:
+        return ""
+    w, h = int(rec.get("width") or 1280), int(rec.get("height") or 720)
+    cap = f'{E(t("ill_drawing"))}: Nordic Crypto. {E(t("ill_not_press"))}'
+    return (f'<figure class="story-hero"><img src="{E(rec["url"])}" alt="{E(alt or "Nordic Crypto")}" '
+            f'width="{w}" height="{h}" decoding="async">'
+            f'<figcaption class="credit">{cap}</figcaption></figure>')
+def story_og_meta(i, title, desc):
+    """og:image for a story that has a stored picture. None when it does not."""
+    rec = story_image_of(i)
+    if not rec:
+        return None
+    return {
+        "title": title, "description": desc or title, "type": "article",
+        "image": rec["url"], "image_alt": title or "Nordic Crypto",
+        "image_width": str(int(rec.get("width") or 1280)),
+        "image_height": str(int(rec.get("height") or 720)),
+    }
+def story_share(i, title, desc):
+    """Stored illustration when this story has one. Otherwise the headline card from the build."""
+    og = story_og_meta(i, title, desc)
+    if og:
+        return og, og.get("image")
+    og = story_og(i, title, desc)
+    return og, og.get("image")
 
 def build():
     global LANG, D1_EVENTS
@@ -1089,6 +1127,10 @@ def build():
     items = sorted(approved + pending + ctx["stories"], key=lambda i: i["published"], reverse=True); ctx["items"] = items
     attach_source_logos(items)
     _illustrations().attach(items)
+    try:
+        _story_images().attach(items)
+    except Exception as ex:
+        print(f"build: story images unavailable ({str(ex).splitlines()[0][:160]}); pages keep the current image", file=sys.stderr)
     seen_ill = set()
     for i in items:
         rec = i.get("illustration") or {}
@@ -1116,6 +1158,8 @@ def build():
             extras.append(ex)
         pub["also_covered_by"] = extras
         pub["coverage"] = cov.breakdown(rows)
+        if i.get("story_image"):
+            pub["image"] = {k: i["story_image"].get(k) for k in ("url", "width", "height", "alt", "style", "kind")}
         pub.update(public_extra(i))
         pub_items.append(pub)
     for i in pub_items:
@@ -2683,15 +2727,16 @@ def build_coverage_pages(items, blurbs):
         article = (f'<article class="prose story"><p class="backlink"><a href="{back}">{E(t("back_news"))}</a></p><h1{bidi_attr(head_l)}>{E(head)}</h1>{orig}'
                    + f'<p class="meta byline">{flag(i.get("country"), deco=True)} {E(cname(i.get("country")))} · {source_mark(i, root)} · <time datetime="{E(i["published"])}">{endate(i["published"])}</time>'
                    + (f' <span class="tag pend">{E(t("pending"))}</span>' if pend else "") + '</p>' + desk_byline(here, back)
+                   + story_hero(i, head)
                    + summ + read_at_row(rows[0], i.get("paywall")) + cited_source(i)
                    + coverage_block(rows, root) + '</article>')
         body = story_page(article, more_news(items, i.get("id"), back), E(t("home_notice")))
         doc = _coverage().editor_primary_source(i.get("primary_source"))
-        og = story_og(i, head, txt if not pend else "")
+        og, image = story_share(i, head, txt if not pend else "")
         ld = story_ld("stories/" + i["id"], head, here, txt if not pend else "", [r.get("url") for r in rows] + [(doc or {}).get("url")],
-                      news=not pend and head_l == LANG and tl == LANG, image=og.get("image"))
+                      news=not pend and head_l == LANG and tl == LANG, image=image)
         page("stories/" + i["id"], head, "", body, (i.get("summary") or head or "")[:200], COV_SORT_JS if len({r.get("country") or "" for r in rows}) > 1 else "",
-             head_extra=ld, modified=here, og=og)
+             head_extra=ld, og=og, modified=here)
 def build_stories(write=True, latest=None):
     """Own stories written by the editor (markdown, English). Public build: only slugs in approved.json stories.approve.
     Preview: also stories.ready_for_owner, tagged as awaiting jQrgen's final approval. The 'Editor notes' part is internal and never rendered.
@@ -2741,13 +2786,19 @@ def build_stories(write=True, latest=None):
                        + f'<h1{bd}>{E(title)}</h1>'
                        f'<p class="meta byline">{flag(country, deco=True)} {E(cname(country))} · {source_mark({"source": "nordic-crypto", "source_name": "Nordic Crypto"}, up1() + "../")} · <time datetime="{E(pub)}">{endate(pub)}</time>'
                        + (f' <span class="tag pend">{E(t("owner"))}</span>' if status == "owner" else "") + '</p>' + desk_byline(pub, back)
+                       + story_hero({"story_image": _story_images().lookup("story-" + slug, title)}, title)
                        + f'<div class="story-body"{bd}>' + "".join(f'<p{" class=\"lede\"" if n == 0 else ""}>{md_inline(x)}</p>' for n, x in enumerate(paras)) + '</div>'
                        + (f'<h2>{E(t("sources_h"))}</h2><ul class="story-sources"{bd}>' + "".join(f"<li>{md_inline(s)}</li>" for s in srcs) + '</ul>' if srcs else "")
                        + '</article>')
             body = story_page(article, more_news(latest or [], "story-" + slug, back), t("story_notice", rel=back))
             cites = [u for x in srcs for u in re.findall(r"https?://[^\s<;)]+", x)]
-            ld = story_ld("stories/" + slug, title, pub, paras[0] if paras else "", cites, news=status == "published" and art_l == LANG)
-            page("stories/" + slug, title, "stories", body, paras[0][:200] if paras else title, head_extra=ld)   # file mtime: no lastmod
+            own_pic = _story_images().lookup("story-" + slug, title)
+            own_item = {"id": slug, "title": title, "title_en": title, "source_name": "Nordic Crypto", "story_image": own_pic}
+            og, image = story_share(own_item, title, paras[0] if paras else title)
+            ld = story_ld("stories/" + slug, title, pub, paras[0] if paras else "", cites, news=status == "published" and art_l == LANG,
+                          image=image)
+            page("stories/" + slug, title, "stories", body, paras[0][:200] if paras else title,
+                 head_extra=ld, og=og)   # file mtime: no lastmod
         editor_sum = ((st.get("summaries") or {}).get(slug) or "").strip()
         opening = opening_sentences(" ".join(paras)) if paras else ""
         first = editor_sum if substantive(editor_sum) else (opening or editor_sum or (first_sentence(paras[0]) if paras else ""))
