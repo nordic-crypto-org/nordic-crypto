@@ -233,6 +233,28 @@ def upload_video(creds, path):
     return mid
 
 
+def upload_image(creds, path):
+    """v2 simple upload for a PNG/JPEG still. Returns media id. Same endpoint family as upload_video."""
+    data = open(path, "rb").read()
+    ext = os.path.splitext(path)[1].lower()
+    mime = "image/png" if ext == ".png" else "image/jpeg"
+    mid = x_json(creds, UPLOAD + "/initialize", {
+        "media_type": mime, "total_bytes": len(data), "media_category": "tweet_image",
+    })["data"]["id"]
+    log(f"initialize image {mid} ({len(data)} bytes)")
+    url = f"{UPLOAD}/{mid}/append"
+    boundary = "nc" + secrets.token_hex(12)
+    body = (f"--{boundary}\r\nContent-Disposition: form-data; name=\"segment_index\"\r\n\r\n0\r\n"
+            f"--{boundary}\r\nContent-Disposition: form-data; name=\"media\"; filename=\"card{ext}\"\r\n"
+            f"Content-Type: {mime}\r\n\r\n").encode() + data + f"\r\n--{boundary}--\r\n".encode()
+    req = urllib.request.Request(url, data=body, method="POST", headers={
+        "Authorization": oauth_header("POST", url, creds),
+        "Content-Type": f"multipart/form-data; boundary={boundary}", "User-Agent": UA})
+    _call(req)
+    x_json(creds, f"{UPLOAD}/{mid}/finalize", {})
+    return mid
+
+
 def create_post(creds, text, reply_to=None, media_id=None):
     payload = {"text": text}
     if reply_to:

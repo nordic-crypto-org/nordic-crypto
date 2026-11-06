@@ -4,15 +4,18 @@
 Same selection rules as tools/telegram_events.py (live feeds, ledger, settle window, --post backfill).
 Plain-text posts: one digest for new stories (English headlines, nordiccrypto.no links, Source: name),
 one post per new upcoming event (title, date/time, venue/address, organiser, Nordic Crypto page).
-Uses the X OAuth secrets of tools/x_newsletter.py; without them it logs one line and exits 0 (dry).
+Each post attaches a generated image from the lead story/event (tools/x_post_image.py): rotating visual
+style, «Nordic Crypto» top-right, no outlet logos. Uses the X OAuth secrets of tools/x_newsletter.py;
+without them it logs one line and exits 0 (dry). Image generation uses CF_AI_TOKEN when set.
 
   python3 tools/x_feed.py --kind events|news --ledger PATH [--dry-run] [--post ID,ID] [--feed URL]
 """
-import argparse, datetime as dt, os, sys, time
+import argparse, datetime as dt, os, sys, tempfile, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import telegram_events as te
 import x_newsletter as xn
+import x_post_image as xi
 
 UA = "nordic-crypto-x-feed/1 (+https://nordiccrypto.no/)"
 # Digests stay one post (X Premium long posts, same as the newsletter). Cap links like the newsletter.
@@ -65,17 +68,63 @@ def news_digest(items, now):
     return "\n\n".join(blocks)
 
 
-def post_x(creds, text, poster=xn.create_post):
+
+def save_ledger(path, posted_ids, styles):
+    """Write posted ids and recent style ids together (te.save alone would drop styles)."""
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    import json
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump({"posted": list(posted_ids), "styles": list(styles)}, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    os.replace(tmp, path)
+
+
+def lead_item(items, kind):
+    """Newest story for a digest image; the single event otherwise."""
+    if not items:
+        return None
+    if kind == "news":
+        return max(items, key=lambda e: (te.parse(e.get("published")) or dt.datetime.min.replace(tzinfo=dt.timezone.utc), e["id"]))
+    return items[0]
+
+
+def make_image(item, kind, ledger_path, styles, *, image_renderer=None):
+    """Render a branded card for item; returns (path, style_id) or (None, None)."""
+    if not item:
+        return None, None
+    renderer = image_renderer or xi.render
+    fd, path = tempfile.mkstemp(prefix="nc-x-", suffix=".png")
+    os.close(fd)
+    try:
+        style_id, path = renderer(item, path, kind=kind, recent_styles=styles)
+        return path, style_id
+    except Exception as err:
+        log(kind, f"image render failed: {type(err).__name__}: {err}")
+        try:
+            os.unlink(path)
+        except OSError:
+            pass
+        return None, None
+
+
+def post_x(creds, text, poster=xn.create_post, media_id=None):
     if xn.x_len(text) > xn.LONG_LIMIT:
         return None, f"text exceeds X long-post limit ({xn.x_len(text)}/{xn.LONG_LIMIT})"
     try:
-        return poster(creds, text), ""
+        return poster(creds, text, media_id=media_id), ""
+    except TypeError:
+        # older test doubles that only take (creds, text)
+        try:
+            return poster(creds, text), ""
+        except Exception as err:
+            return None, f"{type(err).__name__}: {err}"
     except Exception as err:
         return None, f"{type(err).__name__}: {err}"
 
 
 def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(), max_age_days=7,
-        settle_minutes=10, poster=xn.create_post, log_fn=None):
+        settle_minutes=10, poster=xn.create_post, log_fn=None, uploader=None, image_renderer=None):
     log_fn = log_fn or (lambda m: log(kind, m))
     if feed.get("preview"):
         log_fn("refusing a preview feed")
@@ -84,14 +133,15 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
     have = os.path.exists(ledger_path)
     ledger = xn.load_state(ledger_path) if have else {"posted": []}
     if "posted" not in ledger:
-        ledger = {"posted": list(ledger.get("posted") or [])}
+        ledger = {"posted": list(ledger.get("posted") or []), **{k: v for k, v in ledger.items() if k != "posted"}}
     seen = set(ledger.get("posted") or [])
+    styles = list(ledger.get("styles") or [])
     force = [i for i in force if i]
     if not have:
         ids = sorted({e["id"] for e in events if e.get("id")})
         seen = set(ids)
         if not dry:
-            te.save(ledger_path, ids)
+            save_ledger(ledger_path, ids, styles)
         log_fn(f"no ledger yet; recorded {len(ids)} current {kind}"
                + ("" if force else ", posted nothing")
                + (" (dry run, not saved)" if dry else ""))
@@ -112,7 +162,7 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
         todo = te.fresh_news(forced, now, 36500) + [e for e in fresh if e["id"] not in force]
         todo.sort(key=lambda e: (te.parse(e["published"]), e["id"]))
         if todo:
-            msgs = [( [e["id"] for e in todo], news_digest(todo, now) )]
+            msgs = [([e["id"] for e in todo], news_digest(todo, now), lead_item(todo, "news"))]
     else:
         todo = [e for e in te.postable(events, now) if e["id"] not in seen]
         forced = [byid[i] for i in dict.fromkeys(force) if i in byid and i not in {e["id"] for e in todo}]
@@ -126,24 +176,55 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
                 continue
             extra.append(e)
         todo = extra + todo
-        msgs = [([e["id"]], event_text(e)) for e in todo[:max_posts]]
+        msgs = [([e["id"]], event_text(e), e) for e in todo[:max_posts]]
     if not msgs:
         log_fn("nothing new")
         return 0
     posted = 0
-    for ids, text in msgs:
+    upload = uploader or xn.upload_image
+    for ids, text, lead in msgs:
+        img_path = style_id = None
         if dry or not creds:
             why = "dry run" if dry else f"missing {', '.join(k for k in xn.ENV if not os.environ.get(k))}"
-            log_fn(f"--- would post {', '.join(ids)} ({why}):\n{text}")
+            # still render locally on dry-run when possible, so operators can inspect the card
+            img_path, style_id = make_image(lead, "news" if kind == "news" else "events",
+                                           ledger_path, styles, image_renderer=image_renderer)
+            note = f" + image:{style_id or 'none'}" + (f" ({img_path})" if img_path else "")
+            log_fn(f"--- would post {', '.join(ids)} ({why}){note}:\n{text}")
+            if img_path and style_id:
+                styles = xi.remember_style(styles, style_id)
+            if img_path and os.path.exists(img_path) and not os.environ.get("NC_X_KEEP_IMAGES"):
+                try:
+                    os.unlink(img_path)
+                except OSError:
+                    pass
             continue
-        tid, err = post_x(creds, text, poster=poster)
+        img_path, style_id = make_image(lead, "news" if kind == "news" else "events",
+                                       ledger_path, styles, image_renderer=image_renderer)
+        media_id = None
+        if img_path:
+            try:
+                media_id = upload(creds, img_path)
+            except Exception as err:
+                log_fn(f"image upload failed ({type(err).__name__}: {err}); posting without media")
+                media_id = None
+            finally:
+                if img_path and os.path.exists(img_path) and not os.environ.get("NC_X_KEEP_IMAGES"):
+                    try:
+                        os.unlink(img_path)
+                    except OSError:
+                        pass
+        tid, err = post_x(creds, text, poster=poster, media_id=media_id)
         if not tid:
             log_fn(f"send failed for {', '.join(ids)}: {err}")
             return 1
         seen.update(ids)
         posted += len(ids)
-        te.save(ledger_path, sorted(seen))
-        log_fn(f"posted {', '.join(ids)}: https://x.com/nordiccryptobot/status/{tid}")
+        if style_id:
+            styles = xi.remember_style(styles, style_id)
+        save_ledger(ledger_path, sorted(seen), styles)
+        log_fn(f"posted {', '.join(ids)}: https://x.com/nordiccryptobot/status/{tid}"
+               + (f" (image {style_id})" if style_id else ""))
         time.sleep(1)
     left = 0 if (dry or not creds) else (len(todo) - posted if kind == "events" else 0)
     log_fn(f"{posted} posted, {left} left for the next run"
