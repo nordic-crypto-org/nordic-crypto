@@ -930,6 +930,154 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-06T10:30:00+00:00",
+   "included": 0,
+   "by_country": {
+    "NO": 20,
+    "SE": 10,
+    "DK": 5,
+    "FI": 9,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 4,
+    "2017": 4,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 4,
+    "2026": 10,
+    "2016": 4,
+    "2019": 3,
+    "2024": 1,
+    "2015": 2,
+    "2020": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 3,
+     "2015": 1,
+     "2019": 1,
+     "2014": 1
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 2,
+     "2015": 1,
+     "2026": 2,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "No past event was stored. Two UiT rows were verified and then left out: Enrico Tedeschi's disputas on Monday 2 October 2023, 12:15–16:00, in Store Auditorium B302, Realfagsbygget, Tromsø, and Anders Tungeland Gjerdrum's trial lecture TEEs for Blockchain on Friday 30 October 2020, 10:15–11:15, in Auditorium 1.022, Teknologibygget, Tromsø. TartuNLP returned HTTP 500, so the Northern Sami title could not be written, and an event without a title in every site language fails the title test. They were not stored. A room limit of 20 and the contact addresses were not going to be stored. The Institute of International Affairs at the University of Iceland states an open seminar on Tuesday 19 March in Lögberg 101 and does not state the year. Reykjavík on that page is the institute's postal address. A BigInsight lunch titled From Bitcoin to Blockchain was not open to the public. The two calendar events that ended on 4 and 5 November 2026 are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Nothing was added. Taper level unchanged: full.",
+   "queries": [
+    "https://en.uit.no/tavla/artikkel/825635/enrico_tedeschi",
+    "https://uit.no/tavla/artikkel/703269/proveforelesning_master_i_teknologi_sivilingenior",
+    "https://ams.hi.is/en/news/play-money-digital-currencies-crypto-and-international-security/",
+    "https://www.biginsight.no/events/2017/12/8/wednesday-lunch-tba",
+    "https://events.kaupr.io/products/impact-onchain",
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/312669067/",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-06"
+   ],
+   "sources_used": [],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Enrico Tedeschi disputas, 2 October 2023, Tromsø",
+     "reason": "The UiT page states Monday 2 October 2023, 12:15–16:00, Store Auditorium B302, Realfagsbygget. Not stored: TartuNLP returned HTTP 500, so the Northern Sami title could not be written."
+    },
+    {
+     "name": "TEEs for Blockchain, 30 October 2020, Tromsø",
+     "reason": "The UiT page states Friday 30 October 2020, 10:15–11:15, Auditorium 1.022, Teknologibygget. Not stored for the same reason. The room limit of 20 was not a count. The contact address was not stored."
+    },
+    {
+     "name": "Impact Onchain, 4 November 2026",
+     "reason": "Already on the calendar. The organiser page read on 6 November dates the session to 11 November 2026. No recording of a 4 November session was found."
+    },
+    {
+     "name": "Stockholm Bitcoin Meetup #54, 5 November 2026",
+     "reason": "Already on the calendar. The Meetup page has no recording."
+    },
+    {
+     "name": "Play Money? Digital Currencies, Crypto, and International Security",
+     "reason": "The University of Iceland page states Tuesday 19 March in Lögberg 101 and does not state the year. The postal address was not used as the city."
+    },
+    {
+     "name": "BigInsight lunch, From Bitcoin to Blockchain, 14 February 2018",
+     "reason": "The page says the lunch is open to staff and students of the partners, and not to others."
+    },
+    {
+     "name": "Kryptoskatt 2023 upload",
+     "reason": "The video page does not state the day."
+    },
+    {
+     "name": "Interview segment of the 7 October 2026 tokenization event",
+     "reason": "The page says it is a segment of the webinar already kept as a talk."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }
