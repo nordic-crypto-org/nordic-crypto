@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-06T10:04:38+00:00",
+ "generated_at": "2026-11-06T10:16:09+00:00",
  "preview": false,
  "item": {
   "id": "torbjorn-bull-jenssen",
@@ -42,6 +42,12 @@
     "title": "Arendalsuka: Bitcoin-mining i Norge. For vanskelig å forstå, for lett å forby?",
     "source_name": "Bitcoinpolitisk Institutt Norge",
     "date": "2026-10-16"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=yi4z7uz6s3s&hl=en",
+    "title": "Why Traditional Finance Can No Longer Ignore Crypto | Norway Fintech Festival 2026",
+    "source_name": "Kaupr Media",
+    "date": "2026-11-06"
    }
   ],
   "logo": null,
@@ -50,7 +56,8 @@
   "talk_ids": [
    "yt-7TLMmGGSIOA",
    "yt-JaxgfxpmUmk",
-   "yt-hINk3yZvDdY"
+   "yt-hINk3yZvDdY",
+   "yt-yi4z7uz6s3s"
   ],
   "event_ids": [
    "0af4e2d6e963"
@@ -72,6 +79,11 @@
     "id": "yt-JaxgfxpmUmk",
     "title": "What gives cryptocurrencies value?",
     "video_url": "https://www.youtube.com/watch?v=JaxgfxpmUmk"
+   },
+   {
+    "id": "yt-yi4z7uz6s3s",
+    "title": "Why Traditional Finance Can No Longer Ignore Crypto | Norway Fintech Festival 2026",
+    "video_url": "https://www.youtube.com/watch?v=yi4z7uz6s3s"
    }
   ],
   "affiliations": [
@@ -81,6 +93,14 @@
     "source_url": "https://www.youtube.com/watch?v=hINk3yZvDdY&hl=en",
     "source_name": "Nordic Blockchain Association",
     "retrieved_at": "2026-10-18T11:38:06+00:00"
+   },
+   {
+    "talk_id": "yt-yi4z7uz6s3s",
+    "organisation": "K33",
+    "source_url": "https://www.youtube.com/watch?v=yi4z7uz6s3s&hl=en",
+    "source_name": "Kaupr Media",
+    "retrieved_at": "2026-11-06T09:51:02+00:00",
+    "role": "CEO"
    }
   ]
  }

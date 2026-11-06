@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-06T10:04:38+00:00",
+ "generated_at": "2026-11-06T10:16:09+00:00",
  "preview": false,
  "country": "NO",
- "count": 79,
+ "count": 81,
  "talks": [
   {
    "id": "yt-QQji459IHIY",
@@ -366,6 +366,45 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-aYlA0ADZbQc.json"
   },
   {
+   "id": "yt-yi4z7uz6s3s",
+   "video_url": "https://www.youtube.com/watch?v=yi4z7uz6s3s",
+   "platform": "youtube",
+   "title": "Why Traditional Finance Can No Longer Ignore Crypto | Norway Fintech Festival 2026",
+   "speakers": [
+    "Morten Myrstad",
+    "Leon Aleksander Karlsen Solbakken",
+    "Torbjørn Bull Jenssen",
+    "Robert Stephan Eikheim",
+    "Magnus Jones"
+   ],
+   "event_name": "Norway Fintech Festival 2026",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "morten-myrstad",
+    "spk-leon-aleksander-karlsen-solbakken",
+    "torbjorn-bull-jenssen",
+    "spk-robert-stephan-eikheim",
+    "magnus-jones"
+   ],
+   "city": "Bergen",
+   "country": "NO",
+   "date": null,
+   "published": "2026-05-10",
+   "duration": "PT7M29S",
+   "language": null,
+   "channel": "Kaupr Media",
+   "description": "The channel's episode from the Norway Fintech Festival in Bergen. Torbjørn Bull Jenssen, Robert Stephan Eikheim and Magnus Jones speak with the hosts about banks, crypto and tokenized assets.",
+   "source_url": "https://www.youtube.com/watch?v=yi4z7uz6s3s&hl=en",
+   "retrieved_at": "2026-11-06T10:30:00Z",
+   "added_at": "2026-11-06T10:30:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-yi4z7uz6s3s",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yi4z7uz6s3s.json"
+  },
+  {
    "id": "yt-0q2kmQuA5PE",
    "video_url": "https://www.youtube.com/watch?v=0q2kmQuA5PE",
    "platform": "youtube",
@@ -601,6 +640,51 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-NVPhJ0aCKOw",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-NVPhJ0aCKOw.json"
+  },
+  {
+   "id": "yt--uSddetwiCs",
+   "video_url": "https://www.youtube.com/watch?v=-uSddetwiCs",
+   "platform": "youtube",
+   "title": "Din Kryptoskatt – Live Event med Skatteetaten og skatteeksperter",
+   "speakers": [
+    "Marius Johansen",
+    "Robert Aarestrup",
+    "Hanne Reese Holm",
+    "Erlend Ringstad",
+    "Adnan Rahman",
+    "Magnus Jones",
+    "Jørgen Strøm-Andresen",
+    "Morten Myrstad"
+   ],
+   "event_name": "Din Kryptoskatt",
+   "event_url": "https://www.kaupr.io/din-kryptoskatt",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the city",
+   "speaker_ids": [
+    "spk-marius-johansen",
+    "spk-robert-aarestrup",
+    "spk-hanne-reese-holm",
+    "spk-erlend-ringstad",
+    "spk-adnan-rahman",
+    "magnus-jones",
+    "spk-jorgen-strom-andresen",
+    "morten-myrstad"
+   ],
+   "city": null,
+   "country": "NO",
+   "date": "2025-04-23",
+   "published": "2025-04-23",
+   "duration": "PT2H1M34S",
+   "language": null,
+   "channel": "Kaupr Media",
+   "description": "The channel's webinar on 23 April 2025 about crypto tax, with Marius Johansen and Robert Aarestrup from Skatteetaten and other tax specialists. Morten Myrstad moderates.",
+   "source_url": "https://www.youtube.com/watch?v=-uSddetwiCs&hl=en",
+   "retrieved_at": "2026-11-06T10:30:00Z",
+   "added_at": "2026-11-06T10:30:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt--uSddetwiCs",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt--uSddetwiCs.json"
   },
   {
    "id": "yt-Tw6eKuJ94x0",

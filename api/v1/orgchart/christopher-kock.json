@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-06T10:04:38+00:00",
+ "generated_at": "2026-11-06T10:16:09+00:00",
  "preview": false,
  "item": {
   "id": "christopher-kock",
@@ -30,12 +30,19 @@
     "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 1 (Closing Sessions)",
     "source_name": "Nordic Blockchain Association",
     "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=53TMFvT5UQY&hl=en",
+    "title": "How to invest in the tokenization trends",
+    "source_name": "Kaupr Media",
+    "date": "2026-11-06"
    }
   ],
   "logo": null,
   "image": null,
   "profiles": [],
   "talk_ids": [
+   "yt-53TMFvT5UQY",
    "yt-sDb2GJTIpPo"
   ],
   "talks": [
@@ -43,6 +50,12 @@
     "id": "yt-sDb2GJTIpPo",
     "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 1 (Closing Sessions)",
     "video_url": "https://www.youtube.com/watch?v=sDb2GJTIpPo"
+   },
+   {
+    "id": "yt-53TMFvT5UQY",
+    "title": "How to invest in the tokenization trends",
+    "video_url": "https://www.youtube.com/watch?v=53TMFvT5UQY",
+    "date": "2026-10-07"
    }
   ],
   "affiliations": [
@@ -52,6 +65,15 @@
     "source_url": "https://www.youtube.com/watch?v=sDb2GJTIpPo&hl=en",
     "source_name": "Nordic Blockchain Association",
     "retrieved_at": "2026-10-18T11:38:06+00:00"
+   },
+   {
+    "talk_id": "yt-53TMFvT5UQY",
+    "organisation": "Virtune",
+    "source_url": "https://www.youtube.com/watch?v=53TMFvT5UQY&hl=en",
+    "source_name": "Kaupr Media",
+    "retrieved_at": "2026-11-06T09:51:02+00:00",
+    "role": "CEO & Co-Founder",
+    "date": "2026-10-07"
    }
   ]
  }
