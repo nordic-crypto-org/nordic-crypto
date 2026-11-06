@@ -26,12 +26,13 @@ def story(i, published, **kw):
 
 class Poster:
     def __init__(self, fail_on=()):
-        self.sent, self.fail_on = [], set(fail_on)
+        self.sent, self.media, self.fail_on = [], [], set(fail_on)
 
-    def __call__(self, creds, text, reply_to=None):
+    def __call__(self, creds, text, reply_to=None, media_id=None):
         if any(f in text for f in self.fail_on):
             raise RuntimeError("X API 400")
         self.sent.append(text)
+        self.media.append(media_id)
         return str(1000 + len(self.sent))
 
 
@@ -44,12 +45,25 @@ class XFeed(unittest.TestCase):
         from unittest import mock
         p = mock.patch.object(xf.time, "sleep"); p.start(); self.addCleanup(p.stop)
 
-    def go(self, payload, *, kind="events", dry=False, force=(), max_posts=5):
-        return xf.run(payload, self.ledger, now=NOW, creds=("k",) * 4, max_posts=max_posts, dry=dry,
-                      kind=kind, force=list(force), poster=self.poster, log_fn=self.log.append)
+    def fake_image(self, item, path, *, kind="news", recent_styles=None, **kw):
+        with open(path, "wb") as fh:
+            fh.write(b"\x89PNG\r\n\x1a\nfake")
+        return "photoreal-editorial", path
+
+    def fake_upload(self, creds, path):
+        self.uploads = getattr(self, "uploads", []) + [path]
+        return "media-" + str(len(self.uploads))
+
+    def go(self, payload, *, kind="events", dry=False, force=(), max_posts=5, with_image=True):
+        kw = dict(now=NOW, creds=("k",) * 4, max_posts=max_posts, dry=dry, kind=kind,
+                  force=list(force), poster=self.poster, log_fn=self.log.append)
+        if with_image:
+            kw.update(uploader=self.fake_upload, image_renderer=self.fake_image)
+        return xf.run(payload, self.ledger, **kw)
 
     def ids(self):
-        return json.load(open(self.ledger))["posted"]
+        with open(self.ledger, encoding="utf-8") as fh:
+            return json.load(fh)["posted"]
 
     def test_first_run_seeds_events_and_posts_nothing(self):
         self.assertEqual(self.go({"events": [ev("a1", "2026-11-12T18:00:00+01:00")]}), 0)
@@ -151,6 +165,21 @@ class XFeed(unittest.TestCase):
         self.poster = Poster(fail_on=["Meetup x2"])
         self.assertEqual(self.go({"events": [ev("x2", "2026-11-12T18:00:00+01:00")]}), 1)
         self.assertEqual(self.ids(), [])
+
+
+    def test_news_digest_attaches_image(self):
+        self.go({"items": [], "updated": "2026-11-05T06:00:00+00:00"}, kind="news")
+        items = [story("virtune", "2026-11-04T12:00:00+00:00", country="SE",
+                       title_en="Virtune AI crypto index ETP", source_name="Kaupr"),
+                 story("firi", "2026-11-04T15:55:37+00:00",
+                       title_en="Firi trading doubled after Binance hack", source_name="E24")]
+        self.assertEqual(self.go({"items": items, "updated": "2026-11-05T06:00:00+00:00"}, kind="news"), 0)
+        self.assertEqual(len(self.poster.sent), 1)
+        self.assertEqual(self.poster.media, ["media-1"])
+        with open(self.ledger, encoding="utf-8") as fh:
+            ledger = json.load(fh)
+        self.assertIn("photoreal-editorial", ledger.get("styles") or [])
+        self.assertNotIn("Nordic Crypto AS", self.poster.sent[0])
 
 
 if __name__ == "__main__":

@@ -1073,7 +1073,7 @@ def story_hero(i, alt):
             f'width="{w}" height="{h}" decoding="async">'
             f'<figcaption class="credit">{cap}</figcaption></figure>')
 def story_og_meta(i, title, desc):
-    """og:image for a story that has a generated picture. None keeps the site brand image."""
+    """og:image for a story that has a stored picture. None when it does not."""
     rec = story_image_of(i)
     if not rec:
         return None
@@ -1083,6 +1083,13 @@ def story_og_meta(i, title, desc):
         "image_width": str(int(rec.get("width") or 1280)),
         "image_height": str(int(rec.get("height") or 720)),
     }
+def story_share(i, title, desc):
+    """Stored illustration when this story has one. Otherwise the headline card from the build."""
+    og = story_og_meta(i, title, desc)
+    if og:
+        return og, og.get("image")
+    og = story_og(i, title, desc)
+    return og, og.get("image")
 
 def build():
     global LANG, D1_EVENTS
@@ -2725,11 +2732,11 @@ def build_coverage_pages(items, blurbs):
                    + coverage_block(rows, root) + '</article>')
         body = story_page(article, more_news(items, i.get("id"), back), E(t("home_notice")))
         doc = _coverage().editor_primary_source(i.get("primary_source"))
-        pic = story_image_of(i)
+        og, image = story_share(i, head, txt if not pend else "")
         ld = story_ld("stories/" + i["id"], head, here, txt if not pend else "", [r.get("url") for r in rows] + [(doc or {}).get("url")],
-                      news=not pend and head_l == LANG and tl == LANG, image=(pic or {}).get("url"))
+                      news=not pend and head_l == LANG and tl == LANG, image=image)
         page("stories/" + i["id"], head, "", body, (i.get("summary") or head or "")[:200], COV_SORT_JS if len({r.get("country") or "" for r in rows}) > 1 else "",
-             head_extra=ld, og=story_og_meta(i, head, txt if not pend else ""), modified=here)
+             head_extra=ld, og=og, modified=here)
 def build_stories(write=True, latest=None):
     """Own stories written by the editor (markdown, English). Public build: only slugs in approved.json stories.approve.
     Preview: also stories.ready_for_owner, tagged as awaiting jQrgen's final approval. The 'Editor notes' part is internal and never rendered.
@@ -2786,10 +2793,12 @@ def build_stories(write=True, latest=None):
             body = story_page(article, more_news(latest or [], "story-" + slug, back), t("story_notice", rel=back))
             cites = [u for x in srcs for u in re.findall(r"https?://[^\s<;)]+", x)]
             own_pic = _story_images().lookup("story-" + slug, title)
+            own_item = {"id": slug, "title": title, "title_en": title, "source_name": "Nordic Crypto", "story_image": own_pic}
+            og, image = story_share(own_item, title, paras[0] if paras else title)
             ld = story_ld("stories/" + slug, title, pub, paras[0] if paras else "", cites, news=status == "published" and art_l == LANG,
-                          image=(own_pic or {}).get("url"))
+                          image=image)
             page("stories/" + slug, title, "stories", body, paras[0][:200] if paras else title,
-                 head_extra=ld, og=story_og_meta({"story_image": own_pic}, title, paras[0] if paras else title))   # file mtime: no lastmod
+                 head_extra=ld, og=og)   # file mtime: no lastmod
         editor_sum = ((st.get("summaries") or {}).get(slug) or "").strip()
         opening = opening_sentences(" ".join(paras)) if paras else ""
         first = editor_sum if substantive(editor_sum) else (opening or editor_sum or (first_sentence(paras[0]) if paras else ""))
@@ -3149,6 +3158,44 @@ def event_og(e, heading, when, place, text):
             print(f"event card: WARNING, link-preview image was not written ({ex!r})")
     if ok: og["image"] = BASE + rel
     return og
+def story_og(item, heading, description=""):
+    """Per-story link preview: headline card with «Nordic Crypto» top-right; licensed illustration when present."""
+    global _OG_CARD_WARNED
+    title = (heading or "").strip()
+    if len(title) > 200:
+        cut = title[:199].rsplit(" ", 1)[0].rstrip()
+        title = (cut or title[:199].rstrip()) + "…"
+    desc = " ".join((description or item.get("summary") or heading or "").split())
+    if len(desc) > 300:
+        cut = desc[:299].rsplit(" ", 1)[0].rstrip(".,;:–- ")
+        desc = (cut or desc[:299].rstrip()) + "…"
+    og = {"title": title or heading, "description": desc or heading, "type": "article", "image_alt": heading}
+    rel = lp() + "stories/" + item["id"] + "/og.png"
+    out = os.path.join(SITE, lp(), "stories", item["id"], "og.png")
+    ill = None
+    rec = item.get("illustration") or {}
+    if rec.get("file"):
+        cand = os.path.join(ROOT, rec["file"]) if not os.path.isabs(rec["file"]) else rec["file"]
+        if os.path.isfile(cand):
+            ill = cand
+    ok = False
+    try:
+        import tools.story_og_card as cards
+        drawn = next((x for x in (heading, (item.get("title_en") or ""), item.get("title")) if x and cards.covers(x)), heading)
+        sub = ("Source: " + str(item["source_name"])) if item.get("source_name") else ""
+        ok = cards.render(out, drawn, sub, illustration_path=ill)
+        if not ok and not _OG_CARD_WARNED:
+            _OG_CARD_WARNED = True
+            print("story card: WARNING, Pillow is missing; story pages use the site image")
+    except Exception as ex:
+        ok = False
+        if not _OG_CARD_WARNED:
+            _OG_CARD_WARNED = True
+            print(f"story card: WARNING, link-preview image was not written ({ex!r})")
+    if ok:
+        og["image"] = BASE + rel
+    return og
+
 def build_one_event(e):
     """Full event page: the title, then one block with when, where, who and what (each with its source; one source line when
     they all share it) and the official page as the main button, then the description, the editor's note, topics and talks.

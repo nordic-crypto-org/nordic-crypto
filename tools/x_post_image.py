@@ -24,12 +24,45 @@ GOLD = (0xD9, 0xA0, 0x34)
 WHITE = (0xF0, 0xF1, 0xEC)
 W, H = 1280, 720
 MODEL = "@cf/black-forest-labs/flux-1-schnell"
-# A style in this window is not used again. When every style is inside the
-# window, the caller mints a new topic style instead of repeating one.
+# Stored pictures use this window (D1). When every style is inside it, the
+# caller mints a new topic style instead of repeating one.
 RECENT_LIMIT = 48
+# On-the-fly fallback (a post whose story has no stored row): skip the last
+# few of the fixed library, the same rule as the X feed before storage.
+RECENT = 4
 FONT_SERIF = os.path.join(ROOT, "assets", "fonts", "CormorantGaramond-SemiBold.ttf")
 FONT_SANS = os.path.join(ROOT, "assets", "fonts", "SchibstedGrotesk-Medium.ttf")
 MARK = os.path.join(ROOT, "assets", "brand", "mark-64.png")
+
+# Fixed styles for a post that has no stored picture. The same ids are seeded
+# into D1 by workers/content/migrations/0003_story_images.sql.
+STYLES = [
+    ("photoreal-editorial",
+     "photoreal editorial photography, sharp detail, natural Nordic light, magazine cover quality"),
+    ("watercolour",
+     "loose watercolour painting on textured paper, soft washes, visible brush edges"),
+    ("flat-vector",
+     "flat vector illustration, bold shapes, limited palette, clean edges, poster design"),
+    ("isometric-3d",
+     "isometric 3D illustration, soft studio lighting, clean geometric forms"),
+    ("neon-cyberpunk",
+     "neon cyberpunk night scene, teal and gold glow, rain-slick streets, futuristic Nordic city"),
+    ("paper-collage",
+     "hand-cut paper collage, layered coloured card stock, craft texture, studio photo of the collage"),
+    ("ink-sketch",
+     "black ink sketch with sparse gold wash accents, cross-hatching, notebook page feel"),
+    ("retro-poster",
+     "1960s travel poster, silk-screen print look, bold shapes, no lettering"),
+    ("minimal-geometric",
+     "minimal geometric composition, large flat colour fields, Bauhaus-inspired shapes"),
+    ("cinematic-night",
+     "cinematic night photography, deep teal shadows, warm gold highlights, shallow depth of field"),
+    ("ligne-claire",
+     "ligne claire Franco-Belgian comic illustration, clean black outlines, flat bright colours, "
+     "even lighting, original adult characters only, never any copyrighted comic characters"),
+]
+STYLE_IDS = [s[0] for s in STYLES]
+STYLE_PROMPT = {s[0]: s[1] for s in STYLES}
 
 COUNTRY = {
     "NO": "Norway", "SE": "Sweden", "DK": "Denmark", "FI": "Finland", "IS": "Iceland",
@@ -190,17 +223,74 @@ def choose_style(styles, recent, item, rng=None):
     return derive_style(item, styles, recent)
 
 
+def pick_style(recent=None, rng=None):
+    """A fixed-library id that is not among the last RECENT on-the-fly picks."""
+    recent = list(recent or [])
+    banned = set(recent[-RECENT:])
+    choices = [s for s in STYLE_IDS if s not in banned] or list(STYLE_IDS)
+    return (rng or random.Random()).choice(choices)
+
+
+def _style_obj(style):
+    if isinstance(style, dict):
+        return style
+    sid = str(style or "")
+    return {"id": sid, "prompt": STYLE_PROMPT.get(sid, sid)}
+
+
 def story_prompt(item, style):
     title = _plain(item.get("title_en") or item.get("title") or "Nordic crypto news", 160)
     summary = _plain(item.get("summary") or item.get("summary_en") or "", 220)
     country = COUNTRY.get((item.get("country") or "").upper(), "the Nordics")
     scene = summary or f"a scene that evokes the news: {title}"
-    fragment = style.get("prompt") if isinstance(style, dict) else str(style or "")
+    fragment = _style_obj(style).get("prompt") or ""
     prompt = (
         f"{fragment}. Wide 16:9 landscape. Subject inspired by this Nordic crypto news from {country}: "
         f"«{title}». Visual mood: {scene}. {NEGATIVE}"
     )
     return BANNED.sub("figure", prompt)[:2000]
+
+
+def event_prompt(item, style):
+    title = _plain(item.get("title") or "Nordic crypto event", 160)
+    place = _plain(", ".join(x for x in (item.get("place"), item.get("city")) if x), 120)
+    country = COUNTRY.get((item.get("country") or "").upper(), "the Nordics")
+    where = place or ("online gathering" if item.get("online") else country)
+    fragment = _style_obj(style).get("prompt") or ""
+    prompt = (
+        f"{fragment}. Wide 16:9 landscape. A welcoming gathering for the crypto event «{title}» "
+        f"in {where}, {country}. People as original characters only. {NEGATIVE}"
+    )
+    return BANNED.sub("figure", prompt)[:2000]
+
+
+def load_styles(path):
+    if not path or not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return []
+    return list(data.get("styles") or [])
+
+
+def save_styles(path, styles):
+    """Merge recent style ids into a ledger JSON without dropping other keys."""
+    data = {}
+    if path and os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                data = json.load(fh) or {}
+        except (OSError, json.JSONDecodeError):
+            data = {}
+    data["styles"] = list(styles)
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    os.replace(tmp, path)
 
 
 def _call_model(body, account, token):
@@ -344,12 +434,25 @@ def fallback_card(headline, subtitle=""):
     return im
 
 
-def render(item, out_path, *, style, generator=None):
-    """Write a branded PNG. Returns (kind, prompt) where kind is 'ai' or 'fallback'."""
-    prompt = story_prompt(item, style if isinstance(style, dict) else {"prompt": str(style or "")})
+def render(item, out_path, *, kind="news", recent_styles=None, rng=None, generator=None, style=None):
+    """Write a branded PNG. Returns (style_id, path).
+
+    kind is 'ai' or 'fallback' on render.kind, and the prompt is render.prompt.
+    style may be an id or a style dict. With no style, pick one that is not
+    among the last RECENT on-the-fly styles.
+    """
+    if style is None:
+        style_id = pick_style(recent_styles, rng=rng)
+        style_obj = {"id": style_id, "prompt": STYLE_PROMPT[style_id]}
+    else:
+        style_obj = _style_obj(style)
+        style_id = style_obj.get("id") or "custom"
+        if style_id in STYLE_PROMPT and not style_obj.get("prompt"):
+            style_obj = {"id": style_id, "prompt": STYLE_PROMPT[style_id]}
+    prompt = event_prompt(item, style_obj) if kind == "events" else story_prompt(item, style_obj)
     raw = (generator or generate_ai)(prompt)
     from PIL import Image
-    kind = "ai"
+    painted = "ai"
     if raw:
         try:
             im = _fit(Image.open(io.BytesIO(raw)))
@@ -357,27 +460,33 @@ def render(item, out_path, *, style, generator=None):
             log(f"decode failed ({type(err).__name__}); using fallback card")
             raw = None
     if not raw:
-        kind = "fallback"
+        painted = "fallback"
         title = item.get("title_en") or item.get("title") or "Nordic Crypto"
         im = fallback_card(_plain(title, 120), "")
-        log(f"fallback card ({style.get('id') if isinstance(style, dict) else style})")
+        log(f"fallback card ({style_id})")
     else:
-        log(f"generated {style.get('id') if isinstance(style, dict) else style}")
+        log(f"generated {style_id}")
     im = brand_overlay(im)
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     im.save(out_path, "PNG", optimize=True)
-    return kind, prompt
+    render.kind = painted
+    render.prompt = prompt
+    return style_id, out_path
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--story-json", required=True)
     ap.add_argument("-o", "--out", required=True)
-    ap.add_argument("--style-prompt", default="photoreal editorial photography, natural Nordic light")
+    ap.add_argument("--style", choices=STYLE_IDS)
+    ap.add_argument("--styles-state")
     a = ap.parse_args(argv)
     item = json.loads(a.story_json)
-    kind, _prompt = render(item, a.out, style={"id": "cli", "prompt": a.style_prompt})
-    print(a.out, kind)
+    recent = load_styles(a.styles_state)
+    style_id, path = render(item, a.out, recent_styles=recent, style=a.style)
+    if a.styles_state:
+        save_styles(a.styles_state, remember_style(recent, style_id))
+    print(path, style_id)
     return 0
 
 

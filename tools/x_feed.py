@@ -4,9 +4,13 @@
 Same selection rules as tools/telegram_events.py (live feeds, ledger, settle window, --post backfill).
 Plain-text posts: one digest for new stories (English headlines, nordiccrypto.no links, Source: name),
 one post per new upcoming event (title, date/time, venue/address, organiser, Nordic Crypto page).
-Uses the X OAuth secrets of tools/x_newsletter.py; without them it logs one line and exits 0 (dry).
-A news digest attaches the story illustrations already stored for those stories (up to four).
-It does not generate a picture. A story with no stored image is posted as text, as before.
+
+A news digest attaches the illustrations already stored for those stories (up to four).
+When none of the stories has a stored picture, the post falls back to one image generated
+on the fly (tools/x_post_image.py): a rotating style, «Nordic Crypto» top-right, and a
+headline card when Workers AI credentials are missing. Events have no stored picture,
+so they always use that fallback. Uses the X OAuth secrets of tools/x_newsletter.py;
+without them it logs one line and exits 0 (dry).
 
   python3 tools/x_feed.py --kind events|news --ledger PATH [--dry-run] [--post ID,ID] [--feed URL]
 """
@@ -15,9 +19,9 @@ import argparse, datetime as dt, os, sys, tempfile, time, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import telegram_events as te
 import x_newsletter as xn
+import x_post_image as xi
 
 UA = "nordic-crypto-x-feed/1 (+https://nordiccrypto.no/)"
-# Digests stay one post (X Premium long posts, same as the newsletter). Cap links like the newsletter.
 MAX_URLS = xn.MAX_URLS
 
 
@@ -43,7 +47,6 @@ def event_text(e):
     if link and str(link).startswith(te.SITE):
         lines.append(link)
     elif link:
-        # Prefer the Nordic Crypto page; fall back only if html_url is missing the site path.
         lines.append(f"{te.SITE}/calendar/{e['id']}/" if e.get("id") else link)
     return "\n".join(lines)
 
@@ -67,12 +70,32 @@ def news_digest(items, now):
     return "\n\n".join(blocks)
 
 
+def save_ledger(path, posted_ids, styles):
+    """Write posted ids and recent on-the-fly style ids together."""
+    os.makedirs(os.path.dirname(os.path.abspath(path)) or ".", exist_ok=True)
+    import json
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump({"posted": list(posted_ids), "styles": list(styles)}, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    os.replace(tmp, path)
+
+
+def lead_item(items, kind):
+    """Newest story for a fallback image; the single event otherwise."""
+    if not items:
+        return None
+    if kind == "news":
+        return max(items, key=lambda e: (te.parse(e.get("published")) or dt.datetime.min.replace(tzinfo=dt.timezone.utc), e["id"]))
+    return items[0]
+
+
 def pictures_for(ids, byid):
     return [byid[i] for i in ids if byid.get(i)]
 
 
 def story_image_urls(items, limit=4):
-    """Public illustration URLs already stored for these stories. At most four (the X limit)."""
+    """Public illustration URLs already stored for these stories. At most four."""
     urls = []
     for item in items or []:
         image = item.get("image") if isinstance(item, dict) else None
@@ -99,7 +122,7 @@ def _download_image(url):
 
 
 def attach_story_images(creds, items, *, uploader, fetcher, log_fn):
-    """Upload the stored story pictures. A failed download does not generate a new one."""
+    """Upload pictures that are already stored. A failed download does not generate a new one."""
     ids = []
     for url in story_image_urls(items):
         path = None
@@ -109,7 +132,7 @@ def attach_story_images(creds, items, *, uploader, fetcher, log_fn):
                 continue
             ids.append(uploader(creds, path))
         except Exception as err:
-            log_fn(f"image attach skipped ({type(err).__name__})")
+            log_fn(f"stored image skipped ({type(err).__name__})")
         finally:
             if path and os.path.exists(path):
                 try:
@@ -119,26 +142,62 @@ def attach_story_images(creds, items, *, uploader, fetcher, log_fn):
     return ids
 
 
-def post_x(creds, text, poster=xn.create_post, media_ids=None):
+def make_image(item, kind, styles, *, image_renderer=None):
+    """On-the-fly card for an item that has no stored picture. Returns (path, style_id)."""
+    if not item:
+        return None, None
+    renderer = image_renderer or xi.render
+    fd, path = tempfile.mkstemp(prefix="nc-x-", suffix=".png")
+    os.close(fd)
+    try:
+        style_id, path = renderer(item, path, kind=kind, recent_styles=styles)
+        return path, style_id
+    except Exception as err:
+        log(kind, f"image render failed: {type(err).__name__}: {err}")
+        try:
+            os.unlink(path)
+        except OSError:
+            pass
+        return None, None
+
+
+def _drop(path):
+    if path and os.path.exists(path) and not os.environ.get("NC_X_KEEP_IMAGES"):
+        try:
+            os.unlink(path)
+        except OSError:
+            pass
+
+
+def post_x(creds, text, poster=xn.create_post, media_id=None, media_ids=None):
     if xn.x_len(text) > xn.LONG_LIMIT:
         return None, f"text exceeds X long-post limit ({xn.x_len(text)}/{xn.LONG_LIMIT})"
-    try:
-        if media_ids:
-            return poster(creds, text, media_ids=media_ids), ""
-        return poster(creds, text), ""
-    except TypeError:
-        if not media_ids:
-            return None, "poster rejected the call"
+    ids = [i for i in (media_ids or []) if i]
+    if media_id and media_id not in ids:
+        ids.insert(0, media_id)
+    attempts = []
+    if len(ids) == 1:
+        attempts.append({"media_id": ids[0]})
+        attempts.append({"media_ids": ids})
+    elif ids:
+        attempts.append({"media_ids": ids})
+        attempts.append({"media_id": ids[0]})
+    attempts.append({})
+    last = "poster rejected the call"
+    for kw in attempts:
         try:
-            return poster(creds, text), ""
+            return (poster(creds, text, **kw) if kw else poster(creds, text)), ""
+        except TypeError as err:
+            last = str(err)
+            continue
         except Exception as err:
             return None, f"{type(err).__name__}: {err}"
-    except Exception as err:
-        return None, f"{type(err).__name__}: {err}"
+    return None, last
 
 
 def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(), max_age_days=7,
-        settle_minutes=10, poster=xn.create_post, log_fn=None, image_uploader=None, image_fetcher=None):
+        settle_minutes=10, poster=xn.create_post, log_fn=None, uploader=None, image_renderer=None,
+        image_uploader=None, image_fetcher=None):
     log_fn = log_fn or (lambda m: log(kind, m))
     if feed.get("preview"):
         log_fn("refusing a preview feed")
@@ -147,14 +206,15 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
     have = os.path.exists(ledger_path)
     ledger = xn.load_state(ledger_path) if have else {"posted": []}
     if "posted" not in ledger:
-        ledger = {"posted": list(ledger.get("posted") or [])}
+        ledger = {"posted": list(ledger.get("posted") or []), **{k: v for k, v in ledger.items() if k != "posted"}}
     seen = set(ledger.get("posted") or [])
+    styles = list(ledger.get("styles") or [])
     force = [i for i in force if i]
     if not have:
         ids = sorted({e["id"] for e in events if e.get("id")})
         seen = set(ids)
         if not dry:
-            te.save(ledger_path, ids)
+            save_ledger(ledger_path, ids, styles)
         log_fn(f"no ledger yet; recorded {len(ids)} current {kind}"
                + ("" if force else ", posted nothing")
                + (" (dry run, not saved)" if dry else ""))
@@ -175,11 +235,10 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
         todo = te.fresh_news(forced, now, 36500) + [e for e in fresh if e["id"] not in force]
         todo.sort(key=lambda e: (te.parse(e["published"]), e["id"]))
         if todo:
-            msgs = [( [e["id"] for e in todo], news_digest(todo, now) )]
+            msgs = [([e["id"] for e in todo], news_digest(todo, now), lead_item(todo, "news"))]
     else:
         todo = [e for e in te.postable(events, now) if e["id"] not in seen]
         forced = [byid[i] for i in dict.fromkeys(force) if i in byid and i not in {e["id"] for e in todo}]
-        # Backfill forced event ids even if already seen / past, when still in the feed.
         extra = []
         for i in dict.fromkeys(force):
             e = byid.get(i)
@@ -189,34 +248,57 @@ def run(feed, ledger_path, *, now, creds, max_posts, dry, kind="events", force=(
                 continue
             extra.append(e)
         todo = extra + todo
-        msgs = [([e["id"]], event_text(e)) for e in todo[:max_posts]]
+        msgs = [([e["id"]], event_text(e), e) for e in todo[:max_posts]]
     if not msgs:
         log_fn("nothing new")
         return 0
     posted = 0
-    for ids, text in msgs:
-        urls = story_image_urls(pictures_for(ids, byid)) if kind == "news" else []
+    upload = uploader or image_uploader or xn.upload_image
+    fetcher = image_fetcher or _download_image
+    for ids, text, lead in msgs:
+        pictures = pictures_for(ids, byid) if kind == "news" else []
+        stored = story_image_urls(pictures)
+        style_id = None
         if dry or not creds:
             why = "dry run" if dry else f"missing {', '.join(k for k in xn.ENV if not os.environ.get(k))}"
-            note = f" + {len(urls)} stored image(s)" if urls else ""
+            if stored:
+                note = f" + {len(stored)} stored image(s)"
+            else:
+                img_path, style_id = make_image(lead, "news" if kind == "news" else "events", styles,
+                                               image_renderer=image_renderer)
+                note = f" + image:{style_id or 'none'}" + (f" ({img_path})" if img_path else "")
+                if img_path and style_id:
+                    styles = xi.remember_style(styles, style_id)
+                _drop(img_path)
             log_fn(f"--- would post {', '.join(ids)} ({why}){note}:\n{text}")
             continue
+        media_id = None
         media_ids = None
-        if urls:
-            media_ids = attach_story_images(
-                creds, pictures_for(ids, byid),
-                uploader=image_uploader or xn.upload_image,
-                fetcher=image_fetcher or _download_image,
-                log_fn=log_fn,
-            ) or None
-        tid, err = post_x(creds, text, poster=poster, media_ids=media_ids)
+        if stored:
+            media_ids = attach_story_images(creds, pictures, uploader=upload, fetcher=fetcher, log_fn=log_fn) or None
+        else:
+            img_path, style_id = make_image(lead, "news" if kind == "news" else "events", styles,
+                                           image_renderer=image_renderer)
+            if img_path:
+                try:
+                    media_id = upload(creds, img_path)
+                except Exception as err:
+                    log_fn(f"image upload failed ({type(err).__name__}: {err}); posting without media")
+                    media_id = None
+                finally:
+                    _drop(img_path)
+        tid, err = post_x(creds, text, poster=poster, media_id=media_id, media_ids=media_ids)
         if not tid:
             log_fn(f"send failed for {', '.join(ids)}: {err}")
             return 1
         seen.update(ids)
         posted += len(ids)
-        te.save(ledger_path, sorted(seen))
-        log_fn(f"posted {', '.join(ids)}: https://x.com/nordiccryptobot/status/{tid}")
+        if style_id:
+            styles = xi.remember_style(styles, style_id)
+        save_ledger(ledger_path, sorted(seen), styles)
+        how = f"image {style_id}" if style_id else (f"{len(stored)} stored image(s)" if stored else "")
+        log_fn(f"posted {', '.join(ids)}: https://x.com/nordiccryptobot/status/{tid}"
+               + (f" ({how})" if how else ""))
         time.sleep(1)
     left = 0 if (dry or not creds) else (len(todo) - posted if kind == "events" else 0)
     log_fn(f"{posted} posted, {left} left for the next run"

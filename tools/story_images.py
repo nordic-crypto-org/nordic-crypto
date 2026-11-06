@@ -316,7 +316,8 @@ def generate_missing(items, store, *, now, days=7, limit=40, rng=None, generator
         fd, path = tempfile.mkstemp(prefix="nc-story-", suffix=".png")
         os.close(fd)
         try:
-            kind, prompt = painter.render(item, path, style=style, generator=generator)
+            _style_id, _path = painter.render(item, path, style=style, generator=generator)
+            kind, prompt = painter.render.kind, painter.render.prompt
             if kind == "fallback" and existing and existing.get("kind") == "fallback":
                 skipped += 1
                 continue
