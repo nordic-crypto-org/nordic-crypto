@@ -25,3 +25,11 @@ database_name = "nordic-crypto-content"
 database_id = "ebba20cc-77a8-4d50-a753-dd46fcb8798d"
 migrations_dir = "migrations"
 
+# Story illustrations. The bucket is not created by a deploy.
+# It is not the private backup bucket (CF_R2_BUCKET / nordic-crypto-content-backup).
+# Create it once, on the free tier, then set the GitHub variable CF_R2_STORY_BUCKET
+# to the same name. The Worker serves the objects; the bucket stays private.
+[[r2_buckets]]
+binding = "STORY_IMAGES"
+bucket_name = "nordic-crypto-story-images"
+

@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+"""Story illustrations: one picture per story, styles that do not repeat, nothing written to git."""
+import datetime as dt, io, json, os, random, shutil, sys, tempfile, unittest
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+
+from tools import d1_store, story_images
+import x_post_image as painter
+
+
+NOW = dt.datetime(2026, 11, 6, 12, tzinfo=dt.timezone.utc)
+
+
+def story(i, day="2026-11-04", **kw):
+    row = {"id": i, "status": "published", "published": f"{day}T08:00:00+00:00",
+           "title_en": f"Story {i}", "title": f"Sak {i}", "summary": "A Nordic exchange changed a rule.",
+           "country": "NO", "topics": ["regulation"], "source_name": "NRK"}
+    row.update(kw)
+    return row
+
+
+def png_bytes():
+    from PIL import Image
+    buf = io.BytesIO()
+    Image.new("RGB", (64, 36), (20, 40, 50)).save(buf, format="PNG")
+    return buf.getvalue()
+
+
+class StoryImages(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp(prefix="nc-simg-")
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        self.store = d1_store.open_sqlite(os.path.join(self.tmp, "c.sqlite"))
+        story_images.reset_index()
+        self.addCleanup(story_images.reset_index)
+
+    def test_private_backup_bucket_is_not_the_story_bucket(self):
+        os.environ.pop(story_images.BUCKET_ENV, None)
+        os.environ["CF_R2_BUCKET"] = "nordic-crypto-content-backup"
+        try:
+            self.assertIn(story_images.BUCKET_ENV, story_images.storage_gaps())
+            self.assertEqual(story_images.bucket_name(), "")
+        finally:
+            os.environ.pop("CF_R2_BUCKET", None)
+
+    def test_public_record_has_url_and_not_the_prompt(self):
+        rec = story_images.public_record({
+            "story_id": "abc123", "style_id": "woodcut-mining", "kind": "ai",
+            "width": 1280, "height": 720, "created_at": "2026-11-06T00:00:00Z",
+            "prompt": "secret prompt",
+        }, "Headline")
+        self.assertTrue(rec["url"].startswith("https://api.nordiccrypto.no/story-images/abc123.png?v="))
+        self.assertEqual(rec["kind"], "original")
+        self.assertNotIn("prompt", rec)
+        self.assertEqual(rec["alt"], "Headline")
+
+    def test_one_image_then_skip_and_style_does_not_repeat(self):
+        stored = []
+
+        def generator(prompt):
+            self.assertNotIn("tintin", prompt.lower())
+            self.assertNotIn("nrk", prompt.lower())
+            return png_bytes()
+
+        def uploader(path, key):
+            stored.append(key)
+            self.assertTrue(os.path.isfile(path))
+
+        items = [story("aaaa11111111", topics=["mining"], title_en="Tintin and a data hall"),
+                 story("bbbb22222222", day="2026-11-05")]
+        first = story_images.generate_missing(
+            items, self.store, now=NOW, days=7, generator=generator, uploader=uploader, rng=random.Random(1))
+        self.assertEqual(first["generated"], 2)
+        self.assertEqual(len(stored), 2)
+        styles = [r["style_id"] for r in self.store.query("SELECT style_id FROM story_images ORDER BY story_id")]
+        self.assertEqual(len(set(styles)), 2)
+        prompts = self.store.query("SELECT prompt FROM story_images")
+        self.assertTrue(all("tintin" not in (p["prompt"] or "").lower() for p in prompts))
+        again = story_images.generate_missing(
+            items, self.store, now=NOW, days=7, generator=generator, uploader=uploader, rng=random.Random(1))
+        self.assertEqual(again["generated"], 0)
+        self.assertEqual(again["skipped"], 2)
+        self.assertEqual(len(stored), 2)
+
+    def test_library_grows_when_every_style_was_used_recently(self):
+        ids = [r["id"] for r in self.store.query("SELECT id FROM story_image_styles")]
+        self.assertGreaterEqual(len(ids), 11)
+        self.store.execute("UPDATE story_image_style_state SET recent = ? WHERE id = 1", (json.dumps(ids),))
+        stored = []
+        story_images.generate_missing(
+            [story("cccc33333333", topics=["mining"])], self.store, now=NOW, days=7,
+            generator=lambda prompt: png_bytes(), uploader=lambda path, key: stored.append(key),
+            rng=random.Random(2))
+        grown = self.store.query("SELECT id, origin, prompt FROM story_image_styles WHERE origin = 'topic'")
+        self.assertEqual(len(grown), 1)
+        self.assertNotIn(grown[0]["id"], ids)
+        self.assertIn("original", grown[0]["prompt"].lower())
+        row = story_images.image_row(self.store, "cccc33333333")
+        self.assertEqual(row["kind"], "ai")
+        self.assertEqual(row["style_id"], grown[0]["id"])
+
+    def test_fallback_card_is_replaced_once_when_a_generator_is_available(self):
+        story_images.generate_missing(
+            [story("dddd44444444")], self.store, now=NOW, days=7,
+            generator=lambda prompt: None, uploader=lambda path, key: None, rng=random.Random(3))
+        self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "fallback")
+        story_images.generate_missing(
+            [story("dddd44444444")], self.store, now=NOW, days=7,
+            generator=lambda prompt: None, uploader=lambda path, key: None, rng=random.Random(3))
+        self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "fallback")
+        story_images.generate_missing(
+            [story("dddd44444444")], self.store, now=NOW, days=7,
+            generator=lambda prompt: png_bytes(), uploader=lambda path, key: None, rng=random.Random(3))
+        self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "ai")
+
+    def test_old_and_pending_stories_are_not_generated(self):
+        items = [story("eeee55555555", day="2026-10-01"),
+                 story("ffff66666666", status="pending")]
+        counts = story_images.generate_missing(
+            items, self.store, now=NOW, days=7, generator=lambda p: png_bytes(),
+            uploader=lambda path, key: None, rng=random.Random(4))
+        self.assertEqual(counts["considered"], 0)
+        self.assertIsNone(story_images.image_row(self.store, "eeee55555555"))
+
+    def test_page_uses_the_url_and_falls_back_without_one(self):
+        import build
+        build.LANG = "en"
+        url = "https://api.nordiccrypto.no/story-images/abc123.png?v=2026-11-06T00%3A00%3A00Z"
+        item = {"id": "abc123", "story_image": {"url": url, "width": 1280, "height": 720, "alt": "Headline", "kind": "original"}}
+        html = build.story_hero(item, "Headline")
+        self.assertIn("story-hero", html)
+        self.assertIn(url, html)
+        self.assertIn("Nordic Crypto", html)
+        og = build.story_og_meta(item, "Headline", "Summary")
+        self.assertEqual(og["image"], url)
+        self.assertEqual(og["image_width"], "1280")
+        self.assertEqual(og["image_height"], "720")
+        self.assertIsNone(build.story_og_meta({"id": "none"}, "T", "D"))
+        self.assertEqual(build.story_hero({"id": "none"}, "T"), "")
+
+
+class StyleChoice(unittest.TestCase):
+    def test_never_repeats_a_recent_style(self):
+        styles = [{"id": f"s{i}", "prompt": f"style {i}", "origin": "base"} for i in range(11)]
+        recent = []
+        rng = random.Random(5)
+        seen = []
+        item = {"topics": ["bitcoin"], "title_en": "A plain coin on a table", "summary": "Markets moved."}
+        for _ in range(16):
+            choice = painter.choose_style(styles, recent, item, rng)
+            self.assertNotIn(choice["id"], set(recent[-painter.RECENT_LIMIT:]))
+            if choice["id"] not in {s["id"] for s in styles}:
+                styles.append(choice)
+                self.assertEqual(choice["origin"], "topic")
+            recent = painter.remember_style(recent, choice["id"])
+            seen.append(choice["id"])
+        self.assertEqual(len(seen), len(set(seen)))
+        self.assertGreater(len(styles), 11)
+
+    def test_ligne_claire_prompt_keeps_original_characters_only(self):
+        prompt = painter.story_prompt(
+            {"title_en": "Tintin and Snowy at NRK", "summary": "Haddock said nothing.", "source_name": "NRK"},
+            {"id": "ligne-claire", "prompt": "ligne claire, original adult characters only"},
+        )
+        low = prompt.lower()
+        self.assertNotIn("tintin", low)
+        self.assertNotIn("snowy", low)
+        self.assertNotIn("haddock", low)
+        self.assertNotIn("nrk", low)
+        self.assertIn("original", low)
+
+
+class NewsreelStill(unittest.TestCase):
+    def test_downloads_the_stored_url_once(self):
+        import newsreel_still
+        cache = tempfile.mkdtemp(prefix="nc-still-")
+        self.addCleanup(shutil.rmtree, cache, True)
+        calls = []
+
+        def read(url):
+            calls.append(url)
+            if url.endswith(".json"):
+                return json.dumps({"id": "abc123", "image": {"url": "https://api.nordiccrypto.no/story-images/abc123.png"}}).encode()
+            return png_bytes()
+
+        path = newsreel_still.cached_path("abc123", cache, read=read)
+        self.assertTrue(path and os.path.isfile(path))
+        again = newsreel_still.cached_path("abc123", cache, read=read)
+        self.assertEqual(path, again)
+        self.assertEqual(len(calls), 2)
+        self.assertIsNone(newsreel_still.cached_path("missing", cache, read=lambda url: b"{}"))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -80,10 +80,18 @@ Country pictures: Stortinget (NO, CC BY 2.0, cropped), Riksdagshuset (SE, CC0), 
 
 ## How the picture is shown
 
-The site does not render the assigned picture. The same few files were reused across many stories and took the width of each card. The front page, the screen listing and story pages are text: the headline in the page language, the source headline underneath when it differs, the summary, the outlet logo and name, and the date. Nothing in that block is centred.
+The site does not render the assigned catalogue picture. The same few files were reused across many stories and took the width of each card. The front page and the screen listing stay text: the headline in the page language, the source headline underneath when it differs, the summary, the outlet logo and name, and the date. Nothing in that block is centred. A story page adds the generated illustration under the headline when that story has one.
 
 The JSON API still includes `illustration` on each news item, and `/api/v1/illustrations.json` still lists the catalogue. The field is the licensed record (source, author, license, url, file_url), not a decorative stand-in, so a client that already reads it keeps the credit. `file_url` still points at the file on this site.
 
-`og:image` on story pages is the Nordic Crypto brand image, not the assigned picture.
+`og:image` on a story page is that story's own illustration when one has been stored, and the Nordic Crypto brand image when it has not.
 
 Outlet logos stay next to the outlet name. They are not this picture.
+
+## Generated illustrations
+
+Each published story may have one illustration made from its headline and summary. It is drawn for Nordic Crypto. It is not a photograph from the newspaper, and it is not stored in git.
+
+The PNG is an object in the R2 bucket `nordic-crypto-story-images` (`CF_R2_STORY_BUCKET`). That bucket is not the private backup bucket. The content Worker serves the file at `https://api.nordiccrypto.no/story-images/<id>.png`. D1 table `story_images` on `nordic-crypto-content` records the story id, the object key, the style, the prompt and the time. The style library and the list of recent styles are in the same database. A style that was just used is not used again. When every stored style is recent, a new style is added from the article topic. Ligne claire is allowed only with original characters. «Nordic Crypto» is drawn in the top-right corner. Without the Workers AI token the picture is a headline card, stored the same way, and replaced once the token is available.
+
+The story page, in every language, uses that URL as the hero and as `og:image`. `/api/v1/news.json` includes `image.url`. The X post and the Anders Fjell newsreel read the same URL. They do not generate a second picture. A story with no row keeps the brand image on the page and the newsreel's existing art.

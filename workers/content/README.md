@@ -10,7 +10,8 @@ The public site stays on GitHub Pages. This Worker is the editor API and an opti
 
 | Method | Path | Auth | What |
 |---|---|---|---|
-| GET | `/api/v1/news.json` and `/api/v1/news/:id.json` | no | Approved stories. No teasers, match rules or reject reasons. |
+| GET | `/api/v1/news.json` and `/api/v1/news/:id.json` | no | Approved stories. No teasers, match rules or reject reasons. `image.url` when a story illustration is stored. The prompt is not included. |
+| GET | `/story-images/:id.png` | no | That illustration, from the R2 binding `STORY_IMAGES`. 404 when the bucket is not bound or the object is missing. |
 | GET | `/api/v1/events.json` and `/api/v1/events/:id.json` | no | Approved events. |
 | GET | `/api/v1/sources.json` | no | Outlet id, name, country and url. |
 | GET | `/api/review/pending` | `Authorization: Bearer EDITOR_TOKEN` | Ids and titles waiting on the editor. |

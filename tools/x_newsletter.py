@@ -233,12 +233,38 @@ def upload_video(creds, path):
     return mid
 
 
-def create_post(creds, text, reply_to=None, media_id=None):
+def upload_image(creds, path):
+    """v2 simple upload for a PNG or JPEG. Returns the media id."""
+    with open(path, "rb") as fh:
+        data = fh.read()
+    ext = os.path.splitext(path)[1].lower()
+    mime = "image/png" if ext == ".png" else "image/jpeg"
+    mid = x_json(creds, UPLOAD + "/initialize", {
+        "media_type": mime, "total_bytes": len(data), "media_category": "tweet_image",
+    })["data"]["id"]
+    log(f"initialize image {mid} ({len(data)} bytes)")
+    url = f"{UPLOAD}/{mid}/append"
+    boundary = "nc" + secrets.token_hex(12)
+    body = (f"--{boundary}\r\nContent-Disposition: form-data; name=\"segment_index\"\r\n\r\n0\r\n"
+            f"--{boundary}\r\nContent-Disposition: form-data; name=\"media\"; filename=\"card{ext}\"\r\n"
+            f"Content-Type: {mime}\r\n\r\n").encode() + data + f"\r\n--{boundary}--\r\n".encode()
+    req = urllib.request.Request(url, data=body, method="POST", headers={
+        "Authorization": oauth_header("POST", url, creds),
+        "Content-Type": f"multipart/form-data; boundary={boundary}", "User-Agent": UA})
+    _call(req)
+    x_json(creds, f"{UPLOAD}/{mid}/finalize", {})
+    return mid
+
+
+def create_post(creds, text, reply_to=None, media_id=None, media_ids=None):
     payload = {"text": text}
     if reply_to:
         payload["reply"] = {"in_reply_to_tweet_id": reply_to}
-    if media_id:
-        payload["media"] = {"media_ids": [media_id]}
+    ids = [i for i in (media_ids or []) if i]
+    if media_id and media_id not in ids:
+        ids.insert(0, media_id)
+    if ids:
+        payload["media"] = {"media_ids": ids[:4]}
     req = urllib.request.Request(TWEETS, data=json.dumps(payload).encode(), method="POST", headers={
         "Authorization": oauth_header("POST", TWEETS, creds), "Content-Type": "application/json", "User-Agent": UA})
     return _call(req)["data"]["id"]

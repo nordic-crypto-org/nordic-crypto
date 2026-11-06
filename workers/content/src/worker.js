@@ -2,6 +2,8 @@
 //
 // The static site on GitHub Pages stays the public site. This Worker is optional.
 // GET  /api/v1/news.json, /api/v1/news/:id.json
+//      each story includes image.url when a generated picture is stored
+// GET  /story-images/:id.png   the picture itself, from the R2 binding STORY_IMAGES
 // GET  /api/v1/events.json, /api/v1/events/:id.json
 // GET  /api/v1/sources.json
 // GET  /api/review/pending          Authorization: Bearer EDITOR_TOKEN
@@ -73,6 +75,44 @@ export function publicSource(payload) {
     if (payload && payload[key] !== undefined && payload[key] !== null) out[key] = payload[key];
   }
   return out;
+}
+
+// Public picture record. The prompt stays in D1 and is not copied here.
+export function publicImage(row, origin, alt) {
+  if (!row || !row.story_id) return null;
+  const base = String(origin || "").replace(/\/$/, "");
+  const version = row.created_at ? "?v=" + encodeURIComponent(row.created_at) : "";
+  return {
+    url: base + "/story-images/" + row.story_id + ".png" + version,
+    width: Number(row.width) || 1280,
+    height: Number(row.height) || 720,
+    alt: alt || "Nordic Crypto",
+    style: row.style_id || null,
+    kind: row.kind === "fallback" ? "fallback" : "original",
+  };
+}
+
+export async function storyImageResponse(bucket, id) {
+  if (!bucket || typeof bucket.get !== "function") {
+    return json({ error: "not found" }, 404);
+  }
+  let object = null;
+  try {
+    object = await bucket.get("story-images/" + id + ".png");
+  } catch (err) {
+    object = null;
+  }
+  if (!object || !object.body) return json({ error: "not found" }, 404);
+  const type = (object.httpMetadata && object.httpMetadata.contentType) || "image/png";
+  return new Response(object.body, {
+    status: 200,
+    headers: {
+      "content-type": type,
+      "cache-control": "public, max-age=86400",
+      "access-control-allow-origin": "*",
+      "x-content-type-options": "nosniff",
+    },
+  });
 }
 
 function parsePayload(row) {
@@ -175,13 +215,45 @@ function eventIdFrom(pathname) {
   return match ? match[1] : null;
 }
 
-async function listNews(db) {
+async function imageMap(db) {
+  try {
+    const out = await db.prepare(
+      "SELECT story_id, style_id, width, height, created_at, kind FROM story_images"
+    ).all();
+    const map = new Map();
+    for (const row of out.results || []) map.set(row.story_id, row);
+    return map;
+  } catch (err) {
+    return new Map();
+  }
+}
+
+async function imageFor(db, id) {
+  try {
+    return await db.prepare(
+      "SELECT story_id, style_id, width, height, created_at, kind FROM story_images WHERE story_id = ?"
+    ).bind(id).first();
+  } catch (err) {
+    return null;
+  }
+}
+
+function withImage(pub, row, origin) {
+  if (!pub) return null;
+  const image = publicImage(row, origin, pub.title_en || pub.title);
+  if (image) pub.image = image;
+  return pub;
+}
+
+async function listNews(db, origin) {
   const out = await db.prepare(
     "SELECT payload FROM stories WHERE review_status = 'approved' AND item_status = 'published' ORDER BY published_at DESC"
   ).all();
+  const images = await imageMap(db);
   const items = [];
   for (const row of out.results || []) {
-    const pub = publicStory(JSON.parse(row.payload));
+    const payload = JSON.parse(row.payload);
+    const pub = withImage(publicStory(payload), images.get(payload.id), origin);
     if (pub) items.push(pub);
   }
   return items;
@@ -230,17 +302,24 @@ export async function handle(request, env) {
   if (request.method === "GET" && (url.pathname === "/" || url.pathname === "/health")) {
     return json({ ok: true, service: "nordic-crypto-content" }, 200, { cache: "no-store" });
   }
+  const imageId = url.pathname.match(/^\/story-images\/([A-Za-z0-9][A-Za-z0-9_-]{0,80})\.png$/);
+  if (request.method === "GET" && imageId) {
+    return storyImageResponse(env.STORY_IMAGES, imageId[1]);
+  }
+
   const db = env.DB;
   if (!db) return json({ error: "database is not bound" }, 500);
 
   if (request.method === "GET" && url.pathname === "/api/v1/news.json") {
-    return json({ items: await listNews(db) }, 200, { cache: PUBLIC_CACHE });
+    return json({ items: await listNews(db, url.origin) }, 200, { cache: PUBLIC_CACHE });
   }
   const storyId = storyIdFrom(url.pathname);
   if (request.method === "GET" && storyId) {
     const row = await db.prepare(STORY_SELECT).bind(storyId).first();
     const pub = row && row.review_status === "approved" ? publicStory(JSON.parse(row.payload)) : null;
     if (!pub) return json({ error: "not found" }, 404);
+    const image = publicImage(await imageFor(db, storyId), url.origin, pub.title_en || pub.title);
+    if (image) pub.image = image;
     return json(pub, 200, { cache: PUBLIC_CACHE });
   }
   if (request.method === "GET" && url.pathname === "/api/v1/events.json") {
@@ -343,9 +422,9 @@ export const EDGE_TTL = 60;
 
 export async function cachedHandle(request, env, ctx) {
   const url = new URL(request.url);
-  const cacheable = request.method === "GET" && url.pathname.startsWith("/api/v1/");
+  const cacheable = request.method === "GET" && (url.pathname.startsWith("/api/v1/") || url.pathname.startsWith("/story-images/"));
   const cache = cacheable && typeof caches !== "undefined" ? caches.default : null;
-  const key = cache ? new Request(url.origin + url.pathname, { method: "GET" }) : null;
+  const key = cache ? new Request(url.origin + url.pathname + url.search, { method: "GET" }) : null;
   if (cache) {
     const hit = await cache.match(key);
     if (hit) return hit;

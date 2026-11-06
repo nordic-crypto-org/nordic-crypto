@@ -1,0 +1,51 @@
+# One illustration per published story. The PNG goes to R2. The row, the style
+# library and the recent-style list go to the existing D1 database
+# nordic-crypto-content. Nothing is committed.
+# The bucket is CF_R2_STORY_BUCKET (nordic-crypto-story-images). It is not the
+# private backup bucket CF_R2_BUCKET. This workflow does not create it.
+# Without the bucket variable, or without D1, the job logs the gap and exits 0.
+name: Story illustrations
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Published stories from the last N days"
+        type: string
+        default: "7"
+      max:
+        description: "Most images to generate in this run"
+        type: string
+        default: "40"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: story-images
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'nordic-crypto-org/nordic-crypto'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: python3 -m pip install -r requirements.txt
+      - name: Generate missing story illustrations
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
+          CF_D1_DATABASE_ID: ${{ vars.CF_D1_DATABASE_ID }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+          CF_R2_STORY_BUCKET: ${{ vars.CF_R2_STORY_BUCKET }}
+          DAYS: ${{ inputs.days }}
+          MAX: ${{ inputs.max }}
+        run: python3 tools/story_images.py generate --days "${DAYS:-7}" --max "${MAX:-40}"

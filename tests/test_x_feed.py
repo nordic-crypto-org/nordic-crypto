@@ -122,6 +122,30 @@ class XFeed(unittest.TestCase):
     def test_preview_refused(self):
         self.assertEqual(self.go({"preview": True, "events": []}), 2)
 
+    def test_news_reuses_the_stored_image(self):
+        self.go({"items": [], "updated": "2026-11-05T06:00:00+00:00"}, kind="news")
+        seen = {}
+
+        def poster(creds, text, reply_to=None, media_ids=None):
+            seen["media"] = list(media_ids or [])
+            return "55"
+
+        def fetcher(url):
+            seen.setdefault("urls", []).append(url)
+            path = os.path.join(self.dir, "pic.png")
+            with open(path, "wb") as fh:
+                fh.write(b"\x89PNG" + b"x" * 40)
+            return path
+
+        item = story("virtune", "2026-11-04T12:00:00+00:00",
+                     image={"url": "https://api.nordiccrypto.no/story-images/virtune.png", "kind": "original"})
+        code = xf.run({"items": [item], "updated": "2026-11-05T06:00:00+00:00"}, self.ledger,
+                      now=NOW, creds=("k",) * 4, max_posts=5, dry=False, kind="news", poster=poster,
+                      log_fn=self.log.append, image_fetcher=fetcher, image_uploader=lambda creds, path: "media-1")
+        self.assertEqual(code, 0)
+        self.assertEqual(seen["urls"], ["https://api.nordiccrypto.no/story-images/virtune.png"])
+        self.assertEqual(seen["media"], ["media-1"])
+
     def test_failed_send_not_recorded(self):
         self.go({"events": []})
         self.poster = Poster(fail_on=["Meetup x2"])

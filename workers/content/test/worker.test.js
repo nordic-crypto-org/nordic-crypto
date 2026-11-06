@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { applyEventReview, applyStoryReview, editorAuthorized, handle, publicEvent, publicSource, publicStory } from "../src/worker.js";
+import { applyEventReview, applyStoryReview, editorAuthorized, handle, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
 
 const TOKEN = "editor-token-for-tests";
 
@@ -111,6 +111,7 @@ test("event rejection keeps the row and sets the audit fields", () => {
 function fakeDb(seed) {
   const stories = new Map(seed.stories || []);
   const events = new Map(seed.events || []);
+  const images = new Map(seed.images || []);
   const sources = seed.sources || [];
   const audits = [];
   function prepare(sql) {
@@ -121,11 +122,13 @@ function fakeDb(seed) {
         return api;
       },
       async first() {
+        if (state.sql.includes("FROM story_images")) return images.get(state.params[0]) || null;
         if (state.sql.includes("FROM stories")) return stories.get(state.params[0]) || null;
         if (state.sql.includes("FROM events")) return events.get(state.params[0]) || null;
         return null;
       },
       async all() {
+        if (state.sql.includes("FROM story_images")) return { results: [...images.values()] };
         if (state.sql.includes("FROM stories") && state.sql.includes("review_status = 'approved'")) {
           return { results: [...stories.values()].filter((row) => row.review_status === "approved").map((row) => ({ payload: row.payload })) };
         }
@@ -221,4 +224,49 @@ test("a configured dispatch token is not required for the approval to stick", ()
   assert.equal(editorAuthorized(request("GET", "/api/review/pending", { token: TOKEN }), TOKEN), true);
   assert.equal(editorAuthorized(request("GET", "/api/review/pending"), TOKEN), false);
   assert.equal(editorAuthorized(request("GET", "/api/review/pending", { token: TOKEN }), ""), false);
+});
+
+test("a story image URL is public and the prompt is not", async () => {
+  const row = storyRow({
+    payload: { status: "published", summary: "The exchange replaced the assets. The figure is about 90 percent." },
+    row: { review_status: "approved", item_status: "published" },
+  });
+  const image = {
+    story_id: "abc",
+    style_id: "woodcut-mining",
+    width: 1280,
+    height: 720,
+    created_at: "2026-11-06T12:00:00Z",
+    kind: "ai",
+    prompt: "do not publish this prompt",
+  };
+  const db = fakeDb({ stories: [["abc", row]], images: [["abc", image]] });
+  const png = new Uint8Array([137, 80, 78, 71, 13, 10]);
+  const env = {
+    DB: db,
+    STORY_IMAGES: {
+      async get(key) {
+        if (key !== "story-images/abc.png") return null;
+        return { body: png, httpMetadata: { contentType: "image/png" } };
+      },
+    },
+  };
+  const news = await (await handle(request("GET", "/api/v1/news.json"), env)).json();
+  assert.equal(news.items.length, 1);
+  assert.equal(news.items[0].image.kind, "original");
+  assert.equal(news.items[0].image.width, 1280);
+  assert.match(news.items[0].image.url, /^https:\/\/content\.example\/story-images\/abc\.png\?v=/);
+  assert.equal(JSON.stringify(news).includes("do not publish"), false);
+  assert.equal(JSON.stringify(news).includes("prompt"), false);
+  const one = await (await handle(request("GET", "/api/v1/news/abc.json"), env)).json();
+  assert.equal(one.image.style, "woodcut-mining");
+  const bytes = await handle(request("GET", "/story-images/abc.png"), env);
+  assert.equal(bytes.status, 200);
+  assert.equal(bytes.headers.get("content-type"), "image/png");
+  assert.equal((await bytes.arrayBuffer()).byteLength, png.length);
+  const missing = await handle(request("GET", "/story-images/nope.png"), env);
+  assert.equal(missing.status, 404);
+  const bare = publicImage(image, "https://api.nordiccrypto.no", "Headline");
+  assert.equal(bare.prompt, undefined);
+  assert.equal(bare.alt, "Headline");
 });

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Prepare YouTube jobs in build/youtube/<id>/ {video.mp4, thumb.png, subs.srt, meta.json}. No YouTube access.
 
+The weekly poster is the newsreel thumbnail. newsletter/issues/005-video/render.py paints each
+story's stored illustration (tools/newsreel_still.py, the public image URL) in that segment
+and on the thumbnail when the story has one. This script does not generate a second picture.
+
   python3 tools/youtube_render.py weekly [--issue 003]
 weekly: the newest published newsletter newsreel (release asset, sha256-checked), skipped when already on YouTube.
 Other series render into the same layout from their own pipelines.

@@ -320,6 +320,20 @@ class Feed:
             rec["item_url_template"] = self.abs(item_template)
         self.endpoints.append(rec)
 
+    def story_picture(self, item, nid):
+        """The generated illustration for this story, or None. The prompt is not copied."""
+        rec = item.get("story_image") if isinstance(item, dict) else None
+        if not rec:
+            try:
+                import story_images
+                alt = (item or {}).get("title_en") or (item or {}).get("title") or ""
+                rec = story_images.lookup(nid, alt)
+            except Exception:
+                rec = None
+        if not isinstance(rec, dict) or not rec.get("url"):
+            return None
+        return {k: rec.get(k) for k in ("url", "width", "height", "alt", "style", "kind")}
+
     def news_item(self, raw):
         item = dict(raw)
         url = item.get("url") or ""
@@ -393,6 +407,7 @@ class Feed:
             "links": [{"label": l.get("label"), "url": l.get("url")} for l in (item.get("links") or []) if l.get("url")],
             "own_story": own,
             "illustration": illustrations.api_record(illustrations.assign(item), self.abs),
+            "image": self.story_picture(item, nid),
             "primary_source": outlets[0] if outlets else None,
             "primary_source_document": coverage_mod.editor_primary_source(item.get("primary_source")),
             "also_covered_by": outlets[1:],
@@ -1361,6 +1376,9 @@ def write(site, *, preview, base, items, events, entities, relations, org_update
         "(or its outlet, or a _source_alias). Null means show the source name as text. "
         "illustration is the licensed picture assigned to the story, with source, author, license and url. "
         "The site does not render it. It is never a photograph copied or hotlinked from another newspaper. "
+        "image is this story's own illustration when one has been generated: url, width, height, alt, style and kind. "
+        "The story page uses that url as the hero and as og:image, in every language. "
+        "Null means the page keeps the Nordic Crypto brand image. The picture is not a newspaper photograph. "
         "primary_source is that outlet. primary_source_document is an editor-recorded original document "
         "(name and url), such as a regulator press release, and is separate from that outlet. "
         "also_covered_by lists every other outlet on the same event "
@@ -1865,6 +1883,19 @@ def schemas():
                     "credit": {"type": "string"},
                     "modifications": {"type": "string", "nullable": True},
                     "terms": {"type": "string", "nullable": True},
+                },
+            },
+            "image": {
+                "type": "object",
+                "nullable": True,
+                "description": "This story's own illustration. url is the public picture (R2, served by the content Worker). The story page uses it as the hero and og:image. Null when the story has none; the page then keeps the brand image. Never a newspaper photograph. The generation prompt is not included.",
+                "properties": {
+                    "url": {"type": "string"},
+                    "width": {"type": "integer"},
+                    "height": {"type": "integer"},
+                    "alt": {"type": "string"},
+                    "style": {"type": "string", "nullable": True},
+                    "kind": {"type": "string", "enum": ["original", "fallback"]},
                 },
             },
             "source_logo_url": {"type": "string", "nullable": True, "description": logo_url_desc + " Same as source_logo.raster_url."},
