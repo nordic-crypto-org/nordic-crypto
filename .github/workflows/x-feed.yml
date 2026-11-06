@@ -36,7 +36,7 @@ jobs:
   post:
     if: github.repository == 'nordic-crypto-org/nordic-crypto' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,12 +44,19 @@ jobs:
           sparse-checkout: |
             tools/x_feed.py
             tools/x_newsletter.py
+            tools/x_post_image.py
             tools/telegram_events.py
+            assets/brand/
+            assets/fonts/
+            requirements.txt
           sparse-checkout-cone-mode: false
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+
+      - name: Install Pillow for post cards
+        run: python3 -m pip install --quiet Pillow
 
       - name: Restore the events ledger
         uses: actions/cache/restore@v4
@@ -64,6 +71,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+          CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
           EVENT_IDS: ${{ inputs.event_ids }}
         run: python3 tools/x_feed.py --kind events --ledger .x-feed/events-ledger.json --post "$EVENT_IDS" ${{ inputs.dry_run && '--dry-run' || '' }}
 
@@ -89,6 +98,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
+          CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
           NEWS_IDS: ${{ inputs.news_ids }}
         run: python3 tools/x_feed.py --kind news --ledger .x-feed/news-ledger.json --post "$NEWS_IDS" ${{ inputs.dry_run && '--dry-run' || '' }}
 
