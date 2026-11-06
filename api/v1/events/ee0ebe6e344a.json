@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-05T15:41:46+00:00",
+ "generated_at": "2026-11-06T06:37:18+00:00",
  "preview": false,
  "item": {
   "id": "ee0ebe6e344a",
@@ -52,7 +52,31 @@
    "source_url": "https://www.mn.uio.no/ifi/forskning/grupper/psy/aktuelle-saker/news-Mikal-Villa-on-Bitcoin.html",
    "source_name": "Department of Informatics, University of Oslo",
    "retrieved": "2026-11-03T09:50:00+00:00",
-   "i18n": {}
+   "i18n": {
+    "nn": "Dette er ein presentasjon som forklarar Bitcoin i djupet, og sikkerheitsaspekta rundt det. Vi vil grave i korleis vi sender, mottar og brukar bitcoin, og korleis sikkerheita bak det fungerer. Bitcoin‑systemet har sikkerheitsrutinar for dobbelbruk og andre utfordringar eit valutasystem treng å handtere.",
+    "nb": "analysis: we need translate into Norwegian Bokmål. Keep names unchanged. Provide plain style, no extra info. Let's translate. \"This is a presentation to explain Bitcoin in depth, and security aspects around it. We will dig into how we send, receive, and use bitcoins, and how the security behind it works. The Bitcoin system has security routines for double spending and other issues a currency system needs to addressing.\" Slight tweaks for grammar. Norwegian Bokmål translation: Dette is presentation... but we must translate into Norwegian Bok. Let's produce: Dette is a presentation...",
+    "sv": "Detta är en presentation för att förklara Bitcoin på djupet och säkerhetsaspekterna kring det. Vi kommer att gräva i hur vi skickar, tar emot och använder bitcoins, och hur säkerheten bakom dem fungerar. Bitcoin‑systemet har säkerhetsrutiner för dubbelspendering och andra problem som ett valutasystem måste hantera.",
+    "da": "Dette er en præsentation, der forklarer Bitcoin i dybden samt sikkerhedsaspekterne omkring det. Vi vil dykke ned i, hvordan vi sender, modtager og bruger bitcoins, og hvordan sikkerheden bag det fungerer. Bitcoin-systemet har sikkerhedsrutiner for dobbeltforbrug og andre problemer, som et valutasystem skal håndtere.",
+    "fi": "Tämä on esitys, jossa selitetään Bitcoin perusteellisesti ja sen turvallisuusnäkökohdat. Paneudumme siihen, miten lähetämme, vastaanotamme ja käytämme bitcoineja sekä siihen, miten niiden taustalla oleva turvallisuus toimii. Bitcoin-järjestelmässä on turvatoimia kaksoiskulutuksen ja muiden valuuttajärjestelmän kohtaamien ongelmien torjumiseksi.",
+    "is": "Þetta er kynning til að útskýra Bitcoin í dýpstu smáatriðum og öryggisþætti hennar. Við munum kafa í hvernig við sendum, tökum við inn og notum bitcoins, og hvernig öryggið á bak við það virkar. Bitcoin-kerfið hefur öryggisúrræði gegn tvöfaldri útgáfu og öðrum vandamálum sem gjaldmiðlakerfi þarf að takast á við.",
+    "zh": "这是一次深入解释比特币及其安全方面的演示。我们将深入探讨如何发送、接收和使用比特币，以及其背后的安全机制是如何运作的。比特币系统拥有防止双重支付等货币系统需要解决的问题的安全流程。",
+    "hi": "यह एक प्रस्तुति है जो बिटकॉइन को गहराई से समझाती है, तथा उसके आसपास की सुरक्षा पहलुओं को बताती है। हम यह जानेंगे कि हम बिटकॉइन कैसे भेजते, प्राप्त करते और उपयोग करते हैं, और उसके पीछे की सुरक्षा कैसे काम करती है। बिटकॉइन प्रणाली में डबल स्पेंडिंग और अन्य मुद्दों के लिए सुरक्षा प्रक्रियाएँ शामिल हैं जो एक मुद्रा प्रणाली को हल करनी होती हैं।",
+    "es": "Esta es una presentación para explicar Bitcoin en profundidad, y los aspectos de seguridad que lo rodean. Profundizaremos en cómo enviamos, recibimos y usamos bitcoins, y cómo funciona la seguridad detrás de ello. El sistema Bitcoin tiene rutinas de seguridad para el doble gasto y otros problemas que un sistema monetario necesita abordar.",
+    "fr": "Ceci est une présentation visant à expliquer en profondeur le Bitcoin et les aspects de sécurité qui l'entourent. Nous allons examiner comment nous envoyons, recevons et utilisons les bitcoins, ainsi que le fonctionnement de la sécurité qui les sous-tend. Le système Bitcoin possède des mécanismes de sécurité contre la double dépense et d'autres problèmes qu'un système monétaire doit résoudre.",
+    "ar": "هذا عرض تقديمي يشرح Bitcoin بعمق، والجوانب الأمنية المتعلقة به. سنغوص في كيفية إرسالنا واستلامنا واستخدامنا للbitcoins، وكيف يعمل الأمن وراءه. نظام Bitcoin يحتوي على روتينات أمان لمنع الإنفاق المزدوج وغيرها من القضايا التي يحتاج نظام العملة إلى معالجتها.",
+    "bn": "এটি একটি উপস্থাপনা যা Bitcoin‑কে গভীরভাবে ব্যাখ্যা করে এবং এর আশেপাশের নিরাপত্তা দিকগুলি। আমরা কীভাবে Bitcoin পাঠাই, গ্রহণ করি এবং ব্যবহার করি, এবং এর পেছনের নিরাপত্তা কীভাবে কাজ করে তা বিশদভাবে আলোচনা করব। Bitcoin সিস্টেমে দ্বিগুণ ব্যয় এবং অন্যান্য সমস্যার মোকাবিলার জন্য নিরাপত্তা রুটিন রয়েছে।",
+    "pt": "Esta é uma apresentação para explicar o Bitcoin em profundidade e os aspectos de segurança que o envolvem. Vamos analisar como enviamos, recebemos e usamos bitcoins, e como funciona a segurança por trás disso. O sistema Bitcoin tem rotinas de segurança contra double spending e outras questões que um sistema de moeda precisa resolver.",
+    "ru": "Это презентация, посвящённая подробному объяснению Bitcoin и аспектов его безопасности. Мы подробно рассмотрим, как отправлять, получать и использовать Bitcoin, а также как работает его безопасность. Система Bitcoin содержит механизмы защиты от двойных трат и другие вопросы, которые должна решать любая валютная система.",
+    "ur": "یہ ایک پیشکش ہے جو Bitcoin کو گہرائی سے سمجھانے اور اس کے گرد موجود سیکیورٹی پہلوؤں کی وضاحت کرتی ہے۔ ہم اس بات کی تحقیق کریں گے کہ ہم Bitcoin کیسے بھیجتے، وصول کرتے اور استعمال کرتے ہیں، اور اس کے پیچھے سیکیورٹی کیسے کام کرتی ہے۔ Bitcoin سسٹم کے پاس ڈبل اسپینڈنگ اور دیگر مسائل کے لیے سیکیورٹی کے طریقے ہیں جنہیں کسی بھی کرنسی سسٹم کو حل کرنا ضروری ہے۔",
+    "id": "Ini adalah presentasi untuk menjelaskan Bitcoin secara mendalam, serta aspek keamanan di sekitarnya. Kami akan menggali cara kami mengirim, menerima, dan menggunakan bitcoin, serta bagaimana keamanan di baliknya bekerja. Sistem Bitcoin memiliki prosedur keamanan untuk mencegah double spending dan masalah lain yang perlu diatasi oleh sistem mata uang.",
+    "de": "Dies ist eine Präsentation, um Bitcoin gründlich zu erklären und die damit verbundenen Sicherheitsaspekte zu erläutern. Wir werden untersuchen, wie wir Bitcoins senden, empfangen und nutzen, und wie die Sicherheit dahinter funktioniert. Das Bitcoin‑System verfügt über Sicherheitsmechanismen gegen Doppel­ausgaben und andere Probleme, die ein Währungssystem adressieren muss.",
+    "ja": "これは、Bitcoin を深く説明し、そのセキュリティ面を解説するプレゼンテーションです。Bitcoin の送信、受信、利用方法と、背後にあるセキュリティの仕組みを詳しく掘り下げます。Bitcoin システムには、二重支払いなど通貨システムが対処すべき問題に対するセキュリティルーチンが組み込まれています。",
+    "sw": "Hii ni uwasilishaji wa kuelezea Bitcoin kwa kina, na vipengele vya usalama vinavyohusiana nayo. Tutachunguza jinsi tunavyotuma, kupokea, na kutumia bitcoins, pamoja na jinsi usalama unaofanya kazi. Mfumo wa Bitcoin una taratibu za usalama dhidi ya matumizi mara mbili na masuala mengine ambayo mfumo wa sarafu unahitaji kuyashughulikia.",
+    "mr": "हे प्रस्तुतीकरण Bitcoin चे सविस्तर स्पष्टीकरण आणि त्याच्या सुरक्षा पैलूंचे स्पष्टीकरण करण्यासाठी आहे. आम्ही Bitcoin कसे पाठवायचे, प्राप्त करायचे आणि वापरायचे यावर सखोलपणे चर्चा करू, आणि त्याच्या मागील सुरक्षा कशी कार्य करते हे समजून घेऊ. Bitcoin प्रणालीमध्ये दुहेरी खर्च (डबल स्पेंडिंग) आणि इतर आर्थिक प्रणालींना सामोरे जावे लागणाऱ्या समस्यांसाठी सुरक्षा नियम आहेत.",
+    "fa": "این یک ارائه برای توضیح عمیق Bitcoin و جنبه‌های امنیتی آن است. ما به نحوه ارسال، دریافت و استفاده از bitcoins می‌پردازیم و نحوه کارکرد امنیت پشت آن را بررسی می‌کنیم. سیستم Bitcoin دارای روتین‌های امنیتی برای جلوگیری از دو بار خرج کردن و سایر مسائلی است که یک سیستم ارزی باید به آن‌ها بپردازد.",
+    "uk": "Це презентація, яка пояснює Bitcoin у глибині та безпекові аспекти, пов’язані з ним. Ми розглянемо, як ми надсилаємо, отримуємо та використовуємо bitcoins, і як працює безпека, що стоїть за ними. Система Bitcoin має механізми безпеки проти подвійного витрачання та інших питань, які потрібно вирішувати у валютній системі.",
+    "tr": "Bu, Bitcoin'i derinlemesine açıklamak ve çevresindeki güvenlik yönlerini ele almak için bir sunumdur. Bitcoin'leri nasıl gönderdiğimizi, aldığımızı ve kullandığımızı, ayrıca bunun arkasındaki güvenliğin nasıl çalıştığını inceleyeceğiz. Bitcoin sistemi, çifte harcama ve bir para biriminin çözmesi gereken diğer sorunlar için güvenlik rutinlerine sahiptir."
+   }
   },
   "past": true,
   "ongoing": false,

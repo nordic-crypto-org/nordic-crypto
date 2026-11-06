@@ -1,0 +1,40 @@
+{
+ "api_version": "1",
+ "name": "Nordic Crypto",
+ "generated_at": "2026-11-06T06:34:40+00:00",
+ "preview": true,
+ "item": {
+  "id": "languages",
+  "date": null,
+  "title": "Nordic Crypto in seven languages",
+  "description": "The site is now available in English, Norwegian (nynorsk and bokmål), Swedish, Danish, Finnish and Icelandic, with a language menu in the header. On your first visit to the English front page the site picks a language from the country code our own Cloudflare Worker sees (nothing is stored) or from your browser settings; a choice in the menu is saved in one cookie. Headlines and quotes stay in the original language; our own summaries are translated.",
+  "i18n": {
+   "nb": {
+    "title": "Nordic Crypto på sju språk",
+    "description": "Nettstedet finnes nå på engelsk, norsk (nynorsk og bokmål), svensk, dansk, finsk og islandsk, med språkmeny øverst. Første gang du åpner den engelske forsiden, velger nettstedet språk ut fra landkoden vår egen Cloudflare Worker ser (ingenting lagres) eller nettleserinnstillingene dine; et valg i menyen lagres i én informasjonskapsel. Overskrifter og sitater står på originalspråket; våre egne sammendrag er oversatt."
+   },
+   "nn": {
+    "title": "Nordic Crypto på sju språk",
+    "description": "Nettstaden finst no på engelsk, norsk (nynorsk og bokmål), svensk, dansk, finsk og islandsk, med språkmeny øvst. Første gongen du opnar den engelske framsida, vel nettstaden språk ut frå landkoden vår eigen Cloudflare Worker ser (ingenting blir lagra) eller nettlesarinnstillingane dine; eit val i menyen blir lagra i éin informasjonskapsel. Overskrifter og sitat står på originalspråket; våre eigne samandrag er omsette."
+   },
+   "sv": {
+    "title": "Nordic Crypto på sju språk",
+    "description": "Webbplatsen finns nu på engelska, norska (nynorska och bokmål), svenska, danska, finska och isländska, med en språkmeny högst upp. Första gången du öppnar den engelska startsidan väljer webbplatsen språk utifrån landskoden som vår egen Cloudflare Worker ser (ingenting sparas) eller utifrån dina webbläsarinställningar; ett val i menyn sparas i en kaka. Rubriker och citat står kvar på originalspråket; våra egna sammanfattningar är översatta."
+   },
+   "da": {
+    "title": "Nordic Crypto på syv sprog",
+    "description": "Sitet findes nu på engelsk, norsk (nynorsk og bokmål), svensk, dansk, finsk og islandsk med en sprogmenu øverst. Første gang du åbner den engelske forside, vælger sitet sprog ud fra den landekode, vores egen Cloudflare Worker ser (intet gemmes), eller ud fra dine browserindstillinger; et valg i menuen gemmes i én cookie. Overskrifter og citater står på originalsproget; vores egne resuméer er oversat."
+   },
+   "fi": {
+    "title": "Nordic Crypto seitsemällä kielellä",
+    "description": "Sivusto on nyt saatavilla englanniksi, norjaksi (nynorsk ja bokmål), ruotsiksi, tanskaksi, suomeksi ja islanniksi, ja ylätunnisteessa on kielivalikko. Kun avaat englanninkielisen etusivun ensimmäistä kertaa, sivusto valitsee kielen oman Cloudflare Worker -palvelumme näkemän maatunnuksen (mitään ei tallenneta) tai selaimesi asetusten perusteella; valikosta tehty valinta tallennetaan yhteen evästeeseen. Otsikot ja lainaukset pysyvät alkuperäiskielellä; omat tiivistelmämme on käännetty."
+   },
+   "is": {
+    "title": "Nordic Crypto á sjö tungumálum",
+    "description": "Síðan er nú til á ensku, norsku (nýnorsku og bókmáli), sænsku, dönsku, finnsku og íslensku, með tungumálavalmynd efst. Þegar þú opnar ensku forsíðuna í fyrsta sinn velur síðan tungumál út frá landskóðanum sem okkar eigin Cloudflare Worker sér (ekkert er vistað) eða út frá stillingum vafrans; val í valmyndinni er vistað í einni vafraköku. Fyrirsagnir og tilvitnanir haldast á frummálinu; eigin samantektir okkar eru þýddar."
+   }
+  },
+  "html_url": "https://nordiccrypto.no/changelog/#languages",
+  "api_url": "https://nordiccrypto.no/api/v1/changelog/languages.json"
+ }
+}
