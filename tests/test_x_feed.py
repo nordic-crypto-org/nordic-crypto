@@ -46,7 +46,8 @@ class XFeed(unittest.TestCase):
         p = mock.patch.object(xf.time, "sleep"); p.start(); self.addCleanup(p.stop)
 
     def fake_image(self, item, path, *, kind="news", recent_styles=None, **kw):
-        open(path, "wb").write(b"\x89PNG\r\n\x1a\nfake")
+        with open(path, "wb") as fh:
+            fh.write(b"\x89PNG\r\n\x1a\nfake")
         return "photoreal-editorial", path
 
     def fake_upload(self, creds, path):
@@ -61,7 +62,8 @@ class XFeed(unittest.TestCase):
         return xf.run(payload, self.ledger, **kw)
 
     def ids(self):
-        return json.load(open(self.ledger))["posted"]
+        with open(self.ledger, encoding="utf-8") as fh:
+            return json.load(fh)["posted"]
 
     def test_first_run_seeds_events_and_posts_nothing(self):
         self.assertEqual(self.go({"events": [ev("a1", "2026-11-12T18:00:00+01:00")]}), 0)
@@ -150,7 +152,8 @@ class XFeed(unittest.TestCase):
         self.assertEqual(self.go({"items": items, "updated": "2026-11-05T06:00:00+00:00"}, kind="news"), 0)
         self.assertEqual(len(self.poster.sent), 1)
         self.assertEqual(self.poster.media, ["media-1"])
-        ledger = json.load(open(self.ledger))
+        with open(self.ledger, encoding="utf-8") as fh:
+            ledger = json.load(fh)
         self.assertIn("photoreal-editorial", ledger.get("styles") or [])
         self.assertNotIn("Nordic Crypto AS", self.poster.sent[0])
 

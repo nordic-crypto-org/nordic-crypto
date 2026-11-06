@@ -91,7 +91,8 @@ class Render(unittest.TestCase):
         with open(path, "w") as fh:
             json.dump({"posted": ["a"]}, fh)
         xi.save_styles(path, ["a", "b"])
-        data = json.load(open(path))
+        with open(path, encoding="utf-8") as fh:
+            data = json.load(fh)
         self.assertEqual(data["posted"], ["a"])
         self.assertEqual(data["styles"], ["a", "b"])
         self.assertEqual(xi.load_styles(path), ["a", "b"])
