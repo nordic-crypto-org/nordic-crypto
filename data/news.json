@@ -1,6 +1,109 @@
 {
  "items": [
   {
+   "id": "b6c592e1e7c4",
+   "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+   "title": "Så lyckades hackarna slå till mot kryptojätten",
+   "title_en": null,
+   "source": "dagens-nyheter",
+   "source_name": "Dagens Nyheter",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "dagens-nyheter",
+   "seen_via": [
+    "dagens-nyheter"
+   ],
+   "published": "2026-11-05T21:01:11+00:00",
+   "fetched": "2026-11-06T02:51:27+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "baba2f9c8906",
+   "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn",
+   "title": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
+   "title_en": null,
+   "source": "ulricehamns-tidning",
+   "source_name": "Ulricehamns Tidning",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "ulricehamns-tidning",
+   "seen_via": [
+    "ulricehamns-tidning"
+   ],
+   "published": "2026-11-05T03:00:00+00:00",
+   "fetched": "2026-11-06T02:51:27+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "ec86f5175ea7",
+   "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig",
+   "title": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-05",
+   "fetched": "2026-11-06T02:51:27+00:00",
+   "topics": [
+    "regulation"
+   ],
+   "matched": [
+    "\\bsentralbankpenger\\b"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
+   "id": "465eb25f04a6",
+   "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering",
+   "title": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-05",
+   "fetched": "2026-11-06T02:51:27+00:00",
+   "topics": [
+    "blockchain",
+    "regulation"
+   ],
+   "matched": [
+    "\\btokeni[sz]\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
    "id": "b06e7bd6cc63",
    "url": "https://politiken.dk/sport/fodbold/art11048259/Valverde-dr%C3%B8n-aflyser-pointtab-i-larmende-kryptonitland",
    "title": "Valverde-drøn aflyser pointtab i larmende kryptonitland",
@@ -1241,7 +1344,8 @@
    "via": "aftenposten",
    "seen_via": [
     "aftenposten",
-    "bing-no-kn"
+    "bing-no-kn",
+    "bing-no"
    ],
    "published": "2026-11-02T22:36:56+00:00",
    "fetched": "2026-11-03T02:47:09+00:00",
@@ -17202,5 +17306,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-05T02:49:38+00:00"
+ "updated": "2026-11-06T02:51:27+00:00"
 }
