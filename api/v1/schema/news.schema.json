@@ -524,6 +524,31 @@
      "examples": [
       "rare headline word"
      ]
+    },
+    "links": {
+     "type": "array",
+     "description": "Related Nordic Crypto story links shown with the story.",
+     "items": {
+      "type": "object",
+      "properties": {
+       "label": {
+        "type": "string",
+        "examples": [
+         "Binance hack: main story"
+        ]
+       },
+       "url": {
+        "type": "string",
+        "examples": [
+         "https://nordiccrypto.no/stories/9b8a70e6faee/"
+        ]
+       }
+      },
+      "additionalProperties": false,
+      "required": [
+       "url"
+      ]
+     }
     }
    },
    "additionalProperties": false,
