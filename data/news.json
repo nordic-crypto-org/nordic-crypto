@@ -22,9 +22,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Rewritten entertainment press release. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "cabcea30dd6d",
@@ -46,8 +47,9 @@
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Paraguay bank story without a substantive crypto angle. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "a593b6330795",
@@ -71,8 +73,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Commentary, not news. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "dee2388a5222",
@@ -96,8 +99,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "US topic on an affiliate-type guide site. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "00a1601d1f42",
@@ -122,8 +126,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Exchange price commentary. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "2d7bb85c8b72",
@@ -148,16 +153,17 @@
     "tokenisering"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "possible_duplicate_of": "465eb25f04a6",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "reject_reason": "Bankplassen opinion/explainer, not news. researcher 07.11; editor 2026-11-07"
   },
   {
    "id": "2432bee6d799",
    "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024",
    "title": "Safello tilbake i pluss for første gang siden 2024",
-   "title_en": null,
+   "title_en": "Safello reports a third-quarter operating profit of SEK 0.8 million",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -175,9 +181,68 @@
     "\\bSafello\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Safello reported third-quarter operating profit of SEK 0.8 million, according to its figures reported by Kaupr. Revenue fell 41 percent to SEK 98.4 million; the company reported a gross margin of 8.8 percent.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-07T04:41:02.061695+01:00",
+   "primary_source": {
+    "name": "Safello Q3 figures, reported by Kaupr",
+    "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024"
+   },
+   "title_i18n": {
+    "nn": "Safello rapporterer driftsresultat på 0,8 millionar svenske kroner i tredje kvartal",
+    "sv": "Safello rapporterar rörelseresultat på 0,8 miljoner kronor i tredje kvartalet",
+    "da": "Safello rapporterer driftsresultat på 0,8 millioner svenske kroner i tredje kvartal",
+    "fi": "Safello raportoi 0,8 miljoonan kruunun liikevoiton kolmannelta neljännekseltä",
+    "is": "Safello greinir frá 0,8 milljóna sænskra króna rekstrarhagnaði á þriðja ársfjórðungi",
+    "zh": "Safello报告第三季度营业利润为80万瑞典克朗",
+    "hi": "Safello ने तीसरी तिमाही में 8 लाख स्वीडिश क्रोना परिचालन लाभ बताया",
+    "es": "Safello declara un beneficio operativo trimestral de 0,8 millones de coronas suecas",
+    "fr": "Safello annonce un bénéfice opérationnel trimestriel de 0,8 million de couronnes suédoises",
+    "ar": "Safello تعلن ربحًا تشغيليًا قدره 0.8 مليون كرونة سويدية في الربع الثالث",
+    "bn": "Safello তৃতীয় প্রান্তিকে ৮ লাখ সুইডিশ ক্রোনা পরিচালন মুনাফা জানিয়েছে",
+    "pt": "Safello reporta lucro operacional trimestral de 0,8 milhões de coroas suecas",
+    "ru": "Safello сообщила об операционной прибыли 0,8 млн шведских крон за третий квартал",
+    "ur": "Safello نے تیسری سہ ماہی میں 8 لاکھ سویڈش کرونا آپریٹنگ منافع بتایا",
+    "id": "Safello melaporkan laba operasi kuartal ketiga SEK 0,8 juta",
+    "de": "Safello meldet operativen Quartalsgewinn von 0,8 Millionen schwedischen Kronen",
+    "ja": "Safello、第3四半期の営業利益80万スウェーデンクローナを報告",
+    "sw": "Safello yaripoti faida ya uendeshaji ya robo ya tatu ya SEK milioni 0.8",
+    "mr": "Safello ने तिसऱ्या तिमाहीत 8 लाख स्वीडिश क्रोना परिचालन नफा नोंदवला",
+    "fa": "Safello سود عملیاتی سه‌ماهه سوم را ۰٫۸ میلیون کرون سوئد اعلام کرد",
+    "uk": "Safello повідомила про операційний прибуток 0,8 млн шведських крон за третій квартал",
+    "tr": "Safello üçüncü çeyrekte 0,8 milyon İsveç kronu faaliyet kârı bildirdi",
+    "se": "Safello almmuha 0,8 miljovnna Ruoŧa ruvnno doaibmaboađu goalmmát kvartálas"
+   },
+   "title_i18n_source": "Safello tilbake i pluss for første gang siden 2024",
+   "summary_i18n": {
+    "nn": "Safello rapporterte eit driftsresultat på 0,8 millionar svenske kroner i tredje kvartal, ifølgje selskapet sine tal attgjevne av Kaupr. Omsetninga fall 41 prosent til 98,4 millionar svenske kroner; selskapet rapporterte ein bruttomargin på 8,8 prosent.",
+    "nb": "Safello rapporterte et driftsresultat på 0,8 millioner svenske kroner i tredje kvartal, ifølge selskapets tall gjengitt av Kaupr. Omsetningen falt 41 prosent til 98,4 millioner svenske kroner; selskapet rapporterte en bruttomargin på 8,8 prosent.",
+    "sv": "Safello rapporterade ett rörelseresultat på 0,8 miljoner svenska kronor i tredje kvartalet, enligt bolagets siffror återgivna av Kaupr. Omsättningen föll 41 procent till 98,4 miljoner svenska kronor; bolaget rapporterade en bruttomarginal på 8,8 procent.",
+    "da": "Safello rapporterede et driftsresultat på 0,8 millioner svenske kroner i tredje kvartal, ifølge selskabets tal gengivet af Kaupr. Omsætningen faldt 41 procent til 98,4 millioner svenske kroner; selskabet rapporterede en bruttomargin på 8,8 procent.",
+    "fi": "Safello raportoi kolmannelta neljännekseltä 0,8 miljoonan Ruotsin kruunun liikevoiton Kauprin välittämien yhtiön lukujen mukaan. Liikevaihto laski 41 prosenttia 98,4 miljoonaan Ruotsin kruunuun; yhtiö raportoi 8,8 prosentin bruttokatteen.",
+    "is": "Safello greindi frá 0,8 milljóna sænskra króna rekstrarhagnaði á þriðja ársfjórðungi samkvæmt tölum félagsins sem Kaupr birti. Tekjur lækkuðu um 41 prósent í 98,4 milljónir sænskra króna; félagið greindi frá 8,8 prósenta framlegð.",
+    "zh": "据Kaupr转述的公司数据，Safello第三季度营业利润为80万瑞典克朗。营收下降41%至9840万瑞典克朗；公司报告毛利率为8.8%。",
+    "hi": "Kaupr द्वारा प्रकाशित कंपनी के आंकड़ों के अनुसार, Safello ने तीसरी तिमाही में 8 लाख स्वीडिश क्रोना परिचालन लाभ बताया। राजस्व 41 प्रतिशत घटकर 9.84 करोड़ स्वीडिश क्रोना रहा; कंपनी ने 8.8 प्रतिशत सकल मार्जिन बताया।",
+    "es": "Safello declaró un beneficio operativo de 0,8 millones de coronas suecas en el tercer trimestre, según cifras de la empresa recogidas por Kaupr. Los ingresos cayeron un 41 % a 98,4 millones de coronas suecas; la empresa declaró un margen bruto del 8,8 %.",
+    "fr": "Safello a annoncé un bénéfice opérationnel de 0,8 million de couronnes suédoises au troisième trimestre, selon ses chiffres repris par Kaupr. Le chiffre d'affaires a reculé de 41 % à 98,4 millions de couronnes suédoises ; l'entreprise a annoncé une marge brute de 8,8 %.",
+    "ar": "أعلنت Safello ربحًا تشغيليًا قدره 0.8 مليون كرونة سويدية في الربع الثالث، وفق أرقام الشركة التي نقلتها Kaupr. وانخفضت الإيرادات 41 بالمئة إلى 98.4 مليون كرونة سويدية؛ وأعلنت الشركة هامشًا إجماليًا قدره 8.8 بالمئة.",
+    "bn": "Kaupr-এ প্রকাশিত কোম্পানির তথ্য অনুযায়ী, Safello তৃতীয় প্রান্তিকে ৮ লাখ সুইডিশ ক্রোনা পরিচালন মুনাফা জানিয়েছে। আয় ৪১ শতাংশ কমে ৯ কোটি ৮৪ লাখ সুইডিশ ক্রোনা হয়েছে; কোম্পানি ৮.৮ শতাংশ মোট মুনাফার মার্জিন জানিয়েছে।",
+    "pt": "A Safello reportou lucro operacional de 0,8 milhões de coroas suecas no terceiro trimestre, segundo números da empresa citados pela Kaupr. As receitas caíram 41% para 98,4 milhões de coroas suecas; a empresa reportou margem bruta de 8,8%.",
+    "ru": "Safello сообщила об операционной прибыли 0,8 млн шведских крон за третий квартал, согласно данным компании, приведённым Kaupr. Выручка сократилась на 41% до 98,4 млн шведских крон; компания сообщила о валовой марже 8,8%.",
+    "ur": "Kaupr کے نقل کردہ کمپنی کے اعداد و شمار کے مطابق، Safello نے تیسری سہ ماہی میں 8 لاکھ سویڈش کرونا آپریٹنگ منافع بتایا۔ آمدنی 41 فیصد کم ہو کر 9 کروڑ 84 لاکھ سویڈش کرونا رہی؛ کمپنی نے 8.8 فیصد مجموعی مارجن بتایا۔",
+    "id": "Safello melaporkan laba operasi kuartal ketiga SEK 0,8 juta, menurut angka perusahaan yang diberitakan Kaupr. Pendapatan turun 41 persen menjadi SEK 98,4 juta; perusahaan melaporkan margin kotor 8,8 persen.",
+    "de": "Safello meldete im dritten Quartal einen operativen Gewinn von 0,8 Millionen schwedischen Kronen, laut von Kaupr wiedergegebenen Unternehmenszahlen. Der Umsatz sank um 41 Prozent auf 98,4 Millionen schwedische Kronen; das Unternehmen meldete eine Bruttomarge von 8,8 Prozent.",
+    "ja": "Kauprが報じた会社の数字によると、Safelloは第3四半期の営業利益80万スウェーデンクローナを報告した。売上高は41％減の9840万スウェーデンクローナとなり、会社は粗利益率8.8％を報告した。",
+    "sw": "Safello iliripoti faida ya uendeshaji ya robo ya tatu ya SEK milioni 0.8, kulingana na takwimu za kampuni zilizoripotiwa na Kaupr. Mapato yalipungua asilimia 41 hadi SEK milioni 98.4; kampuni iliripoti kiwango cha faida ghafi cha asilimia 8.8.",
+    "mr": "Kaupr ने दिलेल्या कंपनीच्या आकडेवारीनुसार, Safello ने तिसऱ्या तिमाहीत 8 लाख स्वीडिश क्रोना परिचालन नफा नोंदवला। महसूल 41 टक्क्यांनी घटून 9.84 कोटी स्वीडिश क्रोना झाला; कंपनीने 8.8 टक्के ढोबळ नफा मार्जिन नोंदवले।",
+    "fa": "بر اساس ارقام شرکت که Kaupr گزارش کرده، Safello سود عملیاتی سه‌ماهه سوم را ۰٫۸ میلیون کرون سوئد اعلام کرد. درآمد با ۴۱ درصد کاهش به ۹۸٫۴ میلیون کرون سوئد رسید؛ شرکت حاشیه سود ناخالص ۸٫۸ درصد را گزارش کرد.",
+    "uk": "Safello повідомила про операційний прибуток 0,8 млн шведських крон за третій квартал, згідно з даними компанії, наведеними Kaupr. Виручка скоротилася на 41% до 98,4 млн шведських крон; компанія повідомила про валову маржу 8,8%.",
+    "tr": "Kaupr'ın aktardığı şirket rakamlarına göre Safello üçüncü çeyrekte 0,8 milyon İsveç kronu faaliyet kârı bildirdi. Gelir yüzde 41 düşerek 98,4 milyon İsveç kronuna indi; şirket yüzde 8,8 brüt marj bildirdi.",
+    "se": "Safello almmuhii 0,8 miljovnna Ruoŧa ruvnno doaibmaboađu goalmmát kvartálas, fitnodaga loguid mielde maid Kaupr muitalii. Jođus njiejai 41 proseantta 98,4 miljovnna Ruoŧa ruvdnui; fitnodat almmuhii bruttoávkki 8,8 proseantta."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "9ec193c697ab",
@@ -201,11 +266,12 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_date_only": true,
    "possible_duplicate_of": "465eb25f04a6",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "465eb25f04a6"
   },
   {
    "id": "d7aad15047ef",
@@ -257,14 +323,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "f47e76863444"
   },
   {
    "id": "baba2f9c8906",
    "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn",
    "title": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
-   "title_en": null,
+   "title_en": "Newspaper reports cryptocurrency transfers in a romance scam",
    "source": "ulricehamns-tidning",
    "source_name": "Ulricehamns Tidning",
    "country": "SE",
@@ -276,20 +343,79 @@
    "published": "2026-11-05T03:00:00+00:00",
    "fetched": "2026-11-06T02:51:27+00:00",
    "topics": [
-    "crypto"
+    "security"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Ulricehamns Tidning reports that SEK 1.5 million in cryptocurrency was transferred through an intermediary in a romance scam. The publicly accessible excerpt does not establish whether anyone has been charged or convicted.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-07T04:41:02.061695+01:00",
+   "primary_source": {
+    "name": "Ulricehamns Tidning",
+    "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn"
+   },
+   "title_i18n": {
+    "nn": "Avis omtalar kryptovalutaoverføringar i ein romansesvindel",
+    "nb": "Avis omtaler kryptovalutaoverføringer i en romansesvindel",
+    "da": "Avis omtaler kryptovalutaoverførsler i et kærlighedsbedrageri",
+    "fi": "Lehti kertoo kryptovaluuttasiirroista rakkaushuijauksessa",
+    "is": "Dagblað greinir frá rafmyntafærslum í ástarsvindli",
+    "zh": "报纸报道一起恋爱骗局中的加密货币转账",
+    "hi": "अखबार ने प्रेम संबंध के नाम पर धोखाधड़ी में क्रिप्टोकरेंसी हस्तांतरण की खबर दी",
+    "es": "Un periódico informa de transferencias de criptomonedas en una estafa romántica",
+    "fr": "Un journal rapporte des transferts de cryptomonnaies dans une escroquerie sentimentale",
+    "ar": "صحيفة تتحدث عن تحويلات عملات مشفرة في احتيال عاطفي",
+    "bn": "প্রেমের প্রতারণায় ক্রিপ্টোকারেন্সি স্থানান্তরের খবর দিয়েছে সংবাদপত্র",
+    "pt": "Jornal noticia transferências de criptomoedas numa burla romântica",
+    "ru": "Газета сообщила о переводах криптовалюты в романтическом мошенничестве",
+    "ur": "اخبار نے رومانوی دھوکے میں کرپٹو کرنسی کی منتقلی کی خبر دی",
+    "id": "Surat kabar melaporkan transfer kripto dalam penipuan asmara",
+    "de": "Zeitung berichtet über Kryptotransfers bei Liebesbetrug",
+    "ja": "新聞、恋愛詐欺での暗号資産送金を報道",
+    "sw": "Gazeti laripoti uhamisho wa kripto katika ulaghai wa mapenzi",
+    "mr": "प्रेमाच्या फसवणुकीतील क्रिप्टोकरन्सी हस्तांतरणाची वृत्तपत्रात बातमी",
+    "fa": "روزنامه از انتقال رمزارز در کلاهبرداری عاشقانه خبر داد",
+    "uk": "Газета повідомила про перекази криптовалюти в романтичному шахрайстві",
+    "tr": "Gazete romantik dolandırıcılıkta kripto para transferlerini haber yaptı",
+    "se": "Áviisa muitala kryptovaluhta sirdimiin románssasvihkus"
+   },
+   "title_i18n_source": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
+   "summary_i18n": {
+    "nn": "Ulricehamns Tidning skriv at 1,5 millionar svenske kroner i kryptovaluta vart overført gjennom ein mellomperson i ein romansesvindel. Det offentleg tilgjengelege utdraget slår ikkje fast om nokon er tiltalt eller dømd.",
+    "nb": "Ulricehamns Tidning skriver at 1,5 millioner svenske kroner i kryptovaluta ble overført gjennom en mellomperson i en romansesvindel. Det offentlig tilgjengelige utdraget fastslår ikke om noen er tiltalt eller dømt.",
+    "sv": "Ulricehamns Tidning rapporterar att 1,5 miljoner svenska kronor i kryptovaluta överfördes genom en mellanhand i ett romansbedrägeri. Det offentligt tillgängliga utdraget fastställer inte om någon har åtalats eller dömts.",
+    "da": "Ulricehamns Tidning skriver, at 1,5 millioner svenske kroner i kryptovaluta blev overført gennem en mellemmand i et kærlighedsbedrageri. Det offentligt tilgængelige uddrag fastslår ikke, om nogen er tiltalt eller dømt.",
+    "fi": "Ulricehamns Tidning kertoo, että rakkaushuijauksessa siirrettiin välittäjän kautta 1,5 miljoonan Ruotsin kruunun arvosta kryptovaluuttaa. Julkisesti saatavilla oleva ote ei vahvista, onko ketään syytetty tai tuomittu.",
+    "is": "Ulricehamns Tidning greinir frá því að rafmyntir að verðmæti 1,5 milljónir sænskra króna hafi verið fluttar í gegnum millilið í ástarsvindli. Opinberlega aðgengilega brotið staðfestir ekki hvort einhver hafi verið ákærður eða sakfelldur.",
+    "zh": "Ulricehamns Tidning报道称，一起恋爱骗局通过中间人转移了价值150万瑞典克朗的加密货币。公开可见的节选未能确认是否有人受到起诉或被定罪。",
+    "hi": "Ulricehamns Tidning के अनुसार, प्रेम संबंध के नाम पर धोखाधड़ी में एक मध्यस्थ के जरिए 15 लाख स्वीडिश क्रोना की क्रिप्टोकरेंसी हस्तांतरित की गई। सार्वजनिक अंश से यह स्थापित नहीं होता कि किसी पर आरोप दायर हुए या कोई दोषी ठहराया गया।",
+    "es": "Ulricehamns Tidning informa de que se transfirieron 1,5 millones de coronas suecas en criptomonedas a través de un intermediario en una estafa romántica. El extracto público no permite establecer si alguien ha sido acusado o condenado.",
+    "fr": "Ulricehamns Tidning rapporte que 1,5 million de couronnes suédoises en cryptomonnaies ont été transférées par un intermédiaire dans une escroquerie sentimentale. L'extrait public ne permet pas d'établir si quelqu'un a été inculpé ou condamné.",
+    "ar": "تقول Ulricehamns Tidning إن عملات مشفرة بقيمة 1.5 مليون كرونة سويدية حُوّلت عبر وسيط في احتيال عاطفي. ولا يثبت المقتطف المتاح للجمهور ما إذا كان أحد قد اتُهم رسميًا أو أُدين.",
+    "bn": "Ulricehamns Tidning জানায়, প্রেমের প্রতারণায় এক মধ্যস্থতাকারীর মাধ্যমে ১৫ লাখ সুইডিশ ক্রোনার ক্রিপ্টোকারেন্সি স্থানান্তর করা হয়। প্রকাশ্যে থাকা অংশ থেকে কারও বিরুদ্ধে অভিযোগ গঠন বা দোষী সাব্যস্ত হওয়া নিশ্চিত হয় না।",
+    "pt": "O Ulricehamns Tidning noticia que foram transferidos 1,5 milhões de coroas suecas em criptomoedas através de um intermediário numa burla romântica. O excerto público não permite determinar se alguém foi acusado ou condenado.",
+    "ru": "Ulricehamns Tidning сообщает, что в ходе романтического мошенничества через посредника перевели криптовалюту на 1,5 млн шведских крон. Общедоступный фрагмент не позволяет установить, предъявлены ли кому-либо обвинения или вынесен обвинительный приговор.",
+    "ur": "Ulricehamns Tidning کے مطابق، رومانوی دھوکے میں ایک درمیانی فرد کے ذریعے 15 لاکھ سویڈش کرونا کی کرپٹو کرنسی منتقل ہوئی۔ عوامی اقتباس سے ثابت نہیں ہوتا کہ کسی پر باضابطہ الزام عائد ہوا یا کوئی مجرم قرار پایا۔",
+    "id": "Ulricehamns Tidning melaporkan bahwa kripto senilai SEK 1,5 juta ditransfer melalui perantara dalam penipuan asmara. Kutipan yang dapat diakses publik tidak memastikan apakah seseorang telah didakwa atau divonis bersalah.",
+    "de": "Ulricehamns Tidning berichtet, dass bei einem Liebesbetrug Kryptowährung im Wert von 1,5 Millionen schwedischen Kronen über eine Zwischenperson übertragen wurde. Der öffentlich zugängliche Auszug belegt nicht, ob jemand angeklagt oder verurteilt wurde.",
+    "ja": "Ulricehamns Tidningは、恋愛詐欺で仲介者を通じて150万スウェーデンクローナ相当の暗号資産が送金されたと報じた。公開されている抜粋では、誰かが起訴または有罪判決を受けたかは確認できない。",
+    "sw": "Ulricehamns Tidning inaripoti kwamba kripto yenye thamani ya SEK milioni 1.5 ilihamishwa kupitia mpatanishi katika ulaghai wa mapenzi. Dondoo linalopatikana kwa umma halithibitishi kama mtu ameshtakiwa au kuhukumiwa kuwa na hatia.",
+    "mr": "Ulricehamns Tidning नुसार, प्रेमाच्या फसवणुकीत मध्यस्थामार्फत 15 लाख स्वीडिश क्रोनाची क्रिप्टोकरन्सी हस्तांतरित झाली। सार्वजनिक उताऱ्यात कोणावर आरोप दाखल झाले किंवा कोणाला दोषी ठरवले हे स्पष्ट होत नाही।",
+    "fa": "Ulricehamns Tidning گزارش می‌دهد که در یک کلاهبرداری عاشقانه رمزارزی به ارزش ۱٫۵ میلیون کرون سوئد از طریق واسطه منتقل شد. بخش عمومی مطلب مشخص نمی‌کند آیا کسی رسماً متهم یا محکوم شده است.",
+    "uk": "Ulricehamns Tidning повідомляє, що під час романтичного шахрайства через посередника переказали криптовалюту на 1,5 млн шведських крон. Загальнодоступний уривок не дозволяє встановити, чи висунуто комусь обвинувачення або винесено обвинувальний вирок.",
+    "tr": "Ulricehamns Tidning, romantik dolandırıcılıkta bir aracı üzerinden 1,5 milyon İsveç kronu değerinde kripto para aktarıldığını bildiriyor. Herkese açık bölüm, birinin suçlanıp suçlanmadığını veya mahkûm edilip edilmediğini doğrulamıyor.",
+    "se": "Ulricehamns Tidning muitala ahte 1,5 miljovnna Ruoŧa ruvnno kryptovaluhtas sirdojuvvui gaskaoapmi bokte románssasvihkus. Almmolaččat olámuttus oassi ii duođaš jus oktage lea áššáskuhttojuvvon dahje duopmejuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "ec86f5175ea7",
    "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig",
    "title": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
-   "title_en": null,
+   "title_en": "Norges Bank sees no current need for retail digital central bank money",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -301,21 +427,81 @@
    "published": "2026-11-05",
    "fetched": "2026-11-06T02:51:27+00:00",
    "topics": [
-    "regulation"
+    "regulation",
+    "payments"
    ],
    "matched": [
     "\\bsentralbankpenger\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Norges Bank sees no current need for retail digital central bank money but wants to be ready if that changes, Torbjørn Hægeland told a conference, according to Kaupr. He said a digital euro would not by itself determine Norway's decision.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-07T04:41:02.061695+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig"
+   },
+   "title_i18n": {
+    "nn": "Norges Bank ser ikkje behov for digitale sentralbankpengar til publikum no",
+    "sv": "Norges Bank ser inget behov av digitala centralbankspengar för allmänheten nu",
+    "da": "Norges Bank ser ikke behov for digitale centralbankpenge til offentligheden nu",
+    "fi": "Norges Bank ei näe nyt tarvetta yleisön digitaaliselle keskuspankkirahalle",
+    "is": "Norges Bank sér ekki nú þörf fyrir stafrænt seðlabankafé fyrir almenning",
+    "zh": "挪威央行认为目前无需推出面向公众的数字央行货币",
+    "hi": "नॉर्वे के केंद्रीय बैंक को फिलहाल खुदरा डिजिटल केंद्रीय बैंक मुद्रा की जरूरत नहीं दिखती",
+    "es": "Norges Bank no ve necesidad actual de dinero digital de banco central para el público",
+    "fr": "Norges Bank ne voit pas de besoin actuel de monnaie numérique de banque centrale pour le public",
+    "ar": "البنك المركزي النرويجي لا يرى حاجة حالية لعملة رقمية للأفراد",
+    "bn": "নরওয়ের কেন্দ্রীয় ব্যাংক এখন সাধারণ মানুষের জন্য ডিজিটাল কেন্দ্রীয় ব্যাংক মুদ্রার প্রয়োজন দেখছে না",
+    "pt": "Norges Bank não vê necessidade atual de moeda digital de banco central para o público",
+    "ru": "Банк Норвегии пока не видит необходимости в розничной цифровой валюте центрального банка",
+    "ur": "ناروے کے مرکزی بینک کو فی الحال عوام کے لیے ڈیجیٹل مرکزی بینک کرنسی کی ضرورت نہیں دکھتی",
+    "id": "Norges Bank belum melihat kebutuhan uang digital bank sentral untuk publik",
+    "de": "Norges Bank sieht derzeit keinen Bedarf für digitales Zentralbankgeld für die Öffentlichkeit",
+    "ja": "ノルウェー中銀、一般向けデジタル中央銀行通貨は現時点で不要と説明",
+    "sw": "Norges Bank haioni haja ya sasa ya fedha za kidijitali za benki kuu kwa umma",
+    "mr": "नॉर्वेच्या मध्यवर्ती बँकेला सध्या जनतेसाठी डिजिटल मध्यवर्ती बँक चलनाची गरज दिसत नाही",
+    "fa": "بانک مرکزی نروژ فعلاً نیازی به پول دیجیتال بانک مرکزی برای عموم نمی‌بیند",
+    "uk": "Банк Норвегії поки не бачить потреби в роздрібній цифровій валюті центрального банку",
+    "tr": "Norges Bank şu anda halka yönelik dijital merkez bankası parasına ihtiyaç görmüyor",
+    "se": "Norges Bank ii oainne dál dárbbu digitála guovddášbáŋkoruđaidda álbmogii"
+   },
+   "title_i18n_source": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
+   "summary_i18n": {
+    "nn": "Norges Bank ser ikkje behov for digitale sentralbankpengar til publikum no, men vil vere klar om det endrar seg, sa Torbjørn Hægeland på ein konferanse, ifølgje Kaupr. Han sa at ein digital euro ikkje åleine vil avgjere Noregs avgjerd.",
+    "nb": "Norges Bank ser ikke behov for digitale sentralbankpenger til publikum nå, men vil være klar hvis det endrer seg, sa Torbjørn Hægeland på en konferanse, ifølge Kaupr. Han sa at en digital euro ikke alene vil avgjøre Norges beslutning.",
+    "sv": "Norges Bank ser inget behov av digitala centralbankspengar för allmänheten nu men vill vara redo om det ändras, sade Torbjørn Hægeland på en konferens, enligt Kaupr. Han sade att en digital euro inte ensam avgör Norges beslut.",
+    "da": "Norges Bank ser ikke behov for digitale centralbankpenge til offentligheden nu, men vil være klar, hvis det ændrer sig, sagde Torbjørn Hægeland på en konference, ifølge Kaupr. Han sagde, at en digital euro ikke alene vil afgøre Norges beslutning.",
+    "fi": "Norges Bank ei näe nyt tarvetta yleisön digitaaliselle keskuspankkirahalle mutta haluaa olla valmis tilanteen muuttuessa, Torbjørn Hægeland sanoi konferenssissa Kauprin mukaan. Hän sanoi, ettei digitaalinen euro yksin ratkaise Norjan päätöstä.",
+    "is": "Norges Bank sér ekki nú þörf fyrir stafrænt seðlabankafé fyrir almenning en vill vera tilbúinn ef það breytist, sagði Torbjørn Hægeland á ráðstefnu samkvæmt Kaupr. Hann sagði að stafræn evra myndi ekki ein og sér ráða ákvörðun Noregs.",
+    "zh": "据Kaupr报道，Torbjørn Hægeland在一次会议上表示，挪威央行认为目前无需推出面向公众的数字央行货币，但希望在情况变化时做好准备。他说，数字欧元本身不会决定挪威的选择。",
+    "hi": "Kaupr के अनुसार, Torbjørn Hægeland ने एक सम्मेलन में कहा कि नॉर्वे के केंद्रीय बैंक को फिलहाल खुदरा डिजिटल केंद्रीय बैंक मुद्रा की जरूरत नहीं दिखती, लेकिन स्थिति बदलने पर वह तैयार रहना चाहता है। उन्होंने कहा कि केवल डिजिटल यूरो से नॉर्वे का फैसला तय नहीं होगा।",
+    "es": "Norges Bank no ve necesidad actual de dinero digital de banco central para el público, pero quiere estar preparado si cambia la situación, dijo Torbjørn Hægeland en una conferencia, según Kaupr. Añadió que un euro digital no determinaría por sí solo la decisión de Noruega.",
+    "fr": "Norges Bank ne voit pas de besoin actuel de monnaie numérique de banque centrale pour le public mais veut être prête si cela change, a déclaré Torbjørn Hægeland lors d'une conférence, selon Kaupr. Il a précisé qu'un euro numérique ne déterminerait pas à lui seul la décision norvégienne.",
+    "ar": "قال توربيورن هيغلاند في مؤتمر، بحسب Kaupr، إن البنك المركزي النرويجي لا يرى حاجة حالية لعملة رقمية للأفراد لكنه يريد الاستعداد إذا تغير الوضع. وأضاف أن اليورو الرقمي لن يحدد وحده قرار النرويج.",
+    "bn": "Kaupr-এর মতে, Torbjørn Hægeland এক সম্মেলনে বলেছেন, নরওয়ের কেন্দ্রীয় ব্যাংক এখন সাধারণ মানুষের জন্য ডিজিটাল কেন্দ্রীয় ব্যাংক মুদ্রার প্রয়োজন দেখছে না, তবে পরিস্থিতি বদলালে প্রস্তুত থাকতে চায়। তিনি বলেন, শুধু ডিজিটাল ইউরো নরওয়ের সিদ্ধান্ত নির্ধারণ করবে না।",
+    "pt": "O Norges Bank não vê necessidade atual de moeda digital de banco central para o público, mas quer estar preparado se isso mudar, disse Torbjørn Hægeland numa conferência, segundo a Kaupr. Acrescentou que um euro digital não determinaria por si só a decisão norueguesa.",
+    "ru": "Банк Норвегии пока не видит необходимости в розничной цифровой валюте центрального банка, но хочет быть готовым к изменению ситуации, сказал на конференции Торбьёрн Хэгеланд, сообщает Kaupr. По его словам, цифровой евро сам по себе не определит решение Норвегии.",
+    "ur": "Kaupr کے مطابق، Torbjørn Hægeland نے ایک کانفرنس میں کہا کہ ناروے کے مرکزی بینک کو فی الحال عوام کے لیے ڈیجیٹل مرکزی بینک کرنسی کی ضرورت نہیں دکھتی، مگر صورت حال بدلے تو وہ تیار رہنا چاہتا ہے۔ انہوں نے کہا کہ صرف ڈیجیٹل یورو ناروے کے فیصلے کا تعین نہیں کرے گا۔",
+    "id": "Norges Bank belum melihat kebutuhan uang digital bank sentral untuk publik tetapi ingin siap jika situasi berubah, kata Torbjørn Hægeland dalam konferensi, menurut Kaupr. Ia mengatakan euro digital sendiri tidak akan menentukan keputusan Norwegia.",
+    "de": "Norges Bank sieht derzeit keinen Bedarf für digitales Zentralbankgeld für die Öffentlichkeit, will aber bei Änderungen bereit sein, sagte Torbjørn Hægeland auf einer Konferenz laut Kaupr. Ein digitaler Euro allein werde Norwegens Entscheidung nicht bestimmen.",
+    "ja": "Kauprによると、Torbjørn Hægeland氏は会議で、ノルウェー中銀は一般向けデジタル中央銀行通貨を現時点では不要とみるが、状況が変われば対応できるよう準備したいと述べた。デジタルユーロだけでノルウェーの判断が決まるわけではないと説明した。",
+    "sw": "Norges Bank haioni haja ya sasa ya fedha za kidijitali za benki kuu kwa umma lakini inataka kuwa tayari hali ikibadilika, Torbjørn Hægeland alisema katika mkutano, kulingana na Kaupr. Alisema euro ya kidijitali pekee haitaamua uamuzi wa Norway.",
+    "mr": "Kaupr नुसार, Torbjørn Hægeland यांनी एका परिषदेत सांगितले की नॉर्वेच्या मध्यवर्ती बँकेला सध्या जनतेसाठी डिजिटल मध्यवर्ती बँक चलनाची गरज दिसत नाही, पण परिस्थिती बदलल्यास तयार राहायचे आहे। केवळ डिजिटल युरो नॉर्वेचा निर्णय ठरवणार नाही, असे ते म्हणाले।",
+    "fa": "به گزارش Kaupr، توربیورن هیگلاند در یک کنفرانس گفت بانک مرکزی نروژ فعلاً نیازی به پول دیجیتال بانک مرکزی برای عموم نمی‌بیند، اما می‌خواهد در صورت تغییر شرایط آماده باشد. او گفت یوروی دیجیتال به‌تنهایی تصمیم نروژ را تعیین نمی‌کند.",
+    "uk": "Банк Норвегії поки не бачить потреби в роздрібній цифровій валюті центрального банку, але хоче бути готовим до змін, сказав на конференції Торбйорн Геґеланд, повідомляє Kaupr. За його словами, цифрове євро саме по собі не визначить рішення Норвегії.",
+    "tr": "Kaupr'a göre Torbjørn Hægeland bir konferansta, Norges Bank'ın şu anda halka yönelik dijital merkez bankası parasına ihtiyaç görmediğini ancak koşullar değişirse hazır olmak istediğini söyledi. Dijital euronun tek başına Norveç'in kararını belirlemeyeceğini belirtti.",
+    "se": "Norges Bank ii oainne dál dárbbu digitála guovddášbáŋkoruđaidda álbmogii, muhto háliida leat gárvvis jus dilli rievdá, dajai Torbjørn Hægeland konferánssas Kaupr mielde. Son dajai ahte digitála euro ii okto mearridivčče Norgga mearrádusa."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "465eb25f04a6",
    "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering",
    "title": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
-   "title_en": null,
+   "title_en": "Norges Bank official urges banks to develop a tokenisation strategy",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -327,16 +513,88 @@
    "published": "2026-11-05",
    "fetched": "2026-11-06T02:51:27+00:00",
    "topics": [
-    "blockchain",
-    "regulation"
+    "regulation",
+    "payments"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Banks should prepare a tokenisation strategy, Norges Bank's Torbjørn Hægeland said at a conference, according to Kaupr. He said important settlements should use central bank money, including transactions on tokenised platforms.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/agentisk-finans-og-tokenisering-preget-betalingskonferansen",
+     "title": "Agentisk finans og tokenisering preget betalingskonferansen",
+     "published": "2026-11-06",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-07T04:41:02.061695+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering"
+   },
+   "title_i18n": {
+    "nn": "Norges Bank-topp ber bankane utvikle ein strategi for tokenisering",
+    "sv": "Norges Bank-företrädare uppmanar bankerna att utveckla en tokeniseringsstrategi",
+    "da": "Norges Bank-top opfordrer bankerne til at udvikle en tokeniseringsstrategi",
+    "fi": "Norges Bankin edustaja kehottaa pankkeja laatimaan tokenisointistrategian",
+    "is": "Fulltrúi Norges Bank hvetur banka til að móta stefnu um tókenvæðingu",
+    "zh": "挪威央行官员敦促银行制定代币化战略",
+    "hi": "नॉर्वे के केंद्रीय बैंक अधिकारी ने बैंकों से टोकनाइज़ेशन रणनीति बनाने को कहा",
+    "es": "Un responsable de Norges Bank insta a los bancos a desarrollar una estrategia de tokenización",
+    "fr": "Un responsable de Norges Bank invite les banques à élaborer une stratégie de tokenisation",
+    "ar": "مسؤول بالبنك المركزي النرويجي يدعو البنوك إلى وضع استراتيجية للترميز",
+    "bn": "নরওয়ের কেন্দ্রীয় ব্যাংকের কর্মকর্তা ব্যাংকগুলোকে টোকেনাইজেশন কৌশল তৈরির আহ্বান জানালেন",
+    "pt": "Responsável do Norges Bank pede aos bancos uma estratégia de tokenização",
+    "ru": "Представитель Банка Норвегии призвал банки разработать стратегию токенизации",
+    "ur": "ناروے کے مرکزی بینک کے عہدیدار کی بینکوں سے ٹوکنائزیشن حکمت عملی بنانے کی اپیل",
+    "id": "Pejabat Norges Bank mendesak bank menyusun strategi tokenisasi",
+    "de": "Norges-Bank-Vertreter fordert Banken zu Tokenisierungsstrategie auf",
+    "ja": "ノルウェー中銀幹部、銀行にトークン化戦略の策定を要請",
+    "sw": "Afisa wa Norges Bank ahimiza benki kuandaa mkakati wa utokenishaji",
+    "mr": "नॉर्वेच्या मध्यवर्ती बँकेच्या अधिकाऱ्यांचे बँकांना टोकनायझेशन धोरण तयार करण्याचे आवाहन",
+    "fa": "مقام بانک مرکزی نروژ خواستار تدوین راهبرد توکنی‌سازی توسط بانک‌ها شد",
+    "uk": "Представник Банку Норвегії закликав банки розробити стратегію токенізації",
+    "tr": "Norges Bank yetkilisi bankalara tokenizasyon stratejisi geliştirme çağrısı yaptı",
+    "se": "Norges Bank ovddasteaddji ávžžuha báŋkkuid ráhkadit tokeniserenstrategiija"
+   },
+   "title_i18n_source": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
+   "summary_i18n": {
+    "nn": "Bankane bør førebu ein strategi for tokenisering, sa Torbjørn Hægeland i Norges Bank på ein konferanse, ifølgje Kaupr. Han sa at viktige oppgjer bør skje i sentralbankpengar, òg for transaksjonar på tokeniserte plattformer.",
+    "nb": "Bankene bør forberede en strategi for tokenisering, sa Torbjørn Hægeland i Norges Bank på en konferanse, ifølge Kaupr. Han sa at viktige oppgjør bør skje i sentralbankpenger, også for transaksjoner på tokeniserte plattformer.",
+    "sv": "Bankerna bör förbereda en tokeniseringsstrategi, sade Norges Banks Torbjørn Hægeland på en konferens, enligt Kaupr. Han sade att viktiga avvecklingar bör ske i centralbankspengar, även för transaktioner på tokeniserade plattformar.",
+    "da": "Bankerne bør forberede en strategi for tokenisering, sagde Torbjørn Hægeland fra Norges Bank på en konference, ifølge Kaupr. Han sagde, at vigtige afviklinger bør ske i centralbankpenge, også for transaktioner på tokeniserede platforme.",
+    "fi": "Pankkien tulisi valmistella tokenisointistrategia, Norges Bankin Torbjørn Hægeland sanoi konferenssissa Kauprin mukaan. Hän sanoi, että tärkeät selvitykset tulisi tehdä keskuspankkirahassa myös tokenisoitujen alustojen tapahtumissa.",
+    "is": "Bankar ættu að undirbúa stefnu um tókenvæðingu, sagði Torbjørn Hægeland hjá Norges Bank á ráðstefnu samkvæmt Kaupr. Hann sagði að mikilvæg uppgjör ættu að fara fram í seðlabankafé, einnig viðskipti á tókenvæddum kerfum.",
+    "zh": "据Kaupr报道，挪威央行的Torbjørn Hægeland在一次会议上表示，银行应制定代币化战略。他说，重要结算应使用央行货币，包括代币化平台上的交易。",
+    "hi": "Kaupr के अनुसार, नॉर्वे के केंद्रीय बैंक के Torbjørn Hægeland ने एक सम्मेलन में कहा कि बैंकों को टोकनाइज़ेशन रणनीति तैयार करनी चाहिए। उन्होंने कहा कि टोकनाइज़्ड प्लेटफॉर्मों के लेनदेन सहित महत्वपूर्ण निपटान केंद्रीय बैंक मुद्रा में होने चाहिए।",
+    "es": "Los bancos deberían preparar una estrategia de tokenización, dijo Torbjørn Hægeland, de Norges Bank, en una conferencia, según Kaupr. Señaló que las liquidaciones importantes deberían utilizar dinero de banco central, incluidas las transacciones en plataformas tokenizadas.",
+    "fr": "Les banques devraient préparer une stratégie de tokenisation, a déclaré Torbjørn Hægeland, de Norges Bank, lors d'une conférence, selon Kaupr. Il a précisé que les règlements importants devraient utiliser la monnaie de banque centrale, y compris les transactions sur des plateformes tokenisées.",
+    "ar": "قال توربيورن هيغلاند من البنك المركزي النرويجي في مؤتمر، بحسب Kaupr، إن على البنوك إعداد استراتيجية للترميز. وأضاف أن التسويات المهمة ينبغي أن تستخدم أموال البنك المركزي، بما فيها معاملات المنصات المرمّزة.",
+    "bn": "Kaupr-এর মতে, নরওয়ের কেন্দ্রীয় ব্যাংকের Torbjørn Hægeland এক সম্মেলনে বলেছেন, ব্যাংকগুলোর টোকেনাইজেশন কৌশল তৈরি করা উচিত। তিনি বলেন, টোকেনাইজড প্ল্যাটফর্মের লেনদেনসহ গুরুত্বপূর্ণ নিষ্পত্তি কেন্দ্রীয় ব্যাংকের মুদ্রায় হওয়া উচিত।",
+    "pt": "Os bancos devem preparar uma estratégia de tokenização, disse Torbjørn Hægeland, do Norges Bank, numa conferência, segundo a Kaupr. Afirmou que as liquidações importantes devem usar moeda de banco central, incluindo transações em plataformas tokenizadas.",
+    "ru": "Банкам следует подготовить стратегию токенизации, сказал на конференции Торбьёрн Хэгеланд из Банка Норвегии, сообщает Kaupr. По его словам, важные расчёты должны проводиться в деньгах центрального банка, включая операции на токенизированных платформах.",
+    "ur": "Kaupr کے مطابق، ناروے کے مرکزی بینک کے Torbjørn Hægeland نے ایک کانفرنس میں کہا کہ بینکوں کو ٹوکنائزیشن حکمت عملی تیار کرنی چاہیے۔ انہوں نے کہا کہ ٹوکنائزڈ پلیٹ فارموں کی لین دین سمیت اہم تصفیے مرکزی بینک کی رقم میں ہونے چاہییں۔",
+    "id": "Bank perlu menyiapkan strategi tokenisasi, kata Torbjørn Hægeland dari Norges Bank dalam konferensi, menurut Kaupr. Ia mengatakan penyelesaian penting harus menggunakan uang bank sentral, termasuk transaksi di platform bertoken.",
+    "de": "Banken sollten eine Tokenisierungsstrategie vorbereiten, sagte Torbjørn Hægeland von Norges Bank auf einer Konferenz laut Kaupr. Wichtige Abwicklungen sollten in Zentralbankgeld erfolgen, auch bei Transaktionen auf tokenisierten Plattformen.",
+    "ja": "Kauprによると、ノルウェー中銀のTorbjørn Hægeland氏は会議で、銀行はトークン化戦略を準備すべきだと述べた。トークン化プラットフォームの取引を含む重要な決済には中央銀行マネーを使うべきだと説明した。",
+    "sw": "Benki zinapaswa kuandaa mkakati wa utokenishaji, Torbjørn Hægeland wa Norges Bank alisema katika mkutano, kulingana na Kaupr. Alisema malipo muhimu ya mwisho yanapaswa kutumia fedha za benki kuu, yakiwemo miamala kwenye majukwaa ya tokeni.",
+    "mr": "Kaupr नुसार, नॉर्वेच्या मध्यवर्ती बँकेचे Torbjørn Hægeland यांनी एका परिषदेत बँकांनी टोकनायझेशन धोरण तयार करावे असे सांगितले। टोकनाइज्ड प्लॅटफॉर्मवरील व्यवहारांसह महत्त्वाचे निपटारे मध्यवर्ती बँकेच्या पैशात व्हावेत, असे ते म्हणाले।",
+    "fa": "به گزارش Kaupr، توربیورن هیگلاند از بانک مرکزی نروژ در یک کنفرانس گفت بانک‌ها باید راهبردی برای توکنی‌سازی آماده کنند. او گفت تسویه‌های مهم، از جمله معاملات در پلتفرم‌های توکنی‌شده، باید با پول بانک مرکزی انجام شود.",
+    "uk": "Банкам слід підготувати стратегію токенізації, сказав на конференції Торбйорн Геґеланд із Банку Норвегії, повідомляє Kaupr. За його словами, важливі розрахунки мають проводитися в грошах центрального банку, включно з операціями на токенізованих платформах.",
+    "tr": "Kaupr'a göre Norges Bank'tan Torbjørn Hægeland bir konferansta bankaların tokenizasyon stratejisi hazırlaması gerektiğini söyledi. Tokenize platformlardaki işlemler dahil önemli mutabakatlarda merkez bankası parası kullanılması gerektiğini belirtti.",
+    "se": "Báŋkkut berrejit ráhkadit tokeniserenstrategiija, dajai Norges Bank Torbjørn Hægeland konferánssas Kaupr mielde. Son dajai ahte dehálaš rehkenastimat berrejit geavahit guovddášbáŋkoruđaid, maiddái transakšuvnnat tokeniserejuvvon vuogádagaid alde."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "b06e7bd6cc63",
@@ -950,6 +1208,17 @@
      "country": "SE",
      "source_type": "national",
      "paywall": false
+    },
+    {
+     "outlet": "dagens-nyheter",
+     "outlet_name": "Dagens Nyheter",
+     "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+     "title": "Så lyckades hackarna slå till mot kryptojätten",
+     "published": "2026-11-05T21:01:11+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
     }
    ]
   },
@@ -1171,8 +1440,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "9ce6e4d42086"
   },
   {
    "id": "ca421f93a8d8",
@@ -1339,7 +1609,7 @@
    ],
    "paywall": false,
    "status": "published",
-   "summary": "Sweden's Economic Crime Authority has charged Valuno Group's former chief executive and a former finance director with aggravated insider trading, according to Kaupr and Kryptovalutaguiden. According to the prosecutor, the two learned on 3 July 2025 that Finansinspektionen had refused the subsidiary QB Europe a MiCA licence and sold large parts of their shares before the decision was made public on 4 July, after which the share price fell about 33 percent. Valuno says it is assisting the legal process as needed; no one has been convicted.",
+   "summary": "Sweden's Economic Crime Authority has charged Valuno Group's former chief executive and a former finance director with aggravated insider trading, according to Kaupr and Kryptovalutaguiden. According to the prosecutor, the two learned on 3 July 2025 that Finansinspektionen had refused the subsidiary QB Europe a MiCA licence and sold large parts of their shares before the decision was made public on 4 July, after which the share price fell about 33 percent. Valuno says it is assisting the legal process as needed; no one has been convicted. The charged former chief executive is also a former leader of Medborgerlig Samling and denies wrongdoing, according to SvD; the case is Stockholm District Court B 16085-26.",
    "published_date_only": true,
    "also_covered_by": [
     {
@@ -1352,13 +1622,24 @@
      "country": "SE",
      "source_type": "national",
      "paywall": false
+    },
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/aOmynO/valuno-daniel-sonesson-atalas-for-grovt-insiderbrott",
+     "title": "Tidigare partiledare åtalas",
+     "published": "2026-11-03T10:45:22+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
    "approved_at": "2026-11-04T04:41:00+01:00",
    "primary_source": {
-    "name": "Kaupr",
-    "url": "https://kaupr.io/nyheter/to-tidligere-valuno-ledere-tiltalt-for-grov-innsidehandel"
+    "name": "Ekobrottsmyndigheten, 2 November 2026 — Stockholms tingsrätt B 16085-26",
+    "url": "https://www.ekobrottsmyndigheten.se/om-oss/press/aktuellt/nyheter/tva-tidigare-chefer-atalas-for-grova-insiderbrott/"
    },
    "title_i18n": {
     "nn": "To tidlegare Valuno-leiarar tiltalte for grov innsidehandel",
@@ -1387,32 +1668,38 @@
    },
    "title_i18n_source": "To tidligere Valuno-ledere tiltalt for grov innsidehandel",
    "summary_i18n": {
-    "nn": "Den svenske Ekobrottsmyndigheten har tiltalt den tidlegare administrerande direktøren i Valuno Group og ein tidlegare finansdirektør for grov innsidehandel, ifølgje Kaupr og Kryptovalutaguiden. Ifølgje påtalemakta fekk dei to vite 3. juli 2025 at Finansinspektionen hadde avslått MiCA-søknaden til dotterselskapet QB Europe, og selde store delar av aksjane sine før vedtaket vart offentleggjort 4. juli, då kursen fall om lag 33 prosent. Valuno seier selskapet bistår rettsprosessen ved behov; ingen er dømde.",
-    "nb": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov innsidehandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge påtalemyndigheten fikk de to vite 3. juli 2025 at Finansinspektionen hadde avslått datterselskapet QB Europes MiCA-søknad, og solgte store deler av aksjene sine før vedtaket ble offentliggjort 4. juli, da kursen falt om lag 33 prosent. Valuno sier selskapet bistår rettsprosessen ved behov; ingen er dømt.",
-    "sv": "Ekobrottsmyndigheten har åtalat Valuno Groups tidigare vd och en tidigare finanschef för grovt insiderbrott, enligt Kaupr och Kryptovalutaguiden. Enligt åklagaren fick de två den 3 juli 2025 veta att Finansinspektionen hade avslagit dotterbolaget QB Europes MiCA-ansökan och sålde stora delar av sina aktier innan beslutet offentliggjordes den 4 juli, då kursen föll omkring 33 procent. Valuno uppger att bolaget bistår rättsprocessen vid behov; ingen är dömd.",
-    "da": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov insiderhandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge anklagemyndigheden fik de to den 3. juli 2025 at vide, at Finansinspektionen havde afslået datterselskabet QB Europes MiCA-ansøgning, og solgte store dele af deres aktier, før afgørelsen blev offentliggjort den 4. juli, hvorefter kursen faldt omkring 33 procent. Valuno siger, at selskabet bistår retsprocessen efter behov; ingen er dømt.",
-    "fi": "Ruotsin talousrikosviranomainen Ekobrottsmyndigheten on nostanut syytteen törkeästä sisäpiirikaupasta Valuno Groupin entistä toimitusjohtajaa ja entistä talousjohtajaa vastaan, kertovat Kaupr ja Kryptovalutaguiden. Syyttäjän mukaan kaksikko sai 3. heinäkuuta 2025 tietää, että Finansinspektionen oli hylännyt tytäryhtiö QB Europen MiCA-hakemuksen, ja myi suuren osan osakkeistaan ennen kuin päätös julkistettiin 4. heinäkuuta, minkä jälkeen kurssi laski noin 33 prosenttia. Valuno kertoo avustavansa oikeusprosessia tarvittaessa; ketään ei ole tuomittu.",
-    "is": "Sænska efnahagsbrotastofnunin Ekobrottsmyndigheten hefur ákært fyrrverandi forstjóra Valuno Group og fyrrverandi fjármálastjóra fyrir stórfelld innherjasvik, samkvæmt Kaupr og Kryptovalutaguiden. Samkvæmt saksóknara fréttu þeir 3. júlí 2025 að Finansinspektionen hefði hafnað MiCA-umsókn dótturfélagsins QB Europe og seldu stóran hluta hlutabréfa sinna áður en ákvörðunin var birt 4. júlí, en þá féll gengið um 33 prósent. Valuno segist aðstoða við réttarferlið eftir þörfum; enginn hefur verið sakfelldur.",
-    "zh": "据Kaupr和Kryptovalutaguiden报道，瑞典经济犯罪局已以严重内幕交易罪起诉Valuno Group前首席执行官和一名前财务总监。检方称，两人于2025年7月3日得知瑞典金融监管局拒绝了子公司QB Europe的MiCA牌照申请，并在该决定于7月4日公布前出售了大部分股份，消息公布后股价下跌约33%。Valuno表示将视需要协助司法程序；目前无人被定罪。",
-    "hi": "Kaupr और Kryptovalutaguiden के अनुसार, स्वीडन के आर्थिक अपराध प्राधिकरण ने Valuno Group के पूर्व मुख्य कार्यकारी और एक पूर्व वित्त निदेशक पर गंभीर इनसाइडर ट्रेडिंग का आरोप लगाया है। अभियोजक के अनुसार, दोनों को 3 जुलाई 2025 को पता चला कि Finansinspektionen ने सहायक कंपनी QB Europe का MiCA लाइसेंस आवेदन खारिज कर दिया है, और उन्होंने 4 जुलाई को निर्णय सार्वजनिक होने से पहले अपने शेयरों का बड़ा हिस्सा बेच दिया, जिसके बाद शेयर मूल्य लगभग 33 प्रतिशत गिरा। Valuno का कहना है कि वह आवश्यकता पड़ने पर कानूनी प्रक्रिया में सहयोग कर रहा है; किसी को दोषी नहीं ठहराया गया है।",
-    "es": "La Autoridad de Delitos Económicos de Suecia ha acusado al exconsejero delegado de Valuno Group y a un exdirector financiero de uso agravado de información privilegiada, según Kaupr y Kryptovalutaguiden. Según la fiscalía, ambos supieron el 3 de julio de 2025 que Finansinspektionen había denegado la licencia MiCA a la filial QB Europe y vendieron gran parte de sus acciones antes de que la decisión se hiciera pública el 4 de julio, tras lo cual la cotización cayó cerca de un 33 %. Valuno afirma que colabora con el proceso judicial cuando es necesario; nadie ha sido condenado.",
-    "fr": "L'Autorité suédoise de lutte contre la criminalité économique a inculpé l'ancien directeur général de Valuno Group et un ancien directeur financier pour délit d'initié aggravé, selon Kaupr et Kryptovalutaguiden. Selon le procureur, tous deux ont appris le 3 juillet 2025 que Finansinspektionen avait refusé la licence MiCA de la filiale QB Europe et ont vendu une grande partie de leurs actions avant que la décision ne soit rendue publique le 4 juillet, après quoi le cours a chuté d'environ 33 %. Valuno indique apporter son concours à la procédure si nécessaire ; personne n'a été condamné.",
-    "ar": "وجّهت هيئة الجرائم الاقتصادية السويدية اتهامًا بالتداول الداخلي المشدد إلى الرئيس التنفيذي السابق لمجموعة Valuno ومدير مالي سابق، وفقًا لـKaupr وKryptovalutaguiden. وبحسب الادعاء، علم الاثنان في 3 يوليو 2025 أن هيئة الرقابة المالية السويدية رفضت طلب ترخيص MiCA للشركة التابعة QB Europe، فباعا جزءًا كبيرًا من أسهمهما قبل إعلان القرار في 4 يوليو، الذي هبط بعده سعر السهم بنحو 33 في المئة. وتقول Valuno إنها تساعد الإجراءات القضائية عند الحاجة؛ ولم تتم إدانة أحد.",
-    "bn": "Kaupr ও Kryptovalutaguiden-এর তথ্যমতে, সুইডেনের অর্থনৈতিক অপরাধ কর্তৃপক্ষ Valuno Group-এর সাবেক প্রধান নির্বাহী ও একজন সাবেক অর্থ পরিচালকের বিরুদ্ধে গুরুতর ইনসাইডার ট্রেডিংয়ের অভিযোগ এনেছে। প্রসিকিউটরের মতে, তাঁরা ২০২৫ সালের ৩ জুলাই জানতে পারেন যে Finansinspektionen সহযোগী প্রতিষ্ঠান QB Europe-এর MiCA লাইসেন্স আবেদন নাকচ করেছে, এবং ৪ জুলাই সিদ্ধান্ত প্রকাশের আগে নিজেদের শেয়ারের বড় অংশ বিক্রি করেন; এরপর শেয়ারদর প্রায় ৩৩ শতাংশ পড়ে যায়। Valuno জানিয়েছে, প্রয়োজনে তারা আইনি প্রক্রিয়ায় সহায়তা করছে; কেউ দোষী সাব্যস্ত হননি।",
-    "pt": "A Autoridade de Crimes Económicos da Suécia acusou o antigo presidente executivo da Valuno Group e um antigo diretor financeiro de abuso de informação privilegiada agravado, segundo a Kaupr e o Kryptovalutaguiden. Segundo o Ministério Público, ambos souberam a 3 de julho de 2025 que a Finansinspektionen tinha recusado a licença MiCA à subsidiária QB Europe e venderam grande parte das suas ações antes de a decisão ser tornada pública a 4 de julho, após o que a cotação caiu cerca de 33 %. A Valuno diz que colabora com o processo judicial quando necessário; ninguém foi condenado.",
-    "ru": "Шведское управление по экономическим преступлениям предъявило бывшему генеральному директору Valuno Group и бывшему финансовому директору обвинение в инсайдерской торговле при отягчающих обстоятельствах, сообщают Kaupr и Kryptovalutaguiden. По версии обвинения, 3 июля 2025 года оба узнали, что Finansinspektionen отказала дочерней компании QB Europe в лицензии MiCA, и продали значительную часть своих акций до того, как решение было обнародовано 4 июля, после чего курс упал примерно на 33%. Valuno заявляет, что при необходимости содействует судебному процессу; никто не осуждён.",
-    "ur": "Kaupr اور Kryptovalutaguiden کے مطابق، سویڈن کی اقتصادی جرائم اتھارٹی نے Valuno Group کے سابق چیف ایگزیکٹو اور ایک سابق فنانس ڈائریکٹر پر سنگین اندرونی تجارت کی فردِ جرم عائد کی ہے۔ استغاثہ کے مطابق دونوں کو 3 جولائی 2025 کو معلوم ہوا کہ Finansinspektionen نے ذیلی کمپنی QB Europe کی MiCA لائسنس درخواست مسترد کر دی ہے، اور انہوں نے 4 جولائی کو فیصلہ عام ہونے سے پہلے اپنے حصص کا بڑا حصہ فروخت کر دیا، جس کے بعد شیئر کی قیمت تقریباً 33 فیصد گر گئی۔ Valuno کا کہنا ہے کہ وہ ضرورت پڑنے پر قانونی عمل میں تعاون کر رہی ہے؛ کسی کو سزا نہیں ہوئی۔",
-    "id": "Otoritas Kejahatan Ekonomi Swedia telah mendakwa mantan CEO Valuno Group dan seorang mantan direktur keuangan atas perdagangan orang dalam berat, menurut Kaupr dan Kryptovalutaguiden. Menurut jaksa, keduanya mengetahui pada 3 Juli 2025 bahwa Finansinspektionen menolak izin MiCA anak usaha QB Europe dan menjual sebagian besar saham mereka sebelum keputusan itu diumumkan pada 4 Juli, setelah itu harga saham turun sekitar 33 persen. Valuno mengatakan membantu proses hukum bila diperlukan; belum ada yang divonis.",
-    "de": "Die schwedische Behörde für Wirtschaftskriminalität hat den früheren Vorstandschef von Valuno Group und einen früheren Finanzchef wegen schweren Insiderhandels angeklagt, berichten Kaupr und Kryptovalutaguiden. Laut Staatsanwaltschaft erfuhren beide am 3. Juli 2025, dass Finansinspektionen der Tochter QB Europe die MiCA-Lizenz verweigert hatte, und verkauften große Teile ihrer Aktien, bevor die Entscheidung am 4. Juli veröffentlicht wurde; danach fiel der Kurs um rund 33 Prozent. Valuno erklärt, das Verfahren bei Bedarf zu unterstützen; verurteilt ist niemand.",
-    "ja": "KauprとKryptovalutaguidenによると、スウェーデン経済犯罪庁はValuno Groupの元最高経営責任者と元財務責任者を重大なインサイダー取引の罪で起訴した。検察によると、2人は2025年7月3日にスウェーデン金融監督庁が子会社QB EuropeのMiCA申請を却下したことを知り、7月4日に決定が公表される前に保有株の大部分を売却した。公表後、株価は約33％下落した。Valunoは必要に応じて司法手続きに協力するとしている。有罪判決を受けた者はいない。",
-    "sw": "Mamlaka ya Uhalifu wa Kiuchumi ya Uswidi imemshtaki aliyekuwa mkurugenzi mtendaji wa Valuno Group na aliyekuwa mkurugenzi wa fedha kwa biashara ya ndani iliyokithiri, kwa mujibu wa Kaupr na Kryptovalutaguiden. Kwa mujibu wa mwendesha mashtaka, wawili hao walijua tarehe 3 Julai 2025 kwamba Finansinspektionen ilikataa ombi la leseni ya MiCA la kampuni tanzu QB Europe, na wakauza sehemu kubwa ya hisa zao kabla uamuzi haujatangazwa tarehe 4 Julai, baada ya hapo bei ya hisa ilishuka takriban asilimia 33. Valuno inasema inasaidia mchakato wa kisheria inapohitajika; hakuna aliyetiwa hatiani.",
-    "mr": "Kaupr आणि Kryptovalutaguiden नुसार, स्वीडनच्या आर्थिक गुन्हे प्राधिकरणाने Valuno Group चे माजी मुख्य कार्यकारी अधिकारी आणि एक माजी वित्त संचालक यांच्यावर गंभीर इनसायडर ट्रेडिंगचा आरोप ठेवला आहे. अभियोक्त्यांनुसार, दोघांना 3 जुलै 2025 रोजी समजले की Finansinspektionen ने उपकंपनी QB Europe चा MiCA परवाना अर्ज नाकारला आहे, आणि 4 जुलै रोजी निर्णय जाहीर होण्यापूर्वी त्यांनी आपल्या समभागांचा मोठा भाग विकला; त्यानंतर समभागाचा भाव सुमारे 33 टक्क्यांनी घसरला. आवश्यकतेनुसार कायदेशीर प्रक्रियेत सहकार्य करत असल्याचे Valuno सांगते; कोणालाही दोषी ठरवलेले नाही.",
-    "fa": "به گزارش Kaupr و Kryptovalutaguiden، سازمان جرائم اقتصادی سوئد مدیرعامل سابق Valuno Group و یک مدیر مالی سابق را به معامله شدید با اطلاعات نهانی متهم کرده است. به گفته دادستان، این دو در ۳ ژوئیه ۲۰۲۵ مطلع شدند که Finansinspektionen درخواست مجوز MiCA شرکت تابعه QB Europe را رد کرده است و پیش از اعلام عمومی تصمیم در ۴ ژوئیه بخش بزرگی از سهام خود را فروختند؛ پس از آن قیمت سهم حدود ۳۳ درصد افت کرد. Valuno می‌گوید در صورت نیاز به روند قضایی کمک می‌کند؛ هیچ‌کس محکوم نشده است.",
-    "uk": "Шведське управління з економічних злочинів висунуло колишньому генеральному директорові Valuno Group і колишньому фінансовому директорові обвинувачення в інсайдерській торгівлі за обтяжувальних обставин, повідомляють Kaupr і Kryptovalutaguiden. За версією обвинувачення, 3 липня 2025 року обидва дізналися, що Finansinspektionen відмовила дочірній компанії QB Europe в ліцензії MiCA, і продали значну частину своїх акцій до оприлюднення рішення 4 липня, після чого курс упав приблизно на 33%. Valuno заявляє, що за потреби сприяє судовому процесу; нікого не засуджено.",
-    "tr": "Kaupr ve Kryptovalutaguiden'e göre İsveç Ekonomik Suçlar Kurumu, Valuno Group'un eski CEO'su ile eski bir finans direktörünü ağır içeriden bilgi ticareti suçlamasıyla yargılanmak üzere iddianame düzenledi. Savcılığa göre ikili, 3 Temmuz 2025'te Finansinspektionen'in iştirak QB Europe'un MiCA lisans başvurusunu reddettiğini öğrendi ve karar 4 Temmuz'da açıklanmadan önce hisselerinin büyük kısmını sattı; açıklamanın ardından hisse fiyatı yaklaşık yüzde 33 düştü. Valuno, gerektiğinde yargı sürecine yardımcı olduğunu söylüyor; kimse mahkûm edilmedi.",
-    "se": "Ruoŧa ekonomalaš rihkuspolesdoaimmahat lea áššáskuhttán Valuno Gruppa ovddeš jođihanhoavdda ja ovddeš ruhtadanhoavdda čavgejuvvon siskkáldas gávppašeamis, muitala Kaupr ja Kryptovalutaguiden. Siviilaáittardeaddji dadjá ahte soai oaččuiga dieđu suoidnemánu 3. beaivvi 2025 ahte Finansinspekšuvdna lei biehttalan subsidiára QB Europe MiCA-liseanssa ja vuovdán stuora osiid sin ossosiin ovdal go mearrádus almmuhuvvui suoidnemánu 4. beaivvi, man maŋŋá ossosiid haddi gahčai sullii 33 proseantta. Valuno dadjá ahte sii veahkehit riekteproseassa go dasa lea dárbu; ii oktage leat dubmejuvvon."
+    "nn": "Den svenske Ekobrottsmyndigheten har tiltalt den tidlegare administrerande direktøren i Valuno Group og ein tidlegare finansdirektør for grov innsidehandel, ifølgje Kaupr og Kryptovalutaguiden. Ifølgje påtalemakta fekk dei to vite 3. juli 2025 at Finansinspektionen hadde avslått MiCA-søknaden til dotterselskapet QB Europe, og selde store delar av aksjane sine før vedtaket vart offentleggjort 4. juli, då kursen fall om lag 33 prosent. Valuno seier selskapet bistår rettsprosessen ved behov; ingen er dømde. Den tiltalte tidlegare administrerande direktøren er òg tidlegare partileiar i Medborgerlig Samling og nektar skuld, ifølgje SvD; saka har nummer B 16085-26 i Stockholms tingsrätt.",
+    "nb": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov innsidehandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge påtalemyndigheten fikk de to vite 3. juli 2025 at Finansinspektionen hadde avslått datterselskapet QB Europes MiCA-søknad, og solgte store deler av aksjene sine før vedtaket ble offentliggjort 4. juli, da kursen falt om lag 33 prosent. Valuno sier selskapet bistår rettsprosessen ved behov; ingen er dømt. Den tiltalte tidligere administrerende direktøren er også tidligere partileder i Medborgerlig Samling og nekter skyld, ifølge SvD; saken har nummer B 16085-26 i Stockholms tingsrätt.",
+    "sv": "Ekobrottsmyndigheten har åtalat Valuno Groups tidigare vd och en tidigare finanschef för grovt insiderbrott, enligt Kaupr och Kryptovalutaguiden. Enligt åklagaren fick de två den 3 juli 2025 veta att Finansinspektionen hade avslagit dotterbolaget QB Europes MiCA-ansökan och sålde stora delar av sina aktier innan beslutet offentliggjordes den 4 juli, då kursen föll omkring 33 procent. Valuno uppger att bolaget bistår rättsprocessen vid behov; ingen är dömd. Den åtalade tidigare vd:n är också tidigare partiledare för Medborgerlig Samling och nekar till brott, enligt SvD; målet är Stockholms tingsrätt B 16085-26.",
+    "da": "Den svenske Ekobrottsmyndigheten har tiltalt Valuno Groups tidligere administrerende direktør og en tidligere finansdirektør for grov insiderhandel, ifølge Kaupr og Kryptovalutaguiden. Ifølge anklagemyndigheden fik de to den 3. juli 2025 at vide, at Finansinspektionen havde afslået datterselskabet QB Europes MiCA-ansøgning, og solgte store dele af deres aktier, før afgørelsen blev offentliggjort den 4. juli, hvorefter kursen faldt omkring 33 procent. Valuno siger, at selskabet bistår retsprocessen efter behov; ingen er dømt. Den tiltalte tidligere administrerende direktør er også tidligere partileder for Medborgerlig Samling og nægter sig skyldig, ifølge SvD; sagen er Stockholms tingsrätt B 16085-26.",
+    "fi": "Ruotsin talousrikosviranomainen Ekobrottsmyndigheten on nostanut syytteen törkeästä sisäpiirikaupasta Valuno Groupin entistä toimitusjohtajaa ja entistä talousjohtajaa vastaan, kertovat Kaupr ja Kryptovalutaguiden. Syyttäjän mukaan kaksikko sai 3. heinäkuuta 2025 tietää, että Finansinspektionen oli hylännyt tytäryhtiö QB Europen MiCA-hakemuksen, ja myi suuren osan osakkeistaan ennen kuin päätös julkistettiin 4. heinäkuuta, minkä jälkeen kurssi laski noin 33 prosenttia. Valuno kertoo avustavansa oikeusprosessia tarvittaessa; ketään ei ole tuomittu. Syytetty entinen toimitusjohtaja on myös Medborgerlig Samlingin entinen puoluejohtaja ja kiistää syyllisyytensä SvD:n mukaan; asia on Tukholman käräjäoikeuden B 16085-26.",
+    "is": "Sænska efnahagsbrotastofnunin Ekobrottsmyndigheten hefur ákært fyrrverandi forstjóra Valuno Group og fyrrverandi fjármálastjóra fyrir stórfelld innherjasvik, samkvæmt Kaupr og Kryptovalutaguiden. Samkvæmt saksóknara fréttu þeir 3. júlí 2025 að Finansinspektionen hefði hafnað MiCA-umsókn dótturfélagsins QB Europe og seldu stóran hluta hlutabréfa sinna áður en ákvörðunin var birt 4. júlí, en þá féll gengið um 33 prósent. Valuno segist aðstoða við réttarferlið eftir þörfum; enginn hefur verið sakfelldur. Ákærði fyrrverandi framkvæmdastjórinn er einnig fyrrverandi leiðtogi Medborgerlig Samling og neitar sök samkvæmt SvD; málið er Stockholms tingsrätt B 16085-26.",
+    "zh": "据Kaupr和Kryptovalutaguiden报道，瑞典经济犯罪局已以严重内幕交易罪起诉Valuno Group前首席执行官和一名前财务总监。检方称，两人于2025年7月3日得知瑞典金融监管局拒绝了子公司QB Europe的MiCA牌照申请，并在该决定于7月4日公布前出售了大部分股份，消息公布后股价下跌约33%。Valuno表示将视需要协助司法程序；目前无人被定罪。 据SvD报道，被起诉的前首席执行官也曾任Medborgerlig Samling党魁，他否认有不当行为；案件编号为斯德哥尔摩地区法院B 16085-26。",
+    "hi": "Kaupr और Kryptovalutaguiden के अनुसार, स्वीडन के आर्थिक अपराध प्राधिकरण ने Valuno Group के पूर्व मुख्य कार्यकारी और एक पूर्व वित्त निदेशक पर गंभीर इनसाइडर ट्रेडिंग का आरोप लगाया है। अभियोजक के अनुसार, दोनों को 3 जुलाई 2025 को पता चला कि Finansinspektionen ने सहायक कंपनी QB Europe का MiCA लाइसेंस आवेदन खारिज कर दिया है, और उन्होंने 4 जुलाई को निर्णय सार्वजनिक होने से पहले अपने शेयरों का बड़ा हिस्सा बेच दिया, जिसके बाद शेयर मूल्य लगभग 33 प्रतिशत गिरा। Valuno का कहना है कि वह आवश्यकता पड़ने पर कानूनी प्रक्रिया में सहयोग कर रहा है; किसी को दोषी नहीं ठहराया गया है। SvD के अनुसार, आरोपित पूर्व मुख्य कार्यकारी Medborgerlig Samling के पूर्व पार्टी नेता भी हैं और गलत काम से इनकार करते हैं; मामला स्टॉकहोम जिला अदालत B 16085-26 है।",
+    "es": "La Autoridad de Delitos Económicos de Suecia ha acusado al exconsejero delegado de Valuno Group y a un exdirector financiero de uso agravado de información privilegiada, según Kaupr y Kryptovalutaguiden. Según la fiscalía, ambos supieron el 3 de julio de 2025 que Finansinspektionen había denegado la licencia MiCA a la filial QB Europe y vendieron gran parte de sus acciones antes de que la decisión se hiciera pública el 4 de julio, tras lo cual la cotización cayó cerca de un 33 %. Valuno afirma que colabora con el proceso judicial cuando es necesario; nadie ha sido condenado. El exconsejero delegado acusado también fue líder de Medborgerlig Samling y niega haber cometido irregularidades, según SvD; el caso es B 16085-26 del Tribunal de Distrito de Estocolmo.",
+    "fr": "L'Autorité suédoise de lutte contre la criminalité économique a inculpé l'ancien directeur général de Valuno Group et un ancien directeur financier pour délit d'initié aggravé, selon Kaupr et Kryptovalutaguiden. Selon le procureur, tous deux ont appris le 3 juillet 2025 que Finansinspektionen avait refusé la licence MiCA de la filiale QB Europe et ont vendu une grande partie de leurs actions avant que la décision ne soit rendue publique le 4 juillet, après quoi le cours a chuté d'environ 33 %. Valuno indique apporter son concours à la procédure si nécessaire ; personne n'a été condamné. L'ancien directeur général inculpé est aussi un ancien dirigeant de Medborgerlig Samling et nie toute faute, selon SvD ; l'affaire porte le numéro B 16085-26 au tribunal de district de Stockholm.",
+    "ar": "وجّهت هيئة الجرائم الاقتصادية السويدية اتهامًا بالتداول الداخلي المشدد إلى الرئيس التنفيذي السابق لمجموعة Valuno ومدير مالي سابق، وفقًا لـKaupr وKryptovalutaguiden. وبحسب الادعاء، علم الاثنان في 3 يوليو 2025 أن هيئة الرقابة المالية السويدية رفضت طلب ترخيص MiCA للشركة التابعة QB Europe، فباعا جزءًا كبيرًا من أسهمهما قبل إعلان القرار في 4 يوليو، الذي هبط بعده سعر السهم بنحو 33 في المئة. وتقول Valuno إنها تساعد الإجراءات القضائية عند الحاجة؛ ولم تتم إدانة أحد. المدير التنفيذي السابق المتهم كان أيضًا زعيمًا سابقًا لحزب Medborgerlig Samling وينفي ارتكاب مخالفة، بحسب SvD؛ ورقم القضية في محكمة ستوكهولم الجزئية هو B 16085-26.",
+    "bn": "Kaupr ও Kryptovalutaguiden-এর তথ্যমতে, সুইডেনের অর্থনৈতিক অপরাধ কর্তৃপক্ষ Valuno Group-এর সাবেক প্রধান নির্বাহী ও একজন সাবেক অর্থ পরিচালকের বিরুদ্ধে গুরুতর ইনসাইডার ট্রেডিংয়ের অভিযোগ এনেছে। প্রসিকিউটরের মতে, তাঁরা ২০২৫ সালের ৩ জুলাই জানতে পারেন যে Finansinspektionen সহযোগী প্রতিষ্ঠান QB Europe-এর MiCA লাইসেন্স আবেদন নাকচ করেছে, এবং ৪ জুলাই সিদ্ধান্ত প্রকাশের আগে নিজেদের শেয়ারের বড় অংশ বিক্রি করেন; এরপর শেয়ারদর প্রায় ৩৩ শতাংশ পড়ে যায়। Valuno জানিয়েছে, প্রয়োজনে তারা আইনি প্রক্রিয়ায় সহায়তা করছে; কেউ দোষী সাব্যস্ত হননি। SvD-এর মতে, অভিযুক্ত সাবেক প্রধান নির্বাহী Medborgerlig Samling-এর সাবেক দলীয় নেতাও এবং তিনি অন্যায়ের অভিযোগ অস্বীকার করেন; স্টকহোম জেলা আদালতের মামলার নম্বর B 16085-26।",
+    "pt": "A Autoridade de Crimes Económicos da Suécia acusou o antigo presidente executivo da Valuno Group e um antigo diretor financeiro de abuso de informação privilegiada agravado, segundo a Kaupr e o Kryptovalutaguiden. Segundo o Ministério Público, ambos souberam a 3 de julho de 2025 que a Finansinspektionen tinha recusado a licença MiCA à subsidiária QB Europe e venderam grande parte das suas ações antes de a decisão ser tornada pública a 4 de julho, após o que a cotação caiu cerca de 33 %. A Valuno diz que colabora com o processo judicial quando necessário; ninguém foi condenado. O antigo presidente executivo acusado foi também líder do Medborgerlig Samling e nega irregularidades, segundo o SvD; o processo é B 16085-26 no Tribunal Distrital de Estocolmo.",
+    "ru": "Шведское управление по экономическим преступлениям предъявило бывшему генеральному директору Valuno Group и бывшему финансовому директору обвинение в инсайдерской торговле при отягчающих обстоятельствах, сообщают Kaupr и Kryptovalutaguiden. По версии обвинения, 3 июля 2025 года оба узнали, что Finansinspektionen отказала дочерней компании QB Europe в лицензии MiCA, и продали значительную часть своих акций до того, как решение было обнародовано 4 июля, после чего курс упал примерно на 33%. Valuno заявляет, что при необходимости содействует судебному процессу; никто не осуждён. Обвиняемый бывший гендиректор также ранее возглавлял Medborgerlig Samling и отрицает вину, сообщает SvD; дело рассматривается окружным судом Стокгольма под номером B 16085-26.",
+    "ur": "Kaupr اور Kryptovalutaguiden کے مطابق، سویڈن کی اقتصادی جرائم اتھارٹی نے Valuno Group کے سابق چیف ایگزیکٹو اور ایک سابق فنانس ڈائریکٹر پر سنگین اندرونی تجارت کی فردِ جرم عائد کی ہے۔ استغاثہ کے مطابق دونوں کو 3 جولائی 2025 کو معلوم ہوا کہ Finansinspektionen نے ذیلی کمپنی QB Europe کی MiCA لائسنس درخواست مسترد کر دی ہے، اور انہوں نے 4 جولائی کو فیصلہ عام ہونے سے پہلے اپنے حصص کا بڑا حصہ فروخت کر دیا، جس کے بعد شیئر کی قیمت تقریباً 33 فیصد گر گئی۔ Valuno کا کہنا ہے کہ وہ ضرورت پڑنے پر قانونی عمل میں تعاون کر رہی ہے؛ کسی کو سزا نہیں ہوئی۔ SvD کے مطابق، ملزم سابق چیف ایگزیکٹو Medborgerlig Samling کے سابق پارٹی رہنما بھی ہیں اور غلط کام سے انکار کرتے ہیں؛ اسٹاک ہوم ضلعی عدالت میں مقدمہ B 16085-26 ہے۔",
+    "id": "Otoritas Kejahatan Ekonomi Swedia telah mendakwa mantan CEO Valuno Group dan seorang mantan direktur keuangan atas perdagangan orang dalam berat, menurut Kaupr dan Kryptovalutaguiden. Menurut jaksa, keduanya mengetahui pada 3 Juli 2025 bahwa Finansinspektionen menolak izin MiCA anak usaha QB Europe dan menjual sebagian besar saham mereka sebelum keputusan itu diumumkan pada 4 Juli, setelah itu harga saham turun sekitar 33 persen. Valuno mengatakan membantu proses hukum bila diperlukan; belum ada yang divonis. Mantan CEO yang didakwa juga mantan pemimpin Medborgerlig Samling dan menyangkal melakukan kesalahan, menurut SvD; perkara Pengadilan Distrik Stockholm bernomor B 16085-26.",
+    "de": "Die schwedische Behörde für Wirtschaftskriminalität hat den früheren Vorstandschef von Valuno Group und einen früheren Finanzchef wegen schweren Insiderhandels angeklagt, berichten Kaupr und Kryptovalutaguiden. Laut Staatsanwaltschaft erfuhren beide am 3. Juli 2025, dass Finansinspektionen der Tochter QB Europe die MiCA-Lizenz verweigert hatte, und verkauften große Teile ihrer Aktien, bevor die Entscheidung am 4. Juli veröffentlicht wurde; danach fiel der Kurs um rund 33 Prozent. Valuno erklärt, das Verfahren bei Bedarf zu unterstützen; verurteilt ist niemand. Der angeklagte frühere Vorstandschef ist auch ehemaliger Parteivorsitzender von Medborgerlig Samling und bestreitet laut SvD ein Fehlverhalten; das Verfahren am Bezirksgericht Stockholm trägt das Aktenzeichen B 16085-26.",
+    "ja": "KauprとKryptovalutaguidenによると、スウェーデン経済犯罪庁はValuno Groupの元最高経営責任者と元財務責任者を重大なインサイダー取引の罪で起訴した。検察によると、2人は2025年7月3日にスウェーデン金融監督庁が子会社QB EuropeのMiCA申請を却下したことを知り、7月4日に決定が公表される前に保有株の大部分を売却した。公表後、株価は約33％下落した。Valunoは必要に応じて司法手続きに協力するとしている。有罪判決を受けた者はいない。 SvDによると、起訴された元最高経営責任者はMedborgerlig Samlingの元党首でもあり、不正を否定している。事件番号はストックホルム地方裁判所B 16085-26。",
+    "sw": "Mamlaka ya Uhalifu wa Kiuchumi ya Uswidi imemshtaki aliyekuwa mkurugenzi mtendaji wa Valuno Group na aliyekuwa mkurugenzi wa fedha kwa biashara ya ndani iliyokithiri, kwa mujibu wa Kaupr na Kryptovalutaguiden. Kwa mujibu wa mwendesha mashtaka, wawili hao walijua tarehe 3 Julai 2025 kwamba Finansinspektionen ilikataa ombi la leseni ya MiCA la kampuni tanzu QB Europe, na wakauza sehemu kubwa ya hisa zao kabla uamuzi haujatangazwa tarehe 4 Julai, baada ya hapo bei ya hisa ilishuka takriban asilimia 33. Valuno inasema inasaidia mchakato wa kisheria inapohitajika; hakuna aliyetiwa hatiani. Aliyekuwa mkuu mtendaji aliyeshtakiwa pia ni kiongozi wa zamani wa Medborgerlig Samling na anakanusha kosa, kulingana na SvD; kesi ni B 16085-26 katika Mahakama ya Wilaya ya Stockholm.",
+    "mr": "Kaupr आणि Kryptovalutaguiden नुसार, स्वीडनच्या आर्थिक गुन्हे प्राधिकरणाने Valuno Group चे माजी मुख्य कार्यकारी अधिकारी आणि एक माजी वित्त संचालक यांच्यावर गंभीर इनसायडर ट्रेडिंगचा आरोप ठेवला आहे. अभियोक्त्यांनुसार, दोघांना 3 जुलै 2025 रोजी समजले की Finansinspektionen ने उपकंपनी QB Europe चा MiCA परवाना अर्ज नाकारला आहे, आणि 4 जुलै रोजी निर्णय जाहीर होण्यापूर्वी त्यांनी आपल्या समभागांचा मोठा भाग विकला; त्यानंतर समभागाचा भाव सुमारे 33 टक्क्यांनी घसरला. आवश्यकतेनुसार कायदेशीर प्रक्रियेत सहकार्य करत असल्याचे Valuno सांगते; कोणालाही दोषी ठरवलेले नाही. SvD नुसार, आरोपित माजी मुख्य कार्यकारी Medborgerlig Samling चे माजी पक्षनेतेही आहेत आणि गैरकृत्य नाकारतात; स्टॉकहोम जिल्हा न्यायालयातील खटला B 16085-26 आहे।",
+    "fa": "به گزارش Kaupr و Kryptovalutaguiden، سازمان جرائم اقتصادی سوئد مدیرعامل سابق Valuno Group و یک مدیر مالی سابق را به معامله شدید با اطلاعات نهانی متهم کرده است. به گفته دادستان، این دو در ۳ ژوئیه ۲۰۲۵ مطلع شدند که Finansinspektionen درخواست مجوز MiCA شرکت تابعه QB Europe را رد کرده است و پیش از اعلام عمومی تصمیم در ۴ ژوئیه بخش بزرگی از سهام خود را فروختند؛ پس از آن قیمت سهم حدود ۳۳ درصد افت کرد. Valuno می‌گوید در صورت نیاز به روند قضایی کمک می‌کند؛ هیچ‌کس محکوم نشده است. به گزارش SvD، مدیرعامل سابق متهم همچنین رهبر پیشین Medborgerlig Samling بوده و تخلف را رد می‌کند؛ شماره پرونده در دادگاه ناحیه استکهلم B 16085-26 است.",
+    "uk": "Шведське управління з економічних злочинів висунуло колишньому генеральному директорові Valuno Group і колишньому фінансовому директорові обвинувачення в інсайдерській торгівлі за обтяжувальних обставин, повідомляють Kaupr і Kryptovalutaguiden. За версією обвинувачення, 3 липня 2025 року обидва дізналися, що Finansinspektionen відмовила дочірній компанії QB Europe в ліцензії MiCA, і продали значну частину своїх акцій до оприлюднення рішення 4 липня, після чого курс упав приблизно на 33%. Valuno заявляє, що за потреби сприяє судовому процесу; нікого не засуджено. Обвинувачений колишній гендиректор також раніше очолював Medborgerlig Samling і заперечує провину, повідомляє SvD; справу розглядає окружний суд Стокгольма під номером B 16085-26.",
+    "tr": "Kaupr ve Kryptovalutaguiden'e göre İsveç Ekonomik Suçlar Kurumu, Valuno Group'un eski CEO'su ile eski bir finans direktörünü ağır içeriden bilgi ticareti suçlamasıyla yargılanmak üzere iddianame düzenledi. Savcılığa göre ikili, 3 Temmuz 2025'te Finansinspektionen'in iştirak QB Europe'un MiCA lisans başvurusunu reddettiğini öğrendi ve karar 4 Temmuz'da açıklanmadan önce hisselerinin büyük kısmını sattı; açıklamanın ardından hisse fiyatı yaklaşık yüzde 33 düştü. Valuno, gerektiğinde yargı sürecine yardımcı olduğunu söylüyor; kimse mahkûm edilmedi. SvD'ye göre suçlanan eski CEO aynı zamanda Medborgerlig Samling'in eski parti lideri ve suçlamayı reddediyor; Stockholm Bölge Mahkemesindeki dosya B 16085-26 numarasını taşıyor.",
+    "se": "Ruoŧa ekonomalaš rihkuspolesdoaimmahat lea áššáskuhttán Valuno Gruppa ovddeš jođihanhoavdda ja ovddeš ruhtadanhoavdda čavgejuvvon siskkáldas gávppašeamis, muitala Kaupr ja Kryptovalutaguiden. Siviilaáittardeaddji dadjá ahte soai oaččuiga dieđu suoidnemánu 3. beaivvi 2025 ahte Finansinspekšuvdna lei biehttalan subsidiára QB Europe MiCA-liseanssa ja vuovdán stuora osiid sin ossosiin ovdal go mearrádus almmuhuvvui suoidnemánu 4. beaivvi, man maŋŋá ossosiid haddi gahčai sullii 33 proseantta. Valuno dadjá ahte sii veahkehit riekteproseassa go dasa lea dárbu; ii oktage leat dubmejuvvon. Áššáskuhttojuvvon ovddeš váldodirektevra lea maiddái Medborgerlig Samling ovddeš bellodatjođiheaddji ja biehttaladdá sivalašvuođa SvD mielde; ášši lea Stockholms tingsrätt B 16085-26."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "links": [
+    {
+     "url": "https://www.ekobrottsmyndigheten.se/om-oss/press/aktuellt/nyheter/tva-tidigare-chefer-atalas-for-grova-insiderbrott/",
+     "label": "Ekobrottsmyndigheten: charges, 2 November 2026; case B 16085-26"
+    }
+   ]
   },
   {
    "id": "6d1e70338edd",
