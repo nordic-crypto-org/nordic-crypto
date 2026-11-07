@@ -914,6 +914,13 @@
      "examples": [
       "researcher 28.10"
      ]
+    },
+    "official_verified": {
+     "type": "boolean",
+     "description": "True when the date, a clock time and the location were read from the organiser or the venue. The nightly fetch inserts the row into D1 only then.",
+     "examples": [
+      true
+     ]
     }
    },
    "additionalProperties": false,

@@ -339,7 +339,7 @@ def apply_schema(store):
 
 
 def schema_version(store):
-    """schema_meta version. 3 after 0003_story_images.sql. Cached on the store object."""
+    """schema_meta version. 4 after 0004_event_map.sql. Cached on the store object."""
     if not hasattr(store, "_nc_version"):
         try:
             row = one(store, "SELECT value FROM schema_meta WHERE key = 'version'")
@@ -623,9 +623,29 @@ WHERE id = ?
 """
 
 
+def _map_url(payload):
+    url = payload.get("map_url") if isinstance(payload, dict) else None
+    if isinstance(url, str) and url.startswith("https://") and " " not in url:
+        return url
+    return None
+
+
 def _event_extra_columns(store, payload, origin=None):
-    """Fill the version-2 query columns. A no-op until 0002_events.sql is applied."""
+    """Fill the query columns. A no-op until 0002_events.sql is applied.
+    map_url is written once 0004_event_map.sql has been applied."""
     if schema_version(store) < 2:
+        return
+    if schema_version(store) >= 4:
+        if origin:
+            store.execute(
+                "UPDATE events SET end_at = ?, city = ?, origin = ?, map_url = ? WHERE id = ?",
+                (payload.get("end"), payload.get("city"), origin, _map_url(payload), payload["id"]),
+            )
+        else:
+            store.execute(
+                "UPDATE events SET end_at = ?, city = ?, map_url = ? WHERE id = ?",
+                (payload.get("end"), payload.get("city"), _map_url(payload), payload["id"]),
+            )
         return
     if origin:
         store.execute("UPDATE events SET end_at = ?, city = ?, origin = ? WHERE id = ?",
@@ -797,10 +817,58 @@ def sync_story(store, item, at, actor="fetch"):
     return "updated"
 
 
-def sync_event(store, payload, at, actor="fetch", review=None):
+def find_event_by_dedupe(store, payload, skip_id=None):
+    """The row with the same title, calendar date and city, if there is one."""
+    from tools.event_verify import dedupe_key
+    key = dedupe_key(payload)
+    if not key[0] or not key[1]:
+        return None
+    for row in store.query("SELECT * FROM events"):
+        if row.get("item_status") == "merged" or (skip_id and row.get("id") == skip_id):
+            continue
+        try:
+            other = json.loads(row["payload"])
+        except (TypeError, json.JSONDecodeError):
+            continue
+        if dedupe_key(other) == key:
+            return row
+    return None
+
+
+def find_moved_event(store, title_part, old_day):
+    """A row whose title contains title_part and whose start is still old_day."""
+    part = (title_part or "").casefold()
+    if not part or not old_day:
+        return None
+    for row in store.query("SELECT * FROM events"):
+        if row.get("item_status") == "merged":
+            continue
+        try:
+            other = json.loads(row["payload"])
+        except (TypeError, json.JSONDecodeError):
+            continue
+        title = (other.get("title") or "").casefold()
+        if part in title and str(other.get("start") or "").startswith(old_day):
+            return row
+    return None
+
+
+def sync_event(store, payload, at, actor="fetch", review=None, require_verified=False):
     if not isinstance(payload, dict) or not payload.get("id"):
         raise D1Error("an event is missing id")
+    from tools.event_verify import redact_event, verified_facts
+    payload = redact_event(payload)
     existing = one(store, "SELECT * FROM events WHERE id = ?", (payload["id"],))
+    if not existing:
+        match = find_event_by_dedupe(store, payload)
+        if match:
+            existing = match
+            payload = dict(payload)
+            payload["id"] = match["id"]
+    if require_verified and not verified_facts(payload):
+        # A new or still-pending row is not written. An approved row is left as it is.
+        if not existing or existing.get("review_status") == "pending":
+            return "unverified"
     if review is None:
         review = "rejected" if payload.get("status") == "rejected" else "pending"
     if not existing:
@@ -839,6 +907,59 @@ def sync_event(store, payload, at, actor="fetch", review=None):
     _event_extra_columns(store, payload)
     audit(store, "event", payload["id"], "fetch", actor, at, "updated")
     return "updated"
+
+
+def seed_events(store, root, seed_ids, moved=None, at=None, actor="seed"):
+    """Upsert verified rows from data/events.json. An approved row is updated.
+    Same title, date and city keeps the existing id. moved is (title fragment, old day)
+    for an event whose date changed, so the old row is updated instead of copied."""
+    from tools.event_verify import redact_event, verified_facts
+    at = at or now_iso()
+    doc = load_json(os.path.join(root, "data", "events.json"), {"events": []}) or {}
+    by_id = {row.get("id"): row for row in (doc.get("events") or []) if isinstance(row, dict) and row.get("id")}
+    title_part, old_day = (moved or ("", ""))
+    stats = {"inserted": 0, "updated": 0, "skipped": 0}
+    for eid in seed_ids:
+        raw = by_id.get(eid)
+        if not raw:
+            raise D1Error(f"seed event {eid} is not in data/events.json")
+        payload = redact_event(dict(raw))
+        payload.pop("tip_only", None)
+        payload["status"] = "published"
+        if not verified_facts(payload):
+            raise D1Error(f"refusing to seed {eid}: date, time or location is not verified")
+        existing = one(store, "SELECT * FROM events WHERE id = ?", (payload["id"],))
+        if not existing:
+            existing = find_event_by_dedupe(store, payload)
+        if not existing and title_part and title_part.casefold() in (payload.get("title") or "").casefold():
+            existing = find_moved_event(store, title_part, old_day)
+        if existing:
+            payload["id"] = existing["id"]
+        row = _event_row(
+            payload, "approved", at, existing["created_at"] if existing else at,
+            actor, at, None,
+        )
+        if existing and existing.get("content_hash") == row["content_hash"] and existing.get("review_status") == "approved":
+            stats["skipped"] += 1
+            continue
+        if existing:
+            store.execute(
+                _EVENT_UPDATE,
+                (
+                    row["url"], row["title"], row["country"], row["start_at"], row["item_status"],
+                    row["review_status"], row["reviewed_by"], row["reviewed_at"], row["review_note"],
+                    row["payload"], row["content_hash"], row["updated_at"], row["id"],
+                ),
+            )
+            _event_extra_columns(store, payload)
+            audit(store, "event", payload["id"], "seed", actor, at, "updated")
+            stats["updated"] += 1
+        else:
+            _insert_event(store, row)
+            _event_extra_columns(store, payload, "manual")
+            audit(store, "event", payload["id"], "seed", actor, at, "inserted")
+            stats["inserted"] += 1
+    return stats
 
 
 # --- event translations, redirects and merged duplicates (schema version 2) ---
@@ -1027,7 +1148,7 @@ def sync_documents(store, root, at):
     return results
 
 
-def sync_root(store, root, at=None, actor="fetch"):
+def sync_root(store, root, at=None, actor="fetch", require_verified=False):
     """Push the working news and events files. Does not read private terms."""
     at = at or now_iso()
     news = load_json(os.path.join(root, "data", "news.json"), {"items": []}) or {}
@@ -1035,19 +1156,19 @@ def sync_root(store, root, at=None, actor="fetch"):
     stories = {"inserted": 0, "updated": 0, "skipped": 0, "kept": 0, "coverage": 0}
     for item in news.get("items") or []:
         stories[sync_story(store, item, at, actor)] += 1
-    event_stats = {"inserted": 0, "updated": 0, "skipped": 0, "kept": 0}
+    event_stats = {"inserted": 0, "updated": 0, "skipped": 0, "kept": 0, "unverified": 0}
     records = load_event_records(root)
     by_id = {payload["id"]: (payload, review) for payload, review in records}
     seen = set()
     for row in events.get("events") or []:
         payload, review = by_id.get(row.get("id"), (row, None))
-        event_stats[sync_event(store, payload, at, actor, review=review)] += 1
+        event_stats[sync_event(store, payload, at, actor, review=review, require_verified=require_verified)] += 1
         if row.get("id"):
             seen.add(row["id"])
     for payload, review in records:
         if payload["id"] in seen:
             continue
-        event_stats[sync_event(store, payload, at, actor, review=review)] += 1
+        event_stats[sync_event(store, payload, at, actor, review=review, require_verified=require_verified)] += 1
     sidecars = _event_sidecars(store, root, at, actor)  # dedupe redirects from events.py: mark merged, carry approvals
     documents = sync_documents(store, root, at)
     return {"stories": stories, "events": event_stats, "documents": documents, **{"event_" + k: v for k, v in sidecars.items()}}

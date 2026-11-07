@@ -452,6 +452,9 @@ class Feed:
             "html_urls": {lang: self.abs(("" if lang == "en" else lang + "/") + f"calendar/{eid}/") for lang in i18n.ALL_LANGS},
             "api_url": self.abs(f"api/v1/events/{eid}.json"),
         }
+        murl = raw.get("map_url")
+        if isinstance(murl, str) and murl.startswith("https://"):
+            out["map_url"] = murl
         if raw.get("backfill"):
             out["backfill"] = True
             out["source"] = "backfill"
@@ -481,6 +484,14 @@ class Feed:
         ids = [str(item) for item in (raw.get("talk_ids") or []) if item]
         if ids:
             out["talk_ids"] = ids
+        from tools.event_verify import redact
+        if isinstance(out.get("note"), str):
+            out["note"] = redact(out["note"]) or None
+        desc = out.get("description")
+        if isinstance(desc, dict) and isinstance(desc.get("text"), str):
+            desc = dict(desc)
+            desc["text"] = redact(desc["text"])
+            out["description"] = desc
         if self.preview:
             out["status"] = raw.get("status")
         return out
@@ -1982,6 +1993,7 @@ def schemas():
             "phase_end": {"type": "string", "nullable": True, "description": "End of the ongoing window. The stored end, or an assumed end when the row has none: 23:59 the same local day when the start is midnight, otherwise start plus 3 hours. The end field itself is never invented."},
             "place_source": {"type": "object", "nullable": True, "description": "Credit for the venue or online flag: name, url, retrieved. Omitted when the place cannot be credited."},
             "attendees": {"type": "object", "nullable": True, "description": "Registered participant count with source_name, source_url and retrieved. Omitted when the source did not state a count. Capacity is not a count."},
+            "map_url": {"type": "string", "nullable": True, "description": "Verified map link. Omitted when the venue address was not checked."},
             "html_url": {"type": "string", "description": "This event's page on the site, /calendar/<id>/."},
             "html_urls": {"type": "object", "description": "The same page in every site language. English is at the root. Other codes are /<code>/calendar/<id>/."},
             "api_url": {"type": "string"},

@@ -34,12 +34,12 @@ class EventsD1(unittest.TestCase):
         if redirects is not None: d1_store.save_json(os.path.join(r, "data", "event_redirects.json"), redirects)
         return r
 
-    def test_schema_is_version_3_and_applies_twice(self):
-        self.assertEqual(d1_store.schema_version(self.store), 3)
+    def test_schema_is_version_4_and_applies_twice(self):
+        self.assertEqual(d1_store.schema_version(self.store), 4)
         d1_store.apply_schema(self.store)
-        self.assertEqual(d1_store.schema_version(self.store), 3)
+        self.assertEqual(d1_store.schema_version(self.store), 4)
         cols = {r["name"] for r in self.store.query("PRAGMA table_info(events)")}
-        self.assertTrue({"end_at", "city", "merged_into", "origin", "submitted_by"} <= cols)
+        self.assertTrue({"end_at", "city", "merged_into", "origin", "submitted_by", "map_url"} <= cols)
         tables = {r["name"] for r in self.store.query("SELECT name FROM sqlite_master WHERE type='table'")}
         self.assertTrue({"event_translations", "event_redirects", "story_images", "story_image_styles"} <= tables)
         styles = self.store.query("SELECT id FROM story_image_styles")

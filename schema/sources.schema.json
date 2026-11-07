@@ -567,6 +567,75 @@
      "examples": [
       true
      ]
+    },
+    "event_title": {
+     "type": "string",
+     "description": "Title used only when the official page shows the date, time and place.",
+     "examples": [
+      "Bitcoin Suisse Europe launches in the Nordics"
+     ]
+    },
+    "event_start": {
+     "type": "string",
+     "description": "Local start, ISO 8601. Kept only when that clock time is on the page.",
+     "examples": [
+      "2026-11-19T17:30:00"
+     ]
+    },
+    "event_end": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Local end, when the page states one.",
+     "examples": [
+      "2026-11-19T19:15:00"
+     ]
+    },
+    "event_place": {
+     "type": "string",
+     "description": "Venue. A street from this string must appear on the page.",
+     "examples": [
+      "Arsenalsgatan 6, Stockholm"
+     ]
+    },
+    "online": {
+     "type": "boolean",
+     "description": "True when the page says the event is online.",
+     "examples": [
+      false
+     ]
+    },
+    "paid": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "True, false, or null when the page does not say.",
+     "examples": [
+      false
+     ]
+    },
+    "language": {
+     "type": "string",
+     "description": "Language code when the organiser states it.",
+     "examples": [
+      "sv"
+     ]
+    },
+    "must_include": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Phrases that must appear on the page before the event is kept.",
+     "examples": [
+      [
+       "19 November 2026",
+       "17:30",
+       "Arsenalsgatan 6"
+      ]
+     ]
     }
    },
    "additionalProperties": false,

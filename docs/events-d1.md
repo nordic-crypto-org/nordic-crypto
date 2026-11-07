@@ -13,6 +13,10 @@ Data flow:
 - The public `/api/v1` is generated from the same files, so it is unchanged.
 - D1 is the source of truth. `tools/d1_import.py` inserts ids D1 does not have and may settle a still-pending row from a git decision; it never overwrites an existing event payload. `restore` replaces the checkout's copy of each event with the D1 row before the fetch.
 - Add or change an event without a PR: `python3 tools/d1_review.py add-event --json event.json [--approve]` or `update-event --id ID --set FIELD=VALUE`. A new row gets the same id `events.py` would give it (url, start date, title), so a later fetch lands on it.
+- `map_url` is optional. It is stored in the payload and, after `0004_event_map.sql`, in the `map_url` column. Leave it out when the venue address was not checked on the venue's own site.
+- The nightly push (`tools/d1_sync.py push`) inserts a detected event only when the date, a clock time and the location were read from the organiser or the venue. Same title, date and city updates the existing row. An email address or a phone number is removed first. `official-page`, `press-release` and `linkedin-public` sources are read that way. A LinkedIn sign-in wall is skipped.
+- The content Worker serves `GET /api/v1/events.json` and `GET /api/v1/events.ics` from D1. Calendar pages in every language load that JSON and fall back to the static page and `/api/v1/events.json`. The build also writes `/calendar.ics` and `/api/v1/events.ics` from the same rows, so the file is still there when the Worker cannot be reached.
+- Verified rows that should update an existing event (including the 4 November Impact Onchain row): `python3 tools/d1_seed_events.py`.
 
 Apply and import (from the repo root, with `CLOUDFLARE_API_TOKEN`, `CF_ACCOUNT_ID`, `CLOUDFLARE_ACCOUNT_ID` and `CF_D1_DATABASE_ID` exported):
 

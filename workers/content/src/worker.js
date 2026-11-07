@@ -1,10 +1,12 @@
+import { eventsToIcs, redactText } from "./ics.js";
+
 // Nordic Crypto story and event review, and a read-only copy of the public API.
 //
 // The static site on GitHub Pages stays the public site. This Worker is optional.
 // GET  /api/v1/news.json, /api/v1/news/:id.json
 //      each story includes image.url when a generated picture is stored
 // GET  /story-images/:id.png   the picture itself, from the R2 binding STORY_IMAGES
-// GET  /api/v1/events.json, /api/v1/events/:id.json
+// GET  /api/v1/events.json, /api/v1/events/:id.json, /api/v1/events.ics
 // GET  /api/v1/sources.json
 // GET  /api/review/pending          Authorization: Bearer EDITOR_TOKEN
 // POST /api/review                  the same token; approve or reject in D1
@@ -20,7 +22,7 @@ export const PUBLIC_STORY_KEYS = [
 export const PUBLIC_EVENT_KEYS = [
   "id", "title", "title_orig", "start", "end", "place", "city", "country", "online",
   "organiser", "url", "source", "source_url", "paid", "sponsored", "note", "note_i18n",
-  "description", "status",
+  "description", "status", "map_url",
 ];
 
 const PUBLIC_CACHE = "public, max-age=60, s-maxage=60, stale-while-revalidate=300";
@@ -66,6 +68,11 @@ export function publicEvent(payload, reviewStatus) {
     if (key === "status") continue;
     if (payload[key] !== undefined && payload[key] !== null) out[key] = payload[key];
   }
+  if (typeof out.note === "string") out.note = redactText(out.note);
+  if (out.description && typeof out.description === "object" && typeof out.description.text === "string") {
+    out.description = { ...out.description, text: redactText(out.description.text) };
+  }
+  if (typeof out.map_url !== "string" || !out.map_url.startsWith("https://")) delete out.map_url;
   return out;
 }
 
@@ -321,6 +328,17 @@ export async function handle(request, env) {
     const image = publicImage(await imageFor(db, storyId), url.origin, pub.title_en || pub.title);
     if (image) pub.image = image;
     return json(pub, 200, { cache: PUBLIC_CACHE });
+  }
+  if (request.method === "GET" && (url.pathname === "/api/v1/events.ics" || url.pathname === "/calendar.ics")) {
+    const body = eventsToIcs(await listEvents(db));
+    return new Response(body, {
+      status: 200,
+      headers: {
+        "content-type": "text/calendar; charset=utf-8",
+        "access-control-allow-origin": "*",
+        "cache-control": PUBLIC_CACHE,
+      },
+    });
   }
   if (request.method === "GET" && url.pathname === "/api/v1/events.json") {
     return json({ events: await listEvents(db) }, 200, { cache: PUBLIC_CACHE });
