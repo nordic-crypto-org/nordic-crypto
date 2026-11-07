@@ -1,4 +1,5 @@
-# One illustration per published story. The PNG goes to R2. The row, the style
+# One illustration per story first published after 2026-11-07T08:16:00Z.
+# Older stories are not backfilled. The PNG goes to R2. The row, the style
 # library and the recent-style list go to the existing D1 database
 # nordic-crypto-content. Nothing is committed.
 # The bucket is CF_R2_STORY_BUCKET (nordic-crypto-story-images). It is not the
@@ -9,10 +10,6 @@ name: Story illustrations
 on:
   workflow_dispatch:
     inputs:
-      days:
-        description: "Published stories from the last N days"
-        type: string
-        default: "7"
       max:
         description: "Most images to generate in this run"
         type: string
@@ -46,6 +43,5 @@ jobs:
           CF_D1_DATABASE_ID: ${{ vars.CF_D1_DATABASE_ID }}
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
           CF_R2_STORY_BUCKET: ${{ vars.CF_R2_STORY_BUCKET }}
-          DAYS: ${{ inputs.days }}
           MAX: ${{ inputs.max }}
-        run: python3 tools/story_images.py generate --days "${DAYS:-7}" --max "${MAX:-40}"
+        run: python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z --max "${MAX:-40}"

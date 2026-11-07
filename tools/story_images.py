@@ -16,8 +16,13 @@ A story that already has kind=ai is not generated again. A headline card
 the token is present. Pages, og:image, the X post and the video read the
 public URL. They do not call the model.
 
-  python3 tools/story_images.py generate --days 7
-  python3 tools/story_images.py generate --days 7 --max 40
+Only stories first published after 2026-11-07T08:16:00Z are eligible.
+Older stories are not backfilled. A requested cutoff earlier than that
+instant is raised to it. A story with no stored picture keeps the brand
+og:image on the page.
+
+  python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z
+  python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z --max 40
 
 Exits 0 without writing when D1 or the story-image bucket is not configured.
 Does not create the bucket or the database.
@@ -37,6 +42,9 @@ DEFAULT_ORIGIN = "https://api.nordiccrypto.no"
 # Intended bucket. Not created by this script. Not the backup bucket.
 DEFAULT_BUCKET = "nordic-crypto-story-images"
 BUCKET_ENV = "CF_R2_STORY_BUCKET"
+# Owner decision, 7 Nov 2026. Stories first published at or before this
+# instant never get an image, even if a caller asks for an earlier cutoff.
+PUBLISHED_AFTER_ISO = "2026-11-07T08:16:00Z"
 ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{0,80}$")
 WIDTH, HEIGHT = painter.W, painter.H
 
@@ -231,9 +239,33 @@ def _parse_published(value):
     return parsed
 
 
-def due_stories(items, now, days):
-    """Published stories in the window, oldest first. Pending and rejected stay out."""
-    cutoff = now - dt.timedelta(days=days)
+def resolve_cutoff(value):
+    """The earliest publication time this run may illustrate.
+
+    None when value is not a time. A time before PUBLISHED_AFTER_ISO is
+    raised to that instant, so an old --days window cannot be reintroduced.
+    """
+    if isinstance(value, dt.datetime):
+        parsed = value if value.tzinfo else value.replace(tzinfo=dt.timezone.utc)
+    else:
+        parsed = _parse_published(value)
+    floor = _parse_published(PUBLISHED_AFTER_ISO)
+    if parsed is None or floor is None:
+        return None
+    if parsed < floor:
+        log(f"cutoff {value} is before {PUBLISHED_AFTER_ISO}; older stories are not backfilled")
+        return floor
+    return parsed
+
+
+def due_stories(items, published_after):
+    """Published stories strictly after published_after, oldest first.
+
+    Pending and rejected stay out. A story published at the cutoff stays out.
+    """
+    floor = published_after
+    if floor.tzinfo is None:
+        floor = floor.replace(tzinfo=dt.timezone.utc)
     chosen = []
     for item in items or []:
         if item.get("status") not in ("published", "owner"):
@@ -243,7 +275,7 @@ def due_stories(items, now, days):
         if not (item.get("title") or item.get("title_en")):
             continue
         published = _parse_published(item.get("published"))
-        if published is None or published < cutoff:
+        if published is None or published <= floor:
             continue
         chosen.append(item)
     chosen.sort(key=lambda item: (_parse_published(item.get("published")), item["id"]))
@@ -292,18 +324,22 @@ def _needs_image(existing, ai_ready):
     return bool(ai_ready)
 
 
-def generate_missing(items, store, *, now, days=7, limit=40, rng=None, generator=None, uploader=None):
-    """Generate and store images for due stories that do not already have an AI image.
+def generate_missing(items, store, *, now, published_after=None, limit=40, rng=None, generator=None, uploader=None):
+    """Generate and store images for stories first published after the cutoff.
 
     Returns a dict of counts. uploader(path, key) stores the PNG. The default
     uploader is the R2 put. generator(prompt) -> bytes, as in x_post_image.
+    published_after earlier than PUBLISHED_AFTER_ISO is raised to that instant.
     """
     rng = rng or random.Random()
     styles = _styles(store)
     recent = _recent(store)
     ai_ready = generator is not None or painter.ai_configured()
     made = skipped = failed = upgraded = 0
-    todo = due_stories(items, now, days)[: max(0, limit)]
+    cutoff = resolve_cutoff(published_after or PUBLISHED_AFTER_ISO)
+    if cutoff is None:
+        raise ValueError("published-after is not a time")
+    todo = due_stories(items, cutoff)[: max(0, limit)]
     for item in todo:
         sid = item["id"]
         existing = image_row(store, sid)
@@ -358,11 +394,16 @@ def generate_missing(items, store, *, now, days=7, limit=40, rng=None, generator
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
-    gen = sub.add_parser("generate", help="store a missing image for each recent published story")
-    gen.add_argument("--days", type=int, default=7)
+    gen = sub.add_parser("generate", help="store a missing image for each story published after the cutoff")
+    gen.add_argument("--published-after", default=PUBLISHED_AFTER_ISO,
+                     help="only stories first published after this time (never earlier than 2026-11-07T08:16:00Z)")
     gen.add_argument("--max", type=int, default=40)
     gen.add_argument("--news", default="")
     a = ap.parse_args(argv)
+    cutoff = resolve_cutoff(a.published_after)
+    if cutoff is None:
+        log(f"published-after is not a time. Use {PUBLISHED_AFTER_ISO} or later.")
+        return 2
     gaps = storage_gaps()
     if gaps:
         log("not stored: " + ", ".join(gaps) + " missing. No bucket was created. "
@@ -373,7 +414,7 @@ def main(argv=None):
     store = open_store()
     now = dt.datetime.now(dt.timezone.utc)
     items = load_news(a.news or None)
-    counts = generate_missing(items, store, now=now, days=a.days, limit=a.max)
+    counts = generate_missing(items, store, now=now, published_after=cutoff.isoformat(), limit=a.max)
     log(" ".join(f"{k}={v}" for k, v in counts.items()))
     return 0 if counts["failed"] == 0 else 1
 

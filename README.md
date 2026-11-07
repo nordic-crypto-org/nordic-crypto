@@ -272,9 +272,9 @@ gh variable set CF_R2_BUCKET --body nordic-crypto-content-backup
 
 ### Story illustrations
 
-Each published story can have one illustration, generated once from the headline and summary (`tools/story_images.py`, Cloudflare Workers AI `flux-1-schnell` at 1280×720). «Nordic Crypto» is drawn in the top-right. The PNG is not committed. It is an object in R2. The story id, object key, style, prompt and created time, plus the style library and the recent-style list, are rows in the existing D1 database `nordic-crypto-content` (`workers/content/migrations/0003_story_images.sql`).
+A story first published after 2026-11-07T08:16:00Z can have one illustration, generated once from that story's headline and summary (`tools/story_images.py`, Cloudflare Workers AI `flux-1-schnell` at 1280×720). «Nordic Crypto» is drawn in the top-right. Older stories are not backfilled. The PNG is not committed. It is an object in R2. The story id, object key, style, prompt and created time, plus the style library and the recent-style list, are rows in the existing D1 database `nordic-crypto-content` (`workers/content/migrations/0003_story_images.sql`).
 
-The content Worker serves the file at `https://api.nordiccrypto.no/story-images/<id>.png`. The story page uses that URL as the hero and as `og:image` in every language. `/api/v1/` includes `image.url`. The X digest and the newsreel (`newsletter/issues/005-video/render.py`, `tools/newsreel_still.py`) read the same URL. A story with no row keeps the brand image and the newsreel's existing art. A missing Workers AI token stores a headline card (`kind=fallback`) and replaces it once when the token is set. A stored `ai` row is not generated again.
+The content Worker serves the file at `https://api.nordiccrypto.no/story-images/<id>.png`. The story page uses that URL as the hero and as `og:image` in every language. `/api/v1/` includes `image.url`. The X digest and the newsreel (`newsletter/issues/005-video/render.py`, `tools/newsreel_still.py`) read the same URL. A story with no row keeps the brand image (`assets/brand/og-image.png`) and the newsreel's existing art. A missing Workers AI token stores a headline card (`kind=fallback`) and replaces it once when the token is set. A stored `ai` row is not generated again.
 
 The private backup bucket `CF_R2_BUCKET` (`nordic-crypto-content-backup`) is not used for these pictures. The story-image bucket is separate and is not created by CI.
 
@@ -282,22 +282,21 @@ The private backup bucket `CF_R2_BUCKET` (`nordic-crypto-content-backup`) is not
 |---|---|---|
 | `CF_R2_STORY_BUCKET` | variable | `nordic-crypto-story-images`. Unset: nothing is stored. |
 | `CF_AI_TOKEN` | secret | Workers AI. Already used for translation. Without it, the headline card is stored. |
-| `CLOUDFLARE_API_TOKEN`, `CF_ACCOUNT_ID`, `CF_D1_DATABASE_ID` | existing | The content database. The token also needs Account → Workers R2 Storage → Edit. |
+| `CLOUDFLARE_API_TOKEN`, `CF_ACCOUNT_ID`, `CF_D1_DATABASE_ID` | existing | The content database. The token also needs Account → Workers R2 Storage → Edit, Account → Workers Scripts → Edit, and on the zone nordiccrypto.no: Workers Routes → Edit and DNS → Edit. |
 
 R2's free tier covers this (10 GB, no egress fee, a million writes a month). flux-1-schnell is about 58 neurons for a 1024×1024 image at 4 steps on the published per-tile and per-step rates, or about 173 neurons if steps are billed per tile. Either way a few stories a day sit inside the 10,000 neurons included each day. Above that, Workers Paid is $0.011 per 1,000 neurons, still under a cent a day at the current pace of about three published stories.
 
-Create the bucket once (do not point `CF_R2_STORY_BUCKET` at the backup bucket), apply the migration, and deploy the Worker so the URL answers:
+Create the bucket once (do not point `CF_R2_STORY_BUCKET` at the backup bucket), apply the migration, and deploy the Worker so the URL answers. Run **Set up story images** (`.github/workflows/story-images-setup.yml`) from the Actions tab. It is manual, idempotent, and uses the existing `CLOUDFLARE_API_TOKEN` and `CF_ACCOUNT_ID`. It creates `nordic-crypto-story-images` when the bucket is missing, applies D1 migrations to `nordic-crypto-content` (`--remote`), and deploys `workers/content`. A missing token permission fails the job and names that permission (for example Workers R2 Storage Edit). The token is not printed.
+
+That deploy attaches the custom domain `api.nordiccrypto.no`. Cloudflare creates the proxied DNS record. The zone `nordiccrypto.no` is already on Cloudflare; the name was NXDOMAIN because the live Worker was last deployed before this route. Do not add a CNAME for `api` first. If the zone is on a different Cloudflare account than the Worker, the deploy fails and says so, and the name stays unresolved until the zone is on that account. A resolver that cached NXDOMAIN can keep the empty answer for up to 30 minutes.
+
+Then set the variable (the workflow does not):
 
 ```bash
-cd workers/content
-npx wrangler r2 bucket create nordic-crypto-story-images
-npx wrangler d1 migrations apply nordic-crypto-content --remote
-npx wrangler deploy
-cd ../..
 gh variable set CF_R2_STORY_BUCKET --body nordic-crypto-story-images
 ```
 
-`python3 tools/story_images.py generate --days 7` then fills the last week. Deploy and `d1-publish` run the same command before the site build. `.github/workflows/story-images.yml` is the manual run. None of them commit the pictures.
+`python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z` stores pictures for stories first published after that instant. An earlier cutoff is raised to it. Deploy and `d1-publish` run the same command before the site build. `.github/workflows/story-images.yml` is the manual run. None of them commit the pictures.
 
 The Worker also serves `GET /api/v1/news.json`, `/api/v1/events.json` and `/api/v1/sources.json` from approved rows. The static files on GitHub Pages remain the ones the site and the apps use. Test: `python3 -m unittest tests.test_d1_store` and `node --test workers/content/test/worker.test.js`.
 

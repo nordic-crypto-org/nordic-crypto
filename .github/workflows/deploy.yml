@@ -96,8 +96,9 @@ jobs:
         run: python3 tools/d1_import.py
 
       - name: Story illustrations
-        # One picture per recent published story, in R2 and D1. Exits 0 when the
-        # bucket variable is unset. Does not create the bucket and does not commit.
+        # One picture per story first published after 2026-11-07T08:16:00Z.
+        # Older stories are not backfilled. Exits 0 when the bucket variable
+        # is unset. Does not create the bucket and does not commit.
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
@@ -105,7 +106,7 @@ jobs:
           CF_D1_DATABASE_ID: ${{ vars.CF_D1_DATABASE_ID }}
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
           CF_R2_STORY_BUCKET: ${{ vars.CF_R2_STORY_BUCKET }}
-        run: python3 tools/story_images.py generate --days 7
+        run: python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z
 
       - name: Public build
         id: build

@@ -1084,12 +1084,25 @@ def story_og_meta(i, title, desc):
         "image_height": str(int(rec.get("height") or 720)),
     }
 def story_share(i, title, desc):
-    """Stored illustration when this story has one. Otherwise the headline card from the build."""
+    """Stored illustration when this story has one. Otherwise the brand og:image."""
     og = story_og_meta(i, title, desc)
     if og:
         return og, og.get("image")
-    og = story_og(i, title, desc)
-    return og, og.get("image")
+    brand = f"{BASE}assets/brand/og-image.png"
+    text = (title or "").strip()
+    if len(text) > 200:
+        cut = text[:199].rsplit(" ", 1)[0].rstrip()
+        text = (cut or text[:199].rstrip()) + "…"
+    summary = " ".join((desc or (i or {}).get("summary") or title or "").split())
+    if len(summary) > 300:
+        cut = summary[:299].rsplit(" ", 1)[0].rstrip(".,;:–- ")
+        summary = (cut or summary[:299].rstrip()) + "…"
+    og = {
+        "title": text or title, "description": summary or title, "type": "article",
+        "image": brand, "image_alt": "Nordic Crypto",
+        "image_width": "1200", "image_height": "630",
+    }
+    return og, brand
 
 def build():
     global LANG, D1_EVENTS
@@ -3159,7 +3172,8 @@ def event_og(e, heading, when, place, text):
     if ok: og["image"] = BASE + rel
     return og
 def story_og(item, heading, description=""):
-    """Per-story link preview: headline card with «Nordic Crypto» top-right; licensed illustration when present."""
+    """Headline card at stories/<id>/og.png. Story pages do not call this.
+    A story with no stored illustration uses the brand og:image (story_share)."""
     global _OG_CARD_WARNED
     title = (heading or "").strip()
     if len(title) > 200:

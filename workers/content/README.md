@@ -46,6 +46,8 @@ gh variable set CF_D1_DATABASE_ID --body "$CF_D1_DATABASE_ID"
 gh variable set NC_DATA_SOURCE --body d1
 ```
 
+Story images (the R2 bucket, these migrations, and this deploy) can be done from Actions: **Set up story images** (`.github/workflows/story-images-setup.yml`). It does not set `CF_R2_STORY_BUCKET`.
+
 Review from the repo root, which shells out to `wrangler d1 execute`:
 
 ```bash
