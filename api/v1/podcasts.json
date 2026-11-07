@@ -1,11 +1,52 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-06T21:15:39+00:00",
+ "generated_at": "2026-11-07T03:48:40+00:00",
  "preview": false,
- "updated": "2026-11-06T03:24:06+00:00",
+ "updated": "2026-11-07T03:19:22+00:00",
  "count": 43,
  "podcasts": [
+  {
+   "id": "bitcoinpodden",
+   "name": "Bitcoinpodden",
+   "country": "SE",
+   "language": "sv",
+   "feed": "https://anchor.fm/s/3cb12d94/podcast/rss",
+   "site": "https://news.trijo.co",
+   "flags": [
+    "exchange-sponsored"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "135. Det största kryptohacket någonsin",
+     "date": "2026-11-06",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/135--Det-strsta-kryptohacket-ngonsin-e3rshmm"
+    },
+    {
+     "title": "134. Ska Satoshis bitcoin frysas?",
+     "date": "2026-10-23",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/134--Ska-Satoshis-bitcoin-frysas-e3qtbji"
+    },
+    {
+     "title": "133. Bitcoin och ett längre liv – med Ioni Appelberg",
+     "date": "2026-10-09",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/133--Bitcoin-och-ett-lngre-liv--med-Ioni-Appelberg-e3q5f7t"
+    },
+    {
+     "title": "132. H100 - Nordens största Bitcoin-treasury bolag",
+     "date": "2026-09-25",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/132--H100---Nordens-strsta-Bitcoin-treasury-bolag-e3pco50"
+    },
+    {
+     "title": "131. Vad är pengar?",
+     "date": "2026-09-11",
+     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/131--Vad-r-pengar-e3olgvq"
+    }
+   ],
+   "added_at": "2026-10-16",
+   "html_url": "https://nordiccrypto.no/podcasts/#bitcoinpodden"
+  },
   {
    "id": "en-og-tyve-tanker",
    "name": "En og tyve tanker / Twenty One Thoughts",
@@ -247,47 +288,6 @@
    ],
    "added_at": "2026-10-16",
    "html_url": "https://nordiccrypto.no/podcasts/#bitcoinsnakk"
-  },
-  {
-   "id": "bitcoinpodden",
-   "name": "Bitcoinpodden",
-   "country": "SE",
-   "language": "sv",
-   "feed": "https://anchor.fm/s/3cb12d94/podcast/rss",
-   "site": "https://news.trijo.co",
-   "flags": [
-    "exchange-sponsored"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "134. Ska Satoshis bitcoin frysas?",
-     "date": "2026-10-23",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/134--Ska-Satoshis-bitcoin-frysas-e3qtbji"
-    },
-    {
-     "title": "133. Bitcoin och ett längre liv – med Ioni Appelberg",
-     "date": "2026-10-09",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/133--Bitcoin-och-ett-lngre-liv--med-Ioni-Appelberg-e3q5f7t"
-    },
-    {
-     "title": "132. H100 - Nordens största Bitcoin-treasury bolag",
-     "date": "2026-09-25",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/132--H100---Nordens-strsta-Bitcoin-treasury-bolag-e3pco50"
-    },
-    {
-     "title": "131. Vad är pengar?",
-     "date": "2026-09-11",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/131--Vad-r-pengar-e3olgvq"
-    },
-    {
-     "title": "130. KDU: \"Vi vill utreda en svensk bitcoinreserv\"",
-     "date": "2026-09-04",
-     "link": "https://podcasters.spotify.com/pod/show/bitcoinpodden/episodes/130--KDU-Vi-vill-utreda-en-svensk-bitcoinreserv-e3obbih"
-    }
-   ],
-   "added_at": "2026-10-16",
-   "html_url": "https://nordiccrypto.no/podcasts/#bitcoinpodden"
   },
   {
    "id": "k33-ahead-of-the-curve",
