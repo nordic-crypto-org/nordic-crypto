@@ -21438,6 +21438,101 @@
    "enabled": true,
    "status": "ok (JSON-LD on the group page when an event is scheduled; 301 members, last event 2026-06-17)",
    "country": "NO"
+  },
+  {
+   "id": "impact-onchain",
+   "name": "Impact Onchain",
+   "url": "https://events.kaupr.io/products/impact-onchain",
+   "type": "official-page",
+   "trusted": true,
+   "organiser": "Nordic Crypto with FirstBlock-athon Stockholm",
+   "country": "SE",
+   "enabled": true,
+   "online": true,
+   "paid": false,
+   "event_title": "Impact Onchain: from hackathon to real projects",
+   "event_start": "2026-11-11T11:00:00",
+   "event_end": "2026-11-11T12:30:00",
+   "event_place": "Online",
+   "must_include": [
+    "11 November",
+    "11:00",
+    "12:30",
+    "online"
+   ],
+   "status": "organiser page; kept only when that page shows 11 November, 11:00–12:30 and online",
+   "method": "Single event page. Date, clock time and online must be on the page. A private email or phone number is not stored."
+  },
+  {
+   "id": "bitcoin-suisse-nordics",
+   "name": "Bitcoin Suisse (Europe)",
+   "url": "https://eu.welcometobetter.bitcoinsuisse.com/bitcoin-suisse-europe-launches-in-the-nordics",
+   "type": "official-page",
+   "trusted": true,
+   "organiser": "Bitcoin Suisse (Europe)",
+   "city": "Stockholm",
+   "country": "SE",
+   "enabled": true,
+   "online": false,
+   "event_title": "Bitcoin Suisse Europe launches in the Nordics",
+   "event_start": "2026-11-19T17:30:00",
+   "event_place": "La Voûte, Bank Hotel, Arsenalsgatan 6, 111 47 Stockholm",
+   "must_include": [
+    "19 November 2026",
+    "17:30",
+    "Arsenalsgatan 6"
+   ],
+   "status": "organiser page; invitation only; no personal contact details",
+   "method": "Single event page. Doors 17:30 and Arsenalsgatan 6 must be on the page. The venue address is also on https://bankhotel.se/restaurants/la-voute/."
+  },
+  {
+   "id": "unga-aktiesparare-bitwise",
+   "name": "Unga Aktiesparare Stockholm",
+   "url": "https://medlem.ungaaktiesparare.se/event/exklusiv-kvall-med-bitwise/",
+   "type": "official-page",
+   "trusted": true,
+   "organiser": "Unga Aktiesparare Stockholm with Bitwise",
+   "city": "Stockholm",
+   "country": "SE",
+   "enabled": true,
+   "online": false,
+   "language": "sv",
+   "event_title": "Exklusiv kväll med Bitwise",
+   "event_start": "2026-11-19T18:00:00",
+   "event_end": "2026-11-19T19:15:00",
+   "event_place": "Sturegatan 15, 113 89 Stockholm",
+   "must_include": [
+    "19 november",
+    "18:00",
+    "19:15",
+    "Sturegatan 15"
+   ],
+   "status": "organiser page; limited places; contact persons on that page are not copied",
+   "method": "Single event page. The clock time and Sturegatan 15 must be on the page. The street is also on https://www.ungaaktiesparare.se/kansliet/. Personal emails and phone numbers are not stored."
+  },
+  {
+   "id": "linkedin-unga-aktiesparare-bitwise",
+   "name": "Unga Aktiesparare Stockholm (public LinkedIn)",
+   "url": "https://www.linkedin.com/posts/unga-aktiesparare-stockholm-hq_nyfiken-p%C3%A5-krypto-tillsammans-med-bitwise-activity-7518775591920345088-c8bZ",
+   "type": "linkedin-public",
+   "trusted": false,
+   "organiser": "Unga Aktiesparare Stockholm with Bitwise",
+   "city": "Stockholm",
+   "country": "SE",
+   "enabled": true,
+   "online": false,
+   "language": "sv",
+   "event_title": "Exklusiv kväll med Bitwise",
+   "event_start": "2026-11-19T18:00:00",
+   "event_end": "2026-11-19T19:15:00",
+   "event_place": "Sturegatan 15, Stockholm",
+   "must_include": [
+    "Sturegatan 15",
+    "19 november",
+    "18.00"
+   ],
+   "status": "public post only; a sign-in wall is skipped and nothing is added",
+   "method": "Public LinkedIn post, read without signing in. Date, time and Sturegatan 15 must be visible. A login wall is not a source."
   }
  ],
  "fetch_workers": 6
