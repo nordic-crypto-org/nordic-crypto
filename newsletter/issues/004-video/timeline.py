@@ -3,7 +3,7 @@ import argparse, json, os, subprocess, wave, sys
 sys.path.insert(0, '.'); import content as C
 B = 'build/'; SR = 48000
 # Shorter lead and tail than the calm +2% issue #1 cut, matched to speech at +12%.
-LEAD, TAIL = 0.20, 0.30
+LEAD, TAIL = 0.20, 0.30  # LEAD must match anchor_clips.LEAD
 TITLE_PAD, END_PAD = 0.34, 1.18
 FF = ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-threads', '1']
 ap = argparse.ArgumentParser()
@@ -60,7 +60,7 @@ if args.vtt:
         for a, z, c in rows:
             f.write(f"{ts(a).replace(',', '.')} --> {ts(z).replace(',', '.')}\n{c}\n\n")
 with open(args.script, 'w') as f:
-    f.write(f"Nordic Crypto #{C.NUMBER} narration. Voice: {C.VOICE} (edge-tts, rate {C.RATE}). "
+    f.write(f"Nordic Crypto #{C.NUMBER} narration. Voice: {C.VOICE}" + ("" if C.RATE == "natural" else f" (edge-tts, rate {C.RATE})") + ". "
             f"Sign-off: The Nordic Crypto team. Source: newsletter issue #{C.NUMBER} ({C.DATES_SHORT}).\n\n")
     for s in segs:
         f.write(f"[{s['name']} @ {s['start']:.1f}s, {s['kind']}{' - ' + s['label'] if 'label' in s else ''}]\n{C.VO.get(s['name'], '(music/stinger only)')}\n\n")

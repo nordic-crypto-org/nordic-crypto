@@ -20,9 +20,9 @@ print(len(segs), 'segments')
 PY
 ffmpeg -hide_banner -loglevel error -y -f concat -safe 0 -i "$LIST" -c copy "$SEGDIR/video_only.mp4"
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SEGDIR/video_only.mp4")
-# Pad or trim audio to the picture so the sign-off is not cut.
+# Pad or trim audio to the picture so the sign-off is not cut; loudness-normalise to -16 LUFS.
 ffmpeg -hide_banner -loglevel error -y -i "$SEGDIR/video_only.mp4" -i "$MIX" \
-  -filter_complex "[1:a]aresample=48000,aformat=channel_layouts=stereo,apad=pad_dur=2,atrim=0:${DUR},asetpts=PTS-STARTPTS[a]" \
+  -filter_complex "[1:a]aresample=48000,aformat=channel_layouts=stereo,apad=pad_dur=2,atrim=0:${DUR},asetpts=PTS-STARTPTS,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000[a]" \
   -map 0:v:0 -map "[a]" -c:v copy -c:a aac -b:a 192k -movflags +faststart "$OUT"
 ffprobe -v error -show_entries format=duration,size -show_entries stream=codec_name,width,height,sample_rate -of default=nw=1 "$OUT"
 echo "wrote $OUT"

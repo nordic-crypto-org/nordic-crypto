@@ -9,8 +9,9 @@ says the programme is made with artificial intelligence.
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 import site_url
-VOICE = "en-GB-ThomasNeural"
-RATE = "+20%"
+# Voice: Anders Fjell on camera, lip-synced image-to-video clips (anchor_clips.json), not edge-tts.
+VOICE = "Anders Fjell (on-camera clips)"
+RATE = "natural"
 NUMBER = "4"
 ISSUE = "Issue #4"
 ISSUE_RIBBON = "ISSUE #4"
@@ -54,8 +55,8 @@ TICKER = [
 ]
 
 VO = {
- "open_a": "Good evening, I'm Anders Fjell, and this is Nordic Crypto. Issue number four, with the Nordic crypto news from the 19th to the 25th of October, 2026.",
- "open_b": "Tonight: Norway's minister says crypto mining in data centres is not widespread. Sweden's central bank looks at an e-krona. And Apple and BlackRock in the bitcoin headlines.",
+ "open_a": "Good morning, I'm Anders Fjell, and this is Nordic Crypto. Here are the week's biggest stories from the Nordic crypto world.",
+ "open_b": "This week: Norway's minister says crypto mining in data centres is not widespread. Sweden's central bank looks at an e-krona. And Apple and BlackRock in the bitcoin headlines.",
  "s1": "Norway's digitalisation minister, Torgeir Micaelsen, told the Storting in a written answer that crypto mining in data centres is not widespread. The register shows mining at eight of 113 data centres. The government is assessing a temporary, limited ban, subject to EEA law. Ságat reported the answer.",
  "s2": "TV 2 reports that five people are on trial in Oslo District Court over a home robbery in which the robbers demanded two million dollars in crypto. One posed as a food courier. The five are charged, and have not been convicted.",
  "s3": "In Sweden, Riksbank deputy governor Per Jansson told Reuters that Sweden should prepare for a possible e-krona, pointing to the digital euro and stablecoins. No decision has been taken. Hurbra reported the interview.",
@@ -87,7 +88,9 @@ TIMELINE = [
  ("signoff", "anchor", {"lower_third": True, "last": True}),
 ]
 SIGNOFF_CARD = "The Nordic Crypto team"
-END_HEAD = "THAT'S ALL FOR ISSUE NUMBER FOUR"
+END_HEAD = "THAT'S ALL FOR ISSUE #4"
+TONIGHT_LABEL = "THIS WEEK"
+END_GREETING = "SEE YOU NEXT WEEK"
 BUMPER_LEN = {"bumper": 4.5, "section": 1.6, "countries": 4.0}
 THUMB_STORY = "s1"
 THUMB_BIG = "8 OF 113"
