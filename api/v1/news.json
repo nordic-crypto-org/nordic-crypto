@@ -1,13 +1,714 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-07T03:48:40+00:00",
+ "generated_at": "2026-11-07T06:45:14+00:00",
  "preview": false,
- "updated": "2026-11-07T03:35:49+00:00",
+ "updated": "2026-11-07T06:36:48+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. image is this story's own illustration when one has been generated: url, width, height, alt, style and kind. The story page uses that url as the hero and as og:image, in every language. Null means the page keeps the Nordic Crypto brand image. The picture is not a newspaper photograph. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
- "count": 116,
+ "count": 120,
  "items": [
+  {
+   "id": "2432bee6d799",
+   "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024",
+   "html_url": "https://nordiccrypto.no/stories/2432bee6d799/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/2432bee6d799.json",
+   "title": "Safello tilbake i pluss for første gang siden 2024",
+   "title_en": "Safello reports a third-quarter operating profit of SEK 0.8 million",
+   "title_i18n": {
+    "ar": "Safello تعلن ربحًا تشغيليًا قدره 0.8 مليون كرونة سويدية في الربع الثالث",
+    "bn": "Safello তৃতীয় প্রান্তিকে ৮ লাখ সুইডিশ ক্রোনা পরিচালন মুনাফা জানিয়েছে",
+    "da": "Safello rapporterer driftsresultat på 0,8 millioner svenske kroner i tredje kvartal",
+    "de": "Safello meldet operativen Quartalsgewinn von 0,8 Millionen schwedischen Kronen",
+    "es": "Safello declara un beneficio operativo trimestral de 0,8 millones de coronas suecas",
+    "fa": "Safello سود عملیاتی سه‌ماهه سوم را ۰٫۸ میلیون کرون سوئد اعلام کرد",
+    "fi": "Safello raportoi 0,8 miljoonan kruunun liikevoiton kolmannelta neljännekseltä",
+    "fr": "Safello annonce un bénéfice opérationnel trimestriel de 0,8 million de couronnes suédoises",
+    "hi": "Safello ने तीसरी तिमाही में 8 लाख स्वीडिश क्रोना परिचालन लाभ बताया",
+    "id": "Safello melaporkan laba operasi kuartal ketiga SEK 0,8 juta",
+    "is": "Safello greinir frá 0,8 milljóna sænskra króna rekstrarhagnaði á þriðja ársfjórðungi",
+    "ja": "Safello、第3四半期の営業利益80万スウェーデンクローナを報告",
+    "mr": "Safello ने तिसऱ्या तिमाहीत 8 लाख स्वीडिश क्रोना परिचालन नफा नोंदवला",
+    "nn": "Safello rapporterer driftsresultat på 0,8 millionar svenske kroner i tredje kvartal",
+    "pt": "Safello reporta lucro operacional trimestral de 0,8 milhões de coroas suecas",
+    "ru": "Safello сообщила об операционной прибыли 0,8 млн шведских крон за третий квартал",
+    "se": "Safello almmuha 0,8 miljovnna Ruoŧa ruvnno doaibmaboađu goalmmát kvartálas",
+    "sv": "Safello rapporterar rörelseresultat på 0,8 miljoner kronor i tredje kvartalet",
+    "sw": "Safello yaripoti faida ya uendeshaji ya robo ya tatu ya SEK milioni 0.8",
+    "tr": "Safello üçüncü çeyrekte 0,8 milyon İsveç kronu faaliyet kârı bildirdi",
+    "uk": "Safello повідомила про операційний прибуток 0,8 млн шведських крон за третій квартал",
+    "ur": "Safello نے تیسری سہ ماہی میں 8 لاکھ سویڈش کرونا آپریٹنگ منافع بتایا",
+    "zh": "Safello报告第三季度营业利润为80万瑞典克朗"
+   },
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+    "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+    "author": null,
+    "license": null,
+    "license_url": null,
+    "credit": "Official website",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+   },
+   "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor.",
+   "country": "SE",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-06",
+   "topics": [
+    "companies"
+   ],
+   "summary": "Safello reported third-quarter operating profit of SEK 0.8 million, according to its figures reported by Kaupr. Revenue fell 41 percent to SEK 98.4 million; the company reported a gross margin of 8.8 percent.",
+   "summary_i18n": {},
+   "paywall": false,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "original-exchange",
+    "kind": "original",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/original-exchange.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Abstract bar chart in blue and black. Nordic Crypto illustration, not a picture of an exchange.",
+    "source": "Nordic Crypto",
+    "author": "Nordic Crypto",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://cryptonordic.no/ethics/",
+    "credit": "Illustration: Nordic Crypto. Licence: CC0 1.0. Source: Nordic Crypto.",
+    "modifications": null,
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "kaupr",
+    "outlet_name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024",
+    "title": "Safello tilbake i pluss for første gang siden 2024",
+    "published": "2026-11-06",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+     "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+    },
+    "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+   },
+   "primary_source_document": {
+    "name": "Safello Q3 figures, reported by Kaupr",
+    "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024"
+   },
+   "also_covered_by": [],
+   "sources": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/safello-tilbake-i-pluss-for-forste-gang-siden-2024",
+     "title": "Safello tilbake i pluss for første gang siden 2024",
+     "published": "2026-11-06",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    }
+   ],
+   "coverage": {
+    "count": 1,
+    "by_country": [
+     {
+      "country": "SE",
+      "count": 1,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 1,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+  },
+  {
+   "id": "baba2f9c8906",
+   "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn",
+   "html_url": "https://nordiccrypto.no/stories/baba2f9c8906/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/baba2f9c8906.json",
+   "title": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
+   "title_en": "Newspaper reports cryptocurrency transfers in a romance scam",
+   "title_i18n": {
+    "ar": "صحيفة تتحدث عن تحويلات عملات مشفرة في احتيال عاطفي",
+    "bn": "প্রেমের প্রতারণায় ক্রিপ্টোকারেন্সি স্থানান্তরের খবর দিয়েছে সংবাদপত্র",
+    "da": "Avis omtaler kryptovalutaoverførsler i et kærlighedsbedrageri",
+    "de": "Zeitung berichtet über Kryptotransfers bei Liebesbetrug",
+    "es": "Un periódico informa de transferencias de criptomonedas en una estafa romántica",
+    "fa": "روزنامه از انتقال رمزارز در کلاهبرداری عاشقانه خبر داد",
+    "fi": "Lehti kertoo kryptovaluuttasiirroista rakkaushuijauksessa",
+    "fr": "Un journal rapporte des transferts de cryptomonnaies dans une escroquerie sentimentale",
+    "hi": "अखबार ने प्रेम संबंध के नाम पर धोखाधड़ी में क्रिप्टोकरेंसी हस्तांतरण की खबर दी",
+    "id": "Surat kabar melaporkan transfer kripto dalam penipuan asmara",
+    "is": "Dagblað greinir frá rafmyntafærslum í ástarsvindli",
+    "ja": "新聞、恋愛詐欺での暗号資産送金を報道",
+    "mr": "प्रेमाच्या फसवणुकीतील क्रिप्टोकरन्सी हस्तांतरणाची वृत्तपत्रात बातमी",
+    "nb": "Avis omtaler kryptovalutaoverføringer i en romansesvindel",
+    "nn": "Avis omtalar kryptovalutaoverføringar i ein romansesvindel",
+    "pt": "Jornal noticia transferências de criptomoedas numa burla romântica",
+    "ru": "Газета сообщила о переводах криптовалюты в романтическом мошенничестве",
+    "se": "Áviisa muitala kryptovaluhta sirdimiin románssasvihkus",
+    "sw": "Gazeti laripoti uhamisho wa kripto katika ulaghai wa mapenzi",
+    "tr": "Gazete romantik dolandırıcılıkta kripto para transferlerini haber yaptı",
+    "uk": "Газета повідомила про перекази криптовалюти в романтичному шахрайстві",
+    "ur": "اخبار نے رومانوی دھوکے میں کرپٹو کرنسی کی منتقلی کی خبر دی",
+    "zh": "报纸报道一起恋爱骗局中的加密货币转账"
+   },
+   "source": "ulricehamns-tidning",
+   "source_name": "Ulricehamns Tidning",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp",
+    "source_url": "https://www.ut.se/apple-icon-v2.png",
+    "author": null,
+    "license": null,
+    "license_url": null,
+    "credit": "Official website",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp"
+   },
+   "source_note": null,
+   "country": "SE",
+   "language": "Swedish",
+   "language_code": "sv",
+   "published": "2026-11-05T03:00:00+00:00",
+   "topics": [
+    "security"
+   ],
+   "summary": "Ulricehamns Tidning reports that SEK 1.5 million in cryptocurrency was transferred through an intermediary in a romance scam. The publicly accessible excerpt does not establish whether anyone has been charged or convicted.",
+   "summary_i18n": {},
+   "paywall": true,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "commons-se",
+    "kind": "commons",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/commons-se.webp",
+    "width": 960,
+    "height": 547,
+    "alt": "The Swedish parliament building, Riksdagshuset, in Stockholm.",
+    "source": "Wikimedia Commons",
+    "author": "Sahlen",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Riksdagshuset_i_Stockholm.jpg",
+    "credit": "Photo: Sahlen. Licence: CC0 1.0. Source: Wikimedia Commons.",
+    "modifications": null,
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "ulricehamns-tidning",
+    "outlet_name": "Ulricehamns Tidning",
+    "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn",
+    "title": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
+    "published": "2026-11-05T03:00:00+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": true,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp",
+     "source_url": "https://www.ut.se/apple-icon-v2.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp"
+    }
+   },
+   "primary_source_document": {
+    "name": "Ulricehamns Tidning",
+    "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn"
+   },
+   "also_covered_by": [],
+   "sources": [
+    {
+     "outlet": "ulricehamns-tidning",
+     "outlet_name": "Ulricehamns Tidning",
+     "url": "https://ut.se/ulricehamn/sa-utnyttjades-kandisarna-i-kryptobluff-kopplad-till-ulricehamn",
+     "title": "Så utnyttjades kändisarna i kryptobluff kopplad till Ulricehamn",
+     "published": "2026-11-05T03:00:00+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp",
+      "source_url": "https://www.ut.se/apple-icon-v2.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp"
+     }
+    }
+   ],
+   "coverage": {
+    "count": 1,
+    "by_country": [
+     {
+      "country": "SE",
+      "count": 1,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 1,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/ulricehamns-tidning.webp"
+  },
+  {
+   "id": "465eb25f04a6",
+   "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering",
+   "html_url": "https://nordiccrypto.no/stories/465eb25f04a6/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/465eb25f04a6.json",
+   "title": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
+   "title_en": "Norges Bank official urges banks to develop a tokenisation strategy",
+   "title_i18n": {
+    "ar": "مسؤول بالبنك المركزي النرويجي يدعو البنوك إلى وضع استراتيجية للترميز",
+    "bn": "নরওয়ের কেন্দ্রীয় ব্যাংকের কর্মকর্তা ব্যাংকগুলোকে টোকেনাইজেশন কৌশল তৈরির আহ্বান জানালেন",
+    "da": "Norges Bank-top opfordrer bankerne til at udvikle en tokeniseringsstrategi",
+    "de": "Norges-Bank-Vertreter fordert Banken zu Tokenisierungsstrategie auf",
+    "es": "Un responsable de Norges Bank insta a los bancos a desarrollar una estrategia de tokenización",
+    "fa": "مقام بانک مرکزی نروژ خواستار تدوین راهبرد توکنی‌سازی توسط بانک‌ها شد",
+    "fi": "Norges Bankin edustaja kehottaa pankkeja laatimaan tokenisointistrategian",
+    "fr": "Un responsable de Norges Bank invite les banques à élaborer une stratégie de tokenisation",
+    "hi": "नॉर्वे के केंद्रीय बैंक अधिकारी ने बैंकों से टोकनाइज़ेशन रणनीति बनाने को कहा",
+    "id": "Pejabat Norges Bank mendesak bank menyusun strategi tokenisasi",
+    "is": "Fulltrúi Norges Bank hvetur banka til að móta stefnu um tókenvæðingu",
+    "ja": "ノルウェー中銀幹部、銀行にトークン化戦略の策定を要請",
+    "mr": "नॉर्वेच्या मध्यवर्ती बँकेच्या अधिकाऱ्यांचे बँकांना टोकनायझेशन धोरण तयार करण्याचे आवाहन",
+    "nn": "Norges Bank-topp ber bankane utvikle ein strategi for tokenisering",
+    "pt": "Responsável do Norges Bank pede aos bancos uma estratégia de tokenização",
+    "ru": "Представитель Банка Норвегии призвал банки разработать стратегию токенизации",
+    "se": "Norges Bank ovddasteaddji ávžžuha báŋkkuid ráhkadit tokeniserenstrategiija",
+    "sv": "Norges Bank-företrädare uppmanar bankerna att utveckla en tokeniseringsstrategi",
+    "sw": "Afisa wa Norges Bank ahimiza benki kuandaa mkakati wa utokenishaji",
+    "tr": "Norges Bank yetkilisi bankalara tokenizasyon stratejisi geliştirme çağrısı yaptı",
+    "uk": "Представник Банку Норвегії закликав банки розробити стратегію токенізації",
+    "ur": "ناروے کے مرکزی بینک کے عہدیدار کی بینکوں سے ٹوکنائزیشن حکمت عملی بنانے کی اپیل",
+    "zh": "挪威央行官员敦促银行制定代币化战略"
+   },
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+    "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+    "author": null,
+    "license": null,
+    "license_url": null,
+    "credit": "Official website",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+   },
+   "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor.",
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-05",
+   "topics": [
+    "regulation",
+    "payments"
+   ],
+   "summary": "Banks should prepare a tokenisation strategy, Norges Bank's Torbjørn Hægeland said at a conference, according to Kaupr. He said important settlements should use central bank money, including transactions on tokenised platforms.",
+   "summary_i18n": {},
+   "paywall": false,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "original-exchange",
+    "kind": "original",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/original-exchange.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Abstract bar chart in blue and black. Nordic Crypto illustration, not a picture of an exchange.",
+    "source": "Nordic Crypto",
+    "author": "Nordic Crypto",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://cryptonordic.no/ethics/",
+    "credit": "Illustration: Nordic Crypto. Licence: CC0 1.0. Source: Nordic Crypto.",
+    "modifications": null,
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "kaupr",
+    "outlet_name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering",
+    "title": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
+    "published": "2026-11-05",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+     "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+    },
+    "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+   },
+   "primary_source_document": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering"
+   },
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/agentisk-finans-og-tokenisering-preget-betalingskonferansen",
+     "title": "Agentisk finans og tokenisering preget betalingskonferansen",
+     "published": "2026-11-06",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/norges-bank-topp-ber-bankene-ha-en-strategi-for-tokenisering",
+     "title": "Norges Bank-topp ber bankene ha en strategi for tokenisering",
+     "published": "2026-11-05",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/agentisk-finans-og-tokenisering-preget-betalingskonferansen",
+     "title": "Agentisk finans og tokenisering preget betalingskonferansen",
+     "published": "2026-11-06",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    }
+   ],
+   "coverage": {
+    "count": 2,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 2,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 2,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+  },
+  {
+   "id": "ec86f5175ea7",
+   "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig",
+   "html_url": "https://nordiccrypto.no/stories/ec86f5175ea7/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/ec86f5175ea7.json",
+   "title": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
+   "title_en": "Norges Bank sees no current need for retail digital central bank money",
+   "title_i18n": {
+    "ar": "البنك المركزي النرويجي لا يرى حاجة حالية لعملة رقمية للأفراد",
+    "bn": "নরওয়ের কেন্দ্রীয় ব্যাংক এখন সাধারণ মানুষের জন্য ডিজিটাল কেন্দ্রীয় ব্যাংক মুদ্রার প্রয়োজন দেখছে না",
+    "da": "Norges Bank ser ikke behov for digitale centralbankpenge til offentligheden nu",
+    "de": "Norges Bank sieht derzeit keinen Bedarf für digitales Zentralbankgeld für die Öffentlichkeit",
+    "es": "Norges Bank no ve necesidad actual de dinero digital de banco central para el público",
+    "fa": "بانک مرکزی نروژ فعلاً نیازی به پول دیجیتال بانک مرکزی برای عموم نمی‌بیند",
+    "fi": "Norges Bank ei näe nyt tarvetta yleisön digitaaliselle keskuspankkirahalle",
+    "fr": "Norges Bank ne voit pas de besoin actuel de monnaie numérique de banque centrale pour le public",
+    "hi": "नॉर्वे के केंद्रीय बैंक को फिलहाल खुदरा डिजिटल केंद्रीय बैंक मुद्रा की जरूरत नहीं दिखती",
+    "id": "Norges Bank belum melihat kebutuhan uang digital bank sentral untuk publik",
+    "is": "Norges Bank sér ekki nú þörf fyrir stafrænt seðlabankafé fyrir almenning",
+    "ja": "ノルウェー中銀、一般向けデジタル中央銀行通貨は現時点で不要と説明",
+    "mr": "नॉर्वेच्या मध्यवर्ती बँकेला सध्या जनतेसाठी डिजिटल मध्यवर्ती बँक चलनाची गरज दिसत नाही",
+    "nn": "Norges Bank ser ikkje behov for digitale sentralbankpengar til publikum no",
+    "pt": "Norges Bank não vê necessidade atual de moeda digital de banco central para o público",
+    "ru": "Банк Норвегии пока не видит необходимости в розничной цифровой валюте центрального банка",
+    "se": "Norges Bank ii oainne dál dárbbu digitála guovddášbáŋkoruđaidda álbmogii",
+    "sv": "Norges Bank ser inget behov av digitala centralbankspengar för allmänheten nu",
+    "sw": "Norges Bank haioni haja ya sasa ya fedha za kidijitali za benki kuu kwa umma",
+    "tr": "Norges Bank şu anda halka yönelik dijital merkez bankası parasına ihtiyaç görmüyor",
+    "uk": "Банк Норвегії поки не бачить потреби в роздрібній цифровій валюті центрального банку",
+    "ur": "ناروے کے مرکزی بینک کو فی الحال عوام کے لیے ڈیجیٹل مرکزی بینک کرنسی کی ضرورت نہیں دکھتی",
+    "zh": "挪威央行认为目前无需推出面向公众的数字央行货币"
+   },
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "source_logo": {
+    "kind": "logo",
+    "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+    "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+    "author": null,
+    "license": null,
+    "license_url": null,
+    "credit": "Official website",
+    "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+   },
+   "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor.",
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-05",
+   "topics": [
+    "regulation",
+    "payments"
+   ],
+   "summary": "Norges Bank sees no current need for retail digital central bank money but wants to be ready if that changes, Torbjørn Hægeland told a conference, according to Kaupr. He said a digital euro would not by itself determine Norway's decision.",
+   "summary_i18n": {},
+   "paywall": false,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "original-exchange",
+    "kind": "original",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/original-exchange.webp",
+    "width": 960,
+    "height": 540,
+    "alt": "Abstract bar chart in blue and black. Nordic Crypto illustration, not a picture of an exchange.",
+    "source": "Nordic Crypto",
+    "author": "Nordic Crypto",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://cryptonordic.no/ethics/",
+    "credit": "Illustration: Nordic Crypto. Licence: CC0 1.0. Source: Nordic Crypto.",
+    "modifications": null,
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "kaupr",
+    "outlet_name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig",
+    "title": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
+    "published": "2026-11-05",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": true,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+     "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+    },
+    "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+   },
+   "primary_source_document": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig"
+   },
+   "also_covered_by": [],
+   "sources": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/norges-bank-vi-er-klare-om-digitale-sentralbankpenger-blir-nodvendig",
+     "title": "Norges Bank: Vi er klare om digitale sentralbankpenger blir nødvendig",
+     "published": "2026-11-05",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": true,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp",
+      "source_url": "https://cdn.prod.website-files.com/668a402c429f7e0ef24db439/66a0f51df4856269e52da020_Kaupr%20Logo.jpg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+     },
+     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
+    }
+   ],
+   "coverage": {
+    "count": 1,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 1,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 1,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": "https://nordiccrypto.no/assets/img/logos/kaupr.webp"
+  },
   {
    "id": "6a0bc0c01d46",
    "url": "https://e24.no/boers-og-finans/i/581Jd1/handelsrush-hos-firi-etter-binance-angrep",
@@ -727,6 +1428,29 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "dagens-nyheter",
+     "outlet_name": "Dagens Nyheter",
+     "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+     "title": "Så lyckades hackarna slå till mot kryptojätten",
+     "published": "2026-11-05T21:01:11+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp",
+      "source_url": "https://cdn.dn-static.se/images/favicons/180-BT7TA2ON.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp"
+     }
     }
    ],
    "sources": [
@@ -812,26 +1536,49 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "dagens-nyheter",
+     "outlet_name": "Dagens Nyheter",
+     "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+     "title": "Så lyckades hackarna slå till mot kryptojätten",
+     "published": "2026-11-05T21:01:11+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp",
+      "source_url": "https://cdn.dn-static.se/images/favicons/180-BT7TA2ON.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp"
+     }
     }
    ],
    "coverage": {
-    "count": 4,
+    "count": 5,
     "by_country": [
      {
       "country": "SE",
-      "count": 2,
-      "share": 0.5
+      "count": 3,
+      "share": 0.6
      },
      {
       "country": "DK",
       "count": 2,
-      "share": 0.5
+      "share": 0.4
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 4,
+      "count": 5,
       "share": 1.0
      },
      {
@@ -1205,10 +1952,15 @@
     "regulation",
     "companies"
    ],
-   "summary": "Sweden's Economic Crime Authority has charged Valuno Group's former chief executive and a former finance director with aggravated insider trading, according to Kaupr and Kryptovalutaguiden. According to the prosecutor, the two learned on 3 July 2025 that Finansinspektionen had refused the subsidiary QB Europe a MiCA licence and sold large parts of their shares before the decision was made public on 4 July, after which the share price fell about 33 percent. Valuno says it is assisting the legal process as needed; no one has been convicted.",
+   "summary": "Sweden's Economic Crime Authority has charged Valuno Group's former chief executive and a former finance director with aggravated insider trading, according to Kaupr and Kryptovalutaguiden. According to the prosecutor, the two learned on 3 July 2025 that Finansinspektionen had refused the subsidiary QB Europe a MiCA licence and sold large parts of their shares before the decision was made public on 4 July, after which the share price fell about 33 percent. Valuno says it is assisting the legal process as needed; no one has been convicted. The charged former chief executive is also a former leader of Medborgerlig Samling and denies wrongdoing, according to SvD; the case is Stockholm District Court B 16085-26.",
    "summary_i18n": {},
    "paywall": false,
-   "links": [],
+   "links": [
+    {
+     "label": "Ekobrottsmyndigheten: charges, 2 November 2026; case B 16085-26",
+     "url": "https://www.ekobrottsmyndigheten.se/om-oss/press/aktuellt/nyheter/tva-tidigare-chefer-atalas-for-grova-insiderbrott/"
+    }
+   ],
    "own_story": false,
    "illustration": {
     "id": "original-exchange",
@@ -1252,8 +2004,8 @@
     "source_note": "Kaupr is a news source only. Nordic Crypto does not treat Kaupr as a sponsor."
    },
    "primary_source_document": {
-    "name": "Kaupr",
-    "url": "https://kaupr.io/nyheter/to-tidligere-valuno-ledere-tiltalt-for-grov-innsidehandel"
+    "name": "Ekobrottsmyndigheten, 2 November 2026 — Stockholms tingsrätt B 16085-26",
+    "url": "https://www.ekobrottsmyndigheten.se/om-oss/press/aktuellt/nyheter/tva-tidigare-chefer-atalas-for-grova-insiderbrott/"
    },
    "also_covered_by": [
     {
@@ -1277,6 +2029,29 @@
       "license_url": null,
       "credit": "Official website",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp"
+     }
+    },
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/aOmynO/valuno-daniel-sonesson-atalas-for-grovt-insiderbrott",
+     "title": "Tidigare partiledare åtalas",
+     "published": "2026-11-03T10:45:22+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/svd.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Svenska_Dagbladet_wordmark.svg",
+      "author": null,
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/svd.png"
      }
     }
    ],
@@ -1327,21 +2102,44 @@
       "credit": "Official website",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/kryptovalutaguiden.webp"
      }
+    },
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/aOmynO/valuno-daniel-sonesson-atalas-for-grovt-insiderbrott",
+     "title": "Tidigare partiledare åtalas",
+     "published": "2026-11-03T10:45:22+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/svd.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Svenska_Dagbladet_wordmark.svg",
+      "author": null,
+      "license": "Public domain",
+      "license_url": null,
+      "credit": "Wikimedia Commons",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/svd.png"
+     }
     }
    ],
    "coverage": {
-    "count": 2,
+    "count": 3,
     "by_country": [
      {
       "country": "SE",
-      "count": 2,
+      "count": 3,
       "share": 1.0
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 2,
+      "count": 3,
       "share": 1.0
      },
      {

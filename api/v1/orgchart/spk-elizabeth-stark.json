@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-07T03:48:40+00:00",
+ "generated_at": "2026-11-07T06:45:14+00:00",
  "preview": false,
  "item": {
   "id": "spk-elizabeth-stark",
@@ -55,6 +55,11 @@
   ],
   "talks": [
    {
+    "id": "yt-h8SdNpRnB-o",
+    "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
+    "video_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o"
+   },
+   {
     "id": "yt-aYlA0ADZbQc",
     "title": "Elizabeth Stark & Ben Perrin | How Bitcoin and AI Expand Freedom Worldwide | Fireside Chat",
     "video_url": "https://www.youtube.com/watch?v=aYlA0ADZbQc"
@@ -65,11 +70,6 @@
     "video_url": "https://www.youtube.com/watch?v=4lJCE0dzoRs"
    },
    {
-    "id": "yt-h8SdNpRnB-o",
-    "title": "Building the New Financial System from the Ground Up by Elizabeth Stark from Lightning Labs",
-    "video_url": "https://www.youtube.com/watch?v=h8SdNpRnB-o"
-   },
-   {
     "id": "yt-4HIsJikjb30",
     "title": "Blockchain Forks and Economic Competition",
     "video_url": "https://www.youtube.com/watch?v=4HIsJikjb30"
@@ -77,11 +77,19 @@
   ],
   "affiliations": [
    {
+    "talk_id": "yt-4HIsJikjb30",
+    "organisation": "Lightning",
+    "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
+    "source_name": "Slush",
+    "retrieved_at": "2026-11-06T09:51:02+00:00",
+    "role": "Co-founder & CEO"
+   },
+   {
     "talk_id": "yt-4lJCE0dzoRs",
     "organisation": "Lightning",
     "source_url": "https://www.youtube.com/watch?v=4lJCE0dzoRs&hl=en",
     "source_name": "Slush",
-    "retrieved_at": "2026-10-18T11:38:06+00:00",
+    "retrieved_at": "2026-11-06T09:51:02+00:00",
     "role": "Co-founder and CEO"
    },
    {
@@ -89,16 +97,8 @@
     "organisation": "Lightning Labs",
     "source_url": "https://www.youtube.com/watch?v=aYlA0ADZbQc&hl=en",
     "source_name": "Oslo Freedom Forum",
-    "retrieved_at": "2026-10-18T11:38:06+00:00",
+    "retrieved_at": "2026-11-06T09:51:02+00:00",
     "role": "CEO"
-   },
-   {
-    "talk_id": "yt-4HIsJikjb30",
-    "organisation": "Lightning",
-    "source_url": "https://www.youtube.com/watch?v=4HIsJikjb30&hl=en",
-    "source_name": "Slush",
-    "retrieved_at": "2026-10-27T10:30:00+00:00",
-    "role": "Co-founder & CEO"
    }
   ]
  }

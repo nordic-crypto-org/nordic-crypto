@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-07T03:48:40+00:00",
+ "generated_at": "2026-11-07T06:45:14+00:00",
  "preview": false,
  "topic": "exchanges",
  "count": 13,
@@ -561,6 +561,29 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "dagens-nyheter",
+     "outlet_name": "Dagens Nyheter",
+     "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+     "title": "Så lyckades hackarna slå till mot kryptojätten",
+     "published": "2026-11-05T21:01:11+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp",
+      "source_url": "https://cdn.dn-static.se/images/favicons/180-BT7TA2ON.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp"
+     }
     }
    ],
    "sources": [
@@ -646,26 +669,49 @@
      "paywall": false,
      "primary": false,
      "logo": null
+    },
+    {
+     "outlet": "dagens-nyheter",
+     "outlet_name": "Dagens Nyheter",
+     "url": "https://dn.se/ekonomi/sa-lyckades-hackarna-sla-till-mot-kryptojatten",
+     "title": "Så lyckades hackarna slå till mot kryptojätten",
+     "published": "2026-11-05T21:01:11+00:00",
+     "lang": "Swedish",
+     "language_code": "sv",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp",
+      "source_url": "https://cdn.dn-static.se/images/favicons/180-BT7TA2ON.png",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/dagens-nyheter.webp"
+     }
     }
    ],
    "coverage": {
-    "count": 4,
+    "count": 5,
     "by_country": [
      {
       "country": "SE",
-      "count": 2,
-      "share": 0.5
+      "count": 3,
+      "share": 0.6
      },
      {
       "country": "DK",
       "count": 2,
-      "share": 0.5
+      "share": 0.4
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 4,
+      "count": 5,
       "share": 1.0
      },
      {
