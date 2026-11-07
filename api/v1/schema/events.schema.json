@@ -159,6 +159,16 @@
       "Ölrepubliken, Kronhusgatan 2B, Göteborg"
      ]
     },
+    "map_url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Verified map link for the venue (Google Maps or similar). Null or omitted when unset; the site can still build a search link from place/city.",
+     "examples": [
+      "https://www.google.com/maps/search/?api=1&query=Faro%20Channelside%20Bar%20%26%20Restaurant%2C%20Kellosaarenranta%202%2C%20Helsinki"
+     ]
+    },
     "city": {
      "type": [
       "string",

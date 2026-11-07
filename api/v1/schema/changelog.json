@@ -1,8 +1,16 @@
 {
- "schema_version": "2026-11-03",
- "commit": "b5b0f7d",
- "committed_at": "2026-11-03T08:03:39+01:00",
+ "schema_version": "2026-11-07",
+ "commit": "4645dd4",
+ "committed_at": "2026-11-07T08:11:08+01:00",
  "entries": [
+  {
+   "sha": "4645dd41d4eafed555ee051392821baf7249f770",
+   "short": "4645dd4",
+   "committed_at": "2026-11-07T08:11:08+01:00",
+   "date": "2026-11-07",
+   "subject": "fix: allow map_url on events schema",
+   "url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/4645dd41d4eafed555ee051392821baf7249f770"
+  },
   {
    "sha": "b5b0f7d770b621b28104d7e27fe78e1c527499ac",
    "short": "b5b0f7d",
