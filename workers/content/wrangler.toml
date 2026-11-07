@@ -10,7 +10,12 @@ compatibility_date = "2026-10-01"
 workers_dev = true
 preview_urls = false
 # Public read API for the site and the apps: https://api.nordiccrypto.no/api/v1/news.json
-# (approved, published stories from D1; 60 s edge cache). Needs the nordiccrypto.no zone on this account.
+# (approved, published stories from D1; 60 s edge cache).
+# Custom Domain, not a zone route. `wrangler deploy` attaches this hostname and
+# Cloudflare creates the proxied DNS record. A zone route (api.nordiccrypto.no/*
+# plus zone_name) would not create that record, so the name would stay NXDOMAIN.
+# The zone nordiccrypto.no must be on this same account. Do not add a CNAME for
+# api first: a CNAME already on the name blocks the custom domain.
 routes = [{ pattern = "api.nordiccrypto.no", custom_domain = true }]
 
 [observability]

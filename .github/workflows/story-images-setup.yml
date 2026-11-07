@@ -1,0 +1,98 @@
+# Create the story-image bucket, apply the content D1 migrations, and deploy
+# workers/content. Manual only. Idempotent: a bucket that already exists is
+# left in place, migrations that are already applied are skipped, and deploy
+# updates the same Worker.
+# The custom domain in workers/content/wrangler.toml is api.nordiccrypto.no.
+# Deploy attaches it and Cloudflare creates the proxied DNS record. This
+# workflow does not edit DNS by hand and does not set CF_R2_STORY_BUCKET.
+# Do not enable xtrace. CLOUDFLARE_API_TOKEN must not be printed.
+name: Set up story images
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: story-images-setup
+  cancel-in-progress: false
+
+jobs:
+  setup:
+    name: Bucket, migrations, content Worker
+    if: github.repository == 'nordic-crypto-org/nordic-crypto'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install the pinned Wrangler
+        working-directory: workers/content
+        run: npm install --no-audit --no-fund --ignore-scripts
+
+      - name: Create the bucket, apply migrations, deploy
+        working-directory: workers/content
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
+          CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "::error::Secret CLOUDFLARE_API_TOKEN is not set. The token needs Account permission Workers R2 Storage Edit, plus D1 Edit and Workers Scripts Edit, and on the zone nordiccrypto.no the permissions Workers Routes Edit and DNS Edit."
+            exit 1
+          fi
+          if [ -z "${CF_ACCOUNT_ID:-}" ]; then
+            echo "::error::Repository variable CF_ACCOUNT_ID is not set."
+            exit 1
+          fi
+
+          # Wrangler output is printed only after tools/cf_permission.py removes the token.
+          cf() {
+            local step="$1"
+            shift
+            local tmp code py
+            tmp=$(mktemp)
+            "$@" >"$tmp" 2>&1 || code=$?
+            code=${code:-0}
+            python3 "$GITHUB_WORKSPACE/tools/cf_permission.py" --step "$step" --exit-code "$code" <"$tmp" || py=$?
+            py=${py:-0}
+            rm -f "$tmp"
+            return "$py"
+          }
+
+          if cf r2-info npx wrangler r2 bucket info nordic-crypto-story-images --json; then
+            echo "Bucket nordic-crypto-story-images already exists."
+          else
+            info=$?
+            if [ "$info" -eq 2 ]; then
+              cf r2-create npx wrangler r2 bucket create nordic-crypto-story-images
+            else
+              exit "$info"
+            fi
+          fi
+
+          cf d1 npx wrangler d1 migrations apply nordic-crypto-content --remote
+          cf deploy npx wrangler deploy
+
+      - name: Job summary
+        run: |
+          {
+            echo "### Story image setup"
+            echo
+            echo "R2 bucket \`nordic-crypto-story-images\` is present (created if it was missing)."
+            echo "D1 migrations were applied to \`nordic-crypto-content\` (remote)."
+            echo "\`workers/content\` was deployed."
+            echo
+            echo "\`api.nordiccrypto.no\` is a Workers Custom Domain in \`workers/content/wrangler.toml\`. This deploy attaches it, and Cloudflare creates the proxied DNS record. No CNAME was added here. A CNAME already on \`api\` would block that attach."
+            echo "Resolvers that cached the previous NXDOMAIN can keep it for up to 30 minutes (the zone SOA minimum is 1800)."
+            echo
+            echo "Set the repository variable \`CF_R2_STORY_BUCKET\` to \`nordic-crypto-story-images\` if it is still empty. Until then, image generation stores nothing. This workflow does not set that variable."
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -90,7 +90,7 @@ Outlet logos stay next to the outlet name. They are not this picture.
 
 ## Generated illustrations
 
-Each published story may have one illustration made from its headline and summary. It is drawn for Nordic Crypto. It is not a photograph from the newspaper, and it is not stored in git.
+A story first published after 2026-11-07T08:16:00Z may have one illustration made from that story's headline and summary. Older stories are not backfilled. It is drawn for Nordic Crypto. It is not a photograph from the newspaper, and it is not stored in git.
 
 The PNG is an object in the R2 bucket `nordic-crypto-story-images` (`CF_R2_STORY_BUCKET`). That bucket is not the private backup bucket. The content Worker serves the file at `https://api.nordiccrypto.no/story-images/<id>.png`. D1 table `story_images` on `nordic-crypto-content` records the story id, the object key, the style, the prompt and the time. The style library and the list of recent styles are in the same database. A style that was just used is not used again. When every stored style is recent, a new style is added from the article topic. Ligne claire is allowed only with original characters. «Nordic Crypto» is drawn in the top-right corner. Without the Workers AI token the picture is a headline card, stored the same way, and replaced once the token is available.
 

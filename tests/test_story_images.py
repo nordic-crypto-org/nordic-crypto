@@ -13,7 +13,7 @@ import x_post_image as painter
 NOW = dt.datetime(2026, 11, 6, 12, tzinfo=dt.timezone.utc)
 
 
-def story(i, day="2026-11-04", **kw):
+def story(i, day="2026-11-08", **kw):
     row = {"id": i, "status": "published", "published": f"{day}T08:00:00+00:00",
            "title_en": f"Story {i}", "title": f"Sak {i}", "summary": "A Nordic exchange changed a rule.",
            "country": "NO", "topics": ["regulation"], "source_name": "NRK"}
@@ -69,9 +69,9 @@ class StoryImages(unittest.TestCase):
             self.assertTrue(os.path.isfile(path))
 
         items = [story("aaaa11111111", topics=["mining"], title_en="Tintin and a data hall"),
-                 story("bbbb22222222", day="2026-11-05")]
+                 story("bbbb22222222", day="2026-11-09")]
         first = story_images.generate_missing(
-            items, self.store, now=NOW, days=7, generator=generator, uploader=uploader, rng=random.Random(1))
+            items, self.store, now=NOW, generator=generator, uploader=uploader, rng=random.Random(1))
         self.assertEqual(first["generated"], 2)
         self.assertEqual(len(stored), 2)
         styles = [r["style_id"] for r in self.store.query("SELECT style_id FROM story_images ORDER BY story_id")]
@@ -79,7 +79,7 @@ class StoryImages(unittest.TestCase):
         prompts = self.store.query("SELECT prompt FROM story_images")
         self.assertTrue(all("tintin" not in (p["prompt"] or "").lower() for p in prompts))
         again = story_images.generate_missing(
-            items, self.store, now=NOW, days=7, generator=generator, uploader=uploader, rng=random.Random(1))
+            items, self.store, now=NOW, generator=generator, uploader=uploader, rng=random.Random(1))
         self.assertEqual(again["generated"], 0)
         self.assertEqual(again["skipped"], 2)
         self.assertEqual(len(stored), 2)
@@ -90,7 +90,7 @@ class StoryImages(unittest.TestCase):
         self.store.execute("UPDATE story_image_style_state SET recent = ? WHERE id = 1", (json.dumps(ids),))
         stored = []
         story_images.generate_missing(
-            [story("cccc33333333", topics=["mining"])], self.store, now=NOW, days=7,
+            [story("cccc33333333", topics=["mining"])], self.store, now=NOW,
             generator=lambda prompt: png_bytes(), uploader=lambda path, key: stored.append(key),
             rng=random.Random(2))
         grown = self.store.query("SELECT id, origin, prompt FROM story_image_styles WHERE origin = 'topic'")
@@ -103,15 +103,15 @@ class StoryImages(unittest.TestCase):
 
     def test_fallback_card_is_replaced_once_when_a_generator_is_available(self):
         story_images.generate_missing(
-            [story("dddd44444444")], self.store, now=NOW, days=7,
+            [story("dddd44444444")], self.store, now=NOW,
             generator=lambda prompt: None, uploader=lambda path, key: None, rng=random.Random(3))
         self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "fallback")
         story_images.generate_missing(
-            [story("dddd44444444")], self.store, now=NOW, days=7,
+            [story("dddd44444444")], self.store, now=NOW,
             generator=lambda prompt: None, uploader=lambda path, key: None, rng=random.Random(3))
         self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "fallback")
         story_images.generate_missing(
-            [story("dddd44444444")], self.store, now=NOW, days=7,
+            [story("dddd44444444")], self.store, now=NOW,
             generator=lambda prompt: png_bytes(), uploader=lambda path, key: None, rng=random.Random(3))
         self.assertEqual(story_images.image_row(self.store, "dddd44444444")["kind"], "ai")
 
@@ -119,10 +119,56 @@ class StoryImages(unittest.TestCase):
         items = [story("eeee55555555", day="2026-10-01"),
                  story("ffff66666666", status="pending")]
         counts = story_images.generate_missing(
-            items, self.store, now=NOW, days=7, generator=lambda p: png_bytes(),
+            items, self.store, now=NOW, generator=lambda p: png_bytes(),
             uploader=lambda path, key: None, rng=random.Random(4))
         self.assertEqual(counts["considered"], 0)
         self.assertIsNone(story_images.image_row(self.store, "eeee55555555"))
+
+    def test_stories_before_the_cutoff_are_not_backfilled(self):
+        # 6 Nov is inside the old 7-day window. The cutoff is 7 Nov 2026 08:16 UTC.
+        items = [
+            story("aa11aa11aa11", day="2026-11-06"),
+            story("bb22bb22bb22", published="2026-11-07T08:16:00Z"),
+            story("cc33cc33cc33", published="2026-11-07T08:16:01Z"),
+            story("dd44dd44dd44", status="pending", published="2026-11-08T12:00:00Z"),
+        ]
+        counts = story_images.generate_missing(
+            items, self.store, now=NOW, published_after="2020-01-01T00:00:00Z",
+            generator=lambda p: png_bytes(), uploader=lambda path, key: None, rng=random.Random(4))
+        self.assertEqual(counts["considered"], 1)
+        self.assertEqual(counts["generated"], 1)
+        self.assertIsNone(story_images.image_row(self.store, "aa11aa11aa11"))
+        self.assertIsNone(story_images.image_row(self.store, "bb22bb22bb22"))
+        self.assertEqual(story_images.image_row(self.store, "cc33cc33cc33")["kind"], "ai")
+        self.assertIsNone(story_images.image_row(self.store, "dd44dd44dd44"))
+
+    def test_days_flag_is_refused(self):
+        with self.assertRaises(SystemExit) as caught:
+            story_images.main(["generate", "--days", "7"])
+        self.assertEqual(caught.exception.code, 2)
+
+    def test_a_cutoff_that_is_not_a_time_is_refused(self):
+        self.assertEqual(story_images.main(["generate", "--published-after", "not-a-time"]), 2)
+
+    def test_workflows_pass_the_cutoff_and_not_a_day_window(self):
+        for rel in (".github/workflows/deploy.yml", ".github/workflows/d1-publish.yml",
+                    ".github/workflows/story-images.yml"):
+            with open(os.path.join(ROOT, rel), encoding="utf-8") as fh:
+                text = fh.read()
+            self.assertIn("2026-11-07T08:16:00Z", text, rel)
+            self.assertNotIn("--days", text, rel)
+            self.assertIn("--published-after", text, rel)
+        with open(os.path.join(ROOT, ".github/workflows/story-images-setup.yml"), encoding="utf-8") as fh:
+            setup = fh.read()
+        self.assertIn("workflow_dispatch:", setup)
+        self.assertNotIn("schedule:", setup)
+        self.assertNotIn("set -x", setup)
+        self.assertNotIn("echo \"$CLOUDFLARE_API_TOKEN\"", setup)
+        self.assertNotIn("echo ${{ secrets", setup)
+        self.assertIn("nordic-crypto-story-images", setup)
+        self.assertIn("d1 migrations apply nordic-crypto-content --remote", setup)
+        self.assertIn("wrangler deploy", setup)
+        self.assertIn("Workers R2 Storage Edit", setup)
 
     def test_page_uses_the_url_and_falls_back_without_one(self):
         import build
@@ -139,6 +185,11 @@ class StoryImages(unittest.TestCase):
         self.assertEqual(og["image_height"], "720")
         self.assertIsNone(build.story_og_meta({"id": "none"}, "T", "D"))
         self.assertEqual(build.story_hero({"id": "none"}, "T"), "")
+        og_plain, image = build.story_share({"id": "none", "summary": "D"}, "T", "D")
+        self.assertEqual(image, "https://nordiccrypto.no/assets/brand/og-image.png")
+        self.assertEqual(og_plain["image"], image)
+        self.assertNotIn("story-images", image)
+        self.assertNotIn("/stories/", image)
 
 
 class StyleChoice(unittest.TestCase):
