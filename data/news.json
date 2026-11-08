@@ -1,6 +1,89 @@
 {
  "items": [
   {
+   "id": "ecd1c0c72861",
+   "url": "https://dn.se/varlden/ministers-uppgifter-lackta-pa-darknet-prorysk-grupp-pekas-ut",
+   "title": "Ministers uppgifter läckta på darknet – prorysk grupp pekas ut",
+   "title_en": null,
+   "source": "dagens-nyheter",
+   "source_name": "Dagens Nyheter",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "dagens-nyheter",
+   "seen_via": [
+    "dagens-nyheter"
+   ],
+   "published": "2026-11-07T18:10:37+00:00",
+   "fetched": "2026-11-08T02:44:15+00:00",
+   "topics": [
+    "regulation"
+   ],
+   "matched": [
+    "\\bdark\\s?nets?\\b"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "f6e4dc25fdd1",
+   "url": "https://e24.no/bors/nyheter/a/306164",
+   "title": "Binance-finanssjefen slutter etter gigantisk hackerangrep",
+   "title_en": null,
+   "source": "e24",
+   "source_name": "E24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-07T16:44:55+00:00",
+   "fetched": "2026-11-08T02:44:15+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "3940ba100880",
+   "url": "https://finansavisen.no/politikk/2026/11/07/8394092/usa-sanksjonerer-atte-canadiske-selskaper-for-transaksjoner-med-iran",
+   "title": "USA sanksjonerer åtte canadiske selskaper for transaksjoner med Iran",
+   "title_en": null,
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-07T09:58:00+00:00",
+   "fetched": "2026-11-08T02:44:15+00:00",
+   "topics": [
+    "crypto",
+    "regulation",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "published_unverified": true
+  },
+  {
    "id": "e66e98c79511",
    "url": "https://feber.se/film/sam-bankman-fried-talar-ut-i-ny-dokumentarserie/498250",
    "title": "Sam Bankman-Fried talar ut i ny dokumentärserie",
@@ -102,6 +185,33 @@
    "status": "rejected",
    "summary": null,
    "reject_reason": "US topic on an affiliate-type guide site. researcher 07.11; editor 2026-11-07"
+  },
+  {
+   "id": "115091af53ea",
+   "url": "https://barebitcoin.no/innsikt/nyheter/2026-11-06-binance-angrepet",
+   "title": "Slik sikrer vi bitcoinene dine, etter Binance-angrepet",
+   "title_en": null,
+   "source": "barebitcoin",
+   "source_name": "Bare Bitcoin",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "barebitcoin",
+   "seen_via": [
+    "barebitcoin"
+   ],
+   "published": "2026-11-06T12:00:00+00:00",
+   "fetched": "2026-11-08T02:44:15+00:00",
+   "topics": [
+    "bitcoin",
+    "companies"
+   ],
+   "matched": [
+    "\\bBare Bitcoin\\b",
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
   },
   {
    "id": "00a1601d1f42",
@@ -2982,7 +3092,8 @@
    "seen_via": [
     "aftenposten",
     "bing-no-kn",
-    "investornytt"
+    "investornytt",
+    "bing-no"
    ],
    "published": "2026-11-01T07:04:47+00:00",
    "fetched": "2026-11-02T02:48:08+00:00",
@@ -17832,5 +17943,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-07T02:45:38+00:00"
+ "updated": "2026-11-08T02:44:15+00:00"
 }
