@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-07T10:26:57Z",
+ "generated_at": "2026-11-08T10:34:51Z",
  "preview": false,
  "source": "Cloudflare Web Analytics",
  "status": "ok",
@@ -9,23 +9,23 @@
  "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
  "schema": 1,
  "first_date": "2026-10-17",
- "last_date": "2026-11-07",
- "updated_at": "2026-11-07T10:26:57Z",
+ "last_date": "2026-11-08",
+ "updated_at": "2026-11-08T10:34:51Z",
  "daily": [
   {
    "date": "2026-10-17",
    "visits": 50,
-   "pageviews": 50
+   "pageviews": 60
   },
   {
    "date": "2026-10-18",
-   "visits": 30,
-   "pageviews": 30
+   "visits": 10,
+   "pageviews": 10
   },
   {
    "date": "2026-10-19",
    "visits": 20,
-   "pageviews": 20
+   "pageviews": 30
   },
   {
    "date": "2026-10-20",
@@ -34,8 +34,8 @@
   },
   {
    "date": "2026-10-21",
-   "visits": 0,
-   "pageviews": 0
+   "visits": 10,
+   "pageviews": 10
   },
   {
    "date": "2026-10-22",
@@ -69,8 +69,8 @@
   },
   {
    "date": "2026-10-28",
-   "visits": 10,
-   "pageviews": 10
+   "visits": 0,
+   "pageviews": 0
   },
   {
    "date": "2026-10-29",
@@ -79,8 +79,8 @@
   },
   {
    "date": "2026-10-30",
-   "visits": 0,
-   "pageviews": 0
+   "visits": 10,
+   "pageviews": 10
   },
   {
    "date": "2026-10-31",
@@ -119,8 +119,13 @@
   },
   {
    "date": "2026-11-07",
+   "visits": 120,
+   "pageviews": 120
+  },
+  {
+   "date": "2026-11-08",
    "visits": 0,
-   "pageviews": 0,
+   "pageviews": 20,
    "partial": true
   }
  ],
@@ -129,8 +134,8 @@
    "week": "2026-W42",
    "start": "2026-10-12",
    "days": 2,
-   "visits": 80,
-   "pageviews": 80,
+   "visits": 60,
+   "pageviews": 70,
    "end": "2026-10-18",
    "partial": true
   },
@@ -138,8 +143,8 @@
    "week": "2026-W43",
    "start": "2026-10-19",
    "days": 7,
-   "visits": 20,
-   "pageviews": 20,
+   "visits": 30,
+   "pageviews": 40,
    "end": "2026-10-25",
    "partial": false
   },
@@ -155,9 +160,9 @@
   {
    "week": "2026-W45",
    "start": "2026-11-02",
-   "days": 6,
-   "visits": 0,
-   "pageviews": 0,
+   "days": 7,
+   "visits": 120,
+   "pageviews": 140,
    "end": "2026-11-08",
    "partial": true
   }
@@ -166,15 +171,15 @@
   {
    "month": "2026-10",
    "days": 15,
-   "visits": 110,
-   "pageviews": 110,
+   "visits": 100,
+   "pageviews": 120,
    "partial": true
   },
   {
    "month": "2026-11",
-   "days": 7,
-   "visits": 0,
-   "pageviews": 0,
+   "days": 8,
+   "visits": 120,
+   "pageviews": 140,
    "partial": true
   }
  ]
