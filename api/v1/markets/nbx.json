@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-08T06:50:59+00:00",
+ "generated_at": "2026-11-08T07:03:08+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": false,
   "note": "Norwegian exchange. Public tickers include NOK, SEK, DKK and EUR. last is lastTradePrice. bid is currentHighestBuyPrice. ask is currentLowestSellPrice. volume_*_24h is the exchange's last-24-hours field. GET /markets/{id}/orders (the order book) is not public. The API does not send Access-Control-Allow-Origin.",
   "status": "ok",
-  "fetched_at": "2026-11-08T06:48:01+00:00",
+  "fetched_at": "2026-11-08T07:00:14+00:00",
   "error": null,
   "ticker_count": 41
  },
@@ -39,13 +39,13 @@
    "quote": "NOK",
    "last": "720902.11",
    "bid": "710786.48",
-   "ask": "720320.89",
+   "ask": "720935.24",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -69,7 +69,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -93,7 +93,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -117,7 +117,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -141,7 +141,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -165,7 +165,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -189,7 +189,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -213,7 +213,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -230,14 +230,14 @@
    "base": "SOL",
    "quote": "NOK",
    "last": "850.10",
-   "bid": "833.36",
-   "ask": "848.13",
+   "bid": "834.53",
+   "ask": "849.40",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -261,7 +261,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -285,7 +285,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -309,7 +309,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -333,7 +333,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -357,7 +357,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -381,7 +381,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -405,7 +405,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -429,7 +429,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -453,7 +453,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -477,7 +477,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -501,7 +501,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -518,14 +518,14 @@
    "base": "UNI",
    "quote": "NOK",
    "last": "69.28",
-   "bid": "66.20",
-   "ask": "67.39",
+   "bid": "66.32",
+   "ask": "67.51",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -542,14 +542,14 @@
    "base": "UNI",
    "quote": "EUR",
    "last": "8.4072873871",
-   "bid": "6.2824798891",
-   "ask": "6.3939112450",
+   "bid": "6.2932032167",
+   "ask": "6.4047857574",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -573,7 +573,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -597,7 +597,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -621,7 +621,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -645,7 +645,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -669,7 +669,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -693,7 +693,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -717,7 +717,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -734,14 +734,14 @@
    "base": "FGLD",
    "quote": "NOK",
    "last": "1415.00",
-   "bid": "1228.60",
+   "bid": "1228.46",
    "ask": "1413.00",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -758,14 +758,14 @@
    "base": "FGLD",
    "quote": "EUR",
    "last": "161.8800000000",
-   "bid": "117.0392000000",
+   "bid": "117.0260000000",
    "ask": "161.8842000000",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -782,14 +782,14 @@
    "base": "FSLVR",
    "quote": "NOK",
    "last": "1758.00",
-   "bid": "1579.37",
+   "bid": "1579.49",
    "ask": "1758.00",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -807,13 +807,13 @@
    "quote": "EUR",
    "last": "163.8671000000",
    "bid": "150.0000000000",
-   "ask": "174.4060000000",
+   "ask": "173.4395000000",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -830,14 +830,14 @@
    "base": "GNRC",
    "quote": "EUR",
    "last": "0.9921240758",
-   "bid": "0.9916246246",
-   "ask": "0.9989035612",
+   "bid": "0.9916288617",
+   "ask": "0.9991609816",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -861,7 +861,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -885,7 +885,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -902,14 +902,14 @@
    "base": "NIGHT",
    "quote": "EUR",
    "last": "0.0353901450",
-   "bid": "0.0358439991",
-   "ask": "0.0359542798",
+   "bid": "0.0357991380",
+   "ask": "0.0359722817",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -933,7 +933,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -957,7 +957,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -981,7 +981,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -999,13 +999,13 @@
    "quote": "NOK",
    "last": "3.17",
    "bid": "3.15",
-   "ask": "3.18",
+   "ask": "3.19",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-08T06:48:01+00:00",
+   "fetched_at": "2026-11-08T07:00:14+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
