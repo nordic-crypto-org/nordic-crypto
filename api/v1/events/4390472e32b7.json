@@ -1,12 +1,12 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-07T19:35:56+00:00",
+ "generated_at": "2026-11-08T06:38:59+00:00",
  "preview": false,
  "item": {
   "id": "4390472e32b7",
   "title": "Discussion about Bitcoin and related topics",
-  "title_original": null,
+  "title_original": "Discussion about Bitcoin and related topics",
   "title_i18n": {
    "nn": "Diskusjon om bitcoin og nærskylde tema",
    "nb": "Diskusjon om bitcoin og beslektede temaer",
@@ -42,17 +42,66 @@
   "organiser": "Helsinki Bitcoin Hobbyists",
   "url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/",
   "source": "Helsinki Bitcoin Hobbyists (Meetup.com)",
-  "paid": null,
-  "sponsored": null,
-  "note": null,
-  "note_i18n": {},
+  "paid": false,
+  "sponsored": false,
+  "note": "Speakers not yet announced by the organiser.",
+  "note_i18n": {
+   "nn": "Arrangøren har enno ikkje kunngjort foredragshaldarar.",
+   "nb": "Arrangøren har ennå ikke kunngjort foredragsholdere.",
+   "sv": "Arrangören har ännu inte meddelat talare.",
+   "da": "Arrangøren har endnu ikke offentliggjort talere.",
+   "fi": "Järjestäjä ei ole vielä ilmoittanut puhujia.",
+   "is": "Skipuleggjandi hefur ekki enn tilkynnt ræðumenn.",
+   "zh": "主办方尚未公布演讲者。",
+   "hi": "आयोजक ने अभी तक वक्ताओं की घोषणा नहीं की है।",
+   "es": "El organizador aún no ha anunciado los ponentes.",
+   "fr": "L'organisateur n'a pas encore annoncé les intervenants.",
+   "ar": "لم يعلن المنظم بعد عن المتحدثين.",
+   "bn": "আয়োজক এখনও বক্তাদের নাম ঘোষণা করেনি।",
+   "pt": "O organizador ainda não anunciou os oradores.",
+   "ru": "Организатор пока не объявил спикеров.",
+   "ur": "منتظم نے ابھی تک مقررین کا اعلان نہیں کیا۔",
+   "id": "Penyelenggara belum mengumumkan pembicara.",
+   "de": "Der Veranstalter hat die Sprecher noch nicht bekannt gegeben.",
+   "ja": "主催者は登壇者をまだ発表していない。",
+   "sw": "Mratibu bado hajatangaza wazungumzaji.",
+   "mr": "आयोजकांनी अद्याप वक्ते जाहीर केलेले नाहीत.",
+   "fa": "برگزارکننده هنوز سخنرانان را اعلام نکرده است.",
+   "uk": "Організатор ще не оголосив спікерів.",
+   "tr": "Organizatör henüz konuşmacıları açıklamadı.",
+   "se": "Arrángereaddji ii leat vel almmuhan hállidalliid."
+  },
   "description": {
    "text": "Bitcoin meetup - meet the local bitcoiners, network, present your projects and ideas or just hang out! Topics include everything that remotely touches Bitcoin.",
    "lang": "en",
    "source_url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/",
    "source_name": "Helsinki Bitcoin Hobbyists (Meetup.com)",
    "retrieved": "2026-11-07T03:20:30+00:00",
-   "i18n": {}
+   "i18n": {
+    "nn": "Bitcoin meetup – møt dei lokale bitcoin-tilhøyarane, bygg nettverk, presenter prosjekta og idéane dine, eller berre heng saman! Emneområda omfatter alt som på ein eller annan måte rører Bitcoin.",
+    "nb": "Bitcoin meetup – møt de lokale bitcoinerne, nettverk, presenter prosjektene og ideene dine eller bare slapp av! Temaene inkluderer alt som på noen måte berører Bitcoin.",
+    "sv": "Bitcoin meetup – träffa de lokala bitcoinarna, nätverka, presentera dina projekt och idéer eller bara hänga! Teman inkluderar allt som på något sätt berör Bitcoin.",
+    "da": "Bitcoin meetup - mød de lokale bitcoinere, netværk, præsenter dine projekter og idéer eller bare hænge ud! Emnerne omfatter alt, der på nogen måde berører Bitcoin.",
+    "fi": "Bitcoin‑tapaaminen – tapaa paikalliset bitcoiniin liittyvät, verkostoidu, esittele projektejasi ja ideoitasi tai vain vietä aikaa yhdessä! Aiheina käsitellään kaikkea, mikä edes hieman koskettaa Bitcoinia.",
+    "is": "Bitcoin meetup - hittðu staðbundna bitcoinara, byggðu tengsl, kynntu verkefni og hugmyndir þínar eða bara sláðu bara í burtu! Efni felur í sér allt sem á einhvern hátt snertir Bitcoin.",
+    "zh": "比特币聚会 - 与当地比特币爱好者见面，交流网络，展示你的项目和想法，或只是闲聊！主题涵盖所有与比特币有关的内容。",
+    "hi": "Bitcoin meetup - स्थानीय Bitcoiners से मिलें, नेटवर्क बनाएँ, अपने प्रोजेक्ट्स और विचार प्रस्तुत करें या बस टहले! विषयों में वह सब कुछ शामिल है जो दूरस्थ रूप से Bitcoin को छूता है।",
+    "es": "Reunión de Bitcoin - conoce a los bitcoiners locales, establece contactos, presenta tus proyectos e ideas o simplemente pásala bien. Los temas incluyen todo lo que esté remotamente relacionado con Bitcoin.",
+    "fr": "Bitcoin meetup – rencontrez les bitcoiners locaux, créez du réseau, présentez vos projets et idées ou simplement traînez ! Les sujets couvrent tout ce qui touche de près ou de loin le Bitcoin.",
+    "ar": "لقاء بيتكوين - قابل المتعاملين المحليين ببيتكوين، تواصل، قدم مشاريعك وأفكارك أو مجرد الاستمتاع بالوقت! تشمل المواضيع كل ما يتعلق ببيتكوين بشكل غير مباشر.",
+    "bn": "Bitcoin meetup - স্থানীয় বিটকয়েনারদের সঙ্গে মিলুন, নেটওয়ার্ক করুন, আপনার প্রকল্প ও ধারণা উপস্থাপন করুন অথবা শুধু আরাম করুন! বিষয়গুলোতে সবকিছু অন্তর্ভুক্ত যা যেকোনোভাবে বিটকয়েনকে স্পর্শ করে।",
+    "pt": "Encontro de Bitcoin - conheça os bitcoiners locais, faça networking, apresente seus projetos e ideias ou simplesmente relaxe! Os tópicos incluem tudo que, de alguma forma, toca o Bitcoin.",
+    "ru": "Bitcoin meetup — встретитесь с местными биткойн‑энтузиастами, пообщайтесь, представьте свои проекты и идеи или просто проведите время! Темы охватывают всё, что хоть как‑то связано с Bitcoin.",
+    "ur": "Bitcoin meetup - مقامی بٹ کوئنرز سے ملیں، نیٹ ورک بنائیں، اپنے پروجیکٹس اور آئیڈیاز پیش کریں یا صرف وقت گزاریں! موضوعات میں ہر وہ چیز شامل ہے جو بٹ کوئن سے کسی نہ کسی طرح جڑی ہو۔",
+    "id": "Pertemuan Bitcoin - temui para bitcoiners lokal, jaringan, presentasikan proyek dan ide Anda, atau sekadar bersantai! Topik mencakup segala hal yang berhubungan dengan Bitcoin.",
+    "de": "Bitcoin-Meetup – Treffen Sie die lokalen Bitcoin‑Nutzer, knüpfen Sie Kontakte, stellen Sie Ihre Projekte und Ideen vor oder hängen Sie einfach ab! Themen umfassen alles, was in irgendeiner Weise Bitcoin berührt.",
+    "ja": "Bitcoinミートアップ - 地元のビットコイナーと会い、ネットワークを広げ、プロジェクトやアイデアを発表したり、ただくつろいだりしましょう！トピックはビットコインに関連するすべてです。",
+    "sw": "Bitcoin meetup - tukutane na wapenzi wa Bitcoin wa eneo letu, tujenge mtandao, uwasilishe miradi na mawazo yako au tujikinge tu! Mada zinahusisha kila kitu kinachogusa Bitcoin kwa mbali.",
+    "mr": "बिटकॉइन मीटअप - स्थानिक बिटकॉइनरशी भेटा, नेटवर्क करा, तुमची प्रकल्पे आणि कल्पना सादर करा किंवा फक्त वेळ घालवा! विषयांमध्ये बिटकॉइनला अप्रत्यक्षपणे स्पर्श करणारे सर्व काही समाविष्ट आहे.",
+    "fa": "میتاپ بیت‌کوین - با بیت‌کوینرهای محلی ملاقات کنید، شبکه‌سازی کنید، پروژه‌ها و ایده‌های خود را ارائه دهید یا فقط با هم وقت بگذرانید! موضوعات شامل همه چیزهایی است که به‌صورت غیرمستقیم به بیت‌کوین مرتبط می‌شود.",
+    "uk": "Bitcoin meetup — зустрічайте місцевих біткоїнерів, налагоджуйте контакти, представляйте свої проєкти та ідеї або просто спілкуйтеся! Теми охоплюють усе, що в будь‑якому сенсі стосується Bitcoin.",
+    "tr": "Bitcoin buluşması - yerel bitcoin meraklılarıyla tanışın, ağ kurun, projelerinizi ve fikirlerinizi sunun ya da sadece takılın! Konular, Bitcoin ile uzaktan da olsa temas eden her şeyi kapsar."
+   }
   },
   "past": false,
   "ongoing": false,
@@ -90,7 +139,7 @@
   "place_source": {
    "name": "Helsinki Bitcoin Hobbyists (Meetup.com)",
    "url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/",
-   "retrieved": "2026-11-07T03:20:30+00:00"
+   "retrieved": "2026-11-07T04:41:02.061695+01:00"
   }
  }
 }
