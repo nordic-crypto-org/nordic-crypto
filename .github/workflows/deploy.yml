@@ -108,6 +108,41 @@ jobs:
           CF_R2_STORY_BUCKET: ${{ vars.CF_R2_STORY_BUCKET }}
         run: python3 tools/story_images.py generate --published-after 2026-11-07T08:16:00Z
 
+      - name: Fetch newsletter videos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # The public release URL often answers 504 from a runner. gh uses the API.
+          # build.py then finds newsletter/published/<id>/video.mp4 and embeds it.
+          # A miss is not fatal: build.py keeps the download link.
+          python3 - << 'PY'
+          import json, os, subprocess, urllib.parse
+          root = "newsletter/published"
+          doc = json.load(open(os.path.join(root, "issues.json"), encoding="utf-8"))
+          for iss in doc.get("issues") or []:
+              v = iss.get("video") or {}
+              url = v.get("url") or ""
+              dest = os.path.join(root, str(iss["id"]), v.get("file") or "video.mp4")
+              if os.path.isfile(dest) and (not v.get("bytes") or os.path.getsize(dest) == v["bytes"]):
+                  print("have", iss["id"]); continue
+              parts = urllib.parse.urlparse(url).path.strip("/").split("/")
+              if len(parts) < 6 or parts[2] != "releases":
+                  print("skip", iss["id"]); continue
+              owner, repo, tag = parts[0], parts[1], parts[4]
+              fname = urllib.parse.unquote(parts[5])
+              tmp = os.path.join(root, str(iss["id"]), "_dl")
+              os.makedirs(tmp, exist_ok=True)
+              r = subprocess.run(["gh", "release", "download", tag, "--repo", f"{owner}/{repo}",
+                                  "--pattern", fname, "-D", tmp, "--clobber"])
+              got = os.path.join(tmp, fname)
+              if r.returncode == 0 and os.path.isfile(got):
+                  os.replace(got, dest)
+                  print("fetched", iss["id"], os.path.getsize(dest))
+              else:
+                  print("gh download failed", iss["id"], r.returncode)
+          PY
+
       - name: Public build
         id: build
         env:
