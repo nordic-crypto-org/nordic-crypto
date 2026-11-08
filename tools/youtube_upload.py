@@ -26,7 +26,7 @@ LOGOS = ("Logos and trademarks belong to their respective owners and are used on
 FOOTER = """Made with the help of artificial intelligence, with human editors. Not investment advice.
 
 Nordic Crypto:
-Website: {base}
+Nettside: {base}
 Telegram: https://t.me/nordiccryptochat
 X: https://x.com/nordiccryptobot
 Facebook: https://www.facebook.com/profile.php?id=61595548315551
