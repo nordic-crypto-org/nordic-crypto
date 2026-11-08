@@ -70,6 +70,20 @@ def upload(at, folder, meta):
     raise RuntimeError("upload failed after retries")
 
 
+def failure_note(name, code, body):
+    """One log line. The body is clipped. Callers must not pass a token."""
+    detail = " ".join((body or "").split())[:240]
+    note = f"{name} failed: HTTP {code}" + (f" {detail}" if detail else "")
+    if name == "thumbnail" and code == 403:
+        note += (". Custom thumbnails need a phone-verified channel (https://www.youtube.com/verify). "
+                 "Run 42468185685 inserted the video and then got this 403 on thumbnails.set. "
+                 "If the channel is already verified, re-consent the OAuth client with "
+                 "https://www.googleapis.com/auth/youtube or https://www.googleapis.com/auth/youtube.force-ssl "
+                 "and replace the youtube environment secret YT_REFRESH_TOKEN. Do not commit the token. "
+                 "Description fixes for an existing video go through tools/youtube_metadata.py, which does not upload.")
+    return note
+
+
 def extras(at, folder, meta, vid):
     notes = []
     steps = []
@@ -91,7 +105,8 @@ def extras(at, folder, meta, vid):
         try:
             fn()
         except urllib.error.HTTPError as e:
-            notes.append(f"{name} failed: HTTP {e.code}")
+            raw = e.read()[:400].decode("utf-8", "replace")
+            notes.append(failure_note(name, e.code, raw))
     return notes
 
 
