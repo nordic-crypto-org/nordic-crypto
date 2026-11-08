@@ -391,6 +391,72 @@ def generate_missing(items, store, *, now, published_after=None, limit=40, rng=N
     }
 
 
+def issue_story_id(issue_id):
+    """D1/R2 id for one newsletter illustration. Not a news story id."""
+    sid = "newsletter-" + str(issue_id or "").zfill(3)
+    if not ID_RE.match(sid):
+        raise ValueError("issue id is not a safe object key")
+    return sid
+
+
+def generate_issue_image(meta, store, *, now, generator=None, uploader=None):
+    """One illustration for a newsletter issue, stored in R2 and D1, never in git.
+
+    The style is a new library row (a technique that is not already stored).
+    An existing AI image for this issue is reused. A headline card is not stored:
+    the caller posts nothing until Workers AI returns a picture.
+    Returns a dict with story_id, style_id, url, path, kind. path is a temp PNG
+    when a new file was just written; the caller deletes it.
+    """
+    sid = issue_story_id(meta["id"])
+    existing = image_row(store, sid)
+    if existing and existing.get("kind") == "ai" and existing.get("style_id"):
+        return {
+            "story_id": sid, "style_id": existing["style_id"], "kind": "ai", "reused": True, "path": None,
+            "url": public_url(sid, existing.get("created_at")),
+        }
+    styles = _styles(store)
+    recent = _recent(store)
+    item = painter.issue_item(meta)
+    style = painter.derive_style(
+        item, styles, recent, techniques=painter.ISSUE_TECHNIQUES + tuple(painter.TECHNIQUES))
+    if style["id"] in {s.get("id") for s in styles}:
+        raise RuntimeError("refusing to repeat style " + style["id"])
+    fd, path = tempfile.mkstemp(prefix="nc-issue-", suffix=".png")
+    os.close(fd)
+    try:
+        painter.render(item, path, style=style, generator=generator)
+        kind, prompt = painter.render.kind, painter.render.prompt
+        if kind != "ai":
+            raise RuntimeError(
+                "Workers AI did not return an issue image. Nothing was stored and nothing should be posted. "
+                "Set CF_AI_TOKEN and CF_ACCOUNT_ID (the same names as story illustrations)."
+            )
+        if painter.OUTLETS.search(prompt or "") or painter.BANNED.search(prompt or ""):
+            raise RuntimeError("issue image prompt still names an outlet or a banned character")
+        key = r2_key(sid)
+        at = now.astimezone(dt.timezone.utc).isoformat(timespec="seconds")
+        (uploader or (lambda p, k: r2_put(p, k)))(path, key)
+        _insert_style(store, style, sid, at)
+        _upsert_image(store, {
+            "story_id": sid, "r2_key": key, "style_id": style["id"], "prompt": prompt,
+            "kind": "ai", "width": WIDTH, "height": HEIGHT,
+            "content_type": "image/png", "created_at": at,
+        })
+        _save_recent(store, painter.remember_style(recent, style["id"]))
+        log(f"{sid} ai {style['id']}")
+        return {
+            "story_id": sid, "style_id": style["id"], "kind": "ai", "reused": False,
+            "path": path, "url": public_url(sid, at),
+        }
+    except Exception:
+        try:
+            os.unlink(path)
+        except OSError:
+            pass
+        raise
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
