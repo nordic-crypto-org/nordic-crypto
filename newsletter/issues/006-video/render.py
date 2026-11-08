@@ -434,9 +434,9 @@ def seg_tonight(s):
         return frame, {}
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im)
-        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w('TONIGHT', tf, 6) + 60
+        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w(lab, tf, 6) + 60
         d.rectangle((140 - (1 - u) * 700, 160, 140 - (1 - u) * 700 + bw, 280), fill=GOLD)
-        spaced(d, (168 - (1 - u) * 700, 175), 'TONIGHT', tf, TAR, 6)
+        spaced(d, (168 - (1 - u) * 700, 175), lab, tf, TAR, 6)
         for i in range(3):
             a = eo((t - starts[i]) / 0.42)
             if a <= 0: continue
@@ -604,7 +604,7 @@ def seg_anchor(s):
         if lt_on:
             a = eo((t - 0.4) / 0.45) * (1 - eio(clamp((t - (s['dur'] - 0.7)) / 0.4)))
             if a > 0:
-                x0 = 90 if not V else 80; y0 = 820 if not V else 1380
+                x0 = 90 if not V else 80; y0 = 820 if not V else TICK_Y - 162
                 d.rectangle((x0, y0, x0 + int(nw * a), y0 + 96), fill=SAIL); d.rectangle((x0, y0, x0 + 12, y0 + 96), fill=GOLD)
                 if a > .8: d.text((x0 + 40, y0 + 8), C.ANCHOR, font=nf, fill=TAR)
                 d.rectangle((x0, y0 + 96, x0 + int(rw * a), y0 + 146), fill=SEA)
@@ -654,11 +654,12 @@ def vseg_tonight(s):
         hit = cue_at(sents, vo, needle)
         if hit is None and i < len(sents): hit = vo + sents[i][0]
         starts.append(0.2 + i * 1.6 if hit is None else hit)
+    lab = getattr(C, 'TONIGHT_LABEL', 'TONIGHT')
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im)
-        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w('TONIGHT', tf, 6) + 60
+        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w(lab, tf, 6) + 60
         d.rectangle((70 - (1 - u) * 800, 380, 70 - (1 - u) * 800 + bw, 500), fill=GOLD)
-        spaced(d, (98 - (1 - u) * 800, 395), 'TONIGHT', tf, TAR, 6)
+        spaced(d, (98 - (1 - u) * 800, 395), lab, tf, TAR, 6)
         for i in range(3):
             a = eo((t - starts[i]) / 0.42)
             if a <= 0: continue

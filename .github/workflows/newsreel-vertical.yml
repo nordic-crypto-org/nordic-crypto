@@ -1,0 +1,80 @@
+# Portrait-only newsreel (1080x1920, 30 fps). workflow_dispatch only, so a run
+# never rerenders the landscape cut and never posts to Facebook, Instagram, X or YouTube.
+# The job synthesises a new read. To lock the picture to an already published
+# landscape mix, render locally from that timeline and mix instead.
+name: Newsreel vertical
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue id, e.g. 006"
+        required: true
+      release:
+        description: "Existing release tag. Default: newsletter-<id>-newsreel-1"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: newsreel-vertical-${{ inputs.issue }}
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pick issue
+        id: pick
+        env:
+          IN: ${{ inputs.issue }}
+          REL: ${{ inputs.release }}
+        run: |
+          set -euo pipefail
+          id="$IN"
+          if [[ "$id" =~ ^[0-9]+$ ]]; then id=$(printf '%03d' "$((10#$id))"); fi
+          [ -d "newsletter/issues/${id}-video" ]
+          echo "id=$id" >> "$GITHUB_OUTPUT"
+          echo "num=$((10#$id))" >> "$GITHUB_OUTPUT"
+          if [ -n "$REL" ]; then tag="$REL"; else tag="newsletter-${id}-newsreel-1"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install -q -r newsletter/issues/${{ steps.pick.outputs.id }}-video/requirements.txt
+      - name: Render vertical
+        working-directory: newsletter/issues/${{ steps.pick.outputs.id }}-video
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          python3 tts.py
+          python3 timeline.py
+          python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
+          VERTICAL=1 SEGDIR=build/vertical/ bash render_all.sh
+          bash concat.sh build/timeline.json build/vertical build/mix.wav "build/nordic-crypto-${{ steps.pick.outputs.num }}-newsreel-vertical.mp4"
+          VERTICAL=1 python3 render.py thumb
+          mkdir -p out
+          cp "build/nordic-crypto-${{ steps.pick.outputs.num }}-newsreel-vertical.mp4" thumbnail-vertical.png out/
+          ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate:format=duration -of default=nw=1 \
+            "out/nordic-crypto-${{ steps.pick.outputs.num }}-newsreel-vertical.mp4"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: newsreel-vertical-${{ steps.pick.outputs.id }}
+          path: newsletter/issues/${{ steps.pick.outputs.id }}-video/out/
+          retention-days: 14
+      - name: Upload to the existing release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.pick.outputs.tag }}
+          NUM: ${{ steps.pick.outputs.num }}
+          ID: ${{ steps.pick.outputs.id }}
+        run: |
+          set -euo pipefail
+          # Refuse to create a release. The landscape asset on this tag stays as it is.
+          gh release view "$TAG" >/dev/null
+          gh release upload "$TAG" --clobber \
+            "newsletter/issues/$ID-video/out/nordic-crypto-$NUM-newsreel-vertical.mp4"
+          echo "### ${TAG} / nordic-crypto-${NUM}-newsreel-vertical.mp4" >> "$GITHUB_STEP_SUMMARY"
