@@ -45,6 +45,18 @@ class Prompts(unittest.TestCase):
         self.assertNotIn("Nordic Crypto AS", p)
         self.assertIn("No readable text", p)
 
+    def test_issue_item_drops_outlet_names(self):
+        item = xi.issue_item({
+            "title": "Nordic Crypto #6: NRK and E24 on banks",
+            "subtitle": "A week of news",
+            "stories_list": [{"title": "VG reports a raid"}, {"title": "A plain market note"}],
+        })
+        blob = item["title"] + " " + item["summary"]
+        self.assertNotRegex(blob, r"(?i)\b(nrk|e24|vg)\b")
+        self.assertIn("a newsroom", blob.lower())
+        self.assertTrue(any(t[0] == "cyanotype" for t in xi.ISSUE_TECHNIQUES))
+        self.assertIn("cyanotype", [t[0] for t in xi.TECHNIQUES])
+
     def test_banned_scrub(self):
         p = xi.story_prompt({"title_en": "A Tintin fan meetup", "country": "BE"}, "cinematic-night")
         self.assertNotRegex(p, r"(?i)\btintin\b")

@@ -25,11 +25,31 @@ class LongPost(unittest.TestCase):
         self.assertEqual(p, "Nordic Crypto #9: Big week\nhttps://nordiccrypto.no/newsletter/009/\n\n"
                             "T one\nhttps://nordiccrypto.no/stories/aaa/\n\nT two\nhttps://nordiccrypto.no/stories/bbb/")
 
-    def test_link_cap(self):
+    def test_every_story_is_linked(self):
         meta = dict(META, stories_list=[{"title": f"S{i}", "url": f"https://s.example/{i}"} for i in range(30)])
-        p = xn.build_long_post(meta, [f"https://nordiccrypto.no/stories/{i}/" for i in range(30)])
-        self.assertEqual(len(xn.URL_RE.findall(p)), xn.MAX_URLS)
-        self.assertTrue(p.endswith("More in the issue:\n" + "\n".join(f"S{i}" for i in range(xn.MAX_URLS - 1, 30))))
+        pages = [f"https://nordiccrypto.no/stories/{i}/" for i in range(30)]
+        p = xn.build_long_post(meta, pages)
+        self.assertEqual(len(xn.URL_RE.findall(p)), 31)
+        self.assertNotIn("More in the issue", p)
+        for i in range(30):
+            self.assertIn(f"S{i}\nhttps://nordiccrypto.no/stories/{i}/", p)
+
+    def test_missing_page_is_not_dropped(self):
+        with self.assertRaises(RuntimeError) as ctx:
+            xn.build_long_post(META, ["https://nordiccrypto.no/stories/aaa/", None])
+        self.assertIn("without a link", str(ctx.exception))
+
+    def test_over_limit_does_not_drop_stories(self):
+        meta = dict(META, stories_list=[{"title": "S" * 40, "url": "https://s.example/x"} for _ in range(8)])
+        pages = ["https://nordiccrypto.no/stories/x/"] * 8
+        old = xn.LONG_LIMIT
+        xn.LONG_LIMIT = 80
+        try:
+            with self.assertRaises(RuntimeError) as ctx:
+                xn.build_long_post(meta, pages)
+        finally:
+            xn.LONG_LIMIT = old
+        self.assertIn("refusing to drop", str(ctx.exception))
 
     def test_newest_issue_links_only_to_us(self):
         idx = xn.story_index()
@@ -40,19 +60,21 @@ class LongPost(unittest.TestCase):
             self.assertTrue(p.startswith(f"Nordic Crypto #{m['number']}: "))
             self.assertIn(xn.issue_url(m), p.split("\n")[1])
             self.assertLessEqual(xn.x_len(p), xn.LONG_LIMIT)
-            self.assertLessEqual(len(xn.URL_RE.findall(p)), xn.MAX_URLS)
+            self.assertEqual(len(xn.URL_RE.findall(p)), 1 + len(m["stories_list"]))
             for u in xn.URL_RE.findall(p):
                 self.assertTrue(u.startswith("https://nordiccrypto.no/"), u)
-            for s in m["stories_list"][:xn.MAX_URLS - 1]:
+            for s in m["stories_list"]:
                 self.assertIn(s["title"], p)
 
 
 class Run(unittest.TestCase):
     def setUp(self):
-        self.saved = (xn.create_post, xn.upload_video, xn.is_live)
+        self.saved = (xn.create_post, xn.upload_video, xn.upload_image, xn.is_live,
+                      xn.account_username, xn.prepare_issue_image, xn.assert_brand_account)
 
     def tearDown(self):
-        xn.create_post, xn.upload_video, xn.is_live = self.saved
+        (xn.create_post, xn.upload_video, xn.upload_image, xn.is_live,
+         xn.account_username, xn.prepare_issue_image, xn.assert_brand_account) = self.saved
         for k in xn.ENV: os.environ.pop(k, None)
 
     def state(self, name):
@@ -69,7 +91,8 @@ class Run(unittest.TestCase):
         out = buf.getvalue()
         self.assertIn("# Issue 002", out)
         self.assertIn("one long post", out)
-        self.assertIn("[+ video.mp4]", out)
+        self.assertIn("[+ issue image", out)
+        self.assertNotIn("[+ video.mp4]", out)
         self.assertFalse(os.path.exists(state))
 
     def test_missing_secrets_skip(self):
@@ -82,26 +105,62 @@ class Run(unittest.TestCase):
         state = self.state("x_posted_test3.json")
         xn.save_state(state, {"002": {"complete": True, "tweet_ids": ["1"]}})
         for k in xn.ENV: os.environ[k] = "x"
-        xn.create_post = xn.is_live = lambda *a, **k: self.fail("must not touch X")
+        xn.create_post = xn.is_live = xn.assert_brand_account = lambda *a, **k: self.fail("must not touch X")
         self.assertEqual(xn.main(["--issue", "002", "--state", state]), 0)
+
+    def test_partial_row_is_also_a_duplicate(self):
+        state = self.state("x_posted_partial.json")
+        xn.save_state(state, {"002": {"tweet_ids": ["9"], "url": "https://x.com/nordiccryptobot/status/9"}})
+        for k in xn.ENV: os.environ[k] = "x"
+        xn.create_post = xn.prepare_issue_image = lambda *a, **k: self.fail("must not post again")
+        self.assertEqual(xn.main(["--issue", "002", "--state", state, "--no-video"]), 0)
+
+    def _ready(self):
+        for k in xn.ENV: os.environ[k] = "x"
+        xn.is_live = lambda url: True
+        xn.account_username = lambda creds: "nordiccryptobot"
+        xn.prepare_issue_image = lambda meta: {
+            "path": os.path.join(os.environ.get("TMPDIR", "/tmp"), "nc-issue-test.png"),
+            "style_id": "cyanotype-default", "kind": "ai",
+            "url": "https://api.nordiccrypto.no/story-images/newsletter-002.png"}
+        open(xn.prepare_issue_image({})["path"], "wb").write(b"png")
+        xn.upload_image = lambda creds, path: "img1"
+        xn.upload_video = lambda *a, **k: self.fail("the newsreel is not uploaded to X")
 
     def test_posts_once_as_one_post(self):
         state = self.state("x_posted_test4.json")
-        for k in xn.ENV: os.environ[k] = "x"
+        self._ready()
         calls = []
-        xn.is_live = lambda url: True
-        xn.create_post = lambda creds, text, reply_to=None, media_id=None: calls.append((text, reply_to)) or "42"
+        def create(creds, text, reply_to=None, media_id=None, media_ids=None):
+            calls.append((text, reply_to, media_ids))
+            return "42"
+        xn.create_post = create
         self.assertEqual(xn.main(["--issue", "002", "--state", state, "--no-video"]), 0)
         self.assertEqual(len(calls), 1)
         self.assertIsNone(calls[0][1])
+        self.assertEqual(calls[0][2], ["img1"])
         self.assertIn("https://nordiccrypto.no/stories/", calls[0][0])
-        self.assertEqual(xn.load_state(state)["002"]["tweet_ids"], ["42"])
+        self.assertNotIn("https://x.com/jQrgensn", calls[0][0])
+        row = xn.load_state(state)["002"]
+        self.assertEqual(row["tweet_ids"], ["42"])
+        self.assertTrue(row["url"].startswith("https://x.com/nordiccryptobot/status/"))
+        self.assertEqual(row["image_style"], "cyanotype-default")
+
+    def test_refuses_other_account(self):
+        state = self.state("x_posted_other.json")
+        self._ready()
+        xn.account_username = lambda creds: "jQrgensn"
+        xn.create_post = lambda *a, **k: self.fail("must not post as another account")
+        with self.assertRaises(RuntimeError) as ctx:
+            xn.main(["--issue", "002", "--state", state, "--no-video"])
+        self.assertIn("@jQrgensn", str(ctx.exception))
+        self.assertIn("nordiccryptobot", str(ctx.exception))
+        self.assertFalse(os.path.exists(state))
 
     def test_rejected_post_is_not_split(self):
         state = self.state("x_posted_test5.json")
-        for k in xn.ENV: os.environ[k] = "x"
+        self._ready()
         calls = []
-        xn.is_live = lambda url: True
         def reject(*a, **k):
             calls.append(1)
             raise RuntimeError("X API POST https://api.x.com/2/tweets -> 400: too long")
@@ -115,8 +174,73 @@ class Run(unittest.TestCase):
         state = self.state("x_posted_test6.json")
         for k in xn.ENV: os.environ[k] = "x"
         xn.is_live = lambda url: "/stories/" not in url
-        xn.create_post = lambda *a, **k: self.fail("must not post before story pages are live")
+        xn.create_post = xn.prepare_issue_image = lambda *a, **k: self.fail("must not post before story pages are live")
         self.assertEqual(xn.main(["--issue", "002", "--state", state, "--no-video"]), 0)
+
+    def test_release_download_retries_502(self):
+        import io as _io
+        import urllib.error
+        calls = {"n": 0, "urls": []}
+
+        class Body:
+            def __init__(self, data):
+                self.data = data
+            def read(self):
+                return self.data
+            def __enter__(self):
+                return self
+            def __exit__(self, *a):
+                return False
+
+        def opener(req, timeout):
+            calls["n"] += 1
+            calls["urls"].append(req.full_url)
+            if calls["n"] == 1:
+                raise urllib.error.HTTPError(req.full_url, 502, "Bad Gateway", {}, _io.BytesIO(b""))
+            return Body(b"mp4-bytes")
+
+        dest = self.state("video.bin")
+        url = "https://github.com/nordic-crypto-org/nordic-crypto/releases/download/newsletter-006-newsreel-1/nordic-crypto-6-newsreel.mp4"
+        os.environ["GH_TOKEN"] = "super-secret-token-value"
+        try:
+            buf = _io.StringIO()
+            with contextlib.redirect_stderr(buf):
+                xn.download_url(url, dest, token=None, attempts=3, sleep=lambda s: None, opener=opener)
+            self.assertEqual(open(dest, "rb").read(), b"mp4-bytes")
+            self.assertEqual(calls["n"], 2)
+            self.assertIn("502", buf.getvalue())
+            self.assertNotIn("super-secret-token-value", buf.getvalue())
+        finally:
+            os.environ.pop("GH_TOKEN", None)
+
+    def test_release_download_prefers_the_api(self):
+        calls = []
+
+        class Body:
+            def __init__(self, data):
+                self.data = data
+            def read(self):
+                return self.data
+            def __enter__(self):
+                return self
+            def __exit__(self, *a):
+                return False
+
+        def opener(req, timeout):
+            calls.append(req.full_url)
+            if req.full_url.endswith("/releases/tags/newsletter-006-newsreel-1"):
+                self.assertTrue(req.get_header("Authorization", "").startswith("Bearer "))
+                self.assertNotIn("super-secret-token-value", req.full_url)
+                return Body(b'{"assets":[{"name":"nordic-crypto-6-newsreel.mp4","url":"https://api.github.com/repos/o/r/releases/assets/9"}]}')
+            if req.full_url.endswith("/releases/assets/9"):
+                return Body(b"from-api")
+            raise AssertionError(req.full_url)
+
+        dest = self.state("video-api.bin")
+        url = "https://github.com/nordic-crypto-org/nordic-crypto/releases/download/newsletter-006-newsreel-1/nordic-crypto-6-newsreel.mp4"
+        xn.download_url(url, dest, token="super-secret-token-value", attempts=2, sleep=lambda s: None, opener=opener)
+        self.assertEqual(open(dest, "rb").read(), b"from-api")
+        self.assertTrue(all("github.com/nordic-crypto-org" not in u or "api.github.com" in u for u in calls))
 
 
 if __name__ == "__main__":
