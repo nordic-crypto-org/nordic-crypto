@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-08T22:56:58+00:00",
+ "generated_at": "2026-11-09T02:43:57+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": false,
   "note": "Norwegian exchange. Public tickers include NOK, SEK, DKK and EUR. last is lastTradePrice. bid is currentHighestBuyPrice. ask is currentLowestSellPrice. volume_*_24h is the exchange's last-24-hours field. GET /markets/{id}/orders (the order book) is not public. The API does not send Access-Control-Allow-Origin.",
   "status": "error",
-  "fetched_at": "2026-11-08T22:56:57+00:00",
+  "fetched_at": "2026-11-09T02:43:57+00:00",
   "error": "HTTP 403 from https://api.nbx.com/markets",
   "ticker_count": 0
  },
