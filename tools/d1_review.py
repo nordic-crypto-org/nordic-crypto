@@ -12,6 +12,7 @@ The default reads and writes the remote database with wrangler d1 execute.
   python3 tools/d1_review.py reject-event --id EVENT --reason "No Nordic link."
   python3 tools/d1_review.py add-event --json event.json --approve
   python3 tools/d1_review.py update-event --id EVENT --set start=2026-10-24T18:30:00+02:00 --set paid=false
+  python3 tools/d1_review.py add-source --kind event --json source.json --enabled false --note "Checked by hand."
 """
 import argparse
 import json
@@ -142,6 +143,56 @@ def _event_fields(args):
     return fields
 
 
+def _load_source(store, source_id):
+    if store is not None:
+        row = d1_store.one(store, "SELECT * FROM sources WHERE id = ?", (source_id,))
+    else:
+        rows = wrangler_rows("SELECT * FROM sources WHERE id = " + d1_store.sql_quote(source_id) + ";\n")
+        row = rows[0] if rows else None
+    if not row:
+        raise d1_store.D1Error("no source " + str(source_id))
+    return row
+
+
+def _source_payload(args):
+    """The source object. status is a source field (feed health), not the review status."""
+    if not args.json:
+        raise d1_store.D1Error("add-source needs --json")
+    raw = args.json
+    if raw == "-":
+        raw = sys.stdin.read()
+    elif os.path.exists(raw):
+        raw = open(raw, encoding="utf-8").read()
+    try:
+        fields = json.loads(raw)
+    except json.JSONDecodeError:
+        raise d1_store.D1Error("--json must be a JSON object") from None
+    if not isinstance(fields, dict):
+        raise d1_store.D1Error("--json must be a JSON object")
+    for item in args.set:
+        key, sep, value = item.partition("=")
+        if not sep or not key:
+            raise d1_store.D1Error("--set needs FIELD=VALUE")
+        try:
+            fields[key] = json.loads(value)
+        except json.JSONDecodeError:
+            fields[key] = value
+    if args.id:
+        fields["id"] = args.id
+    return fields
+
+
+def _enabled_arg(value):
+    if value is None:
+        return None
+    text = str(value).strip().lower()
+    if text in ("1", "true", "yes"):
+        return True
+    if text in ("0", "false", "no"):
+        return False
+    raise d1_store.D1Error("--enabled must be true or false")
+
+
 def _load_story(store, story_id):
     if store is not None:
         row = d1_store.one(store, "SELECT * FROM stories WHERE id = ?", (story_id,))
@@ -165,18 +216,22 @@ def _load_event(store, event_id):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Review a Nordic Crypto story or event in D1")
-    parser.add_argument("command", choices=("pending", "approve", "reject", "approve-event", "reject-event", "add-event", "update-event"))
-    parser.add_argument("--id", help="story id or event id")
+    parser = argparse.ArgumentParser(description="Review a Nordic Crypto story, event or source in D1")
+    parser.add_argument("command", choices=(
+        "pending", "approve", "reject", "approve-event", "reject-event", "add-event", "update-event", "add-source",
+    ))
+    parser.add_argument("--id", help="story id, event id or source id")
     parser.add_argument("--summary", help="English summary, own words (required to approve a story)")
     parser.add_argument("--reason", help="why it was rejected")
     parser.add_argument("--by", help="who decided (default: Nordic Crypto redaktør, or NC_EDITOR)")
-    parser.add_argument("--note", help="editor note stored on an event")
+    parser.add_argument("--note", help="editor note stored on an event or a source")
     parser.add_argument("--note-i18n", help="JSON object of language code to note text")
     parser.add_argument("--title-en", help="English headline when the source headline is in another language")
-    parser.add_argument("--json", help="event fields as a JSON object, a file path or - for stdin")
+    parser.add_argument("--json", help="event or source fields as a JSON object, a file path or - for stdin")
     parser.add_argument("--set", action="append", default=[], metavar="FIELD=VALUE", help="one event field; VALUE is JSON or plain text")
     parser.add_argument("--approve", action="store_true", help="publish the added or updated event")
+    parser.add_argument("--kind", choices=("news", "event"), help="add-source: news outlet or event source")
+    parser.add_argument("--enabled", choices=("true", "false"), help="add-source: whether the fetch may read it")
     parser.add_argument("--sqlite", help="apply to this SQLite file instead of wrangler")
     parser.add_argument("--api", action="store_true", help="use the Cloudflare HTTP API instead of wrangler")
     parser.add_argument("--print-sql", action="store_true", help="print the SQL and do not run the write")
@@ -199,6 +254,33 @@ def main(argv=None):
             "ORDER BY start_at;\n"
         )
         _print_pending(stories, events)
+        return 0
+
+    if args.command == "add-source":
+        if not args.kind:
+            raise d1_store.D1Error("add-source needs --kind news or --kind event")
+        fields = _source_payload(args)
+        sid = fields.get("id")
+        row = None
+        if sid:
+            try:
+                row = _load_source(store, sid)
+            except d1_store.D1Error as ex:
+                if not str(ex).startswith("no source"):
+                    raise
+        at = d1_store.now_iso()
+        plan = d1_store.plan_source_upsert(
+            row, fields, args.kind, actor, at, enabled=_enabled_arg(args.enabled), note=args.note,
+        )
+        if args.print_sql:
+            print(d1_store.source_upsert_sql(plan, actor))
+            return 0
+        if store is not None:
+            d1_store.apply_source_upsert(store, plan, actor, at)
+        else:
+            run_wrangler(d1_store.source_upsert_sql(plan, actor))
+        state = "on" if plan["enabled"] else "off"
+        print(f"d1 review: source {plan['id']} {'added' if plan['insert'] else 'updated'} ({plan['kind']}, enabled {state})")
         return 0
 
     if args.command in ("add-event", "update-event"):

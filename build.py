@@ -1115,7 +1115,7 @@ def build():
             D1_EVENTS = materialize(ROOT, preview=PREVIEW)
         except Exception as ex:
             # NC_D1_FALLBACK=json: build from the committed JSON snapshot when D1 cannot be read
-            # (offline, token missing). Off by default so CI never publishes stale data silently.
+            # (offline, token missing), including sources.json. Off by default so CI never publishes stale data silently.
             if os.environ.get("NC_D1_FALLBACK", "").strip().lower() != "json": raise
             print(f"build: D1 unavailable ({str(ex).splitlines()[0][:200]}); building from the JSON snapshot", file=sys.stderr)
             subprocess.run([sys.executable, P("tools", "apply_approvals.py")], check=True, timeout=180)

@@ -71,6 +71,7 @@ import site_url
 from tools.event_description import language_of, prefer as prefer_description, record as description_record
 from tools.event_select import explicit_attendee_count, explicit_ics_count
 from tools import location_check
+from tools.d1_store import event_source_fetched
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
 TZ = {"NO": "Europe/Oslo", "SE": "Europe/Stockholm", "DK": "Europe/Copenhagen", "FI": "Europe/Helsinki", "IS": "Atlantic/Reykjavik"}
 UTC = dt.timezone.utc
@@ -1485,7 +1486,8 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
         pause = cfg.get("min_delay_seconds", 2)
         ua = site_url.expand(cfg.get("user_agent") or ("NordicCryptoBot/0.1 (+" + site_url.BASE + "about/; news headline bot)"))
         for src in sources:
-            if not src.get("enabled", True): continue
+            # type manual and enabled false is researcher-only (undoqo-plebs). It is never requested.
+            if not event_source_fetched(src): continue
             if only and src["id"] not in only: continue
             err = None; n0 = len(new); n_found = 0; tz = TZ.get(src.get("country"), "Europe/Oslo")
             try:

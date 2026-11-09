@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { applyEventReview, applyStoryReview, editorAuthorized, handle, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
+import { applyEventReview, applySourceUpsert, applyStoryReview, editorAuthorized, handle, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
 
 const TOKEN = "editor-token-for-tests";
 
@@ -112,7 +112,7 @@ function fakeDb(seed) {
   const stories = new Map(seed.stories || []);
   const events = new Map(seed.events || []);
   const images = new Map(seed.images || []);
-  const sources = seed.sources || [];
+  const sources = new Map(seed.sources || []);
   const audits = [];
   function prepare(sql) {
     const state = { sql, params: [] };
@@ -125,6 +125,7 @@ function fakeDb(seed) {
         if (state.sql.includes("FROM story_images")) return images.get(state.params[0]) || null;
         if (state.sql.includes("FROM stories")) return stories.get(state.params[0]) || null;
         if (state.sql.includes("FROM events")) return events.get(state.params[0]) || null;
+        if (state.sql.includes("FROM sources")) return sources.get(state.params[0]) || null;
         return null;
       },
       async all() {
@@ -141,7 +142,10 @@ function fakeDb(seed) {
         if (state.sql.includes("FROM events") && state.sql.includes("item_status = 'pending'")) {
           return { results: [...events.values()].filter((row) => row.review_status === "pending" && row.item_status === "pending") };
         }
-        if (state.sql.includes("FROM sources")) return { results: sources };
+        if (state.sql.includes("FROM sources")) {
+          const rows = [...sources.values()].filter((row) => row.review_status === "approved");
+          return { results: rows.map((row) => ({ payload: row.payload })) };
+        }
         return { results: [] };
       },
       async run() {
@@ -162,6 +166,31 @@ function fakeDb(seed) {
           row.item_status = state.params[2];
           row.reviewed_by = state.params[3];
           row.reviewed_at = state.params[4];
+        } else if (state.sql.startsWith("INSERT INTO sources")) {
+          const id = state.params[0];
+          sources.set(id, {
+            id,
+            kind: state.params[1],
+            name: state.params[2],
+            country: state.params[3],
+            url: state.params[4],
+            enabled: state.params[5],
+            review_status: state.params[6],
+            reviewed_by: state.params[7],
+            reviewed_at: state.params[8],
+            review_note: state.params[9],
+            payload: state.params[10],
+            content_hash: state.params[11],
+          });
+        } else if (state.sql.startsWith("UPDATE sources")) {
+          const id = state.params[state.params.length - 1];
+          const row = sources.get(id);
+          row.kind = state.params[0];
+          row.name = state.params[1];
+          row.enabled = state.params[4];
+          row.review_status = state.params[5];
+          row.review_note = state.params[8];
+          row.payload = state.params[9];
         } else if (state.sql.startsWith("INSERT INTO review_audit")) {
           audits.push(state.params);
         }
@@ -170,7 +199,7 @@ function fakeDb(seed) {
     };
     return api;
   }
-  return { prepare, stories, events, audits };
+  return { prepare, stories, events, sources, audits };
 }
 
 function request(method, path, { token, body } = {}) {
@@ -269,4 +298,54 @@ test("a story image URL is public and the prompt is not", async () => {
   const bare = publicImage(image, "https://api.nordiccrypto.no", "Headline");
   assert.equal(bare.prompt, undefined);
   assert.equal(bare.alt, "Headline");
+});
+
+test("a manual source is stored off and is not fetched by being public feed config", async () => {
+  const missing = applySourceUpsert(null, { source_kind: "event", payload: { name: "x" } }, "Editor", "2026-11-09T12:00:00Z");
+  assert.equal(missing.status, 400);
+  const plan = applySourceUpsert(null, {
+    source_kind: "event",
+    note: "Checked by hand.",
+    payload: { id: "undoqo-plebs", name: "Undoqo", url: "https://example.org/plebs", type: "manual" },
+  }, "Editor", "2026-11-09T12:00:00Z");
+  assert.equal(plan.insert, true);
+  assert.equal(plan.enabled, 0);
+  assert.equal(plan.payload.enabled, false);
+  assert.equal(plan.payload.note, undefined);
+  assert.equal(plan.review_note, "Checked by hand.");
+  const db = fakeDb({ sources: [] });
+  const env = { DB: db, EDITOR_TOKEN: TOKEN };
+  const added = await handle(request("POST", "/api/review", {
+    token: TOKEN,
+    body: {
+      kind: "source",
+      source_kind: "event",
+      note: "Checked by hand.",
+      payload: { id: "undoqo-plebs", name: "Undoqo", url: "https://example.org/plebs", type: "manual", enabled: false },
+    },
+  }), env);
+  const body = await added.json();
+  assert.equal(added.status, 200);
+  assert.equal(body.ok, true);
+  assert.equal(body.enabled, false);
+  const row = db.sources.get("undoqo-plebs");
+  assert.equal(row.review_status, "approved");
+  assert.equal(row.review_note, "Checked by hand.");
+  assert.equal(JSON.parse(row.payload).type, "manual");
+  const catalogue = await (await handle(request("GET", "/api/v1/sources.json"), env)).json();
+  assert.equal(catalogue.sources[0].id, "undoqo-plebs");
+  assert.equal(catalogue.sources[0].enabled, false);
+  assert.equal(JSON.stringify(catalogue).includes("Checked by hand"), false);
+  const again = await handle(request("POST", "/api/review", {
+    token: TOKEN,
+    body: {
+      kind: "source",
+      source_kind: "event",
+      id: "undoqo-plebs",
+      payload: { id: "undoqo-plebs", name: "Undoqo Plebs", url: "https://example.org/plebs", type: "manual", enabled: false },
+    },
+  }), env);
+  assert.equal((await again.json()).ok, true);
+  assert.equal(JSON.parse(db.sources.get("undoqo-plebs").payload).name, "Undoqo Plebs");
+  assert.equal(db.sources.get("undoqo-plebs").review_note, "Checked by hand.");
 });

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nightly fetch <-> D1.
 
-  python3 tools/d1_sync.py restore     # fold D1 rows into the working JSON, restore fetch documents
+  python3 tools/d1_sync.py restore     # fold D1 rows into the working JSON, write sources.json, restore fetch documents
   python3 tools/d1_sync.py push        # write new and pending rows; do not reopen an approved row
   python3 tools/d1_sync.py stage DEST  # copy the files the privacy gate should see
 
@@ -36,10 +36,27 @@ def main(argv=None):
         print("d1 stage: " + (", ".join(copied) if copied else "nothing to stage"))
         return 0
     if cmd == "restore":
-        result = d1_store.restore_root(_store(), root)
+        try:
+            result = d1_store.restore_root(_store(), root)
+        except d1_store.D1Error as ex:
+            # NC_D1_FALLBACK=json: leave the committed sources.json (and the other snapshots)
+            # in place when D1 cannot be read. Off by default, so CI does not fetch a stale catalogue quietly.
+            if os.environ.get("NC_D1_FALLBACK", "").strip().lower() != "json":
+                raise
+            print(
+                "d1 restore: D1 unavailable (" + str(ex).splitlines()[0][:200] + "); keeping the JSON snapshot",
+                file=sys.stderr,
+            )
+            return 0
+        source_note = ""
+        added = result.get("sources_added") or 0
+        replaced = result.get("sources_replaced") or 0
+        if added or replaced:
+            source_note = f", sources {added} added and {replaced} replaced"
         print(
             "d1 restore: "
             f"{result['stories_added']} stories and {result['events_added']} events folded in"
+            + source_note
             + (f", documents {', '.join(result['documents'])}" if result["documents"] else "")
         )
         return 0

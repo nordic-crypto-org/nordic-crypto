@@ -3,7 +3,8 @@
 
 Safe to run more than once. A second run with the same files writes nothing.
 An approval already stored in D1, with a later reviewed_at, is not overwritten
-by the older JSON.
+by the older JSON. A source row already in D1 is kept: the import only inserts
+ids the table does not have, so an editor change made with add-source stays.
 
   python3 tools/d1_import.py                  # remote, needs the token and ids
   python3 tools/d1_import.py --sqlite FILE    # local file, for a dry run

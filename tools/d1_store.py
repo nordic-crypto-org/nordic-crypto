@@ -102,6 +102,7 @@ Review without a commit, from the repo root (wrangler d1, remote):
      python3 tools/d1_review.py reject --id STORY_ID --reason \"…\"
      python3 tools/d1_review.py approve-event --id EVENT_ID --by \"Nordic Crypto redaktør\"
      python3 tools/d1_review.py reject-event --id EVENT_ID --reason \"…\"
+     python3 tools/d1_review.py add-source --kind event --json source.json --note \"Checked by hand.\"
 """
 
 
@@ -669,46 +670,37 @@ def import_events(store, records, at, actor="import"):
 
 
 def import_sources(store, sources, kind, at, actor="import"):
-    stats = {"inserted": 0, "updated": 0, "skipped": 0}
+    """Insert source ids D1 does not have. A row already stored is left as it is.
+
+    D1 owns the catalogue after the first import. A later edit to sources.json
+    does not overwrite a feed URL, an enabled flag, or a source an editor added
+    with add-source. Rows are not deleted.
+    """
+    stats = {"inserted": 0, "updated": 0, "skipped": 0, "kept": 0}
     for src in sources or []:
         if not isinstance(src, dict) or not src.get("id"):
             raise D1Error("a source is missing id")
+        existing = one(store, "SELECT id FROM sources WHERE id = ?", (src["id"],))
+        if existing:
+            stats["kept"] += 1
+            continue
         text = dumps(src)
         row_hash = digest(text)
-        existing = one(store, "SELECT content_hash, created_at, review_status FROM sources WHERE id = ?", (src["id"],))
-        if existing and existing["content_hash"] == row_hash:
-            stats["skipped"] += 1
-            continue
         enabled = 1 if src.get("enabled", True) else 0
-        if existing and existing["review_status"] == "rejected":
-            enabled = 0
-        values = (
-            src["id"], kind, src.get("name"), src.get("country"), src.get("url"),
-            enabled, "rejected" if existing and existing["review_status"] == "rejected" else "approved",
-            None, None, None, text, row_hash, at,
+        store.execute(
+            """
+            INSERT INTO sources (
+              id, kind, name, country, url, enabled, review_status, reviewed_by, reviewed_at,
+              review_note, payload, content_hash, created_at, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                src["id"], kind, src.get("name"), src.get("country"), src.get("url"),
+                enabled, "approved", None, None, None, text, row_hash, at, at,
+            ),
         )
-        if existing:
-            store.execute(
-                """
-                UPDATE sources SET
-                  kind = ?, name = ?, country = ?, url = ?, enabled = ?, payload = ?, content_hash = ?, updated_at = ?
-                WHERE id = ?
-                """,
-                (kind, src.get("name"), src.get("country"), src.get("url"), enabled, text, row_hash, at, src["id"]),
-            )
-            stats["updated"] += 1
-        else:
-            store.execute(
-                """
-                INSERT INTO sources (
-                  id, kind, name, country, url, enabled, review_status, reviewed_by, reviewed_at,
-                  review_note, payload, content_hash, created_at, updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """,
-                values + (at,),
-            )
-            stats["inserted"] += 1
-    if stats["inserted"] or stats["updated"]:
+        stats["inserted"] += 1
+    if stats["inserted"]:
         audit(store, "source", kind, "import", actor, at, dumps(stats))
     return stats
 
@@ -1053,9 +1045,144 @@ def sync_root(store, root, at=None, actor="fetch"):
     return {"stories": stories, "events": event_stats, "documents": documents, **{"event_" + k: v for k, v in sidecars.items()}}
 
 
+def researcher_only(src):
+    """A manual source that is switched off is for the researcher, not the fetch.
+
+    enabled defaults to on when the key is absent, matching events.py. undoqo-plebs
+    is one of these rows: type manual, enabled false, checked by hand, never requested.
+    """
+    if not isinstance(src, dict) or src.get("type") != "manual":
+        return False
+    return not src.get("enabled", True)
+
+
+def news_source_fetched(src):
+    """True when fetch.py should read this news source. Researcher-only rows are never read."""
+    if not isinstance(src, dict) or researcher_only(src):
+        return False
+    return bool(src.get("enabled") and src.get("feed") and not src.get("podcast"))
+
+
+def event_source_fetched(src):
+    """True when events.py should open this event source. Researcher-only rows are never opened."""
+    if not isinstance(src, dict) or researcher_only(src):
+        return False
+    return bool(src.get("enabled", True))
+
+
+def _source_payload_from_row(row):
+    try:
+        payload = json.loads(row["payload"])
+    except (TypeError, json.JSONDecodeError):
+        raise D1Error("a source payload could not be read") from None
+    if not isinstance(payload, dict):
+        raise D1Error("a source payload is not an object")
+    payload = dict(payload)
+    if not payload.get("id"):
+        payload["id"] = row.get("id")
+    column_on = bool(row.get("enabled")) and row.get("review_status") != "rejected"
+    if bool(payload.get("enabled", True)) != column_on:
+        payload["enabled"] = column_on
+    return payload
+
+
+def load_source_payloads(store):
+    """News payloads and event payloads from the sources table, in kind then id order."""
+    news, events = [], []
+    for row in store.query(
+        "SELECT id, kind, enabled, review_status, payload FROM sources ORDER BY kind, id",
+        (),
+    ):
+        payload = _source_payload_from_row(row)
+        if row.get("kind") == "event":
+            events.append(payload)
+        else:
+            news.append(payload)
+    return news, events
+
+
+def _fold_source_list(rows, incoming):
+    """D1 replaces the checkout copy of each id and appends ids the file does not have.
+
+    A row whose JSON already matches is left untouched, so a restore does not
+    rewrite the whole catalogue over key order.
+    """
+    rows = [row for row in (rows or [])]
+    index = {}
+    for i, row in enumerate(rows):
+        if isinstance(row, dict) and row.get("id") and row["id"] not in index:
+            index[row["id"]] = i
+    added = replaced = 0
+    for payload in incoming:
+        sid = payload.get("id")
+        if not sid:
+            continue
+        if sid in index:
+            if dumps(rows[index[sid]]) != dumps(payload):
+                rows[index[sid]] = payload
+                replaced += 1
+        else:
+            rows.append(payload)
+            index[sid] = len(rows) - 1
+            added += 1
+    return rows, added, replaced
+
+
+def _drop_ids(rows, ids):
+    if not ids:
+        return list(rows or []), 0
+    kept, removed = [], 0
+    for row in rows or []:
+        if isinstance(row, dict) and row.get("id") in ids:
+            removed += 1
+            continue
+        kept.append(row)
+    return kept, removed
+
+
+def write_sources_file(root, news_in, event_in):
+    """Fold D1 source payloads into sources.json.
+
+    News rows land in sources, event rows in event_sources. user_agent,
+    min_delay_seconds, fetch_workers and the note stay. An empty sources table
+    leaves the file alone, so a missed import cannot blank the catalogue.
+    """
+    path = os.path.join(root, "sources.json")
+    if not news_in and not event_in:
+        return {"sources_added": 0, "sources_replaced": 0}
+    doc = load_json(path, {}) or {}
+    if not isinstance(doc, dict):
+        doc = {}
+    news_ids = {row.get("id") for row in news_in if row.get("id")}
+    event_ids = {row.get("id") for row in event_in if row.get("id")}
+    news, news_dropped = _drop_ids(doc.get("sources") or [], event_ids)
+    events, events_dropped = _drop_ids(doc.get("event_sources") or [], news_ids)
+    news, n_added, n_replaced = _fold_source_list(news, news_in)
+    events, e_added, e_replaced = _fold_source_list(events, event_in)
+    added = n_added + e_added
+    replaced = n_replaced + e_replaced + news_dropped + events_dropped
+    if not added and not replaced and os.path.exists(path):
+        return {"sources_added": 0, "sources_replaced": 0}
+    doc = dict(doc)
+    doc["sources"] = news
+    doc["event_sources"] = events
+    save_json(path, doc)
+    return {"sources_added": added, "sources_replaced": replaced}
+
+
+def write_sources_from_store(store, root):
+    news_in, event_in = load_source_payloads(store)
+    return write_sources_file(root, news_in, event_in)
+
+
 def restore_root(store, root):
     """Fold D1 rows the checkout does not already have, and restore fetch documents.
-    Does not write private terms or the HTTP cache."""
+
+    sources.json is filled from the sources table before a fetch reads it: news
+    payloads into sources, event payloads into event_sources. Does not write
+    private terms or the HTTP cache.
+    """
+    news_in, event_in = load_source_payloads(store)
     news_path = os.path.join(root, "data", "news.json")
     events_path = os.path.join(root, "data", "events.json")
     news = load_json(news_path, {"items": []}) or {"items": []}
@@ -1101,7 +1228,14 @@ def restore_root(store, root):
             if not doc["payload"].endswith("\n"):
                 fh.write("\n")
         restored.append(name)
-    return {"stories_added": added_stories, "events_added": added_events, "documents": restored}
+    source_stats = write_sources_file(root, news_in, event_in)
+    return {
+        "stories_added": added_stories,
+        "events_added": added_events,
+        "documents": restored,
+        "sources_added": source_stats["sources_added"],
+        "sources_replaced": source_stats["sources_replaced"],
+    }
 
 
 def story_columns(row):
@@ -1160,9 +1294,10 @@ def event_approvals(rows):
 
 
 def materialize(root, preview=False, store=None, at=None):
-    """Write data/news.json and data/events.json from D1. Does not write queue/approved.json,
+    """Write data/news.json, data/events.json and sources.json from D1. Does not write queue/approved.json,
     so the org-chart approvals on the box are left alone. Returns the event approval dict
-    for this build. Refuses an empty story table so a missed import cannot publish a blank site."""
+    for this build. Refuses an empty story table so a missed import cannot publish a blank site.
+    An empty sources table leaves sources.json as it is."""
     if store is None:
         store = open_remote()
     story_rows = store.query(
@@ -1196,6 +1331,7 @@ def materialize(root, preview=False, store=None, at=None):
         if row["review_status"] == "pending" and not preview:
             continue
         stories.append(story_columns(row))
+    news_in, event_in = load_source_payloads(store)
     at = at or now_iso()
     save_json(os.path.join(root, "data", "news.json"), {"updated": at, "items": stories})
     save_json(
@@ -1203,6 +1339,7 @@ def materialize(root, preview=False, store=None, at=None):
         {"updated": at, "events": [event_payload(row) for row in event_rows]},
     )
     _write_sidecars(store, root)  # translations and redirects; the committed files stay the offline fallback
+    write_sources_file(root, news_in, event_in)  # same catalogue the fetch reads; the git file stays the snapshot
     return event_approvals(event_rows)
 
 
@@ -1497,6 +1634,120 @@ def apply_event_edit(store, plan, actor, at):
         ))
         _event_extra_columns(store, json.loads(plan["payload"]))
     audit(store, "event", plan["id"], "add" if plan["insert"] else "edit", actor, at, plan["review_status"])
+
+
+def plan_source_upsert(row, payload, kind, actor, at, enabled=None, note=None):
+    """Insert or replace a source. The payload is the object fetch.py and events.py read.
+
+    kind is news or event (which list it belongs to), not the outlet kind such as Newspaper.
+    A manual source with no enabled flag is stored off, so the fetch does not request it.
+    The note is the review_note column. It is not copied into the payload, and it is not
+    written into sources.json.
+    """
+    if kind not in ("news", "event"):
+        raise D1Error("kind must be news or event")
+    if not isinstance(payload, dict):
+        raise D1Error("a source payload must be a JSON object")
+    payload = dict(payload)
+    sid = str(payload.get("id") or "").strip()
+    if not sid or len(sid) > 200 or any(ch in sid for ch in "\n\r\t"):
+        raise D1Error("a source needs an id")
+    payload["id"] = sid
+    if enabled is None:
+        if payload.get("type") == "manual" and "enabled" not in payload:
+            enabled_flag = False
+        else:
+            enabled_flag = bool(payload.get("enabled", True))
+    else:
+        enabled_flag = bool(enabled)
+    payload["enabled"] = enabled_flag
+    if row is None and not (payload.get("name") or payload.get("url")):
+        raise D1Error("a new source needs a name or a url")
+    text = dumps(payload)
+    if note is None and row is not None:
+        note = row.get("review_note")
+    return {
+        "id": sid,
+        "kind": kind,
+        "name": payload.get("name"),
+        "country": payload.get("country"),
+        "url": payload.get("url"),
+        "enabled": 1 if enabled_flag else 0,
+        "review_status": "approved",
+        "reviewed_by": actor,
+        "reviewed_at": at,
+        "review_note": note,
+        "payload": text,
+        "content_hash": digest(text),
+        "created_at": row["created_at"] if row else at,
+        "updated_at": at,
+        "insert": row is None,
+    }
+
+
+def apply_source_upsert(store, plan, actor, at):
+    if plan["insert"]:
+        store.execute(
+            """
+            INSERT INTO sources (
+              id, kind, name, country, url, enabled, review_status, reviewed_by, reviewed_at,
+              review_note, payload, content_hash, created_at, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                plan["id"], plan["kind"], plan["name"], plan["country"], plan["url"], plan["enabled"],
+                plan["review_status"], plan["reviewed_by"], plan["reviewed_at"], plan["review_note"],
+                plan["payload"], plan["content_hash"], plan["created_at"], plan["updated_at"],
+            ),
+        )
+        action = "add"
+    else:
+        store.execute(
+            """
+            UPDATE sources SET
+              kind = ?, name = ?, country = ?, url = ?, enabled = ?, review_status = ?,
+              reviewed_by = ?, reviewed_at = ?, review_note = ?, payload = ?, content_hash = ?, updated_at = ?
+            WHERE id = ?
+            """,
+            (
+                plan["kind"], plan["name"], plan["country"], plan["url"], plan["enabled"],
+                plan["review_status"], plan["reviewed_by"], plan["reviewed_at"], plan["review_note"],
+                plan["payload"], plan["content_hash"], plan["updated_at"], plan["id"],
+            ),
+        )
+        action = "edit"
+    audit(store, "source", plan["id"], action, actor, at, plan["kind"])
+    return action
+
+
+def source_upsert_sql(plan, actor):
+    q = sql_quote
+    if plan["insert"]:
+        names = (
+            "id", "kind", "name", "country", "url", "enabled", "review_status", "reviewed_by",
+            "reviewed_at", "review_note", "payload", "content_hash", "created_at", "updated_at",
+        )
+        write = (
+            f"INSERT INTO sources ({', '.join(names)}) VALUES ("
+            + ", ".join(q(plan[name]) for name in names) + ")"
+        )
+        action = "add"
+    else:
+        cols = (
+            "kind", "name", "country", "url", "enabled", "review_status", "reviewed_by",
+            "reviewed_at", "review_note", "payload", "content_hash", "updated_at",
+        )
+        write = (
+            "UPDATE sources SET "
+            + ", ".join(f"{col} = {q(plan[col])}" for col in cols)
+            + f" WHERE id = {q(plan['id'])}"
+        )
+        action = "edit"
+    insert = (
+        "INSERT INTO review_audit (kind, item_id, action, actor, at, detail) VALUES ("
+        f"'source', {q(plan['id'])}, {q(action)}, {q(actor)}, {q(plan['updated_at'])}, {q(plan['kind'])})"
+    )
+    return write + ";\n" + insert + ";\n"
 
 
 def event_edit_sql(plan, actor):

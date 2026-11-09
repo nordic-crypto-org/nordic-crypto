@@ -11,7 +11,7 @@ Data flow:
 - The fetch (`events.py`) writes JSON. Next, `tools/d1_sync.py push` upserts events, translations and redirects. That runs after the privacy gate in nightly-fetch. Marking merged rows and carrying approvals over happen in that step.
 - When `NC_DATA_SOURCE=d1`, the build calls `materialize()`, which writes `data/events.json`, `data/event_description_i18n.json` and `data/event_redirects.json` from D1. Merged rows are left out. The committed JSON stays the offline snapshot. `NC_D1_FALLBACK=json` builds from it when D1 cannot be read.
 - The public `/api/v1` is generated from the same files, so it is unchanged.
-- D1 is the source of truth. `tools/d1_import.py` inserts ids D1 does not have and may settle a still-pending row from a git decision; it never overwrites an existing event payload. `restore` replaces the checkout's copy of each event with the D1 row before the fetch.
+- D1 is the source of truth. `tools/d1_import.py` inserts ids D1 does not have and may settle a still-pending row from a git decision; it never overwrites an existing event payload. `restore` replaces the checkout's copy of each event with the D1 row before the fetch. The same restore writes `sources.json` from the `sources` table (news and event payloads). Adding a source is [docs/sources-d1.md](sources-d1.md), not a git edit.
 - Add or change an event without a PR: `python3 tools/d1_review.py add-event --json event.json [--approve]` or `update-event --id ID --set FIELD=VALUE`. A new row gets the same id `events.py` would give it (url, start date, title), so a later fetch lands on it.
 
 Apply and import (from the repo root, with `CLOUDFLARE_API_TOKEN`, `CF_ACCOUNT_ID`, `CLOUDFLARE_ACCOUNT_ID` and `CF_D1_DATABASE_ID` exported):

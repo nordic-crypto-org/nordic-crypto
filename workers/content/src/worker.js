@@ -7,7 +7,7 @@
 // GET  /api/v1/events.json, /api/v1/events/:id.json
 // GET  /api/v1/sources.json
 // GET  /api/review/pending          Authorization: Bearer EDITOR_TOKEN
-// POST /api/review                  the same token; approve or reject in D1
+// POST /api/review                  the same token; approve, reject, or upsert a source in D1
 //
 // Teasers, match rules, reject reasons and the private term list are not returned.
 // Nothing is logged. EDITOR_TOKEN and GITHUB_DISPATCH_TOKEN are Worker secrets.
@@ -196,6 +196,61 @@ export function applyEventReview(row, body, actor, at) {
   return { error: "action must be approve or reject", status: 400 };
 }
 
+function flag(value, fallback) {
+  if (value === true || value === 1 || value === "true") return true;
+  if (value === false || value === 0 || value === "false") return false;
+  return fallback;
+}
+
+export async function sha256Hex(text) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(String(text)));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Upsert a source. source_kind is news or event. A manual source with no enabled
+// flag is stored off, so the fetch does not request it. The note stays out of the payload.
+export function applySourceUpsert(existing, body, actor, at) {
+  const raw = body && body.payload;
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+    return { error: "a source payload is required", status: 400 };
+  }
+  const kind = body.source_kind;
+  if (kind !== "news" && kind !== "event") {
+    return { error: "source_kind must be news or event", status: 400 };
+  }
+  const payload = { ...raw };
+  const id = String(payload.id || (body && body.id) || "").trim();
+  if (!id || id.length > 200 || /[\n\r\t]/.test(id)) {
+    return { error: "a source needs an id", status: 400 };
+  }
+  payload.id = id;
+  let enabled;
+  if (body.enabled !== undefined && body.enabled !== null) enabled = flag(body.enabled, null);
+  else if (payload.enabled !== undefined && payload.enabled !== null) enabled = flag(payload.enabled, null);
+  else if (payload.type === "manual") enabled = false;
+  else enabled = true;
+  if (enabled === null) return { error: "enabled must be true or false", status: 400 };
+  payload.enabled = enabled;
+  if (!existing && !payload.name && !payload.url) {
+    return { error: "a new source needs a name or a url", status: 400 };
+  }
+  const note = body.note !== undefined ? body.note : (existing && existing.review_note) || null;
+  return {
+    id,
+    kind,
+    payload,
+    enabled: enabled ? 1 : 0,
+    name: payload.name || null,
+    country: payload.country || null,
+    url: payload.url || null,
+    review_status: "approved",
+    reviewed_by: actor,
+    reviewed_at: at,
+    review_note: note,
+    insert: !existing,
+  };
+}
+
 function json(data, status, extra) {
   const headers = {
     "content-type": "application/json; charset=utf-8",
@@ -362,11 +417,51 @@ export async function handle(request, env) {
     } catch (err) {
       return json({ error: "body must be JSON" }, 400);
     }
-    if (!body || (body.kind !== "story" && body.kind !== "event") || !body.id) {
-      return json({ error: "kind (story or event) and id are required" }, 400);
+    if (!body || (body.kind !== "story" && body.kind !== "event" && body.kind !== "source")) {
+      return json({ error: "kind (story, event or source) is required" }, 400);
+    }
+    if (body.kind !== "source" && !body.id) {
+      return json({ error: "kind and id are required" }, 400);
     }
     const actor = String(body.by || "Nordic Crypto redaktør");
     const at = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
+    if (body.kind === "source") {
+      const sourceId = String((body.payload && body.payload.id) || body.id || "").trim();
+      const existing = sourceId
+        ? await db.prepare("SELECT id, review_note, created_at FROM sources WHERE id = ?").bind(sourceId).first()
+        : null;
+      const plan = applySourceUpsert(existing, body, actor, at);
+      if (plan.error) return json({ error: plan.error }, plan.status);
+      const text = JSON.stringify(plan.payload);
+      const hash = await sha256Hex(text);
+      if (plan.insert) {
+        await db.prepare(
+          "INSERT INTO sources (id, kind, name, country, url, enabled, review_status, reviewed_by, reviewed_at, review_note, payload, content_hash, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        ).bind(
+          plan.id, plan.kind, plan.name, plan.country, plan.url, plan.enabled, plan.review_status,
+          plan.reviewed_by, plan.reviewed_at, plan.review_note, text, hash, at, at,
+        ).run();
+      } else {
+        await db.prepare(
+          "UPDATE sources SET kind = ?, name = ?, country = ?, url = ?, enabled = ?, review_status = ?, reviewed_by = ?, reviewed_at = ?, review_note = ?, payload = ?, content_hash = ?, updated_at = ? WHERE id = ?"
+        ).bind(
+          plan.kind, plan.name, plan.country, plan.url, plan.enabled, plan.review_status,
+          plan.reviewed_by, plan.reviewed_at, plan.review_note, text, hash, at, plan.id,
+        ).run();
+      }
+      await db.prepare(
+        "INSERT INTO review_audit (kind, item_id, action, actor, at, detail) VALUES ('source', ?, ?, ?, ?, ?)"
+      ).bind(plan.id, plan.insert ? "add" : "edit", actor, at, plan.kind).run();
+      let redeploy = "scheduled";
+      try {
+        redeploy = await dispatchRedeploy(env);
+      } catch (err) {
+        redeploy = "scheduled";
+      }
+      return json({
+        ok: true, kind: "source", id: plan.id, source_kind: plan.kind, enabled: plan.enabled === 1, redeploy,
+      }, 200);
+    }
     if (body.kind === "story") {
       const row = await db.prepare(STORY_SELECT).bind(body.id).first();
       if (!row) return json({ error: "no story" }, 404);
