@@ -11,6 +11,7 @@ the public Worker do not read those documents.
 import hashlib
 import json
 import os
+import re
 import sqlite3
 import urllib.error
 import urllib.parse
@@ -205,7 +206,21 @@ def split_sql(sql):
         if line.strip().startswith("--"):
             continue
         lines.append(line)
-    return [part.strip() for part in "\n".join(lines).split(";") if part.strip()]
+    statements, pending = [], ""
+    for part in "\n".join(lines).split(";"):
+        pending = pending + ";" + part if pending else part
+        body = pending.strip()
+        if not body:
+            pending = ""
+            continue
+        # A trigger body has ';' inside BEGIN ... END. Keep it as one statement.
+        if re.match(r"CREATE\s+(TEMP\s+|TEMPORARY\s+)?TRIGGER\b", body, re.I) and not re.search(r"\bEND\s*$", body, re.I):
+            continue
+        statements.append(body)
+        pending = ""
+    if pending.strip():
+        statements.append(pending.strip())
+    return statements
 
 
 def migration_sql():
