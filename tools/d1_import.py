@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import data/news.json, data/events.json, archive/events.json and sources.json into D1.
+"""Import data/news.json, data/events.json, archive/events.json, sources.json and data/academia.json into D1.
 
 Safe to run more than once. A second run with the same files writes nothing.
 An approval already stored in D1, with a later reviewed_at, is not overwritten
@@ -19,6 +19,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+from tools import d1_academia
 from tools import d1_store
 
 
@@ -47,7 +48,8 @@ def main(argv=None):
     print(
         "d1 import: "
         f"stories {stats['stories']}, events {stats['events']}, "
-        f"sources {stats['sources']}, event sources {stats['event_sources']}"
+        f"sources {stats['sources']}, event sources {stats['event_sources']}, "
+        f"academia {d1_academia.brief(stats.get('academia') or {})}"
     )
     return 0
 

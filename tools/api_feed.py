@@ -1342,7 +1342,12 @@ def write(site, *, preview, base, items, events, entities, relations, org_update
     ac_ids = set()
     for key, rows in sections.items():
         for i, row in enumerate(rows):
-            row["id"] = _row_id(key, row, i + 1, ac_ids)
+            stored = row.get("id")
+            if stored and stored not in ac_ids:
+                ac_ids.add(stored)
+                row["id"] = stored
+            else:
+                row["id"] = _row_id(key, row, i + 1, ac_ids)
             row["section"] = key
             row["api_url"] = feed.abs(f"api/v1/academia/{row['id']}.json")
 

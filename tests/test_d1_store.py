@@ -388,6 +388,8 @@ class HttpAndCommands(unittest.TestCase):
         self.assertIn("CF_R2_BUCKET", backup)
         self.assertNotIn("wrangler r2 bucket create", backup)
         self.assertIn("NC_DATA_SOURCE: ${{ vars.NC_DATA_SOURCE }}", deploy)
+        self.assertIn("d1_import.py --apply-schema", deploy)
+        self.assertIn("d1_import.py --apply-schema", publish)
         build = open(os.path.join(ROOT, "build.py"), encoding="utf-8").read()
         self.assertIn('NC_DATA_SOURCE", "").strip().lower() == "d1"', build)
         self.assertIn("apply_approvals.py", build)

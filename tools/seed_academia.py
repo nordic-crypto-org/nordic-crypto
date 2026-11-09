@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""One-off seed for data/academia.json (own research, 3 Oct 2026). Every row: status "awaiting editor".
+"""One-off seed for the academia catalogue (own research, 3 Oct 2026). Every row: status "awaiting editor".
+With NC_DATA_SOURCE=d1 the rows are upserted into D1 and data/academia.json is left unchanged.
+Pass --write-json to write the JSON file instead.
 Courses/groups/research rows were checked against their own pages on the check date. Publication metadata is
 fetched from OpenAlex by DOI (nothing typed by hand) and every DOI is verified to resolve via the doi.org handle API.
 Norwegian rows mirror Kryptonytt's Akademia seed, written in English. Re-run: .venv/bin/python tools/seed_academia.py"""
@@ -76,5 +78,26 @@ out = {"updated": C, "note": "Seed from own research; awaiting editor. Rows beco
  "groups": [{"country": a, "name": b, "institution": c, "active": d, "activity": e, "about": f, "url": g, "source": g, "checked": C, "status": ST, "origin": "seed"} for a, b, c, d, e, f, g in groups],
  "publications": pubs,
  "research": [{"country": a, "name": b, "institution": c, "about": d, "url": e, "source": e, "checked": C, "status": ST, "origin": "seed"} for a, b, c, d, e in research]}
-json.dump(out, open(os.path.join(ROOT, "data", "academia.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+def _publish(document):
+    """Upsert into D1. Does not rewrite data/academia.json unless --write-json is passed."""
+    if "--write-json" in sys.argv:
+        json.dump(document, open(os.path.join(ROOT, "data", "academia.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print("academia seed: wrote data/academia.json")
+        return
+    from tools import d1_store, d1_academia
+    if os.environ.get("NC_DATA_SOURCE", "").strip().lower() != "d1" or d1_store.missing_remote():
+        print("academia seed: not written. Set NC_DATA_SOURCE=d1 and the Cloudflare variables, or pass --write-json. data/academia.json was left as it is.", file=sys.stderr)
+        raise SystemExit(2)
+    seeded = json.loads(json.dumps(document))
+    for section in ("courses", "groups", "publications", "research"):
+        for row in seeded.get(section) or []:
+            if row.get("status") not in d1_academia.STATUSES:
+                row["editor_note"] = row.get("editor_note") or "awaiting editor"
+                row["status"] = "pending"
+    store = d1_store.open_remote()
+    d1_store.apply_schema(store)
+    stats = d1_academia.upsert_document(store, seeded, d1_store.now_iso(), actor="seed_academia", update=True, update_meta=True)
+    print("academia seed: upserted D1", d1_academia.brief(stats))
+
+_publish(out)
 print({k: len(v) for k, v in out.items() if isinstance(v, list) and k != "rules"}, "bad DOIs:", bad)

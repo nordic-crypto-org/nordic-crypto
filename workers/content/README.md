@@ -13,9 +13,10 @@ The public site stays on GitHub Pages. This Worker is the editor API and an opti
 | GET | `/api/v1/news.json` and `/api/v1/news/:id.json` | no | Approved stories. No teasers, match rules or reject reasons. `image.url` when a story illustration is stored. The prompt is not included. |
 | GET | `/story-images/:id.png` | no | That illustration, from the R2 binding `STORY_IMAGES`. 404 when the bucket is not bound or the object is missing. |
 | GET | `/api/v1/events.json` and `/api/v1/events/:id.json` | no | Approved events. |
+| GET | `/api/v1/academia.json`, `/api/v1/academia/:section.json`, `/api/v1/academia/:id.json` | no | Approved academia rows. `section` is `courses`, `groups`, `publications` or `research`. Pending rows are not returned. |
 | GET | `/api/v1/sources.json` | no | Approved outlets: id, name, country, url, enabled. |
 | GET | `/api/review/pending` | `Authorization: Bearer EDITOR_TOKEN` | Ids and titles waiting on the editor. |
-| POST | `/api/review` | the same token | `{kind: story\|event, id, action: approve\|reject, summary, reason, by}`, or `{kind: source, source_kind: news\|event, payload, enabled, note, by}` to upsert a source. |
+| POST | `/api/review` | the same token | `{kind: story\|event, id, action: approve\|reject, summary, reason, by}`, `{kind: source, source_kind: news\|event, payload, enabled, note, by}` to upsert a source, or `{kind: academia, courses\|groups\|publications\|research: [...]}` to add academia rows. `update: true` refreshes a row that is already stored. |
 
 A story approval requires `summary`. The row stores `reviewed_by` and `reviewed_at`. Rows are not deleted.
 

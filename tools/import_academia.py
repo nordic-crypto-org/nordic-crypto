@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds data/academia.json from:
+"""Builds the academia catalogue from:
   1) the researcher's editor list (academia.md Status column) when present;
   2) research/academia/works.json — curated Nordic theses/papers (master/phd/paper/conference);
   3) optional local seed state/academia_seed_own.json (DOI-checked papers; gitignored).
@@ -8,7 +8,9 @@ On a clean clone, academia.md may be missing (box-only researcher path). In that
 groups / research are preserved from the existing data/academia.json, and publications are rebuilt
 from research/academia/works.json (+ any local seed).
 
-Only rows whose status is APPROVED are shown on /academia/; pending/unverified/OUT stay in JSON.
+Only rows whose status is APPROVED are shown on /academia/; pending/unverified/OUT stay in the catalogue.
+When NC_DATA_SOURCE=d1 the catalogue is upserted into D1 and data/academia.json is left as it is.
+Otherwise the JSON file is still written.
 """
 import json, os, re, sys
 from datetime import date
@@ -167,7 +169,24 @@ out = {
     "publications": pubs,
     "research": research,
 }
-json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+def _publish(document):
+    """Write the catalogue. D1 when NC_DATA_SOURCE=d1; the git JSON stays the offline snapshot."""
+    if os.environ.get("NC_DATA_SOURCE", "").strip().lower() == "d1":
+        from tools import d1_store, d1_academia
+        if d1_store.missing_remote():
+            print("academia: NC_DATA_SOURCE=d1 but Cloudflare is not configured; data/academia.json was not changed")
+            return
+        store = d1_store.open_remote()
+        d1_store.apply_schema(store)
+        stats = d1_academia.upsert_document(
+            store, document, d1_store.now_iso(), actor="import_academia", update=True, update_meta=True,
+        )
+        print("academia: upserted D1", d1_academia.brief(stats))
+        return
+    json.dump(document, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("academia: wrote data/academia.json (NC_DATA_SOURCE is not d1)")
+
+_publish(out)
 for k in ("courses", "groups", "publications", "research"):
     print(k, {s: sum(r.get("status") == s for r in out[k]) for s in ("approved", "pending", "unverified", "out")}, "n=", len(out[k]))
 from collections import Counter
