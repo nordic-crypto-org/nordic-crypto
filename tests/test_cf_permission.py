@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Cloudflare failure logs name the missing token permission and never keep the token."""
+import gc
 import io
 import os
 import sys
@@ -12,6 +13,7 @@ import cf_permission
 
 
 def run(step, exit_code, text):
+    gc.collect()  # flush ResourceWarnings from earlier tests before capturing stderr
     out, err = io.StringIO(), io.StringIO()
     old_out, old_err, old_in = sys.stdout, sys.stderr, sys.stdin
     sys.stdout, sys.stderr, sys.stdin = out, err, io.StringIO(text)

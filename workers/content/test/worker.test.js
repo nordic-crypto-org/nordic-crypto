@@ -477,3 +477,37 @@ test("academia API shows approved rows only and will not duplicate a guarded nam
   assert.equal(again.items[0].editor_note, undefined);
   assert.equal(publicAcademia({ status: "pending", name: "Hidden" }, "x", "research"), null);
 });
+
+test("public event ics drops a private email and keeps a verified map link", async () => {
+  const payload = {
+    id: "abc123",
+    title: "Meetup",
+    start: "2026-11-19T18:00:00+01:00",
+    end: "2026-11-19T19:15:00+01:00",
+    place: "Sturegatan 15",
+    city: "Stockholm",
+    country: "SE",
+    online: false,
+    organiser: "Unga Aktiesparare",
+    url: "https://example.org/e",
+    map_url: "https://www.google.com/maps/search/?api=1&query=Sturegatan",
+    note: "Write a@b.co or call +46 70 123 45 67",
+    status: "pending",
+  };
+  const pub = publicEvent(payload, "approved");
+  assert.equal(pub.map_url, payload.map_url);
+  assert.equal(pub.note.includes("@"), false);
+  assert.equal(pub.note.includes("123 45 67"), false);
+  assert.equal(publicEvent({ ...payload, map_url: "javascript:alert(1)" }, "approved").map_url, undefined);
+  const db = fakeDb({
+    events: [["abc123", { id: "abc123", review_status: "approved", payload: JSON.stringify(payload) }]],
+  });
+  const res = await handle(request("GET", "/api/v1/events.ics"), { DB: db });
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get("content-type"), "text/calendar; charset=utf-8");
+  const text = await res.text();
+  assert.match(text, /BEGIN:VCALENDAR/);
+  assert.match(text, /SUMMARY:Meetup/);
+  assert.equal(text.includes("a@b.co"), false);
+  assert.equal(text.includes("123 45 67"), false);
+});

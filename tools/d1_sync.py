@@ -2,7 +2,7 @@
 """Nightly fetch <-> D1.
 
   python3 tools/d1_sync.py restore     # fold D1 rows into the working JSON, write sources.json, restore fetch documents
-  python3 tools/d1_sync.py push        # write new and pending rows; do not reopen an approved row
+  python3 tools/d1_sync.py push        # write new and pending rows and verified events; do not reopen an approved row
   python3 tools/d1_sync.py stage DEST  # copy the files the privacy gate should see
 
 Requires NC_DATA_SOURCE=d1 and the Cloudflare token for restore and push.
@@ -61,7 +61,7 @@ def main(argv=None):
         )
         return 0
     if cmd == "push":
-        result = d1_store.sync_root(_store(), root)
+        result = d1_store.sync_root(_store(), root, require_verified=True)
         print(f"d1 push: stories {result['stories']}, events {result['events']}, documents {result['documents']}")
         return 0
     print("usage: tools/d1_sync.py restore|push|stage DEST", file=sys.stderr)

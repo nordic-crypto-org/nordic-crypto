@@ -543,6 +543,22 @@ def live_news_script(root):
         _LIVE_JS = open(P("assets", "live", "news.js"), encoding="utf-8").read()
     cfg = {"api": api.strip().rstrip("/"), "root": root, "lang": LANG}
     return "<script>window.NC_LIVE=" + json.dumps(cfg) + ";</script><script>\n" + _LIVE_JS + "\n</script>"
+def events_api():
+    """Content Worker origin for the live calendar. Empty hides the live fetch; the static page stays.
+    Env NC_EVENTS_API wins (empty string hides it). Otherwise workers/content/public.json events_api."""
+    e = os.environ.get("NC_EVENTS_API")
+    if e is not None:
+        return e.strip().rstrip("/") or None
+    cfg = _cfg_json(P("workers", "content", "public.json"), {}) or {}
+    return (cfg.get("events_api") or "").strip().rstrip("/") or None
+_EVENTS_JS = None
+def live_events_script(root):
+    """Calendar pages: refresh rows from the Worker, then from /api/v1/events.json. The HTML already on the page stays if both fail."""
+    global _EVENTS_JS
+    if _EVENTS_JS is None:
+        _EVENTS_JS = open(P("assets", "live", "events.js"), encoding="utf-8").read()
+    cfg = {"api": events_api() or "", "root": root, "lang": i18n.HTML_LANG.get(LANG, LANG)}
+    return "<script>window.NC_LIVE_EVENTS=" + json.dumps(cfg) + ";</script>\n<script>\n" + _EVENTS_JS + "\n</script>"
 def push_panel(root):
     """Opt-in block. Left-aligned (start-aligned in RTL). The same button turns notifications off.
 
@@ -1240,6 +1256,8 @@ def build():
     open(os.path.join(SITE, "robots.txt"), "w").write(robots)
     write_push_assets()
     emit_api(ctx)
+    from tools.event_ics import write_feeds
+    write_feeds(SITE, [e for e in ctx["events"][0] if e.get("status") == "published"])
     write_crowdfunding_api()
     build_db()
     sitemap()
@@ -2863,8 +2881,9 @@ def event_place_short(e):
     if place: return place
     return t("online") if e.get("online") else ""
 def event_map_anchor(e):
-    """The map link. href is Google Maps. data-apple-map is Apple Maps, applied on Apple devices by APPLE_MAP_SCRIPT."""
-    google = event_page.map_url(e)
+    """The map link. A stored https map_url wins. Otherwise the address search. data-apple-map is Apple Maps."""
+    stored = e.get("map_url") if isinstance(e.get("map_url"), str) and e["map_url"].startswith("https://") else ""
+    google = stored or event_page.map_url(e)
     if not google:
         return ""
     apple = event_page.apple_map_url(e) or ""
@@ -3073,6 +3092,8 @@ def events_for_site():
         e["note_i18n"] = (ap.get("notes_i18n") or {}).get(e["id"]) if e.get("note") else None
         site_url.brand_note(e)  # approved.json is local and may still reverse the brand name
         row = {k: e.get(k) for k in ("id", "title", "title_orig", "start", "end", "place", "city", "country", "online", "organiser", "url", "source", "source_url", "found", "attendees", "place_source", "paid", "sponsored", "note", "note_i18n", "description", "status")}
+        if isinstance(e.get("map_url"), str) and e["map_url"].startswith("https://"):
+            row["map_url"] = e["map_url"]
         for k in event_page.COORD_KEYS:  # only when stored, so the archive stays unchanged for rows without them
             if e.get(k) not in (None, "", [], {}):
                 row[k] = e[k]
@@ -3631,6 +3652,8 @@ def build_calendar(ctx):
         grids.append(f'<table class="cal"><caption>{E(i18n.month_caption(LANG, y, m))}</caption><thead><tr>{"".join(f"<th>{E(d)}</th>" for d in i18n.wd_head(LANG))}</tr></thead><tbody>{"".join(cells)}</tbody></table>')
     per_c = {c: sum(e.get("country") == c for e in live) for c in COUNTRY_CODES}
     npend = sum(e.get("status") == "pending" for e in live); nown = sum(e.get("status") == "owner" for e in live)
+    _live_ics = events_api()
+    ics_attr = f' data-live-ics="{E(_live_ics)}/api/v1/events.ics"' if _live_ics else ""
     body = f"""{site_css.style("calendar-classic")}<h1>{E(t("cal_h1"))}</h1>
 <p class="lead">{E(t("cal_lead"))}</p>
 <p class="meta"><a href="../events/previous/">{E(t("prev_link"))}</a></p>
@@ -3644,13 +3667,14 @@ def build_calendar(ctx):
 </section>
 <h2>{E(t("upcoming_h"))}</h2><ol class="news" id="evlist">{''.join(li(e) for e in upcoming) or f'<li class="empty">{E(t("no_upcoming"))}</li>'}</ol>
 <h2 id="past">{E(t("past_h"))}</h2><p class="meta">{E(t("past_note"))}</p><p class="meta">{t("past_talks", href="../talks/")}</p><ol class="news past">{''.join(li(e) for e in past) or f'<li class="empty">{E(t("no_past"))}</li>'}</ol>
-<p class="meta">{t("cal_how")}</p>"""
+<p class="meta">{t("cal_how")}</p>
+<p class="meta"><a href="{E(up1())}calendar.ics"{ics_attr}>iCal</a></p>"""
     js = """<script>(function(){var NU=%s,cc=[].slice.call(document.querySelectorAll('.cchip')),n=[].slice.call(document.querySelectorAll('#evongoing li[data-c], #evlist li[data-c], ol.past li[data-c]')),cnt=document.getElementById('ecount');
 function apply(push){var c=cc.filter(function(x){return x.getAttribute('aria-pressed')==='true'}).map(function(x){return x.dataset.c}),k=0;n.forEach(function(el){var ok=!c.length||c.indexOf(el.dataset.c)>=0;el.hidden=!ok;if(ok&&el.parentNode&&el.parentNode.id==='evlist')k++});if(cnt)cnt.textContent=NU.replace('{n}',k);if(push)history.replaceState(null,'',c.length?'#country='+c.join(','):location.pathname)}
 window.ncCalApply=apply;
 var h=new URLSearchParams(location.hash.slice(1));(h.get('country')||'').split(',').forEach(function(x){cc.forEach(function(b){if(b.dataset.c===x)b.setAttribute('aria-pressed','true')})});
 cc.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');apply(1)})});apply(0)})();</script>""" % json.dumps(t("n_upcoming", n="{n}"))
-    page("calendar", t("cal_title"), "calendar", body, t("cal_desc"), js + calendar_phase_script() + event_map_script(body))
+    page("calendar", t("cal_title"), "calendar", body, t("cal_desc"), js + calendar_phase_script() + event_map_script(body) + live_events_script(up1()), head_extra=f'<link rel="alternate" type="text/calendar" title="iCal" href="{E(up1())}calendar.ics">')
     if LANG == "en": print(f"calendar: {len(upcoming)} upcoming, {len(ongoing)} ongoing {per_c}, {len(past)} past")
 
 def _arc_rel(from_slug, to_slug):

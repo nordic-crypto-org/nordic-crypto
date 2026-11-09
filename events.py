@@ -34,6 +34,14 @@ Eventbrite: v3 /organizers/{id}/events/ and /venues/{id}/events/ when EVENTBRITE
 Without a token, JSON-LD on the event page. The public search API (removed 2020) is not used.
 A dead feed is recorded and skipped. Finished events already stored are never deleted.
 
+official-page and press-release: one organiser or venue page. The page must itself show
+the configured date, clock time and location (a street, or the word online). Otherwise
+nothing is added. linkedin-public is the same, and only when the post is readable
+without signing in. A sign-in wall is recorded and skipped. A private email or phone
+number is removed before the row is stored. The nightly D1 push writes a detected
+event only when those facts are present. Same title, date and city updates the
+existing row.
+
 Litteraturhuset Oslo: one public Sanity query (the CMS the site itself reads). No images.
 Litteraturhuset i Bergen has no iCal, JSON-LD or public API; the programme page is parsed, and
 only a keyword hit is opened for the organiser. Litteraturhuset Fredrikstad: the upcoming
@@ -70,6 +78,7 @@ from event_block import blocked_event, blocked_source
 import site_url
 from tools.event_description import language_of, prefer as prefer_description, record as description_record
 from tools.event_select import explicit_attendee_count, explicit_ics_count
+from tools.event_verify import redact_event, verified_facts
 from tools import location_check
 from tools.d1_store import event_source_fetched
 ROOT = os.path.dirname(os.path.abspath(__file__)); P = lambda *a: os.path.join(ROOT, *a)
@@ -1451,6 +1460,8 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
         desc = description_record(ev.get("description"), ev.get("description_lang"), page, src.get("name"), retrieved, ev.get("title"))
         if desc: rec["description"] = desc
         if src.get("tip_only"): rec["tip_only"] = True; rec["note"] = TIP_NOTE
+        rec = redact_event(rec)
+        rec["official_verified"] = bool(verified_facts(rec))
         data["events"].append(rec); by[i] = rec; new.append(rec)
     def fetch_page(u):
         if not robots_ok(u): raise RuntimeError("robots.txt disallows")
@@ -1602,6 +1613,17 @@ def run(get, robots_ok, matches, log, cfg, add_url=None, a=None, only=None, root
                     n_found = len(evs)
                     for ev in evs:
                         take(ev, dict(src, page=ev["url"]), src.get("trusted", False))
+                elif src["type"] in ("official-page", "press-release", "linkedin-public"):
+                    from tools.event_discover import read_official_page
+                    found, discover_err = read_official_page(fetch_page(src["url"]).text, src)
+                    if discover_err:
+                        raise RuntimeError(discover_err)
+                    n_found = len(found)
+                    for ev in found:
+                        ev["start"] = parse_dt(ev.get("start"), tz)
+                        if ev.get("end"):
+                            ev["end"] = parse_dt(ev["end"], tz)
+                        take(ev, src, True)
                 elif src["type"] == "tip-html":
                     for u in tip_links(fetch_page(src["url"]).text, src.get("link_pattern") or ".", int(src.get("max_links") or 10)):
                         time.sleep(pause); html = fetch_page(u).text

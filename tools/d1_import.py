@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Import data/news.json, data/events.json, archive/events.json, sources.json and data/academia.json into D1.
 
+Every event field is stored in the payload, including an optional map_url. The map_url column is filled when the schema is at version 5. It does not overwrite an event D1 already has. New verified rows that must update an existing one use tools/d1_seed_events.py.
+
 Safe to run more than once. A second run with the same files writes nothing.
 An approval already stored in D1, with a later reviewed_at, is not overwritten
 by the older JSON. A source row already in D1 is kept: the import only inserts
