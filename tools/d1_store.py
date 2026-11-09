@@ -340,7 +340,7 @@ def apply_schema(store):
 
 
 def schema_version(store):
-    """schema_meta version. 3 after 0003_story_images.sql. Cached on the store object."""
+    """schema_meta version. 4 after 0004_academia.sql. Cached on the store object."""
     if not hasattr(store, "_nc_version"):
         try:
             row = one(store, "SELECT value FROM schema_meta WHERE key = 'version'")
@@ -715,6 +715,8 @@ def import_root(store, root, at=None, actor="import"):
     source_stats = import_sources(store, sources.get("sources") or [], "news", at, actor)
     event_source_stats = import_sources(store, sources.get("event_sources") or [], "event", at, actor)
     sidecars = _event_sidecars(store, root, at, actor)
+    from tools import d1_academia
+    academia_stats = d1_academia.import_checkout(store, root, at, actor)
     return {
         "event_translations": sidecars["translations"],
         "event_titles": sidecars["titles"],
@@ -723,6 +725,7 @@ def import_root(store, root, at=None, actor="import"):
         "events": event_stats,
         "sources": source_stats,
         "event_sources": event_source_stats,
+        "academia": academia_stats,
     }
 
 
@@ -1381,6 +1384,10 @@ def backup_files(store, at=None):
             "omitted_documents": omitted,
         },
     }
+    if schema_version(store) >= 4:
+        from tools import d1_academia
+        files["academia.json"] = d1_academia.backup_document(store)
+        files["manifest.json"]["academia"] = files["academia.json"].get("counts") or {}
     if source_status:
         try:
             files["source_status.json"] = json.loads(source_status["payload"])

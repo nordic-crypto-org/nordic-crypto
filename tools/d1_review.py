@@ -13,6 +13,7 @@ The default reads and writes the remote database with wrangler d1 execute.
   python3 tools/d1_review.py add-event --json event.json --approve
   python3 tools/d1_review.py update-event --id EVENT --set start=2026-10-24T18:30:00+02:00 --set paid=false
   python3 tools/d1_review.py add-source --kind event --json source.json --enabled false --note "Checked by hand."
+  python3 tools/d1_review.py add-academia --json batch.json --api
 """
 import argparse
 import json
@@ -24,6 +25,7 @@ import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+from tools import d1_academia
 from tools import d1_store
 
 WORKER = os.path.join(ROOT, "workers", "content")
@@ -219,6 +221,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Review a Nordic Crypto story, event or source in D1")
     parser.add_argument("command", choices=(
         "pending", "approve", "reject", "approve-event", "reject-event", "add-event", "update-event", "add-source",
+        "add-academia",
     ))
     parser.add_argument("--id", help="story id, event id or source id")
     parser.add_argument("--summary", help="English summary, own words (required to approve a story)")
@@ -230,6 +233,7 @@ def main(argv=None):
     parser.add_argument("--json", help="event or source fields as a JSON object, a file path or - for stdin")
     parser.add_argument("--set", action="append", default=[], metavar="FIELD=VALUE", help="one event field; VALUE is JSON or plain text")
     parser.add_argument("--approve", action="store_true", help="publish the added or updated event")
+    parser.add_argument("--keep", action="store_true", help="add-academia: leave a row that is already stored")
     parser.add_argument("--kind", choices=("news", "event"), help="add-source: news outlet or event source")
     parser.add_argument("--enabled", choices=("true", "false"), help="add-source: whether the fetch may read it")
     parser.add_argument("--sqlite", help="apply to this SQLite file instead of wrangler")
@@ -254,6 +258,34 @@ def main(argv=None):
             "ORDER BY start_at;\n"
         )
         _print_pending(stories, events)
+        return 0
+
+    if args.command == "add-academia":
+        if not args.json:
+            raise d1_store.D1Error("add-academia needs --json")
+        raw = args.json
+        if raw == "-":
+            raw = sys.stdin.read()
+        elif os.path.exists(raw):
+            with open(raw, encoding="utf-8") as fh:
+                raw = fh.read()
+        try:
+            doc = json.loads(raw)
+        except json.JSONDecodeError:
+            raise d1_store.D1Error("--json must be a JSON object") from None
+        if not isinstance(doc, dict):
+            raise d1_store.D1Error("--json must be a JSON object")
+        if store is None:
+            if d1_store.missing_remote():
+                raise d1_store.D1Error("add-academia needs --api, --sqlite, or the Cloudflare variables")
+            store = d1_store.open_remote()
+        at = d1_store.now_iso()
+        stats = d1_academia.upsert_document(
+            store, doc, at, actor, update=not args.keep, update_meta=False,
+        )
+        print("d1 review: academia " + d1_academia.brief(stats))
+        if stats.get("guarded_names"):
+            print("d1 review: left existing rows in place: " + ", ".join(stats["guarded_names"]))
         return 0
 
     if args.command == "add-source":

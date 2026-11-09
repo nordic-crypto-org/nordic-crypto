@@ -5,9 +5,10 @@
 //      each story includes image.url when a generated picture is stored
 // GET  /story-images/:id.png   the picture itself, from the R2 binding STORY_IMAGES
 // GET  /api/v1/events.json, /api/v1/events/:id.json
+// GET  /api/v1/academia.json, /api/v1/academia/:section.json, /api/v1/academia/:id.json
 // GET  /api/v1/sources.json
 // GET  /api/review/pending          Authorization: Bearer EDITOR_TOKEN
-// POST /api/review                  the same token; approve, reject, or upsert a source in D1
+// POST /api/review                  the same token; approve, reject, upsert a source, or upsert academia rows
 //
 // Teasers, match rules, reject reasons and the private term list are not returned.
 // Nothing is logged. EDITOR_TOKEN and GITHUB_DISPATCH_TOKEN are Worker secrets.
@@ -202,6 +203,236 @@ function flag(value, fallback) {
   return fallback;
 }
 
+const ACADEMIA_SECTIONS = ["courses", "groups", "publications", "research"];
+const ACADEMIA_STATUS = new Set(["pending", "approved", "out", "unverified"]);
+const ACADEMIA_GUARDS = [
+  ["groups", ["cbs bitcoin"]],
+  ["groups", ["blockchain student group"]],
+  ["groups", ["aalto bitcoin"]],
+  ["research", ["cobra"]],
+  ["courses", ["cs-aj0100"]],
+  ["courses", ["comm.net.500"]],
+  ["courses", ["lt00df90"]],
+];
+
+function academiaNorm(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function academiaBlob(row) {
+  return [row && row.name, row && row.title, row && row.code].filter(Boolean).join(" ").toLowerCase();
+}
+
+function academiaCanon(url) {
+  try {
+    const parsed = new URL(String(url || "").trim());
+    let host = parsed.hostname.toLowerCase();
+    if (host.startsWith("www.")) host = host.slice(4);
+    const path = parsed.pathname.replace(/\/$/, "") || "/";
+    const kept = [...parsed.searchParams.entries()].filter(([key]) => !/^(utm_|fbclid|gclid)/i.test(key));
+    const query = kept.length
+      ? "?" + kept.map(([key, value]) => encodeURIComponent(key) + "=" + encodeURIComponent(value)).join("&")
+      : "";
+    return host + path + query;
+  } catch (err) {
+    return "";
+  }
+}
+
+export function academiaDedupeKey(section, row) {
+  const record = row || {};
+  if (section === "publications") {
+    const doi = String(record.doi || "").trim().toLowerCase();
+    if (doi) return "doi:" + doi;
+    const url = academiaCanon(record.url);
+    return url ? "url:" + url : "";
+  }
+  if (section === "courses") {
+    const code = String(record.code || "").replace(/\s+/g, "").toUpperCase();
+    const country = String(record.country || "").trim().toUpperCase();
+    if (code) return "code:" + country + ":" + code;
+    const url = academiaCanon(record.url);
+    return url ? "url:" + url : "";
+  }
+  const name = academiaNorm(record.name || record.title);
+  if (name) return "name:" + name;
+  const url = academiaCanon(record.url);
+  return url ? "url:" + url : "";
+}
+
+function academiaSafeId(value) {
+  return String(value || "").replace(/[^A-Za-z0-9._-]+/g, "-").replace(/^[-._]+|[-._]+$/g, "").slice(0, 120);
+}
+
+function assignAcademiaId(section, row, n, used) {
+  let base;
+  if (section === "publications" && row.doi) base = "doi-" + academiaSafeId(String(row.doi).split("/").join("_"));
+  else if (section === "courses" && row.code) base = academiaSafeId((row.country || "xx") + "-" + row.code);
+  else if (row.url) base = academiaSafeId(section + "-" + String(row.url).replace(/^https?:\/\//, "").replace(/\/$/, ""));
+  else base = academiaSafeId(row.name || row.title || section + "-" + n);
+  base = (base || section + "-" + n).slice(0, 120);
+  let cand = base;
+  let i = 2;
+  while (used.has(cand)) {
+    cand = base + "-" + i;
+    i += 1;
+  }
+  used.add(cand);
+  return cand;
+}
+
+export function publicAcademia(payload, id, section) {
+  if (!payload || payload.status !== "approved") return null;
+  const out = {};
+  for (const [key, value] of Object.entries(payload)) {
+    if (key === "editor_note" || key === "status" || key === "id" || String(key).startsWith("_")) continue;
+    out[key] = value;
+  }
+  out.id = id;
+  out.section = section;
+  return out;
+}
+
+function academiaDocumentFrom(body) {
+  if (!body || typeof body !== "object") return { error: "academia body must be a JSON object", status: 400 };
+  const singular = { course: "courses", group: "groups", publication: "publications", research: "research" };
+  if (body.payload && body.section) {
+    const section = singular[body.section] || body.section;
+    if (!ACADEMIA_SECTIONS.includes(section)) {
+      return { error: "section must be courses, groups, publications or research", status: 400 };
+    }
+    return { document: { [section]: [body.payload] } };
+  }
+  const source = body.document && typeof body.document === "object" ? body.document : body;
+  const document = {};
+  let any = false;
+  for (const section of ACADEMIA_SECTIONS) {
+    if (source[section] == null) continue;
+    if (!Array.isArray(source[section])) return { error: section + " must be a list", status: 400 };
+    document[section] = source[section];
+    any = true;
+  }
+  if (!any) return { error: "academia needs courses, groups, publications or research", status: 400 };
+  return { document };
+}
+
+function academiaGuarded(section, row, blobs) {
+  const blob = academiaBlob(row);
+  if (!blob) return false;
+  return ACADEMIA_GUARDS.some(([sec, tokens]) => {
+    if (sec !== section || !tokens.every((token) => blob.includes(token))) return false;
+    return blobs.some(([existingSection, existingBlob]) => existingSection === section && tokens.every((token) => existingBlob.includes(token)));
+  });
+}
+
+export function planAcademiaUpsert(existing, body) {
+  const parsed = academiaDocumentFrom(body);
+  if (parsed.error) return parsed;
+  const update = !!(body && body.update);
+  const byKey = new Map();
+  const blobs = [];
+  const used = new Set();
+  for (const row of existing || []) {
+    let payload = row.payload;
+    if (typeof payload === "string") {
+      try { payload = JSON.parse(payload); } catch (err) { payload = {}; }
+    }
+    byKey.set(row.section + "\0" + row.dedupe_key, row);
+    blobs.push([row.section, academiaBlob(payload || {})]);
+    if (row.id) used.add(row.id);
+  }
+  const rows = [];
+  const guarded = [];
+  let n = 0;
+  for (const section of ACADEMIA_SECTIONS) {
+    for (const raw of parsed.document[section] || []) {
+      n += 1;
+      if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
+        return { error: "an academia row is not an object", status: 400 };
+      }
+      if (!ACADEMIA_STATUS.has(raw.status)) {
+        return { error: "an academia row has a status outside pending, approved, out, unverified", status: 400 };
+      }
+      const key = academiaDedupeKey(section, raw);
+      if (!key || key.endsWith(":")) return { error: "an academia row needs a name, course code, DOI or url", status: 400 };
+      const label = raw.name || raw.title || raw.code || key;
+      const found = byKey.get(section + "\0" + key);
+      if (!found && academiaGuarded(section, raw, blobs)) {
+        guarded.push(label);
+        continue;
+      }
+      if (!found) {
+        const id = assignAcademiaId(section, raw, n, used);
+        const payload = { ...raw, id };
+        rows.push({ insert: true, id, section, key, payload, label });
+        byKey.set(section + "\0" + key, { id, section, dedupe_key: key });
+        blobs.push([section, academiaBlob(raw)]);
+        continue;
+      }
+      rows.push({ insert: false, id: found.id, section, key, payload: { ...raw, id: found.id }, label, skip: !update });
+    }
+  }
+  return { rows, guarded };
+}
+
+async function academiaMeta(db) {
+  try {
+    return await db.prepare("SELECT updated, rules FROM academia_meta WHERE id = 1").first();
+  } catch (err) {
+    return null;
+  }
+}
+
+async function listAcademia(db, section) {
+  try {
+    const sql = section
+      ? "SELECT id, section, payload FROM academia WHERE section = ? AND status = 'approved' ORDER BY country, id"
+      : "SELECT id, section, payload FROM academia WHERE status = 'approved' ORDER BY section, country, id";
+    const stmt = db.prepare(sql);
+    const out = section ? await stmt.bind(section).all() : await stmt.all();
+    const items = [];
+    for (const row of out.results || []) {
+      const pub = publicAcademia(JSON.parse(row.payload), row.id, row.section || section);
+      if (pub) items.push(pub);
+    }
+    return items;
+  } catch (err) {
+    return [];
+  }
+}
+
+function academiaCatalogue(items, meta) {
+  const sections = { courses: [], groups: [], publications: [], research: [] };
+  for (const item of items) {
+    if (sections[item.section]) sections[item.section].push(item);
+  }
+  let rules = [];
+  if (meta && meta.rules) {
+    try {
+      const parsed = JSON.parse(meta.rules);
+      if (Array.isArray(parsed)) rules = parsed.filter((rule) => typeof rule === "string");
+    } catch (err) {
+      rules = [];
+    }
+  }
+  return {
+    updated: (meta && meta.updated) || null,
+    inclusion_rules: rules,
+    counts: {
+      courses: sections.courses.length,
+      groups: sections.groups.length,
+      publications: sections.publications.length,
+      research: sections.research.length,
+    },
+    ...sections,
+  };
+}
+
 export async function sha256Hex(text) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(String(text)));
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
@@ -387,6 +618,28 @@ export async function handle(request, env) {
     if (!pub) return json({ error: "not found" }, 404);
     return json(pub, 200, { cache: PUBLIC_CACHE });
   }
+  if (request.method === "GET" && url.pathname === "/api/v1/academia.json") {
+    const items = await listAcademia(db);
+    return json(academiaCatalogue(items, await academiaMeta(db)), 200, { cache: PUBLIC_CACHE });
+  }
+  const academiaSection = url.pathname.match(/^\/api\/v1\/academia\/(courses|groups|publications|research)\.json$/);
+  if (request.method === "GET" && academiaSection) {
+    const items = await listAcademia(db, academiaSection[1]);
+    return json({ section: academiaSection[1], count: items.length, items }, 200, { cache: PUBLIC_CACHE });
+  }
+  const academiaId = url.pathname.match(/^\/api\/v1\/academia\/([A-Za-z0-9._-]{1,160})\.json$/);
+  if (request.method === "GET" && academiaId) {
+    let row = null;
+    try {
+      row = await db.prepare("SELECT id, section, payload, status FROM academia WHERE id = ?").bind(academiaId[1]).first();
+    } catch (err) {
+      row = null;
+    }
+    const payload = row && row.payload ? JSON.parse(row.payload) : null;
+    const pub = row && row.status === "approved" ? publicAcademia(payload, row.id, row.section) : null;
+    if (!pub) return json({ error: "not found" }, 404);
+    return json(pub, 200, { cache: PUBLIC_CACHE });
+  }
   if (request.method === "GET" && url.pathname === "/api/v1/sources.json") {
     const out = await db.prepare(
       "SELECT payload FROM sources WHERE review_status = 'approved' ORDER BY kind, id"
@@ -407,7 +660,16 @@ export async function handle(request, env) {
     const events = await db.prepare(
       "SELECT id, title, country, url, start_at FROM events WHERE review_status = 'pending' AND item_status = 'pending' ORDER BY start_at"
     ).all();
-    return json({ stories: stories.results || [], events: events.results || [] }, 200);
+    let academia = [];
+    try {
+      const pendingAcademia = await db.prepare(
+        "SELECT id, section, name, country, status FROM academia WHERE status != 'approved' ORDER BY section, country, name"
+      ).all();
+      academia = pendingAcademia.results || [];
+    } catch (err) {
+      academia = [];
+    }
+    return json({ stories: stories.results || [], events: events.results || [], academia }, 200);
   }
 
   if (request.method === "POST" && url.pathname === "/api/review") {
@@ -417,10 +679,10 @@ export async function handle(request, env) {
     } catch (err) {
       return json({ error: "body must be JSON" }, 400);
     }
-    if (!body || (body.kind !== "story" && body.kind !== "event" && body.kind !== "source")) {
-      return json({ error: "kind (story, event or source) is required" }, 400);
+    if (!body || (body.kind !== "story" && body.kind !== "event" && body.kind !== "source" && body.kind !== "academia")) {
+      return json({ error: "kind (story, event, source or academia) is required" }, 400);
     }
-    if (body.kind !== "source" && !body.id) {
+    if (body.kind !== "source" && body.kind !== "academia" && !body.id) {
       return json({ error: "kind and id are required" }, 400);
     }
     const actor = String(body.by || "Nordic Crypto redaktør");
@@ -460,6 +722,70 @@ export async function handle(request, env) {
       }
       return json({
         ok: true, kind: "source", id: plan.id, source_kind: plan.kind, enabled: plan.enabled === 1, redeploy,
+      }, 200);
+    }
+    if (body.kind === "academia") {
+      let existing = [];
+      try {
+        const out = await db.prepare(
+          "SELECT id, section, dedupe_key, payload, content_hash FROM academia"
+        ).all();
+        existing = out.results || [];
+      } catch (err) {
+        return json({ error: "academia table is missing" }, 503);
+      }
+      const plan = planAcademiaUpsert(existing, body);
+      if (plan.error) return json({ error: plan.error }, plan.status);
+      let inserted = 0;
+      let updated = 0;
+      let kept = 0;
+      for (const row of plan.rows) {
+        if (!row.insert && row.skip) {
+          kept += 1;
+          continue;
+        }
+        const text = JSON.stringify(row.payload);
+        const hash = await sha256Hex(text);
+        const active = row.section === "groups" ? (row.payload.active === true ? 1 : row.payload.active === false ? 0 : null) : null;
+        const institution = Array.isArray(row.payload.institution)
+          ? row.payload.institution.filter(Boolean).join(", ")
+          : (row.payload.institution || null);
+        const year = Number.isInteger(row.payload.year) ? row.payload.year : null;
+        if (row.insert) {
+          await db.prepare(
+            "INSERT INTO academia (id, section, country, name, code, institution, url, doi, status, active, year, pub_type, dedupe_key, payload, content_hash, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+          ).bind(
+            row.id, row.section, row.payload.country || null, row.payload.name || row.payload.title || null,
+            row.payload.code || null, institution, row.payload.url || null,
+            row.payload.doi ? String(row.payload.doi).trim().toLowerCase() : null,
+            row.payload.status, active, year, row.section === "publications" ? (row.payload.type || null) : null,
+            row.key, text, hash, at, at,
+          ).run();
+          inserted += 1;
+        } else {
+          await db.prepare(
+            "UPDATE academia SET country = ?, name = ?, code = ?, institution = ?, url = ?, doi = ?, status = ?, active = ?, year = ?, pub_type = ?, payload = ?, content_hash = ?, updated_at = ? WHERE id = ?"
+          ).bind(
+            row.payload.country || null, row.payload.name || row.payload.title || null, row.payload.code || null,
+            institution, row.payload.url || null,
+            row.payload.doi ? String(row.payload.doi).trim().toLowerCase() : null,
+            row.payload.status, active, year, row.section === "publications" ? (row.payload.type || null) : null,
+            text, hash, at, row.id,
+          ).run();
+          updated += 1;
+        }
+        await db.prepare(
+          "INSERT INTO review_audit (kind, item_id, action, actor, at, detail) VALUES ('academia', ?, ?, ?, ?, ?)"
+        ).bind(row.id, row.insert ? "add" : "edit", actor, at, row.section).run();
+      }
+      let redeploy = "scheduled";
+      try {
+        redeploy = await dispatchRedeploy(env);
+      } catch (err) {
+        redeploy = "scheduled";
+      }
+      return json({
+        ok: true, kind: "academia", inserted, updated, kept, guarded: plan.guarded, redeploy,
       }, 200);
     }
     if (body.kind === "story") {

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { applyEventReview, applySourceUpsert, applyStoryReview, editorAuthorized, handle, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
+import { applyEventReview, applySourceUpsert, applyStoryReview, editorAuthorized, handle, planAcademiaUpsert, publicAcademia, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
 
 const TOKEN = "editor-token-for-tests";
 
@@ -113,6 +113,8 @@ function fakeDb(seed) {
   const events = new Map(seed.events || []);
   const images = new Map(seed.images || []);
   const sources = new Map(seed.sources || []);
+  const academia = new Map(seed.academia || []);
+  const academiaMeta = seed.academiaMeta || null;
   const audits = [];
   function prepare(sql) {
     const state = { sql, params: [] };
@@ -123,6 +125,8 @@ function fakeDb(seed) {
       },
       async first() {
         if (state.sql.includes("FROM story_images")) return images.get(state.params[0]) || null;
+        if (state.sql.includes("FROM academia_meta")) return academiaMeta;
+        if (state.sql.includes("FROM academia WHERE id")) return academia.get(state.params[0]) || null;
         if (state.sql.includes("FROM stories")) return stories.get(state.params[0]) || null;
         if (state.sql.includes("FROM events")) return events.get(state.params[0]) || null;
         if (state.sql.includes("FROM sources")) return sources.get(state.params[0]) || null;
@@ -130,6 +134,19 @@ function fakeDb(seed) {
       },
       async all() {
         if (state.sql.includes("FROM story_images")) return { results: [...images.values()] };
+        if (state.sql.includes("dedupe_key") && state.sql.includes("FROM academia")) {
+          return { results: [...academia.values()] };
+        }
+        if (state.sql.includes("FROM academia WHERE section = ?") && state.sql.includes("status = 'approved'")) {
+          const section = state.params[0];
+          return { results: [...academia.values()].filter((row) => row.section === section && row.status === "approved") };
+        }
+        if (state.sql.includes("FROM academia WHERE status = 'approved'")) {
+          return { results: [...academia.values()].filter((row) => row.status === "approved") };
+        }
+        if (state.sql.includes("FROM academia WHERE status != 'approved'")) {
+          return { results: [...academia.values()].filter((row) => row.status !== "approved").map((row) => ({ id: row.id, section: row.section, name: row.name, country: row.country, status: row.status })) };
+        }
         if (state.sql.includes("FROM stories") && state.sql.includes("review_status = 'approved'")) {
           return { results: [...stories.values()].filter((row) => row.review_status === "approved").map((row) => ({ payload: row.payload })) };
         }
@@ -191,6 +208,27 @@ function fakeDb(seed) {
           row.review_status = state.params[5];
           row.review_note = state.params[8];
           row.payload = state.params[9];
+        } else if (state.sql.startsWith("INSERT INTO academia")) {
+          const id = state.params[0];
+          academia.set(id, {
+            id,
+            section: state.params[1],
+            country: state.params[2],
+            name: state.params[3],
+            code: state.params[4],
+            status: state.params[8],
+            dedupe_key: state.params[12],
+            payload: state.params[13],
+            content_hash: state.params[14],
+          });
+        } else if (state.sql.startsWith("UPDATE academia")) {
+          const id = state.params[state.params.length - 1];
+          const row = academia.get(id);
+          if (row) {
+            row.payload = state.params[10];
+            row.status = state.params[6];
+            row.name = state.params[1];
+          }
         } else if (state.sql.startsWith("INSERT INTO review_audit")) {
           audits.push(state.params);
         }
@@ -199,7 +237,7 @@ function fakeDb(seed) {
     };
     return api;
   }
-  return { prepare, stories, events, sources, audits };
+  return { prepare, stories, events, sources, academia, audits };
 }
 
 function request(method, path, { token, body } = {}) {
@@ -348,4 +386,94 @@ test("a manual source is stored off and is not fetched by being public feed conf
   assert.equal((await again.json()).ok, true);
   assert.equal(JSON.parse(db.sources.get("undoqo-plebs").payload).name, "Undoqo Plebs");
   assert.equal(db.sources.get("undoqo-plebs").review_note, "Checked by hand.");
+});
+
+test("academia API shows approved rows only and will not duplicate a guarded name", async () => {
+  const approved = {
+    id: "DK-cbs-bitcoin",
+    section: "groups",
+    country: "DK",
+    name: "CBS Bitcoin",
+    status: "approved",
+    dedupe_key: "name:cbs bitcoin",
+    payload: JSON.stringify({
+      country: "DK", name: "CBS Bitcoin", institution: "CBS", about: "Student group.",
+      activity: "Active.", active: true, url: "https://example.org/cbs-bitcoin",
+      source: "https://example.org/cbs-bitcoin", checked: "2026-11-01", status: "approved",
+      editor_note: "do not publish this note", id: "DK-cbs-bitcoin",
+    }),
+  };
+  const pending = {
+    id: "DK-cbs-fintech",
+    section: "groups",
+    country: "DK",
+    name: "CBS Fintech",
+    status: "pending",
+    dedupe_key: "name:cbs fintech",
+    payload: JSON.stringify({
+      country: "DK", name: "CBS Fintech", status: "pending", active: false,
+      url: "https://example.org/cbs-fintech", editor_note: "still pending",
+    }),
+  };
+  const db = fakeDb({
+    academia: [[approved.id, approved], [pending.id, pending]],
+    academiaMeta: { updated: "2026-11-09", rules: JSON.stringify(["Only approved rows."]) },
+  });
+  const env = { DB: db, EDITOR_TOKEN: TOKEN };
+  const catalogue = await (await handle(request("GET", "/api/v1/academia.json"), env)).json();
+  assert.equal(catalogue.counts.groups, 1);
+  assert.equal(catalogue.groups[0].name, "CBS Bitcoin");
+  assert.equal(catalogue.groups[0].editor_note, undefined);
+  assert.equal(JSON.stringify(catalogue).includes("do not publish"), false);
+  assert.equal(JSON.stringify(catalogue).includes("CBS Fintech"), false);
+  const section = await (await handle(request("GET", "/api/v1/academia/groups.json"), env)).json();
+  assert.equal(section.count, 1);
+  const one = await handle(request("GET", "/api/v1/academia/DK-cbs-bitcoin.json"), env);
+  assert.equal(one.status, 200);
+  assert.equal((await one.json()).id, "DK-cbs-bitcoin");
+  const hidden = await handle(request("GET", "/api/v1/academia/DK-cbs-fintech.json"), env);
+  assert.equal(hidden.status, 404);
+  const blocked = planAcademiaUpsert([approved], {
+    section: "groups",
+    payload: {
+      country: "DK", name: "CBS Bitcoin", institution: "CBS", about: "Again.",
+      activity: "none", active: false, url: "https://example.org/other",
+      source: "https://example.org/other", checked: "2026-11-09", status: "approved", editor_note: "x",
+    },
+  });
+  assert.equal(blocked.rows.length, 1);
+  assert.equal(blocked.rows[0].insert, false);
+  const cobra = planAcademiaUpsert([{
+    id: "research-cobra",
+    section: "research",
+    dedupe_key: "name:cobra concordium blockchain research center aarhus",
+    payload: JSON.stringify({ name: "COBRA – Concordium Blockchain Research Center Aarhus", status: "pending" }),
+  }], {
+    section: "research",
+    payload: {
+      country: "DK", name: "COBRA Aarhus", institution: "Aarhus", about: "Again.",
+      url: "https://example.org/cobra", source: "https://example.org/cobra",
+      checked: "2026-11-09", status: "approved", editor_note: "x",
+    },
+  });
+  assert.equal(cobra.rows.length, 0);
+  assert.equal(cobra.guarded.length, 1);
+  const added = await handle(request("POST", "/api/review", {
+    token: TOKEN,
+    body: {
+      kind: "academia",
+      research: [{
+        country: "DK", name: "European Blockchain Center (EBC)", institution: "ITU",
+        about: "Centre.", url: "https://example.org/ebc", source: "https://example.org/ebc",
+        checked: "2026-11-09", status: "approved", editor_note: "secret note",
+      }],
+    },
+  }), env);
+  const body = await added.json();
+  assert.equal(added.status, 200);
+  assert.equal(body.inserted, 1);
+  const again = await (await handle(request("GET", "/api/v1/academia/research.json"), env)).json();
+  assert.equal(again.count, 1);
+  assert.equal(again.items[0].editor_note, undefined);
+  assert.equal(publicAcademia({ status: "pending", name: "Hidden" }, "x", "research"), null);
 });

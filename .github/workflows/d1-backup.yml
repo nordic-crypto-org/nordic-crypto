@@ -107,7 +107,7 @@ jobs:
           set -euo pipefail
           day=$(date -u +%Y-%m-%d)
           cd workers/content
-          for name in news.json events.json sources.json audit.json manifest.json source_status.json; do
+          for name in news.json events.json sources.json academia.json audit.json manifest.json source_status.json; do
             if [ -f "$dest/$name" ]; then
               npx --yes wrangler r2 object put "$CF_R2_BUCKET/backup/$day/$name" --file "$dest/$name" --remote
             fi

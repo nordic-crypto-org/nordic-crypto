@@ -84,8 +84,10 @@ jobs:
         run: python3 tools/ci_write_terms.py
 
       - name: Import committed JSON into D1
-        # Same step as d1-publish.yml: fold committed data/news.json and events into D1
-        # (idempotent; a newer D1 approval is kept) so a push-triggered D1 build does not drop them.
+        # Same step as d1-publish.yml: fold committed news, events and academia into D1
+        # (idempotent; a newer D1 approval is kept) and apply workers/content migrations
+        # so the academia table exists before the import. A push-triggered D1 build
+        # then reads those rows. data/academia.json stays in git as the offline snapshot.
         if: vars.NC_DATA_SOURCE == 'd1'
         env:
           NC_DATA_SOURCE: d1
@@ -93,7 +95,7 @@ jobs:
           CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
           CF_D1_DATABASE_ID: ${{ vars.CF_D1_DATABASE_ID }}
-        run: python3 tools/d1_import.py
+        run: python3 tools/d1_import.py --apply-schema
 
       - name: Story illustrations
         # One picture per story first published after 2026-11-07T08:16:00Z.
@@ -222,7 +224,8 @@ jobs:
             echo
             echo "CI has no \`queue/approved.json\`, no \`state/source_status.json\`, and no \`/workspace/nordic-crypto-research/academia.md\`."
             echo "Own stories come from \`data/stories/approved.json\`; the local \`stories.approve\` queue is omitted. Rows in \`data/events.json\` are not promoted. Every enabled source counts as ok."
-            echo "\`data/news.json\`, \`data/orgchart.json\` and \`data/academia.json\` stay as they are committed on \`main\`."
+            echo "\`data/news.json\` and \`data/orgchart.json\` stay as they are committed on \`main\`."
+            echo "When \`NC_DATA_SOURCE\` is d1, the academia page reads D1 and falls back to the committed \`data/academia.json\` if that read fails or the table is still empty. The committed file is not deleted and is not pushed back to \`main\`."
             echo "After a publish with new stories, push notifications go to browsers (\`PUSH_PUBLISH_TOKEN\`) and the apps (\`APP_PUSH_PUBLISH_TOKEN\`)."
           } >> "$GITHUB_STEP_SUMMARY"
         env:

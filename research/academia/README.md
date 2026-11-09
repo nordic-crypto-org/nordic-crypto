@@ -10,9 +10,10 @@ Brand: **Nordic Crypto**.
 - Every row is sourced (NVA, DiVA, Theseus, Pure, Opinvisindi, OpenAlex, …). No fabricated citations.
 
 ## How publish picks it up
-1. `tools/import_academia.py` (run automatically by `build.py` → `build_academia()` on the English build)
+1. `tools/import_academia.py` (run by `build.py` before the academia page, when `academia.md` is present)
    reads `/workspace/nordic-crypto-research/academia.md` (courses/groups/research editor list)
-   **and** merges `research/academia/works.json` into `data/academia.json` → `publications`.
+   **and** merges `research/academia/works.json` into the catalogue → `publications`.
+   With `NC_DATA_SOURCE=d1` that write goes to D1. Otherwise it still writes `data/academia.json`.
 2. New works land with `status: pending` (awaiting editor). Only `status: approved` rows
    are rendered on `/academia/` (public and preview).
 3. Approval key for publications: `doi` when present, otherwise `url`

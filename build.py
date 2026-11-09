@@ -27,6 +27,7 @@ SITE_NAME = "Nordic Crypto"
 ICON_V = "2"   # bump when the favicon changes: browsers (Safari above all) keep an old favicon until its URL changes
 CUSTOM_DOMAIN = site_url.HOST   # GitHub Pages CNAME; publish.sh will not push gh-pages without it
 D1_EVENTS = None   # set by build() when NC_DATA_SOURCE=d1; event approvals live in D1, not approved.json
+ACADEMIA_DOC = None  # set by prepare_academia(); D1 catalogue or the JSON snapshot
 def write_cname():
     """site/CNAME, so a publish keeps the custom domain (a missing file clears it on GitHub Pages)."""
     open(os.path.join(SITE, "CNAME"), "w", encoding="utf-8").write(CUSTOM_DOMAIN + "\n")
@@ -1105,8 +1106,9 @@ def story_share(i, title, desc):
     return og, brand
 
 def build():
-    global LANG, D1_EVENTS
+    global LANG, D1_EVENTS, ACADEMIA_DOC
     D1_EVENTS = None
+    ACADEMIA_DOC = None
     if os.environ.get("NC_DATA_SOURCE", "").strip().lower() == "d1":
         from tools.d1_store import materialize
         # Approved rows replace the working news and events files for this build.
@@ -1121,6 +1123,7 @@ def build():
             subprocess.run([sys.executable, P("tools", "apply_approvals.py")], check=True, timeout=180)
     else:
         subprocess.run([sys.executable, P("tools", "apply_approvals.py")], check=True, timeout=180)
+    prepare_academia()
     subprocess.run([sys.executable, P("tools", "import_orgchart.py")], check=True, timeout=180)
     news = load(P("data", "news.json"), {"items": []}); org = load(P("data", "orgchart.json"), {"entities": [], "relations": []})
     cfg = load(P("sources.json")); status = load(P("state", "source_status.json"), {})
@@ -3875,20 +3878,60 @@ var io=new IntersectionObserver(function(es){if(es.some(function(e){return e.isI
     if LANG == "en":
         print(f"archive: {len(items)} items ({news_count} news)")
 
+def read_academia():
+    """Catalogue for the page, the archive and the static API.
+
+    NC_DATA_SOURCE=d1 reads D1. A missing table, an empty table or a failed read
+    keeps data/academia.json, so the public page still builds before the import
+    has run and if D1 cannot be reached afterwards. Only status=approved is shown;
+    that filter is applied by the caller.
+    """
+    path = P("data", "academia.json")
+    fallback = load(path, {}) or {}
+    if os.environ.get("NC_DATA_SOURCE", "").strip().lower() != "d1":
+        return fallback
+    try:
+        from tools import d1_store, d1_academia
+        if d1_store.missing_remote():
+            raise d1_store.D1Error("Cloudflare is not configured")
+        doc = d1_academia.document(d1_store.open_remote())
+    except Exception as ex:
+        print(f"academia: D1 unavailable ({str(ex).splitlines()[0][:200]}); using data/academia.json", file=sys.stderr)
+        return fallback
+    if not doc or not any(doc.get(key) for key in ("courses", "groups", "publications", "research")):
+        print("academia: D1 has no rows; using data/academia.json", file=sys.stderr)
+        return fallback
+    try:
+        from tools import d1_store
+        d1_store.save_json(path, doc)
+    except Exception as ex:
+        print(f"academia: working JSON was not refreshed ({str(ex).splitlines()[0][:160]})", file=sys.stderr)
+    return doc
+
+def prepare_academia():
+    """Refresh the catalogue once, before the archive and the academia page read it."""
+    global ACADEMIA_DOC
+    research = "/workspace/nordic-crypto-research/academia.md"
+    if os.path.exists(research):
+        subprocess.run([sys.executable, P("tools", "import_academia.py")], check=True, timeout=180)
+    ACADEMIA_DOC = read_academia()
+    return ACADEMIA_DOC
+
 def build_academia():
-    """Academia page from data/academia.json. Public build: only rows approved in queue/approved.json -> academia.approve
-    (key = doi for publications, url for the rest). Preview: also rows awaiting the editor, clearly marked.
+    """Academia page. NC_DATA_SOURCE=d1 reads D1, otherwise data/academia.json.
+    Public build: only rows with status approved. Pending, unverified and out stay in the catalogue.
     Row texts (about, level, term) are data in English and are shown with lang="en" on the other language versions."""
-    if LANG == "en":
-        research = "/workspace/nordic-crypto-research/academia.md"
-        if os.path.exists(research):
-            subprocess.run([sys.executable, P("tools", "import_academia.py")], check=True, timeout=180)
-        else:
-            print("academia: research list is missing; leaving data/academia.json unchanged")
-    ac = load(P("data", "academia.json"), {}) or {}
-    def keep(rows, key):  # only editor-approved rows reach the page, in preview too; pending/unverified/out stay in data/
-        return [dict(r) for r in rows if r.get("status") == "approved"]
-    secs = {k: keep(ac.get(k, []), "doi" if k == "publications" else "url") for k in ("courses", "groups", "publications", "research")}
+    global ACADEMIA_DOC
+    if LANG == "en" and not os.path.exists("/workspace/nordic-crypto-research/academia.md"):
+        print("academia: research list is missing; using D1 when NC_DATA_SOURCE=d1, otherwise data/academia.json")
+    if ACADEMIA_DOC is None:
+        ACADEMIA_DOC = read_academia()
+    ac = ACADEMIA_DOC or {}
+    from tools import d1_academia
+    secs = d1_academia.public_sections(ac)  # only status=approved reaches the page
+    for rows in secs.values():
+        for row in rows:
+            row.pop("editor_note", None)
     if LANG == "en": json.dump(dict({"updated": ac.get("updated"), "preview": PREVIEW}, **secs), open(os.path.join(SITE, "data", "academia.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     en = lang_attr("en")
     def st(r): return (f'<span class="tag pend">{E(t("owner"))}</span>' if PREVIEW else "")
