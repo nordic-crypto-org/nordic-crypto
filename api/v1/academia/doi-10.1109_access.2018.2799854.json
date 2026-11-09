@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-09T18:17:33+00:00",
+ "generated_at": "2026-11-09T20:42:12+00:00",
  "preview": false,
  "item": {
-  "country": "DK",
-  "title": "When Intrusion Detection Meets Blockchain Technology: A Review",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Weizhi Meng",
    "Elmar Tischhauser",
@@ -13,26 +12,27 @@
    "Yu Wang",
    "Jinguang Han"
   ],
-  "institution": "Technical University of Denmark",
-  "year": 2018,
-  "type": "paper",
-  "venue": "IEEE Access",
-  "doi": "10.1109/access.2018.2799854",
-  "url": "https://doi.org/10.1109/access.2018.2799854",
+  "checked": "2026-11-09",
+  "country": "DK",
   "db": "https://doi.org/10.1109/access.2018.2799854",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1109/access.2018.2799854",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1109/access.2018.2799854",
+  "id": "doi-10.1109_access.2018.2799854",
+  "institution": "Technical University of Denmark",
   "keywords": [
    "Blockchain",
    "Computer science",
    "Intrusion detection system",
    "Computer security"
   ],
-  "checked": "2026-11-09",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1109/access.2018.2799854",
+  "title": "When Intrusion Detection Meets Blockchain Technology: A Review",
+  "type": "paper",
+  "url": "https://doi.org/10.1109/access.2018.2799854",
+  "venue": "IEEE Access",
+  "year": 2018,
   "about_i18n": {},
-  "id": "doi-10.1109_access.2018.2799854",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_access.2018.2799854.json"
  }

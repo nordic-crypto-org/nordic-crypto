@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-09T18:17:33+00:00",
+ "generated_at": "2026-11-09T20:42:12+00:00",
  "preview": false,
  "item": {
-  "country": "IS",
-  "title": "Anticipatory gains and event-driven losses in blockchain-based fan tokens: Evidence from the FIFA World Cup",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Aman Saggu",
    "Lennart Ante",
    "Ender Demir"
   ],
-  "institution": "Reykjavík University",
-  "year": 2024,
-  "type": "paper",
-  "venue": "Research in International Business and Finance",
-  "doi": "10.1016/j.ribaf.2024.102333",
-  "url": "https://doi.org/10.1016/j.ribaf.2024.102333",
+  "checked": "2026-11-09",
+  "country": "IS",
   "db": "https://doi.org/10.1016/j.ribaf.2024.102333",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1016/j.ribaf.2024.102333",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.ribaf.2024.102333",
+  "id": "doi-10.1016_j.ribaf.2024.102333",
+  "institution": "Reykjavík University",
   "keywords": [
    "Blockchain",
    "Event (particle physics)",
@@ -31,10 +27,14 @@
    "Computer security",
    "Physics"
   ],
-  "checked": "2026-11-09",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.ribaf.2024.102333",
+  "title": "Anticipatory gains and event-driven losses in blockchain-based fan tokens: Evidence from the FIFA World Cup",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.ribaf.2024.102333",
+  "venue": "Research in International Business and Finance",
+  "year": 2024,
   "about_i18n": {},
-  "id": "doi-10.1016_j.ribaf.2024.102333",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.ribaf.2024.102333.json"
  }
