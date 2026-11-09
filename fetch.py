@@ -38,6 +38,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
 import coverage
 import event_block
+from tools.d1_store import news_source_fetched
 import published_time as pubtime
 from tools.press_images import entry_carries_article_image, ignored_count, note_og_image, strip_press_images
 
@@ -1160,7 +1161,8 @@ def main():
                                "ok_requests": n_ok, "entries": n_items, "error": err, "method": "rss"}
         log(f"{s['id']:<22} ok={n_ok}/{len(urls)} entries={n_items} err={err}")
 
-    selected = [s for s in CFG["sources"] if s.get("enabled") and s.get("feed") and not s.get("podcast") and (not a.only or s["id"] in set(a.only.split(",")))]
+    # type manual and enabled false (for example undoqo-plebs) is researcher-only and is not requested.
+    selected = [s for s in CFG["sources"] if news_source_fetched(s) and (not a.only or s["id"] in set(a.only.split(",")))]
     workers = max(1, int(CFG.get("fetch_workers") or 6))
     log(f"fetching {len(selected)} feeds with {workers} workers, {DELAY}s per host")
     if workers == 1 or len(selected) <= 1:

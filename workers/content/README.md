@@ -13,9 +13,9 @@ The public site stays on GitHub Pages. This Worker is the editor API and an opti
 | GET | `/api/v1/news.json` and `/api/v1/news/:id.json` | no | Approved stories. No teasers, match rules or reject reasons. `image.url` when a story illustration is stored. The prompt is not included. |
 | GET | `/story-images/:id.png` | no | That illustration, from the R2 binding `STORY_IMAGES`. 404 when the bucket is not bound or the object is missing. |
 | GET | `/api/v1/events.json` and `/api/v1/events/:id.json` | no | Approved events. |
-| GET | `/api/v1/sources.json` | no | Outlet id, name, country and url. |
+| GET | `/api/v1/sources.json` | no | Approved outlets: id, name, country, url, enabled. |
 | GET | `/api/review/pending` | `Authorization: Bearer EDITOR_TOKEN` | Ids and titles waiting on the editor. |
-| POST | `/api/review` | the same token | `{kind: story\|event, id, action: approve\|reject, summary, reason, by}`. |
+| POST | `/api/review` | the same token | `{kind: story\|event, id, action: approve\|reject, summary, reason, by}`, or `{kind: source, source_kind: news\|event, payload, enabled, note, by}` to upsert a source. |
 
 A story approval requires `summary`. The row stores `reviewed_by` and `reviewed_at`. Rows are not deleted.
 
@@ -56,6 +56,9 @@ python3 tools/d1_review.py approve --id STORY_ID --summary "…" --by "Nordic Cr
 python3 tools/d1_review.py reject --id STORY_ID --reason "…"
 python3 tools/d1_review.py approve-event --id EVENT_ID
 python3 tools/d1_review.py reject-event --id EVENT_ID --reason "…"
+python3 tools/d1_review.py add-source --kind event --json source.json --enabled false --note "Checked by hand."
 ```
 
-Test: `node --test workers/content/test/worker.test.js` from the repo root, and `python3 -m unittest tests.test_d1_store`.
+`add-source` writes the `sources` table. It does not edit `sources.json`. A `type: manual` source with `enabled` false is researcher-only and is never fetched. See [News and event sources in D1](../../docs/sources-d1.md).
+
+Test: `node --test workers/content/test/worker.test.js` from the repo root, and `python3 -m unittest tests.test_d1_store tests.test_d1_sources`.
