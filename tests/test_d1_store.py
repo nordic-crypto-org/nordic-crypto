@@ -395,5 +395,31 @@ class HttpAndCommands(unittest.TestCase):
         self.assertIn("apply_approvals.py", build)
 
 
+class SplitSql(unittest.TestCase):
+    """D1 runs one statement per request, so split_sql must keep a trigger body whole."""
+
+    def test_trigger_body_stays_one_statement(self):
+        sql = "CREATE TABLE t (a);\nCREATE TRIGGER IF NOT EXISTS t_no_delete\nBEFORE DELETE ON t\nBEGIN\n  SELECT RAISE(ABORT, 'no');\nEND;\nINSERT INTO t VALUES (1);"
+        parts = d1_store.split_sql(sql)
+        self.assertEqual(len(parts), 3)
+        self.assertTrue(parts[1].startswith("CREATE TRIGGER"))
+        self.assertTrue(parts[1].endswith("END"))
+
+    def test_every_migration_runs_statement_by_statement(self):
+        db = sqlite3.connect(":memory:")
+        for path in d1_store.migration_files():
+            with open(path, encoding="utf-8") as fh:
+                alters, rest = d1_store._add_columns_first(fh.read())
+            for statement in alters:
+                try:
+                    db.execute(statement)
+                except sqlite3.OperationalError as ex:
+                    if "duplicate column" not in str(ex).lower():
+                        raise
+            for statement in d1_store.split_sql(rest):
+                self.assertTrue(sqlite3.complete_statement(statement + ";"), statement[:80])
+                db.execute(statement)
+
+
 if __name__ == "__main__":
     unittest.main()
