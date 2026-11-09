@@ -23,14 +23,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Nvidia personal scandal / no crypto angle on affiliate-type guide site. researcher 09.11; editor 2026-11-09"
   },
   {
    "id": "e54d39d839de",
    "url": "https://kryptovalutaguiden.se/2026/11/meta-och-palantir-sager-nej-till-aktietokenisering-67-bolag-hoppar-okxice",
    "title": "Meta och Palantir säger nej till aktietokenisering – 67 bolag hoppar OKXICE",
-   "title_en": null,
+   "title_en": "OKXICE notice lists 67 issuer objections to tokenised shares, including Meta and Palantir",
    "source": "kryptovalutaguiden",
    "source_name": "Kryptovalutaguiden",
    "country": "SE",
@@ -42,16 +43,81 @@
    "published": "2026-11-08T16:11:36+00:00",
    "fetched": "2026-11-09T02:49:06+00:00",
    "topics": [
-    "crypto",
-    "companies"
+    "tokenization",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "OKXICE's public notice dated 5 November 2026 lists Notices of Issuer Objection from 67 issuers, including Meta Platforms and Palantir Technologies, according to the document published by OKXICE. The notice follows earlier reporting that disclosed objections had risen to 56 companies. Kryptovalutaguiden covered the update.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-09T04:41:56+01:00",
+   "primary_source": {
+    "name": "OKXICE TSV Public Notice, 5 November 2026",
+    "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.11.05.pdf"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/e36f90afacd8/",
+     "label": "OKXICE objections rise to 56 companies"
+    }
+   ],
+   "title_i18n": {
+    "nb": "OKXICE-varsel lister 67 utstederinnsigelser mot tokeniserte aksjer, blant dem Meta og Palantir",
+    "nn": "OKXICE-varsel listar 67 utstedarinnseiingar mot tokeniserte aksjar, mellom dei Meta og Palantir",
+    "da": "OKXICE-meddelelse lister 67 udstederindsigelser mod tokeniserede aktier, herunder Meta og Palantir",
+    "fi": "OKXICE-ilmoitus listaa 67 liikkeeseenlaskijan vastalausetta tokenisoiduille osakkeille, mukana Meta ja Palantir",
+    "is": "Tilkynning OKXICE telur 67 andmæli útgefenda gegn tókenvæddum hlutabréfum, þar á meðal Meta og Palantir",
+    "zh": "OKXICE公告列出67家发行人对代币化股票的异议，包括Meta和Palantir",
+    "hi": "OKXICE नोटिस में टोकनाइज़्ड शेयरों पर 67 जारीकर्ता आपत्तियाँ, Meta और Palantir सहित",
+    "es": "El aviso de OKXICE enumera 67 objeciones de emisores a acciones tokenizadas, entre ellas Meta y Palantir",
+    "fr": "L'avis d'OKXICE liste 67 objections d'émetteurs aux actions tokenisées, dont Meta et Palantir",
+    "ar": "إشعار OKXICE يدرج 67 اعتراضًا من جهات إصدار على أسهم مرمّزة، بينها Meta وPalantir",
+    "bn": "OKXICE নোটিশে টোকেনাইজড শেয়ারে ৬৭টি ইস্যুয়ার আপত্তি, Meta ও Palantir-সহ",
+    "pt": "Aviso da OKXICE lista 67 objeções de emitentes a ações tokenizadas, incluindo Meta e Palantir",
+    "ru": "Уведомление OKXICE перечисляет 67 возражений эмитентов против токенизированных акций, в том числе Meta и Palantir",
+    "ur": "OKXICE نوٹس میں ٹوکنائزڈ شیئرز پر 67 جاری کنندہ اعتراضات، Meta اور Palantir سمیت",
+    "id": "Pemberitahuan OKXICE mencantumkan 67 keberatan penerbit atas saham tokenisasi, termasuk Meta dan Palantir",
+    "de": "OKXICE-Mitteilung listet 67 Emittenteneinwände gegen tokenisierte Aktien, darunter Meta und Palantir",
+    "ja": "OKXICEの通知、トークン化株式への発行体異議を67件と記載　MetaやPalantirを含む",
+    "sw": "Taarifa ya OKXICE inaorodhesha pingamizi 67 za watoaji dhidi ya hisa za tokeni, zikiwemo Meta na Palantir",
+    "mr": "OKXICE सूचनेत टोकनाइज्ड शेअर्सवर 67 जारीकर्ता आक्षेप, Meta आणि Palantir यांचा समावेश",
+    "fa": "اطلاعیه OKXICE از ۶۷ اعتراض ناشر به سهام توکنی‌شده خبر می‌دهد، از جمله Meta و Palantir",
+    "uk": "Повідомлення OKXICE перелічує 67 заперечень емітентів проти токенізованих акцій, зокрема Meta і Palantir",
+    "tr": "OKXICE duyurusu Meta ve Palantir dahil tokenize hisselere 67 ihraççı itirazı listeliyor",
+    "se": "OKXICE almmuha 67 vuostecealkámuša tokeniserejuvvon ossosiidda, earret eará Meta ja Palantir"
+   },
+   "title_i18n_source": "Meta och Palantir säger nej till aktietokenisering – 67 bolag hoppar OKXICE",
+   "summary_i18n": {
+    "sv": "OKXICEs offentliga meddelande daterat den 5 november 2026 listar Notices of Issuer Objection från 67 utgivare, bland dem Meta Platforms och Palantir Technologies, enligt dokumentet som OKXICE publicerat. Meddelandet följer tidigare rapportering om att redovisade invändningar hade stigit till 56 bolag. Kryptovalutaguiden har bevakat uppdateringen.",
+    "nb": "OKXICEs offentlige kunngjøring datert 5. november 2026 lister Notices of Issuer Objection fra 67 utstedere, blant dem Meta Platforms og Palantir Technologies, ifølge dokumentet OKXICE har publisert. Kunngjøringen følger tidligere dekning om at oppgitte innsigelser hadde steget til 56 selskaper. Kryptovalutaguiden har omtalt oppdateringen.",
+    "nn": "OKXICE si offentlege kunngjering datert 5. november 2026 listar Notices of Issuer Objection frå 67 utstedarar, mellom dei Meta Platforms og Palantir Technologies, ifølgje dokumentet OKXICE har publisert. Kunngjeringa følgjer tidlegare dekning om at oppgjevne innseiingar hadde stige til 56 selskap. Kryptovalutaguiden har omtalt oppdateringa.",
+    "da": "OKXICEs offentlige meddelelse dateret 5. november 2026 lister Notices of Issuer Objection fra 67 udstedere, heriblandt Meta Platforms og Palantir Technologies, ifølge dokumentet, som OKXICE har offentliggjort. Meddelelsen følger tidligere dækning af, at oplyste indsigelser var steget til 56 selskaber. Kryptovalutaguiden har omtalt opdateringen.",
+    "fi": "OKXICEn 5. marraskuuta 2026 päivätty julkinen ilmoitus listaa Notices of Issuer Objection -ilmoituksia 67 liikkeeseenlaskijalta, muun muassa Meta Platformsilta ja Palantir Technologiesilta, OKXICEn julkaiseman asiakirjan mukaan. Ilmoitus seuraa aiempaa uutisointia, jonka mukaan ilmoitettujen vastalauseiden määrä oli noussut 56 yhtiöön. Kryptovalutaguiden on kattanut päivityksen.",
+    "is": "Opinber tilkynning OKXICE dagsett 5. nóvember 2026 telur Notices of Issuer Objection frá 67 útgefendum, þar á meðal Meta Platforms og Palantir Technologies, samkvæmt skjali sem OKXICE birti. Tilkynningin fylgir fyrri umfjöllun um að birt andmæli hefðu aukist í 56 félög. Kryptovalutaguiden hefur fjallað um uppfærsluna.",
+    "zh": "根据OKXICE发布的文件，该机构2026年11月5日的公告列出67家发行人的异议通知，其中包括Meta Platforms和Palantir Technologies。该公告是在此前报道称已披露异议增至56家公司之后发布的。Kryptovalutaguiden对此进行了报道。",
+    "hi": "OKXICE द्वारा प्रकाशित दस्तावेज़ के अनुसार, 5 नवंबर 2026 की सार्वजनिक सूचना में Meta Platforms और Palantir Technologies सहित 67 जारीकर्ताओं की Notices of Issuer Objection सूचीबद्ध हैं। यह सूचना उन पूर्व रिपोर्टिंग के बाद आई है जिनमें कहा गया था कि घोषित आपत्तियाँ 56 कंपनियों तक पहुँच गई थीं। Kryptovalutaguiden ने इस अद्यतन को कवर किया।",
+    "es": "El aviso público de OKXICE del 5 de noviembre de 2026 enumera Notices of Issuer Objection de 67 emisores, entre ellos Meta Platforms y Palantir Technologies, según el documento publicado por OKXICE. El aviso sigue a informaciones anteriores de que las objeciones divulgadas habían subido a 56 empresas. Kryptovalutaguiden ha cubierto la actualización.",
+    "fr": "L'avis public d'OKXICE daté du 5 novembre 2026 liste des Notices of Issuer Objection de 67 émetteurs, dont Meta Platforms et Palantir Technologies, selon le document publié par OKXICE. L'avis fait suite à des informations antérieures selon lesquelles les objections publiées étaient passées à 56 entreprises. Kryptovalutaguiden a couvert la mise à jour.",
+    "ar": "وفق الوثيقة التي نشرتها OKXICE، يدرج الإشعار العام المؤرخ في 5 نوفمبر 2026 إشعارات اعتراض من 67 جهة إصدار، بينها Meta Platforms وPalantir Technologies. ويأتي الإشعار بعد تقارير سابقة أفادت بأن الاعتراضات المعلنة ارتفعت إلى 56 شركة. وقد غطت Kryptovalutaguiden التحديث.",
+    "bn": "OKXICE প্রকাশিত নথি অনুযায়ী, ৫ নভেম্বর ২০২৬-এর জনসমক্ষে নোটিশে Meta Platforms ও Palantir Technologiesসহ ৬৭টি ইস্যুয়ারের Notices of Issuer Objection তালিকাভুক্ত। আগে প্রকাশিত আপত্তি ৫৬ কোম্পানিতে পৌঁছেছিল বলে যে খবর ছিল, তারই অনুসরণে এ নোটিশ। Kryptovalutaguiden এ হালনাগাদ তুলে ধরেছে।",
+    "pt": "O aviso público da OKXICE datado de 5 de novembro de 2026 lista Notices of Issuer Objection de 67 emitentes, incluindo Meta Platforms e Palantir Technologies, segundo o documento publicado pela OKXICE. O aviso segue cobertura anterior de que as objeções divulgadas tinham subido para 56 empresas. A Kryptovalutaguiden cobriu a atualização.",
+    "ru": "Согласно документу, опубликованному OKXICE, публичное уведомление от 5 ноября 2026 года перечисляет Notices of Issuer Objection от 67 эмитентов, в том числе Meta Platforms и Palantir Technologies. Уведомление следует за более ранними сообщениями о том, что раскрытые возражения выросли до 56 компаний. Kryptovalutaguiden осветило обновление.",
+    "ur": "OKXICE کی شائع کردہ دستاویز کے مطابق، 5 نومبر 2026 کی عوامی نوٹس میں Meta Platforms اور Palantir Technologies سمیت 67 جاری کنندگان کی Notices of Issuer Objection درج ہیں۔ یہ نوٹس اس سے پہلے کی رپورٹنگ کے بعد آئی جس میں کہا گیا تھا کہ ظاہر کردہ اعتراضات 56 کمپنیوں تک پہنچ گئے تھے۔ Kryptovalutaguiden نے اس تازہ کاری کا احاطہ کیا۔",
+    "id": "Menurut dokumen yang diterbitkan OKXICE, pemberitahuan publik tertanggal 5 November 2026 mencantumkan Notices of Issuer Objection dari 67 penerbit, termasuk Meta Platforms dan Palantir Technologies. Pemberitahuan itu menyusul laporan sebelumnya bahwa keberatan yang diungkapkan telah naik menjadi 56 perusahaan. Kryptovalutaguiden meliput pembaruan itu.",
+    "de": "Laut dem von OKXICE veröffentlichten Dokument listet die öffentliche Mitteilung vom 5. November 2026 Notices of Issuer Objection von 67 Emittenten, darunter Meta Platforms und Palantir Technologies. Die Mitteilung folgt früherer Berichterstattung, wonach offengelegte Einwände auf 56 Unternehmen gestiegen seien. Kryptovalutaguiden hat das Update aufgegriffen.",
+    "ja": "OKXICEが公表した文書によると、2026年11月5日付の公示はMeta PlatformsやPalantir Technologiesを含む発行体67社からのNotice of Issuer Objectionを列挙している。開示された異議が56社に増えたとするこれまでの報道に続く内容で、Kryptovalutaguidenがこの更新を伝えた。",
+    "sw": "Kulingana na waraka uliochapishwa na OKXICE, taarifa ya umma ya tarehe 5 Novemba 2026 inaorodhesha Notices of Issuer Objection kutoka watoaji 67, wakiwemo Meta Platforms na Palantir Technologies. Taarifa hiyo inafuata ripoti za awali kwamba pingamizi zilizofichuliwa zilikuwa zimepanda hadi kampuni 56. Kryptovalutaguiden imeripoti sasisho hilo.",
+    "mr": "OKXICE ने प्रकाशित केलेल्या दस्तऐवजानुसार, 5 नोव्हेंबर 2026 च्या सार्वजनिक सूचनेत Meta Platforms आणि Palantir Technologies यांसह 67 जारीकर्त्यांच्या Notices of Issuer Objection सूचीबद्ध आहेत. यापूर्वी जाहीर आक्षेप 56 कंपन्यांपर्यंत पोहोचल्याची बातमी आल्यानंतर ही सूचना आली आहे. Kryptovalutaguiden ने ही अद्ययावत माहिती दिली.",
+    "fa": "بر اساس سندی که OKXICE منتشر کرده، اطلاعیه عمومی مورخ ۵ نوامبر ۲۰۲۶ شامل Notices of Issuer Objection از ۶۷ ناشر از جمله Meta Platforms و Palantir Technologies است. این اطلاعیه پس از گزارش‌های پیشین مبنی بر افزایش اعتراض‌های اعلام‌شده به ۵۶ شرکت آمده است. Kryptovalutaguiden این به‌روزرسانی را پوشش داده است.",
+    "uk": "Згідно з документом, опублікованим OKXICE, публічне повідомлення від 5 листопада 2026 року перелічує Notices of Issuer Objection від 67 емітентів, зокрема Meta Platforms і Palantir Technologies. Повідомлення йде після попередніх повідомлень про зростання оприлюднених заперечень до 56 компаній. Kryptovalutaguiden висвітлив оновлення.",
+    "tr": "OKXICE'ın yayımladığı belgeye göre 5 Kasım 2026 tarihli kamuya açık duyuru, Meta Platforms ve Palantir Technologies dahil 67 ihraççıdan Notices of Issuer Objection listeliyor. Duyuru, açıklanan itirazların 56 şirkete çıktığı yönündeki önceki haberleri izliyor. Kryptovalutaguiden güncellemeyi aktardı.",
+    "se": "OKXICE almmolaš almmuhusas skábmamánu 5. beaivvi 2026 logahallet Issuer Objection-almmuhusaid 67 almmuheaddjis, oktan Meta Platforms ja Palantir Technologies, dokumeantta vuođul maid OKXICE lea almmuhan. Almmuhus čuovvu dan ovddit almmuhusa ahte leat boahtán 56 fitnodaga vuostecealkagat. Kryptovalutaguiden čálle ođasášši."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "ecd1c0c72861",
@@ -75,14 +141,15 @@
     "\\bdark\\s?nets?\\b"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle; unverifiable (DN/Bonnier not fetched). researcher 09.11; editor 2026-11-09"
   },
   {
    "id": "f6e4dc25fdd1",
    "url": "https://e24.no/bors/nyheter/a/306164",
    "title": "Binance-finanssjefen slutter etter gigantisk hackerangrep",
-   "title_en": null,
+   "title_en": "Binance finance chief Kaiser Ng steps down; Justin Yek takes over",
    "source": "e24",
    "source_name": "E24",
    "country": "NO",
@@ -95,7 +162,7 @@
    "published": "2026-11-07T16:44:55+00:00",
    "fetched": "2026-11-08T02:44:15+00:00",
    "topics": [
-    "crypto",
+    "exchanges",
     "companies"
    ],
    "matched": [
@@ -103,14 +170,87 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Binance co-founder and co-chief executive Yi He said Kaiser Ng is leaving as chief financial officer after more than five years to pursue a new venture, with a transition plan that has been under way for about six months, according to The Block and The Globe and Mail. Justin Yek, previously vice-president of finance at Airwallex, is taking over as CFO. The announcement came days after the late-October theft from Binance; Yi He did not say the departure was caused by the incident.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-09T04:41:56+01:00",
+   "primary_source": {
+    "name": "Binance co-CEO Yi He, as reported by The Block",
+    "url": "https://www.theblock.co/news/business/2026-11-07-binance-cfo-steps-down-nine-days-after-record-hack-co-ceo-says-transition-was-planned-six-months-ago-435992"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/f47e76863444/",
+     "label": "Binance hack: fake interviews and internal AI tool"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance hack: main story"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/",
+     "label": "FBI attributes the hack to North Korea's TraderTraitor"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Binance-finanssjef Kaiser Ng går av; Justin Yek tek over",
+    "sv": "Binances finanschef Kaiser Ng avgår; Justin Yek tar över",
+    "da": "Binance-finanschef Kaiser Ng træder tilbage; Justin Yek tager over",
+    "fi": "Binancen talousjohtaja Kaiser Ng jättää tehtävänsä; Justin Yek jatkaa",
+    "is": "Fjármálastjóri Binance, Kaiser Ng, lætur af störfum; Justin Yek tekur við",
+    "zh": "币安财务长Kaiser Ng卸任，Justin Yek接任",
+    "hi": "Binance के वित्त प्रमुख Kaiser Ng ने पद छोड़ा; Justin Yek संभालेंगे",
+    "es": "El director financiero de Binance, Kaiser Ng, deja el cargo; Justin Yek asume",
+    "fr": "Le directeur financier de Binance, Kaiser Ng, quitte ses fonctions ; Justin Yek prend la relève",
+    "ar": "رئيس الشؤون المالية في Binance كايزر نغ يتنحى ويتولى جاستن ييك المنصب",
+    "bn": "Binance-এর অর্থপ্রধান Kaiser Ng পদত্যাগ; Justin Yek দায়িত্ব নিচ্ছেন",
+    "pt": "Diretor financeiro da Binance, Kaiser Ng, deixa o cargo; Justin Yek assume",
+    "ru": "Финдиректор Binance Кайзер Нг уходит; пост занимает Джастин Йек",
+    "ur": "Binance کے فنانس چیف Kaiser Ng مستعفی؛ Justin Yek ذمہ داری سنبھالیں گے",
+    "id": "Kepala keuangan Binance Kaiser Ng mundur; Justin Yek menggantikan",
+    "de": "Binance-Finanzchef Kaiser Ng tritt zurück; Justin Yek übernimmt",
+    "ja": "バイナンスCFOのカイザー・ン氏が退任、ジャスティン・イェック氏が後任",
+    "sw": "Mkuu wa fedha wa Binance Kaiser Ng anaondoka; Justin Yek anachukua nafasi",
+    "mr": "Binance चे वित्तप्रमुख Kaiser Ng पद सोडतात; Justin Yek जबाबदारी घेतात",
+    "fa": "رئیس امور مالی بایننس کایزر نگ کناره‌گیری کرد؛ جاستین یک جانشین شد",
+    "uk": "Фінансовий директор Binance Кайзер Нґ йде; посаду обіймає Джастін Єк",
+    "tr": "Binance mali işler şefi Kaiser Ng görevinden ayrılıyor; Justin Yek görevi devralıyor",
+    "se": "Binance ruhtadanhoavda Kaiser Ng heaitá; Justin Yek doaibmagoahtá"
+   },
+   "title_i18n_source": "Binance-finanssjefen slutter etter gigantisk hackerangrep",
+   "summary_i18n": {
+    "nb": "Binance-medgründer og medadministrerende direktør Yi He sa at Kaiser Ng går av som finansdirektør etter mer enn fem år for å satse på et nytt prosjekt, med en overgangsplan som har pågått i om lag et halvt år, ifølge The Block og The Globe and Mail. Justin Yek, tidligere visepresident for finans i Airwallex, tar over som CFO. Kunngjøringen kom dager etter tyveriet fra Binance i slutten av oktober; Yi He sa ikke at avgangen skyldtes hendelsen.",
+    "nn": "Binance-medgründer og medadministrerande direktør Yi He sa at Kaiser Ng går av som finansdirektør etter meir enn fem år for å satse på eit nytt prosjekt, med ein overgangsplan som har pågått i om lag eit halvt år, ifølgje The Block og The Globe and Mail. Justin Yek, tidlegare visepresident for finans i Airwallex, tek over som CFO. Kunngjeringa kom dagar etter tjuveriet frå Binance i slutten av oktober; Yi He sa ikkje at avgangen skuldast hendinga.",
+    "sv": "Binances medgrundare och medvd Yi He sade att Kaiser Ng lämnar posten som finanschef efter mer än fem år för att satsa på ett nytt projekt, med en övergångsplan som pågått i ungefär ett halvår, enligt The Block och The Globe and Mail. Justin Yek, tidigare vicepresident för finans på Airwallex, tar över som CFO. Tillkännagivandet kom dagar efter stölden från Binance i slutet av oktober; Yi He sade inte att avgången berodde på händelsen.",
+    "da": "Binances medstifter og medadministrerende direktør Yi He sagde, at Kaiser Ng træder tilbage som finansdirektør efter mere end fem år for at satse på et nyt projekt, med en overgangsplan der har kørt i omkring et halvt år, ifølge The Block og The Globe and Mail. Justin Yek, tidligere vicepræsident for finans hos Airwallex, tager over som CFO. Meddelelsen kom dage efter tyveriet fra Binance i slutningen af oktober; Yi He sagde ikke, at afgangen skyldtes hændelsen.",
+    "fi": "Binancen perustajakumppani ja toimitusjohtajakumppani Yi He sanoi Kaiser Ngin jättävän talousjohtajan tehtävän yli viiden vuoden jälkeen uuden hankkeen vuoksi ja että siirtymäsuunnitelma on ollut käynnissä noin puoli vuotta, The Blockin ja The Globe and Mailin mukaan. Airwallexin entinen rahoituksen varatoimitusjohtaja Justin Yek ottaa CFO:n tehtävät. Ilmoitus tuli päiviä Binancen lokakuun lopun varkauden jälkeen; Yi He ei sanonut lähdön johtuvan tapauksesta.",
+    "is": "Meðstofnandi og meðforstjóri Binance, Yi He, sagði að Kaiser Ng léti af störfum sem fjármálastjóri eftir meira en fimm ár til að leggja út í nýtt verkefni, með umskiptaáætlun sem hefur verið í gangi um það bil hálft ár, samkvæmt The Block og The Globe and Mail. Justin Yek, áður varaforseti fjármála hjá Airwallex, tekur við sem CFO. Tilkynningin kom dögum eftir þjófnaðinn frá Binance í lok október; Yi He sagði ekki að brottförin stafaði af atvikinu.",
+    "zh": "据The Block和《环球邮报》报道，币安联合创始人兼联席首席执行官Yi He表示，Kaiser Ng在任职逾五年后将卸任首席财务官以开展新项目，过渡计划已推进约六个月。此前在Airwallex担任财务副总裁的Justin Yek将出任CFO。该消息在币安十月底遭窃数日后公布；Yi He并未称离职由该事件导致。",
+    "hi": "The Block और The Globe and Mail के अनुसार, Binance के सह-संस्थापक और सह-मुख्य कार्यकारी Yi He ने कहा कि Kaiser Ng पांच साल से अधिक के बाद मुख्य वित्तीय अधिकारी का पद छोड़कर नया उपक्रम शुरू करेंगे, और संक्रमण योजना करीब छह महीनों से चल रही है। Airwallex में पहले वित्त उपाध्यक्ष रहे Justin Yek CFO बनेंगे। घोषणा अक्टूबर के अंत में Binance से हुई चोरी के कुछ दिन बाद आई; Yi He ने यह नहीं कहा कि प्रस्थान उस घटना के कारण हुआ।",
+    "es": "El cofundador y codirector ejecutivo de Binance, Yi He, dijo que Kaiser Ng deja el cargo de director financiero tras más de cinco años para emprender un nuevo proyecto, con un plan de transición en marcha desde hace unos seis meses, según The Block y The Globe and Mail. Justin Yek, antes vicepresidente de finanzas en Airwallex, asume como CFO. El anuncio llegó días después del robo a Binance a finales de octubre; Yi He no dijo que la salida se debiera al incidente.",
+    "fr": "Le cofondateur et cogérant de Binance, Yi He, a déclaré que Kaiser Ng quitte le poste de directeur financier après plus de cinq ans pour se lancer dans un nouveau projet, avec un plan de transition en cours depuis environ six mois, selon The Block et The Globe and Mail. Justin Yek, auparavant vice-président des finances chez Airwallex, devient CFO. L'annonce est intervenue des jours après le vol chez Binance fin octobre ; Yi He n'a pas dit que le départ était dû à l'incident.",
+    "ar": "قال المؤسس المشارك والرئيس التنفيذي المشارك لـBinance، يي هي، إن كايزر نغ يغادر منصب المدير المالي بعد أكثر من خمس سنوات لمتابعة مشروع جديد، ضمن خطة انتقالية جارية منذ نحو ستة أشهر، بحسب The Block وThe Globe and Mail. ويتولى جاستن ييك، الذي كان نائب رئيس للشؤون المالية في Airwallex، منصب المدير المالي. وجاء الإعلان أيامًا بعد السرقة من Binance أواخر أكتوبر؛ ولم يقل يي هي إن المغادرة ناتجة عن الحادث.",
+    "bn": "The Block ও The Globe and Mail অনুযায়ী, Binance-এর সহপ্রতিষ্ঠাতা ও সহপ্রধান নির্বাহী Yi He বলেছেন, Kaiser Ng পাঁচ বছরেরও বেশি সময় পর প্রধান আর্থিক কর্মকর্তার পদ ছেড়ে নতুন উদ্যোগে যাচ্ছেন এবং স্থানান্তর পরিকল্পনা প্রায় ছয় মাস ধরে চলছে। আগে Airwallex-এ অর্থ উপপ্রধান থাকা Justin Yek CFO হচ্ছেন। অক্টোবরের শেষে Binance থেকে চুরির কয়েক দিন পর ঘোষণা আসে; Yi He বলেননি যে প্রস্থান সেই ঘটনার কারণে।",
+    "pt": "O cofundador e co-CEO da Binance, Yi He, disse que Kaiser Ng deixa o cargo de diretor financeiro após mais de cinco anos para seguir um novo projeto, com um plano de transição em curso há cerca de seis meses, segundo The Block e The Globe and Mail. Justin Yek, antes vice-presidente de finanças na Airwallex, assume como CFO. O anúncio chegou dias após o roubo à Binance no final de outubro; Yi He não disse que a saída se deveu ao incidente.",
+    "ru": "Сооснователь и сопредседатель Binance И Хэ заявила, что Кайзер Нг покидает пост финансового директора после более чем пяти лет, чтобы заняться новым проектом, а переходный план реализуется около полугода, сообщают The Block и The Globe and Mail. Джастин Йек, ранее вице-президент по финансам в Airwallex, становится CFO. Объявление прозвучало через несколько дней после кражи у Binance в конце октября; И Хэ не сказала, что уход вызван инцидентом.",
+    "ur": "The Block اور The Globe and Mail کے مطابق، Binance کے شریک بانی اور شریک چیف ایگزیکٹو Yi He نے کہا کہ Kaiser Ng پانچ سال سے زائد کے بعد چیف فنانشل آفیسر کا عہدہ چھوڑ کر نیا منصوبہ شروع کر رہے ہیں، اور عبوری منصوبہ تقریباً چھ ماہ سے جاری ہے۔ پہلے Airwallex میں فنانس کے نائب صدر رہنے والے Justin Yek CFO بنیں گے۔ اعلان اکتوبر کے آخر میں Binance سے چوری کے چند دن بعد آیا؛ Yi He نے یہ نہیں کہا کہ روانگی اس واقعے کی وجہ سے ہے۔",
+    "id": "Pendiri bersama dan co-CEO Binance, Yi He, mengatakan Kaiser Ng meninggalkan jabatan CFO setelah lebih dari lima tahun untuk mengejar usaha baru, dengan rencana transisi yang berjalan sekitar enam bulan, menurut The Block dan The Globe and Mail. Justin Yek, sebelumnya wakil presiden keuangan di Airwallex, menjadi CFO. Pengumuman datang beberapa hari setelah pencurian di Binance akhir Oktober; Yi He tidak mengatakan kepergian itu disebabkan oleh kejadian tersebut.",
+    "de": "Binance-Mitgründerin und Co-Chefin Yi He sagte laut The Block und The Globe and Mail, Kaiser Ng trete nach mehr als fünf Jahren als Finanzchef zurück, um ein neues Vorhaben zu verfolgen; ein Übergangsplan laufe seit etwa sechs Monaten. Justin Yek, zuvor Vice President Finance bei Airwallex, übernimmt als CFO. Die Ankündigung kam Tage nach dem Diebstahl bei Binance Ende Oktober; Yi He sagte nicht, der Abgang sei durch den Vorfall verursacht.",
+    "ja": "The BlockとThe Globe and Mailによると、バイナンス共同創業者で共同CEOのYi He氏は、カイザー・ン氏が5年以上務めた最高財務責任者を退き新たな事業に向かうとし、移行計画は約6カ月前から進めていたと述べた。Airwallexで財務担当副社長だったジャスティン・イェック氏がCFOに就く。発表は10月末のバイナンスでの盗難の数日後。Yi He氏は退任がその出来事によるとは述べていない。",
+    "sw": "Mwanzilishi mwenza na mkurugenzi mtendaji mwenza wa Binance, Yi He, alisema Kaiser Ng anaondoka kama afisa mkuu wa fedha baada ya zaidi ya miaka mitano ili kufuatilia mradi mpya, na mpango wa mpito umekuwa ukiendelea kwa takriban miezi sita, kulingana na The Block na The Globe and Mail. Justin Yek, aliyekuwa makamu wa rais wa fedha katika Airwallex, anachukua nafasi ya CFO. Tangazo lilikuja siku chache baada ya wizi kutoka Binance mwishoni mwa Oktoba; Yi He hakusema kuondoka kulisababishwa na tukio hilo.",
+    "mr": "The Block आणि The Globe and Mail नुसार, Binance चे सहसंस्थापक आणि सहमुख्य कार्यकारी Yi He म्हणाले की Kaiser Ng पाच वर्षांहून अधिक काळानंतर मुख्य वित्तीय अधिकारी पद सोडून नवीन उपक्रम सुरू करतील आणि संक्रमण योजना सुमारे सहा महिन्यांपासून सुरू आहे. यापूर्वी Airwallex मध्ये वित्त उपाध्यक्ष असलेले Justin Yek CFO होतील. ऑक्टोबरअखेरीस Binance कडील चोरीनंतर काही दिवसांनी घोषणा आली; Yi He म्हणाले नाहीत की निर्गमन त्या घटनेमुळे झाले.",
+    "fa": "به گزارش The Block و The Globe and Mail، یی هی، هم‌بنیان‌گذار و مدیرعامل مشترک بایننس، گفت کایزر نگ پس از بیش از پنج سال از سمت مدیر مالی کناره‌گیری می‌کند تا پروژه تازه‌ای را دنبال کند و برنامه انتقال حدود شش ماه است که اجرا می‌شود. جاستین یک که پیش‌تر معاون مالی Airwallex بود، به‌عنوان CFO جانشین می‌شود. اعلام چند روز پس از سرقت اواخر اکتبر از بایننس بود؛ یی هی نگفت کناره‌گیری ناشی از آن رویداد است.",
+    "uk": "Співзасновниця і співкерівниця Binance І Хе заявила, що Кайзер Нґ залишає посаду фінансового директора після понад п'яти років, щоб зайнятися новим проєктом, а перехідний план триває близько пів року, повідомляють The Block і The Globe and Mail. Джастін Єк, раніше віцепрезидент із фінансів в Airwallex, стає CFO. Оголошення прозвучало за кілька днів після крадіжки в Binance наприкінці жовтня; І Хе не сказала, що відхід спричинений інцидентом.",
+    "tr": "The Block ve The Globe and Mail'e göre Binance'in kurucu ortağı ve eş CEO'su Yi He, Kaiser Ng'nin beş yıldan fazla süredir yürüttüğü CFO görevinden yeni bir girişime yönelmek üzere ayrıldığını ve geçiş planının yaklaşık altı aydır sürdüğünü söyledi. Daha önce Airwallex'te finans başkan yardımcısı olan Justin Yek CFO oluyor. Duyuru, Ekim sonundaki Binance hırsızlığından birkaç gün sonra geldi; Yi He ayrılığın olaydan kaynaklandığını söylemedi.",
+    "se": "Binance-vuođđudeaddji ja beaivválaš jođiheaddji Yi He dajai Kaiser Ng lea luohpame beaivválaš finanssahoavdan maŋŋil go lea bargan doppe badjel vihtta jagi, vai beassá bargat ođđa fidnuin, mas lea sirdásanplána mii lea leamaš jođus sullii guhtta mánu, The Block ja The Globe ja Mail mielde. Justin Yek, gii ovdal lei Airwallexa finanssaválddi sadjásaš, váldá badjelasas CFO-doaimma. Almmuheapmi bođii moadde beaivvi maŋŋel go Binance:s ledje suoládan ruđa golggotmánus; Yi He ii muitalan ahte olggosváldin lei dáhpáhuvvan dan sivas."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "3940ba100880",
    "url": "https://finansavisen.no/politikk/2026/11/07/8394092/usa-sanksjonerer-atte-canadiske-selskaper-for-transaksjoner-med-iran",
    "title": "USA sanksjonerer åtte canadiske selskaper for transaksjoner med Iran",
-   "title_en": null,
+   "title_en": "OFAC designates eight Canadian money services businesses over Iran-linked digital asset activity",
    "source": "finansavisen",
    "source_name": "Finansavisen",
    "country": "NO",
@@ -123,18 +263,82 @@
    "published": "2026-11-07T09:58:00+00:00",
    "fetched": "2026-11-08T02:44:15+00:00",
    "topics": [
-    "crypto",
     "regulation",
-    "companies"
+    "security"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
-   "published_unverified": true
+   "status": "published",
+   "summary": "The U.S. Treasury's Office of Foreign Assets Control designated eight Canadian money services businesses on 6 November 2026 for helping move value involving Iran and related sanctioned actors through digital assets, according to the Treasury press release. OFAC said some of the firms also handled digital-asset transfers linked to Canadian drug trafficker Ryan Wedding. The designations are part of what Treasury calls Operation Economic Outcast.",
+   "published_unverified": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-09T04:41:56+01:00",
+   "primary_source": {
+    "name": "U.S. Treasury / OFAC — Operation Economic Outcast, 6 Nov 2026",
+    "url": "https://home.treasury.gov/news/press-releases/sb0686"
+   },
+   "links": [
+    {
+     "url": "https://ofac.treasury.gov/recent-actions/20261106",
+     "label": "OFAC recent actions, 6 November 2026"
+    }
+   ],
+   "title_i18n": {
+    "nn": "OFAC peikar ut åtte kanadiske pengeformidlarar for Iran-knytt digital aktivverksemd",
+    "sv": "OFAC utpekar åtta kanadensiska valutaväxlare för Iran-kopplad digital tillgångsverksamhet",
+    "da": "OFAC udpeger otte canadiske pengeoverførselsvirksomheder for Iran-relateret digital aktivaktivitet",
+    "fi": "OFAC nimeää kahdeksan kanadalaista rahansiirtoliikettä Iran-kytköksiseen digitaaliseen varallisuustoimintaan",
+    "is": "OFAC tilnefnir átta kanadísk fjármálamiðlunarfyrirtæki vegna Íran-tengdrar stafrænnar eignastarfsemi",
+    "zh": "美国外国资产控制办公室因涉伊朗数字资产活动将八家加拿大货币服务商列入制裁名单",
+    "hi": "OFAC ने ईरान से जुड़ी डिजिटल परिसंपत्ति गतिविधि के लिए आठ कनाडाई मनी सर्विस व्यवसायों को नामित किया",
+    "es": "OFAC designa a ocho empresas canadienses de servicios monetarios por actividad con activos digitales vinculada a Irán",
+    "fr": "OFAC désigne huit entreprises canadiennes de services monétaires pour une activité d'actifs numériques liée à l'Iran",
+    "ar": "OFAC تدرج ثماني شركات كندية لخدمات تحويل الأموال بسبب نشاط أصول رقمية مرتبط بإيران",
+    "bn": "OFAC ইরান-সংযুক্ত ডিজিটাল সম্পদ কার্যকলাপের জন্য আটটি কানাডীয় মানি সার্ভিস ব্যবসা মনোনীত করেছে",
+    "pt": "OFAC designa oito empresas canadianas de serviços monetários por atividade de ativos digitais ligada ao Irão",
+    "ru": "OFAC включила в санкционный список восемь канадских платёжных посредников за связанную с Ираном деятельность с цифровыми активами",
+    "ur": "OFAC نے ایران سے منسلک ڈیجیٹل اثاثہ سرگرمی پر آٹھ کینیڈین منی سروس کاروبار نامزد کیے",
+    "id": "OFAC menunjuk delapan bisnis jasa keuangan Kanada atas aktivitas aset digital terkait Iran",
+    "de": "OFAC benennt acht kanadische Geldtransferunternehmen wegen Iran-bezogener Digitalvermögensaktivität",
+    "ja": "OFAC、イラン関連のデジタル資産活動でカナダの資金移動業者8社を指定",
+    "sw": "OFAC inateua biashara nane za huduma za fedha za Kanada kwa shughuli za mali za kidijitali zinazohusiana na Iran",
+    "mr": "OFAC ने इराणशी संबंधित डिजिटल मालमत्ता व्यवहारासाठी आठ कॅनेडियन मनी सर्व्हिस व्यवसायांना नामनिर्देशित केले",
+    "fa": "OFAC هشت کسب‌وکار خدمات پولی کانادایی را به‌دلیل فعالیت دارایی دیجیتال مرتبط با ایران فهرست کرد",
+    "uk": "OFAC внесла до списку вісім канадських платіжних посередників через пов'язану з Іраном діяльність із цифровими активами",
+    "tr": "OFAC, İran bağlantılı dijital varlık faaliyeti nedeniyle sekiz Kanadalı para transferi işletmesini listeledi",
+    "se": "OFAC namuha gávcci Canadalaš ruhtabálvalusfitnodaga main leat čanastagat Iranii"
+   },
+   "title_i18n_source": "USA sanksjonerer åtte canadiske selskaper for transaksjoner med Iran",
+   "summary_i18n": {
+    "nb": "Det amerikanske finansdepartementets Office of Foreign Assets Control utpekte 6. november 2026 åtte kanadiske pengeformidlingsforetak for å ha hjulpet med å flytte verdier knyttet til Iran og relaterte sanksjonerte aktører via digitale eiendeler, ifølge finansdepartementets pressemelding. OFAC opplyser at noen av foretakene også håndterte overføringer av digitale eiendeler knyttet til den kanadiske narkotikahandleren Ryan Wedding. Utpekingen inngår i det finansdepartementet kaller Operation Economic Outcast.",
+    "nn": "Det amerikanske finansdepartementet sitt Office of Foreign Assets Control peika ut 6. november 2026 åtte kanadiske pengeformidlingsføretak for å ha hjelpt til med å flytte verdiar knytte til Iran og relaterte sanksjonerte aktørar via digitale eigedelar, ifølgje finansdepartementet si pressemelding. OFAC opplyser at nokre av føretaka òg handterte overføringar av digitale eigedelar knytte til den kanadiske narkotikahandlaren Ryan Wedding. Utpeikinga går inn i det finansdepartementet kallar Operation Economic Outcast.",
+    "sv": "USA:s finansdepartements Office of Foreign Assets Control utpekade den 6 november 2026 åtta kanadensiska valutaväxlingsföretag för att ha hjälpt till att flytta värden kopplade till Iran och relaterade sanktionerade aktörer via digitala tillgångar, enligt finansdepartementets pressmeddelande. OFAC uppger att några av företagen också hanterat överföringar av digitala tillgångar kopplade till den kanadensiska narkotikahandlaren Ryan Wedding. Utpekandet ingår i det finansdepartementet kallar Operation Economic Outcast.",
+    "da": "Det amerikanske finansministeriums Office of Foreign Assets Control udpegede den 6. november 2026 otte canadiske pengeoverførselsvirksomheder for at have hjulpet med at flytte værdier knyttet til Iran og relaterede sanktionerede aktører via digitale aktiver, ifølge ministeriets pressemeddelelse. OFAC oplyser, at nogle af virksomhederne også har håndteret overførsler af digitale aktiver knyttet til den canadiske narkohandler Ryan Wedding. Udpegningen indgår i det, ministeriet kalder Operation Economic Outcast.",
+    "fi": "Yhdysvaltain valtiovarainministeriön Office of Foreign Assets Control nimesi 6. marraskuuta 2026 kahdeksan kanadalaista rahansiirtoliikettä, jotka ovat auttaneet siirtämään Iraniin ja siihen liittyviin sanktioituihin toimijoihin kytkeytyvää arvoa digitaalisten varojen kautta, ministeriön tiedotteen mukaan. OFAC:n mukaan osa yrityksistä on myös käsitellyt digitaalisia varainsiirtoja, jotka liittyvät kanadalaiseen huumekauppiaaseen Ryan Weddingiin. Nimeäminen kuuluu ministeriön Operation Economic Outcast -kampanjaan.",
+    "is": "Office of Foreign Assets Control hjá fjármálaráðuneyti Bandaríkjanna tilnefndi 6. nóvember 2026 átta kanadísk fjármálamiðlunarfyrirtæki fyrir að hafa aðstoðað við að flytja verðmæti tengd Íran og tengdum sanktíuneruðum aðilum með stafrænum eignum, samkvæmt fréttatilkynningu ráðuneytisins. OFAC segir að sum fyrirtækjanna hafi einnig annast flutninga á stafrænum eignum tengdum kanadíska fíkniefnasalanum Ryan Wedding. Tilnefningin er hluti af því sem ráðuneytið kallar Operation Economic Outcast.",
+    "zh": "据美国财政部新闻稿，外国资产控制办公室于2026年11月6日将八家加拿大货币服务企业列入名单，称其通过数字资产协助转移与伊朗及相关受制裁主体有关的价值。OFAC称其中一些公司还处理了与加拿大毒贩Ryan Wedding相关的数字资产转账。此次指定属于财政部所称的“经济放逐行动”。",
+    "hi": "अमेरिकी ट्रेजरी के प्रेस विज्ञप्ति के अनुसार, विदेशी परिसंपत्ति नियंत्रण कार्यालय ने 6 नवंबर 2026 को आठ कनाडाई मनी सर्विस व्यवसायों को नामित किया, जो डिजिटल परिसंपत्तियों के जरिए ईरान और संबंधित प्रतिबंधित पक्षों से जुड़ा मूल्य स्थानांतरित करने में मदद करते रहे। OFAC ने कहा कि कुछ फर्मों ने कनाडाई मादक तस्कर Ryan Wedding से जुड़े डिजिटल-परिसंपत्ति स्थानांतरण भी संभाले। ये नामांकन ट्रेजरी के Operation Economic Outcast का हिस्सा हैं।",
+    "es": "La Oficina de Control de Activos Extranjeros del Tesoro de EE. UU. designó el 6 de noviembre de 2026 a ocho empresas canadienses de servicios monetarios por ayudar a mover valor vinculado a Irán y a actores sancionados relacionados mediante activos digitales, según el comunicado del Tesoro. OFAC afirmó que algunas también gestionaron transferencias de activos digitales vinculadas al narcotraficante canadiense Ryan Wedding. Las designaciones forman parte de lo que el Tesoro llama Operation Economic Outcast.",
+    "fr": "L'Office of Foreign Assets Control du Trésor américain a désigné le 6 novembre 2026 huit entreprises canadiennes de services monétaires pour avoir aidé à déplacer de la valeur liée à l'Iran et à des acteurs sanctionnés associés via des actifs numériques, selon le communiqué du Trésor. OFAC a indiqué que certaines avaient aussi traité des transferts d'actifs numériques liés au narcotrafiquant canadien Ryan Wedding. Les désignations s'inscrivent dans ce que le Trésor appelle Operation Economic Outcast.",
+    "ar": "أدرج مكتب مراقبة الأصول الأجنبية التابع لوزارة الخزانة الأميركية في 6 نوفمبر 2026 ثماني شركات كندية لخدمات تحويل الأموال لمساعدتها على نقل قيمة مرتبطة بإيران وفاعلين مرتبطين خاضعين للعقوبات عبر أصول رقمية، وفق بيان الوزارة. وقال المكتب إن بعضها تعامل أيضًا مع تحويلات أصول رقمية مرتبطة بتاجر المخدرات الكندي رايان ويدنغ. وتندرج الإدراجات ضمن ما تسميه الوزارة عملية الطرد الاقتصادي.",
+    "bn": "মার্কিন ট্রেজারির প্রেস বিজ্ঞপ্তি অনুযায়ী, ফরেন অ্যাসেটস কন্ট্রোল অফিস ৬ নভেম্বর ২০২৬ আটটি কানাডীয় মানি সার্ভিস ব্যবসাকে তালিকাভুক্ত করেছে, যারা ডিজিটাল সম্পদের মাধ্যমে ইরান ও সংশ্লিষ্ট নিষেধাজ্ঞাধীন পক্ষের সঙ্গে যুক্ত মূল্য স্থানান্তরে সাহায্য করেছে। OFAC বলেছে, কিছু প্রতিষ্ঠান কানাডীয় মাদক ব্যবসায়ী Ryan Wedding-এর সঙ্গে যুক্ত ডিজিটাল সম্পদ স্থানান্তরও সামলেছে। এ মনোনয়ন ট্রেজারির Operation Economic Outcast-এর অংশ।",
+    "pt": "O Office of Foreign Assets Control do Tesouro dos EUA designou a 6 de novembro de 2026 oito empresas canadianas de serviços monetários por ajudarem a movimentar valor ligado ao Irão e a intervenientes sancionados relacionados através de ativos digitais, segundo o comunicado do Tesouro. A OFAC afirmou que algumas também trataram transferências de ativos digitais ligadas ao traficante canadian Ryan Wedding. As designações integram o que o Tesouro chama Operation Economic Outcast.",
+    "ru": "Управление по контролю за иностранными активами Минфина США 6 ноября 2026 года внесло в список восемь канадских платёжных посредников за помощь в перемещении стоимости, связанной с Ираном и связанными подсанкционными лицами, через цифровые активы, говорится в пресс-релизе минфина. OFAC сообщило, что некоторые фирмы также обрабатывали переводы цифровых активов, связанные с канадским наркоторговцем Райаном Уэддингом. Включение в список входит в то, что минфин называет Operation Economic Outcast.",
+    "ur": "امریکی خزانے کے پریس بیان کے مطابق، غیر ملکی اثاثہ کنٹرول دفتر نے 6 نومبر 2026 کو آٹھ کینیڈین منی سروس کاروبار نامزد کیے جو ڈیجیٹل اثاثوں کے ذریعے ایران اور متعلقہ پابندی زدہ عناصر سے منسلک قدر منتقل کرنے میں مدد دیتے رہے۔ OFAC نے کہا کہ کچھ اداروں نے کینیڈین منشیات اسمگلر Ryan Wedding سے منسلک ڈیجیٹل اثاثہ منتقلیاں بھی سنبھالیں۔ یہ نامزدگیاں خزانے کے Operation Economic Outcast کا حصہ ہیں۔",
+    "id": "Office of Foreign Assets Control Departemen Keuangan AS menunjuk delapan bisnis jasa keuangan Kanada pada 6 November 2026 karena membantu memindahkan nilai yang terkait Iran dan aktor tersanksi terkait melalui aset digital, menurut siaran pers Departemen Keuangan. OFAC mengatakan beberapa juga menangani transfer aset digital yang terkait pengedar narkoba Kanada Ryan Wedding. Penunjukan itu bagian dari yang disebut Departemen Keuangan sebagai Operation Economic Outcast.",
+    "de": "Das Office of Foreign Assets Control des US-Finanzministeriums benannte am 6. November 2026 acht kanadische Geldtransferunternehmen, weil sie laut Pressemitteilung des Ministeriums geholfen hätten, über Digitalvermögen Werte mit Bezug zu Iran und verbundenen sanktionierten Akteuren zu bewegen. OFAC erklärte, einige Firmen hätten auch Digitalvermögens-Transfers im Zusammenhang mit dem kanadischen Drogenhändler Ryan Wedding abgewickelt. Die Benennungen gehören zu dem, was das Ministerium Operation Economic Outcast nennt.",
+    "ja": "米財務省の発表によると、外国資産管理局は2026年11月6日、デジタル資産を通じてイランおよび関連する制裁対象主体に関わる価値の移動を助けたとして、カナダの資金移動業者8社を指定した。OFACは、一部がカナダの麻薬密売人ライアン・ウェディング氏に関連するデジタル資産の送金も扱ったとしている。指定は財務省が「Operation Economic Outcast」と呼ぶ措置の一環。",
+    "sw": "Ofisi ya Kudhibiti Mali za Kigeni ya Hazina ya Marekani iliteua biashara nane za huduma za fedha za Kanada tarehe 6 Novemba 2026 kwa kusaidia kuhamisha thamani inayohusiana na Iran na wahusika wanaodhibitiwa wanaohusiana kupitia mali za kidijitali, kulingana na taarifa ya Hazina. OFAC ilisema baadhi pia zilishughulikia uhamisho wa mali za kidijitali unaohusiana na mfanyabiashara wa dawa za kulevya wa Kanada Ryan Wedding. Uteuzi huo ni sehemu ya kile Hazina inakiita Operation Economic Outcast.",
+    "mr": "अमेरिकी ट्रेझरीच्या प्रेस प्रसिद्धीनुसार, परदेशी मालमत्ता नियंत्रण कार्यालयाने 6 नोव्हेंबर 2026 रोजी आठ कॅनेडियन मनी सर्व्हिस व्यवसायांना नामनिर्देशित केले, जे डिजिटल मालमत्तांद्वारे इराण आणि संबंधित निर्बंधित पक्षांशी संबंधित मूल्य हलविण्यास मदत करत होते. OFAC म्हणते काही कंपन्यांनी कॅनेडियन अंमलीपदार्थ तस्कर Ryan Wedding शी संबंधित डिजिटल मालमत्ता हस्तांतरणेही हाताळली. ही नामनिर्देशने ट्रेझरीच्या Operation Economic Outcast चा भाग आहेत.",
+    "fa": "بر اساس بیانیه وزارت خزانه‌داری آمریکا، دفتر کنترل دارایی‌های خارجی در ۶ نوامبر ۲۰۲۶ هشت کسب‌وکار خدمات پولی کانادایی را به‌دلیل کمک به جابه‌جایی ارزش مرتبط با ایران و بازیگران تحریمی مرتبط از طریق دارایی‌های دیجیتال فهرست کرد. OFAC گفت برخی از این شرکت‌ها انتقال‌های دارایی دیجیتال مرتبط با قاچاقچی کانادایی رایان ودینگ را نیز انجام داده‌اند. این فهرست‌گذاری بخشی از چیزی است که خزانه‌داری Operation Economic Outcast می‌نامد.",
+    "uk": "Управління з контролю за іноземними активами Мінфіну США 6 листопада 2026 року внесло до списку вісім канадських платіжних посередників за допомогу в переміщенні вартості, пов'язаної з Іраном і пов'язаними підсанкційними особами, через цифрові активи, йдеться в пресрелізі мінфіну. OFAC повідомило, що деякі фірми також обробляли перекази цифрових активів, пов'язані з канадським наркоторговцем Раяном Веддінгом. Внесення до списку входить у те, що мінфін називає Operation Economic Outcast.",
+    "tr": "ABD Hazine Bakanlığının basın açıklamasına göre, Yabancı Varlıklar Kontrol Ofisi 6 Kasım 2026'da dijital varlıklar üzerinden İran ve ilgili yaptırımlı aktörlerle bağlantılı değer transferine yardım ettikleri gerekçesiyle sekiz Kanadalı para transferi işletmesini listeledi. OFAC, bazılarının Kanadalı uyuşturucu taciri Ryan Wedding ile bağlantılı dijital varlık transferlerini de yürüttüğünü belirtti. Listelemeler, Hazinenin Operation Economic Outcast dediği sürecin parçası.",
+    "se": "U.S. Treasury's Office of Foreign Assets Control lea skábmamánu 6. beaivvi 2026 nammadan gávcci Canadas ruhtabálvalusaid fitnodaga veahkehan dihtii sirdit árvvuid mat gusket Iránii ja dasa gullevaš sankšonerejuvvon aktevrraide digitála variiguin, Treasury preassadieđáhusa mielde. OFAC dajai ahte muhtun fitnodagat ledje maiddái doaimmahan digitála-ruđa sirdimat mat gulle Canadalaš narkotihkkagávpái Ryan Weddingii. Báikenamat leat oassin dan barggus maid ruhtaministeriija gohčoda doaibma Ekonomalaš Outcast."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "e66e98c79511",
@@ -263,8 +467,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Bare Bitcoin PR with sign-up links, not independent news. researcher 09.11; editor 2026-11-09"
   },
   {
    "id": "00a1601d1f42",
@@ -458,11 +663,12 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_date_only": true,
    "possible_duplicate_of": "465eb25f04a6",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "465eb25f04a6"
   },
   {
    "id": "b6c592e1e7c4",
@@ -692,6 +898,17 @@
      "outlet_name": "Kaupr",
      "url": "https://kaupr.io/nyheter/agentisk-finans-og-tokenisering-preget-betalingskonferansen",
      "title": "Agentisk finans og tokenisering preget betalingskonferansen",
+     "published": "2026-11-06",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/dnb-samarbeid-mellom-bank-og-myndigheter-ma-til-for-a-lose-tokenisering",
+     "title": "DNB: Samarbeid mellom bank og myndigheter må til for å løse tokenisering",
      "published": "2026-11-06",
      "lang": "Norwegian",
      "country": "NO",
@@ -1463,9 +1680,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Adds nothing new beyond 2ba8ad647f8e; light conflict flag (publisher retweeted Chainalysis). researcher 09.11; editor 2026-11-09"
   },
   {
    "id": "3f70acaf452e",
