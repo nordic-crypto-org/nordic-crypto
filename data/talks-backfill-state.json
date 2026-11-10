@@ -182,6 +182,26 @@
    ],
    "notes": "No public recording of the two calendar events that ended after 3 November 2026. The Kaupr product page for Impact Onchain, read on 6 November, dates the session to Wednesday 11 November 2026 and says a recording will follow. It does not show a 4 November recording. Stockholm Bitcoin Meetup #54 on 5 November has no recording on the Meetup page, and the YouTube first page was not that meetup. Six talks were kept from Kaupr Media. The Norway Fintech Festival episode states Bergen and does not state the day. The tokenization webinar was streamed on 7 October 2026 and does not state a city. Three virtual sessions ahead of Blockathon Stockholm state the day and do not state a city. The crypto-tax webinar states 23 April 2025 and names Skatteetaten. It does not state a city. A 14 October upload says it is the interview segment from the 7 October event, so it was not added again. News interviews published on 1 and 4 November were not kept. The 2023 crypto-tax upload does not state the day. First pages for 2008, 2012, the Faroe Islands, Greenland and Åland did not name a public talk held there. 14 watch pages were opened, including the channel path of the talk already listed. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-11-10",
+   "candidates_checked": 883,
+   "watch_pages_opened": 17,
+   "new_talks": 11,
+   "new_from_calendar": 0,
+   "new_from_backfill": 10,
+   "areas_exhausted": [],
+   "areas_sampled": [
+    "Calendar event ended since 6 November 2026: Helsinki Bitcoin Hobbyists",
+    "Bitcoinkonferencen upload published 9 November 2026",
+    "Tangany upload from Nordic Blockchain Conference 2026",
+    "Kaupr Media sessions from Nordic Crypto Adoption Week 2026",
+    "AssemblyTV seminar, FreedomFest Stockholm 2016, Aarhus University 2016, Oslo Freedom Forum 2022",
+    "YouTube first pages for Bergen, Trondheim, Malmö, Aarhus, Turku, Stavanger, Reykjavík, NHH, Lund, Aalborg, Oulu, Hanken, 2011 and 2021",
+    "Faroe Islands, Greenland and Åland first pages again"
+   ],
+   "notes": "No public recording of the Helsinki Bitcoin Hobbyists meetup that ended on 6 November 2026. One talk was published after 6 November: Pierre at Bitcoin Copenhagen 2026, on the organiser channel, on 9 November. The page does not state the day. Ten talks were kept from backfill. Five are the Nordic Crypto Adoption Week sessions streamed 23–26 March 2026. The Tangany panel states 27 May 2026 in Stockholm and is linked to the conference. AssemblyTV's 2012 seminar does not state the day or the city. A BIEN Norge upload of the 26 September basic-income event was not added again. A Fedi upload of the Oslo Freedom Forum 2026 adoption session was not added again. Baltic adoption sessions were not kept. A personal stream titled Oslo Bitcoin Meetup was not kept. First pages for the Faroe Islands, Greenland and Åland did not name a public talk held there. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -204,7 +224,7 @@
    },
    "2012": {
     "status": "sampled",
-    "note": "First pages for Oslo in 2012, and on 2026-11-06 for Helsinki and Copenhagen, were opened. No verified talk from 2012 was kept."
+    "note": "First pages for Oslo in 2012, and on 2026-11-06 for Helsinki and Copenhagen, were opened. On 2026-11-10 AssemblyTV's seminar Bitcoin - the future of money was kept. The video page does not state the day or the city."
    },
    "2013": {
     "status": "sampled",
@@ -220,7 +240,7 @@
    },
    "2016": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. A Luleå University of Technology upload from 2017 introduces blockchain; the Dataföreningen lunch on 2 November 2016 is archived as an event."
+    "note": "Covered only where an event or institution query returned a video from this year. A Luleå University of Technology upload from 2017 introduces blockchain; the Dataföreningen lunch on 2 November 2016 is archived as an event. On 2026-11-10 a FreedomFest Stockholm talk and a lecture at Aarhus University were kept. Neither page states the day."
    },
    "2017": {
     "status": "sampled",
@@ -244,7 +264,7 @@
    },
    "2022": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year."
+    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-10 the Oslo Freedom Forum panel Is Bitcoin Compatible with Democracy? was kept. The page does not state the day."
    },
    "2023": {
     "status": "sampled",
@@ -260,25 +280,25 @@
    },
    "2026": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city."
+    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city. On 2026-11-10 five Nordic Crypto Adoption Week sessions, a Bitcoin Copenhagen 2026 talk published on 9 November, and a Nordic Blockchain Conference panel were kept."
    }
   },
   "countries": {
    "NO": {
     "status": "sampled",
-    "talks": 81
+    "talks": 83
    },
    "SE": {
     "status": "sampled",
-    "talks": 17
+    "talks": 20
    },
    "DK": {
     "status": "sampled",
-    "talks": 13
+    "talks": 16
    },
    "FI": {
     "status": "sampled",
-    "talks": 16
+    "talks": 17
    },
    "IS": {
     "status": "sampled",
@@ -300,7 +320,7 @@
     "note": "First pages, including a repeat on 2026-11-06, did not show a public crypto talk held in Åland."
    },
    "unset_country": {
-    "talks": 26,
+    "talks": 28,
     "note": "Nordic Blockchain Conference uploads that name the conference and not a city. They stay in the list and match no country filter."
    }
   },
@@ -1704,6 +1724,326 @@
     "status": "sampled",
     "included_from_this_query": null,
     "note": "No public crypto talk held in Åland."
+   },
+   {
+    "country_tag": null,
+    "query": "Helsinki Bitcoin Hobbyists",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Helsinki meetup",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Nasdaq Nordic Crypto ETP Forum",
+    "results_on_first_page": 12,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Impact Onchain Kaupr",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Oslo 2026",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "kryptovaluta foredrag",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "blockchain Stockholm 2026",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Copenhagen 2026",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Reykjavik",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Bergen meetup",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Trondheim",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Malmö",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Aarhus",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Turku",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Stavanger",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Assembly bitcoin Helsinki Brade",
+    "results_on_first_page": 14,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Henry Brade bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "NHH bitcoin blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Lund university blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Aalborg universitet blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Oulun yliopisto lohkoketju",
+    "results_on_first_page": 15,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Oslo 2011",
+    "results_on_first_page": 19,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Stockholm 2011",
+    "results_on_first_page": 19,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Copenhagen 2011",
+    "results_on_first_page": 19,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Oslo 2021",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "bitcoin Helsinki 2021",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Færøerne bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Grønland bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Åland bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Hanken blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Reykjavik University blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Danmarks Nationalbank CBDC",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Norges Bank digital currency seminar",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Finanstilsynet kryptovaluta",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Svein Ølnes bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "JavaZone blockchain",
+    "results_on_first_page": 12,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Safello bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Bittiraha bitcoin luento",
+    "results_on_first_page": 17,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Copenhagen Business School blockchain",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
+   },
+   {
+    "country_tag": null,
+    "query": "Universitetet i Stavanger blockchain",
+    "results_on_first_page": 3,
+    "status": "sampled",
+    "included_from_this_query": null,
+    "note": "First YouTube results page on 2026-11-10. Not marked exhausted."
    }
   ],
   "channels_sampled": [
@@ -1751,7 +2091,10 @@
    "Luleå tekniska universitet",
    "Kaupr Media",
    "Bankless SE",
-   "Jonathan Jogenfors (Jonathan Fors)"
+   "Jonathan Jogenfors (Jonathan Fors)",
+   "AssemblyTV",
+   "Tangany",
+   "Ludwig von Mises-Institutet i Sverige"
   ],
   "universities": [
    {
@@ -1837,7 +2180,12 @@
    {
     "name": "UiT",
     "status": "sampled",
-    "note": "The 2 October 2023 disputas and the 30 October 2020 trial lecture were read on the university calendar. No public recording was found. The events were not stored this run."
+    "note": "The 2 October 2023 disputas and the 30 October 2020 trial lecture were read on the university calendar. No public recording was found. The trial lecture TEEs for Blockchain is in the past-events archive. The disputas was not stored: TartuNLP's Northern Sami reply did not pass the Sami check."
+   },
+   {
+    "name": "University of Stavanger",
+    "status": "sampled",
+    "note": "The business school's 9 May 2025 seminar on blockchain and CBDCs is in the past-events archive. The YouTube query returned three videos and no lecture recording."
    }
   ],
   "events": [
@@ -1950,6 +2298,36 @@
     "name": "Din Kryptoskatt",
     "status": "sampled",
     "note": "The 23 April 2025 webinar. The page names Skatteetaten and does not state a city."
+   },
+   {
+    "name": "Helsinki Bitcoin Hobbyists, 6 November 2026",
+    "status": "sampled",
+    "note": "The calendar meetup ended on 6 November 2026. The Meetup page has no recording, and the YouTube first page was not that meetup."
+   },
+   {
+    "name": "Bitcoin Copenhagen 2026, Pierre",
+    "status": "sampled",
+    "note": "Published by Bitcoinkonferencen on 9 November 2026. The page names Copenhagen and not the day."
+   },
+   {
+    "name": "Nordic Blockchain Conference 2026 panel",
+    "status": "sampled",
+    "note": "Tangany's upload of the 27 May 2026 panel in Stockholm. The conference is in the past-events archive."
+   },
+   {
+    "name": "Nordic Crypto Adoption Week 2026",
+    "status": "sampled",
+    "note": "Five live sessions, 23–26 March 2026, from the Kaupr Media channel. The pages do not state a city. Baltic sessions were not kept."
+   },
+   {
+    "name": "Assembly Summer 2012 seminar",
+    "status": "sampled",
+    "note": "AssemblyTV's upload. The video page does not state the day or the city."
+   },
+   {
+    "name": "FreedomFest Stockholm 2016",
+    "status": "sampled",
+    "note": "Pontus Lindblom's talk, uploaded by Ludwig von Mises-Institutet i Sverige. The page does not state the day."
    }
   ]
  }
