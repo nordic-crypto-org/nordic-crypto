@@ -6,8 +6,8 @@
  "source": "Cloudflare Web Analytics",
  "status": "ok",
  "timezone": "UTC",
- "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
- "schema": 1,
+ "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. For each of the last 30 UTC days, paths lists visits and page views per page path, with query strings and fragments removed. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
+ "schema": 2,
  "first_date": "2026-10-17",
  "last_date": "2026-11-10",
  "updated_at": "2026-11-10T11:24:43Z",
@@ -15,128 +15,153 @@
   {
    "date": "2026-10-17",
    "visits": 50,
-   "pageviews": 60
+   "pageviews": 60,
+   "paths": []
   },
   {
    "date": "2026-10-18",
    "visits": 10,
-   "pageviews": 10
+   "pageviews": 10,
+   "paths": []
   },
   {
    "date": "2026-10-19",
    "visits": 20,
-   "pageviews": 30
+   "pageviews": 30,
+   "paths": []
   },
   {
    "date": "2026-10-20",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-21",
    "visits": 10,
-   "pageviews": 10
+   "pageviews": 10,
+   "paths": []
   },
   {
    "date": "2026-10-22",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-23",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-24",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-25",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-26",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-27",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-28",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-29",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-10-30",
    "visits": 10,
-   "pageviews": 10
+   "pageviews": 10,
+   "paths": []
   },
   {
    "date": "2026-10-31",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-01",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-02",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-03",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-04",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-05",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-06",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-07",
    "visits": 120,
-   "pageviews": 120
+   "pageviews": 120,
+   "paths": []
   },
   {
    "date": "2026-11-08",
    "visits": 0,
-   "pageviews": 20
+   "pageviews": 20,
+   "paths": []
   },
   {
    "date": "2026-11-09",
    "visits": 0,
-   "pageviews": 0
+   "pageviews": 0,
+   "paths": []
   },
   {
    "date": "2026-11-10",
    "visits": 0,
    "pageviews": 0,
-   "partial": true
+   "partial": true,
+   "paths": []
   }
  ],
  "weekly": [

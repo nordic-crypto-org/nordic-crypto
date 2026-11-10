@@ -1,13 +1,13 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T16:14:34+00:00",
+ "generated_at": "2026-11-10T22:13:31+00:00",
  "title": "Nordic Crypto data model",
  "docs_url": "https://nordiccrypto.no/db/",
  "schema_version": "2026-11-10",
- "commit": "8058f02",
- "committed_at": "2026-11-10T00:34:38+01:00",
- "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/8058f02ccc8da5880bbe4a4082d727b2286847d1",
+ "commit": "1644337",
+ "committed_at": "2026-11-10T22:50:41+01:00",
+ "commit_url": "https://github.com/nordic-crypto-org/nordic-crypto/commit/164433757823d0a1b1032bd7492a411df8384b8d",
  "changelog_url": "https://nordiccrypto.no/api/v1/schema/changelog.json",
  "erd_svg_url": "https://nordiccrypto.no/api/v1/schema/erd.svg",
  "erd_mermaid_url": "https://nordiccrypto.no/api/v1/schema/erd.mmd",
@@ -693,7 +693,7 @@
   {
    "id": "stats",
    "title": "Visitor stats",
-   "description": "Aggregate visits and page views in data/stats.json, from Cloudflare Web Analytics. No IP addresses, user agents, paths, referrers or countries. Days are UTC. Weeks are ISO weeks.",
+   "description": "Aggregate visits and page views in data/stats.json, from Cloudflare Web Analytics. No IP addresses, user agents, query strings, referrers or countries. Each of the last 30 UTC days may include a paths list with visits and page views per page path. Days are UTC. Weeks are ISO weeks.",
    "files": [
     "data/stats.json"
    ],
