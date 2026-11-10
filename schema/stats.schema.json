@@ -2,7 +2,7 @@
  "$schema": "https://json-schema.org/draft/2020-12/schema",
  "$id": "https://nordiccrypto.no/api/v1/schema/stats.schema.json",
  "title": "Visitor stats",
- "description": "Aggregate visits and page views in data/stats.json, from Cloudflare Web Analytics. No IP addresses, user agents, paths, referrers or countries. Days are UTC. Weeks are ISO weeks.",
+ "description": "Aggregate visits and page views in data/stats.json, from Cloudflare Web Analytics. No IP addresses, user agents, query strings, referrers or countries. Each of the last 30 UTC days may include a paths list with visits and page views per page path. Days are UTC. Weeks are ISO weeks.",
  "x-nordic": {
   "id": "stats",
   "order": 160,
@@ -96,7 +96,7 @@
    "type": "integer",
    "description": "Integer schema version of the stats document.",
    "examples": [
-    1
+    2
    ]
   },
   "first_date": {
@@ -182,6 +182,13 @@
     "partial": {
      "type": "boolean",
      "description": "True while that day is still running."
+    },
+    "paths": {
+     "type": "array",
+     "description": "Visits and page views per page path for this UTC day. Present on the last 30 days. Paths have query strings removed.",
+     "items": {
+      "$ref": "#/$defs/path"
+     }
     }
    }
   },
@@ -264,6 +271,38 @@
     },
     "partial": {
      "type": "boolean"
+    }
+   }
+  },
+  "path": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "path",
+    "visits",
+    "pageviews"
+   ],
+   "properties": {
+    "path": {
+     "type": "string",
+     "description": "Page path, with query string and fragment removed. Starts with /.",
+     "examples": [
+      "/stats/"
+     ]
+    },
+    "visits": {
+     "type": "integer",
+     "minimum": 0,
+     "examples": [
+      0
+     ]
+    },
+    "pageviews": {
+     "type": "integer",
+     "minimum": 0,
+     "examples": [
+      0
+     ]
     }
    }
   }

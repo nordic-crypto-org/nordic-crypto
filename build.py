@@ -4526,8 +4526,11 @@ def build_changelog():
 def build_stats(ctx):
     """Visitor stats (stats/): visits and page views per day, ISO week and month from Cloudflare Web Analytics.
     Data: ctx["stats"] from tools/fetch_stats.py (data/stats.json or the copy on gh-pages, whichever is newer).
-    Aggregate counts only. Until there is data the page says the stats are being set up. The inline script reloads
-    api/v1/stats.json, so the scheduled refresh on gh-pages shows up without a new build."""
+    Aggregate counts only (plus per-path counts for the last 30 days). Until there is data the page says the
+    stats are being set up. The inline script reloads api/v1/stats.json, so the scheduled refresh on gh-pages
+    shows up without a new build. Each day in the daily table is a details/summary row, expandable to paths."""
+    sys.path.insert(0, P("tools"))
+    import fetch_stats
     doc = ctx.get("stats") or {}
     root = up1()
     has = bool(doc.get("daily"))
@@ -4546,6 +4549,10 @@ def build_stats(ctx):
     daily = list(reversed((doc.get("daily") or [])[-30:]))
     weekly = list(reversed((doc.get("weekly") or [])[-26:]))
     monthly = list(reversed(doc.get("monthly") or []))
+    daily_body = fetch_stats.daily_tbody(
+        daily, partial_label=t("vst_partial"), path_label=t("vst_path"),
+        visits_label=t("vst_visits"), views_label=t("vst_views"), empty_label=t("vst_no_paths"),
+    )
     def table(sid, head, col, body):
         return (f'<section id="{sid}"{"" if has else " hidden"}><h2>{E(t(head))}</h2><table class="list sttab"><thead><tr>'
                 f'<th scope="col">{E(t(col))}</th><th scope="col">{E(t("vst_visits"))}</th><th scope="col">{E(t("vst_views"))}</th>'
@@ -4562,10 +4569,10 @@ def build_stats(ctx):
     body = f"""<h1>{E(t("vst_title"))}</h1>
 <p class="lead">{E(t("vst_lead"))}</p>
 <p class="meta"><a href="#data-policy">{E(t("vdp_h"))}</a> · <a href="../privacy/">{E(t("pp_whole"))}</a></p>
-<div class="stats" id="st" data-json="{root}api/v1/stats.json" data-gen="{E(gen)}" data-partial="{E(t("vst_partial"))}" data-upd="{E(t("vst_updated", when="{when}"))}">
+<div class="stats" id="st" data-json="{root}api/v1/stats.json" data-gen="{E(gen)}" data-partial="{E(t("vst_partial"))}" data-path="{E(t("vst_path"))}" data-visits="{E(t("vst_visits"))}" data-views="{E(t("vst_views"))}" data-nopaths="{E(t("vst_no_paths"))}" data-upd="{E(t("vst_updated", when="{when}"))}">
 <p class="notice" id="st-pending"{" hidden" if has else ""}>{E(t("vst_pending"))}</p>
 <p class="meta" id="st-upd"{"" if has else " hidden"}>{t("vst_updated", when=f'<bdi dir="ltr">{E(when)}</bdi>') if has else ""}</p>
-{table("st-daily", "vst_daily_h", "vst_day", rows(daily, lambda r: ltr(r["date"])))}
+{table("st-daily", "vst_daily_h", "vst_day", daily_body)}
 {table("st-weekly", "vst_weekly_h", "vst_week", rows(weekly, week_label))}
 {table("st-monthly", "vst_monthly_h", "vst_month", rows(monthly, lambda r: ltr(r["month"])))}
 <p class="meta">{E(t("vst_visits_note"))}</p>
@@ -4578,11 +4585,17 @@ var lang=document.documentElement.lang||'en',nf;try{nf=new Intl.NumberFormat(lan
 function fmt(){[].forEach.call(el.querySelectorAll('.stn'),function(n){var v=n.getAttribute('data-n')||n.textContent;n.setAttribute('data-n',v);n.textContent=nf.format(+v)})}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function ltr(s){return '<bdi dir="ltr">'+esc(s)+'</bdi>'}
+function bar(visits,top){var w=Math.round(100*visits/top);return '<span class="stv"><span class="stbar" aria-hidden="true"><span class="stfill'+(w?'':' z')+'" style="width:'+w+'%"></span></span><span class="stn">'+(+visits)+'</span></span>'}
 function fill(id,items,label){var s=document.getElementById(id);if(!s)return;var top=1;items.forEach(function(r){if(r.visits>top)top=r.visits});
-s.querySelector('tbody').innerHTML=items.map(function(r){var w=Math.round(100*r.visits/top);return '<tr><th scope="row">'+label(r)+(r.partial?' <span class="tag">'+esc(el.getAttribute('data-partial'))+'</span>':'')+'</th><td><span class="stv"><span class="stbar" aria-hidden="true"><span class="stfill'+(w?'':' z')+'" style="width:'+w+'%"></span></span><span class="stn">'+(+r.visits)+'</span></span></td><td class="stn">'+(+r.pageviews)+'</td></tr>'}).join('');s.hidden=false}
+s.querySelector('tbody').innerHTML=items.map(function(r){return '<tr><th scope="row">'+label(r)+(r.partial?' <span class="tag">'+esc(el.getAttribute('data-partial'))+'</span>':'')+'</th><td>'+bar(+r.visits,top)+'</td><td class="stn">'+(+r.pageviews)+'</td></tr>'}).join('');s.hidden=false}
+function fillDaily(items){var s=document.getElementById('st-daily');if(!s)return;var top=1;items.forEach(function(r){if(r.visits>top)top=r.visits});
+var pathL=esc(el.getAttribute('data-path')||'Path'),visL=esc(el.getAttribute('data-visits')||'Visits'),viewL=esc(el.getAttribute('data-views')||'Page views'),emptyL=esc(el.getAttribute('data-nopaths')||'');
+s.querySelector('tbody').innerHTML=items.map(function(r){var part=r.partial?' <span class="tag">'+esc(el.getAttribute('data-partial'))+'</span>':'';
+var paths=r.paths||[],inner;if(paths.length){inner='<table class="stpaths"><thead><tr><th scope="col">'+pathL+'</th><th scope="col">'+visL+'</th><th scope="col">'+viewL+'</th></tr></thead><tbody>'+paths.map(function(p){return '<tr><th scope="row">'+ltr(p.path)+'</th><td class="stn" data-label="'+visL+'">'+(+p.visits)+'</td><td class="stn" data-label="'+viewL+'">'+(+p.pageviews)+'</td></tr>'}).join('')+'</tbody></table>'}else inner='<p class="stempty">'+emptyL+'</p>';
+return '<tr class="stday"><td colspan="3"><details><summary><span class="stsum"><span class="stdate">'+ltr(r.date)+part+'</span><span class="stvisits">'+bar(+r.visits,top)+'</span><span class="stviews stn">'+(+r.pageviews)+'</span></span></summary>'+inner+'</details></td></tr>'}).join('');s.hidden=false}
 fmt();fetch(el.getAttribute('data-json'),{cache:'no-store',credentials:'omit'}).then(function(r){return r.ok?r.json():null}).then(function(j){
 if(!j||!j.daily||!j.daily.length||!j.generated_at||j.generated_at<=(el.getAttribute('data-gen')||''))return;
-fill('st-daily',j.daily.slice(-30).reverse(),function(r){return ltr(r.date)});
+fillDaily(j.daily.slice(-30).reverse());
 fill('st-weekly',(j.weekly||[]).slice(-26).reverse(),function(r){return ltr(r.week)+'<span class="stfrom">'+ltr(r.start)+'</span>'});
 fill('st-monthly',(j.monthly||[]).slice().reverse(),function(r){return ltr(r.month)});
 var u=document.getElementById('st-upd');u.textContent=el.getAttribute('data-upd').replace('{when}',j.generated_at.replace('T',' ').replace('Z','').slice(0,16)+' UTC');u.hidden=false;
