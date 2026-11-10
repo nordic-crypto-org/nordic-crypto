@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T07:46:28+00:00",
+ "generated_at": "2026-11-10T10:22:02+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 464,
+ "count": 472,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -8638,19 +8638,36 @@
      "title": "Nordic Blockchain Conference 2026 - Day 2 - Stage 1 (Part 1)",
      "source_name": "Nordic Blockchain Association",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=GUYV8JBes-M&hl=en",
+     "title": "Custodial vs non-custodial wallets. Strategic choices for institutions | Nordic Blockchain 26",
+     "source_name": "Tangany",
+     "date": "2026-11-10"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
+    "yt-GUYV8JBes-M",
     "yt-qlf-5yZtzVE"
+   ],
+   "event_ids": [
+    "804fc7da3bbe"
    ],
    "talks": [
     {
      "id": "yt-qlf-5yZtzVE",
      "title": "Nordic Blockchain Conference 2026 - Day 2 - Stage 1 (Part 1)",
      "video_url": "https://www.youtube.com/watch?v=qlf-5yZtzVE"
+    },
+    {
+     "id": "yt-GUYV8JBes-M",
+     "title": "Custodial vs non-custodial wallets. Strategic choices for institutions | Nordic Blockchain 26",
+     "video_url": "https://www.youtube.com/watch?v=GUYV8JBes-M",
+     "event_id": "804fc7da3bbe",
+     "date": "2026-05-27"
     }
    ],
    "affiliations": [
@@ -16319,19 +16336,31 @@
      "title": "Bitcoin som pengar｜ Internetdagarna 2016",
      "source_name": "Pontus Lindblom",
      "date": "2026-10-16"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=x8pTlgGPphs&hl=en",
+     "title": "Pontus Lindblom: Bitcoin, en frihetlig revolution | FreedomFest Stockholm 2016",
+     "source_name": "Ludwig von Mises-Institutet i Sverige",
+     "date": "2026-11-10"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-4A-whJseWvI"
+    "yt-4A-whJseWvI",
+    "yt-x8pTlgGPphs"
    ],
    "talks": [
     {
      "id": "yt-4A-whJseWvI",
      "title": "Bitcoin som pengar｜ Internetdagarna 2016",
      "video_url": "https://www.youtube.com/watch?v=4A-whJseWvI"
+    },
+    {
+     "id": "yt-x8pTlgGPphs",
+     "title": "Pontus Lindblom: Bitcoin, en frihetlig revolution | FreedomFest Stockholm 2016",
+     "video_url": "https://www.youtube.com/watch?v=x8pTlgGPphs"
     }
    ]
   },
@@ -19643,6 +19672,302 @@
      "title": "Din Kryptoskatt – Live Event med Skatteetaten og skatteeksperter",
      "video_url": "https://www.youtube.com/watch?v=-uSddetwiCs",
      "date": "2025-04-23"
+    }
+   ]
+  },
+  {
+   "id": "spk-pierre",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-pierre.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-pierre",
+   "name": "Pierre",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=MgISZpaxARM&hl=en",
+     "title": "Pierre: Sådan tegner du din Bitcoin forsikring ⚡ Bitcoin Copenhagen 2026",
+     "source_name": "Bitcoinkonferencen",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-MgISZpaxARM"
+   ],
+   "talks": [
+    {
+     "id": "yt-MgISZpaxARM",
+     "title": "Pierre: Sådan tegner du din Bitcoin forsikring ⚡ Bitcoin Copenhagen 2026",
+     "video_url": "https://www.youtube.com/watch?v=MgISZpaxARM"
+    }
+   ]
+  },
+  {
+   "id": "spk-henry-brade",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-henry-brade.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-henry-brade",
+   "name": "Henry Brade",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EKrfZt3CGN0&hl=en",
+     "title": "Bitcoin - the future of money",
+     "source_name": "AssemblyTV",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EKrfZt3CGN0"
+   ],
+   "talks": [
+    {
+     "id": "yt-EKrfZt3CGN0",
+     "title": "Bitcoin - the future of money",
+     "video_url": "https://www.youtube.com/watch?v=EKrfZt3CGN0"
+    }
+   ]
+  },
+  {
+   "id": "spk-bill-maurer",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-bill-maurer.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-bill-maurer",
+   "name": "Bill Maurer",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=Xb-1Pf26veU&hl=en",
+     "title": "Bill Maurer: Blockchains are a Diamond’s Best Friend",
+     "source_name": "Aarhus Universitet",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-Xb-1Pf26veU"
+   ],
+   "talks": [
+    {
+     "id": "yt-Xb-1Pf26veU",
+     "title": "Bill Maurer: Blockchains are a Diamond’s Best Friend",
+     "video_url": "https://www.youtube.com/watch?v=Xb-1Pf26veU"
+    }
+   ]
+  },
+  {
+   "id": "spk-anita-posch",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-anita-posch.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-anita-posch",
+   "name": "Anita Posch",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EOBse8AprTc&hl=en",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EOBse8AprTc"
+   ],
+   "talks": [
+    {
+     "id": "yt-EOBse8AprTc",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "video_url": "https://www.youtube.com/watch?v=EOBse8AprTc"
+    }
+   ]
+  },
+  {
+   "id": "spk-jaroslav-likhachevskiy",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-jaroslav-likhachevskiy.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-jaroslav-likhachevskiy",
+   "name": "Jaroslav Likhachevskiy",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EOBse8AprTc&hl=en",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EOBse8AprTc"
+   ],
+   "talks": [
+    {
+     "id": "yt-EOBse8AprTc",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "video_url": "https://www.youtube.com/watch?v=EOBse8AprTc"
+    }
+   ]
+  },
+  {
+   "id": "spk-farida-nabourema",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-farida-nabourema.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-farida-nabourema",
+   "name": "Farida Nabourema",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EOBse8AprTc&hl=en",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EOBse8AprTc"
+   ],
+   "talks": [
+    {
+     "id": "yt-EOBse8AprTc",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "video_url": "https://www.youtube.com/watch?v=EOBse8AprTc"
+    }
+   ]
+  },
+  {
+   "id": "spk-nelson-rauda",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-nelson-rauda.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-nelson-rauda",
+   "name": "Nelson Rauda",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EOBse8AprTc&hl=en",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EOBse8AprTc"
+   ],
+   "talks": [
+    {
+     "id": "yt-EOBse8AprTc",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "video_url": "https://www.youtube.com/watch?v=EOBse8AprTc"
+    }
+   ]
+  },
+  {
+   "id": "spk-leonid-volkov",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-leonid-volkov.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-leonid-volkov",
+   "name": "Leonid Volkov",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=EOBse8AprTc&hl=en",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "source_name": "Oslo Freedom Forum",
+     "date": "2026-11-10"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-EOBse8AprTc"
+   ],
+   "talks": [
+    {
+     "id": "yt-EOBse8AprTc",
+     "title": "Is Bitcoin Compatible with Democracy? | 2022 Oslo Freedom Forum",
+     "video_url": "https://www.youtube.com/watch?v=EOBse8AprTc"
     }
    ]
   }

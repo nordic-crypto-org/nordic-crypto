@@ -1,11 +1,42 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T07:46:28+00:00",
+ "generated_at": "2026-11-10T10:22:02+00:00",
  "preview": false,
  "country": "DK",
- "count": 13,
+ "count": 16,
  "talks": [
+  {
+   "id": "yt-MgISZpaxARM",
+   "video_url": "https://www.youtube.com/watch?v=MgISZpaxARM",
+   "platform": "youtube",
+   "title": "Pierre: Sådan tegner du din Bitcoin forsikring ⚡ Bitcoin Copenhagen 2026",
+   "speakers": [
+    "Pierre"
+   ],
+   "event_name": "Bitcoin Copenhagen 2026",
+   "event_url": "https://bitcoincopenhagen.dk/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-pierre"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2026-11-09",
+   "duration": "PT32M7S",
+   "language": null,
+   "channel": "Bitcoinkonferencen",
+   "description": "Pierre speaks at Bitcoin Copenhagen 2026 on buying, holding and storing bitcoin, including self-custody, and takes questions from the audience. The page does not state the day.",
+   "source_url": "https://www.youtube.com/watch?v=MgISZpaxARM&hl=en",
+   "retrieved_at": "2026-11-10T11:00:00Z",
+   "added_at": "2026-11-10T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-MgISZpaxARM",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-MgISZpaxARM.json"
+  },
   {
    "id": "yt-GFmKj-prLB4",
    "video_url": "https://www.youtube.com/watch?v=GFmKj-prLB4",
@@ -253,6 +284,33 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yezxGH2PksA.json"
   },
   {
+   "id": "yt-F6L7ePrru-o",
+   "video_url": "https://www.youtube.com/watch?v=F6L7ePrru-o",
+   "platform": "youtube",
+   "title": "Cryptocurrency in Denmark 2026 – Who owns crypto and is adoption growing?",
+   "speakers": [],
+   "event_name": "Nordic Crypto Adoption Week 2026",
+   "event_url": "https://www.kaupr.io/en/crypto-adoption-2026",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the city",
+   "speaker_ids": [],
+   "city": null,
+   "country": "DK",
+   "date": "2026-03-23",
+   "published": "2026-03-23",
+   "duration": "PT1H57M41S",
+   "language": null,
+   "channel": "Kaupr Media",
+   "description": "The channel's live session on who owns cryptocurrency in Denmark, streamed on 23 March 2026 as part of Nordic Crypto Adoption Week. The page does not name a city.",
+   "source_url": "https://www.youtube.com/watch?v=F6L7ePrru-o&hl=en",
+   "retrieved_at": "2026-11-10T11:00:00Z",
+   "added_at": "2026-11-10T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-F6L7ePrru-o",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-F6L7ePrru-o.json"
+  },
+  {
    "id": "yt-McCMg7UVCIk",
    "video_url": "https://www.youtube.com/watch?v=McCMg7UVCIk",
    "platform": "youtube",
@@ -375,6 +433,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-mrIMoWa3gFc",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-mrIMoWa3gFc.json"
+  },
+  {
+   "id": "yt-Xb-1Pf26veU",
+   "video_url": "https://www.youtube.com/watch?v=Xb-1Pf26veU",
+   "platform": "youtube",
+   "title": "Bill Maurer: Blockchains are a Diamond’s Best Friend",
+   "speakers": [
+    "Bill Maurer"
+   ],
+   "event_name": "Contested Property Claims",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-bill-maurer"
+   ],
+   "city": "Aarhus",
+   "country": "DK",
+   "date": null,
+   "published": "2016-02-26",
+   "duration": "PT44M18S",
+   "language": null,
+   "channel": "Aarhus Universitet",
+   "description": "Bill Maurer on blockchains and payment technology at the Contested Property Claims conference, hosted at Aarhus University in December 2016. The page does not state the day.",
+   "source_url": "https://www.youtube.com/watch?v=Xb-1Pf26veU&hl=en",
+   "retrieved_at": "2026-11-10T11:00:00Z",
+   "added_at": "2026-11-10T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-Xb-1Pf26veU",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Xb-1Pf26veU.json"
   },
   {
    "id": "yt-GiU4b7ldKMs",
