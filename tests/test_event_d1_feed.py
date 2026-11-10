@@ -98,6 +98,9 @@ class Ics(unittest.TestCase):
         with tempfile.TemporaryDirectory() as site:
             paths = event_ics.write_feeds(site, [event("ab")])
             self.assertTrue(all(os.path.exists(p) for p in paths))
+            text = open(paths[0], encoding="utf-8", newline="").read()
+            self.assertTrue(text.endswith("\r\n"))
+            self.assertNotIn("\n", text.replace("\r\n", ""))
 
 
 class D1Gate(unittest.TestCase):

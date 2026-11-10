@@ -1078,6 +1078,161 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-10T11:00:00+00:00",
+   "included": 4,
+   "by_country": {
+    "NO": 22,
+    "SE": 11,
+    "DK": 5,
+    "FI": 10,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 4,
+    "2017": 4,
+    "2018": 5,
+    "2022": 2,
+    "2023": 5,
+    "2025": 5,
+    "2026": 11,
+    "2016": 4,
+    "2019": 3,
+    "2024": 1,
+    "2015": 2,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 1,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 2,
+     "2015": 1,
+     "2026": 3,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1,
+     "2012": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Four past events were stored. Nordic Blockchain Conference 2026, 26–27 May, at Epicenter Stockholm, from the organiser site. The delegate and speaker figures on that page were not stored. A University of Stavanger seminar on 9 May 2025, 11:00–13:00, in Elise Ottesen-Jensens hus. The Zoom password was not stored. Helsinki Bitcoin Meetup on Friday 3 August 2012, 17:00–19:00, outside the Assembly main doors, from the organiser's Bitcoin Forum post. A count of over 20 people was not stored. UiT trial lecture TEEs for Blockchain on Friday 30 October 2020, 10:15–11:15, in Auditorium 1.022, Teknologibygget, Tromsø. The room limit of 20 and the contact address were not stored. Enrico Tedeschi's disputas on 2 October 2023 was read again and not stored: TartuNLP returned a Northern Sami line that the Sami check refused. The Helsinki meetup of 6 November 2026 is already on the calendar. No recording was found. Arne Ryde Conference on 25–26 August 2026 is already in the archive. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Taper level unchanged: full.",
+   "queries": [
+    "https://www.nordicblockchain.com/conference-2026",
+    "https://www.nordicblockchain.com/conference/location",
+    "https://www.uis.no/nb/om-uis/arrangementer/okonomi-og-ledelse/navigere-utfordringar-for-a-beskytte-data-innanfor",
+    "https://bitcointalk.org/index.php?topic=96081.0",
+    "https://uit.no/tavla/artikkel/703269/proveforelesning_master_i_teknologi_sivilingenior",
+    "https://en.uit.no/tavla/artikkel/825635/enrico_tedeschi",
+    "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgyjcpbjb/",
+    "https://www.ehl.lu.se/evenemang/arne-ryde-conference-crypto-fintech-and-payments",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-10"
+   ],
+   "sources_used": [
+    "Universitetet i Stavanger",
+    "Bitcoin Forum",
+    "Nordic Blockchain Association",
+    "UiT"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Helsinki Bitcoin Hobbyists, 6 November 2026",
+     "reason": "Already on the calendar. The Meetup page has no recording."
+    },
+    {
+     "name": "Enrico Tedeschi disputas, 2 October 2023, Tromsø",
+     "reason": "The UiT page states Monday 2 October 2023, 12:15–16:00, Store Auditorium B302, Realfagsbygget. Not stored: the Northern Sami check refused TartuNLP's reply."
+    },
+    {
+     "name": "Arne Ryde Conference on Crypto, Fintech and Payments",
+     "reason": "Already in the archive."
+    },
+    {
+     "name": "Impact Onchain",
+     "reason": "The calendar lists it on 11 November 2026. No recording of a finished session was found."
+    },
+    {
+     "name": "Nasdaq Nordic Crypto ETP Forum",
+     "reason": "Not added. The official page did not load on this run, so the date, the place and whether it was public were not verified from the page."
+    },
+    {
+     "name": "Room limit and contact addresses on the UiT pages",
+     "reason": "A limit of 20 is not a count. Email addresses were not stored."
+    },
+    {
+     "name": "Delegate and speaker figures on the Nordic Blockchain Conference page",
+     "reason": "The page also shows placeholder text. The figures were not stored."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

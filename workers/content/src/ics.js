@@ -45,6 +45,8 @@ function fold(line) {
     const limit = parts.length ? 74 : 75;
     let cut = Math.min(limit, raw.length - offset);
     while (cut > 0 && (raw[offset + cut] & 0xc0) === 0x80) cut -= 1;
+    // Keep a TEXT escape (backslash + the next byte) on one physical line.
+    if (cut > 1 && raw[offset + cut - 1] === 0x5c) cut -= 1;
     if (cut <= 0) cut = 1;
     const piece = new TextDecoder().decode(raw.slice(offset, offset + cut));
     parts.push((parts.length ? " " : "") + piece);
@@ -53,10 +55,29 @@ function fold(line) {
   return parts.join("\r\n");
 }
 
+function httpsUrl(value) {
+  if (typeof value !== "string") return "";
+  const text = value.trim();
+  return text.startsWith("https://") ? text : "";
+}
+
 function locationOf(event) {
-  if (event.online && !event.place && !event.city) return "Online";
-  const parts = [event.place, event.city].filter((part) => typeof part === "string" && part.trim());
+  const place = typeof event.place === "string" ? event.place.trim() : "";
+  const city = typeof event.city === "string" ? event.city.trim() : "";
+  if (event.online && !place && !city) return "Online";
+  const parts = [];
+  if (place) parts.push(place);
+  if (city && !parts.includes(city)) parts.push(city);
+  if (event.online && parts.length && parts[0].toLowerCase().indexOf("online") < 0) parts.push("Online");
   return parts.join(", ");
+}
+
+function descriptionOf(event, address) {
+  const note = redactText(event.note || "") || "";
+  const parts = note ? [note] : [];
+  const link = httpsUrl(event.map_url);
+  if (link && address && note.indexOf(link) < 0) parts.push(link);
+  return parts.join("\n");
 }
 
 export function eventsToIcs(events, now) {
@@ -82,11 +103,12 @@ export function eventsToIcs(events, now) {
     lines.push("DTSTART:" + start);
     if (event.end && stamp(event.end)) lines.push("DTEND:" + stamp(event.end));
     lines.push("SUMMARY:" + escapeText(event.title));
-    const loc = locationOf(event);
+    const address = locationOf(event);
+    const loc = address || httpsUrl(event.map_url);
     if (loc) lines.push("LOCATION:" + escapeText(loc));
     if (typeof event.url === "string" && event.url.startsWith("https://")) lines.push("URL:" + event.url);
-    const note = redactText(event.note || "");
-    if (note) lines.push("DESCRIPTION:" + escapeText(note));
+    const desc = descriptionOf(event, address);
+    if (desc) lines.push("DESCRIPTION:" + escapeText(desc));
     lines.push("END:VEVENT");
   }
   lines.push("END:VCALENDAR");
