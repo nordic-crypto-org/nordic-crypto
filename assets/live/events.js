@@ -89,7 +89,7 @@
       if (!ev || !ev.id || !ev.start || (ev.status && ev.status !== "published")) return;
       var el = document.getElementById("e-" + ev.id);
       if (el) setTime(el, ev);
-      else if (new Date(ev.start).getTime() >= Date.now() - 86400000) list.appendChild(row(ev));
+      else if (new Date(ev.start).getTime() >= Date.now() - 24 * 60 * 60 * 1000) list.appendChild(row(ev));
     });
     var ics = document.querySelector("[data-live-ics]");
     if (ics && cfg.api) {
