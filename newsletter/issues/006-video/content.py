@@ -23,6 +23,8 @@ LANG = "en"
 ANCHOR = "Anders Fjell"
 ANCHOR_ROLE = "NORDIC CRYPTO"
 ANCHOR_IMG = "anchor-v1.jpg"
+# Kinds where Anders is on camera. The shared lip-sync step refuses a still for these.
+ON_CAMERA = ("anchor", "tonight", "story", "end")
 TITLE_CARD = "NORDIC CRYPTO #6"
 
 STORIES = {

@@ -10,6 +10,8 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, '.'); import content as C
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'tools')))
 import newsreel_still
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import anchor_lipsync
 V = os.environ.get('VERTICAL') == '1'
 W, H = (1080, 1920) if V else (1920, 1080)
 ROOT = 'build/'
@@ -310,20 +312,9 @@ def draw_lt(base, lt, t, dur):
     if getattr(src, 'has_logo', False): c = 1 if c >= .5 else 0  # a logo is cut in and out whole, never wiped
     if c > 0: base.paste(src.crop((0, 0, src.width, int(src.height * c)) if c < 1 else (0, 0, src.width, src.height)), (x0, ys))
 
-# ---------- on-camera anchor clips (build/anchor_<seg>.mp4 from anchor_clips.py) ----------
-def has_clip(name): return os.path.exists(ROOT + f'anchor_{name}.mp4')
-class Clip:  # sequential frame reader; holds the last frame when the clip runs out
-    def __init__(self, name):
-        self.p = subprocess.Popen(['ffmpeg', '-v', 'error', '-threads', '1', '-i', ROOT + f'anchor_{name}.mp4', '-vf',
-                                   f'fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}',
-                                   '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=W * H * 3)
-        self.i, self.im = -1, None
-    def at(self, i):
-        while self.i < i and self.p:
-            b = self.p.stdout.read(W * H * 3)
-            if len(b) < W * H * 3: self.p.stdout.close(); self.p.wait(); self.p = None; break
-            self.im = Image.frombytes('RGB', (W, H), b); self.i += 1
-        return self.im.copy()
+# ---------- Anders Fjell, lip-synced. A missing clip fails the render. ----------
+def plate(name):
+    return anchor_lipsync.Plate(ROOT, name, W, H, FPS)
 # Over-the-shoulder panel and right-hand column beside the presenter (his face sits at x 815-1080).
 PNL_X, PNL_Y, PNL_W, PNL_H = 1150, 176, 700, 394
 def draw_panel(im, src, t, dur, in_at=0.45):
@@ -332,21 +323,6 @@ def draw_panel(im, src, t, dur, in_at=0.45):
     w, h = max(2, int(PNL_W * k)), max(2, int(PNL_H * k)); x, y = PNL_X + (PNL_W - w) // 2, PNL_Y + (PNL_H - h) // 2
     d = ImageDraw.Draw(im); d.rectangle((x - 6, y - 6, x + w + 5, y + h + 5), fill=GOLD)
     im.paste(src.resize((w, h), Image.BILINEAR), (x, y))
-
-# ---------- Anders Fjell still (anchor-v1.jpg), when this issue has no lip-sync clips ----------
-_ANCH = {}
-def anchor_still(t, dur):
-    """Studio frame of the reference still: slow push-in and a little drift, so the shot is not frozen."""
-    if 'bg' not in _ANCH:
-        src = Image.open(C.ANCHOR_IMG).convert('RGB'); k = max(BW_ / src.width, BH_ / src.height)
-        src = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
-        bg = src.crop(((src.width - BW_) // 2, (src.height - BH_) // 2, (src.width - BW_) // 2 + BW_, (src.height - BH_) // 2 + BH_))
-        _ANCH['bg'] = bg
-    bg = _ANCH['bg']; u = t / max(dur, 0.01)
-    zoom = 1 + 0.06 * eio(u); bw = BW_ / zoom; bh = bw * H / W
-    cx = BW_ / 2 + 16 * math.sin(t * 0.45); cy = BH_ * 0.46 - (BH_ - bh) * 0.2 * eio(u)
-    cy = max(bh / 2, min(BH_ - bh / 2, cy)); cx = max(bw / 2, min(BW_ - bw / 2, cx))
-    return bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
 
 def story_still(st, w, h):
     """The stored illustration for this segment, or None so the current art stays."""
@@ -438,9 +414,9 @@ def seg_tonight(s):
         starts.append(0.2 + i * 1.6 if hit is None else hit)
     lab = getattr(C, 'TONIGHT_LABEL', 'TONIGHT')
     if not V:
-        clip = Clip(s['name']) if has_clip(s['name']) else None; x0 = PNL_X; cw = PNL_W
+        clip = plate(s['name']); x0 = PNL_X; cw = PNL_W
         def frame(t, T):
-            im = clip.at(round(t * FPS)) if clip else anchor_still(t, s['dur']); d = ImageDraw.Draw(im)
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
             out = eio(clamp((t - (s['dur'] - 0.6)) / 0.35))
             u = eo(t / 0.45) * (1 - out); tf = F('cx', 46); bw = spaced_w(lab, tf, 5) + 44
             if u > 0:
@@ -514,9 +490,9 @@ def seg_story(s):
     bg = full if full is not None else (None if panel is not None else art_bg(st))
     lt = make_lt(st); dirx = 1 if int(s['name'][1:]) % 2 else -1
     if not V:
-        clip = Clip(s['name']) if has_clip(s['name']) else None
+        clip = plate(s['name'])
         def frame(t, T):
-            im = clip.at(round(t * FPS)) if clip else anchor_still(t, s['dur']); u = t / s['dur']
+            im = clip.at(round(t * FPS)); u = t / s['dur']
             if t > 0.3: draw_panel(im, panel if panel is not None else kb(bg, u, dirx, 0.5), t, s['dur'])
             draw_lt(im, lt, t, s['dur']); return im
         return frame, {}
@@ -563,9 +539,9 @@ def seg_end(s):
     if advice_t is None and len(sents) > 2: advice_t = s['voff'] + sents[2][0]
     if team_t is None and sents: team_t = s['voff'] + sents[-1][0]
     if not V:
-        clip = Clip(s['name']) if has_clip(s['name']) else None; x0 = PNL_X; cw = PNL_W
+        clip = plate(s['name']); x0 = PNL_X; cw = PNL_W
         def frame(t, T):
-            im = clip.at(round(t * FPS)) if clip else anchor_still(t, s['dur']); d = ImageDraw.Draw(im)
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
             a = eo((t - 0.3) / 0.5); xa = x0 + (1 - a) * 900
             if a > 0:
                 d.rectangle((xa, 176, xa + cw, 290), fill=NIGHT); d.rectangle((xa, 176, xa + 12, 290), fill=GOLD)
@@ -617,23 +593,14 @@ def seg_end(s):
         return im
     return frame, dict(ticker_out=True, last=s.get('fade', True))
 
-# Presenter: the fictional anchor Anders Fjell, from the reference still (anchor-v1.jpg).
+# Presenter: Anders Fjell, lip-synced to this segment's voice. A missing clip fails the render.
 def seg_anchor(s):
-    src = Image.open(C.ANCHOR_IMG).convert('RGB'); k = max(BW_ / src.width, BH_ / src.height)
-    src = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
-    bg = src.crop(((src.width - BW_) // 2, (src.height - BH_) // 2, (src.width - BW_) // 2 + BW_, (src.height - BH_) // 2 + BH_))
     last = s.get('last', False); lt_on = s.get('lower_third', True)
     nf = F('cb', 68); rf = F('cx', 28)
     nw = tw(DUMMY, C.ANCHOR, nf) + 80; rw = int(spaced_w(C.ANCHOR_ROLE, rf, 4)) + 44
-    clip = Clip(s['name']) if has_clip(s['name']) else None
+    clip = plate(s['name'])
     def frame(t, T):
-        u = t / s['dur']
-        # slow push-in towards the presenter, a touch of drift so the shot is never static
-        zoom = 1 + 0.07 * eio(u); bw = BW_ / zoom; bh = bw * H / W
-        cx = BW_ / 2 + 14 * math.sin(t * 0.6); cy = BH_ * 0.47 - (BH_ - bh) * 0.25 * eio(u)
-        cy = max(bh / 2, min(BH_ - bh / 2, cy)); cx = max(bw / 2, min(BW_ - bw / 2, cx))
-        im = clip.at(round(t * FPS)) if clip else bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
-        d = ImageDraw.Draw(im)
+        im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
         if lt_on:
             a = eo((t - 0.4) / 0.45) * (1 - eio(clamp((t - (s['dur'] - 0.7)) / 0.4)))
             if a > 0:

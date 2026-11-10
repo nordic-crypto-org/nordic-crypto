@@ -22,6 +22,8 @@ LANG = "en"
 ANCHOR = "Anders Fjell"
 ANCHOR_ROLE = "NORDIC CRYPTO"
 ANCHOR_IMG = "anchor-v1.jpg"
+# Anders is on camera for the open and the sign-off. Story cards do not show him.
+ON_CAMERA = ("anchor",)
 
 STORIES = {
  "s1": dict(section="NORWAY", head="Minister: crypto mining in data centres is not widespread",

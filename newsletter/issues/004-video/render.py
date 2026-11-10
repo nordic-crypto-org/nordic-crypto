@@ -8,6 +8,8 @@ import os, re, sys, json, math, random, subprocess
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, '.'); import content as C
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import anchor_lipsync
 V = os.environ.get('VERTICAL') == '1'
 W, H = (1080, 1920) if V else (1920, 1080)
 ROOT = 'build/'
@@ -507,22 +509,14 @@ def seg_end(s):
         return im
     return frame, dict(ticker_out=True, last=s.get('fade', True))
 
-# Presenter: the fictional anchor Anders Fjell, from the reference still (anchor-v1.jpg).
+# Presenter: Anders Fjell, lip-synced to this segment's voice. A missing clip fails the render.
 def seg_anchor(s):
-    src = Image.open(C.ANCHOR_IMG).convert('RGB'); k = max(BW_ / src.width, BH_ / src.height)
-    src = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
-    bg = src.crop(((src.width - BW_) // 2, (src.height - BH_) // 2, (src.width - BW_) // 2 + BW_, (src.height - BH_) // 2 + BH_))
     last = s.get('last', False); lt_on = s.get('lower_third', True)
     nf = F('cb', 68); rf = F('cx', 28)
     nw = tw(DUMMY, C.ANCHOR, nf) + 80; rw = int(spaced_w(C.ANCHOR_ROLE, rf, 4)) + 44
+    clip = anchor_lipsync.Plate(ROOT, s['name'], W, H, FPS)
     def frame(t, T):
-        u = t / s['dur']
-        # slow push-in towards the presenter, a touch of drift so the shot is never static
-        zoom = 1 + 0.07 * eio(u); bw = BW_ / zoom; bh = bw * H / W
-        cx = BW_ / 2 + 14 * math.sin(t * 0.6); cy = BH_ * 0.47 - (BH_ - bh) * 0.25 * eio(u)
-        cy = max(bh / 2, min(BH_ - bh / 2, cy)); cx = max(bw / 2, min(BW_ - bw / 2, cx))
-        im = bg.resize((W, H), Image.BILINEAR, box=(cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2))
-        d = ImageDraw.Draw(im)
+        im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
         if lt_on:
             a = eo((t - 0.4) / 0.45) * (1 - eio(clamp((t - (s['dur'] - 0.7)) / 0.4)))
             if a > 0:
