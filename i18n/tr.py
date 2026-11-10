@@ -311,6 +311,7 @@ S = {
 "ev_cal_link": "Takvim",
 "ev_orig_below": "Orijinal metin",
 "cal_how": "Etkinlikleri nasıl buluyoruz: <a href=\"../sources/#events\">etkinlik kaynakları</a>. Nordik ülkelerde kriptoyla ilgili bir şey düzenliyor musunuz? Organizatörün sayfasına bağlantıyı <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a> üzerinde bir sorun olarak gönderin.",
+"cal_follow": "Google Takvim'de Takip Et",
 "paid": "Ücretli",
 "free": "Ücretsiz",
 "sponsored_by": "Sponsor: {x}",

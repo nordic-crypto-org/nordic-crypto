@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "diambil {d}",
 "ev_attendees": "Peserta terdaftar",
 "cal_how": "Cara kami menemukan acara: <a href=\"../sources/#events\">sumber acara</a>. Menyelenggarakan sesuatu tentang kripto di kawasan Nordik? Kirim tautan ke halaman penyelenggara sebagai issue di <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Ikuti di Google Kalender",
 "paid": "Berbayar",
 "free": "Gratis",
 "sponsored_by": "Disponsori oleh {x}",

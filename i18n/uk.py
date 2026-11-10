@@ -158,6 +158,7 @@ S = {
 "ev_cal_link": "Календар",
 "ev_orig_below": "Оригінальний текст",
 "cal_how": "Як ми знаходимо події: <a href=\"../sources/#events\">джерела подій</a>. Організовуєте щось про криптовалюти в Північних країнах? Надішліть посилання на сторінку організатора як issue на <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Стежити в Google Календарі",
 "paid": "Платно", "free": "Безкоштовно", "sponsored_by": "Спонсор: {x}", "sponsored": "Спонсорована", "online": "Онлайн",
 "orig_title_ev": "Оригінальна назва: ", "organiser": "Організатор", "listed_at": "Анонс на", "note": "Примітка",
 # academia

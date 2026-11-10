@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "获取于 {d}",
 "ev_attendees": "已报名参与者",
 "cal_how": "我们如何发现活动：<a href=\"../sources/#events\">活动来源</a>。在北欧组织加密货币相关活动？请在 <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a> 上以 issue 形式发送主办方页面的链接。",
+"cal_follow": "在 Google 日历中关注",
 "paid": "付费",
 "free": "免费",
 "sponsored_by": "赞助方：{x}",

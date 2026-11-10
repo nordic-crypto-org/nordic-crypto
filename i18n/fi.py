@@ -147,6 +147,7 @@ S = {
 "ev_cal_link": "Kalenteri",
 "ev_orig_below": "Alkuperäinen teksti",
 "cal_how": "Näin löydämme tapahtumat: <a href=\"../sources/#events\">tapahtumalähteet</a>. Järjestätkö kryptoaiheisen tapahtuman Pohjoismaissa? Lähetä linkki järjestäjän sivulle <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHubissa</a>.",
+"cal_follow": "Seuraa Google Kalenterissa",
 "paid": "Maksullinen", "free": "Maksuton", "sponsored_by": "Sponsori: {x}", "sponsored": "Sponsoroitu", "online": "Verkossa",
 "orig_title_ev": "Alkuperäinen nimi: ", "organiser": "Järjestäjä", "listed_at": "Listattu", "note": "Huomautus",
 "ac_title": "Tutkimus ja opetus – lohkoketjut ja kryptot pohjoismaisissa yliopistoissa",

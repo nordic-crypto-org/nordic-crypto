@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "{d}に取得",
 "ev_attendees": "参加登録者",
 "cal_how": "イベントの探し方: <a href=\"../sources/#events\">イベントの情報源</a>。北欧で暗号資産に関するイベントを主催していますか？ 主催者ページへのリンクを<a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>のissueでお送りください。",
+"cal_follow": "Google カレンダーでフォロー",
 "paid": "有料",
 "free": "無料",
 "sponsored_by": "スポンサー: {x}",

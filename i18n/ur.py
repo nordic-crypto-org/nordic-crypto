@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "حاصل کیا گیا {d}",
 "ev_attendees": "رجسٹر شدہ شرکاء",
 "cal_how": "تقریبات ہم کیسے تلاش کرتے ہیں: <a href=\"../sources/#events\">تقریبات کے ذرائع</a>۔ شمالی یورپ میں کرپٹو سے متعلق کچھ منعقد کر رہے ہیں؟ منتظم کے صفحے کا لنک <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a> پر issue کے طور پر بھیجیں۔",
+"cal_follow": "Google کیلنڈر میں فالو کریں",
 "paid": "ادائیگی والی",
 "free": "مفت",
 "sponsored_by": "اسپانسر: {x}",

@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "{d} रोजी मिळवले",
 "ev_attendees": "नोंदणी केलेले सहभागी",
 "cal_how": "कार्यक्रम आम्ही कसे शोधतो: <a href=\"../sources/#events\">कार्यक्रमांचे स्रोत</a>. नॉर्डिक देशांत क्रिप्टोबद्दल काही आयोजित करत आहात? आयोजकाच्या पृष्ठाचा दुवा <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a> वर issue म्हणून पाठवा.",
+"cal_follow": "Google कॅलेंडरमध्ये फॉलो करा",
 "paid": "सशुल्क",
 "free": "मोफत",
 "sponsored_by": "{x} द्वारे प्रायोजित",

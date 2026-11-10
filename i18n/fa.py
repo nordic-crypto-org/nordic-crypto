@@ -356,6 +356,7 @@ S.update({
 "ev_retrieved": "دریافت‌شده در {d}",
 "ev_attendees": "شرکت‌کنندگان ثبت‌نام‌شده",
 "cal_how": "چگونه رویدادها را پیدا می‌کنیم: <a href=\"../sources/#events\">منابع رویداد</a>. رویدادی دربارهٔ کریپتو در شمال اروپا برگزار می‌کنید؟ پیوند صفحهٔ برگزارکننده را به‌صورت یک issue در <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a> بفرستید.",
+"cal_follow": "دنبال کردن در تقویم Google",
 "paid": "پولی",
 "free": "رایگان",
 "sponsored_by": "با حمایت {x}",

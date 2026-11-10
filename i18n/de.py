@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "abgerufen {d}",
 "ev_attendees": "Angemeldete Teilnehmer",
 "cal_how": "So finden wir Veranstaltungen: <a href=\"../sources/#events\">Veranstaltungsquellen</a>. Organisieren Sie etwas zu Krypto im Norden? Senden Sie einen Link zur Seite des Veranstalters als Issue auf <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "In Google Kalender folgen",
 "paid": "Kostenpflichtig",
 "free": "Kostenlos",
 "sponsored_by": "Gesponsert von {x}",

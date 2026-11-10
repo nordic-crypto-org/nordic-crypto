@@ -159,6 +159,7 @@ S = {
 "ev_cal_link": "Calendar",
 "ev_orig_below": "Original text",
 "cal_how": "How we find events: <a href=\"../sources/#events\">event sources</a>. Organising something about crypto in the Nordics? Send a link to the organiser's page as an issue on <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Follow in Google Calendar",
 "paid": "Paid", "free": "Free", "sponsored_by": "Sponsored by {x}", "sponsored": "Sponsored", "online": "Online",
 "orig_title_ev": "Original title: ", "organiser": "Organiser", "listed_at": "Listed at", "note": "Note",
 # academia

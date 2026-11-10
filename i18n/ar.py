@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "جُلب في {d}",
 "ev_attendees": "المشاركون المسجلون",
 "cal_how": "كيف نجد الفعاليات: <a href=\"../sources/#events\">مصادر الفعاليات</a>. هل تنظّم شيئًا عن العملات المشفرة في دول الشمال؟ أرسل رابط صفحة المنظم كمسألة على <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "تابع في تقويم Google",
 "paid": "مدفوعة",
 "free": "مجانية",
 "sponsored_by": "برعاية {x}",

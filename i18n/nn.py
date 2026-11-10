@@ -147,6 +147,7 @@ S = {
 "ev_cal_link": "Kalender",
 "ev_orig_below": "Originaltekst",
 "cal_how": "Slik finn vi arrangement: <a href=\"../sources/#events\">kjelder for arrangement</a>. Skipar du til noko om krypto i Norden? Send ei lenkje til sida til arrangøren i ei sak på <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Følg i Google Kalender",
 "paid": "Betalt", "free": "Gratis", "sponsored_by": "Sponsa av {x}", "sponsored": "Sponsa", "online": "Digitalt",
 "orig_title_ev": "Originaltittel: ", "organiser": "Arrangør", "listed_at": "Oppført hos", "note": "Merknad",
 "ac_title": "Akademia – blokkjede og krypto ved nordiske universitet",

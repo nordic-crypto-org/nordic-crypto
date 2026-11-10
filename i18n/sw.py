@@ -384,6 +384,7 @@ S.update({
 "ev_retrieved": "ilipatikana {d}",
 "ev_attendees": "Washiriki waliojisajili",
 "cal_how": "Jinsi tunavyopata matukio: <a href=\"../sources/#events\">vyanzo vya matukio</a>. Unaandaa jambo kuhusu sarafu fiche katika nchi za Nordic? Tuma kiungo cha ukurasa wa mwandaaji kama issue kwenye <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Fuata kwenye Kalenda ya Google",
 "paid": "Ya kulipia",
 "free": "Bila malipo",
 "sponsored_by": "Imedhaminiwa na {x}",

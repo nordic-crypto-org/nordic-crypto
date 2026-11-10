@@ -312,6 +312,7 @@ S = {
 "ev_cal_link": "Kaleanddar",
 "ev_orig_below": "Álgoálgosaš teaksta",
 "cal_how": "Mo gávdnat dáhpáhusaid: <a href=\"../sources/#events\">dáhpáhusgáldut</a>. Lágidit juoidá kripto birra davviriikkain? Sádde liŋkka lágideaddji siidui áššin <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Čuovo Google Kaleanddaris",
 "paid": "Máksovaš",
 "free": "Nuvttá",
 "sponsored_by": "Sponsor: {x}",

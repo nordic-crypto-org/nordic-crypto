@@ -147,6 +147,7 @@ S = {
 "ev_cal_link": "Dagatal",
 "ev_orig_below": "Upprunalegur texti",
 "cal_how": "Svona finnum við viðburði: <a href=\"../sources/#events\">viðburðaheimildir</a>. Skipuleggur þú rafmyntaviðburð á Norðurlöndunum? Sendu tengil á síðu skipuleggjandans á <a href=\"https://github.com/nordic-crypto-org/nordic-crypto/issues\" rel=\"noopener\">GitHub</a>.",
+"cal_follow": "Fylgdu í Google Dagatali",
 "paid": "Aðgangseyrir", "free": "Ókeypis", "sponsored_by": "Styrkt af {x}", "sponsored": "Styrkt", "online": "Á netinu",
 "orig_title_ev": "Upprunalegt heiti: ", "organiser": "Skipuleggjandi", "listed_at": "Skráð á", "note": "Athugasemd",
 "ac_title": "Rannsóknir og kennsla – bálkakeðjur og rafmyntir í norrænum háskólum",
