@@ -1198,7 +1198,7 @@ def cors_doc():
 
 
 def _stats(feed, stats):
-    """Write /api/v1/stats.json. Aggregate visits and page views from Cloudflare Web Analytics only.
+    """Write /api/v1/stats.json. Aggregate visits and page views from Cloudflare Web Analytics,
     Same shape as the file tools/fetch_stats.py writes on gh-pages. generated_at is when the numbers were fetched."""
     import fetch_stats
     doc = stats if isinstance(stats, dict) else fetch_stats.current(feed.base)
@@ -1210,7 +1210,7 @@ def _stats(feed, stats):
     feed.add_endpoint(
         "stats",
         "api/v1/stats.json",
-        "Aggregate visitor counts from Cloudflare Web Analytics (no cookies): visits and page views per UTC day, ISO week and calendar month. updated_at is null and the lists are empty until the Web Analytics site and the refresh token are configured.",
+        "Aggregate visitor counts from Cloudflare Web Analytics (no cookies): visits and page views per UTC day, ISO week and calendar month, and for each of the last 30 days a paths list of visits and page views per page path (query strings removed). updated_at is null and the lists are empty until the Web Analytics site and the refresh token are configured.",
         "VisitorStats",
         example="api/v1/stats.json",
     )

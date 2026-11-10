@@ -10,7 +10,7 @@ programme is made with artificial intelligence.
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 import site_url
-VOICE = "en-GB-ThomasNeural"
+VOICE = "nb-NO-FinnNeural"  # male Norwegian Bokmål; English script, Norwegian accent
 RATE = "+22%"
 NUMBER = "5"
 ISSUE = "Issue #5"

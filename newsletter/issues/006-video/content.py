@@ -10,7 +10,7 @@ Nothing on screen or in the narration says the programme is made with artificial
 import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 import site_url
-VOICE = "en-GB-ThomasNeural"
+VOICE = "nb-NO-FinnNeural"  # male Norwegian Bokmål; English script, Norwegian accent
 RATE = "+22%"
 NUMBER = "6"
 ISSUE = "Issue #6"
