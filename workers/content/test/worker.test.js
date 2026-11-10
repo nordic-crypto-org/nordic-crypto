@@ -506,8 +506,21 @@ test("public event ics drops a private email and keeps a verified map link", asy
   assert.equal(res.status, 200);
   assert.equal(res.headers.get("content-type"), "text/calendar; charset=utf-8");
   const text = await res.text();
-  assert.match(text, /BEGIN:VCALENDAR/);
-  assert.match(text, /SUMMARY:Meetup/);
-  assert.equal(text.includes("a@b.co"), false);
-  assert.equal(text.includes("123 45 67"), false);
+  const same = await handle(request("GET", "/calendar.ics"), { DB: db });
+  assert.equal(same.status, 200);
+  assert.equal(await same.text(), text);
+  assert.equal(text.startsWith("BEGIN:VCALENDAR\r\nVERSION:2.0\r\n"), true);
+  assert.equal(text.endsWith("END:VCALENDAR\r\n"), true);
+  assert.equal(text.replace(/\r\n/g, "").includes("\n"), false);
+  for (const line of text.split("\r\n")) {
+    assert.ok(new TextEncoder().encode(line).length <= 75);
+  }
+  const flat = text.replace(/\r\n[ \t]/g, "");
+  assert.match(flat, /PRODID:-\/\/Nordic Crypto\/\/Calendar\/\/EN/);
+  assert.match(flat, /UID:abc123@nordiccrypto\.no/);
+  assert.match(flat, /DTSTART:20261119T170000Z/);
+  assert.match(flat, /SUMMARY:Meetup/);
+  assert.match(flat, /https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=Sturegatan/);
+  assert.equal(flat.includes("a@b.co"), false);
+  assert.equal(flat.includes("123 45 67"), false);
 });

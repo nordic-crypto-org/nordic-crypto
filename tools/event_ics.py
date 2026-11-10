@@ -34,6 +34,7 @@ def _fold(line):
         return line
     out = []
     # Fold on UTF-8 boundaries so a multibyte character is not split.
+    # Keep a TEXT escape (backslash + the next byte) on one physical line.
     while raw:
         cut = 75 if not out else 74
         if len(raw) <= cut:
@@ -43,6 +44,8 @@ def _fold(line):
             cut = min(cut, len(raw))
             while cut > 0 and (raw[cut] & 0xC0) == 0x80:
                 cut -= 1
+            if cut > 1 and raw[cut - 1] == 0x5C:
+                cut -= 1
             if cut <= 0:
                 cut = 1
             piece, raw = raw[:cut], raw[cut:]
@@ -50,14 +53,37 @@ def _fold(line):
     return "\r\n".join(out)
 
 
+def _https(value):
+    if not isinstance(value, str):
+        return ""
+    value = value.strip()
+    return value if value.startswith("https://") else ""
+
+
 def _location(event):
-    if event.get("online") and not (event.get("place") or event.get("city")):
+    place = event.get("place") if isinstance(event.get("place"), str) else ""
+    city = event.get("city") if isinstance(event.get("city"), str) else ""
+    place, city = place.strip(), city.strip()
+    if event.get("online") and not place and not city:
         return "Online"
-    parts = [event.get("place") or "", event.get("city") or ""]
-    parts = [p.strip() for p in parts if isinstance(p, str) and p.strip()]
+    parts = []
+    if place:
+        parts.append(place)
+    if city and city not in parts:
+        parts.append(city)
     if event.get("online") and parts and "online" not in parts[0].lower():
         parts.append("Online")
-    return ", ".join(dict.fromkeys(parts))
+    return ", ".join(parts)
+
+
+def _description(event, address):
+    """Editor note, then the map link when the address is already in LOCATION."""
+    note = (redact(event.get("note") or "") or "").strip()
+    parts = [note] if note else []
+    link = _https(event.get("map_url"))
+    if link and address and link not in note:
+        parts.append(link)
+    return "\n".join(parts)
 
 
 def render(events, now=None):
@@ -81,15 +107,16 @@ def render(events, now=None):
         if event.get("end"):
             lines.append("DTEND:" + _stamp(event["end"]))
         lines.append("SUMMARY:" + _escape(event.get("title")))
-        loc = _location(event)
+        address = _location(event)
+        loc = address or _https(event.get("map_url"))
         if loc:
             lines.append("LOCATION:" + _escape(loc))
         url = event.get("url") or ""
         if isinstance(url, str) and url.startswith("https://"):
             lines.append("URL:" + url)
-        note = redact(event.get("note") or "")
-        if note:
-            lines.append("DESCRIPTION:" + _escape(note))
+        desc = _description(event, address)
+        if desc:
+            lines.append("DESCRIPTION:" + _escape(desc))
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     return "\r\n".join(_fold(line) for line in lines) + "\r\n"

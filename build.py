@@ -8,7 +8,7 @@ Share buttons are plain links. No advertising trackers and no external fonts. Cl
 (aggregate visits, no cookies) is injected only when analytics.json or CF_WEB_ANALYTICS_TOKEN has a real token.
 Languages (i18n/ALL_LANGS): English at the root, then one directory per code. Nordic nn, nb, sv, da, fi, is plus the wider UI set. Missing strings fall back to English.
 Every page is built once per language; data/ (JSON), assets/ and screen/ (English) exist only at the root."""
-import atexit, json, os, re, shutil, subprocess, html, sys, calendar, datetime as dt
+import atexit, json, os, re, shutil, subprocess, html, sys, calendar, datetime as dt, urllib.parse
 import events as eventslib
 from zoneinfo import ZoneInfo
 import i18n
@@ -3596,6 +3596,58 @@ var h=new URLSearchParams(location.hash.slice(1));(h.get('country')||'').split('
 cc.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');apply(1)})});apply(0);
 function reveal(){var id=location.hash.slice(1),el=id&&id.indexOf('=')<0&&document.getElementById(id),d=el&&(el.tagName==='DETAILS'?el:el.closest('details'));if(d&&!d.open){d.open=true;el.scrollIntoView()}}
 window.addEventListener('hashchange',reveal);reveal()})();</script>"""
+def calendar_feed_url():
+    """The one public feed. Every language and every calendar app uses this URL."""
+    return site_url.ORIGIN.rstrip("/") + "/calendar.ics"
+
+def google_calendar_href():
+    """Subscribe in Google Calendar. The cid is the public https feed, URL-encoded."""
+    return "https://calendar.google.com/calendar/r?cid=" + urllib.parse.quote(calendar_feed_url(), safe="")
+
+def apple_calendar_href():
+    """Subscribe in Calendar on iOS and macOS. webcal asks the system to subscribe."""
+    return "webcal://" + site_url.HOST + "/calendar.ics"
+
+def outlook_calendar_href(host):
+    """Subscribe from the web in Outlook.com (outlook.live.com) or Microsoft 365 (outlook.office.com).
+    Both hosts serve /calendar/0/addfromweb; the url parameter is the https feed."""
+    feed = urllib.parse.quote(calendar_feed_url(), safe="")
+    name = urllib.parse.quote(SITE_NAME)
+    return f"https://{host}/calendar/0/addfromweb?url={feed}&name={name}"
+
+def calendar_follow_html():
+    """One disclosure: Google, Apple, Outlook.com, Microsoft 365, and the feed URL.
+    The links are real anchors, so the menu works with no JavaScript. Copy uses a button;
+    the address under it is the fallback."""
+    feed = calendar_feed_url()
+    links = (
+        (google_calendar_href(), "cal_gcal"),
+        (apple_calendar_href(), "cal_apple"),
+        (outlook_calendar_href("outlook.live.com"), "cal_outlook"),
+        (outlook_calendar_href("outlook.office.com"), "cal_m365"),
+    )
+    def item(href, key):
+        rel = "" if href.startswith("webcal:") else ' rel="noopener"'
+        return f'<li><a href="{E(href)}"{rel}>{E(t(key))}</a></li>'
+    items = "".join(item(href, key) for href, key in links)
+    return (
+        f'<details class="cal-follow"><summary>{E(t("cal_follow"))}</summary>'
+        f'<div class="cal-follow-panel"><ul aria-label="{E(t("cal_apps"))}">{items}</ul>'
+        f'<p class="cal-feed"><button type="button" class="cal-copy" data-url="{E(feed)}" data-label="{E(t("cal_copy"))}" data-done="{E(t("cal_copied"))}">{E(t("cal_copy"))}</button>'
+        f'<a class="cal-feed-url" href="{E(feed)}"><bdi dir="ltr">{E(feed)}</bdi></a></p></div></details>'
+    )
+
+def calendar_follow_script():
+    """Escape closes the menu. The button copies the feed; the link under it stays if copy cannot."""
+    return (
+        '<script>(function(){var root=document.querySelector(".cal-follow");if(!root)return;'
+        'root.addEventListener("keydown",function(e){if(e.key!=="Escape"||!root.open)return;root.open=false;var s=root.querySelector("summary");if(s)s.focus()});'
+        'var b=root.querySelector(".cal-copy");if(!b)return;b.addEventListener("click",function(){var url=b.getAttribute("data-url")||"",label=b.getAttribute("data-label")||b.textContent,done=b.getAttribute("data-done")||label;'
+        'var ok=function(){b.textContent=done;setTimeout(function(){b.textContent=label},2000)};'
+        'var manual=function(){var i=document.createElement("input");i.value=url;document.body.appendChild(i);i.select();try{document.execCommand("copy");ok()}catch(err){}i.remove()};'
+        'if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(url).then(ok,manual);else manual()})})();</script>'
+    )
+
 def build_calendar(ctx):
     evs, now = ctx["events"]
     def kind_of(e):
@@ -3652,8 +3704,6 @@ def build_calendar(ctx):
         grids.append(f'<table class="cal"><caption>{E(i18n.month_caption(LANG, y, m))}</caption><thead><tr>{"".join(f"<th>{E(d)}</th>" for d in i18n.wd_head(LANG))}</tr></thead><tbody>{"".join(cells)}</tbody></table>')
     per_c = {c: sum(e.get("country") == c for e in live) for c in COUNTRY_CODES}
     npend = sum(e.get("status") == "pending" for e in live); nown = sum(e.get("status") == "owner" for e in live)
-    _live_ics = events_api()
-    ics_attr = f' data-live-ics="{E(_live_ics)}/api/v1/events.ics"' if _live_ics else ""
     body = f"""{site_css.style("calendar-classic")}<h1>{E(t("cal_h1"))}</h1>
 <p class="lead">{E(t("cal_lead"))}</p>
 <p class="meta"><a href="../events/previous/">{E(t("prev_link"))}</a></p>
@@ -3668,13 +3718,13 @@ def build_calendar(ctx):
 <h2>{E(t("upcoming_h"))}</h2><ol class="news" id="evlist">{''.join(li(e) for e in upcoming) or f'<li class="empty">{E(t("no_upcoming"))}</li>'}</ol>
 <h2 id="past">{E(t("past_h"))}</h2><p class="meta">{E(t("past_note"))}</p><p class="meta">{t("past_talks", href="../talks/")}</p><ol class="news past">{''.join(li(e) for e in past) or f'<li class="empty">{E(t("no_past"))}</li>'}</ol>
 <p class="meta">{t("cal_how")}</p>
-<p class="meta"><a href="{E(up1())}calendar.ics"{ics_attr}>iCal</a></p>"""
+{calendar_follow_html()}"""
     js = """<script>(function(){var NU=%s,cc=[].slice.call(document.querySelectorAll('.cchip')),n=[].slice.call(document.querySelectorAll('#evongoing li[data-c], #evlist li[data-c], ol.past li[data-c]')),cnt=document.getElementById('ecount');
 function apply(push){var c=cc.filter(function(x){return x.getAttribute('aria-pressed')==='true'}).map(function(x){return x.dataset.c}),k=0;n.forEach(function(el){var ok=!c.length||c.indexOf(el.dataset.c)>=0;el.hidden=!ok;if(ok&&el.parentNode&&el.parentNode.id==='evlist')k++});if(cnt)cnt.textContent=NU.replace('{n}',k);if(push)history.replaceState(null,'',c.length?'#country='+c.join(','):location.pathname)}
 window.ncCalApply=apply;
 var h=new URLSearchParams(location.hash.slice(1));(h.get('country')||'').split(',').forEach(function(x){cc.forEach(function(b){if(b.dataset.c===x)b.setAttribute('aria-pressed','true')})});
 cc.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');apply(1)})});apply(0)})();</script>""" % json.dumps(t("n_upcoming", n="{n}"))
-    page("calendar", t("cal_title"), "calendar", body, t("cal_desc"), js + calendar_phase_script() + event_map_script(body) + live_events_script(up1()), head_extra=f'<link rel="alternate" type="text/calendar" title="iCal" href="{E(up1())}calendar.ics">')
+    page("calendar", t("cal_title"), "calendar", body, t("cal_desc"), js + calendar_phase_script() + event_map_script(body) + live_events_script(up1()) + calendar_follow_script(), head_extra=f'<link rel="alternate" type="text/calendar" title="iCal" href="{E(up1())}calendar.ics">')
     if LANG == "en": print(f"calendar: {len(upcoming)} upcoming, {len(ongoing)} ongoing {per_c}, {len(past)} past")
 
 def _arc_rel(from_slug, to_slug):
