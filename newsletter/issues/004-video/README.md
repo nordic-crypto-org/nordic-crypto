@@ -1,6 +1,6 @@
 # Nordic Crypto issue #4 — newsreel (site cut)
 
-Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good evening, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, and signs off ("I'm Anders Fjell. See you next week."). Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
+Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good evening, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, and signs off ("I'm Anders Fjell. See you next week."). Story cards in this issue are graphics; Anders is on camera only for the open and the sign-off. `newsletter/anchor_lipsync.py` lip-syncs those two segments. A missing clip or a still mouth fails the build. Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
 
 The live site uses this cut. `newsletter/published/issues.json` points at the
 public release file. `video.mp4` itself stays gitignored; `build.py` downloads it.

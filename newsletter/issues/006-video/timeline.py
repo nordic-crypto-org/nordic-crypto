@@ -3,7 +3,7 @@ import argparse, json, os, subprocess, wave, sys
 sys.path.insert(0, '.'); import content as C
 B = 'build/'; SR = 48000
 # Shorter lead and tail than the calm +2% issue #1 cut, matched to speech at +12%.
-LEAD, TAIL = 0.20, 0.30  # LEAD must match anchor_clips.LEAD
+LEAD, TAIL = 0.20, 0.30  # LEAD must match anchor_lipsync.LEAD
 TITLE_PAD, END_PAD = 0.34, 1.18
 FF = ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-threads', '1']
 ap = argparse.ArgumentParser()

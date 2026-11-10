@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: requirements.txt
       - run: python3 -m pip install -r requirements.txt
       - name: Tests
-        run: python3 -m unittest tests.test_event_title tests.test_event_translate tests.test_d1_events tests.test_newsletter_langs tests.test_send_issue tests.test_calendar_grid tests.test_calendar_follow tests.test_event_d1_feed tests.test_privacy_gate tests.test_story_images tests.test_cf_permission tests.test_x_feed tests.test_x_post_image && python3 tests/test_rss_feeds.py
+        run: python3 -m unittest tests.test_event_title tests.test_event_translate tests.test_d1_events tests.test_newsletter_langs tests.test_send_issue tests.test_calendar_grid tests.test_calendar_follow tests.test_event_d1_feed tests.test_privacy_gate tests.test_story_images tests.test_cf_permission tests.test_x_feed tests.test_x_post_image tests.test_anchor_lipsync && python3 tests/test_rss_feeds.py
       - name: Anders voice
         run: python3 -m unittest tests.test_anders_voice
       - name: Browser push tests

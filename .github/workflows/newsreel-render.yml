@@ -31,12 +31,17 @@ jobs:
           id="$IN"
           [ -z "$id" ] && id=$(ls -d newsletter/issues/*-video | sed 's#.*/##; s/-video$//' | sort | tail -1)
           echo "id=$id" >> "$GITHUB_OUTPUT"; echo "num=$((10#$id))" >> "$GITHUB_OUTPUT"
+      - name: Anders on camera
+        id: anchor
+        working-directory: newsletter/issues/${{ steps.pick.outputs.id }}-video
+        run: |
+          python3 -c 'import content, os; need = "true" if getattr(content, "ANCHOR_IMG", None) else "false"; open(os.environ["GITHUB_OUTPUT"], "a").write("need=%s\n" % need); print("Anders Fjell anchor:", need)'
       - name: Install
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python3 -m pip install -q -r newsletter/issues/${{ steps.pick.outputs.id }}-video/requirements.txt
       - name: Wav2Lip (lip-sync the anchor to the TTS voice)
-        if: hashFiles(format('newsletter/issues/{0}-video/lipsync.py', steps.pick.outputs.id)) != ''
+        if: steps.anchor.outputs.need == 'true'
         run: |
           set -euo pipefail
           python3 -m pip install -q torch --index-url https://download.pytorch.org/whl/cpu
@@ -58,11 +63,16 @@ jobs:
           set -euo pipefail
           mkdir -p build
           python3 tts.py
-          if [ -f lipsync.py ]; then python3 lipsync.py; fi  # build/anchor_<seg>.mp4: Anders' lips follow the voice
+          if [ "${{ steps.anchor.outputs.need }}" = "true" ]; then
+            python3 "$GITHUB_WORKSPACE/newsletter/anchor_lipsync.py"  # fails if the mouth does not move
+          fi
           python3 timeline.py
           python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
           python3 -c "import json; print('\n'.join(s['name'] for s in json.load(open('build/timeline.json'))['segs']))" \
             | xargs -P "$(nproc)" -I{} python3 render.py {}
+          if [ "${{ steps.anchor.outputs.need }}" = "true" ]; then
+            python3 "$GITHUB_WORKSPACE/newsletter/anchor_lipsync.py" --check-rendered
+          fi
           bash concat.sh build/timeline.json build build/mix.wav "build/nordic-crypto-${{ steps.pick.outputs.num }}-newsreel.mp4"
           python3 render.py thumb
           mkdir -p out && cp build/*-newsreel.mp4 thumbnail.png subs.srt script.txt build/subs.vtt out/
