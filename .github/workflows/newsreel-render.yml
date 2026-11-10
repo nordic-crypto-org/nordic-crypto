@@ -35,12 +35,30 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python3 -m pip install -q -r newsletter/issues/${{ steps.pick.outputs.id }}-video/requirements.txt
+      - name: Wav2Lip (lip-sync the anchor to the TTS voice)
+        if: hashFiles(format('newsletter/issues/{0}-video/lipsync.py', steps.pick.outputs.id)) != ''
+        run: |
+          set -euo pipefail
+          python3 -m pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          python3 -m pip install -q librosa opencv-python-headless scipy tqdm
+          git clone -q https://github.com/Rudrabha/Wav2Lip.git "$RUNNER_TEMP/w2l"
+          git -C "$RUNNER_TEMP/w2l" checkout -q bac9a81e63ecc153202353372e5724b83d9e6322
+          hf=https://huggingface.co/camenduru/Wav2Lip/resolve/main
+          curl -sfL -o "$RUNNER_TEMP/w2l/checkpoints/wav2lip_gan.pth" "$hf/checkpoints/wav2lip_gan.pth"
+          curl -sfL -o "$RUNNER_TEMP/w2l/face_detection/detection/sfd/s3fd.pth" "$hf/face_detection/detection/sfd/s3fd.pth"
+          (cd "$RUNNER_TEMP/w2l" && sha256sum -c - <<'SUMS'
+          ca9ab7b7b812c0e80a6e70a5977c545a1e8a365a6c49d5e533023c034d7ac3d8  checkpoints/wav2lip_gan.pth
+          619a31681264d3f7f7fc7a16a42cbbe8b23f31a256f75a366e5a1bcd59b33543  face_detection/detection/sfd/s3fd.pth
+          SUMS
+          )
+          echo "WAV2LIP=$RUNNER_TEMP/w2l" >> "$GITHUB_ENV"
       - name: Render
         working-directory: newsletter/issues/${{ steps.pick.outputs.id }}-video
         run: |
           set -euo pipefail
           mkdir -p build
           python3 tts.py
+          if [ -f lipsync.py ]; then python3 lipsync.py; fi  # build/anchor_<seg>.mp4: Anders' lips follow the voice
           python3 timeline.py
           python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
           python3 -c "import json; print('\n'.join(s['name'] for s in json.load(open('build/timeline.json'))['segs']))" \
