@@ -2210,6 +2210,11 @@
       "nullable": true,
       "description": "Registered participant count with source_name, source_url and retrieved. Omitted when the source did not state a count. Capacity is not a count."
      },
+     "map_url": {
+      "type": "string",
+      "nullable": true,
+      "description": "Verified map link. Omitted when the venue address was not checked."
+     },
      "html_url": {
       "type": "string",
       "description": "This event's page on the site, /calendar/<id>/."
@@ -2422,6 +2427,11 @@
          "type": "object",
          "nullable": true,
          "description": "Registered participant count with source_name, source_url and retrieved. Omitted when the source did not state a count. Capacity is not a count."
+        },
+        "map_url": {
+         "type": "string",
+         "nullable": true,
+         "description": "Verified map link. Omitted when the venue address was not checked."
         },
         "html_url": {
          "type": "string",
