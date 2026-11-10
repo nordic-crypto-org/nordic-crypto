@@ -10,3 +10,30 @@ table.sttab .stfill.z{min-width:0}
 table.sttab .stfrom{color:var(--muted);font-weight:400;margin-inline-start:6px}
 table.sttab .tag{margin-inline-start:6px}
 .stpolicy,.stpolicy h2,.stpolicy p{text-align:start}.stpolicy{max-width:46rem;margin:32px 0 0}.stpolicy p{margin:0 0 12px}
+/* Expandable per-day path list: native details/summary, large tap targets for iPhone Safari. */
+.stday>td{padding:0;white-space:normal}
+.stday details{margin:0}
+.stday summary{cursor:pointer;min-height:44px;padding:10px 12px;display:flex;align-items:center;gap:8px;box-sizing:border-box;list-style:none}
+.stday summary::-webkit-details-marker{display:none}
+.stday summary::before{content:"▸";flex:none;color:var(--muted);font-size:14px;line-height:1;width:1em}
+.stday details[open]>summary::before{content:"▾"}
+.stday summary:focus{outline:2px solid var(--accent);outline-offset:2px}
+.stsum{flex:1;min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.stdate{flex:1 1 100%;min-width:0}
+.stvisits,.stviews{flex:0 0 auto}
+.stday details[open]>summary{border-bottom:1px solid var(--soft)}
+.stpaths{width:100%;max-width:none;margin:0;padding:6px 12px 12px;white-space:normal}
+.stpaths th,.stpaths td{white-space:normal;font-variant-numeric:tabular-nums}
+.stpaths th[scope="row"]{word-break:break-word;font-weight:500}
+.stempty{margin:8px 12px 14px;color:var(--muted)}
+@media (max-width:32rem){
+  table.sttab .stbar{width:4.5rem;max-width:22vw}
+  .stpaths thead{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;width:1px;overflow:hidden;position:absolute;white-space:nowrap}
+  .stpaths tbody tr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:8px 0;border-bottom:1px solid var(--soft);align-items:baseline}
+  .stpaths tbody tr:last-child{border-bottom:0}
+  .stpaths th[scope="row"]{grid-column:1/-1;padding:0}
+  .stpaths td{padding:0;color:var(--muted)}
+  .stpaths td::before{font:500 11px/1.2 var(--f-mono,ui-monospace,Menlo,Consolas,monospace);letter-spacing:.03em;text-transform:uppercase;margin-inline-end:6px}
+  .stpaths td:first-of-type::before{content:attr(data-label)}
+  .stpaths td:last-of-type::before{content:attr(data-label)}
+}

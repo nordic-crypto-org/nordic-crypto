@@ -3,6 +3,39 @@
  "launch_date": "2026-10-03",
  "entries": [
   {
+   "id": "stats-daily-paths",
+   "date": null,
+   "review": "pending",
+   "title": "Expand a day on the stats page to see visits per page",
+   "description": "Each day in the last-30-days table on the stats page can be opened to see which page paths were visited that day, with visits and page views for each path. The numbers still come from Cloudflare Web Analytics. Only page paths are stored, with query strings removed, not IP addresses, user agents or referrers. The data policy on the same page is updated to describe this.",
+   "i18n": {
+    "nn": {
+     "title": "Opne ein dag på statistikksida for å sjå besøk per side",
+     "description": "Kvar dag i tabellen for dei siste 30 dagane på statistikksida kan opnast for å sjå kva sidestiar som vart vitja den dagen, med besøk og sidevisingar for kvar sti. Tala kjem framleis frå Cloudflare Web Analytics. Berre sidestiar vert lagra, utan spørjestrengar, ikkje IP-adresser, brukaragentar eller tilvisingar. Personvernerklæringa på same sida er oppdatert."
+    },
+    "nb": {
+     "title": "Åpne en dag på statistikksiden for å se besøk per side",
+     "description": "Hver dag i tabellen for de siste 30 dagene på statistikksiden kan åpnes for å se hvilke sidestier som ble besøkt den dagen, med besøk og sidevisninger for hver sti. Tallene kommer fortsatt fra Cloudflare Web Analytics. Bare sidestier lagres, uten spørrestrenger, ikke IP-adresser, brukeragenter eller henvisninger. Personvernerklæringen på samme side er oppdatert."
+    },
+    "sv": {
+     "title": "Öppna en dag på statistiksidan för att se besök per sida",
+     "description": "Varje dag i tabellen för de senaste 30 dagarna på statistiksidan kan öppnas för att se vilka sidsökvägar som besöktes den dagen, med besök och sidvisningar för varje sökväg. Siffrorna kommer fortfarande från Cloudflare Web Analytics. Bara sidsökvägar sparas, utan frågesträngar, inte IP-adresser, användaragenter eller hänvisningar. Datapolicyn på samma sida är uppdaterad."
+    },
+    "da": {
+     "title": "Åbn en dag på statistiksiden for at se besøg pr. side",
+     "description": "Hver dag i tabellen for de seneste 30 dage på statistiksiden kan åbnes for at se, hvilke sidestier der blev besøgt den dag, med besøg og sidevisninger for hver sti. Tallene kommer stadig fra Cloudflare Web Analytics. Kun sidestier gemmes, uden forespørgselsstrenge, ikke IP-adresser, brugeragenter eller henvisninger. Datapolitikken på samme side er opdateret."
+    },
+    "fi": {
+     "title": "Avaa päivä tilastosivulla nähdäksesi käynnit sivuittain",
+     "description": "Jokaisen tilastosivun viimeisten 30 päivän taulukon päivän voi avata nähdäkseen, millä sivupoluilla tuona päivänä käytiin, sekä käynnit ja sivunlataukset poluittain. Luvut tulevat edelleen Cloudflare Web Analyticsista. Tallennamme vain sivupolut ilman kyselyjonoja, emme IP-osoitteita, selaintunnisteita tai viittaajia. Sivun tietosuojakäytäntö on päivitetty."
+    },
+    "is": {
+     "title": "Opnaðu dag á tölfræðisíðunni til að sjá heimsóknir á hverja síðu",
+     "description": "Hvern dag í töflunni yfir síðustu 30 daga á tölfræðisíðunni má opna til að sjá hvaða slóðir síðna voru heimsóttar þann dag, með heimsóknum og síðuflettingum fyrir hverja slóð. Tölurnar koma enn úr Cloudflare Web Analytics. Aðeins slóðir síðna eru vistaðar, án fyrirspurnastrengja, ekki IP-tölur, auðkenni vafra eða tilvísanir. Gagnastefnan á sömu síðu hefur verið uppfærð."
+    }
+   }
+  },
+  {
    "id": "onion-tip-page",
    "date": null,
    "review": "pending",

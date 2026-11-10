@@ -1,5 +1,5 @@
 # Rewrites api/v1/stats.json on gh-pages once a day from Cloudflare Web Analytics.
-# Aggregate visits and page views per UTC day only (tools/fetch_stats.py). Does not republish the site.
+# Aggregate visits and page views per UTC day, plus per-path counts for the last 30 days (tools/fetch_stats.py). Does not republish the site.
 # Needs the secret CF_ANALYTICS_TOKEN (Account > Account Analytics > Read) and the repository variables
 # CF_ACCOUNT_ID and CF_WA_SITE_TAG. Without them the job says so and exits without a commit.
 # Do not enable xtrace: the token must never be printed.
