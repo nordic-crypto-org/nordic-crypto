@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { eventsToIcs } from "../src/ics.js";
 import { applyEventReview, applySourceUpsert, applyStoryReview, editorAuthorized, handle, planAcademiaUpsert, publicAcademia, publicEvent, publicImage, publicSource, publicStory } from "../src/worker.js";
 
 const TOKEN = "editor-token-for-tests";
@@ -523,4 +524,16 @@ test("public event ics drops a private email and keeps a verified map link", asy
   assert.match(flat, /https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=Sturegatan/);
   assert.equal(flat.includes("a@b.co"), false);
   assert.equal(flat.includes("123 45 67"), false);
+});
+
+test("event ics drops a url that carries a line break", () => {
+  const base = { id: "ab", title: "Meetup", start: "2026-11-19T18:00:00+01:00", city: "Oslo", country: "NO" };
+  for (const url of ["https://x.example/\r\nBEGIN:VALARM", "https://x.example/\nX", "https://x.example/\u2028X", "https://x.example/\u0085X", "https://x.example/ a"]) {
+    const text = eventsToIcs([{ ...base, url }], "2026-11-07T08:30:00Z");
+    assert.equal(text.includes("URL:"), false);
+    assert.equal(text.split("BEGIN:VEVENT").length, 2);
+    assert.equal(text.includes("VALARM"), false);
+  }
+  const ok = eventsToIcs([{ ...base, url: "https://example.org/e?a=1" }], "2026-11-07T08:30:00Z");
+  assert.equal(ok.replace(/\r\n[ \t]/g, "").includes("URL:https://example.org/e?a=1"), true);
 });
