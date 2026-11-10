@@ -1,4 +1,4 @@
-"""The calendar page has one Google Calendar button, and the ICS feed is valid.
+"""The calendar page has one Follow calendar menu, and the ICS feed is valid.
 
 New copy must not add a digit run the privacy gate treats as a phone number.
 The existing day-length literal in the live calendar script is left for the
@@ -20,8 +20,12 @@ from tools import event_ics
 from tools.privacy_gate import RULES
 
 PHONE = RULES["telefonnummer"]
-GCAL = "https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fnordiccrypto.no%2Fcalendar.ics"
 FEED = "https://nordiccrypto.no/calendar.ics"
+GCAL = "https://calendar.google.com/calendar/r?cid=https%3A%2F%2Fnordiccrypto.no%2Fcalendar.ics"
+APPLE = "webcal://nordiccrypto.no/calendar.ics"
+OUTLOOK = "https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fnordiccrypto.no%2Fcalendar.ics&name=Nordic%20Crypto"
+M365 = "https://outlook.office.com/calendar/0/addfromweb?url=https%3A%2F%2Fnordiccrypto.no%2Fcalendar.ics&name=Nordic%20Crypto"
+LABELS = ("cal_follow", "cal_gcal", "cal_apple", "cal_outlook", "cal_m365", "cal_copy", "cal_copied", "cal_apps")
 
 
 def row():
@@ -51,25 +55,38 @@ class FollowButton(unittest.TestCase):
         finally:
             build.SITE, build.PREVIEW, build.LANG = saved
 
-    def test_href_is_the_encoded_public_feed(self):
+    def test_subscribe_urls_use_the_one_https_feed(self):
+        self.assertEqual(build.calendar_feed_url(), FEED)
         self.assertEqual(build.google_calendar_href(), GCAL)
-        self.assertIn(FEED, urllib.parse.unquote(GCAL))
+        self.assertEqual(build.apple_calendar_href(), APPLE)
+        self.assertEqual(build.outlook_calendar_href("outlook.live.com"), OUTLOOK)
+        self.assertEqual(build.outlook_calendar_href("outlook.office.com"), M365)
+        for href in (GCAL, APPLE, OUTLOOK, M365, FEED):
+            self.assertIsNone(PHONE.search(href), href)
+            self.assertEqual(urllib.parse.unquote(href).count("nordiccrypto.no/calendar.ics"), 1)
 
-    def test_one_button_in_every_language(self):
+    def test_one_menu_in_every_language(self):
         for lang in i18n.ALL_LANGS:
             page = self.page(lang)
-            label = i18n.t(lang, "cal_follow")
-            self.assertTrue(i18n.has(lang, "cal_follow"), lang)
-            self.assertNotEqual(label, "", lang)
-            self.assertEqual(page.count('class="gcal-follow"'), 1, lang)
-            self.assertEqual(page.count(GCAL), 1, lang)
-            self.assertIn(">" + html.escape(label, quote=True) + "</a>", page, lang)
+            self.assertEqual(page.count('class="cal-follow"'), 1, lang)
+            summary = html.escape(i18n.t(lang, "cal_follow"), quote=True)
+            self.assertIn("<summary>" + summary + "</summary>", page, lang)
+            for key in LABELS:
+                self.assertTrue(i18n.has(lang, key), (lang, key))
+                label = i18n.t(lang, key)
+                self.assertNotEqual(label, "", (lang, key))
+                self.assertIsNone(PHONE.search(label), (lang, key))
+                self.assertIn(html.escape(label, quote=True), page, lang)
+            # Real anchors, so the menu works with no JavaScript. One feed only.
+            for href in (GCAL, APPLE, OUTLOOK, M365, FEED):
+                needle = 'href="' + html.escape(href, quote=True) + '"'
+                self.assertEqual(page.count(needle), 1, (lang, href))
+            self.assertIn('class="cal-copy"', page, lang)
+            self.assertIn('data-url="' + FEED + '"', page, lang)
+            self.assertIn('class="cal-feed-url"', page, lang)
+            self.assertIn('key!=="Escape"', page, lang)
+            self.assertIn("navigator.clipboard", page, lang)
             self.assertNotIn(">iCal<", page, lang)
-            self.assertNotIn("webcal:", page, lang)
-            self.assertNotIn("outlook.", page.lower(), lang)
-            self.assertIsNone(PHONE.search(label), lang)
-            self.assertIsNone(PHONE.search(GCAL), lang)
-            # The inlined live script still has its day-length literal. Anything else is new.
             found = [m.group(0) for line in page.splitlines() for m in PHONE.finditer(line)]
             self.assertTrue(all(hit == "86400000" for hit in found), (lang, found))
 
