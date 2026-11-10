@@ -1,10 +1,11 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T00:49:28+00:00",
+ "generated_at": "2026-11-10T06:35:05+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "NO",
+  "title": "Blockchain in healthcare and health sciences—A scoping review",
   "authors": [
    "Anton Hasselgren",
    "Katina Kralevska",
@@ -12,13 +13,16 @@
    "Sindre Andre Pedersen",
    "Arild Faxvaag"
   ],
-  "checked": "2026-11-09",
-  "country": "NO",
+  "institution": "Norwegian University of Science and Technology",
+  "year": 2019,
+  "type": "paper",
+  "venue": "International Journal of Medical Informatics",
+  "doi": "10.1016/j.ijmedinf.2019.104040",
+  "url": "https://www.sciencedirect.com/science/article/pii/S138650561930526X/pdf",
   "db": "https://www.sciencedirect.com/science/article/pii/S138650561930526X/pdf",
   "db_name": "openalex",
-  "doi": "10.1016/j.ijmedinf.2019.104040",
-  "id": "doi-10.1016_j.ijmedinf.2019.104040",
-  "institution": "Norwegian University of Science and Technology",
+  "source": "https://www.sciencedirect.com/science/article/pii/S138650561930526X/pdf",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Interoperability",
@@ -29,14 +33,10 @@
    "Health records",
    "Health information technology"
   ],
+  "checked": "2026-11-10",
   "origin": "research/academia/works.json",
-  "source": "https://www.sciencedirect.com/science/article/pii/S138650561930526X/pdf",
-  "title": "Blockchain in healthcare and health sciences—A scoping review",
-  "type": "paper",
-  "url": "https://www.sciencedirect.com/science/article/pii/S138650561930526X/pdf",
-  "venue": "International Journal of Medical Informatics",
-  "year": 2019,
   "about_i18n": {},
+  "id": "doi-10.1016_j.ijmedinf.2019.104040",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.ijmedinf.2019.104040.json"
  }

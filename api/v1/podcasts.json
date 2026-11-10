@@ -1,11 +1,52 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T00:49:28+00:00",
+ "generated_at": "2026-11-10T06:35:05+00:00",
  "preview": false,
- "updated": "2026-11-09T03:18:51+00:00",
+ "updated": "2026-11-10T04:06:08+00:00",
  "count": 43,
  "podcasts": [
+  {
+   "id": "bitcoin-infinity-show",
+   "name": "The Bitcoin Infinity Show",
+   "country": "SE",
+   "language": "en",
+   "feed": "https://feeds.fountain.fm/PGQg9eWxyOcGhx0uXamY",
+   "site": "https://www.bitcoininfinityshow.com/",
+   "flags": [
+    "affiliate-links"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "From Broken Mast to Bitcoin with Michal & Pavla Nydrle | Bitcoin Infinity Show #228",
+     "date": "2026-11-09",
+     "link": "https://fountain.fm/episode/YlppTj4ERGHVWr0gtSys"
+    },
+    {
+     "title": "A Master’s Degree in Bitcoin with Kristyna Mazankova | Bitcoin Infinity Show #227",
+     "date": "2026-11-02",
+     "link": "https://fountain.fm/episode/YuhvvQqYx38Zfk0o6zeM"
+    },
+    {
+     "title": "Why Every Bitcoiner Needs Two Stacks | Matouš Ledvina | BIS #226",
+     "date": "2026-10-26",
+     "link": "https://fountain.fm/episode/LCBFlvuIOfH0OwBT68Ic"
+    },
+    {
+     "title": "You Don’t Own Your Bitcoin | Stephan Kinsella | BIS #225",
+     "date": "2026-10-19",
+     "link": "https://fountain.fm/episode/pK9ea5rMNjKS1gMhFRKW"
+    },
+    {
+     "title": "What If You Could Fire Your Government? | Brendan Guest | BIS #224",
+     "date": "2026-10-12",
+     "link": "https://fountain.fm/episode/ziNikowwA7Myi6a7wkw0"
+    }
+   ],
+   "added_at": "2026-11-05",
+   "html_url": "https://nordiccrypto.no/podcasts/#bitcoin-infinity-show"
+  },
   {
    "id": "hladvarp-myntkaupa",
    "name": "Hlaðvarp Myntkaupa",
@@ -167,47 +208,6 @@
    ],
    "added_at": "2026-10-16",
    "html_url": "https://nordiccrypto.no/podcasts/#firi-ugens-kryptosnak"
-  },
-  {
-   "id": "bitcoin-infinity-show",
-   "name": "The Bitcoin Infinity Show",
-   "country": "SE",
-   "language": "en",
-   "feed": "https://feeds.fountain.fm/PGQg9eWxyOcGhx0uXamY",
-   "site": "https://www.bitcoininfinityshow.com/",
-   "flags": [
-    "affiliate-links"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "A Master’s Degree in Bitcoin with Kristyna Mazankova | Bitcoin Infinity Show #227",
-     "date": "2026-11-02",
-     "link": "https://fountain.fm/episode/YuhvvQqYx38Zfk0o6zeM"
-    },
-    {
-     "title": "Why Every Bitcoiner Needs Two Stacks | Matouš Ledvina | BIS #226",
-     "date": "2026-10-26",
-     "link": "https://fountain.fm/episode/LCBFlvuIOfH0OwBT68Ic"
-    },
-    {
-     "title": "You Don’t Own Your Bitcoin | Stephan Kinsella | BIS #225",
-     "date": "2026-10-19",
-     "link": "https://fountain.fm/episode/pK9ea5rMNjKS1gMhFRKW"
-    },
-    {
-     "title": "What If You Could Fire Your Government? | Brendan Guest | BIS #224",
-     "date": "2026-10-12",
-     "link": "https://fountain.fm/episode/ziNikowwA7Myi6a7wkw0"
-    },
-    {
-     "title": "Why Bitcoin Miners Ignored BIP-110 with Bob Burnett | Bitcoin Infinity Show #223",
-     "date": "2026-10-05",
-     "link": "https://fountain.fm/episode/LKVLxYdPp0s0tnAQgUTF"
-    }
-   ],
-   "added_at": "2026-11-05",
-   "html_url": "https://nordiccrypto.no/podcasts/#bitcoin-infinity-show"
   },
   {
    "id": "bpi",

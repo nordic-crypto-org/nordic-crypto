@@ -1,20 +1,24 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T00:49:28+00:00",
+ "generated_at": "2026-11-10T06:35:05+00:00",
  "preview": false,
  "item": {
-  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
+  "country": "SE",
+  "title": "Blockchain Business Models in EV Battery Circularity from the Technology Provider’s Perspective",
   "authors": [
    "Shaji, Jubin"
   ],
-  "checked": "2026-11-09",
-  "country": "SE",
+  "institution": "Uppsala University",
+  "year": 2025,
+  "type": "phd",
+  "venue": "PhD dissertation",
+  "doi": null,
+  "url": "https://uu.diva-portal.org/smash/get/diva2:2000807/FULLTEXT01",
   "db": "https://uu.diva-portal.org/smash/get/diva2:2000807/FULLTEXT01",
   "db_name": "openalex",
-  "doi": null,
-  "id": "publications-uu.diva-portal.org-smash-get-diva2-2000807-FULLTEXT01",
-  "institution": "Uppsala University",
+  "source": "https://uu.diva-portal.org/smash/get/diva2:2000807/FULLTEXT01",
+  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
   "keywords": [
    "Business model",
    "Interoperability",
@@ -25,14 +29,10 @@
    "Battery (electricity)",
    "Context (archaeology)"
   ],
+  "checked": "2026-11-10",
   "origin": "research/academia/works.json",
-  "source": "https://uu.diva-portal.org/smash/get/diva2:2000807/FULLTEXT01",
-  "title": "Blockchain Business Models in EV Battery Circularity from the Technology Provider’s Perspective",
-  "type": "phd",
-  "url": "https://uu.diva-portal.org/smash/get/diva2:2000807/FULLTEXT01",
-  "venue": "PhD dissertation",
-  "year": 2025,
   "about_i18n": {},
+  "id": "publications-uu.diva-portal.org-smash-get-diva2-2000807-FULLTEXT01",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/publications-uu.diva-portal.org-smash-get-diva2-2000807-FULLTEXT01.json"
  }
