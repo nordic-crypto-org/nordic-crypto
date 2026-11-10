@@ -55,6 +55,14 @@ function fold(line) {
   return parts.join("\r\n");
 }
 
+// A URI property value is written raw, so it must not carry anything that
+// could end the content line: no whitespace, controls or Unicode line breaks.
+const URI = /^https:\/\/[^\s\x00-\x1f\x7f-\x9f\u2028\u2029]+$/;
+
+function uriValue(value) {
+  return typeof value === "string" && URI.test(value) ? value : "";
+}
+
 function httpsUrl(value) {
   if (typeof value !== "string") return "";
   const text = value.trim();
@@ -106,7 +114,8 @@ export function eventsToIcs(events, now) {
     const address = locationOf(event);
     const loc = address || httpsUrl(event.map_url);
     if (loc) lines.push("LOCATION:" + escapeText(loc));
-    if (typeof event.url === "string" && event.url.startsWith("https://")) lines.push("URL:" + event.url);
+    const url = uriValue(event.url);
+    if (url) lines.push("URL:" + url);
     const desc = descriptionOf(event, address);
     if (desc) lines.push("DESCRIPTION:" + escapeText(desc));
     lines.push("END:VEVENT");
