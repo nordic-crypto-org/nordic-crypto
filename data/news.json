@@ -1,6 +1,214 @@
 {
  "items": [
   {
+   "id": "43033a5f3973",
+   "url": "https://realtid.se/bors-finans/bank-fintech/nya-uppgifter-om-jattestolden-ensam-datadetektiv-bakom-upptackt",
+   "title": "Nya uppgifter om jättestölden: Ensam datadetektiv bakom upptäckt",
+   "title_en": null,
+   "source": "realtid",
+   "source_name": "Realtid",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "realtid",
+   "seen_via": [
+    "realtid"
+   ],
+   "published": "2026-11-09T16:24:41+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "blockchain"
+   ],
+   "matched": [
+    "\\bblockkedj\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "e686f18be9a7",
+   "url": "https://kryptovalutaguiden.se/2026/11/robinhood-lanserar-ipo-access-i-storbritannien-for-retail-investerare",
+   "title": "Robinhood lanserar IPO Access i Storbritannien för retail investerare",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-09T15:29:28+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "f9044f555b4a",
+   "url": "https://ruv.is/frettir/erlent/2026-11-09-nordmenn-herda-reglur-um-byggingu-gagnavera-492205",
+   "title": "Norðmenn herða reglur um byggingu gagnavera",
+   "title_en": null,
+   "source": "ruv",
+   "source_name": "RÚV",
+   "country": "IS",
+   "language": "Icelandic",
+   "via": "ruv",
+   "seen_via": [
+    "ruv"
+   ],
+   "published": "2026-11-09T14:32:23+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\brafmynt\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "f56778b50848",
+   "url": "https://itavisen.no/2026/11/09/regjeringen-datasentre-strom-ai-krypto-konsesjon",
+   "title": "Regjeringen vil bestemme hvem som får strøm",
+   "title_en": null,
+   "source": "itavisen",
+   "source_name": "ITavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "itavisen",
+   "seen_via": [
+    "itavisen",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-09T10:09:32+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "e8fac7701c95",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "be1f4058adbd",
+   "url": "https://shifter.no/nyheter/datasentre-som-driver-med-kryptovirksomhet-vil-ikke-regnes-som-samfunnsnyttige/482056",
+   "title": "– Datasentre som driver med kryptovirksomhet, vil ikke regnes som samfunnsnyttige",
+   "title_en": null,
+   "source": "shifter",
+   "source_name": "Shifter",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "shifter",
+   "seen_via": [
+    "shifter"
+   ],
+   "published": "2026-11-09T08:53:10+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "0c4bba319b97",
+   "url": "https://sagat.no/fakta-handlingsrom-og-ansvar-i-arctic-core-saken/19.60461",
+   "title": "Debatt: Fakta, handlingsrom og ansvar i Arctic Core-saken",
+   "title_en": null,
+   "source": "sagat",
+   "source_name": "Ságat",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "sagat",
+   "seen_via": [
+    "sagat"
+   ],
+   "published": "2026-11-09T08:43:26+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "e8fac7701c95",
+   "url": "https://dn.no/politikk/regjeringen-varsler-konsesjonsordning-for-datasentre/2-1-2071213",
+   "title": "Regjeringen varsler konsesjonsordning for datasentre",
+   "title_en": null,
+   "source": "dn",
+   "source_name": "Dagens Næringsliv",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "dn",
+   "seen_via": [
+    "dn"
+   ],
+   "published": "2026-11-09T08:35:41+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "be1f4058adbd",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "c131c4638afd",
+   "url": "https://dn.no/teknologi/tydal-data-center/datasenter/troll-housing/professor-mer-enn-doblet-formuen-etter-datasentersalg/2-1-2062442",
+   "title": "Professor mer enn doblet formuen etter datasentersalg",
+   "title_en": null,
+   "source": "dn",
+   "source_name": "Dagens Næringsliv",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "dn",
+   "seen_via": [
+    "dn",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-09T03:03:54+00:00",
+   "fetched": "2026-11-10T03:01:13+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
    "id": "73c8ad21c786",
    "url": "https://kryptovalutaguiden.se/2026/11/nvidia-skandal-exploderar-jensen-huang-erkanner-otrohet-och-styrelsen-inleder-utredning",
    "title": "Nvidia-skandal exploderar – Jensen Huang erkänner otrohet och styrelsen inleder utredning",
@@ -6016,7 +6224,8 @@
    "via": "aftenposten",
    "seen_via": [
     "aftenposten",
-    "bing-no-kn"
+    "bing-no-kn",
+    "bing-no"
    ],
    "published": "2026-10-30T07:40:57+00:00",
    "fetched": "2026-10-31T02:45:22+00:00",
@@ -18215,5 +18424,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-09T02:49:06+00:00"
+ "updated": "2026-11-10T03:01:13+00:00"
 }
