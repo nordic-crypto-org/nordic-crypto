@@ -28,6 +28,7 @@ def main():
     check(ed.usable("Bitcoin meetup", "Bitcoin meetup") == "", "title is not a description")
     check(ed.record("Short.", "en", "https://waset.org/e", "WASET", "2026-10-07T23:50:00+00:00") is None, "predatory url refused")
     check(ed.record("A real bitcoin meetup for people in Oslo who want to talk.", "en", "https://internationalconferencealerts.com/x", "ICA", "2026-10-07T23:50:00+00:00") is None, "listing site refused")
+    check(ed.record("Get up-to-date information at: Hosted by Nordic Blockchain Association, Jakob & Mathias", None, "https://luma.com/3t0mja0z", "Luma", "2026-11-11T03:21:18+00:00") is None, "description with unknown language refused")
     kept = ed.record(
         "This event is a bitcoin meetup in Gothenburg for people who want to talk.",
         "en", "https://www.meetup.com/swedish-bitcoin-meetups/events/1/", "Meetup", "2026-10-07T23:50:00+00:00",
