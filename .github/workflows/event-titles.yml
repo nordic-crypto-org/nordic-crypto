@@ -42,7 +42,13 @@ jobs:
         env:
           CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
           CF_ACCOUNT_ID: ${{ vars.CF_ACCOUNT_ID }}
-        run: python3 tools/event_translate.py
+        # A language call can time out; event_translate.py fills only what is missing, so run it again.
+        run: |
+          for i in 1 2 3; do
+            python3 tools/event_translate.py
+            python3 -m unittest -q tests.test_event_title tests.test_event_translate && break
+          done
+          true
 
       - name: Commit translations
         run: |
@@ -60,5 +66,5 @@ jobs:
           done
           exit 1
 
-      - name: Every event has a title in every language
-        run: python3 -m unittest tests.test_event_title
+      - name: Every event has a title and description in every language
+        run: python3 -m unittest tests.test_event_title tests.test_event_translate
