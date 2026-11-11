@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "FI",
+  "title": "Blockchained On-Device Federated Learning",
   "authors": [
    "Hyesung Kim",
    "Jihong Park",
    "Mehdi Bennis",
    "Seong‐Lyun Kim"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "University of Oulu",
+  "year": 2019,
+  "type": "paper",
+  "venue": "IEEE Communications Letters",
+  "doi": "10.1109/lcomm.2019.2921755",
+  "url": "https://figshare.com/articles/journal_contribution/Blockchained_on-device_federated_learning/20699986",
   "db": "https://figshare.com/articles/journal_contribution/Blockchained_on-device_federated_learning/20699986",
   "db_name": "openalex",
-  "doi": "10.1109/lcomm.2019.2921755",
-  "id": "doi-10.1109_lcomm.2019.2921755",
-  "institution": "University of Oulu",
+  "source": "https://figshare.com/articles/journal_contribution/Blockchained_on-device_federated_learning/20699986",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Computer science",
    "Federated learning",
@@ -28,14 +32,10 @@
    "Computation",
    "Blockchain"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://figshare.com/articles/journal_contribution/Blockchained_on-device_federated_learning/20699986",
-  "title": "Blockchained On-Device Federated Learning",
-  "type": "paper",
-  "url": "https://figshare.com/articles/journal_contribution/Blockchained_on-device_federated_learning/20699986",
-  "venue": "IEEE Communications Letters",
-  "year": 2019,
   "about_i18n": {},
+  "id": "doi-10.1109_lcomm.2019.2921755",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_lcomm.2019.2921755.json"
  }

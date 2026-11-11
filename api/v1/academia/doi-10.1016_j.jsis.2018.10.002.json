@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "SE",
+  "title": "Affordances, experimentation and actualization of FinTech: A blockchain implementation study",
   "authors": [
    "Wenyu Du",
    "Shan Ling Pan",
    "Dorothy E. Leidner",
    "Wenchi Ying"
   ],
-  "checked": "2026-11-09",
-  "country": "SE",
+  "institution": "Lund University",
+  "year": 2018,
+  "type": "paper",
+  "venue": "The Journal of Strategic Information Systems",
+  "doi": "10.1016/j.jsis.2018.10.002",
+  "url": "https://figshare.com/articles/journal_contribution/Affordances_experimentation_and_actualization_of_FinTech_A_blockchain_implementation_study/20610060",
   "db": "https://openalex.org/W2899766515",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.jsis.2018.10.002",
-  "id": "doi-10.1016_j.jsis.2018.10.002",
-  "institution": "Lund University",
+  "source": "https://figshare.com/articles/journal_contribution/Affordances_experimentation_and_actualization_of_FinTech_A_blockchain_implementation_study/20610060",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Affordance",
@@ -28,14 +32,10 @@
    "Conceptual framework",
    "Process management"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://figshare.com/articles/journal_contribution/Affordances_experimentation_and_actualization_of_FinTech_A_blockchain_implementation_study/20610060",
-  "title": "Affordances, experimentation and actualization of FinTech: A blockchain implementation study",
-  "type": "paper",
-  "url": "https://figshare.com/articles/journal_contribution/Affordances_experimentation_and_actualization_of_FinTech_A_blockchain_implementation_study/20610060",
-  "venue": "The Journal of Strategic Information Systems",
-  "year": 2018,
   "about_i18n": {},
+  "id": "doi-10.1016_j.jsis.2018.10.002",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.jsis.2018.10.002.json"
  }

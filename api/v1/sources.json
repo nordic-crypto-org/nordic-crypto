@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "user_agent": "NordicCryptoBot/0.1 (+__SITE__about/; news headline bot)",
  "min_delay_seconds": 2,
@@ -31900,22 +31900,6 @@
    "status": "public post only; a sign-in wall is skipped and nothing is added",
    "method": "Public LinkedIn post, read without signing in. Date, time and Sturegatan 15 must be visible. A login wall is not a source.",
    "intake": "linkedin-public",
-   "ics": null,
-   "organizer_id": null,
-   "venue_id": null
-  },
-  {
-   "id": "undoqo-plebs",
-   "name": "Undoqo / Plebs of Trondheim",
-   "url": "https://undoqo.com/blogs/nyheter",
-   "country": "NO",
-   "city": null,
-   "organiser": "Undoqo / Plebs of Trondheim",
-   "enabled": false,
-   "trusted": false,
-   "status": "manual check: Shopify blog accordion of events; Atom feeds empty; listed dates have no year. Verify each event's year and location (venue, street address, map link) against the official source before publishing. Also check https://undoqo.com/blogs/events (same accordion list as of 2026-11-09).",
-   "method": "Researcher checks by hand. No iCal/JSON-LD/RSS articles to fetch.",
-   "intake": "manual",
    "ics": null,
    "organizer_id": null,
    "venue_id": null

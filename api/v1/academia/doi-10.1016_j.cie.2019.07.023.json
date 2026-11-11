@@ -1,21 +1,25 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "FI",
+  "title": "Blockchains in operations and supply chains: A model and reference implementation",
   "authors": [
    "Petri Helo",
    "Yuqiuge Hao"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "University of Vaasa",
+  "year": 2019,
+  "type": "paper",
+  "venue": "Computers & Industrial Engineering",
+  "doi": "10.1016/j.cie.2019.07.023",
+  "url": "https://osuva.uwasa.fi/bitstreams/fceea3e6-6c56-48c6-ab31-866bf4b27cfe/download",
   "db": "https://openalex.org/W2956919429",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.cie.2019.07.023",
-  "id": "doi-10.1016_j.cie.2019.07.023",
-  "institution": "University of Vaasa",
+  "source": "https://osuva.uwasa.fi/bitstreams/fceea3e6-6c56-48c6-ab31-866bf4b27cfe/download",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Supply chain",
@@ -26,14 +30,10 @@
    "Scope (computer science)",
    "Software"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://osuva.uwasa.fi/bitstreams/fceea3e6-6c56-48c6-ab31-866bf4b27cfe/download",
-  "title": "Blockchains in operations and supply chains: A model and reference implementation",
-  "type": "paper",
-  "url": "https://osuva.uwasa.fi/bitstreams/fceea3e6-6c56-48c6-ab31-866bf4b27cfe/download",
-  "venue": "Computers & Industrial Engineering",
-  "year": 2019,
   "about_i18n": {},
+  "id": "doi-10.1016_j.cie.2019.07.023",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.cie.2019.07.023.json"
  }

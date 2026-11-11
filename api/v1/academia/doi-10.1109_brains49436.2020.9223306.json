@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "TrustVote: On Elections We Trust with Distributed Ledgers and Smart Contracts",
   "authors": [
    "Majd Soud",
    "Sigureur Helgason",
    "Gísli Hjálmtýsson",
    "Mohammad Hamdaqa"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2020,
+  "type": "conference",
+  "venue": "Conference on Blockchain Research & Applications for Innovative Networks and Services (BRAINS)",
+  "doi": "10.1109/brains49436.2020.9223306",
+  "url": "https://doi.org/10.1109/brains49436.2020.9223306",
   "db": "https://doi.org/10.1109/brains49436.2020.9223306",
   "db_name": "openalex",
-  "doi": "10.1109/brains49436.2020.9223306",
-  "id": "doi-10.1109_brains49436.2020.9223306",
-  "institution": "Reykjavík University",
+  "source": "https://doi.org/10.1109/brains49436.2020.9223306",
+  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Voting",
    "Blockchain",
@@ -28,14 +32,10 @@
    "Internet privacy",
    "Political science"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1109/brains49436.2020.9223306",
-  "title": "TrustVote: On Elections We Trust with Distributed Ledgers and Smart Contracts",
-  "type": "conference",
-  "url": "https://doi.org/10.1109/brains49436.2020.9223306",
-  "venue": "Conference on Blockchain Research & Applications for Innovative Networks and Services (BRAINS)",
-  "year": 2020,
   "about_i18n": {},
+  "id": "doi-10.1109_brains49436.2020.9223306",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_brains49436.2020.9223306.json"
  }

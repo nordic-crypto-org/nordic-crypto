@@ -1,21 +1,25 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "The ChatGPT effect on AI-themed cryptocurrencies",
   "authors": [
    "Lennart Ante",
    "Ender Demir"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2024,
+  "type": "paper",
+  "venue": "Economics and Business Letters",
+  "doi": "10.17811/ebl.13.1.2024.29-38",
+  "url": "https://reunido.uniovi.es/index.php/EBL/article/download/19453/16191",
   "db": "https://reunido.uniovi.es/index.php/EBL/article/download/19453/16191",
   "db_name": "openalex",
-  "doi": "10.17811/ebl.13.1.2024.29-38",
-  "id": "doi-10.17811_ebl.13.1.2024.29-38",
-  "institution": "Reykjavík University",
+  "source": "https://reunido.uniovi.es/index.php/EBL/article/download/19453/16191",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Cryptocurrency",
    "Chatbot",
@@ -26,14 +30,10 @@
    "Monetary economics",
    "Computer security"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://reunido.uniovi.es/index.php/EBL/article/download/19453/16191",
-  "title": "The ChatGPT effect on AI-themed cryptocurrencies",
-  "type": "paper",
-  "url": "https://reunido.uniovi.es/index.php/EBL/article/download/19453/16191",
-  "venue": "Economics and Business Letters",
-  "year": 2024,
   "about_i18n": {},
+  "id": "doi-10.17811_ebl.13.1.2024.29-38",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.17811_ebl.13.1.2024.29-38.json"
  }

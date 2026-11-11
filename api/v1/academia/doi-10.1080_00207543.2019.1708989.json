@@ -1,21 +1,25 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T23:22:44+00:00",
+ "generated_at": "2026-11-11T06:44:09+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "FI",
+  "title": "A supply chain transparency and sustainability technology appraisal model for blockchain technology",
   "authors": [
    "Chunguang April Bai",
    "Joseph Sarkis"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "Hanken School of Economics",
+  "year": 2020,
+  "type": "paper",
+  "venue": "International Journal of Production Research",
+  "doi": "10.1080/00207543.2019.1708989",
+  "url": "https://doi.org/10.1080/00207543.2019.1708989",
   "db": "https://doi.org/10.1080/00207543.2019.1708989",
   "db_name": "openalex",
-  "doi": "10.1080/00207543.2019.1708989",
-  "id": "doi-10.1080_00207543.2019.1708989",
-  "institution": "Hanken School of Economics",
+  "source": "https://doi.org/10.1080/00207543.2019.1708989",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Transparency (behavior)",
@@ -26,14 +30,10 @@
    "Decision maker",
    "Sustainability"
   ],
+  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1080/00207543.2019.1708989",
-  "title": "A supply chain transparency and sustainability technology appraisal model for blockchain technology",
-  "type": "paper",
-  "url": "https://doi.org/10.1080/00207543.2019.1708989",
-  "venue": "International Journal of Production Research",
-  "year": 2020,
   "about_i18n": {},
+  "id": "doi-10.1080_00207543.2019.1708989",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1080_00207543.2019.1708989.json"
  }
