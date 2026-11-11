@@ -1,11 +1,11 @@
 # Nordic Crypto issue #4 — newsreel (site cut)
 
-Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good evening, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, and signs off ("I'm Anders Fjell. See you next week."). Story cards in this issue are graphics; Anders is on camera only for the open and the sign-off. `newsletter/anchor_lipsync.py` lip-syncs those two segments. A missing clip or a still mouth fails the build. Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
+Source tooling for newsletter issue #4, presented by the fictional anchor **Anders Fjell** (`anchor-v1.jpg`: grey-haired man, navy suit, teal tie, teal/gold studio). He opens ("Good morning, I'm Anders Fjell, and this is Nordic Crypto."), has an "Anders Fjell" lower third, reads every story on camera, and signs off ("I'm Anders Fjell. See you next week."). `newsletter/anchor_lipsync.py` lip-syncs every segment whose kind is in `content.ON_CAMERA` (open, this week, stories, close, sign-off) to the Finn voice from `tts.py`. A missing clip or a still mouth fails the build. Rendered on GitHub Actions by `.github/workflows/newsreel-render.yml`, not locally. Newsreel cut only.
 
 The live site uses this cut. `newsletter/published/issues.json` points at the
 public release file. `video.mp4` itself stays gitignored; `build.py` downloads it.
 
-Voice: edge-tts `en-GB-ThomasNeural` at `+20%` (a step up from the `+12%` issue #2 cut, so this longer week still finishes in about three minutes). `tts.py` sends that voice to
+Voice: edge-tts `nb-NO-FinnNeural` (male Norwegian Bokmål, English script) at `+20%` (a step up from the `+12%` issue #2 cut, so this longer week still finishes in about three minutes). `tts.py` sends that voice to
 `api.msedgeservices.com`, the host Edge 155 uses. `speech.platform.bing.com` answers
 the synthesis socket with 403. Straight male newsreader in the manner of
 NRK's Gislefoss: calm, clear, no jokes. Lead and tail pauses are shorter than the
@@ -41,14 +41,23 @@ description when `--description` is not given:
 
 Custom thumbnails follow the same rule as the cover images: no third-party logos.
 
+## Anders on camera
+
+`render.py` puts the lip-synced plate (`build/anchor_<seg>.mp4`) under every on-camera segment and draws all text
+on top: the story picture in a panel to the right of his face, the "This week" headlines and the close in a column
+beside him, lower thirds, ticker and clock as before. The vertical cut keeps the graphics layouts for stories.
+The final mix is loudness-normalised to -16 LUFS in `concat.sh`.
+
 ## Rebuild the site cut
 
 ```bash
 python3 -m pip install -r requirements.txt
 python3 tts.py
+WAV2LIP=/path/to/Wav2Lip python3 ../../anchor_lipsync.py   # fails if the mouth does not move
 python3 timeline.py
 python3 audio.py --style news --timeline build/timeline.json --mix build/mix.wav
 bash render_all.sh
+python3 ../../anchor_lipsync.py --check-rendered
 bash concat.sh build/timeline.json build build/mix.wav build/nordic-crypto-3-newsreel.mp4
 python3 render.py thumb
 ```
