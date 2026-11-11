@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-10T11:24:43Z",
+ "generated_at": "2026-11-11T11:12:30Z",
  "preview": false,
  "source": "Cloudflare Web Analytics",
  "status": "ok",
@@ -9,26 +9,54 @@
  "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. For each of the last 30 UTC days, paths lists visits and page views per page path, with query strings and fragments removed. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
  "schema": 2,
  "first_date": "2026-10-17",
- "last_date": "2026-11-10",
- "updated_at": "2026-11-10T11:24:43Z",
+ "last_date": "2026-11-11",
+ "updated_at": "2026-11-11T11:12:30Z",
  "daily": [
   {
    "date": "2026-10-17",
    "visits": 50,
    "pageviews": 60,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 40,
+     "pageviews": 40
+    },
+    {
+     "path": "/token",
+     "visits": 10,
+     "pageviews": 20
+    }
+   ]
   },
   {
    "date": "2026-10-18",
    "visits": 10,
    "pageviews": 10,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 10,
+     "pageviews": 10
+    }
+   ]
   },
   {
    "date": "2026-10-19",
    "visits": 20,
    "pageviews": 30,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 20,
+     "pageviews": 20
+    },
+    {
+     "path": "/token",
+     "visits": 0,
+     "pageviews": 10
+    }
+   ]
   },
   {
    "date": "2026-10-20",
@@ -40,7 +68,13 @@
    "date": "2026-10-21",
    "visits": 10,
    "pageviews": 10,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 10,
+     "pageviews": 10
+    }
+   ]
   },
   {
    "date": "2026-10-22",
@@ -94,7 +128,13 @@
    "date": "2026-10-30",
    "visits": 10,
    "pageviews": 10,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 10,
+     "pageviews": 10
+    }
+   ]
   },
   {
    "date": "2026-10-31",
@@ -142,22 +182,62 @@
    "date": "2026-11-07",
    "visits": 120,
    "pageviews": 120,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 79,
+     "pageviews": 84
+    }
+   ]
   },
   {
    "date": "2026-11-08",
    "visits": 0,
    "pageviews": 20,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 26,
+     "pageviews": 27
+    },
+    {
+     "path": "/stats",
+     "visits": 2,
+     "pageviews": 9
+    },
+    {
+     "path": "/player",
+     "visits": 0,
+     "pageviews": 1
+    }
+   ]
   },
   {
    "date": "2026-11-09",
    "visits": 0,
    "pageviews": 0,
-   "paths": []
+   "paths": [
+    {
+     "path": "/",
+     "visits": 1,
+     "pageviews": 1
+    }
+   ]
   },
   {
    "date": "2026-11-10",
+   "visits": 0,
+   "pageviews": 0,
+   "paths": [
+    {
+     "path": "/",
+     "visits": 1,
+     "pageviews": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
    "visits": 0,
    "pageviews": 0,
    "partial": true,
@@ -204,7 +284,7 @@
   {
    "week": "2026-W46",
    "start": "2026-11-09",
-   "days": 2,
+   "days": 3,
    "visits": 0,
    "pageviews": 0,
    "end": "2026-11-15",
@@ -221,7 +301,7 @@
   },
   {
    "month": "2026-11",
-   "days": 10,
+   "days": 11,
    "visits": 120,
    "pageviews": 140,
    "partial": true
