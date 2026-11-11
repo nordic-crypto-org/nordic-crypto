@@ -169,6 +169,9 @@ def record(text, lang, source_url, source_name, retrieved, title=None):
     if not text:
         return None
     code = lang if lang in KNOWN else lang_code(lang)
+    if not code:
+        # The schema requires a language and problems() blocks a description without one.
+        return None
     return {
         "text": text,
         "lang": code,
