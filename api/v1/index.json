@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-11T06:44:09+00:00",
+ "generated_at": "2026-11-11T06:58:46+00:00",
  "preview": false,
  "title": "Nordic Crypto data API",
  "sign_off": "The Nordic Crypto team",
@@ -40,18 +40,18 @@
    "EU": 0
   },
   "newsletters": 6,
-  "events": 24,
-  "events_upcoming": 13,
+  "events": 28,
+  "events_upcoming": 14,
   "events_ongoing": 0,
-  "events_past": 11,
-  "events_previous": 61,
+  "events_past": 14,
+  "events_previous": 64,
   "talks": 170,
   "sources": 1042,
   "academia": {
-   "courses": 7,
-   "groups": 3,
+   "courses": 9,
+   "groups": 4,
    "publications": 408,
-   "research": 3
+   "research": 31
   },
   "books": 25,
   "podcasts": 43,
@@ -151,8 +151,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/events.json",
    "summary": "Public events, soonest start first, including past events.",
    "schema": "EventList",
-   "example_url": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
+   "example_url": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
    "item_path": "/api/v1/events/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/events/{id}.json"
   },
@@ -289,8 +289,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/academia/{id}.json",
    "summary": "One academia row. The id is in academia.json.",
    "schema": "AcademiaItem",
-   "example_url": "https://nordiccrypto.no/api/v1/academia/NO-TTM4195.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/academia/NO-TTM4195.json"
+   "example_url": "https://nordiccrypto.no/api/v1/academia/FI-CS-AJ0100.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/academia/FI-CS-AJ0100.json"
   },
   {
    "id": "api-v1-books",

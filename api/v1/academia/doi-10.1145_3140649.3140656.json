@@ -1,27 +1,23 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-11T06:44:09+00:00",
+ "generated_at": "2026-11-11T06:58:46+00:00",
  "preview": false,
  "item": {
-  "country": "SE",
-  "title": "Towards Blockchain-based Auditable Storage and Sharing of IoT Data",
+  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Hossein Shafagh",
    "Lukas Burkhalter",
    "Anwar Hithnawi",
    "Simon Duquennoy"
   ],
-  "institution": "Swedish Institute of Computer Science",
-  "year": 2017,
-  "type": "conference",
-  "venue": "Conference paper",
-  "doi": "10.1145/3140649.3140656",
-  "url": "https://arxiv.org/pdf/1705.08230",
+  "checked": "2026-11-09",
+  "country": "SE",
   "db": "https://arxiv.org/pdf/1705.08230",
   "db_name": "openalex",
-  "source": "https://arxiv.org/pdf/1705.08230",
-  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1145/3140649.3140656",
+  "id": "doi-10.1145_3140649.3140656",
+  "institution": "Swedish Institute of Computer Science",
   "keywords": [
    "Computer science",
    "Blockchain",
@@ -32,10 +28,14 @@
    "Cloud storage",
    "Data management"
   ],
-  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
+  "source": "https://arxiv.org/pdf/1705.08230",
+  "title": "Towards Blockchain-based Auditable Storage and Sharing of IoT Data",
+  "type": "conference",
+  "url": "https://arxiv.org/pdf/1705.08230",
+  "venue": "Conference paper",
+  "year": 2017,
   "about_i18n": {},
-  "id": "doi-10.1145_3140649.3140656",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1145_3140649.3140656.json"
  }

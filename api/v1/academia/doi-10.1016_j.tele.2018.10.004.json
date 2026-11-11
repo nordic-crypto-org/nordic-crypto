@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-11T06:44:09+00:00",
+ "generated_at": "2026-11-11T06:58:46+00:00",
  "preview": false,
  "item": {
-  "country": "SE",
-  "title": "Smart contract applications within blockchain technology: A systematic mapping study",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Daniel Macrinici",
    "Cristian Cartofeanu",
    "Shang Han Gao"
   ],
-  "institution": "Örebro University",
-  "year": 2018,
-  "type": "paper",
-  "venue": "Telematics and Informatics",
-  "doi": "10.1016/j.tele.2018.10.004",
-  "url": "https://doi.org/10.1016/j.tele.2018.10.004",
+  "checked": "2026-11-09",
+  "country": "SE",
   "db": "https://openalex.org/W2894955077",
   "db_name": "OpenAlex",
-  "source": "https://doi.org/10.1016/j.tele.2018.10.004",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.tele.2018.10.004",
+  "id": "doi-10.1016_j.tele.2018.10.004",
+  "institution": "Örebro University",
   "keywords": [
    "Blockchain",
    "Smart contract",
@@ -31,10 +27,14 @@
    "Voting",
    "Knowledge management"
   ],
-  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.tele.2018.10.004",
+  "title": "Smart contract applications within blockchain technology: A systematic mapping study",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.tele.2018.10.004",
+  "venue": "Telematics and Informatics",
+  "year": 2018,
   "about_i18n": {},
-  "id": "doi-10.1016_j.tele.2018.10.004",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.tele.2018.10.004.json"
  }

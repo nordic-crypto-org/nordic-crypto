@@ -1,27 +1,23 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-11T06:44:09+00:00",
+ "generated_at": "2026-11-11T06:58:46+00:00",
  "preview": false,
  "item": {
-  "country": "FI",
-  "title": "Blockchain Technology in Business and Information Systems Research",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Roman Beck",
    "Michel Avital",
    "Matti Rossi",
    "Jason Bennett Thatcher"
   ],
-  "institution": "Aalto University",
-  "year": 2017,
-  "type": "paper",
-  "venue": "Business & Information Systems Engineering",
-  "doi": "10.1007/s12599-017-0505-1",
-  "url": "https://link.springer.com/content/pdf/10.1007%2Fs12599-017-0505-1.pdf",
+  "checked": "2026-11-09",
+  "country": "FI",
   "db": "https://openalex.org/W2768761455",
   "db_name": "OpenAlex",
-  "source": "https://link.springer.com/content/pdf/10.1007%2Fs12599-017-0505-1.pdf",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1007/s12599-017-0505-1",
+  "id": "doi-10.1007_s12599-017-0505-1",
+  "institution": "Aalto University",
   "keywords": [
    "Blockchain",
    "Information systems security",
@@ -32,10 +28,14 @@
    "Engineering",
    "Knowledge management"
   ],
-  "checked": "2026-11-11",
   "origin": "research/academia/works.json",
+  "source": "https://link.springer.com/content/pdf/10.1007%2Fs12599-017-0505-1.pdf",
+  "title": "Blockchain Technology in Business and Information Systems Research",
+  "type": "paper",
+  "url": "https://link.springer.com/content/pdf/10.1007%2Fs12599-017-0505-1.pdf",
+  "venue": "Business & Information Systems Engineering",
+  "year": 2017,
   "about_i18n": {},
-  "id": "doi-10.1007_s12599-017-0505-1",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1007_s12599-017-0505-1.json"
  }
