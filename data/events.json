@@ -590,24 +590,24 @@
    "title": "Bitcoin Walk i Göteborg",
    "start": "2026-11-15T13:00:00+01:00",
    "end": "2026-11-15T16:00:00+01:00",
-   "place": "Thai Samila, Långedragsvägen 18, 426 71 Västra Frölunda, Gothenburg",
-   "city": "Gothenburg",
+   "place": "Thai Samila, Långedragsvägen 18, Västra Frölunda, Göteborg",
+   "city": "Göteborg",
    "country": "SE",
    "online": false,
    "organiser": "Swedish Bitcoin Meetups",
    "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/317358176/",
    "source": "Swedish Bitcoin Meetups (Meetup.com)",
    "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/",
-   "paid": null,
-   "sponsored": null,
+   "paid": false,
+   "sponsored": false,
    "trusted_source": true,
    "found": "2026-11-10T04:07:15+00:00",
-   "status": "pending",
+   "status": "approved",
    "note": null,
    "place_source": {
     "name": "Swedish Bitcoin Meetups (Meetup.com)",
     "url": "https://www.meetup.com/swedish-bitcoin-meetups/events/317358176/",
-    "retrieved": "2026-11-10T04:07:15+00:00"
+    "retrieved": "2026-11-12T04:45:16+01:00"
    },
    "description": {
     "text": "BitcoinWalk Kungsten Bitcoin Walk i Göteborg (In English below) Anmäl gärna ditt deltagande via Satlantis. När: Söndagen den 15/11, klockan 13:00 Var: Kungsten Station mot Järntorget Uppsamling framför Thai Samila (Långedragsvägen 18) vid Kungsten station. Hit tar man sig bäst med linje 9, 11 och 13. Efter uppsamling påbörjar vi våran vandring längs vattnet och vägarna förbi bland annat Röda sten. Vi räknar med att gå en promenad på ca 6-8km och det går helt fint att vika av längs vägen. Bitcoin är ofta en gemensam nämnare, men samtalen rör sig fritt.",
@@ -615,7 +615,9 @@
     "source_url": "https://www.meetup.com/swedish-bitcoin-meetups/events/317358176/",
     "source_name": "Swedish Bitcoin Meetups (Meetup.com)",
     "retrieved": "2026-11-10T04:07:15+00:00"
-   }
+   },
+   "source_check": "researcher 12.11; editor 2026-11-12; organiser date and venue independently verified",
+   "map_url": "https://www.google.com/maps/search/?api=1&query=57.680023,11.899940"
   },
   {
    "id": "eec0d2d82253",
@@ -825,21 +827,21 @@
    "title": "What Nordic Banks Are Actually Doing with Blockchain",
    "start": "2026-12-08T13:00:00+01:00",
    "end": "2026-12-08T14:00:00+01:00",
-   "place": null,
-   "city": "Stockholm",
-   "country": "SE",
-   "online": false,
+   "place": "ONLINE (Luma)",
+   "city": null,
+   "country": null,
+   "online": true,
    "organiser": "Nordic Blockchain Association",
    "url": "https://luma.com/3t0mja0z",
    "source": "Nordic Blockchain Association (Luma)",
-   "source_url": "https://luma.com/nordicblockchain",
-   "paid": null,
-   "sponsored": null,
+   "source_url": "https://luma.com/3t0mja0z",
+   "paid": false,
+   "sponsored": false,
    "trusted_source": false,
    "found": "2026-11-11T03:21:18+00:00",
    "status": "pending",
-   "note": "location: no place – add the street address",
-   "official_verified": false
+   "note": "Stream link not yet announced by the organiser. Live session online via Luma.",
+   "source_check": "researcher 12.11; editor 2026-11-12; Luma page verified: 8 Dec 2026, 13:00-14:00 CET, online (not a physical Stockholm venue)"
   },
   {
    "id": "3c7c538ff512",

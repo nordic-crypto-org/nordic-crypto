@@ -23,8 +23,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle (personal scandal); follow-up to an already rejected item. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "a4d2c488e584",
@@ -49,8 +50,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Speculative political rewrite on an affiliate-type guide site. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "3ddb5508faee",
@@ -77,8 +79,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Unverified police theory; too thin and privacy-sensitive without the full text. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "e0d0a7763e6a",
@@ -103,8 +106,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Sponsored advertorial / PR, not news. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "3b2ed8e0a231",
@@ -130,9 +134,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Unverified price-reaction story; source disallows crawling. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "a14c62ce97e9",
@@ -158,8 +163,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price commentary based on a K33/Lunde market note. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "38a26af8c0ec",
@@ -184,8 +190,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Car VAT-carousel raid; crypto only incidental among seized assets. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "ff8f51445506",
@@ -211,8 +218,9 @@
     "\\bdet mørke nett\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No crypto angle (personal data leak on the dark web). researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "809d3f2fc617",
@@ -261,8 +269,9 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Evergreen explainer blog, not news. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "aec9eddecbbc",
@@ -288,14 +297,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "DI opinion/debate piece, not news. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "915342df6283",
    "url": "https://yle.fi/a/74-20256084?origin=rss",
    "title": "Fewer than 1 in 6 Finnish crypto traders declare dealings, tax office says",
-   "title_en": null,
+   "title_en": "Yle: fewer than one in six Finnish crypto traders declare their trades",
    "source": "yle",
    "source_name": "Yle Uutiset",
    "country": "FI",
@@ -307,14 +317,98 @@
    "published": "2026-11-10T10:50:35+00:00",
    "fetched": "2026-11-11T02:48:25+00:00",
    "topics": [
-    "crypto"
+    "regulation",
+    "taxation"
    ],
    "matched": [
     "\\bcrypto\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Yle reports that the Finnish tax office says fewer than one in six crypto traders in Finland declare their trades. That share has not been confirmed in the tax authority's published notes on the new reporting duty. From next year the authority is due to receive data from Finnish and foreign crypto-asset service providers, according to Vero.fi.",
+   "also_covered_by": [
+    {
+     "outlet": "yle",
+     "outlet_name": "Yle Uutiset",
+     "url": "https://yle.fi/a/74-20253408",
+     "title": "Verottaja pettyi krypto­sijoittajiin – nyt tulee käyttöön uusi konsti paljastaa kaupat",
+     "published": "2026-11-10T04:00:35+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-12T04:45:16+01:00",
+   "primary_source": {
+    "name": "Yle",
+    "url": "https://yle.fi/a/74-20256084?origin=rss"
+   },
+   "links": [
+    {
+     "url": "https://www.vero.fi/en/About-us/newsroom/changes-in-taxation/new-obligation-to-provide-information-on-crypto-asset-services-in-2026/",
+     "label": "Vero.fi: new information obligation on crypto-asset services, 2026 (English)"
+    },
+    {
+     "url": "https://www.vero.fi/tietoa-verohallinnosta/uutishuone/verotuksen_muutoksia/kryptovarapalveluille-uusi-tiedonantovelvollisuus-vuonna-2026/",
+     "label": "Vero.fi: kryptovarapalveluille uusi tiedonantovelvollisuus vuonna 2026"
+    }
+   ],
+   "title_i18n": {
+    "nb": "Yle: færre enn én av seks finske kryptotradere oppgir handlene sine",
+    "nn": "Yle: færre enn éin av seks finske kryptotradarar oppgir handelane sine",
+    "sv": "Yle: färre än en av sex finska kryptoaktörer deklarerar sina affärer",
+    "da": "Yle: færre end hver sjette finske kryptotrader indberetter sine handler",
+    "fi": "Yle: alle joka kuudes suomalainen krypto­kauppaa käyvä ilmoittaa kauppansa",
+    "is": "Yle: færri en einn af hverjum sex finnskum rafmyntakaupmönnum lýsa viðskiptum sínum",
+    "zh": "Yle：芬兰加密交易者申报成交的比例不足六分之一",
+    "hi": "Yle: फ़िनलैंड में छह में से एक से भी कम क्रिप्टो ट्रेडर अपने सौदे घोषित करते हैं",
+    "es": "Yle: menos de uno de cada seis operadores finlandeses de cripto declara sus operaciones",
+    "fr": "Yle : moins d'un trader crypto finlandais sur six déclare ses opérations",
+    "ar": "Yle: أقل من واحد من كل ستة متداولين فنلنديين للعملات المشفرة يصرّحون بصفقاتهم",
+    "bn": "Yle: ফিনল্যান্ডের ছয়জনের মধ্যে একজনেরও কম ক্রিপ্টো ব্যবসায়ী তাদের লেনদেন ঘোষণা করেন",
+    "pt": "Yle: menos de um em cada seis operadores finlandeses de cripto declara as suas operações",
+    "ru": "Yle: меньше одного из шести финских криптотрейдеров заявляют свои сделки",
+    "ur": "Yle: فن لینڈ میں چھ میں سے ایک سے بھی کم کرپٹو تاجر اپنے سودے ظاہر کرتے ہیں",
+    "id": "Yle: kurang dari satu dari enam pedagang kripto Finlandia melaporkan transaksinya",
+    "de": "Yle: Weniger als jeder sechste finnische Krypto-Händler gibt seine Geschäfte an",
+    "ja": "Yle：フィンランドの暗号資産取引者のうち申告しているのは6人に1人未満",
+    "sw": "Yle: chini ya mmoja kati ya sita wa wafanyabiashara wa kripto nchini Finland wanatangaza biashara zao",
+    "mr": "Yle: फिनलंडमधील सहापैकी एकापेक्षा कमी क्रिप्टो व्यापारी आपले व्यवहार जाहीर करतात",
+    "fa": "Yle: کمتر از یک نفر از هر شش معامله‌گر رمزارز در فنلاند معاملات خود را اعلام می‌کند",
+    "uk": "Yle: менше ніж один із шести фінських криптотрейдерів декларує свої угоди",
+    "tr": "Yle: Finlandiya'daki kripto yatırımcılarının altıda birinden azı işlemlerini beyan ediyor",
+    "se": "Yle: váile okta guđas suopmelaš kryptomákkáriin ii almmut gávppašeamis"
+   },
+   "title_i18n_source": "Fewer than 1 in 6 Finnish crypto traders declare dealings, tax office says",
+   "summary_i18n": {
+    "nb": "Yle skriver at det finske skattevesenet sier at færre enn én av seks kryptotradere i Finland oppgir handlene sine. Denne andelen er ikke bekreftet i skatteetatens publiserte merknader om den nye opplysningsplikten. Fra neste år skal etaten motta data fra finske og utenlandske tilbydere av kryptoaktivatjenester, ifølge Vero.fi.",
+    "nn": "Yle skriv at det finske skattevesenet seier at færre enn éin av seks kryptotradarar i Finland oppgir handelane sine. Denne andelen er ikkje stadfesta i skatteetaten sine publiserte merknader om den nye opplysningsplikta. Frå neste år skal etaten motta data frå finske og utanlandske tilbydarar av kryptoaktivattenester, ifølgje Vero.fi.",
+    "sv": "Yle rapporterar att den finska skattemyndigheten säger att färre än en av sex kryptoaktörer i Finland deklarerar sina affärer. Den andelen har inte bekräftats i myndighetens publicerade information om den nya uppgiftsskyldigheten. Från nästa år ska myndigheten ta emot data från finländska och utländska leverantörer av kryptoaccessstjänster, enligt Vero.fi.",
+    "da": "Yle skriver, at den finske skatteforvaltning siger, at færre end hver sjette kryptotrader i Finland indberetter sine handler. Den andel er ikke bekræftet i skatteforvaltningens offentliggjorte bemærkninger om den nye indberetningspligt. Fra næste år skal myndigheden modtage data fra finske og udenlandske udbydere af kryptoaktivtjenester, ifølge Vero.fi.",
+    "fi": "Yle kertoo, että Verohallinnon mukaan alle joka kuudes krypto­kauppaa käyvä Suomessa ilmoittaa kauppansa. Osuutta ei ole vahvistettu Verohallinnon julkaistuissa tiedotteissa uudesta tiedonantovelvollisuudesta. Ensi vuodesta lähtien viranomainen on saamassa tietoja suomalaisilta ja ulkomaisilta krypto­varapalvelujen tarjoajilta, Vero.fi:n mukaan.",
+    "is": "Yle greinir frá því að finnska skattayfirvaldið segi að færri en einn af hverjum sex rafmyntakaupmönnum í Finnlandi lýsi viðskiptum sínum. Þetta hlutfall hefur ekki verið staðfest í birtum skýringum skattyfirvalda um nýju upplýsingaskylduna. Frá næsta ári á stofnunin að fá gögn frá finnskum og erlendum veitendum rafmyntaþjónustu, samkvæmt Vero.fi.",
+    "zh": "Yle报道称，芬兰税务机关表示，该国加密交易者中申报成交的不足六分之一。该比例尚未在税务机关关于新报告义务的已公布说明中得到确认。据Vero.fi，从明年起该机构将接收来自芬兰及外国加密资产服务商的数据。",
+    "hi": "Yle के अनुसार फ़िनलैंड का कर कार्यालय कहता है कि वहाँ छह में से एक से भी कम क्रिप्टो ट्रेडर अपने सौदे घोषित करते हैं। नए रिपोर्टिंग दायित्व पर कर प्राधिकरण की प्रकाशित टिप्पणियों में इस हिस्से की पुष्टि नहीं हुई है। Vero.fi के अनुसार अगले वर्ष से प्राधिकरण को फ़िनिश और विदेशी क्रिप्टो-संपत्ति सेवा प्रदाताओं से डेटा मिलना है।",
+    "es": "Yle informa de que la agencia tributaria finlandesa afirma que menos de uno de cada seis operadores de cripto en Finlandia declara sus operaciones. Esa proporción no ha sido confirmada en las notas publicadas por la autoridad sobre la nueva obligación de información. A partir del año que viene la autoridad recibirá datos de proveedores finlandeses y extranjeros de servicios de criptoactivos, según Vero.fi.",
+    "fr": "Yle rapporte que l'administration fiscale finlandaise indique que moins d'un trader crypto sur six en Finlande déclare ses opérations. Cette part n'est pas confirmée dans les notes publiées par l'autorité sur la nouvelle obligation de déclaration. Dès l'année prochaine, l'autorité doit recevoir des données de prestataires finlandais et étrangers de services sur crypto-actifs, selon Vero.fi.",
+    "ar": "تفيد Yle بأن مصلحة الضرائب الفنلندية تقول إن أقل من واحد من كل ستة متداولين للعملات المشفرة في فنلندا يصرّحون بصفقاتهم. ولم يُؤكَّد هذا النصيب في الملاحظات المنشورة للمصلحة عن واجب الإبلاغ الجديد. ومن العام المقبل يُفترض أن تتلقى المصلحة بيانات من مقدمي خدمات الأصول المشفرة الفنلنديين والأجانب، وفق Vero.fi.",
+    "bn": "Yle জানায়, ফিনল্যান্ডের কর কর্তৃপক্ষ বলেছে দেশের ছয়জনের মধ্যে একজনেরও কম ক্রিপ্টো ব্যবসায়ী তাদের লেনদেন ঘোষণা করেন। নতুন প্রতিবেদন বাধ্যবাধকতা নিয়ে কর কর্তৃপক্ষের প্রকাশিত টীকায় এই অনুপাত নিশ্চিত হয়নি। Vero.fi অনুযায়ী আগামী বছর থেকে কর্তৃপক্ষ ফিনিশ ও বিদেশি ক্রিপ্টো সম্পদ সেবা প্রদানকারীদের কাছ থেকে তথ্য পাবে।",
+    "pt": "A Yle relata que a autoridade fiscal finlandesa afirma que menos de um em cada seis operadores de cripto na Finlândia declara as suas operações. Essa proporção não foi confirmada nas notas publicadas pela autoridade sobre o novo dever de informação. A partir do próximo ano a autoridade deverá receber dados de prestadores finlandeses e estrangeiros de serviços de criptoativos, segundo o Vero.fi.",
+    "ru": "Yle сообщает, что налоговое ведомство Финляндии заявляет: свои сделки декларирует меньше одного из шести криптотрейдеров в стране. Эта доля не подтверждена в опубликованных материалах ведомства о новой обязанности по предоставлению сведений. Со следующего года ведомство должно получать данные от финских и иностранных поставщиков услуг в сфере криптоактивов, согласно Vero.fi.",
+    "ur": "Yle کے مطابق فن لینڈ کا ٹیکس محکمہ کہتا ہے کہ وہاں چھ میں سے ایک سے بھی کم کرپٹو تاجر اپنے سودے ظاہر کرتے ہیں۔ نئی رپورٹنگ ذمہ داری پر محکمے کی شائع شدہ نوٹس میں اس تناسب کی تصدیق نہیں ہوئی۔ Vero.fi کے مطابق اگلے سال سے محکمے کو فننش اور غیر ملکی کرپٹو اثاثہ سروس فراہم کنندگان سے ڈیٹا ملنا ہے۔",
+    "id": "Yle melaporkan bahwa kantor pajak Finlandia mengatakan kurang dari satu dari enam pedagang kripto di Finlandia melaporkan transaksinya. Bagian itu belum dikonfirmasi dalam catatan yang diterbitkan otoritas tentang kewajiban pelaporan baru. Mulai tahun depan otoritas dijadwalkan menerima data dari penyedia layanan aset kripto Finlandia dan asing, menurut Vero.fi.",
+    "de": "Yle berichtet, die finnische Steuerverwaltung sage, dass weniger als jeder sechste Krypto-Händler in Finnland seine Geschäfte angebe. Dieser Anteil ist in den veröffentlichten Hinweisen der Behörde zur neuen Mitteilungspflicht nicht bestätigt. Ab dem kommenden Jahr soll die Behörde Daten von finnischen und ausländischen Anbietern von Krypto-Vermögensdienstleistungen erhalten, laut Vero.fi.",
+    "ja": "Yleによると、フィンランド税務当局は同国の暗号資産取引者のうち取引を申告しているのは6人に1人未満だとしている。この割合は、新たな報告義務に関する当局の公表資料では確認されていない。Vero.fiによると、来年から当局は国内外の暗号資産サービス事業者からデータを受け取る予定。",
+    "sw": "Yle inaripoti kwamba ofisi ya kodi ya Finland inasema chini ya mmoja kati ya sita wa wafanyabiashara wa kripto nchini Finland wanatangaza biashara zao. Sehemu hiyo haijathibitishwa katika maelezo yaliyochapishwa na mamlaka kuhusu wajibu mpya wa kuripoti. Kuanzia mwaka ujao mamlaka inatarajiwa kupokea data kutoka kwa watoa huduma wa mali za kripto wa Finland na wa nje, kwa mujibu wa Vero.fi.",
+    "mr": "Yle नुसार फिनलंडचे कर कार्यालय म्हणते की तेथे सहापैकी एकापेक्षा कमी क्रिप्टो व्यापारी आपले व्यवहार जाहीर करतात. नव्या अहवाल देयतेबाबत प्राधिकरणाच्या प्रकाशित टिपांमध्ये हा वाटा निश्चित झालेला नाही. Vero.fi नुसार पुढील वर्षापासून प्राधिकरणाला फिनिश व परदेशी क्रिप्टो-मालमत्ता सेवा पुरवठादारांकडून डेटा मिळणार आहे.",
+    "fa": "Yle گزارش می‌دهد که سازمان مالیاتی فنلاند می‌گوید کمتر از یک نفر از هر شش معامله‌گر رمزارز در فنلاند معاملات خود را اعلام می‌کند. این سهم در یادداشت‌های منتشرشده سازمان درباره تکلیف جدید گزارش‌دهی تأیید نشده است. به گفته Vero.fi، از سال آینده این سازمان قرار است داده را از ارائه‌دهندگان خدمات دارایی رمزارزی فنلاندی و خارجی دریافت کند.",
+    "uk": "Yle повідомляє, що податкова служба Фінляндії заявляє: свої угоди декларує менше ніж один із шести криптотрейдерів у країні. Цю частку не підтверджено в опублікованих матеріалах служби щодо нового обов'язку надавати відомості. З наступного року служба має отримувати дані від фінських і іноземних надавачів послуг із криптоактивів, згідно з Vero.fi.",
+    "tr": "Yle, Finlandiya vergi dairesinin ülkede kripto yatırımcılarının altıda birinden azının işlemlerini beyan ettiğini söylediğini duyurdu. Bu oran, yeni bildirim yükümlülüğüne ilişkin yayımlanmış açıklamalarda doğrulanmış değil. Vero.fi'ye göre gelecek yıldan itibaren kurum, Finlandiyalı ve yabancı kripto varlık hizmet sağlayıcılarından veri alacak.",
+    "se": "Yle dieđiha, ahte Suoma vearrodirektoráhtta dadjá, ahte Suomas uhcit go juohke guđat kriptovuovdaleaddji ilmmuha gávppašeamis. Dát oassi ii leat duođaštuvvon vearroeiseválddi almmuhuvvon čállosiin, mat gusket ođđa dieđihangeatnegasvuhtii. Boahtte jagi rájes virgeoapmahaččat galget oažžut dieđuid suopmelaš ja olgoriikkalaš kriptoávnnasbálvalusaid fálliin, Vero.fi dieđiha."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "be79ee3a82ba",
@@ -340,8 +434,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "915342df6283"
   },
   {
    "id": "a68c313f1458",
@@ -374,7 +469,7 @@
    "id": "068db9ee437e",
    "url": "https://kaupr.io/nyheter/axiology-har-fatt-utvidet-mifid-lisens-for-tokeniserte-aktiva",
    "title": "Axiology har fått utvidet MiFID-lisens for tokeniserte aktiva",
-   "title_en": null,
+   "title_en": "Axiology receives an expanded MiFID authorisation for tokenised assets",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -386,23 +481,89 @@
    "published": "2026-11-10",
    "fetched": "2026-11-11T02:48:25+00:00",
    "topics": [
-    "blockchain"
+    "regulation",
+    "tokenization"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "Lithuania's Axiology has received an expanded MiFID authorisation from the Bank of Lithuania (Lietuvos bankas) covering the reception, transmission and execution of client orders, according to the company as reported by Kaupr. The firm says the change lets institutions subscribe and redeem units in tokenised money-market funds directly through it. Axiology already operates under the EU DLT Pilot Regime.",
    "published_date_only": true,
    "possible_duplicate_of": "a68c313f1458",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-12T04:45:16+01:00",
+   "primary_source": {
+    "name": "Kaupr, citing Axiology / Lietuvos bankas",
+    "url": "https://kaupr.io/nyheter/axiology-har-fatt-utvidet-mifid-lisens-for-tokeniserte-aktiva"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9ac10e05dc69/",
+     "label": "Lithuanian e-money firm VIALET to use tokenised money market funds via Axiology"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Axiology får utvida MiFID-løyve for tokeniserte aktiva",
+    "sv": "Axiology får utökad MiFID-tillstånd för tokeniserade tillgångar",
+    "da": "Axiology får udvidet MiFID-tilladelse til tokeniserede aktiver",
+    "fi": "Axiology saa laajennetun MiFID-toimiluvan tokenisoiduille varoille",
+    "is": "Axiology fær útvíkkað MiFID-leyfi fyrir tókenvæddar eignir",
+    "zh": "Axiology获得针对代币化资产的扩大MiFID许可",
+    "hi": "Axiology को टोकनाइज़्ड परिसंपत्तियों के लिए विस्तारित MiFID अनुमति मिली",
+    "es": "Axiology recibe una autorización MiFID ampliada para activos tokenizados",
+    "fr": "Axiology obtient une autorisation MiFID élargie pour les actifs tokenisés",
+    "ar": "Axiology تحصل على ترخيص MiFID موسّع للأصول المرمّزة",
+    "bn": "Axiology টোকেনাইজড সম্পদের জন্য সম্প্রসারিত MiFID অনুমোদন পেয়েছে",
+    "pt": "Axiology recebe autorização MiFID alargada para ativos tokenizados",
+    "ru": "Axiology получила расширенное разрешение MiFID для токенизированных активов",
+    "ur": "Axiology کو ٹوکنائزڈ اثاثوں کے لیے توسیع یافتہ MiFID اجازت ملی",
+    "id": "Axiology menerima izin MiFID yang diperluas untuk aset tertokenisasi",
+    "de": "Axiology erhält erweiterte MiFID-Zulassung für tokenisierte Vermögenswerte",
+    "ja": "Axiology、トークン化資産向けに拡大されたMiFID認可を取得",
+    "sw": "Axiology inapokea idhini iliyopanuliwa ya MiFID kwa mali zilizotokenishwa",
+    "mr": "Axiology ला टोकनाइज्ड मालमत्तांसाठी विस्तारित MiFID परवानगी मिळाली",
+    "fa": "Axiology مجوز گسترش‌یافته MiFID برای دارایی‌های توکنی‌شده دریافت کرد",
+    "uk": "Axiology отримала розширений дозвіл MiFID для токенізованих активів",
+    "tr": "Axiology, tokenize varlıklar için genişletilmiş MiFID yetkisi aldı",
+    "se": "Axiologiija oažžu viiddiduvvon MiFID-gohččosa tokeniserejuvvon opmodagaide"
+   },
+   "title_i18n_source": "Axiology har fått utvidet MiFID-lisens for tokeniserte aktiva",
+   "summary_i18n": {
+    "nb": "Det litauiske selskapet Axiology har fått en utvidet MiFID-tillatelse fra Lietuvos bankas som omfatter mottak, formidling og utførelse av kundeordre, ifølge selskapet slik Kaupr gjengir det. Selskapet sier at endringen gjør at institusjoner kan tegne og innløse andeler i tokeniserte pengemarkedsfond direkte gjennom det. Axiology driver allerede under EUs DLT Pilot Regime.",
+    "nn": "Det litauiske selskapet Axiology har fått eit utvida MiFID-løyve frå Lietuvos bankas som omfattar mottak, formidling og utføring av kundeordrar, ifølgje selskapet slik Kaupr attgjev det. Selskapet seier at endringa gjer at institusjonar kan teikne og innløyse andelar i tokeniserte pengemarknadsfond direkte gjennom det. Axiology driv allereie under EUs DLT Pilot Regime.",
+    "sv": "Det litauiska bolaget Axiology har fått ett utökat MiFID-tillstånd från Lietuvos bankas som omfattar mottagande, vidarebefordran och utförande av kundorder, enligt bolaget så som Kaupr återger det. Bolaget säger att ändringen gör att institutioner kan teckna och lösa in andelar i tokeniserade penningmarknadsfonder direkt genom det. Axiology verkar redan under EU:s DLT Pilot Regime.",
+    "da": "Det litauiske selskab Axiology har fået en udvidet MiFID-tilladelse fra Lietuvos bankas, der omfatter modtagelse, formidling og udførelse af kundeordrer, ifølge selskabet som gengivet af Kaupr. Selskabet siger, at ændringen gør det muligt for institutioner at tegne og indløse andele i tokeniserede pengemarkedsfonde direkte gennem det. Axiology driver allerede under EU's DLT Pilot Regime.",
+    "fi": "Liettualainen Axiology on saanut Lietuvos bankasilta laajennetun MiFID-toimiluvan, joka kattaa asiakastoimeksiantojen vastaanoton, välittämisen ja toteuttamisen, yhtiön Kauprille antamien tietojen mukaan. Yhtiön mukaan muutos antaa laitoksille mahdollisuuden merkitä ja lunastaa tokenisoitujen rahamarkkinarahastojen osuuksia suoraan sen kautta. Axiology toimii jo EU:n DLT Pilot Regime -järjestelmässä.",
+    "is": "Litháíska félagið Axiology hefur fengið útvíkkað MiFID-leyfi frá Lietuvos bankas sem tekur til móttöku, miðlunar og framkvæmdar viðskiptafyrirmæla, samkvæmt félaginu eins og Kaupr greinir frá. Félagið segir að breytingin geri stofnunum kleift að skrá sig fyrir og innleysa hlutdeildarskírteini í tókenvæddum peningamarkaðssjóðum beint í gegnum það. Axiology starfar þegar samkvæmt DLT Pilot Regime ESB.",
+    "zh": "据该公司向Kaupr介绍，立陶宛的Axiology已获立陶宛银行（Lietuvos bankas）扩大的MiFID许可，涵盖客户指令的接收、传送与执行。公司表示，这一变化使机构可直接通过其认购和赎回代币化货币市场基金份额。Axiology已在欧盟DLT试点机制下运营。",
+    "hi": "कंपनी के Kaupr में दिए गए बयान के अनुसार, लिथुआनिया की Axiology को Lietuvos bankas से विस्तारित MiFID अनुमति मिली है, जिसमें ग्राहक आदेशों का प्राप्त करना, अग्रेषित करना और निष्पादन शामिल है। कंपनी कहती है कि बदलाव से संस्थाएं सीधे इसके माध्यम से टोकनाइज़्ड मुद्रा बाज़ार फंड की इकाइयाँ खरीद और भुना सकती हैं। Axiology पहले से EU DLT Pilot Regime के तहत काम करती है।",
+    "es": "La lituana Axiology ha recibido una autorización MiFID ampliada del Banco de Lituania (Lietuvos bankas) que cubre la recepción, transmisión y ejecución de órdenes de clientes, según la empresa tal como la recoge Kaupr. La firma afirma que el cambio permite a las instituciones suscribir y reembolsar participaciones de fondos monetarios tokenizados directamente a través de ella. Axiology ya opera bajo el régimen piloto de DLT de la UE.",
+    "fr": "La société lituanienne Axiology a obtenu une autorisation MiFID élargie de la Banque de Lituanie (Lietuvos bankas) portant sur la réception, la transmission et l'exécution d'ordres de clients, selon l'entreprise telle que rapportée par Kaupr. Elle indique que le changement permet aux institutions de souscrire et de racheter des parts de fonds monétaires tokenisés directement auprès d'elle. Axiology opère déjà dans le cadre du régime pilote DLT de l'UE.",
+    "ar": "حصلت شركة Axiology الليتوانية على ترخيص MiFID موسّع من بنك ليتوانيا يغطي تلقي أوامر العملاء ونقلها وتنفيذها، وفق ما نقلته Kaupr عن الشركة. وتقول الشركة إن التغيير يتيح للمؤسسات الاشتراك في وحدات صناديق سوق النقد المرمّزة واستردادها مباشرة عبرها. وتعمل Axiology أصلًا في إطار نظام الاتحاد الأوروبي التجريبي لتقنية السجلات الموزعة.",
+    "bn": "Kaupr-এ কোম্পানির বর্ণনা অনুযায়ী, লিথুয়ানিয়ার Axiology Lietuvos bankas থেকে সম্প্রসারিত MiFID অনুমোদন পেয়েছে, যা গ্রাহকের অর্ডার গ্রহণ, প্রেরণ ও সম্পাদনকে অন্তর্ভুক্ত করে। কোম্পানি বলে, এ পরিবর্তনে প্রতিষ্ঠানগুলো সরাসরি তার মাধ্যমে টোকেনাইজড মানি মার্কেট ফান্ডের ইউনিট কিনতে ও নগদায়ন করতে পারবে। Axiology ইতিমধ্যেই ইইউ DLT Pilot Regime-এর আওতায় কাজ করে।",
+    "pt": "A lituana Axiology recebeu uma autorização MiFID alargada do Banco da Lituânia (Lietuvos bankas) que abrange a receção, transmissão e execução de ordens de clientes, segundo a empresa conforme relatado pela Kaupr. A firma diz que a alteração permite às instituições subscrever e resgatar unidades de fundos do mercado monetário tokenizados diretamente através dela. A Axiology já opera ao abrigo do regime-piloto de DLT da UE.",
+    "ru": "Литовская Axiology получила расширенное разрешение MiFID от Банка Литвы (Lietuvos bankas) на приём, передачу и исполнение поручений клиентов, сообщает компания в изложении Kaupr. По словам фирмы, изменение позволяет учреждениям подписываться на паи токенизированных фондов денежного рынка и погашать их напрямую через неё. Axiology уже работает в рамках пилотного режима DLT ЕС.",
+    "ur": "کمپنی کے Kaupr میں دیے گئے بیان کے مطابق، لتھوانیا کی Axiology کو Lietuvos bankas سے توسیع یافتہ MiFID اجازت ملی ہے جو کسٹمر آرڈرز کی وصولی، ترسیل اور عمل درآمد کا احاطہ کرتی ہے۔ کمپنی کہتی ہے کہ اس تبدیلی سے ادارے براہ راست اس کے ذریعے ٹوکنائزڈ منی مارکیٹ فنڈز کی یونٹس خرید اور نچھاور کر سکتے ہیں۔ Axiology پہلے سے EU DLT Pilot Regime کے تحت کام کرتی ہے۔",
+    "id": "Axiology asal Lituania telah menerima izin MiFID yang diperluas dari Bank Lituania (Lietuvos bankas) yang mencakup penerimaan, penerusan, dan pelaksanaan perintah nasabah, menurut perusahaan sebagaimana dilaporkan Kaupr. Perusahaan mengatakan perubahan itu memungkinkan institusi meneken dan menebus unit dana pasar uang tertokenisasi langsung melaluinya. Axiology sudah beroperasi di bawah rezim uji coba DLT Uni Eropa.",
+    "de": "Das litauische Unternehmen Axiology hat von der Bank von Litauen (Lietuvos bankas) eine erweiterte MiFID-Zulassung erhalten, die Annahme, Übermittlung und Ausführung von Kundenaufträgen umfasst, laut dem Unternehmen, wie Kaupr es wiedergibt. Die Firma sagt, die Änderung ermögliche Institutionen, Anteile an tokenisierten Geldmarktfonds direkt über sie zu zeichnen und zurückzugeben. Axiology arbeitet bereits unter dem DLT-Pilotregime der EU.",
+    "ja": "Kauprが伝える同社の説明によると、リトアニアのAxiologyはリトアニア銀行（Lietuvos bankas）から、顧客注文の受付・取次・執行を含む拡大されたMiFID認可を得た。同社は、機関投資家がトークン化されたマネーマーケットファンドの口数を同社経由で直接申し込み・換金できるようになるとしている。Axiologyは既にEUのDLTパイロット制度の下で事業を行っている。",
+    "sw": "Kampuni ya Lithuania Axiology imepokea idhini iliyopanuliwa ya MiFID kutoka Benki ya Lithuania (Lietuvos bankas) inayohusu kupokea, kuwasilisha na kutekeleza maagizo ya wateja, kwa mujibu wa kampuni kama Kaupr inavyoripoti. Kampuni inasema mabadiliko hayo yanawaruhusu taasisi kujisajili na kukomboa vitengo vya fedha za soko la pesa vilivyotokenishwa moja kwa moja kupitia kwayo. Axiology tayari inafanya kazi chini ya mfumo wa majaribio wa DLT wa EU.",
+    "mr": "कंपनीने Kaupr ला दिलेल्या माहितीनुसार, लिथुआनियाच्या Axiology ला Lietuvos bankas कडून विस्तारित MiFID परवानगी मिळाली आहे, ज्यात ग्राहक ऑर्डर स्वीकारणे, पाठवणे आणि अंमलबजावणीचा समावेश आहे. कंपनी म्हणते की या बदलामुळे संस्था थेट तिच्यामार्फत टोकनाइज्ड मनी मार्केट फंडांच्या युनिट्सची खरेदी व पूर्तता करू शकतात. Axiology आधीच EU DLT Pilot Regime अंतर्गत कार्य करते.",
+    "fa": "به گزارش شرکت که Kaupr نقل کرده، Axiology لیتوانی از بانک لیتوانی مجوز گسترش‌یافته MiFID دریافت کرده که دریافت، انتقال و اجرای دستورهای مشتری را پوشش می‌دهد. شرکت می‌گوید این تغییر به نهادها اجازه می‌دهد واحدهای صندوق‌های بازار پول توکنی‌شده را مستقیماً از طریق آن خرید و بازخرید کنند. Axiology پیش‌تر تحت رژیم آزمایشی DLT اتحادیه اروپا فعالیت می‌کند.",
+    "uk": "Литовська Axiology отримала розширений дозвіл MiFID від Банку Литви (Lietuvos bankas) на приймання, передавання та виконання доручень клієнтів, повідомляє компанія у викладі Kaupr. За словами фірми, зміна дає установам змогу підписуватися на паї токенізованих фондів грошового ринку та погашати їх безпосередньо через неї. Axiology вже працює в межах пілотного режиму DLT ЄС.",
+    "tr": "Kaupr'ın aktardığı şirket açıklamasına göre Litvanyalı Axiology, Litvanya Merkez Bankasından (Lietuvos bankas) müşteri emirlerinin alınması, iletilmesi ve yürütülmesini kapsayan genişletilmiş bir MiFID yetkisi aldı. Şirket, değişikliğin kurumların tokenize para piyasası fonu paylarını doğrudan kendi üzerinden alıp bozdurmasına imkân verdiğini söylüyor. Axiology halihazırda AB DLT Pilot Regime kapsamında faaliyet gösteriyor.",
+    "se": "Lietuva Axiology lea ožžon viiddiduvvon MiFID-gohččosa Lietuvos bankas, mii guoská klienttaid diŋgojumiid vuostáiváldima, sáddema ja čađaheami, muitala Kaupr. Fitnodat muitala ahte rievdadeapmi dahká vejolažžan ásahusaide diŋgot ja oastit ossosiid tokeniserejuvvon ruhtamárkanfoanddain njuolga dan bokte. Axiologiija lea juo doaimmas EU DLT Pilot-ortnegis."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "43033a5f3973",
    "url": "https://realtid.se/bors-finans/bank-fintech/nya-uppgifter-om-jattestolden-ensam-datadetektiv-bakom-upptackt",
    "title": "Nya uppgifter om jättestölden: Ensam datadetektiv bakom upptäckt",
-   "title_en": null,
+   "title_en": "Crédit Mutuel Arkéa confirms a cyberattack; investigator ZachXBT flagged crypto withdrawals",
    "source": "realtid",
    "source_name": "Realtid",
    "country": "SE",
@@ -414,14 +575,74 @@
    "published": "2026-11-09T16:24:41+00:00",
    "fetched": "2026-11-10T03:01:13+00:00",
    "topics": [
-    "blockchain"
+    "security",
+    "companies"
    ],
    "matched": [
     "\\bblockkedj\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Crédit Mutuel Arkéa has confirmed a cyberattack carried out through a service provider's platform, and said the funds may then have been converted into cryptocurrency, according to the bank's statement of 4 November 2026. Blockchain investigator ZachXBT first flagged large unauthorised withdrawals from crypto-exchange accounts, Realtid reports, citing figures of about 133 million US dollars; the bank has not confirmed that amount and said it could only validate the order of magnitude.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-12T04:45:16+01:00",
+   "primary_source": {
+    "name": "Crédit Mutuel Arkéa — additional information, 4 November 2026",
+    "url": "https://www.cm-arkea.com/arkea/banque/upload/docs/application/pdf/2026-11/press_release_-_additional_information_following_the_cyberattack_on_credit_mutuel_arkea.docx.pdf"
+   },
+   "title_i18n": {
+    "nb": "Crédit Mutuel Arkéa bekrefter et dataangrep; etterforsker ZachXBT varslet om krypto-uttak",
+    "nn": "Crédit Mutuel Arkéa stadfestar eit dataåtak; etterforskar ZachXBT varsla om krypto-uttak",
+    "da": "Crédit Mutuel Arkéa bekræfter et cyberangreb; efterforsker ZachXBT advarede om krypto-udtræk",
+    "fi": "Crédit Mutuel Arkéa vahvistaa kyberhyökkäyksen; tutkija ZachXBT havaitsi kryptonostoja",
+    "is": "Crédit Mutuel Arkéa staðfestir tölvuárás; rannsakandinn ZachXBT vakti athygli á rafmyntaúttektum",
+    "zh": "Crédit Mutuel Arkéa确认遭网络攻击；调查者ZachXBT曾发现加密货币提现",
+    "hi": "Crédit Mutuel Arkéa ने साइबर हमले की पुष्टि की; जांचकर्ता ZachXBT ने क्रिप्टो निकासी का संकेत दिया",
+    "es": "Crédit Mutuel Arkéa confirma un ciberataque; el investigador ZachXBT advirtió de retiradas de cripto",
+    "fr": "Crédit Mutuel Arkéa confirme une cyberattaque ; l'enquêteur ZachXBT a signalé des retraits de crypto",
+    "ar": "Crédit Mutuel Arkéa تؤكد هجومًا سيبرانيًا؛ المحقق ZachXBT نبّه إلى عمليات سحب للعملات المشفرة",
+    "bn": "Crédit Mutuel Arkéa সাইবার হামলা নিশ্চিত করেছে; তদন্তকারী ZachXBT ক্রিপ্টো উত্তোলনের সতর্কতা দিয়েছিলেন",
+    "pt": "Crédit Mutuel Arkéa confirma um ciberataque; o investigador ZachXBT assinalou levantamentos de cripto",
+    "ru": "Crédit Mutuel Arkéa подтверждает кибератаку; исследователь ZachXBT указал на выводы криптовалюты",
+    "ur": "Crédit Mutuel Arkéa نے سائبر حملے کی تصدیق کی؛ تفتیش کار ZachXBT نے کرپٹو نکاسیوں کی نشان دہی کی",
+    "id": "Crédit Mutuel Arkéa mengonfirmasi serangan siber; investigator ZachXBT menandai penarikan kripto",
+    "de": "Crédit Mutuel Arkéa bestätigt Cyberangriff; Ermittler ZachXBT meldete Krypto-Abhebungen",
+    "ja": "クレディ・ミュチュエル・アルケアがサイバー攻撃を確認　調査者ZachXBTが暗号資産の引き出しを指摘",
+    "sw": "Crédit Mutuel Arkéa inathibitisha shambulio la mtandao; mchunguzi ZachXBT alibaini uondoaji wa kripto",
+    "mr": "Crédit Mutuel Arkéa ने सायबर हल्ल्याची पुष्टी केली; तपासकर्त्या ZachXBT यांनी क्रिप्टो काढण्यांची सूचना दिली",
+    "fa": "Crédit Mutuel Arkéa حمله سایبری را تأیید کرد؛ بازپرس ZachXBT برداشت‌های رمزارز را هشدار داده بود",
+    "uk": "Crédit Mutuel Arkéa підтверджує кібератаку; дослідник ZachXBT виявив виведення криптовалюти",
+    "tr": "Crédit Mutuel Arkéa siber saldırıyı doğruladı; araştırmacı ZachXBT kripto çekimlerini işaret etti",
+    "se": "Crédit Mutuel Arkéa duođašta cyberfalleheami; guorahalli ZachXBT cuiggodii crypto geassima"
+   },
+   "title_i18n_source": "Nya uppgifter om jättestölden: Ensam datadetektiv bakom upptäckt",
+   "summary_i18n": {
+    "sv": "Crédit Mutuel Arkéa har bekräftat en cyberattack som genomfördes via en tjänsteleverantörs plattform, och uppger att medlen därefter kan ha växlats till kryptovaluta, enligt bankens redogörelse den 4 november 2026. Blockkedjeutredaren ZachXBT var först med att flagga stora otillåtna uttag från konton hos kryptobörser, rapporterar Realtid, som återger belopp på omkring 133 miljoner amerikanska dollar; banken har inte bekräftat det beloppet och säger att den bara kan validera storleksordningen.",
+    "nb": "Crédit Mutuel Arkéa har bekreftet et dataangrep gjennomført via en tjenesteleverandørs plattform, og opplyser at midlene deretter kan ha blitt vekslet til kryptovaluta, ifølge bankens redegjørelse 4. november 2026. Blokkjedeeetterforskeren ZachXBT var først ute med å varsle om store uautoriserte uttak fra kontoer hos kryptobørser, skriver Realtid, som gjengir beløp på rundt 133 millioner amerikanske dollar; banken har ikke bekreftet det beløpet og sier at den bare kan bekrefte størrelsesordenen.",
+    "nn": "Crédit Mutuel Arkéa har stadfesta eit dataåtak gjennomført via ei tenesteleverandørplattform, og opplyser at midlane deretter kan ha blitt veksla til kryptovaluta, ifølgje banken si greining 4. november 2026. Blokkjedeeetterforskaren ZachXBT var fyrst ute med å varsla om store uautoriserte uttak frå kontoar hos kryptobørsar, skriv Realtid, som attgjev beløp på rundt 133 millionar amerikanske dollar; banken har ikkje stadfesta det beløpet og seier at han berre kan stadfesta storleiksordenen.",
+    "da": "Crédit Mutuel Arkéa har bekræftet et cyberangreb gennemført via en tjenesteleverandørs platform og oplyser, at midlerne derefter kan være vekslet til kryptovaluta, ifølge bankens redegørelse den 4. november 2026. Blockchain-efterforskeren ZachXBT var først til at advare om store uautoriserede udtræk fra konti hos kryptobørser, skriver Realtid, som gengiver beløb på omkring 133 millioner amerikanske dollar; banken har ikke bekræftet det beløb og siger, at den kun kan validere størrelsesordenen.",
+    "fi": "Crédit Mutuel Arkéa on vahvistanut palveluntarjoajan alustan kautta toteutetun kyberhyökkäyksen ja todennut, että varat on sen jälkeen saatettu vaihtaa kryptovaluutaksi, pankin 4. marraskuuta 2026 antaman selvityksen mukaan. Lohkoketjututkija ZachXBT havaitsi ensimmäisenä suuria luvattomia nostoja kryptopörssien tileiltä, Realtid kertoo ja siteeraa noin 133 miljoonan Yhdysvaltain dollarin lukuja; pankki ei ole vahvistanut summaa ja sanoo voivansa vahvistaa vain suuruusluokan.",
+    "is": "Crédit Mutuel Arkéa hefur staðfest tölvuárás sem fór fram í gegnum kerfi þjónustuaðila, og segir að fjármunirnir kunni síðan að hafa verið umbreyttir í rafmyntir, samkvæmt yfirlýsingu bankans 4. nóvember 2026. Bálkakeðjurannsakandinn ZachXBT var fyrstur til að vekja athygli á stórum óheimilum úttektum af reikningum hjá rafmyntakauphöllum, greinir Realtid frá og vitnar í tölur um um 133 milljónir Bandaríkjadala; bankinn hefur ekki staðfest þá upphæð og segist aðeins geta staðfest stærðargráðuna.",
+    "zh": "据Crédit Mutuel Arkéa 2026年11月4日的声明，该行确认一起通过服务商平台实施的网络攻击，并表示相关资金随后可能被兑换为加密货币。Realtid报道称，区块链调查者ZachXBT率先发现多家加密货币交易所账户出现大规模未经授权的提现，并援引约1.33亿美元的数字；银行未确认该金额，只表示可以认可数量级。",
+    "hi": "Crédit Mutuel Arkéa के 4 नवंबर 2026 के बयान के अनुसार बैंक ने एक सेवा प्रदाता के प्लेटफॉर्म के जरिए हुए साइबर हमले की पुष्टि की है, और कहा है कि धनराशि इसके बाद क्रिप्टोकरेंसी में बदली गई हो सकती है। Realtid के अनुसार ब्लॉकचेन जांचकर्ता ZachXBT ने क्रिप्टो एक्सचेंज खातों से बड़ी अनधिकृत निकासी का सबसे पहले संकेत दिया, और लगभग 13.3 करोड़ अमेरिकी डॉलर की राशि का उल्लेख है; बैंक ने उस राशि की पुष्टि नहीं की और कहा कि वह केवल परिमाण की पुष्टि कर सकता है।",
+    "es": "Crédit Mutuel Arkéa ha confirmado un ciberataque ejecutado a través de la plataforma de un proveedor de servicios, y ha indicado que los fondos podrían haberse convertido después en criptomonedas, según el comunicado del banco del 4 de noviembre de 2026. El investigador de cadenas de bloques ZachXBT fue el primero en señalar grandes retiradas no autorizadas de cuentas en intercambios de cripto, informa Realtid, que cita cifras de unos 133 millones de dólares estadounidenses; el banco no ha confirmado esa cantidad y ha dicho que solo puede validar el orden de magnitud.",
+    "fr": "Crédit Mutuel Arkéa a confirmé une cyberattaque menée via la plateforme d'un prestataire, et indiqué que les fonds avaient ensuite pu être convertis en cryptomonnaie, selon le communiqué de la banque du 4 novembre 2026. L'enquêteur spécialisé dans les chaînes de blocs ZachXBT a le premier signalé d'importants retraits non autorisés depuis des comptes d'échange de crypto, rapporte Realtid, qui cite des montants d'environ 133 millions de dollars américains ; la banque n'a pas confirmé ce chiffre et a déclaré ne pouvoir valider que l'ordre de grandeur.",
+    "ar": "أكدت Crédit Mutuel Arkéa هجومًا سيبرانيًا نُفّذ عبر منصة لمزوّد خدمات، وقالت إن الأموال ربما حُوّلت بعد ذلك إلى عملات مشفرة، وفق بيان البنك في 4 نوفمبر 2026. وكان المحقق في سلاسل الكتل ZachXBT أول من نبّه إلى عمليات سحب كبيرة غير مصرح بها من حسابات في منصات تداول، وفق ما نقلته Realtid التي ذكرت أرقامًا بنحو 133 مليون دولار أمريكي؛ ولم يؤكد البنك ذلك المبلغ وقال إنه لا يستطيع سوى التحقق من رتبة المقدار.",
+    "bn": "Crédit Mutuel Arkéa-এর ৪ নভেম্বর ২০২৬-এর বিবৃতি অনুযায়ী ব্যাংক একটি সেবা প্রদানকারীর প্ল্যাটফর্মের মাধ্যমে সংঘটিত সাইবার হামলা নিশ্চিত করেছে এবং বলেছে, অর্থ পরে ক্রিপ্টোকারেন্সিতে রূপান্তরিত হতে পারে। Realtid জানায়, ব্লকচেইন তদন্তকারী ZachXBT ক্রিপ্টো এক্সচেঞ্জের অ্যাকাউন্ট থেকে বড় অননুমোদিত উত্তোলন প্রথম চিহ্নিত করেন এবং প্রায় ১৩ কোটি ৩০ লাখ মার্কিন ডলারের পরিমাণ উল্লেখ করেন; ব্যাংক সেই পরিমাণ নিশ্চিত করেনি এবং বলেছে শুধু আনুমানিক মাত্রা যাচাই করতে পারে।",
+    "pt": "O Crédit Mutuel Arkéa confirmou um ciberataque feito através da plataforma de um prestador de serviços e afirmou que os fundos poderão depois ter sido convertidos em criptomoeda, segundo o comunicado do banco de 4 de novembro de 2026. O investigador de cadeias de blocos ZachXBT foi o primeiro a assinalar grandes levantamentos não autorizados de contas em plataformas de cripto, noticia a Realtid, que cita valores de cerca de 133 milhões de dólares americanos; o banco não confirmou esse montante e disse que só pode validar a ordem de grandeza.",
+    "ru": "Crédit Mutuel Arkéa подтвердила кибератаку, проведённую через платформу поставщика услуг, и сообщила, что средства затем могли быть конвертированы в криптовалюту, согласно заявлению банка от 4 ноября 2026 года. Исследователь блокчейна ZachXBT первым указал на крупные несанкционированные выводы со счетов криптобирж, сообщает Realtid, приводя цифры около 133 млн долларов США; банк эту сумму не подтвердил и заявил, что может подтвердить лишь порядок величины.",
+    "ur": "Crédit Mutuel Arkéa کے 4 نومبر 2026 کے بیان کے مطابق بینک نے ایک سروس فراہم کنندہ کے پلیٹ فارم کے ذریعے کیے گئے سائبر حملے کی تصدیق کی ہے، اور کہا ہے کہ رقوم اس کے بعد کرپٹو کرنسی میں تبدیل کی گئی ہو سکتی ہیں۔ Realtid کے مطابق بلاک چین تفتیش کار ZachXBT نے کرپٹو ایکسچینج اکاؤنٹس سے بڑی غیر مجاز نکاسیوں کی سب سے پہلے نشان دہی کی، اور تقریباً 13 کروڑ 30 لاکھ امریکی ڈالر کی رقم کا ذکر ہے؛ بینک نے اس رقم کی تصدیق نہیں کی اور کہا کہ وہ صرف مقدار کے درجے کی تصدیق کر سکتا ہے۔",
+    "id": "Crédit Mutuel Arkéa telah mengonfirmasi serangan siber yang dilakukan melalui platform penyedia jasa, dan menyatakan dana itu kemudian mungkin dikonversi menjadi kripto, menurut pernyataan bank pada 4 November 2026. Investigator rantai blok ZachXBT pertama kali menandai penarikan tidak sah dalam jumlah besar dari akun bursa kripto, laporan Realtid, yang mengutip angka sekitar 133 juta dolar AS; bank tidak mengonfirmasi jumlah itu dan mengatakan hanya dapat memvalidasi orde besarannya.",
+    "de": "Crédit Mutuel Arkéa hat einen über die Plattform eines Dienstleisters ausgeführten Cyberangriff bestätigt und erklärt, die Mittel könnten anschließend in Kryptowährung umgetauscht worden sein, laut der Stellungnahme der Bank vom 4. November 2026. Der Blockchain-Ermittler ZachXBT wies zuerst auf große unautorisierte Abhebungen von Konten bei Kryptobörsen hin, berichtet Realtid unter Angabe von rund 133 Millionen US-Dollar; die Bank hat diesen Betrag nicht bestätigt und sagte, sie könne nur die Größenordnung validieren.",
+    "ja": "クレディ・ミュチュエル・アルケアは、サービス提供者のプラットフォームを通じて行われたサイバー攻撃を確認し、資金はその後暗号資産に換金された可能性があると、2026年11月4日の同行発表で述べた。Realtidによると、ブロックチェーン調査者のZachXBTが暗号資産取引所口座からの大規模な不正引き出しを最初に指摘し、約1億3300万米ドルという数字が報じられている。同行はその金額を確認しておらず、桁の規模のみ認め得るとした。",
+    "sw": "Crédit Mutuel Arkéa imethibitisha shambulio la mtandao lililofanywa kupitia jukwaa la mtoa huduma, na kusema fedha hizo huenda zikabadilishwa kuwa sarafu-fiche, kulingana na taarifa ya benki ya tarehe 4 Novemba 2026. Mchunguzi wa minyororo ya bloku ZachXBT alikuwa wa kwanza kubaini uondoaji mkubwa usioidhinishwa kutoka akaunti za masoko ya kripto, Realtid inaripoti, ikinukuu takwimu za takriban dola za Marekani milioni 133; benki haijathibitisha kiasi hicho na kusema inaweza tu kuthibitisha ukubwa wa takriban.",
+    "mr": "Crédit Mutuel Arkéa च्या 4 नोव्हेंबर 2026 च्या निवेदनानुसार बँकेने सेवा प्रदात्याच्या प्लॅटफॉर्मद्वारे झालेल्या सायबर हल्ल्याची पुष्टी केली आहे आणि म्हटले आहे की निधी नंतर क्रिप्टोकरन्सीत बदलले गेले असावेत. Realtid नुसार ब्लॉकचेन तपासकर्त्या ZachXBT यांनी क्रिप्टो एक्सचेंज खात्यांतून मोठ्या अनधिकृत काढण्यांची पहिली सूचना दिली आणि सुमारे 13.3 कोटी अमेरिकी डॉलरच्या आकड्याचा उल्लेख आहे; बँकेने ती रक्कम निश्चित केलेली नाही आणि केवळ परिमाणाची खात्री देता येईल असे म्हटले.",
+    "fa": "بر اساس بیانیه ۴ نوامبر ۲۰۲۶ بانک، Crédit Mutuel Arkéa حمله سایبری انجام‌شده از طریق پلتفرم یک ارائه‌دهنده خدمات را تأیید کرده و گفته است که وجوه سپس ممکن است به رمزارز تبدیل شده باشد. به گزارش Realtid، بازپرس زنجیره بلوکی ZachXBT نخستین بار برداشت‌های غیرمجاز بزرگ از حساب‌های صرافی رمزارز را نشان داد و ارقامی حدود ۱۳۳ میلیون دلار آمریکا نقل شده است؛ بانک آن مبلغ را تأیید نکرده و گفته تنها می‌تواند مرتبه بزرگی را تأیید کند.",
+    "uk": "Crédit Mutuel Arkéa підтвердила кібератаку, здійснену через платформу постачальника послуг, і заявила, що кошти потім могли бути конвертовані в криптовалюту, згідно із заявою банку від 4 листопада 2026 року. Дослідник блокчейну ZachXBT першим вказав на великі несанкціоновані виведення з рахунків криптобірж, повідомляє Realtid, наводячи цифри близько 133 млн доларів США; банк цю суму не підтвердив і заявив, що може підтвердити лише порядок величини.",
+    "tr": "Crédit Mutuel Arkéa, 4 Kasım 2026 tarihli açıklamasına göre bir hizmet sağlayıcısının platformu üzerinden gerçekleştirilen siber saldırıyı doğruladı ve fonların ardından kripto paraya çevrilmiş olabileceğini belirtti. Realtid'in haberine göre zincirleme blok araştırmacısı ZachXBT, kripto borsası hesaplarından büyük yetkisiz çekimleri ilk işaret eden oldu ve yaklaşık 133 milyon ABD doları tutarı aktarıldı; banka bu tutarı doğrulamadı ve yalnızca büyüklük mertebesini teyit edebileceğini söyledi.",
+    "se": "Crédit Mutuel Arkéa lea duođaštan ahte diehtorihkkun dáhpáhuvai bálvalusa lágideaddji neahta bokte, ja sii dadjet ahte ruđat sáhtte dalle leat konvertejuvvon kriptovalutakássii, báŋko skábmamánu 4. b. 2026 almmuhusa mielde. Blockchain guorahalli ZachXBT vuosttildii álggos stuorra lobihemiid geassádemiid crypto-valuhtakontoin, Realtid dieđiha, ja namuha loguid mat leat sullii 133 miljovnna US dollára; báŋku ii leat duođaštan dan supmi, ja celkkii ahte sáhttá dušše dohkkehit dan sturrosaš supmi."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "e686f18be9a7",
@@ -446,8 +667,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "UK retail IPO access with no independent crypto angle; KVG guide site. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "f9044f555b4a",
@@ -471,8 +693,9 @@
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "be1f4058adbd"
   },
   {
    "id": "f56778b50848",
@@ -497,16 +720,17 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "e8fac7701c95",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "be1f4058adbd"
   },
   {
    "id": "be1f4058adbd",
    "url": "https://shifter.no/nyheter/datasentre-som-driver-med-kryptovirksomhet-vil-ikke-regnes-som-samfunnsnyttige/482056",
    "title": "– Datasentre som driver med kryptovirksomhet, vil ikke regnes som samfunnsnyttige",
-   "title_en": null,
+   "title_en": "Norwegian government plans a licensing regime for data centres; crypto activity is not counted as socially beneficial",
    "source": "shifter",
    "source_name": "Shifter",
    "country": "NO",
@@ -518,14 +742,127 @@
    "published": "2026-11-09T08:53:10+00:00",
    "fetched": "2026-11-10T03:01:13+00:00",
    "topics": [
-    "crypto"
+    "regulation",
+    "energy"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "The Norwegian government will start work on a licensing scheme for data centres, according to a 9 November 2026 press release from the Ministry of Digitalisation and Public Governance and the Ministry of Energy. Facilities used for crypto activity will not be treated as socially beneficial, the government said. It aims to present the main principles in the autumn of 2027. Statnett has separately paused new grid reservations for data centres.",
+   "also_covered_by": [
+    {
+     "outlet": "dn",
+     "outlet_name": "Dagens Næringsliv",
+     "url": "https://dn.no/politikk/regjeringen-varsler-konsesjonsordning-for-datasentre/2-1-2071213",
+     "title": "Regjeringen varsler konsesjonsordning for datasentre",
+     "published": "2026-11-09T08:35:41+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "ruv",
+     "outlet_name": "RÚV",
+     "url": "https://ruv.is/frettir/erlent/2026-11-09-nordmenn-herda-reglur-um-byggingu-gagnavera-492205",
+     "title": "Norðmenn herða reglur um byggingu gagnavera",
+     "published": "2026-11-09T14:32:23+00:00",
+     "lang": "Icelandic",
+     "country": "IS",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "itavisen",
+     "outlet_name": "ITavisen",
+     "url": "https://itavisen.no/2026/11/09/regjeringen-datasentre-strom-ai-krypto-konsesjon",
+     "title": "Regjeringen vil bestemme hvem som får strøm",
+     "published": "2026-11-09T10:09:32+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-12T04:45:16+01:00",
+   "primary_source": {
+    "name": "Regjeringen — pressemelding 9. november 2026",
+    "url": "https://www.regjeringen.no/no/aktuelt/regjeringen-vil-ha-en-kontrollert-vekst-av-samfunnsnyttige-datasentre-i-norge/id3192054/"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/c1431df81160/",
+     "label": "Norway wants to ban bitcoin mining. The miners already left"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/55643fb5a215/",
+     "label": "Government studying a temporary ban on new crypto data centres (written question 15:3707)"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/e88e8e0c9a77/",
+     "label": "Red Party proposes a temporary halt for new data centres"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/bc7a45cb184e/",
+     "label": "SV proposes a halt on new data centres and asks for follow-up of the crypto-mining ban (proposal)"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Regjeringa planlegg konsesjonsordning for datasenter; kryptoaktivitet tel ikkje som samfunnsnyttig",
+    "sv": "Norska regeringen planerar tillståndsprövning för datacenter; kryptoverksamhet räknas inte som samhällsnyttig",
+    "da": "Den norske regering planlægger en licensordning for datacentre; kryptoaktivitet tæller ikke som samfundsnyttig",
+    "fi": "Norjan hallitus suunnittelee toimilupaa datakeskuksille; kryptotoimintaa ei pidetä yhteiskunnallisesti hyödyllisenä",
+    "is": "Norska ríkisstjórnin áformar leyfiskerfi fyrir gagnaver; rafmyntastarfsemi telst ekki þjóðfélagslega gagnleg",
+    "zh": "挪威政府计划对数据中心实行许可制；加密活动不计为具有社会效益",
+    "hi": "नॉर्वे की सरकार डेटा केंद्रों के लिए लाइसेंस व्यवस्था की योजना बना रही है; क्रिप्टो गतिविधि को सामाजिक रूप से लाभकारी नहीं माना जाएगा",
+    "es": "El Gobierno noruego planea un régimen de licencias para centros de datos; la actividad cripto no se considerará de utilidad social",
+    "fr": "Le gouvernement norvégien prévoit un régime d'autorisation pour les centres de données ; l'activité crypto n'est pas considérée comme d'utilité sociale",
+    "ar": "الحكومة النرويجية تخطط لنظام ترخيص لمراكز البيانات؛ نشاط العملات المشفرة لا يُعد ذا منفعة اجتماعية",
+    "bn": "নরওয়ে সরকার ডেটা সেন্টারের জন্য লাইসেন্স ব্যবস্থা পরিকল্পনা করছে; ক্রিপ্টো কার্যক্রম সামাজিকভাবে উপকারী বলে গণ্য হবে না",
+    "pt": "Governo norueguês planeia um regime de licenças para centros de dados; a atividade cripto não conta como socialmente útil",
+    "ru": "Правительство Норвегии планирует лицензирование дата-центров; криптодеятельность не считается общественно полезной",
+    "ur": "ناروے کی حکومت ڈیٹا سینٹرز کے لیے لائسنس نظام کی منصوبہ بندی کر رہی ہے؛ کرپٹو سرگرمی کو سماجی طور پر مفید نہیں سمجھا جائے گا",
+    "id": "Pemerintah Norwegia merencanakan rezim perizinan untuk pusat data; aktivitas kripto tidak dihitung bermanfaat secara sosial",
+    "de": "Norwegische Regierung plant Genehmigungspflicht für Rechenzentren; Kryptoaktivität gilt nicht als gesellschaftlich nützlich",
+    "ja": "ノルウェー政府、データセンターの許可制を計画　暗号資産関連は社会的に有益とみなさず",
+    "sw": "Serikali ya Norway inapanga mfumo wa leseni kwa vituo vya data; shughuli za kripto hazihesabiwi kuwa za manufaa kwa jamii",
+    "mr": "नॉर्वे सरकार डेटा केंद्रांसाठी परवाना व्यवस्था आखत आहे; क्रिप्टो कार्य सामाजिकदृष्ट्या उपयुक्त मानले जाणार नाही",
+    "fa": "دولت نروژ برای مراکز داده نظام مجوز برنامه‌ریزی می‌کند؛ فعالیت رمزارزی سودمند اجتماعی محسوب نمی‌شود",
+    "uk": "Уряд Норвегії планує ліцензування дата-центрів; криптодіяльність не вважається суспільно корисною",
+    "tr": "Norveç hükümeti veri merkezleri için lisans düzeni planlıyor; kripto faaliyeti toplumsal yarar sayılmıyor",
+    "se": "Norgga ráđđehus lea plánemin konsešuvdnadagaldumiid dataguovddážiidda; kryptovalutadoaibma ii lohkko servodatávkkálažžan"
+   },
+   "title_i18n_source": "– Datasentre som driver med kryptovirksomhet, vil ikke regnes som samfunnsnyttige",
+   "summary_i18n": {
+    "nb": "Regjeringen starter arbeidet med en konsesjonsordning for datasentre, ifølge en pressemelding 9. november 2026 fra Digitaliserings- og forvaltningsdepartementet og Energidepartementet. Datasentre som driver med kryptovirksomhet, vil ikke bli ansett som samfunnsnyttige, opplyser regjeringen. Den tar sikte på å legge fram hovedprinsippene høsten 2027. Statnett har på sin side stanset nye reservasjoner av nettkapasitet til datasentre.",
+    "nn": "Regjeringa startar arbeidet med ei konsesjonsordning for datasenter, ifølgje ei pressemelding 9. november 2026 frå Digitaliserings- og forvaltningsdepartementet og Energidepartementet. Datasenter som driv med kryptoverksemd, vil ikkje bli rekna som samfunnsnyttige, opplyser regjeringa. Ho tek sikte på å leggje fram hovudprinsippa hausten 2027. Statnett har på si side stansa nye reservasjonar av nettkapasitet til datasenter.",
+    "sv": "Den norska regeringen inleder arbetet med en tillståndsprövning för datacenter, enligt ett pressmeddelande den 9 november 2026 från digitaliserings- och förvaltningsdepartementet och energidepartementet. Datacenter som bedriver kryptoverksamhet ska inte räknas som samhällsnyttiga, uppger regeringen. Den avser att presentera huvudprinciperna hösten 2027. Statnett har för sin del pausat nya reservationer av nätkapacitet för datacenter.",
+    "da": "Den norske regering starter arbejdet med en licensordning for datacentre, ifølge en pressemeddelelse den 9. november 2026 fra Digitaliserings- og forvaltningsdepartementet og Energidepartementet. Datacentre, der driver kryptoaktivitet, vil ikke blive anset for samfundsnyttige, oplyser regeringen. Den sigter mod at fremlægge hovedprincipperne efteråret 2027. Statnett har på sin side indstillet nye reservationer af netkapacitet til datacentre.",
+    "fi": "Norjan hallitus aloittaa datakeskusten toimilupajärjestelmän valmistelun, kertoo digitalisaatio- ja hallintoministeriön sekä energiaministeriön tiedote 9. marraskuuta 2026. Kryptotoimintaa harjoittavia datakeskuksia ei pidetä yhteiskunnallisesti hyödyllisinä, hallitus ilmoitti. Se aikoo esitellä pääperiaatteet syksyllä 2027. Statnett on erikseen keskeyttänyt uudet verkkokapasiteetin varaukset datakeskuksille.",
+    "is": "Norska ríkisstjórnin hefst handa við leyfiskerfi fyrir gagnaver, samkvæmt fréttatilkynningu 9. nóvember 2026 frá stafræna- og stjórnsýsluráðuneytinu og orkuráðuneytinu. Gagnaver sem stunda rafmyntastarfsemi verða ekki talin þjóðfélagslega gagnleg, segir ríkisstjórnin. Hún stefnir að því að kynna meginstoðirnar haustið 2027. Statnett hefur af sinni hálfu stöðvað nýjar bókanir á netgetu fyrir gagnaver.",
+    "zh": "据挪威数字化和公共治理部与能源部2026年11月9日的新闻稿，挪威政府将着手制定数据中心许可制度。政府表示，从事加密活动的数据中心将不被视为具有社会效益。政府计划在2027年秋季提出主要原则。Statnett已另行暂停为数据中心新增电网容量预留。",
+    "hi": "डिजिटलीकरण एवं लोक शासन मंत्रालय और ऊर्जा मंत्रालय के 9 नवंबर 2026 के प्रेस विज्ञप्ति के अनुसार नॉर्वे की सरकार डेटा केंद्रों के लिए लाइसेंस व्यवस्था पर काम शुरू करेगी। सरकार ने कहा कि क्रिप्टो गतिविधि वाले डेटा केंद्रों को सामाजिक रूप से लाभकारी नहीं माना जाएगा। वह शरद 2027 में मुख्य सिद्धांत प्रस्तुत करने का लक्ष्य रखती है। Statnett ने अलग से डेटा केंद्रों के लिए नई ग्रिड आरक्षण रोक दिए हैं।",
+    "es": "El Gobierno noruego iniciará los trabajos para un régimen de licencias de centros de datos, según un comunicado del 9 de noviembre de 2026 de los ministerios de Digitalización y Gobernanza Pública y de Energía. Los centros usados para actividad cripto no se considerarán de utilidad social, dijo el Gobierno. Pretende presentar los principios principales en el otoño de 2027. Statnett ha suspendido por separado nuevas reservas de capacidad de red para centros de datos.",
+    "fr": "Le gouvernement norvégien va engager les travaux d'un régime d'autorisation pour les centres de données, selon un communiqué du 9 novembre 2026 des ministères de la Numérisation et de la Gouvernance publique et de l'Énergie. Les installations consacrées à l'activité crypto ne seront pas considérées comme d'utilité sociale, a indiqué le gouvernement. Il vise à présenter les principes principaux à l'automne 2027. Statnett a de son côté suspendu les nouvelles réservations de capacité de réseau pour les centres de données.",
+    "ar": "ستبدأ الحكومة النرويجية العمل على نظام ترخيص لمراكز البيانات، وفق بيان في 9 نوفمبر 2026 من وزارتي الرقمنة والحوكمة العامة والطاقة. وقال البيان إن المنشآت المستخدمة في نشاط العملات المشفرة لن تُعد ذات منفعة اجتماعية. وتعتزم الحكومة عرض المبادئ الأساسية في خريف 2027. وقد أوقف Statnett بشكل منفصل حجوزات جديدة لقدرة الشبكة لمراكز البيانات.",
+    "bn": "ডিজিটালাইজেশন ও জনপ্রশাসন মন্ত্রণালয় এবং জ্বালানি মন্ত্রণালয়ের ৯ নভেম্বর ২০২৬-এর প্রেস বিজ্ঞপ্তি অনুযায়ী নরওয়ে সরকার ডেটা সেন্টারের লাইসেন্স ব্যবস্থার কাজ শুরু করবে। সরকার বলেছে, ক্রিপ্টো কার্যক্রমের কেন্দ্র সামাজিকভাবে উপকারী বলে গণ্য হবে না। ২০২৭ সালের শরতে মূল নীতি তুলে ধরার লক্ষ্য রয়েছে। Statnett আলাদাভাবে ডেটা সেন্টারের নতুন গ্রিড সংরক্ষণ স্থগিত করেছে।",
+    "pt": "O Governo norueguês vai iniciar o trabalho de um regime de licenças para centros de dados, segundo um comunicado de 9 de novembro de 2026 dos ministérios da Digitalização e Governação Pública e da Energia. As instalações usadas para atividade cripto não serão consideradas socialmente úteis, afirmou o Governo. Pretende apresentar os princípios principais no outono de 2027. A Statnett suspendeu à parte novas reservas de capacidade de rede para centros de dados.",
+    "ru": "Правительство Норвегии приступит к разработке лицензирования дата-центров, говорится в пресс-релизе министерств цифровизации и государственного управления и энергетики от 9 ноября 2026 года. Объекты, используемые для криптодеятельности, не будут считаться общественно полезными, заявило правительство. Основные принципы оно намерено представить осенью 2027 года. Statnett отдельно приостановила новые резервирования сетевой мощности для дата-центров.",
+    "ur": "ڈیجیٹلائزیشن و پبلک گورننس وزارت اور توانائی وزارت کے 9 نومبر 2026 کے پریس بیان کے مطابق ناروے کی حکومت ڈیٹا سینٹرز کے لیے لائسنس اسکیم پر کام شروع کرے گی۔ حکومت نے کہا کہ کرپٹو سرگرمی والے مراکز کو سماجی طور پر مفید نہیں سمجھا جائے گا۔ وہ خزاں 2027 میں بنیادی اصول پیش کرنے کا ارادہ رکھتی ہے۔ Statnett نے الگ سے ڈیٹا سینٹرز کے لیے نئی گرڈ ریزرویشن روک دی ہیں۔",
+    "id": "Pemerintah Norwegia akan mulai menyusun skema perizinan untuk pusat data, menurut siaran pers 9 November 2026 dari Kementerian Digitalisasi dan Tata Kelola Publik serta Kementerian Energi. Fasilitas yang digunakan untuk aktivitas kripto tidak akan dianggap bermanfaat secara sosial, kata pemerintah. Pemerintah menargetkan merilis prinsip utama pada musim gugur 2027. Statnett secara terpisah menghentikan reservasi kapasitas jaringan baru untuk pusat data.",
+    "de": "Die norwegische Regierung nimmt die Arbeit an einer Genehmigungspflicht für Rechenzentren auf, laut einer Pressemitteilung vom 9. November 2026 des Ministeriums für Digitalisierung und öffentliche Verwaltung sowie des Energieministeriums. Anlagen für Kryptoaktivität gelten demnach nicht als gesellschaftlich nützlich. Die Hauptprinzipien sollen im Herbst 2027 vorgestellt werden. Statnett hat seinerseits neue Netzreservierungen für Rechenzentren ausgesetzt.",
+    "ja": "デジタル化・公共ガバナンス省とエネルギー省の2026年11月9日付発表によると、ノルウェー政府はデータセンターの許可制度の検討を始める。政府は、暗号資産関連の施設は社会的に有益とは見なさないとした。主要な原則は2027年秋に示す方針。Statnettは別に、データセンター向けの新たな送電網容量の予約を停止した。",
+    "sw": "Serikali ya Norway itaanza kazi ya mfumo wa leseni kwa vituo vya data, kulingana na taarifa ya 9 Novemba 2026 kutoka Wizara ya Digiti na Utawala wa Umma na Wizara ya Nishati. Vituo vinavyotumiwa kwa shughuli za kripto havitahesabiwa kuwa vya manufaa kwa jamii, serikali ilisema. Inalenga kuwasilisha kanuni kuu katika vuli ya 2027. Statnett kwa upande wake imesimamisha uhifadhi mpya wa uwezo wa gridi kwa vituo vya data.",
+    "mr": "डिजिटलायझेशन व सार्वजनिक प्रशासन मंत्रालय आणि ऊर्जा मंत्रालयाच्या 9 नोव्हेंबर 2026 च्या पत्रकानुसार नॉर्वे सरकार डेटा केंद्रांसाठी परवाना योजनेचे काम सुरू करेल. क्रिप्टो कार्यासाठी वापरल्या जाणाऱ्या केंद्रांना सामाजिकदृष्ट्या उपयुक्त मानले जाणार नाही, असे सरकारने म्हटले. 2027 च्या शरद ऋतूमध्ये मुख्य तत्त्वे मांडण्याचे उद्दिष्ट आहे. Statnett ने स्वतंत्रपणे डेटा केंद्रांसाठी नवे ग्रीड आरक्षण थांबवले आहे.",
+    "fa": "بر اساس بیانیه ۹ نوامبر ۲۰۲۶ وزارت دیجیتالی‌سازی و حکمرانی عمومی و وزارت انرژی، دولت نروژ کار روی نظام مجوز برای مراکز داده را آغاز می‌کند. دولت گفت تأسیسات مورد استفاده برای فعالیت رمزارزی سودمند اجتماعی تلقی نخواهند شد. هدف ارائه اصول اصلی در پاییز ۲۰۲۷ است. Statnett جداگانه رزروهای جدید ظرفیت شبکه برای مراکز داده را متوقف کرده است.",
+    "uk": "Уряд Норвегії розпочне роботу над ліцензуванням дата-центрів, згідно з пресрелізом міністерств цифровізації та державного управління і енергетики від 9 листопада 2026 року. Об'єкти для криптодіяльності не вважатимуться суспільно корисними, заявив уряд. Основні принципи він має намір представити восени 2027 року. Statnett окремо зупинила нові резервування мережевої потужності для дата-центрів.",
+    "tr": "Norveç hükümeti, Dijitalleşme ve Kamu Yönetimi Bakanlığı ile Enerji Bakanlığının 9 Kasım 2026 tarihli basın açıklamasına göre veri merkezleri için bir lisans düzeni üzerinde çalışmaya başlayacak. Hükümet, kripto faaliyeti yürüten tesislerin toplumsal yarar sayılmayacağını bildirdi. Ana ilkeleri 2027 sonbaharında sunmayı hedefliyor. Statnett ayrıca veri merkezleri için yeni şebeke kapasitesi rezervasyonlarını durdurdu.",
+    "se": "Norgga ráđđehus áigu álggahit barggu ásahit liseanssaid dataguovddážiidda, skábmamánu 9. b. 2026-mannosaš preassadieđáhusa vuođul Ođasmahttin-, hálddahus- ja girkodepartemeanttas ja Oljo- ja energiijadepartemeanttas. Rusttegat mat geavahuvvojit krypto doibmii eai galgga meannuduvvot servodatávkkálažžan, celkkii ráđđehus. Dan ulbmilin lea ovdanbuktit váldoprinsihpaid čakčat 2027. Statnett lea erenoamážit bissehuvvon ođđa fierpmádatreserváhtaid oktavuođas dataguovddážiid várás."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "0c4bba319b97",
@@ -549,8 +886,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Debate/commentary, not news. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "e8fac7701c95",
@@ -574,10 +912,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "be1f4058adbd",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "be1f4058adbd"
   },
   {
    "id": "c131c4638afd",
@@ -610,7 +949,7 @@
    "id": "cc3ec8fc5a45",
    "url": "https://kaupr.io/nyheter/nbx-og-aprikos-venture-soker-pakistan-godkjenning-for-nayapaisa",
    "title": "NBX og Aprikos Venture søker Pakistan-godkjenning for Nayapaisa",
-   "title_en": null,
+   "title_en": "NBX and Aprikos Venture apply in Pakistan for approval of the Nayapaisa exchange",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -622,8 +961,7 @@
    "published": "2026-11-09",
    "fetched": "2026-11-11T02:48:25+00:00",
    "topics": [
-    "crypto",
-    "regulation",
+    "exchanges",
     "companies"
    ],
    "matched": [
@@ -631,9 +969,68 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Norwegian Block Exchange (NBX) and Aprikos Venture have signed a joint venture for a planned Pakistan crypto exchange, Nayapaisa, and have applied to the Pakistan Virtual Assets Regulatory Authority for a No Objection Certificate, according to the companies as reported by Kaupr. The application is the first step in a licensing process, and the exchange will not serve customers until both the certificate and a licence are granted. The plan is to offer deposits and withdrawals in Pakistani rupees through licensed Pakistani banks.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-12T04:45:16+01:00",
+   "primary_source": {
+    "name": "Kaupr",
+    "url": "https://kaupr.io/nyheter/nbx-og-aprikos-venture-soker-pakistan-godkjenning-for-nayapaisa"
+   },
+   "title_i18n": {
+    "nn": "NBX og Aprikos Venture søkjer godkjenning i Pakistan for børsen Nayapaisa",
+    "sv": "NBX och Aprikos Venture ansöker i Pakistan om godkännande för börsen Nayapaisa",
+    "da": "NBX og Aprikos Venture søger i Pakistan om godkendelse af børsen Nayapaisa",
+    "fi": "NBX ja Aprikos Venture hakevat Pakistanissa hyväksyntää Nayapaisa-pörssille",
+    "is": "NBX og Aprikos Venture sækja um samþykki í Pakistan fyrir kauphöllina Nayapaisa",
+    "zh": "NBX与Aprikos Venture在巴基斯坦为Nayapaisa交易所申请批准",
+    "hi": "NBX और Aprikos Venture ने पाकिस्तान में Nayapaisa एक्सचेंज के लिए मंजूरी का आवेदन किया",
+    "es": "NBX y Aprikos Venture solicitan en Pakistán la aprobación del exchange Nayapaisa",
+    "fr": "NBX et Aprikos Venture demandent au Pakistan l'approbation de la plateforme Nayapaisa",
+    "ar": "NBX وAprikos Venture تتقدمان في باكستان بطلب الموافقة على منصة Nayapaisa",
+    "bn": "NBX ও Aprikos Venture পাকিস্তানে Nayapaisa এক্সচেঞ্জের অনুমোদনের আবেদন করেছে",
+    "pt": "NBX e Aprikos Venture pedem no Paquistão aprovação da plataforma Nayapaisa",
+    "ru": "NBX и Aprikos Venture подали в Пакистане заявку на одобрение биржи Nayapaisa",
+    "ur": "NBX اور Aprikos Venture نے پاکستان میں Nayapaisa ایکسچینج کی منظوری کے لیے درخواست دی",
+    "id": "NBX dan Aprikos Venture mengajukan persetujuan di Pakistan untuk bursa Nayapaisa",
+    "de": "NBX und Aprikos Venture beantragen in Pakistan die Genehmigung der Börse Nayapaisa",
+    "ja": "NBXとAprikos Venture、パキスタンでNayapaisa取引所の承認を申請",
+    "sw": "NBX na Aprikos Venture zinatuma maombi nchini Pakistan ya idhini ya soko la Nayapaisa",
+    "mr": "NBX आणि Aprikos Venture यांनी पाकिस्तानात Nayapaisa एक्सचेंजसाठी मंजुरीचा अर्ज केला",
+    "fa": "NBX و Aprikos Venture در پاکستان برای تأیید صرافی Nayapaisa درخواست دادند",
+    "uk": "NBX і Aprikos Venture подали в Пакистані заявку на схвалення біржі Nayapaisa",
+    "tr": "NBX ve Aprikos Venture, Pakistan'da Nayapaisa borsası için onay başvurusu yaptı",
+    "se": "NBX ja Aprikos Venture ohcet Pakistanis Nayapaisa-lonuhallama dohkkeheami"
+   },
+   "title_i18n_source": "NBX og Aprikos Venture søker Pakistan-godkjenning for Nayapaisa",
+   "summary_i18n": {
+    "nb": "Norwegian Block Exchange (NBX) og Aprikos Venture har signert et joint venture for den planlagte pakistanske kryptobørsen Nayapaisa og søkt Pakistan Virtual Assets Regulatory Authority om et No Objection Certificate, ifølge selskapene slik Kaupr gjengir dem. Søknaden er første steg i en lisensprosess, og børsen skal ikke betjene kunder før både attesten og en lisens er innvilget. Planen er inn- og uttak i pakistanske rupier gjennom lisensierte pakistanske banker.",
+    "nn": "Norwegian Block Exchange (NBX) og Aprikos Venture har signert eit joint venture for den planlagde pakistanske kryptobørsen Nayapaisa og søkt Pakistan Virtual Assets Regulatory Authority om eit No Objection Certificate, ifølgje selskapa slik Kaupr attgjev dei. Søknaden er fyrste steg i ein lisensprosess, og børsen skal ikkje betene kundar før både attesten og ein lisens er innvilga. Planen er inn- og uttak i pakistanske rupiar gjennom lisensierte pakistanske bankar.",
+    "sv": "Norwegian Block Exchange (NBX) och Aprikos Venture har tecknat ett joint venture för den planerade pakistanska kryptobörsen Nayapaisa och ansökt hos Pakistan Virtual Assets Regulatory Authority om ett No Objection Certificate, enligt bolagen så som Kaupr återger dem. Ansökan är första steget i en licensprocess, och börsen ska inte betjäna kunder förrän både intyget och en licens har beviljats. Planen är insättningar och uttag i pakistanska rupier via licensierade pakistanska banker.",
+    "da": "Norwegian Block Exchange (NBX) og Aprikos Venture har underskrevet et joint venture for den planlagte pakistanske kryptobørs Nayapaisa og søgt Pakistan Virtual Assets Regulatory Authority om et No Objection Certificate, ifølge selskaberne som gengivet af Kaupr. Ansøgningen er første skridt i en licensproces, og børsen skal ikke betjene kunder, før både attesten og en licens er givet. Planen er ind- og udbetalinger i pakistanske rupees via licenserede pakistanske banker.",
+    "fi": "Norwegian Block Exchange (NBX) ja Aprikos Venture ovat allekirjoittaneet yhteisyrityksen suunniteltua pakistanilaista kryptopörssiä Nayapaisaa varten ja hakeneet Pakistan Virtual Assets Regulatory Authoritylta No Objection Certificate -todistusta, yhtiöiden Kauprille antamien tietojen mukaan. Hakemus on ensimmäinen askel lupaprosessissa, eikä pörssi palvele asiakkaita ennen kuin sekä todistus että toimilupa on myönnetty. Suunnitelmana on talletukset ja nostot Pakistanin rupioissa lisensoitujen pakistanilaisten pankkien kautta.",
+    "is": "Norwegian Block Exchange (NBX) og Aprikos Venture hafa undirritað samrekstur um fyrirhugaða pakistanska rafmyntakauphöllina Nayapaisa og sótt um No Objection Certificate hjá Pakistan Virtual Assets Regulatory Authority, samkvæmt félögunum eins og Kaupr greinir frá. Umsóknin er fyrsta skrefið í leyfisferli, og kauphöllin mun ekki þjónusta viðskiptavini fyrr en bæði vottorðið og leyfi hafa verið veitt. Áætlunin er inn- og úttektir í pakistönskum rúpíum í gegnum leyfisskylda pakistanska banka.",
+    "zh": "据相关公司向Kaupr介绍，Norwegian Block Exchange（NBX）与Aprikos Venture已就计划中的巴基斯坦加密货币交易所Nayapaisa签署合资协议，并向巴基斯坦虚拟资产监管局申请无异议证明。该申请是许可程序的第一步，在获得该证明和许可证之前交易所不会向客户提供服务。计划通过持牌巴基斯坦银行以巴基斯坦卢比办理存取款。",
+    "hi": "कंपनियों के Kaupr में दिए गए बयान के अनुसार, Norwegian Block Exchange (NBX) और Aprikos Venture ने पाकिस्तान के प्रस्तावित क्रिप्टो एक्सचेंज Nayapaisa के लिए संयुक्त उद्यम पर हस्ताक्षर किए हैं और Pakistan Virtual Assets Regulatory Authority से No Objection Certificate के लिए आवेदन किया है। यह आवेदन लाइसेंस प्रक्रिया का पहला कदम है, और प्रमाणपत्र व लाइसेंस मिलने तक एक्सचेंज ग्राहकों को सेवा नहीं देगा। योजना लाइसेंसीकृत पाकिस्तानी बैंकों के जरिए पाकिस्तानी रुपए में जमा और निकासी की है।",
+    "es": "Norwegian Block Exchange (NBX) y Aprikos Venture han firmado una empresa conjunta para el exchange de criptomonedas previsto en Pakistán, Nayapaisa, y han solicitado a la Pakistan Virtual Assets Regulatory Authority un No Objection Certificate, según las compañías tal como las recoge Kaupr. La solicitud es el primer paso de un proceso de licencia, y la plataforma no atenderá a clientes hasta que se concedan el certificado y la licencia. El plan es ofrecer depósitos y retiradas en rupias paquistaníes a través de bancos pakistaníes autorizados.",
+    "fr": "Norwegian Block Exchange (NBX) et Aprikos Venture ont signé une coentreprise pour la plateforme d'échange pakistanaise prévue, Nayapaisa, et ont demandé à la Pakistan Virtual Assets Regulatory Authority un No Objection Certificate, selon les sociétés telles que rapportées par Kaupr. La demande est la première étape d'un processus d'agrément, et la plateforme ne servira pas de clients avant l'octroi du certificat et d'une licence. Le projet est d'offrir des dépôts et retraits en roupies pakistanaises via des banques pakistanaises agréées.",
+    "ar": "وقّعت Norwegian Block Exchange (NBX) وAprikos Venture مشروعًا مشتركًا لمنصة Nayapaisa المزمع إنشاؤها في باكستان، وتقدمتا إلى هيئة تنظيم الأصول الافتراضية الباكستانية بطلب شهادة عدم ممانعة، وفق ما نقلته Kaupr عن الشركتين. والطلب هو الخطوة الأولى في مسار الترخيص، ولن تقدم المنصة خدمات للعملاء قبل منح الشهادة والترخيص. والخطة هي الإيداع والسحب بالروبية الباكستانية عبر مصارف باكستانية مرخّصة.",
+    "bn": "Kaupr-এ কোম্পানিগুলোর বর্ণনা অনুযায়ী, Norwegian Block Exchange (NBX) ও Aprikos Venture পাকিস্তানের পরিকল্পিত ক্রিপ্টো এক্সচেঞ্জ Nayapaisa-এর জন্য যৌথ উদ্যোগে চুক্তি করেছে এবং Pakistan Virtual Assets Regulatory Authority-তে No Objection Certificate-এর আবেদন করেছে। আবেদনটি লাইসেন্স প্রক্রিয়ার প্রথম ধাপ, এবং সনদ ও লাইসেন্স মিললে তবেই এক্সচেঞ্জ গ্রাহকদের সেবা দেবে। পরিকল্পনা লাইসেন্সপ্রাপ্ত পাকিস্তানি ব্যাংকের মাধ্যমে পাকিস্তানি রুপিতে জমা ও উত্তোলন।",
+    "pt": "A Norwegian Block Exchange (NBX) e a Aprikos Venture assinaram um joint venture para a plataforma paquistanesa prevista Nayapaisa e pediram à Pakistan Virtual Assets Regulatory Authority um No Objection Certificate, segundo as empresas conforme relatado pela Kaupr. O pedido é o primeiro passo de um processo de licença, e a plataforma não servirá clientes até que o certificado e uma licença sejam concedidos. O plano é depósitos e levantamentos em rúpias paquistanesas através de bancos paquistaneses licenciados.",
+    "ru": "Norwegian Block Exchange (NBX) и Aprikos Venture подписали совместное предприятие по созданию планируемой пакистанской криптобиржи Nayapaisa и подали в Pakistan Virtual Assets Regulatory Authority заявку на No Objection Certificate, сообщают компании в изложении Kaupr. Заявка — первый шаг лицензионного процесса, и биржа не будет обслуживать клиентов, пока не будут выданы и сертификат, и лицензия. Планируются депозиты и выводы в пакистанских рупиях через лицензированные пакистанские банки.",
+    "ur": "کمپنیوں کے Kaupr میں دیے گئے بیان کے مطابق، Norwegian Block Exchange (NBX) اور Aprikos Venture نے پاکستان کے مجوزہ کرپٹو ایکسچینج Nayapaisa کے لیے جوائنٹ وینچر پر دستخط کیے ہیں اور Pakistan Virtual Assets Regulatory Authority سے No Objection Certificate کی درخواست کی ہے۔ یہ درخواست لائسنس کے عمل کا پہلا قدم ہے، اور سرٹیفکیٹ و لائسنس ملنے تک ایکسچینج صارفین کو خدمات نہیں دے گا۔ منصوبہ لائسنس یافتہ پاکستانی بینکوں کے ذریعے پاکستانی روپے میں جمع اور نکاسی کا ہے۔",
+    "id": "Norwegian Block Exchange (NBX) dan Aprikos Venture telah meneken usaha patungan untuk bursa kripto Pakistan yang direncanakan, Nayapaisa, dan mengajukan No Objection Certificate kepada Pakistan Virtual Assets Regulatory Authority, menurut perusahaan sebagaimana dilaporkan Kaupr. Permohonan itu adalah langkah pertama proses perizinan, dan bursa tidak akan melayani nasabah sebelum sertifikat dan lisensi diberikan. Rencananya setoran dan penarikan dalam rupee Pakistan melalui bank Pakistan yang berizin.",
+    "de": "Norwegian Block Exchange (NBX) und Aprikos Venture haben ein Gemeinschaftsunternehmen für die geplante pakistanische Kryptobörse Nayapaisa unterzeichnet und bei der Pakistan Virtual Assets Regulatory Authority ein No Objection Certificate beantragt, laut den Unternehmen, wie Kaupr sie wiedergibt. Der Antrag ist der erste Schritt eines Lizenzverfahrens, und die Börse soll Kunden erst nach Erteilung sowohl der Bescheinigung als auch einer Lizenz bedienen. Geplant sind Ein- und Auszahlungen in pakistanischen Rupien über lizenzierte pakistanische Banken.",
+    "ja": "Kauprが伝える各社の説明によると、Norwegian Block Exchange（NBX）とAprikos Ventureは、パキスタンで計画中の暗号資産取引所Nayapaisaの合弁契約に署名し、パキスタン仮想資産規制当局に異議なし証明書を申請した。申請は認可手続きの第一歩で、証明書とライセンスの両方が下りるまで顧客向けサービスは行わない。認可を受けたパキスタンの銀行を通じ、パキスタン・ルピーでの入出金を想定している。",
+    "sw": "Norwegian Block Exchange (NBX) na Aprikos Venture zimesaini ubia wa soko la kripto linalopangwa nchini Pakistan, Nayapaisa, na kuomba Pakistan Virtual Assets Regulatory Authority No Objection Certificate, kwa mujibu wa kampuni kama Kaupr inavyoripoti. Ombi hilo ni hatua ya kwanza ya mchakato wa leseni, na soko hilo halitahudumia wateja hadi cheti na leseni vitakapodolewa. Mpango ni kuweka na kutoa fedha kwa rupia za Pakistan kupitia benki za Pakistan zenye leseni.",
+    "mr": "कंपन्यांनी Kaupr ला दिलेल्या माहितीनुसार, Norwegian Block Exchange (NBX) आणि Aprikos Venture यांनी पाकिस्तानातील प्रस्तावित क्रिप्टो एक्सचेंज Nayapaisa साठी संयुक्त उपक्रम केला आहे आणि Pakistan Virtual Assets Regulatory Authority कडे No Objection Certificate साठी अर्ज केला आहे. हा अर्ज परवाना प्रक्रियेतील पहिले पाऊल आहे आणि प्रमाणपत्र व परवाना मिळेपर्यंत एक्सचेंज ग्राहकांना सेवा देणार नाही. योजना परवानाधारक पाकिस्तानी बँकांद्वारे पाकिस्तानी रुपयांमध्ये ठेवी व काढणे आहे.",
+    "fa": "به گزارش شرکت‌ها که Kaupr نقل کرده، Norwegian Block Exchange (NBX) و Aprikos Venture برای صرافی رمزارز برنامه‌ریزی‌شده در پاکستان، Nayapaisa، قرارداد مشارکت امضا کرده و از نهاد تنظیم دارایی‌های مجازی پاکستان گواهی عدم اعتراض درخواست کرده‌اند. این درخواست نخستین گام فرایند مجوز است و صرافی تا صدور گواهی و مجوز به مشتریان خدمت نخواهد داد. برنامه، واریز و برداشت به روپیه پاکستان از طریق بانک‌های دارای مجوز پاکستانی است.",
+    "uk": "Norwegian Block Exchange (NBX) і Aprikos Venture підписали спільне підприємство щодо планованої пакистанської криптобіржі Nayapaisa й подали до Pakistan Virtual Assets Regulatory Authority заявку на No Objection Certificate, повідомляють компанії у викладі Kaupr. Заявка — перший крок ліцензійного процесу, і біржа не обслуговуватиме клієнтів, доки не буде видано і сертифікат, і ліцензію. Плануються депозити та виведення в пакистанських рупіях через ліцензовані пакистанські банки.",
+    "tr": "Kaupr'ın aktardığı şirket açıklamalarına göre Norwegian Block Exchange (NBX) ile Aprikos Venture, Pakistan'da planlanan kripto borsası Nayapaisa için ortak girişim imzaladı ve Pakistan Virtual Assets Regulatory Authority'ye No Objection Certificate başvurusu yaptı. Başvuru lisans sürecinin ilk adımı ve borsa, belge ile lisans verilene kadar müşteri kabul etmeyecek. Plan, lisanslı Pakistan bankaları üzerinden Pakistan rupisiyle yatırma ve çekme imkânı sunmak.",
+    "se": "Norwegian Block Exchange (NBX) ja Aprikos Venture leat vuolláičállán ovttasbargošiehtadusa plánejuvvon Pakistan crypto exchange, Nayapaisa várás, ja leat ohcan Pakistan Virtual Assets Regulatory Authority:ii No Objection Certificate, fitnodagaid dieđuid mielde Kaupr. Ohcamuš lea vuosttaš lávki konsešuvdnameannudeamis, ja dat ii leat anus ovdal go sihke sertifikáhta ja konsešuvdna lea addojuvvon. Plána lea fállat seastin- ja reantomávssuid Pakistana rúpiijain Pakistana báŋkkuid bokte, main lea lisensa."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "e9d337427d2e",
@@ -659,9 +1056,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Market/price commentary in a TV interview. researcher 12.11; editor 2026-11-12"
   },
   {
    "id": "f4a5ab5ec767",
