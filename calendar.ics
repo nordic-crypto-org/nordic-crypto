@@ -5,8 +5,27 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Nordic Crypto
 BEGIN:VEVENT
+UID:4a60aa9b39c4@nordiccrypto.no
+DTSTAMP:20261112T065707Z
+DTSTART:20260211T170000Z
+DTEND:20260211T190000Z
+SUMMARY:Satoshi Nakamoto-årstalen
+LOCATION:Målstova\, Nasjonalbiblioteket\, Henrik Ibsens gate 110\, Oslo
+URL:https://www.nb.no/hva-skjer/satoshi-nakamoto-arstalen/
+END:VEVENT
+BEGIN:VEVENT
+UID:71149f675741@nordiccrypto.no
+DTSTAMP:20261112T065707Z
+DTSTART:20260825T063000Z
+DTEND:20260826T103000Z
+SUMMARY:Arne Ryde Conference on Crypto\, Fintech and Payments
+LOCATION:Grand Hotel\, Bantorget 1\, Lund\, Lund
+URL:https://www.lusem.lu.se/calendar/arne-ryde-conference-crypto-fintech-an
+ d-payments
+END:VEVENT
+BEGIN:VEVENT
 UID:ccc2eea6b213@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261008T160000Z
 DTEND:20261008T190000Z
 SUMMARY:Göteborg Bitcoin Meetup #49
@@ -15,7 +34,7 @@ URL:https://www.meetup.com/swedish-bitcoin-meetups/events/316047111/
 END:VEVENT
 BEGIN:VEVENT
 UID:019f42a4506c@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261014T153000Z
 DTEND:20261014T163000Z
 SUMMARY:Crypto killer apps: bitcoin-appene som endrer økonomien
@@ -27,7 +46,7 @@ DESCRIPTION:Paid entry (NOK 239 for non-members). Held in cooperation with
 END:VEVENT
 BEGIN:VEVENT
 UID:c4a53ca9bd26@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261015T153000Z
 DTEND:20261015T183000Z
 SUMMARY:Uppsala Bitcoin Meetup
@@ -37,7 +56,7 @@ URL:https://www.meetup.com/swedish-bitcoin-meetups/events/316799619/
 END:VEVENT
 BEGIN:VEVENT
 UID:16b9aa68f972@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261018T110000Z
 DTEND:20261018T140000Z
 SUMMARY:Bitcoin Walk i Göteborg
@@ -47,21 +66,16 @@ URL:https://www.meetup.com/swedish-bitcoin-meetups/events/316926193/
 END:VEVENT
 BEGIN:VEVENT
 UID:dde3d01aa7af@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261024T163000Z
 DTEND:20261024T171500Z
 SUMMARY:Har bankene kuppet kryptorevolusjonen?
 LOCATION:Vingtor\, Børehaugen 1A\, 4006 Stavanger\, Stavanger
 URL:https://www.kaakaa.no/program/har-bankene-kuppet-kryptorevolusjonen
-DESCRIPTION:Panel debate at Vingtor in Stavanger on whether banks have take
- n over the crypto revolution\, covering banks\, stablecoins\, tokenisation
-  and Bitcoin. The panel includes representatives of Bitcoinpolitisk Instit
- utt Norge\, Norges Bank and SpareBank 1 Sør-Norge. Organised by KÅKÅ\; 
- the price is not stated on the event page.
 END:VEVENT
 BEGIN:VEVENT
 UID:a1ea7afabcb0@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261028T160000Z
 DTEND:20261028T180000Z
 SUMMARY:Oslo Blockchain Meetup - Nexa
@@ -72,7 +86,7 @@ DESCRIPTION:Disclosure: the speaker\, Jørgen S. Notland\, is the publisher
 END:VEVENT
 BEGIN:VEVENT
 UID:468257223a39@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261028T163000Z
 SUMMARY:Lund Bitcoin Meetup #1
 LOCATION:Lunds stadsbibliotek\, Sankt Petri kyrkogata 6\, 222 21 Lund\, Swe
@@ -81,7 +95,7 @@ URL:https://www.meetup.com/bitcoin-malmo/events/316993795/
 END:VEVENT
 BEGIN:VEVENT
 UID:bddf7842a80a@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261029T180000Z
 DTEND:20261029T190000Z
 SUMMARY:Cantillon-effekten & pengar
@@ -91,7 +105,7 @@ URL:https://www.litteraturhuset.no/nb/arrangement/cantillon-effekten-and-pe
 END:VEVENT
 BEGIN:VEVENT
 UID:568131609e50@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261031T130000Z
 DTEND:20261031T143000Z
 SUMMARY:Who is listening to Bitcoin in Norway?
@@ -102,8 +116,19 @@ DESCRIPTION:Free online broadcast about bitcoin\, politics and the road ahe
  oadcast.
 END:VEVENT
 BEGIN:VEVENT
+UID:fb0847fb538e@nordiccrypto.no
+DTSTAMP:20261112T065707Z
+DTSTART:20261104T100000Z
+DTEND:20261104T113000Z
+SUMMARY:Impact Onchain: from hackathon to real projects
+LOCATION:Online
+URL:https://events.kaupr.io/products/impact-onchain
+DESCRIPTION:held: location check not passed - no concrete stream link yet\;
+  speakers not announced
+END:VEVENT
+BEGIN:VEVENT
 UID:a6cadcf35c22@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261105T163000Z
 DTEND:20261105T220000Z
 SUMMARY:Stockholm Bitcoin Meetup #54
@@ -112,7 +137,7 @@ URL:https://www.meetup.com/swedish-bitcoin-meetups/events/312669067/
 END:VEVENT
 BEGIN:VEVENT
 UID:ce0c87469bd8@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261106T160000Z
 DTEND:20261106T190000Z
 SUMMARY:Discussion about Bitcoin and related topics
@@ -121,18 +146,8 @@ LOCATION:Faro Channelside Bar & Restaurant\, Kellosaarenranta 2\, Helsinki
 URL:https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgyjcpbjb/
 END:VEVENT
 BEGIN:VEVENT
-UID:fb0847fb538e@nordiccrypto.no
-DTSTAMP:20261112T064145Z
-DTSTART:20261111T100000Z
-DTEND:20261111T113000Z
-SUMMARY:Impact Onchain: from hackathon to real projects
-LOCATION:Online
-URL:https://events.kaupr.io/products/impact-onchain
-DESCRIPTION:Stream link and speakers not yet announced by the organiser.
-END:VEVENT
-BEGIN:VEVENT
 UID:8ce92490672e@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261111T180000Z
 DTEND:20261111T190000Z
 SUMMARY:Bitcoin er tid
@@ -141,17 +156,16 @@ URL:https://www.litteraturhuset.no/nb/arrangement/bitcoin-er-tid
 END:VEVENT
 BEGIN:VEVENT
 UID:8d082fe08901@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261112T170000Z
 DTEND:20261112T193000Z
 SUMMARY:Göteborg Bitcoin Meetup #50
 LOCATION:Ölrepubliken\, Kronhusgatan 2B\, Göteborg\, Göteborg
 URL:https://www.meetup.com/swedish-bitcoin-meetups/events/317285663/
-DESCRIPTION:Speakers not yet announced by the organiser.
 END:VEVENT
 BEGIN:VEVENT
 UID:e8e2b767dca6@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261113T170000Z
 DTEND:20261113T193000Z
 SUMMARY:Uppsala Bitcoin Meetup
@@ -162,44 +176,66 @@ DESCRIPTION:Informal Bitcoin-only meetup at a restaurant in Uppsala. No ent
 END:VEVENT
 BEGIN:VEVENT
 UID:0a376d3ef05e@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261115T120000Z
 DTEND:20261115T150000Z
-SUMMARY:Bitcoin Walk in Gothenburg
-LOCATION:Thai Samila\, Långedragsvägen 18\, Västra Frölunda\, Göteborg
- \, Göteborg
+SUMMARY:Bitcoin Walk i Göteborg
+LOCATION:Thai Samila\, Långedragsvägen 18\, 426 71 Västra Frölunda\, Go
+ thenburg\, Gothenburg
 URL:https://www.meetup.com/swedish-bitcoin-meetups/events/317358176/
-DESCRIPTION:https://www.google.com/maps/search/?api=1&query=57.680023\,11.8
- 99940
 END:VEVENT
 BEGIN:VEVENT
 UID:eec0d2d82253@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261116T160000Z
-DTEND:20261116T180000Z
 SUMMARY:Lund Bitcoin Meetup #2
-LOCATION:Lunds stadsbibliotek\, Sankt Petri kyrkogata 6\, 222 21 Lund\, Lun
- d
+LOCATION:Lunds stadsbibliotek\, Sankt Petri kyrkogata 6\, 222 21 Lund\, Swe
+ den\, Lund\, Lund
 URL:https://www.meetup.com/bitcoin-malmo/events/317188314/
-DESCRIPTION:Speakers not yet announced by the organiser.
+END:VEVENT
+BEGIN:VEVENT
+UID:43e778cb5318@nordiccrypto.no
+DTSTAMP:20261112T065707Z
+DTSTART:20261119T163000Z
+SUMMARY:Bitcoin Suisse Europe launches in the Nordics
+LOCATION:La Voûte\, Bank Hotel\, Arsenalsgatan 6\, 111 47 Stockholm\, Stoc
+ kholm
+URL:https://eu.welcometobetter.bitcoinsuisse.com/bitcoin-suisse-europe-laun
+ ches-in-the-nordics
+DESCRIPTION:Invitation only. Doors open 17:30 CET. Roman Przibylla and Domi
+ nic Weibel on the market outlook\, and Pernilla van der Capellen (Aspia) o
+ n Swedish tax treatment of digital assets\, then drinks in the vault. Atte
+ ndance is by invitation from Bitcoin Suisse.\nhttps://www.google.com/maps/
+ search/?api=1&query=La%20Vo%C3%BBte%2C%20Bank%20Hotel%2C%20Arsenalsgatan%2
+ 06%2C%20111%2047%20Stockholm
+END:VEVENT
+BEGIN:VEVENT
+UID:6054d96c8b8f@nordiccrypto.no
+DTSTAMP:20261112T065707Z
+DTSTART:20261119T170000Z
+DTEND:20261119T181500Z
+SUMMARY:Exklusiv kväll med Bitwise
+LOCATION:Sturegatan 15\, 113 89 Stockholm\, Stockholm
+URL:https://medlem.ungaaktiesparare.se/event/exklusiv-kvall-med-bitwise/
+DESCRIPTION:In Swedish. Limited places. Marco Poblete (Bitwise\, Nordic hea
+ d) on bitcoin and the largest crypto assets: how they work\, the role they
+  play in today's market\, and where he sees it going\, with questions from
+  the floor.\nhttps://www.google.com/maps/search/?api=1&query=Sturegatan%20
+ 15%2C%20113%2089%20Stockholm
 END:VEVENT
 BEGIN:VEVENT
 UID:63d4fce1ecd7@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261125T080000Z
 DTEND:20261127T150000Z
 SUMMARY:3rd International Conference on Digital Sovereignty (ICDS) 2026
 LOCATION:Oslo Science Park\, Gaustadalléen 21\, 0349 Oslo\, Oslo
 URL:https://ife.no/en/event/international-conference-on-digital-sovereignty
  -icds-2026/
-DESCRIPTION:International conference on digital sovereignty\, 25–27 Novem
- ber 2026 at Oslo Science Park in Oslo\, organised by the Institute for Ene
- rgy Technology (IFE). Registration costs €230 (early) or €350\, plus V
- AT.
 END:VEVENT
 BEGIN:VEVENT
 UID:7adc8e1ede97@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261125T160000Z
 DTEND:20261125T180000Z
 SUMMARY:Crypto tax with Reese Legal
@@ -208,7 +244,7 @@ URL:https://www.meetup.com/oslo-blockchain-meetup/events/316768461/
 END:VEVENT
 BEGIN:VEVENT
 UID:e884ba1f0333@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261203T163000Z
 DTEND:20261203T220000Z
 SUMMARY:Stockholm Bitcoin Meetup #55
@@ -217,7 +253,7 @@ URL:https://www.meetup.com/swedish-bitcoin-meetups/events/312669070/
 END:VEVENT
 BEGIN:VEVENT
 UID:19b92e24ee50@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261204T160000Z
 DTEND:20261204T190000Z
 SUMMARY:Discussion about Bitcoin and related topics
@@ -227,7 +263,7 @@ URL:https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgyjcqbgb/
 END:VEVENT
 BEGIN:VEVENT
 UID:94eb014a9e2a@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20261208T120000Z
 DTEND:20261208T130000Z
 SUMMARY:What Nordic Banks Are Actually Doing with Blockchain
@@ -238,7 +274,7 @@ DESCRIPTION:Stream link not yet announced by the organiser. Live session on
 END:VEVENT
 BEGIN:VEVENT
 UID:3c7c538ff512@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20270101T160000Z
 DTEND:20270101T190000Z
 SUMMARY:Discussion about Bitcoin and related topics
@@ -250,7 +286,7 @@ DESCRIPTION:Falls on New Year's Day: check the organiser's page before you
 END:VEVENT
 BEGIN:VEVENT
 UID:105f743dcf3d@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20270205T160000Z
 DTEND:20270205T190000Z
 SUMMARY:Discussion about Bitcoin and related topics
@@ -260,28 +296,21 @@ URL:https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcdbhb/
 END:VEVENT
 BEGIN:VEVENT
 UID:03951f33970c@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20270209T230000Z
 DTEND:20270210T225900Z
 SUMMARY:Satoshi Nakamoto-årstalen 2027
-LOCATION:Oslo
+LOCATION:Nasjonalbiblioteket\, Oslo
 URL:https://bpinorge.no/
-DESCRIPTION:The Satoshi Nakamoto Lecture 2027\, Bitcoinpolitisk Institutt N
- orge's alternative annual lecture on Bitcoin and money\, takes place in Os
- lo on 10 February 2027. The time and venue will be confirmed later. No pri
- ce is stated.
 END:VEVENT
 BEGIN:VEVENT
 UID:4390472e32b7@nordiccrypto.no
-DTSTAMP:20261112T064145Z
+DTSTAMP:20261112T065707Z
 DTSTART:20270305T160000Z
 DTEND:20270305T190000Z
 SUMMARY:Discussion about Bitcoin and related topics
 LOCATION:Faro Channelside Bar & Restaurant\, Kellosaarenranta 2\, Helsinki
  \, Helsinki
 URL:https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/
-DESCRIPTION:Speakers not yet announced by the organiser.\nhttps://www.googl
- e.com/maps/search/?api=1&query=Faro%20Channelside%20Bar%20%26%20Restaurant
- %2C%20Kellosaarenranta%202%2C%20Helsinki
 END:VEVENT
 END:VCALENDAR

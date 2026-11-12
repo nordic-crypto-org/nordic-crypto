@@ -1,27 +1,23 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T06:41:44+00:00",
+ "generated_at": "2026-11-12T06:57:05+00:00",
  "preview": false,
  "item": {
-  "country": "IS",
-  "title": "Twitter-Based uncertainty and cryptocurrency returns",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "David Y. Aharon",
    "Ender Demir",
    "Chi Keung Marco Lau",
    "Adam Zaremba"
   ],
-  "institution": "Reykjavík University",
-  "year": 2021,
-  "type": "paper",
-  "venue": "Research in International Business and Finance",
-  "doi": "10.1016/j.ribaf.2021.101546",
-  "url": "https://doi.org/10.1016/j.ribaf.2021.101546",
+  "checked": "2026-11-09",
+  "country": "IS",
   "db": "https://openalex.org/W3199876671",
   "db_name": "OpenAlex",
-  "source": "https://doi.org/10.1016/j.ribaf.2021.101546",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.ribaf.2021.101546",
+  "id": "doi-10.1016_j.ribaf.2021.101546",
+  "institution": "Reykjavík University",
   "keywords": [
    "Cryptocurrency",
    "Econometrics",
@@ -32,10 +28,14 @@
    "Predictability",
    "Cash"
   ],
-  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.ribaf.2021.101546",
+  "title": "Twitter-Based uncertainty and cryptocurrency returns",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.ribaf.2021.101546",
+  "venue": "Research in International Business and Finance",
+  "year": 2021,
   "about_i18n": {},
-  "id": "doi-10.1016_j.ribaf.2021.101546",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.ribaf.2021.101546.json"
  }

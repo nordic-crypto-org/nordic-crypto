@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T06:41:44+00:00",
+ "generated_at": "2026-11-12T06:57:05+00:00",
  "preview": false,
  "item": {
-  "country": "NO",
-  "title": "Enabling Localized Peer-to-Peer Electricity Trading Among Plug-in Hybrid Electric Vehicles Using Consortium Blockchains",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Jiawen Kang",
    "Rong Yu",
@@ -14,16 +13,13 @@
    "Yan Zhang",
    "Ekram Hossain"
   ],
-  "institution": "University of Oslo, Simula Research Laboratory",
-  "year": 2017,
-  "type": "paper",
-  "venue": "IEEE Transactions on Industrial Informatics",
-  "doi": "10.1109/tii.2017.2709784",
-  "url": "https://doi.org/10.1109/tii.2017.2709784",
+  "checked": "2026-11-09",
+  "country": "NO",
   "db": "https://doi.org/10.1109/tii.2017.2709784",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1109/tii.2017.2709784",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1109/tii.2017.2709784",
+  "id": "doi-10.1109_tii.2017.2709784",
+  "institution": "University of Oslo, Simula Research Laboratory",
   "keywords": [
    "Electricity",
    "Environmental economics",
@@ -34,10 +30,14 @@
    "Business",
    "Electricity market"
   ],
-  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1109/tii.2017.2709784",
+  "title": "Enabling Localized Peer-to-Peer Electricity Trading Among Plug-in Hybrid Electric Vehicles Using Consortium Blockchains",
+  "type": "paper",
+  "url": "https://doi.org/10.1109/tii.2017.2709784",
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "year": 2017,
   "about_i18n": {},
-  "id": "doi-10.1109_tii.2017.2709784",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_tii.2017.2709784.json"
  }

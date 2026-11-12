@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T06:41:44+00:00",
+ "generated_at": "2026-11-12T06:57:05+00:00",
  "preview": false,
  "item": {
-  "country": "SE",
-  "title": "A Survey of Blockchain From the Perspectives of Applications, Challenges, and Opportunities",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Ahmed Afif Monrat",
    "Olov Schelén",
    "Karl Andersson"
   ],
-  "institution": "Luleå University of Technology",
-  "year": 2019,
-  "type": "paper",
-  "venue": "IEEE Access",
-  "doi": "10.1109/access.2019.2936094",
-  "url": "https://doi.org/10.1109/access.2019.2936094",
+  "checked": "2026-11-09",
+  "country": "SE",
   "db": "https://openalex.org/W2969971691",
   "db_name": "OpenAlex",
-  "source": "https://doi.org/10.1109/access.2019.2936094",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1109/access.2019.2936094",
+  "id": "doi-10.1109_access.2019.2936094",
+  "institution": "Luleå University of Technology",
   "keywords": [
    "Blockchain",
    "Cryptocurrency",
@@ -31,10 +27,14 @@
    "Transparency (behavior)",
    "Decentralization"
   ],
-  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1109/access.2019.2936094",
+  "title": "A Survey of Blockchain From the Perspectives of Applications, Challenges, and Opportunities",
+  "type": "paper",
+  "url": "https://doi.org/10.1109/access.2019.2936094",
+  "venue": "IEEE Access",
+  "year": 2019,
   "about_i18n": {},
-  "id": "doi-10.1109_access.2019.2936094",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_access.2019.2936094.json"
  }

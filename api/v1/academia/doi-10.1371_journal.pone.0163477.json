@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T06:41:44+00:00",
+ "generated_at": "2026-11-12T06:57:05+00:00",
  "preview": false,
  "item": {
-  "country": "FI",
-  "title": "Where Is Current Research on Blockchain Technology?—A Systematic Review",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Jesse Yli-Huumo",
    "Deokyoon Ko",
@@ -13,16 +12,13 @@
    "Sooyong Park",
    "Kari Smolander"
   ],
-  "institution": "Lappeenranta-Lahti University of Technology, Aalto University",
-  "year": 2016,
-  "type": "paper",
-  "venue": "PLoS ONE",
-  "doi": "10.1371/journal.pone.0163477",
-  "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0163477&type=printable",
+  "checked": "2026-11-09",
+  "country": "FI",
   "db": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0163477&type=printable",
   "db_name": "openalex",
-  "source": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0163477&type=printable",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1371/journal.pone.0163477",
+  "id": "doi-10.1371_journal.pone.0163477",
+  "institution": "Lappeenranta-Lahti University of Technology, Aalto University",
   "keywords": [
    "Blockchain",
    "Cryptocurrency",
@@ -33,10 +29,14 @@
    "Anonymity",
    "Big data"
   ],
-  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
+  "source": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0163477&type=printable",
+  "title": "Where Is Current Research on Blockchain Technology?—A Systematic Review",
+  "type": "paper",
+  "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0163477&type=printable",
+  "venue": "PLoS ONE",
+  "year": 2016,
   "about_i18n": {},
-  "id": "doi-10.1371_journal.pone.0163477",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1371_journal.pone.0163477.json"
  }
