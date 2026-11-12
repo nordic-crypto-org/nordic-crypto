@@ -1,11 +1,118 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T08:53:04+00:00",
+ "generated_at": "2026-11-12T13:56:44+00:00",
  "preview": false,
  "country": "NO",
- "count": 61,
+ "count": 62,
  "items": [
+  {
+   "id": "5e261442357d",
+   "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+   "html_url": "https://nordiccrypto.no/stories/5e261442357d/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/5e261442357d.json",
+   "title": "Bitcoin er tid: en klokke uten urmaker",
+   "title_en": "Bitcoin is time: a clock without a clockmaker",
+   "title_i18n": {},
+   "source": "enogtjue",
+   "source_name": "Enogtjue",
+   "source_logo": null,
+   "source_note": null,
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-11",
+   "topics": [
+    "bitcoin"
+   ],
+   "summary": "Andreas Schjønhaug gave a talk at Litteraturhuset in Oslo on 11 November 2026, arranged by Bitcoinpolitisk institutt Norge, with comments from philosopher Sæbjørn Forberg. The lecture argues that money stores the value of work across time, and that Bitcoin is best understood as a clock in which each tick requires proof-of-work. It follows that idea from Vinje's phrase that money is frozen human sweat, through earlier energy-money proposals by writers such as H.G. Wells and Henry Ford, to Satoshi Nakamoto's 2008 design of a shared ledger that keeps a common history without a central timekeeper.",
+   "summary_i18n": {},
+   "paywall": false,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "commons-bitcoin",
+    "kind": "commons",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/commons-bitcoin.webp",
+    "width": 365,
+    "height": 872,
+    "alt": "A physical bitcoin token in a clear case.",
+    "source": "Wikimedia Commons",
+    "author": "Heuboden",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Bitcoin_coin_in_plastic_packaging.jpg",
+    "credit": "Photo: Heuboden. Licence: CC BY-SA 4.0. Source: Wikimedia Commons. Cropped.",
+    "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "enogtjue",
+    "outlet_name": "Enogtjue",
+    "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+    "title": "Bitcoin er tid: en klokke uten urmaker",
+    "published": "2026-11-11",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": true,
+    "logo": null
+   },
+   "primary_source_document": null,
+   "also_covered_by": [],
+   "sources": [
+    {
+     "outlet": "enogtjue",
+     "outlet_name": "Enogtjue",
+     "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+     "title": "Bitcoin er tid: en klokke uten urmaker",
+     "published": "2026-11-11",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": true,
+     "logo": null
+    }
+   ],
+   "coverage": {
+    "count": 1,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 1,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 1,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": null
+  },
   {
    "id": "068db9ee437e",
    "url": "https://kaupr.io/nyheter/axiology-har-fatt-utvidet-mifid-lisens-for-tokeniserte-aktiva",

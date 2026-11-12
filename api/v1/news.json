@@ -1,13 +1,120 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T08:53:04+00:00",
+ "generated_at": "2026-11-12T13:56:44+00:00",
  "preview": false,
- "updated": "2026-11-12T08:49:55+00:00",
+ "updated": "2026-11-12T13:53:33+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. image is this story's own illustration when one has been generated: url, width, height, alt, style and kind. The story page uses that url as the hero and as og:image, in every language. Null means the page keeps the Nordic Crypto brand image. The picture is not a newspaper photograph. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
- "count": 128,
+ "count": 129,
  "items": [
+  {
+   "id": "5e261442357d",
+   "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+   "html_url": "https://nordiccrypto.no/stories/5e261442357d/",
+   "api_url": "https://nordiccrypto.no/api/v1/news/5e261442357d.json",
+   "title": "Bitcoin er tid: en klokke uten urmaker",
+   "title_en": "Bitcoin is time: a clock without a clockmaker",
+   "title_i18n": {},
+   "source": "enogtjue",
+   "source_name": "Enogtjue",
+   "source_logo": null,
+   "source_note": null,
+   "country": "NO",
+   "language": "Norwegian",
+   "language_code": "no",
+   "published": "2026-11-11",
+   "topics": [
+    "bitcoin"
+   ],
+   "summary": "Andreas Schjønhaug gave a talk at Litteraturhuset in Oslo on 11 November 2026, arranged by Bitcoinpolitisk institutt Norge, with comments from philosopher Sæbjørn Forberg. The lecture argues that money stores the value of work across time, and that Bitcoin is best understood as a clock in which each tick requires proof-of-work. It follows that idea from Vinje's phrase that money is frozen human sweat, through earlier energy-money proposals by writers such as H.G. Wells and Henry Ford, to Satoshi Nakamoto's 2008 design of a shared ledger that keeps a common history without a central timekeeper.",
+   "summary_i18n": {},
+   "paywall": false,
+   "links": [],
+   "own_story": false,
+   "illustration": {
+    "id": "commons-bitcoin",
+    "kind": "commons",
+    "file_url": "https://nordiccrypto.no/assets/img/illustrations/commons-bitcoin.webp",
+    "width": 365,
+    "height": 872,
+    "alt": "A physical bitcoin token in a clear case.",
+    "source": "Wikimedia Commons",
+    "author": "Heuboden",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Bitcoin_coin_in_plastic_packaging.jpg",
+    "credit": "Photo: Heuboden. Licence: CC BY-SA 4.0. Source: Wikimedia Commons. Cropped.",
+    "modifications": "Cropped by Nordic Crypto to leave out a person at the edge of the frame.",
+    "terms": null
+   },
+   "image": null,
+   "primary_source": {
+    "outlet": "enogtjue",
+    "outlet_name": "Enogtjue",
+    "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+    "title": "Bitcoin er tid: en klokke uten urmaker",
+    "published": "2026-11-11",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": true,
+    "logo": null
+   },
+   "primary_source_document": null,
+   "also_covered_by": [],
+   "sources": [
+    {
+     "outlet": "enogtjue",
+     "outlet_name": "Enogtjue",
+     "url": "https://enogtjue.no/artikler/bitcoin-er-tid-en-klokke-uten-urmaker",
+     "title": "Bitcoin er tid: en klokke uten urmaker",
+     "published": "2026-11-11",
+     "lang": "Norwegian",
+     "language_code": "no",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false,
+     "primary": true,
+     "logo": null
+    }
+   ],
+   "coverage": {
+    "count": 1,
+    "by_country": [
+     {
+      "country": "NO",
+      "count": 1,
+      "share": 1.0
+     }
+    ],
+    "by_source_type": [
+     {
+      "type": "national",
+      "count": 1,
+      "share": 1.0
+     },
+     {
+      "type": "regional",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "official",
+      "count": 0,
+      "share": 0.0
+     },
+     {
+      "type": "international",
+      "count": 0,
+      "share": 0.0
+     }
+    ]
+   },
+   "source_logo_url": null
+  },
   {
    "id": "915342df6283",
    "url": "https://yle.fi/a/74-20256084?origin=rss",
