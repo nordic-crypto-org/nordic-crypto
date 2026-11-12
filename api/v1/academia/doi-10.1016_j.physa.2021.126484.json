@@ -1,22 +1,26 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T03:49:21+00:00",
+ "generated_at": "2026-11-12T06:41:44+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "Using transfer entropy to measure information flows between cryptocurrencies",
   "authors": [
    "Ata Assaf",
    "Mehmet Hüseyin Bilgin",
    "Ender Demir"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2021,
+  "type": "paper",
+  "venue": "Physica A Statistical Mechanics and its Applications",
+  "doi": "10.1016/j.physa.2021.126484",
+  "url": "https://doi.org/10.1016/j.physa.2021.126484",
   "db": "https://openalex.org/W3201666140",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.physa.2021.126484",
-  "id": "doi-10.1016_j.physa.2021.126484",
-  "institution": "Reykjavík University",
+  "source": "https://doi.org/10.1016/j.physa.2021.126484",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Cryptocurrency",
    "Transfer entropy",
@@ -27,14 +31,10 @@
    "Entropy (arrow of time)",
    "Information transmission"
   ],
+  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1016/j.physa.2021.126484",
-  "title": "Using transfer entropy to measure information flows between cryptocurrencies",
-  "type": "paper",
-  "url": "https://doi.org/10.1016/j.physa.2021.126484",
-  "venue": "Physica A Statistical Mechanics and its Applications",
-  "year": 2021,
   "about_i18n": {},
+  "id": "doi-10.1016_j.physa.2021.126484",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.physa.2021.126484.json"
  }

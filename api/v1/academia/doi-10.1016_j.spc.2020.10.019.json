@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T03:49:21+00:00",
+ "generated_at": "2026-11-12T06:41:44+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "FI",
+  "title": "Redesigning Supply Chains using Blockchain-Enabled Circular Economy and COVID-19 Experiences",
   "authors": [
    "Santosh Nandi",
    "Joseph Sarkis",
    "Aref A. Hervani",
    "Marilyn Michelle Helms"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "Hanken School of Economics",
+  "year": 2020,
+  "type": "paper",
+  "venue": "Sustainable Production and Consumption",
+  "doi": "10.1016/j.spc.2020.10.019",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566799",
   "db": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566799",
   "db_name": "openalex",
-  "doi": "10.1016/j.spc.2020.10.019",
-  "id": "doi-10.1016_j.spc.2020.10.019",
-  "institution": "Hanken School of Economics",
+  "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566799",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Supply chain",
    "Blockchain",
@@ -28,14 +32,10 @@
    "Business",
    "Consumption (sociology)"
   ],
+  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
-  "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566799",
-  "title": "Redesigning Supply Chains using Blockchain-Enabled Circular Economy and COVID-19 Experiences",
-  "type": "paper",
-  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566799",
-  "venue": "Sustainable Production and Consumption",
-  "year": 2020,
   "about_i18n": {},
+  "id": "doi-10.1016_j.spc.2020.10.019",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.spc.2020.10.019.json"
  }

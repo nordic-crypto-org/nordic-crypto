@@ -1,20 +1,24 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T03:49:21+00:00",
+ "generated_at": "2026-11-12T06:41:44+00:00",
  "preview": false,
  "item": {
-  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
+  "country": "FI",
+  "title": "Monitoring Ethereum Compatible Account balance using Prometheus and Grafana",
   "authors": [
    "Simon Hailu"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "Finland University",
+  "year": 2025,
+  "type": "phd",
+  "venue": "PhD dissertation",
+  "doi": null,
+  "url": "https://erepo.uef.fi/bitstreams/5920e6fe-b143-4831-bf92-7630d396c245/download",
   "db": "https://erepo.uef.fi/bitstreams/5920e6fe-b143-4831-bf92-7630d396c245/download",
   "db_name": "openalex",
-  "doi": null,
-  "id": "publications-erepo.uef.fi-bitstreams-5920e6fe-b143-4831-bf92-7630d396c245-download",
-  "institution": "Finland University",
+  "source": "https://erepo.uef.fi/bitstreams/5920e6fe-b143-4831-bf92-7630d396c245/download",
+  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
   "keywords": [
    "Computer science",
    "Balance (ability)",
@@ -25,14 +29,10 @@
    "Automation",
    "Control (management)"
   ],
+  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
-  "source": "https://erepo.uef.fi/bitstreams/5920e6fe-b143-4831-bf92-7630d396c245/download",
-  "title": "Monitoring Ethereum Compatible Account balance using Prometheus and Grafana",
-  "type": "phd",
-  "url": "https://erepo.uef.fi/bitstreams/5920e6fe-b143-4831-bf92-7630d396c245/download",
-  "venue": "PhD dissertation",
-  "year": 2025,
   "about_i18n": {},
+  "id": "publications-erepo.uef.fi-bitstreams-5920e6fe-b143-4831-bf92-7630d396c245-download",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/publications-erepo.uef.fi-bitstreams-5920e6fe-b143-4831-bf92-7630d396c245-download.json"
  }

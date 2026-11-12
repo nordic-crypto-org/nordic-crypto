@@ -1,22 +1,26 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T03:49:21+00:00",
+ "generated_at": "2026-11-12T06:41:44+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "iContractML 2.0: A domain-specific language for modeling and deploying smart contracts onto multiple blockchain platforms",
   "authors": [
    "Mohammad Hamdaqa",
    "Lucas Alberto Pineda Met",
    "Ilham Qasse"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2021,
+  "type": "paper",
+  "venue": "Information and Software Technology",
+  "doi": "10.1016/j.infsof.2021.106762",
+  "url": "https://doi.org/10.1016/j.infsof.2021.106762",
   "db": "https://openalex.org/W3217631598",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.infsof.2021.106762",
-  "id": "doi-10.1016_j.infsof.2021.106762",
-  "institution": "Reykjavík University",
+  "source": "https://doi.org/10.1016/j.infsof.2021.106762",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Computer science",
    "Smart contract",
@@ -27,14 +31,10 @@
    "Ontology",
    "Domain (mathematical analysis)"
   ],
+  "checked": "2026-11-12",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1016/j.infsof.2021.106762",
-  "title": "iContractML 2.0: A domain-specific language for modeling and deploying smart contracts onto multiple blockchain platforms",
-  "type": "paper",
-  "url": "https://doi.org/10.1016/j.infsof.2021.106762",
-  "venue": "Information and Software Technology",
-  "year": 2021,
   "about_i18n": {},
+  "id": "doi-10.1016_j.infsof.2021.106762",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.infsof.2021.106762.json"
  }

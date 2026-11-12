@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-12T03:49:21+00:00",
+ "generated_at": "2026-11-12T06:41:44+00:00",
  "preview": false,
  "topics": [
   {
@@ -41,7 +41,7 @@
   },
   {
    "id": "companies",
-   "count": 8,
+   "count": 10,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/companies.json"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
    "id": "energy",
-   "count": 2,
+   "count": 3,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/energy.json"
   },
   {
@@ -76,7 +76,7 @@
   },
   {
    "id": "exchanges",
-   "count": 15,
+   "count": 16,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/exchanges.json"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
    "id": "regulation",
-   "count": 29,
+   "count": 32,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/regulation.json"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
    "id": "security",
-   "count": 15,
+   "count": 16,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/security.json"
   },
   {
@@ -150,13 +150,18 @@
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tax.json"
   },
   {
+   "id": "taxation",
+   "count": 1,
+   "url": "https://nordiccrypto.no/api/v1/news/by-topic/taxation.json"
+  },
+  {
    "id": "tokenisation",
    "count": 14,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenisation.json"
   },
   {
    "id": "tokenization",
-   "count": 2,
+   "count": 3,
    "url": "https://nordiccrypto.no/api/v1/news/by-topic/tokenization.json"
   },
   {
