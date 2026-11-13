@@ -4,7 +4,7 @@
    "id": "0eb8661e7db9",
    "url": "https://vg.no/nyheter/i/0vnnQ6/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-stoerste-kryptotyveri",
    "title": "Beslaglegger krypto for 11 milliarder",
-   "title_en": null,
+   "title_en": "US moves to seize or freeze more than 1.2 billion dollars stolen in the Binance hack",
    "source": "vg",
    "source_name": "VG",
    "country": "NO",
@@ -18,67 +18,117 @@
    "published": "2026-11-13T02:13:35+00:00",
    "fetched": "2026-11-13T03:11:36+00:00",
    "topics": [
-    "crypto"
+    "security",
+    "exchanges"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "The US Department of Justice said on 12 November 2026 that a court has authorised the seizure or freezing of more than 1.2 billion US dollars in cryptocurrency stolen from Binance. More than 2.7 billion dollars have already been frozen. The FBI attributes the theft to the North Korean group it calls TraderTraitor. The same DOJ release also covers a separate scheme, FaceStealer, in which fake video meetings were used to steal more than 400 million dollars over 18 months; that is not a new Binance theft.",
    "title_i18n": {
-    "nn": "Beslagleggjer krypto for 11 milliardar",
-    "sv": "Beslagtar krypto för 11 miljarder",
-    "da": "Beslaglægger krypto for 11 milliarder",
-    "fi": "Takaaaja kryptovaluuttaa 11 miljardilla",
-    "is": "Lögreglan beslagtar kriptó fyrir 11 milljarða",
-    "zh": "没收价值110亿的加密货币",
-    "hi": "क्रिप्टो को 11 बिलियन में जब्त किया गया",
-    "es": "Confisca cripto por 11 mil millones",
-    "fr": "Saisie de crypto pour 11 milliards",
-    "ar": "تضبط عملات مشفرة بقيمة 11 مليار",
-    "bn": "১১ বিলিয়ন মূল্যের ক্রিপ্টো জব্দ করা",
-    "pt": "Autoridades apreendem cripto no valor de 11 bilhões",
-    "ru": "Конфискуют криптовалюту на 11 миллиардов",
-    "ur": "کریپٹو پر 11 ارب کی ضبطی",
-    "id": "Penyitaan kripto senilai 11 miliar",
-    "de": "Beschlagnahmt Krypto im Wert von 11 Milliarden",
-    "ja": "11億ドル相当の暗号資産を押収",
-    "sw": "Inachukua crypto kwa thamani ya bilioni 11",
-    "mr": "११ अब्जांच्या क्रिप्टोची जप्ती",
-    "fa": "قفل‌گذاری بر رمزارزها به ارزش ۱۱ میلیارد",
-    "uk": "Конфіскує криптовалюту на суму 11 мільярдів",
-    "tr": "11 milyar değerindeki kripto paralar el konuldu",
-    "se": "Konfiskere krypto 11 miljárdda ovddas"
+    "nn": "USA går til å beslagleggje eller sperre meir enn 1,2 mrd. dollar stole i Binance-åtaket",
+    "sv": "USA går vidare för att beslagta eller frysa mer än 1,2 miljarder dollar stulna i Binance-hackningen",
+    "da": "USA går efter at beslaglægge eller indefryse mere end 1,2 mia. dollar stjålet i Binance-hacket",
+    "fi": "Yhdysvallat ryhtyy takavarikoimaan tai jäädyttämään yli 1,2 miljardia dollaria, jotka varastettiin Binance-iskussa",
+    "is": "Bandaríkin ráðast í haldlagningu eða frystingu á meira en 1,2 milljörðum dala sem stolið var í Binance-árásinni",
+    "zh": "美国着手扣押或冻结超过12亿美元在币安攻击中被盗的资产",
+    "hi": "अमेरिका बिनेंस हमले में चोरी हुए 1.2 अरब डॉलर से अधिक को जब्त या फ्रीज करने जा रहा है",
+    "es": "EE. UU. toma medidas para incautar o congelar más de 1.200 millones de dólares robados en el ataque a Binance",
+    "fr": "Les États-Unis s'apprêtent à saisir ou à geler plus de 1,2 milliard de dollars volés lors du piratage de Binance",
+    "ar": "الولايات المتحدة تتحرك لضبط أو تجميد أكثر من 1.2 مليار دولار سُرقت في اختراق بينانس",
+    "bn": "যুক্তরাষ্ট্র বিনান্স হ্যাকের চুরি হওয়া ১.২ বিলিয়ন ডলারের বেশি সম্পদ জব্দ বা স্থগিত করতে এগোচ্ছে",
+    "pt": "Os EUA avançam para apreender ou congelar mais de 1,2 mil milhões de dólares roubados no ataque à Binance",
+    "ru": "США приступают к изъятию или заморозке более 1,2 млрд долларов, украденных при взломе Binance",
+    "ur": "امریکہ بائننس ہیک میں چوری شدہ 1.2 ارب ڈالر سے زیادہ رقم ضبط یا منجمد کرنے جا رہا ہے",
+    "id": "AS bersiap menyita atau membekukan lebih dari 1,2 miliar dolar yang dicuri dalam peretasan Binance",
+    "de": "Die USA gehen daran, mehr als 1,2 Milliarden Dollar aus dem Binance-Hack zu beschlagnahmen oder einzufrieren",
+    "ja": "米国、バイナンス攻撃で盗まれた12億ドル超の資産の押収または凍結に動く",
+    "sw": "Marekani yasonga kukamata au kugandisha zaidi ya dola bilioni 1.2 zilizoibwa katika uvamizi wa Binance",
+    "mr": "अमेरिका बायनन्स हॅकमध्ये चोरी झालेले १.२ अब्ज डॉलरपेक्षा अधिक रक्कम जप्त किंवा गोठवण्यास पुढे सरसावत आहे",
+    "fa": "ایالات متحده برای ضبط یا مسدود کردن بیش از ۱٫۲ میلیارد دلار سرقت‌شده در حمله به بایننس اقدام می‌کند",
+    "uk": "США вживають заходів, щоб конфіскувати або заморозити понад 1,2 млрд доларів, викрадених під час зламу Binance",
+    "tr": "ABD, Binance saldırısında çalınan 1,2 milyar dolardan fazlasını el koymak veya dondurmak için harekete geçti",
+    "se": "USA rahká váldit dahje galbmahit eanet go 1,2 miljárdda dollára maid suoládedje Binance-hákkas"
    },
    "summary_i18n": {
-    "nn": "Pengane kjem frå historia si største kryptotyveri. FBI peikar mot Nord-Korea.",
-    "nb": "Pengene stammer fra historiens største kryptotyveri. FBI peker mot Nord-Korea.",
-    "sv": "Pengarna kommer från historiens största kryptostöld. FBI pekar mot Nordkorea.",
-    "da": "Pengene stammer fra historiens største kryptotyveri. FBI peger mod Nordkorea.",
-    "fi": "Rahat ovat peräisin historian suurimmasta kryptovarkaudesta. FBI:n mukaan syytetty on Pohjois-Korea.",
-    "is": "Peningarnir koma frá stærstu kryptoröðrun í sögunni. FBI bendir á Norður-Kóreu.",
-    "zh": "这些资金来自史上最大加密盗窃案。FBI指向北朝鲜。",
-    "hi": "धन इतिहास की सबसे बड़ी क्रिप्टो चोरी से आया है। FBI ने उत्तर कोरिया को निशाना बनाया है।",
-    "es": "El dinero proviene del mayor robo de criptomonedas de la historia. El FBI señala a Corea del Norte.",
-    "fr": "L'argent provient du plus grand vol de cryptomonnaies de l'histoire. Le FBI pointe du doigt la Corée du Nord.",
-    "ar": "الأموال جاءت من أكبر سرقة للعملات المشفرة في التاريخ. تشير الـ FBI إلى كوريا الشمالية.",
-    "bn": "টাকা ইতিহাসের সর্ববৃহৎ ক্রিপ্টো চুরির থেকে এসেছে। FBI উত্তর কোরিয়ার দিকে ইঙ্গিত করছে।",
-    "pt": "O dinheiro provém do maior roubo de criptomoedas da história. O FBI aponta para a Coreia do Norte.",
-    "ru": "Деньги поступили от крупнейшего в истории кражи криптовалюты. ФБР указывает на Северную Корею.",
-    "ur": "رقم تاریخ کی سب سے بڑی کرپٹو چوری سے آئی ہے۔ ایف بی آئی شمالی کوریا کی طرف اشارہ کرتا ہے۔",
-    "id": "Uangnya berasal dari pencurian kripto terbesar dalam sejarah. FBI menuding Korea Utara.",
-    "de": "Das Geld stammt aus dem größten Krypto-Diebstahl der Geschichte. Das FBI weist Nordkorea als Täter.",
-    "ja": "資金は史上最大の暗号通貨盗難から来ている。FBIは北朝鮮を指摘している。",
-    "sw": "Fedha zinatokana na wizi mkubwa zaidi wa crypto katika historia. FBI inaashiria Korea Kaskazini.",
-    "mr": "ह्या पैशाचा स्रोत इतिहासातील सर्वात मोठा क्रिप्टो चोरी आहे. एफबीआय उत्तर कोरियावर आरोप लावते.",
-    "fa": "این پول‌ها از بزرگ‌ترین سرقت رمزارزی تاریخ می‌آیند. اف‌بی‌آی شمال کره را هدف قرار داده است.",
-    "uk": "Гроші походять з найбільшого в історії крадіжки криптовалют. ФБР вказує на Північну Корею.",
-    "tr": "Paralar tarihin en büyük kripto hırsızlığından geliyor. FBI, Kuzey Kore'yi işaret ediyor.",
-    "se": "Ruđat vulget historjjá stuorámus kryptovaluta suoládeamis. FBI čujuha Davvi-Korea guvlui."
+    "nb": "Det amerikanske justisdepartementet opplyste 12. november 2026 at en rett har gitt samtykke til å beslaglegge eller sperre kryptovaluta verdt mer enn 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mer enn 2,7 milliarder dollar er allerede frosset. FBI mener tyveriet ble utført av den nordkoreanske gruppen som byrået kaller TraderTraitor. Den samme meldingen fra justisdepartementet omhandler også en egen ordning, FaceStealer, der falske videomøter ble brukt til å stjele mer enn 400 millioner dollar over 18 måneder; dette er ikke et nytt Binance-tyveri.",
+    "nn": "Det amerikanske justisdepartementet opplyste 12. november 2026 at ein rett har gjeve samtykke til å beslagleggje eller sperre kryptovaluta verd meir enn 1,2 milliardar amerikanske dollar, stole frå Binance. Meir enn 2,7 milliardar dollar er allereie frosne. FBI meiner tjuveriet vart utført av den nordkoreanske gruppa som byrået kallar TraderTraitor. Den same meldinga frå justisdepartementet tek òg for seg ei eiga ordning, FaceStealer, der falske videomøte vart brukte til å stele meir enn 400 millionar dollar over 18 månader; dette er ikkje eit nytt Binance-tjuveri.",
+    "sv": "USA:s justitiedepartement meddelade den 12 november 2026 att en domstol har gett tillstånd att beslagta eller frysa kryptovaluta värd mer än 1,2 miljarder amerikanska dollar, stulen från Binance. Mer än 2,7 miljarder dollar har redan frysts. FBI tillskriver stölden den nordkoreanska grupp som byrån kallar TraderTraitor. Samma meddelande från justitiedepartementet tar också upp ett separat upplägg, FaceStealer, där falska videomöten användes för att stjäla mer än 400 miljoner dollar under 18 månader; det är inte en ny Binance-stöld.",
+    "da": "Det amerikanske justitsministerium oplyste den 12. november 2026, at en ret har givet tilladelse til at beslaglægge eller indefryse kryptovaluta til en værdi af mere end 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mere end 2,7 milliarder dollar er allerede frosset. FBI tilskriver tyveriet den nordkoreanske gruppe, som bureauet kalder TraderTraitor. Den samme meddelelse fra justitsministeriet handler også om et særskilt setup, FaceStealer, hvor falske videomøder blev brugt til at stjæle mere end 400 millioner dollar over 18 måneder; det er ikke et nyt Binance-tyveri.",
+    "fi": "Yhdysvaltain oikeusministeriö kertoi 12. marraskuuta 2026, että tuomioistuin on antanut luvan takavarikoida tai jäädyttää Binancesta varastettua kryptovaluuttaa yli 1,2 miljardin Yhdysvaltain dollarin arvosta. Yli 2,7 miljardia dollaria on jo jäädytetty. FBI katsoo varkauden olevan pohjoiskorealaisen ryhmän työtä, jota virasto kutsuu nimellä TraderTraitor. Sama oikeusministeriön tiedote käsittelee myös erillistä FaceStealer-järjestelmää, jossa väärennettyjä videokokouksia käytettiin varastamaan yli 400 miljoonaa dollaria 18 kuukauden aikana; kyseessä ei ole uusi Binance-varkaus.",
+    "is": "Bandaríska dómsmálaráðuneytið tilkynnti 12. nóvember 2026 að dómstóll hafi veitt heimild til að leggja hald á eða frysta rafmynt að verðmæti meira en 1,2 milljarða Bandaríkjadala sem stolið var frá Binance. Meira en 2,7 milljarðar dala hafa þegar verið frystir. FBI eignar þjófnaðinn norðurkóreska hópnum sem stofnunin kallar TraderTraitor. Sama tilkynning dómsmálaráðuneytisins fjallar einnig um aðskilið fyrirkomulag, FaceStealer, þar sem fölsuð myndfundsfundir voru notaðir til að stela meira en 400 milljónum dala á 18 mánuðum; þetta er ekki nýr Binance-þjófnaður.",
+    "zh": "美国司法部于2026年11月12日表示，法院已授权扣押或冻结从币安盗取的、价值超过12亿美元的加密货币。已有超过27亿美元被冻结。联邦调查局将此次盗窃归因于其称为TraderTraitor的朝鲜组织。同一份司法部声明还涉及另一项独立计划FaceStealer：有人通过虚假视频会议在18个月内盗取了超过4亿美元；这并非新的币安盗窃。",
+    "hi": "अमेरिकी न्याय विभाग ने 12 नवंबर 2026 को कहा कि एक अदालत ने बिनेंस से चोरी की गई 1.2 अरब अमेरिकी डॉलर से अधिक की क्रिप्टोकरेंसी को जब्त या फ्रीज करने की अनुमति दे दी है। 2.7 अरब डॉलर से अधिक पहले ही फ्रीज किए जा चुके हैं। एफबीआई इस चोरी को उस उत्तर कोरियाई समूह से जोड़ती है जिसे वह TraderTraitor कहती है। न्याय विभाग की उसी विज्ञप्ति में एक अलग योजना FaceStealer भी है, जिसमें नकली वीडियो बैठकों के जरिए 18 महीनों में 400 मिलियन डॉलर से अधिक की चोरी हुई; यह बिनेंस की कोई नई चोरी नहीं है।",
+    "es": "El Departamento de Justicia de EE. UU. informó el 12 de noviembre de 2026 que un tribunal ha autorizado la incautación o la congelación de más de 1.200 millones de dólares estadounidenses en criptomonedas robadas a Binance. Ya se han congelado más de 2.700 millones de dólares. El FBI atribuye el robo al grupo norcoreano al que denomina TraderTraitor. El mismo comunicado del Departamento de Justicia cubre también un esquema separado, FaceStealer, en el que se usaron videorreuniones falsas para robar más de 400 millones de dólares en 18 meses; no se trata de un nuevo robo a Binance.",
+    "fr": "Le ministère américain de la Justice a indiqué le 12 novembre 2026 qu'un tribunal a autorisé la saisie ou le gel de plus de 1,2 milliard de dollars américains de cryptomonnaie volés à Binance. Plus de 2,7 milliards de dollars ont déjà été gelés. Le FBI attribue le vol au groupe nord-coréen qu'il nomme TraderTraitor. Le même communiqué du ministère couvre aussi un dispositif distinct, FaceStealer, dans lequel de fausses visioconférences ont servi à voler plus de 400 millions de dollars en 18 mois; il ne s'agit pas d'un nouveau vol chez Binance.",
+    "ar": "أعلنت وزارة العدل الأمريكية في 12 نوفمبر 2026 أن محكمة أذنت بضبط أو تجميد عملات مشفرة تزيد قيمتها على 1.2 مليار دولار أمريكي سُرقت من بينانس. وقد جُمّد بالفعل أكثر من 2.7 مليار دولار. وينسب مكتب التحقيقات الفيدرالي السرقة إلى المجموعة الكورية الشمالية التي يسميها TraderTraitor. ويتناول البيان نفسه أيضاً مخططاً منفصلاً هو FaceStealer، استُخدمت فيه اجتماعات فيديو مزيفة لسرقة أكثر من 400 مليون دولار على مدى 18 شهراً؛ وهذا ليس سرقة جديدة من بينانس.",
+    "bn": "মার্কিন বিচার বিভাগ ১২ নভেম্বর ২০২৬-এ জানিয়েছে, একটি আদালত বিনান্স থেকে চুরি হওয়া ১.২ বিলিয়ন মার্কিন ডলারের বেশি ক্রিপ্টোকারেন্সি জব্দ বা স্থগিত করার অনুমতি দিয়েছে। ইতিমধ্যে ২.৭ বিলিয়ন ডলারের বেশি স্থগিত করা হয়েছে। এফবিআই এই চুরির দায় তাদের TraderTraitor নামে পরিচিত উত্তর কোরিয়ান গোষ্ঠীর উপর আরোপ করে। একই বিচার বিভাগের বিজ্ঞপ্তিতে আলাদা একটি স্কিম FaceStealer-এর কথাও আছে, যেখানে নকল ভিডিও বৈঠক ব্যবহার করে ১৮ মাসে ৪০০ মিলিয়ন ডলারের বেশি চুরি হয়েছে; এটি বিনান্সের কোনো নতুন চুরি নয়।",
+    "pt": "O Departamento de Justiça dos EUA anunciou a 12 de novembro de 2026 que um tribunal autorizou a apreensão ou o congelamento de mais de 1,2 mil milhões de dólares americanos em criptomoeda roubada à Binance. Mais de 2,7 mil milhões de dólares já foram congelados. O FBI atribui o roubo ao grupo norte-coreano a que chama TraderTraitor. O mesmo comunicado do Departamento de Justiça abrange também um esquema separado, FaceStealer, em que reuniões de vídeo falsas foram usadas para roubar mais de 400 milhões de dólares ao longo de 18 meses; não se trata de um novo roubo à Binance.",
+    "ru": "Министерство юстиции США 12 ноября 2026 года сообщило, что суд разрешил изъять или заморозить криптовалюту стоимостью более 1,2 млрд долларов США, украденную у Binance. Более 2,7 млрд долларов уже заморожены. ФБР относит кражу к северокорейской группе, которую ведомство называет TraderTraitor. То же сообщение Минюста касается также отдельной схемы FaceStealer, в которой поддельные видеовстречи использовались, чтобы похитить более 400 млн долларов за 18 месяцев; это не новая кража у Binance.",
+    "ur": "امریکی محکمہ انصاف نے 12 نومبر 2026 کو بتایا کہ ایک عدالت نے بائننس سے چرائی گئی 1.2 ارب امریکی ڈالر سے زیادہ کی کرپٹو کرنسی ضبط یا منجمد کرنے کی اجازت دے دی ہے۔ 2.7 ارب ڈالر سے زیادہ پہلے ہی منجمد کیے جا چکے ہیں۔ ایف بی آئی اس چوری کو اس شمالی کوریائی گروپ سے منسوب کرتی ہے جسے وہ TraderTraitor کہتی ہے۔ محکمہ انصاف کی اسی اطلاع میں ایک الگ اسکیم FaceStealer بھی ہے، جس میں جعلی ویڈیو میٹنگز کے ذریعے 18 ماہ میں 400 ملین ڈالر سے زیادہ چرائی گئی؛ یہ بائننس کی کوئی نئی چوری نہیں ہے۔",
+    "id": "Departemen Kehakiman AS pada 12 November 2026 menyatakan bahwa pengadilan telah mengizinkan penyitaan atau pembekuan lebih dari 1,2 miliar dolar AS dalam mata uang kripto yang dicuri dari Binance. Lebih dari 2,7 miliar dolar telah dibekukan. FBI menisbatkan pencurian itu kepada kelompok Korea Utara yang disebutnya TraderTraitor. Rilis Departemen Kehakiman yang sama juga mencakup skema terpisah, FaceStealer, di mana rapat video palsu digunakan untuk mencuri lebih dari 400 juta dolar selama 18 bulan; ini bukan pencurian Binance yang baru.",
+    "de": "Das US-Justizministerium teilte am 12. November 2026 mit, dass ein Gericht die Beschlagnahme oder Einfrierung von Kryptowährung im Wert von mehr als 1,2 Milliarden US-Dollar genehmigt hat, die bei Binance gestohlen wurde. Mehr als 2,7 Milliarden Dollar sind bereits eingefroren. Das FBI schreibt den Diebstahl der nordkoreanischen Gruppe zu, die die Behörde TraderTraitor nennt. Dieselbe Mitteilung des Justizministeriums betrifft auch ein gesondertes Schema, FaceStealer, bei dem gefälschte Videobesprechungen genutzt wurden, um in 18 Monaten mehr als 400 Millionen Dollar zu stehlen; das ist kein neuer Binance-Diebstahl.",
+    "ja": "米司法省は2026年11月12日、裁判所が、バイナンスから盗まれた12億ドル超の暗号資産の押収または凍結を認めたと発表した。すでに27億ドル超が凍結されている。FBIはこの盗難を、当局がTraderTraitorと呼ぶ北朝鮮のグループによるものとみている。同じ司法省の発表では、偽のビデオ会議を使って18か月で4億ドル超を盗んだ別の手口FaceStealerにも触れている。これは新たなバイナンスからの盗難ではない。",
+    "sw": "Idara ya Haki ya Marekani ilisema tarehe 12 Novemba 2026 kuwa mahakama imeruhusu kukamata au kugandisha sarafu-fiche yenye thamani ya zaidi ya dola bilioni 1.2 za Marekani zilizoibwa kutoka Binance. Zaidi ya dola bilioni 2.7 tayari zimegandishwa. FBI inahusisha wizi huo na kundi la Korea Kaskazini ambalo linaliita TraderTraitor. Taarifa ileile ya Idara ya Haki inashughulikia pia mpango tofauti, FaceStealer, ambapo mikutano bandia ya video ilitumika kuiba zaidi ya dola milioni 400 katika miezi 18; huo si wizi mpya wa Binance.",
+    "mr": "अमेरिकी न्याय विभागाने १२ नोव्हेंबर २०२६ रोजी सांगितले की न्यायालयाने बायनन्सकडून चोरी झालेली १.२ अब्ज अमेरिकी डॉलरपेक्षा अधिक क्रिप्टोकरन्सी जप्त किंवा गोठवण्याची परवानगी दिली आहे. २.७ अब्ज डॉलरपेक्षा अधिक रक्कम आधीच गोठवली गेली आहे. एफबीआय ही चोरी त्या उत्तर कोरियाच्या गटाशी जोडते ज्याला ते TraderTraitor म्हणतात. न्याय विभागाच्या त्याच निवेदनात वेगळी योजना FaceStealer देखील आहे, ज्यात बनावट व्हिडिओ बैठकींद्वारे १८ महिन्यांत ४०० दशलक्ष डॉलरपेक्षा अधिक चोरी झाली; ही बायनन्सची नवी चोरी नाही.",
+    "fa": "وزارت دادگستری آمریکا در ۱۲ نوامبر ۲۰۲۶ اعلام کرد که دادگاهی اجازه ضبط یا مسدود کردن بیش از ۱٫۲ میلیارد دلار آمریکا ارز دیجیتال سرقت‌شده از بایننس را صادر کرده است. بیش از ۲٫۷ میلیارد دلار از پیش مسدود شده است. اف‌بی‌آی این سرقت را به گروه کره شمالی نسبت می‌دهد که آن را TraderTraitor می‌نامد. همان اطلاعیه وزارت دادگستری به طرح جداگانه‌ای به نام FaceStealer نیز می‌پردازد که در آن از نشست‌های ویدیویی جعلی برای سرقت بیش از ۴۰۰ میلیون دلار در ۱۸ ماه استفاده شد؛ این سرقت جدیدی از بایننس نیست.",
+    "uk": "Міністерство юстиції США 12 листопада 2026 року повідомило, що суд дозволив конфіскувати або заморозити криптовалюту вартістю понад 1,2 млрд доларів США, викрадену з Binance. Понад 2,7 млрд доларів уже заморожено. ФБР пов’язує крадіжку з північнокорейською групою, яку відомство називає TraderTraitor. Та сама заява Мін’юсту стосується також окремої схеми FaceStealer, у якій фальшиві відеозустрічі використовували, щоб викрасти понад 400 млн доларів за 18 місяців; це не нова крадіжка з Binance.",
+    "tr": "ABD Adalet Bakanlığı 12 Kasım 2026'da, bir mahkemenin Binance'den çalınan 1,2 milyar ABD dolarından fazla kripto paranın el konulmasına veya dondurulmasına izin verdiğini duyurdu. 2,7 milyar dolardan fazlası şimdiden dondurulmuş durumda. FBI hırsızlığı, kurumun TraderTraitor adını verdiği Kuzey Kore grubuna bağlıyor. Adalet Bakanlığının aynı açıklaması, sahte görüntülü toplantılarla 18 ayda 400 milyon dolardan fazla çalınan ayrı bir düzen olan FaceStealer'ı da kapsıyor; bu yeni bir Binance hırsızlığı değildir.",
+    "se": "Amerihká Justisdepartemeanta dieđihii 12. skábmamánu 2026 ahte duopmostuollu lea addán lobi váldit dahje galbmahit kryptovaluhta mii lea eanet go 1,2 miljárdda amerihkálaš dollára, suoláduvvon Binanceas. Eanet go 2,7 miljárdda dollára lea juo galbmahuvvon. FBI jáhkká suoládeami dahkan davvikorealaš joavku maid virgi gohčoda TraderTraitor. Seamma Justisdepartemeanta dieđihusas lea maid eará skema, FaceStealer, mas vearis videočoahkkimat geavahuvvojedje suoládet eanet go 400 miljovnna dollára 18 mánu áigge; dát ii leat ođđa Binance-suoládean."
    },
    "title_i18n_source": "Beslaglegger krypto for 11 milliarder",
-   "summary_i18n_source": "Pengene stammer fra historiens største kryptotyveri. FBI peker mot Nord-Korea."
+   "summary_i18n_source": "Pengene stammer fra historiens største kryptotyveri. FBI peker mot Nord-Korea.",
+   "also_covered_by": [
+    {
+     "outlet": "folkebladet-no",
+     "outlet_name": "folkebladet.no",
+     "url": "https://folkebladet.no/norgeogverden/n/6Pjj6o/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-stoerste-kryptotyveri",
+     "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+     "published": "2026-11-13T01:41:15+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nyheder.tv2.dk",
+     "outlet_name": "TV 2 Nyheder",
+     "url": "https://nyheder.tv2.dk/live/kort-nyt/nordkoreanske-hackere-stjaeler-400-millioner-dollar-i-kryptovaluta?entry=52ecc06d-d809-4fdc-a675-7ca3069fdfbe",
+     "title": "Nordkoreanske hackere stjæler 400 millioner dollar i kryptovaluta",
+     "published": "2026-11-12T21:40:33+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-13T06:07:02+01:00",
+   "primary_source": {
+    "name": "US Department of Justice — press release, 12 November 2026",
+    "url": "https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9b8a70e6faee/",
+     "label": "Binance confirms about 6.3 billion dollar loss in hack"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/2ba8ad647f8e/",
+     "label": "FBI says North Korea's TraderTraitor was behind the Binance hack"
+    },
+    {
+     "url": "https://nordiccrypto.no/stories/ba58141d7134/",
+     "label": "Binance says about 90 percent of stolen assets have been replaced"
+    },
+    {
+     "url": "https://www.ic3.gov/CSA/2026/261112.pdf",
+     "label": "FBI FLASH on the FaceStealer scheme, 12 November 2026"
+    }
+   ],
+   "summary_i18n_review": "pending"
   },
   {
    "id": "b10f48ddb9a8",
@@ -104,7 +154,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "0eb8661e7db9",
    "possible_duplicate_reason": "same institution, same day",
@@ -173,7 +223,8 @@
     "se": "FBI lea konfiskeren kryptovaluta badjel 1,2 miljárdda dollara ovddas mii suoláduvvui kryptobirkkas Binance mannan mánus."
    },
    "title_i18n_source": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
-   "summary_i18n_source": "FBI har beslaglagt kryptovaluta for over 1,2 milliarder dollar som ble stjÃ¥let fra kryptobÃ¸rsen Binance forrige mÃ¥ned."
+   "summary_i18n_source": "FBI har beslaglagt kryptovaluta for over 1,2 milliarder dollar som ble stjÃ¥let fra kryptobÃ¸rsen Binance forrige mÃ¥ned.",
+   "merged_into": "0eb8661e7db9"
   },
   {
    "id": "2a86910efde0",
@@ -198,7 +249,7 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "title_i18n": {
     "nn": "Snipp, snapp, snute, Jensen er ute – Nvidia fell medan konkurrentane hoppar",
@@ -252,7 +303,8 @@
     "se": "Nvidia massá fidnohutkiid, gilvaleaddjit gahččet eret ja gávpelágádusat unnidišgohtet kursagoluid. Gii galgá ruhtadit AI-booma almmá Jensen Huang haga? Bitcoinai oažžu buollát - ii ge dárbbat massit njunušbargi."
    },
    "title_i18n_source": "Snipp, snapp, snute, Jensen er ute – Nvidia faller mens rivalene hopper",
-   "summary_i18n_source": "Nvidia mister gründeren, rivalene hopper og meglerhusene kutter kursmålene. Hvem skal finansiere AI-boomen uten Jensen Huang? Selv bitcoin får svi – uten å ha en toppsjef å miste."
+   "summary_i18n_source": "Nvidia mister gründeren, rivalene hopper og meglerhusene kutter kursmålene. Hvem skal finansiere AI-boomen uten Jensen Huang? Selv bitcoin får svi – uten å ha en toppsjef å miste.",
+   "reject_reason": "SEO headline, share prices and technology stocks; bitcoin only incidental. Standing price exclusion. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "3d5fbde07fe4",
@@ -274,7 +326,7 @@
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "title_i18n": {
     "nn": "Nvidia sin nye mellombels administrerande direktør: «Dagen min startar med Israel»",
@@ -328,7 +380,8 @@
     "se": "Nvidia ođđa gaskaboddosaš direktevra: \" Mu beaivi álgá Israeliin \" - Jensen Huang sadjái boahtá Colette Kress gii liiko Israelii. Loga eambbo Dás."
    },
    "title_i18n_source": "Nvidia’s nya interim VD: ”My day starts with Israel”",
-   "summary_i18n_source": "Nvidia's nya interim VD: \"My day starts with Israel\" - Jensen Huang ersatt av Colette Kress som älskar Israel. Läs mer Här."
+   "summary_i18n_source": "Nvidia's nya interim VD: \"My day starts with Israel\" - Jensen Huang ersatt av Colette Kress som älskar Israel. Läs mer Här.",
+   "reject_reason": "No real crypto angle. SEO. KVG guide page. Follow-up to earlier rejected Huang items. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "056e076fdb69",
@@ -353,7 +406,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "title_i18n": {
     "nn": "Nordkoreanske hackarar stjeler 400 millionar dollar i kryptovaluta",
@@ -407,7 +460,8 @@
     "se": "TV 2:s lea oanehis ja deaivilis oppalašgeahčastat buot otná ođđasiin. Oza bajilgovva dás."
    },
    "title_i18n_source": "Nordkoreanske hackere stjæler 400 millioner dollar i kryptovaluta",
-   "summary_i18n_source": "TV 2 serverer et kort og prÃ¦cist overblik over alle dagens nyheder. FÃ¥ overblik nu."
+   "summary_i18n_source": "TV 2 serverer et kort og prÃ¦cist overblik over alle dagens nyheder. FÃ¥ overblik nu.",
+   "merged_into": "0eb8661e7db9"
   },
   {
    "id": "d37f2f2edd22",
@@ -432,7 +486,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "title_i18n": {
     "nn": "Polymarket: Jensen Huang får gå og Tim Cook tek over…",
@@ -486,7 +540,8 @@
     "se": "Dál buot orru čájeheame ahte Jensen Huang beassá eret doaimmas ja Tim Cook šaddá jođiheaddjin... loga eambbo Kryptovalutaguiden neahttasiiddus. Nuvttá ođasbálvalus."
    },
    "title_i18n_source": "Polymarket: Jensen Huang får gå och Tim Cook tar över…",
-   "summary_i18n_source": "Allt tyder nu på att Jensen Huang får gå och Tim Cook tar över... läs mer på Kryptovalutaguiden. Gratis nyhetstjänst."
+   "summary_i18n_source": "Allt tyder nu på att Jensen Huang får gå och Tim Cook tar över... läs mer på Kryptovalutaguiden. Gratis nyhetstjänst.",
+   "reject_reason": "Betting (Polymarket odds) plus gossip and price talk. Standing exclusion. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "50b912c1832b",
@@ -510,7 +565,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "title_i18n": {
     "nn": "Trumps Media rapporterer $410 M i forteneste – omset berre $3 millionar.",
@@ -564,7 +619,8 @@
     "se": "Trumps Media almmuha 410 miljovnna ruvdnosaš badjebáhcaga - muhto dušše 3 miljon ruvdnosaš dietnasa. Loga eambbo ruoŧa ođaskanálas kriptoealáhusa birra"
    },
    "title_i18n_source": "Trumps Media redovisar $410M i vinst – omsätter bara $3 miljoner..",
-   "summary_i18n_source": "Trumps Media redovisar $410M i vinst – men omsätter bara $3 miljoner.. Läs mer på Sveriges nyhetskanal för kryptobranschen"
+   "summary_i18n_source": "Trumps Media redovisar $410M i vinst – men omsätter bara $3 miljoner.. Läs mer på Sveriges nyhetskanal för kryptobranschen",
+   "reject_reason": "US quarterly results; crypto only as a booked gain. KVG SEO teaser. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "71e4909a14f0",
@@ -588,7 +644,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "also_covered_by": [
     {
@@ -666,13 +722,14 @@
     "se": "Kanta-Hämeen vuoden 2025 suurituloisimman Olli Heikkilän tulojen taustalla on vuosia jatkunut kryptosijoittaminen, muitala su viellja Heikki Heikkilä."
    },
    "title_i18n_source": "Kanta-Hämeen tuloykkösen veli kertoo: kryptomiljonääri menehtyi ennen kuin pääsi nauttimaan omaisuudestaan",
-   "summary_i18n_source": "Kanta-Hämeen vuoden 2025 suurituloisimman Olli Heikkilän tulojen taustalla on vuosia jatkunut kryptosijoittaminen, kertoo hänen veljensä Heikki Heikkilä."
+   "summary_i18n_source": "Kanta-Hämeen vuoden 2025 suurituloisimman Olli Heikkilän tulojen taustalla on vuosia jatkunut kryptosijoittaminen, kertoo hänen veljensä Heikki Heikkilä.",
+   "reject_reason": "Paywalled (ingress only). Privacy: a private person, income and a death; must not be identity-amplified. No public news event that justifies naming. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "a3c9ef21d13b",
    "url": "https://flamman.se/pokerligans-nya-giv",
    "title": "Pokerligans nya giv",
-   "title_en": null,
+   "title_en": "Flamman reports payment-company links around the charged former Valuno chief",
    "source": "flamman",
    "source_name": "Flamman",
    "country": "SE",
@@ -685,68 +742,81 @@
    "published": "2026-11-12T05:55:00+00:00",
    "fetched": "2026-11-13T03:11:36+00:00",
    "topics": [
-    "crypto",
-    "companies"
+    "companies",
+    "payments"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "According to Flamman's own investigation, companies and people around Valuno's former chief executive, Daniel Sonesson, have continued to operate in payments, including services used by online casinos. Sweden's Economic Crime Authority has charged Sonesson with aggravated insider trading, and he denies wrongdoing, according to Svenska Dagbladet. The company and person links Flamman reports are the paper's own findings.",
    "title_i18n": {
-    "nn": "Pokerliga sin nye retning",
-    "nb": "Pokerliga sin nye retning",
-    "da": "Pokerliga's nye retning",
-    "fi": "Pokerliganin uusi suunta",
-    "is": "Ný stefna Pokerligans",
-    "zh": "Pokerligan的新方向",
-    "hi": "Pokerligan का नया दिशा-निर्देश",
-    "es": "El nuevo giro de Pokerligan",
-    "fr": "Le nouveau cap de Pokerligan",
-    "ar": "التحول الجديد لـ Pokerligan",
-    "bn": "Pokerligan-এর নতুন দিক",
-    "pt": "Nova direção da Pokerligan",
-    "ru": "Новый курс Pokerligan",
-    "ur": "Pokerligan کا نیا رخ",
-    "id": "Arah Baru Pokerligan",
-    "de": "Die neue Richtung der Pokerliga",
-    "ja": "ポーカリーグの新たな方向性",
-    "sw": "Mwelekeo Mpya wa Ligi ya Poker",
-    "mr": "पोकर लीगचा नवीन मार्ग",
-    "fa": "جهت جدید پوکرلیگان",
-    "uk": "Нове спрямування Pokerligan",
-    "tr": "Pokerligan'ın yeni yönü",
-    "se": "Pokerliiga ođđa giv"
+    "nn": "Flamman omtalar betalingskoplingar rundt den tiltalte tidlegare Valuno-sjefen",
+    "nb": "Flamman omtaler betalingskoblinger rundt den tiltalte tidligere Valuno-sjefen",
+    "da": "Flamman omtaler betalingskoblinger omkring den tiltalte tidligere Valuno-direktør",
+    "fi": "Flamman kertoo maksupalveluyhtiöiden kytköksistä syytetyn entisen Valuno-johtajan ympärillä",
+    "is": "Flamman greinir frá greiðslufyrirtækjatengslum umhverfis ákærða fyrrverandi forstjóra Valuno",
+    "zh": "《火焰报》报道被起诉的前Valuno负责人周围的支付公司关联",
+    "hi": "फ्लाम्मन ने आरोपित पूर्व वैलूनो प्रमुख के इर्द-गिर्द भुगतान कंपनियों के संबंध बताए",
+    "es": "Flamman informa de vínculos de empresas de pagos en torno al exjefe de Valuno imputado",
+    "fr": "Flamman fait état de liens avec des sociétés de paiement autour de l'ancien dirigeant de Valuno inculpé",
+    "ar": "فلامان تتحدث عن صلات بشركات مدفوعات حول الرئيس السابق لفالونو المتهم",
+    "bn": "ফ্লামমান অভিযুক্ত সাবেক ভালুনো প্রধানকে ঘিরে পেমেন্ট কোম্পানির সম্পর্কের খবর দিয়েছে",
+    "pt": "Flamman relata ligações de empresas de pagamentos em torno do ex-responsável da Valuno acusado",
+    "ru": "Flamman сообщает о связях платёжных компаний вокруг обвиняемого бывшего руководителя Valuno",
+    "ur": "فلیمن نے الزام شدہ سابق ویلونو سربراہ کے گرد ادائیگی کمپنیوں کے روابط بیان کیے",
+    "id": "Flamman melaporkan kaitan perusahaan pembayaran di sekitar mantan pimpinan Valuno yang didakwa",
+    "de": "Flamman berichtet über Verbindungen zu Zahlungsunternehmen um den angeklagten früheren Valuno-Chef",
+    "ja": "フラマン、起訴された元Valunoトップ周辺の決済会社のつながりを報じる",
+    "sw": "Flamman inaripoti uhusiano wa kampuni za malipo kuzunguka aliyeshtakiwa, aliyekuwa mkuu wa Valuno",
+    "mr": "फ्लॅमनने आरोपित माजी व्हॅलुनो प्रमुखांच्या भोवतालच्या पेमेंट कंपन्यांच्या संबंधांची बातमी दिली",
+    "fa": "فلامان از پیوندهای شرکت‌های پرداخت پیرامون مدیر سابق متهم والونو خبر می‌دهد",
+    "uk": "Flamman повідомляє про зв’язки платіжних компаній довкола обвинуваченого колишнього керівника Valuno",
+    "tr": "Flamman, itham edilen eski Valuno yöneticisi çevresindeki ödeme şirketi bağlantılarını aktardı",
+    "se": "Flamman muitala máksinfitnodatčanahusaid birra áššáskuhttoma ovddeš Valuno-oaivámučča birra"
    },
    "summary_i18n": {
-    "nn": "Frå nettpoker til kryptovaluta: same namn dukkar opp i selskapa som hjelper spelbransjen med å ta betaling. Flamm sin gransking viser koplingane til svenske høgreprofilar og Trump-nettverkaren Katie Hagström.",
-    "nb": "Fra nettpoker til kryptovaluta: samme navn dukker opp i selskapene som hjelper spillbransjen med å ta betalt. Flamm sin gransking viser koblingene til svenske høyreprofiler og Trump-nettverksdeltakeren Katie Hagström.",
-    "sv": "Från nätpoker till kryptovalutor: samma namn återkommer i bolagen som hjälper spelbranschen att ta betalt. Flammans granskning visar kopplingarna till svenska högerprofiler och Trumpnätverkaren Katie Hagström.",
-    "da": "Fra netpoker til kryptovaluta: samme navn dukker op i de virksomheder, der hjælper spillebranchen med at tage betaling. Flamms undersøgelse viser forbindelserne til svenske højreprofiler og Trump-netværksdeltageren Katie Hagström.",
-    "fi": "Verkkopokerista kryptovaluuttoihin: sama nimi toistuu yrityksissä, jotka auttavat pelialaa saamaan maksut. Flammans tarkastus paljastaa yhteydet ruotsalaisiin oikeistoprofiileihin ja Trump-verkostoon kuuluvassa Katie Hagströmiin.",
-    "is": "Frá netpokri til kriptómynta: sama nafn kemur fram í fyrirtækjum sem hjálpa spilageiranum að taka við greiðslum. Flammans rannsókn sýnir tengsl við sænska hægri persónur og Trump-netkerfisfræðinguna Katie Hagström.",
-    "zh": "从网络扑克到加密货币：同一名称在帮助游戏行业收款的公司中重复出现。Flammans的调查显示其与瑞典右翼人物以及特朗普网络人物Katie Hagström的关联。",
-    "hi": "ऑनलाइन पोकर से क्रिप्टोकरेंसी तक: वही नाम उन कंपनियों में दोहराया जाता है जो गेमिंग उद्योग को भुगतान लेने में मदद करती हैं। Flammans की जांच स्वीडिश दायें-पक्षीय प्रोफाइल और ट्रम्प नेटवर्क की सदस्य Katie Hagström के साथ संबंध दिखाती है।",
-    "es": "De los juegos de póker en línea a las criptomonedas: el mismo nombre aparece en las empresas que ayudan a la industria del juego a cobrar. La investigación de Flamman muestra los vínculos con perfiles de derecha suecos y la activista de la red Trump, Katie Hagström.",
-    "fr": "Du poker en ligne aux cryptomonnaies : le même nom réapparaît dans les sociétés qui aident le secteur du jeu à encaisser. L’enquête de Flamman révèle les liens avec des profils de droite suédois et la militante du réseau Trump, Katie Hagström.",
-    "ar": "من البوكر على الإنترنت إلى العملات المشفرة: يظهر نفس الاسم في الشركات التي تساعد قطاع الألعاب على تحصيل المدفوعات. تكشف تحقيقات Flamman عن الصلات بالملفات اليمينية السويدية وشبكة ترامب، بما في ذلك كاتي هاجستروم.",
-    "bn": "অনলাইন পোকার থেকে ক্রিপ্টোকারেন্সি পর্যন্ত: একই নামটি পুনরায় দেখা যায় সেই কোম্পানিগুলিতে যা গেমিং শিল্পকে পেমেন্ট নিতে সহায়তা করে। Flamman-এর তদন্তে সুইডিশ ডানপন্থী প্রোফাইল এবং ট্রাম্প নেটওয়ার্কের কর্মী কেটি হ্যাগস্ট্রোমের সঙ্গে সংযোগ প্রকাশ পেয়েছে।",
-    "pt": "Do poker online às criptomoedas: o mesmo nome reaparece nas empresas que ajudam a indústria de jogos a receber pagamentos. A investigação da Flamman revela ligações com perfis de direita suecos e a conectada a Trump Katie Hagström.",
-    "ru": "От онлайн-покера до криптовалют: то же название встречается в компаниях, помогающих игорному бизнесу принимать платежи. Расследование Flamman показывает связи со шведскими правыми фигурами и с Трамп-сетью Кэти Хагстрём.",
-    "ur": "آن لائن پوکر سے کرپٹو کرنسیوں تک: وہی نام ان کمپنیوں میں بار بار آتا ہے جو کھیل کی صنعت کو ادائیگیوں کے لیے مدد دیتی ہیں۔ Flamman کی تحقیق میں سویڈن کے دائیں بازو کے پروفائلز اور ٹرمپ نیٹ ورک کی رکن کیٹی ہاگسٹروم کے ساتھ تعلقات ظاہر ہوتے ہیں۔",
-    "id": "Dari poker daring ke mata uang kripto: nama yang sama muncul kembali di perusahaan yang membantu industri permainan menerima pembayaran. Penyidikan Flamman menunjukkan keterkaitan dengan tokoh kanan Swedia dan jaringan Trump Katie Hagström.",
-    "de": "Vom Online-Poker zu Kryptowährungen: Der gleiche Name taucht immer wieder in den Unternehmen auf, die der Glücksspielbranche beim Zahlungsverkehr helfen. Flammans Untersuchung zeigt Verbindungen zu schwedischen Rechts- und Trump-Netzwerk-Profilen, insbesondere zu Katie Hagström.",
-    "ja": "オンラインポーカーから暗号通貨へ：同じ名前が、ゲーム業界の決済支援を行う企業に繰り返し登場しています。Flammans の調査は、スウェーデンの右派関係者やトランプネットワーク関係者であるケイティ・ハグストロームとのつながりを示しています。",
-    "sw": "Kutoka poker ya mtandaoni hadi sarafu za kidigitali: jina lile lile linaonekana tena katika kampuni zinazosaidia sekta ya michezo kulipia. Utafiti wa Flammans unaonyesha uhusiano na wasifu wa kulia wa Uswidi na mtandao wa Trump, Katie Hagström.",
-    "mr": "ऑनलाइन पोकरपासून क्रिप्टोकरन्सीपर्यंत: त्याच नावाचे कंपन्यांमध्ये पुन्हा पुन्हा दिसून येते, ज्या गेमिंग उद्योगाला पेमेंटसाठी मदत करतात. Flammans च्या तपासणीत स्वीडिश उजव्या प्रोफाइल्स आणि ट्रम्प नेटवर्कची सदस्य कॅटी हॅगस्ट्रॉम यांच्याशी संबंध दिसून येतात.",
-    "fa": "از پوکر آنلاین تا ارزهای دیجیتال: همان نام در شرکت‌هایی که به صنعت بازی‌های شرط‌بندی کمک می‌کنند تا پرداخت‌ها را دریافت کنند، تکرار می‌شود. بررسی Flamm ارتباطات با چهره‌های راست‌گرا در سوئد و شبکه‌ساز ترامپ کیتی هگستروم را نشان می‌دهد.",
-    "uk": "Від онлайн-покеру до криптовалют: те саме ім'я з'являється у компаніях, які допомагають ігровій індустрії отримувати платежі. Розслідування Flamm виявляє зв'язки зі шведськими правими профілями та мережевою фігурою Трампа Кеті Хагстрьом.",
-    "tr": "Çevrimiçi pokerdan kripto paralara: aynı isim, oyun sektörünün ödeme almasına yardımcı olan şirketlerde tekrar ediyor. Flamm'ın araştırması, İsveçli sağ profilleri ve Trump ağını kuran Katie Hagström ile bağlantıları ortaya koyuyor.",
-    "se": "Neahttapokeras kryptovalutaide: seamma namma boahtá ovdan fitnodagain mat veahkehit speallobráhkosa váldit vuostá máksimiid. Buollima iskkadeapmi čájeha čatnasemiid Ruoŧa olgešbellodatprofiilaide ja Trumpan fierpmásteaddji Katie Hagströmii."
+    "nb": "Ifølge Flammans egen gransking har selskaper og personer rundt Valunos tidligere administrerende direktør, Daniel Sonesson, fortsatt å drive med betalinger, blant annet tjenester brukt av nettkasinoer. Den svenske Ekobrottsmyndigheten har tiltalt Sonesson for grov innsidehandel, og han nekter skyld, ifølge Svenska Dagbladet. Selskaps- og personkoblingene Flamman omtaler er avisens egne funn.",
+    "nn": "Ifølge Flammans eigen gransking har selskap og personar rundt Valunos tidlegare administrerande direktør, Daniel Sonesson, halde fram med å drive med betalingar, mellom anna tenester brukte av nettkasino. Den svenske Ekobrottsmyndigheten har tiltalt Sonesson for grov innsidehandel, og han nektar skyld, ifølgje Svenska Dagbladet. Selskaps- og personkoplingane Flamman omtalar er avisa sine eigne funn.",
+    "sv": "Enligt Flammans egen granskning har bolag och personer kring Valunos tidigare vd Daniel Sonesson fortsatt att verka inom betalningar, bland annat med tjänster som används av nätkasinon. Ekobrottsmyndigheten har åtalat Sonesson för grovt insiderbrott, och han förnekar brott, enligt Svenska Dagbladet. De bolags- och personkopplingar Flamman beskriver är tidningens egna uppgifter.",
+    "da": "Ifølge Flammans egen undersøgelse har selskaber og personer omkring Valunos tidligere administrerende direktør, Daniel Sonesson, fortsat med at arbejde med betalinger, blandt andet tjenester brugt af onlinekasinoer. Sveriges Ekobrottsmyndighet har tiltalt Sonesson for grov insiderhandel, og han nægter skyld, ifølge Svenska Dagbladet. De selskabs- og personkoblinger, Flamman omtaler, er avisens egne fund.",
+    "fi": "Flammanin oman selvityksen mukaan Valunon entisen toimitusjohtajan Daniel Sonessonin ympärillä olevat yhtiöt ja henkilöt ovat jatkaneet toimintaa maksuliikenteessä, muun muassa verkkokasinoiden käyttämissä palveluissa. Ruotsin Ekobrottsmyndigheten on syyttänyt Sonessonia törkeästä sisäpiirikaupasta, ja hän kiistää syyllisyytensä, kertoo Svenska Dagbladet. Flammanin kuvaamat yhtiö- ja henkilökytkökset ovat lehden omia havaintoja.",
+    "is": "Samkvæmt eigin rannsókn Flammans hafa fyrirtæki og einstaklingar í kringum fyrrverandi forstjóra Valuno, Daniel Sonesson, haldið áfram að starfa við greiðslur, meðal annars þjónustu sem netspilavíti nota. Sænska efnahagsbrotastofnunin Ekobrottsmyndigheten hefur ákært Sonesson fyrir alvarleg innherjaviðskipti, og hann neitar sök, samkvæmt Svenska Dagbladet. Fyrirtækja- og persónutengslin sem Flamman greinir frá eru eigin niðurstöður blaðsins.",
+    "zh": "据《火焰报》自身调查，围绕Valuno前首席执行官丹尼尔·索内松（Daniel Sonesson）的公司与人员仍在从事支付业务，其中包括网络赌场使用的服务。瑞典经济犯罪管理局已就严重内幕交易起诉索内松；据《瑞典日报》报道，他否认有不当行为。《火焰报》所报道的公司与人员关联是该报自己的调查结果。",
+    "hi": "फ्लाम्मन की अपनी जांच के अनुसार, वैलूनो के पूर्व मुख्य कार्यकारी डैनियल सोनेसन के आसपास की कंपनियां और लोग भुगतान के काम में लगे रहे हैं, जिनमें ऑनलाइन कसीनो द्वारा इस्तेमाल की जाने वाली सेवाएं शामिल हैं। स्वीडन के आर्थिक अपराध प्राधिकरण ने सोनेसन पर गंभीर इनसाइडर ट्रेडिंग का आरोप लगाया है, और स्वेन्स्का दागब्लादेत के अनुसार वे गलत काम से इनकार करते हैं। फ्लाम्मन द्वारा बताए गए कंपनी और व्यक्ति संबंध अखबार के अपने निष्कर्ष हैं।",
+    "es": "Según la propia investigación de Flamman, empresas y personas en torno al antiguo consejero delegado de Valuno, Daniel Sonesson, han seguido operando en pagos, incluidos servicios usados por casinos en línea. La Autoridad sueca contra la Delincuencia Económica ha imputado a Sonesson por información privilegiada agravada, y este niega haber actuado de forma indebida, según Svenska Dagbladet. Los vínculos entre empresas y personas que relata Flamman son hallazgos propios del periódico.",
+    "fr": "Selon l'enquête propre de Flamman, des sociétés et des personnes autour de l'ancien directeur général de Valuno, Daniel Sonesson, ont continué d'opérer dans les paiements, y compris des services utilisés par des casinos en ligne. L'autorité suédoise de lutte contre la criminalité économique a inculpé Sonesson de délit d'initié aggravé, et il nie toute faute, selon Svenska Dagbladet. Les liens entre sociétés et personnes rapportés par Flamman sont les constatations propres du journal.",
+    "ar": "وفقاً لتحقيق فلامان نفسه، واصلت شركات وأشخاص حول الرئيس التنفيذي السابق لفالونو، دانيال سونيسون، العمل في المدفوعات، بما في ذلك خدمات تستخدمها كازينوهات عبر الإنترنت. وقد وجهت هيئة الجرائم الاقتصادية السويدية إلى سونيسون تهمة التداول من الداخل المشدد، وهو ينفي ارتكاب أي خطأ، وفقاً لـ Svenska Dagbladet. والصلات بين الشركات والأشخاص التي توردها فلامان هي نتائج الصحيفة نفسها.",
+    "bn": "ফ্লামমানের নিজস্ব তদন্ত অনুযায়ী, ভালুনোর সাবেক প্রধান নির্বাহী ড্যানিয়েল সোনেসনের আশেপাশের কোম্পানি ও ব্যক্তিরা পেমেন্ট খাতে কাজ চালিয়ে গেছেন, যার মধ্যে অনলাইন ক্যাসিনোর ব্যবহৃত সেবাও আছে। সুইডেনের অর্থনৈতিক অপরাধ কর্তৃপক্ষ সোনেসনের বিরুদ্ধে গুরুতর ইনসাইডার ট্রেডিংয়ের অভিযোগ এনেছে, এবং Svenska Dagbladet-এর মতে তিনি অন্যায় অস্বীকার করেন। ফ্লামমান যে কোম্পানি ও ব্যক্তি সম্পর্কের কথা বলে, সেগুলো পত্রিকাটির নিজস্ব তথ্য।",
+    "pt": "Segundo a própria investigação do Flamman, empresas e pessoas em torno do antigo diretor-executivo da Valuno, Daniel Sonesson, continuaram a atuar nos pagamentos, incluindo serviços usados por casinos online. A Autoridade sueca para o Crime Económico acusou Sonesson de abuso de informação privilegiada agravado, e ele nega qualquer ilícito, segundo o Svenska Dagbladet. As ligações entre empresas e pessoas que o Flamman relata são apuramentos do próprio jornal.",
+    "ru": "Согласно собственному расследованию Flamman, компании и люди вокруг бывшего генерального директора Valuno Даниэля Сонессона продолжали работать в сфере платежей, в том числе с услугами, которыми пользуются онлайн-казино. Шведская служба по экономическим преступлениям предъявила Сонессону обвинение в тяжёлой инсайдерской торговле, и он отрицает какую-либо вину, сообщает Svenska Dagbladet. Связи компаний и лиц, о которых пишет Flamman, — это собственные выводы газеты.",
+    "ur": "فلیمن کی اپنی تحقیق کے مطابق، ویلونو کے سابق چیف ایگزیکٹو ڈینیئل سونیسن کے گرد کمپنیاں اور افراد ادائیگیوں میں کام کرتے رہے ہیں، جن میں آن لائن کیسینو کی استعمال کردہ خدمات بھی شامل ہیں۔ سویڈن کے اقتصادی جرائم کے ادارے نے سونیسن پر سنگین انسائیڈر ٹریڈنگ کا الزام عائد کیا ہے، اور Svenska Dagbladet کے مطابق وہ غلطی سے انکار کرتے ہیں۔ فلیمن جن کمپنی اور افراد کے روابط بیان کرتی ہے وہ اخبار کی اپنی دریافتیں ہیں۔",
+    "id": "Menurut penyelidikan Flamman sendiri, perusahaan dan orang-orang di sekitar mantan direktur utama Valuno, Daniel Sonesson, terus berkegiatan di bidang pembayaran, termasuk layanan yang dipakai kasino daring. Otoritas kejahatan ekonomi Swedia telah mendakwa Sonesson atas perdagangan orang dalam yang diperberat, dan ia menyangkal bersalah, menurut Svenska Dagbladet. Kaitan perusahaan dan orang yang dilaporkan Flamman adalah temuan surat kabar itu sendiri.",
+    "de": "Laut Flammans eigener Recherche haben Unternehmen und Personen um den früheren Valuno-Chef Daniel Sonesson weiterhin im Zahlungsverkehr gearbeitet, unter anderem mit Diensten, die von Online-Kasinos genutzt werden. Die schwedische Wirtschaftsstrafbehörde hat Sonesson wegen schweren Insiderhandels angeklagt; er bestreitet ein Fehlverhalten, berichtet Svenska Dagbladet. Die von Flamman dargestellten Unternehmens- und Personenverbindungen sind eigene Erkenntnisse der Zeitung.",
+    "ja": "フラマン自身の調査によれば、Valunoの元最高経営責任者ダニエル・ソネソンの周辺の企業や人々は、オンラインカジノが利用するサービスを含め、決済分野で活動を続けてきた。スウェーデン経済犯罪庁はソネソンを加重インサイダー取引で起訴しており、本人は不正を否定しているとスヴェンスカ・ダーグブラーデットは伝えている。フラマンが報じる企業・人物のつながりは、同紙自身の調査結果である。",
+    "sw": "Kulingana na uchunguzi wa Flamman yenyewe, kampuni na watu karibu na aliyekuwa afisa mkuu mtendaji wa Valuno, Daniel Sonesson, wameendelea kufanya kazi katika malipo, ikiwa ni pamoja na huduma zinazotumiwa na kasino mtandaoni. Mamlaka ya uhalifu wa kiuchumi ya Uswidi imemshtaki Sonesson kwa biashara ya ndani iliyozidishwa, naye anakataa kosa, kulingana na Svenska Dagbladet. Mahusiano ya kampuni na watu yanayoripotiwa na Flamman ni matokeo ya gazeti lenyewe.",
+    "mr": "फ्लॅमनच्या स्वतःच्या तपासणीनुसार, व्हॅलुनोचे माजी मुख्य कार्यकारी डॅनियेल सोनेसन यांच्या भोवतालच्या कंपन्या आणि लोक पेमेंट क्षेत्रात काम करत राहिले आहेत, ज्यात ऑनलाइन कॅसिनो वापरत असलेल्या सेवांचा समावेश आहे. स्वीडनच्या आर्थिक गुन्हे प्राधिकरणाने सोनेसन यांच्यावर गंभीर इनसाइडर ट्रेडिंगचा आरोप ठेवला आहे, आणि Svenska Dagbladet नुसार ते चूक नाकारतात. फ्लॅमनने सांगितलेले कंपनी व व्यक्तींचे संबंध हे वृत्तपत्राचे स्वतःचे निष्कर्ष आहेत.",
+    "fa": "بر اساس تحقیق خود فلامان، شرکت‌ها و افراد پیرامون مدیرعامل پیشین والونو، دانیل سونسون، همچنان در حوزه پرداخت فعالیت کرده‌اند، از جمله خدماتی که کازینوهای آنلاین به کار می‌برند. سازمان جرایم اقتصادی سوئد سونسون را به معامله نهانی مشدد متهم کرده و او به گزارش Svenska Dagbladet هرگونه تخلف را رد می‌کند. پیوندهای شرکتی و شخصی که فلامان گزارش می‌دهد یافته‌های خود این روزنامه است.",
+    "uk": "За власним розслідуванням Flamman, компанії та люди довкола колишнього генерального директора Valuno Даніеля Сонессона й далі працювали у сфері платежів, зокрема з послугами, якими користуються онлайн-казино. Шведська служба боротьби з економічними злочинами звинуватила Сонессона в тяжкій інсайдерській торгівлі, і він заперечує провину, повідомляє Svenska Dagbladet. Зв’язки компаній і осіб, про які пише Flamman, — це власні висновки газети.",
+    "tr": "Flamman'ın kendi soruşturmasına göre, Valuno'nun eski genel müdürü Daniel Sonesson'un çevresindeki şirketler ve kişiler, çevrimiçi casinoların kullandığı hizmetler de dahil olmak üzere ödemeler alanında faaliyetlerini sürdürmüş. İsveç Ekonomik Suçlar Kurumu Sonesson'u ağır içeriden öğrenenlerin ticaretiyle itham etti; Svenska Dagbladet'e göre kendisi suçu reddediyor. Flamman'ın bildirdiği şirket ve kişi bağlantıları gazetenin kendi bulgularıdır.",
+    "se": "Flammas iežas guorahallama mielde leat fitnodagat ja olbmot Valuno ovddeš hoavda, Daniel Sonesson, birra, ain doaimmahan máksimiid, maiddái bálvalusaid maid neahttacasino geavaha. Ruoŧa ekonomalaš rihkuspolesdoaimmahat lea áššáskuhttán Sonessona dannego son lea gávppašan siskkáldas gávpin, ja Sonesson biehttala rihkkumis, čállá Svenska Dagbladet. Fitnodat- ja persovdnaoktavuođat Flamman-raporttat leat aviissaid iežaset guorahallamat."
    },
    "title_i18n_source": "Pokerligans nya giv",
-   "summary_i18n_source": "Från nätpoker till kryptovalutor: samma namn återkommer i bolagen som hjälper spelbranschen att ta betalt. Flammans granskning visar kopplingarna till svenska högerprofiler och Trumpnätverkaren Katie Hagström."
+   "summary_i18n_source": "Från nätpoker till kryptovalutor: samma namn återkommer i bolagen som hjälper spelbranschen att ta betalt. Flammans granskning visar kopplingarna till svenska högerprofiler och Trumpnätverkaren Katie Hagström.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-13T06:07:02+01:00",
+   "primary_source": {
+    "name": "Flamman, 12 November 2026",
+    "url": "https://flamman.se/pokerligans-nya-giv"
+   },
+   "links": [
+    {
+     "url": "https://nordiccrypto.no/stories/9ce6e4d42086/",
+     "label": "Two former Valuno executives charged with aggravated insider trading"
+    }
+   ],
+   "summary_i18n_review": "pending"
   },
   {
    "id": "a9a589086ff8",
@@ -772,7 +842,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "title_i18n": {
     "nn": "Venezuela: Kryptovaluta set sanksjonane på prøve",
@@ -826,7 +896,8 @@
     "se": "Venezuela ii duostut šat sankšuvnnaid dušše stáhta vuostálastimiin. Guhkesáigásaš isoleren lea dagahan ruđalaš kanálaid, mat áiggi mielde sáhttet garvit gáržžidemiid. Kryptovaluta lea leamaš oassin dán ovdáneamis - álggos politihkalaš váikkuhangaskaoapmin stáhta hálddus, dál desentraliserejuvvon fierpmádagain maid eiseválddit rahčet vákšut ja heaittihit. Venezuela dilli sankšuvnnaid vuolde"
    },
    "title_i18n_source": "Venezuela: Kryptovaluta setter sanksjonene på prøve",
-   "summary_i18n_source": "Venezuela møter ikke lenger sanksjonene bare med statlig motstand. Langvarig isolasjon har skapt finansielle kanaler som kan omgå restriksjonene over tid. Kryptovaluta har vært en del av denne utviklingen – først som et politisk virkemiddel i statens hender, nå gjennom desentraliserte nettverk som myndighetene sliter med å overvåke og avvikle. Venezuelas situasjon under sanksjonene handler"
+   "summary_i18n_source": "Venezuela møter ikke lenger sanksjonene bare med statlig motstand. Langvarig isolasjon har skapt finansielle kanaler som kan omgå restriksjonene over tid. Kryptovaluta har vært en del av denne utviklingen – først som et politisk virkemiddel i statens hender, nå gjennom desentraliserte nettverk som myndighetene sliter med å overvåke og avvikle. Venezuelas situasjon under sanksjonene handler",
+   "reject_reason": "Analysis/commentary, not a news event. No Nordic actor at the core. Evergreen geopolitics. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "657f2db07616",
@@ -879,7 +950,7 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "published_date_only": true,
    "title_i18n": {
@@ -934,7 +1005,8 @@
     "se": "- Don it sáhte dušše oastit bitcoinaid, doallat gieđaid ja vuordit dassá haddi loktana, dadjá Hagen. Ace Fund lea 22 % vuoitu 12 mánus."
    },
    "title_i18n_source": "Ace-fond opp 22 prosent mens bitcoin falt 29 prosent",
-   "summary_i18n_source": "– Du kan ikke bare kjøpe bitcoin, folde hendene og vente på at prisen stiger, sier Hagen. Ace Fund er opp 22 prosent på tolv måneder."
+   "summary_i18n_source": "– Du kan ikke bare kjøpe bitcoin, folde hendene og vente på at prisen stiger, sier Hagen. Ace Fund er opp 22 prosent på tolv måneder.",
+   "reject_reason": "Market/return coverage and near fund-manager PR. Standing exclusion. Follows already rejected e9d337427d2e. researcher 13.11; editor 2026-11-13"
   },
   {
    "id": "a4d2c488e584",
