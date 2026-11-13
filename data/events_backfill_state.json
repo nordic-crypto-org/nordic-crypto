@@ -1233,6 +1233,158 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-13T10:00:00+00:00",
+   "included": 5,
+   "by_country": {
+    "NO": 25,
+    "SE": 12,
+    "DK": 5,
+    "FI": 11,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 5,
+    "2017": 5,
+    "2018": 7,
+    "2022": 2,
+    "2023": 5,
+    "2025": 5,
+    "2026": 11,
+    "2016": 4,
+    "2019": 3,
+    "2024": 1,
+    "2015": 3,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 2,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1,
+     "2018": 2
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 3,
+     "2015": 1,
+     "2026": 3,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 1,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1,
+     "2012": 1,
+     "2017": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Five past events were stored. Bitcoinkonferens i Stockholm on 3 April 2014 at Finlandshuset, from bitcoin.se. The page says about 09:00–17:00. That clock was not stored. Bergen Bitcoin Meetup on 11 November 2015, 19:00–22:00, at Henrik øl og vinstove, Engen 10. A Bergen meetup on 29 May 2018, 19:00–22:00, at Impact Hub Bergen, with guest speaker Adam Meister. Aragon Meetup in Helsinki on 23 November 2017, 17:30–20:00, at Microsoft Flux. The Meetup page labels the zone CET. The stored offset is Helsinki's. EOS Meetup on 17 January 2018 at the Radisson Blu Plaza in Oslo, from the BitSpace recording. The page does not state a clock, so the row is the day. No count was stored. The Helsinki meetup of 6 November 2026 is already on the calendar. No recording of Bitcoin er tid on 11 November or of Göteborg Bitcoin Meetup #50 on 12 November was found. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Taper level unchanged: full.",
+   "queries": [
+    "https://www.bitcoin.se/articles/bitcoinkonferens-i-stockholm-3e-april",
+    "https://www.meetup.com/Bergen-Bitcoin-Meetup/events/226240773/",
+    "https://www.meetup.com/Bergen-Bitcoin-Meetup/events/251047632/",
+    "https://www.meetup.com/Aragon-Meetup/events/245079105/",
+    "https://www.youtube.com/watch?v=yC4fNpmURWM&hl=en",
+    "https://www.litteraturhuset.no/nb/arrangement/bitcoin-er-tid",
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/317285663/",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-13"
+   ],
+   "sources_used": [
+    "bitcoin.se",
+    "Bergen Bitcoin Meetup",
+    "Aragon Meetup",
+    "BitSpace"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Bitcoin er tid, 11 November 2026, Oslo",
+     "reason": "Already on the calendar. Litteraturhuset lists the talk. No public recording was found."
+    },
+    {
+     "name": "Göteborg Bitcoin Meetup #50, 12 November 2026",
+     "reason": "Already on the calendar. The Meetup page has no recording."
+    },
+    {
+     "name": "Impact Onchain, 11 November 2026",
+     "reason": "Already on the calendar. The recording is in the talks archive. The video page does not state a city, so the talk is not linked."
+    },
+    {
+     "name": "Statens pensjonsfond utland, 11 November 2026",
+     "reason": "The Litteraturhuset page is about the ethical framework of the oil fund. It is not a bitcoin, crypto or blockchain event."
+    },
+    {
+     "name": "Bitcoin-kiertue 2014 Turku",
+     "reason": "The Bittiraha.fi upload says it is a recap, not a talk."
+    },
+    {
+     "name": "Approximate clock on the Stockholm conference page",
+     "reason": "bitcoin.se says about 09:00–17:00. That was not stored as a start or an end."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }
