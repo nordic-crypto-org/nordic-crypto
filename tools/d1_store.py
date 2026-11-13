@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sqlite3
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -270,6 +271,11 @@ class SqliteStore:
         self.conn.commit()
 
 
+# Cloudflare answers a valid token with a one-off 401 (code 10000) mid-import, and 429/503
+# when busy. The query never ran, so sending it again is safe.
+RETRY_HTTP_CODES = (401, 429, 503)
+
+
 class HttpStore:
     """Cloudflare D1 HTTP query API. The same endpoint wrangler d1 execute uses."""
 
@@ -278,6 +284,7 @@ class HttpStore:
         self.database_id = database_id
         self.token = token
         self.base = base.rstrip("/")
+        self.retry_delays = (2, 10)
 
     def _post(self, sql, params):
         url = f"{self.base}/accounts/{self.account_id}/d1/database/{self.database_id}/query"
@@ -291,14 +298,18 @@ class HttpStore:
                 "Content-Type": "application/json",
             },
         )
-        try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                payload = json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as ex:
-            detail = ex.read().decode("utf-8", errors="replace")[:500]
-            if self.token and self.token in detail:
-                detail = detail.replace(self.token, "[token]")
-            raise D1Error(f"D1 HTTP {ex.code}: {detail}") from None
+        for delay in (*self.retry_delays, None):
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    payload = json.loads(resp.read().decode("utf-8"))
+                break
+            except urllib.error.HTTPError as ex:
+                detail = ex.read().decode("utf-8", errors="replace")[:500]
+                if self.token and self.token in detail:
+                    detail = detail.replace(self.token, "[token]")
+                if delay is None or ex.code not in RETRY_HTTP_CODES:
+                    raise D1Error(f"D1 HTTP {ex.code}: {detail}") from None
+                time.sleep(delay)
         if not payload.get("success"):
             raise D1Error("D1 query failed: " + json.dumps(payload.get("errors") or [])[:500])
         result = payload.get("result") or []
