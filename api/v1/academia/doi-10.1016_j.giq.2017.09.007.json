@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T06:35:41+00:00",
+ "generated_at": "2026-11-13T06:50:49+00:00",
  "preview": false,
  "item": {
-  "country": "NO",
-  "title": "Blockchain in government: Benefits and implications of distributed ledger technology for information sharing",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Svein Ølnes",
    "Jolien Ubacht",
    "Marijn Janssen"
   ],
-  "institution": "Vestlandsforsking",
-  "year": 2017,
-  "type": "paper",
-  "venue": "Government Information Quarterly",
-  "doi": "10.1016/j.giq.2017.09.007",
-  "url": "https://www.sciencedirect.com/science/article/pii/S0740624X17303155",
+  "checked": "2026-11-09",
+  "country": "NO",
   "db": "https://openalex.org/W2766800499",
   "db_name": "OpenAlex",
-  "source": "https://www.sciencedirect.com/science/article/pii/S0740624X17303155",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.giq.2017.09.007",
+  "id": "doi-10.1016_j.giq.2017.09.007",
+  "institution": "Vestlandsforsking",
   "keywords": [
    "Blockchain",
    "Distributed ledger",
@@ -31,10 +27,14 @@
    "Information technology",
    "Computer science"
   ],
-  "checked": "2026-11-13",
   "origin": "research/academia/works.json",
+  "source": "https://www.sciencedirect.com/science/article/pii/S0740624X17303155",
+  "title": "Blockchain in government: Benefits and implications of distributed ledger technology for information sharing",
+  "type": "paper",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0740624X17303155",
+  "venue": "Government Information Quarterly",
+  "year": 2017,
   "about_i18n": {},
-  "id": "doi-10.1016_j.giq.2017.09.007",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.giq.2017.09.007.json"
  }

@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T06:35:41+00:00",
+ "generated_at": "2026-11-13T06:50:49+00:00",
  "preview": false,
  "item": {
-  "country": "SE",
-  "title": "BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Chao Lin",
    "Debiao He",
@@ -13,16 +12,13 @@
    "Kim‐Kwang Raymond Choo",
    "Athanasios V. Vasilakos"
   ],
-  "institution": "Luleå University of Technology",
-  "year": 2018,
-  "type": "paper",
-  "venue": "Journal of Network and Computer Applications",
-  "doi": "10.1016/j.jnca.2018.05.005",
-  "url": "https://doi.org/10.1016/j.jnca.2018.05.005",
+  "checked": "2026-11-09",
+  "country": "SE",
   "db": "https://doi.org/10.1016/j.jnca.2018.05.005",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1016/j.jnca.2018.05.005",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.jnca.2018.05.005",
+  "id": "doi-10.1016_j.jnca.2018.05.005",
+  "institution": "Luleå University of Technology",
   "keywords": [
    "Computer science",
    "Computer security",
@@ -33,10 +29,14 @@
    "Encryption",
    "Blockchain"
   ],
-  "checked": "2026-11-13",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.jnca.2018.05.005",
+  "title": "BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.jnca.2018.05.005",
+  "venue": "Journal of Network and Computer Applications",
+  "year": 2018,
   "about_i18n": {},
-  "id": "doi-10.1016_j.jnca.2018.05.005",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.jnca.2018.05.005.json"
  }
