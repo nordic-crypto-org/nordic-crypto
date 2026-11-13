@@ -1,10 +1,11 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T05:48:51+00:00",
+ "generated_at": "2026-11-13T06:35:41+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
+  "country": "SE",
+  "title": "A Taxonomy of Blockchain-Based Systems for Architecture Design",
   "authors": [
    "Xiwei Xu",
    "Ingo M. Weber",
@@ -15,13 +16,16 @@
    "Cesare Pautasso",
    "Paul Rimba"
   ],
-  "checked": "2026-11-09",
-  "country": "SE",
+  "institution": "Chalmers University of Technology",
+  "year": 2017,
+  "type": "conference",
+  "venue": "IEEE International Conference on Software Architecture (ICSA)",
+  "doi": "10.1109/icsa.2017.33",
+  "url": "https://doi.org/10.1109/icsa.2017.33",
   "db": "https://doi.org/10.1109/icsa.2017.33",
   "db_name": "openalex",
-  "doi": "10.1109/icsa.2017.33",
-  "id": "doi-10.1109_icsa.2017.33",
-  "institution": "Chalmers University of Technology",
+  "source": "https://doi.org/10.1109/icsa.2017.33",
+  "about": "Nordic-affiliated conference in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Computer science",
@@ -32,14 +36,10 @@
    "Software engineering",
    "Software"
   ],
+  "checked": "2026-11-13",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1109/icsa.2017.33",
-  "title": "A Taxonomy of Blockchain-Based Systems for Architecture Design",
-  "type": "conference",
-  "url": "https://doi.org/10.1109/icsa.2017.33",
-  "venue": "IEEE International Conference on Software Architecture (ICSA)",
-  "year": 2017,
   "about_i18n": {},
+  "id": "doi-10.1109_icsa.2017.33",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_icsa.2017.33.json"
  }

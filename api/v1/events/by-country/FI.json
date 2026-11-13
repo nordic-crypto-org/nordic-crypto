@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T05:48:51+00:00",
+ "generated_at": "2026-11-13T06:35:41+00:00",
  "preview": false,
  "country": "FI",
  "count": 5,
@@ -279,12 +279,12 @@
    "sponsored": null,
    "note": "Falls on New Year's Day: check the organiser's page before you go.",
    "note_i18n": {
+    "nn": "Fell på første nyttårsdag: sjekk sida til arrangøren før du dreg.",
+    "nb": "Faller på første nyttårsdag: sjekk arrangørens side før du drar.",
+    "sv": "Infaller på nyårsdagen: kontrollera arrangörens sida innan du går.",
     "da": "Falder på nytårsdag: tjek arrangørens side, før du tager afsted.",
     "fi": "Osuu uudenvuodenpäivälle: tarkista järjestäjän sivu ennen lähtöä.",
-    "is": "Ber upp á nýársdag: athugaðu síðu skipuleggjandans áður en þú ferð.",
-    "nb": "Faller på første nyttårsdag: sjekk arrangørens side før du drar.",
-    "nn": "Fell på første nyttårsdag: sjekk sida til arrangøren før du dreg.",
-    "sv": "Infaller på nyårsdagen: kontrollera arrangörens sida innan du går."
+    "is": "Ber upp á nýársdag: athugaðu síðu skipuleggjandans áður en þú ferð."
    },
    "description": {
     "text": "Bitcoin meetup - meet the local bitcoiners, network, present your projects and ideas or just hang out! Topics include everything that remotely touches Bitcoin.",
@@ -476,7 +476,7 @@
   {
    "id": "4390472e32b7",
    "title": "Discussion about Bitcoin and related topics",
-   "title_original": null,
+   "title_original": "Discussion about Bitcoin and related topics",
    "title_i18n": {
     "nn": "Diskusjon om bitcoin og nærskylde tema",
     "nb": "Diskusjon om bitcoin og beslektede temaer",
@@ -512,10 +512,35 @@
    "organiser": "Helsinki Bitcoin Hobbyists",
    "url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/",
    "source": "Helsinki Bitcoin Hobbyists (Meetup.com)",
-   "paid": null,
-   "sponsored": null,
-   "note": null,
-   "note_i18n": {},
+   "paid": false,
+   "sponsored": false,
+   "note": "Speakers not yet announced by the organiser.",
+   "note_i18n": {
+    "nn": "Arrangøren har enno ikkje kunngjort foredragshaldarar.",
+    "nb": "Arrangøren har ennå ikke kunngjort foredragsholdere.",
+    "sv": "Arrangören har ännu inte meddelat talare.",
+    "da": "Arrangøren har endnu ikke offentliggjort talere.",
+    "fi": "Järjestäjä ei ole vielä ilmoittanut puhujia.",
+    "is": "Skipuleggjandi hefur ekki enn tilkynnt ræðumenn.",
+    "zh": "主办方尚未公布演讲者。",
+    "hi": "आयोजक ने अभी तक वक्ताओं की घोषणा नहीं की है।",
+    "es": "El organizador aún no ha anunciado los ponentes.",
+    "fr": "L'organisateur n'a pas encore annoncé les intervenants.",
+    "ar": "لم يعلن المنظم بعد عن المتحدثين.",
+    "bn": "আয়োজক এখনও বক্তাদের নাম ঘোষণা করেনি।",
+    "pt": "O organizador ainda não anunciou os oradores.",
+    "ru": "Организатор пока не объявил спикеров.",
+    "ur": "منتظم نے ابھی تک مقررین کا اعلان نہیں کیا۔",
+    "id": "Penyelenggara belum mengumumkan pembicara.",
+    "de": "Der Veranstalter hat die Sprecher noch nicht bekannt gegeben.",
+    "ja": "主催者は登壇者をまだ発表していない。",
+    "sw": "Mratibu bado hajatangaza wazungumzaji.",
+    "mr": "आयोजकांनी अद्याप वक्ते जाहीर केलेले नाहीत.",
+    "fa": "برگزارکننده هنوز سخنرانان را اعلام نکرده است.",
+    "uk": "Організатор ще не оголосив спікерів.",
+    "tr": "Organizatör henüz konuşmacıları açıklamadı.",
+    "se": "Arrángereaddji ii leat vel almmuhan hállidalliid."
+   },
    "description": {
     "text": "Bitcoin meetup - meet the local bitcoiners, network, present your projects and ideas or just hang out! Topics include everything that remotely touches Bitcoin.",
     "lang": "en",
@@ -582,10 +607,11 @@
     "se": "https://nordiccrypto.no/se/calendar/4390472e32b7/"
    },
    "api_url": "https://nordiccrypto.no/api/v1/events/4390472e32b7.json",
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Faro%20Channelside%20Bar%20%26%20Restaurant%2C%20Kellosaarenranta%202%2C%20Helsinki",
    "place_source": {
     "name": "Helsinki Bitcoin Hobbyists (Meetup.com)",
     "url": "https://www.meetup.com/helsinki-bitcoin-hobbyists/events/qjzrxgykcfbhb/",
-    "retrieved": "2026-11-07T03:20:30+00:00"
+    "retrieved": "2026-11-07T04:41:02.061695+01:00"
    }
   }
  ]

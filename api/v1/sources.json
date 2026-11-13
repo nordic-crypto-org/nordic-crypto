@@ -1,14 +1,14 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T05:48:51+00:00",
+ "generated_at": "2026-11-13T06:35:41+00:00",
  "preview": false,
  "user_agent": "NordicCryptoBot/0.1 (+__SITE__about/; news headline bot)",
  "min_delay_seconds": 2,
  "keyword_note": "A story is picked up when its title or teaser mentions, for example: bitcoin, crypto, blockchain, stablecoin, MiCA, CASP, CBDC, darknet (all languages); krypto, kryptovaluta, blokkjede (Norwegian); kryptoaktiver, blokkæde (Danish); kryptotillgångar, blockkedja, e-krona (Swedish); kryptovaluutta, lohkoketju, virtuaalivaluutta (Finnish); rafmynt, sýndareignir, bálkakeðja (Icelandic); or Nordic crypto firms such as Firi, NBX, K33, Safello, Coinmotion, Northcrypto, Myntkaup, Monerium and Coinify. Money-laundering words such as hvitvasking, penningtvätt, hvidvask, rahanpesu and peningaþvætti count only when the same title or teaser also has a crypto term. Local and justice items use the same filter. The editor reviews every hit before it is published.",
  "kaupr": "Kaupr (kaupr.io) is one of the news sources. It is never a sponsor.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
- "count": 1043,
+ "count": 1042,
  "sources": [
   {
    "id": "e24",
@@ -31087,28 +31087,6 @@
    "source_note": null,
    "logo": null,
    "logo_url": null
-  },
-  {
-   "id": "enogtjue",
-   "name": "Enogtjue",
-   "country": "NO",
-   "kind": "Company blog",
-   "url": "https://enogtjue.no",
-   "type": "sitemap",
-   "paywall": false,
-   "enabled": true,
-   "status": "no RSS found (/feed, /rss, /rss.xml, /atom.xml, /feed.xml, /index.xml return 404 on 2026-11-12). /artikler/feed and /artikler/rss.xml return the HTML article index, not a feed. No RSS. The fetcher reads sitemap.xml, then the public index page, and keeps only title, date, link and summary.",
-   "verified": "2026-11-12",
-   "language": "Norwegian",
-   "coverage": "national",
-   "region": null,
-   "method": "sitemap",
-   "icon_url": null,
-   "logo_source": null,
-   "feed": "https://enogtjue.no/sitemap.xml",
-   "source_note": null,
-   "logo": null,
-   "logo_url": null
   }
  ],
  "search": [
@@ -31922,22 +31900,6 @@
    "status": "public post only; a sign-in wall is skipped and nothing is added",
    "method": "Public LinkedIn post, read without signing in. Date, time and Sturegatan 15 must be visible. A login wall is not a source.",
    "intake": "linkedin-public",
-   "ics": null,
-   "organizer_id": null,
-   "venue_id": null
-  },
-  {
-   "id": "undoqo-plebs",
-   "name": "Undoqo / Plebs of Trondheim",
-   "url": "https://undoqo.com/blogs/nyheter",
-   "country": "NO",
-   "city": null,
-   "organiser": "Undoqo / Plebs of Trondheim",
-   "enabled": false,
-   "trusted": false,
-   "status": "manual check: Shopify blog accordion of events; Atom feeds empty; listed dates have no year. Verify each event's year and location (venue, street address, map link) against the official source before publishing. Also check https://undoqo.com/blogs/events (same accordion list as of 2026-11-09).",
-   "method": "Researcher checks by hand. No iCal/JSON-LD/RSS articles to fetch.",
-   "intake": "manual",
    "ics": null,
    "organizer_id": null,
    "venue_id": null

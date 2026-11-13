@@ -1,10 +1,11 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T05:48:51+00:00",
+ "generated_at": "2026-11-13T06:35:41+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "Is geopolitical risk priced in the cross-section of cryptocurrency returns?",
   "authors": [
    "Huaigang Long",
    "Ender Demir",
@@ -12,13 +13,16 @@
    "Adam Zaremba",
    "Syed Jawad Hussain Shahzad"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2022,
+  "type": "paper",
+  "venue": "Finance research letters",
+  "doi": "10.1016/j.frl.2022.103131",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1544612322003543/pdf",
   "db": "https://openalex.org/W4286559460",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.frl.2022.103131",
-  "id": "doi-10.1016_j.frl.2022.103131",
-  "institution": "Reykjavík University",
+  "source": "https://www.sciencedirect.com/science/article/pii/S1544612322003543/pdf",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Geopolitics",
    "Cryptocurrency",
@@ -29,14 +33,10 @@
    "Political science",
    "Computer science"
   ],
+  "checked": "2026-11-13",
   "origin": "research/academia/works.json",
-  "source": "https://www.sciencedirect.com/science/article/pii/S1544612322003543/pdf",
-  "title": "Is geopolitical risk priced in the cross-section of cryptocurrency returns?",
-  "type": "paper",
-  "url": "https://www.sciencedirect.com/science/article/pii/S1544612322003543/pdf",
-  "venue": "Finance research letters",
-  "year": 2022,
   "about_i18n": {},
+  "id": "doi-10.1016_j.frl.2022.103131",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.frl.2022.103131.json"
  }

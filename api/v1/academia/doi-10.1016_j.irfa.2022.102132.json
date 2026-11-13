@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T05:48:51+00:00",
+ "generated_at": "2026-11-13T06:35:41+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "IS",
+  "title": "Multivariate long memory structure in the cryptocurrency market: The impact of COVID-19",
   "authors": [
    "Ata Assaf",
    "Avishek Bhandari",
    "Husni A. Charif",
    "Ender Demir"
   ],
-  "checked": "2026-11-09",
-  "country": "IS",
+  "institution": "Reykjavík University",
+  "year": 2022,
+  "type": "paper",
+  "venue": "International Review of Financial Analysis",
+  "doi": "10.1016/j.irfa.2022.102132",
+  "url": "https://doi.org/10.1016/j.irfa.2022.102132",
   "db": "https://doi.org/10.1016/j.irfa.2022.102132",
   "db_name": "openalex",
-  "doi": "10.1016/j.irfa.2022.102132",
-  "id": "doi-10.1016_j.irfa.2022.102132",
-  "institution": "Reykjavík University",
+  "source": "https://doi.org/10.1016/j.irfa.2022.102132",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Cryptocurrency",
    "Coronavirus disease 2019 (COVID-19)",
@@ -28,14 +32,10 @@
    "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)",
    "Long memory"
   ],
+  "checked": "2026-11-13",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1016/j.irfa.2022.102132",
-  "title": "Multivariate long memory structure in the cryptocurrency market: The impact of COVID-19",
-  "type": "paper",
-  "url": "https://doi.org/10.1016/j.irfa.2022.102132",
-  "venue": "International Review of Financial Analysis",
-  "year": 2022,
   "about_i18n": {},
+  "id": "doi-10.1016_j.irfa.2022.102132",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.irfa.2022.102132.json"
  }
