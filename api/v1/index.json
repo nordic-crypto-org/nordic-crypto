@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T07:14:58+00:00",
+ "generated_at": "2026-11-13T15:40:26+00:00",
  "preview": false,
  "title": "Nordic Crypto data API",
  "sign_off": "The Nordic Crypto team",
@@ -44,8 +44,8 @@
   "events_upcoming": 14,
   "events_ongoing": 0,
   "events_past": 16,
-  "events_previous": 66,
-  "talks": 170,
+  "events_previous": 71,
+  "talks": 173,
   "sources": 1043,
   "academia": {
    "courses": 9,
@@ -56,7 +56,7 @@
   "books": 25,
   "podcasts": 43,
   "developers": 0,
-  "org_entities": 472,
+  "org_entities": 477,
   "org_relations": 15,
   "profiles": 20,
   "images": 64,
@@ -72,7 +72,7 @@
    "nbx": 41,
    "coinmotion": 20
   },
-  "stats_days": 27
+  "stats_days": 28
  },
  "endpoints": [
   {
@@ -211,8 +211,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/talks.json",
    "summary": "Public talks on bitcoin, cryptocurrencies and blockchain in the Nordic countries, newest first. A player is embedded on the site only when embed is true (YouTube via youtube-nocookie.com, or the Vimeo player). Unknown fields are null. description is ours; title and the other details come from the platform.",
    "schema": "TalkList",
-   "example_url": "https://nordiccrypto.no/api/v1/talks/yt-MgISZpaxARM.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/talks/yt-MgISZpaxARM.json",
+   "example_url": "https://nordiccrypto.no/api/v1/talks/yt-fwOT6lb5eU8.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/talks/yt-fwOT6lb5eU8.json",
    "item_path": "/api/v1/talks/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/talks/{id}.json"
   },

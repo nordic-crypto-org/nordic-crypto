@@ -1,10 +1,37 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T07:14:58+00:00",
+ "generated_at": "2026-11-13T15:40:26+00:00",
  "preview": false,
- "count": 170,
+ "count": 173,
  "talks": [
+  {
+   "id": "yt-fwOT6lb5eU8",
+   "video_url": "https://www.youtube.com/watch?v=fwOT6lb5eU8",
+   "platform": "youtube",
+   "title": "Impact Onchain",
+   "speakers": [],
+   "event_name": "Impact Onchain",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the city",
+   "speaker_ids": [],
+   "city": null,
+   "country": null,
+   "date": "2026-11-11",
+   "published": "2026-11-11",
+   "duration": "PT1H29M8S",
+   "language": null,
+   "channel": "Kaupr Media",
+   "description": "Kaupr Media streamed a free online session on 11 November 2026 with FirstBlock-athon Stockholm, about taking a hackathon project further. The page does not name a city.",
+   "source_url": "https://www.youtube.com/watch?v=fwOT6lb5eU8&hl=en",
+   "retrieved_at": "2026-11-13T10:00:00Z",
+   "added_at": "2026-11-13T10:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-fwOT6lb5eU8",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-fwOT6lb5eU8.json"
+  },
   {
    "id": "yt-MgISZpaxARM",
    "video_url": "https://www.youtube.com/watch?v=MgISZpaxARM",
@@ -4062,6 +4089,43 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-mrIMoWa3gFc.json"
   },
   {
+   "id": "yt-yC4fNpmURWM",
+   "video_url": "https://www.youtube.com/watch?v=yC4fNpmURWM",
+   "platform": "youtube",
+   "title": "EOS Meetup Oslo - Full video - 17th January 2018",
+   "speakers": [
+    "Christian Lains",
+    "Paul Thomas Clarke",
+    "Jakub Zarembinski",
+    "Henning Rokling"
+   ],
+   "event_name": "EOS Meetup",
+   "event_url": null,
+   "calendar_event_id": "56552a5054fa",
+   "event_id": "56552a5054fa",
+   "unlink_reason": null,
+   "speaker_ids": [
+    "spk-christian-lains",
+    "spk-paul-thomas-clarke",
+    "spk-jakub-zarembinski",
+    "spk-henning-rokling"
+   ],
+   "city": "Oslo",
+   "country": "NO",
+   "date": "2018-01-17",
+   "published": "2018-02-14",
+   "duration": "PT1H28M10S",
+   "language": null,
+   "channel": "BitSpace",
+   "description": "BitSpace's recording of the talks at its EOS meetup at the Radisson Blu Plaza in Oslo on 17 January 2018. The page names four speakers and does not state a clock time.",
+   "source_url": "https://www.youtube.com/watch?v=yC4fNpmURWM&hl=en",
+   "retrieved_at": "2026-11-13T10:00:00Z",
+   "added_at": "2026-11-13T10:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-yC4fNpmURWM",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-yC4fNpmURWM.json"
+  },
+  {
    "id": "yt-uqVU1iMJPzA",
    "video_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA",
    "platform": "youtube",
@@ -4188,6 +4252,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-h1ZaK2i9LBI",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-h1ZaK2i9LBI.json"
+  },
+  {
+   "id": "yt-AULH7Qw7RCk",
+   "video_url": "https://www.youtube.com/watch?v=AULH7Qw7RCk",
+   "platform": "youtube",
+   "title": "Aragon Meetup - Helsinki: Luis Cuende's presentation Democratizing Governance",
+   "speakers": [
+    "Luis Cuende"
+   ],
+   "event_name": "Aragon Meetup - Helsinki",
+   "event_url": "https://www.meetup.com/Aragon-Meetup/events/245079105/",
+   "calendar_event_id": "d49e42fa15a4",
+   "event_id": "d49e42fa15a4",
+   "unlink_reason": null,
+   "speaker_ids": [
+    "spk-luis-cuende"
+   ],
+   "city": "Helsinki",
+   "country": "FI",
+   "date": "2017-11-23",
+   "published": "2017-11-29",
+   "duration": "PT24M33S",
+   "language": null,
+   "channel": "Aragon",
+   "description": "Luis Cuende's presentation on governance at the Aragon meetup in Helsinki on 23 November 2017, uploaded by the Aragon channel.",
+   "source_url": "https://www.youtube.com/watch?v=AULH7Qw7RCk&hl=en",
+   "retrieved_at": "2026-11-13T10:00:00Z",
+   "added_at": "2026-11-13T10:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-AULH7Qw7RCk",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-AULH7Qw7RCk.json"
   },
   {
    "id": "yt-8CScNyu35ME",
