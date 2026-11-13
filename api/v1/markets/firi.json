@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T07:14:58+00:00",
+ "generated_at": "2026-11-13T09:39:44+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": true,
   "note": "Norwegian exchange (also lists DKK pairs). last, high, low, volume and change come from GET /v2/markets/{market}. bid and ask come from GET /v2/markets/tickers. The public payload does not name a 24-hour window on those fields.",
   "status": "ok",
-  "fetched_at": "2026-11-13T07:12:26+00:00",
+  "fetched_at": "2026-11-13T09:39:42+00:00",
   "error": null,
   "ticker_count": 6
  },
@@ -37,23 +37,23 @@
    "exchange_symbol": "BTCNOK",
    "base": "BTC",
    "quote": "NOK",
-   "last": "666416.87",
+   "last": "661000.00",
    "bid": "660000.0000000000000000",
-   "ask": "666414.9700000000000000",
+   "ask": "661000.0000000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/BTCNOK",
-   "volume_base": "8.61",
+   "volume_base": "11.07",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
-   "high": "709303.27",
+   "high": "705953.60",
    "low": "650000.18",
-   "change_pct": "-5.07"
+   "change_pct": "-6.22"
   },
   {
    "id": "firi:ETH-NOK",
@@ -62,14 +62,14 @@
    "base": "ETH",
    "quote": "NOK",
    "last": "18971.22",
-   "bid": "18360.4000000000000000",
-   "ask": "18954.9200000000000000",
+   "bid": "18503.9900000000000000",
+   "ask": "18897.8700000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/ETHNOK",
    "volume_base": "46.79",
    "volume_quote": null,
@@ -85,23 +85,23 @@
    "exchange_symbol": "SOLNOK",
    "base": "SOL",
    "quote": "NOK",
-   "last": "770.00",
-   "bid": "754.2000000000000000",
-   "ask": "778.8500000000000000",
+   "last": "770.96",
+   "bid": "760.5100000000000000",
+   "ask": "774.7000000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/SOLNOK",
-   "volume_base": "631.07",
+   "volume_base": "642.60",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
-   "high": "799.43",
+   "high": "792.36",
    "low": "750.00",
-   "change_pct": "-3.85"
+   "change_pct": "-3.56"
   },
   {
    "id": "firi:XRP-NOK",
@@ -109,23 +109,23 @@
    "exchange_symbol": "XRPNOK",
    "base": "XRP",
    "quote": "NOK",
-   "last": "9.91",
-   "bid": "9.6500000000000000",
-   "ask": "9.9100000000000000",
+   "last": "9.90",
+   "bid": "9.8500000000000000",
+   "ask": "9.9600000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/XRPNOK",
-   "volume_base": "25572.82",
+   "volume_base": "46420.66",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "9.95",
    "low": "9.60",
-   "change_pct": "-1.2"
+   "change_pct": "-0.1"
   },
   {
    "id": "firi:ADA-NOK",
@@ -134,14 +134,14 @@
    "base": "ADA",
    "quote": "NOK",
    "last": "1.60",
-   "bid": "1.6300000000000000",
-   "ask": "1.6500000000000000",
+   "bid": "1.6200000000000000",
+   "ask": "1.6400000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/ADANOK",
    "volume_base": "33480.75",
    "volume_quote": null,
@@ -165,7 +165,7 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-13T07:12:26+00:00",
+   "fetched_at": "2026-11-13T09:39:42+00:00",
    "source_url": "https://api.firi.com/v2/markets/USDCNOK",
    "volume_base": "6221.84",
    "volume_quote": null,
