@@ -22,9 +22,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   upload:
+    # Only take artifacts from render runs of this repository that ran main's workflow file
+    # (after "Deploy site" or a manual dispatch); never from pull request runs of any kind.
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event.workflow_run.event != 'pull_request' && github.event.workflow_run.conclusion != 'cancelled')
+      (github.event.workflow_run.conclusion != 'cancelled' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       contains(fromJSON('["workflow_run", "workflow_dispatch"]'), github.event.workflow_run.event))
     runs-on: ubuntu-latest
     timeout-minutes: 90
     environment: youtube

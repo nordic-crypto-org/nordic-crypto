@@ -53,6 +53,15 @@ def _fold(line):
     return "\r\n".join(out)
 
 
+# A URI property value is written raw, so it must not carry anything that
+# could end the content line: no whitespace, controls or Unicode line breaks.
+_URI = re.compile(r"https://[^\s\x00-\x1f\x7f-\x9f\u2028\u2029]+")
+
+
+def _uri(value):
+    return value if isinstance(value, str) and _URI.fullmatch(value) else ""
+
+
 def _https(value):
     if not isinstance(value, str):
         return ""
@@ -111,8 +120,8 @@ def render(events, now=None):
         loc = address or _https(event.get("map_url"))
         if loc:
             lines.append("LOCATION:" + _escape(loc))
-        url = event.get("url") or ""
-        if isinstance(url, str) and url.startswith("https://"):
+        url = _uri(event.get("url"))
+        if url:
             lines.append("URL:" + url)
         desc = _description(event, address)
         if desc:

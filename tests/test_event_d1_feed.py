@@ -94,6 +94,16 @@ class Ics(unittest.TestCase):
         self.assertIn("DTSTART:20261119T170000Z", body)
         self.assertIn("END:VCALENDAR", body)
 
+    def test_url_with_line_break_is_dropped(self):
+        for bad in ("https://x.example/\r\nBEGIN:VALARM", "https://x.example/\nX", "https://x.example/\u2028X",
+                    "https://x.example/\x85X", "https://x.example/ a"):
+            body = event_ics.render([event("ab", url=bad)], now="2026-11-07T08:30:00+00:00")
+            self.assertNotIn("URL:", body)
+            self.assertEqual(body.count("BEGIN:VEVENT"), 1)
+            self.assertNotIn("VALARM", body)
+        body = event_ics.render([event("ab", url="https://example.org/e?a=1")], now="2026-11-07T08:30:00+00:00")
+        self.assertIn("URL:https://example.org/e?a=1", body)
+
     def test_static_files(self):
         with tempfile.TemporaryDirectory() as site:
             paths = event_ics.write_feeds(site, [event("ab")])
