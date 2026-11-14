@@ -220,8 +220,61 @@ def latest_feed(fails, tmp, news, spec, info):
         fails.append("reserved news ids")
 
 
+def nexa_testnet_section(fails):
+    """The /api page lists Nexa testnet beside the Nexa mainnet row, in every site language, with no baked-in status."""
+    import importlib
+    index = {"bases": {"github_pages": build.BASE}, "counts": {}, "generated_at": "2026-10-19T00:00:00+00:00", "endpoints": []}
+    hosts = (
+        "electrum-nexa-testnet.nordiccrypto.no:30001",
+        "electrum-nexa-testnet.nordiccrypto.no:30002",
+        "wss://electrum-nexa-testnet.nordiccrypto.no:30004",
+    )
+    en = importlib.import_module("api_docs_i18n.en").S
+    frag = api_feed.docs_fragment(index)
+    order = [
+        'data-url="wss://electrum-nexa.nordiccrypto.no:20004"',
+        'id="nexa-testnet"',
+        'id="nexa-testnet-status"',
+        'data-url="wss://electrum-nexa-testnet.nordiccrypto.no:30004"',
+        hosts[0],
+        "websocat wss://electrum-bch.nordiccrypto.no:50004",
+    ]
+    at = -1
+    for needle in order:
+        pos = frag.find(needle, at + 1)
+        if pos < 0:
+            fails.append("api page missing " + needle)
+            at = len(frag)
+        else:
+            at = pos
+    if "14.0.1" in frag or "Rostrum 14" in frag:
+        fails.append("nexa testnet version is hardcoded")
+    row = frag.split('data-url="wss://electrum-nexa-testnet.nordiccrypto.no:30004"', 1)[-1].split("</tr>", 1)[0]
+    if row.count(">–<") != 4:
+        fails.append("testnet row should start blank, not with a reading")
+    if "table.electrum-live" not in frag:
+        fails.append("live check does not cover the testnet table")
+    for lang in i18n.ALL_LANGS:
+        S = importlib.import_module(f"api_docs_i18n.{lang}").S
+        intro, ports = S.get("nexa_testnet_intro") or "", S.get("nexa_testnet_ports") or ""
+        if not S.get("h_nexa_testnet") or not intro or not ports:
+            fails.append(f"{lang} missing nexa testnet strings")
+            continue
+        if "Nordic Crypto" not in intro or "cryptonordic" in (intro + ports).lower():
+            fails.append(f"{lang} brand name")
+        if lang != "en" and (intro == en["nexa_testnet_intro"] or S["h_nexa_testnet"] == en["h_nexa_testnet"]):
+            fails.append(f"{lang} nexa testnet text is still English")
+        page = api_feed.docs_fragment(index, lang)
+        for host in hosts:
+            if host not in page:
+                fails.append(f"{lang} page missing {host}")
+        if S["h_nexa_testnet"] not in page or S["nexa_testnet_intro"] not in page:
+            fails.append(f"{lang} page missing translated testnet section")
+
+
 def main():
     fails = []
+    nexa_testnet_section(fails)
     source_logos(fails)
     ctx = api_feed.repo_context(False)
     with tempfile.TemporaryDirectory() as tmp:
