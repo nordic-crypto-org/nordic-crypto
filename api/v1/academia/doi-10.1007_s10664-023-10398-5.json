@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "IS",
-  "title": "A fly in the ointment: an empirical study on the characteristics of Ethereum smart contract code weaknesses",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Majd Soud",
    "Grischa Liebel",
    "Mohammad Hamdaqa"
   ],
-  "institution": "Reykjavík University",
-  "year": 2023,
-  "type": "paper",
-  "venue": "Empirical Software Engineering",
-  "doi": "10.1007/s10664-023-10398-5",
-  "url": "https://doi.org/10.1007/s10664-023-10398-5",
+  "checked": "2026-11-09",
+  "country": "IS",
   "db": "https://doi.org/10.1007/s10664-023-10398-5",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1007/s10664-023-10398-5",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1007/s10664-023-10398-5",
+  "id": "doi-10.1007_s10664-023-10398-5",
+  "institution": "Reykjavík University",
   "keywords": [
    "Computer science",
    "Strengths and weaknesses",
@@ -31,10 +27,14 @@
    "Source code",
    "Coding (social sciences)"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1007/s10664-023-10398-5",
+  "title": "A fly in the ointment: an empirical study on the characteristics of Ethereum smart contract code weaknesses",
+  "type": "paper",
+  "url": "https://doi.org/10.1007/s10664-023-10398-5",
+  "venue": "Empirical Software Engineering",
+  "year": 2023,
   "about_i18n": {},
-  "id": "doi-10.1007_s10664-023-10398-5",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1007_s10664-023-10398-5.json"
  }

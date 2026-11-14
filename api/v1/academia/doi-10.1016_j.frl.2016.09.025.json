@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "NO",
-  "title": "On the hedge and safe haven properties of Bitcoin: Is it really more than a diversifier?",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Elie I. Bouri",
    "Péter Molnár",
@@ -13,16 +12,13 @@
    "David Roubaud",
    "Lars Ivar Hagfors"
   ],
-  "institution": "Norwegian University of Science and Technology",
-  "year": 2016,
-  "type": "paper",
-  "venue": "Finance research letters",
-  "doi": "10.1016/j.frl.2016.09.025",
-  "url": "https://doi.org/10.1016/j.frl.2016.09.025",
+  "checked": "2026-11-09",
+  "country": "NO",
   "db": "https://openalex.org/W2526568049",
   "db_name": "OpenAlex",
-  "source": "https://doi.org/10.1016/j.frl.2016.09.025",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.frl.2016.09.025",
+  "id": "doi-10.1016_j.frl.2016.09.025",
+  "institution": "Norwegian University of Science and Technology",
   "keywords": [
    "Safe haven",
    "Hedge",
@@ -33,10 +29,14 @@
    "Us dollar",
    "Stock (firearms)"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.frl.2016.09.025",
+  "title": "On the hedge and safe haven properties of Bitcoin: Is it really more than a diversifier?",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.frl.2016.09.025",
+  "venue": "Finance research letters",
+  "year": 2016,
   "about_i18n": {},
-  "id": "doi-10.1016_j.frl.2016.09.025",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.frl.2016.09.025.json"
  }

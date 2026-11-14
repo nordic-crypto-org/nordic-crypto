@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "SE",
-  "title": "Blockchain-based framework for supply chain traceability: A case example of textile and clothing industry",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Tarun Kumar Agrawal",
    "Vijay Kumar",
@@ -13,16 +12,13 @@
    "Lichuan Wang",
    "Yan Chen"
   ],
-  "institution": "University of Borås",
-  "year": 2021,
-  "type": "paper",
-  "venue": "Computers & Industrial Engineering",
-  "doi": "10.1016/j.cie.2021.107130",
-  "url": "https://www.sciencedirect.com/science/article/pii/S0360835221000346/pdf",
+  "checked": "2026-11-09",
+  "country": "SE",
   "db": "https://www.sciencedirect.com/science/article/pii/S0360835221000346/pdf",
   "db_name": "openalex",
-  "source": "https://www.sciencedirect.com/science/article/pii/S0360835221000346/pdf",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.cie.2021.107130",
+  "id": "doi-10.1016_j.cie.2021.107130",
+  "institution": "University of Borås",
   "keywords": [
    "Traceability",
    "Supply chain",
@@ -33,10 +29,14 @@
    "Context (archaeology)",
    "Business"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://www.sciencedirect.com/science/article/pii/S0360835221000346/pdf",
+  "title": "Blockchain-based framework for supply chain traceability: A case example of textile and clothing industry",
+  "type": "paper",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0360835221000346/pdf",
+  "venue": "Computers & Industrial Engineering",
+  "year": 2021,
   "about_i18n": {},
-  "id": "doi-10.1016_j.cie.2021.107130",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.cie.2021.107130.json"
  }

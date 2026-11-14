@@ -1,11 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "DK",
-  "title": "Microgrid Transactive Energy: Review, Architectures, Distributed Ledger Technologies, and Market Analysis",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Muhammad Fahad Zia",
    "Mohamed Benbouzid",
@@ -14,16 +13,13 @@
    "Kuaanan Techato",
    "Josep Maria Guerrero"
   ],
-  "institution": "Aalborg University",
-  "year": 2020,
-  "type": "paper",
-  "venue": "IEEE Access",
-  "doi": "10.1109/access.2020.2968402",
-  "url": "https://doi.org/10.1109/access.2020.2968402",
+  "checked": "2026-11-09",
+  "country": "DK",
   "db": "https://doi.org/10.1109/access.2020.2968402",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1109/access.2020.2968402",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1109/access.2020.2968402",
+  "id": "doi-10.1109_access.2020.2968402",
+  "institution": "Aalborg University",
   "keywords": [
    "Microgrid",
    "Transactive memory",
@@ -34,10 +30,14 @@
    "Demand response",
    "Smart grid"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1109/access.2020.2968402",
+  "title": "Microgrid Transactive Energy: Review, Architectures, Distributed Ledger Technologies, and Market Analysis",
+  "type": "paper",
+  "url": "https://doi.org/10.1109/access.2020.2968402",
+  "venue": "IEEE Access",
+  "year": 2020,
   "about_i18n": {},
-  "id": "doi-10.1109_access.2020.2968402",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_access.2020.2968402.json"
  }

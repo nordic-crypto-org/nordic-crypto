@@ -1,26 +1,22 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "IS",
-  "title": "Exploring connectedness among cryptocurrency, technology communication, and FinTech through dynamic and fractal analysis",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "authors": [
    "Ata Assaf",
    "Ender Demir",
    "Khaled Mokni"
   ],
-  "institution": "Reykjavík University",
-  "year": 2024,
-  "type": "paper",
-  "venue": "Finance research letters",
-  "doi": "10.1016/j.frl.2024.105260",
-  "url": "https://doi.org/10.1016/j.frl.2024.105260",
+  "checked": "2026-11-09",
+  "country": "IS",
   "db": "https://doi.org/10.1016/j.frl.2024.105260",
   "db_name": "openalex",
-  "source": "https://doi.org/10.1016/j.frl.2024.105260",
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "doi": "10.1016/j.frl.2024.105260",
+  "id": "doi-10.1016_j.frl.2024.105260",
+  "institution": "Reykjavík University",
   "keywords": [
    "Social connectedness",
    "Cryptocurrency",
@@ -31,10 +27,14 @@
    "Econometrics",
    "Computer science"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://doi.org/10.1016/j.frl.2024.105260",
+  "title": "Exploring connectedness among cryptocurrency, technology communication, and FinTech through dynamic and fractal analysis",
+  "type": "paper",
+  "url": "https://doi.org/10.1016/j.frl.2024.105260",
+  "venue": "Finance research letters",
+  "year": 2024,
   "about_i18n": {},
-  "id": "doi-10.1016_j.frl.2024.105260",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.frl.2024.105260.json"
  }

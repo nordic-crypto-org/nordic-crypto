@@ -1,24 +1,20 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-14T06:38:29+00:00",
+ "generated_at": "2026-11-14T06:53:55+00:00",
  "preview": false,
  "item": {
-  "country": "FI",
-  "title": "Kryptovaluuttakurssien ennustaminen neuroverkkojen avulla",
+  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
   "authors": [
    "Kasperi Hallinen"
   ],
-  "institution": "Tampere University, University of Tampere",
-  "year": 2023,
-  "type": "phd",
-  "venue": "PhD dissertation",
-  "doi": null,
-  "url": "https://trepo.tuni.fi/bitstream/10024/153026/2/HallinenKasperi.pdf",
+  "checked": "2026-11-09",
+  "country": "FI",
   "db": "https://trepo.tuni.fi/bitstream/10024/153026/2/HallinenKasperi.pdf",
   "db_name": "openalex",
-  "source": "https://trepo.tuni.fi/bitstream/10024/153026/2/HallinenKasperi.pdf",
-  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
+  "doi": null,
+  "id": "publications-trepo.tuni.fi-bitstream-10024-153026-2-HallinenKasperi.pdf",
+  "institution": "Tampere University, University of Tampere",
   "keywords": [
    "Mathematics",
    "Work (physics)",
@@ -29,10 +25,14 @@
    "Class (philosophy)",
    "Population"
   ],
-  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
+  "source": "https://trepo.tuni.fi/bitstream/10024/153026/2/HallinenKasperi.pdf",
+  "title": "Kryptovaluuttakurssien ennustaminen neuroverkkojen avulla",
+  "type": "phd",
+  "url": "https://trepo.tuni.fi/bitstream/10024/153026/2/HallinenKasperi.pdf",
+  "venue": "PhD dissertation",
+  "year": 2023,
   "about_i18n": {},
-  "id": "publications-trepo.tuni.fi-bitstream-10024-153026-2-HallinenKasperi.pdf",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/publications-trepo.tuni.fi-bitstream-10024-153026-2-HallinenKasperi.pdf.json"
  }
