@@ -1,10 +1,11 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T15:40:26+00:00",
+ "generated_at": "2026-11-14T06:38:29+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "NO",
+  "title": "Blockchain Empowered Asynchronous Federated Learning for Secure Data Sharing in Internet of Vehicles",
   "authors": [
    "Yunlong Lu",
    "Xiaohong Huang",
@@ -12,13 +13,16 @@
    "Sabita Maharjan",
    "Yan Zhang"
   ],
-  "checked": "2026-11-09",
-  "country": "NO",
+  "institution": "University of Oslo, Simula Metropolitan Center for Digital Engineering",
+  "year": 2020,
+  "type": "paper",
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "10.1109/tvt.2020.2973651",
+  "url": "https://doi.org/10.1109/tvt.2020.2973651",
   "db": "https://doi.org/10.1109/tvt.2020.2973651",
   "db_name": "openalex",
-  "doi": "10.1109/tvt.2020.2973651",
-  "id": "doi-10.1109_tvt.2020.2973651",
-  "institution": "University of Oslo, Simula Metropolitan Center for Digital Engineering",
+  "source": "https://doi.org/10.1109/tvt.2020.2973651",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Computer science",
    "Asynchronous communication",
@@ -29,14 +33,10 @@
    "The Internet",
    "Distributed computing"
   ],
+  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
-  "source": "https://doi.org/10.1109/tvt.2020.2973651",
-  "title": "Blockchain Empowered Asynchronous Federated Learning for Secure Data Sharing in Internet of Vehicles",
-  "type": "paper",
-  "url": "https://doi.org/10.1109/tvt.2020.2973651",
-  "venue": "IEEE Transactions on Vehicular Technology",
-  "year": 2020,
   "about_i18n": {},
+  "id": "doi-10.1109_tvt.2020.2973651",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1109_tvt.2020.2973651.json"
  }

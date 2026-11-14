@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T15:40:26+00:00",
+ "generated_at": "2026-11-14T06:38:29+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "SE",
+  "title": "Examining the interrelatedness of NFTs, DeFi tokens and cryptocurrencies",
   "authors": [
    "Sitara Karim",
    "Brian M. Lucey",
    "Muhammad Abubakr Naeem",
    "Gazi Salah Uddin"
   ],
-  "checked": "2026-11-09",
-  "country": "SE",
+  "institution": "Linköping University",
+  "year": 2022,
+  "type": "paper",
+  "venue": "Finance research letters",
+  "doi": "10.1016/j.frl.2022.102696",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1544612322000253/pdf",
   "db": "https://openalex.org/W4205731913",
   "db_name": "OpenAlex",
-  "doi": "10.1016/j.frl.2022.102696",
-  "id": "doi-10.1016_j.frl.2022.102696",
-  "institution": "Linköping University",
+  "source": "https://www.sciencedirect.com/science/article/pii/S1544612322000253/pdf",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Cryptocurrency",
    "Diversification (marketing strategy)",
@@ -28,14 +32,10 @@
    "Monetary economics",
    "Business"
   ],
+  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
-  "source": "https://www.sciencedirect.com/science/article/pii/S1544612322000253/pdf",
-  "title": "Examining the interrelatedness of NFTs, DeFi tokens and cryptocurrencies",
-  "type": "paper",
-  "url": "https://www.sciencedirect.com/science/article/pii/S1544612322000253/pdf",
-  "venue": "Finance research letters",
-  "year": 2022,
   "about_i18n": {},
+  "id": "doi-10.1016_j.frl.2022.102696",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.frl.2022.102696.json"
  }

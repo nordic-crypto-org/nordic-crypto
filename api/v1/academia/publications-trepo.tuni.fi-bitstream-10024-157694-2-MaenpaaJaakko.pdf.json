@@ -1,20 +1,24 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T15:40:26+00:00",
+ "generated_at": "2026-11-14T06:38:29+00:00",
  "preview": false,
  "item": {
-  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
+  "country": "FI",
+  "title": "Lohkoketjun hyödyntäminen esineiden internetin tukena: Datan turvallisuuden näkökulma",
   "authors": [
    "Jaakko Mäenpää"
   ],
-  "checked": "2026-11-09",
-  "country": "FI",
+  "institution": "Tampere University, University of Tampere",
+  "year": 2024,
+  "type": "phd",
+  "venue": "PhD dissertation",
+  "doi": null,
+  "url": "https://trepo.tuni.fi/bitstream/10024/157694/2/MaenpaaJaakko.pdf",
   "db": "https://trepo.tuni.fi/bitstream/10024/157694/2/MaenpaaJaakko.pdf",
   "db_name": "openalex",
-  "doi": null,
-  "id": "publications-trepo.tuni.fi-bitstream-10024-157694-2-MaenpaaJaakko.pdf",
-  "institution": "Tampere University, University of Tampere",
+  "source": "https://trepo.tuni.fi/bitstream/10024/157694/2/MaenpaaJaakko.pdf",
+  "about": "Doctoral dissertation (OpenAlex) with crypto/blockchain in the title.",
   "keywords": [
    "Sociology",
    "Work (physics)",
@@ -25,14 +29,10 @@
    "Moral standards",
    "Power (physics)"
   ],
+  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
-  "source": "https://trepo.tuni.fi/bitstream/10024/157694/2/MaenpaaJaakko.pdf",
-  "title": "Lohkoketjun hyödyntäminen esineiden internetin tukena: Datan turvallisuuden näkökulma",
-  "type": "phd",
-  "url": "https://trepo.tuni.fi/bitstream/10024/157694/2/MaenpaaJaakko.pdf",
-  "venue": "PhD dissertation",
-  "year": 2024,
   "about_i18n": {},
+  "id": "publications-trepo.tuni.fi-bitstream-10024-157694-2-MaenpaaJaakko.pdf",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/publications-trepo.tuni.fi-bitstream-10024-157694-2-MaenpaaJaakko.pdf.json"
  }

@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T15:40:26+00:00",
+ "generated_at": "2026-11-14T06:38:29+00:00",
  "preview": false,
  "item": {
   "id": "0eb8661e7db9",
@@ -168,6 +168,80 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/tv2-dk.webp"
     }
+   },
+   {
+    "outlet": "omni.se",
+    "outlet_name": "Omni",
+    "url": "https://omni.se/hackare-stal-ansikten-kom-over-kryptomiljarder/a/Jnoo8P",
+    "title": "Hackare stal ansikten – kom över kryptomiljarder",
+    "published": "2026-11-13T08:24:09+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "nettavisen",
+    "outlet_name": "Nettavisen",
+    "url": "https://nettavisen.no/nyheter/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-storste-kryptotyveri/s/80-95-245717",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T03:41:51+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Nettavisen_logo.svg",
+     "author": "Nettavisen",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
+    }
+   },
+   {
+    "outlet": "adressa",
+    "outlet_name": "Adresseavisen",
+    "url": "https://adressa.no/nyheter/innenriks/i/ARddLE/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-stoerste-kryptotyveri",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T01:41:16+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "abcnyheter",
+    "outlet_name": "ABC Nyheter",
+    "url": "https://abcnyheter.no/nyheter/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-storste-kryptotyveri/1731951",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T01:41:08+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+     "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+    }
    }
   ],
   "sources": [
@@ -239,26 +313,105 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/tv2-dk.webp"
     }
+   },
+   {
+    "outlet": "omni.se",
+    "outlet_name": "Omni",
+    "url": "https://omni.se/hackare-stal-ansikten-kom-over-kryptomiljarder/a/Jnoo8P",
+    "title": "Hackare stal ansikten – kom över kryptomiljarder",
+    "published": "2026-11-13T08:24:09+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "nettavisen",
+    "outlet_name": "Nettavisen",
+    "url": "https://nettavisen.no/nyheter/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-storste-kryptotyveri/s/80-95-245717",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T03:41:51+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.svg",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Nettavisen_logo.svg",
+     "author": "Nettavisen",
+     "license": "Public domain",
+     "license_url": null,
+     "credit": "Wikimedia Commons",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/nettavisen.png"
+    }
+   },
+   {
+    "outlet": "adressa",
+    "outlet_name": "Adresseavisen",
+    "url": "https://adressa.no/nyheter/innenriks/i/ARddLE/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-stoerste-kryptotyveri",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T01:41:16+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "abcnyheter",
+    "outlet_name": "ABC Nyheter",
+    "url": "https://abcnyheter.no/nyheter/kryptovaluta-for-over-11-milliarder-kroner-beslaglagt-etter-tidenes-storste-kryptotyveri/1731951",
+    "title": "Kryptovaluta for over 11 milliarder kroner beslaglagt etter tidenes største kryptotyveri",
+    "published": "2026-11-13T01:41:08+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.svg",
+     "source_url": "https://www.abcnyheter.no/view-resources/abcnyheter/public/abcnyheter/abclogo.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
+    }
    }
   ],
   "coverage": {
-   "count": 3,
+   "count": 7,
    "by_country": [
     {
      "country": "NO",
-     "count": 2,
-     "share": 0.6667
+     "count": 5,
+     "share": 0.7143
+    },
+    {
+     "country": "SE",
+     "count": 1,
+     "share": 0.1429
     },
     {
      "country": "DK",
      "count": 1,
-     "share": 0.3333
+     "share": 0.1429
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 3,
+     "count": 7,
      "share": 1.0
     },
     {

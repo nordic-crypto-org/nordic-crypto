@@ -1,23 +1,27 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-13T15:40:26+00:00",
+ "generated_at": "2026-11-14T06:38:29+00:00",
  "preview": false,
  "item": {
-  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
+  "country": "NO",
+  "title": "Blockchain in healthcare: A systematic literature review, synthesizing framework and future research agenda",
   "authors": [
    "Anushree Tandon",
    "Amandeep Dhir",
    "A.K.M. Najmul Islam",
    "Matti Mäntymäki"
   ],
-  "checked": "2026-11-09",
-  "country": "NO",
+  "institution": "University of Stavanger",
+  "year": 2020,
+  "type": "paper",
+  "venue": "Computers in Industry",
+  "doi": "10.1016/j.compind.2020.103290",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0166361520305248/pdf",
   "db": "https://www.sciencedirect.com/science/article/pii/S0166361520305248/pdf",
   "db_name": "openalex",
-  "doi": "10.1016/j.compind.2020.103290",
-  "id": "doi-10.1016_j.compind.2020.103290",
-  "institution": "University of Stavanger",
+  "source": "https://www.sciencedirect.com/science/article/pii/S0166361520305248/pdf",
+  "about": "Nordic-affiliated paper in OpenAlex; title matches crypto/blockchain.",
   "keywords": [
    "Blockchain",
    "Health care",
@@ -28,14 +32,10 @@
    "Systematic review",
    "Extant taxon"
   ],
+  "checked": "2026-11-14",
   "origin": "research/academia/works.json",
-  "source": "https://www.sciencedirect.com/science/article/pii/S0166361520305248/pdf",
-  "title": "Blockchain in healthcare: A systematic literature review, synthesizing framework and future research agenda",
-  "type": "paper",
-  "url": "https://www.sciencedirect.com/science/article/pii/S0166361520305248/pdf",
-  "venue": "Computers in Industry",
-  "year": 2020,
   "about_i18n": {},
+  "id": "doi-10.1016_j.compind.2020.103290",
   "section": "publications",
   "api_url": "https://nordiccrypto.no/api/v1/academia/doi-10.1016_j.compind.2020.103290.json"
  }
