@@ -1,0 +1,50 @@
+# Updates the description and thumbnail of a video that is already on YouTube.
+# Does not upload a video and does not change privacy or the scheduled time.
+# Secrets are the `youtube` environment (same as YouTube video upload).
+# Dispatching this workflow from another job's GITHUB_TOKEN returns 403
+# "Resource not accessible by integration" unless that caller has actions: write
+# and the repository Actions setting allows read and write. Running it from the
+# Actions tab as jQrgen does not need that. See docs/youtube-metadata.md.
+name: YouTube metadata
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue id, e.g. 006"
+        required: true
+        type: string
+      video_id:
+        description: "Existing video id only, e.g. bvla1OX8FCU. Does not upload. Does not change privacy or the scheduled time."
+        required: true
+        type: string
+      dry_run:
+        description: "Print the description and change nothing"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: youtube-metadata
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: youtube
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Update description and thumbnail
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          args=(--issue "${{ inputs.issue }}" --video-id "${{ inputs.video_id }}")
+          [ "${{ inputs.dry_run }}" = "true" ] && args+=(--dry-run)
+          python3 tools/youtube_metadata.py "${args[@]}"

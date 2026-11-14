@@ -97,6 +97,14 @@ class Upload(unittest.TestCase):
         self.assertTrue(issues["001"]["video"]["youtube"].endswith("KUuaJdDTavc"))
 
 
+class ThumbnailFailure(unittest.TestCase):
+    def test_403_names_verification_and_not_a_secret(self):
+        note = youtube_video_upload.failure_note("thumbnail", 403, "forbidden")
+        self.assertIn("youtube.com/verify", note)
+        self.assertIn("youtube.force-ssl", note)
+        self.assertNotIn("ya29.", note)
+
+
 class Captions(unittest.TestCase):
     def test_vtt_to_srt(self):
         srt = youtube_render.vtt_to_srt("WEBVTT\n\n00:01.000 --> 00:02.500\nHello\n\n00:00:03.000 --> 00:00:04.000\nWorld\n")

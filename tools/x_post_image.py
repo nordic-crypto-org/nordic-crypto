@@ -104,6 +104,12 @@ TECHNIQUES = (
      "ligne claire comic illustration, clean black outlines, flat colour, "
      "original adult characters invented for this scene only, no existing comic characters, "
      "no boy reporter, no white dog"),
+    # Added for the newsletter card. A new issue picks one of these before any
+    # technique already stored, so the picture is a style that has not been used.
+    ("cyanotype", "cyanotype photograph, deep Prussian blue and white, sun-print, paper texture, no lettering"),
+    ("wax-resist", "wax-resist painting, pooled pigment, soft cracks, cream paper, no letters"),
+    ("copperplate", "copperplate engraving, fine burin lines, warm paper, no readable words"),
+    ("marbled-paper", "marbled paper abstract, teal and gold swirls, still photograph of the sheet, no letters"),
 )
 
 SCENES = {
@@ -180,8 +186,14 @@ def eligible_styles(styles, recent):
     return [s for s in styles or [] if s.get("id") and s["id"] not in banned]
 
 
-def derive_style(item, styles, recent):
+# Newsletter cards ask for these first. They are also in TECHNIQUES, so a story
+# can use one later, once the older techniques are taken.
+ISSUE_TECHNIQUES = tuple(t for t in TECHNIQUES if t[0] in {"cyanotype", "wax-resist", "copperplate", "marbled-paper"})
+
+
+def derive_style(item, styles, recent, techniques=None):
     """A new library row from the article topic. The id is not already stored."""
+    techniques = techniques or TECHNIQUES
     taken = {s.get("id") for s in styles or []}
     topic = primary_topic(item)
     scene = SCENES.get(topic) or SCENES["default"]
@@ -191,8 +203,10 @@ def derive_style(item, styles, recent):
     for row in styles or []:
         if row.get("technique"):
             used_techniques.add(row["technique"])
+        elif row.get("id"):
+            used_techniques.add(str(row["id"]).split("-")[0])
     accent = ACCENTS[len(taken) % len(ACCENTS)]
-    ordered = [t for t in TECHNIQUES if t[0] not in used_techniques] or list(TECHNIQUES)
+    ordered = [t for t in techniques if t[0] not in used_techniques] or list(techniques)
     for slug, fragment in ordered:
         n = 1
         while True:
@@ -236,6 +250,20 @@ def _style_obj(style):
         return style
     sid = str(style or "")
     return {"id": sid, "prompt": STYLE_PROMPT.get(sid, sid)}
+
+
+def issue_item(meta):
+    """Prompt fields for one newsletter issue. Outlet names are scrubbed. No logos."""
+    headlines = []
+    for story in (meta or {}).get("stories_list") or []:
+        title = _plain(story.get("title") or "", 140)
+        if title:
+            headlines.append(title)
+    summary = _plain((meta or {}).get("subtitle") or "", 200)
+    if headlines:
+        summary = _plain(summary + " " + "; ".join(headlines[:6]), 400)
+    title = _plain((meta or {}).get("title") or "Nordic Crypto", 180)
+    return {"title": title, "title_en": title, "summary": summary, "topics": ["default"], "country": ""}
 
 
 def story_prompt(item, style):

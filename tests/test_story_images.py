@@ -150,6 +150,49 @@ class StoryImages(unittest.TestCase):
     def test_a_cutoff_that_is_not_a_time_is_refused(self):
         self.assertEqual(story_images.main(["generate", "--published-after", "not-a-time"]), 2)
 
+    def test_issue_image_is_a_new_style_in_r2_not_git(self):
+        from PIL import Image
+        meta = {
+            "id": "006", "title": "Nordic Crypto #6: NRK says banks moved",
+            "subtitle": "The week",
+            "stories_list": [{"title": "E24 on a licence"}, {"title": "A quiet market"}],
+        }
+        stored = {}
+
+        def uploader(path, key):
+            stored["key"] = key
+            self.assertTrue(os.path.realpath(path).startswith(os.path.realpath(tempfile.gettempdir()) + os.sep))
+            self.assertFalse(os.path.realpath(path).startswith(os.path.realpath(ROOT) + os.sep))
+
+        info = story_images.generate_issue_image(
+            meta, self.store, now=NOW, generator=lambda prompt: png_bytes(), uploader=uploader)
+        self.addCleanup(lambda: os.path.exists(info["path"]) and os.unlink(info["path"]))
+        self.assertEqual(info["kind"], "ai")
+        self.assertEqual(info["story_id"], "newsletter-006")
+        self.assertEqual(stored["key"], "story-images/newsletter-006.png")
+        self.assertTrue(info["style_id"].startswith(("cyanotype-", "wax-resist-", "copperplate-", "marbled-paper-")))
+        self.assertNotIn(info["style_id"], painter.STYLE_IDS)
+        im = Image.open(info["path"])
+        self.assertEqual(im.size, (1280, 720))
+        self.assertEqual(im.getpixel((1240, 40))[:3], painter.TEAL)
+        prompt = self.store.query("SELECT prompt FROM story_images WHERE story_id = ?", ("newsletter-006",))[0]["prompt"]
+        self.assertNotRegex(prompt, r"(?i)\b(nrk|e24)\b")
+        self.assertIn("no logos", prompt.lower())
+        again = story_images.generate_issue_image(
+            meta, self.store, now=NOW, generator=lambda prompt: (_ for _ in ()).throw(AssertionError("reuse")),
+            uploader=lambda *a: self.fail("reuse must not upload"))
+        self.assertTrue(again["reused"])
+        self.assertEqual(again["style_id"], info["style_id"])
+        self.assertIsNone(again["path"])
+
+    def test_issue_image_is_not_stored_when_the_model_returns_nothing(self):
+        meta = {"id": "006", "title": "Nordic Crypto #6: A quiet week", "subtitle": "News", "stories_list": []}
+        with self.assertRaises(RuntimeError):
+            story_images.generate_issue_image(
+                meta, self.store, now=NOW, generator=lambda prompt: None,
+                uploader=lambda *a: self.fail("fallback must not be stored"))
+        self.assertIsNone(story_images.image_row(self.store, "newsletter-006"))
+
     def test_workflows_pass_the_cutoff_and_not_a_day_window(self):
         for rel in (".github/workflows/deploy.yml", ".github/workflows/d1-publish.yml",
                     ".github/workflows/story-images.yml"):
