@@ -336,6 +336,42 @@ class HttpAndCommands(unittest.TestCase):
         self.assertEqual(rows[0]["review_status"], "pending")
         self.assertEqual(rows[0]["title"], "Via the query API")
 
+    def test_http_retries_transient_401_then_gives_up(self):
+        calls = []
+
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                self.rfile.read(int(self.headers.get("content-length") or 0))
+                calls.append(1)
+                if len(calls) == 1 or self.server.always_401:
+                    payload = b'{"success": false, "errors": [{"code": 10000, "message": "Authentication error"}]}'
+                    self.send_response(401)
+                    self.end_headers()
+                    self.wfile.write(payload)
+                    return
+                payload = json.dumps({"success": True, "result": [{"results": [{"n": 1}], "success": True}]}).encode()
+                self.send_response(200)
+                self.end_headers()
+                self.wfile.write(payload)
+
+            def log_message(self, fmt, *args):
+                return
+
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        server.always_401 = False
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        self.addCleanup(server.shutdown)
+        remote = d1_store.HttpStore("a", "d", "tok", base=f"http://127.0.0.1:{server.server_address[1]}/client/v4")
+        remote.retry_delays = (0, 0)
+        self.assertEqual(remote.query("SELECT 1 AS n", []), [{"n": 1}])
+        self.assertEqual(len(calls), 2)
+
+        server.always_401 = True
+        calls.clear()
+        with self.assertRaisesRegex(d1_store.D1Error, "D1 HTTP 401"):
+            remote.query("SELECT 1 AS n", [])
+        self.assertEqual(len(calls), 3)
+
     def test_wrangler_json_and_setup_script(self):
         rows = d1_review.parse_wrangler_json('log line\n[{"results": [{"id": "a"}], "success": true}]\n')
         self.assertEqual(rows, [{"id": "a"}])
