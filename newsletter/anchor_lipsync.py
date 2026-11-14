@@ -314,7 +314,19 @@ def check_rendered(content, build=B):
             raise SystemExit(f"lipsync: {name} was rendered without a checked lip-sync clip")
         with open(meta, encoding="utf-8") as fh:
             info = json.load(fh)
-        mouth_std, still_std = measure_window(video, tuple(info["mouth"]), tuple(info["still"]))
+        # One-second windows across the voiced span, from 1.0 s: a pause between two sentences is not
+        # a still mouth. A still Anders fails every window.
+        end = LEAD + info.get("frames", 2 * FPS) / FPS
+        start, best = 1.0, None
+        while True:
+            mouth_std, still_std = measure_window(video, tuple(info["mouth"]), tuple(info["still"]), start, 1.0)
+            moved = mouth_std >= MOUTH_STD_MIN and mouth_std >= still_std * MOUTH_STILL_RATIO
+            if best is None or moved or mouth_std > best[0]:
+                best = (mouth_std, still_std)
+            if moved or start + 2.0 > end:
+                break
+            start += 1.0
+        mouth_std, still_std = best
         assert_mouth_moves(mouth_std, still_std, f"rendered {name}")
         print(f"rendered {name}: mouth std {mouth_std:.2f}, still region {still_std:.2f}", flush=True)
     return 0

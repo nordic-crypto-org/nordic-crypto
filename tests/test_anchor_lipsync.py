@@ -51,8 +51,7 @@ class AnchorLipsync(unittest.TestCase):
             self.assertEqual(anchor_lipsync.require_clip(d, "open_a"), mp4)
 
     def test_anders_issues_declare_who_is_on_camera(self):
-        self.assertEqual(_content("004").ON_CAMERA, ("anchor",))
-        for issue in ("005", "006"):
+        for issue in ("004", "005", "006"):
             self.assertEqual(_content(issue).ON_CAMERA, ("anchor", "tonight", "story", "end"))
         for issue in ("001", "002", "003"):
             self.assertFalse(getattr(_content(issue), "ANCHOR_IMG", None))

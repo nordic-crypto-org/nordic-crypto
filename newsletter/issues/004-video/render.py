@@ -153,9 +153,9 @@ def draw_clock(base, T):
     pulse = 0.5 + 0.5 * math.cos(T * 2 * math.pi * 0.8); r = 9
     d.ellipse((x0 + 18 - r, y0 + 33 - r, x0 + 18 + r, y0 + 33 + r), fill=tuple(int(c * (0.55 + 0.45 * pulse)) for c in GOLD) + (255,))
     d.text((x0 + 36, y0 + 14), 'OSLO', font=F('cx', 32), fill=FOAM); x = x0 + 50 + tw(d, 'OSLO', F('cx', 32))
-    sec = int(T); hh, mm, ss = 19, sec // 60, sec % 60
+    sec = int(T); hh, mm, ss = 7, sec // 60, sec % 60  # a morning bulletin
     d.text((x, y0 + 10), f'{hh:02d}:{mm:02d}:{ss:02d}', font=F('cx', 38), fill=SAIL); x += 12 + tw(d, '00:00:00', F('cx', 38))
-    d.text((x, y0 + 22), 'CEST', font=F('cs', 22), fill=FOAM)
+    d.text((x, y0 + 22), 'CET', font=F('cs', 22), fill=FOAM)
     d.rectangle((x0, y0 + 70, 1860, y0 + 104), fill=NIGHT + (235,))
     spaced(d, (x0 + 14, y0 + 74), C.BUG_LINE, F('cs', 20), GOLD, 1)
 TICK_Y, TICK_H, TICK_SPEED = (1500 if V else 1012), 68, 140
@@ -310,6 +310,17 @@ def draw_lt(base, lt, t, dur):
     if getattr(src, 'has_logo', False): c = 1 if c >= .5 else 0  # a logo is cut in and out whole, never wiped
     if c > 0: base.paste(src.crop((0, 0, src.width, int(src.height * c)) if c < 1 else (0, 0, src.width, src.height)), (x0, ys))
 
+# ---------- Anders on camera (build/anchor_<seg>.mp4 from newsletter/anchor_lipsync.py) ----------
+def on_camera(s): return s['kind'] in getattr(C, 'ON_CAMERA', ()) and not V
+# Over-the-shoulder panel and right-hand column beside the presenter (his face sits at x 750-1170).
+PNL_X, PNL_Y, PNL_W, PNL_H = 1220, 176, 640, 360
+def draw_panel(im, src, t, dur, in_at=0.45):
+    k = eback((t - in_at) / 0.5) * (1 - eio(clamp((t - (dur - 0.75)) / 0.35)))
+    if k <= 0.02: return
+    w, h = max(2, int(PNL_W * k)), max(2, int(PNL_H * k)); x, y = PNL_X + (PNL_W - w) // 2, PNL_Y + (PNL_H - h) // 2
+    d = ImageDraw.Draw(im); d.rectangle((x - 6, y - 6, x + w + 5, y + h + 5), fill=GOLD)
+    im.paste(src.resize((w, h), Image.BILINEAR), (x, y))
+
 # ---------- segment renderers ----------
 def seg_bumper(s): return seg_bumper_core(s)
 def seg_bumper_core(s, vertical=False):
@@ -385,11 +396,31 @@ def seg_tonight(s):
         hit = cue_at(sents, vo, needle)
         if hit is None and i < len(sents): hit = vo + sents[i][0]
         starts.append(0.2 + i * 1.6 if hit is None else hit)
+    lab = getattr(C, 'TONIGHT_LABEL', 'TONIGHT')
+    if on_camera(s):
+        clip = anchor_lipsync.Plate(ROOT, s['name'], W, H, FPS); x0 = PNL_X; cw = PNL_W
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
+            out = eio(clamp((t - (s['dur'] - 0.6)) / 0.35))
+            u = eo(t / 0.45) * (1 - out); tf = F('cx', 46); bw = spaced_w(lab, tf, 5) + 44
+            if u > 0:
+                d.rectangle((x0 + (1 - u) * 900, 172, x0 + (1 - u) * 900 + bw, 240), fill=GOLD)
+                spaced(d, (x0 + 22 + (1 - u) * 900, 180), lab, tf, TAR, 5)
+            for i in range(3):
+                a = eo((t - starts[i]) / 0.42) * (1 - out)
+                if a <= 0: continue
+                y = 262 + i * 188; x = x0 + (1 - a) * 900
+                d.rectangle((x, y, x + cw, y + 170), fill=NIGHT); d.rectangle((x, y, x + 12, y + 170), fill=GOLD)
+                d.text((x + 36, y + 16), tags[i], font=F('cx', 26), fill=GOLD)
+                hf = F('cb', 42); lines = wrap(heads[i], hf, cw - 70)[:2]
+                for k, ln in enumerate(lines): d.text((x + 36, y + 54 + k * 50), ln, font=hf, fill=SAIL)
+            return im
+        return frame, {}
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im)
-        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w('TONIGHT', tf, 6) + 60
+        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w(lab, tf, 6) + 60
         d.rectangle((140 - (1 - u) * 700, 160, 140 - (1 - u) * 700 + bw, 280), fill=GOLD)
-        spaced(d, (168 - (1 - u) * 700, 175), 'TONIGHT', tf, TAR, 6)
+        spaced(d, (168 - (1 - u) * 700, 175), lab, tf, TAR, 6)
         for i in range(3):
             a = eo((t - starts[i]) / 0.42)
             if a <= 0: continue
@@ -436,6 +467,13 @@ def seg_section(s):
     return frame, {}
 def seg_story(s):
     st = C.STORIES[s['name']]; bg = art_bg(st); lt = make_lt(st); dirx = 1 if int(s['name'][1]) % 2 else -1
+    if on_camera(s):
+        clip = anchor_lipsync.Plate(ROOT, s['name'], W, H, FPS)
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); u = t / s['dur']
+            if t > 0.3: draw_panel(im, kb(bg, u, dirx, 0.5), t, s['dur'])
+            draw_lt(im, lt, t, s['dur']); return im
+        return frame, {}
     def frame(t, T):
         im = kb(bg, t / s['dur'], dirx, -1 if V else 0.5); draw_lt(im, lt, t, s['dur']); return im
     return frame, {}
@@ -478,6 +516,30 @@ def seg_end(s):
     if site_t is None and len(sents) > 1: site_t = s['voff'] + sents[1][0]
     if advice_t is None and len(sents) > 2: advice_t = s['voff'] + sents[2][0]
     if team_t is None and sents: team_t = s['voff'] + sents[-1][0]
+    if on_camera(s):
+        clip = anchor_lipsync.Plate(ROOT, s['name'], W, H, FPS); x0 = PNL_X; cw = PNL_W
+        def frame(t, T):
+            im = clip.at(round(t * FPS)); d = ImageDraw.Draw(im)
+            a = eo((t - 0.3) / 0.5); xa = x0 + (1 - a) * 900
+            if a > 0:
+                d.rectangle((xa, 176, xa + cw, 290), fill=NIGHT); d.rectangle((xa, 176, xa + 12, 290), fill=GOLD)
+                tf = fit(C.END_HEAD, 'cb', 60, cw - 70, 34); d.text((xa + 36, 196), C.END_HEAD, font=tf, fill=SAIL)
+            if site_t is not None:
+                b = eo((t - site_t) / 0.45)
+                if b > 0:
+                    l1 = 'Every story, with a link to the original source'; f1 = fit(l1, 'm', 30, cw - 60, 20)
+                    d.rectangle((x0, 310, x0 + cw * b, 470), fill=NIGHT)
+                    if b > .85:
+                        d.text((x0 + 30, 322), l1, font=f1, fill=FOAM)
+                        f2 = F('cx', 56); w2 = tw(d, C.SITE, f2); d.rectangle((x0 + 30, 370, x0 + 30 + w2 + 56, 456), fill=GOLD)
+                        d.text((x0 + 58, 380), C.SITE, font=f2, fill=TAR)
+            if advice_t is not None:
+                c = eo((t - advice_t) / 0.4)
+                if c > 0:
+                    f3 = F('cs', 30); d.rectangle((x0, 490, x0 + cw * c, 556), fill=SEA)
+                    if c > .85: d.text((x0 + 30, 502), C.END_DISCLOSURE, font=f3, fill=SAIL)
+            return im
+        return frame, dict(ticker_out=False, last=False)
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im); cx = W / 2
         u = eback((t - 0.1) / 0.55); sz = 130 * u
@@ -572,9 +634,9 @@ def vseg_tonight(s):
         starts.append(0.2 + i * 1.6 if hit is None else hit)
     def frame(t, T):
         im = kb(bg, t / s['dur'], -1); d = ImageDraw.Draw(im)
-        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w('TONIGHT', tf, 6) + 60
+        u = eo(t / 0.45); tf = F('cx', 80); bw = spaced_w(getattr(C, 'TONIGHT_LABEL', 'TONIGHT'), tf, 6) + 60
         d.rectangle((70 - (1 - u) * 800, 380, 70 - (1 - u) * 800 + bw, 500), fill=GOLD)
-        spaced(d, (98 - (1 - u) * 800, 395), 'TONIGHT', tf, TAR, 6)
+        spaced(d, (98 - (1 - u) * 800, 395), getattr(C, 'TONIGHT_LABEL', 'TONIGHT'), tf, TAR, 6)
         for i in range(3):
             a = eo((t - starts[i]) / 0.42)
             if a <= 0: continue

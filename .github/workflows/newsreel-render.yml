@@ -89,7 +89,8 @@ jobs:
           NUM: ${{ steps.pick.outputs.num }}
         run: |
           tag="newsletter-$ID-newsreel-${{ github.run_number }}"
-          gh release create "$tag" --target "$GITHUB_SHA" --title "Nordic Crypto #$NUM newsreel" \
+          # Draft only: a person reviews and publishes the release by hand.
+          gh release create "$tag" --draft --target "$GITHUB_SHA" --title "Nordic Crypto #$NUM newsreel" \
             --notes "Newsreel for newsletter issue #$NUM." \
             newsletter/issues/$ID-video/out/nordic-crypto-$NUM-newsreel.mp4
           echo "### $tag" >> "$GITHUB_STEP_SUMMARY"
