@@ -1,6 +1,137 @@
 {
  "items": [
   {
+   "id": "7d38036aad45",
+   "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptokup-beslaglaegger-18-milliarder/11354070",
+   "title": "Efter historisk kryptokup: Beslaglægger 18 milliarder",
+   "title_en": null,
+   "source": "ekstra-bladet",
+   "source_name": "Ekstra Bladet",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-14T18:51:26+00:00",
+   "fetched": "2026-11-15T02:43:45+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "4f78853ee799",
+   "url": "https://borsen.dk/nyheder/finans/kunderne-bider-ikke-pa-danske-bank-og-nordeas-kryptoprodukter",
+   "title": "Kunderne bider ikke på Danske Bank og Nordeas kryptoprodukter",
+   "title_en": null,
+   "source": "borsen",
+   "source_name": "Børsen",
+   "country": "DK",
+   "language": "Danish",
+   "via": "borsen",
+   "seen_via": [
+    "borsen",
+    "bing-dk"
+   ],
+   "published": "2026-11-14T09:03:11+00:00",
+   "fetched": "2026-11-15T02:43:45+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "66cdc2e8c16e",
+   "url": "https://e24.no/internasjonal-oekonomi/i/oMRXJj/milliarder-renner-ut-av-bitcoinfond",
+   "title": "Milliarder renner ut av bitcoinfond",
+   "title_en": null,
+   "source": "e24",
+   "source_name": "E24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "e24",
+   "seen_via": [
+    "e24",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-14T06:06:49+00:00",
+   "fetched": "2026-11-15T02:43:45+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "bfa2510eea99",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "e62d6cc235ef",
+   "url": "https://affarsvarlden.se/kronika/stablecoins-ar-ingen-nyhet-lardomar-fran-1800-talet",
+   "title": "Stablecoins är ingen nyhet – lärdomar från 1800-talet",
+   "title_en": null,
+   "source": "affarsvarlden.se",
+   "source_name": "Affärsvärlden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-11-14T05:55:00+00:00",
+   "fetched": "2026-11-15T02:43:45+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bstablecoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "5e78c03888a2",
+   "url": "https://realtid.se/bors-finans/usa-beslagtar-12-miljarder-efter-kryptostolden-pekar-ut-nordkorea",
+   "title": "USA beslagtar 12 miljarder efter kryptostölden – pekar ut Nordkorea",
+   "title_en": null,
+   "source": "realtid",
+   "source_name": "Realtid",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "realtid",
+   "seen_via": [
+    "realtid"
+   ],
+   "published": "2026-11-14T04:34:00+00:00",
+   "fetched": "2026-11-15T02:43:45+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
    "id": "8364e9f7e467",
    "url": "https://kryptovalutaguiden.se/2026/11/openai-lat-chatgpt-betala-med-ditt-visa-kort",
    "title": "OpenAI: Låt ChatGPT betala med ditt VISA kort…",
@@ -163,7 +294,8 @@
    "seen_via": [
     "vg",
     "bing-no",
-    "bing-no-kn"
+    "bing-no-kn",
+    "bing-se"
    ],
    "published": "2026-11-13T02:13:35+00:00",
    "fetched": "2026-11-13T03:11:36+00:00",
@@ -20773,5 +20905,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-14T02:41:45+00:00"
+ "updated": "2026-11-15T02:43:45+00:00"
 }
