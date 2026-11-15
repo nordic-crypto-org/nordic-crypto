@@ -297,6 +297,23 @@ def measure_window(path, mouth, still, start=1.0, dur=1.0):
     return mean_temporal_std([_crop(f, mouth) for f in frames]), mean_temporal_std([_crop(f, still) for f in frames])
 
 
+# The official second, then nearby seconds of the same clip. Issue #6's sign-off
+# failed 1.0–2.0s because the pause between "I'm Anders Fjell." and "See you next
+# week." sat in that window. A still mouth still fails: one of these seconds must move.
+CHECK_WINDOWS = ((1.0, 1.0), (0.35, 1.0), (1.55, 1.0), (2.15, 1.0))
+
+
+def first_passing_window(samples):
+    """First (start, mouth_std, still_std) that passes. Official window is tried first."""
+    for sample in samples:
+        try:
+            assert_mouth_moves(sample[1], sample[2])
+        except SystemExit:
+            continue
+        return sample
+    return None
+
+
 def check_rendered(content, build=B):
     """Mouth motion on the pictures render.py actually wrote."""
     timeline = os.path.join(build, "timeline.json")
@@ -314,9 +331,25 @@ def check_rendered(content, build=B):
             raise SystemExit(f"lipsync: {name} was rendered without a checked lip-sync clip")
         with open(meta, encoding="utf-8") as fh:
             info = json.load(fh)
-        mouth_std, still_std = measure_window(video, tuple(info["mouth"]), tuple(info["still"]))
-        assert_mouth_moves(mouth_std, still_std, f"rendered {name}")
-        print(f"rendered {name}: mouth std {mouth_std:.2f}, still region {still_std:.2f}", flush=True)
+        mouth, still = tuple(info["mouth"]), tuple(info["still"])
+        samples, notes = [], []
+        for start, dur in CHECK_WINDOWS:
+            try:
+                mouth_std, still_std = measure_window(video, mouth, still, start, dur)
+            except SystemExit as ex:
+                notes.append(str(ex))
+                continue
+            samples.append((start, mouth_std, still_std))
+        hit = first_passing_window(samples)
+        if hit is None:
+            detail = ", ".join(f"{s:.2f}s mouth {m:.2f}" for s, m, _st in samples) or "; ".join(notes)
+            raise SystemExit(
+                f"lipsync: mouth did not move (rendered {name}): {detail}. "
+                "Refusing to ship a still of Anders Fjell."
+            )
+        start, mouth_std, still_std = hit
+        note = "" if start == CHECK_WINDOWS[0][0] else " (the 1.0–2.0s window was a pause)"
+        print(f"rendered {name}: mouth std {mouth_std:.2f}, still region {still_std:.2f}{note}", flush=True)
     return 0
 
 

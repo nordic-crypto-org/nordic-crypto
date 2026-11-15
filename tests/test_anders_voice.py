@@ -10,7 +10,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Issues where Anders is on camera. 001–003 have no Anders plate and are unchanged.
-ANDERS_ISSUES = ("004", "005", "006")
+ANDERS_ISSUES = ("004", "005", "006", "007")
 ANDERS_VOICE = "nb-NO-FinnNeural"
 
 
