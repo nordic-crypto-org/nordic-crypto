@@ -34,6 +34,13 @@ class AnchorLipsync(unittest.TestCase):
             anchor_lipsync.assert_mouth_moves(9.0, 8.0)  # the whole frame drifted; the mouth did not lead
         anchor_lipsync.assert_mouth_moves(9.0, 0.2)
 
+    def test_a_pause_in_the_official_second_does_not_hide_a_moving_mouth(self):
+        # Issue #6 sign-off: 1.0–2.0s was the gap between the two sentences.
+        hit = anchor_lipsync.first_passing_window([(1.0, 0.2, 0.1), (0.35, 6.0, 0.2)])
+        self.assertEqual(hit[0], 0.35)
+        self.assertEqual(anchor_lipsync.first_passing_window([(1.0, 6.0, 0.2)])[0], 1.0)
+        self.assertIsNone(anchor_lipsync.first_passing_window([(1.0, 0.1, 0.1), (1.55, 0.4, 0.3)]))
+
     def test_render_refuses_a_clip_that_was_not_checked(self):
         with tempfile.TemporaryDirectory() as d:
             with self.assertRaises(SystemExit) as caught:
@@ -52,13 +59,13 @@ class AnchorLipsync(unittest.TestCase):
 
     def test_anders_issues_declare_who_is_on_camera(self):
         self.assertEqual(_content("004").ON_CAMERA, ("anchor",))
-        for issue in ("005", "006"):
+        for issue in ("005", "006", "007"):
             self.assertEqual(_content(issue).ON_CAMERA, ("anchor", "tonight", "story", "end"))
         for issue in ("001", "002", "003"):
             self.assertFalse(getattr(_content(issue), "ANCHOR_IMG", None))
 
     def test_renderers_have_no_still_fallback(self):
-        for issue in ("004", "005", "006"):
+        for issue in ("004", "005", "006", "007"):
             with open(os.path.join(ROOT, "newsletter", "issues", f"{issue}-video", "render.py"), encoding="utf-8") as fh:
                 src = fh.read()
             self.assertIn("anchor_lipsync.Plate", src)
