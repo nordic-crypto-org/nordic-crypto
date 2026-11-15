@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-15T03:46:32+00:00",
+ "generated_at": "2026-11-15T06:35:06+00:00",
  "preview": false,
  "item": {
   "id": "0eb8661e7db9",
@@ -242,6 +242,66 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
     }
+   },
+   {
+    "outlet": "tv2",
+    "outlet_name": "TV 2",
+    "url": "https://tv2.no/direkte/jpybz/siste-nytt/6af6811c03bfe1ba7f5a3b25/beslaglagt-kryptovaluta-for-over-11-milliarder-kroner",
+    "title": "Beslaglagt kryptovaluta for over 11 milliarder kroner",
+    "published": "2026-11-13T03:17:36+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "realtid",
+    "outlet_name": "Realtid",
+    "url": "https://realtid.se/bors-finans/usa-beslagtar-12-miljarder-efter-kryptostolden-pekar-ut-nordkorea",
+    "title": "USA beslagtar 12 miljarder efter kryptostölden – pekar ut Nordkorea",
+    "published": "2026-11-14T04:34:00+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/realtid.svg",
+     "source_url": "https://www.realtid.se/_next/static/media/logo.1b3426b7.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/realtid.png"
+    }
+   },
+   {
+    "outlet": "ekstra-bladet",
+    "outlet_name": "Ekstra Bladet",
+    "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptokup-beslaglaegger-18-milliarder/11354070",
+    "title": "Efter historisk kryptokup: Beslaglægger 18 milliarder",
+    "published": "2026-11-14T18:51:26+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+     "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+    }
    }
   ],
   "sources": [
@@ -387,31 +447,91 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/abcnyheter.png"
     }
+   },
+   {
+    "outlet": "tv2",
+    "outlet_name": "TV 2",
+    "url": "https://tv2.no/direkte/jpybz/siste-nytt/6af6811c03bfe1ba7f5a3b25/beslaglagt-kryptovaluta-for-over-11-milliarder-kroner",
+    "title": "Beslaglagt kryptovaluta for over 11 milliarder kroner",
+    "published": "2026-11-13T03:17:36+00:00",
+    "lang": "Norwegian",
+    "language_code": "no",
+    "country": "NO",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": null
+   },
+   {
+    "outlet": "realtid",
+    "outlet_name": "Realtid",
+    "url": "https://realtid.se/bors-finans/usa-beslagtar-12-miljarder-efter-kryptostolden-pekar-ut-nordkorea",
+    "title": "USA beslagtar 12 miljarder efter kryptostölden – pekar ut Nordkorea",
+    "published": "2026-11-14T04:34:00+00:00",
+    "lang": "Swedish",
+    "language_code": "sv",
+    "country": "SE",
+    "source_type": "national",
+    "paywall": false,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/realtid.svg",
+     "source_url": "https://www.realtid.se/_next/static/media/logo.1b3426b7.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/realtid.png"
+    }
+   },
+   {
+    "outlet": "ekstra-bladet",
+    "outlet_name": "Ekstra Bladet",
+    "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptokup-beslaglaegger-18-milliarder/11354070",
+    "title": "Efter historisk kryptokup: Beslaglægger 18 milliarder",
+    "published": "2026-11-14T18:51:26+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+     "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+    }
    }
   ],
   "coverage": {
-   "count": 7,
+   "count": 10,
    "by_country": [
     {
      "country": "NO",
-     "count": 5,
-     "share": 0.7143
+     "count": 6,
+     "share": 0.6
     },
     {
      "country": "SE",
-     "count": 1,
-     "share": 0.1429
+     "count": 2,
+     "share": 0.2
     },
     {
      "country": "DK",
-     "count": 1,
-     "share": 0.1429
+     "count": 2,
+     "share": 0.2
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 7,
+     "count": 10,
      "share": 1.0
     },
     {
