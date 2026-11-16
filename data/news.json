@@ -22,14 +22,15 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "URL is /kommentar/. Opinion plus Nvidia politics and bitcoin price/fund flows. Standing exclusion for opinion and pure price talk. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "57624ae74055",
    "url": "https://tv2.no/a/19423320",
    "title": "Jakten på kryptomillionene",
-   "title_en": null,
+   "title_en": "Kripos traces crypto proceeds from drug crime in operation Hubris 6",
    "source": "tv2",
    "source_name": "TV 2",
    "country": "NO",
@@ -42,14 +43,14 @@
    "published": "2026-11-15T19:19:31+00:00",
    "fetched": "2026-11-16T02:42:40+00:00",
    "topics": [
-    "crypto"
+    "security"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
+   "status": "published",
+   "summary": "Kripos, including the National Cybercrime Centre (NC3), traced cash that had been exchanged into cryptocurrency as part of operation Hubris 6, TV 2 reports, citing an Oslo District Court judgment from March 2026. As reported by TV 2, the court convicted five men of serious drug offences; the longest sentence was 16 years and 3 months, and the judgment has been appealed. According to the judgment as reported by TV 2, a courier received cash and exchanged it into the cryptocurrency Tether. Kripos says the exchanges, over about four months in 2024, came to more than 70 million Norwegian kroner, and that more than 23 million Norwegian kroner has been frozen.",
    "also_covered_by": [
     {
      "outlet": "tv2",
@@ -62,7 +63,66 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-16T04:41:26+01:00",
+   "primary_source": {
+    "name": "TV 2 — «Jakten på kryptomillionene», 15 November 2026",
+    "url": "https://www.tv2.no/nyheter/jakten-pa-kryptomillionene/19423320/"
+   },
+   "title_i18n": {
+    "nn": "Kripos sporar krypto-utbyte frå narkotikakriminalitet i operasjon Hubris 6",
+    "sv": "Kripos spårar kryptovinster från narkotikabrott i operation Hubris 6",
+    "da": "Kripos sporer krypto-udbytte fra narkotikakriminalitet i operation Hubris 6",
+    "fi": "Kripos jäljittää huumausainerikosten kryptotuottoja operaatio Hubris 6:ssa",
+    "is": "Kripos rekur slóð kryptóávinnings af fíkniefnabrotum í aðgerðinni Hubris 6",
+    "zh": "Kripos在Hubris 6行动中追踪毒品犯罪的加密货币收益",
+    "hi": "क्रिपोस ने अभियान Hubris 6 में नशीले पदार्थों के अपराध से मिली क्रिप्टो आय का पता लगाया",
+    "es": "Kripos rastrea ingresos en cripto de delitos de drogas en la operación Hubris 6",
+    "fr": "Kripos retrace des produits crypto issus du trafic de drogue dans l'opération Hubris 6",
+    "ar": "كريبوس يتتبع عوائد مشفرة من جرائم المخدرات في العملية Hubris 6",
+    "bn": "ক্রিপোস Hubris 6 অভিযানে মাদক অপরাধের ক্রিপ্টো অর্থের হদিশ করেছে",
+    "pt": "A Kripos rastreia proveitos em cripto de crimes de droga na operação Hubris 6",
+    "ru": "Kripos отслеживает криптодоходы от наркопреступлений в операции Hubris 6",
+    "ur": "کریپوس نے آپریشن Hubris 6 میں منشیات کے جرائم سے حاصل کرپٹو آمدنی کا سراغ لگایا",
+    "id": "Kripos menelusuri hasil kripto dari kejahatan narkoba dalam operasi Hubris 6",
+    "de": "Kripos spürt Krypto-Erlöse aus Drogenkriminalität in der Operation Hubris 6 auf",
+    "ja": "クリポス、作戦Hubris 6で薬物犯罪の暗号資産収益を追跡",
+    "sw": "Kripos inafuatilia mapato ya krypto kutoka uhalifu wa dawa za kulevya katika operesheni Hubris 6",
+    "mr": "क्रिपोसने ऑपरेशन Hubris 6 मध्ये अंमली पदार्थांच्या गुन्ह्यातील क्रिप्टो उत्पन्न शोधले",
+    "fa": "کریپوس در عملیات Hubris 6 عواید رمزارزی جرایم مواد مخدر را ردیابی می‌کند",
+    "uk": "Kripos відстежує криптодоходи від наркозлочинів в операції Hubris 6",
+    "tr": "Kripos, Hubris 6 operasyonunda uyuşturucu suçlarından elde edilen kripto gelirlerini izledi",
+    "se": "Kripos čuovvu krypto-boađuid narkotikarikkusis operašuvnnas Hubris 6"
+   },
+   "title_i18n_source": "Jakten på kryptomillionene",
+   "summary_i18n": {
+    "nb": "Kripos, herunder Nasjonalt cyberkrimsenter (NC3), sporet kontanter som var vekslet til kryptovaluta som del av operasjon Hubris 6, skriver TV 2 med henvisning til en dom fra Oslo tingrett i mars 2026. Ifølge TV 2 dømte retten fem menn for grove narkotikaforhold; den lengste straffen var 16 år og 3 måneder, og dommen er anket. Ifølge dommen slik TV 2 gjengir den, tok en kurer imot kontanter og vekslet dem til kryptovalutaen Tether. Kripos sier vekslingene, over om lag fire måneder i 2024, beløp seg til mer enn 70 millioner kroner, og at mer enn 23 millioner kroner er frosset.",
+    "nn": "Kripos, medrekna Nasjonalt cyberkrimsenter (NC3), spora kontantar som var veksla til kryptovaluta som del av operasjon Hubris 6, skriv TV 2 med tilvising til ein dom frå Oslo tingrett i mars 2026. Ifølgje TV 2 dømde retten fem menn for grove narkotikaforhold; den lengste straffa var 16 år og 3 månader, og domen er anka. Ifølgje domen slik TV 2 attgjev han, tok ein kurer imot kontantar og veksla dei til kryptovalutaen Tether. Kripos seier vekslingane, over om lag fire månader i 2024, beløp seg til meir enn 70 millionar kroner, og at meir enn 23 millionar kroner er frosne.",
+    "sv": "Kripos, inklusive det nationella cyberbrottscentret (NC3), spårade kontanter som hade växlats till kryptovaluta som en del av operation Hubris 6, rapporterar TV 2 med hänvisning till en dom från Oslo tingsrätt i mars 2026. Enligt TV 2 dömde rätten fem män för grova narkotikabrott; det längsta straffet var 16 år och 3 månader, och domen har överklagats. Enligt domen så som TV 2 återger den tog en kurir emot kontanter och växlade dem till kryptovalutan Tether. Kripos säger att växlingarna, under omkring fyra månader 2024, uppgick till mer än 70 miljoner norska kronor, och att mer än 23 miljoner norska kronor har frysts.",
+    "da": "Kripos, herunder det nationale cyberkrimcenter (NC3), sporede kontanter, der var vekslet til kryptovaluta som del af operation Hubris 6, skriver TV 2 med henvisning til en dom fra Oslo tingret i marts 2026. Ifølge TV 2 dømte retten fem mænd for grov narkotikakriminalitet; den længste straf var 16 år og 3 måneder, og dommen er anket. Ifølge dommen, som TV 2 gengiver den, tog en kurer imod kontanter og vekslede dem til kryptovalutaen Tether. Kripos siger, at vekslingerne over omkring fire måneder i 2024 beløb sig til mere end 70 millioner norske kroner, og at mere end 23 millioner norske kroner er frosset.",
+    "fi": "Kripos, mukaan lukien kansallinen kyberrikoskeskus (NC3), jäljitti käteistä, joka oli vaihdettu kryptovaluutaksi osana operaatiota Hubris 6, kertoo TV 2 viitaten Oslon käräjäoikeuden tuomioon maaliskuulta 2026. TV 2:n mukaan oikeus tuomitsi viisi miestä törkeistä huumausainerikoksista; pisin rangaistus oli 16 vuotta ja 3 kuukautta, ja tuomiosta on valitettu. Tuomion mukaan, siten kuin TV 2 sen selostaa, kuriiri otti vastaan käteistä ja vaihtoi sen Tether-kryptovaluutaksi. Kriposin mukaan vaihdot noin neljän kuukauden aikana vuonna 2024 nousivat yli 70 miljoonaan Norjan kruunuun, ja yli 23 miljoonaa Norjan kruunua on jäädytetty.",
+    "is": "Kripos, þar á meðal National Cybercrime Centre (NC3), rakti reiðufé sem hafði verið skipt yfir í rafmynt sem hluta af aðgerðinni Hubris 6, greinir TV 2 frá og vísar til dóms Oslo-héraðsdóms frá mars 2026. Samkvæmt TV 2 dæmdi dómstóllinn fimm menn fyrir alvarleg fíkniefnabrot; lengsti dómurinn var 16 ár og 3 mánuðir, og dóminum hefur verið áfrýjað. Samkvæmt dóminum eins og TV 2 greinir frá honum tók sendill við reiðufé og skipti því í rafmyntina Tether. Kripos segir að skiptingarnar, á um fjórum mánuðum 2024, hafi numið meira en 70 milljónum norskra króna, og að meira en 23 milljónir norskra króna hafi verið frystar.",
+    "zh": "据TV 2报道并援引奥斯陆地区法院2026年3月的判决，Kripos（包括国家网络犯罪中心NC3）在Hubris 6行动中追踪了兑换成加密货币的现金。TV 2称，该法院以严重毒品犯罪判处五名男子有罪；最长刑期为16年3个月，判决已被上诉。据TV 2转述的判决，一名信使收取现金并将其兑换为稳定币Tether。Kripos表示，这些兑换发生在2024年约四个月里，总额超过7000万挪威克朗，并且已有超过2300万挪威克朗被冻结。",
+    "hi": "टीवी 2 के अनुसार, जो मार्च 2026 के ओस्लो जिला न्यायालय के फैसले का हवाला देता है, क्रिपोस ने, जिसमें राष्ट्रीय साइबर अपराध केंद्र (NC3) शामिल है, अभियान Hubris 6 के तहत नकदी का पता लगाया जिसे क्रिप्टोकरेंसी में बदला गया था. टीवी 2 के मुताबिक न्यायालय ने पाँच पुरुषों को गंभीर नशीले पदार्थ अपराधों के लिए दोषी ठहराया; सबसे लंबी सजा 16 वर्ष 3 महीने की थी, और फैसले के विरुद्ध अपील की गई है. टीवी 2 द्वारा बताए गए फैसले के अनुसार, एक कूरियर ने नकदी ली और उसे क्रिप्टोकरेंसी टेदर में बदला. क्रिपोस कहता है कि 2024 के लगभग चार महीनों में ये विनिमय 70 मिलियन नॉर्वेजियन क्रोन से अधिक के रहे, और 23 मिलियन नॉर्वेजियन क्रोन से अधिक राशि फ्रीज की जा चुकी है.",
+    "es": "Kripos, incluido el Centro Nacional de Cibercrimen (NC3), rastrea efectivo que había sido cambiado a criptomoneda en el marco de la operación Hubris 6, informa TV 2 citando una sentencia del Tribunal de Distrito de Oslo de marzo de 2026. Según TV 2, el tribunal condenó a cinco hombres por delitos graves de drogas; la pena más larga fue de 16 años y 3 meses, y la sentencia ha sido recurrida. Según la sentencia, tal como la recoge TV 2, un mensajero recibió efectivo y lo cambió a la criptomoneda Tether. Kripos afirma que los cambios, a lo largo de unos cuatro meses de 2024, sumaron más de 70 millones de coronas noruegas, y que más de 23 millones de coronas noruegas han sido congelados.",
+    "fr": "Kripos, y compris le Centre national de lutte contre la cybercriminalité (NC3), a retracé des espèces échangées contre de la cryptomonnaie dans le cadre de l'opération Hubris 6, rapporte TV 2 en citant un jugement du tribunal de district d'Oslo de mars 2026. Selon TV 2, le tribunal a condamné cinq hommes pour des infractions graves à la législation sur les stupéfiants ; la peine la plus lourde était de 16 ans et 3 mois, et le jugement a été frappé d'appel. Selon le jugement tel que le rapporte TV 2, un coursier a reçu des espèces et les a échangées contre la cryptomonnaie Tether. Kripos indique que les échanges, sur environ quatre mois en 2024, se sont élevés à plus de 70 millions de couronnes norvégiennes, et que plus de 23 millions de couronnes norvégiennes ont été gelées.",
+    "ar": "تتبعت كريبوس، بما في ذلك المركز الوطني للجرائم السيبرانية (NC3)، أموالاً نقدية جرى تحويلها إلى عملة مشفرة ضمن العملية Hubris 6، حسب ما أوردته قناة TV 2 استناداً إلى حكم صادر عن محكمة مقاطعة أوسلو في مارس 2026. ووفقاً لـ TV 2، أدانت المحكمة خمسة رجال في جرائم مخدرات جسيمة؛ وكان أشد حكم 16 عاماً و3 أشهر، وقد طُعن في الحكم. وبحسب الحكم كما نقلته TV 2، تسلم ساعي أموالاً نقدية وحوّلها إلى العملة المشفرة Tether. وتقول كريبوس إن عمليات التحويل، على مدى نحو أربعة أشهر في 2024، بلغت أكثر من 70 مليون كرونة نرويجية، وإن أكثر من 23 مليون كرونة نرويجية قد جُمّدت.",
+    "bn": "টিভি ২ মার্চ ২০২৬-এর অসলো জেলা আদালতের রায়ের উদ্ধৃতি দিয়ে জানিয়েছে, ক্রিপোস—যার মধ্যে জাতীয় সাইবার অপরাধ কেন্দ্র (NC3) রয়েছে—Hubris 6 অভিযানের অংশ হিসেবে নগদ অর্থের হদিশ করেছে, যা ক্রিপ্টোকারেন্সিতে রূপান্তরিত হয়েছিল। টিভি ২-এর মতে, আদালত পাঁচজন পুরুষকে গুরুতর মাদক অপরাধে দোষী সাব্যস্ত করেছে; সর্বোচ্চ সাজা ছিল ১৬ বছর ৩ মাস, এবং রায়ের বিরুদ্ধে আপিল হয়েছে। টিভি ২ যেভাবে রায় তুলে ধরেছে, সে অনুযায়ী একজন কুরিয়ার নগদ গ্রহণ করে তা টেদার ক্রিপ্টোকারেন্সিতে বদলেছিলেন। ক্রিপোস বলে, ২০২৪ সালের প্রায় চার মাসে এই বিনিময় ৭ কোটি নরওয়েজীয় ক্রোনারের বেশি হয়েছে, এবং ২ কোটি ৩০ লাখ নরওয়েজীয় ক্রোনারের বেশি স্থগিত করা হয়েছে।",
+    "pt": "A Kripos, incluindo o Centro Nacional de Cibercrime (NC3), rastreou numerário que tinha sido trocado por criptomoeda no âmbito da operação Hubris 6, relata a TV 2, citando um acórdão do Tribunal Distrital de Oslo de março de 2026. Segundo a TV 2, o tribunal condenou cinco homens por crimes graves de droga; a pena mais longa foi de 16 anos e 3 meses, e a sentença foi objeto de recurso. De acordo com o acórdão, tal como o relata a TV 2, um estafeta recebeu numerário e trocou-o pela criptomoeda Tether. A Kripos afirma que as trocas, ao longo de cerca de quatro meses em 2024, ascenderam a mais de 70 milhões de coroas norueguesas, e que mais de 23 milhões de coroas norueguesas foram congeladas.",
+    "ru": "Kripos, включая Национальный центр киберпреступности (NC3), проследил наличные, обменянные на криптовалюту, в рамках операции Hubris 6, сообщает TV 2 со ссылкой на приговор окружного суда Осло от марта 2026 года. По данным TV 2, суд признал пятерых мужчин виновными в тяжких наркопреступлениях; самое строгое наказание составило 16 лет и 3 месяца, приговор обжалован. Согласно приговору в изложении TV 2, курьер принимал наличные и обменивал их на криптовалюту Tether. По словам Kripos, обмены за примерно четыре месяца 2024 года составили более 70 млн норвежских крон, и более 23 млн норвежских крон заморожены.",
+    "ur": "کریپوس، بشمول قومی سائبر جرائم مرکز (NC3)، نے آپریشن Hubris 6 کے تحت اس نقدی کا سراغ لگایا جسے کرپٹو کرنسی میں بدلا گیا تھا، ٹی وی 2 اوسلو ضلعی عدالت کے مارچ 2026 کے فیصلے کا حوالہ دیتے ہوئے رپورٹ کرتی ہے۔ ٹی وی 2 کے مطابق عدالت نے پانچ مردوں کو سنگین منشیات کے جرائم میں سزا دی؛ سب سے لمبی سزا 16 سال 3 ماہ کی تھی، اور فیصلے کے خلاف اپیل کی گئی ہے۔ ٹی وی 2 کے بیان کردہ فیصلے کے مطابق ایک کوریئر نے نقدی لی اور اسے کرپٹو کرنسی ٹیथर میں بدلا۔ کریپوس کا کہنا ہے کہ 2024 کے تقریباً چار مہینوں میں یہ تبادلے 70 ملین نارویجن کرون سے زیادہ رہے، اور 23 ملین نارویجن کرون سے زیادہ منجمد کیے جا چکے ہیں۔",
+    "id": "Kripos, termasuk Pusat Kejahatan Siber Nasional (NC3), menelusuri uang tunai yang telah ditukar menjadi mata uang kripto dalam operasi Hubris 6, laporan TV 2 dengan merujuk putusan Pengadilan Negeri Oslo pada Maret 2026. Menurut TV 2, pengadilan menghukum lima pria atas kejahatan narkoba yang berat; hukuman terlama adalah 16 tahun 3 bulan, dan putusan itu telah diajukan banding. Menurut putusan sebagaimana dilaporkan TV 2, seorang kurir menerima uang tunai dan menukarnya menjadi mata uang kripto Tether. Kripos mengatakan penukaran itu, selama sekitar empat bulan pada 2024, mencapai lebih dari 70 juta kroner Norwegia, dan lebih dari 23 juta kroner Norwegia telah dibekukan.",
+    "de": "Kripos, einschließlich des Nationalen Cybercrime-Zentrums (NC3), spürte Bargeld auf, das im Rahmen der Operation Hubris 6 in Kryptowährung umgetauscht worden war, berichtet TV 2 unter Berufung auf ein Urteil des Amtsgerichts Oslo vom März 2026. Laut TV 2 verurteilte das Gericht fünf Männer wegen schwerer Drogendelikte; die längste Strafe betrug 16 Jahre und 3 Monate, und das Urteil wurde angefochten. Nach dem Urteil, wie TV 2 es wiedergibt, nahm ein Kurier Bargeld entgegen und tauschte es in die Kryptowährung Tether. Kripos zufolge beliefen sich die Wechselgeschäfte über etwa vier Monate im Jahr 2024 auf mehr als 70 Millionen norwegische Kronen, und mehr als 23 Millionen norwegische Kronen sind eingefroren.",
+    "ja": "TV 2によると、2026年3月のオスロ地方裁判所の判決を引用し、Kripos（国家サイバー犯罪センターNC3を含む）は作戦Hubris 6の一環として、暗号資産に両替された現金を追跡した。TV 2によれば、同裁判所は5人の男性を重大な薬物犯罪で有罪とし、最長の刑は16年3か月で、判決は控訴されている。TV 2が伝える判決によれば、運び屋が現金を受け取り、それを暗号資産テザーに両替した。Kriposは、2024年の約4か月間の両替は7,000万ノルウェー・クローネを超え、2,300万ノルウェー・クローネ超が凍結されているとしている。",
+    "sw": "Kripos, ikiwemo Kituo cha Kitaifa cha Uhalifu wa Kimtandao (NC3), ilifuatilia pesa taslimu zilizokuwa zimebadilishwa kuwa sarafu-fiche kama sehemu ya operesheni Hubris 6, TV 2 inaripoti ikinukuu hukumu ya Mahakama ya Wilaya ya Oslo ya Machi 2026. Kulingana na TV 2, mahakama iliwahukumu wanaume watano kwa makosa makuu ya dawa za kulevya; adhabu ndefu zaidi ilikuwa miaka 16 na miezi 3, na hukumu imekatiwa rufaa. Kulingana na hukumu kama TV 2 inavyoiripoti, mjumbe alipokea pesa taslimu na kuzibadilisha kuwa sarafu-fiche Tether. Kripos inasema kubadilishana huko, kwa takriban miezi minne mwaka 2024, kulifikia zaidi ya kroner milioni 70 za Norway, na zaidi ya kroner milioni 23 za Norway zimegandishwa.",
+    "mr": "टीव्ही 2 च्या अहवालानुसार, जो मार्च 2026 चा ओस्लो जिल्हा न्यायालयाचा निकाल उद्धृत करतो, क्रिपोसने—ज्यात राष्ट्रीय सायबर गुन्हे केंद्र (NC3) आहे—ऑपरेशन Hubris 6 अंतर्गत क्रिप्टोकरन्सीत बदललेल्या रोख रकमेचा मागोवा घेतला. टीव्ही 2 नुसार न्यायालयाने पाच पुरुषांना गंभीर अंमली पदार्थांच्या गुन्ह्यांसाठी शिक्षा सुनावली; सर्वाधिक शिक्षा १६ वर्षे ३ महिने होती आणि निकालाविरुद्ध अपील करण्यात आले आहे. टीव्ही 2 ने सांगितलेल्या निकालानुसार, एका कुरिअरने रोख स्वीकारली आणि ती टेदर या क्रिप्टोकरन्सीत बदलली. क्रिपोसचे म्हणणे आहे की २०२४ मधील सुमारे चार महिन्यांत हे विनिमय ७ कोटी नॉर्वेजियन क्रोनपेक्षा अधिक झाले आणि २.३ कोटी नॉर्वेजियन क्रोनपेक्षा अधिक रक्कम गोठवण्यात आली आहे.",
+    "fa": "به گزارش TV 2 با استناد به حکم دادگاه ناحیه‌ای اسلو در مارس ۲۰۲۶، کریپوس از جمله مرکز ملی جرایم سایبری (NC3) در چارچوب عملیات Hubris 6 وجه نقدی را ردیابی کرد که به ارز دیجیتال تبدیل شده بود. به گفته TV 2، دادگاه پنج مرد را به جرایم سنگین مواد مخدر محکوم کرد؛ طولانی‌ترین حکم ۱۶ سال و ۳ ماه بود و به حکم اعتراض شده است. طبق حکم، همان‌طور که TV 2 آن را نقل می‌کند، یک پیک وجه نقد گرفت و آن را به ارز دیجیتال تتر تبدیل کرد. کریپوس می‌گوید این تبدیل‌ها در حدود چهار ماه در سال ۲۰۲۴ به بیش از ۷۰ میلیون کرون نروژ رسید و بیش از ۲۳ میلیون کرون نروژ مسدود شده است.",
+    "uk": "Kripos, зокрема Національний центр кіберзлочинності (NC3), відстежив готівку, обміняну на криптовалюту, у межах операції Hubris 6, повідомляє TV 2 з посиланням на вирок окружного суду Осло від березня 2026 року. За даними TV 2, суд визнав п’ятьох чоловіків винними у тяжких наркозлочинах; найдовший строк становив 16 років і 3 місяці, вирок оскаржено. Згідно з вироком у викладі TV 2, кур’єр отримував готівку і обмінював її на криптовалюту Tether. За словами Kripos, обміни впродовж приблизно чотирьох місяців 2024 року становили понад 70 млн норвезьких крон, і понад 23 млн норвезьких крон заморожено.",
+    "tr": "Kripos, Ulusal Siber Suç Merkezi (NC3) dahil, Hubris 6 operasyonu kapsamında kripto paraya çevrilmiş nakdi izledi; TV 2, Oslo Bölge Mahkemesinin Mart 2026 tarihli kararına atıfla bildiriyor. TV 2'ye göre mahkeme beş erkeği ağır uyuşturucu suçlarından mahkûm etti; en uzun ceza 16 yıl 3 aydı ve karara itiraz edildi. TV 2'nin aktardığı karara göre bir kurye nakit alıp bunu Tether kripto parasına çevirdi. Kripos, 2024'te yaklaşık dört aya yayılan bu dönüşümlerin 70 milyon Norveç kronunu aştığını ve 23 milyon Norveç kronunu aşkın tutarın dondurulduğunu belirtiyor.",
+    "se": "Kripos, maiddái National Cybercrime Centre (NC3), čuovvu ruđa mii lei gaskkalduvvon kryptovaluhtan operašuvnna Hubris 6 oassin, dieđihii TV 2 ja čujuha Oslo diggegotti duopmái njukčamánu 2026. TV 2 mielde duopmostuollu dubmii vihtta olbmáid garra narkotikarihkusis; guhkimus ráŋggáštus lei 16 jagi ja 3 mánu, ja duopmu lea váiddajuvvon. Duomu mielde, nugo TV 2 dan muitala, válddii kurer ruđa vuostá ja gaskkalduhtii dan kryptovaluhtan Tether. Kripos dadjá ahte gaskkaldeamit, sullii njealji mánu áigge 2024, ledje eanet go 70 miljovnna norgga kruvnnu, ja ahte eanet go 23 miljovnna norgga kruvnnu lea galbmahuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "a6ca0a743ef4",
@@ -89,8 +149,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Pure price and fund-flow coverage. Standing exclusion. KVG guide site. Thematically close to already rejected E24 66cdc2e8c16e. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "c53171360c2d",
@@ -114,8 +175,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price and debt coverage of Trump Media bitcoin holdings, based on the Financial Times (not fetched). Sensational. Standing exclusion. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "39ea3a111d88",
@@ -140,8 +202,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "KVG rewrite with affiliate/casino template. Misleading headline (the text says Berkshire sold the stake). Crypto angle is subordinate; not a Nordic story beyond the language. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "6c3940926897",
@@ -165,8 +228,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Pure price article. Standing exclusion. A Swedish-krone conversion is not enough to lift it. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "f3a46ab3a036",
@@ -190,8 +254,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "0eb8661e7db9"
   },
   {
    "id": "ea1779894aa8",
@@ -219,9 +284,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Queue teaser is pure price and fund-flow talk; body unverified behind login. Same cluster as already rejected E24. Paywall not bypassed. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "eb6cf1124bd7",
@@ -297,8 +363,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Unrealised-loss and price coverage. KVG rewrite with affiliate template. Standing exclusion. researcher 16.11; editor 2026-11-16"
   },
   {
    "id": "4f78853ee799",
@@ -806,6 +873,17 @@
      "url": "https://ekstrabladet.dk/penge/efter-historisk-kryptokup-beslaglaegger-18-milliarder/11354070",
      "title": "Efter historisk kryptokup: Beslaglægger 18 milliarder",
      "published": "2026-11-14T18:51:26+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "ekstra-bladet",
+     "outlet_name": "Ekstra Bladet",
+     "url": "https://ekstrabladet.dk/penge/fbi-advarer-mod-falske-videokald-hackere-stjaeler-krypto-for-27-mia./11353074",
+     "title": "FBI advarer mod falske videokald: Hackere stjæler krypto for 2,7 mia.",
+     "published": "2026-11-15T09:50:45+00:00",
      "lang": "Danish",
      "country": "DK",
      "source_type": "national",
