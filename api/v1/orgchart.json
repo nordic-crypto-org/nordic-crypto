@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-16T03:45:54+00:00",
+ "generated_at": "2026-11-16T06:39:36+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 477,
+ "count": 478,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -6585,6 +6585,39 @@
      "title": "Name and role only from the registry",
      "source_name": "Brønnøysund Register Centre",
      "date": "2026-10-03"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": []
+  },
+  {
+   "id": "kripos",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/kripos.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#kripos",
+   "name": "Kripos (National Criminal Investigation Service)",
+   "type": "organisation",
+   "sector": "public",
+   "country": "NO",
+   "description": "Norway's National Criminal Investigation Service. It includes the National Cybercrime Centre (NC3), which traces cryptocurrency in criminal investigations, according to TV 2.",
+   "role": null,
+   "org": null,
+   "group": "Police & financial intelligence (FIU)",
+   "profile_url": null,
+   "provenance": "Nordic Crypto research",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.politiet.no/kripos",
+     "title": "Kripos",
+     "source_name": "Politiet",
+     "date": "2026-11-16"
+    },
+    {
+     "url": "https://www.tv2.no/nyheter/jakten-pa-kryptomillionene/19423320/",
+     "title": "Jakten på kryptomillionene",
+     "source_name": "TV 2",
+     "date": "2026-11-16"
     }
    ],
    "logo": null,

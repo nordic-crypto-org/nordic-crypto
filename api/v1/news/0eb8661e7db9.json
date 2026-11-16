@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-16T03:45:54+00:00",
+ "generated_at": "2026-11-16T06:39:36+00:00",
  "preview": false,
  "item": {
   "id": "0eb8661e7db9",
@@ -302,6 +302,29 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
     }
+   },
+   {
+    "outlet": "ekstra-bladet",
+    "outlet_name": "Ekstra Bladet",
+    "url": "https://ekstrabladet.dk/penge/fbi-advarer-mod-falske-videokald-hackere-stjaeler-krypto-for-27-mia./11353074",
+    "title": "FBI advarer mod falske videokald: Hackere stjæler krypto for 2,7 mia.",
+    "published": "2026-11-15T09:50:45+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+     "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+    }
    }
   ],
   "sources": [
@@ -507,31 +530,54 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
     }
+   },
+   {
+    "outlet": "ekstra-bladet",
+    "outlet_name": "Ekstra Bladet",
+    "url": "https://ekstrabladet.dk/penge/fbi-advarer-mod-falske-videokald-hackere-stjaeler-krypto-for-27-mia./11353074",
+    "title": "FBI advarer mod falske videokald: Hackere stjæler krypto for 2,7 mia.",
+    "published": "2026-11-15T09:50:45+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp",
+     "source_url": "https://ekstrabladet.dk/assets/img/icons/apple-touch-icon.png",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/ekstra-bladet.webp"
+    }
    }
   ],
   "coverage": {
-   "count": 10,
+   "count": 11,
    "by_country": [
     {
      "country": "NO",
      "count": 6,
-     "share": 0.6
+     "share": 0.5455
     },
     {
      "country": "SE",
      "count": 2,
-     "share": 0.2
+     "share": 0.1818
     },
     {
      "country": "DK",
-     "count": 2,
-     "share": 0.2
+     "count": 3,
+     "share": 0.2727
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 10,
+     "count": 11,
      "share": 1.0
     },
     {
