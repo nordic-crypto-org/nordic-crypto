@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-15T11:13:34Z",
+ "generated_at": "2026-11-16T11:44:17Z",
  "preview": false,
  "source": "Cloudflare Web Analytics",
  "status": "ok",
@@ -9,25 +9,13 @@
  "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. For each of the last 30 UTC days, paths lists visits and page views per page path, with query strings and fragments removed. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
  "schema": 2,
  "first_date": "2026-10-17",
- "last_date": "2026-11-15",
- "updated_at": "2026-11-15T11:13:34Z",
+ "last_date": "2026-11-16",
+ "updated_at": "2026-11-16T11:44:17Z",
  "daily": [
   {
    "date": "2026-10-17",
    "visits": 50,
-   "pageviews": 60,
-   "paths": [
-    {
-     "path": "/",
-     "visits": 40,
-     "pageviews": 40
-    },
-    {
-     "path": "/token",
-     "visits": 10,
-     "pageviews": 20
-    }
-   ]
+   "pageviews": 60
   },
   {
    "date": "2026-10-18",
@@ -185,8 +173,8 @@
    "paths": [
     {
      "path": "/",
-     "visits": 79,
-     "pageviews": 84
+     "visits": 120,
+     "pageviews": 120
     }
    ]
   },
@@ -270,6 +258,18 @@
    "date": "2026-11-15",
    "visits": 0,
    "pageviews": 0,
+   "paths": [
+    {
+     "path": "/",
+     "visits": 1,
+     "pageviews": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "visits": 0,
+   "pageviews": 0,
    "partial": true,
    "paths": []
   }
@@ -318,6 +318,15 @@
    "visits": 0,
    "pageviews": 0,
    "end": "2026-11-15",
+   "partial": false
+  },
+  {
+   "week": "2026-W47",
+   "start": "2026-11-16",
+   "days": 1,
+   "visits": 0,
+   "pageviews": 0,
+   "end": "2026-11-22",
    "partial": true
   }
  ],
@@ -331,7 +340,7 @@
   },
   {
    "month": "2026-11",
-   "days": 15,
+   "days": 16,
    "visits": 120,
    "pageviews": 140,
    "partial": true
