@@ -1385,6 +1385,160 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-17T11:00:00+00:00",
+   "included": 3,
+   "by_country": {
+    "NO": 25,
+    "SE": 14,
+    "DK": 6,
+    "FI": 11,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 5,
+    "2017": 5,
+    "2018": 8,
+    "2022": 2,
+    "2023": 5,
+    "2025": 6,
+    "2026": 11,
+    "2016": 4,
+    "2019": 3,
+    "2024": 2,
+    "2015": 3,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 2,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1,
+     "2018": 2
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 3,
+     "2015": 1,
+     "2026": 3,
+     "2018": 1,
+     "2023": 1,
+     "2016": 1,
+     "2024": 1,
+     "2025": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 2,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 1,
+     "2020": 1,
+     "2012": 1,
+     "2017": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Three past events were stored. Danes in Ethereum on Tuesday 28 August 2018, 18:00–21:00, at the IT University of Copenhagen, Rued Langgaardsvej 7, from the Meetup page. The Raiden recording is linked. A Bitcoinföreningen meetup in Norrköping on 17 August 2024, 18:00–22:00, at Pappa Grappa, Gamla Rådstugugatan 26-28. The 7th Nordic Blockchain Conference 2025, 18–19 June, at Epicenter Stockholm. The program page states 18 and 19 June and the year is on that page. It does not state one clock for the whole conference, so the row is the two days. No count was stored. The Uppsala meetup of 13 November 2026 was cancelled on the Meetup page. Bitcoin Walk i Göteborg on 15 November and Lund Bitcoin Meetup #2 on 16 November are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Three events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+    "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+    "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+    "https://conf.nordicblockchain.com/conference-2025/program",
+    "https://conf.nordicblockchain.com/conference-2025/location",
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/317015057/",
+    "https://www.meetup.com/swedish-bitcoin-meetups/events/317358176/",
+    "https://www.meetup.com/bitcoin-malmo/events/317188314/",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-17"
+   ],
+   "sources_used": [
+    "Ethereum and Web3 Copenhagen",
+    "Svenska Bitcoinföreningen",
+    "Nordic Blockchain Association"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Uppsala Bitcoin Meetup, 13 November 2026",
+     "reason": "The Meetup page marks it cancelled. Not stored as a past event that took place."
+    },
+    {
+     "name": "Bitcoin Walk i Göteborg, 15 November 2026",
+     "reason": "Already on the calendar. No public recording."
+    },
+    {
+     "name": "Lund Bitcoin Meetup #2, 16 November 2026",
+     "reason": "Already on the calendar. The Meetup page has no recording."
+    },
+    {
+     "name": "Chalmers course lecture, May 2019",
+     "reason": "The upload says the audience was students on a data-structures course. Not stored as a public event. The page does not state the day or the city."
+    },
+    {
+     "name": "Venue of the Swedish House of Finance FinTech conference",
+     "reason": "A conference-listing site named a room. That host was not used. The video page does not state the city."
+    },
+    {
+     "name": "Delegate and attendance wording on the Nordic Blockchain Conference 2025 news page",
+     "reason": "The page does not give an exact count."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }
