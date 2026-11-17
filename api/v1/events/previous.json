@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T07:20:32+00:00",
+ "generated_at": "2026-11-17T10:17:34+00:00",
  "preview": false,
- "count": 74,
+ "count": 77,
  "events": [
   {
    "id": "eec0d2d82253",
@@ -4357,6 +4357,113 @@
    }
   },
   {
+   "id": "41091420e804",
+   "title": "7th Nordic Blockchain Conference 2025",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2025-06-18T00:00:00+02:00",
+   "end": "2025-06-19T23:59:00+02:00",
+   "place": "Epicenter Stockholm, Malmskillnadsgatan 44a, 111 57 Stockholm",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "Nordic Blockchain Association",
+   "url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2025-06-19T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/41091420e804/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/41091420e804/",
+    "nn": "https://nordiccrypto.no/nn/calendar/41091420e804/",
+    "nb": "https://nordiccrypto.no/nb/calendar/41091420e804/",
+    "sv": "https://nordiccrypto.no/sv/calendar/41091420e804/",
+    "da": "https://nordiccrypto.no/da/calendar/41091420e804/",
+    "fi": "https://nordiccrypto.no/fi/calendar/41091420e804/",
+    "is": "https://nordiccrypto.no/is/calendar/41091420e804/",
+    "zh": "https://nordiccrypto.no/zh/calendar/41091420e804/",
+    "hi": "https://nordiccrypto.no/hi/calendar/41091420e804/",
+    "es": "https://nordiccrypto.no/es/calendar/41091420e804/",
+    "fr": "https://nordiccrypto.no/fr/calendar/41091420e804/",
+    "ar": "https://nordiccrypto.no/ar/calendar/41091420e804/",
+    "bn": "https://nordiccrypto.no/bn/calendar/41091420e804/",
+    "pt": "https://nordiccrypto.no/pt/calendar/41091420e804/",
+    "ru": "https://nordiccrypto.no/ru/calendar/41091420e804/",
+    "ur": "https://nordiccrypto.no/ur/calendar/41091420e804/",
+    "id": "https://nordiccrypto.no/id/calendar/41091420e804/",
+    "de": "https://nordiccrypto.no/de/calendar/41091420e804/",
+    "ja": "https://nordiccrypto.no/ja/calendar/41091420e804/",
+    "sw": "https://nordiccrypto.no/sw/calendar/41091420e804/",
+    "mr": "https://nordiccrypto.no/mr/calendar/41091420e804/",
+    "fa": "https://nordiccrypto.no/fa/calendar/41091420e804/",
+    "uk": "https://nordiccrypto.no/uk/calendar/41091420e804/",
+    "tr": "https://nordiccrypto.no/tr/calendar/41091420e804/",
+    "se": "https://nordiccrypto.no/se/calendar/41091420e804/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/41091420e804.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference-2025/program",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference-2025/program",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference-2025/location",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://conf.nordicblockchain.com/conference-2025/location",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://www.nordicblockchain.com/event/nordic-blockchain-conference",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Nordic Blockchain Association",
+    "url": "https://conf.nordicblockchain.com/conference-2025/location",
+    "retrieved": "2026-11-17T11:00:00+00:00"
+   }
+  },
+  {
    "id": "5261a73345d0",
    "title": "Navigere utfordringar for å beskytte data innanfor blokkjedeteknologi",
    "title_original": null,
@@ -4518,6 +4625,138 @@
     "name": "backfill",
     "url": "https://www.uis.no/nb/om-uis/arrangementer/okonomi-og-ledelse/navigere-utfordringar-for-a-beskytte-data-innanfor",
     "retrieved": "2026-11-10T11:00:00+00:00"
+   }
+  },
+  {
+   "id": "f19312027f8e",
+   "title": "Bitcoinföreningen – Meetup i Norrköping den 17:e Augusti 2024",
+   "title_original": null,
+   "title_i18n": {
+    "en": "Bitcoinföreningen meetup in Norrköping on 17 August 2024",
+    "nn": "Bitcoinföreningen-treff i Norrköping 17. august 2024",
+    "nb": "Bitcoinföreningen-meetup i Norrköping 17. august 2024",
+    "da": "Bitcoinföreningen-meetup i Norrköping 17. august 2024",
+    "fi": "Bitcoinföreningen-tapaaminen Norrköpingissä 17. elokuuta 2024",
+    "is": "Bitcoinföreningen-fundur í Norrköping 17. ágúst 2024",
+    "zh": "Bitcoinföreningen 诺尔雪平见面会，2024年8月17日",
+    "hi": "Norrköping में Bitcoinföreningen मीटअप, 17 अगस्त 2024",
+    "es": "Encuentro de Bitcoinföreningen en Norrköping el 17 de agosto de 2024",
+    "fr": "Rencontre Bitcoinföreningen à Norrköping le 17 août 2024",
+    "ar": "لقاء Bitcoinföreningen في نورشوبينغ في 17 أغسطس 2024",
+    "bn": "Norrköping-এ Bitcoinföreningen মিটআপ, ১৭ আগস্ট ২০২৪",
+    "pt": "Encontro da Bitcoinföreningen em Norrköping a 17 de agosto de 2024",
+    "ru": "Встреча Bitcoinföreningen в Норрчёпинге 17 августа 2024",
+    "ur": "Norrköping میں Bitcoinföreningen میٹ اپ، 17 اگست 2024",
+    "id": "Pertemuan Bitcoinföreningen di Norrköping pada 17 Agustus 2024",
+    "de": "Bitcoinföreningen-Treffen in Norrköping am 17. August 2024",
+    "ja": "2024年8月17日、Norrköping の Bitcoinföreningen ミートアップ",
+    "sw": "Mkutano wa Bitcoinföreningen Norrköping, 17 Agosti 2024",
+    "mr": "Norrköping येथे Bitcoinföreningen मीटअप, १७ ऑगस्ट २०२४",
+    "fa": "دیدار Bitcoinföreningen در نورشوپینگ، ۱۷ اوت ۲۰۲۴",
+    "uk": "Зустріч Bitcoinföreningen у Норрчепінгу 17 серпня 2024",
+    "tr": "17 Ağustos 2024 Norrköping Bitcoinföreningen buluşması",
+    "se": "Bitcoinföreningen-čoahkkaneapmi Norrköpingis 17.8.2024"
+   },
+   "start": "2024-08-17T18:00:00+02:00",
+   "end": "2024-08-17T22:00:00+02:00",
+   "place": "Pappa Grappa, Gamla Rådstugugatan 26-28",
+   "city": "Norrköping",
+   "country": "SE",
+   "online": false,
+   "organiser": "Svenska Bitcoinföreningen",
+   "url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2024-08-17T22:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/f19312027f8e/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/f19312027f8e/",
+    "nn": "https://nordiccrypto.no/nn/calendar/f19312027f8e/",
+    "nb": "https://nordiccrypto.no/nb/calendar/f19312027f8e/",
+    "sv": "https://nordiccrypto.no/sv/calendar/f19312027f8e/",
+    "da": "https://nordiccrypto.no/da/calendar/f19312027f8e/",
+    "fi": "https://nordiccrypto.no/fi/calendar/f19312027f8e/",
+    "is": "https://nordiccrypto.no/is/calendar/f19312027f8e/",
+    "zh": "https://nordiccrypto.no/zh/calendar/f19312027f8e/",
+    "hi": "https://nordiccrypto.no/hi/calendar/f19312027f8e/",
+    "es": "https://nordiccrypto.no/es/calendar/f19312027f8e/",
+    "fr": "https://nordiccrypto.no/fr/calendar/f19312027f8e/",
+    "ar": "https://nordiccrypto.no/ar/calendar/f19312027f8e/",
+    "bn": "https://nordiccrypto.no/bn/calendar/f19312027f8e/",
+    "pt": "https://nordiccrypto.no/pt/calendar/f19312027f8e/",
+    "ru": "https://nordiccrypto.no/ru/calendar/f19312027f8e/",
+    "ur": "https://nordiccrypto.no/ur/calendar/f19312027f8e/",
+    "id": "https://nordiccrypto.no/id/calendar/f19312027f8e/",
+    "de": "https://nordiccrypto.no/de/calendar/f19312027f8e/",
+    "ja": "https://nordiccrypto.no/ja/calendar/f19312027f8e/",
+    "sw": "https://nordiccrypto.no/sw/calendar/f19312027f8e/",
+    "mr": "https://nordiccrypto.no/mr/calendar/f19312027f8e/",
+    "fa": "https://nordiccrypto.no/fa/calendar/f19312027f8e/",
+    "uk": "https://nordiccrypto.no/uk/calendar/f19312027f8e/",
+    "tr": "https://nordiccrypto.no/tr/calendar/f19312027f8e/",
+    "se": "https://nordiccrypto.no/se/calendar/f19312027f8e/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/f19312027f8e.json",
+   "backfill": true,
+   "event_type": "meetup",
+   "credits": {
+    "title": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Svenska Bitcoinföreningen",
+     "source_url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Svenska Bitcoinföreningen",
+    "url": "https://www.bitcoinforeningen.se/bitcoinforeningen-meetup-i-norrkoping-17e-augusti/",
+    "retrieved": "2026-11-17T11:00:00+00:00"
    }
   },
   {
@@ -6698,6 +6937,141 @@
     "url": "https://via.ritzau.dk/pressemeddelelse/13563950/er-blockchain-klar-til-erhvervslivet?publisherId=5524343",
     "retrieved": "2026-10-20T08:45:00+00:00"
    }
+  },
+  {
+   "id": "521611ebd8a7",
+   "title": "Danes in Ethereum",
+   "title_original": null,
+   "title_i18n": {
+    "nn": "Danskar i Ethereum",
+    "nb": "Dansker i Ethereum",
+    "sv": "Danskar i Ethereum",
+    "da": "Danskere i Ethereum",
+    "fi": "Tanskalaiset Ethereumissa",
+    "is": "Danir í Ethereum",
+    "zh": "Ethereum 里的丹麦人",
+    "hi": "Ethereum में डेन",
+    "es": "Daneses en Ethereum",
+    "fr": "Des Danois dans Ethereum",
+    "ar": "دنماركيون في Ethereum",
+    "bn": "Ethereum-এ ডেনরা",
+    "pt": "Dinamarqueses no Ethereum",
+    "ru": "Датчане в Ethereum",
+    "ur": "Ethereum میں ڈینز",
+    "id": "Orang Denmark di Ethereum",
+    "de": "Dänen in Ethereum",
+    "ja": "Ethereum のデンマーク人",
+    "sw": "Wadani katika Ethereum",
+    "mr": "Ethereum मधील डेन",
+    "fa": "دانمارکی‌ها در Ethereum",
+    "uk": "Данці в Ethereum",
+    "tr": "Ethereum'da Danimarkalılar",
+    "se": "Dánskalaččat Ethereumas"
+   },
+   "start": "2018-08-28T18:00:00+02:00",
+   "end": "2018-08-28T21:00:00+02:00",
+   "place": "IT University of Copenhagen, Rued Langgaardsvej 7",
+   "city": "Copenhagen",
+   "country": "DK",
+   "online": false,
+   "organiser": "Ethereum and Web3 Copenhagen",
+   "url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-08-28T21:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/521611ebd8a7/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/521611ebd8a7/",
+    "nn": "https://nordiccrypto.no/nn/calendar/521611ebd8a7/",
+    "nb": "https://nordiccrypto.no/nb/calendar/521611ebd8a7/",
+    "sv": "https://nordiccrypto.no/sv/calendar/521611ebd8a7/",
+    "da": "https://nordiccrypto.no/da/calendar/521611ebd8a7/",
+    "fi": "https://nordiccrypto.no/fi/calendar/521611ebd8a7/",
+    "is": "https://nordiccrypto.no/is/calendar/521611ebd8a7/",
+    "zh": "https://nordiccrypto.no/zh/calendar/521611ebd8a7/",
+    "hi": "https://nordiccrypto.no/hi/calendar/521611ebd8a7/",
+    "es": "https://nordiccrypto.no/es/calendar/521611ebd8a7/",
+    "fr": "https://nordiccrypto.no/fr/calendar/521611ebd8a7/",
+    "ar": "https://nordiccrypto.no/ar/calendar/521611ebd8a7/",
+    "bn": "https://nordiccrypto.no/bn/calendar/521611ebd8a7/",
+    "pt": "https://nordiccrypto.no/pt/calendar/521611ebd8a7/",
+    "ru": "https://nordiccrypto.no/ru/calendar/521611ebd8a7/",
+    "ur": "https://nordiccrypto.no/ur/calendar/521611ebd8a7/",
+    "id": "https://nordiccrypto.no/id/calendar/521611ebd8a7/",
+    "de": "https://nordiccrypto.no/de/calendar/521611ebd8a7/",
+    "ja": "https://nordiccrypto.no/ja/calendar/521611ebd8a7/",
+    "sw": "https://nordiccrypto.no/sw/calendar/521611ebd8a7/",
+    "mr": "https://nordiccrypto.no/mr/calendar/521611ebd8a7/",
+    "fa": "https://nordiccrypto.no/fa/calendar/521611ebd8a7/",
+    "uk": "https://nordiccrypto.no/uk/calendar/521611ebd8a7/",
+    "tr": "https://nordiccrypto.no/tr/calendar/521611ebd8a7/",
+    "se": "https://nordiccrypto.no/se/calendar/521611ebd8a7/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/521611ebd8a7.json",
+   "backfill": true,
+   "event_type": "meetup",
+   "credits": {
+    "title": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Ethereum and Web3 Copenhagen",
+     "source_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+     "retrieved_at": "2026-11-17T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Ethereum and Web3 Copenhagen",
+    "url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+    "retrieved": "2026-11-17T11:00:00+00:00"
+   },
+   "talk_ids": [
+    "yt-arecj2vyjlE"
+   ]
   },
   {
    "id": "add779ac5888",

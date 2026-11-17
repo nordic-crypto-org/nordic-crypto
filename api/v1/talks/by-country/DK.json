@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T07:20:32+00:00",
+ "generated_at": "2026-11-17T10:17:34+00:00",
  "preview": false,
  "country": "DK",
- "count": 16,
+ "count": 18,
  "talks": [
   {
    "id": "yt-MgISZpaxARM",
@@ -371,6 +371,70 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-Y4csot4fn5k",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Y4csot4fn5k.json"
+  },
+  {
+   "id": "yt-arecj2vyjlE",
+   "video_url": "https://www.youtube.com/watch?v=arecj2vyjlE",
+   "platform": "youtube",
+   "title": "Copenhagen Ethereum Meetup - Raiden Network",
+   "speakers": [
+    "Jacob Czepluch"
+   ],
+   "event_name": "Danes in Ethereum",
+   "event_url": "https://www.meetup.com/Copenhagen-Ethereum-Meetup/events/252115441/",
+   "calendar_event_id": "521611ebd8a7",
+   "event_id": "521611ebd8a7",
+   "unlink_reason": null,
+   "speaker_ids": [
+    "spk-jacob-czepluch"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": "2018-08-28",
+   "published": "2018-08-31",
+   "duration": "PT14M12S",
+   "language": null,
+   "channel": "Raiden Network",
+   "description": "Jacob Czepluch presents the Raiden Network at the Copenhagen Ethereum Meetup. The upload links to the meetup page for 28 August 2018 at the IT University of Copenhagen.",
+   "source_url": "https://www.youtube.com/watch?v=arecj2vyjlE&hl=en",
+   "retrieved_at": "2026-11-17T11:00:00Z",
+   "added_at": "2026-11-17T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-arecj2vyjlE",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-arecj2vyjlE.json"
+  },
+  {
+   "id": "yt-HZfYIriLHTU",
+   "video_url": "https://www.youtube.com/watch?v=HZfYIriLHTU",
+   "platform": "youtube",
+   "title": "State of Ethereum - Firmo presents at Copenhagen Meetup",
+   "speakers": [
+    "Johannes Jensen",
+    "William Gan"
+   ],
+   "event_name": "State of Ethereum Copenhagen Meetup",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-johannes-jensen",
+    "spk-william-gan"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": null,
+   "published": "2018-05-31",
+   "duration": "PT16M8S",
+   "language": null,
+   "channel": "Firmo Network",
+   "description": "Johannes Jensen and William Gan present Firmo at a State of Ethereum meetup in Copenhagen. The page does not state the day.",
+   "source_url": "https://www.youtube.com/watch?v=HZfYIriLHTU&hl=en",
+   "retrieved_at": "2026-11-17T11:00:00Z",
+   "added_at": "2026-11-17T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-HZfYIriLHTU",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-HZfYIriLHTU.json"
   },
   {
    "id": "yt-ozIqh3bz4AE",

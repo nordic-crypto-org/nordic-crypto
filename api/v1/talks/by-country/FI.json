@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T07:20:32+00:00",
+ "generated_at": "2026-11-17T10:17:34+00:00",
  "preview": false,
  "country": "FI",
- "count": 18,
+ "count": 20,
  "talks": [
   {
    "id": "yt-1lZEE92-P44",
@@ -328,6 +328,41 @@
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-Z7FA53GIE34.json"
   },
   {
+   "id": "yt-ul0aGzF-v5c",
+   "video_url": "https://www.youtube.com/watch?v=ul0aGzF-v5c",
+   "platform": "youtube",
+   "title": "Slush17 Panel: Farewell to Centralised Data",
+   "speakers": [
+    "Andreas M. Antonopoulos",
+    "Pamela Morgan",
+    "Jutta Steiner"
+   ],
+   "event_name": "Slush 2017",
+   "event_url": "https://antonopoulos.com/event/slush-conf-helsinki/",
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-andreas-m-antonopoulos",
+    "spk-pamela-morgan",
+    "spk-jutta-steiner"
+   ],
+   "city": "Helsinki",
+   "country": "FI",
+   "date": null,
+   "published": "2018-01-30",
+   "duration": "PT24M50S",
+   "language": null,
+   "channel": "aantonop",
+   "description": "Andreas M. Antonopoulos, Pamela Morgan and Jutta Steiner discuss centralised data and decentralised finance on a Slush 2017 panel. The video page links to a Helsinki event page and does not state the day.",
+   "source_url": "https://www.youtube.com/watch?v=ul0aGzF-v5c&hl=en",
+   "retrieved_at": "2026-11-17T11:00:00Z",
+   "added_at": "2026-11-17T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-ul0aGzF-v5c",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-ul0aGzF-v5c.json"
+  },
+  {
    "id": "yt-uqVU1iMJPzA",
    "video_url": "https://www.youtube.com/watch?v=uqVU1iMJPzA",
    "platform": "youtube",
@@ -423,6 +458,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-AULH7Qw7RCk",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-AULH7Qw7RCk.json"
+  },
+  {
+   "id": "yt-O_vAk0nZKPo",
+   "video_url": "https://www.youtube.com/watch?v=O_vAk0nZKPo",
+   "platform": "youtube",
+   "title": "ZDAY 2017: Kryptovaluutoilla ja lohkoketjuteknologialla kohti RBE:tä - Henry Brade",
+   "speakers": [
+    "Henry Brade"
+   ],
+   "event_name": "ZDAY Finland 2017",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not state the day",
+   "speaker_ids": [
+    "spk-henry-brade"
+   ],
+   "city": null,
+   "country": "FI",
+   "date": null,
+   "published": "2017-07-27",
+   "duration": "PT44M29S",
+   "language": null,
+   "channel": "Zeitgeist Suomi",
+   "description": "Henry Brade speaks at ZDAY Finland 2017 on cryptocurrencies and blockchain. The page does not state the city or the day.",
+   "source_url": "https://www.youtube.com/watch?v=O_vAk0nZKPo&hl=en",
+   "retrieved_at": "2026-11-17T11:00:00Z",
+   "added_at": "2026-11-17T11:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-O_vAk0nZKPo",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-O_vAk0nZKPo.json"
   },
   {
    "id": "yt-kmizKAmfsWU",

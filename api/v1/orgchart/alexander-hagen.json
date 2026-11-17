@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T07:20:32+00:00",
+ "generated_at": "2026-11-17T10:17:34+00:00",
  "preview": false,
  "item": {
   "id": "alexander-hagen",
@@ -24,10 +24,26 @@
     "title": "Name and role only from the registry",
     "source_name": "Brønnøysund Register Centre",
     "date": "2026-10-03"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=GLZnpCukICg&hl=en",
+    "title": "Fireside Chat in Stockholm: Bitcoin Treasury as a New Asset Class",
+    "source_name": "Kaupr Media",
+    "date": "2026-11-17"
    }
   ],
   "logo": null,
   "image": null,
-  "profiles": []
+  "profiles": [],
+  "talk_ids": [
+   "yt-GLZnpCukICg"
+  ],
+  "talks": [
+   {
+    "id": "yt-GLZnpCukICg",
+    "title": "Fireside Chat in Stockholm: Bitcoin Treasury as a New Asset Class",
+    "video_url": "https://www.youtube.com/watch?v=GLZnpCukICg"
+   }
+  ]
  }
 }
