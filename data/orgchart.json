@@ -4763,13 +4763,19 @@
    "name": "Lunar Block (Lunar Block A/S)",
    "group": "MiCA-licensed providers (CASPs)",
    "url": "https://www.lunar.app/dk/privat/krypto",
-   "description": "Crypto-asset service provider authorised by Finanstilsynet under MiCA on 15 Sep 2025, per ESMA's register.",
+   "description": "Crypto-asset service provider authorised by Finanstilsynet under MiCA on 15 Sep 2025, per ESMA's register. Crypto activities are being wound down and customers move to Pluto.markets on 17 December 2026, according to Lunar's press release and Børsen.",
    "sources": [
     {
      "url": "https://www.esma.europa.eu/sites/default/files/2024-12/CASPS.csv",
      "title": "Interim MiCA register: authorised CASPs (CASPS.csv)",
      "source_name": "ESMA",
      "date": "2026-10-03"
+    },
+    {
+     "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets",
+     "title": "Lunar sells crypto customer portfolio to Pluto.markets",
+     "source_name": "Lunar",
+     "date": "2026-11-17"
     }
    ],
    "type": "organisation",
@@ -6197,6 +6203,162 @@
    "image": null,
    "review": "pending",
    "added": "2026-11-16",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "dk-pluto-markets",
+   "name": "Pluto.markets (Pluto.markets Fondsmæglerselskab A/S)",
+   "type": "organisation",
+   "sector": "private",
+   "country": "DK",
+   "group": "Companies & startups",
+   "description": "Danish investment platform, regulated in Denmark. On 16 November 2026 it agreed to acquire Lunar’s active crypto customer portfolio, according to Lunar’s press release.",
+   "sources": [
+    {
+     "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets",
+     "title": "Lunar sells crypto customer portfolio to Pluto.markets",
+     "source_name": "Lunar",
+     "date": "2026-11-17"
+    },
+    {
+     "url": "https://pluto.markets/",
+     "title": "Pluto investeringsplatform",
+     "source_name": "Pluto.markets",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": "https://pluto.markets/",
+   "image": null,
+   "review": "pending",
+   "added": "2026-11-17",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "dk-lunar",
+   "name": "Lunar",
+   "type": "organisation",
+   "sector": "private",
+   "country": "DK",
+   "group": "Companies & startups",
+   "description": "Danish challenger bank. On 16 November 2026 it announced the sale of its active crypto customer portfolio to Pluto.markets, according to its press release.",
+   "sources": [
+    {
+     "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets",
+     "title": "Lunar sells crypto customer portfolio to Pluto.markets",
+     "source_name": "Lunar",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": "https://www.lunar.app",
+   "image": null,
+   "review": "pending",
+   "added": "2026-11-17",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "fi-um",
+   "name": "Ministry for Foreign Affairs of Finland (Ulkoministeriö)",
+   "type": "organisation",
+   "sector": "public",
+   "country": "FI",
+   "group": "Parliament & government",
+   "description": "Finland’s foreign ministry. On 16 November 2026 it reported that the foreign ministers of Finland, Denmark, Estonia, France and Lithuania had asked the EU for stronger action against the use of crypto-assets to evade Russia sanctions.",
+   "sources": [
+    {
+     "url": "https://um.fi/ajankohtaista/-/asset_publisher/gc654PySnjTX/content/suomi-tanska-viro-ranska-ja-liettua-vaativat-tehokkaampia-toimia-venajan-kryptovaroihin-puuttumiseksi",
+     "title": "Suomi, Tanska, Viro, Ranska ja Liettua vaativat tehokkaampia toimia Venäjän kryptovaroihin puuttumiseksi",
+     "source_name": "Ulkoministeriö",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": "https://um.fi",
+   "image": null,
+   "review": "pending",
+   "added": "2026-11-17",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "elina-valtonen",
+   "name": "Elina Valtonen",
+   "type": "person",
+   "sector": "public",
+   "country": "FI",
+   "group": null,
+   "description": null,
+   "sources": [
+    {
+     "url": "https://um.fi/ajankohtaista/-/asset_publisher/gc654PySnjTX/content/suomi-tanska-viro-ranska-ja-liettua-vaativat-tehokkaampia-toimia-venajan-kryptovaroihin-puuttumiseksi",
+     "title": "Suomi, Tanska, Viro, Ranska ja Liettua vaativat tehokkaampia toimia Venäjän kryptovaroihin puuttumiseksi",
+     "source_name": "Ulkoministeriö",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": null,
+   "image": null,
+   "org": "fi-um",
+   "role": "Minister for Foreign Affairs of Finland",
+   "review": "pending",
+   "added": "2026-11-17",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "gitte-roskaer",
+   "name": "Gitte Roskær",
+   "type": "person",
+   "sector": "private",
+   "country": "DK",
+   "group": null,
+   "description": null,
+   "sources": [
+    {
+     "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets",
+     "title": "Lunar sells crypto customer portfolio to Pluto.markets",
+     "source_name": "Lunar",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": null,
+   "image": null,
+   "org": "dk-lunar",
+   "role": "Interim co-CEO of Lunar",
+   "review": "pending",
+   "added": "2026-11-17",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "joakim-bruchmann",
+   "name": "Joakim Bruchmann",
+   "type": "person",
+   "sector": "private",
+   "country": "DK",
+   "group": null,
+   "description": null,
+   "sources": [
+    {
+     "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets",
+     "title": "Lunar sells crypto customer portfolio to Pluto.markets",
+     "source_name": "Lunar",
+     "date": "2026-11-17"
+    }
+   ],
+   "url": null,
+   "image": null,
+   "org": "dk-pluto-markets",
+   "role": "Co-founder and CEO of Pluto.markets",
+   "review": "pending",
+   "added": "2026-11-17",
    "origin": "Nordic Crypto research",
    "status": "published",
    "profiles": []

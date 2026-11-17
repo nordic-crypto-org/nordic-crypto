@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T03:52:09+00:00",
+ "generated_at": "2026-11-17T06:43:02+00:00",
  "preview": false,
  "title": "Nordic Crypto data API",
  "sign_off": "The Nordic Crypto team",
@@ -29,34 +29,34 @@
   "not_investment_advice": true
  },
  "counts": {
-  "news": 133,
+  "news": 136,
   "news_by_country": {
    "NO": 64,
-   "SE": 54,
-   "DK": 9,
-   "FI": 5,
+   "SE": 55,
+   "DK": 10,
+   "FI": 6,
    "IS": 0,
    "NORDIC": 1,
    "EU": 0
   },
   "newsletters": 7,
-  "events": 30,
-  "events_upcoming": 11,
+  "events": 26,
+  "events_upcoming": 9,
   "events_ongoing": 0,
-  "events_past": 19,
-  "events_previous": 74,
+  "events_past": 17,
+  "events_previous": 72,
   "talks": 173,
-  "sources": 1043,
+  "sources": 1042,
   "academia": {
-   "courses": 9,
-   "groups": 4,
+   "courses": 7,
+   "groups": 3,
    "publications": 408,
-   "research": 31
+   "research": 3
   },
   "books": 25,
   "podcasts": 43,
   "developers": 0,
-  "org_entities": 478,
+  "org_entities": 484,
   "org_relations": 15,
   "profiles": 20,
   "images": 64,
@@ -92,8 +92,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/news.json",
    "summary": "Published news and our own stories, newest first.",
    "schema": "NewsList",
-   "example_url": "https://nordiccrypto.no/api/v1/news/57624ae74055.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/news/57624ae74055.json",
+   "example_url": "https://nordiccrypto.no/api/v1/news/a475506ce16f.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/news/a475506ce16f.json",
    "item_path": "/api/v1/news/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/news/{id}.json"
   },
@@ -151,8 +151,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/events.json",
    "summary": "Public events, soonest start first, including past events.",
    "schema": "EventList",
-   "example_url": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/4a60aa9b39c4.json",
+   "example_url": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/events/ccc2eea6b213.json",
    "item_path": "/api/v1/events/{id}.json",
    "item_url_template": "https://nordiccrypto.no/api/v1/events/{id}.json"
   },
@@ -289,8 +289,8 @@
    "url_custom_domain": "https://nordiccrypto.no/api/v1/academia/{id}.json",
    "summary": "One academia row. The id is in academia.json.",
    "schema": "AcademiaItem",
-   "example_url": "https://nordiccrypto.no/api/v1/academia/FI-CS-AJ0100.json",
-   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/academia/FI-CS-AJ0100.json"
+   "example_url": "https://nordiccrypto.no/api/v1/academia/NO-TTM4195.json",
+   "example_url_custom_domain": "https://nordiccrypto.no/api/v1/academia/NO-TTM4195.json"
   },
   {
    "id": "api-v1-books",
@@ -559,7 +559,7 @@
   },
   {
    "description": "One news item",
-   "url": "https://nordiccrypto.no/api/v1/news/57624ae74055.json"
+   "url": "https://nordiccrypto.no/api/v1/news/a475506ce16f.json"
   },
   {
    "description": "Newsletter issues",
