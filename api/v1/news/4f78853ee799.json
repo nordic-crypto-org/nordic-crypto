@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-16T17:22:51+00:00",
+ "generated_at": "2026-11-17T03:52:09+00:00",
  "preview": false,
  "item": {
   "id": "4f78853ee799",
@@ -109,7 +109,31 @@
    "name": "Danmarks Nationalbank — Staff Paper no. 3, 15 April 2026, «Borgeres eksponering mod kryptoaktiver er fortsat lav»",
    "url": "https://www.nationalbanken.dk/media/bgziykik/borgeres-eksponering-mod-kryptoaktiver-er-fortsat-lav.pdf"
   },
-  "also_covered_by": [],
+  "also_covered_by": [
+   {
+    "outlet": "borsen",
+    "outlet_name": "Børsen",
+    "url": "https://borsen.dk/nyheder/finans/kunderne-bider-ikke-pa-danske-bank-og-nordeas-kryptoprodukter?b_source=borsen&b_medium=row_22&b_campaign=list_3",
+    "title": "Kunderne bider ikke på Danske Bank og Nordeas kryptoprodukter",
+    "published": "2026-11-14T09:03:11+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/borsen.svg",
+     "source_url": "https://cdn.borsen.cloud/sites/borsendk/images/borsen_logo.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
+    }
+   }
+  ],
   "sources": [
    {
     "outlet": "borsen",
@@ -133,21 +157,44 @@
      "credit": "Official website",
      "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
     }
+   },
+   {
+    "outlet": "borsen",
+    "outlet_name": "Børsen",
+    "url": "https://borsen.dk/nyheder/finans/kunderne-bider-ikke-pa-danske-bank-og-nordeas-kryptoprodukter?b_source=borsen&b_medium=row_22&b_campaign=list_3",
+    "title": "Kunderne bider ikke på Danske Bank og Nordeas kryptoprodukter",
+    "published": "2026-11-14T09:03:11+00:00",
+    "lang": "Danish",
+    "language_code": "da",
+    "country": "DK",
+    "source_type": "national",
+    "paywall": true,
+    "primary": false,
+    "logo": {
+     "kind": "logo",
+     "file_url": "https://nordiccrypto.no/assets/img/logos/borsen.svg",
+     "source_url": "https://cdn.borsen.cloud/sites/borsendk/images/borsen_logo.svg",
+     "author": null,
+     "license": null,
+     "license_url": null,
+     "credit": "Official website",
+     "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
+    }
    }
   ],
   "coverage": {
-   "count": 1,
+   "count": 2,
    "by_country": [
     {
      "country": "DK",
-     "count": 1,
+     "count": 2,
      "share": 1.0
     }
    ],
    "by_source_type": [
     {
      "type": "national",
-     "count": 1,
+     "count": 2,
      "share": 1.0
     },
     {

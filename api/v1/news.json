@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-16T17:22:51+00:00",
+ "generated_at": "2026-11-17T03:52:09+00:00",
  "preview": false,
- "updated": "2026-11-16T17:20:30+00:00",
+ "updated": "2026-11-17T03:48:49+00:00",
  "language_note": "summary is English. summary_i18n holds nn, nb, sv, da, fi and is when that translation is published. Other site languages use the English summary until a translation exists. title is the source headline. title_en is our English headline when we wrote one. title_i18n holds nn, nb, sv, da, fi and is when that headline is not already the source headline. The site shows the page-language headline first and the source headline under it when they differ. Other site languages use title_en. source_logo is the outlet image when assets/img/logos/logos.json has a checked file for the source id (or its outlet, or a _source_alias). Null means show the source name as text. illustration is the licensed picture assigned to the story, with source, author, license and url. The site does not render it. It is never a photograph copied or hotlinked from another newspaper. image is this story's own illustration when one has been generated: url, width, height, alt, style and kind. The story page uses that url as the hero and as og:image, in every language. Null means the page keeps the Nordic Crypto brand image. The picture is not a newspaper photograph. primary_source is that outlet. primary_source_document is an editor-recorded original document (name and url), such as a regulator press release, and is separate from that outlet. also_covered_by lists every other outlet on the same event (outlet, outlet_name, url, title, published, lang, country, source_type, paywall, logo). sources is the primary plus those outlets. coverage.count is how many outlets, coverage.by_country and coverage.by_source_type (national, regional, official, international) are the counts and shares for the bars, including zeros. html_url is our page for the story. url on the item is the primary outlet. The site language list is /api/v1/languages.json.",
  "logo_note": "logo / source_logo is the outlet's logo (file_url is the original, SVG or WebP). logo_url (sources) and source_logo_url (news) are the same logo as a raster image, PNG or WebP, never SVG, for apps that cannot draw SVG. Logos are the publishers' own trademarks, shown only to identify the source of a headline. They are null until the editor has checked the logo.",
  "count": 133,
@@ -277,7 +277,31 @@
     "name": "Danmarks Nationalbank — Staff Paper no. 3, 15 April 2026, «Borgeres eksponering mod kryptoaktiver er fortsat lav»",
     "url": "https://www.nationalbanken.dk/media/bgziykik/borgeres-eksponering-mod-kryptoaktiver-er-fortsat-lav.pdf"
    },
-   "also_covered_by": [],
+   "also_covered_by": [
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/kunderne-bider-ikke-pa-danske-bank-og-nordeas-kryptoprodukter?b_source=borsen&b_medium=row_22&b_campaign=list_3",
+     "title": "Kunderne bider ikke på Danske Bank og Nordeas kryptoprodukter",
+     "published": "2026-11-14T09:03:11+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/borsen.svg",
+      "source_url": "https://cdn.borsen.cloud/sites/borsendk/images/borsen_logo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
+     }
+    }
+   ],
    "sources": [
     {
      "outlet": "borsen",
@@ -301,21 +325,44 @@
       "credit": "Official website",
       "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
      }
+    },
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/kunderne-bider-ikke-pa-danske-bank-og-nordeas-kryptoprodukter?b_source=borsen&b_medium=row_22&b_campaign=list_3",
+     "title": "Kunderne bider ikke på Danske Bank og Nordeas kryptoprodukter",
+     "published": "2026-11-14T09:03:11+00:00",
+     "lang": "Danish",
+     "language_code": "da",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true,
+     "primary": false,
+     "logo": {
+      "kind": "logo",
+      "file_url": "https://nordiccrypto.no/assets/img/logos/borsen.svg",
+      "source_url": "https://cdn.borsen.cloud/sites/borsendk/images/borsen_logo.svg",
+      "author": null,
+      "license": null,
+      "license_url": null,
+      "credit": "Official website",
+      "raster_url": "https://nordiccrypto.no/assets/img/logos/borsen.png"
+     }
     }
    ],
    "coverage": {
-    "count": 1,
+    "count": 2,
     "by_country": [
      {
       "country": "DK",
-      "count": 1,
+      "count": 2,
       "share": 1.0
      }
     ],
     "by_source_type": [
      {
       "type": "national",
-      "count": 1,
+      "count": 2,
       "share": 1.0
      },
      {
