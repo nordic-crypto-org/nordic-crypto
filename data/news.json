@@ -20,8 +20,9 @@
    ],
    "matched": [],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "No real crypto angle (Nvidia leadership). KVG template with exchange and casino links. Drifts into conspiratorial opinion. Standing exclusion. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "4490a524b40d",
@@ -72,15 +73,16 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Technical analysis and price talk (head-and-shoulders, a fall below 60,000 dollars, “in theory to 0.0”). Body unverified behind login. Standing exclusion. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "a475506ce16f",
    "url": "https://salkunrakentaja.fi/2026/11/valtonen-kryptovarat-venaja-pakotteet",
    "title": "Valtonen vaatii EU:lta vahvempia toimia Venäjän sotaa rahoittavia kryptovirtoja vastaan",
-   "title_en": null,
+   "title_en": "Five EU foreign ministers ask for stronger action on crypto used to evade Russia sanctions",
    "source": "salkunrakentaja.fi",
    "source_name": "salkunrakentaja",
    "country": "FI",
@@ -92,20 +94,80 @@
    "published": "2026-11-16T14:10:21+00:00",
    "fetched": "2026-11-17T02:46:52+00:00",
    "topics": [
-    "crypto"
+    "sanctions",
+    "policy"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "The foreign ministers of Finland, Denmark, Estonia, France and Lithuania are asking the EU for stronger action against the use of crypto-assets to evade Russia sanctions, the Finnish Ministry for Foreign Affairs said on 16 November 2026. The ministers want the EU to target crypto networks that help sustain Russia’s war economy, tighten enforcement in member states and close regulatory and supervisory gaps. The letter itself has not been published in full.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-17T04:46:55+01:00",
+   "primary_source": {
+    "name": "Finnish Ministry for Foreign Affairs, 16 November 2026, «Suomi, Tanska, Viro, Ranska ja Liettua vaativat tehokkaampia toimia Venäjän kryptovaroihin puuttumiseksi»",
+    "url": "https://um.fi/ajankohtaista/-/asset_publisher/gc654PySnjTX/content/suomi-tanska-viro-ranska-ja-liettua-vaativat-tehokkaampia-toimia-venajan-kryptovaroihin-puuttumiseksi"
+   },
+   "title_i18n": {
+    "nn": "Fem utanriksministrar i EU ber om sterkare tiltak mot krypto brukt til å omgå Russland-sanksjonar",
+    "nb": "Fem utenriksministre i EU ber om sterkere tiltak mot krypto brukt til å omgå Russland-sanksjoner",
+    "sv": "Fem EU-utrikesministrar kräver starkare åtgärder mot krypto som används för att kringgå Rysslandssanktioner",
+    "da": "Fem EU-udenrigsministre beder om stærkere indgreb mod krypto brugt til at omgå Rusland-sanktioner",
+    "is": "Fimm utanríkisráðherrar ESB biðja um öflugri aðgerðir gegn rafmyntum sem notaðar eru til að sniðganga viðskiptaþvinganir gegn Rússlandi",
+    "zh": "五国外长要求欧盟加强对利用加密货币规避对俄制裁的行动",
+    "hi": "पाँच EU विदेश मंत्रियों ने रूस प्रतिबंधों से बचने के लिए क्रिप्टो के उपयोग पर कड़ी कार्रवाई मांगी",
+    "es": "Cinco ministros de Exteriores de la UE piden una acción más firme contra el uso de cripto para evadir sanciones a Rusia",
+    "fr": "Cinq ministres des Affaires étrangères de l’UE demandent une action plus ferme contre l’usage de crypto pour contourner les sanctions contre la Russie",
+    "ar": "خمسة وزراء خارجية في الاتحاد الأوروبي يطلبون إجراءات أقوى ضد استخدام التشفير للالتفاف على عقوبات روسيا",
+    "bn": "পাঁচ ইইউ পররাষ্ট্রমন্ত্রী রাশিয়া-নিষেধাজ্ঞা এড়াতে ক্রিপ্টো ব্যবহারের বিরুদ্ধে কঠোর পদক্ষেপ চান",
+    "pt": "Cinco ministros dos Negócios Estrangeiros da UE pedem uma ação mais firme contra o uso de cripto para evadir sanções à Rússia",
+    "ru": "Пять министров иностранных дел ЕС просят усилить меры против использования криптоактивов для обхода санкций против России",
+    "ur": "یورپی یونین کے پانچ وزرائے خارجہ روس پر پابندیوں سے بچنے کے لیے کرپٹو کے استعمال کے خلاف سخت اقدام کی مانگ کرتے ہیں",
+    "id": "Lima menteri luar negeri Uni Eropa meminta tindakan lebih tegas terhadap kripto yang dipakai untuk menghindari sanksi Rusia",
+    "de": "Fünf EU-Außenminister fordern schärferes Vorgehen gegen Krypto zur Umgehung von Russland-Sanktionen",
+    "ja": "EUの5カ国外相、対ロシア制裁回避の暗号資産利用への強化を要請",
+    "sw": "Mawaziri watano wa Mambo ya Nje wa EU wanaomba hatua kali zaidi dhidi ya krypto inayotumika kuepuka vikwazo vya Urusi",
+    "mr": "पाच EU परराष्ट्र मंत्र्यांनी रशियावरील निर्बंध टाळण्यासाठी क्रिप्टो वापरावर कठोर कारवाईची मागणी केली",
+    "fa": "پنج وزیر خارجه اتحادیه اروپا خواستار اقدام قوی‌تر در برابر استفاده از رمزارز برای دور زدن تحریم‌های روسیه شدند",
+    "uk": "П’ять міністрів закордонних справ ЄС просять рішучіших дій проти використання криптоактивів для обходу санкцій проти Росії",
+    "tr": "Beş AB dışişleri bakanı, Rusya yaptırımlarından kaçmak için kripto kullanımına karşı daha güçlü tedbir istedi",
+    "se": "Vihtta EU olgoriikkaministtar bivdet nannoset doaimmaid krypto vuostá mii geavahuvvo Ruošša bákkolašvuođaid birgen dihte"
+   },
+   "title_i18n_source": "Valtonen vaatii EU:lta vahvempia toimia Venäjän sotaa rahoittavia kryptovirtoja vastaan",
+   "summary_i18n": {
+    "nn": "Utanriksministrane i Finland, Danmark, Estland, Frankrike og Litauen ber EU om sterkare tiltak mot bruk av kryptoaktiva til å omgå sanksjonar mot Russland, opplyste det finske utanriksdepartementet 16. november 2026. Ministrane vil at EU skal rette tiltak mot kryptonettverk som er med på å halde oppe krigsøkonomien til Russland, skjerpe handsaminga i medlemslanda og tette hol i regelverk og tilsyn. Sjølve brevet er ikkje lagt fram i sin heilskap.",
+    "nb": "Utenriksministrene i Finland, Danmark, Estland, Frankrike og Litauen ber EU om sterkere tiltak mot bruk av kryptoaktiva til å omgå sanksjoner mot Russland, opplyste det finske utenriksdepartementet 16. november 2026. Ministrene vil at EU skal rette tiltak mot kryptonettverk som bidrar til å opprettholde Russlands krigsøkonomi, skjerpe håndhevingen i medlemslandene og tette hull i regelverk og tilsyn. Selve brevet er ikke offentliggjort i sin helhet.",
+    "sv": "Utrikesministrarna i Finland, Danmark, Estland, Frankrike och Litauen begär att EU ska vidta starkare åtgärder mot användningen av kryptotillgångar för att kringgå sanktioner mot Ryssland, meddelade Finlands utrikesministerium den 16 november 2026. Ministrarna vill att EU ska rikta åtgärder mot kryptonätverk som bidrar till att upprätthålla Rysslands krigsekonomi, skärpa efterlevnaden i medlemsstaterna och täppa till luckor i reglering och tillsyn. Själva brevet har inte offentliggjorts i sin helhet.",
+    "da": "Udenrigsministrene fra Finland, Danmark, Estland, Frankrig og Litauen beder EU om stærkere indgreb mod brugen af kryptoaktiver til at omgå sanktioner mod Rusland, oplyste det finske udenrigsministerium den 16. november 2026. Ministrene vil have, at EU retter indgreb mod kryptonettværk, der er med til at opretholde Ruslands krigsøkonomi, skærper håndhævelsen i medlemsstaterne og lukker huller i regulering og tilsyn. Selve brevet er ikke offentliggjort i sin helhed.",
+    "fi": "Suomen, Tanskan, Viron, Ranskan ja Liettuan ulkoministerit vaativat EU:lta entistä tehokkaampia toimia kryptovarojen käyttöä vastaan Venäjä-pakotteiden kiertämisessä, Suomen ulkoministeriö kertoi 16. marraskuuta 2026. Ministerit haluavat EU:n kohdentavan toimia kryptoverkostoihin, jotka auttavat ylläpitämään Venäjän sotataloutta, tehostavan täytäntöönpanoa jäsenvaltioissa sekä paikkaavan sääntelyn ja valvonnan aukkoja. Itse kirjettä ei ole julkaistu kokonaisuudessaan.",
+    "is": "Utanríkisráðherrar Finnlands, Danmerkur, Eistlands, Frakklands og Litháens biðja ESB um öflugri aðgerðir gegn notkun rafmyntaeigna til að sniðganga viðskiptaþvinganir gegn Rússlandi, að sögn utanríkisráðuneytis Finnlands 16. nóvember 2026. Ráðherrarnir vilja að ESB beini aðgerðum að rafmyntanetum sem stuðla að því að halda uppi stríðshagkerfi Rússlands, herði framkvæmd í aðildarríkjunum og loki eyðum í reglusetningu og eftirliti. Bréfið sjálft hefur ekki verið birt í heild.",
+    "zh": "芬兰外交部2026年11月16日表示，芬兰、丹麦、爱沙尼亚、法国和立陶宛五国外长正要求欧盟，更有力地应对利用加密资产规避对俄制裁的行为。外长们希望欧盟针对有助于维持俄罗斯战争经济的加密网络采取措施，加强成员国的执法，并填补监管缺口。该信函全文尚未公布。",
+    "hi": "फिनलैंड के विदेश मंत्रालय ने 16 नवंबर 2026 को कहा कि फिनलैंड, डेनमार्क, एस्टोनिया, फ्रांस और लिथुआनिया के विदेश मंत्री यूरोपीय संघ से रूस पर प्रतिबंधों से बचने के लिए क्रिप्टो-संपत्तियों के उपयोग के विरुद्ध अधिक मजबूत कार्रवाई की मांग कर रहे हैं. मंत्री चाहते हैं कि संघ उन क्रिप्टो नेटवर्कों को निशाना बनाए जो रूस की युद्ध-अर्थव्यवस्था को बनाए रखने में मदद करते हैं, सदस्य देशों में प्रवर्तन कड़े करें और नियामक तथा पर्यवेक्षी कमियों को बंद करें. पत्र स्वयं पूर्ण रूप में प्रकाशित नहीं हुआ है.",
+    "es": "Los ministros de Exteriores de Finlandia, Dinamarca, Estonia, Francia y Lituania piden a la UE una acción más firme contra el uso de criptoactivos para evadir las sanciones a Rusia, informó el Ministerio de Asuntos Exteriores de Finlandia el 16 de noviembre de 2026. Los ministros quieren que la UE dirija medidas contra las redes de cripto que contribuyen a sostener la economía de guerra rusa, refuerce la aplicación en los Estados miembros y cierre lagunas de regulación y supervisión. La carta en sí no se ha publicado íntegramente.",
+    "fr": "Les ministres des Affaires étrangères de la Finlande, du Danemark, de l’Estonie, de la France et de la Lituanie demandent à l’UE une action plus ferme contre l’usage de crypto-actifs pour contourner les sanctions contre la Russie, a indiqué le ministère finlandais des Affaires étrangères le 16 novembre 2026. Ils souhaitent que l’UE cible les réseaux crypto qui contribuent à soutenir l’économie de guerre russe, renforce l’application dans les États membres et comble les lacunes de régulation et de supervision. La lettre elle-même n’a pas été publiée dans son intégralité.",
+    "ar": "قال وزارة الخارجية الفنلندية في 16 نوفمبر 2026 إن وزراء خارجية فنلندا والدنمارك وإستونيا وفرنسا وليتوانيا يطلبون من الاتحاد الأوروبي إجراءات أقوى ضد استخدام الأصول المشفرة للالتفاف على العقوبات المفروضة على روسيا. ويريد الوزراء أن يوجه الاتحاد إجراءات إلى شبكات التشفير التي تساعد على استمرار اقتصاد الحرب الروسي، وأن يشدد الإنفاذ في الدول الأعضاء ويسد ثغرات التنظيم والرقابة. ولم يُنشر نص الرسالة نفسه كاملًا.",
+    "bn": "ফিনল্যান্ডের পররাষ্ট্র মন্ত্রণালয় ১৬ নভেম্বর ২০২৬-এ জানিয়েছে, ফিনল্যান্ড, ডেনমার্ক, এস্তোনিয়া, ফ্রান্স ও লিথুয়ানিয়ার পররাষ্ট্রমন্ত্রীরা রাশিয়ার ওপর নিষেধাজ্ঞা এড়াতে ক্রিপ্টো সম্পদ ব্যবহারের বিরুদ্ধে ইইউকে আরও কঠোর পদক্ষেপ নিতে বলছেন। মন্ত্রীরা চান ইইউ সেইসব ক্রিপ্টো নেটওয়ার্ককে লক্ষ্য করুক যা রাশিয়ার যুদ্ধ অর্থনীতিকে টিকিয়ে রাখতে সাহায্য করে, সদস্য রাষ্ট্রে প্রয়োগ কঠোর করুক এবং নিয়ন্ত্রণ ও তদারকির ফাঁক বন্ধ করুক। চিঠিটি পুরোপুরি প্রকাশ করা হয়নি।",
+    "pt": "Os ministros dos Negócios Estrangeiros da Finlândia, da Dinamarca, da Estónia, da França e da Lituânia pedem à UE uma ação mais firme contra o uso de criptoativos para evadir as sanções à Rússia, informou o Ministério dos Negócios Estrangeiros da Finlândia em 16 de novembro de 2026. Os ministros querem que a UE dirija medidas contra redes de cripto que ajudam a sustentar a economia de guerra russa, reforce a aplicação nos Estados-membros e feche lacunas de regulação e supervisão. A carta em si não foi publicada na íntegra.",
+    "ru": "Как сообщило Министерство иностранных дел Финляндии 16 ноября 2026 года, министры иностранных дел Финляндии, Дании, Эстонии, Франции и Литвы просят ЕС усилить меры против использования криптоактивов для обхода санкций против России. Министры хотят, чтобы ЕС направлял меры против криптосетей, которые помогают поддерживать военную экономику России, ужесточал правоприменение в государствах-членах и закрывал пробелы в регулировании и надзоре. Само письмо полностью не опубликовано.",
+    "ur": "فن لینڈ کی وزارت خارجہ نے 16 نومبر 2026 کو کہا کہ فن لینڈ، ڈنمارک، استونیا، فرانس اور لتھوانیا کے وزرائے خارجہ یورپی یونین سے روس پر پابندیوں سے بچنے کے لیے کرپٹو اثاثوں کے استعمال کے خلاف سخت تر اقدام کی درخواست کر رہے ہیں۔ وزراء چاہتے ہیں کہ یونین ان کرپٹو نیٹ ورکس کو نشانہ بنائے جو روس کی جنگی معیشت کو قائم رکھنے میں مدد دیتے ہیں، رکن ممالک میں نفاذ سخت کرے اور ضابطے و نگرانی کے خلا بند کرے۔ خود خط مکمل طور پر شائع نہیں ہوا۔",
+    "id": "Menteri luar negeri Finlandia, Denmark, Estonia, Prancis, dan Lituania meminta Uni Eropa mengambil tindakan lebih tegas terhadap penggunaan aset kripto untuk menghindari sanksi terhadap Rusia, kata Kementerian Luar Negeri Finlandia pada 16 November 2026. Para menteri ingin UE menargetkan jaringan kripto yang membantu menopang ekonomi perang Rusia, memperketat penegakan di negara anggota, serta menutup celah regulasi dan pengawasan. Surat itu sendiri belum diterbitkan secara utuh.",
+    "de": "Die Außenminister Finnlands, Dänemarks, Estlands, Frankreichs und Litauens verlangen von der EU ein schärferes Vorgehen gegen die Nutzung von Krypto-Vermögenswerten zur Umgehung von Sanktionen gegen Russland, teilte das finnische Außenministerium am 16. November 2026 mit. Die Minister wollen, dass die EU Maßnahmen gegen Krypto-Netzwerke richtet, die Russlands Kriegswirtschaft stützen, die Durchsetzung in den Mitgliedstaaten verschärft und Lücken in Regulierung und Aufsicht schließt. Das Schreiben selbst ist nicht vollständig veröffentlicht worden.",
+    "ja": "フィンランド外務省は2026年11月16日、フィンランド、デンマーク、エストニア、フランス、リトアニアの外相が、対ロシア制裁の回避に暗号資産が使われることへの対策強化をEUに求めていると発表した。外相らは、ロシアの戦時経済を支える暗号資産ネットワークを対象とし、加盟国での執行を強化し、規制・監督の抜け穴をふさぐよう求めている。書簡そのものは全文が公表されていない。",
+    "sw": "Mawaziri wa Mambo ya Nje wa Ufini, Denmark, Estonia, Ufaransa na Lithuania wanaomba EU ichukue hatua kali zaidi dhidi ya matumizi ya mali za krypto kuepuka vikwazo dhidi ya Urusi, Wizara ya Mambo ya Nje ya Ufini ilisema tarehe 16 Novemba 2026. Mawaziri wanataka EU ilenge mitandao ya krypto inayosaidia kudumisha uchumi wa vita wa Urusi, ikaze utekelezaji katika nchi wanachama na kuziba mapengo ya udhibiti na usimamizi. Barua yenyewe haijachapishwa kamili.",
+    "mr": "फिनलंडच्या परराष्ट्र मंत्रालयाने 16 नोव्हेंबर 2026 रोजी सांगितले की, फिनलंड, डेन्मार्क, एस्टोनिया, फ्रान्स आणि लिथुआनियाचे परराष्ट्र मंत्री रशियावरील निर्बंध टाळण्यासाठी क्रिप्टो-मालमत्ता वापरण्याच्या विरोधात EU कडून अधिक कठोर कारवाईची मागणी करत आहेत. मंत्री हव्या आहेत की EU रशियाची युद्ध अर्थव्यवस्था टिकवणाऱ्या क्रिप्टो जाळ्यांना लक्ष्य करेल, सदस्य देशांत अंमलबजावणी कडक करेल आणि नियमनातील व पर्यवेक्षणातील त्रुटी बंद करेल. स्वतः पत्र पूर्ण स्वरूपात प्रसिद्ध झालेले नाही.",
+    "fa": "وزارت امور خارجه فنلاند در ۱۶ نوامبر ۲۰۲۶ اعلام کرد وزیران خارجه فنلاند، دانمارک، استونی، فرانسه و لیتوانی از اتحادیه اروپا می‌خواهند در برابر استفاده از دارایی‌های رمزارزی برای دور زدن تحریم‌های روسیه اقدام قوی‌تری انجام دهد. وزیران می‌خواهند اتحادیه شبکه‌های رمزارزی را که به تداوم اقتصاد جنگی روسیه کمک می‌کنند هدف قرار دهد، اجرا را در کشورهای عضو سخت‌گیرانه‌تر کند و خلأهای نظارتی و مقرراتی را ببندد. خود نامه به‌طور کامل منتشر نشده است.",
+    "uk": "Як повідомило Міністерство закордонних справ Фінляндії 16 листопада 2026 року, міністри закордонних справ Фінляндії, Данії, Естонії, Франції та Литви просять ЄС рішучіше протидіяти використанню криптоактивів для обходу санкцій проти Росії. Міністри хочуть, щоб ЄС спрямував заходи проти криптомереж, які допомагають підтримувати воєнну економіку Росії, посилив правозастосування в державах-членах і закрив прогалини в регулюванні та нагляді. Сам лист повністю не опубліковано.",
+    "tr": "Finlandiya Dışişleri Bakanlığı 16 Kasım 2026'da, Finlandiya, Danimarka, Estonya, Fransa ve Litvanya dışişleri bakanlarının Rusya'ya yönelik yaptırımlardan kaçmak için kripto varlık kullanımına karşı AB'den daha güçlü tedbir istediğini bildirdi. Bakanlar, AB'nin Rusya'nın savaş ekonomisini ayakta tutmaya yardımcı olan kripto ağlarını hedef almasını, üye ülkelerde uygulamayı sıkılaştırmasını ve düzenleme ile denetimdeki boşlukları kapatmasını istiyor. Mektubun kendisi tam olarak yayımlanmadı.",
+    "se": "Olgoriikkaministtarat Suomas, Dánmarkkas, Estteas, Frankriikkas ja Lietuvas bivdet EU:s nannoset doaimmaid kryptoopmodagaid geavaheami vuostá Ruošša bákkolašvuođaid birgen dihte, dieđihii Suoma olgoriikkadepartemeanta 16. skábmamánu 2026. Ministtarat háliidit ahte EU njuike kryptonetthivrriide mat veahkehit doalahit Ruošša soahtedalu, nannet čuovvuma miellahttoriikkain ja giddet ráhkadusa- ja bearráigeahččanráiggiid. Ieš reive ii leat almmuhuvvon olles visot."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "ba1d824e5d76",
-   "url": "https://borsen.dk/nyheder/finans/lunar-lukker-kryptoforretning",
+   "url": "https://www.borsen.dk/nyheder/finans/lunar-lukker-kryptoforretning",
    "title": "Lunar lukker kryptoforretning",
-   "title_en": null,
+   "title_en": "Lunar to sell its crypto customer portfolio to Pluto.markets and close Lunar Block",
    "source": "borsen",
    "source_name": "Børsen",
    "country": "DK",
@@ -117,15 +179,75 @@
    "published": "2026-11-16T12:02:39+00:00",
    "fetched": "2026-11-17T02:46:52+00:00",
    "topics": [
-    "crypto"
+    "companies",
+    "banking"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptoaktiv\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Lunar is selling its active crypto customer portfolio to the Danish investment platform Pluto.markets, the bank said in a press release on 16 November 2026. According to Børsen, Lunar is shutting down its crypto business, Lunar Block. Customers who hold crypto assets are to be transferred to Pluto.markets on 17 December 2026.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-17T04:46:55+01:00",
+   "primary_source": {
+    "name": "Lunar — press release, 16 November 2026, «Lunar sells crypto customer portfolio to Pluto.markets»",
+    "url": "https://www.lunar.app/en/personal/blog/press-releases/lunar-sells-crypto-customer-portfolio-to-pluto-markets"
+   },
+   "title_i18n": {
+    "nn": "Lunar sel krypto-kundeporteføljen til Pluto.markets og legg ned Lunar Block",
+    "nb": "Lunar selger krypto-kundeporteføljen til Pluto.markets og legger ned Lunar Block",
+    "sv": "Lunar säljer sin kryptokundportfölj till Pluto.markets och lägger ner Lunar Block",
+    "fi": "Lunar myy kryptoasiakaskantansa Pluto.marketsille ja lakkauttaa Lunar Blockin",
+    "is": "Lunar selur virka rafmyntaviðskiptavini til Pluto.markets og lokar Lunar Block",
+    "zh": "Lunar将把加密货币客户组合出售给Pluto.markets并关闭Lunar Block",
+    "hi": "Lunar अपनी क्रिप्टो ग्राहक सूची Pluto.markets को बेचेगा और Lunar Block बंद करेगा",
+    "es": "Lunar venderá su cartera de clientes de cripto a Pluto.markets y cerrará Lunar Block",
+    "fr": "Lunar va céder son portefeuille de clients crypto à Pluto.markets et fermer Lunar Block",
+    "ar": "Lunar تبيع محفظة عملاء التشفير إلى Pluto.markets وتغلق Lunar Block",
+    "bn": "Lunar তার ক্রিপ্টো গ্রাহক পোর্টফোলিও Pluto.markets-কে বিক্রি করবে এবং Lunar Block বন্ধ করবে",
+    "pt": "A Lunar vai vender a carteira de clientes de cripto à Pluto.markets e encerrar a Lunar Block",
+    "ru": "Lunar продаст портфель криптоклиентов Pluto.markets и закроет Lunar Block",
+    "ur": "Lunar اپنے کرپٹو کسٹمر پورٹ فولیو کو Pluto.markets کے سپرد کرے گی اور Lunar Block بند کرے گی",
+    "id": "Lunar akan menjual portofolio nasabah kripto ke Pluto.markets dan menutup Lunar Block",
+    "de": "Lunar verkauft sein Krypto-Kundenportfolio an Pluto.markets und schließt Lunar Block",
+    "ja": "Lunar、暗号資産顧客ポートフォリオをPluto.marketsに売却しLunar Blockを閉鎖へ",
+    "sw": "Lunar itauza kwingineko yake ya wateja wa krypto kwa Pluto.markets na kufunga Lunar Block",
+    "mr": "Lunar आपला क्रिप्टो ग्राहक पोर्टफोलिओ Pluto.marketsला विकून Lunar Block बंद करणार",
+    "fa": "Lunar سبد مشتریان رمزارزی خود را به Pluto.markets می‌فروشد و Lunar Block را می‌بندد",
+    "uk": "Lunar продасть портфель криптоклієнтів Pluto.markets і закриє Lunar Block",
+    "tr": "Lunar, kripto müşteri portföyünü Pluto.markets’e satacak ve Lunar Block’u kapatacak",
+    "se": "Lunar vuovdá kryptoáššehasportfolia Pluto.markets:ii ja gidde Lunar Block"
+   },
+   "title_i18n_source": "Lunar lukker kryptoforretning",
+   "summary_i18n": {
+    "nn": "Lunar sel den aktive krypto-kundeporteføljen til den danske investeringsplattforma Pluto.markets, opplyste banken i ei pressemelding 16. november 2026. Ifølgje Børsen legg Lunar ned kryptoverksemda si, Lunar Block. Kundar som har kryptoaktiva, skal overførast til Pluto.markets 17. desember 2026.",
+    "nb": "Lunar selger den aktive krypto-kundeporteføljen til den danske investeringsplattformen Pluto.markets, opplyste banken i en pressemelding 16. november 2026. Ifølge Børsen legger Lunar ned kryptovirksomheten sin, Lunar Block. Kunder som holder kryptoaktiva, skal overføres til Pluto.markets 17. desember 2026.",
+    "sv": "Lunar säljer sin aktiva portfölj av kryptokunder till den danska investeringsplattformen Pluto.markets, meddelade banken i ett pressmeddelande den 16 november 2026. Enligt Børsen lägger Lunar ner sin kryptoverksamhet, Lunar Block. Kunder som innehar kryptotillgångar ska föras över till Pluto.markets den 17 december 2026.",
+    "da": "Lunar sælger sin aktive kryptokundeportefølje til den danske investeringsplatform Pluto.markets, oplyste banken i en pressemeddelelse den 16. november 2026. Ifølge Børsen lukker Lunar sin kryptoforretning, Lunar Block. Kunder, der har kryptoaktiver, skal overføres til Pluto.markets den 17. december 2026.",
+    "fi": "Lunar myy aktiivisen kryptoasiakaskantansa tanskalaiselle sijoitusalustalle Pluto.marketsille, pankki kertoi 16. marraskuuta 2026 tiedotteessaan. Børsenin mukaan Lunar lakkauttaa krypto­liiketoimintansa Lunar Blockin. Krypto­varoja omistavat asiakkaat siirretään Pluto.marketsille 17. joulukuuta 2026.",
+    "is": "Lunar selur virkan hóp viðskiptavina í rafmyntum til dönsku fjárfestingarvettvangsins Pluto.markets, að sögn bankans í tilkynningu 16. nóvember 2026. Samkvæmt Børsen er Lunar að loka rafmyntastarfsemi sinni, Lunar Block. Viðskiptavinir sem eiga rafmyntaeignir verða fluttir til Pluto.markets 17. desember 2026.",
+    "zh": "Lunar在2026年11月16日的新闻稿中表示，将把其活跃的加密货币客户组合出售给丹麦投资平台Pluto.markets。据《Børsen》报道，Lunar将关闭其加密货币业务Lunar Block。持有加密资产的客户将于2026年12月17日转移至Pluto.markets。",
+    "hi": "16 नवंबर 2026 के प्रेस विज्ञप्ति में बैंक ने कहा कि Lunar अपनी सक्रिय क्रिप्टो ग्राहक सूची डेनिश निवेश मंच Pluto.markets को बेच रहा है. Børsen के अनुसार Lunar अपने क्रिप्टो कारोबार Lunar Block को बंद कर रहा है. जिन ग्राहकों के पास क्रिप्टो परिसंपत्तियाँ हैं, उन्हें 17 दिसंबर 2026 को Pluto.markets में स्थानांतरित किया जाना है.",
+    "es": "Lunar está vendiendo su cartera activa de clientes de cripto a la plataforma de inversión danesa Pluto.markets, informó el banco en un comunicado del 16 de noviembre de 2026. Según Børsen, Lunar cierra su negocio cripto, Lunar Block. Los clientes que tengan criptoactivos serán transferidos a Pluto.markets el 17 de diciembre de 2026.",
+    "fr": "Lunar cède son portefeuille actif de clients crypto à la plateforme d’investissement danoise Pluto.markets, a indiqué la banque dans un communiqué du 16 novembre 2026. Selon Børsen, Lunar ferme son activité crypto, Lunar Block. Les clients détenant des crypto-actifs doivent être transférés vers Pluto.markets le 17 décembre 2026.",
+    "ar": "قالت Lunar في بيان صحفي في 16 نوفمبر 2026 إنها تبيع محفظة عملائها النشطين في العملات المشفرة إلى منصة الاستثمار الدنماركية Pluto.markets. ووفقًا لصحيفة Børsen، تغلق Lunar نشاطها للتشفير Lunar Block. ويُفترض أن يُنقل العملاء الحاملون لأصول مشفرة إلى Pluto.markets في 17 ديسمبر 2026.",
+    "bn": "২০২৬ সালের ১৬ নভেম্বরের প্রেস বিজ্ঞপ্তিতে Lunar জানিয়েছে, সে তার সক্রিয় ক্রিপ্টো গ্রাহক পোর্টফোলিও ডেনীয় বিনিয়োগ প্ল্যাটফর্ম Pluto.markets-এর কাছে বিক্রি করছে। Børsen-এর মতে Lunar তার ক্রিপ্টো ব্যবসা Lunar Block বন্ধ করছে। যাদের ক্রিপ্টো সম্পদ আছে, সেসব গ্রাহককে ১৭ ডিসেম্বর ২০২৬-এ Pluto.markets-এ স্থানান্তর করা হবে।",
+    "pt": "A Lunar está a vender a sua carteira ativa de clientes de cripto à plataforma de investimento dinamarquesa Pluto.markets, anunciou o banco num comunicado de 16 de novembro de 2026. Segundo o Børsen, a Lunar está a encerrar o seu negócio de cripto, a Lunar Block. Os clientes que detenham criptoativos serão transferidos para a Pluto.markets em 17 de dezembro de 2026.",
+    "ru": "Как сообщил банк в пресс-релизе 16 ноября 2026 года, Lunar продаёт свой действующий портфель криптоклиентов датской инвестиционной платформе Pluto.markets. По данным Børsen, Lunar закрывает свой криптобизнес Lunar Block. Клиенты, у которых есть криптоактивы, должны быть переведены в Pluto.markets 17 декабря 2026 года.",
+    "ur": "16 نومبر 2026 کے پریس بیان میں بینک نے کہا کہ Lunar اپنے فعال کرپٹو کسٹمر پورٹ فولیو کو ڈینش سرمایہ کاری پلیٹ فارم Pluto.markets کو فروخت کر رہا ہے۔ Børsen کے مطابق Lunar اپنے کرپٹو کاروبار Lunar Block کو بند کر رہا ہے۔ جن گاہکوں کے پاس کرپٹو اثاثے ہیں، انہیں 17 دسمبر 2026 کو Pluto.markets میں منتقل کیا جانا ہے۔",
+    "id": "Dalam siaran pers 16 November 2026, bank itu menyatakan bahwa Lunar menjual portofolio nasabah kripto aktifnya kepada platform investasi Denmark Pluto.markets. Menurut Børsen, Lunar menutup bisnis kriptonya, Lunar Block. Nasabah yang memegang aset kripto akan dipindahkan ke Pluto.markets pada 17 Desember 2026.",
+    "de": "Lunar verkauft sein aktives Krypto-Kundenportfolio an die dänische Investmentplattform Pluto.markets, teilte die Bank in einer Pressemitteilung vom 16. November 2026 mit. Laut Børsen stellt Lunar sein Kryptogeschäft Lunar Block ein. Kunden, die Krypto-Vermögenswerte halten, sollen am 17. Dezember 2026 auf Pluto.markets übertragen werden.",
+    "ja": "Lunarは2026年11月16日の発表で、アクティブな暗号資産顧客ポートフォリオをデンマークの投資プラットフォームPluto.marketsに売却すると明らかにした。Børsenによると、Lunarは暗号資産事業のLunar Blockを閉鎖する。暗号資産を保有する顧客は2026年12月17日にPluto.marketsへ移される。",
+    "sw": "Lunar inauza kwingineko yake hai ya wateja wa krypto kwa jukwaa la uwekezaji la Denmark Pluto.markets, benki ilisema katika taarifa kwa vyombo vya habari ya 16 Novemba 2026. Kulingana na Børsen, Lunar inafunga biashara yake ya krypto, Lunar Block. Wateja wenye mali za krypto wanatarajiwa kuhamishiwa Pluto.markets tarehe 17 Desemba 2026.",
+    "mr": "16 नोव्हेंबर 2026 च्या प्रेस प्रसिद्धीपत्रकात बँकेने सांगितले की Lunar आपला सक्रिय क्रिप्टो ग्राहक पोर्टफोलिओ डॅनिश गुंतवणूक व्यासपीठ Pluto.marketsला विकत आहे. Børsenनुसार Lunar आपला क्रिप्टो व्यवसाय Lunar Block बंद करत आहे. क्रिप्टो मालमत्ता असलेल्या ग्राहकांचे 17 डिसेंबर 2026 रोजी Pluto.marketsकडे हस्तांतरण होणार आहे.",
+    "fa": "بانک Lunar در بیانیه مطبوعاتی ۱۶ نوامبر ۲۰۲۶ اعلام کرد سبد فعال مشتریان رمزارزی خود را به پلتفرم سرمایه‌گذاری دانمارکی Pluto.markets می‌فروشد. به گزارش Børsen، Lunar کسب‌وکار رمزارزی خود، Lunar Block، را تعطیل می‌کند. مشتریانی که دارایی رمزارزی دارند باید در ۱۷ دسامبر ۲۰۲۶ به Pluto.markets منتقل شوند.",
+    "uk": "Як повідомив банк у пресрелізі 16 листопада 2026 року, Lunar продає свій активний портфель криптоклієнтів данській інвестиційній платформі Pluto.markets. За даними Børsen, Lunar закриває свій криптобізнес Lunar Block. Клієнтів, які мають криптоактиви, мають перевести до Pluto.markets 17 грудня 2026 року.",
+    "tr": "Banka, 16 Kasım 2026 tarihli basın bülteninde Lunar'ın aktif kripto müşteri portföyünü Danimarkalı yatırım platformu Pluto.markets'e sattığını duyurdu. Børsen'e göre Lunar, kripto işi olan Lunar Block'u kapatıyor. Kripto varlık tutan müşteriler 17 Aralık 2026'da Pluto.markets'e aktarılacak.",
+    "se": "Lunar vuovdá aktiivvalaš kryptoáššehasportfolia dánskalaš investešuvdnavuodjui Pluto.markets:ii, dieđihii bátnka preassadieđáhusas 16. skábmamánu 2026. Børsen mielde Lunar heaitá krypto-doaimmas, Lunar Block. Áššehasat geain leat kryptoopmodagat, galget sirdojuvvot Pluto.markets:ii 17. juovlamánu 2026."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "2d3c483010d7",
@@ -149,9 +271,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Same private person’s portfolio as 40227da35a36. Vær Varsom: do not build a story on named private wealth or investments. Body unverified behind a paywall. Related to already rejected 2c80242955f2. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "40227da35a36",
@@ -176,10 +299,8 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "possible_duplicate_of": "57624ae74055",
-   "possible_duplicate_reason": "rare headline word",
    "also_covered_by": [
     {
      "outlet": "dagens-nyheter",
@@ -192,7 +313,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "reject_reason": "A private person’s portfolio, losses and share purchases. Vær Varsom: do not build a story on named private wealth or investments. Body unverified behind a paywall. The queue’s possible_duplicate_of 57624ae74055 (TV 2, Hubris 6) was incorrect and has been cleared. Related to already rejected 2c80242955f2. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "5d465a3b326d",
@@ -217,14 +339,15 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Entertainment write-up (/viihde/) of a documentary. Vær Varsom: a named private person, family, wealth and a criminal case. Must not be republished or used to name anyone. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "57caa8eacf52",
    "url": "https://finansavisen.no/finans/2026/11/16/8395980/h100-blir-toppkunde-hos-coinbase",
    "title": "Blir toppkunde hos kryptokjempe",
-   "title_en": null,
+   "title_en": "H100 signs Coinbase Prime deal for custody, trading and financing of its bitcoin",
    "source": "finansavisen",
    "source_name": "Finansavisen",
    "country": "NO",
@@ -236,22 +359,95 @@
    "published": "2026-11-16T07:49:00+00:00",
    "fetched": "2026-11-17T02:46:52+00:00",
    "topics": [
-    "crypto"
+    "companies",
+    "bitcoin"
    ],
    "matched": [
     "\\bH100\\b",
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null,
-   "published_unverified": true
+   "status": "published",
+   "summary": "H100 Group AB has entered into a partnership with Coinbase for institutional custody, trading and financing of its bitcoin holdings through Coinbase Prime and Deribit, according to a company notice on 16 November 2026. The company says it holds about 3,506 bitcoin. On its own price basis of USD 64,600 on 15 November 2026, it valued those holdings at about USD 226 million, or SEK 2.3 billion. The notice describes a longer-term ambition to develop investor services; it does not say that an asset-management product has been launched.",
+   "published_unverified": true,
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/h100-coinbase-kapitalforvalter-bitcoin",
+     "title": "H100 vil skape Europas ledende kapitalforvalter innen bitcoin med Coinbase",
+     "published": "2026-11-16",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-17T04:46:55+01:00",
+   "primary_source": {
+    "name": "H100 Group AB — MFN notice, 16 November 2026, «H100 partners with Coinbase to strengthen its balance sheet and support business development»",
+    "url": "https://storage.mfn.se/32f02c67-7247-4adf-95f0-eb5c35100db6/h100-partners-with-coinbase-to-strengthen-its-balance-sheet-and-support-business-development.pdf"
+   },
+   "title_i18n": {
+    "nn": "H100 inngår avtale med Coinbase Prime om oppbevaring, handel og finansiering av bitcoinen sin",
+    "sv": "H100 tecknar avtal med Coinbase Prime om förvaring, handel och finansiering av sitt bitcoin",
+    "da": "H100 indgår aftale med Coinbase Prime om opbevaring, handel og finansiering af sin bitcoin",
+    "fi": "H100 sopii Coinbase Prime -järjestelystä bitcoininsa säilytykseen, kaupankäyntiin ja rahoitukseen",
+    "is": "H100 gerir samning við Coinbase Prime um vörslu, viðskipti og fjármögnun á bitcoin sínum",
+    "zh": "H100与Coinbase Prime达成比特币托管、交易和融资协议",
+    "hi": "H100 ने अपने बिटकॉइन की कस्टडी, ट्रेडिंग और वित्तपोषण के लिए Coinbase Prime से समझौता किया",
+    "es": "H100 firma un acuerdo con Coinbase Prime para la custodia, negociación y financiación de su bitcoin",
+    "fr": "H100 signe un accord Coinbase Prime pour la conservation, la négociation et le financement de ses bitcoins",
+    "ar": "H100 توقع اتفاق Coinbase Prime لحفظ بيتكوينها وتداوله وتمويله",
+    "bn": "H100 নিজের বিটকয়েনের কাস্টডি, লেনদেন ও অর্থায়নের জন্য Coinbase Prime চুক্তি করেছে",
+    "pt": "A H100 celebra um acordo com a Coinbase Prime para custódia, negociação e financiamento do seu bitcoin",
+    "ru": "H100 заключает соглашение с Coinbase Prime об ответственном хранении, торговле и финансировании своего биткоина",
+    "ur": "H100 نے اپنے بٹ کوائن کی حراست، تجارت اور مالیات کے لیے Coinbase Prime معاہدہ کیا",
+    "id": "H100 menandatangani kerja sama Coinbase Prime untuk kustodian, perdagangan, dan pembiayaan bitcoinnya",
+    "de": "H100 schließt Coinbase-Prime-Vereinbarung über Verwahrung, Handel und Finanzierung seines Bitcoins",
+    "ja": "H100、保有ビットコインのカストディ・取引・資金調達でCoinbase Primeと契約",
+    "sw": "H100 inatia saini makubaliano ya Coinbase Prime ya uhifadhi, biashara na ufadhili wa bitcoin yake",
+    "mr": "H100 ने आपल्या बिटकॉइनच्या कस्टडी, व्यवहार आणि वित्तपुरवठ्यासाठी Coinbase Prime करार केला",
+    "fa": "H100 برای نگهداری، معامله و تأمین مالی بیت‌کوین خود با Coinbase Prime توافق می‌کند",
+    "uk": "H100 укладає угоду з Coinbase Prime про зберігання, торгівлю та фінансування свого біткоїна",
+    "tr": "H100, bitcoinini saklama, alım satım ve finanse etme için Coinbase Prime anlaşması imzaladı",
+    "se": "H100 vuolláčállá Coinbase Prime soahpamuša iežas bitcoina vurkema, gávppi ja ruhtadeami várás"
+   },
+   "title_i18n_source": "Blir toppkunde hos kryptokjempe",
+   "summary_i18n": {
+    "nb": "H100 Group AB har inngått et samarbeid med Coinbase om institusjonell oppbevaring, handel og finansiering av bitcoinbeholdningen sin gjennom Coinbase Prime og Deribit, ifølge en børsmelding 16. november 2026. Selskapet opplyser at det holder om lag 3 506 bitcoin. På sitt eget kursgrunnlag på 64 600 dollar den 15. november 2026 verdsatte det beholdningen til om lag 226 millioner dollar, eller 2,3 milliarder svenske kroner. Meldingen beskriver en mer langsiktig ambisjon om å utvikle investortjenester; den sier ikke at et kapitalforvaltningsprodukt er lansert.",
+    "nn": "H100 Group AB har inngått eit samarbeid med Coinbase om institusjonell oppbevaring, handel og finansiering av bitcoinbehaldninga si gjennom Coinbase Prime og Deribit, ifølgje ei børsmelding 16. november 2026. Selskapet opplyser at det held om lag 3 506 bitcoin. På sitt eige kursgrunnlag på 64 600 dollar den 15. november 2026 verdsette det behaldninga til om lag 226 millionar dollar, eller 2,3 milliardar svenske kroner. Meldinga skildrar ei meir langsiktig ambisjon om å utvikle investortenester; ho seier ikkje at eit kapitalforvaltningsprodukt er sett i gang.",
+    "sv": "H100 Group AB har ingått ett samarbete med Coinbase om institutionell förvaring, handel och finansiering av sitt bitcoininnehav via Coinbase Prime och Deribit, enligt ett pressmeddelande den 16 november 2026. Bolaget uppger att det innehar omkring 3 506 bitcoin. På sin egen kursbasis om 64 600 dollar den 15 november 2026 värderade det innehavet till omkring 226 miljoner dollar, eller 2,3 miljarder kronor. Meddelandet beskriver en mer långsiktig ambition att utveckla investerartjänster; det säger inte att en kapitalförvaltningsprodukt har lanserats.",
+    "da": "H100 Group AB har indgået et samarbejde med Coinbase om institutionel opbevaring, handel og finansiering af sin bitcoinbeholdning via Coinbase Prime og Deribit, ifølge en selskabsmeddelelse den 16. november 2026. Selskabet oplyser, at det holder omkring 3.506 bitcoin. På sit eget kursgrundlag på 64.600 dollar den 15. november 2026 værdiansatte det beholdningen til omkring 226 millioner dollar, eller 2,3 milliarder svenske kroner. Meddelelsen beskriver en mere langsigtet ambition om at udvikle investortjenester; den siger ikke, at et kapitalforvaltningsprodukt er lanceret.",
+    "fi": "H100 Group AB on sopinut Coinbasen kanssa institutionaalisesta säilytyksestä, kaupankäynnistä ja rahoituksesta bitcoin-omistukselleen Coinbase Prime -palvelun ja Deribitin kautta, ilmenee 16. marraskuuta 2026 annetusta pörssitiedotteesta. Yhtiön mukaan sillä on noin 3 506 bitcoinia. Omalla kurssiperusteellaan, 64 600 dollaria 15. marraskuuta 2026, se arvosti omistuksen noin 226 miljoonaan dollariin eli 2,3 miljardiin Ruotsin kruunuun. Tiedote kuvaa pidemmän aikavälin tavoitetta kehittää sijoittajapalveluita; se ei kerro, että omaisuudenhoitotuotetta olisi lanseerattu.",
+    "is": "H100 Group AB hefur gert samstarfssamning við Coinbase um stofnanaaðila-vörslu, viðskipti og fjármögnun á bitcoin-eign sinni í gegnum Coinbase Prime og Deribit, samkvæmt tilkynningu félagsins 16. nóvember 2026. Félagið segist eiga um 3.506 bitcoin. Á eigin verðgrunni, 64.600 Bandaríkjadalir þann 15. nóvember 2026, metur það eignina á um 226 milljónir dala, eða 2,3 milljarða sænskra króna. Tilkynningin lýsir lengri tíma áformum um að þróa þjónustu við fjárfesta; hún segir ekki að eignastýringarvara hafi verið sett á markað.",
+    "zh": "据2026年11月16日的公司公告，H100 Group AB已与Coinbase达成合作，通过Coinbase Prime和Deribit为其持有的比特币提供机构托管、交易和融资。该公司称持有约3,506枚比特币。按其自身采用的2026年11月15日64,600美元的价格计算，它将这些持仓估值约2.26亿美元，合23亿瑞典克朗。公告谈到了更长期的投资者服务设想，但并未称已经推出资产管理产品。",
+    "hi": "16 नवंबर 2026 की कंपनी सूचना के अनुसार, H100 Group AB ने Coinbase Prime और Deribit के माध्यम से अपनी बिटकॉइन होल्डिंग की संस्थागत कस्टडी, ट्रेडिंग और वित्तपोषण के लिए Coinbase के साथ साझेदारी की है. कंपनी कहती है कि उसके पास लगभग 3,506 बिटकॉइन हैं. 15 नवंबर 2026 को 64,600 डॉलर के अपने मूल्य आधार पर उसने इस होल्डिंग का मूल्य लगभग 226 मिलियन डॉलर, या 2.3 अरब स्वीडिश क्रोन आंका. सूचना में निवेशक सेवाएँ विकसित करने की दीर्घकालिक महत्वाकांक्षा बताई गई है; यह नहीं कहती कि कोई परिसंपत्ति-प्रबंधन उत्पाद शुरू किया जा चुका है.",
+    "es": "H100 Group AB ha firmado una colaboración con Coinbase para la custodia institucional, la negociación y la financiación de sus tenencias de bitcoin a través de Coinbase Prime y Deribit, según un comunicado de la compañía del 16 de noviembre de 2026. La empresa afirma poseer unos 3.506 bitcoin. Con su propia base de precio de 64.600 dólares el 15 de noviembre de 2026, valoró esas tenencias en unos 226 millones de dólares, o 2.300 millones de coronas suecas. El comunicado describe una ambición a más largo plazo de desarrollar servicios para inversores; no afirma que se haya lanzado un producto de gestión de activos.",
+    "fr": "H100 Group AB a conclu un partenariat avec Coinbase pour la conservation institutionnelle, la négociation et le financement de ses avoirs en bitcoin via Coinbase Prime et Deribit, selon un communiqué de la société du 16 novembre 2026. L’entreprise indique détenir environ 3 506 bitcoins. Sur sa propre base de cours de 64 600 dollars au 15 novembre 2026, elle a valorisé ces avoirs à environ 226 millions de dollars, soit 2,3 milliards de couronnes suédoises. Le communiqué décrit une ambition à plus long terme de développer des services aux investisseurs ; il n’indique pas qu’un produit de gestion d’actifs a été lancé.",
+    "ar": "أبرمت شركة H100 Group AB شراكة مع Coinbase للحفظ المؤسسي لحيازاتها من البيتكوين وتداولها وتمويلها عبر Coinbase Prime وDeribit، وفق إعلان للشركة في 16 نوفمبر 2026. وتقول الشركة إنها تحتفظ بنحو 3,506 بيتكوين. وعلى أساس سعرها الخاص البالغ 64,600 دولار في 15 نوفمبر 2026، قدرت تلك الحيازات بنحو 226 مليون دولار، أو 2.3 مليار كرونة سويدية. ويصف الإعلان طموحًا أطول أمدًا لتطوير خدمات للمستثمرين؛ ولا يقول إن منتجًا لإدارة الأصول قد أُطلق.",
+    "bn": "২০২৬ সালের ১৬ নভেম্বরের কোম্পানি বিজ্ঞপ্তি অনুসারে, H100 Group AB Coinbase Prime ও Deribit-এর মাধ্যমে নিজের বিটকয়েন ধারণের প্রাতিষ্ঠানিক কাস্টডি, লেনদেন ও অর্থায়নের জন্য Coinbase-এর সঙ্গে অংশীদারিত্ব করেছে। কোম্পানি বলে, তার কাছে প্রায় ৩,৫০৬ বিটকয়েন আছে। ১৫ নভেম্বর ২০২৬-এ ৬৪,৬০০ ডলারের নিজস্ব মূল্যভিত্তিতে সে এই ধারণকে প্রায় ২২.৬ কোটি ডলার বা ২৩০ কোটি সুইডিশ ক্রোনার বলেছে। বিজ্ঞপ্তি দীর্ঘমেয়াদি বিনিয়োগকারী সেবা গড়ে তোলার আকাঙ্ক্ষা বর্ণনা করে; এতে বলা হয়নি যে কোনো সম্পদ-ব্যবস্থাপনা পণ্য বাজারে এসেছে।",
+    "pt": "A H100 Group AB celebrou uma parceria com a Coinbase para a custódia institucional, a negociação e o financiamento das suas participações em bitcoin através da Coinbase Prime e da Deribit, segundo um comunicado da empresa de 16 de novembro de 2026. A empresa afirma deter cerca de 3.506 bitcoin. Com a sua própria base de preço de 64.600 dólares em 15 de novembro de 2026, avaliou essas participações em cerca de 226 milhões de dólares, ou 2,3 mil milhões de coroas suecas. O comunicado descreve uma ambição de mais longo prazo de desenvolver serviços a investidores; não afirma que tenha sido lançado um produto de gestão de ativos.",
+    "ru": "Согласно уведомлению компании от 16 ноября 2026 года, H100 Group AB заключила партнёрство с Coinbase об институциональном хранении, торговле и финансировании своего биткоин-резерва через Coinbase Prime и Deribit. Компания сообщает, что держит около 3 506 биткоинов. По собственной ценовой базе в 64 600 долларов на 15 ноября 2026 года она оценила эти активы примерно в 226 млн долларов, или 2,3 млрд шведских крон. В сообщении говорится о более долгосрочном намерении развивать услуги для инвесторов; не утверждается, что продукт по управлению активами уже запущен.",
+    "ur": "16 نومبر 2026 کے کمپنی نوٹس کے مطابق، H100 Group AB نے Coinbase Prime اور Deribit کے ذریعے اپنے بٹ کوائن ذخیرے کی ادارہ جاتی حراست، تجارت اور مالیات کے لیے Coinbase کے ساتھ شراکت داری کی ہے۔ کمپنی کا کہنا ہے کہ اس کے پاس تقریباً 3,506 بٹ کوائن ہیں۔ 15 نومبر 2026 کو 64,600 ڈالر کی اپنی قیمت کی بنیاد پر اس نے ان ہولڈنگز کو تقریباً 226 ملین ڈالر یا 2.3 ارب سویڈش کرون کا قرار دیا۔ نوٹس میں سرمایہ کار خدمات تیار کرنے کی طویل مدتی خواہش بیان کی گئی ہے؛ یہ نہیں کہتا کہ کوئی اثاثہ جاتی انتظامی مصنوعہ شروع کیا جا چکا ہے۔",
+    "id": "Menurut pengumuman perusahaan pada 16 November 2026, H100 Group AB menjalin kemitraan dengan Coinbase untuk kustodian institusional, perdagangan, dan pembiayaan kepemilikan bitcoinnya melalui Coinbase Prime dan Deribit. Perusahaan menyatakan memegang sekitar 3.506 bitcoin. Dengan acuan harganya sendiri sebesar 64.600 dolar pada 15 November 2026, perusahaan itu menilai kepemilikan tersebut sekitar 226 juta dolar, atau 2,3 miliar krona Swedia. Pengumuman itu merumuskan ambisi jangka lebih panjang untuk mengembangkan layanan bagi investor; tidak menyatakan bahwa produk manajemen aset telah diluncurkan.",
+    "de": "H100 Group AB hat laut einer Unternehmensmitteilung vom 16. November 2026 eine Partnerschaft mit Coinbase über die institutionelle Verwahrung, den Handel und die Finanzierung seiner Bitcoin-Bestände über Coinbase Prime und Deribit geschlossen. Das Unternehmen gibt an, rund 3.506 Bitcoin zu halten. Auf eigener Kursbasis von 64.600 Dollar am 15. November 2026 bewertete es diese Bestände auf rund 226 Millionen Dollar oder 2,3 Milliarden schwedische Kronen. Die Mitteilung beschreibt eine längerfristige Absicht, Dienstleistungen für Anleger zu entwickeln; sie besagt nicht, dass ein Vermögensverwaltungsprodukt aufgelegt wurde.",
+    "ja": "2026年11月16日の会社発表によると、H100 Group ABは保有ビットコインの機関向けカストディ・取引・資金調達について、Coinbase PrimeとDeribitを通じてCoinbaseと提携した。同社は約3,506ビットコインを保有しているとしている。2026年11月15日の6万4,600ドルという自行の価格前提では、この保有を約2億2,600万ドル、すなわち23億スウェーデンクローナと評価している。発表は投資家向けサービスのより長期的な構想に触れているが、資産運用商品がすでに始まっているとは述べていない。",
+    "sw": "H100 Group AB imeweka ushirikiano na Coinbase wa uhifadhi wa kitaasisi, biashara na ufadhili wa umilikaji wake wa bitcoin kupitia Coinbase Prime na Deribit, kulingana na taarifa ya kampuni ya 16 Novemba 2026. Kampuni inasema inashikilia takriban bitcoin 3,506. Kwa msingi wake wa bei wa dola 64,600 tarehe 15 Novemba 2026, iliuthamini umilikaji huo kuwa takriban dola milioni 226, au krona bilioni 2.3 za Uswidi. Taarifa inaelezea nia ya muda mrefu zaidi ya kuendeleza huduma kwa wawekezaji; haisemi kwamba bidhaa ya usimamizi wa mali imeanzishwa.",
+    "mr": "16 नोव्हेंबर 2026 च्या कंपनी सूचनापत्रकानुसार, H100 Group AB ने Coinbase Prime आणि Deribit मार्फत आपल्या बिटकॉइन धारणेच्या संस्थात्मक कस्टडी, व्यवहार आणि वित्तपुरवठ्यासाठी Coinbase सोबत भागीदारी केली आहे. कंपनीचे म्हणणे आहे की तिच्याकडे सुमारे 3,506 बिटकॉइन आहेत. 15 नोव्हेंबर 2026 रोजी 64,600 डॉलर या स्वतःच्या किंमत आधारावर तिने या धारणेचे मूल्य सुमारे 226 दशलक्ष डॉलर, म्हणजे 2.3 अब्ज स्वीडिश क्रोन इतके आले. सूचनापत्रात गुंतवणूकदार सेवा विकसित करण्याची दीर्घकालीन महत्वाकांक्षा वर्णिलेली आहे; ते असे म्हणत नाही की मालमत्ता-व्यवस्थापन उत्पादन सुरू झाले आहे.",
+    "fa": "طبق اطلاعیه شرکت در ۱۶ نوامبر ۲۰۲۶، H100 Group AB برای نگهداری نهادی، معامله و تأمین مالی موجودی بیت‌کوین خود از طریق Coinbase Prime و Deribit با Coinbase شریک شده است. شرکت می‌گوید حدود ۳٬۵۰۶ بیت‌کوین در اختیار دارد. با مبنای قیمت خود یعنی ۶۴٬۶۰۰ دلار در ۱۵ نوامبر ۲۰۲۶، این موجودی را حدود ۲۲۶ میلیون دلار یا ۲٫۳ میلیارد کرون سوئد ارزش‌گذاری کرده است. اطلاعیه از جاه‌طلبی بلندمدت‌تر برای توسعه خدمات سرمایه‌گذاران سخن می‌گوید؛ نمی‌گوید که محصول مدیریت دارایی راه‌اندازی شده است.",
+    "uk": "Згідно з повідомленням компанії від 16 листопада 2026 року, H100 Group AB уклала партнерство з Coinbase щодо інституційного зберігання, торгівлі та фінансування своїх біткоїн-запасів через Coinbase Prime і Deribit. Компанія повідомляє, що тримає близько 3 506 біткоїнів. За власною ціновою базою 64 600 доларів на 15 листопада 2026 року вона оцінила ці активи приблизно в 226 млн доларів, або 2,3 млрд шведських крон. У повідомленні йдеться про більш довгостроковий намір розвивати послуги для інвесторів; не стверджується, що продукт з управління активами вже запущено.",
+    "tr": "16 Kasım 2026 tarihli şirket bildirimine göre H100 Group AB, bitcoin varlıklarının Coinbase Prime ve Deribit üzerinden kurumsal saklama, alım satım ve finansmanı için Coinbase ile ortaklık kurdu. Şirket yaklaşık 3.506 bitcoin tuttuğunu belirtiyor. 15 Kasım 2026'da 64.600 dolarlık kendi fiyat esasına göre bu varlıkları yaklaşık 226 milyon dolar veya 2,3 milyar İsveç kronu olarak değerledi. Bildirim, yatırımcı hizmetleri geliştirme yönünde daha uzun vadeli bir hedefi anlatıyor; bir varlık yönetim ürününün piyasaya sürüldüğünü söylemiyor.",
+    "se": "H100 Group AB lea 16. skábmamánu 2026 dieđihusa mielde dahkan ovttasbarggu Coinbasein institusuvnnalaš vurkema, gávppi ja ruhtadeami várás iežas bitcoin-opmodahkii Coinbase Prime ja Deribit bokte. Fitnodat dadjá ahte das lea sullii 3 506 bitcoin. Iežas haddi vuođul, 64 600 dollára 15. skábmamánu 2026, árvvoštalai opmodaga sullii 226 miljovnna dolláriin, dahje 2,3 miljárdda ruoŧa kruvnnuin. Dieđihus govvida guhkit áigge mihttu ovddidit investejeaddjibálvalusaid; dat ii dadjá ahte opmodathálddašanbukta lea álggahuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "d41fe32b49d9",
    "url": "https://kaupr.io/nyheter/k33-26000-aksjonaerer-reverion-avtale-13-msek",
    "title": "K33 og 26.000 aksjonærer med Reverion-avtale verdt 13 MSEK",
-   "title_en": null,
+   "title_en": "K33 agrees conditional SEK 13 million deal with Reverion Capital",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -269,9 +465,74 @@
     "\\bK33\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "K33 AB (publ) has entered into a conditional agreement with Reverion Capital AB (publ) worth SEK 13 million, according to a company notice on 16 November 2026. Subject to completion, about 26,000 K33 shareholders would receive Reverion shares worth SEK 5 million as a dividend in kind, and Reverion would issue an SEK 8 million interest-free, unsecured, subordinated convertible loan to K33. The deal requires approval at an extraordinary general meeting of K33 and sufficient free equity, and either party may terminate the agreement if the conditions have not been met by 31 December 2026.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-17T04:46:55+01:00",
+   "primary_source": {
+    "name": "K33 AB (publ) — MFN notice, 16 November 2026, «K33 leverages its network in SEK 13 million agreement with Reverion Capital»",
+    "url": "https://mfn.se/a/k33/k33-leverages-its-network-in-sek-13-million-agreement-with-reverion-capital"
+   },
+   "links": [
+    {
+     "url": "https://storage.mfn.se/72eef112-7eab-4736-bf17-03e83df5b5bc/k33-leverages-its-network-in-sek-13-million-agreement-with-reverion-capital.pdf",
+     "label": "K33 MFN notice, PDF, 16 November 2026"
+    }
+   ],
+   "title_i18n": {
+    "nn": "K33 inngår vilkårsbunden avtale med Reverion Capital på 13 millionar svenske kroner",
+    "sv": "K33 ingår villkorat avtal med Reverion Capital värt 13 miljoner kronor",
+    "da": "K33 indgår betinget aftale med Reverion Capital til 13 millioner svenske kroner",
+    "fi": "K33 solmii ehdollisen 13 miljoonan Ruotsin kruunun sopimuksen Reverion Capitalin kanssa",
+    "is": "K33 gerir skilyrtan 13 milljóna sænskra króna samning við Reverion Capital",
+    "zh": "K33与Reverion Capital达成附条件的1300万瑞典克朗协议",
+    "hi": "K33 ने Reverion Capital के साथ 130 लाख स्वीडिश क्रोन का सशर्त समझौता किया",
+    "es": "K33 alcanza un acuerdo condicional de 13 millones de coronas suecas con Reverion Capital",
+    "fr": "K33 conclut un accord conditionnel de 13 millions de couronnes suédoises avec Reverion Capital",
+    "ar": "K33 تبرم اتفاقًا مشروطًا بقيمة 13 مليون كرونة سويدية مع Reverion Capital",
+    "bn": "K33 Reverion Capital-এর সঙ্গে ১.৩ কোটি সুইডিশ ক্রোনারের শর্তসাপেক্ষ চুক্তি করেছে",
+    "pt": "A K33 celebra um acordo condicional de 13 milhões de coroas suecas com a Reverion Capital",
+    "ru": "K33 заключает условную сделку на 13 млн шведских крон с Reverion Capital",
+    "ur": "K33 نے Reverion Capital کے ساتھ 13 ملین سویڈش کرون کا مشروط معاہدہ کیا",
+    "id": "K33 menyepakati perjanjian bersyarat senilai 13 juta krona Swedia dengan Reverion Capital",
+    "de": "K33 vereinbart bedingten Deal über 13 Millionen schwedische Kronen mit Reverion Capital",
+    "ja": "K33、Reverion Capitalと1300万スウェーデンクローナの条件付き契約で合意",
+    "sw": "K33 inakubaliana kuhusu mkataba wa masharti wa krona milioni 13 za Uswidi na Reverion Capital",
+    "mr": "K33 ने Reverion Capital सोबत १.३ कोटी स्वीडिश क्रोनचा सशर्त करार केला",
+    "fa": "K33 توافقی مشروط به ارزش ۱۳ میلیون کرون سوئد با Reverion Capital می‌بندد",
+    "uk": "K33 укладає умовну угоду на 13 млн шведських крон із Reverion Capital",
+    "tr": "K33, Reverion Capital ile 13 milyon İsveç kronu tutarında şartlı bir anlaşma yaptı",
+    "se": "K33 soahpá eavttolaš 13 miljovnna ruoŧa kruvnnu soahpamuša Reverion Capitalain"
+   },
+   "title_i18n_source": "K33 og 26.000 aksjonærer med Reverion-avtale verdt 13 MSEK",
+   "summary_i18n": {
+    "nb": "K33 AB (publ) har inngått en betinget avtale med Reverion Capital AB (publ) verdt 13 millioner svenske kroner, ifølge en børsmelding 16. november 2026. Forutsatt at avtalen gjennomføres, skal rundt 26 000 K33-aksjonærer motta Reverion-aksjer verdt 5 millioner svenske kroner som utbytte in natura, og Reverion skal utstede et rentefritt, usikret og etterstilt konvertibelt lån på 8 millioner svenske kroner til K33. Avtalen krever godkjenning på en ekstraordinær generalforsamling i K33 og tilstrekkelig fri egenkapital, og hver av partene kan si opp avtalen dersom vilkårene ikke er oppfylt innen 31. desember 2026.",
+    "nn": "K33 AB (publ) har inngått ein vilkårsbunden avtale med Reverion Capital AB (publ) verdt 13 millionar svenske kroner, ifølgje ei børsmelding 16. november 2026. Under føresetnad av at avtalen vert gjennomførd, skal om lag 26 000 K33-aksjonærar motta Reverion-aksjar verdt 5 millionar svenske kroner som utbyte in natura, og Reverion skal utferde eit rentefritt, usikra og etterstilt konvertibelt lån på 8 millionar svenske kroner til K33. Avtalen krev godkjenning på ei ekstraordinær generalforsamling i K33 og tilstrekkeleg fri eigenkapital, og kvar av partane kan seie opp avtalen dersom vilkåra ikkje er oppfylte innan 31. desember 2026.",
+    "sv": "K33 AB (publ) har ingått ett villkorat avtal med Reverion Capital AB (publ) värt 13 miljoner kronor, enligt ett pressmeddelande den 16 november 2026. Under förutsättning att transaktionen genomförs ska omkring 26 000 K33-aktieägare få Reverion-aktier värda 5 miljoner kronor som sakutdelning, och Reverion ska ge ut ett räntefritt, osäkrat och efterställt konvertibelt lån på 8 miljoner kronor till K33. Avtalet kräver godkännande vid en extra bolagsstämma i K33 och tillräckligt fritt eget kapital, och endera parten får säga upp avtalet om villkoren inte har uppfyllts senast den 31 december 2026.",
+    "da": "K33 AB (publ) har indgået en betinget aftale med Reverion Capital AB (publ) til en værdi af 13 millioner svenske kroner, ifølge en selskabsmeddelelse den 16. november 2026. Forudsat at aftalen gennemføres, skal omkring 26.000 K33-aktionærer modtage Reverion-aktier til en værdi af 5 millioner svenske kroner som udbytte in natura, og Reverion skal udstede et rentefrit, usikret og efterstillet konvertibelt lån på 8 millioner svenske kroner til K33. Aftalen kræver godkendelse på en ekstraordinær generalforsamling i K33 og tilstrækkelig fri egenkapital, og hver af parterne kan opsige aftalen, hvis betingelserne ikke er opfyldt inden 31. december 2026.",
+    "fi": "K33 AB (publ) on tehnyt Reverion Capital AB (publ):n kanssa ehdollisen 13 miljoonan Ruotsin kruunun sopimuksen, ilmenee 16. marraskuuta 2026 annetusta pörssitiedotteesta. Jos kauppa toteutuu, noin 26 000 K33:n osakkeenomistajaa saisi 5 miljoonan kruunun arvosta Reverionin osakkeita osinkona luontoissuorituksena, ja Reverion laskisi K33:lle 8 miljoonan kruunun koronottoman, vakuudettoman ja etuoikeudeltaan huonomman vaihdettavan lainan. Sopimus edellyttää hyväksyntää K33:n ylimääräisessä yhtiökokouksessa ja riittävää vapaata omaa pääomaa, ja kumpikin osapuoli voi irtisanoa sopimuksen, jollei ehtoja ole täytetty 31. joulukuuta 2026 mennessä.",
+    "is": "K33 AB (publ) hefur gert skilyrtan samning við Reverion Capital AB (publ) að andvirði 13 milljóna sænskra króna, samkvæmt tilkynningu félagsins 16. nóvember 2026. Að því gefnu að viðskiptin gangi eftir myndu um 26.000 hluthafar K33 fá Reverion-hluti að andvirði 5 milljóna króna sem arð í fríðu, og Reverion myndi gefa út vaxtalausan, ótryggðan og víkjandi skiptanlegan lánssamning upp á 8 milljónir króna til K33. Samningurinn krefst samþykkis á aukahluthafafundi K33 og nægjanlegs frjáls eigin fjár, og hvor aðili um sig getur rift samningnum ef skilyrðin hafa ekki verið uppfyllt fyrir 31. desember 2026.",
+    "zh": "据2026年11月16日的公司公告，K33 AB（publ）已与Reverion Capital AB（publ）达成一项价值1300万瑞典克朗的附条件协议。若交易完成，约2.6万名K33股东将以实物股息形式获得价值500万瑞典克朗的Reverion股份，Reverion还将向K33发放一笔800万瑞典克朗的无息、无担保、次级可转换贷款。该交易须经K33临时股东大会批准并具备足够的可分配权益；若条件未能在2026年12月31日前满足，任何一方均可终止协议。",
+    "hi": "16 नवंबर 2026 की कंपनी सूचना के अनुसार, K33 AB (publ) ने Reverion Capital AB (publ) के साथ 130 लाख स्वीडिश क्रोन मूल्य का एक सशर्त समझौता किया है. पूरा होने पर लगभग 26,000 K33 शेयरधारकों को 50 लाख स्वीडिश क्रोन मूल्य के Reverion शेयर वस्तु-रूप लाभांश के रूप में मिलेंगे, और Reverion K33 को 80 लाख स्वीडिश क्रोन का ब्याज-मुक्त, असुरक्षित और अधीनस्थ परिवर्तनीय ऋण जारी करेगा. सौदे के लिए K33 की असाधारण आम बैठक में मंजूरी और पर्याप्त मुक्त इक्विटी चाहिए; यदि शर्तें 31 दिसंबर 2026 तक पूरी नहीं होतीं, तो कोई भी पक्ष समझौता समाप्त कर सकता है.",
+    "es": "K33 AB (publ) ha firmado un acuerdo condicional con Reverion Capital AB (publ) por valor de 13 millones de coronas suecas, según un comunicado de la compañía del 16 de noviembre de 2026. Si se completa la operación, unos 26.000 accionistas de K33 recibirían acciones de Reverion por valor de 5 millones de coronas suecas como dividendo en especie, y Reverion emitiría a K33 un préstamo convertible de 8 millones de coronas suecas, sin intereses, sin garantía y subordinado. El acuerdo requiere la aprobación en una junta general extraordinaria de K33 y suficiente patrimonio libre, y cualquiera de las partes puede resolverlo si las condiciones no se han cumplido el 31 de diciembre de 2026.",
+    "fr": "K33 AB (publ) a conclu un accord conditionnel avec Reverion Capital AB (publ) d’une valeur de 13 millions de couronnes suédoises, selon un communiqué de la société du 16 novembre 2026. Sous réserve de la réalisation de l’opération, environ 26 000 actionnaires de K33 recevraient des actions Reverion d’une valeur de 5 millions de couronnes suédoises à titre de dividende en nature, et Reverion émettrait au profit de K33 un prêt convertible de 8 millions de couronnes suédoises, sans intérêt, chirographaire et subordonné. L’accord requiert l’approbation d’une assemblée générale extraordinaire de K33 et des capitaux propres libres suffisants ; chacune des parties peut y mettre fin si les conditions n’ont pas été remplies au 31 décembre 2026.",
+    "ar": "أبرمت شركة K33 AB (publ) اتفاقًا مشروطًا مع Reverion Capital AB (publ) بقيمة 13 مليون كرونة سويدية، وفق إعلان للشركة في 16 نوفمبر 2026. وإذا اكتملت الصفقة، فسيحصل نحو 26 ألف مساهم في K33 على أسهم في Reverion بقيمة 5 ملايين كرونة سويدية كأرباح عينية، وستصدر Reverion قرضًا قابلًا للتحويل إلى K33 بقيمة 8 ملايين كرونة سويدية بلا فائدة وبلا ضمان وذا أولوية أدنى. وتشترط الصفقة موافقة جمعية عامة غير عادية لـ K33 وتوافر حقوق ملكية حرة كافية، ويجوز لأي من الطرفين إنهاء الاتفاق إذا لم تُستوفَ الشروط بحلول 31 ديسمبر 2026.",
+    "bn": "২০২৬ সালের ১৬ নভেম্বরের কোম্পানি বিজ্ঞপ্তি অনুসারে, K33 AB (publ) Reverion Capital AB (publ)-এর সঙ্গে ১.৩ কোটি সুইডিশ ক্রোনার মূল্যের একটি শর্তসাপেক্ষ চুক্তি করেছে। চুক্তি সম্পন্ন হলে প্রায় ২৬,০০০ K33 শেয়ারহোল্ডার প্রকৃত লভ্যাংশ হিসেবে ৫০ লাখ সুইডিশ ক্রোনারের Reverion শেয়ার পাবেন, এবং Reverion K33-কে ৮০ লাখ সুইডিশ ক্রোনারের সুদমুক্ত, অসংরক্ষিত ও অধস্তন রূপান্তরযোগ্য ঋণ দেবে। চুক্তির জন্য K33-এর একটি অসাধারণ সাধারণ সভায় অনুমোদন এবং পর্যাপ্ত মুক্ত ইকুইটি প্রয়োজন; ৩১ ডিসেম্বর ২০২৬-এর মধ্যে শর্ত পূরণ না হলে যেকোনো পক্ষ চুক্তি বাতিল করতে পারে।",
+    "pt": "A K33 AB (publ) celebrou um acordo condicional com a Reverion Capital AB (publ) no valor de 13 milhões de coroas suecas, segundo um comunicado da empresa de 16 de novembro de 2026. Se a operação se concretizar, cerca de 26 mil acionistas da K33 receberão ações da Reverion no valor de 5 milhões de coroas suecas a título de dividendo em espécie, e a Reverion emitirá à K33 um empréstimo convertível de 8 milhões de coroas suecas, sem juros, sem garantia e subordinado. O acordo exige aprovação numa assembleia geral extraordinária da K33 e capitais próprios livres suficientes, e qualquer das partes pode resolvê-lo se as condições não tiverem sido cumpridas até 31 de dezembro de 2026.",
+    "ru": "Согласно уведомлению компании от 16 ноября 2026 года, K33 AB (publ) заключила условное соглашение с Reverion Capital AB (publ) на 13 млн шведских крон. Если сделка состоится, около 26 000 акционеров K33 получат акции Reverion на 5 млн крон в качестве дивиденда в натуральной форме, а Reverion выдаст K33 беспроцентный, необеспеченный и субординированный конвертируемый заём на 8 млн крон. Сделка требует одобрения на внеочередном общем собрании K33 и достаточного свободного капитала; любая из сторон может расторгнуть соглашение, если условия не будут выполнены к 31 декабря 2026 года.",
+    "ur": "16 نومبر 2026 کے کمپنی نوٹس کے مطابق، K33 AB (publ) نے Reverion Capital AB (publ) کے ساتھ 13 ملین سویڈش کرون مالیت کا مشروط معاہدہ کیا ہے۔ تکمیل کی صورت میں تقریباً 26,000 K33 شیئر ہولڈرز کو 5 ملین سویڈش کرون مالیت کے Reverion شیئرز بطور غیر نقد منافع ملیں گے، اور Reverion K33 کو 8 ملین سویڈش کرون کا بلا سود، غیر محفوظ اور ماتحت قابل تبدیل قرض جاری کرے گی۔ سودے کے لیے K33 کی غیر معمولی جنرل میٹنگ کی منظوری اور کافی آزاد ایکویٹی درکار ہے؛ اگر شرائط 31 دسمبر 2026 تک پوری نہ ہوں تو کوئی بھی فریق معاہدہ ختم کر سکتا ہے۔",
+    "id": "Menurut pengumuman perusahaan pada 16 November 2026, K33 AB (publ) telah membuat perjanjian bersyarat dengan Reverion Capital AB (publ) senilai 13 juta krona Swedia. Jika transaksi selesai, sekitar 26.000 pemegang saham K33 akan menerima saham Reverion senilai 5 juta krona Swedia sebagai dividen in natura, dan Reverion akan menerbitkan pinjaman konversi kepada K33 sebesar 8 juta krona Swedia yang bebas bunga, tanpa jaminan, dan subordinasi. Perjanjian ini memerlukan persetujuan dalam rapat umum luar biasa K33 dan ekuitas bebas yang memadai, dan salah satu pihak dapat mengakhiri perjanjian jika syarat-syaratnya belum terpenuhi pada 31 Desember 2026.",
+    "de": "K33 AB (publ) hat laut einer Unternehmensmitteilung vom 16. November 2026 eine bedingte Vereinbarung mit Reverion Capital AB (publ) im Wert von 13 Millionen schwedischen Kronen geschlossen. Im Falle des Vollzugs würden rund 26.000 K33-Aktionäre Reverion-Aktien im Wert von 5 Millionen Kronen als Sachdividende erhalten, und Reverion würde K33 ein zinsloses, unbesichertes und nachrangiges Wandeldarlehen über 8 Millionen Kronen gewähren. Die Vereinbarung bedarf der Zustimmung einer außerordentlichen Hauptversammlung von K33 und ausreichenden freien Eigenkapitals; jede Partei kann den Vertrag kündigen, wenn die Bedingungen bis zum 31. Dezember 2026 nicht erfüllt sind.",
+    "ja": "2026年11月16日の会社発表によると、K33 AB（publ）はReverion Capital AB（publ）との間で、1300万スウェーデンクローナ相当の条件付き契約を結んだ。完了すれば、約2万6000人のK33株主は現物配当として500万クローナ相当のReverion株式を受け取り、ReverionはK33に対し、800万クローナの無利息・無担保・劣後の転換社債的ローンを発行する。この契約にはK33の臨時株主総会の承認と十分な分配可能資本が必要で、条件が2026年12月31日までに満たされなければ、いずれの当事者も契約を終了できる。",
+    "sw": "K33 AB (publ) imeingia mkataba wa masharti na Reverion Capital AB (publ) wenye thamani ya krona milioni 13 za Uswidi, kulingana na taarifa ya kampuni ya 16 Novemba 2026. Ikiwa muamala utakamilika, wanahisa wapatao 26,000 wa K33 wangepokea hisa za Reverion zenye thamani ya krona milioni 5 kama mgao wa mali, na Reverion ingetoa kwa K33 mkopo wa kubadilishwa wa krona milioni 8 usio na riba, usio na dhamana na wa cheo cha chini. Mkataba unahitaji idhini katika mkutano mkuu wa dharura wa K33 na mtaji huru wa kutosha, na kila upande unaweza kuuvunja mkataba ikiwa masharti hayajatimizwa ifikapo 31 Desemba 2026.",
+    "mr": "16 नोव्हेंबर 2026 च्या कंपनी सूचनापत्रकानुसार, K33 AB (publ) ने Reverion Capital AB (publ) सोबत १.३ कोटी स्वीडिश क्रोन किमतीचा सशर्त करार केला आहे. व्यवहार पूर्ण झाल्यास सुमारे 26,000 K33 भागधारकांना 50 लाख स्वीडिश क्रोन किमतीचे Reverion भाग वस्तूरूप लाभांश म्हणून मिळतील, आणि Reverion K33 ला 80 लाख स्वीडिश क्रोनचे व्याजमुक्त, अप्रतिभूत व अधीनस्थ परिवर्तनीय कर्ज देईल. कराराला K33 च्या असाधारण सर्वसाधारण सभेतील मंजुरी आणि पुरेशी मुक्त इक्विटी लागते; 31 डिसेंबर 2026 पर्यंत अटी पूर्ण न झाल्यास कोणताही पक्ष करार संपुष्टात आणू शकतो.",
+    "fa": "طبق اطلاعیه شرکت در ۱۶ نوامبر ۲۰۲۶، K33 AB (publ) توافقی مشروط به ارزش ۱۳ میلیون کرون سوئد با Reverion Capital AB (publ) بسته است. در صورت تکمیل معامله، حدود ۲۶ هزار سهامدار K33 سهام Reverion به ارزش ۵ میلیون کرون را به‌عنوان سود سهام غیرنقدی دریافت می‌کنند و Reverion یک وام قابل تبدیل ۸ میلیون کرونی بدون بهره، بدون وثیقه و تبعی به K33 می‌دهد. توافق نیازمند تصویب در مجمع عمومی فوق‌العاده K33 و حقوق صاحبان سهام آزاد کافی است و اگر شرایط تا ۳۱ دسامبر ۲۰۲۶ برآورده نشود، هر یک از طرف‌ها می‌تواند توافق را فسخ کند.",
+    "uk": "Згідно з повідомленням компанії від 16 листопада 2026 року, K33 AB (publ) уклала умовну угоду з Reverion Capital AB (publ) на 13 млн шведських крон. Якщо угоду буде завершено, близько 26 000 акціонерів K33 отримають акції Reverion на 5 млн крон як дивіденд у натуральній формі, а Reverion надасть K33 безвідсоткову, незабезпечену й субординовану конвертовану позику на 8 млн крон. Угода потребує схвалення на позачергових загальних зборах K33 і достатнього вільного капіталу; будь-яка сторона може розірвати угоду, якщо умови не буде виконано до 31 грудня 2026 року.",
+    "tr": "16 Kasım 2026 tarihli şirket bildirimine göre K33 AB (publ), Reverion Capital AB (publ) ile 13 milyon İsveç kronu tutarında şartlı bir anlaşma imzaladı. İşlem tamamlanırsa yaklaşık 26.000 K33 hissedarı, 5 milyon İsveç kronu değerinde Reverion hisselerini ayni temettü olarak alacak ve Reverion, K33'ye 8 milyon İsveç kronu tutarında faizsiz, teminatsız ve tali nitelikte bir dönüştürülebilir kredi verecek. Anlaşma, K33'ün olağanüstü genel kurulunda onay ve yeterli serbest özkaynak gerektiriyor; koşullar 31 Aralık 2026'ya kadar yerine getirilmezse taraflardan her biri anlaşmayı feshedebilir.",
+    "se": "K33 AB (publ) lea 16. skábmamánu 2026 dieđihusa mielde dahkan eavttolaš soahpamuša Reverion Capital AB (publ):in, mii lea 13 miljovnna ruoŧa kruvnnu árvosaš. Jos soahpamuš ollašuhtto, sullii 26 000 K33 oamasteaddji ožžot Reverion-oasiid 5 miljovnna kruvnnu árvosaš juohkinin naturas, ja Reverion addá K33:ii 8 miljovnna kruvnnu reanttohis, sihkarastameahttun ja maŋŋálaga konvertiberloana. Soahpamuš gáibida dohkkeheami K33 erenoamáš oppačoakkánis ja doarvái friddja iežas kapitála, ja guktot bealit sáhttet soahpamuša heaittihit jos eavttut eai leat deavdón 31. juovlamánu 2026 rádjái."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "9df4698a43d2",
@@ -297,9 +558,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "57caa8eacf52"
   },
   {
    "id": "767147ed982f",
@@ -323,9 +585,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Price and pattern coverage (bitcoin near 62–63,000 dollars, compared with a SpaceX IPO). The text itself says no sources document flows from bitcoin sales into Anthropic subscriptions, and that correlation is not causation. Standing exclusion. researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "191dd77cc3aa",
@@ -351,9 +614,10 @@
     "\\bsolana\\b"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Product PR / early iOS beta of a global Solana Labs trading app, with no Nordic actor. The official announcement is older than the Kaupr date (PR Newswire, 5 November 2026). researcher 17.11; editor 2026-11-17"
   },
   {
    "id": "da75fae5edbd",
