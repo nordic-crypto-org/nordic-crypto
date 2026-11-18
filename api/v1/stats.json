@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-17T12:05:09Z",
+ "generated_at": "2026-11-18T11:56:09Z",
  "preview": false,
  "source": "Cloudflare Web Analytics",
  "status": "ok",
@@ -9,8 +9,8 @@
  "note": "Aggregate counts from Cloudflare Web Analytics, which uses no cookies. visits is Cloudflare's visit count (a page view that arrives from another site or with no referrer); pageviews counts every page load. For each of the last 30 UTC days, paths lists visits and page views per page path, with query strings and fragments removed. Days are UTC dates. Weeks are ISO weeks (Monday to Sunday). partial is true for a period that is not finished or that starts before the first day with data.",
  "schema": 2,
  "first_date": "2026-10-17",
- "last_date": "2026-11-17",
- "updated_at": "2026-11-17T12:05:09Z",
+ "last_date": "2026-11-18",
+ "updated_at": "2026-11-18T11:56:09Z",
  "daily": [
   {
    "date": "2026-10-17",
@@ -25,19 +25,7 @@
   {
    "date": "2026-10-19",
    "visits": 20,
-   "pageviews": 30,
-   "paths": [
-    {
-     "path": "/",
-     "visits": 20,
-     "pageviews": 20
-    },
-    {
-     "path": "/token",
-     "visits": 0,
-     "pageviews": 10
-    }
-   ]
+   "pageviews": 30
   },
   {
    "date": "2026-10-20",
@@ -192,13 +180,7 @@
    "date": "2026-11-09",
    "visits": 0,
    "pageviews": 0,
-   "paths": [
-    {
-     "path": "/",
-     "visits": 1,
-     "pageviews": 1
-    }
-   ]
+   "paths": []
   },
   {
    "date": "2026-11-10",
@@ -270,14 +252,20 @@
    "date": "2026-11-17",
    "visits": 0,
    "pageviews": 0,
-   "partial": true,
    "paths": [
     {
      "path": "/",
-     "visits": 1,
-     "pageviews": 1
+     "visits": 2,
+     "pageviews": 2
     }
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "visits": 0,
+   "pageviews": 0,
+   "partial": true,
+   "paths": []
   }
  ],
  "weekly": [
@@ -329,7 +317,7 @@
   {
    "week": "2026-W47",
    "start": "2026-11-16",
-   "days": 2,
+   "days": 3,
    "visits": 0,
    "pageviews": 0,
    "end": "2026-11-22",
@@ -346,7 +334,7 @@
   },
   {
    "month": "2026-11",
-   "days": 17,
+   "days": 18,
    "visits": 120,
    "pageviews": 140,
    "partial": true
