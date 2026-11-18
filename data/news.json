@@ -4,7 +4,7 @@
    "id": "69864861c878",
    "url": "https://omni.se/ikea-drabbat-i-stor-it-attack-ville-stjala-krypto/a/lMAJg3",
    "title": "Ikea drabbat i stor it-attack – ville stjäla krypto",
-   "title_en": null,
+   "title_en": "Malicious code served through Optimizely hit websites at about 178 organisations, including IKEA",
    "source": "omni.se",
    "source_name": "Omni",
    "country": "SE",
@@ -16,15 +16,98 @@
    "published": "2026-11-17T19:24:44+00:00",
    "fetched": "2026-11-18T02:42:33+00:00",
    "topics": [
-    "crypto"
+    "security"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "On 16 November 2026, malicious JavaScript was served through Optimizely Web Experimentation to visitors of websites at about 178 organisations, including IKEA, according to Report URI and security researcher Scott Helme. The code swapped cryptocurrency wallet addresses and skimmed payment cards, among other things. Report URI said about USD 7,040 had reached the attackers' wallets by 19:25 UTC on 16 November.",
+   "also_covered_by": [
+    {
+     "outlet": "altaposten-no",
+     "outlet_name": "altaposten.no",
+     "url": "https://altaposten.no/norgeogverden/n/BrRyxE/hackere-forsoekte-aa-stjele-kryptovaluta-via-kjente-nettsteder",
+     "title": "Hackere forsøkte å stjele kryptovaluta via kjente nettsteder",
+     "published": "2026-11-17T05:11:26+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/samfunn/2026/11/17/8396229/cnn-ikea-og-hsbc-rammet-av-hackerangrep",
+     "title": "CNN, Ikea og HSBC rammet av hackerangrep",
+     "published": "2026-11-17T00:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-18T04:44:13+01:00",
+   "primary_source": {
+    "name": "Report URI / Scott Helme, 16 November 2026, «World's Largest Brands Infected With Malware Via Optimizely»",
+    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
+   },
+   "title_i18n": {
+    "nn": "Skadeleg kode tenestgjort gjennom Optimizely råka nettstader hos om lag 178 organisasjonar, mellom dei IKEA",
+    "nb": "Skadelig kode servert gjennom Optimizely rammet nettsteder hos om lag 178 organisasjoner, deriblant IKEA",
+    "da": "Skadelig kode serveret gennem Optimizely ramte websites hos omkring 178 organisationer, herunder IKEA",
+    "fi": "Optimizelyn kautta jaeltu haittakoodi osui noin 178 organisaation, mukaan lukien IKEAn, verkkosivuihin",
+    "is": "Skaðlegur kóði sem var þjónaður í gegnum Optimizely hafði áhrif á vefsvæði hjá um 178 stofnunum, þar á meðal IKEA",
+    "zh": "经Optimizely提供的恶意代码影响约178个组织的网站，其中包括宜家",
+    "hi": "Optimizely के माध्यम से परोसी गई दुर्भावनापूर्ण कोड ने IKEA समेत लगभग 178 संगठनों की वेबसाइटों को प्रभावित किया",
+    "es": "Código malicioso servido a través de Optimizely afectó a sitios web de unas 178 organizaciones, entre ellas IKEA",
+    "fr": "Du code malveillant servi via Optimizely a touché les sites d’environ 178 organisations, dont IKEA",
+    "ar": "شيفرة خبيثة قُدّمت عبر Optimizely أصابت مواقع نحو 178 منظمة بينها إيكيا",
+    "bn": "Optimizely-র মাধ্যমে পরিবেশিত ক্ষতিকর কোড IKEAসহ প্রায় ১৭৮টি সংস্থার ওয়েবসাইটকে আঘাত করেছে",
+    "pt": "Código malicioso servido através da Optimizely atingiu sítios de cerca de 178 organizações, incluindo a IKEA",
+    "ru": "Вредоносный код, отданный через Optimizely, затронул сайты примерно 178 организаций, включая IKEA",
+    "ur": "Optimizely کے ذریعے فراہم کردہ مخرب کوڈ نے IKEA سمیت تقریباً 178 اداروں کی ویب سائٹس کو متاثر کیا",
+    "id": "Kode berbahaya yang disajikan lewat Optimizely mengenai situs sekitar 178 organisasi, termasuk IKEA",
+    "de": "Über Optimizely ausgelieferter Schadcode traf Websites von rund 178 Organisationen, darunter IKEA",
+    "ja": "Optimizely経由で配信された悪質なコードが、IKEAを含む約178組織のウェブサイトに影響",
+    "sw": "Msimbo hatari uliotolewa kupitia Optimizely uliathiri tovuti za mashirika yapata 178, ikiwemo IKEA",
+    "mr": "Optimizely मार्फत दिलेल्या दुर्भावनापूर्ण कोडने IKEAसह सुमारे 178 संस्थांच्या संकेतस्थळांना बाधित केले",
+    "fa": "کد مخربی که از طریق Optimizely ارائه شد به وب‌سایت حدود ۱۷۸ سازمان از جمله ایکیا آسیب زد",
+    "uk": "Шкідливий код, поданий через Optimizely, уразив сайти близько 178 організацій, зокрема IKEA",
+    "tr": "Optimizely üzerinden sunulan kötü amaçlı kod, IKEA dahil yaklaşık 178 kuruluşun web sitelerini etkiledi",
+    "se": "Gahčči koda Optimizely bokte olahii neahttasiidduid sullii 178 organisašuvnnas, maiddái IKEA"
+   },
+   "title_i18n_source": "Ikea drabbat i stor it-attack – ville stjäla krypto",
+   "summary_i18n": {
+    "nn": "Den 16. november 2026 vart skadeleg JavaScript tenestgjort gjennom Optimizely Web Experimentation til vitjande på nettstader hos om lag 178 organisasjonar, mellom dei IKEA, ifølgje Report URI og tryggleiksforskaren Scott Helme. Koden bytte ut adresser til kryptolommebøker og skumma betalingskort, mellom anna. Report URI opplyste at om lag 7 040 dollar hadde kome inn på angriparane sine lommebøker innan 19:25 UTC den 16. november.",
+    "nb": "Den 16. november 2026 ble skadelig JavaScript servert gjennom Optimizely Web Experimentation til besøkende på nettsteder hos om lag 178 organisasjoner, deriblant IKEA, ifølge Report URI og sikkerhetsforskeren Scott Helme. Koden byttet ut adresser til kryptolommebøker og skummet betalingskort, blant annet. Report URI opplyste at om lag 7 040 dollar hadde nådd angripernes lommebøker innen 19:25 UTC den 16. november.",
+    "sv": "Den 16 november 2026 serverades skadlig JavaScript via Optimizely Web Experimentation till besökare på webbplatser hos omkring 178 organisationer, däribland IKEA, enligt Report URI och säkerhetsforskaren Scott Helme. Koden bytte ut adresser till kryptoplånböcker och skimmade betalkort, bland annat. Report URI uppgav att omkring 7 040 dollar hade nått angriparnas plånböcker klockan 19:25 UTC den 16 november.",
+    "da": "Den 16. november 2026 blev skadelig JavaScript serveret gennem Optimizely Web Experimentation til besøgende på websites hos omkring 178 organisationer, herunder IKEA, ifølge Report URI og sikkerhedsforskeren Scott Helme. Koden udskiftede adresser til krypto-wallets og skimmede betalingskort, blandt andet. Report URI oplyste, at omkring 7.040 dollar var nået frem til angribernes wallets kl. 19:25 UTC den 16. november.",
+    "fi": "Report URI:n ja tietoturvatutkija Scott Helmen mukaan 16. marraskuuta 2026 Optimizely Web Experimentationin kautta tarjottiin haitallista JavaScriptiä noin 178 organisaation, mukaan lukien IKEAn, verkkosivujen kävijöille. Koodi vaihtoi kryptolompakoiden osoitteita ja kaappasi korttitietoja, muun muassa. Report URI:n mukaan hyökkääjien lompakoihin oli kertynyt noin 7 040 dollaria kello 19.25 UTC 16. marraskuuta mennessä.",
+    "is": "Þann 16. nóvember 2026 var skaðlegum JavaScript-kóða þjónað í gegnum Optimizely Web Experimentation til gesta á vefsvæðum um 178 stofnana, þar á meðal IKEA, samkvæmt Report URI og öryggisrannsakandanum Scott Helme. Kóðinn skipti út föngum rafmyntaveskja og skimaði greiðslukort, meðal annars. Report URI sagði að um 7.040 Bandaríkjadalir hefðu borist í veski árásarmanna fyrir kl. 19:25 UTC þann 16. nóvember.",
+    "zh": "据Report URI及安全研究员Scott Helme称，2026年11月16日，恶意JavaScript通过Optimizely Web Experimentation提供给约178个组织（包括宜家）网站的访问者。该代码会替换加密货币钱包地址并盗取支付卡信息，此外还有其他行为。Report URI表示，截至11月16日19:25 UTC，攻击者钱包已收到约7,040美元。",
+    "hi": "Report URI और सुरक्षा शोधकर्ता Scott Helme के अनुसार, 16 नवंबर 2026 को Optimizely Web Experimentation के माध्यम से दुर्भावनापूर्ण JavaScript IKEA समेत लगभग 178 संगठनों की वेबसाइटों के आगंतुकों तक पहुँचाया गया. कोड ने क्रिप्टोकरेंसी वॉलेट पतों को बदल दिया और भुगतान कार्ड की जानकारी खंगाली, अन्य बातों के अलावा. Report URI ने कहा कि 16 नवंबर को 19:25 UTC तक हमलावरों के वॉलेट में लगभग 7,040 डॉलर पहुँच चुके थे.",
+    "es": "El 16 de noviembre de 2026 se sirvió JavaScript malicioso a través de Optimizely Web Experimentation a visitantes de sitios web de unas 178 organizaciones, entre ellas IKEA, según Report URI y el investigador de seguridad Scott Helme. El código sustituyó direcciones de monederos de criptomonedas y capturó datos de tarjetas de pago, entre otras cosas. Report URI indicó que unos 7.040 dólares habían llegado a los monederos de los atacantes a las 19:25 UTC del 16 de noviembre.",
+    "fr": "Le 16 novembre 2026, du JavaScript malveillant a été servi via Optimizely Web Experimentation aux visiteurs de sites d’environ 178 organisations, dont IKEA, selon Report URI et le chercheur en sécurité Scott Helme. Le code remplaçait des adresses de portefeuilles de cryptomonnaie et interceptait des données de cartes de paiement, entre autres. Report URI a indiqué qu’environ 7 040 dollars étaient parvenus dans les portefeuilles des attaquants à 19 h 25 UTC le 16 novembre.",
+    "ar": "في 16 نوفمبر 2026 قُدّم جافاسكربت خبيث عبر Optimizely Web Experimentation لزوار مواقع نحو 178 منظمة بينها إيكيا، وفق Report URI والباحث الأمني Scott Helme. واستبدلت الشيفرة عناوين محافظ العملات المشفرة واستخلصت بيانات بطاقات الدفع، بين أمور أخرى. وقال Report URI إن نحو 7040 دولارًا كانت قد وصلت إلى محافظ المهاجمين بحلول الساعة 19:25 بالتوقيت العالمي في 16 نوفمبر.",
+    "bn": "Report URI এবং নিরাপত্তা গবেষক Scott Helme-এর মতে, ১৬ নভেম্বর ২০২৬-এ Optimizely Web Experimentation-এর মাধ্যমে ক্ষতিকর JavaScript IKEAসহ প্রায় ১৭৮টি সংস্থার ওয়েবসাইটের দর্শকদের কাছে পৌঁছেছিল। কোডটি ক্রিপ্টোকারেন্সি ওয়ালেট ঠিকানা বদলে দিয়েছে এবং পেমেন্ট কার্ডের তথ্য চুরি করেছে, অন্যান্য কাজের মধ্যে। Report URI জানিয়েছে, ১৬ নভেম্বর ১৯:২৫ UTC-এর মধ্যে আক্রমণকারীদের ওয়ালেটে প্রায় ৭,০৪০ ডলার পৌঁছেছিল।",
+    "pt": "Em 16 de novembro de 2026, JavaScript malicioso foi servido através da Optimizely Web Experimentation a visitantes de sítios de cerca de 178 organizações, incluindo a IKEA, segundo a Report URI e o investigador de segurança Scott Helme. O código substituiu endereços de carteiras de criptomoeda e capturou dados de cartões de pagamento, entre outras coisas. A Report URI afirmou que cerca de 7.040 dólares tinham chegado às carteiras dos atacantes às 19:25 UTC de 16 de novembro.",
+    "ru": "16 ноября 2026 года вредоносный JavaScript отдавался через Optimizely Web Experimentation посетителям сайтов примерно 178 организаций, включая IKEA, сообщили Report URI и исследователь безопасности Scott Helme. Код подменял адреса криптокошельков и снимал данные платёжных карт, среди прочего. По данным Report URI, к 19:25 UTC 16 ноября на кошельки злоумышленников поступило около 7040 долларов.",
+    "ur": "Report URI اور سیکیورٹی محقق Scott Helme کے مطابق، 16 نومبر 2026 کو Optimizely Web Experimentation کے ذریعے مخرب JavaScript IKEA سمیت تقریباً 178 اداروں کی ویب سائٹس کے زائرین تک پہنچایا گیا۔ کوڈ نے کرپٹو کرنسی والیٹ پتے بدل دیے اور ادائیگی کارڈز کی معلومات کھینچیں، دیگر باتوں کے علاوہ۔ Report URI نے کہا کہ 16 نومبر کو 19:25 UTC تک حملہ آوروں کے والیٹس میں تقریباً 7,040 ڈالر پہنچ چکے تھے۔",
+    "id": "Pada 16 November 2026, JavaScript berbahaya disajikan melalui Optimizely Web Experimentation kepada pengunjung situs sekitar 178 organisasi, termasuk IKEA, menurut Report URI dan peneliti keamanan Scott Helme. Kode itu menukar alamat dompet kripto dan menyalin data kartu pembayaran, di antaranya. Report URI menyatakan sekitar 7.040 dolar telah masuk ke dompet penyerang pada 19.25 UTC tanggal 16 November.",
+    "de": "Am 16. November 2026 wurde über Optimizely Web Experimentation schädliches JavaScript an Besucher von Websites rund 178 Organisationen ausgeliefert, darunter IKEA, laut Report URI und dem Sicherheitsforscher Scott Helme. Der Code vertauschte Adressen von Krypto-Wallets und las Zahlungskarten aus, unter anderem. Report URI zufolge waren bis 19:25 UTC am 16. November rund 7040 Dollar auf den Wallets der Angreifer eingegangen.",
+    "ja": "Report URIとセキュリティ研究者Scott Helmeによると、2026年11月16日、Optimizely Web Experimentationを通じて悪意あるJavaScriptが、IKEAを含む約178組織のウェブサイト訪問者に配信された。このコードは暗号資産ウォレットのアドレスをすり替え、決済カード情報を盗み取るなどした。Report URIは、11月16日19:25 UTCまでに攻撃者のウォレットへ約7,040ドルが届いていたとしている。",
+    "sw": "Tarehe 16 Novemba 2026, JavaScript hatari ilitolewa kupitia Optimizely Web Experimentation kwa wageni wa tovuti za mashirika yapata 178, ikiwemo IKEA, kulingana na Report URI na mtafiti wa usalama Scott Helme. Msimbo huo ulibadilisha anwani za pochi za sarafu-fiche na kuvuna data za kadi za malipo, miongoni mwa mambo mengine. Report URI ilisema dola zipatazo 7,040 zilikuwa zimefika kwenye pochi za washambuliaji kufikia 19:25 UTC tarehe 16 Novemba.",
+    "mr": "Report URI आणि सुरक्षा संशोधक Scott Helme यांच्यानुसार, 16 नोव्हेंबर 2026 रोजी Optimizely Web Experimentation मार्फत दुर्भावनापूर्ण JavaScript IKEAसह सुमारे 178 संस्थांच्या संकेतस्थळांवरील भेट देणाऱ्यांना देण्यात आला. कोडने क्रिप्टोकरन्सी वॉलेट पत्त्यांची अदलाबदल केली आणि पेमेंट कार्ड माहिती खणली, इतर गोष्टींबरोबर. Report URI नुसार 16 नोव्हेंबर रोजी 19:25 UTC पर्यंत हल्लेखोरांच्या वॉलेटमध्ये सुमारे 7,040 डॉलर पोहोचले होते.",
+    "fa": "به گفته Report URI و پژوهشگر امنیت Scott Helme، در ۱۶ نوامبر ۲۰۲۶ جاوااسکریپت مخرب از طریق Optimizely Web Experimentation به بازدیدکنندگان وب‌سایت حدود ۱۷۸ سازمان از جمله ایکیا ارائه شد. این کد آدرس کیف پول‌های رمزارزی را عوض می‌کرد و اطلاعات کارت‌های پرداخت را می‌ربود، در کنار کارهای دیگر. Report URI گفت تا ساعت ۱۹:۲۵ UTC در ۱۶ نوامبر حدود ۷٬۰۴۰ دلار به کیف پول مهاجمان رسیده بود.",
+    "uk": "16 листопада 2026 року шкідливий JavaScript подавався через Optimizely Web Experimentation відвідувачам сайтів близько 178 організацій, зокрема IKEA, повідомляють Report URI та дослідник безпеки Scott Helme. Код підміняв адреси криптогаманців і зчитував дані платіжних карток, серед іншого. За даними Report URI, до 19:25 UTC 16 листопада на гаманці нападників надійшло близько 7040 доларів.",
+    "tr": "Report URI ve güvenlik araştırmacısı Scott Helme'ye göre 16 Kasım 2026'da Optimizely Web Experimentation üzerinden kötü amaçlı JavaScript, IKEA dahil yaklaşık 178 kuruluşun web sitesi ziyaretçilerine sunuldu. Kod, kripto cüzdan adreslerini değiştirdi ve ödeme kartı verilerini kopyaladı, başka işlerin yanı sıra. Report URI, 16 Kasım'da 19:25 UTC itibarıyla saldırganların cüzdanlarına yaklaşık 7.040 dolar ulaştığını bildirdi.",
+    "se": "16. skábmamánu 2026 fállojuvvui gahčči JavaScript Optimizely Web Experimentation bokte fitniide neahttasiidduin sullii 178 organisašuvnnas, maiddái IKEA, Report URI ja sikuritehtadutki Scott Helme mielde. Koda molson kryptolumpebuoid čujuhusaid ja skiibai máksinkorttaid, earret eará. Report URI dieđihii ahte sullii 7 040 dollára ledje olahan válddiid lumpebúgoid 19:25 UTC rádjái 16. skábmamánu."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "460ee2b8204c",
@@ -48,8 +131,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price and market commentary (“six reasons for the November drop”) on an exchange blog, with a commercial pitch for Coinmotion’s own platform. Standing exclusion, same pattern as already rejected 62737369cec8. researcher 18.11; editor 2026-11-18"
   },
   {
    "id": "65690736e271",
@@ -74,7 +158,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -110,7 +194,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "69864861c878"
   },
   {
    "id": "9cca1cceb8db",
@@ -135,11 +220,12 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_unverified": true,
    "possible_duplicate_of": "65690736e271",
-   "possible_duplicate_reason": "same institution, same day"
+   "possible_duplicate_reason": "same institution, same day",
+   "merged_into": "69864861c878"
   },
   {
    "id": "8de1029cf352",
@@ -190,15 +276,16 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "ba1d824e5d76"
   },
   {
    "id": "62e65a1a0595",
    "url": "https://kaupr.io/nyheter/nbx-har-levert-soknad-om-bankkonsesjon-i-latvia",
    "title": "NBX har levert søknad om bankkonsesjon i Latvia",
-   "title_en": null,
+   "title_en": "NBX applies for a bank licence in Latvia",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "NO",
@@ -211,16 +298,81 @@
    "published": "2026-11-17",
    "fetched": "2026-11-18T02:42:33+00:00",
    "topics": [
-    "regulation",
-    "companies"
+    "companies",
+    "banking"
    ],
    "matched": [
     "\\bNBX\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "NBX has filed an application for a banking licence in Latvia for its wholly owned subsidiary, NBX Digital Asset Bank AS in Riga, according to a stock exchange notice reported by Kaupr on 17 November 2026. The application is for a specialised credit institution under Latvian law; it has been filed, not granted. Latvijas Banka will ask for more information before the application counts as complete, and the European Central Bank grants the licence on Latvijas Banka's recommendation. NBX says the planned digital bank would operate cross-border in Norway, Lithuania, Sweden, Finland, Poland and Germany, and that operations could start at the earliest by the end of 2027, with 2028 more likely.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-18T04:44:13+01:00",
+   "primary_source": {
+    "name": "NBX — Oslo Børs NewsWeb notice, 17 November 2026 (EN)",
+    "url": "https://newsweb.oslobors.no/message/686747"
+   },
+   "links": [
+    {
+     "url": "https://newsweb.oslobors.no/message/686746",
+     "label": "NBX NewsWeb notice, Norwegian version, 17 November 2026"
+    }
+   ],
+   "title_i18n": {
+    "nn": "NBX søkjer om bankløyve i Latvia",
+    "sv": "NBX ansöker om banklicens i Lettland",
+    "da": "NBX søger om banklicens i Letland",
+    "fi": "NBX hakee pankkitoimilupaa Latviassa",
+    "is": "NBX sækir um bankaleyfi í Lettlandi",
+    "zh": "NBX在拉脱维亚申请银行牌照",
+    "hi": "NBX ने लातविया में बैंक लाइसेंस के लिए आवेदन किया",
+    "es": "NBX solicita una licencia bancaria en Letonia",
+    "fr": "NBX demande un agrément bancaire en Lettonie",
+    "ar": "NBX يتقدم بطلب ترخيص مصرفي في لاتفيا",
+    "bn": "NBX লাটভিয়ায় ব্যাংক লাইসেন্সের আবেদন করেছে",
+    "pt": "A NBX pede uma licença bancária na Letónia",
+    "ru": "NBX подаёт заявку на банковскую лицензию в Латвии",
+    "ur": "NBX نے لٹویا میں بینک لائسنس کے لیے درخواست دی",
+    "id": "NBX mengajukan izin bank di Latvia",
+    "de": "NBX beantragt eine Banklizenz in Lettland",
+    "ja": "NBX、ラトビアで銀行免許を申請",
+    "sw": "NBX inatuma ombi la leseni ya benki nchini Latvia",
+    "mr": "NBX ने लातव्हियामध्ये बँक परवान्यासाठी अर्ज केला",
+    "fa": "NBX برای مجوز بانکی در لتونی درخواست می‌دهد",
+    "uk": "NBX подає заявку на банківську ліцензію в Латвії",
+    "tr": "NBX, Letonya’da banka lisansı başvurusu yaptı",
+    "se": "NBX ohcá báŋkolobi Latvias"
+   },
+   "title_i18n_source": "NBX har levert søknad om bankkonsesjon i Latvia",
+   "summary_i18n": {
+    "nb": "NBX har levert en søknad om bankkonsesjon i Latvia for det heleide datterselskapet NBX Digital Asset Bank AS i Riga, ifølge en børsmelding gjengitt av Kaupr 17. november 2026. Søknaden gjelder en spesialisert kredittinstitusjon etter latvisk rett; den er levert, ikke innvilget. Latvijas Banka vil be om mer informasjon før søknaden regnes som komplett, og Den europeiske sentralbanken gir konsesjonen etter innstilling fra Latvijas Banka. NBX opplyser at den planlagte digitale banken skal kunne drive grensekryssende virksomhet i Norge, Litauen, Sverige, Finland, Polen og Tyskland, og at drift tidligst kan starte mot slutten av 2027, mens 2028 er mer sannsynlig.",
+    "nn": "NBX har levert ein søknad om bankløyve i Latvia for det heileigde dotterselskapet NBX Digital Asset Bank AS i Riga, ifølgje ei børsmelding attgjeven av Kaupr 17. november 2026. Søknaden gjeld ein spesialisert kredittinstitusjon etter latvisk rett; han er levert, ikkje innvilga. Latvijas Banka vil be om meir informasjon før søknaden vert rekna som komplett, og Den europeiske sentralbanken gjev løyvet etter innstilling frå Latvijas Banka. NBX opplyser at den planlagde digitale banken skal kunne drive grensekryssande verksemd i Noreg, Litauen, Sverige, Finland, Polen og Tyskland, og at drift tidlegast kan starte mot slutten av 2027, medan 2028 er meir rimeleg.",
+    "sv": "NBX har lämnat in en ansökan om banklicens i Lettland för det helägda dotterbolaget NBX Digital Asset Bank AS i Riga, enligt ett börsmeddelande som Kaupr återgav den 17 november 2026. Ansökan avser ett specialiserat kreditinstitut enligt lettisk rätt; den är inlämnad, inte beviljad. Latvijas Banka kommer att begära mer information innan ansökan räknas som komplett, och Europeiska centralbanken beviljar licensen på rekommendation av Latvijas Banka. NBX uppger att den planerade digitala banken skulle kunna verka gränsöverskridande i Norge, Litauen, Sverige, Finland, Polen och Tyskland, och att verksamheten tidigast kan starta mot slutet av 2027, medan 2028 är mer sannolikt.",
+    "da": "NBX har indgivet en ansøgning om banklicens i Letland for det helejede datterselskab NBX Digital Asset Bank AS i Riga, ifølge en selskabsmeddelelse gengivet af Kaupr den 17. november 2026. Ansøgningen vedrører et specialiseret kreditinstitut efter lettisk ret; den er indgivet, ikke givet. Latvijas Banka vil bede om flere oplysninger, før ansøgningen tæller som komplet, og Den Europæiske Centralbank giver licensen efter indstilling fra Latvijas Banka. NBX oplyser, at den planlagte digitale bank skal kunne drive grænseoverskridende virksomhed i Norge, Litauen, Sverige, Finland, Polen og Tyskland, og at drift tidligst kan begynde sidst i 2027, mens 2028 er mere sandsynligt.",
+    "fi": "NBX on jättänyt Latviassa pankkitoimilupahakemuksen kokonaan omistamalleen tytäryhtiölle NBX Digital Asset Bank AS:lle Rigassa, ilmenee pörssitiedotteesta, jonka Kaupr kertoi 17. marraskuuta 2026. Hakemus koskee Latvian lain mukaista erikoistunutta luottolaitosta; se on jätetty, ei myönnetty. Latvijas Banka pyytää lisätietoja ennen kuin hakemus katsotaan täydelliseksi, ja Euroopan keskuspankki myöntää luvan Latvijas Bankan esityksestä. NBX:n mukaan suunniteltu digitaalinen pankki voisi toimia rajat ylittävästi Norjassa, Liettuassa, Ruotsissa, Suomessa, Puolassa ja Saksassa, ja toiminta voisi alkaa aikaisintaan vuoden 2027 lopussa, vuoden 2028 ollessa todennäköisempi.",
+    "is": "NBX hefur skilað umsókn um bankaleyfi í Lettlandi fyrir dótturfélagið NBX Digital Asset Bank AS í Riga, sem er í fullri eigu, samkvæmt kauphallartilkynningu sem Kaupr greindi frá 17. nóvember 2026. Umsóknin er um sérhæfða lánastofnun samkvæmt lettneskum lögum; henni hefur verið skilað, ekki veitt. Latvijas Banka mun óska eftir frekari upplýsingum áður en umsóknin telst vera fullbúin, og Seðlabanki Evrópu veitir leyfið að tillögu Latvijas Banka. NBX segir að fyrirhugaði stafræni bankinn geti starfað yfir landamæri í Noregi, Litháen, Svíþjóð, Finnlandi, Póllandi og Þýskalandi, og að starfsemi geti hafist í fyrsta lagi seint árið 2027, en 2028 sé líklegra.",
+    "zh": "据Kaupr 2026年11月17日报道的一份交易所公告，NBX已为其全资子公司、位于里加的NBX Digital Asset Bank AS提交拉脱维亚银行牌照申请。该申请针对拉脱维亚法律下的专业信贷机构；目前是已提交，而非已获批。拉脱维亚银行（Latvijas Banka）在申请被视为完整之前还会要求补充信息，欧洲央行将根据拉脱维亚银行的建议发放牌照。NBX表示，计划中的数字银行将在挪威、立陶宛、瑞典、芬兰、波兰和德国跨境经营，业务最早可能于2027年底起步，2028年的可能性更大。",
+    "hi": "Kaupr द्वारा 17 नवंबर 2026 को बताए गए एक स्टॉक एक्सचेंज नोटिस के अनुसार, NBX ने लातविया में अपने पूर्ण स्वामित्व वाले सहायक, रीगा स्थित NBX Digital Asset Bank AS, के लिए बैंकिंग लाइसेंस का आवेदन दाखिल किया है. आवेदन लातवियाई कानून के अंतर्गत एक विशेषीकृत ऋण संस्थान के लिए है; इसे दाखिल किया गया है, प्रदान नहीं किया गया. Latvijas Banka आवेदन को पूरा माने जाने से पहले और जानकारी मांगेगी, और यूरोपीय केंद्रीय बैंक Latvijas Banka की सिफारिश पर लाइसेंस देता है. NBX का कहना है कि प्रस्तावित डिजिटल बैंक नॉर्वे, लिथुआनिया, स्वीडन, फिनलैंड, पोलैंड और जर्मनी में सीमा-पार काम करेगा, और संचालन 2027 के अंत तक सबसे पहले शुरू हो सकता है, जबकि 2028 अधिक संभावित है.",
+    "es": "NBX ha presentado una solicitud de licencia bancaria en Letonia para su filial de plena propiedad NBX Digital Asset Bank AS, en Riga, según un hecho relevante comunicado por Kaupr el 17 de noviembre de 2026. La solicitud es para una entidad de crédito especializada según el Derecho letón; se ha presentado, no se ha concedido. Latvijas Banka pedirá más información antes de que la solicitud se considere completa, y el Banco Central Europeo concede la licencia a propuesta de Latvijas Banka. NBX afirma que el banco digital previsto operaría de forma transfronteriza en Noruega, Lituania, Suecia, Finlandia, Polonia y Alemania, y que la actividad podría comenzar como muy pronto a finales de 2027, siendo 2028 más probable.",
+    "fr": "NBX a déposé une demande d’agrément bancaire en Lettonie pour sa filiale détenue à 100 %, NBX Digital Asset Bank AS, à Riga, selon un avis boursier rapporté par Kaupr le 17 novembre 2026. La demande concerne un établissement de crédit spécialisé en droit letton ; elle a été déposée, et non accordée. Latvijas Banka demandera des informations complémentaires avant que le dossier ne soit considéré comme complet, et la Banque centrale européenne délivre l’agrément sur recommandation de Latvijas Banka. Selon NBX, la banque numérique prévue exercerait transfrontière en Norvège, en Lituanie, en Suède, en Finlande, en Pologne et en Allemagne, et l’activité pourrait commencer au plus tôt fin 2027, 2028 étant plus probable.",
+    "ar": "قدّمت NBX طلب ترخيص مصرفي في لاتفيا لشركتها التابعة المملوكة بالكامل NBX Digital Asset Bank AS في ريغا، وفق إعلان بورصة نقلته Kaupr في 17 نوفمبر 2026. والطلب لمؤسسة ائتمان متخصصة بموجب القانون اللاتفي؛ وقد أُودع ولم يُمنح. وستطلب Latvijas Banka مزيدًا من المعلومات قبل أن يُعد الطلب مكتملًا، ويمنح البنك المركزي الأوروبي الترخيص بناءً على توصية Latvijas Banka. وتقول NBX إن البنك الرقمي المزمع سيعمل عبر الحدود في النرويج وليتوانيا والسويد وفنلندا وبولندا وألمانيا، وإن العمليات قد تبدأ في أقرب تقدير أواخر 2027، بينما 2028 أكثر ترجيحًا.",
+    "bn": "Kaupr ১৭ নভেম্বর ২০২৬-এ যে স্টক এক্সচেঞ্জ বিজ্ঞপ্তি জানিয়েছে, সে অনুসারে NBX লাটভিয়ায় তার সম্পূর্ণ মালিকানাধীন সহযোগী, রিগার NBX Digital Asset Bank AS-এর জন্য ব্যাংক লাইসেন্সের আবেদন জমা দিয়েছে। আবেদনটি লাটভীয় আইনের অধীনে একটি বিশেষায়িত ঋণপ্রতিষ্ঠানের জন্য; এটি জমা দেওয়া হয়েছে, মঞ্জুর হয়নি। আবেদন সম্পূর্ণ গণ্য হওয়ার আগে Latvijas Banka আরও তথ্য চাইবে, এবং ইউরোপীয় কেন্দ্রীয় ব্যাংক Latvijas Banka-র সুপারিশে লাইসেন্স দেয়। NBX বলে, পরিকল্পিত ডিজিটাল ব্যাংক নরওয়ে, লিথুয়ানিয়া, সুইডেন, ফিনল্যান্ড, পোল্যান্ড ও জার্মানিতে সীমান্ত পেরিয়ে কাজ করবে, এবং কার্যক্রম সর্বোচ্চ তাড়াতাড়ি ২০২৭ সালের শেষে শুরু হতে পারে, ২০২৮ বেশি সম্ভাব্য।",
+    "pt": "A NBX apresentou um pedido de licença bancária na Letónia para a sua filial detida a 100 %, a NBX Digital Asset Bank AS, em Riga, segundo um comunicado bolsista relatado pela Kaupr em 17 de novembro de 2026. O pedido é para uma instituição de crédito especializada nos termos do direito letão; foi apresentado, não concedido. O Latvijas Banka pedirá mais informações antes de o pedido ser considerado completo, e o Banco Central Europeu concede a licença mediante recomendação do Latvijas Banka. A NBX afirma que o banco digital previsto operaria transfronteiriçamente na Noruega, na Lituânia, na Suécia, na Finlândia, na Polónia e na Alemanha, e que a atividade poderia começar no mais cedo no final de 2027, sendo 2028 mais provável.",
+    "ru": "Как следует из биржевого уведомления, о котором 17 ноября 2026 года сообщила Kaupr, NBX подала в Латвии заявку на банковскую лицензию для своей стопроцентной дочерней компании NBX Digital Asset Bank AS в Риге. Заявка касается специализированного кредитного учреждения по латвийскому праву; она подана, а не выдана. Latvijas Banka запросит дополнительные сведения, прежде чем заявка будет считаться комплектной, а лицензию выдаёт Европейский центральный банк по рекомендации Latvijas Banka. По словам NBX, планируемый цифровой банк мог бы работать на трансграничной основе в Норвегии, Литве, Швеции, Финляндии, Польше и Германии, а начать деятельность — не раньше конца 2027 года, причём 2028 год более вероятен.",
+    "ur": "Kaupr کی 17 نومبر 2026 کی رپورٹ کردہ اسٹاک ایکسچینج نوٹس کے مطابق، NBX نے لٹویا میں اپنی مکمل ملکیتی ذیلی کمپنی، ریگا میں NBX Digital Asset Bank AS، کے لیے بینکنگ لائسنس کی درخواست جمع کرائی ہے۔ درخواست لاتویائی قانون کے تحت ایک اختصاصی کریڈٹ ادارے کے لیے ہے؛ یہ جمع کرائی گئی ہے، عطا نہیں ہوئی۔ Latvijas Banka درخواست کو مکمل شمار کیے جانے سے پہلے مزید معلومات مانگے گی، اور یورپی مرکزی بینک Latvijas Banka کی سفارش پر لائسنس دیتا ہے۔ NBX کا کہنا ہے کہ مجوزہ ڈیجیٹل بینک ناروے، لتھوانیا، سویڈن، فن لینڈ، پولینڈ اور جرمنی میں سرحد پار کام کرے گا، اور آپریشنز 2027 کے آخر تک جلد از جلد شروع ہو سکتے ہیں، جبکہ 2028 زیادہ ممکن ہے۔",
+    "id": "Menurut pemberitahuan bursa yang dilaporkan Kaupr pada 17 November 2026, NBX telah mengajukan permohonan izin bank di Latvia untuk anak perusahaan yang dimiliki penuh, NBX Digital Asset Bank AS di Riga. Permohonan itu untuk lembaga kredit khusus menurut hukum Latvia; sudah diajukan, belum diberikan. Latvijas Banka akan meminta informasi tambahan sebelum permohonan dihitung lengkap, dan Bank Sentral Eropa memberikan izin atas rekomendasi Latvijas Banka. NBX menyatakan bank digital yang direncanakan akan beroperasi lintas batas di Norwegia, Lituania, Swedia, Finlandia, Polandia, dan Jerman, dan operasional paling cepat dapat dimulai akhir 2027, dengan 2028 lebih mungkin.",
+    "de": "NBX hat laut einer von Kaupr am 17. November 2026 wiedergegebenen Börsenmitteilung in Lettland einen Antrag auf eine Banklizenz für die hundertprozentige Tochter NBX Digital Asset Bank AS in Riga gestellt. Der Antrag betrifft ein spezialisiertes Kreditinstitut nach lettischem Recht; er ist gestellt, nicht erteilt. Latvijas Banka wird weitere Angaben verlangen, bevor der Antrag als vollständig gilt, und die Europäische Zentralbank erteilt die Lizenz auf Empfehlung der Latvijas Banka. NBX zufolge würde die geplante Digitalbank grenzüberschreitend in Norwegen, Litauen, Schweden, Finnland, Polen und Deutschland tätig sein; ein Betrieb könne frühestens gegen Ende 2027 beginnen, 2028 sei wahrscheinlicher.",
+    "ja": "Kauprが2026年11月17日に伝えた取引所公告によると、NBXは全額出資子会社であるリガのNBX Digital Asset Bank ASについて、ラトビアで銀行免許を申請した。申請はラトビア法上の専門的な信用機関向けであり、提出済みであって付与されたものではない。Latvijas Bankaは申請が完備とみなされる前に追加情報を求め、欧州中央銀行がLatvijas Bankaの勧告に基づいて免許を付与する。NBXによれば、計画中のデジタル銀行はノルウェー、リトアニア、スウェーデン、フィンランド、ポーランド、ドイツで越境営業し、業務開始は早くて2027年末、2028年の可能性の方が高いという。",
+    "sw": "NBX imewasilisha ombi la leseni ya benki nchini Latvia kwa kampuni yake tanzu inayomilikiwa kikamilifu, NBX Digital Asset Bank AS huko Riga, kulingana na taarifa ya soko la hisa iliyoripotiwa na Kaupr tarehe 17 Novemba 2026. Ombi ni la taasisi maalum ya mikopo chini ya sheria ya Latvia; limewasilishwa, halijatolewa. Latvijas Banka itaomba taarifa zaidi kabla ombi halijahesabiwa kuwa kamili, na Benki Kuu ya Ulaya hutoa leseni kwa mapendekezo ya Latvijas Banka. NBX inasema benki tezi iliyopangwa ingefanya kazi kuvuka mipaka nchini Norway, Lithuania, Sweden, Finland, Poland na Ujerumani, na kwamba shughuli zinaweza kuanza mapema zaidi mwisho wa 2027, 2028 ikiwa na uwezekano mkubwa zaidi.",
+    "mr": "Kaupr ने 17 नोव्हेंबर 2026 रोजी दिलेल्या स्टॉक एक्स्चेंज सूचनेनुसार, NBX ने लাতव्हियामध्ये पूर्ण मालकीच्या उपकंपनी, रिगा येथील NBX Digital Asset Bank AS, साठी बँकिंग परवान्याचा अर्ज दाखल केला आहे. अर्ज लातव्हियन कायद्याखालील विशेषीकृत पतसंस्थेसाठी आहे; तो दाखल झाला आहे, मंजूर झालेला नाही. Latvijas Banka अर्ज पूर्ण गणला जाण्यापूर्वी अधिक माहिती मागवेल, आणि युरोपीय केंद्रीय बँक Latvijas Banka च्या शिफारशीवर परवाना देते. NBXचे म्हणणे आहे की नियोजित डिजिटल बँक नॉर्वे, लिथुआनिया, स्वीडन, फिनलंड, पोलंड आणि जर्मनीत सीमापार काम करेल, आणि कामकाज 2027 अखेरपर्यंत सुरु होऊ शकते, 2028 अधिक संभाव्य आहे.",
+    "fa": "طبق اطلاعیه بورس که Kaupr در ۱۷ نوامبر ۲۰۲۶ گزارش کرد، NBX برای مجوز بانکی در لتونی برای شرکت تابعه تمام‌مالکیتی خود، NBX Digital Asset Bank AS در ریگا، درخواست داده است. درخواست برای یک مؤسسه اعتباری تخصصی تحت قانون لتونی است؛ ثبت شده، نه اعطا شده. Latvijas Banka پیش از کامل شمرده شدن درخواست اطلاعات بیشتری خواهد خواست و بانک مرکزی اروپا بر اساس توصیه Latvijas Banka مجوز را می‌دهد. NBX می‌گوید بانک دیجیتال برنامه‌ریزی‌شده در نروژ، لیتوانی، سوئد، فنلاند، لهستان و آلمان به‌صورت فرامرزی فعالیت خواهد کرد و آغاز عملیات حداکثر تا پایان ۲۰۲۷ ممکن است، در حالی که ۲۰۲۸ محتمل‌تر است.",
+    "uk": "Згідно з біржовим повідомленням, про яке 17 листопада 2026 року повідомила Kaupr, NBX подала в Латвії заявку на банківську ліцензію для своєї стовідсоткової дочірньої компанії NBX Digital Asset Bank AS у Ризі. Заявка стосується спеціалізованої кредитної установи за латвійським правом; її подано, а не надано. Latvijas Banka запросить додаткову інформацію, перш ніж заявку вважатимуть комплектною, а ліцензію видає Європейський центральний банк за рекомендацією Latvijas Banka. За словами NBX, запланований цифровий банк міг би працювати на транскордонній основі в Норвегії, Литві, Швеції, Фінляндії, Польщі та Німеччині, а розпочати діяльність — не раніше кінця 2027 року, причому 2028 рік більш імовірний.",
+    "tr": "Kaupr'un 17 Kasım 2026'da aktardığı bir borsa bildirimine göre NBX, Letonya'da yüzde yüz iştiraki olan Riga'daki NBX Digital Asset Bank AS için banka lisansı başvurusu yaptı. Başvuru, Letonya hukukuna göre uzmanlaşmış bir kredi kuruluşu içindir; yapılmıştır, verilmemiştir. Latvijas Banka, başvuru tam sayılmadan önce ek bilgi isteyecek ve Avrupa Merkez Bankası lisansı Latvijas Banka'nın tavsiyesi üzerine verir. NBX, planlanan dijital bankanın Norveç, Litvanya, İsveç, Finlandiya, Polonya ve Almanya'da sınır ötesi faaliyet göstereceğini ve operasyonların en erken 2027 sonuna doğru başlayabileceğini, 2028'in daha olası olduğunu belirtiyor.",
+    "se": "NBX lea sisaaddán ohcama bátnkalohkama várás Latvias iežas ollislaš oamasteaddji mánáfitnodaga NBX Digital Asset Bank AS várás Rigas, gávpečeahkkedieđihusa mielde maid Kaupr muitalii 17. skábmamánu 2026. Ohcu lea erenoamáš luohttamušásahusa várás latvialaš lága vuođul; dat lea sisaaddojuvvon, ii mieđihuvvon. Latvijas Banka bivdá eambbo dieđuid ovdal go ohcu lohká oktilažžan, ja Eurohpá guovddášbátnka mieđiha lohkama Latvijas Banka evttohusa vuođul. NBX dadjá ahte plánen digibátnka galgá sáhttit doaibmat riikkarájiid rastá Norggas, Lietuvas, Ruoŧas, Suomas, Polskkas ja Duiskkas, ja ahte doaibma sáhttá álggahuvvot árramustá 2027 loahpas, ja 2028 lea eanet jáhkehahtti."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "ce2a229c9ae4",
@@ -244,9 +396,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "US-only Coinbase/ChatGPT product PR, with only a thin Nordic angle (Kaupr coverage). Standing exclusion for global product rewrite / PR, similar to the Solana Leap item rejected on 17 Nov. researcher 18.11; editor 2026-11-18"
   },
   {
    "id": "1f8839da53df",
@@ -274,7 +427,7 @@
   },
   {
    "id": "4490a524b40d",
-   "url": "https://yle.fi/a/74-20257239?origin=rss",
+   "url": "https://yle.fi/a/74-20257239",
    "title": "Rikoksella hankittu omaisuus voidaan pian takavarikoida valtiolle",
    "title_en": null,
    "source": "yle",
@@ -495,7 +648,42 @@
     "tr": "Banka, 16 Kasım 2026 tarihli basın bülteninde Lunar'ın aktif kripto müşteri portföyünü Danimarkalı yatırım platformu Pluto.markets'e sattığını duyurdu. Børsen'e göre Lunar, kripto işi olan Lunar Block'u kapatıyor. Kripto varlık tutan müşteriler 17 Aralık 2026'da Pluto.markets'e aktarılacak.",
     "se": "Lunar vuovdá aktiivvalaš kryptoáššehasportfolia dánskalaš investešuvdnavuodjui Pluto.markets:ii, dieđihii bátnka preassadieđáhusas 16. skábmamánu 2026. Børsen mielde Lunar heaitá krypto-doaimmas, Lunar Block. Áššehasat geain leat kryptoopmodagat, galget sirdojuvvot Pluto.markets:ii 17. juovlamánu 2026."
    },
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/lunar-legger-ned-kryptohandel-overlater-kundene-til-pluto",
+     "title": "Lunar legger ned kryptohandel, overlater kundene til Pluto",
+     "published": "2026-11-16",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/danske-pluto-vokser-sterkt-for-krypto-deal-med-lunar",
+     "title": "Danske Pluto vokser sterkt før krypto-deal med Lunar",
+     "published": "2026-11-17",
+     "lang": "Norwegian",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/lunar-satser-pa-bedriftskunder-selger-krypto-til-pluto",
+     "title": "Lunar med økt satsing på bedriftsmarkedet, selger krypto for å frigjøre kapasitet",
+     "published": "2026-11-16",
+     "lang": "Norwegian",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
+    }
+   ]
   },
   {
    "id": "2d3c483010d7",
@@ -891,9 +1079,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "ba1d824e5d76"
   },
   {
    "id": "d4a19ae20000",
@@ -917,9 +1106,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "ba1d824e5d76"
   },
   {
    "id": "da75fae5edbd",
