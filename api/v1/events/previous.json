@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-20T07:15:47+00:00",
+ "generated_at": "2026-11-20T10:10:52+00:00",
  "preview": false,
- "count": 79,
+ "count": 83,
  "events": [
   {
    "id": "43e778cb5318",
@@ -2708,6 +2708,113 @@
    }
   },
   {
+   "id": "dcf13e886717",
+   "title": "Dansk Blockchain Forum 2026",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2026-09-17T10:00:00+02:00",
+   "end": "2026-09-17T13:00:00+02:00",
+   "place": "Fællessalen, Christiansborg",
+   "city": "København",
+   "country": "DK",
+   "online": false,
+   "organiser": "Nordic Blockchain Association og Liberal Alliance",
+   "url": "https://luma.com/y8r7oobv",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2026-09-17T13:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/dcf13e886717/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/dcf13e886717/",
+    "nn": "https://nordiccrypto.no/nn/calendar/dcf13e886717/",
+    "nb": "https://nordiccrypto.no/nb/calendar/dcf13e886717/",
+    "sv": "https://nordiccrypto.no/sv/calendar/dcf13e886717/",
+    "da": "https://nordiccrypto.no/da/calendar/dcf13e886717/",
+    "fi": "https://nordiccrypto.no/fi/calendar/dcf13e886717/",
+    "is": "https://nordiccrypto.no/is/calendar/dcf13e886717/",
+    "zh": "https://nordiccrypto.no/zh/calendar/dcf13e886717/",
+    "hi": "https://nordiccrypto.no/hi/calendar/dcf13e886717/",
+    "es": "https://nordiccrypto.no/es/calendar/dcf13e886717/",
+    "fr": "https://nordiccrypto.no/fr/calendar/dcf13e886717/",
+    "ar": "https://nordiccrypto.no/ar/calendar/dcf13e886717/",
+    "bn": "https://nordiccrypto.no/bn/calendar/dcf13e886717/",
+    "pt": "https://nordiccrypto.no/pt/calendar/dcf13e886717/",
+    "ru": "https://nordiccrypto.no/ru/calendar/dcf13e886717/",
+    "ur": "https://nordiccrypto.no/ur/calendar/dcf13e886717/",
+    "id": "https://nordiccrypto.no/id/calendar/dcf13e886717/",
+    "de": "https://nordiccrypto.no/de/calendar/dcf13e886717/",
+    "ja": "https://nordiccrypto.no/ja/calendar/dcf13e886717/",
+    "sw": "https://nordiccrypto.no/sw/calendar/dcf13e886717/",
+    "mr": "https://nordiccrypto.no/mr/calendar/dcf13e886717/",
+    "fa": "https://nordiccrypto.no/fa/calendar/dcf13e886717/",
+    "uk": "https://nordiccrypto.no/uk/calendar/dcf13e886717/",
+    "tr": "https://nordiccrypto.no/tr/calendar/dcf13e886717/",
+    "se": "https://nordiccrypto.no/se/calendar/dcf13e886717/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/dcf13e886717.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Nordic Blockchain Association",
+     "source_url": "https://luma.com/y8r7oobv",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Nordic Blockchain Association",
+    "url": "https://luma.com/y8r7oobv",
+    "retrieved": "2026-11-20T11:00:00+00:00"
+   }
+  },
+  {
    "id": "37b2abaebcaf",
    "title": "Göteborg Bitcoin Meetup #48",
    "title_original": null,
@@ -4091,6 +4198,108 @@
     "name": "Skatteetaten",
     "url": "https://www.skatteetaten.no/presse/nyhetsrommet/skatteetaten-inviterer-til-kryptoseminar/",
     "retrieved": "2026-10-27T10:30:00+00:00"
+   }
+  },
+  {
+   "id": "f1ae6be0d7fc",
+   "title": "Bits & Barrels",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2025-09-12T00:00:00+02:00",
+   "end": "2025-09-12T23:59:00+02:00",
+   "place": "Folketinget",
+   "city": "",
+   "country": "DK",
+   "online": false,
+   "organiser": "Firi Danmark og Moderaterne",
+   "url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2025-09-12T23:59:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/f1ae6be0d7fc/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/f1ae6be0d7fc/",
+    "nn": "https://nordiccrypto.no/nn/calendar/f1ae6be0d7fc/",
+    "nb": "https://nordiccrypto.no/nb/calendar/f1ae6be0d7fc/",
+    "sv": "https://nordiccrypto.no/sv/calendar/f1ae6be0d7fc/",
+    "da": "https://nordiccrypto.no/da/calendar/f1ae6be0d7fc/",
+    "fi": "https://nordiccrypto.no/fi/calendar/f1ae6be0d7fc/",
+    "is": "https://nordiccrypto.no/is/calendar/f1ae6be0d7fc/",
+    "zh": "https://nordiccrypto.no/zh/calendar/f1ae6be0d7fc/",
+    "hi": "https://nordiccrypto.no/hi/calendar/f1ae6be0d7fc/",
+    "es": "https://nordiccrypto.no/es/calendar/f1ae6be0d7fc/",
+    "fr": "https://nordiccrypto.no/fr/calendar/f1ae6be0d7fc/",
+    "ar": "https://nordiccrypto.no/ar/calendar/f1ae6be0d7fc/",
+    "bn": "https://nordiccrypto.no/bn/calendar/f1ae6be0d7fc/",
+    "pt": "https://nordiccrypto.no/pt/calendar/f1ae6be0d7fc/",
+    "ru": "https://nordiccrypto.no/ru/calendar/f1ae6be0d7fc/",
+    "ur": "https://nordiccrypto.no/ur/calendar/f1ae6be0d7fc/",
+    "id": "https://nordiccrypto.no/id/calendar/f1ae6be0d7fc/",
+    "de": "https://nordiccrypto.no/de/calendar/f1ae6be0d7fc/",
+    "ja": "https://nordiccrypto.no/ja/calendar/f1ae6be0d7fc/",
+    "sw": "https://nordiccrypto.no/sw/calendar/f1ae6be0d7fc/",
+    "mr": "https://nordiccrypto.no/mr/calendar/f1ae6be0d7fc/",
+    "fa": "https://nordiccrypto.no/fa/calendar/f1ae6be0d7fc/",
+    "uk": "https://nordiccrypto.no/uk/calendar/f1ae6be0d7fc/",
+    "tr": "https://nordiccrypto.no/tr/calendar/f1ae6be0d7fc/",
+    "se": "https://nordiccrypto.no/se/calendar/f1ae6be0d7fc/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/f1ae6be0d7fc.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/forslag-om-ny-kryptoskat-ikke-med-i-regeringens-lovprogram---bransjeforening-skuffet",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Kaupr",
+     "source_url": "https://www.kaupr.io/dk/nyheder/forslag-om-ny-kryptoskat-ikke-med-i-regeringens-lovprogram---bransjeforening-skuffet",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Kaupr",
+    "url": "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+    "retrieved": "2026-11-20T11:00:00+00:00"
    }
   },
   {
@@ -7107,6 +7316,113 @@
    }
   },
   {
+   "id": "cf9f0f09732d",
+   "title": "Blockchain & Bitcoin Conference Stockholm",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2018-09-11T09:00:00+02:00",
+   "end": "2018-09-11T18:00:00+02:00",
+   "place": "Berns Salonger, Näckströmsgatan 8, 111 47 Stockholm",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "Smile-Expo",
+   "url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-09-11T18:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/cf9f0f09732d/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/cf9f0f09732d/",
+    "nn": "https://nordiccrypto.no/nn/calendar/cf9f0f09732d/",
+    "nb": "https://nordiccrypto.no/nb/calendar/cf9f0f09732d/",
+    "sv": "https://nordiccrypto.no/sv/calendar/cf9f0f09732d/",
+    "da": "https://nordiccrypto.no/da/calendar/cf9f0f09732d/",
+    "fi": "https://nordiccrypto.no/fi/calendar/cf9f0f09732d/",
+    "is": "https://nordiccrypto.no/is/calendar/cf9f0f09732d/",
+    "zh": "https://nordiccrypto.no/zh/calendar/cf9f0f09732d/",
+    "hi": "https://nordiccrypto.no/hi/calendar/cf9f0f09732d/",
+    "es": "https://nordiccrypto.no/es/calendar/cf9f0f09732d/",
+    "fr": "https://nordiccrypto.no/fr/calendar/cf9f0f09732d/",
+    "ar": "https://nordiccrypto.no/ar/calendar/cf9f0f09732d/",
+    "bn": "https://nordiccrypto.no/bn/calendar/cf9f0f09732d/",
+    "pt": "https://nordiccrypto.no/pt/calendar/cf9f0f09732d/",
+    "ru": "https://nordiccrypto.no/ru/calendar/cf9f0f09732d/",
+    "ur": "https://nordiccrypto.no/ur/calendar/cf9f0f09732d/",
+    "id": "https://nordiccrypto.no/id/calendar/cf9f0f09732d/",
+    "de": "https://nordiccrypto.no/de/calendar/cf9f0f09732d/",
+    "ja": "https://nordiccrypto.no/ja/calendar/cf9f0f09732d/",
+    "sw": "https://nordiccrypto.no/sw/calendar/cf9f0f09732d/",
+    "mr": "https://nordiccrypto.no/mr/calendar/cf9f0f09732d/",
+    "fa": "https://nordiccrypto.no/fa/calendar/cf9f0f09732d/",
+    "uk": "https://nordiccrypto.no/uk/calendar/cf9f0f09732d/",
+    "tr": "https://nordiccrypto.no/tr/calendar/cf9f0f09732d/",
+    "se": "https://nordiccrypto.no/se/calendar/cf9f0f09732d/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/cf9f0f09732d.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Smile-Expo",
+    "url": "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+    "retrieved": "2026-11-20T11:00:00+00:00"
+   }
+  },
+  {
    "id": "521611ebd8a7",
    "title": "Danes in Ethereum",
    "title_original": null,
@@ -7403,6 +7719,113 @@
     "name": "Bergen Bitcoin Meetup",
     "url": "https://www.meetup.com/Bergen-Bitcoin-Meetup/events/251047632/",
     "retrieved": "2026-11-13T10:00:00+00:00"
+   }
+  },
+  {
+   "id": "ef290bf75865",
+   "title": "Blockchain & Bitcoin Conference Finland",
+   "title_original": null,
+   "title_i18n": {},
+   "start": "2018-05-25T10:00:00+03:00",
+   "end": "2018-05-25T18:00:00+03:00",
+   "place": "Scandic Park Helsinki, Mannerheimintie 46, 00260 Helsinki",
+   "city": "Helsinki",
+   "country": "FI",
+   "online": false,
+   "organiser": "Smile-Expo",
+   "url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": null,
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2018-05-25T18:00:00+03:00",
+   "html_url": "https://nordiccrypto.no/calendar/ef290bf75865/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/ef290bf75865/",
+    "nn": "https://nordiccrypto.no/nn/calendar/ef290bf75865/",
+    "nb": "https://nordiccrypto.no/nb/calendar/ef290bf75865/",
+    "sv": "https://nordiccrypto.no/sv/calendar/ef290bf75865/",
+    "da": "https://nordiccrypto.no/da/calendar/ef290bf75865/",
+    "fi": "https://nordiccrypto.no/fi/calendar/ef290bf75865/",
+    "is": "https://nordiccrypto.no/is/calendar/ef290bf75865/",
+    "zh": "https://nordiccrypto.no/zh/calendar/ef290bf75865/",
+    "hi": "https://nordiccrypto.no/hi/calendar/ef290bf75865/",
+    "es": "https://nordiccrypto.no/es/calendar/ef290bf75865/",
+    "fr": "https://nordiccrypto.no/fr/calendar/ef290bf75865/",
+    "ar": "https://nordiccrypto.no/ar/calendar/ef290bf75865/",
+    "bn": "https://nordiccrypto.no/bn/calendar/ef290bf75865/",
+    "pt": "https://nordiccrypto.no/pt/calendar/ef290bf75865/",
+    "ru": "https://nordiccrypto.no/ru/calendar/ef290bf75865/",
+    "ur": "https://nordiccrypto.no/ur/calendar/ef290bf75865/",
+    "id": "https://nordiccrypto.no/id/calendar/ef290bf75865/",
+    "de": "https://nordiccrypto.no/de/calendar/ef290bf75865/",
+    "ja": "https://nordiccrypto.no/ja/calendar/ef290bf75865/",
+    "sw": "https://nordiccrypto.no/sw/calendar/ef290bf75865/",
+    "mr": "https://nordiccrypto.no/mr/calendar/ef290bf75865/",
+    "fa": "https://nordiccrypto.no/fa/calendar/ef290bf75865/",
+    "uk": "https://nordiccrypto.no/uk/calendar/ef290bf75865/",
+    "tr": "https://nordiccrypto.no/tr/calendar/ef290bf75865/",
+    "se": "https://nordiccrypto.no/se/calendar/ef290bf75865/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/ef290bf75865.json",
+   "backfill": true,
+   "event_type": "conference",
+   "credits": {
+    "title": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "start": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "end": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "place": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "url": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "Smile-Expo",
+     "source_url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+     "retrieved_at": "2026-11-20T11:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "Smile-Expo",
+    "url": "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+    "retrieved": "2026-11-20T11:00:00+00:00"
    }
   },
   {

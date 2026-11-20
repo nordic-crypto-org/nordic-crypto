@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-20T07:15:47+00:00",
+ "generated_at": "2026-11-20T10:10:52+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 495,
+ "count": 500,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -20873,6 +20873,191 @@
      "id": "yt-GLZnpCukICg",
      "title": "Fireside Chat in Stockholm: Bitcoin Treasury as a New Asset Class",
      "video_url": "https://www.youtube.com/watch?v=GLZnpCukICg"
+    }
+   ]
+  },
+  {
+   "id": "spk-johnny-yao",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-johnny-yao.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-johnny-yao",
+   "name": "Johnny Yao",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=jAjTJcsVtf8&hl=en",
+     "title": "Bitcoin Miners Are Now Heating Nordic Homes",
+     "source_name": "BTCHEL",
+     "date": "2026-11-20"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-jAjTJcsVtf8"
+   ],
+   "talks": [
+    {
+     "id": "yt-jAjTJcsVtf8",
+     "title": "Bitcoin Miners Are Now Heating Nordic Homes",
+     "video_url": "https://www.youtube.com/watch?v=jAjTJcsVtf8"
+    }
+   ]
+  },
+  {
+   "id": "spk-totte-lofstrom",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-totte-lofstrom.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-totte-lofstrom",
+   "name": "Totte Löfström",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=kGJtuPwtABY&hl=en",
+     "title": "Experterna förklarar krypto med Totte Löfström (CEO, Trijo) och Eric Wall (CIO, Arcane Crypto)",
+     "source_name": "Unga Aktiesparare Lokalavdelningsevent",
+     "date": "2026-11-20"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-kGJtuPwtABY"
+   ],
+   "talks": [
+    {
+     "id": "yt-kGJtuPwtABY",
+     "title": "Experterna förklarar krypto med Totte Löfström (CEO, Trijo) och Eric Wall (CIO, Arcane Crypto)",
+     "video_url": "https://www.youtube.com/watch?v=kGJtuPwtABY"
+    }
+   ]
+  },
+  {
+   "id": "spk-eric-wall",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-eric-wall.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-eric-wall",
+   "name": "Eric Wall",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=kGJtuPwtABY&hl=en",
+     "title": "Experterna förklarar krypto med Totte Löfström (CEO, Trijo) och Eric Wall (CIO, Arcane Crypto)",
+     "source_name": "Unga Aktiesparare Lokalavdelningsevent",
+     "date": "2026-11-20"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-kGJtuPwtABY"
+   ],
+   "talks": [
+    {
+     "id": "yt-kGJtuPwtABY",
+     "title": "Experterna förklarar krypto med Totte Löfström (CEO, Trijo) och Eric Wall (CIO, Arcane Crypto)",
+     "video_url": "https://www.youtube.com/watch?v=kGJtuPwtABY"
+    }
+   ]
+  },
+  {
+   "id": "spk-ilmari-kumpula",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-ilmari-kumpula.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-ilmari-kumpula",
+   "name": "Ilmari Kumpula",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=qIgaTLt7NEs&hl=en",
+     "title": "Bitcoin – miten se oikeasti toimii?",
+     "source_name": "Fraktio",
+     "date": "2026-11-20"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-qIgaTLt7NEs"
+   ],
+   "talks": [
+    {
+     "id": "yt-qIgaTLt7NEs",
+     "title": "Bitcoin – miten se oikeasti toimii?",
+     "video_url": "https://www.youtube.com/watch?v=qIgaTLt7NEs"
+    }
+   ]
+  },
+  {
+   "id": "spk-juho-lindman",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-juho-lindman.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-juho-lindman",
+   "name": "Juho Lindman",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=BkMxy4virRE&hl=en",
+     "title": "Juho Lindman: Lohkoketjuteknologian periaatteet ja käyttö",
+     "source_name": "Lukema- tiedekanava",
+     "date": "2026-11-20"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-BkMxy4virRE"
+   ],
+   "talks": [
+    {
+     "id": "yt-BkMxy4virRE",
+     "title": "Juho Lindman: Lohkoketjuteknologian periaatteet ja käyttö",
+     "video_url": "https://www.youtube.com/watch?v=BkMxy4virRE"
     }
    ]
   }
