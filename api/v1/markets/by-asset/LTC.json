@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Litecoin",
- "generated_at": "2026-11-20T06:39:04+00:00",
+ "generated_at": "2026-11-20T06:54:24+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -32,7 +32,7 @@
     "name": "Coinmotion",
     "country": "FI"
    },
-   "fetched_at": "2026-11-20T06:31:12+00:00",
+   "fetched_at": "2026-11-20T06:51:47+00:00",
    "source_url": "https://api.coinmotion.com/v2/rates",
    "volume_base": null,
    "volume_quote": null,
@@ -41,7 +41,7 @@
    "high": "455.27",
    "low": "419.72",
    "change_pct": null,
-   "exchange_time": "2026-11-20T06:30:13+00:00"
+   "exchange_time": "2026-11-20T06:51:11+00:00"
   },
   {
    "id": "coinmotion:LTC-EUR",
@@ -57,7 +57,7 @@
     "name": "Coinmotion",
     "country": "FI"
    },
-   "fetched_at": "2026-11-20T06:31:12+00:00",
+   "fetched_at": "2026-11-20T06:51:47+00:00",
    "source_url": "https://api.coinmotion.com/v2/rates",
    "volume_base": null,
    "volume_quote": null,
@@ -66,7 +66,7 @@
    "high": "40.73",
    "low": "37.55",
    "change_pct": null,
-   "exchange_time": "2026-11-20T06:30:13+00:00"
+   "exchange_time": "2026-11-20T06:51:11+00:00"
   },
   {
    "id": "nbx:LTC-NOK",
@@ -75,19 +75,19 @@
    "base": "LTC",
    "quote": "NOK",
    "last": "411.41",
-   "bid": "400.15",
-   "ask": "413.19",
+   "bid": "401.95",
+   "ask": "408.58",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-20T06:31:11+00:00",
+   "fetched_at": "2026-11-20T06:51:46+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
-   "volume_base_24h": "35.20636011",
-   "volume_quote_24h": "14554.28",
+   "volume_base_24h": "32.93475998",
+   "volume_quote_24h": "13561.25",
    "high": null,
    "low": null,
    "change_pct": null
@@ -100,8 +100,8 @@
    "name": "Litecoin",
    "quote": "NOK",
    "currency": "NOK",
-   "updated_at": "2026-11-20T06:31:11+00:00",
-   "oldest_fetched_at": "2026-11-20T06:31:11+00:00",
+   "updated_at": "2026-11-20T06:51:46+00:00",
+   "oldest_fetched_at": "2026-11-20T06:51:46+00:00",
    "exchange_count": 1,
    "method": "mean_last",
    "method_note": "Arithmetic mean of last prices from exchanges that published a last for this pair. Exchanges without a last stay in contributors and are left out of last, min and max. Not weighted by volume. mid is the mean of bid/ask midpoints and is not mixed into last.",
@@ -112,10 +112,10 @@
    "last_count": 1,
    "last_min": "411.41",
    "last_max": "411.41",
-   "mid": "406.67",
+   "mid": "405.265",
    "mid_count": 1,
-   "mid_min": "406.67",
-   "mid_max": "406.67",
+   "mid_min": "405.265",
+   "mid_max": "405.265",
    "vwap": null,
    "volume_used_for_price": false,
    "volume": {
@@ -129,9 +129,9 @@
     "volume_base_exchanges": 0,
     "volume_quote": null,
     "volume_quote_exchanges": 0,
-    "volume_base_24h": "35.20636011",
+    "volume_base_24h": "32.93475998",
     "volume_base_24h_exchanges": 1,
-    "volume_quote_24h": "14554.28",
+    "volume_quote_24h": "13561.25",
     "volume_quote_24h_exchanges": 1
    },
    "contributors": [
@@ -140,16 +140,16 @@
      "name": "Norwegian Block Exchange",
      "country": "NO",
      "last": "411.41",
-     "bid": "400.15",
-     "ask": "413.19",
-     "mid": "406.67",
+     "bid": "401.95",
+     "ask": "408.58",
+     "mid": "405.265",
      "included_in_last": true,
      "included_in_mid": true,
      "volume_base": null,
      "volume_quote": null,
-     "volume_base_24h": "35.20636011",
-     "volume_quote_24h": "14554.28",
-     "fetched_at": "2026-11-20T06:31:11+00:00",
+     "volume_base_24h": "32.93475998",
+     "volume_quote_24h": "13561.25",
+     "fetched_at": "2026-11-20T06:51:46+00:00",
      "source_url": "https://api.nbx.com/tickers",
      "included_in_price": true
     }
@@ -175,8 +175,8 @@
    "name": "Litecoin",
    "quote": "SEK",
    "currency": "SEK",
-   "updated_at": "2026-11-20T06:31:12+00:00",
-   "oldest_fetched_at": "2026-11-20T06:31:12+00:00",
+   "updated_at": "2026-11-20T06:51:47+00:00",
+   "oldest_fetched_at": "2026-11-20T06:51:47+00:00",
    "exchange_count": 1,
    "method": "mean_bid_ask_mid",
    "method_note": "No exchange published a last for this pair. price is the arithmetic mean of (bid+ask)/2 from exchanges that published both. It is not a last-trade average.",
@@ -224,7 +224,7 @@
      "volume_quote": null,
      "volume_base_24h": null,
      "volume_quote_24h": null,
-     "fetched_at": "2026-11-20T06:31:12+00:00",
+     "fetched_at": "2026-11-20T06:51:47+00:00",
      "source_url": "https://api.coinmotion.com/v2/rates",
      "included_in_price": true
     }
@@ -250,8 +250,8 @@
    "name": "Litecoin",
    "quote": "EUR",
    "currency": "EUR",
-   "updated_at": "2026-11-20T06:31:12+00:00",
-   "oldest_fetched_at": "2026-11-20T06:31:12+00:00",
+   "updated_at": "2026-11-20T06:51:47+00:00",
+   "oldest_fetched_at": "2026-11-20T06:51:47+00:00",
    "exchange_count": 1,
    "method": "mean_bid_ask_mid",
    "method_note": "No exchange published a last for this pair. price is the arithmetic mean of (bid+ask)/2 from exchanges that published both. It is not a last-trade average.",
@@ -299,7 +299,7 @@
      "volume_quote": null,
      "volume_base_24h": null,
      "volume_quote_24h": null,
-     "fetched_at": "2026-11-20T06:31:12+00:00",
+     "fetched_at": "2026-11-20T06:51:47+00:00",
      "source_url": "https://api.coinmotion.com/v2/rates",
      "included_in_price": true
     }
