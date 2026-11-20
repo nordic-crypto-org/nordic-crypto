@@ -1539,6 +1539,179 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-20T11:00:00+00:00",
+   "included": 4,
+   "by_country": {
+    "NO": 25,
+    "SE": 15,
+    "DK": 8,
+    "FI": 12,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 1,
+    "2014": 5,
+    "2017": 5,
+    "2018": 10,
+    "2022": 2,
+    "2023": 5,
+    "2025": 7,
+    "2026": 12,
+    "2016": 4,
+    "2019": 3,
+    "2024": 2,
+    "2015": 3,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 2,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1,
+     "2018": 2
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 3,
+     "2015": 1,
+     "2026": 3,
+     "2018": 2,
+     "2023": 1,
+     "2016": 1,
+     "2024": 1,
+     "2025": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 2,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1,
+     "2026": 1,
+     "2025": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 2,
+     "2020": 1,
+     "2012": 1,
+     "2017": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Four past events were stored. Blockchain & Bitcoin Conference Finland on 25 May 2018, 10:00–18:00, at Scandic Park Helsinki, Mannerheimintie 46, from the organiser page kept by the Internet Archive. The live host did not answer. Blockchain & Bitcoin Conference Stockholm on 11 September 2018, 09:00–18:00, at Berns Salonger, Näckströmsgatan 8, from the organiser page kept by the Internet Archive. The live host returned HTTP 502. The page spells the city once as Stockcholm and also writes Stockholm. Dansk Blockchain Forum 2026 on Thursday 17 September 2026, 10:00–13:00, in Fællessalen at Christiansborg in København, from the Luma page. Doors at 09:30 were not used as the start. Bits & Barrels on Friday 12 September 2025 at the Folketinget, from Kaupr. The 11 September article says Friday and does not state a clock, so the row is the day. The 7 October article names the September event Bits & Barrels. No count was stored. Bitcoin Suisse Europe's launch and the Bitwise evening, both on 19 November 2026 in Stockholm, are already on the calendar. No public recording of them was found. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Four events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://luma.com/y8r7oobv",
+    "https://web.archive.org/web/20180615000000/https://finland.bc.events/",
+    "https://web.archive.org/web/20180901000000/https://stockholm.bc.events/en",
+    "https://www.kaupr.io/dk/nyheder/ny-konferanse-om-kryptovalutaer-i-det-danske-folketinget",
+    "https://www.kaupr.io/dk/nyheder/forslag-om-ny-kryptoskat-ikke-med-i-regeringens-lovprogram---bransjeforening-skuffet",
+    "https://www.bitcoin.se/articles/konferens-i-stockholm-11e-september",
+    "https://eu.welcometobetter.bitcoinsuisse.com/bitcoin-suisse-europe-launches-in-the-nordics",
+    "https://medlem.ungaaktiesparare.se/event/exklusiv-kvall-med-bitwise/",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-20"
+   ],
+   "sources_used": [
+    "Smile-Expo",
+    "Nordic Blockchain Association",
+    "Kaupr",
+    "bitcoin.se"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "icoholder.com",
+     "reason": "Event listing site. A venue it showed for the Finland conference was not used. The organiser archive was used."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Bitcoin Suisse Europe launches in the Nordics, 19 November 2026",
+     "reason": "Already on the calendar. The organiser page says the evening was by invitation. No public recording was found."
+    },
+    {
+     "name": "Exklusiv kväll med Bitwise, 19 November 2026",
+     "reason": "Already on the calendar. No public recording was found."
+    },
+    {
+     "name": "Krypto, Unga Aktiesparare digital, 17 November 2026",
+     "reason": "A members' live stream at 18:00. Not on the calendar. No public recording was found."
+    },
+    {
+     "name": "Gabriel Dusil, What Blockchain did",
+     "reason": "The upload is a talk for the Prague conference, not Stockholm."
+    },
+    {
+     "name": "Frinans recap of a crypto conference at Christiansborg",
+     "reason": "A personal recap with referral links, not the talks from the event."
+    },
+    {
+     "name": "4IRE Meetup, Marco Poblete",
+     "reason": "The linked meetup page returned HTTP 404. The video page does not state that the speech was held in a Nordic city."
+    },
+    {
+     "name": "Pontus Lindblom, FreedomFest Stockholm 2016, re-upload",
+     "reason": "The same lecture is already in the talks archive from Ludwig von Mises-Institutet i Sverige."
+    },
+    {
+     "name": "May 2018 working hours versus bitcoin.se",
+     "reason": "bitcoin.se says 9 to 17 for the Stockholm conference. The organiser page says registration from 09:00 and the conference until 18:00. The organiser page was used."
+    },
+    {
+     "name": "Delegate and attendance wording",
+     "reason": "No exact count was stated. None was stored."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

@@ -246,6 +246,25 @@
    ],
    "notes": "No public recording of the three calendar events that ended after 13 November 2026. The Uppsala meetup page says the 13 November meetup was cancelled. Eight talks were kept from backfill. One is linked to a new past event. The Antonopoulos Stockholm upload is the Internetdagarna 2017 keynote already listed. An IOTA Trondheim upload says the channel does not own the video. A Chalmers course lecture in May 2019 was for students on a course and was not kept. A Kaupr interview with Sal Ternullo was not the keynote. First pages for Tórshavn, Nuuk, Mariehamn and Åland did not name a public talk held there. The Grønland bitcoin page returned no video rows. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-11-20",
+   "candidates_checked": 372,
+   "watch_pages_opened": 10,
+   "new_talks": 4,
+   "new_from_calendar": 0,
+   "new_from_backfill": 3,
+   "areas_exhausted": [],
+   "areas_sampled": [
+    "Calendar events ended since 17 November 2026: Bitcoin Suisse Europe launches in the Nordics, Exklusiv kväll med Bitwise",
+    "BTCHEL upload published 19 November 2026",
+    "Unga Aktiesparare Jönköping evening with Totte Löfström and Eric Wall",
+    "Fraktio livestream and the Harppi lecture by Juho Lindman",
+    "YouTube first pages for Bitcoin Suisse, Bitwise, Kaupr, Helsinki and Stockholm blockchain conferences, NHH, and a this-week filter",
+    "Faroe Islands, Greenland and Åland first pages again"
+   ],
+   "notes": "No public recording of the two calendar events that ended on 19 November 2026. One talk was published after 17 November: Johnny Yao on bitcoin miners heating Nordic homes, on the BTCHEL channel, on 19 November. The page says it was recorded at BTCHEL 2026 on a Friday and does not state the date or the city, so it is not linked. Three talks were kept from backfill. A re-upload of the FreedomFest Stockholm 2016 lecture was not added again. A Frinans video is a recap of a conference, not a talk. A 4IRE meetup upload was not kept: the meetup page returned HTTP 404 and the video page does not place the speech in a Nordic city. First pages for NHH and for the Faroe Islands, Greenland and Åland did not name a new public talk held there. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -292,7 +311,7 @@
    },
    "2018": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-13 the BitSpace recording of the EOS meetup in Oslo on 17 January was kept. On 2026-11-17 Jacob Czepluch's Raiden presentation at the Copenhagen Ethereum Meetup on 28 August was kept and linked. A Firmo presentation in Copenhagen does not state the day."
+    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-13 the BitSpace recording of the EOS meetup in Oslo on 17 January was kept. On 2026-11-17 Jacob Czepluch's Raiden presentation at the Copenhagen Ethereum Meetup on 28 August was kept and linked. A Firmo presentation in Copenhagen does not state the day. On 2026-11-20 the Smile-Expo conferences in Helsinki on 25 May and in Stockholm on 11 September were archived as events. No full talk from either page was kept."
    },
    "2019": {
     "status": "sampled",
@@ -304,11 +323,11 @@
    },
    "2021": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year."
+    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-20 the Unga Aktiesparare evening in Jönköping with Totte Löfström and Eric Wall was kept. The page does not state the day."
    },
    "2022": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-10 the Oslo Freedom Forum panel Is Bitcoin Compatible with Democracy? was kept. The page does not state the day."
+    "note": "Covered only where an event or institution query returned a video from this year. On 2026-11-10 the Oslo Freedom Forum panel Is Bitcoin Compatible with Democracy? was kept. The page does not state the day. On 2026-11-20 a Fraktio livestream on 22 April and a Harppi lecture by Juho Lindman on 16 May were kept. Neither page states the city."
    },
    "2023": {
     "status": "sampled",
@@ -320,11 +339,11 @@
    },
    "2025": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. The 23 April 2025 crypto-tax webinar was kept. The page does not state a city. On 2026-11-17 a fireside chat from the Nordic Blockchain Conference in Stockholm was kept. The page does not state the session day. The conference is in the past-events archive."
+    "note": "Covered only where an event or institution query returned a video from this year. The 23 April 2025 crypto-tax webinar was kept. The page does not state a city. On 2026-11-17 a fireside chat from the Nordic Blockchain Conference in Stockholm was kept. The page does not state the session day. The conference is in the past-events archive. On 2026-11-20 Bits & Barrels at the Folketinget on 12 September was archived as an event. The Frinans upload is a recap and was not kept."
    },
    "2026": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city. On 2026-11-10 five Nordic Crypto Adoption Week sessions, a Bitcoin Copenhagen 2026 talk published on 9 November, and a Nordic Blockchain Conference panel were kept. On 2026-11-13 the Impact Onchain stream of 11 November was kept. The page does not state a city."
+    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city. On 2026-11-10 five Nordic Crypto Adoption Week sessions, a Bitcoin Copenhagen 2026 talk published on 9 November, and a Nordic Blockchain Conference panel were kept. On 2026-11-13 the Impact Onchain stream of 11 November was kept. The page does not state a city. On 2026-11-20 BTCHEL published an interview with Johnny Yao, recorded at BTCHEL 2026. The page says Friday and does not state the date or the city, so the talk is not linked. Dansk Blockchain Forum 2026 was archived as an event. No recording was found."
    }
   },
   "countries": {
@@ -334,7 +353,7 @@
    },
    "SE": {
     "status": "sampled",
-    "talks": 24
+    "talks": 25
    },
    "DK": {
     "status": "sampled",
@@ -364,7 +383,7 @@
     "note": "First pages, including a repeat on 2026-11-06, did not show a public crypto talk held in Åland."
    },
    "unset_country": {
-    "talks": 29,
+    "talks": 32,
     "note": "Nordic Blockchain Conference uploads that name the conference and not a city. They stay in the list and match no country filter."
    }
   },
@@ -2320,6 +2339,86 @@
     "status": "exhausted",
     "included_from_this_query": 0,
     "note": "No YouTube result."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Bitcoin Suisse Nordics Stockholm",
+    "results_on_first_page": 19,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Bitwise Marco Poblete",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Unga Aktiesparare krypto",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "NO",
+    "query": "Kaupr bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "FI",
+    "query": "lohkoketju luento",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 2,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "FI",
+    "query": "Bitcoin Blockchain Conference Helsinki",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "SE",
+    "query": "Bitcoin Blockchain Conference Stockholm",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "NO",
+    "query": "NHH bitcoin",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First YouTube results page only (videos filter). Not marked exhausted while a further page could still exist."
+   },
+   {
+    "country_tag": "SE",
+    "query": "4IRE Meetup blockchain Nordic",
+    "results_on_first_page": 11,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "The meetup page linked from the one relevant upload returned HTTP 404. The upload was not kept."
+   },
+   {
+    "country_tag": "NORDIC",
+    "query": "this week bitcoin nordic",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 1,
+    "note": "Upload-date filter for the week, plus the video filter. One BTCHEL upload published 19 November 2026 was kept. The Nordic Crypto news video was not a talk."
    }
   ],
   "channels_sampled": [
@@ -2375,7 +2474,11 @@
    "Raiden Network",
    "Firmo Network",
    "Zeitgeist Suomi",
-   "World Crypto Network"
+   "World Crypto Network",
+   "BTCHEL",
+   "Unga Aktiesparare Lokalavdelningsevent",
+   "Fraktio",
+   "Lukema- tiedekanava"
   ],
   "universities": [
    {
@@ -2669,6 +2772,46 @@
     "name": "Nordic Blockchain Conference 2025 fireside",
     "status": "sampled",
     "note": "Kaupr Media's fireside on bitcoin treasury companies. The page places the conference in Stockholm on 18–19 June 2025 and does not state the session day."
+   },
+   {
+    "name": "Bitcoin Suisse Europe launches in the Nordics, 19 November 2026",
+    "status": "sampled",
+    "note": "On the calendar. Invitation only. No public recording."
+   },
+   {
+    "name": "Exklusiv kväll med Bitwise, 19 November 2026",
+    "status": "sampled",
+    "note": "On the calendar. No public recording."
+   },
+   {
+    "name": "BTCHEL 2026, Johnny Yao interview",
+    "status": "sampled",
+    "note": "Published 19 November 2026. Recorded at BTCHEL 2026 on a Friday. The page does not state the date or the city."
+   },
+   {
+    "name": "Blockchain & Bitcoin Conference Finland 2018",
+    "status": "sampled",
+    "note": "Archived as a past event from the organiser page. No full talk was kept."
+   },
+   {
+    "name": "Blockchain & Bitcoin Conference Stockholm 2018",
+    "status": "sampled",
+    "note": "Archived as a past event from the organiser page. No full talk was kept."
+   },
+   {
+    "name": "Dansk Blockchain Forum 2026",
+    "status": "sampled",
+    "note": "Archived as a past event from the Luma page. No recording was found."
+   },
+   {
+    "name": "Unga Aktiesparare i Jönköping",
+    "status": "sampled",
+    "note": "Lectures by Totte Löfström and Eric Wall. The page does not state the day."
+   },
+   {
+    "name": "Harppi-luentosarja, Juho Lindman",
+    "status": "sampled",
+    "note": "Streamed 16 May 2022. The page does not state the city."
    }
   ]
  }
