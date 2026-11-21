@@ -1009,6 +1009,8 @@ def translations_items(store, field="description"):
     if schema_version(store) < 2:
         return out
     for row in store.query("SELECT event_id, lang, source_text, text FROM event_translations WHERE field = ? ORDER BY event_id, lang", (field,)):
+        if not re.fullmatch(r"[a-z]{2,3}(-[A-Za-z]+)?", row["lang"] or ""):
+            continue  # not a language code (e.g. a stray "lang" row)
         item = out.setdefault(row["event_id"], {"source": row["source_text"]})
         if row["source_text"] == item["source"]:
             item[row["lang"]] = row["text"]
@@ -1379,6 +1381,7 @@ def restore_root(store, root):
 
 def story_columns(row):
     payload = json.loads(row["payload"])
+    payload.pop("updated_at", None)  # D1 row column, not a story field
     if row["item_status"] == "merged":
         payload["status"] = "merged"
     elif row["review_status"] == "approved":
