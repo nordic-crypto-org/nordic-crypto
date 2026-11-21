@@ -3,7 +3,7 @@
 import test from "node:test"; import assert from "node:assert/strict";
 import { readFileSync } from "node:fs"; import { DatabaseSync } from "node:sqlite";
 import worker from "../src/worker.js";
-import { allowedAdmin, PER_EMAIL_N } from "../src/admin.js";
+import { allowedAdmin, PER_EMAIL_N, PER_EMAIL_TOTAL_N, ADMIN_RATE_N } from "../src/admin.js";
 import { TEST_OUTBOX } from "../src/mailer.js";
 
 class SqliteD1 {
@@ -17,7 +17,7 @@ class SqliteD1 {
 const O = "https://nordiccrypto.no";
 function env(extra = {}) {
   const db = new DatabaseSync(":memory:");
-  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql", "0008_press_history.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
+  for (const m of ["0001_tips.sql", "0003_subscribers.sql", "0007_admin.sql", "0008_press_history.sql", "0009_admin_app_code.sql", "0012_admin_login_requester.sql"]) db.exec(readFileSync(new URL("../migrations/" + m, import.meta.url), "utf8"));
   return { DB: new SqliteD1(db), raw: db, SUBSCRIBE_TEST: "1", ...extra };
 }
 let ipn = 1;
@@ -79,10 +79,23 @@ test("CORS: only https://nordiccrypto.no", async () => {
 
 test("rate limits: per address (silent) and per IP", async () => {
   const e = env(); const n0 = TEST_OUTBOX.length;
-  for (let i = 0; i < PER_EMAIL_N + 2; i++) assert.equal((await call(e, "POST", "/api/admin/login", { body: { email: "r@nordiccrypto.no" } })).status, 202);
+  for (let i = 0; i < PER_EMAIL_N + 2; i++) assert.equal((await call(e, "POST", "/api/admin/login", { body: { email: "r@nordiccrypto.no" }, ip: "198.51.100.7" })).status, 202);
   assert.equal(TEST_OUTBOX.length - n0, PER_EMAIL_N);
   const codes = []; for (let i = 0; i < 7; i++) codes.push((await call(e, "POST", "/api/admin/login", { body: { email: "z@x.no" }, ip: "198.51.100.9" })).status);
   assert.deepEqual(codes, [202, 202, 202, 202, 202, 429, 429]);
+});
+
+test("rate limits: other addresses can't use up the owner's sign-ins, and there is an overall cap", async () => {
+  const e = env(); const n0 = TEST_OUTBOX.length;
+  for (let i = 0; i < 4; i++) for (let k = 0; k < PER_EMAIL_N; k++)
+    assert.equal((await call(e, "POST", "/api/admin/login", { body: { email: "o@nordiccrypto.no" }, ip: "192.0.2." + i })).status, 202);
+  assert.equal(TEST_OUTBOX.length - n0, 4 * PER_EMAIL_N);
+  await call(e, "POST", "/api/admin/login", { body: { email: "o@nordiccrypto.no" }, ip: "198.51.100.20" });
+  assert.equal(TEST_OUTBOX.length - n0, 4 * PER_EMAIL_N + 1);   // the owner, from their own address, still gets a link
+  const s = await call(e, "POST", "/api/admin/verify", { body: { token: linkToken() } }); assert.equal(s.status, 200);
+  for (let i = 0; i < PER_EMAIL_TOTAL_N * 2; i++) await call(e, "POST", "/api/admin/login", { body: { email: "o@nordiccrypto.no" } });
+  assert.equal(TEST_OUTBOX.length - n0, PER_EMAIL_TOTAL_N);
+  assert.ok(ADMIN_RATE_N > PER_EMAIL_N);
 });
 
 test("subscriber list with issues, and the delivery endpoint needs its secret", async () => {
