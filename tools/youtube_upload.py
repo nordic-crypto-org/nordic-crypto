@@ -8,7 +8,10 @@ Skips (exit 0, prints the existing URL) when the issue already has a video:
   2. the channel's uploads already hold a video titled «Nordic Crypto #<n>:…».
 An exclusive file lock (YT_UPLOAD_LOCK, default /tmp/nordic-crypto-youtube-upload.lock) stops two
 runs on one machine; the workflow's concurrency group does the same on GitHub Actions.
---force skips the checks (not the lock). --record writes the new URL into issues.json.
+--force skips the checks (not the lock) only when the issue has no video yet. If the issue
+already has a YouTube URL, or the channel already has «Nordic Crypto #<n>:», --force refuses:
+it would upload a second video. Update that video with tools/youtube_metadata.py instead.
+--record writes the new URL into issues.json.
 Without --description the description is built from issues.json (see description()): the subtitle, one link
 to the issue page (it lists every source), the logos disclaimer, the AI line and the social links. Sources are
 never listed in the description: YouTube's apps cut long URLs short, and the issue page has them all.
@@ -57,6 +60,17 @@ def access_token(token_file):
 def get(at, path):
     r = urllib.request.Request(API + path, headers={"Authorization": "Bearer " + at})
     return json.load(urllib.request.urlopen(r, timeout=60))
+
+
+def force_refusal(issue, recorded, channel_url):
+    """Why --force must not upload, or None when there is no existing video."""
+    where = channel_url or recorded
+    if not where:
+        return None
+    return (f"refusing --force: issue {issue} already has a video at {where}. "
+            "A new upload would create a second video. "
+            "Update the description and thumbnail with tools/youtube_metadata.py "
+            f"--issue {issue} --video-id <id>.")
 
 
 def find_issue(doc, issue):
@@ -113,7 +127,7 @@ def upload(at, a, title):
     return "https://www.youtube.com/watch?v=" + vid
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("file"); ap.add_argument("--issue", required=True, help="issue id, e.g. 003")
     ap.add_argument("--title"); ap.add_argument("--description", default="")
@@ -121,7 +135,7 @@ def main():
     ap.add_argument("--thumbnail"); ap.add_argument("--token-file", default="~/.youtube_token_nordiccryptotv.json")
     ap.add_argument("--record", action="store_true"); ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
-    a = ap.parse_args()
+    a = ap.parse_args(argv)
 
     lock = open(os.environ.get("YT_UPLOAD_LOCK", "/tmp/nordic-crypto-youtube-upload.lock"), "w")
     try:
@@ -135,13 +149,17 @@ def main():
     a.description = a.description or description(it)
     if not re.match(rf"Nordic Crypto #{it['number']}:", title):
         sys.exit(f"title must start with «Nordic Crypto #{it['number']}:»")
-    if not a.force and (it.get("video") or {}).get("youtube"):
-        print(f"skip: issue {a.issue} already has {it['video']['youtube']} in issues.json"); return
+    recorded = (it.get("video") or {}).get("youtube")
+    if a.force and (msg := force_refusal(a.issue, recorded, None)):
+        sys.exit(msg)
+    if not a.force and recorded:
+        print(f"skip: issue {a.issue} already has {recorded} in issues.json"); return
     at = access_token(a.token_file)
-    if not a.force:
-        url = on_channel(at, it["number"])
-        if url:
-            print(f"skip: the channel already has #{it['number']} at {url}"); return
+    url = on_channel(at, it["number"])
+    if url and a.force and (msg := force_refusal(a.issue, recorded, url)):
+        sys.exit(msg)
+    if url and not a.force:
+        print(f"skip: the channel already has #{it['number']} at {url}"); return
     if a.dry_run:
         print(f"dry run: would upload {a.file} as «{title[:100]}» with this description:\n{a.description}"); return
     url = upload(at, a, title)

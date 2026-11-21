@@ -16,7 +16,10 @@ on:
         default: true
 permissions:
   contents: write
-  actions: read
+  # write includes artifact read. A caller that dispatches this workflow still
+  # needs its own actions: write, or GitHub answers 403
+  # "Resource not accessible by integration". See docs/youtube-metadata.md.
+  actions: write
 concurrency:
   group: youtube-video-upload
   cancel-in-progress: false
