@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-21T03:42:02+00:00",
+ "generated_at": "2026-11-21T06:36:52+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 500,
+ "count": 501,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -6919,6 +6919,33 @@
      "title": "Lund Bitcoin Meetup #3",
      "source_name": "Meetup",
      "date": "2026-11-18"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": []
+  },
+  {
+   "id": "huddlestock-fintech",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/huddlestock-fintech.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#huddlestock-fintech",
+   "name": "Huddlestock Fintech AS",
+   "type": "organisation",
+   "sector": "private",
+   "country": "NO",
+   "description": "Norwegian listed company, based in Stavanger. On 18 November 2026 it signed a letter of intent with Firi for a tied-agent solution, according to its MFN stock-exchange notice; the collaboration is conditional on further commercial, operational and regulatory assessment and is not a completed agreement.",
+   "role": null,
+   "org": null,
+   "group": "Companies & startups",
+   "profile_url": null,
+   "provenance": "Nordic Crypto research",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://storage.mfn.se/db908609-3743-4493-9949-f35c5c6b4420/huddlestock-fintech-as-huddlestock-has-signed-a-letter-of-intent-loi-with-firi.pdf",
+     "title": "Huddlestock has signed a letter of intent (LOI) with Firi",
+     "source_name": "MFN",
+     "date": "2026-11-21"
     }
    ],
    "logo": null,
