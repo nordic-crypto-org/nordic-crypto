@@ -50,8 +50,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "da1f149e427e",
@@ -77,14 +78,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "d8c5f2a584e6",
    "url": "https://visir.is/g/20262966164d/kennir-1984-um-tveggja-milljarda-krona-rafmyntasvik",
    "title": "Kennir 1984 um tveggja milljarða króna rafmyntasvik",
-   "title_en": null,
+   "title_en": "Icelandic host 1984 temporarily shuts all services after a serious attack",
    "source": "visir",
    "source_name": "Vísir",
    "country": "IS",
@@ -96,16 +98,74 @@
    "published": "2026-11-20T19:21:00+00:00",
    "fetched": "2026-11-21T02:41:55+00:00",
    "topics": [
-    "crypto",
-    "companies"
+    "security"
    ],
    "matched": [
     "\\brafmynt\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_unverified": true
+   "status": "published",
+   "summary": "The Icelandic hosting company 1984 ehf. temporarily shut down all of its services after a serious cyber attack, Vísir reported on 20 November 2026. The company said the systems were closed deliberately to stop the attack, and that it does not know whether any data were stolen. Wagyu, the issuer of the XMR1 token, claims that an issuing key stored on a deleted server at 1984 was leaked; that claim is unconfirmed.",
+   "published_unverified": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Vísir, 20 November 2026, «Kennir 1984 um tveggja milljarða króna rafmyntasvik»",
+    "url": "https://www.visir.is/g/20262966164d/kennir-1984-um-tveggja-milljarda-krona-rafmyntasvik"
+   },
+   "title_i18n": {
+    "nn": "Islandske 1984 stengjer all teneste mellombels etter eit alvorleg åtak",
+    "nb": "Islandske 1984 stenger all tjeneste midlertidig etter et alvorlig angrep",
+    "sv": "Isländska 1984 stänger tillfälligt all service efter en allvarlig attack",
+    "da": "Islandske 1984 lukker midlertidigt al service efter et alvorligt angreb",
+    "fi": "Islantilainen 1984 keskeyttää kaikki palvelut tilapäisesti vakavan hyökkäyksen jälkeen",
+    "zh": "冰岛托管商1984在严重攻击后暂时关闭全部服务",
+    "hi": "आइसलैंड की होस्ट 1984 ने गंभीर हमले के बाद सभी सेवाएँ अस्थायी रूप से बंद कीं",
+    "es": "El proveedor islandés 1984 cierra temporalmente todos sus servicios tras un ataque grave",
+    "fr": "L’hébergeur islandais 1984 interrompt temporairement tous ses services après une attaque grave",
+    "ar": "شركة الاستضافة الآيسلندية 1984 توقف جميع خدماتها مؤقتًا بعد هجوم خطير",
+    "bn": "আইসল্যান্ডের হোস্ট 1984 গুরুতর হামলার পর সব সেবা সাময়িকভাবে বন্ধ করেছে",
+    "pt": "A empresa islandesa de alojamento 1984 suspende temporariamente todos os serviços após um ataque grave",
+    "ru": "Исландский хостер 1984 временно отключает все услуги после серьёзной атаки",
+    "ur": "آئس لینڈ کی میزبان 1984 نے سنگین حملے کے بعد تمام خدمات عارضی طور پر بند کر دیں",
+    "id": "Perusahaan hosting Islandia 1984 menghentikan sementara semua layanan setelah serangan serius",
+    "de": "Isländischer Host 1984 stellt nach schwerem Angriff vorübergehend alle Dienste ein",
+    "ja": "アイスランドのホスト1984、重大な攻撃を受け全サービスを一時停止",
+    "sw": "Mwenyeji wa Iceland 1984 anasimamisha huduma zote kwa muda baada ya shambulio kubwa",
+    "mr": "आइसलँडची होस्ट 1984 ने गंभीर हल्ल्यानंतर सर्व सेवा तात्पुरत्या बंद केल्या",
+    "fa": "میزبان ایسلندی ۱۹۸۴ پس از حمله‌ای جدی همه خدمات را موقتاً تعطیل کرد",
+    "uk": "Ісландський хостер 1984 тимчасово зупиняє всі послуги після серйозної атаки",
+    "tr": "İzlandalı barındırma şirketi 1984 ciddi bir saldırının ardından tüm hizmetlerini geçici olarak durdurdu",
+    "se": "Islándda hostenfitnodat 1984 gidde gaskaboddosaččat buot bálvalusaid duođalaš falleheami maŋŋá"
+   },
+   "title_i18n_source": "Kennir 1984 um tveggja milljarða króna rafmyntasvik",
+   "summary_i18n": {
+    "nn": "Det islandske vertsselskapet 1984 ehf. stengde midlertidig all teneste etter eit alvorleg dataåtak, rapporterte Vísir 20. november 2026. Selskapet seier at systema vart stengde medvite for å stanse åtaket, og at det ikkje veit om data vart stolne. Wagyu, utskrivaren av tokenet XMR1, hevdar at ein utskrivingsnøkkel som låg på ein sletta tenar hos 1984, vart lekka; den påstanden er ustadfesta.",
+    "nb": "Det islandske vertsselskapet 1984 ehf. stengte midlertidig all tjeneste etter et alvorlig dataangrep, rapporterte Vísir 20. november 2026. Selskapet sier at systemene ble stengt bevisst for å stanse angrepet, og at det ikke vet om data ble stjålet. Wagyu, utstederen av tokenet XMR1, hevder at en utstedernøkkel som lå på en slettet tjener hos 1984, ble lekket; den påstanden er ubekreftet.",
+    "sv": "Det isländska hostingbolaget 1984 ehf. stängde tillfälligt all sin verksamhet efter en allvarlig cyberattack, rapporterade Vísir den 20 november 2026. Bolaget uppger att systemen stängdes medvetet för att stoppa attacken, och att det inte vet om några data stals. Wagyu, utgivaren av tokenet XMR1, hävdar att en utgivarnyckel som lagrades på en raderad server hos 1984 läckte; påståendet är obekräftat.",
+    "da": "Det islandske hostingfirma 1984 ehf. lukkede midlertidigt al sin service efter et alvorligt cyberangreb, rapporterede Vísir den 20. november 2026. Selskabet oplyser, at systemerne blev lukket bevidst for at standse angrebet, og at det ikke ved, om der blev stjålet data. Wagyu, udstederen af tokenet XMR1, hævder, at en udstedernøgle, der lå på en slettet server hos 1984, blev lækket; påstanden er ubekræftet.",
+    "fi": "Islantilainen hosting-yhtiö 1984 ehf. keskeytti tilapäisesti kaikki palvelunsa vakavan tietoverkkohyökkäyksen jälkeen, Vísir kertoi 20. marraskuuta 2026. Yhtiön mukaan järjestelmät suljettiin tarkoituksella hyökkäyksen pysäyttämiseksi, eikä se tiedä, varastettiinko tietoja. XMR1-tokenin liikkeeseenlaskija Wagyu väittää, että poistetulla 1984:n palvelimella ollut liikkeeseenlaskuavain vuoti; väite on vahvistamaton.",
+    "is": "Íslenska hýsingarfyrirtækið 1984 ehf. stöðvaði tímabundið alla þjónustu sína eftir alvarlega netárás, greindi Vísir frá 20. nóvember 2026. Fyrirtækið segir að kerfunum hafi verið lokað viljandi til að stöðva árásina, og að það viti ekki hvort gögnum hafi verið stolið. Wagyu, útgefandi táknsins XMR1, heldur því fram að útgáfulykill sem var vistaður á eyddum netþjóni hjá 1984 hafi lekið; sú fullyrðing er óstaðfest.",
+    "zh": "据维西尔（Vísir）2026年11月20日报道，冰岛托管公司1984 ehf.在一次严重网络攻击后暂时关闭了全部服务。该公司表示，系统是为阻止攻击而主动关闭的，目前尚不知是否有数据被盗。XMR1代币发行方Wagyu声称，存放在1984一台已删除服务器上的发行密钥发生泄露；这一说法尚未得到证实。",
+    "hi": "आइसलैंड की होस्टिंग कंपनी 1984 ehf. ने एक गंभीर साइबर हमले के बाद अपनी सभी सेवाएँ अस्थायी रूप से बंद कर दीं, वीसिर ने 20 नवंबर 2026 को बताया। कंपनी का कहना है कि हमले को रोकने के लिए सिस्टम जानबूझकर बंद किए गए, और यह ज्ञात नहीं है कि कोई डेटा चोरी हुआ या नहीं। XMR1 टोकन के जारीकर्ता वाग्यू का दावा है कि 1984 के एक हटाए गए सर्वर पर रखी जारीकर्ता कुंजी लीक हो गई; यह दावा अपुष्ट है।",
+    "es": "La empresa islandesa de alojamiento 1984 ehf. interrumpió temporalmente todos sus servicios tras un ciberataque grave, informó Vísir el 20 de noviembre de 2026. La compañía dijo que los sistemas se cerraron deliberadamente para detener el ataque, y que no sabe si se robaron datos. Wagyu, el emisor del token XMR1, afirma que se filtró una clave de emisión guardada en un servidor eliminado de 1984; esa afirmación no está confirmada.",
+    "fr": "La société islandaise d’hébergement 1984 ehf. a temporairement interrompu l’ensemble de ses services après une cyberattaque grave, a rapporté Vísir le 20 novembre 2026. L’entreprise indique que les systèmes ont été volontairement fermés pour stopper l’attaque, et qu’elle ne sait pas si des données ont été volées. Wagyu, l’émetteur du jeton XMR1, affirme qu’une clé d’émission stockée sur un serveur supprimé chez 1984 a fuité ; cette allégation n’est pas confirmée.",
+    "ar": "أوقفت شركة الاستضافة الآيسلندية 1984 ehf. جميع خدماتها مؤقتًا بعد هجوم سيبراني خطير، وفق ما أورد فيسير في 20 نوفمبر 2026. وقالت الشركة إن الأنظمة أُغلقت عمدًا لوقف الهجوم، وإنها لا تعلم ما إذا كانت أي بيانات قد سُرقت. وتزعم واغيو، الجهة المُصدرة للرمز XMR1، أن مفتاح إصدار كان مخزنًا على خادم محذوف لدى 1984 قد تسرب؛ وهذه المزاعم غير مؤكدة.",
+    "bn": "আইসল্যান্ডের হোস্টিং কোম্পানি 1984 ehf. একটি গুরুতর সাইবার হামলার পর সব সেবা সাময়িকভাবে বন্ধ করেছে বলে ভিসির ২০ নভেম্বর ২০২৬ জানিয়েছে। কোম্পানি বলেছে, হামলা থামাতে ব্যবস্থাগুলো ইচ্ছাকৃতভাবে বন্ধ করা হয়েছিল, এবং তারা জানে না কোনো তথ্য চুরি হয়েছে কি না। XMR1 টোকেনের ইস্যুকারী ওয়াগিউ দাবি করেছে, 1984-এর একটি মুছে ফেলা সার্ভারে রাখা ইস্যু কী ফাঁস হয়েছে; সেই দাবি অযাচাইকৃত।",
+    "pt": "A empresa islandesa de alojamento 1984 ehf. suspendeu temporariamente todos os seus serviços após um ciberataque grave, noticiou o Vísir a 20 de novembro de 2026. A empresa afirmou que os sistemas foram encerrados de propósito para deter o ataque, e que não sabe se algum dado foi roubado. A Wagyu, emissora do token XMR1, alega que uma chave de emissão guardada num servidor apagado na 1984 foi divulgada; essa alegação não está confirmada.",
+    "ru": "Исландская хостинговая компания 1984 ehf. временно отключила все свои услуги после серьёзной кибератаки, сообщило издание Vísir 20 ноября 2026 года. Компания заявила, что системы были намеренно закрыты, чтобы остановить атаку, и что ей неизвестно, были ли похищены данные. Wagyu, эмитент токена XMR1, утверждает, что ключ выпуска, хранившийся на удалённом сервере в 1984, был скомпрометирован; это утверждение не подтверждено.",
+    "ur": "آئس لینڈ کی ہوسٹنگ کمپنی 1984 ehf. نے ایک سنگین سائبر حملے کے بعد اپنی تمام خدمات عارضی طور پر بند کر دیں، ویسیر نے 20 نومبر 2026 کو بتایا۔ کمپنی کا کہنا ہے کہ حملے کو روکنے کے لیے سسٹم جان بوجھ کر بند کیے گئے، اور اسے معلوم نہیں کہ کوئی ڈیٹا چرایا گیا یا نہیں۔ XMR1 ٹوکن کے جاری کنندہ واگیو کا دعویٰ ہے کہ 1984 کے ایک حذف شدہ سرور پر رکھی جاری کنندہ کلید لیک ہو گئی؛ یہ دعویٰ غیر تصدیق شدہ ہے۔",
+    "id": "Perusahaan hosting Islandia 1984 ehf. menghentikan sementara semua layanannya setelah serangan siber yang serius, dilaporkan Vísir pada 20 November 2026. Perusahaan itu menyatakan bahwa sistem sengaja ditutup untuk menghentikan serangan, dan bahwa mereka tidak tahu apakah ada data yang dicuri. Wagyu, penerbit token XMR1, mengklaim bahwa kunci penerbitan yang tersimpan di server yang telah dihapus di 1984 bocor; klaim itu belum dikonfirmasi.",
+    "de": "Das isländische Hosting-Unternehmen 1984 ehf. hat nach einem schweren Cyberangriff vorübergehend alle Dienste eingestellt, berichtete Vísir am 20. November 2026. Das Unternehmen erklärte, die Systeme seien absichtlich geschlossen worden, um den Angriff zu stoppen, und es sei nicht bekannt, ob Daten gestohlen wurden. Wagyu, der Emittent des Tokens XMR1, behauptet, ein auf einem gelöschten Server bei 1984 gespeicherter Emissions-Schlüssel sei durchgesickert; diese Behauptung ist unbestätigt.",
+    "ja": "アイスランドのホスティング会社1984 ehf.は重大なサイバー攻撃を受け、全サービスを一時停止したと、ヴィーシルが2026年11月20日に伝えた。同社は攻撃を止めるためにシステムを意図的に閉鎖したとし、データが盗まれたかどうかは分からないとしている。XMR1トークンの発行者ワギューは、1984の削除済みサーバーに保管されていた発行鍵が漏えいしたと主張しているが、その主張は未確認である。",
+    "sw": "Kampuni ya ukaribishaji ya Iceland 1984 ehf. ilisimamisha kwa muda huduma zake zote baada ya shambulio kubwa la mtandao, Vísir iliripoti tarehe 20 Novemba 2026. Kampuni hiyo ilisema mifumo ilifungwa kimakusudi ili kuzuia shambulio, na kwamba haijui kama data yoyote iliibwa. Wagyu, mtoaji wa tokeni ya XMR1, anadai kuwa ufunguo wa utoaji uliowekwa kwenye seva iliyofutwa katika 1984 ulivuja; dai hilo halijathibitishwa.",
+    "mr": "आइसलँडची होस्टिंग कंपनी 1984 ehf. ने गंभीर सायबर हल्ल्यानंतर आपल्या सर्व सेवा तात्पुरत्या बंद केल्या, असे वीसिरने 20 नोव्हेंबर 2026 रोजी कळवले. कंपनीचे म्हणणे आहे की हल्ला थांबवण्यासाठी प्रणाली जाणीवपूर्वक बंद करण्यात आल्या, आणि कोणताही डेटा चोरला गेला की नाही हे त्यांना माहीत नाही. XMR1 टोकनचे जारीकर्ते वाग्यू यांचा दावा आहे की 1984 च्या एका हटवलेल्या सर्व्हरवर ठेवलेली जारीकर्ता किल्ली गळाली; हा दावा अपुष्ट आहे.",
+    "fa": "شرکت میزبانی ایسلندی 1984 ehf. پس از یک حمله سایبری جدی همه خدمات خود را موقتاً تعطیل کرد؛ ویسیر در ۲۰ نوامبر ۲۰۲۶ گزارش داد. این شرکت گفت سامانه‌ها برای متوقف کردن حمله عمداً بسته شدند و معلوم نیست داده‌ای به سرقت رفته باشد یا نه. واگیو، ناشر توکن XMR1، مدعی است که کلید صدور نگهداری‌شده روی یک کارساز حذف‌شده در 1984 افشا شده است؛ این ادعا تأیید نشده است.",
+    "uk": "Ісландська хостингова компанія 1984 ehf. тимчасово зупинила всі свої послуги після серйозної кібератаки, повідомило видання Vísir 20 листопада 2026 року. Компанія заявила, що системи було навмисно закрито, щоб зупинити атаку, і що їй невідомо, чи було викрадено дані. Wagyu, емітент токена XMR1, стверджує, що ключ випуску, який зберігався на видаленому сервері в 1984, витік; це твердження не підтверджено.",
+    "tr": "İzlandalı barındırma şirketi 1984 ehf., ciddi bir siber saldırının ardından tüm hizmetlerini geçici olarak durdurdu, diye bildirdi Vísir 20 Kasım 2026’da. Şirket, saldırıyı durdurmak için sistemlerin bilerek kapatıldığını ve herhangi bir verinin çalınmış olup olmadığını bilmediğini söyledi. XMR1 jetonunun ihraççısı Wagyu, 1984’te silinmiş bir sunucuda saklanan bir ihraç anahtarının sızdırıldığını ileri sürüyor; bu iddia doğrulanmamıştır.",
+    "se": "Islándda hostenfitnodat 1984 ehf. gidde gaskaboddosaččat buot bálvalusaidis duođalaš dihtorfalla maŋŋá, dieđihii Vísir skábmamánu 20. beaivvi 2026. Fitnodat muitalii ahte vuogádagat giddejuvvojedje dihtomielalaččat falleheami hehtten dihtii, ja ahte sii eai dieđe leago dieđut suoláduvvon. Wagyu, mii almmuha XMR1-mearkka, čuoččuha ahte almmuhančoavdda mii lei vurkkoduvvon sihkkojuvvon bálvváin 1984:s, lea luovvanan; dát čuoččuhus ii leat nannen."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "6f95e3091aba",
@@ -129,8 +189,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk (Bitcoin at a five-month low, fund flows, Anthropic listing). Standing exclusion for market commentary.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "6a79913650ed",
@@ -154,8 +215,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Football metaphor (“kryptonit i Haderslev”), no real crypto angle. tv2fyn.dk robots.txt returned HTTP 406; body not fetched.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "4a2d13420053",
@@ -180,8 +242,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Explanatory company blog (Bare Bitcoin), not a news story.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "a49aad996f09",
@@ -205,8 +268,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk plus an exchange blog, same pattern as Coinmotion items already rejected on 17 and 18 Nov.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "d4769dc04a0f",
@@ -233,10 +297,11 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "408cb9660b9f",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "d33f0f6e0308",
@@ -260,8 +325,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "856a10a94588",
@@ -285,7 +351,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "also_covered_by": [
     {
@@ -332,7 +398,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "reject_reason": "Entertainment streaming guide, not crypto news.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "67a60f9fd80e",
@@ -357,8 +424,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "a9cc363722c8",
@@ -383,8 +451,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "7856687a30a4",
@@ -410,10 +479,11 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "408cb9660b9f",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "d0be1a6a8261",
@@ -438,8 +508,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "GTA 6 / CyberLeek. Standing exclusion.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "bc419dd92591",
@@ -465,8 +536,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "9b74bc7abf44",
@@ -492,9 +564,10 @@
     "\\bNBX\\b"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "62e65a1a0595"
   },
   {
    "id": "f440dae7e08d",
@@ -545,8 +618,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Anecdote about Sam Bankman-Fried and Anthropic, not Nordic crypto news of substance. Only a teaser was read.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "11a6f891e5c1",
@@ -573,8 +647,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk. KVG. Not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "46938f36538e",
@@ -600,8 +675,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "2d55fc0fa3b1",
@@ -627,8 +703,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "9ee59c5a6cd3",
@@ -652,8 +729,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "KVG blog on a Hong Kong item without a read official primary source. Not a Nordic news story.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "2bab497dbd79",
@@ -680,14 +758,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price / ETF-flow talk. KVG. Not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "4b1832702295",
    "url": "https://realtid.se/samhalle/flyttade-telefonnummer-till-egna-sim-kort-doms-till-langa-fangelsestraff",
    "title": "Flyttade telefonnummer till egna SIM-kort – döms till långa fängelsestraff",
-   "title_en": null,
+   "title_en": "Realtid: Briton sentenced to six years in Scattered Spider SIM-swap case",
    "source": "realtid",
    "source_name": "Realtid",
    "country": "SE",
@@ -700,14 +779,74 @@
    "published": "2026-11-19T15:59:46+00:00",
    "fetched": "2026-11-20T02:43:13+00:00",
    "topics": [
-    "crypto"
+    "crime",
+    "security"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "A 24-year-old British man has been sentenced to six years in prison in the United States after pleading guilty to conspiracy to commit wire fraud and aggravated identity theft, as part of the group Scattered Spider, Realtid reported on 19 November 2026. According to Realtid, the group used SMS phishing and SIM swapping, and cryptocurrency worth about SEK 120 million was stolen; the paper, referring to the US Department of Justice, says at least twelve companies were affected. Realtid writes that he was arrested in Spain in May 2024 and extradited in April 2025, and that he is the fifth person sentenced in the US case. The official Justice Department text was not read for this report.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Realtid, 19 November 2026, «Flyttade telefonnummer till egna SIM-kort – döms till långa fängelsestraff»",
+    "url": "https://realtid.se/samhalle/flyttade-telefonnummer-till-egna-sim-kort-doms-till-langa-fangelsestraff"
+   },
+   "title_i18n": {
+    "nn": "Realtid: Britisk mann dømd til seks års fengsel i Scattered Spider-SIM-byttesak",
+    "nb": "Realtid: Britisk mann dømt til seks års fengsel i Scattered Spider-SIM-byttesak",
+    "da": "Realtid: Brite idømt seks års fængsel i Scattered Spider-SIM-byttesag",
+    "fi": "Realtid: Britti tuomittiin kuudeksi vuodeksi Scattered Spiderin SIM-vaihtoasiassa",
+    "is": "Realtid: Breti dæmdur í sex ára fangelsi í Scattered Spider SIM-skiptamáli",
+    "zh": "Realtid：英国男子在Scattered Spider换卡案中被判六年",
+    "hi": "रियलटिड: ब्रिटेन के व्यक्ति को Scattered Spider सिम-स्वैप मामले में छह वर्ष की सज़ा",
+    "es": "Realtid: un británico es condenado a seis años en el caso de intercambio de SIM de Scattered Spider",
+    "fr": "Realtid : un Britannique condamné à six ans dans l’affaire d’échange de carte SIM de Scattered Spider",
+    "ar": "ريالتيد: بريطاني يُحكم عليه بالسجن ست سنوات في قضية تبديل شرائح Scattered Spider",
+    "bn": "রেয়ালটিড: Scattered Spider সিম-সোয়াপ মামলায় এক ব্রিটনকে ছয় বছরের সাজা",
+    "pt": "Realtid: britânico condenado a seis anos no caso de troca de SIM da Scattered Spider",
+    "ru": "Realtid: британец приговорён к шести годам по делу Scattered Spider о подмене SIM",
+    "ur": "ریئل ٹڈ: Scattered Spider سم سویپ کیس میں برطانوی شخص کو چھ سال کی سزا",
+    "id": "Realtid: pria Inggris dijatuhi hukuman enam tahun dalam kasus tukar SIM Scattered Spider",
+    "de": "Realtid: Brite in Scattered-Spider-SIM-Tausch-Fall zu sechs Jahren verurteilt",
+    "ja": "Realtid：スキャタード・スパイダーのSIMスワップ事件で英国人に懲役6年",
+    "sw": "Realtid: Muingereza ehukumiwa miaka sita katika kesi ya ubadilishaji SIM ya Scattered Spider",
+    "mr": "रियलटिड: Scattered Spider सिम-स्वाप प्रकरणात ब्रिटिश व्यक्तीला सहा वर्षांची शिक्षा",
+    "fa": "ریالتید: تبعه بریتانیا در پرونده تعویض سیم Scattered Spider به شش سال محکوم شد",
+    "uk": "Realtid: британця засуджено до шести років у справі Scattered Spider про підміну SIM",
+    "tr": "Realtid: Scattered Spider SIM değiştirme davasında bir Britanyalıya altı yıl hapis",
+    "se": "Realtid: Brihttalaš almmái dubmejuvvui guhtta jagi Scattered Spider SIM-londináššis"
+   },
+   "title_i18n_source": "Flyttade telefonnummer till egna SIM-kort – döms till långa fängelsestraff",
+   "summary_i18n": {
+    "nn": "Ein 24 år gammal britisk mann er dømd til seks års fengsel i USA etter å ha erkjenna seg skuldig i konspirasjon om elektronisk svindel og grovt identitetstjuveri, som del av gruppa Scattered Spider, rapporterte Realtid 19. november 2026. Ifølgje Realtid brukte gruppa SMS-phishing og SIM-bytte, og krypto verdt om lag 120 millionar svenske kroner vart stolen; avisa, som viser til det amerikanske justisdepartementet, seier at minst tolv selskap vart ramma. Realtid skriv at han vart pågripen i Spania i mai 2024 og utlevert i april 2025, og at han er den femte personen som er dømd i den amerikanske saka. Den offisielle teksten frå justisdepartementet er ikkje lesen for denne omtala.",
+    "nb": "En 24 år gammel britisk mann er dømt til seks års fengsel i USA etter å ha erkjent seg skyldig i konspirasjon om elektronisk bedrageri og grovt identitetstyveri, som del av gruppen Scattered Spider, rapporterte Realtid 19. november 2026. Ifølge Realtid brukte gruppen SMS-phishing og SIM-bytte, og krypto verdt om lag 120 millioner svenske kroner ble stjålet; avisen, som viser til det amerikanske justisdepartementet, sier at minst tolv selskaper ble rammet. Realtid skriver at han ble pågrepet i Spania i mai 2024 og utlevert i april 2025, og at han er den femte personen som er dømt i den amerikanske saken. Den offisielle teksten fra justisdepartementet er ikke lest for denne omtalen.",
+    "sv": "En 24-årig brittisk man har dömts till sex års fängelse i USA efter att ha erkänt sig skyldig till konspiration för att begå elektroniskt bedrägeri samt grov identitetsstöld, som en del av gruppen Scattered Spider, rapporterade Realtid den 19 november 2026. Enligt Realtid använde gruppen SMS-nätfiske och SIM-byten, och kryptovaluta värd omkring 120 miljoner kronor stals; tidningen, som hänvisar till det amerikanska justitiedepartementet, uppger att minst tolv företag drabbades. Realtid skriver att han greps i Spanien i maj 2024 och utlämnades i april 2025, och att han är den femte personen som dömts i det amerikanska målet. Den officiella texten från justitiedepartementet har inte lästs för denna redogörelse.",
+    "da": "En 24-årig britisk mand er idømt seks års fængsel i USA, efter at han erkendte sig skyldig i konspiration om elektronisk bedrageri og groft identitetstyveri som en del af gruppen Scattered Spider, rapporterede Realtid den 19. november 2026. Ifølge Realtid brugte gruppen sms-phishing og SIM-byt, og krypto til en værdi af omkring 120 millioner svenske kroner blev stjålet; avisen, der henviser til det amerikanske justitsministerium, oplyser, at mindst tolv selskaber blev ramt. Realtid skriver, at han blev anholdt i Spanien i maj 2024 og udleveret i april 2025, og at han er den femte person, der er blevet dømt i den amerikanske sag. Den officielle tekst fra justitsministeriet er ikke læst til denne omtale.",
+    "fi": "24-vuotias brittimies on tuomittu Yhdysvalloissa kuudeksi vuodeksi vankeuteen tunnustettuaan syyllisyytensä salaliittoon sähköisen petoksen tekemiseksi sekä törkeästä identiteettivarkaudesta, osana Scattered Spider -ryhmää, Realtid kertoi 19. marraskuuta 2026. Realtidin mukaan ryhmä käytti tekstiviestihuijauksia ja SIM-vaihtoja, ja noin 120 miljoonan Ruotsin kruunun arvosta kryptoa varastettiin; lehti, joka viittaa Yhdysvaltain oikeusministeriöön, kertoo ainakin kahdentoista yhtiön joutuneen kohteeksi. Realtid kirjoittaa, että hänet pidätettiin Espanjassa toukokuussa 2024 ja luovutettiin huhtikuussa 2025 ja että hän on viides Yhdysvaltain jutussa tuomittu henkilö. Oikeusministeriön virallista tekstiä ei ole luettu tätä selostusta varten.",
+    "is": "24 ára breskur maður hefur verið dæmdur í sex ára fangelsi í Bandaríkjunum eftir að hafa játað sekt um samsæri um rafrænt svik og stórfellt auðkennisþjófnað, sem hluti af hópnum Scattered Spider, greindi Realtid frá 19. nóvember 2026. Samkvæmt Realtid notaði hópurinn SMS-veiðar og SIM-skipti, og dulritunarfé að verðmæti um 120 milljónir sænskra króna var stolið; blaðið, sem vísar til dómsmálaráðuneytis Bandaríkjanna, segir að minnsta kosti tólf félög hafi orðið fyrir barðinu á þessu. Realtid skrifar að hann hafi verið handtekinn á Spáni í maí 2024 og framseldur í apríl 2025, og að hann sé fimmti maðurinn sem dæmdur er í bandaríska málinu. Opinber texti dómsmálaráðuneytisins var ekki lesinn vegna þessarar umfjöllunar.",
+    "zh": "据Realtid 2026年11月19日报道，一名24岁英国男子在美国承认合谋实施电汇欺诈及加重身份盗窃后，被判处六年监禁，他属于名为Scattered Spider的组织。据Realtid称，该组织使用短信钓鱼和SIM卡替换，盗走价值约1.2亿瑞典克朗的加密货币；该报援引美国司法部称，至少有十二家公司受到影响。Realtid写道，该男子于2024年5月在西班牙被捕，并于2025年4月被引渡，他是该美国案件中第五名被判刑者。本报道未阅读司法部官方文本。",
+    "es": "Un británico de 24 años ha sido condenado a seis años de prisión en Estados Unidos tras declararse culpable de conspiración para cometer fraude electrónico y robo agravado de identidad, como parte del grupo Scattered Spider, informó Realtid el 19 de noviembre de 2026. Según Realtid, el grupo usó suplantación por SMS e intercambios de SIM, y se robaron criptomonedas por valor de unos 120 millones de coronas suecas; el periódico, que remite al Departamento de Justicia de Estados Unidos, afirma que al menos doce empresas resultaron afectadas. Realtid escribe que el hombre fue detenido en España en mayo de 2024 y extraditado en abril de 2025, y que es la quinta persona condenada en la causa estadounidense. El texto oficial del Departamento de Justicia no se ha leído para este relato.",
+    "fr": "Un Britannique de 24 ans a été condamné à six ans de prison aux États-Unis après avoir plaidé coupable de complot en vue de commettre une fraude électronique et de vol aggravé d’identité, en tant que membre du groupe Scattered Spider, a rapporté Realtid le 19 novembre 2026. Selon Realtid, le groupe a recouru à l’hameçonnage par SMS et à l’échange de cartes SIM, et des cryptomonnaies d’une valeur d’environ 120 millions de couronnes suédoises ont été dérobées ; le journal, qui se réfère au département de la Justice des États-Unis, indique qu’au moins douze entreprises ont été touchées. Realtid écrit qu'il a été arrêté en Espagne en mai 2024 et extradé en avril 2025, et qu’il est la cinquième personne condamnée dans l’affaire américaine. Le texte officiel du département de la Justice n’a pas été lu pour ce compte rendu.",
+    "de": "Ein 24-jähriger Brite ist in den Vereinigten Staaten zu sechs Jahren Haft verurteilt worden, nachdem er sich der Verschwörung zum elektronischen Betrug und des schweren Identitätsdiebstahls für schuldig erklärt hatte, als Teil der Gruppe Scattered Spider, berichtete Realtid am 19. November 2026. Laut Realtid nutzte die Gruppe SMS-Phishing und SIM-Tausch, und Kryptowährung im Wert von rund 120 Millionen schwedischen Kronen wurde gestohlen; die Zeitung, die sich auf das US-Justizministerium beruft, gibt an, mindestens zwölf Unternehmen seien betroffen gewesen. Realtid schreibt, er sei im Mai 2024 in Spanien festgenommen und im April 2025 ausgeliefert worden und sei die fünfte im US-Verfahren verurteilte Person. Der amtliche Text des Justizministeriums wurde für diesen Bericht nicht gelesen.",
+    "pt": "Um britânico de 24 anos foi condenado a seis anos de prisão nos Estados Unidos depois de se declarar culpado de conspiração para cometer fraude eletrónica e de roubo agravado de identidade, como parte do grupo Scattered Spider, noticiou o Realtid a 19 de novembro de 2026. Segundo o Realtid, o grupo usou phishing por SMS e trocas de cartões SIM, e foram roubadas criptomoedas no valor de cerca de 120 milhões de coroas suecas; o jornal, que remete para o Departamento de Justiça dos Estados Unidos, afirma que pelo menos doze empresas foram afetadas. O Realtid escreve que ele foi detido em Espanha em maio de 2024 e extraditado em abril de 2025, e que é a quinta pessoa condenada no processo norte-americano. O texto oficial do Departamento de Justiça não foi lido para este relato.",
+    "ru": "24-летний британец приговорён в США к шести годам тюрьмы после признания вины в сговоре с целью совершения электронного мошенничества и квалифицированной кражи персональных данных как участник группы Scattered Spider, сообщило издание Realtid 19 ноября 2026 года. По данным Realtid, группа использовала фишинг по SMS и подмену SIM-карт, и была похищена криптовалюта примерно на 120 млн шведских крон; издание со ссылкой на Министерство юстиции США сообщает, что пострадали не менее двенадцати компаний. Realtid пишет, что его задержали в Испании в мае 2024 года и экстрадировали в апреле 2025 года, и что он пятый осуждённый по американскому делу. Официальный текст Министерства юстиции для этого материала не читался.",
+    "hi": "रियलटिड ने 19 नवंबर 2026 को बताया कि 24 वर्षीय ब्रिटिश व्यक्ति को संयुक्त राज्य अमेरिका में इलेक्ट्रॉनिक धोखाधड़ी की साजिश और गंभीर पहचान चोरी का दोष स्वीकार करने के बाद छह वर्ष का कारावास दिया गया है; वह Scattered Spider समूह का हिस्सा था। रियलटिड के अनुसार समूह ने एसएमएस फ़िशिंग और सिम-स्वैप का उपयोग किया, और लगभग 12 करोड़ स्वीडिश क्रोन की क्रिप्टोकरेंसी चोरी हुई; अखबार, जो अमेरिकी न्याय विभाग का हवाला देता है, कहता है कि कम से कम बारह कंपनियाँ प्रभावित हुईं। रियलटिड लिखता है कि उन्हें मई 2024 में स्पेन में गिरफ्तार किया गया और अप्रैल 2025 में प्रत्यर्पित किया गया, और वह अमेरिकी मामले में पाँचवें दंडित व्यक्ति हैं। इस विवरण के लिए न्याय विभाग का आधिकारिक पाठ नहीं पढ़ा गया।",
+    "ar": "حكمت محكمة أمريكية بالسجن ست سنوات على بريطاني يبلغ 24 عامًا، بعد أن أقر بالذنب في التآمر لارتكاب احتيال إلكتروني وسرقة هوية مشددة، بوصفه جزءًا من مجموعة Scattered Spider، وفق ما أوردت ريالتيد في 19 نوفمبر 2026. وبحسب ريالتيد استخدمت المجموعة التصيد عبر الرسائل النصية وتبديل شرائح SIM، وسُرقت عملات مشفرة بقيمة نحو 120 مليون كرونة سويدية؛ وتقول الصحيفة، مشيرة إلى وزارة العدل الأمريكية، إن اثنتي عشرة شركة على الأقل تضررت. وتكتب ريالتيد أنه اعتُقل في إسبانيا في مايو 2024 وسُلِّم في أبريل 2025، وأنه الشخص الخامس المحكوم عليه في القضية الأمريكية. ولم يُقرأ النص الرسمي لوزارة العدل لهذه التغطية.",
+    "bn": "রেয়ালটিড ১৯ নভেম্বর ২০২৬-এ জানিয়েছে, ২৪ বছর বয়সি এক ব্রিটিশ নাগরিক মার্কিন যুক্তরাষ্ট্রে তারের মাধ্যমে প্রতারণার ষড়যন্ত্র ও গুরুতর পরিচয় চুরির দায়ে দোষ স্বীকার করার পর ছয় বছরের কারাদণ্ড পেয়েছেন; তিনি Scattered Spider দলের অংশ ছিলেন। রেয়ালটিড অনুযায়ী দলটি এসএমএস ফিশিং ও সিম অদলবদল ব্যবহার করেছে, এবং প্রায় ১২০ মিলিয়ন সুইডিশ ক্রোনের ক্রিপ্টোকারেন্সি চুরি হয়েছে; পত্রিকাটি, মার্কিন বিচার বিভাগের উল্লেখ করে, বলেছে কমপক্ষে বারোটি কোম্পানি ক্ষতিগ্রস্ত হয়েছে। রেয়ালটিড লিখেছে, তাকে ২০২৪ সালের মে মাসে স্পেনে গ্রেফতার করা হয় এবং ২০২৫ সালের এপ্রিলে প্রত্যর্পণ করা হয়, এবং তিনি মার্কিন মামলায় সাজাপ্রাপ্ত পঞ্চম ব্যক্তি। এই বিবরণের জন্য বিচার বিভাগের অফিসিয়াল পাঠ্য পড়া হয়নি।",
+    "ur": "ریئل ٹڈ نے 19 نومبر 2026 کو بتایا کہ 24 سالہ برطانوی شخص کو امریکہ میں تار کے ذریعے دھوکا دہی کی سازش اور سنگین شناخت کی چوری کا جرم تسلیم کرنے کے بعد چھ سال قید کی سزا سنائی گئی ہے؛ وہ Scattered Spider گروپ کا حصہ تھا۔ ریئل ٹڈ کے مطابق گروپ نے ایس ایم ایس فشنگ اور سم سویپ کا استعمال کیا، اور تقریباً 120 ملین سویڈش کرون کی کرپٹو کرنسی چرائی گئی؛ اخبار، جو امریکی محکمہ انصاف کا حوالہ دیتا ہے، کہتا ہے کہ کم از کم بارہ کمپنیاں متاثر ہوئیں۔ ریئل ٹڈ لکھتا ہے کہ انہیں مئی 2024 میں سپین میں گرفتار کیا گیا اور اپریل 2025 میں حوالگی ہوئی، اور وہ امریکی مقدمے میں سزا یافتہ پانچویں شخص ہیں۔ اس بیان کے لیے محکمہ انصاف کا سرکاری متن نہیں پڑھا گیا۔",
+    "id": "Pria Inggris berusia 24 tahun telah dijatuhi hukuman penjara enam tahun di Amerika Serikat setelah mengaku bersalah atas persekongkolan untuk melakukan penipuan elektronik dan pencurian identitas yang diperberat, sebagai bagian dari kelompok Scattered Spider, dilaporkan Realtid pada 19 November 2026. Menurut Realtid, kelompok itu menggunakan phishing SMS dan tukar SIM, dan mata uang kripto senilai sekitar 120 juta krona Swedia dicuri; media itu, merujuk pada Departemen Kehakiman AS, menyatakan paling tidak dua belas perusahaan terdampak. Realtid menulis bahwa pria itu ditangkap di Spanyol pada Mei 2024 dan diekstradisi pada April 2025, dan bahwa ia orang kelima yang dihukum dalam perkara AS itu. Teks resmi Departemen Kehakiman tidak dibaca untuk laporan ini.",
+    "ja": "Realtidが2026年11月19日に伝えたところでは、24歳の英国人男性は、Scattered Spiderという集団の一員として電信詐欺共謀および加重身分盗用について有罪を認めた後、米国で懲役6年の判決を受けた。Realtidによると、集団はSMSフィッシングとSIMスワップを用い、約1億2000万スウェーデン・クローナ相当の暗号資産が盗まれた。同紙は米司法省を引用し、少なくとも12社が被害を受けたとしている。Realtidは、その男性が2024年5月にスペインで逮捕され、2025年4月に引き渡され、米事件で有罪判決を受けた5人目だと書いている。本記事では司法省の公式文書は読んでいない。",
+    "sw": "Mwanamume Mwingereza wa miaka 24 amehukumiwa kifungo cha miaka sita nchini Marekani baada ya kukiri hatia ya kula njama ya kufanya udanganyifu wa kielektroniki na wizi mkubwa wa utambulisho, kama sehemu ya kundi la Scattered Spider, Realtid iliripoti tarehe 19 Novemba 2026. Kulingana na Realtid, kundi lilitumia uvuvi wa SMS na ubadilishaji wa SIM, na sarafu pepe yenye thamani ya krona za Uswidi milioni 120 ziliibwa; gazeti, likirejelea Idara ya Haki ya Marekani, linasema kampuni angalau kumi na mbili ziliathiriwa. Realtid inaandika kuwa mwanamume huyo alikamatwa Uhispania Mei 2024 na kurejeshwa Aprili 2025, na kwamba yeye ni mtu wa tano kuhukumiwa katika kesi ya Marekani. Maandishi rasmi ya Idara ya Haki hayakusomwa kwa ripoti hii.",
+    "mr": "रियलटिडने १९ नोव्हेंबर २०२६ रोजी कळवले की, २४ वर्षीय एका ब्रिटिश व्यक्तीला अमेरिकेत ताराद्वारे फसवणुकीच्या कट रचण्याचे आणि गंभीर ओळख चोरीचे अपराध कबूल केल्यानंतर सहा वर्षांची कारावास शिक्षा झाली आहे; ते Scattered Spider गटाचा भाग होते. रियलटिडनुसार गटाने एसएमएस फिशिंग आणि सिम-स्वाप वापरले, आणि सुमारे १२० दशलक्ष स्वीडिश क्रोनरची क्रिप्टोकरन्सी चोरली गेली; वृत्तपत्र, जे अमेरिकन न्याय विभागाचा हवाला देते, म्हणते की किमान बारा कंपन्या बाधित झाल्या. रियलटिड लिहिते की त्यांना मे २०२४ मध्ये स्पेनमध्ये अटक झाली आणि एप्रिल २०२५ मध्ये प्रत्यार्पण झाले, आणि ते अमेरिकन प्रकरणात शिक्षा झालेले पाचवे व्यक्ती आहेत. या वृत्तासाठी न्याय विभागाचा अधिकृत मजकूर वाचण्यात आलेला नाही.",
+    "fa": "ریالتید در ۱۹ نوامبر ۲۰۲۶ گزارش داد که یک مرد ۲۴ساله بریتانیایی پس از اقرار به گناه در توطئه برای کلاهبرداری الکترونیکی و سرقت مشدد هویت، به‌عنوان بخشی از گروه Scattered Spider در ایالات متحده به شش سال زندان محکوم شده است. به گفته ریالتید، این گروه از پیامک‌فیشینگ و تعویض سیم استفاده کرد و رمزارزی به ارزش حدود ۱۲۰ میلیون کرون سوئد دزدیده شد؛ روزنامه با ارجاع به وزارت دادگستری آمریکا می‌گوید دست‌کم دوازده شرکت آسیب دیدند. ریالتید می‌نویسد این مرد در مه ۲۰۲۴ در اسپانیا بازداشت و در آوریل ۲۰۲۵ مسترد شد و پنجمین فردی است که در پرونده آمریکا محکوم شده است. متن رسمی وزارت دادگستری برای این گزارش خوانده نشده است.",
+    "uk": "24-річного британця засуджено в США до шести років ув’язнення після визнання вини в змові з метою вчинення електронного шахрайства та кваліфікованій крадіжці персональних даних як учасника групи Scattered Spider, повідомило видання Realtid 19 листопада 2026 року. За даними Realtid, група використовувала фішинг через SMS і підміну SIM-карток, і було викрадено криптовалюту орієнтовно на 120 млн шведських крон; видання з посиланням на Міністерство юстиції США повідомляє, що постраждали щонайменше дванадцять компаній. Realtid пише, що його затримали в Іспанії в травні 2024 року і екстрадували в квітні 2025 року, і що він п’ятий засуджений у американській справі. Офіційний текст Міністерства юстиції для цього матеріалу не читали.",
+    "tr": "Realtid’in 19 Kasım 2026’da bildirdiğine göre 24 yaşındaki bir Britanyalı, Scattered Spider grubunun bir parçası olarak elektronik dolandırıcılık komplosu ve ağırlaştırılmış kimlik hırsızlığını kabul ettikten sonra ABD’de altı yıl hapis cezasına çarptırıldı. Realtid’e göre grup SMS oltalaması ve SIM değiştirmeyi kullandı ve yaklaşık 120 milyon İsveç kronu değerinde kripto para çalındı; gazete, ABD Adalet Bakanlığı’na atıfla en az on iki şirketin etkilendiğini belirtiyor. Realtid, bu kişinin Mayıs 2024’te İspanya’da tutuklandığını, Nisan 2025’te iade edildiğini ve ABD davasında mahkûm edilen beşinci kişi olduğunu yazıyor. Bu haber için Adalet Bakanlığı’nın resmi metni okunmadı.",
+    "se": "24-jahkásaš brihttalaš almmái lea dubmejuvvon guđa jahkái giddagasas USA:s, maŋŋil go son lei mieđihan sivalažžan vearredoaimmaheamis ja identiteahta suoládeamis, mii lei oassin Scattered Spider nammasaš joavkkus, Realtid dieđihii skábmamánu 19. b. 2026. Realtid dieđiha ahte joavku geavahii SMS-fihen ja SIM-luoitima, ja ahte kryptovaluta mas lei árvu sullii 120 miljovnna ruvnnu, suoláduvvui; aviisa, mii čujuha USA Justisdepartementii, muitala ahte unnimusat guoktenuppelot fitnodaga ledje guoskkahuvvon. Realtid čállá ahte son arresterejuvvui Espánnjas miessemánus 2024 ja luobahuvvui cuoŋománus 2025, ja ahte son lea viđát olmmoš gii lea dubmejuvvon USA áššis. Justiisadepartemeantta virggálaš teaksta ii lean logahallan dán čielggadeapmái."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "03ac7dd6b1cd",
@@ -732,8 +871,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Promotion / seminar for a CFD firm. KVG. Not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "5dae83103e59",
@@ -759,8 +899,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "a34abdaf0ff0",
@@ -785,8 +926,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "8db767455fd2",
@@ -811,8 +953,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "933c5df34845",
@@ -837,10 +980,8 @@
     "\\bdark\\s?webs?\\b"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "possible_duplicate_of": "dc371426393c",
-   "possible_duplicate_reason": "same institution, same day",
    "also_covered_by": [
     {
      "outlet": "lt",
@@ -853,7 +994,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "reject_reason": "GTA 6 / fake GTA / CyberLeek standing exclusion. Wrong pipeline duplicate link to Omni cleared.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "f652f9389537",
@@ -877,8 +1019,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Film review, not news.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "84ec7793521e",
@@ -904,8 +1047,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "ec5f744b60e3",
@@ -930,8 +1074,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "19c632406389"
   },
   {
    "id": "16b8d1ba2d62",
@@ -956,7 +1101,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -970,7 +1115,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "4709c121c5cc",
@@ -997,10 +1143,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "possible_duplicate_of": "dc371426393c",
-   "possible_duplicate_reason": "same institution, same day"
+   "reject_reason": "GTA 6 / fake GTA / CyberLeek standing exclusion. Wrong pipeline duplicate link to Omni cleared.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "21698e92a547",
@@ -1024,10 +1169,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "possible_duplicate_of": "bf50f628419a",
-   "possible_duplicate_reason": "rare headline word"
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "b9d0f04c4f35",
@@ -1051,10 +1195,9 @@
     "\\bdark\\s?webs?\\b"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "possible_duplicate_of": "dc371426393c",
-   "possible_duplicate_reason": "same institution, same day"
+   "reject_reason": "GTA 6 / fake GTA / CyberLeek standing exclusion. Wrong pipeline duplicate link to Omni cleared.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "408cb9660b9f",
@@ -1079,7 +1222,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "a985949ee5e9",
    "possible_duplicate_reason": "rare headline word",
@@ -1095,7 +1238,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "698b954a4a63",
@@ -1121,8 +1265,9 @@
     "\\bkryptotillgång\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "0eb8661e7db9"
   },
   {
    "id": "ef4a5ab5b743",
@@ -1147,8 +1292,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "23e0b22ee1f7",
@@ -1174,8 +1320,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "026d30d633e8",
@@ -1201,8 +1348,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "2c17fe44b5aa",
@@ -1228,8 +1376,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "75ba7bda2844",
@@ -1255,11 +1404,10 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "published_unverified": true,
-   "possible_duplicate_of": "2d55fc0fa3b1",
-   "possible_duplicate_reason": "rare headline word"
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "4617721c88e3",
@@ -1285,10 +1433,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "possible_duplicate_of": "2c17fe44b5aa",
-   "possible_duplicate_reason": "rare headline word"
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "9b4c6183f794",
@@ -1313,10 +1460,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "a985949ee5e9",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "845ffa4840c4",
@@ -1340,15 +1488,16 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "reject_reason": "Daily agenda, not a crypto story. Paywall, not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "a985949ee5e9",
    "url": "https://skatteetaten.no/presse/nyhetsrommet/rekordmange-rapporterer-krypto-i-skattemeldingen",
    "title": "Rekordmange rapporterer krypto i skattemeldingen",
-   "title_en": null,
+   "title_en": "Skatteetaten: 89,600 people reported crypto holdings of NOK 24.6 billion",
    "source": "skatteetaten",
    "source_name": "Skatteetaten",
    "country": "NO",
@@ -1360,15 +1509,350 @@
    "published": "2026-11-19T06:00:00+00:00",
    "fetched": "2026-11-20T02:43:13+00:00",
    "topics": [
-    "crypto",
-    "regulation"
+    "tax"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "According to preliminary figures from the Norwegian Tax Administration (Skatteetaten) for the 2025 income year, 89,600 people reported cryptocurrency holdings, with a total reported value of NOK 24.6 billion. Skatteetaten says checks are being tightened. From 2026, businesses that offer exchange and custody of cryptocurrency are required to provide information to Skatteetaten through third-party reporting.",
+   "also_covered_by": [
+    {
+     "outlet": "itromso",
+     "outlet_name": "iTromsø",
+     "url": "https://itromso.no/nyheter/s/g37yy1/tromsoevaeringene-eier-kryptovaluta-for-190-millioner",
+     "title": "Tromsøværingene eier kryptovaluta for 190 millioner",
+     "published": "2026-11-19T05:58:22+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "laagendalsposten",
+     "outlet_name": "Laagendalsposten",
+     "url": "https://laagendalsposten.no/over-500-kongsberg-folk-eier-krypto-skatteetaten-skjerper-kontrollene/s/80-64-11035",
+     "title": "Over 500 Kongsberg-folk eier krypto: Skatteetaten skjerper kontrollene",
+     "published": "2026-11-19T17:52:28+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "ta",
+     "outlet_name": "Telemarksavisa",
+     "url": "https://ta.no/skien-pa-kryptotoppen-har-oppgitt-verdier-for-462-millioner/s/80-50-87582",
+     "title": "Skien på kryptotoppen – verdier for 462 millioner",
+     "published": "2026-11-19T07:50:23+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nettavisen",
+     "outlet_name": "Nettavisen",
+     "url": "https://nettavisen.no/okonomi/rekordmange-oppgir-kryptoverdier-i-skattemeldingen/s/80-95-263849",
+     "title": "Rekordmange oppgir kryptoverdier i skattemeldingen",
+     "published": "2026-11-19T09:18:56+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "budstikka",
+     "outlet_name": "Budstikka",
+     "url": "https://budstikka.no/eier-krypto-for-1-1-milliarder-har-avdekket-grove-feil/s/80-55-52080",
+     "title": "Eier krypto for 1,1 milliarder: – Har avdekket grove feil",
+     "published": "2026-11-19T09:32:15+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "drammens-tidende",
+     "outlet_name": "Drammens Tidende",
+     "url": "https://dt.no/krypto-i-drammen-eier-verdier-for-over-n-milliard/s/80-57-63438",
+     "title": "Drammen på kryptotoppen: Har over én milliard i krypto",
+     "published": "2026-11-19T12:42:24+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/artikkel/kvam-knuser-krypto-konkurrenter-trolig-enorme-morketall-nasjonalt-1533469",
+     "title": "Kvam knuser krypto-konkurrenter – trolig enorme mørketall nasjonalt",
+     "published": "2026-11-19T18:21:54+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "iharstad",
+     "outlet_name": "iHarstad",
+     "url": "https://iharstad.no/harstadvaringer-eier-krypto-for-48-1-millioner-varsler-strengere-kontroll/s/80-126-34419",
+     "title": "Harstadværinger eier krypto for 48,1 millioner: Varsler strengere kontroll",
+     "published": "2026-11-19T14:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "porten-no",
+     "outlet_name": "porten.no",
+     "url": "https://porten.no/nyheiter/n/nLabLx/bur-du-i-ein-krypto-kommune-sjekk-oversikta-her",
+     "title": "Bur du i ein krypto-kommune? Sjekk oversikta her",
+     "published": "2026-11-19T13:57:24+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "helgelendingen",
+     "outlet_name": "Helgelendingen",
+     "url": "https://helg.no/177-vefsninger-eier-krypto-for-over-30-millioner-men-en-annen-kommune-peker-seg-ut/s/80-24-32886",
+     "title": "177 vefsninger eier krypto for over 30 millioner – men en annen kommune peker seg ut",
+     "published": "2026-11-19T10:12:21+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "nrk",
+     "outlet_name": "NRK",
+     "url": "https://nrk.no/nordland/skatteetaten_-stadig-flere-rapporterer-kryptovaluta-i-nordland-1.18084691",
+     "title": "Eier du kryptovaluta? Da haster det å melde fra",
+     "published": "2026-11-19T07:02:10+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "ht-no",
+     "outlet_name": "ht.no",
+     "url": "https://ht.no/nyheter/n/xJPw7X/varsler-mer-kontroll-320-rapporterte-eiere-i-harstad",
+     "title": "Varsler mer kontroll: 320 rapporterte eiere i Harstad",
+     "published": "2026-11-19T06:58:14+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "finansavisen",
+     "outlet_name": "Finansavisen",
+     "url": "https://finansavisen.no/skatt/2026/11/19/8396933/rekordmange-rapporterer-krypto-skatteetaten-varsler-skjerpet-kontroll",
+     "title": "Skatteetaten varsler skjerpet kontroll",
+     "published": "2026-11-19T06:53:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "avisen-agder",
+     "outlet_name": "Avisen Agder",
+     "url": "https://avisenagder.no/over-250-innbyggere-i-distriktet-har-oppgitt-krypto-eier-verdier-for-nar-30-millioner-kroner/s/80-99-26520",
+     "title": "Over 250 innbyggere i distriktet har oppgitt krypto – eier verdier for nær 30 millioner kroner",
+     "published": "2026-11-19T15:09:31+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "lyngdals-avis",
+     "outlet_name": "Lyngdals Avis",
+     "url": "https://lyngdalsavis.no/store-kryptoverdier-i-lyngdal-118-personer-rapporterer-over-41-millioner-kroner/s/80-104-16293",
+     "title": "Store kryptoverdier i Lyngdal: 118 personer rapporterer over 41 millioner kroner",
+     "published": "2026-11-19T06:51:31+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "banett-no",
+     "outlet_name": "banett.no",
+     "url": "https://banett.no/nyheter/n/EbWLX3/71-personer-i-broennoey-har-rapportert-kryptoverdier",
+     "title": "71 personer i Brønnøy har rapportert kryptoverdier",
+     "published": "2026-11-19T06:52:44+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "fosna-folket-no",
+     "outlet_name": "fosna-folket.no",
+     "url": "https://fosna-folket.no/nyheter/n/OypeJb/minst-280-fosninger-med-kryptoformue",
+     "title": "Minst 280 fosninger med kryptoformue",
+     "published": "2026-11-19T08:10:28+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "oa",
+     "outlet_name": "Oppland Arbeiderblad",
+     "url": "https://oa.no/over-400-i-gjovik-eier-kryptovaluta-varsler-strengere-kontroll/s/80-35-65256",
+     "title": "Over 400 i Gjøvik eier kryptovaluta – varsler strengere kontroll",
+     "published": "2026-11-20T23:02:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "wataha.no",
+     "outlet_name": "wataha",
+     "url": "https://wataha.no/2026/11/20/ile-norwegowie-maja-kryptowalut-skarbowka-zapowiada-coraz-dokladniejsze-kontrole",
+     "title": "Ile Norwegowie mają kryptowalut? Skarbówka zapowiada coraz dokładniejsze kontrole",
+     "published": "2026-11-20T08:36:28+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "lp-no",
+     "outlet_name": "lp.no",
+     "url": "https://lp.no/nyheter/n/2vGJ9B/235-lokale-har-kryptoverdier-for-23-5-millioner",
+     "title": "235 lokale har kryptoverdier for 23,5 millioner",
+     "published": "2026-11-20T07:30:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "venneslatidende-no",
+     "outlet_name": "venneslatidende.no",
+     "url": "https://venneslatidende.no/nyheter/n/Wmb3yk/eier-krypto-for-42-millioner-kroner",
+     "title": "Eier krypto for 42 millioner kroner",
+     "published": "2026-11-20T04:30:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "fjordabladet-no",
+     "outlet_name": "fjordabladet.no",
+     "url": "https://fjordabladet.no/nyhende/n/2vGg4q/rekordmange-rapporterte-krypto-i-skattemeldinga-ogsaa-i-nordfjord",
+     "title": "Rekordmange rapporterte krypto i skattemeldinga - også i Nordfjord",
+     "published": "2026-11-20T10:30:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "moss-avis",
+     "outlet_name": "Moss Avis",
+     "url": "https://moss-avis.no/krypto-i-mossedistriktet-verdier-pa-over-200-millioner-kroner/s/80-67-60699",
+     "title": "Krypto i mossedistriktet: Verdier på over 200 millioner kroner",
+     "published": "2026-11-20T19:55:37+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "folkebladet-no",
+     "outlet_name": "folkebladet.no",
+     "url": "https://folkebladet.no/nyheter/n/3BJz3q/saa-mange-eier-krypto-i-midt-troms",
+     "title": "Så mange eier krypto i Midt-Troms",
+     "published": "2026-11-20T06:19:27+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "avisa-hemnes",
+     "outlet_name": "Avisa Hemnes",
+     "url": "https://avisahemnes.no/2026/11/39-i-hemnes-har-krypto-i-skattemeldingen",
+     "title": "39 i Hemnes har krypto i skattemeldingen",
+     "published": "2026-11-20T05:14:55+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Skatteetaten press release, 19 November 2026, «Rekordmange rapporterer krypto i skattemeldingen»",
+    "url": "https://www.skatteetaten.no/presse/nyhetsrommet/rekordmange-rapporterer-krypto-i-skattemeldingen/"
+   },
+   "title_i18n": {
+    "nn": "Skatteetaten: 89 600 personar rapporterte krypto for 24,6 milliardar kroner",
+    "sv": "Skatteetaten: 89 600 personer redovisade krypto till ett värde av 24,6 miljarder kronor",
+    "da": "Skatteetaten: 89.600 personer indberettede krypto for 24,6 milliarder kroner",
+    "fi": "Skatteetaten: 89 600 henkilöä ilmoitti 24,6 miljardin kruunun krypto-omistukset",
+    "is": "Skatteetaten: 89.600 manns töldu fram dulritunareignir að verðmæti 24,6 milljarða króna",
+    "zh": "挪威税务局：8.96万人申报价值246亿克朗的加密资产",
+    "hi": "स्कैटेएतातेन: 89,600 लोगों ने 24.6 अरब क्रोन की क्रिप्टो होल्डिंग दर्ज कीं",
+    "es": "Skatteetaten: 89.600 personas declararon criptoactivos por 24.600 millones de coronas",
+    "fr": "Skatteetaten : 89 600 personnes ont déclaré des avoirs en crypto d’une valeur de 24,6 milliards de couronnes",
+    "ar": "سكاتيه إيتاتن: 89600 شخص أبلغوا عن حيازات مشفرة بقيمة 24.6 مليار كرونة",
+    "bn": "স্ক্যাটেএটাটেন: ৮৯,৬০০ জন ২৪.৬ বিলিয়ন ক্রোনের ক্রিপ্টো হোল্ডিং জানিয়েছেন",
+    "pt": "Skatteetaten: 89.600 pessoas declararam criptoativos no valor de 24,6 mil milhões de coroas",
+    "ru": "Налоговое управление Норвегии: 89 600 человек указали криптоактивы на 24,6 млрд крон",
+    "ur": "اسکیٹیاٹاٹن: 89,600 افراد نے 24.6 ارب کرون کی کرپٹو ہولڈنگز رپورٹ کیں",
+    "id": "Skatteetaten: 89.600 orang melaporkan kepemilikan kripto senilai 24,6 miliar krona",
+    "de": "Skatteetaten: 89.600 Personen meldeten Krypto-Bestände im Wert von 24,6 Milliarden Kronen",
+    "ja": "ノルウェー国税庁：8万9600人が246億クローネ相当の暗号資産を申告",
+    "sw": "Skatteetaten: Watu 89,600 waliripoti umiliki wa kriptoinye thamani ya krona bilioni 24.6",
+    "mr": "स्कॅटेएतातेन: ८९,६०० लोकांनी २४.६ अब्ज क्रोनची क्रिप्टो होल्डिंग नोंदवली",
+    "fa": "اسکاته‌اتاتن: ۸۹۶۰۰ نفر دارایی رمزارزی به ارزش ۲۴٫۶ میلیارد کرون گزارش کردند",
+    "uk": "Податкова служба Норвегії: 89 600 осіб задекларували криптоактиви на 24,6 млрд крон",
+    "tr": "Skatteetaten: 89.600 kişi 24,6 milyar kron değerinde kripto varlık bildirdi",
+    "se": "Skatteetaten: 89 600 olbmo dieđihii kryptoopmodusa 24,6 miljárdda ruvnnu árvvu"
+   },
+   "title_i18n_source": "Rekordmange rapporterer krypto i skattemeldingen",
+   "summary_i18n": {
+    "nn": "Ifølgje førebelse tal frå Skatteetaten for inntektsåret 2025 har 89 600 personar oppgitt at dei eig krypto, med ein samla rapportert verdi på 24,6 milliardar kroner. Skatteetaten seier at kontrollane blir skjerpa. Frå og med 2026 er aktørar som tilbyr veksling og oppbevaring av krypto pålagde å gje opplysningar til Skatteetaten gjennom såkalla tredjepartsrapportering.",
+    "nb": "Ifølge foreløpige tall fra Skatteetaten for inntektsåret 2025 har 89 600 personer oppgitt at de eier krypto, med en samlet rapportert verdi på 24,6 milliarder kroner. Skatteetaten sier at kontrollene skjerpes. Fra og med 2026 er aktører som tilbyr veksling og oppbevaring av krypto pålagt å gi opplysninger til Skatteetaten gjennom såkalt tredjepartsrapportering.",
+    "sv": "Enligt preliminära siffror från det norska skatteverket Skatteetaten för inkomståret 2025 uppgav 89 600 personer att de äger krypto, till ett sammanlagt redovisat värde av 24,6 miljarder kronor. Skatteetaten uppger att kontrollerna skärps. Från och med 2026 är aktörer som erbjuder växling och förvaring av krypto skyldiga att lämna uppgifter till Skatteetaten genom så kallad tredjepartsrapportering.",
+    "da": "Ifølge foreløbige tal fra den norske skatteforvaltning Skatteetaten for indkomståret 2025 har 89.600 personer oplyst, at de ejer krypto, med en samlet indberettet værdi på 24,6 milliarder kroner. Skatteetaten oplyser, at kontrollen skærpes. Fra og med 2026 er aktører, der tilbyder veksling og opbevaring af krypto, forpligtet til at give oplysninger til Skatteetaten gennem såkaldt tredjepartsrapportering.",
+    "fi": "Norjan verohallinnon Skatteetatenin alustavien lukujen mukaan 89 600 henkilöä ilmoitti vuoden 2025 verovuoden veroilmoituksessa krypto-omistuksista, joiden yhteenlaskettu ilmoitettu arvo oli 24,6 miljardia kruunua. Skatteetatenin mukaan tarkastuksia tiukennetaan. Vuodesta 2026 alkaen toimijoiden, jotka tarjoavat kryptojen vaihtoa ja säilytystä, on annettava tietoja Skatteetatenille niin sanotulla kolmannen osapuolen raportoinnilla.",
+    "is": "Samkvæmt bráðabirgðatölum norskra skattyfirvalda, Skatteetaten, fyrir tekjuárið 2025 töldu 89.600 manns fram dulritunareignir, að heildarvirði 24,6 milljarða norskra króna. Skatteetaten segir að eftirlit verði treyst. Frá og með 2026 er aðilum sem bjóða upp á gjaldeyrisskipti og vörslu dulritunarfjár skylt að láta Skatteetaten í té upplýsingar með svokallaðri þriðja aðila-skýrslugjöf.",
+    "zh": "挪威税务局（Skatteetaten）公布的2025收入年度初步数据显示，有89,600人申报持有加密资产，申报总价值为246亿挪威克朗。税务局表示正在加强核查。自2026年起，提供加密货币兑换和托管服务的机构须通过所谓的第三方报告向挪威税务局提供信息。",
+    "hi": "नॉर्वे के कर प्रशासन स्कैटेएतातेन के 2025 आय वर्ष के प्रारंभिक आँकड़ों के अनुसार, 89,600 लोगों ने क्रिप्टोकरेंसी होल्डिंग दर्ज कीं, जिनका कुल रिपोर्ट किया गया मूल्य 24.6 अरब नॉर्वेजियाई क्रोन है। स्कैटेएतातेन कहता है कि जाँच को कड़ा किया जा रहा है। 2026 से, जो व्यवसाय क्रिप्टोकरेंसी का विनिमय और अभिरक्षा प्रदान करते हैं, उन्हें तृतीय-पक्ष रिपोर्टिंग के माध्यम से स्कैटेएतातेन को जानकारी देनी होगी।",
+    "es": "Según cifras preliminares de la Administración Tributaria noruega (Skatteetaten) para el ejercicio 2025, 89.600 personas declararon tenencias de criptomonedas, con un valor total declarado de 24.600 millones de coronas noruegas. Skatteetaten afirma que se están reforzando los controles. A partir de 2026, las empresas que ofrecen cambio y custodia de criptomonedas están obligadas a facilitar información a Skatteetaten mediante la llamada declaración de terceros.",
+    "fr": "Selon des chiffres provisoires de l’administration fiscale norvégienne (Skatteetaten) pour l’année de revenus 2025, 89 600 personnes ont déclaré détenir des cryptomonnaies, pour une valeur totale déclarée de 24,6 milliards de couronnes norvégiennes. Skatteetaten indique que les contrôles sont renforcés. À partir de 2026, les entreprises qui proposent l’échange et la conservation de cryptomonnaies sont tenues de transmettre des informations à Skatteetaten dans le cadre de la déclaration par des tiers.",
+    "ar": "وفق أرقام أولية من إدارة الضرائب النرويجية (سكاتيه إيتاتن) لسنة الدخل 2025، أبلغ 89600 شخص عن حيازات من العملات المشفرة تبلغ قيمتها الإجمالية المُبلَّغ عنها 24.6 مليار كرونة نرويجية. وتقول الإدارة إن عمليات التدقيق تُشدَّد. واعتبارًا من عام 2026، تُلزم الجهات التي تقدم خدمات صرف العملات المشفرة وحفظها بتقديم معلومات إلى سكاتيه إيتاتن عبر ما يُسمى بالإبلاغ من طرف ثالث.",
+    "bn": "নরওয়ের কর প্রশাসন স্ক্যাটেএটাটেনের ২০২৫ আয়বর্ষের প্রাথমিক হিসাব অনুযায়ী, ৮৯,৬০০ জন ক্রিপ্টোকারেন্সি হোল্ডিং জানিয়েছেন, যার মোট রিপোর্ট করা মূল্য ২৪.৬ বিলিয়ন নরওয়েজীয় ক্রোন। স্ক্যাটেএটাটেন জানিয়েছে, যাচাই-বাছাই কঠোর করা হচ্ছে। ২০২৬ সাল থেকে, যে প্রতিষ্ঠানগুলো ক্রিপ্টোকারেন্সি বিনিময় ও হেফাজতের সেবা দেয়, তাদের তৃতীয় পক্ষের রিপোর্টিংয়ের মাধ্যমে স্ক্যাটেএটাটেনকে তথ্য দিতে হবে।",
+    "pt": "Segundo números preliminares da Administração Fiscal norueguesa (Skatteetaten) relativos ao ano de rendimentos de 2025, 89.600 pessoas declararam detenções de criptomoedas, com um valor total declarado de 24,6 mil milhões de coroas norueguesas. A Skatteetaten afirma que os controlos estão a ser reforçados. A partir de 2026, as empresas que oferecem câmbio e custódia de criptomoedas são obrigadas a prestar informações à Skatteetaten através da chamada comunicação por terceiros.",
+    "ru": "Согласно предварительным данным Налогового управления Норвегии (Skatteetaten) за налоговый год 2025, 89 600 человек указали криптовалютные активы на общую заявленную сумму 24,6 млрд норвежских крон. Ведомство сообщает, что проверки ужесточаются. С 2026 года организации, предоставляющие обмен и хранение криптовалюты, обязаны передавать сведения в Skatteetaten в рамках так называемой отчётности третьих сторон.",
+    "ur": "نارتھے کے ٹیکس ادارے اسکیٹیاٹاٹن کے 2025 آمدنی سال کے ابتدائی اعدادوشمار کے مطابق 89,600 افراد نے کرپٹو کرنسی ہولڈنگز رپورٹ کیں، جن کی مجموعی رپورٹ شدہ مالیت 24.6 ارب نارویجین کرون ہے۔ اسکیٹیاٹاٹن کہتا ہے کہ پڑتال سخت کی جا رہی ہے۔ 2026 سے وہ کاروبار جو کرپٹو کرنسی کا تبادلہ اور تحویل فراہم کرتے ہیں، تیسرے فریق کی رپورٹنگ کے ذریعے اسکیٹیاٹاٹن کو معلومات دینے کے پابند ہوں گے۔",
+    "id": "Menurut angka sementara dari Otoritas Pajak Norwegia (Skatteetaten) untuk tahun pajak 2025, 89.600 orang melaporkan kepemilikan mata uang kripto dengan nilai total yang dilaporkan sebesar 24,6 miliar krona Norwegia. Skatteetaten menyatakan bahwa pemeriksaan diperketat. Mulai 2026, pelaku usaha yang menawarkan penukaran dan penitipan mata uang kripto wajib memberikan informasi kepada Skatteetaten melalui pelaporan pihak ketiga.",
+    "de": "Nach vorläufigen Zahlen der norwegischen Steuerverwaltung Skatteetaten für das Einkommensjahr 2025 haben 89.600 Personen Kryptobestände angegeben, mit einem insgesamt gemeldeten Wert von 24,6 Milliarden norwegischen Kronen. Skatteetaten gibt an, dass die Kontrollen verschärft werden. Ab 2026 sind Anbieter von Tausch und Verwahrung von Kryptowährung verpflichtet, der Skatteetaten im Wege der sogenannten Drittparteienmeldung Angaben zu übermitteln.",
+    "ja": "ノルウェー国税庁（Skatteetaten）が公表した2025年所得年度の速報値によると、8万9600人が暗号資産の保有を申告し、申告総額は246億ノルウェー・クローネだった。同庁は査察を強化しているとしている。2026年以降、暗号資産の交換および保管を提供する事業者は、いわゆる第三者報告を通じて同庁に情報を提供する義務を負う。",
+    "sw": "Kulingana na takwimu za awali kutoka kwa Mamlaka ya Kodi ya Norwei (Skatteetaten) kwa mwaka wa mapato wa 2025, watu 89,600 waliripoti umiliki wa sarafu pepe, wenye thamani ya jumla iliyoripotiwa ya krona za Norwei bilioni 24.6. Skatteetaten inasema ukaguzi unaimarishwa. Kuanzia 2026, biashara zinazotoa ubadilishanaji na uhifadhi wa sarafu pepe zinalazimika kutoa taarifa kwa Skatteetaten kupitia uwasilishaji wa taarifa na wahusika wengine.",
+    "mr": "नॉर्वेच्या कर प्रशासनाच्या (स्कॅटेएतातेन) २०२५ या आय वर्षाच्या प्राथमिक आकडेवारीनुसार, ८९,६०० लोकांनी क्रिप्टोकरन्सी होल्डिंग नोंदवल्या, ज्याचे एकूण नोंदवलेले मूल्य २४.६ अब्ज नॉर्वेजियन क्रोन आहे. स्कॅटेएतातेन म्हणते की तपासणी कडक केली जात आहे. २०२६ पासून, जे व्यवसाय क्रिप्टोकरन्सीची देवघेव आणि अभिरक्षा देतात, त्यांना तृतीय-पक्ष अहवालाच्या माध्यमातून स्कॅटेएतातेनला माहिती द्यावी लागेल.",
+    "fa": "طبق ارقام مقدماتی اداره مالیات نروژ (اسکاته‌اتاتن) برای سال درآمدی ۲۰۲۵، ۸۹۶۰۰ نفر دارایی رمزارزی خود را گزارش کردند که ارزش کل اعلام‌شده آن ۲۴٫۶ میلیارد کرون نروژ است. اسکاته‌اتاتن می‌گوید بررسی‌ها در حال تشدید است. از سال ۲۰۲۶، کسب‌وکارهایی که خدمات مبادله و نگهداری رمزارز ارائه می‌دهند موظف‌اند از طریق گزارش‌دهی شخص ثالث اطلاعات را در اختیار اسکاته‌اتاتن بگذارند.",
+    "uk": "За попередніми даними Податкової служби Норвегії (Skatteetaten) за податковий рік 2025, 89 600 осіб задекларували криптовалютні активи на загальну заявлену суму 24,6 млрд норвезьких крон. Служба повідомляє, що перевірки посилюються. З 2026 року суб’єкти, які надають обмін і зберігання криптовалюти, зобов’язані подавати відомості до Skatteetaten у рамках так званої звітності третіх сторін.",
+    "tr": "Norveç Vergi İdaresi’nin (Skatteetaten) 2025 gelir yılına ilişkin ön rakamlarına göre 89.600 kişi kripto para varlıklarını beyan etti; beyan edilen toplam değer 24,6 milyar Norveç kronu. Skatteetaten, denetimlerin sıkılaştırıldığını belirtiyor. 2026’dan itibaren kripto para alım satışı ve saklama hizmeti sunan kuruluşlar, üçüncü taraf bildirimi yoluyla Skatteetaten’e bilgi vermekle yükümlüdür.",
+    "se": "Skatteetaten 2025 boahtojagi gaskaboddosaš loguid mielde dieđihedje 89 600 olbmo ahte sis leat kryptoeamet, oktiibuot dieđihuvvon árvu 24,6 miljárdda ruvnno. Skatteetaten dadjá ahte bearráigeahččut čavgejuvvojit. 2026 rájes galget fitnodagat mat fállet kryptovaluhta lonohallama ja vurkkodeami, addit dieđuid Skatteetatenii gohčoduvvon goalmmát beliid raporterema bokte."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "c2d501341c35",
@@ -1393,8 +1877,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "ab3dbbd4ec6a",
@@ -1419,9 +1904,10 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "merged_into": "f15fd3bf94dd"
   },
   {
    "id": "553180a908dd",
@@ -1454,7 +1940,7 @@
    "id": "f15fd3bf94dd",
    "url": "https://kaupr.io/nyheter/h100-okte-bitcoin-per-aksje-i-tredje-kvartal",
    "title": "H100 økte bitcoin per aksje med 4,4 prosent i tredje kvartal",
-   "title_en": null,
+   "title_en": "H100 Group says bitcoin per share rose 4.36% in the third quarter",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -1466,16 +1952,88 @@
    "published": "2026-11-19",
    "fetched": "2026-11-21T02:41:55+00:00",
    "topics": [
-    "bitcoin"
+    "companies"
    ],
    "matched": [
     "\\bH100\\b",
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "In its interim report for 1 January to 30 September 2026, published on 19 November 2026, H100 Group says fully diluted bitcoin per share rose from 288.49 to 301.06 sats, an increase of 4.36%. The company's bitcoin holdings went from 1,051.03 BTC at the start of the quarter to 3,476.80 BTC at the end, after the acquisition of NSD, which took the holding to 3,506.4 BTC at completion, and a loss of about 30 BTC in an active pool of 233.42 BTC. Profit before tax was 142.9 million kronor, including a one-off gain of 171.0 million kronor from the acquisition; without that gain the result would have been negative. The report has not been reviewed by the company's auditors. The board has called an extraordinary general meeting for 7 December 2026 to seek authorisation to buy back shares; the company has not decided on a buyback, and that meeting has not yet been held.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/h100-vil-kjope-tilbake-aksjer-billigere-enn-bitcoin-verdien",
+     "title": "H100 vil kjøpe tilbake aksjer billigere enn bitcoin-verdien",
+     "published": "2026-11-19",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "H100 Group interim report 1 January–30 September 2026, MFN, 19 November 2026",
+    "url": "https://www.mfn.se/a/h100-group/interim-report-january-1-september-30-2026"
+   },
+   "title_i18n": {
+    "nn": "H100 Group seier at bitcoin per aksje auka med 4,36 % i tredje kvartal",
+    "sv": "H100 Group uppger att bitcoin per aktie ökade med 4,36 % under tredje kvartalet",
+    "da": "H100 Group oplyser, at bitcoin pr. aktie steg med 4,36 % i tredje kvartal",
+    "fi": "H100 Groupin mukaan bitcoin per osake nousi 4,36 % kolmannella neljänneksellä",
+    "is": "H100 Group segir bitcoin á hlut hafa hækkað um 4,36% á þriðja ársfjórðungi",
+    "zh": "H100 Group称第三季度每股比特币增加4.36%",
+    "hi": "H100 Group का कहना है कि तीसरी तिमाही में प्रति शेयर बिटकॉइन 4.36% बढ़ा",
+    "es": "H100 Group afirma que el bitcoin por acción subió un 4,36% en el tercer trimestre",
+    "fr": "H100 Group indique que le bitcoin par action a augmenté de 4,36 % au troisième trimestre",
+    "ar": "مجموعة H100 تقول إن البيتكوين لكل سهم ارتفع بنسبة 4.36% في الربع الثالث",
+    "bn": "H100 Group বলেছে, তৃতীয় প্রান্তিকে প্রতি শেয়ারে বিটকয়েন ৪.৩৬% বেড়েছে",
+    "pt": "A H100 Group afirma que o bitcoin por ação subiu 4,36% no terceiro trimestre",
+    "ru": "H100 Group сообщает, что объём биткоина на акцию вырос на 4,36% в третьем квартале",
+    "ur": "H100 Group کا کہنا ہے کہ تیسری سہ ماہی میں فی شیئر بٹ کوائن 4.36 فیصد بڑھا",
+    "id": "H100 Group menyatakan bitcoin per saham naik 4,36% pada kuartal ketiga",
+    "de": "H100 Group: Bitcoin je Aktie stieg im dritten Quartal um 4,36 %",
+    "ja": "H100 Group、第3四半期の1株当たりビットコインが4.36%増加と発表",
+    "sw": "H100 Group inasema bitcoin kwa kila hisa iliongezeka kwa asilimia 4.36 katika robo ya tatu",
+    "mr": "H100 Group म्हणते की तिसऱ्या तिमाहीत प्रति समभाग बिटकॉइन ४.३६% वाढला",
+    "fa": "گروه H100 می‌گوید بیت‌کوین به ازای هر سهم در سه ماهه سوم ۴٫۳۶ درصد افزایش یافت",
+    "uk": "H100 Group повідомляє, що біткоїн на акцію зріс на 4,36% у третьому кварталі",
+    "tr": "H100 Group, üçüncü çeyrekte hisse başına bitcoin’in %4,36 arttığını duyurdu",
+    "se": "H100 Group dadjá bitcoin juohke ossosa nammii lassánii 4,36 % goalmmát njealjádasjagis"
+   },
+   "title_i18n_source": "H100 økte bitcoin per aksje med 4,4 prosent i tredje kvartal",
+   "summary_i18n": {
+    "nn": "I delårsrapporten for 1. januar til 30. september 2026, publisert 19. november 2026, seier H100 Group at fullt utvatna bitcoin per aksje auka frå 288,49 til 301,06 sats, ein auke på 4,36 %. Bitcoinbehaldninga til selskapet gjekk frå 1 051,03 BTC ved inngangen av kvartalet til 3 476,80 BTC ved utgangen, etter oppkjøpet av NSD, som tok behaldninga til 3 506,4 BTC ved gjennomføring, og eit tap på om lag 30 BTC i ein aktiv pulje på 233,42 BTC. Resultat før skatt var 142,9 millionar kroner, inkludert ein eingongsgevinst på 171,0 millionar kroner frå oppkjøpet; utan den gevinsten ville resultatet vore negativt. Rapporten er ikkje gjennomgått av revisorane i selskapet. Styret har kalla inn til ekstraordinær generalforsamling 7. desember 2026 for å be om fullmakt til å kjøpe tilbake aksjar; selskapet har ikkje vedteke noko tilbakekjøp, og den generalforsamlinga er ikkje halden enno.",
+    "nb": "I delårsrapporten for 1. januar til 30. september 2026, publisert 19. november 2026, sier H100 Group at fullt utvannet bitcoin per aksje økte fra 288,49 til 301,06 sats, en økning på 4,36 %. Bitcoinbeholdningen til selskapet gikk fra 1 051,03 BTC ved inngangen av kvartalet til 3 476,80 BTC ved utgangen, etter oppkjøpet av NSD, som tok beholdningen til 3 506,4 BTC ved gjennomføring, og et tap på om lag 30 BTC i en aktiv pulje på 233,42 BTC. Resultat før skatt var 142,9 millioner kroner, inkludert en engangsgevinst på 171,0 millioner kroner fra oppkjøpet; uten den gevinsten ville resultatet vært negativt. Rapporten er ikke gjennomgått av selskapets revisorer. Styret har innkalt til ekstraordinær generalforsamling 7. desember 2026 for å be om fullmakt til å kjøpe tilbake aksjer; selskapet har ikke besluttet noe tilbakekjøp, og den generalforsamlingen er ikke avholdt ennå.",
+    "sv": "I delårsrapporten för perioden 1 januari–30 september 2026, publicerad den 19 november 2026, uppger H100 Group att bitcoin per aktie, fullt utspätt, ökade från 288,49 till 301,06 sats, en ökning med 4,36 %. Bolagets bitcoininnehav gick från 1 051,03 BTC vid kvartalets början till 3 476,80 BTC vid slutet, efter förvärvet av NSD, som tog innehavet till 3 506,4 BTC vid tillträdet, och en förlust på omkring 30 BTC i en aktiv pool på 233,42 BTC. Resultatet före skatt var 142,9 miljoner kronor, inklusive en engångsvinst på 171,0 miljoner kronor från förvärvet; utan den vinsten hade resultatet varit negativt. Rapporten har inte granskats av bolagets revisorer. Styrelsen har kallat till extra bolagsstämma den 7 december 2026 för att begära bemyndigande att återköpa aktier; bolaget har inte beslutat om något återköp, och den stämman har inte hållits ännu.",
+    "da": "I delårsrapporten for 1. januar til 30. september 2026, offentliggjort den 19. november 2026, oplyser H100 Group, at bitcoin pr. aktie, fuldt udvandet, steg fra 288,49 til 301,06 sats, en stigning på 4,36 %. Selskabets bitcoinbeholdning gik fra 1.051,03 BTC ved kvartalets start til 3.476,80 BTC ved udgangen, efter opkøbet af NSD, som bragte beholdningen op på 3.506,4 BTC ved gennemførelsen, og et tab på omkring 30 BTC i en aktiv pulje på 233,42 BTC. Resultatet før skat var 142,9 millioner kroner, herunder en engangsgevinst på 171,0 millioner kroner fra opkøbet; uden den gevinst ville resultatet have været negativt. Rapporten er ikke gennemgået af selskabets revisorer. Bestyrelsen har indkaldt til ekstraordinær generalforsamling den 7. december 2026 for at søge bemyndigelse til at købe egne aktier tilbage; selskabet har ikke besluttet noget tilbagekøb, og den generalforsamling er endnu ikke afholdt.",
+    "fi": "H100 Groupin 19. marraskuuta 2026 julkaisemassa osavuosikatsauksessa ajalta 1. tammikuuta–30. syyskuuta 2026 yhtiö kertoo, että täysin laimennettu bitcoin per osake nousi 288,49 satoshista 301,06 satoshiin, eli 4,36 %. Yhtiön bitcoin-omistus kasvoi neljänneksen alun 1 051,03 bitcoinista 3 476,80 bitcoiniin neljänneksen lopussa NSD-yrityskaupan jälkeen, joka nosti omistuksen 3 506,4 bitcoiniin kaupan toteutuessa, sekä noin 30 bitcoinin tappion jälkeen 233,42 bitcoinin aktiivisessa poolissa. Tulos ennen veroja oli 142,9 miljoonaa kruunua, mukaan lukien 171,0 miljoonan kruunun kertaluonteinen voitto yrityskaupasta; ilman sitä tulos olisi ollut negatiivinen. Yhtiön tilintarkastajat eivät ole tarkastaneet raporttia. Hallitus on kutsunut koolle ylimääräisen yhtiökokouksen 7. joulukuuta 2026 hakemaan valtuutusta omien osakkeiden takaisinostoon; yhtiö ei ole päättänyt takaisinostosta, eikä kokousta ole vielä pidetty.",
+    "is": "Í árshlutareikningi fyrir tímabilið 1. janúar til 30. september 2026, birtum 19. nóvember 2026, segir H100 Group að bitcoin á hlut, að fullu þynnt, hafi hækkað úr 288,49 í 301,06 sats, eða um 4,36%. Bitcoin-eign félagsins fór úr 1.051,03 BTC í upphafi fjórðungsins í 3.476,80 BTC í lok hans, eftir kaupin á NSD, sem færðu eignina í 3.506,4 BTC við lok kaupanna, og um 30 BTC tap í virkum sjóði upp á 233,42 BTC. Hagnaður fyrir skatta var 142,9 milljónir sænskra króna, þar á meðal einskiptisávinningur upp á 171,0 milljónir króna af kaupunum; án þess ávinnings hefði niðurstaðan verið neikvæð. Endurskoðendur félagsins hafa ekki yfirfarið skýrsluna. Stjórnin hefur boðað til aukafundar hluthafa 7. desember 2026 til að sækjast eftir heimild til endurkaupa á hlutum; félagið hefur ekki ákveðið endurkaup, og sá fundur hefur ekki enn verið haldinn.",
+    "zh": "H100 Group于2026年11月19日公布的2026年1月1日至9月30日中期报告称，完全稀释后的每股比特币从288.49聪增至301.06聪，增幅为4.36%。公司比特币持仓由季初的1,051.03枚增至季末的3,476.80枚；其间完成对NSD的收购，交割时持仓达到3,506.4枚，随后在规模为233.42枚的主动资金池中约损失30枚。税前利润为1.429亿克朗，其中包括收购产生的1.710亿克朗一次性收益；若不含该收益，则结果为亏损。公司审计师尚未审阅该报告。董事会已召集2026年12月7日举行特别股东大会，以寻求回购股份的授权；公司尚未决定回购，该会议也尚未召开。",
+    "hi": "1 जनवरी से 30 सितंबर 2026 की अंतरिम रिपोर्ट में, जो 19 नवंबर 2026 को प्रकाशित हुई, H100 Group कहता है कि पूर्णतः विरलित प्रति शेयर बिटकॉइन 288.49 से बढ़कर 301.06 सैट्स हो गया, अर्थात् 4.36% की वृद्धि। कंपनी की बिटकॉइन होल्डिंग तिमाही की शुरुआत में 1,051.03 BTC से तिमाही के अंत में 3,476.80 BTC हो गई, NSD के अधिग्रहण के बाद, जिससे पूरा होने पर होल्डिंग 3,506.4 BTC हो गई, तथा 233.42 BTC के सक्रिय पूल में लगभग 30 BTC का घाटा हुआ। कर-पूर्व लाभ 142.9 मिलियन क्रोनर था, जिसमें अधिग्रहण से 171.0 मिलियन क्रोनर का एकमुश्त लाभ शामिल है; उस लाभ के बिना परिणाम ऋणात्मक होता। रिपोर्ट की कंपनी के लेखापरीक्षकों ने समीक्षा नहीं की है। बोर्ड ने शेयर वापस खरीदने का प्राधिकार माँगने के लिए 7 दिसंबर 2026 को असाधारण आम बैठक बुलाई है; कंपनी ने वापस खरीद का निर्णय नहीं लिया है, और वह बैठक अभी नहीं हुई है।",
+    "es": "En su informe intermedio del 1 de enero al 30 de septiembre de 2026, publicado el 19 de noviembre de 2026, H100 Group afirma que el bitcoin por acción, fully diluted, subió de 288,49 a 301,06 sats, un aumento del 4,36%. Las tenencias de bitcoin de la compañía pasaron de 1.051,03 BTC al inicio del trimestre a 3.476,80 BTC al cierre, tras la adquisición de NSD, que elevó la posición a 3.506,4 BTC en el momento de la formalización, y una pérdida de unos 30 BTC en una reserva activa de 233,42 BTC. El beneficio antes de impuestos fue de 142,9 millones de coronas, incluida una plusvalía extraordinaria de 171,0 millones de coronas por la adquisición; sin esa plusvalía el resultado habría sido negativo. El informe no ha sido revisado por los auditores de la compañía. El consejo ha convocado una junta general extraordinaria para el 7 de diciembre de 2026 a fin de solicitar autorización para recomprar acciones; la compañía no ha decidido una recompra, y esa junta aún no se ha celebrado.",
+    "fr": "Dans son rapport intermédiaire du 1er janvier au 30 septembre 2026, publié le 19 novembre 2026, H100 Group indique que le bitcoin par action, pleinement dilué, est passé de 288,49 à 301,06 sats, soit une hausse de 4,36 %. Les avoirs en bitcoin de la société sont passés de 1 051,03 BTC au début du trimestre à 3 476,80 BTC à la fin, après l’acquisition de NSD, qui a porté la détention à 3 506,4 BTC lors de sa réalisation, et une perte d’environ 30 BTC dans un fonds actif de 233,42 BTC. Le bénéfice avant impôt s’est élevé à 142,9 millions de couronnes, dont un gain exceptionnel de 171,0 millions de couronnes lié à l’acquisition ; sans ce gain, le résultat aurait été négatif. Le rapport n’a pas été examiné par les commissaires aux comptes de la société. Le conseil a convoqué une assemblée générale extraordinaire le 7 décembre 2026 afin de demander l’autorisation de racheter des actions ; la société n’a pas décidé d’un rachat, et cette assemblée n’a pas encore eu lieu.",
+    "ar": "في تقريرها المرحلي للفترة من 1 يناير إلى 30 سبتمبر 2026، المنشور في 19 نوفمبر 2026، تقول مجموعة H100 إن البيتكوين لكل سهم بعد التخفيف الكامل ارتفع من 288.49 إلى 301.06 سات، بزيادة قدرها 4.36%. وانتقلت حيازات الشركة من البيتكوين من 1051.03 BTC في بداية الربع إلى 3476.80 BTC في نهايته، بعد الاستحواذ على NSD الذي رفع الحيازة إلى 3506.4 BTC عند الإتمام، وخسارة بنحو 30 BTC في مجمع نشط حجمه 233.42 BTC. وبلغ الربح قبل الضريبة 142.9 مليون كرونة، بما في ذلك مكاسب لمرة واحدة قدرها 171.0 مليون كرونة من الاستحواذ؛ ومن دون تلك المكاسب لكان الناتج سالبًا. ولم يراجع مدققو حسابات الشركة التقرير. ودعا مجلس الإدارة إلى جمعية عامة غير عادية في 7 ديسمبر 2026 لطلب تفويض بإعادة شراء الأسهم؛ ولم تقرر الشركة إعادة شراء الأسهم، ولم تُعقد تلك الجمعية بعد.",
+    "bn": "১ জানুয়ারি থেকে ৩০ সেপ্টেম্বর ২০২৬-এর অন্তর্বর্তী প্রতিবেদনে, যা ১৯ নভেম্বর ২০২৬-এ প্রকাশিত, H100 Group বলেছে যে সম্পূর্ণভাবে ডিলিউটেড প্রতি শেয়ারে বিটকয়েন ২৮৮.৪৯ স্যাটস থেকে বেড়ে ৩০১.০৬ স্যাটস হয়েছে, অর্থাৎ ৪.৩৬% বৃদ্ধি। কোম্পানির বিটকয়েন হোল্ডিং প্রান্তিকের শুরুতে ১,০৫১.০৩ BTC থেকে শেষে ৩,৪৭৬.৮০ BTC হয়েছে, NSD অধিগ্রহণের পর—যা সম্পন্ন হওয়ার সময় হোল্ডিং ৩,৫০৬.৪ BTC-তে নিয়ে যায়—এবং ২৩৩.৪২ BTC-এর একটি সক্রিয় পুলে প্রায় ৩০ BTC ক্ষতি হয়। কর-পূর্ব মুনাফা ছিল ১৪২.৯ মিলিয়ন ক্রোনার, যার মধ্যে অধিগ্রহণ থেকে ১৭১.০ মিলিয়ন ক্রোনারের এককালীন মুনাফা অন্তর্ভুক্ত; সেই মুনাফা ছাড়া ফল ঋণাত্মক হতো। কোম্পানির নিরীক্ষকরা প্রতিবেদনটি পর্যালোচনা করেননি। বোর্ড ৭ ডিসেম্বর ২০২৬-এ শেয়ার ফেরত কেনার ক্ষমতা চাইতে একটি অসাধারণ সাধারণ সভা ডেকেছে; কোম্পানি কোনো বাইব্যাকের সিদ্ধান্ত নেয়নি, এবং সেই সভা এখনও অনুষ্ঠিত হয়নি।",
+    "pt": "No relatório intercalar de 1 de janeiro a 30 de setembro de 2026, publicado a 19 de novembro de 2026, a H100 Group afirma que o bitcoin por ação, em termos plenamente diluídos, subiu de 288,49 para 301,06 sats, um aumento de 4,36%. As detenções de bitcoin da empresa passaram de 1.051,03 BTC no início do trimestre para 3.476,80 BTC no final, após a aquisição da NSD, que elevou a posição para 3.506,4 BTC no momento da conclusão, e uma perda de cerca de 30 BTC num fundo ativo de 233,42 BTC. O lucro antes de impostos foi de 142,9 milhões de coroas, incluindo um ganho pontual de 171,0 milhões de coroas com a aquisição; sem esse ganho, o resultado teria sido negativo. O relatório não foi revisto pelos auditores da empresa. O conselho convocou uma assembleia geral extraordinária para 7 de dezembro de 2026 a fim de pedir autorização para recomprar ações; a empresa não decidiu uma recompra, e essa assembleia ainda não se realizou.",
+    "ru": "В промежуточном отчёте за период с 1 января по 30 сентября 2026 года, опубликованном 19 ноября 2026 года, H100 Group сообщает, что полностью разводнённый показатель биткоина на акцию вырос с 288,49 до 301,06 сатоши, то есть на 4,36%. Биткоин-резервы компании увеличились с 1 051,03 BTC на начало квартала до 3 476,80 BTC на конец, после приобретения NSD, которое довело объём до 3 506,4 BTC на момент завершения сделки, и убытка около 30 BTC в активном пуле объёмом 233,42 BTC. Прибыль до налогообложения составила 142,9 млн крон, включая разовый доход 171,0 млн крон от приобретения; без этого дохода результат был бы отрицательным. Отчёт не рассматривался аудиторами компании. Совет директоров созвал внеочередное общее собрание на 7 декабря 2026 года, чтобы запросить полномочия на выкуп акций; компания не приняла решения о выкупе, и это собрание ещё не состоялось.",
+    "ur": "1 جنوری تا 30 ستمبر 2026 کی عبوری رپورٹ میں، جو 19 نومبر 2026 کو شائع ہوئی، H100 Group کا کہنا ہے کہ مکمل طور پر ڈیلیوٹڈ فی شیئر بٹ کوائن 288.49 سے بڑھ کر 301.06 سیٹس ہو گیا، یعنی 4.36 فیصد اضافہ۔ کمپنی کی بٹ کوائن ہولڈنگز سہ ماہی کے آغاز میں 1,051.03 BTC سے اختتام پر 3,476.80 BTC ہو گئیں، NSD کے حصول کے بعد، جس نے تکمیل کے وقت ہولڈنگ 3,506.4 BTC کر دی، اور 233.42 BTC کے فعال پول میں تقریباً 30 BTC کا نقصان ہوا۔ ٹیکس سے پہلے منافع 142.9 ملین کرونر تھا، جس میں حصول سے 171.0 ملین کرونر کا ایک بار کا فائدہ شامل ہے؛ اس فائدے کے بغیر نتیجہ منفی ہوتا۔ رپورٹ کا کمپنی کے آڈیٹرز نے جائزہ نہیں لیا۔ بورڈ نے حصص واپس خریدنے کی اجازت مانگنے کے لیے 7 دسمبر 2026 کو غیر معمولی جنرل میٹنگ بلائی ہے؛ کمپنی نے واپس خریداری کا فیصلہ نہیں کیا، اور وہ میٹنگ ابھی نہیں ہوئی۔",
+    "id": "Dalam laporan interim 1 Januari hingga 30 September 2026, yang diterbitkan pada 19 November 2026, H100 Group menyatakan bahwa bitcoin per saham secara fully diluted naik dari 288,49 menjadi 301,06 sats, peningkatan sebesar 4,36%. Kepemilikan bitcoin perusahaan bergerak dari 1.051,03 BTC pada awal kuartal menjadi 3.476,80 BTC pada akhir kuartal, setelah akuisisi NSD, yang menaikkan kepemilikan menjadi 3.506,4 BTC pada penyelesaian, dan kerugian sekitar 30 BTC dalam kumpulan aktif sebesar 233,42 BTC. Laba sebelum pajak sebesar 142,9 juta krona, termasuk keuntungan satu kali sebesar 171,0 juta krona dari akuisisi; tanpa keuntungan itu hasilnya akan negatif. Laporan ini belum ditelaah oleh auditor perusahaan. Direksi telah memanggil rapat umum luar biasa pada 7 Desember 2026 untuk meminta wewenang membeli kembali saham; perusahaan belum memutuskan pembelian kembali, dan rapat itu belum diadakan.",
+    "de": "In ihrem Zwischenbericht für den Zeitraum vom 1. Januar bis 30. September 2026, veröffentlicht am 19. November 2026, gibt H100 Group an, dass der vollständig verwässerte Bitcoin-Bestand je Aktie von 288,49 auf 301,06 Sats gestiegen sei, ein Anstieg um 4,36 %. Der Bitcoin-Bestand des Unternehmens stieg von 1.051,03 BTC zu Beginn des Quartals auf 3.476,80 BTC am Ende, nach der Übernahme von NSD, die den Bestand bei Abschluss auf 3.506,4 BTC brachte, und einem Verlust von rund 30 BTC in einem aktiven Pool von 233,42 BTC. Der Gewinn vor Steuern betrug 142,9 Millionen Kronen, einschließlich eines einmaligen Gewinns von 171,0 Millionen Kronen aus der Übernahme; ohne diesen Gewinn wäre das Ergebnis negativ gewesen. Der Bericht ist von den Abschlussprüfern des Unternehmens nicht geprüft worden. Der Vorstand hat für den 7. Dezember 2026 eine außerordentliche Hauptversammlung einberufen, um eine Ermächtigung zum Rückkauf eigener Aktien zu beantragen; das Unternehmen hat keinen Rückkauf beschlossen, und diese Versammlung hat noch nicht stattgefunden.",
+    "ja": "H100 Groupは、2026年11月19日に公表した2026年1月1日から9月30日までの中間報告で、完全希薄化後の1株当たりビットコインが288.49サトシから301.06サトシへ、4.36%増加したとしている。同社のビットコイン保有量は四半期初の1,051.03 BTCから期末の3,476.80 BTCとなった。この間にNSDを買収し、完了時点の保有は3,506.4 BTCとなり、233.42 BTCの運用プールで約30 BTCの損失が出た。税引前利益は1億4,290万クローナで、買収に伴う1億7,100万クローナの一時益を含む。この益がなければ結果は赤字だった。本報告は同社の監査人によるレビューを受けていない。取締役会は自社株買いの授権を求めるため、2026年12月7日に臨時株主総会を招集しているが、会社は自社株買いを決定しておらず、その総会はまだ開催されていない。",
+    "sw": "Katika ripoti yake ya muda ya 1 Januari hadi 30 Septemba 2026, iliyochapishwa tarehe 19 Novemba 2026, H100 Group inasema bitcoin kwa kila hisa, ikiwa imepunguzwa kikamilifu, iliongezeka kutoka sats 288.49 hadi 301.06, ongezeko la asilimia 4.36. Umiliki wa bitcoin wa kampuni ulienda kutoka BTC 1,051.03 mwanzoni mwa robo hadi BTC 3,476.80 mwisho, baada ya ununuzi wa NSD, uliofanya umiliki kuwa BTC 3,506.4 wakati wa kukamilika, na hasara ya takriban BTC 30 katika dawati tendaji la BTC 233.42. Faida kabla ya kodi ilikuwa krona milioni 142.9, ikiwa ni pamoja na faida ya mara moja ya krona milioni 171.0 kutokana na ununuzi; bila faida hiyo matokeo yangekuwa hasi. Ripoti haijakaguliwa na wakaguzi wa hesabu wa kampuni. Bodi imeita mkutano mkuu wa ajabu tarehe 7 Desemba 2026 ili kuomba idhini ya kununua hisa tena; kampuni haijaamua ununuzi wa hisa tena, na mkutano huo bado haujafanyika.",
+    "mr": "१ जानेवारी ते ३० सप्टेंबर २०२६ या कालावधीच्या अंतरिम अहवालात, जो १९ नोव्हेंबर २०२६ रोजी प्रकाशित झाला, H100 Group म्हणते की पूर्णपणे डिल्युट केलेले प्रति समभाग बिटकॉइन २८८.४९ वरून ३०१.०६ सॅट्स झाले, म्हणजे ४.३६% वाढ. कंपनीची बिटकॉइन होल्डिंग तिमाहीच्या सुरुवातीला १,०५१.०३ BTC वरून अखेरीस ३,४७६.८० BTC झाली, NSD च्या अधिग्रहणानंतर—जे पूर्ण झाल्यावर होल्डिंग ३,५०६.४ BTC झाली—आणि २३३.४२ BTC च्या सक्रिय पूलमध्ये सुमारे ३० BTC नुकसान झाले. करपूर्व नफा १४२.९ दशलक्ष क्रोनर होता, ज्यात अधिग्रहणातून १७१.० दशलक्ष क्रोनरचा एकवेळ नफा आहे; त्या नफ्याशिवाय निकाल नकारात्मक झाला असता. कंपनीच्या लेखापरीक्षकांनी अहवालाचे पुनरावलोकन केलेले नाही. मंडळाने समभाग परत खरेदीची अधिकृतता मागण्यासाठी ७ डिसेंबर २०२६ रोजी असाधारण सर्वसाधारण सभा बोलावली आहे; कंपनीने बाईबॅक ठरवलेले नाही, आणि ती सभा अजून झालेली नाही.",
+    "fa": "در گزارش میان‌دوره‌ای ۱ ژانویه تا ۳۰ سپتامبر ۲۰۲۶، منتشرشده در ۱۹ نوامبر ۲۰۲۶، گروه H100 می‌گوید بیت‌کوین به ازای هر سهم به‌صورت کاملاً رقیق‌شده از ۲۸۸٫۴۹ به ۳۰۱٫۰۶ سات افزایش یافته، یعنی رشد ۴٫۳۶ درصدی. موجودی بیت‌کوین شرکت از ۱٬۰۵۱٫۰۳ BTC در آغاز فصل به ۳٬۴۷۶٫۸۰ BTC در پایان رسید، پس از خرید NSD که در زمان تکمیل موجودی را به ۳٬۵۰۶٫۴ BTC رساند، و زیانی حدود ۳۰ BTC در یک ذخیره فعال به حجم ۲۳۳٫۴۲ BTC. سود پیش از مالیات ۱۴۲٫۹ میلیون کرون بود، از جمله سود یک‌باره ۱۷۱٫۰ میلیون کرون از خرید؛ بدون آن سود، نتیجه منفی می‌شد. گزارش توسط حسابرسان شرکت بررسی نشده است. هیئت‌مدیره مجمع عمومی فوق‌العاده‌ای را برای ۷ دسامبر ۲۰۲۶ فراخوانده تا مجوز بازخرید سهام بگیرد؛ شرکت بازخریدی تصمیم نگرفته و آن مجمع هنوز برگزار نشده است.",
+    "uk": "У проміжному звіті за період з 1 січня до 30 вересня 2026 року, оприлюдненому 19 листопада 2026 року, H100 Group повідомляє, що повністю розбавлений показник біткоїна на акцію зріс із 288,49 до 301,06 сатоші, тобто на 4,36%. Біткоїн-резерви компанії збільшилися з 1 051,03 BTC на початок кварталу до 3 476,80 BTC на кінець, після придбання NSD, яке довело обсяг до 3 506,4 BTC на момент завершення угоди, та збитку близько 30 BTC в активному пулі обсягом 233,42 BTC. Прибуток до оподаткування становив 142,9 млн крон, включно з одноразовим доходом 171,0 млн крон від придбання; без цього доходу результат був би від’ємним. Звіт не розглядався аудиторами компанії. Рада директорів скликала позачергові загальні збори на 7 грудня 2026 року, щоб просити повноваження на викуп акцій; компанія не ухвалила рішення про викуп, і ці збори ще не відбулися.",
+    "tr": "1 Ocak–30 Eylül 2026 dönemine ilişkin, 19 Kasım 2026’da yayımlanan ara raporunda H100 Group, tam seyreltilmiş hisse başına bitcoin’in 288,49 satoshiden 301,06 satoshiye çıktığını, yani %4,36 arttığını belirtiyor. Şirketin bitcoin varlıkları çeyrek başındaki 1.051,03 BTC’den çeyrek sonunda 3.476,80 BTC’ye yükseldi; NSD’nin satın alınması tamamlandığında varlık 3.506,4 BTC’ye çıktı ve 233,42 BTC’lik aktif havuzda yaklaşık 30 BTC zarar edildi. Vergi öncesi kâr, satın almadan gelen 171,0 milyon kronluk tek seferlik kazanç dâhil 142,9 milyon kron oldu; bu kazanç olmasa sonuç negatif olacaktı. Rapor, şirketin denetçileri tarafından incelenmemiştir. Yönetim kurulu, pay geri alımı yetkisi istemek üzere 7 Aralık 2026’da olağanüstü genel kurul toplantısı çağrısı yaptı; şirket bir geri alım kararı almadı ve bu toplantı henüz yapılmadı.",
+    "se": "H100 Group gaskaboddosaš raporttas ođđajagimánu 1. b. gitta čakčamánu 30. b. 2026 rádjái, mii almmuhuvvui skábmamánu 19. b. 2026, cealká ahte ollislaččat dilihuvvon bitcoin juohke ossodaga nammii lassánii 288,49:s 301,06 satsii, mii lea 4,36 % lassáneapmi. Fitnodaga bitcoin-meari manai 1 051,03 BTC:s kvartála álggus 3 476,80 BTC rádjái kvartála loahpas, maŋŋil NSD-oastima mii dagahii ahte mearri lei 3 506,4 BTC go oasti lei čađahuvvon, ja sullii 30 BTC massin aktiiva čoahkkemis mas lei 233,42 BTC. Boađus ovdal vearu lei 142,9 miljovnna ruvnno, oktan ovttageardánis vuoittuin 171,0 miljovnna ruvnnu oastimis; almma dan vuoittu haga livččii boađus leamaš negatiivvalaš. Fitnodaga revisorat eai leat dárkkistan raportta. Stivra lea bovdán erenoamáš oppalohkáičoahkkimii juovlamánu 7. b. 2026 oažžun dihtii lobi oastit ruovttoluotta ossodagaid; fitnodat ii leat mearridan ruovttoluottaoastima, ja dat čoahkkin ii leat vel čađahuvvon."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "dc371426393c",
@@ -1499,8 +2057,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "GTA 6 / CyberLeek standing exclusion (Omni). Not used as a route into the Realtid SIM-swap story.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "bc9ed8e81793",
@@ -1526,12 +2085,13 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "0eb8661e7db9"
   },
   {
    "id": "f651822542ec",
-   "url": "https://yle.fi/a/74-20257624?origin=rss",
+   "url": "https://yle.fi/a/74-20257624",
    "title": "Porilainen yritysvaikuttaja ajautui kryptohuijareiden apuriksi – sai vankeustuomion tuottamuksellisesta rahanpesusta",
    "title_en": null,
    "source": "yle",
@@ -1578,8 +2138,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "19c632406389"
   },
   {
    "id": "5b75cae31c77",
@@ -1605,14 +2166,15 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Fee table for the service, not news.; researcher 21.11; editor 2026-11-21"
   },
   {
    "id": "038cf550661f",
    "url": "https://finanstilsynet.no/nyhetsarkiv/horinger/2026/esma-inviterer-til-horingsmote-om-tokenisering-av-sikkerhet-collateral-som-stilles-til-sentrale",
    "title": "ESMA inviterer til høringsmøte om tokenisering av sikkerhet (collateral) som stilles til sentrale motparter (CCP)",
-   "title_en": null,
+   "title_en": "Finanstilsynet: ESMA invites a hearing on tokenising collateral posted to CCPs",
    "source": "finanstilsynet",
    "source_name": "Finanstilsynet",
    "country": "NO",
@@ -1624,15 +2186,83 @@
    "published": "2026-11-18T11:36:02+00:00",
    "fetched": "2026-11-19T02:41:49+00:00",
    "topics": [
-    "blockchain",
     "regulation"
    ],
    "matched": [
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "The European Securities and Markets Authority (ESMA) has published a call for evidence on the tokenisation of collateral posted to central counterparties (CCPs) and is inviting a public hearing on 7 January 2027 from 09:30 to 17:00 at its premises at 201–203 rue de Bercy in Paris, and online, the Financial Supervisory Authority of Norway (Finanstilsynet) said on 18 November 2026. Registration closes on 16 December 2026, and written comments are due by 15 January 2027. The hearing and the call for evidence are set out on ESMA’s website.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Finanstilsynet, 18 November 2026, ESMA hearing on tokenisation of collateral posted to CCPs",
+    "url": "https://www.finanstilsynet.no/nyhetsarkiv/horinger/2026/esma-inviterer-til-horingsmote-om-tokenisering-av-sikkerhet-collateral-som-stilles-til-sentrale/"
+   },
+   "links": [
+    {
+     "url": "https://www.esma.europa.eu/press-news/consultations/call-evidence-ccp-collateral-tokenisation",
+     "label": "ESMA call for evidence on CCP collateral tokenisation"
+    },
+    {
+     "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
+     "label": "ESMA document / public hearing (registration as linked by Finanstilsynet)"
+    }
+   ],
+   "title_i18n": {
+    "nn": "Finanstilsynet: ESMA inviterer til høyringsmøte om tokenisering av sikkerheit (collateral) som blir stilte til CCP-ar",
+    "sv": "Finanstilsynet: ESMA bjuder in till utfrågning om tokenisering av säkerheter till CCP:er",
+    "da": "Finanstilsynet: ESMA inviterer til høringsmøde om tokenisering af sikkerhed stillet til CCP’er",
+    "fi": "Finanstilsynet: ESMA kutsuu kuulemistilaisuuteen CCP-vakuuksien tokenisoinnista",
+    "is": "Finanstilsynet: ESMA býður til samráðsfundar um táknvæðingu trygginga til CCP",
+    "zh": "挪威金融监管局：ESMA就向中央对手方提交的担保品代币化举行听证会",
+    "hi": "फ़िनानस्टिल्सिनेट: ESMA, CCP को दी गई जमानत के टोकनीकरण पर सुनवाई का आमंत्रण देता है",
+    "es": "Finanstilsynet: la AEVM convoca una audiencia sobre la tokenización de garantías aportadas a ECC",
+    "fr": "Finanstilsynet : l’AEMF invite à une audition sur la tokenisation des garanties versées aux CCP",
+    "ar": "فينانستيلسينيت: هيئة الأوراق الأوروبية تدعو إلى جلسة استماع حول ترميز الضمانات المقدمة للأطراف المقابلة المركزية",
+    "bn": "ফিনানসটিলসিনেট: ESMA সিসিপিতে জমা দেওয়া জামানতের টোকেনায়ন নিয়ে শুনানির আমন্ত্রণ জানিয়েছে",
+    "pt": "Finanstilsynet: a ESMA convoca uma audição sobre a tokenização de garantias prestadas a CCP",
+    "ru": "Finanstilsynet: ESMA приглашает на слушание о токенизации обеспечения, предоставляемого ЦК",
+    "ur": "فنانسٹیلسینیت: ای ایس ایم اے سی سی پی کو دی گئی ضمانت کی ٹوکنائزیشن پر سماعت کی دعوت دیتی ہے",
+    "id": "Finanstilsynet: ESMA mengundang dengar pendapat tentang tokenisasi agunan yang diserahkan ke CCP",
+    "de": "Finanstilsynet: ESMA lädt zu einer Anhörung zur Tokenisierung von Sicherheiten gegenüber CCPs ein",
+    "ja": "ノルウェー金融監督庁：ESMA、CCPに差し入れる担保のトークン化に関する公聴会を開催へ",
+    "sw": "Finanstilsynet: ESMA inaalika kikao kuhusu utokenishaji wa dhamana zinazotolewa kwa CCP",
+    "mr": "फिनानस्टिल्सिनेट: ESMA, CCP कडे दिलेल्या तारणाच्या टोकनीकरणाबाबत सुनावणीचे निमंत्रण देते",
+    "fa": "فینانس‌تیلسینت: ESMA برای شنود درباره توکنی‌سازی وثیقه نزد طرف‌های مقابل مرکزی دعوت می‌کند",
+    "uk": "Finanstilsynet: ESMA запрошує на слухання щодо токенізації забезпечення, наданого ЦК",
+    "tr": "Finanstilsynet: ESMA, CCP’lere verilen teminatın tokenleştirilmesi üzerine duruşmaya davet ediyor",
+    "se": "Finanstilsynet: ESMA bovde guldaleapmái tokeniserema birra mii guoská CCP-veahkkeváriide"
+   },
+   "title_i18n_source": "ESMA inviterer til høringsmøte om tokenisering av sikkerhet (collateral) som stilles til sentrale motparter (CCP)",
+   "summary_i18n": {
+    "nn": "Den europeiske verdipapir- og markedstilsynsmyndigheita (ESMA) har lagt ut ein førespurnad om faktagrunnlag om tokenisering av sikkerheit (collateral) som stilles til sentrale motpartar (CCP), og inviterer til eit offentleg høyringsmøte 7. januar 2027 kl. 09:30–17:00 i lokala sine i 201–203 rue de Bercy i Paris, og digitalt, opplyste Finanstilsynet 18. november 2026. Påmeldingsfristen er 16. desember 2026, og fristen for skriftlege merknader er 15. januar 2027. Høyringsmøtet og førespurnaden er lagde ut på nettstaden til ESMA.",
+    "nb": "Den europeiske verdipapir- og markedstilsynsmyndigheten (ESMA) har lagt ut en invitasjon til å gi faktagrunnlag om tokenisering av sikkerhet (collateral) som stilles til sentrale motparter (CCP), og inviterer til et offentlig høringsmøte 7. januar 2027 kl. 09:30–17:00 i sine lokaler i 201–203 rue de Bercy i Paris, og digitalt, opplyste Finanstilsynet 18. november 2026. Påmeldingsfristen er 16. desember 2026, og fristen for skriftlige merknader er 15. januar 2027. Høringsmøtet og invitasjonen til å gi faktagrunnlag er lagt ut på nettsiden til ESMA.",
+    "sv": "Den europeiska värdepappers- och marknadsmyndigheten (ESMA) har offentliggjort en begäran om underlag om tokenisering av säkerheter som ställs till centrala motparter (CCP) och bjuder in till en offentlig utfrågning den 7 januari 2027 kl. 09:30–17:00 i sina lokaler på 201–203 rue de Bercy i Paris, och digitalt, meddelade det norska Finanstilsynet den 18 november 2026. Sista dag för anmälan är den 16 december 2026, och skriftliga synpunkter ska vara inne senast den 15 januari 2027. Utfrågningen och begäran om underlag finns på ESMA:s webbplats.",
+    "da": "Den europæiske værdipapir- og markedstilsynsmyndighed (ESMA) har offentliggjort en indkaldelse af oplysninger om tokenisering af sikkerhed, der stilles til centrale modparter (CCP), og inviterer til et offentligt høringsmøde den 7. januar 2027 kl. 09.30–17.00 i sine lokaler på 201–203 rue de Bercy i Paris og digitalt, oplyste det norske Finanstilsynet den 18. november 2026. Tilmeldingsfristen er den 16. december 2026, og fristen for skriftlige bemærkninger er den 15. januar 2027. Høringsmødet og indkaldelsen er lagt ud på ESMA’s hjemmeside.",
+    "fi": "Euroopan arvopaperimarkkinaviranomainen (ESMA) on julkaissut tietopyynnön keskusvastapuolille (CCP) annettavan vakuuden tokenisoinnista ja kutsuu julkiseen kuulemistilaisuuteen 7. tammikuuta 2027 klo 9.30–17.00 toimitiloissaan osoitteessa 201–203 rue de Bercy Pariisissa sekä verkossa, Norjan finanssivalvonta Finanstilsynet kertoi 18. marraskuuta 2026. Ilmoittautuminen päättyy 16. joulukuuta 2026, ja kirjallisten lausuntojen määräaika on 15. tammikuuta 2027. Kuuleminen ja tietopyyntö ovat ESMAn verkkosivulla.",
+    "is": "Evrópska verðbréfa- og markaðseftirlitsstofnunin (ESMA) hefur birt beiðni um gögn um táknvæðingu trygginga sem lagðar eru fram til miðlægra gagnaðila (CCP) og býður til opins samráðsfundar 7. janúar 2027 kl. 09:30–17:00 í húsnæði sínu að 201–203 rue de Bercy í París, og í fjarfundi, sagði norska fjármálaeftirlitið Finanstilsynet 18. nóvember 2026. Skráningarfrestur rennur út 16. desember 2026 og frestur til skriflegra umsagna er til 15. janúar 2027. Fundurinn og gagnaöflunin eru sett fram á vef ESMA.",
+    "zh": "挪威金融监管局（Finanstilsynet）2026年11月18日称，欧洲证券和市场管理局（ESMA）已就向中央对手方（CCP）提交的担保品代币化发布意见征询，并邀请于2027年1月7日9:30至17:00在巴黎贝尔西街201–203号其办公场所及线上举行公开听证会。报名截止日期为2026年12月16日，书面意见须于2027年1月15日前提交。听证会和意见征询已发布在ESMA网站上。",
+    "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat einen Aufruf zur Vorlage von Erkenntnissen zur Tokenisierung von Sicherheiten veröffentlicht, die zentralen Gegenparteien (CCP) gestellt werden, und lädt zu einer öffentlichen Anhörung am 7. Januar 2027 von 9:30 bis 17:00 Uhr in ihren Räumen in der 201–203 rue de Bercy in Paris sowie online ein, teilte die norwegische Finanzaufsicht Finanstilsynet am 18. November 2026 mit. Die Anmeldefrist endet am 16. Dezember 2026, schriftliche Stellungnahmen sind bis zum 15. Januar 2027 einzureichen. Die Anhörung und der Aufruf sind auf der Website der ESMA veröffentlicht.",
+    "hi": "नॉर्वे की वित्तीय पर्यवेक्षी संस्था फ़िनानस्टिल्सिनेट ने 18 नवंबर 2026 को बताया कि यूरोपीय प्रतिभूति एवं बाज़ार प्राधिकरण (ESMA) ने केंद्रीय प्रतिपक्षों (CCP) को दी गई जमानत के टोकनीकरण पर साक्ष्य मांग जारी की है, और 7 जनवरी 2027 को 09:30 से 17:00 तक पेरिस में 201–203 rue de Bercy स्थित अपने परिसर में तथा ऑनलाइन एक सार्वजनिक सुनवाई का आमंत्रण दिया है। पंजीकरण 16 दिसंबर 2026 को बंद होता है, और लिखित टिप्पणियाँ 15 जनवरी 2027 तक देनी हैं। सुनवाई और साक्ष्य मांग ESMA की वेबसाइट पर दी गई हैं।",
+    "es": "La Autoridad Europea de Valores y Mercados (AEVM/ESMA) ha publicado una solicitud de información sobre la tokenización de las garantías aportadas a las contrapartes centrales (CCP) y convoca una audiencia pública el 7 de enero de 2027, de 09:30 a 17:00, en su sede de 201–203 rue de Bercy en París, y en línea, informó la Autoridad de Supervisión Financiera de Noruega (Finanstilsynet) el 18 de noviembre de 2026. El plazo de inscripción cierra el 16 de diciembre de 2026, y los comentarios por escrito deben presentarse antes del 15 de enero de 2027. La audiencia y la solicitud de información figuran en el sitio web de la ESMA.",
+    "fr": "L’Autorité européenne des marchés financiers (AEMF/ESMA) a publié un appel à contributions sur la tokenisation des garanties versées aux contreparties centrales (CCP) et invite à une audition publique le 7 janvier 2027, de 9 h 30 à 17 h, dans ses locaux au 201–203 rue de Bercy à Paris, et en ligne, a indiqué l’autorité de surveillance financière de Norvège (Finanstilsynet) le 18 novembre 2026. Les inscriptions se clôturent le 16 décembre 2026, et les observations écrites sont attendues pour le 15 janvier 2027. L’audition et l’appel à contributions sont présentés sur le site de l’ESMA.",
+    "ar": "قالت هيئة الرقابة المالية النرويجية (فينانستيلسينيت) في 18 نوفمبر 2026 إن الهيئة الأوروبية للأوراق المالية والأسواق (ESMA) نشرت طلبًا لتقديم أدلة حول ترميز الضمانات المقدمة للأطراف المقابلة المركزية (CCP)، وتدعو إلى جلسة استماع عامة في 7 يناير 2027 من الساعة 09:30 إلى 17:00 في مقرها في 201–203 شارع بيرسي في باريس، وعبر الإنترنت. يُغلق باب التسجيل في 16 ديسمبر 2026، وتُقدَّم التعليقات المكتوبة بحلول 15 يناير 2027. وقد نُشرت جلسة الاستماع وطلب الأدلة على موقع ESMA.",
+    "bn": "নরওয়ের আর্থিক তত্ত্বাবধান কর্তৃপক্ষ ফিনানসটিলসিনেট ১৮ নভেম্বর ২০২৬-এ জানিয়েছে, ইউরোপীয় সিকিউরিটিজ অ্যান্ড মার্কেটস অথরিটি (ESMA) কেন্দ্রীয় প্রতিপক্ষদের (CCP) কাছে জমা দেওয়া জামানতের টোকেনায়ন বিষয়ে প্রমাণ আহ্বান প্রকাশ করেছে এবং ৭ জানুয়ারি ২০২৭ সকাল ৯:৩০ থেকে ১৭:০০ পর্যন্ত প্যারিসের ২০১–২০৩ rue de Bercy-তে নিজস্ব কার্যালয়ে ও অনলাইনে একটি গণশুনানির আমন্ত্রণ জানিয়েছে। নিবন্ধন বন্ধ হবে ১৬ ডিসেম্বর ২০২৬, এবং লিখিত মন্তব্য জমা দিতে হবে ১৫ জানুয়ারি ২০২৭-এর মধ্যে। শুনানি ও প্রমাণ আহ্বান ESMA-এর ওয়েবসাইটে দেওয়া আছে।",
+    "pt": "A Autoridade Europeia dos Valores Mobiliários e dos Mercados (ESMA) publicou um pedido de contributos sobre a tokenização de garantias prestadas a contrapartes centrais (CCP) e convoca uma audição pública a 7 de janeiro de 2027, das 09:30 às 17:00, nas suas instalações na 201–203 rue de Bercy, em Paris, e em linha, informou a Autoridade de Supervisão Financeira da Noruega (Finanstilsynet) a 18 de novembro de 2026. As inscrições encerram a 16 de dezembro de 2026 e os comentários escritos devem ser enviados até 15 de janeiro de 2027. A audição e o pedido de contributos estão disponíveis no sítio da ESMA.",
+    "ru": "Европейское управление по ценным бумагам и рынкам (ESMA) опубликовало запрос сведений о токенизации обеспечения, предоставляемого центральным контрагентам (ЦК), и приглашает на открытые слушания 7 января 2027 года с 09:30 до 17:00 в своих помещениях по адресу 201–203 rue de Bercy в Париже, а также в онлайн-формате, сообщил норвежский орган финансового надзора Finanstilsynet 18 ноября 2026 года. Регистрация закрывается 16 декабря 2026 года, письменные замечания принимаются до 15 января 2027 года. Слушания и запрос сведений размещены на сайте ESMA.",
+    "ja": "ノルウェー金融監督庁（Finanstilsynet）は2026年11月18日、欧州証券市場監督局（ESMA）が中央清算機関（CCP）に差し入れる担保のトークン化に関する意見募集を公表し、2027年1月7日9:30～17:00にパリの201–203 rue de Bercyにある事務所およびオンラインで公開公聴会を開くと発表した。参加登録は2026年12月16日まで、書面意見の提出期限は2027年1月15日。公聴会と意見募集はESMAのウェブサイトに掲載されている。",
+    "ur": "ناروے کی مالیاتی نگرانی اتھارٹی فنانسٹیلسینیت نے 18 نومبر 2026 کو بتایا کہ یورپی سیکیورٹیز اینڈ مارکیٹس اتھارٹی (ESMA) نے مرکزی فریقوں (CCP) کو دی گئی ضمانت کی ٹوکنائزیشن پر شواہد کی طلب شائع کی ہے، اور 7 جنوری 2027 کو 09:30 سے 17:00 تک پیرس میں 201–203 rue de Bercy پر اپنے دفاتر میں اور آن لائن ایک عوامی سماعت کی دعوت دی ہے۔ رجسٹریشن 16 دسمبر 2026 کو بند ہوگی، اور تحریری تبصرے 15 جنوری 2027 تک جمع کروانے ہیں۔ سماعت اور شواہد کی طلب ESMA کی ویب سائٹ پر درج ہیں۔",
+    "id": "Otoritas Sekuritas dan Pasar Eropa (ESMA) telah menerbitkan permintaan bukti tentang tokenisasi agunan yang diserahkan kepada pihak lawan sentral (CCP) dan mengundang dengar pendapat publik pada 7 Januari 2027 pukul 09.30–17.00 di kantornya di 201–203 rue de Bercy, Paris, dan secara daring, kata Otoritas Pengawas Keuangan Norwegia (Finanstilsynet) pada 18 November 2026. Pendaftaran ditutup pada 16 Desember 2026, dan komentar tertulis harus disampaikan paling lambat 15 Januari 2027. Dengar pendapat dan permintaan bukti tersedia di situs ESMA.",
+    "sw": "Mamlaka ya Dhamana na Masoko ya Ulaya (ESMA) imechapisha wito wa ushahidi kuhusu utokenishaji wa dhamana zinazotolewa kwa wenza wa kati (CCP) na inaalika kikao cha hadhara tarehe 7 Januari 2027 kuanzia 09:30 hadi 17:00 katika majengo yake katika 201–203 rue de Bercy, Paris, na mtandaoni, Mamlaka ya Usimamizi wa Fedha ya Norwei (Finanstilsynet) ilisema tarehe 18 Novemba 2026. Usajili unafungwa tarehe 16 Desemba 2026, na maoni ya maandishi yanapaswa kuwasilishwa kufikia 15 Januari 2027. Kikao na wito wa ushahidi vimewekwa kwenye tovuti ya ESMA.",
+    "mr": "नॉर्वेची वित्तीय पर्यवेक्षी संस्था फिनानस्टिल्सिनेटने १८ नोव्हेंबर २०२६ रोजी सांगितले की, युरोपीय सिक्युरिटीज अँड मार्केट्स अथॉरिटी (ESMA) ने केंद्रीय प्रतिपक्षांना (CCP) दिलेल्या तारणाच्या टोकनीकरणाबाबत पुरावे मागणी प्रकाशित केली आहे, आणि ७ जानेवारी २०२७ रोजी सकाळी ९:३० ते १७:०० पर्यंत पॅरिसमधील २०१–२०३ rue de Bercy येथील आपल्या परिसरात आणि ऑनलाइन सार्वजनिक सुनावणीचे निमंत्रण दिले आहे. नोंदणी १६ डिसेंबर २०२६ रोजी बंद होते, आणि लेखी अभिप्राय १५ जानेवारी २०२७ पर्यंत द्यावेत. सुनावणी आणि पुरावे मागणी ESMAच्या संकेतस्थळावर दिल्या आहेत.",
+    "fa": "سازمان نظارت مالی نروژ (فینانس‌تیلسینت) در ۱۸ نوامبر ۲۰۲۶ اعلام کرد که مرجع اوراق بهادار و بازارهای اروپا (ESMA) فراخوانی برای ارائه شواهد درباره توکنی‌سازی وثیقه‌ای که نزد طرف‌های مقابل مرکزی (CCP) گذاشته می‌شود منتشر کرده و به یک نشست شنود عمومی در ۷ ژانویه ۲۰۲۷ از ساعت ۹:۳۰ تا ۱۷:۰۰ در محل خود در ۲۰۱–۲۰۳ rue de Bercy در پاریس و به‌صورت برخط دعوت می‌کند. مهلت ثبت‌نام ۱۶ دسامبر ۲۰۲۶ است و نظرات کتبی باید تا ۱۵ ژانویه ۲۰۲۷ ارائه شود. نشست و فراخوان در وبگاه ESMA آمده است.",
+    "uk": "Європейський орган з цінних паперів і ринків (ESMA) опублікував запит відомостей щодо токенізації забезпечення, яке надається центральним контрагентам (ЦК), і запрошує на відкриті слухання 7 січня 2027 року з 09:30 до 17:00 у своїх приміщеннях за адресою 201–203 rue de Bercy в Парижі, а також онлайн, повідомив норвезький орган фінансового нагляду Finanstilsynet 18 листопада 2026 року. Реєстрація завершується 16 грудня 2026 року, письмові зауваження слід подати до 15 січня 2027 року. Слухання та запит відомостей розміщено на сайті ESMA.",
+    "tr": "Norveç Finansal Denetim Kurumu (Finanstilsynet), 18 Kasım 2026’da Avrupa Sermaye Piyasası Otoritesi’nin (ESMA) merkezi karşı taraflara (CCP) verilen teminatın tokenleştirilmesi üzerine bir delil çağrısı yayımladığını ve 7 Ocak 2027’de 09:30–17:00 saatleri arasında Paris’te 201–203 rue de Bercy adresindeki binasında ve çevrimiçi bir kamu duruşması düzenleyeceğini bildirdi. Kayıt 16 Aralık 2026’da kapanıyor; yazılı görüşler 15 Ocak 2027’ye kadar sunulmalı. Duruşma ve delil çağrısı ESMA’nın internet sitesinde yer alıyor.",
+    "se": "European Securities and Markets Authority (ESMA) lea almmuhan ahte sii ohcalit duođaštusaid tokeniserema birra mii guoská veahkkeváriide mat biddjojuvvojit guovddáš gávpeoasseválddiide (CCPs), ja bovde almmolaš gulaskuddamii ođđajagimánu 7. beaivvi 2027 dii. 09:30-17:00 sin kantuvrras 201-203 rue de Bercy nammasaš báikkis Parisas, ja neahta bokte, Financial Supervisory Authority of Norway (Finanstilsynet) celkkii skábmamánu 18. beaivvi 2026. Dieđihanáigemearri lea juovlamánu 16. b. 2026, ja čálalaš mearkkašumit galget leat joavdan ovdal ođđajagimánu 15. b. 2027. Gulaskuddan ja duođaštusohcan lea čilgejuvvon ESMA neahttasiidduin."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "491c335c7955",
@@ -1658,14 +2288,15 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "19c632406389"
   },
   {
    "id": "19c632406389",
    "url": "https://omni.se/tva-personer-bakbands-och-ranades-pa-kryptovaluta/a/8PmX5w",
    "title": "Två personer bakbands och rånades på kryptovaluta",
-   "title_en": null,
+   "title_en": "Two people robbed of cryptocurrency in Tenhult, Swedish police say",
    "source": "omni.se",
    "source_name": "Omni",
    "country": "SE",
@@ -1677,16 +2308,164 @@
    "published": "2026-11-18T09:36:11+00:00",
    "fetched": "2026-11-19T02:41:49+00:00",
    "topics": [
-    "crypto",
-    "regulation"
+    "crime"
    ],
    "matched": [
     "\\bkrypto(?!graf)\\w*",
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "published",
+   "summary": "Swedish police were called to central Tenhult at 03:35 on 18 November 2026 after two people were robbed of cryptocurrency in their home, according to a police summary for Jönköping County. The police say perpetrators entered the home, assaulted one of the victims and, under threat, forced them to transfer the currency by computer to another account, then bound the victims before leaving in an unknown direction. Nobody has been arrested. The incident is being investigated as aggravated robbery.",
+   "also_covered_by": [
+    {
+     "outlet": "svt",
+     "outlet_name": "SVT Nyheter",
+     "url": "https://svt.se/nyheter/lokalt/jonkoping/polisen-om-kryptoranet-betydande-summa",
+     "title": "Polisen om kryptorånet: ”Betydande summa”",
+     "published": "2026-11-18T10:31:54+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "svd",
+     "outlet_name": "Svenska Dagbladet",
+     "url": "https://svd.se/a/Pv9Odp/ranades-pa-kryptovaluta-av-inbrottstjuvar",
+     "title": "Rånades på kryptovaluta av inbrottstjuvar",
+     "published": "2026-11-18T07:25:56+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "svt",
+     "outlet_name": "SVT Nyheter",
+     "url": "https://svt.se/nyheter/lokalt/jonkoping/ran-i-tenhult-under-natten",
+     "title": "Två personer bakbands av rånare – tvingades föra över kryptovaluta",
+     "published": "2026-11-18T06:17:22+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "tv4.se",
+     "outlet_name": "TV4",
+     "url": "https://tv4.se/just-nu/23TFKYp8jdl5GxKNFxQjIR/bakbands-och-ranades-pa-kryptovaluta",
+     "title": "Bakbands och rånades på kryptovaluta",
+     "published": "2026-11-18T06:59:45+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "svt",
+     "outlet_name": "SVT Nyheter",
+     "url": "https://svt.se/nyheter/lokalt/jonkoping/kryptoexperten-forklarar-sa-forvaras-tillgangarna-digitalt",
+     "title": "Kryptoexperten förklarar: Så förvaras tillgångarna digitalt",
+     "published": "2026-11-18T14:26:54+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "varnamo-nyheter",
+     "outlet_name": "Värnamo nyheter",
+     "url": "https://vn.se/nyheter/grovt-ran-i-lanet-band-fast-offren",
+     "title": "Grovt rån i länet – band fast offren",
+     "published": "2026-11-18T07:13:42+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "svt",
+     "outlet_name": "SVT Nyheter",
+     "url": "https://svt.se/nyheter/lokalt/jonkoping/intensivt-lage-i-utredningen-om-kryptoranet",
+     "title": "Intensivt läge i utredningen om kryptorånet",
+     "published": "2026-11-19T12:27:11+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "sverigesradio.se",
+     "outlet_name": "Sveriges Radio",
+     "url": "https://sverigesradio.se/artikel/person-ranad-i-bostad-i-tenhult-flera-garningsman",
+     "title": "Två män bakbundna och rånade på kryptovaluta – polisen söker vittnen",
+     "published": "2026-11-18T04:27:00+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Polisen, 18 November 2026, night summary for Jönköping County",
+    "url": "https://polisen.se/aktuellt/handelser/2026/november/18/18-november-07.37-sammanfattning-natt-jonkopings-lan/"
+   },
+   "title_i18n": {
+    "nn": "To personar rana for krypto i Tenhult, seier svensk politi",
+    "nb": "To personer ranet for krypto i Tenhult, sier svensk politi",
+    "da": "To personer røvet for krypto i Tenhult, siger svensk politi",
+    "fi": "Kaksi ihmistä ryöstettiin kryptovaluutasta Tenhultissa, Ruotsin poliisi kertoo",
+    "is": "Tveir rændir dulritunarfé í Tenhult, segir sænska lögreglan",
+    "zh": "瑞典警方称腾胡尔特两名居民遭加密货币抢劫",
+    "hi": "स्वीडिश पुलिस का कहना है कि टेन्हुल्ट में दो लोगों से क्रिप्टोकरेंसी लूटी गई",
+    "es": "Dos personas son robadas de criptomonedas en Tenhult, dice la policía sueca",
+    "fr": "Deux personnes dépouillées de cryptomonnaies à Tenhult, selon la police suédoise",
+    "ar": "الشرطة السويدية: شخصان سُلبا عملات مشفرة في تنهولت",
+    "bn": "সুইডিশ পুলিশ জানিয়েছে, টেन्हুল্টে দুজনের কাছ থেকে ক্রিপ্টোকারেন্সি ছিনতাই হয়েছে",
+    "pt": "Duas pessoas roubadas de criptomoedas em Tenhult, diz a polícia sueca",
+    "ru": "Двоих ограбили на криптовалюту в Тенхульте, сообщает полиция Швеции",
+    "ur": "سویڈش پولیس کا کہنا ہے کہ ٹین ہلٹ میں دو افراد سے کرپٹو کرنسی لوٹی گئی",
+    "id": "Dua orang dirampok mata uang kripto di Tenhult, kata polisi Swedia",
+    "de": "Zwei Personen in Tenhult um Kryptowährung beraubt, sagt die schwedische Polizei",
+    "ja": "スウェーデン警察、テンフルトで2人が暗号資産を奪われたと発表",
+    "sw": "Watu wawili waliibiwa sarafu pepe huko Tenhult, polisi wa Uswidi wanasema",
+    "mr": "स्वीडिश पोलिसांचे म्हणणे आहे की टेन्हुल्टमध्ये दोन लोकांकडून क्रिप्टोकरन्सी लुटली गेली",
+    "fa": "پلیس سوئد: دو نفر در تنهولت از رمزارزشان محروم شدند",
+    "uk": "Двоє людей пограбовано на криптовалюту в Тенгольті, повідомляє поліція Швеції",
+    "tr": "İsveç polisi: Tenhult’ta iki kişinin kripto parası gasp edildi",
+    "se": "Guokte olbmo rábiduvvon kryptovaluttain Tenhultas, muitala Ruoŧa politiija"
+   },
+   "title_i18n_source": "Två personer bakbands och rånades på kryptovaluta",
+   "summary_i18n": {
+    "nn": "Svensk politi vart kalla til sentrale Tenhult kl. 03:35 den 18. november 2026 etter at to personar vart rana for krypto i heimen sin, ifølgje eit politisamandrag for Jönköpings län. Politiet seier at gjerningspersonar trengde inn i bustaden, mishandla éin av dei ramma og under trugsmål tvinga dei til å overføre valutaen via datamaskin til ei anna konto, og at dei ramma vart bundne før gjerningspersonane forlét staden i ukjend retning. Ingen er pågripne. Hendinga blir etterforska som grovt ran.",
+    "nb": "Svensk politi ble kalt til sentrale Tenhult kl. 03:35 den 18. november 2026 etter at to personer ble ranet for krypto i hjemmet sitt, ifølge et politisammendrag for Jönköpings län. Politiet sier at gjerningspersoner trengte inn i boligen, mishandlet én av de rammede og under trussel tvang dem til å overføre valutaen via datamaskin til en annen konto, og at de rammede ble bundet før gjerningspersonene forlot stedet i ukjent retning. Ingen er pågrepet. Hendelsen etterforskes som grovt ran.",
+    "sv": "Polisen larmades till centrala Tenhult klockan 03:35 den 18 november 2026 efter att två personer rånats på kryptovaluta i sitt hem, enligt en polissammanfattning för Jönköpings län. Polisen uppger att gärningspersoner trängde in i bostaden, misshandlade en av de drabbade och under hot tvingade dem att föra över valutan via dator till ett annat konto, och att de drabbade bakbands innan gärningspersonerna lämnade platsen i okänd riktning. Ingen är gripen. Händelsen utreds som grovt rån.",
+    "da": "Svensk politi blev tilkaldt til det centrale Tenhult kl. 03.35 den 18. november 2026, efter at to personer var blevet røvet for krypto i deres hjem, ifølge et politisammendrag for Jönköpings län. Politiet oplyser, at gerningspersoner trængte ind i boligen, overfaldt én af de ramte og under trussel tvang dem til at overføre valutaen via computer til en anden konto, og at de ramte blev bundet, inden gerningspersonerne forlod stedet i ukendt retning. Ingen er anholdt. Hændelsen efterforskes som groft røveri.",
+    "fi": "Ruotsin poliisi hälytettiin Tenhultin keskustaan kello 3.35 18. marraskuuta 2026 sen jälkeen, kun kaksi ihmistä oli ryöstetty kryptovaluutasta kotonaan, ilmenee Jönköpingin läänin poliisiyhteenvedosta. Poliisin mukaan tekijät tunkeutuivat kotiin, pahoinpitelivät yhtä uhreista ja pakottivat uhaten heidät siirtämään valuutan tietokoneella toiselle tilille, ja uhrit sidottiin ennen kuin tekijät poistuivat tuntemattomaan suuntaan. Ketään ei ole pidätetty. Tapahtumaa tutkitaan törkeänä ryöstönä.",
+    "is": "Sænska lögreglan var kölluð í miðbæ Tenhult kl. 03:35 þann 18. nóvember 2026 eftir að tveir voru rændir dulritunarfé á heimili sínu, samkvæmt samantekt lögreglu fyrir Jönköpings-län. Lögreglan segir að gerendur hafi þrengt sér inn á heimilið, misþyrmt öðrum brotaþolanna og undir hótunum þvingað þá til að flytja gjaldmiðilinn í tölvu á annan reikning, og að brotaþolarnir hafi verið bundnir áður en gerendur yfirgáfu staðinn í óþekkta átt. Enginn hefur verið handtekinn. Málið er rannsakað sem stórrán.",
+    "zh": "据延雪平省警方摘要，2026年11月18日3:35，瑞典警方接到报警赶往腾胡尔特中心地区，两名居民在家中被人抢走加密货币。警方称，行为人入室，殴打其中一人，并在威胁下强迫他们通过电脑将货币转到另一个账户，随后将两人捆绑，朝不明方向逃离。目前无人被捕。事件正作为加重抢劫进行调查。",
+    "hi": "जोनशोपिंग काउंटी के पुलिस सार के अनुसार, 18 नवंबर 2026 को 03:35 बजे स्वीडिश पुलिस को केंद्रीय टेन्हुल्ट बुलाया गया, जब दो लोगों के घर में उनसे क्रिप्टोकरेंसी लूटी गई। पुलिस का कहना है कि अपराधी घर में घुसे, पीड़ितों में से एक पर हमला किया और धमकी देकर उन्हें कंप्यूटर से मुद्रा दूसरे खाते में स्थानांतरित करने को मजबूर किया, फिर पीड़ितों को बाँधकर अज्ञात दिशा में चले गए। किसी को गिरफ्तार नहीं किया गया है। घटना की जाँच गंभीर डकैती के रूप में की जा रही है।",
+    "es": "La policía sueca fue requerida en el centro de Tenhult a las 03:35 del 18 de noviembre de 2026 después de que dos personas fueran robadas de criptomonedas en su domicilio, según un resumen policial del condado de Jönköping. La policía afirma que los autores entraron en la vivienda, agredieron a una de las víctimas y, bajo amenaza, les obligaron a transferir la moneda por ordenador a otra cuenta, y que las víctimas fueron atadas antes de que los autores se marcharan en dirección desconocida. Nadie ha sido detenido. El suceso se investiga como robo agravado.",
+    "fr": "La police suédoise a été appelée au centre de Tenhult à 3 h 35 le 18 novembre 2026 après que deux personnes ont été dépouillées de cryptomonnaies à leur domicile, selon un compte rendu de police pour le comté de Jönköping. La police indique que des auteurs sont entrés dans le logement, ont agressé l’une des victimes et, sous la menace, les ont contraintes à transférer la monnaie par ordinateur vers un autre compte, puis ont ligoté les victimes avant de quitter les lieux dans une direction inconnue. Personne n’a été arrêté. L’affaire est instruite comme un vol aggravé.",
+    "ar": "استُدعيت الشرطة السويدية إلى وسط تنهولت الساعة 03:35 في 18 نوفمبر 2026 بعد أن سُلب شخصان عملات مشفرة في منزلهما، وفق ملخص شرطي لمقاطعة يونشوبينغ. وتقول الشرطة إن الجناة اقتحموا المنزل واعتدوا على أحد الضحيتين، وأجبروهما تحت التهديد على تحويل العملة عبر الحاسوب إلى حساب آخر، ثم قيدوا الضحيتين قبل المغادرة في اتجاه مجهول. لم يُقبض على أحد. والحادثة قيد التحقيق بوصفها سطوًا مشددًا.",
+    "de": "Die schwedische Polizei wurde am 18. November 2026 um 3:35 Uhr ins Zentrum von Tenhult gerufen, nachdem zwei Personen in ihrem Zuhause um Kryptowährung beraubt worden waren, heißt es in einer Polizeizusammenfassung für den Bezirk Jönköping. Die Polizei gibt an, Täter seien in die Wohnung eingedrungen, hätten eines der Opfer misshandelt und sie unter Drohung gezwungen, die Währung per Computer auf ein anderes Konto zu überweisen, und die Opfer seien gefesselt worden, bevor die Täter in unbekannter Richtung verschwanden. Niemand ist festgenommen worden. Der Vorfall wird als schwerer Raub untersucht.",
+    "pt": "A polícia sueca foi chamada ao centro de Tenhult às 03:35 de 18 de novembro de 2026 depois de duas pessoas terem sido roubadas de criptomoedas em casa, segundo um resumo policial do condado de Jönköping. A polícia afirma que os autores entraram na habitação, agrediram uma das vítimas e, sob ameaça, as forçaram a transferir a moeda por computador para outra conta, e que as vítimas foram amarradas antes de os autores abandonarem o local em direção desconhecida. Ninguém foi detido. O incidente está a ser investigado como roubo agravado.",
+    "ru": "Шведскую полицию вызвали в центральную часть Тенхульта в 03:35 18 ноября 2026 года после того, как двоих людей ограбили на криптовалюту в их доме, согласно сводке полиции лена Йёнчёпинг. Полиция сообщает, что преступники проникли в жилище, избили одного из потерпевших и под угрозой принудили перевести средства через компьютер на другой счёт, после чего связали потерпевших и скрылись в неизвестном направлении. Никто не задержан. Происшествие расследуется как квалифицированный грабёж.",
+    "bn": "জনশেপিং কাউন্টির পুলিশ সারসংক্ষেপ অনুযায়ী, ১৮ নভেম্বর ২০২৬ ভোর ৩:৩৫-এ সুইডিশ পুলিশকে কেন্দ্রীয় টেन्हুল্টে ডাকা হয়, দুজনকে তাদের বাড়িতে ক্রিপ্টোকারেন্সি থেকে ছিনতাই করার পর। পুলিশ জানিয়েছে, আসামিরা বাড়িতে ঢুকে একজনকে মারধর করে এবং হুমকি দিয়ে কম্পিউটারের মাধ্যমে মুদ্রা অন্য হিসাবে স্থানান্তর করতে বাধ্য করে, তারপর ক্ষতিগ্রস্তদের বেঁধে অজানা দিকে চলে যায়। কাউকে গ্রেফতার করা হয়নি। ঘটনাটি গুরুতর ডাকাতি হিসেবে তদন্ত করা হচ্ছে।",
+    "ur": "جون شوپنگ کاؤنٹی کے پولیس خلاصے کے مطابق، 18 نومبر 2026 کو 03:35 بجے سویڈش پولیس کو وسطی ٹین ہلٹ بلایا گیا، جب دو افراد کے گھر میں ان سے کرپٹو کرنسی لوٹی گئی۔ پولیس کا کہنا ہے کہ مجرم گھر میں گھسے، متاثرین میں سے ایک پر حملہ کیا اور دھمکی دے کر انہیں کمپیوٹر کے ذریعے کرنسی دوسرے اکاؤنٹ میں منتقل کرنے پر مجبور کیا، پھر متاثرین کو باندھ کر نامعلوم سمت چلے گئے۔ کسی کو گرفتار نہیں کیا گیا۔ واقعے کی تفتیش سنگین ڈکیتی کے طور پر کی جا رہی ہے۔",
+    "id": "Polisi Swedia dipanggil ke pusat Tenhult pukul 03.35 pada 18 November 2026 setelah dua orang dirampok mata uang kripto di rumah mereka, menurut ringkasan polisi Kabupaten Jönköping. Polisi mengatakan pelaku masuk ke rumah, menyerang salah satu korban dan, di bawah ancaman, memaksa mereka mentransfer mata uang lewat komputer ke rekening lain, lalu mengikat para korban sebelum meninggalkan lokasi ke arah yang tidak diketahui. Tidak ada yang ditangkap. Kejadian itu diselidiki sebagai perampokan dengan pemberatan.",
+    "ja": "ヨンショーピング県の警察要約によると、2026年11月18日3時35分、自宅で2人が暗号資産を奪われたとして、スウェーデン警察がテンフルト中心部に呼び出された。警察によれば、加害者は住宅に侵入し、被害者の一方を暴行したうえで脅迫してコンピュータ経由で別口座へ通貨を送金させ、縛ったうえで行方不明の方向へ逃走した。逮捕者はいない。事件は加重強盗として捜査されている。",
+    "sw": "Polisi wa Uswidi walitakiwa kwenye kitovu cha Tenhult saa 03:35 tarehe 18 Novemba 2026 baada ya watu wawili kuibiwa sarafu pepe nyumbani kwao, kulingana na muhtasari wa polisi wa kaunti ya Jönköping. Polisi wanasema wahalifu waliingia nyumbani, walimshambulia mmoja wa wahasiriwa na, kwa vitisho, waliwalazimisha kuhamisha sarafu kwa kompyuta kwenda akaunti nyingine, kisha wakawafunga wahasiriwa kabla ya kuondoka kuelekea isiyojulikana. Hakuna aliyekamatwa. Tukio lina chunguzwa kama wizi mkubwa.",
+    "mr": "जोनशोपिंग काउंटीच्या पोलिस सारांशानुसार, १८ नोव्हेंबर २०२६ रोजी सकाळी ३:३५ वाजता स्वीडिश पोलिसांना मध्य टेन्हुल्ट येथे बोलावण्यात आले, दोन लोकांकडून त्यांच्या घरात क्रिप्टोकरन्सी लुटल्यानंतर. पोलिसांचे म्हणणे आहे की आरोपी घरात घुसले, पीडितांपैकी एकावर हल्ला केला आणि धमकी देऊन त्यांना संगणकाद्वारे चलन दुसऱ्या खात्यात हस्तांतरित करण्यास भाग पाडले, नंतर पीडितांना बांधून अज्ञात दिशेने निघून गेले. कोणालाही अटक झालेली नाही. घटनेची गंभीर दरोडा म्हणून चौकशी सुरू आहे.",
+    "fa": "طبق خلاصه پلیس استان یونشوپینگ، پلیس سوئد در ساعت ۰۳:۳۵ روز ۱۸ نوامبر ۲۰۲۶ به مرکز تنهولت فراخوانده شد، پس از آنکه دو نفر در خانه‌شان از رمزارز محروم شدند. پلیس می‌گوید مرتکبان وارد خانه شدند، به یکی از آسیب‌دیدگان حمله کردند و با تهدید آن‌ها را واداشتند ارز را با رایانه به حساب دیگری منتقل کنند، سپس آسیب‌دیدگان را بستند و به جهتی نامعلوم رفتند. کسی بازداشت نشده است. رویداد به‌عنوان سرقت مشدد در حال بررسی است.",
+    "uk": "Шведську поліцію викликали до центральної частини Тенгольта о 03:35 18 листопада 2026 року після того, як двох людей пограбували на криптовалюту в їхньому житлі, згідно зі зведенням поліції лену Єнчепінг. Поліція повідомляє, що зловмисники проникли в оселю, побили одного з потерпілих і під загрозою змусили переказати кошти через комп’ютер на інший рахунок, після чого зв’язали потерпілих і зникли в невідомому напрямку. Нікого не затримано. Подію розслідують як кваліфікований розбій.",
+    "tr": "Jönköping ili için bir polis özetine göre İsveç polisi, 18 Kasım 2026’da 03:35’te evlerinde iki kişinin kripto parasının gasp edilmesi üzerine Tenhult merkezine çağrıldı. Polis, faillerin eve girdiğini, mağdurlardan birine saldırdığını ve tehditle para birimini bilgisayardan başka bir hesaba aktarmaya zorladığını, ardından mağdurları bağlayıp bilinmeyen bir yöne kaçtığını belirtiyor. Kimse tutuklanmadı. Olay ağırlaştırılmış gasp olarak soruşturuluyor.",
+    "se": "Ruoŧa politiija gohččojuvvui guovddáš Tenhultii dii. 03:35 skábmamánu 18. beaivvi 2026 maŋŋil go guokte olbmo ledje rábiduvvon kryptovaluhta iežaset ruovttus, politiija čoahkkáigeasu mielde Jönköpinga leanas. Politiija dadjá ahte vearredahkkit manne sisa viesu, fallehedje ovtta gillájeaddjis ja áitagiin bággejedje sin sirdit valuhta dihtora bokte eará kontui, ja ahte gillájeddjiid čatne ovdal go vearredahkkit bođeje eret amas guvlui. Ii oktage leat giddejuvvon. Dáhpáhus dutkojuvvo dego roasus rán (grovt rån)."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "a298f843cfb2",
@@ -1739,7 +2518,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -1753,7 +2532,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "merged_into": "19c632406389"
   },
   {
    "id": "e01803e0a396",
@@ -1778,8 +2558,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "19c632406389"
   },
   {
    "id": "459851325830",
@@ -1804,7 +2585,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "also_covered_by": [
     {
@@ -1818,7 +2599,8 @@
      "source_type": "national",
      "paywall": false
     }
-   ]
+   ],
+   "merged_into": "19c632406389"
   },
   {
    "id": "fb9d7b569eef",
@@ -1843,8 +2625,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "19c632406389"
   },
   {
    "id": "6b79e28fd26a",
@@ -1923,15 +2706,16 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "published_unverified": true
+   "published_unverified": true,
+   "merged_into": "19c632406389"
   },
   {
    "id": "3c5e01e1f29b",
    "url": "https://kaupr.io/nyheter/firi-vil-tilby-aksjehandel-til-430-000-kunder-via-huddlestock",
    "title": "Firi vil tilby aksjehandel til 430.000 kunder via Huddlestock",
-   "title_en": null,
+   "title_en": "Huddlestock and Firi sign a conditional letter of intent on a tied-agent solution",
    "source": "kaupr",
    "source_name": "Kaupr",
    "country": "SE",
@@ -1949,9 +2733,68 @@
     "\\bFiri\\b"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Huddlestock Fintech AS has signed a letter of intent with the crypto exchange Firi for a tied-agent solution using Huddlestock's regulatory infrastructure, according to a stock-exchange notice published on 18 November 2026. The notice describes the arrangement as a letter of intent, not a completed agreement, and says the collaboration remains subject to further commercial, operational and regulatory assessment. Firi would, as planned, become a tied agent under Huddlestock's licence; the release describes Firi as the largest crypto exchange in the Nordics, with about 430,000 retail customers in Norway, Sweden and Denmark.",
+   "published_date_only": true,
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-21T05:14:20+01:00",
+   "primary_source": {
+    "name": "Huddlestock Fintech AS, letter of intent with Firi, MFN, 18 November 2026",
+    "url": "https://storage.mfn.se/db908609-3743-4493-9949-f35c5c6b4420/huddlestock-fintech-as-huddlestock-has-signed-a-letter-of-intent-loi-with-firi.pdf"
+   },
+   "title_i18n": {
+    "nn": "Huddlestock og Firi underskriv ein vilkårsbunden intensjonsavtale om ei tilknytt-agent-løysing",
+    "sv": "Huddlestock och Firi tecknar en villkorad avsiktsförklaring om en anknuten-ombudslösning",
+    "da": "Huddlestock og Firi underskriver en betinget hensigtserklæring om en tilknyttet-agent-løsning",
+    "fi": "Huddlestock ja Firi allekirjoittavat ehdollisen aiesopimuksen sidotun asiamiehen ratkaisusta",
+    "is": "Huddlestock og Firi undirrita skilyrta viljayfirlýsingu um tengdan umboðsmann",
+    "zh": "Huddlestock与Firi就绑定代理方案签署有条件的意向书",
+    "hi": "हडलस्टॉक और फिरि ने टाइड-एजेंट समाधान पर सशर्त आशय पत्र पर हस्ताक्षर किए",
+    "es": "Huddlestock y Firi firman una carta de intenciones condicionada sobre una solución de agente vinculado",
+    "fr": "Huddlestock et Firi signent une lettre d’intention conditionnelle sur une solution d’agent lié",
+    "ar": "هودلستوك وفيري يوقعان خطاب نوايا مشروطًا بشأن حل وكيل مرتبط",
+    "bn": "হাডলস্টক ও ফিরি টাইড-এজেন্ট সমাধান নিয়ে শর্তসাপেক্ষ সমঝোতাপত্রে স্বাক্ষর করেছে",
+    "pt": "Huddlestock e Firi assinam uma carta de intenções condicional sobre uma solução de agente vinculado",
+    "ru": "Huddlestock и Firi подписывают условное письмо о намерениях по решению с привязанным агентом",
+    "ur": "ہڈل سٹاک اور فیری نے ٹائیڈ ایجنٹ حل پر مشروط ارادے کے خط پر دستخط کیے",
+    "id": "Huddlestock dan Firi menandatangani surat pernyataan minat bersyarat untuk solusi agen terikat",
+    "de": "Huddlestock und Firi unterzeichnen eine bedingte Absichtserklärung zu einer gebundenen Vermittlerlösung",
+    "ja": "HuddlestockとFiri、タイド・エージェント方案で条件付き基本合意書に署名",
+    "sw": "Huddlestock na Firi watia saini barua ya nia yenye masharti kuhusu suluhisho la wakala aliyefungwa",
+    "mr": "हडलस्टॉक आणि फिरि यांनी टाइड-एजंट उपायाबाबत सशर्त आशयपत्राला सही केली",
+    "fa": "هودل‌استاک و فیری نامه قصد مشروطی درباره راهکار نماینده وابسته امضا کردند",
+    "uk": "Huddlestock і Firi підписують умовний лист про наміри щодо рішення з прив’язаним агентом",
+    "tr": "Huddlestock ve Firi, bağlı acente çözümü için koşullu niyet mektubu imzaladı",
+    "se": "Huddlestock ja Firi vuolláičálliba áigumuššiehtadusa čadnon gávpevuođđudussii"
+   },
+   "title_i18n_source": "Firi vil tilby aksjehandel til 430.000 kunder via Huddlestock",
+   "summary_i18n": {
+    "nn": "Huddlestock Fintech AS har underskrive ein intensjonsavtale med kryptobørsen Firi om ei tilknytt-agent-løysing som nyttar det regulatoriske rammeverket til Huddlestock, ifølgje ei børsmelding publisert 18. november 2026. Meldinga skildrar ordninga som ein intensjonsavtale, ikkje ein inngått avtale, og seier at samarbeidet framleis er avhengig av vidare kommersiell, operasjonell og regulatorisk vurdering. Firi skal etter planen bli tilknytt agent under lisensen til Huddlestock; meldinga omtaler Firi som den største kryptobørsen i Norden, med om lag 430 000 privatkundar i Noreg, Sverige og Danmark.",
+    "nb": "Huddlestock Fintech AS har underskrevet en intensjonsavtale med kryptobørsen Firi om en tilknyttet-agent-løsning som bruker det regulatoriske rammeverket til Huddlestock, ifølge en børsmelding publisert 18. november 2026. Meldingen beskriver ordningen som en intensjonsavtale, ikke en inngått avtale, og sier at samarbeidet fortsatt er betinget av videre kommersiell, operasjonell og regulatorisk vurdering. Firi skal etter planen bli tilknyttet agent under lisensen til Huddlestock; meldingen omtaler Firi som den største kryptobørsen i Norden, med om lag 430 000 privatkunder i Norge, Sverige og Danmark.",
+    "sv": "Huddlestock Fintech AS har tecknat en avsiktsförklaring med kryptobörsen Firi om en lösning med anknutet ombud som använder Huddlestocks regulatoriska infrastruktur, enligt ett pressmeddelande publicerat den 18 november 2026. Meddelandet beskriver arrangemanget som en avsiktsförklaring, inte ett ingånget avtal, och uppger att samarbetet fortfarande är villkorat av fortsatt kommersiell, operativ och regulatorisk prövning. Firi ska enligt planerna bli ett anknutet ombud under Huddlestocks licens; meddelandet beskriver Firi som den största kryptobörsen i Norden, med omkring 430 000 privatkunder i Norge, Sverige och Danmark.",
+    "da": "Huddlestock Fintech AS har underskrevet en hensigtserklæring med kryptobørsen Firi om en tilknyttet-agent-løsning, der bruger Huddlestocks regulatoriske infrastruktur, ifølge en fondsbørsmeddelelse offentliggjort den 18. november 2026. Meddelelsen beskriver ordningen som en hensigtserklæring, ikke en indgået aftale, og oplyser, at samarbejdet fortsat er betinget af yderligere kommerciel, operationel og regulatorisk vurdering. Firi skal efter planen blive tilknyttet agent under Huddlestocks licens; meddelelsen omtaler Firi som den største kryptobørs i Norden, med omkring 430.000 privatkunder i Norge, Sverige og Danmark.",
+    "fi": "Huddlestock Fintech AS on allekirjoittanut aiesopimuksen kryptopörssi Firin kanssa sidotun asiamiehen ratkaisusta, joka hyödyntää Huddlestockin sääntelyinfraa, 18. marraskuuta 2026 julkaistun pörssitiedotteen mukaan. Tiedote kuvaa järjestelyä aiesopimukseksi, ei solmituksi sopimukseksi, ja toteaa, että yhteistyö on edelleen ehdollinen lisäarvioinneille kaupallisella, operatiivisella ja sääntelyllisellä tasolla. Firiestä tulisi suunnitelman mukaan sidottu asiamies Huddlestockin luvan nojalla; tiedote kuvaa Firiä Pohjoismaiden suurimmaksi kryptopörssiksi, jolla on noin 430 000 vähittäisasiakasta Norjassa, Ruotsissa ja Tanskassa.",
+    "is": "Huddlestock Fintech AS hefur undirritað viljayfirlýsingu við rafmyntakauphöllina Firi um lausn með tengdum umboðsmanni sem nýtir regluverksinnviði Huddlestock, samkvæmt kauphallartilkynningu birt 18. nóvember 2026. Tilkynningin lýsir fyrirkomulaginu sem viljayfirlýsingu, ekki fullgerðum samningi, og segir að samstarfið sé áfram háð frekara viðskipta-, rekstrar- og reglulegu mati. Firi á, samkvæmt áætlun, að verða tengdur umboðsmaður undir leyfi Huddlestock; tilkynningin lýsir Firi sem stærstu rafmyntakauphöll Norðurlanda, með um 430.000 smásöluviðskiptavini í Noregi, Svíþjóð og Danmörku.",
+    "zh": "据2026年11月18日发布的一份交易所公告，Huddlestock Fintech AS已与加密货币交易所Firi签署一份意向书，拟采用Huddlestock的监管基础设施提供绑定代理方案。公告将该安排称为意向书，而非已达成的协议，并表示合作仍取决于进一步的商业、运营和监管评估。按计划，Firi将成为Huddlestock牌照下的绑定代理；公告称Firi是北欧最大的加密货币交易所，在挪威、瑞典和丹麦约有43万零售客户。",
+    "hi": "18 नवंबर 2026 को प्रकाशित एक स्टॉक-एक्सचेंज सूचना के अनुसार, हडलस्टॉक फिनटेक एएस ने क्रिप्टो एक्सचेंज फिरि के साथ हडलस्टॉक के विनियामक ढाँचे का उपयोग करने वाले टाइड-एजेंट समाधान के लिए एक आशय पत्र पर हस्ताक्षर किए हैं। सूचना इस व्यवस्था को आशय पत्र बताती है, पूरा हुआ समझौता नहीं, और कहती है कि सहयोग आगे के वाणिज्यिक, परिचालन और विनियामक आकलन के अधीन है। योजना के अनुसार फिरि हडलस्टॉक के लाइसेंस के अंतर्गत टाइड एजेंट बनेगा; विज्ञप्ति फिरि को नॉर्डिक क्षेत्र का सबसे बड़ा क्रिप्टो एक्सचेंज बताती है, जिसके नॉर्वे, स्वीडन और डेनमार्क में लगभग 430,000 खुदरा ग्राहक हैं।",
+    "es": "Huddlestock Fintech AS ha firmado una carta de intenciones con el intercambio de criptomonedas Firi para una solución de agente vinculado que utiliza la infraestructura regulatoria de Huddlestock, según un comunicado bursátil publicado el 18 de noviembre de 2026. El comunicado describe el acuerdo como una carta de intenciones, no como un contrato cerrado, y afirma que la colaboración sigue sujeta a una evaluación comercial, operativa y regulatoria adicional. Firi pasaría, según lo previsto, a ser un agente vinculado bajo la licencia de Huddlestock; la nota describe a Firi como el mayor intercambio de criptomonedas de los países nórdicos, con unos 430.000 clientes minoristas en Noruega, Suecia y Dinamarca.",
+    "fr": "Huddlestock Fintech AS a signé une lettre d’intention avec la plateforme d’échange de crypto-actifs Firi portant sur une solution d’agent lié s’appuyant sur l’infrastructure réglementaire de Huddlestock, selon un communiqué boursier publié le 18 novembre 2026. Le communiqué présente l’arrangement comme une lettre d’intention, et non comme un accord conclu, et indique que la collaboration reste subordonnée à une évaluation commerciale, opérationnelle et réglementaire plus poussée. Firi deviendrait, selon le projet, un agent lié sous la licence de Huddlestock ; le communiqué présente Firi comme la plus grande plateforme d’échange de crypto-actifs des pays nordiques, avec environ 430 000 clients de détail en Norvège, en Suède et au Danemark.",
+    "de": "Huddlestock Fintech AS hat laut einer am 18. November 2026 veröffentlichten Börsenmitteilung eine Absichtserklärung mit der Krypto-Börse Firi über eine gebundene Vermittlerlösung unter Nutzung der aufsichtsrechtlichen Infrastruktur von Huddlestock unterzeichnet. Die Mitteilung bezeichnet die Vereinbarung als Absichtserklärung, nicht als abgeschlossenen Vertrag, und gibt an, dass die Zusammenarbeit weiterhin von einer weiteren kommerziellen, operativen und aufsichtsrechtlichen Prüfung abhängt. Firi soll planmäßig gebundener Vermittler unter der Lizenz von Huddlestock werden; die Mitteilung beschreibt Firi als die größte Krypto-Börse im Norden, mit rund 430.000 Privatkunden in Norwegen, Schweden und Dänemark.",
+    "pt": "A Huddlestock Fintech AS assinou uma carta de intenções com a plataforma de criptomoedas Firi para uma solução de agente vinculado que recorre à infraestrutura regulamentar da Huddlestock, segundo um comunicado bolsista publicado a 18 de novembro de 2026. O comunicado descreve o entendimento como uma carta de intenções, e não como um acordo concluído, e afirma que a colaboração continua sujeita a uma avaliação comercial, operacional e regulamentar adicional. A Firi passaria, conforme previsto, a agente vinculado ao abrigo da licença da Huddlestock; o comunicado descreve a Firi como a maior plataforma de criptomoedas dos países nórdicos, com cerca de 430 mil clientes de retalho na Noruega, na Suécia e na Dinamarca.",
+    "ru": "Huddlestock Fintech AS подписала письмо о намерениях с криптобиржей Firi о решении с привязанным агентом, использующем регуляторную инфраструктуру Huddlestock, согласно биржевому сообщению, опубликованному 18 ноября 2026 года. В сообщении договорённость названа письмом о намерениях, а не заключённым соглашением, и указано, что сотрудничество по-прежнему зависит от дальнейшей коммерческой, операционной и регуляторной оценки. Согласно плану, Firi станет привязанным агентом по лицензии Huddlestock; в релизе Firi названа крупнейшей криптобиржей Северной Европы примерно с 430 000 розничных клиентов в Норвегии, Швеции и Дании.",
+    "ja": "2026年11月18日に公表された取引所通知によると、Huddlestock Fintech ASは暗号資産取引所Firiとの間で、Huddlestockの規制インフラを用いるタイド・エージェント方案について基本合意書（レター・オブ・インテント）に署名した。通知はこの取り決めを基本合意書であり、成立した契約ではないとし、協業は今後の商業・運営・規制面の評価になお条件付きだとしている。計画では、FiriはHuddlestockの免許の下でタイド・エージェントになる。発表はFiriを北欧最大の暗号資産取引所とし、ノルウェー、スウェーデン、デンマークに約43万の個人顧客がいるとしている。",
+    "ar": "وقّعت هودلستوك فينتك أي إس خطاب نوايا مع بورصة العملات المشفرة فيري بشأن حل وكيل مرتبط يستخدم البنية التنظيمية لهودلستوك، وفق إشعار بورصي نُشر في 18 نوفمبر 2026. ويصف الإشعار الترتيب بأنه خطاب نوايا، لا اتفاقًا مكتملًا، ويقول إن التعاون يظل مرهونًا بمزيد من التقييم التجاري والتشغيلي والتنظيمي. ووفق الخطة ستصبح فيري وكيلًا مرتبطًا تحت ترخيص هودلستوك؛ ويصف البيان فيري بأنها أكبر بورصة للعملات المشفرة في بلدان الشمال، بنحو 430 ألف عميل تجزئة في النرويج والسويد والدنمارك.",
+    "bn": "১৮ নভেম্বর ২০২৬-এ প্রকাশিত একটি স্টক এক্সচেঞ্জ বিজ্ঞপ্তি অনুযায়ী, হাডলস্টক ফিনটেক এএস ক্রিপ্টো এক্সচেঞ্জ ফিরির সঙ্গে হাডলস্টকের নিয়ন্ত্রক অবকাঠামো ব্যবহার করে একটি টাইড-এজেন্ট সমাধানের জন্য সমঝোতাপত্রে স্বাক্ষর করেছে। বিজ্ঞপ্তিটি ব্যবস্থাকে সমঝোতাপত্র বলেছে, সম্পূর্ণ চুক্তি নয়, এবং বলেছে সহযোগিতা আরও বাণিজ্যিক, পরিচালন ও নিয়ন্ত্রক মূল্যায়নের ওপর নির্ভরশীল। পরিকল্পনা অনুযায়ী ফিরি হাডলস্টকের লাইসেন্সের অধীনে টাইড এজেন্ট হবে; বিজ্ঞপ্তি ফিরিকে নর্ডিক অঞ্চলের বৃহত্তম ক্রিপ্টো এক্সচেঞ্জ বলেছে, যার নরওয়ে, সুইডেন ও ডেনমার্কে প্রায় ৪৩০,০০০ খুচরা গ্রাহক আছে।",
+    "ur": "۱۸ نومبر ۲۰۲۶ کو شائع شدہ ایک اسٹاک ایکسچینج نوٹس کے مطابق، ہڈل سٹاک فنٹیک اے ایس نے کرپٹو ایکسچینج فیری کے ساتھ ہڈل سٹاک کے ریگولیٹری ڈھانچے کے استعمال سے ٹائیڈ ایجنٹ حل کے لیے ارادے کے خط پر دستخط کیے ہیں۔ نوٹس اس بندوبست کو ارادے کا خط قرار دیتا ہے، مکمل معاہدہ نہیں، اور کہتا ہے کہ تعاون مزید تجارتی، عملی اور ریگولیٹری جائزے کا پابند ہے۔ منصوبے کے مطابق فیری ہڈل سٹاک کے لائسنس کے تحت ٹائیڈ ایجنٹ بنے گی؛ ریلیز فیری کو شمالی یورپ کا سب سے بڑا کرپٹو ایکسچینج قرار دیتی ہے، جس کے ناروے، سویڈن اور ڈنمارک میں تقریباً 430,000 ریٹیل گاہک ہیں۔",
+    "id": "Huddlestock Fintech AS telah menandatangani surat pernyataan minat dengan bursa kripto Firi untuk solusi agen terikat yang menggunakan infrastruktur regulasi Huddlestock, menurut pengumuman bursa yang diterbitkan pada 18 November 2026. Pengumuman itu menggambarkan pengaturan tersebut sebagai surat pernyataan minat, bukan perjanjian yang sudah selesai, dan menyatakan bahwa kerja sama tetap bergantung pada penilaian komersial, operasional, dan regulasi lebih lanjut. Firi, sesuai rencana, akan menjadi agen terikat di bawah lisensi Huddlestock; rilis itu menyebut Firi sebagai bursa kripto terbesar di kawasan Nordik, dengan sekitar 430.000 nasabah ritel di Norwegia, Swedia, dan Denmark.",
+    "sw": "Huddlestock Fintech AS imetia saini barua ya nia na soko la sarafu pepe Firi kuhusu suluhisho la wakala aliyefungwa linalotumia miundombinu ya udhibiti ya Huddlestock, kulingana na taarifa ya soko la hisa iliyochapishwa tarehe 18 Novemba 2026. Taarifa hiyo inaeleza mpango huo kama barua ya nia, si mkataba uliokamilika, na inasema ushirikiano bado unategemea tathmini zaidi ya kibiashara, uendeshaji na udhibiti. Firi ingekuwa, kama ilivyopangwa, wakala aliyefungwa chini ya leseni ya Huddlestock; taarifa inaeleza Firi kama soko kubwa zaidi la sarafu pepe katika nchi za Nordic, lenye wateja wa rejareja wapatao 430,000 nchini Norwei, Uswidi na Denmark.",
+    "mr": "१८ नोव्हेंबर २०२६ रोजी प्रकाशित झालेल्या स्टॉक एक्सचेंज सूचनापत्रकानुसार, हडलस्टॉक फिनटेक एएस ने क्रिप्टो एक्सचेंज फिरिशी हडलस्टॉकच्या नियामक पायाभूत सुविधांचा वापर करणाऱ्या टाइड-एजंट उपायाबाबत आशयपत्रावर सही केली आहे. सूचनापत्रक या व्यवस्थेला आशयपत्र म्हणते, पूर्ण झालेला करार नाही, आणि म्हणते की सहकार्य पुढील व्यावसायिक, परिचालन आणि नियामक मूल्यमापनावर अवलंबून आहे. योजनेनुसार फिरि हडलस्टॉकच्या परवान्याखाली टाइड एजंट होईल; निवेदन फिरिला नॉर्डिक प्रदेशातील सर्वांत मोठे क्रिप्टो एक्सचेंज म्हणते, ज्याचे नॉर्वे, स्वीडन आणि डेन्मार्कमध्ये सुमारे ४३०,००० किरकोळ ग्राहक आहेत.",
+    "fa": "طبق اطلاعیه بورسی منتشرشده در ۱۸ نوامبر ۲۰۲۶، هودل‌استاک فین‌تک آاس با صرافی رمزارز فیری نامه قصدی برای راهکار نماینده وابسته امضا کرده که از زیرساخت نظارتی هودل‌استاک استفاده می‌کند. اطلاعیه این ترتیب را نامه قصد می‌خواند، نه توافقی نهایی، و می‌گوید همکاری همچنان منوط به ارزیابی بیشتر تجاری، عملیاتی و نظارتی است. طبق برنامه، فیری نماینده وابسته تحت مجوز هودل‌استاک خواهد شد؛ اطلاعیه فیری را بزرگ‌ترین صرافی رمزارز کشورهای نوردیک با حدود ۴۳۰ هزار مشتری خرد در نروژ، سوئد و دانمارک توصیف می‌کند.",
+    "uk": "Huddlestock Fintech AS підписала лист про наміри з криптобіржею Firi щодо рішення з прив’язаним агентом, яке використовує регуляторну інфраструктуру Huddlestock, згідно з біржовим повідомленням, оприлюдненим 18 листопада 2026 року. У повідомленні домовленість названо листом про наміри, а не укладеною угодою, і зазначено, що співпраця й надалі залежить від подальшої комерційної, операційної та регуляторної оцінки. За планом Firi стане прив’язаним агентом за ліцензією Huddlestock; у релізі Firi названо найбільшою криптобіржею Північної Європи приблизно з 430 000 роздрібних клієнтів у Норвегії, Швеції та Данії.",
+    "tr": "18 Kasım 2026’da yayımlanan bir borsa bildirisinde Huddlestock Fintech AS’nin, Huddlestock’un düzenleyici altyapısını kullanan bir bağlı acente çözümü için kripto borsası Firi ile niyet mektubu imzaladığı belirtiliyor. Bildiri düzenlemeyi tamamlanmış bir sözleşme değil, niyet mektubu olarak tanımlıyor ve iş birliğinin hâlâ ek ticari, operasyonel ve düzenleyici değerlendirmeye bağlı olduğunu söylüyor. Plana göre Firi, Huddlestock’un lisansı altında bağlı acente olacak; duyuru Firi’yi Norveç, İsveç ve Danimarka’da yaklaşık 430.000 bireysel müşterisiyle Kuzey Avrupa’nın en büyük kripto borsası olarak tanımlıyor.",
+    "se": "Huddlestock Fintech AS lea vuolláičállán áigumuššiehtadusa kryptomárkaniin Firiin čadnojuvvon-ageantačovdosa birra Huddlestock regulereninfrastruktuvrra vuođul, vrd. börsalmmuhusa mii almmuhuvvui skábmamánu 18. beaivvi 2026. Dieđáhusas válddahuvvo šiehtadus áigumuššiehtadussan, ii válmmaš šiehtadussan, ja daddjo ahte ovttasbargu lea ain gávppálaš, operatiiva ja regulerejeaddji árvvoštallamiid duohken. Firi galgá, nu go lei jurdda, šaddat Huddlestocka liceansa vuollái čadnon aktevran; almmuhusas čilgejuvvo Firi leat stuorámus kriptovuoitu Davviriikkain, mas leat sullii 430 000 gávppašeaddji Norggas, Ruoŧas ja Danmárkkus."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "94d90ed6387c",
@@ -1977,8 +2820,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk / commentary. investornytt.no returned HTTP 403; not bypassed. Queue title and URL slug also do not match.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "a414463181bb",
@@ -2003,8 +2847,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Explicitly a non-crypto product launch. KVG. Not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "69864861c878",
@@ -2138,8 +2983,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Personal / side-track item, same pattern as earlier rejected KVG Huang coverage. Not fetched.; researcher 19–20.11 backlog 2026-11-21; editor 2026-11-21"
   },
   {
    "id": "460ee2b8204c",
@@ -2412,6 +3258,17 @@
      "url": "https://kaupr.io/nyheter/kjos-mathisen-nbx-veikart-mer-kapital-organisasjon",
      "title": "Kjos-Mathisen: Veikartet kan komme til å kreve mer kapital og sterkere organisasjon",
      "published": "2026-11-19T12:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/nbx-kan-bli-europas-forste-regulerte-digitale-aktivabank",
+     "title": "NBX kan bli Europas første regulerte digitale aktivabank",
+     "published": "2026-11-20",
      "lang": "Norwegian",
      "country": "NO",
      "source_type": "national",
@@ -3894,7 +4751,7 @@
    ],
    "paywall": true,
    "status": "published",
-   "summary": "The US Department of Justice said on 12 November 2026 that a court has authorised the seizure or freezing of more than 1.2 billion US dollars in cryptocurrency stolen from Binance. More than 2.7 billion dollars have already been frozen. The FBI attributes the theft to the North Korean group it calls TraderTraitor. The same DOJ release also covers a separate scheme, FaceStealer, in which fake video meetings were used to steal more than 400 million dollars over 18 months; that is not a new Binance theft.",
+   "summary": "The US Department of Justice said on 12 November 2026 that a court has authorised the seizure or freezing of more than 1.2 billion US dollars in cryptocurrency stolen from Binance. More than 2.7 billion dollars have already been frozen. The FBI attributes the theft to the North Korean group it calls TraderTraitor. The same DOJ release also covers a separate scheme, FaceStealer, in which fake video meetings were used to steal more than 400 million dollars over 18 months; that is not a new Binance theft. In a later development reported by Realtid, citing The Block and Reuters, the Abu Dhabi Global Market court has issued a worldwide freeze of up to 6.5 billion US dollars, covering about 26,000 wallet addresses, and has ordered 18 companies, including Circle and World Liberty Financial, to maintain the freeze; according to those reports, none of the 18 companies is accused of wrongdoing. That ADGM ruling is a separate court order from the US seizure, with different amounts and jurisdictions. The reports, which cite the blockchain analytics firm Elliptic, say a further hearing is due on 1 December.",
    "title_i18n": {
     "nn": "USA går til å beslagleggje eller sperre meir enn 1,2 mrd. dollar stole i Binance-åtaket",
     "sv": "USA går vidare för att beslagta eller frysa mer än 1,2 miljarder dollar stulna i Binance-hackningen",
@@ -3921,30 +4778,30 @@
     "se": "USA rahká váldit dahje galbmahit eanet go 1,2 miljárdda dollára maid suoládedje Binance-hákkas"
    },
    "summary_i18n": {
-    "nb": "Det amerikanske justisdepartementet opplyste 12. november 2026 at en rett har gitt samtykke til å beslaglegge eller sperre kryptovaluta verdt mer enn 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mer enn 2,7 milliarder dollar er allerede frosset. FBI mener tyveriet ble utført av den nordkoreanske gruppen som byrået kaller TraderTraitor. Den samme meldingen fra justisdepartementet omhandler også en egen ordning, FaceStealer, der falske videomøter ble brukt til å stjele mer enn 400 millioner dollar over 18 måneder; dette er ikke et nytt Binance-tyveri.",
-    "nn": "Det amerikanske justisdepartementet opplyste 12. november 2026 at ein rett har gjeve samtykke til å beslagleggje eller sperre kryptovaluta verd meir enn 1,2 milliardar amerikanske dollar, stole frå Binance. Meir enn 2,7 milliardar dollar er allereie frosne. FBI meiner tjuveriet vart utført av den nordkoreanske gruppa som byrået kallar TraderTraitor. Den same meldinga frå justisdepartementet tek òg for seg ei eiga ordning, FaceStealer, der falske videomøte vart brukte til å stele meir enn 400 millionar dollar over 18 månader; dette er ikkje eit nytt Binance-tjuveri.",
-    "sv": "USA:s justitiedepartement meddelade den 12 november 2026 att en domstol har gett tillstånd att beslagta eller frysa kryptovaluta värd mer än 1,2 miljarder amerikanska dollar, stulen från Binance. Mer än 2,7 miljarder dollar har redan frysts. FBI tillskriver stölden den nordkoreanska grupp som byrån kallar TraderTraitor. Samma meddelande från justitiedepartementet tar också upp ett separat upplägg, FaceStealer, där falska videomöten användes för att stjäla mer än 400 miljoner dollar under 18 månader; det är inte en ny Binance-stöld.",
-    "da": "Det amerikanske justitsministerium oplyste den 12. november 2026, at en ret har givet tilladelse til at beslaglægge eller indefryse kryptovaluta til en værdi af mere end 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mere end 2,7 milliarder dollar er allerede frosset. FBI tilskriver tyveriet den nordkoreanske gruppe, som bureauet kalder TraderTraitor. Den samme meddelelse fra justitsministeriet handler også om et særskilt setup, FaceStealer, hvor falske videomøder blev brugt til at stjæle mere end 400 millioner dollar over 18 måneder; det er ikke et nyt Binance-tyveri.",
-    "fi": "Yhdysvaltain oikeusministeriö kertoi 12. marraskuuta 2026, että tuomioistuin on antanut luvan takavarikoida tai jäädyttää Binancesta varastettua kryptovaluuttaa yli 1,2 miljardin Yhdysvaltain dollarin arvosta. Yli 2,7 miljardia dollaria on jo jäädytetty. FBI katsoo varkauden olevan pohjoiskorealaisen ryhmän työtä, jota virasto kutsuu nimellä TraderTraitor. Sama oikeusministeriön tiedote käsittelee myös erillistä FaceStealer-järjestelmää, jossa väärennettyjä videokokouksia käytettiin varastamaan yli 400 miljoonaa dollaria 18 kuukauden aikana; kyseessä ei ole uusi Binance-varkaus.",
-    "is": "Bandaríska dómsmálaráðuneytið tilkynnti 12. nóvember 2026 að dómstóll hafi veitt heimild til að leggja hald á eða frysta rafmynt að verðmæti meira en 1,2 milljarða Bandaríkjadala sem stolið var frá Binance. Meira en 2,7 milljarðar dala hafa þegar verið frystir. FBI eignar þjófnaðinn norðurkóreska hópnum sem stofnunin kallar TraderTraitor. Sama tilkynning dómsmálaráðuneytisins fjallar einnig um aðskilið fyrirkomulag, FaceStealer, þar sem fölsuð myndfundsfundir voru notaðir til að stela meira en 400 milljónum dala á 18 mánuðum; þetta er ekki nýr Binance-þjófnaður.",
-    "zh": "美国司法部于2026年11月12日表示，法院已授权扣押或冻结从币安盗取的、价值超过12亿美元的加密货币。已有超过27亿美元被冻结。联邦调查局将此次盗窃归因于其称为TraderTraitor的朝鲜组织。同一份司法部声明还涉及另一项独立计划FaceStealer：有人通过虚假视频会议在18个月内盗取了超过4亿美元；这并非新的币安盗窃。",
-    "hi": "अमेरिकी न्याय विभाग ने 12 नवंबर 2026 को कहा कि एक अदालत ने बिनेंस से चोरी की गई 1.2 अरब अमेरिकी डॉलर से अधिक की क्रिप्टोकरेंसी को जब्त या फ्रीज करने की अनुमति दे दी है। 2.7 अरब डॉलर से अधिक पहले ही फ्रीज किए जा चुके हैं। एफबीआई इस चोरी को उस उत्तर कोरियाई समूह से जोड़ती है जिसे वह TraderTraitor कहती है। न्याय विभाग की उसी विज्ञप्ति में एक अलग योजना FaceStealer भी है, जिसमें नकली वीडियो बैठकों के जरिए 18 महीनों में 400 मिलियन डॉलर से अधिक की चोरी हुई; यह बिनेंस की कोई नई चोरी नहीं है।",
-    "es": "El Departamento de Justicia de EE. UU. informó el 12 de noviembre de 2026 que un tribunal ha autorizado la incautación o la congelación de más de 1.200 millones de dólares estadounidenses en criptomonedas robadas a Binance. Ya se han congelado más de 2.700 millones de dólares. El FBI atribuye el robo al grupo norcoreano al que denomina TraderTraitor. El mismo comunicado del Departamento de Justicia cubre también un esquema separado, FaceStealer, en el que se usaron videorreuniones falsas para robar más de 400 millones de dólares en 18 meses; no se trata de un nuevo robo a Binance.",
-    "fr": "Le ministère américain de la Justice a indiqué le 12 novembre 2026 qu'un tribunal a autorisé la saisie ou le gel de plus de 1,2 milliard de dollars américains de cryptomonnaie volés à Binance. Plus de 2,7 milliards de dollars ont déjà été gelés. Le FBI attribue le vol au groupe nord-coréen qu'il nomme TraderTraitor. Le même communiqué du ministère couvre aussi un dispositif distinct, FaceStealer, dans lequel de fausses visioconférences ont servi à voler plus de 400 millions de dollars en 18 mois; il ne s'agit pas d'un nouveau vol chez Binance.",
-    "ar": "أعلنت وزارة العدل الأمريكية في 12 نوفمبر 2026 أن محكمة أذنت بضبط أو تجميد عملات مشفرة تزيد قيمتها على 1.2 مليار دولار أمريكي سُرقت من بينانس. وقد جُمّد بالفعل أكثر من 2.7 مليار دولار. وينسب مكتب التحقيقات الفيدرالي السرقة إلى المجموعة الكورية الشمالية التي يسميها TraderTraitor. ويتناول البيان نفسه أيضاً مخططاً منفصلاً هو FaceStealer، استُخدمت فيه اجتماعات فيديو مزيفة لسرقة أكثر من 400 مليون دولار على مدى 18 شهراً؛ وهذا ليس سرقة جديدة من بينانس.",
-    "bn": "মার্কিন বিচার বিভাগ ১২ নভেম্বর ২০২৬-এ জানিয়েছে, একটি আদালত বিনান্স থেকে চুরি হওয়া ১.২ বিলিয়ন মার্কিন ডলারের বেশি ক্রিপ্টোকারেন্সি জব্দ বা স্থগিত করার অনুমতি দিয়েছে। ইতিমধ্যে ২.৭ বিলিয়ন ডলারের বেশি স্থগিত করা হয়েছে। এফবিআই এই চুরির দায় তাদের TraderTraitor নামে পরিচিত উত্তর কোরিয়ান গোষ্ঠীর উপর আরোপ করে। একই বিচার বিভাগের বিজ্ঞপ্তিতে আলাদা একটি স্কিম FaceStealer-এর কথাও আছে, যেখানে নকল ভিডিও বৈঠক ব্যবহার করে ১৮ মাসে ৪০০ মিলিয়ন ডলারের বেশি চুরি হয়েছে; এটি বিনান্সের কোনো নতুন চুরি নয়।",
-    "pt": "O Departamento de Justiça dos EUA anunciou a 12 de novembro de 2026 que um tribunal autorizou a apreensão ou o congelamento de mais de 1,2 mil milhões de dólares americanos em criptomoeda roubada à Binance. Mais de 2,7 mil milhões de dólares já foram congelados. O FBI atribui o roubo ao grupo norte-coreano a que chama TraderTraitor. O mesmo comunicado do Departamento de Justiça abrange também um esquema separado, FaceStealer, em que reuniões de vídeo falsas foram usadas para roubar mais de 400 milhões de dólares ao longo de 18 meses; não se trata de um novo roubo à Binance.",
-    "ru": "Министерство юстиции США 12 ноября 2026 года сообщило, что суд разрешил изъять или заморозить криптовалюту стоимостью более 1,2 млрд долларов США, украденную у Binance. Более 2,7 млрд долларов уже заморожены. ФБР относит кражу к северокорейской группе, которую ведомство называет TraderTraitor. То же сообщение Минюста касается также отдельной схемы FaceStealer, в которой поддельные видеовстречи использовались, чтобы похитить более 400 млн долларов за 18 месяцев; это не новая кража у Binance.",
-    "ur": "امریکی محکمہ انصاف نے 12 نومبر 2026 کو بتایا کہ ایک عدالت نے بائننس سے چرائی گئی 1.2 ارب امریکی ڈالر سے زیادہ کی کرپٹو کرنسی ضبط یا منجمد کرنے کی اجازت دے دی ہے۔ 2.7 ارب ڈالر سے زیادہ پہلے ہی منجمد کیے جا چکے ہیں۔ ایف بی آئی اس چوری کو اس شمالی کوریائی گروپ سے منسوب کرتی ہے جسے وہ TraderTraitor کہتی ہے۔ محکمہ انصاف کی اسی اطلاع میں ایک الگ اسکیم FaceStealer بھی ہے، جس میں جعلی ویڈیو میٹنگز کے ذریعے 18 ماہ میں 400 ملین ڈالر سے زیادہ چرائی گئی؛ یہ بائننس کی کوئی نئی چوری نہیں ہے۔",
-    "id": "Departemen Kehakiman AS pada 12 November 2026 menyatakan bahwa pengadilan telah mengizinkan penyitaan atau pembekuan lebih dari 1,2 miliar dolar AS dalam mata uang kripto yang dicuri dari Binance. Lebih dari 2,7 miliar dolar telah dibekukan. FBI menisbatkan pencurian itu kepada kelompok Korea Utara yang disebutnya TraderTraitor. Rilis Departemen Kehakiman yang sama juga mencakup skema terpisah, FaceStealer, di mana rapat video palsu digunakan untuk mencuri lebih dari 400 juta dolar selama 18 bulan; ini bukan pencurian Binance yang baru.",
-    "de": "Das US-Justizministerium teilte am 12. November 2026 mit, dass ein Gericht die Beschlagnahme oder Einfrierung von Kryptowährung im Wert von mehr als 1,2 Milliarden US-Dollar genehmigt hat, die bei Binance gestohlen wurde. Mehr als 2,7 Milliarden Dollar sind bereits eingefroren. Das FBI schreibt den Diebstahl der nordkoreanischen Gruppe zu, die die Behörde TraderTraitor nennt. Dieselbe Mitteilung des Justizministeriums betrifft auch ein gesondertes Schema, FaceStealer, bei dem gefälschte Videobesprechungen genutzt wurden, um in 18 Monaten mehr als 400 Millionen Dollar zu stehlen; das ist kein neuer Binance-Diebstahl.",
-    "ja": "米司法省は2026年11月12日、裁判所が、バイナンスから盗まれた12億ドル超の暗号資産の押収または凍結を認めたと発表した。すでに27億ドル超が凍結されている。FBIはこの盗難を、当局がTraderTraitorと呼ぶ北朝鮮のグループによるものとみている。同じ司法省の発表では、偽のビデオ会議を使って18か月で4億ドル超を盗んだ別の手口FaceStealerにも触れている。これは新たなバイナンスからの盗難ではない。",
-    "sw": "Idara ya Haki ya Marekani ilisema tarehe 12 Novemba 2026 kuwa mahakama imeruhusu kukamata au kugandisha sarafu-fiche yenye thamani ya zaidi ya dola bilioni 1.2 za Marekani zilizoibwa kutoka Binance. Zaidi ya dola bilioni 2.7 tayari zimegandishwa. FBI inahusisha wizi huo na kundi la Korea Kaskazini ambalo linaliita TraderTraitor. Taarifa ileile ya Idara ya Haki inashughulikia pia mpango tofauti, FaceStealer, ambapo mikutano bandia ya video ilitumika kuiba zaidi ya dola milioni 400 katika miezi 18; huo si wizi mpya wa Binance.",
-    "mr": "अमेरिकी न्याय विभागाने १२ नोव्हेंबर २०२६ रोजी सांगितले की न्यायालयाने बायनन्सकडून चोरी झालेली १.२ अब्ज अमेरिकी डॉलरपेक्षा अधिक क्रिप्टोकरन्सी जप्त किंवा गोठवण्याची परवानगी दिली आहे. २.७ अब्ज डॉलरपेक्षा अधिक रक्कम आधीच गोठवली गेली आहे. एफबीआय ही चोरी त्या उत्तर कोरियाच्या गटाशी जोडते ज्याला ते TraderTraitor म्हणतात. न्याय विभागाच्या त्याच निवेदनात वेगळी योजना FaceStealer देखील आहे, ज्यात बनावट व्हिडिओ बैठकींद्वारे १८ महिन्यांत ४०० दशलक्ष डॉलरपेक्षा अधिक चोरी झाली; ही बायनन्सची नवी चोरी नाही.",
-    "fa": "وزارت دادگستری آمریکا در ۱۲ نوامبر ۲۰۲۶ اعلام کرد که دادگاهی اجازه ضبط یا مسدود کردن بیش از ۱٫۲ میلیارد دلار آمریکا ارز دیجیتال سرقت‌شده از بایننس را صادر کرده است. بیش از ۲٫۷ میلیارد دلار از پیش مسدود شده است. اف‌بی‌آی این سرقت را به گروه کره شمالی نسبت می‌دهد که آن را TraderTraitor می‌نامد. همان اطلاعیه وزارت دادگستری به طرح جداگانه‌ای به نام FaceStealer نیز می‌پردازد که در آن از نشست‌های ویدیویی جعلی برای سرقت بیش از ۴۰۰ میلیون دلار در ۱۸ ماه استفاده شد؛ این سرقت جدیدی از بایننس نیست.",
-    "uk": "Міністерство юстиції США 12 листопада 2026 року повідомило, що суд дозволив конфіскувати або заморозити криптовалюту вартістю понад 1,2 млрд доларів США, викрадену з Binance. Понад 2,7 млрд доларів уже заморожено. ФБР пов’язує крадіжку з північнокорейською групою, яку відомство називає TraderTraitor. Та сама заява Мін’юсту стосується також окремої схеми FaceStealer, у якій фальшиві відеозустрічі використовували, щоб викрасти понад 400 млн доларів за 18 місяців; це не нова крадіжка з Binance.",
-    "tr": "ABD Adalet Bakanlığı 12 Kasım 2026'da, bir mahkemenin Binance'den çalınan 1,2 milyar ABD dolarından fazla kripto paranın el konulmasına veya dondurulmasına izin verdiğini duyurdu. 2,7 milyar dolardan fazlası şimdiden dondurulmuş durumda. FBI hırsızlığı, kurumun TraderTraitor adını verdiği Kuzey Kore grubuna bağlıyor. Adalet Bakanlığının aynı açıklaması, sahte görüntülü toplantılarla 18 ayda 400 milyon dolardan fazla çalınan ayrı bir düzen olan FaceStealer'ı da kapsıyor; bu yeni bir Binance hırsızlığı değildir.",
-    "se": "Amerihká Justisdepartemeanta dieđihii 12. skábmamánu 2026 ahte duopmostuollu lea addán lobi váldit dahje galbmahit kryptovaluhta mii lea eanet go 1,2 miljárdda amerihkálaš dollára, suoláduvvon Binanceas. Eanet go 2,7 miljárdda dollára lea juo galbmahuvvon. FBI jáhkká suoládeami dahkan davvikorealaš joavku maid virgi gohčoda TraderTraitor. Seamma Justisdepartemeanta dieđihusas lea maid eará skema, FaceStealer, mas vearis videočoahkkimat geavahuvvojedje suoládet eanet go 400 miljovnna dollára 18 mánu áigge; dát ii leat ođđa Binance-suoládean."
+    "nb": "Det amerikanske justisdepartementet opplyste 12. november 2026 at en rett har gitt samtykke til å beslaglegge eller sperre kryptovaluta verdt mer enn 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mer enn 2,7 milliarder dollar er allerede frosset. FBI mener tyveriet ble utført av den nordkoreanske gruppen som byrået kaller TraderTraitor. Den samme meldingen fra justisdepartementet omhandler også en egen ordning, FaceStealer, der falske videomøter ble brukt til å stjele mer enn 400 millioner dollar over 18 måneder; dette er ikke et nytt Binance-tyveri. I en senere utvikling, omtalt av Realtid med henvisning til The Block og Reuters, har retten ved Abu Dhabi Global Market gitt en verdensomspennende frys på inntil 6,5 milliarder amerikanske dollar, som omfatter om lag 26 000 lommebokadresser, og pålagt 18 selskaper, blant dem Circle og World Liberty Financial, å opprettholde frysen; ifølge de rapportene er ingen av de 18 selskapene anklaget for lovbrudd. Den ADGM-kjennelsen er en annen rettsavgjørelse enn det amerikanske beslaget, med andre beløp og jurisdiksjoner. Rapportene, som viser til analyseselskapet Elliptic, sier at en ny høring er berammet 1. desember.",
+    "nn": "Det amerikanske justisdepartementet opplyste 12. november 2026 at ein rett har gjeve samtykke til å beslagleggje eller sperre kryptovaluta verd meir enn 1,2 milliardar amerikanske dollar, stole frå Binance. Meir enn 2,7 milliardar dollar er allereie frosne. FBI meiner tjuveriet vart utført av den nordkoreanske gruppa som byrået kallar TraderTraitor. Den same meldinga frå justisdepartementet tek òg for seg ei eiga ordning, FaceStealer, der falske videomøte vart brukte til å stele meir enn 400 millionar dollar over 18 månader; dette er ikkje eit nytt Binance-tjuveri. I ei seinare utvikling, omtala av Realtid med tilvising til The Block og Reuters, har retten ved Abu Dhabi Global Market gjeve ei verdssveipande frysing på inntil 6,5 milliardar amerikanske dollar, som omfattar om lag 26 000 lommebokadresser, og pålagt 18 selskap, mellom dei Circle og World Liberty Financial, å halda oppe frysinga; ifølgje dei rapportane er ingen av dei 18 selskapa tiltalte for lovbrot. Den ADGM-kjennelsen er eit anna rettsvedtak enn det amerikanske beslaget, med andre beløp og jurisdiksjonar. Rapportane, som viser til analyseselskapet Elliptic, seier at ei ny høring er sett til 1. desember.",
+    "sv": "USA:s justitiedepartement meddelade den 12 november 2026 att en domstol har gett tillstånd att beslagta eller frysa kryptovaluta värd mer än 1,2 miljarder amerikanska dollar, stulen från Binance. Mer än 2,7 miljarder dollar har redan frysts. FBI tillskriver stölden den nordkoreanska grupp som byrån kallar TraderTraitor. Samma meddelande från justitiedepartementet tar också upp ett separat upplägg, FaceStealer, där falska videomöten användes för att stjäla mer än 400 miljoner dollar under 18 månader; det är inte en ny Binance-stöld. I en senare utveckling, som Realtid återger med hänvisning till The Block och Reuters, har domstolen vid Abu Dhabi Global Market utfärdat ett världsomspännande frysningsbeslut på upp till 6,5 miljarder amerikanska dollar, som omfattar omkring 26 000 plånboksadresser, och ålagt 18 bolag, bland dem Circle och World Liberty Financial, att upprätthålla frysningen; enligt de rapporterna anklagas inget av de 18 bolagen för brott. ADGM-beslutet är ett annat domstolsbeslut än det amerikanska beslaget, med andra belopp och jurisdiktioner. Rapporterna, som hänvisar till analysföretaget Elliptic, uppger att en ny förhandling är planerad till den 1 december.",
+    "da": "Det amerikanske justitsministerium oplyste den 12. november 2026, at en ret har givet tilladelse til at beslaglægge eller indefryse kryptovaluta til en værdi af mere end 1,2 milliarder amerikanske dollar, stjålet fra Binance. Mere end 2,7 milliarder dollar er allerede frosset. FBI tilskriver tyveriet den nordkoreanske gruppe, som bureauet kalder TraderTraitor. Den samme meddelelse fra justitsministeriet handler også om et særskilt setup, FaceStealer, hvor falske videomøder blev brugt til at stjæle mere end 400 millioner dollar over 18 måneder; det er ikke et nyt Binance-tyveri. I en senere udvikling, omtalt af Realtid med henvisning til The Block og Reuters, har retten ved Abu Dhabi Global Market udstedt en verdensomspændende frysning på op til 6,5 milliarder amerikanske dollar, som omfatter omkring 26.000 tegnebogsadresser, og pålagt 18 selskaber, heriblandt Circle og World Liberty Financial, at opretholde frysningen; ifølge de rapporter anklages ingen af de 18 selskaber for lovovertrædelser. ADGM-kendelsen er en anden retsafgørelse end det amerikanske beslag, med andre beløb og jurisdiktioner. Rapporterne, som henviser til analysefirmaet Elliptic, siger, at en ny høring er berammet til 1. december.",
+    "fi": "Yhdysvaltain oikeusministeriö kertoi 12. marraskuuta 2026, että tuomioistuin on antanut luvan takavarikoida tai jäädyttää Binancesta varastettua kryptovaluuttaa yli 1,2 miljardin Yhdysvaltain dollarin arvosta. Yli 2,7 miljardia dollaria on jo jäädytetty. FBI katsoo varkauden olevan pohjoiskorealaisen ryhmän työtä, jota virasto kutsuu nimellä TraderTraitor. Sama oikeusministeriön tiedote käsittelee myös erillistä FaceStealer-järjestelmää, jossa väärennettyjä videokokouksia käytettiin varastamaan yli 400 miljoonaa dollaria 18 kuukauden aikana; kyseessä ei ole uusi Binance-varkaus. Myöhemmässä käänteessä, josta Realtid kertoo viitaten The Blockiin ja Reuteriin, Abu Dhabi Global Marketin tuomioistuin on määrännyt maailmanlaajuisen jäädytyksen enintään 6,5 miljardin Yhdysvaltain dollarin arvosta, joka koskee noin 26 000 lompakko-osoitetta, ja määrännyt 18 yhtiötä, muun muassa Circlen ja World Liberty Financialin, pitämään jäädytyksen voimassa; näiden uutisten mukaan yhtäkään 18 yhtiöstä ei syytetä rikoksesta. ADGM-päätös on eri tuomioistuinmääräys kuin Yhdysvaltain takavarikko, eri summin ja eri lainkäyttöalueilla. Uutiset, jotka viittaavat analyysiyritys Ellipticiin, kertovat, että uusi istunto on määrä pitää 1. joulukuuta.",
+    "is": "Bandaríska dómsmálaráðuneytið tilkynnti 12. nóvember 2026 að dómstóll hafi veitt heimild til að leggja hald á eða frysta rafmynt að verðmæti meira en 1,2 milljarða Bandaríkjadala sem stolið var frá Binance. Meira en 2,7 milljarðar dala hafa þegar verið frystir. FBI eignar þjófnaðinn norðurkóreska hópnum sem stofnunin kallar TraderTraitor. Sama tilkynning dómsmálaráðuneytisins fjallar einnig um aðskilið fyrirkomulag, FaceStealer, þar sem fölsuð myndfundsfundir voru notaðir til að stela meira en 400 milljónum dala á 18 mánuðum; þetta er ekki nýr Binance-þjófnaður. Í síðari þróun, sem Realtid greinir frá með tilvísun til The Block og Reuters, hefur dómstóllinn við Abu Dhabi Global Market gefið út heimsyfirgripsmikla frystingu að fjárhæð allt að 6,5 milljörðum bandaríkjadala, sem nær til um 26.000 veskuheimilisfanga, og skipað 18 félögum, þar á meðal Circle og World Liberty Financial, að halda frystingunni; samkvæmt þeim fréttum er ekkert af þeim 18 félögum ákært fyrir refsivert athæfi. ADGM-úrskurðurinn er önnur dómsathöfn en haldlagningin í Bandaríkjunum, með öðrum fjárhæðum og lögsögum. Fréttirnar, sem vísa til greiningarfyrirtækisins Elliptic, segja að nýtt þing sé áætlað 1. desember.",
+    "zh": "美国司法部于2026年11月12日表示，法院已授权扣押或冻结从币安盗取的、价值超过12亿美元的加密货币。已有超过27亿美元被冻结。联邦调查局将此次盗窃归因于其称为TraderTraitor的朝鲜组织。同一份司法部声明还涉及另一项独立计划FaceStealer：有人通过虚假视频会议在18个月内盗取了超过4亿美元；这并非新的币安盗窃。 据Realtid援引The Block和路透社的后续报道，阿布扎比全球市场（ADGM）法院已发出最高65亿美元的全球冻结令，涉及约2.6万个钱包地址，并责令包括Circle和World Liberty Financial在内的18家公司维持冻结；这些报道称，这18家公司均未被指控违法。该ADGM裁定是不同于美国扣押的另一项法院命令，涉及不同金额和司法管辖区。报道引用区块链分析公司Elliptic称，下一次听证会定于12月1日举行。",
+    "hi": "अमेरिकी न्याय विभाग ने 12 नवंबर 2026 को कहा कि एक अदालत ने बिनेंस से चोरी की गई 1.2 अरब अमेरिकी डॉलर से अधिक की क्रिप्टोकरेंसी को जब्त या फ्रीज करने की अनुमति दे दी है। 2.7 अरब डॉलर से अधिक पहले ही फ्रीज किए जा चुके हैं। एफबीआई इस चोरी को उस उत्तर कोरियाई समूह से जोड़ती है जिसे वह TraderTraitor कहती है। न्याय विभाग की उसी विज्ञप्ति में एक अलग योजना FaceStealer भी है, जिसमें नकली वीडियो बैठकों के जरिए 18 महीनों में 400 मिलियन डॉलर से अधिक की चोरी हुई; यह बिनेंस की कोई नई चोरी नहीं है। एक बाद के विकास में, जिसे रियलटिड ने द ब्लॉक और रॉयटर्स का हवाला देते हुए बताया, अबू धाबी ग्लोबल मार्केट न्यायालय ने 6.5 अरब अमेरिकी डॉलर तक की विश्वव्यापी फ्रीज जारी की है, जो लगभग 26,000 वॉलेट पतों को कवर करती है, और सर्कल तथा वर्ल्ड लिबर्टी फाइनेंशियल सहित 18 कंपनियों को फ्रीज बनाए रखने का आदेश दिया है; उन रिपोर्टों के अनुसार उन 18 कंपनियों में से किसी पर अवैध कार्य का आरोप नहीं है। वह ADGM आदेश अमेरिकी जब्ती से अलग एक न्यायालय आदेश है, अलग राशियों और अधिकार क्षेत्रों के साथ। रिपोर्टें, जो ब्लॉकचेन विश्लेषण फर्म एलिप्टिक का हवाला देती हैं, कहती हैं कि आगे की सुनवाई 1 दिसंबर को होनी है।",
+    "es": "El Departamento de Justicia de EE. UU. informó el 12 de noviembre de 2026 que un tribunal ha autorizado la incautación o la congelación de más de 1.200 millones de dólares estadounidenses en criptomonedas robadas a Binance. Ya se han congelado más de 2.700 millones de dólares. El FBI atribuye el robo al grupo norcoreano al que denomina TraderTraitor. El mismo comunicado del Departamento de Justicia cubre también un esquema separado, FaceStealer, en el que se usaron videorreuniones falsas para robar más de 400 millones de dólares en 18 meses; no se trata de un nuevo robo a Binance. En un hecho posterior, informado por Realtid citando a The Block y Reuters, el tribunal del Abu Dhabi Global Market ha dictado una congelación mundial de hasta 6.500 millones de dólares estadounidenses, que abarca unas 26.000 direcciones de monedero, y ha ordenado a 18 empresas, entre ellas Circle y World Liberty Financial, que mantengan la congelación; según esos informes, ninguna de las 18 empresas está acusada de ilícito. Esa resolución del ADGM es una orden judicial distinta de la incautación estadounidense, con importes y jurisdicciones diferentes. Los informes, que citan a la firma de análisis de cadenas de bloques Elliptic, indican que hay una nueva vista prevista para el 1 de diciembre.",
+    "fr": "Le ministère américain de la Justice a indiqué le 12 novembre 2026 qu'un tribunal a autorisé la saisie ou le gel de plus de 1,2 milliard de dollars américains de cryptomonnaie volés à Binance. Plus de 2,7 milliards de dollars ont déjà été gelés. Le FBI attribue le vol au groupe nord-coréen qu'il nomme TraderTraitor. Le même communiqué du ministère couvre aussi un dispositif distinct, FaceStealer, dans lequel de fausses visioconférences ont servi à voler plus de 400 millions de dollars en 18 mois; il ne s'agit pas d'un nouveau vol chez Binance. Dans un développement ultérieur rapporté par Realtid, qui cite The Block et Reuters, le tribunal de l’Abu Dhabi Global Market a prononcé un gel mondial d’un montant pouvant atteindre 6,5 milliards de dollars des États-Unis, portant sur environ 26 000 adresses de portefeuille, et a enjoint à 18 sociétés, dont Circle et World Liberty Financial, de maintenir le gel ; selon ces comptes rendus, aucune des 18 sociétés n’est accusée d’infraction. Cette décision de l’ADGM est une ordonnance distincte de la saisie américaine, avec des montants et des juridictions différents. Les comptes rendus, qui citent la société d’analyse de chaînes de blocs Elliptic, indiquent qu’une nouvelle audience est prévue le 1er décembre.",
+    "ar": "أعلنت وزارة العدل الأمريكية في 12 نوفمبر 2026 أن محكمة أذنت بضبط أو تجميد عملات مشفرة تزيد قيمتها على 1.2 مليار دولار أمريكي سُرقت من بينانس. وقد جُمّد بالفعل أكثر من 2.7 مليار دولار. وينسب مكتب التحقيقات الفيدرالي السرقة إلى المجموعة الكورية الشمالية التي يسميها TraderTraitor. ويتناول البيان نفسه أيضاً مخططاً منفصلاً هو FaceStealer، استُخدمت فيه اجتماعات فيديو مزيفة لسرقة أكثر من 400 مليون دولار على مدى 18 شهراً؛ وهذا ليس سرقة جديدة من بينانس. وفي تطور لاحق أوردته ريالتيد نقلاً عن ذا بلوك ورويترز، أصدرت محكمة سوق أبوظبي العالمي أمر تجميد عالميًا يصل إلى 6.5 مليارات دولار أمريكي، يشمل نحو 26 ألف عنوان محفظة، وأمرت 18 شركة، من بينها سيركل وورلد ليبرتي فاينانشال، بالإبقاء على التجميد؛ وبحسب تلك التقارير لا تُتهم أي من الشركات الثماني عشرة بارتكاب مخالفة. وحكم ADGM هذا أمر قضائي منفصل عن الحجز الأمريكي، بمبالغ واختصاصات مختلفة. وتقول التقارير، التي تستشهد بشركة التحليلات إلِبتيك، إن جلسة أخرى مقررة في 1 ديسمبر.",
+    "bn": "মার্কিন বিচার বিভাগ ১২ নভেম্বর ২০২৬-এ জানিয়েছে, একটি আদালত বিনান্স থেকে চুরি হওয়া ১.২ বিলিয়ন মার্কিন ডলারের বেশি ক্রিপ্টোকারেন্সি জব্দ বা স্থগিত করার অনুমতি দিয়েছে। ইতিমধ্যে ২.৭ বিলিয়ন ডলারের বেশি স্থগিত করা হয়েছে। এফবিআই এই চুরির দায় তাদের TraderTraitor নামে পরিচিত উত্তর কোরিয়ান গোষ্ঠীর উপর আরোপ করে। একই বিচার বিভাগের বিজ্ঞপ্তিতে আলাদা একটি স্কিম FaceStealer-এর কথাও আছে, যেখানে নকল ভিডিও বৈঠক ব্যবহার করে ১৮ মাসে ৪০০ মিলিয়ন ডলারের বেশি চুরি হয়েছে; এটি বিনান্সের কোনো নতুন চুরি নয়। পরবর্তী এক ঘটনায়, রেয়ালটিড দ্য ব্লক ও রয়টার্সের উদ্ধৃতি দিয়ে জানিয়েছে, আবুধাবি গ্লোবাল মার্কেট আদালত সর্বোচ্চ ৬.৫ বিলিয়ন মার্কিন ডলারের একটি বিশ্বব্যাপী হিমায়িত আদেশ দিয়েছে, যা প্রায় ২৬,০০০ ওয়ালেট ঠিকানা জুড়ে, এবং সার্কেল ও ওয়ার্ল্ড লিবার্টি ফিনান্সিয়ালসহ ১৮টি কোম্পানিকে হিমায়িত অবস্থা বজায় রাখার নির্দেশ দিয়েছে; সেই প্রতিবেদন অনুযায়ী ১৮টির কোনোটির বিরুদ্ধে অপরাধের অভিযোগ নেই। সেই ADGM রায় মার্কিন বাজেয়াপ্তকরণ থেকে পৃথক একটি আদালতের আদেশ, ভিন্ন পরিমাণ ও এখতিয়ার নিয়ে। এলিপটিক নামের ব্লকচেইন বিশ্লেষণ প্রতিষ্ঠানের উদ্ধৃতি দিয়ে প্রতিবেদনগুলো বলে, পরবর্তী শুনানি ১ ডিসেম্বর নির্ধারিত।",
+    "pt": "O Departamento de Justiça dos EUA anunciou a 12 de novembro de 2026 que um tribunal autorizou a apreensão ou o congelamento de mais de 1,2 mil milhões de dólares americanos em criptomoeda roubada à Binance. Mais de 2,7 mil milhões de dólares já foram congelados. O FBI atribui o roubo ao grupo norte-coreano a que chama TraderTraitor. O mesmo comunicado do Departamento de Justiça abrange também um esquema separado, FaceStealer, em que reuniões de vídeo falsas foram usadas para roubar mais de 400 milhões de dólares ao longo de 18 meses; não se trata de um novo roubo à Binance. Num desenvolvimento posterior relatado pelo Realtid, que cita The Block e a Reuters, o tribunal do Abu Dhabi Global Market emitiu um congelamento mundial de até 6,5 mil milhões de dólares dos Estados Unidos, abrangendo cerca de 26.000 endereços de carteira, e ordenou a 18 empresas, entre elas a Circle e a World Liberty Financial, que mantenham o congelamento; segundo esses relatos, nenhuma das 18 empresas é acusada de ilícito. Essa decisão do ADGM é uma ordem judicial distinta da apreensão norte-americana, com montantes e jurisdições diferentes. Os relatos, que citam a empresa de análise de cadeias de blocos Elliptic, indicam que está marcada uma nova audiência para 1 de dezembro.",
+    "ru": "Министерство юстиции США 12 ноября 2026 года сообщило, что суд разрешил изъять или заморозить криптовалюту стоимостью более 1,2 млрд долларов США, украденную у Binance. Более 2,7 млрд долларов уже заморожены. ФБР относит кражу к северокорейской группе, которую ведомство называет TraderTraitor. То же сообщение Минюста касается также отдельной схемы FaceStealer, в которой поддельные видеовстречи использовались, чтобы похитить более 400 млн долларов за 18 месяцев; это не новая кража у Binance. В более позднем развитии, о котором сообщает Realtid со ссылкой на The Block и Reuters, суд Abu Dhabi Global Market вынес постановление о всемирной заморозке на сумму до 6,5 млрд долларов США, охватывающей около 26 000 адресов кошельков, и обязал 18 компаний, в том числе Circle и World Liberty Financial, сохранять заморозку; согласно этим сообщениям, ни одна из 18 компаний не обвиняется в правонарушении. Это решение ADGM — отдельное судебное постановление, отличное от американского ареста, с другими суммами и юрисдикциями. В сообщениях, где цитируется аналитическая компания Elliptic, говорится, что следующее заседание назначено на 1 декабря.",
+    "ur": "امریکی محکمہ انصاف نے 12 نومبر 2026 کو بتایا کہ ایک عدالت نے بائننس سے چرائی گئی 1.2 ارب امریکی ڈالر سے زیادہ کی کرپٹو کرنسی ضبط یا منجمد کرنے کی اجازت دے دی ہے۔ 2.7 ارب ڈالر سے زیادہ پہلے ہی منجمد کیے جا چکے ہیں۔ ایف بی آئی اس چوری کو اس شمالی کوریائی گروپ سے منسوب کرتی ہے جسے وہ TraderTraitor کہتی ہے۔ محکمہ انصاف کی اسی اطلاع میں ایک الگ اسکیم FaceStealer بھی ہے، جس میں جعلی ویڈیو میٹنگز کے ذریعے 18 ماہ میں 400 ملین ڈالر سے زیادہ چرائی گئی؛ یہ بائننس کی کوئی نئی چوری نہیں ہے۔ ایک بعد کی پیش رفت میں، جسے ریئل ٹڈ نے دی بلاک اور رائٹرز کے حوالے سے بیان کیا، ابوظہبی گلوبل مارکیٹ کی عدالت نے 6.5 ارب امریکی ڈالر تک کی عالمی منجمدی جاری کی ہے، جو تقریباً 26,000 والیٹ پتوں پر محیط ہے، اور سرکل اور ورلڈ لبرٹی فنانشل سمیت 18 کمپنیوں کو منجمدی برقرار رکھنے کا حکم دیا ہے؛ ان رپورٹس کے مطابق 18 میں سے کسی پر خلاف ورزی کا الزام نہیں۔ وہ ADGM حکم امریکی ضبطی سے الگ عدالتی حکم ہے، مختلف رقوم اور دائرہ اختیار کے ساتھ۔ رپورٹیں، جو بلاک چین تجزیاتی ادارے ایلیپٹک کا حوالہ دیتی ہیں، کہتی ہیں کہ اگلی سماعت 1 دسمبر کو مقرر ہے۔",
+    "id": "Departemen Kehakiman AS pada 12 November 2026 menyatakan bahwa pengadilan telah mengizinkan penyitaan atau pembekuan lebih dari 1,2 miliar dolar AS dalam mata uang kripto yang dicuri dari Binance. Lebih dari 2,7 miliar dolar telah dibekukan. FBI menisbatkan pencurian itu kepada kelompok Korea Utara yang disebutnya TraderTraitor. Rilis Departemen Kehakiman yang sama juga mencakup skema terpisah, FaceStealer, di mana rapat video palsu digunakan untuk mencuri lebih dari 400 juta dolar selama 18 bulan; ini bukan pencurian Binance yang baru. Dalam perkembangan kemudian yang dilaporkan Realtid, dengan merujuk The Block dan Reuters, pengadilan Abu Dhabi Global Market telah mengeluarkan pembekuan di seluruh dunia hingga 6,5 miliar dolar AS, yang mencakup sekitar 26.000 alamat dompet, dan memerintahkan 18 perusahaan, termasuk Circle dan World Liberty Financial, untuk mempertahankan pembekuan itu; menurut laporan tersebut, tidak satu pun dari 18 perusahaan dituduh melakukan pelanggaran. Putusan ADGM itu merupakan perintah pengadilan yang terpisah dari penyitaan AS, dengan jumlah dan yurisdiksi yang berbeda. Laporan itu, yang mengutip perusahaan analitik rantai blok Elliptic, menyebut sidang lanjutan dijadwalkan pada 1 Desember.",
+    "de": "Das US-Justizministerium teilte am 12. November 2026 mit, dass ein Gericht die Beschlagnahme oder Einfrierung von Kryptowährung im Wert von mehr als 1,2 Milliarden US-Dollar genehmigt hat, die bei Binance gestohlen wurde. Mehr als 2,7 Milliarden Dollar sind bereits eingefroren. Das FBI schreibt den Diebstahl der nordkoreanischen Gruppe zu, die die Behörde TraderTraitor nennt. Dieselbe Mitteilung des Justizministeriums betrifft auch ein gesondertes Schema, FaceStealer, bei dem gefälschte Videobesprechungen genutzt wurden, um in 18 Monaten mehr als 400 Millionen Dollar zu stehlen; das ist kein neuer Binance-Diebstahl. In einer späteren Entwicklung, über die Realtid unter Berufung auf The Block und Reuters berichtet, hat das Gericht des Abu Dhabi Global Market eine weltweite Einfrierung in Höhe von bis zu 6,5 Milliarden US-Dollar angeordnet, die etwa 26.000 Wallet-Adressen umfasst, und 18 Unternehmen, darunter Circle und World Liberty Financial, angewiesen, die Einfrierung aufrechtzuerhalten; den Berichten zufolge wird keines der 18 Unternehmen einer Straftat beschuldigt. Diese ADGM-Entscheidung ist ein anderer Gerichtsbeschluss als die US-Beschlagnahme, mit anderen Beträgen und Zuständigkeiten. Die Berichte, die das Analyseunternehmen Elliptic zitieren, nennen eine weitere Anhörung für den 1. Dezember.",
+    "ja": "米司法省は2026年11月12日、裁判所が、バイナンスから盗まれた12億ドル超の暗号資産の押収または凍結を認めたと発表した。すでに27億ドル超が凍結されている。FBIはこの盗難を、当局がTraderTraitorと呼ぶ北朝鮮のグループによるものとみている。同じ司法省の発表では、偽のビデオ会議を使って18か月で4億ドル超を盗んだ別の手口FaceStealerにも触れている。これは新たなバイナンスからの盗難ではない。 その後の展開として、RealtidがThe Blockとロイターを引用して伝えたところでは、アブダビ・グローバル・マーケットの裁判所が最大65億米ドルの世界的な凍結を命じ、約2万6000のウォレットアドレスを対象とし、CircleやWorld Liberty Financialを含む18社に凍結の維持を命じた。これらの報道によれば、18社のいずれも不正行為で告発されてはいない。このADGMの判断は、米国の差押えとは別の裁判所命令であり、金額も管轄も異なる。ブロックチェーン分析会社Ellipticを引用した報道では、次回の審理は12月1日に予定されているという。",
+    "sw": "Idara ya Haki ya Marekani ilisema tarehe 12 Novemba 2026 kuwa mahakama imeruhusu kukamata au kugandisha sarafu-fiche yenye thamani ya zaidi ya dola bilioni 1.2 za Marekani zilizoibwa kutoka Binance. Zaidi ya dola bilioni 2.7 tayari zimegandishwa. FBI inahusisha wizi huo na kundi la Korea Kaskazini ambalo linaliita TraderTraitor. Taarifa ileile ya Idara ya Haki inashughulikia pia mpango tofauti, FaceStealer, ambapo mikutano bandia ya video ilitumika kuiba zaidi ya dola milioni 400 katika miezi 18; huo si wizi mpya wa Binance. Katika maendeleo ya baadaye yaliyoripotiwa na Realtid, ikinukuu The Block na Reuters, mahakama ya Abu Dhabi Global Market imetoa amri ya kuganda duniani kote ya hadi dola za Marekani bilioni 6.5, inayohusu anwani za pochi kama 26,000, na imeamuru kampuni 18, zikiwemo Circle na World Liberty Financial, kudumisha kuganda; kulingana na ripoti hizo, hakuna kati ya kampuni 18 inayoshtakiwa kwa kosa. Uamuzi huo wa ADGM ni amri tofauti ya mahakama kutoka kwa kunyakuliwa kwa Marekani, yenye kiasi na mamlaka tofauti. Ripoti hizo, zinazonukuu kampuni ya uchambuzi wa minyororo Elliptic, zinasema kikao kingine kimepangwa tarehe 1 Desemba.",
+    "mr": "अमेरिकी न्याय विभागाने १२ नोव्हेंबर २०२६ रोजी सांगितले की न्यायालयाने बायनन्सकडून चोरी झालेली १.२ अब्ज अमेरिकी डॉलरपेक्षा अधिक क्रिप्टोकरन्सी जप्त किंवा गोठवण्याची परवानगी दिली आहे. २.७ अब्ज डॉलरपेक्षा अधिक रक्कम आधीच गोठवली गेली आहे. एफबीआय ही चोरी त्या उत्तर कोरियाच्या गटाशी जोडते ज्याला ते TraderTraitor म्हणतात. न्याय विभागाच्या त्याच निवेदनात वेगळी योजना FaceStealer देखील आहे, ज्यात बनावट व्हिडिओ बैठकींद्वारे १८ महिन्यांत ४०० दशलक्ष डॉलरपेक्षा अधिक चोरी झाली; ही बायनन्सची नवी चोरी नाही. नंतरच्या घडामोडीत, रियलटिडने द ब्लॉक आणि रॉयटर्सचा हवाला देत सांगितले की, अबू धाबी ग्लोबल मार्केट न्यायालयाने ६.५ अब्ज अमेरिकी डॉलरपर्यंतची जागतिक गोठवणूक जारी केली आहे, ज्यात सुमारे २६,००० वॉलेट पते आहेत, आणि सर्कल व वर्ल्ड लिबर्टी फायनान्शियलसह १८ कंपन्यांना गोठवणूक कायम ठेवण्याचा आदेश दिला आहे; त्या अहवालांनुसार १८ पैकी कोणावरही गैरकृत्याचा आरोप नाही. तो ADGM निकाल अमेरिकन जप्तीहून वेगळा न्यायालयीन आदेश आहे, वेगळ्या रकमा आणि अधिकारक्षेत्रांसह. अहवाल, जे ब्लॉकचेन विश्लेषण संस्था एलिप्टिकचा हवाला देतात, सांगतात की पुढील सुनावणी १ डिसेंबर रोजी होणार आहे.",
+    "fa": "وزارت دادگستری آمریکا در ۱۲ نوامبر ۲۰۲۶ اعلام کرد که دادگاهی اجازه ضبط یا مسدود کردن بیش از ۱٫۲ میلیارد دلار آمریکا ارز دیجیتال سرقت‌شده از بایننس را صادر کرده است. بیش از ۲٫۷ میلیارد دلار از پیش مسدود شده است. اف‌بی‌آی این سرقت را به گروه کره شمالی نسبت می‌دهد که آن را TraderTraitor می‌نامد. همان اطلاعیه وزارت دادگستری به طرح جداگانه‌ای به نام FaceStealer نیز می‌پردازد که در آن از نشست‌های ویدیویی جعلی برای سرقت بیش از ۴۰۰ میلیون دلار در ۱۸ ماه استفاده شد؛ این سرقت جدیدی از بایننس نیست. در تحولی بعدی که ریالتید با استناد به دِ بلاک و رویترز گزارش کرد، دادگاه بازار جهانی ابوظبی دستوری برای انسداد سراسری تا سقف ۶٫۵ میلیارد دلار آمریکا صادر کرده که حدود ۲۶٬۰۰۰ نشانی کیف را در بر می‌گیرد، و به ۱۸ شرکت از جمله سیرکل و ورلد لیبرتی فایننشال دستور داده انسداد را حفظ کنند؛ طبق آن گزارش‌ها هیچ‌یک از ۱۸ شرکت به تخلف متهم نشده است. این حکم ADGM دستوری جدا از توقیف آمریکا و با مبالغ و صلاحیت‌های متفاوت است. گزارش‌ها، که به شرکت تحلیل زنجیره بلوکی الیپتیک استناد می‌کنند، می‌گویند جلسه بعدی برای ۱ دسامبر تعیین شده است.",
+    "uk": "Міністерство юстиції США 12 листопада 2026 року повідомило, що суд дозволив конфіскувати або заморозити криптовалюту вартістю понад 1,2 млрд доларів США, викрадену з Binance. Понад 2,7 млрд доларів уже заморожено. ФБР пов’язує крадіжку з північнокорейською групою, яку відомство називає TraderTraitor. Та сама заява Мін’юсту стосується також окремої схеми FaceStealer, у якій фальшиві відеозустрічі використовували, щоб викрасти понад 400 млн доларів за 18 місяців; це не нова крадіжка з Binance. У пізнішому розвитку, про який повідомляє Realtid з посиланням на The Block і Reuters, суд Abu Dhabi Global Market видав всесвітнє замороження на суму до 6,5 млрд доларів США, що охоплює близько 26 000 адрес гаманців, і зобов’язав 18 компаній, зокрема Circle і World Liberty Financial, зберігати замороження; за цими повідомленнями жодну з 18 компаній не обвинувачують у правопорушенні. Це рішення ADGM є окремою судовою ухвалою, відмінною від американського арешту, з іншими сумами та юрисдикціями. У повідомленнях, де цитують аналітичну компанію Elliptic, ідеться, що наступне засідання призначене на 1 грудня.",
+    "tr": "ABD Adalet Bakanlığı 12 Kasım 2026'da, bir mahkemenin Binance'den çalınan 1,2 milyar ABD dolarından fazla kripto paranın el konulmasına veya dondurulmasına izin verdiğini duyurdu. 2,7 milyar dolardan fazlası şimdiden dondurulmuş durumda. FBI hırsızlığı, kurumun TraderTraitor adını verdiği Kuzey Kore grubuna bağlıyor. Adalet Bakanlığının aynı açıklaması, sahte görüntülü toplantılarla 18 ayda 400 milyon dolardan fazla çalınan ayrı bir düzen olan FaceStealer'ı da kapsıyor; bu yeni bir Binance hırsızlığı değildir. Realtid’in The Block ve Reuters’a atıfla aktardığı sonraki bir gelişmede, Abu Dhabi Global Market mahkemesi 6,5 milyar ABD dolarına kadar dünya çapında bir dondurma kararı verdi; karar yaklaşık 26.000 cüzdan adresini kapsıyor ve Circle ile World Liberty Financial dâhil 18 şirkete dondurmayı sürdürmelerini emretti. Bu haberlere göre 18 şirketten hiçbiri suçla itham edilmiyor. ADGM kararı, ABD elkoyma işleminden ayrı bir mahkeme kararıdır ve tutarlar ile yargı yerleri farklıdır. Blokzincir analitik şirketi Elliptic’e atıfta bulunan haberler, 1 Aralık’ta yeni bir duruşma yapılacağını belirtiyor.",
+    "se": "Amerihká Justisdepartemeanta dieđihii 12. skábmamánu 2026 ahte duopmostuollu lea addán lobi váldit dahje galbmahit kryptovaluhta mii lea eanet go 1,2 miljárdda amerihkálaš dollára, suoláduvvon Binanceas. Eanet go 2,7 miljárdda dollára lea juo galbmahuvvon. FBI jáhkká suoládeami dahkan davvikorealaš joavku maid virgi gohčoda TraderTraitor. Seamma Justisdepartemeanta dieđihusas lea maid eará skema, FaceStealer, mas vearis videočoahkkimat geavahuvvojedje suoládet eanet go 400 miljovnna dollára 18 mánu áigge; dát ii leat ođđa Binance-suoládean. Maŋŋelis ovdáneamis, man Realtid muitala The Block ja Reuters čujuhusaiguin, lea Abu Dhabi Global Market -duopmostuollu addán máilmmiviidosaš jikŋoma gitta 6,5 miljárdda amerihkálaš dollára rádjái, mii gokčá sullii 26 000 ruhtasekken-čujuhusa, ja gohččon 18 fitnodaga, gaskal earáid Circle ja World Liberty Financial, doallat jikŋoma; daid raporttaid mielde ii oktage daid 18 fitnodagain leat sivahallojuvvon rihkkosis. Dat ADGM-mearrádus lea eará duopmostuolu mearrádus go USA váldin, eará summavearuiguin ja jurisdikšuvnnaiguin. Raporttat, mat čujuhedje analysafitnodahkii Elliptic, dadjet ahte ođđa guldaleapmi lea bidjon juovlamánu 1. beaivái."
    },
    "title_i18n_source": "Beslaglegger krypto for 11 milliarder",
    "summary_i18n_source": "Pengene stammer fra historiens største kryptotyveri. FBI peker mot Nord-Korea.",
@@ -4058,6 +4915,28 @@
      "country": "DK",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "e24",
+     "outlet_name": "E24",
+     "url": "https://e24.no/boers-og-finans/i/GPGeyq/binance-vil-vokse-etter-rekordtyveriet-vi-taaler-belastningen",
+     "title": "Binance vil vokse etter rekordtyveriet: – Vi tåler belastningen",
+     "published": "2026-11-18T17:35:23+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "realtid",
+     "outlet_name": "Realtid",
+     "url": "https://realtid.se/bors-finans/bank-fintech/domstol-fryser-miljarder-efter-historiens-storsta-kryptokupp",
+     "title": "Domstol fryser miljarder efter historiens största kryptokupp",
+     "published": "2026-11-19T08:50:28+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -4084,7 +4963,8 @@
      "label": "FBI FLASH on the FaceStealer scheme, 12 November 2026"
     }
    ],
-   "summary_i18n_review": "pending"
+   "summary_i18n_review": "pending",
+   "updated_at": "2026-11-21T05:30:39+01:00"
   },
   {
    "id": "b10f48ddb9a8",
