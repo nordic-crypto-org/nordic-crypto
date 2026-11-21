@@ -549,6 +549,13 @@
        "url"
       ]
      }
+    },
+    "updated_at": {
+     "type": "string",
+     "description": "When the story was last edited by hand, ISO 8601 with offset.",
+     "examples": [
+      "2026-11-21T05:30:39+01:00"
+     ]
     }
    },
    "additionalProperties": false,

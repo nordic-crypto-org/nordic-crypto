@@ -54,6 +54,37 @@
     "source": {
      "type": "string"
     },
+    "lang": {
+     "type": "string",
+     "enum": [
+      "en",
+      "nn",
+      "nb",
+      "sv",
+      "da",
+      "fi",
+      "is",
+      "zh",
+      "hi",
+      "es",
+      "fr",
+      "ar",
+      "bn",
+      "pt",
+      "ru",
+      "ur",
+      "id",
+      "de",
+      "ja",
+      "sw",
+      "mr",
+      "fa",
+      "uk",
+      "tr",
+      "se"
+     ],
+     "description": "Language of the original description."
+    },
     "en": {
      "type": "string"
     },
