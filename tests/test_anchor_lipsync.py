@@ -59,13 +59,13 @@ class AnchorLipsync(unittest.TestCase):
 
     def test_anders_issues_declare_who_is_on_camera(self):
         self.assertEqual(_content("004").ON_CAMERA, ("anchor",))
-        for issue in ("005", "006", "007"):
+        for issue in ("005", "006", "007", "008"):
             self.assertEqual(_content(issue).ON_CAMERA, ("anchor", "tonight", "story", "end"))
         for issue in ("001", "002", "003"):
             self.assertFalse(getattr(_content(issue), "ANCHOR_IMG", None))
 
     def test_renderers_have_no_still_fallback(self):
-        for issue in ("004", "005", "006", "007"):
+        for issue in ("004", "005", "006", "007", "008"):
             with open(os.path.join(ROOT, "newsletter", "issues", f"{issue}-video", "render.py"), encoding="utf-8") as fh:
                 src = fh.read()
             self.assertIn("anchor_lipsync.Plate", src)
