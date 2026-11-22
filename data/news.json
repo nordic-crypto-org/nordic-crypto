@@ -1,6 +1,189 @@
 {
  "items": [
   {
+   "id": "197d3a8df28c",
+   "url": "https://borsen.dk/nyheder/finans/bitcoin-vender-rundt-efter-fald-til-laveste-niveau-i-to-ar",
+   "title": "Bitcoin vender rundt efter fald til laveste niveau i to år",
+   "title_en": null,
+   "source": "borsen",
+   "source_name": "Børsen",
+   "country": "DK",
+   "language": "Danish",
+   "via": "borsen",
+   "seen_via": [
+    "borsen"
+   ],
+   "published": "2026-11-21T19:19:01+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "rejected",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "borsen",
+     "outlet_name": "Børsen",
+     "url": "https://borsen.dk/nyheder/finans/bitcoin-vender-rundt-efter-fald-til-laveste-niveau-i-to-ar?b_source=borsen&b_medium=row_10&b_campaign=list_1",
+     "title": "Bitcoin vender rundt efter fald til laveste niveau i to år",
+     "published": "2026-11-21T19:19:01+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "reject_reason": "Price talk (Bitcoin at a two-year low, Saturday swing). Standing exclusion. Open Børsen intro was read; the rest is behind a paywall and was not fetched.; researcher 22.11; editor 2026-11-22"
+  },
+  {
+   "id": "8ec7bbb24b34",
+   "url": "https://ifinnmark.no/590-personer-i-finnmark-oppga-at-de-eide-krypto-vi-har-avdekket-grove-feil/s/80-81-57231",
+   "title": "590 personer i Finnmark oppga at de eide krypto: – Vi har avdekket grove feil",
+   "title_en": null,
+   "source": "finnmark-dagblad",
+   "source_name": "Finnmark Dagblad",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "finnmark-dagblad",
+   "seen_via": [
+    "finnmark-dagblad"
+   ],
+   "published": "2026-11-21T19:15:00+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
+  },
+  {
+   "id": "30ab5b19602e",
+   "url": "https://barebitcoin.no/innsikt/nyheter/2026-11-21-lengste-bjornemarked",
+   "title": "Det lengste bjørnemarkedet i bitcoins historie",
+   "title_en": null,
+   "source": "barebitcoin",
+   "source_name": "Bare Bitcoin",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "barebitcoin",
+   "seen_via": [
+    "barebitcoin"
+   ],
+   "published": "2026-11-21T12:00:00+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk plus an exchange blog (Bare Bitcoin: longest bitcoin bear market). Standing exclusion, same pattern as the Bare Bitcoin item already rejected on 21 Nov.; researcher 22.11; editor 2026-11-22"
+  },
+  {
+   "id": "b6baafedb133",
+   "url": "https://finansavisen.no/finans/2026/11/21/8397608/borsuro-rammer-bitcoin-laveste-niva-pa-over-to-ar",
+   "title": "Børsuro rammer bitcoin:Laveste nivå på over to år",
+   "title_en": null,
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-21T08:02:00+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "rejected",
+   "summary": null,
+   "published_unverified": true,
+   "reject_reason": "Price talk (Bitcoin at a two-year low). Standing exclusion. Finansavisen paywall, body not fetched; published_unverified in the queue.; researcher 22.11; editor 2026-11-22"
+  },
+  {
+   "id": "d388eaa79396",
+   "url": "https://e24.no/boers-og-finans/i/7P0gd4/laveste-bitcoin-pris-paa-over-to-aar",
+   "title": "Laveste bitcoin-pris på over to år",
+   "title_en": null,
+   "source": "e24",
+   "source_name": "E24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "e24",
+   "seen_via": [
+    "e24",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-21T07:59:21+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price talk (Bitcoin at a two-year low, ETF flows, market commentary). Standing exclusion. Open E24 teaser was read; the paywall was not bypassed. Marked as written with AI in the source, not used as a news story.; researcher 22.11; editor 2026-11-22"
+  },
+  {
+   "id": "4a68d09ccedf",
+   "url": "https://ranablad.no/skatteetaten-intensiverer-krypto-kontrollen-vi-har-avdekket-grove-feil/s/80-42-33600",
+   "title": "Skatteetaten intensiverer krypto-kontrollen: – Vi har avdekket grove feil",
+   "title_en": null,
+   "source": "rana-blad",
+   "source_name": "Rana Blad",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn",
+    "rana-blad"
+   ],
+   "published": "2026-11-21T07:49:00+00:00",
+   "fetched": "2026-11-22T02:48:32+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
+  },
+  {
    "id": "d40ba7ef6821",
    "url": "https://rha.no/domt-for-millionjuks-med-krypto-fikk-solid-strafferabatt/s/80-70-16958",
    "title": "Dømt for millionjuks med krypto – fikk solid strafferabatt",
@@ -24,7 +207,20 @@
    ],
    "paywall": true,
    "status": "pending",
-   "summary": null
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "budstikka",
+     "outlet_name": "Budstikka",
+     "url": "https://budstikka.no/domt-for-millionjuks-med-krypto-fikk-solid-strafferabatt/s/80-55-54822",
+     "title": "Dømt for millionjuks med krypto – fikk solid strafferabatt",
+     "published": "2026-11-21T21:27:57+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
   },
   {
    "id": "d18efb669256",
@@ -340,7 +536,8 @@
    "language": "Norwegian",
    "via": "nordstrands-blad",
    "seen_via": [
-    "nordstrands-blad"
+    "nordstrands-blad",
+    "sagene-avis"
    ],
    "published": "2026-11-20T07:50:10+00:00",
    "fetched": "2026-11-21T02:41:55+00:00",
@@ -439,7 +636,8 @@
    "language": "Norwegian",
    "via": "folkebladet-no",
    "seen_via": [
-    "folkebladet-no"
+    "folkebladet-no",
+    "bing-no-kn"
    ],
    "published": "2026-11-20T06:19:27+00:00",
    "fetched": "2026-11-21T02:41:55+00:00",
@@ -1792,6 +1990,28 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "rana-blad",
+     "outlet_name": "Rana Blad",
+     "url": "https://ranablad.no/skatteetaten-intensiverer-krypto-kontrollen-vi-har-avdekket-grove-feil/s/80-42-33600",
+     "title": "Skatteetaten intensiverer krypto-kontrollen: – Vi har avdekket grove feil",
+     "published": "2026-11-21T07:49:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "finnmark-dagblad",
+     "outlet_name": "Finnmark Dagblad",
+     "url": "https://ifinnmark.no/590-personer-i-finnmark-oppga-at-de-eide-krypto-vi-har-avdekket-grove-feil/s/80-81-57231",
+     "title": "590 personer i Finnmark oppga at de eide krypto: – Vi har avdekket grove feil",
+     "published": "2026-11-21T19:15:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -2642,7 +2862,8 @@
    "seen_via": [
     "bing-fi",
     "pogostan-sanomat",
-    "pielisjokiseutu"
+    "pielisjokiseutu",
+    "outokummun-seutu"
    ],
    "published": "2026-11-18T04:45:00+00:00",
    "fetched": "2026-11-19T02:41:49+00:00",
@@ -25418,5 +25639,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-21T02:41:55+00:00"
+ "updated": "2026-11-22T02:48:32+00:00"
 }
