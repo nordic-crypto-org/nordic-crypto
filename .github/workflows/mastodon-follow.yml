@@ -1,7 +1,8 @@
-# Hourly: follow a few accounts from Explore (suggestions + trending posts) as @nordiccrypto@mastodon.social.
+# Hourly: follow accounts posting under crypto hashtags (#bitcoin, #crypto, #nostr…) as @nordiccrypto@mastodon.social.
 # Script: tools/mastodon_follow.py. Mastodon caps follows at 400/day per account; the script stops on 429
 # or when 50 remain, and never re-follows an id in the ledger (kept in the Actions cache).
-# Secret: MASTODON_TOKEN (app token, scopes read + write:follows). Variable: MASTODON_FOLLOWS_PER_RUN (default 42).
+# Secret: MASTODON_TOKEN (app token, scopes read + write:follows). Variables: MASTODON_FOLLOWS_PER_RUN (default 42),
+# MASTODON_FOLLOW_TAGS (comma-separated, default in the script).
 name: Mastodon follows
 
 on:
@@ -65,7 +66,8 @@ jobs:
         env:
           MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
           PER_RUN: ${{ vars.MASTODON_FOLLOWS_PER_RUN || '42' }}
-        run: python3 tools/mastodon_follow.py --max "$PER_RUN" ${{ inputs.dry_run && '--dry-run' || '' }}
+          TAGS: ${{ vars.MASTODON_FOLLOW_TAGS }}
+        run: python3 tools/mastodon_follow.py --max "$PER_RUN" ${TAGS:+--tags "$TAGS"} ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Save the ledger
         if: always() && hashFiles('.mastodon-follow/ledger.json') != ''
