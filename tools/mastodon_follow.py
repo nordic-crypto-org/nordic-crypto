@@ -12,7 +12,7 @@ BASE = os.environ.get("MASTODON_BASE", "https://mastodon.social").rstrip("/")
 UA = "nordic-crypto-mastodon-follow/1.0"
 MIN_FOLLOWERS, MIN_STATUSES, MIN_AGE_DAYS, PER_DOMAIN = 10, 10, 14, 2
 SKIP_DOMAINS = ("brid.gy", "lemmy", "kbin", "mbin", "pixelfed")  # bridges and non-microblog servers
-TAGS = ("bitcoin", "crypto", "cryptocurrency", "nostr", "btc", "lightning", "ethereum", "blockchain", "bitcoincash", "defi")
+TAGS = ("bitcoin", "crypto", "cryptocurrency", "nostr", "btc", "lightningnetwork", "ethereum", "blockchain", "bitcoincash", "defi")
 
 
 def log(msg):
