@@ -114,7 +114,7 @@ def run(client, ledger, max_follows, reserve, dry_run=False, pause=3.0, sleep=ti
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--max", type=int, default=10, help="follows per run")
+    ap.add_argument("--max", type=int, default=42, help="follows per run")
     ap.add_argument("--reserve", type=int, default=50, help="stop when this many daily follows remain")
     ap.add_argument("--ledger", default=".mastodon-follow/ledger.json")
     ap.add_argument("--dry-run", action="store_true")
