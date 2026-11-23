@@ -7,7 +7,8 @@ import mastodon_follow as mf
 
 
 def acct(i, **kw):
-    a = {"id": str(i), "acct": f"user{i}", "bot": False, "locked": False}
+    a = {"id": str(i), "acct": f"user{i}", "bot": False, "locked": False, "followers_count": 50,
+         "statuses_count": 200, "created_at": "2023-01-01T00:00:00.000Z"}
     a.update(kw)
     return a
 
@@ -94,6 +95,18 @@ class Tests(unittest.TestCase):
         c = FakeClient([acct(1)], [])
         run(c, ledger, dry_run=True)
         self.assertEqual((c.follows, ledger), ([], set()))
+
+    def test_skips_spammy_new_empty_and_bridged_accounts(self):
+        c = FakeClient([acct(1, followers_count=2), acct(2, statuses_count=1),
+                        acct(3, created_at="2099-01-01T00:00:00Z"), acct(4, acct="x@web.brid.gy"),
+                        acct(5, acct="y@lemmy.world"), acct(6)], [])
+        run(c)
+        self.assertEqual(c.follows, ["6"])
+
+    def test_at_most_two_per_remote_domain(self):
+        c = FakeClient([acct(i, acct=f"t{i}@spam.example") for i in range(5)] + [acct(9)], [])
+        run(c)
+        self.assertEqual(c.follows, ["0", "1", "9"])
 
     def test_rejects_out_of_range_max(self):
         with self.assertRaises(SystemExit):
