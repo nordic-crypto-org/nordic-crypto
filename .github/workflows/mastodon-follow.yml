@@ -1,0 +1,75 @@
+# Hourly: follow a few accounts from Explore (suggestions + trending posts) as @nordiccrypto@mastodon.social.
+# Script: tools/mastodon_follow.py. Mastodon caps follows at 400/day per account; the script stops on 429
+# or when 50 remain, and never re-follows an id in the ledger (kept in the Actions cache).
+# Secret: MASTODON_TOKEN (app token, scopes read + write:follows). Variable: MASTODON_FOLLOWS_PER_RUN (default 10).
+name: Mastodon follows
+
+on:
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only print who would be followed"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  actions: write   # save the ledger in the Actions cache
+
+concurrency:
+  group: mastodon-follow
+  cancel-in-progress: false
+
+jobs:
+  follow:
+    if: github.repository == 'nordic-crypto-org/nordic-crypto'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check for the token
+        id: token
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          if [ -z "$MASTODON_TOKEN" ]; then
+            echo "::notice::MASTODON_TOKEN is not set; skipping"
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.token.outputs.ok == 'true'
+        with:
+          fetch-depth: 1
+          sparse-checkout: tools/mastodon_follow.py
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        if: steps.token.outputs.ok == 'true'
+        with:
+          python-version: "3.13"
+
+      - name: Restore the ledger
+        if: steps.token.outputs.ok == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: .mastodon-follow/ledger.json
+          key: mastodon-follow-ledger-${{ github.run_id }}
+          restore-keys: mastodon-follow-ledger-
+
+      - name: Follow accounts
+        if: steps.token.outputs.ok == 'true'
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          PER_RUN: ${{ vars.MASTODON_FOLLOWS_PER_RUN || '10' }}
+        run: python3 tools/mastodon_follow.py --max "$PER_RUN" ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Save the ledger
+        if: always() && hashFiles('.mastodon-follow/ledger.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .mastodon-follow/ledger.json
+          key: mastodon-follow-ledger-${{ github.run_id }}
