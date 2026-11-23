@@ -1,6 +1,128 @@
 {
  "items": [
   {
+   "id": "b34c97a34a5c",
+   "url": "https://berlingske.dk/internationalt/trods-faldende-vaerdi-inviterer-trump-igen-til-kryptomiddag",
+   "title": "Trods faldende værdi inviterer Trump igen til kryptomiddag",
+   "title_en": null,
+   "source": "berlingske",
+   "source_name": "Berlingske",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-22T23:30:46+00:00",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "b-t",
+     "outlet_name": "B.T.",
+     "url": "https://bt.dk/udland/trods-faldende-vaerdi-inviterer-trump-igen-til-kryptomiddag",
+     "title": "Trods faldende værdi inviterer Trump igen til kryptomiddag",
+     "published": "2026-11-22T23:30:48+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": true
+    }
+   ]
+  },
+  {
+   "id": "5f8ac82b626a",
+   "url": "https://tb.no/skatteetaten-avslorer-kryptotallene-for-tonsberg/s/80-76-86179",
+   "title": "Skatteetaten avslører kryptotallene for Tønsberg",
+   "title_en": null,
+   "source": "tb",
+   "source_name": "Tønsbergs Blad",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "tb",
+   "seen_via": [
+    "tb",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-22T18:52:22+00:00",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "b528582087b0",
+   "url": "https://gjengangeren.no/skatteetaten-avslorer-kryptotallene-for-horten/s/80-60-26763",
+   "title": "Skatteetaten avslører kryptotallene for Horten",
+   "title_en": null,
+   "source": "gjengangeren",
+   "source_name": "Gjengangeren",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "gjengangeren",
+   "seen_via": [
+    "gjengangeren"
+   ],
+   "published": "2026-11-22T15:00:00+00:00",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "5f8ac82b626a",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
+   "id": "eb26045f0061",
+   "url": "https://mn24.no/nyheter/n/kMJy1Q/troendere-har-meldt-inn-krypto-for-milliarder-staar-foran-et-stort-skifte",
+   "title": "Trøndere har meldt inn krypto for milliarder: - Står foran et stort skifte",
+   "title_en": null,
+   "source": "mn24.no",
+   "source_name": "MN24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn"
+   ],
+   "published": "2026-11-22T05:00:00+00:00",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null
+  },
+  {
    "id": "197d3a8df28c",
    "url": "https://borsen.dk/nyheder/finans/bitcoin-vender-rundt-efter-fald-til-laveste-niveau-i-to-ar",
    "title": "Bitcoin vender rundt efter fald til laveste niveau i to år",
@@ -11,7 +133,8 @@
    "language": "Danish",
    "via": "borsen",
    "seen_via": [
-    "borsen"
+    "borsen",
+    "bing-dk"
    ],
    "published": "2026-11-21T19:19:01+00:00",
    "fetched": "2026-11-22T02:48:32+00:00",
@@ -443,6 +566,34 @@
    "reject_reason": "Explanatory company blog (Bare Bitcoin), not a news story.; researcher 21.11; editor 2026-11-21"
   },
   {
+   "id": "049984b4534f",
+   "url": "https://eikernytt.no/2026/11/20/stadig-flere-rapporterer-krypto-i-buskerud",
+   "title": "Stadig flere rapporterer krypto i Buskerud",
+   "title_en": null,
+   "source": "eikernytt.no",
+   "source_name": "eikernytt",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn"
+   ],
+   "published": "2026-11-20T11:00:00+00:00",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "possible_duplicate_of": "a985949ee5e9",
+   "possible_duplicate_reason": "rare headline word"
+  },
+  {
    "id": "a49aad996f09",
    "url": "https://coinmotion.com/fi/bitcoin-neljan-kuukauden-pohjalla-anthropicin-listautuessa",
    "title": "Anthropic listautui, bitcoin laski",
@@ -766,6 +917,33 @@
    "summary": null,
    "published_date_only": true,
    "merged_into": "62e65a1a0595"
+  },
+  {
+   "id": "5d4599f43967",
+   "url": "https://kaupr.io/nyheter/greenmerc-emisjon-8-millioner-kroner",
+   "title": "GreenMerc vil hente opptil 8 millioner svenske kroner i to emisjoner",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr-kryptoaksjer",
+   "seen_via": [
+    "kaupr-kryptoaksjer",
+    "kaupr"
+   ],
+   "published": "2026-11-20",
+   "fetched": "2026-11-23T02:47:34+00:00",
+   "topics": [
+    "companies"
+   ],
+   "matched": [
+    "\\bGreenMerc\\b"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
   },
   {
    "id": "f440dae7e08d",
@@ -3559,7 +3737,8 @@
    "language": "Finnish",
    "via": "yle",
    "seen_via": [
-    "yle"
+    "yle",
+    "bing-fi"
    ],
    "published": "2026-11-16T17:15:54+00:00",
    "fetched": "2026-11-17T02:46:52+00:00",
@@ -25638,5 +25817,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-22T02:48:32+00:00"
+ "updated": "2026-11-23T02:47:34+00:00"
 }
