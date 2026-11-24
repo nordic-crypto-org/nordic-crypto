@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-24T07:27:10+00:00",
+ "generated_at": "2026-11-24T10:16:28+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -25,7 +25,7 @@
   "cors": true,
   "note": "Norwegian exchange (also lists DKK pairs). last, high, low, volume and change come from GET /v2/markets/{market}. bid and ask come from GET /v2/markets/tickers. The public payload does not name a 24-hour window on those fields.",
   "status": "ok",
-  "fetched_at": "2026-11-24T07:23:36+00:00",
+  "fetched_at": "2026-11-24T10:12:55+00:00",
   "error": null,
   "ticker_count": 6
  },
@@ -38,22 +38,22 @@
    "base": "BTC",
    "quote": "NOK",
    "last": "588888.00",
-   "bid": "592002.2500000000000000",
-   "ask": "634007.5600000000000000",
+   "bid": "585487.4400000000000000",
+   "ask": "632999.8100000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/BTCNOK",
-   "volume_base": "2.36",
+   "volume_base": "1.29",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "639999.06",
    "low": "588888.00",
-   "change_pct": "-3.3"
+   "change_pct": "-3.31"
   },
   {
    "id": "firi:ETH-NOK",
@@ -69,15 +69,15 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/ETHNOK",
-   "volume_base": "2.89",
+   "volume_base": "1.43",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "18200.00",
    "low": "16600.00",
-   "change_pct": "-1.78"
+   "change_pct": "-1.19"
   },
   {
    "id": "firi:SOL-NOK",
@@ -86,22 +86,22 @@
    "base": "SOL",
    "quote": "NOK",
    "last": "700.00",
-   "bid": "702.0100000000000000",
-   "ask": "752.8800000000000000",
+   "bid": "700.0000000000000000",
+   "ask": "749.9900000000000000",
    "exchange": {
     "id": "firi",
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/SOLNOK",
-   "volume_base": "180.44",
+   "volume_base": "145.18",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "760.00",
    "low": "700.00",
-   "change_pct": "2.22"
+   "change_pct": "-0.28"
   },
   {
    "id": "firi:XRP-NOK",
@@ -117,15 +117,15 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/XRPNOK",
-   "volume_base": "14120.02",
+   "volume_base": "3384.36",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "10.00",
    "low": "9.11",
-   "change_pct": "0.11"
+   "change_pct": "1.62"
   },
   {
    "id": "firi:ADA-NOK",
@@ -141,15 +141,15 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/ADANOK",
-   "volume_base": "88306.98",
+   "volume_base": "46837.78",
    "volume_quote": null,
    "volume_base_24h": null,
    "volume_quote_24h": null,
    "high": "1.50",
    "low": "1.42",
-   "change_pct": "1.43"
+   "change_pct": "-0.7"
   },
   {
    "id": "firi:USDC-NOK",
@@ -165,7 +165,7 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-24T07:23:36+00:00",
+   "fetched_at": "2026-11-24T10:12:55+00:00",
    "source_url": "https://api.firi.com/v2/markets/USDCNOK",
    "volume_base": "17610.92",
    "volume_quote": null,

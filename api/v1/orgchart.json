@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-24T07:27:10+00:00",
+ "generated_at": "2026-11-24T10:16:28+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 501,
+ "count": 518,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -16807,19 +16807,31 @@
      "title": "Thoughts about the Future Of Bitcoins by Bitcoin Developer, Martti Malmi",
      "source_name": "Slush",
      "date": "2026-10-16"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=XvshS57RJTs&hl=en",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-JLQtEJ-80_c"
+    "yt-JLQtEJ-80_c",
+    "yt-XvshS57RJTs"
    ],
    "talks": [
     {
      "id": "yt-JLQtEJ-80_c",
      "title": "Thoughts about the Future Of Bitcoins by Bitcoin Developer, Martti Malmi",
      "video_url": "https://www.youtube.com/watch?v=JLQtEJ-80_c"
+    },
+    {
+     "id": "yt-XvshS57RJTs",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "video_url": "https://www.youtube.com/watch?v=XvshS57RJTs"
     }
    ],
    "affiliations": [
@@ -17674,12 +17686,19 @@
      "title": "Johannes Schmith: Danmark i fronten af det 21. århundrede ⚡ Bitcoin Copenhagen 2026",
      "source_name": "Bitcoinkonferencen",
      "date": "2026-10-20"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=5fLpzCFJ408&hl=en",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
+    "yt-5fLpzCFJ408",
     "yt-GFmKj-prLB4",
     "yt-yezxGH2PksA"
    ],
@@ -17693,6 +17712,11 @@
      "id": "yt-GFmKj-prLB4",
      "title": "Johannes Schmith: Danmark i fronten af det 21. århundrede ⚡ Bitcoin Copenhagen 2026",
      "video_url": "https://www.youtube.com/watch?v=GFmKj-prLB4"
+    },
+    {
+     "id": "yt-5fLpzCFJ408",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "video_url": "https://www.youtube.com/watch?v=5fLpzCFJ408"
     }
    ]
   },
@@ -21085,6 +21109,647 @@
      "id": "yt-BkMxy4virRE",
      "title": "Juho Lindman: Lohkoketjuteknologian periaatteet ja käyttö",
      "video_url": "https://www.youtube.com/watch?v=BkMxy4virRE"
+    }
+   ]
+  },
+  {
+   "id": "spk-harald-rauter",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-harald-rauter.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-harald-rauter",
+   "name": "Harald Rauter",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=5fLpzCFJ408&hl=en",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-5fLpzCFJ408"
+   ],
+   "talks": [
+    {
+     "id": "yt-5fLpzCFJ408",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "video_url": "https://www.youtube.com/watch?v=5fLpzCFJ408"
+    }
+   ]
+  },
+  {
+   "id": "spk-florence-humblet",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-florence-humblet.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-florence-humblet",
+   "name": "Florence Humblet",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=5fLpzCFJ408&hl=en",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-5fLpzCFJ408"
+   ],
+   "talks": [
+    {
+     "id": "yt-5fLpzCFJ408",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "video_url": "https://www.youtube.com/watch?v=5fLpzCFJ408"
+    }
+   ]
+  },
+  {
+   "id": "spk-susie-violet-ward",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-susie-violet-ward.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-susie-violet-ward",
+   "name": "Susie Violet Ward",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=5fLpzCFJ408&hl=en",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=BuOj9xIr18E&hl=en",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-5fLpzCFJ408",
+    "yt-BuOj9xIr18E"
+   ],
+   "talks": [
+    {
+     "id": "yt-BuOj9xIr18E",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "video_url": "https://www.youtube.com/watch?v=BuOj9xIr18E"
+    },
+    {
+     "id": "yt-5fLpzCFJ408",
+     "title": "Who’s Writing Europe’s Bitcoin Policy?",
+     "video_url": "https://www.youtube.com/watch?v=5fLpzCFJ408"
+    }
+   ]
+  },
+  {
+   "id": "spk-theo-mogenet",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-theo-mogenet.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-theo-mogenet",
+   "name": "Theo Mogenet",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=BuOj9xIr18E&hl=en",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-BuOj9xIr18E"
+   ],
+   "talks": [
+    {
+     "id": "yt-BuOj9xIr18E",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "video_url": "https://www.youtube.com/watch?v=BuOj9xIr18E"
+    }
+   ]
+  },
+  {
+   "id": "spk-michal-nydrle",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-michal-nydrle.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-michal-nydrle",
+   "name": "Michal Nydrle",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=BuOj9xIr18E&hl=en",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-BuOj9xIr18E"
+   ],
+   "talks": [
+    {
+     "id": "yt-BuOj9xIr18E",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "video_url": "https://www.youtube.com/watch?v=BuOj9xIr18E"
+    }
+   ]
+  },
+  {
+   "id": "spk-thorhildur-sunna-aevarsdottir",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-thorhildur-sunna-aevarsdottir.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-thorhildur-sunna-aevarsdottir",
+   "name": "Þórhildur Sunna Ævarsdóttir",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=BuOj9xIr18E&hl=en",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-BuOj9xIr18E"
+   ],
+   "talks": [
+    {
+     "id": "yt-BuOj9xIr18E",
+     "title": "Is the EU Coming for Your Bitcoin? DAC8, MiCA and Debanking",
+     "video_url": "https://www.youtube.com/watch?v=BuOj9xIr18E"
+    }
+   ]
+  },
+  {
+   "id": "spk-giacomo",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-giacomo.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-giacomo",
+   "name": "Giacomo",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=UVBNWRzFSzA&hl=en",
+     "title": "Bitcoiners Got Soft, and It Cost 2,000 BTC",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-UVBNWRzFSzA"
+   ],
+   "talks": [
+    {
+     "id": "yt-UVBNWRzFSzA",
+     "title": "Bitcoiners Got Soft, and It Cost 2,000 BTC",
+     "video_url": "https://www.youtube.com/watch?v=UVBNWRzFSzA"
+    }
+   ]
+  },
+  {
+   "id": "spk-adam-back",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-adam-back.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-adam-back",
+   "name": "Adam Back",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=XvshS57RJTs&hl=en",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-XvshS57RJTs"
+   ],
+   "talks": [
+    {
+     "id": "yt-XvshS57RJTs",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "video_url": "https://www.youtube.com/watch?v=XvshS57RJTs"
+    }
+   ]
+  },
+  {
+   "id": "spk-peter-todd",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-peter-todd.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-peter-todd",
+   "name": "Peter Todd",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=XvshS57RJTs&hl=en",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-XvshS57RJTs"
+   ],
+   "talks": [
+    {
+     "id": "yt-XvshS57RJTs",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "video_url": "https://www.youtube.com/watch?v=XvshS57RJTs"
+    }
+   ]
+  },
+  {
+   "id": "spk-luke-dashjr",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-luke-dashjr.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-luke-dashjr",
+   "name": "Luke Dashjr",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=XvshS57RJTs&hl=en",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-XvshS57RJTs"
+   ],
+   "talks": [
+    {
+     "id": "yt-XvshS57RJTs",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "video_url": "https://www.youtube.com/watch?v=XvshS57RJTs"
+    }
+   ]
+  },
+  {
+   "id": "spk-luke-de-wolf",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-luke-de-wolf.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-luke-de-wolf",
+   "name": "Luke de Wolf",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=XvshS57RJTs&hl=en",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-XvshS57RJTs"
+   ],
+   "talks": [
+    {
+     "id": "yt-XvshS57RJTs",
+     "title": "BTCHEL Talks live: Where is Satoshi?",
+     "video_url": "https://www.youtube.com/watch?v=XvshS57RJTs"
+    }
+   ]
+  },
+  {
+   "id": "spk-martin-paasi",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-martin-paasi.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-martin-paasi",
+   "name": "Martin Paasi",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M&hl=en",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-9nfGtMQ_Z5M"
+   ],
+   "talks": [
+    {
+     "id": "yt-9nfGtMQ_Z5M",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "video_url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M"
+    }
+   ]
+  },
+  {
+   "id": "spk-tere-sammallahti",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-tere-sammallahti.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-tere-sammallahti",
+   "name": "Tere Sammallahti",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M&hl=en",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-9nfGtMQ_Z5M"
+   ],
+   "talks": [
+    {
+     "id": "yt-9nfGtMQ_Z5M",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "video_url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M"
+    }
+   ]
+  },
+  {
+   "id": "spk-samuel-kullman",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-samuel-kullman.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-samuel-kullman",
+   "name": "Samuel Kullman",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M&hl=en",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-9nfGtMQ_Z5M"
+   ],
+   "talks": [
+    {
+     "id": "yt-9nfGtMQ_Z5M",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "video_url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M"
+    }
+   ]
+  },
+  {
+   "id": "spk-jaakko-kaijala",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-jaakko-kaijala.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-jaakko-kaijala",
+   "name": "Jaakko Kaijala",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M&hl=en",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-9nfGtMQ_Z5M"
+   ],
+   "talks": [
+    {
+     "id": "yt-9nfGtMQ_Z5M",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "video_url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M"
+    }
+   ]
+  },
+  {
+   "id": "spk-thomas-brand",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-thomas-brand.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-thomas-brand",
+   "name": "Thomas Brand",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M&hl=en",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "source_name": "BTCHEL",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-9nfGtMQ_Z5M"
+   ],
+   "talks": [
+    {
+     "id": "yt-9nfGtMQ_Z5M",
+     "title": "BTCHEL Talks live: What do Politicians think of Bitcoin in 2025?",
+     "video_url": "https://www.youtube.com/watch?v=9nfGtMQ_Z5M"
+    }
+   ]
+  },
+  {
+   "id": "spk-jorgen-notland",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-jorgen-notland.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-jorgen-notland",
+   "name": "Jørgen Notland",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=PPyUhMhZbvo&hl=en",
+     "title": "Nexa and Bitcoin Unlimited: Jørgen Notland in Oslo",
+     "source_name": "Nexa",
+     "date": "2026-11-24"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-PPyUhMhZbvo"
+   ],
+   "talks": [
+    {
+     "id": "yt-PPyUhMhZbvo",
+     "title": "Nexa and Bitcoin Unlimited: Jørgen Notland in Oslo",
+     "video_url": "https://www.youtube.com/watch?v=PPyUhMhZbvo"
     }
    ]
   }
