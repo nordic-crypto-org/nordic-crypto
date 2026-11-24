@@ -265,6 +265,26 @@
    ],
    "notes": "No public recording of the two calendar events that ended on 19 November 2026. One talk was published after 17 November: Johnny Yao on bitcoin miners heating Nordic homes, on the BTCHEL channel, on 19 November. The page says it was recorded at BTCHEL 2026 on a Friday and does not state the date or the city, so it is not linked. Three talks were kept from backfill. A re-upload of the FreedomFest Stockholm 2016 lecture was not added again. A Frinans video is a recap of a conference, not a talk. A 4IRE meetup upload was not kept: the meetup page returned HTTP 404 and the video page does not place the speech in a Nordic city. First pages for NHH and for the Faroe Islands, Greenland and Åland did not name a new public talk held there. Taper level unchanged: full.",
    "taper": "full"
+  },
+  {
+   "date": "2026-11-24",
+   "candidates_checked": 268,
+   "watch_pages_opened": 18,
+   "new_talks": 6,
+   "new_from_calendar": 0,
+   "new_from_backfill": 6,
+   "areas_exhausted": [
+    "query: Slush for Cypherpunks Helsinki (0 results)",
+    "query: Bitwise Stockholm kväll (0 results)"
+   ],
+   "areas_sampled": [
+    "Calendar events ended since 20 November 2026: none. The next calendar events start on 25 November.",
+    "YouTube this-month pages for bitcoin in Oslo, Stockholm, Copenhagen, Helsinki and Reykjavík, and for kryptovaluta, BTCHEL, Kaupr, Bitcoin Suisse and Nordic Blockchain",
+    "BTCHEL videos tab, Bitcoinpolitisk Institutt Norge videos tab and the Nexa channel videos tab",
+    "Faroe Islands, Greenland and Åland first pages again"
+   ],
+   "notes": "No calendar event ended after 20 November 2026. Bitcoin Suisse Europe and the Bitwise evening ended on 19 November and were already checked. No public recording of them was found. Six talks were kept from backfill. Five are BTCHEL panels. The pages say BTCHEL 2026 or BTCHEL 2025 and do not state the day or the city, so they are not linked. One is Jørgen Notland presenting Nexa in Oslo. The page does not state the day, so it is not linked to the 28 October meetup. Premieres dated 27 November, 4 December and 11 December were not public yet and were not kept. A Bunkkeri panel at BTCHEL is about Finland's politics, not a bitcoin talk. Interviews that the page does not place at the conference were not kept. The Satoshi Nakamoto annual speech already in the archive was not added again. First pages for the Faroe Islands, Greenland and Åland did not name a public talk held there. Taper level unchanged: full.",
+   "taper": "full"
   }
  ],
  "coverage": {
@@ -339,17 +359,17 @@
    },
    "2025": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. The 23 April 2025 crypto-tax webinar was kept. The page does not state a city. On 2026-11-17 a fireside chat from the Nordic Blockchain Conference in Stockholm was kept. The page does not state the session day. The conference is in the past-events archive. On 2026-11-20 Bits & Barrels at the Folketinget on 12 September was archived as an event. The Frinans upload is a recap and was not kept."
+    "note": "Covered only where an event or institution query returned a video from this year. The 23 April 2025 crypto-tax webinar was kept. The page does not state a city. On 2026-11-17 a fireside chat from the Nordic Blockchain Conference in Stockholm was kept. The page does not state the session day. The conference is in the past-events archive. On 2026-11-20 Bits & Barrels at the Folketinget on 12 September was archived as an event. The Frinans upload is a recap and was not kept. On 2026-11-24 two BTCHEL 2025 panels were kept. The pages do not state the day or the city."
    },
    "2026": {
     "status": "sampled",
-    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city. On 2026-11-10 five Nordic Crypto Adoption Week sessions, a Bitcoin Copenhagen 2026 talk published on 9 November, and a Nordic Blockchain Conference panel were kept. On 2026-11-13 the Impact Onchain stream of 11 November was kept. The page does not state a city. On 2026-11-20 BTCHEL published an interview with Johnny Yao, recorded at BTCHEL 2026. The page says Friday and does not state the date or the city, so the talk is not linked. Dansk Blockchain Forum 2026 was archived as an event. No recording was found."
+    "note": "Covered only where an event or institution query returned a video from this year. The 7 October tokenization webinar and three Blockathon Stockholm pre-event sessions were kept. The pages do not state a city. On 2026-11-10 five Nordic Crypto Adoption Week sessions, a Bitcoin Copenhagen 2026 talk published on 9 November, and a Nordic Blockchain Conference panel were kept. On 2026-11-13 the Impact Onchain stream of 11 November was kept. The page does not state a city. On 2026-11-20 BTCHEL published an interview with Johnny Yao, recorded at BTCHEL 2026. The page says Friday and does not state the date or the city, so the talk is not linked. Dansk Blockchain Forum 2026 was archived as an event. No recording was found. On 2026-11-24 three BTCHEL 2026 panels and a Nexa talk given in Oslo were kept. The pages do not state the day."
    }
   },
   "countries": {
    "NO": {
     "status": "sampled",
-    "talks": 84
+    "talks": 85
    },
    "SE": {
     "status": "sampled",
@@ -383,7 +403,7 @@
     "note": "First pages, including a repeat on 2026-11-06, did not show a public crypto talk held in Åland."
    },
    "unset_country": {
-    "talks": 32,
+    "talks": 37,
     "note": "Nordic Blockchain Conference uploads that name the conference and not a city. They stay in the list and match no country filter."
    }
   },
@@ -2419,6 +2439,38 @@
     "status": "sampled",
     "included_from_this_query": 1,
     "note": "Upload-date filter for the week, plus the video filter. One BTCHEL upload published 19 November 2026 was kept. The Nordic Crypto news video was not a talk."
+   },
+   {
+    "country_tag": "NORDIC",
+    "query": "this month bitcoin oslo stockholm copenhagen helsinki reykjavik",
+    "results_on_first_page": 79,
+    "status": "sampled",
+    "included_from_this_query": 2,
+    "note": "Upload-date filter for the month, plus the video filter. Helsinki returned no rows. One Nexa upload and one BTCHEL upload were kept from these pages. The rest were price commentary or were already listed."
+   },
+   {
+    "country_tag": "FO",
+    "query": "bitcoin Faroe Færøyene Tórshavn",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First page on 2026-11-24. Travel footage and a shop story. No public talk held in the Faroe Islands."
+   },
+   {
+    "country_tag": "GL",
+    "query": "bitcoin Greenland Grønland Nuuk",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First page on 2026-11-24. Commentary about Greenland in the news. No public talk held in Greenland."
+   },
+   {
+    "country_tag": "AX",
+    "query": "bitcoin Åland Mariehamn",
+    "results_on_first_page": 20,
+    "status": "sampled",
+    "included_from_this_query": 0,
+    "note": "First page on 2026-11-24. No public talk held in Åland."
    }
   ],
   "channels_sampled": [
@@ -2478,7 +2530,8 @@
    "BTCHEL",
    "Unga Aktiesparare Lokalavdelningsevent",
    "Fraktio",
-   "Lukema- tiedekanava"
+   "Lukema- tiedekanava",
+   "Nexa"
   ],
   "universities": [
    {
@@ -2812,6 +2865,21 @@
     "name": "Harppi-luentosarja, Juho Lindman",
     "status": "sampled",
     "note": "Streamed 16 May 2022. The page does not state the city."
+   },
+   {
+    "name": "BTCHEL 2026 policy and security panels",
+    "status": "sampled",
+    "note": "Three panels on the BTCHEL channel, published 4, 6 and 12 November 2026. The pages say the panels were recorded at BTCHEL 2026. One leaves the day as a placeholder and two say Friday. None states the city."
+   },
+   {
+    "name": "BTCHEL 2025 panels",
+    "status": "sampled",
+    "note": "Two panels on the BTCHEL channel, published in October and November 2025. The pages name the speakers. They do not state the day or the city."
+   },
+   {
+    "name": "Nexa in Oslo, Jørgen Notland",
+    "status": "sampled",
+    "note": "Published by the Nexa channel on 17 November 2026. The page says the talk was given in Oslo and does not state the day."
    }
   ]
  }
