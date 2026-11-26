@@ -1,6 +1,646 @@
 {
  "items": [
   {
+   "id": "e554c85e3e06",
+   "url": "https://an.no/inkassokravene-har-hopet-seg-opp-na-skylder-kryptoselskapet-flere-millioner-til-en-rekke-salten-selskaper/s/80-4-68915",
+   "title": "Inkassokravene har hopet seg opp – nå skylder kryptoselskapet flere millioner til en rekke Salten-selskaper",
+   "title_en": null,
+   "source": "an",
+   "source_name": "Avisa Nordland",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "an",
+   "seen_via": [
+    "an",
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-25T23:05:00+00:00",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "627a64e0cdea",
+   "url": "https://kryptografen.no/innsikt/fra-kontanter-til-kontaktlost-betalingsinfrastrukturen-i-moderne-smabedrifter",
+   "title": "Fra kontanter til kontaktløst: betalingsinfrastrukturen i moderne småbedrifter",
+   "title_en": null,
+   "source": "kryptografen",
+   "source_name": "Kryptografen.no",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kryptografen",
+   "seen_via": [
+    "kryptografen"
+   ],
+   "published": "2026-11-25T15:58:04+00:00",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Evergreen “insight” piece on payment terminals for small businesses; “tokenisation” here refers to card payments, not a crypto news story. Same pattern as earlier rejected Kryptografen insight items.; researcher 26.11; editor 2026-11-26"
+  },
+  {
+   "id": "fa78481c6480",
+   "url": "https://kp.no/kryptomillioner-alta-topper-lista/s/80-168-30729",
+   "title": "Kryptomillioner: Alta topper lista",
+   "title_en": null,
+   "source": "kronstadposten",
+   "source_name": "Kronstadposten",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kronstadposten",
+   "seen_via": [
+    "kronstadposten"
+   ],
+   "published": "2026-11-25T12:54:07+00:00",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
+  },
+  {
+   "id": "9fdd09796d92",
+   "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-examines-use-stablecoins-including-emts-decentralised-finance",
+   "title": "The EBA examines the use of stablecoins, including EMTs, in decentralised finance",
+   "title_en": "The EBA examines the use of stablecoins, including EMTs, in decentralised finance",
+   "source": "eba",
+   "source_name": "EBA",
+   "country": "EU",
+   "language": "English",
+   "via": "eba",
+   "seen_via": [
+    "eba"
+   ],
+   "published": "2026-11-25T12:00:00+00:00",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "regulation"
+   ],
+   "matched": [
+    "\\bstablecoin\\w*",
+    "stablecoin"
+   ],
+   "paywall": false,
+   "status": "published",
+   "summary": "The European Banking Authority (EBA) on 25 November 2026 published a report on the use of e-money tokens (EMTs) and other selected stablecoins in decentralised finance (DeFi). The EBA says stablecoins, including some EMTs issued under the Markets in Crypto-Assets Regulation (MiCA), are used for liquidity, collateral and settlement in DeFi trading and lending, and that it has identified consumer-protection and regulatory-arbitrage risks, including around the prohibition on paying interest on EMTs. EU consumer participation in DeFi remains limited, the EBA says, but access is becoming easier through crypto-asset service providers, and the release states that 42% of European-based investors are expected to engage with DeFi by 2028. The EBA reiterates its recommendation that the European Commission, in its review of MiCA, assess whether additional requirements should apply to CASPs that facilitate access to DeFi, in particular lending protocols.",
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-26T04:57:21+01:00",
+   "primary_source": {
+    "name": "EBA press release, 25 November 2026, «The EBA examines the use of stablecoins, including EMTs, in decentralised finance»",
+    "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-examines-use-stablecoins-including-emts-decentralised-finance"
+   },
+   "title_i18n": {
+    "nn": "EBA undersøkjer bruken av stablecoins, inkludert e-pengemerke, i desentralisert finans",
+    "nb": "EBA undersøker bruken av stablecoins, inkludert e-pengemerker, i desentralisert finans",
+    "sv": "EBA granskar användningen av stablecoins, inklusive e-pengatoken, i decentraliserad finans",
+    "da": "EBA undersøger brugen af stablecoins, herunder e-pengetokens, i decentraliseret finans",
+    "fi": "EBA tarkastelee stablecoinien, mukaan lukien sähköisen rahan tokeneiden, käyttöä hajautetussa rahoituksessa",
+    "is": "EBA skoðar notkun stöðugra mynta, þar á meðal rafeyrismerkja, í dreifstýrðum fjármálum",
+    "zh": "欧洲银行管理局审视稳定币（含电子货币代币）在去中心化金融中的使用",
+    "hi": "EBA विकेंद्रीकृत वित्त में स्टेबलकॉइन, सहित ई-मनी टोकन, के उपयोग की जांच करता है",
+    "es": "La ABE examina el uso de las stablecoins, incluidos los tokens de dinero electrónico, en las finanzas descentralizadas",
+    "fr": "L’ABE examine l’usage des stablecoins, y compris les jetons de monnaie électronique, dans la finance décentralisée",
+    "ar": "هيئة المصارف الأوروبية تفحص استخدام العملات المستقرة، بما فيها رموز النقود الإلكترونية، في التمويل اللامركزي",
+    "bn": "EBA বিকেন্দ্রীকৃত অর্থে স্থিতিশীল মুদ্রা, যার মধ্যে ই-মানি টোকেনও রয়েছে, ব্যবহার পর্যালোচনা করে",
+    "pt": "A ABE examina o uso de stablecoins, incluindo tokens de dinheiro eletrónico, nas finanças descentralizadas",
+    "ru": "EBA рассматривает использование стейблкоинов, включая токены электронных денег, в децентрализованных финансах",
+    "ur": "EBA غیر مرکزی مالیات میں اسٹیبل کوائنز بشمول ای منی ٹوکنز کے استعمال کا جائزہ لیتا ہے",
+    "id": "EBA menelaah penggunaan stablecoin, termasuk token uang elektronik, dalam keuangan terdesentralisasi",
+    "de": "Die EBA untersucht die Nutzung von Stablecoins, einschließlich E-Geld-Token, in der dezentralen Finanzwirtschaft",
+    "ja": "EBA、分散型金融におけるステーブルコイン（電子マネートークンを含む）の利用を検証",
+    "sw": "EBA inachunguza matumizi ya stablecoins, ikijumuisha tokeni za e-money, katika fedha zilizogatuliwa",
+    "mr": "EBA विकेंद्रित वित्तव्यवस्थेत स्थिरकॉइन, त्यात ई-मनी टोकनांचा समावेश, यांच्या वापराची तपासणी करते",
+    "fa": "EBA استفاده از استیبل‌کوین‌ها، از جمله توکن‌های پول الکترونیک، را در امور مالی غیرمتمرکز بررسی می‌کند",
+    "uk": "EBA розглядає використання стейблкоїнів, зокрема токенів електронних грошей, у децентралізованих фінансах",
+    "tr": "EBA, merkeziyetsiz finansta e-para tokenları dahil stablecoin kullanımını inceliyor",
+    "se": "EBA iskkada stablecoinaid geavaheami, maiddái e-ruhtamearkkaid, desentraliseruvvon ruhtadeamis"
+   },
+   "title_i18n_source": "The EBA examines the use of stablecoins, including EMTs, in decentralised finance",
+   "summary_i18n": {
+    "nn": "Den europeiske banktilsynsstyresmakta (EBA) publiserte 25. november 2026 ein rapport om bruken av e-pengemerke (EMT) og andre utvalde stablecoins i desentralisert finans (DeFi). EBA seier at stablecoins, inkludert enkelte EMT utferda under forordninga om marknader for kryptoaktiva (MiCA), blir brukte til likviditet, trygd (collateral) og oppgjer i DeFi-handel og -utlån, og at styresmakta har identifisert risiko for forbrukarvern og regulatorisk arbitrasje, mellom anna knytt til forbodet mot å betale renter på EMT. Deltakinga frå forbrukarar i EU i DeFi er framleis avgrensa, seier EBA, men tilgangen blir enklare gjennom tilbydarar av kryptoaktivatenester, og meldinga opplyser at 42 % av investorane baserte i Europa er venta å kome i kontakt med DeFi innan 2028. EBA gjentek tilrådinga si om at Europakommisjonen, i gjennomgangen av MiCA, vurderer om det bør gjelde tilleggskrav for kryptoaktivatenesteleverandørar (CASP) som tilrettlegg for tilgang til DeFi, særleg utlånsprotokollar.",
+    "nb": "Den europeiske banktilsynsmyndigheten (EBA) publiserte 25. november 2026 en rapport om bruken av e-pengemerker (EMT) og andre utvalgte stablecoins i desentralisert finans (DeFi). EBA sier at stablecoins, inkludert enkelte EMT utstedt under forordningen om markeder for kryptoaktiva (MiCA), brukes til likviditet, sikkerhet (collateral) og oppgjør i DeFi-handel og -utlån, og at myndigheten har identifisert risiko for forbrukervern og regulatorisk arbitrasje, blant annet knyttet til forbudet mot å betale renter på EMT. Deltakelsen fra forbrukere i EU i DeFi er fortsatt begrenset, sier EBA, men tilgangen blir enklere gjennom tilbydere av kryptoaktivatjenester, og meldingen opplyser at 42 % av investorene basert i Europa forventes å komme i kontakt med DeFi innen 2028. EBA gjentar anbefalingen om at Europakommisjonen, i gjennomgangen av MiCA, vurderer om det bør gjelde tilleggskrav for kryptoaktivatjenesteleverandører (CASP) som tilrettelegger for tilgang til DeFi, særlig utlånsprotokoller.",
+    "sv": "Europeiska bankmyndigheten (EBA) offentliggjorde den 25 november 2026 en rapport om användningen av e-pengatoken (EMT) och andra utvalda stablecoins i decentraliserad finans (DeFi). EBA uppger att stablecoins, inklusive vissa EMT som emitterats enligt förordningen om marknader för kryptotillgångar (MiCA), används för likviditet, säkerhet (collateral) och avveckling i DeFi-handel och -utlåning, och att myndigheten har identifierat risker för konsumentskydd och regulatoriskt arbitrage, bland annat kring förbudet mot ränta på EMT. EU-konsumenternas deltagande i DeFi är fortfarande begränsat, enligt EBA, men tillgången blir enklare via tillhandahållare av kryptotillgångstjänster, och pressmeddelandet anger att 42 procent av de Europa-baserade investerarna väntas komma i kontakt med DeFi senast 2028. EBA upprepar sin rekommendation att Europeiska kommissionen, i översynen av MiCA, bedömer om ytterligare krav bör gälla för CASP:er som underlättar tillgång till DeFi, särskilt utlåningsprotokoll.",
+    "da": "Den europæiske banktilsynsmyndighed (EBA) offentliggjorde den 25. november 2026 en rapport om brugen af e-pengetokens (EMT) og andre udvalgte stablecoins i decentraliseret finans (DeFi). EBA oplyser, at stablecoins, herunder visse EMT udstedt under forordningen om markeder for kryptoaktiver (MiCA), bruges til likviditet, sikkerhed (collateral) og afvikling i DeFi-handel og -udlån, og at myndigheden har identificeret risici for forbrugerbeskyttelse og regulatorisk arbitrage, blandt andet i forbindelse med forbuddet mod at betale renter på EMT. EU-forbrugernes deltagelse i DeFi er stadig begrænset, siger EBA, men adgangen bliver lettere via udbydere af kryptoaktivtjenester, og meddelelsen angiver, at 42 % af de Europa-baserede investorer forventes at komme i kontakt med DeFi inden 2028. EBA gentager sin anbefaling om, at Europa-Kommissionen i gennemgangen af MiCA vurderer, om der bør gælde yderligere krav for CASP’er, der letter adgangen til DeFi, navnlig udlånsprotokoller.",
+    "fi": "Euroopan pankkiviranomainen (EBA) julkaisi 25. marraskuuta 2026 raportin sähköisen rahan tokeneiden (EMT) ja muiden valittujen stablecoinien käytöstä hajautetussa rahoituksessa (DeFi). EBA:n mukaan stablecoineja, mukaan lukien joitakin kryptoomaisuusmarkkina-asetuksen (MiCA) nojalla liikkeeseen laskettuja EMT-tokeneita, käytetään likviditeettiin, vakuuksiin ja selvitykseen DeFi-kaupassa ja -lainauksessa, ja viranomainen on tunnistanut kuluttajansuojaan ja sääntelyarbitraasiin liittyviä riskejä, muun muassa EMT:ille maksettavan koron kiellon ympärillä. EU-kuluttajien osallistuminen Defiin on EBA:n mukaan edelleen rajallista, mutta pääsy helpottuu krypto-omaisuuspalvelujen tarjoajien kautta, ja tiedotteessa todetaan, että 42 prosentin Eurooppaan sijoittautuneista sijoittajista odotetaan tulevan tekemisiin DeFin kanssa vuoteen 2028 mennessä. EBA toistaa suosituksensa, että Euroopan komissio arvioi MiCA-asetuksen uudelleentarkastelussa, pitäisikö Defiin pääsyä helpottaviin CASP-toimijoihin, erityisesti lainausprotokolliin, soveltaa lisävaatimuksia.",
+    "is": "Evrópska bankaeftirlitið (EBA) birti 25. nóvember 2026 skýrslu um notkun rafeyrismerkja (EMT) og annarra valinna stöðugra mynta í dreifstýrðum fjármálum (DeFi). EBA segir að stöðugar myntir, þar á meðal sum EMT sem gefin eru út samkvæmt reglugerð um markaði fyrir dulritunareignir (MiCA), séu notaðar til lausafjár, trygginga og uppgjörs í DeFi-viðskiptum og -útlánum, og að stofnunin hafi greint áhættu fyrir neytendavernd og reglubundna högnun, meðal annars vegna banns við vaxtagreiðslum af EMT. Þátttaka neytenda í ESB í DeFi er enn takmörkuð, að sögn EBA, en aðgengi verður auðveldara í gegnum veitendur dulritunareignaþjónustu, og tilkynningin segir að 42% fjárfesta með aðsetur í Evrópu séu taldir munu koma nálægt DeFi fyrir 2028. EBA endurtekur tillögu sína um að Framkvæmdastjórn Evrópusambandsins, við endurskoðun MiCA, meti hvort viðbótarkröfur eigi að gilda um CASP-aðila sem auðvelda aðgang að DeFi, einkum útlánasamskiptareglur.",
+    "zh": "欧洲银行管理局（EBA）于2026年11月25日发布报告，分析电子货币代币（EMT）及其他选定稳定币在去中心化金融（DeFi）中的使用。 EBA表示，稳定币——包括部分根据加密资产市场法规（MiCA）发行的EMT——被用于DeFi交易和借贷中的流动性、抵押和结算，并称其已识别出消费者保护和监管套利风险，其中包括围绕禁止向EMT支付利息的问题。 EBA称，欧盟消费者对DeFi的参与仍然有限，但通过加密资产服务提供商，准入正变得更容易；新闻稿称，预计到2028年将有42%的欧洲投资者接触DeFi。 EBA再次建议欧盟委员会在审查MiCA时评估：对于为进入DeFi提供便利的加密资产服务提供商（CASP），尤其是借贷协议，是否应适用额外要求。",
+    "hi": "यूरोपीय बैंकिंग प्राधिकरण (EBA) ने 25 नवंबर 2026 को विकेंद्रीकृत वित्त (DeFi) में ई-मनी टोकन (EMT) और अन्य चयनित स्टेबलकॉइन के उपयोग पर एक रिपोर्ट प्रकाशित की। EBA कहता है कि स्टेबलकॉइन, जिनमें क्रिप्टो-एसेट बाज़ार विनियम (MiCA) के अंतर्गत जारी कुछ EMT शामिल हैं, DeFi व्यापार और ऋण में तरलता, संपार्श्विक और निपटान के लिए उपयोग होते हैं, और उसने उपभोक्ता संरक्षण तथा नियामक आर्बिट्राज के जोखिम पहचाने हैं, जिनमें EMT पर ब्याज देने पर प्रतिबंध से जुड़े जोखिम भी हैं। EBA के अनुसार EU में उपभोक्ताओं की DeFi भागीदारी अभी सीमित है, पर क्रिप्टो-एसेट सेवा प्रदाताओं के माध्यम से पहुंच आसान होती जा रही है, और विज्ञप्ति कहती है कि 2028 तक यूरोप-आधारित 42% निवेशकों के DeFi से जुड़ने की अपेक्षा है। EBA अपनी सिफारिश दोहराता है कि यूरोपीय आयोग, MiCA की समीक्षा में, यह आकलन करे कि जिन CASP संस्थाओं से DeFi तक पहुंच आसान होती है—विशेषकर ऋण प्रोटोकॉल—उन पर अतिरिक्त अपेक्षाएँ लागू होनी चाहिए या नहीं।",
+    "es": "La Autoridad Bancaria Europea (ABE) publicó el 25 de noviembre de 2026 un informe sobre el uso de los tokens de dinero electrónico (EMT) y otras stablecoins seleccionadas en las finanzas descentralizadas (DeFi). La ABE afirma que las stablecoins, incluidos algunos EMT emitidos en virtud del Reglamento relativo a los mercados de criptoactivos (MiCA), se utilizan como liquidez, garantía y liquidación en la negociación y los préstamos DeFi, y que ha identificado riesgos de protección de los consumidores y de arbitraje regulatorio, también en torno a la prohibición de abonar intereses sobre los EMT. La participación de los consumidores de la UE en DeFi sigue siendo limitada, según la ABE, pero el acceso se vuelve más fácil a través de los proveedores de servicios de criptoactivos, y el comunicado indica que se espera que el 42 % de los inversores con sede en Europa entre en contacto con DeFi de aquí a 2028. La ABE reitera su recomendación de que la Comisión Europea, en la revisión de MiCA, evalúe si deben aplicarse requisitos adicionales a los CASP que facilitan el acceso a DeFi, en particular a los protocolos de préstamo.",
+    "fr": "L’Autorité bancaire européenne (ABE) a publié le 25 novembre 2026 un rapport sur l’usage des jetons de monnaie électronique (EMT) et d’autres stablecoins sélectionnés dans la finance décentralisée (DeFi). L’ABE indique que les stablecoins, y compris certains EMT émis au titre du règlement sur les marchés de crypto-actifs (MiCA), servent de liquidité, de garantie et de règlement dans les activités de négociation et de prêt DeFi, et qu’elle a identifié des risques pour la protection des consommateurs et d’arbitrage réglementaire, notamment autour de l’interdiction de verser des intérêts sur les EMT. La participation des consommateurs de l’UE à la DeFi reste limitée, selon l’ABE, mais l’accès devient plus facile via les prestataires de services sur crypto-actifs, et le communiqué indique que 42 % des investisseurs établis en Europe devraient entrer en contact avec la DeFi d’ici 2028. L’ABE réitère sa recommandation selon laquelle la Commission européenne, dans le cadre du réexamen de MiCA, devrait évaluer si des exigences supplémentaires doivent s’appliquer aux CASP qui facilitent l’accès à la DeFi, en particulier aux protocoles de prêt.",
+    "ar": "نشرت هيئة المصارف الأوروبية (EBA) في 25 نوفمبر 2026 تقريراً عن استخدام رموز النقود الإلكترونية (EMT) وغيرها من العملات المستقرة المختارة في التمويل اللامركزي (DeFi). وتقول الهيئة إن العملات المستقرة، بما فيها بعض EMT الصادرة بموجب تنظيم أسواق الأصول المشفرة (MiCA)، تُستخدم للسيولة والضمان والتسوية في تداول وإقراض DeFi، وإنها حددت مخاطر على حماية المستهلك وعلى التحكيم التنظيمي، بما في ذلك ما يتصل بحظر دفع فوائد على EMT. وتقول الهيئة إن مشاركة مستهلكي الاتحاد الأوروبي في DeFi ما تزال محدودة، لكن الوصول يزداد سهولة عبر مقدمي خدمات الأصول المشفرة، وتذكر النشرة أنه يُتوقع أن يتعامل 42% من المستثمرين المقيمين في أوروبا مع DeFi بحلول عام 2028. وتكرر الهيئة توصيتها بأن تقيّم المفوضية الأوروبية، في مراجعتها لـ MiCA، ما إذا كان ينبغي أن تنطبق متطلبات إضافية على مقدمي خدمات الأصول المشفرة (CASP) الذين يسهّلون الوصول إلى DeFi، ولا سيما بروتوكولات الإقراض.",
+    "bn": "ইউরোপীয় ব্যাংকিং কর্তৃপক্ষ (EBA) ২৫ নভেম্বর ২০২৬-এ বিকেন্দ্রীকৃত অর্থ (DeFi)-এ ই-মানি টোকেন (EMT) ও অন্যান্য নির্বাচিত স্থিতিশীল মুদ্রার ব্যবহার নিয়ে একটি প্রতিবেদন প্রকাশ করেছে। EBA বলে, স্থিতিশীল মুদ্রা—যার মধ্যে ক্রিপ্টো-সম্পদ বাজার বিধি (MiCA)-এর অধীনে ইস্যুকৃত কিছু EMT রয়েছে—DeFi লেনদেন ও ঋণে তরলতা, জামানত ও নিষ্পত্তির কাজে ব্যবহৃত হয়, এবং কর্তৃপক্ষ ভোক্তা সুরক্ষা ও নিয়ন্ত্রক আর্বিট্রাজের ঝুঁকি চিহ্নিত করেছে, যার মধ্যে EMT-এ সুদ প্রদানের নিষেধাজ্ঞা-সংশ্লিষ্ট ঝুঁকিও আছে। EBA-এর মতে ইউরোপীয় ইউনিয়নে ভোক্তাদের DeFi অংশগ্রহণ এখনও সীমিত, তবে ক্রিপ্টো-সম্পদ সেবা প্রদানকারীদের মাধ্যমে প্রবেশ সহজ হচ্ছে, এবং বিজ্ঞপ্তিতে বলা হয়েছে ২০২৮ সালের মধ্যে ইউরোপ-ভিত্তিক ৪২ শতাংশ বিনিয়োগকারী DeFi-এর সংস্পর্শে আসবে বলে আশা করা হয়। EBA তার সুপারিশ পুনর্ব্যক্ত করে যে, ইউরোপীয় কমিশন MiCA পর্যালোচনায় মূল্যায়ন করুক, DeFi-তে প্রবেশ সহজ করে এমন CASP—বিশেষত ঋণ প্রোটোকল—এর ওপর অতিরিক্ত শর্ত প্রয়োগ করা উচিত কি না।",
+    "pt": "A Autoridade Bancária Europeia (ABE) publicou em 25 de novembro de 2026 um relatório sobre o uso de tokens de dinheiro eletrónico (EMT) e outras stablecoins selecionadas nas finanças descentralizadas (DeFi). A ABE afirma que as stablecoins, incluindo alguns EMT emitidos ao abrigo do Regulamento relativo aos mercados de criptoativos (MiCA), são usadas para liquidez, garantia e liquidação na negociação e no crédito DeFi, e que identificou riscos de proteção dos consumidores e de arbitragem regulamentar, inclusive em torno da proibição de pagar juros sobre EMT. A participação dos consumidores da UE na DeFi continua limitada, segundo a ABE, mas o acesso está a tornar-se mais fácil através dos prestadores de serviços de criptoativos, e o comunicado indica que se espera que 42% dos investidores baseados na Europa entrem em contacto com a DeFi até 2028. A ABE reitera a recomendação de que a Comissão Europeia, na revisão do MiCA, avalie se devem aplicar-se requisitos adicionais aos CASP que facilitam o acesso à DeFi, em particular aos protocolos de empréstimo.",
+    "ru": "Европейское банковское управление (EBA) 25 ноября 2026 года опубликовало доклад об использовании токенов электронных денег (EMT) и других отобранных стейблкоинов в децентрализованных финансах (DeFi). По словам EBA, стейблкоины, включая некоторые EMT, выпущенные в соответствии с регламентом о рынках криптоактивов (MiCA), используются для ликвидности, обеспечения и расчётов в торговле и кредитовании DeFi, и управление выявило риски для защиты потребителей и регуляторного арбитража, в том числе в связи с запретом выплачивать проценты по EMT. Участие потребителей ЕС в DeFi по-прежнему ограничено, указывает EBA, но доступ упрощается через поставщиков услуг, связанных с криптоактивами; в сообщении говорится, что к 2028 году, как ожидается, 42% инвесторов, базирующихся в Европе, соприкоснутся с DeFi. EBA вновь рекомендует Европейской комиссии при пересмотре MiCA оценить, следует ли предъявлять дополнительные требования к CASP, которые облегчают доступ к DeFi, в особенности к кредитным протоколам.",
+    "ur": "یورپی بینکنگ اتھارٹی (EBA) نے 25 نومبر 2026 کو غیر مرکزی مالیات (DeFi) میں ای منی ٹوکنز (EMT) اور دیگر منتخب اسٹیبل کوائنز کے استعمال پر ایک رپورٹ شائع کی۔ EBA کہتی ہے کہ اسٹیبل کوائنز، جن میں کریپٹو اثاثہ منڈیوں کے ضابطے (MiCA) کے تحت جاری کردہ کچھ EMT شامل ہیں، DeFi تجارت اور قرض میں لیکویڈیٹی، ضمانت اور تصفیے کے لیے استعمال ہوتے ہیں، اور اس نے صارفین کے تحفظ اور ریگولیٹری آربٹریج کے خطرات کی نشاندہی کی ہے، بشمول EMT پر سود ادا کرنے کی ممانعت سے متعلق۔ EBA کے مطابق یورپی اتحاد میں صارفین کی DeFi میں شرکت اب بھی محدود ہے، مگر کریپٹو اثاثہ سروس فراہم کنندگان کے ذریعے رسائی آسان ہوتی جا رہی ہے، اور اعلامیہ کہتا ہے کہ 2028 تک یورپ میں مقیم 42 فیصد سرمایہ کاروں کے DeFi سے جڑنے کی توقع ہے۔ EBA اپنی سفارش دہراتی ہے کہ یورپی کمیشن، MiCA کے جائزے میں، یہ جانچے کہ آیا ان CASP اداروں پر اضافی تقاضے عائد ہونے چاہییں جو DeFi تک رسائی آسان بناتے ہیں، خاص طور پر قرض کے پروٹوکولز۔",
+    "id": "Otoritas Perbankan Eropa (EBA) pada 25 November 2026 menerbitkan laporan tentang penggunaan token uang elektronik (EMT) dan stablecoin terpilih lainnya dalam keuangan terdesentralisasi (DeFi). EBA menyatakan bahwa stablecoin, termasuk sebagian EMT yang diterbitkan berdasarkan Peraturan Pasar Aset Kripto (MiCA), digunakan untuk likuiditas, jaminan, dan penyelesaian dalam perdagangan dan pinjaman DeFi, dan bahwa otoritas itu telah mengidentifikasi risiko perlindungan konsumen serta arbitrase regulasi, termasuk seputar larangan membayar bunga atas EMT. Partisipasi konsumen UE dalam DeFi masih terbatas, kata EBA, tetapi akses menjadi lebih mudah melalui penyedia jasa aset kripto, dan rilis itu menyatakan bahwa 42% investor yang berbasis di Eropa diperkirakan akan bersentuhan dengan DeFi pada 2028. EBA mengulangi rekomendasinya agar Komisi Eropa, dalam tinjauan MiCA, menilai apakah persyaratan tambahan harus berlaku bagi CASP yang memfasilitasi akses ke DeFi, khususnya protokol pinjaman.",
+    "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat am 25. November 2026 einen Bericht über die Nutzung von E-Geld-Token (EMT) und anderen ausgewählten Stablecoins in der dezentralen Finanzwirtschaft (DeFi) veröffentlicht. Die EBA teilt mit, dass Stablecoins, einschließlich bestimmter unter der Verordnung über Märkte für Kryptowerte (MiCA) begebener EMT, in DeFi-Handel und -Kreditvergabe für Liquidität, Sicherheiten und Abwicklung verwendet werden, und dass sie Risiken für den Verbraucherschutz und regulatorische Arbitrage festgestellt hat, unter anderem im Zusammenhang mit dem Verbot, Zinsen auf EMT zu zahlen. Die Beteiligung von Verbrauchern in der EU an DeFi bleibt der EBA zufolge begrenzt, der Zugang werde jedoch über Anbieter von Kryptowerte-Dienstleistungen leichter; die Mitteilung nennt, dass 42 % der in Europa ansässigen Anleger bis 2028 mit DeFi in Berührung kommen dürften. Die EBA bekräftigt ihre Empfehlung, dass die Europäische Kommission bei der Überprüfung der MiCA prüft, ob für CASP, die den Zugang zu DeFi erleichtern, insbesondere für Kreditprotokolle, zusätzliche Anforderungen gelten sollten.",
+    "ja": "欧州銀行監督機構（EBA）は2026年11月25日、分散型金融（DeFi）における電子マネートークン（EMT）およびその他の選定ステーブルコインの利用に関する報告書を公表した。 EBAによれば、暗号資産市場規則（MiCA）に基づき発行された一部のEMTを含むステーブルコインは、DeFiの取引や貸付けで流動性、担保、決済に使われており、消費者保護と規制裁定取引のリスクが確認されたという。これにはEMTへの利息支払い禁止に関するものも含まれる。 EBAは、EUの消費者によるDeFiへの参加はなお限定的だとする一方、暗号資産サービス提供者を通じてアクセスは容易になっており、発表では2028年までに欧州を拠点とする投資家の42%がDeFiに関与すると見込まれると述べている。 EBAは、欧州委員会がMiCAの見直しにおいて、DeFiへのアクセスを容易にするCASP、とりわけ貸付プロトコルに追加の要件を課すべきかを検討するよう、従来の勧告を改めて繰り返している。",
+    "sw": "Mamlaka ya Benki ya Ulaya (EBA) tarehe 25 Novemba 2026 ilichapisha ripoti kuhusu matumizi ya tokeni za e-money (EMT) na stablecoins nyingine teule katika fedha zilizogatuliwa (DeFi). EBA inasema stablecoins, ikiwa ni pamoja na EMT fulani zilizotolewa chini ya Kanuni ya Masoko ya Mali-Crypto (MiCA), hutumika kwa ukwasi, dhamana na malipo katika biashara na ukopeshaji wa DeFi, na kwamba imebaini hatari kwa ulinzi wa watumiaji na usuluhishi wa udhibiti, pamoja na zile zinazohusiana na marufuku ya kulipa riba kwenye EMT. Ushiriki wa watumiaji wa EU katika DeFi bado ni mdogo, EBA inasema, lakini ufikiaji unakuwa rahisi kupitia watoa huduma za mali-crypto, na taarifa hiyo inasema asilimia 42 ya wawekezaji wenye makao yao Ulaya wanatarajiwa kugusana na DeFi ifikapo 2028. EBA inarudia pendekezo lake kwamba Tume ya Ulaya, katika mapitio ya MiCA, itathmini kama mahitaji ya ziada yanapaswa kutumika kwa CASP zinazowezesha ufikiaji wa DeFi, hasa itifaki za ukopeshaji.",
+    "mr": "युरोपियन बँकिंग प्राधिकरण (EBA) ने २५ नोव्हेंबर २०२६ रोजी विकेंद्रित वित्तव्यवस्था (DeFi) मधील ई-मनी टोकने (EMT) आणि इतर निवडक स्थिरकॉइन्सच्या वापरावर अहवाल प्रकाशित केला. EBA म्हणते की स्थिरकॉइन्स, ज्यात क्रिप्टो-संपत्ती बाजार नियमन (MiCA) अंतर्गत जारी केलेली काही EMT आहेत, DeFi व्यापार व कर्जामध्ये तरलता, तारण आणि निपटारा यासाठी वापरली जातात, आणि प्राधिकरणाने ग्राहक संरक्षण तसेच नियामक आर्बिट्राजचे धोके ओळखले आहेत, ज्यात EMT वर व्याज देण्यावरील बंदीशी संबंधित धोकेही आहेत. EBA नुसार EU मधील ग्राहकांचा DeFi सहभाग अद्याप मर्यादित आहे, पण क्रिप्टो-संपत्ती सेवा पुरवठादारांमुळे प्रवेश सोपा होत आहे, आणि प्रसिद्धिपत्रिका सांगते की २०२८ पर्यंत युरोप-आधारित ४२ टक्के गुंतवणूकदारांचा DeFiशी संपर्क येण्याची अपेक्षा आहे. EBA आपली शिफारस पुनरुच्चारते की, युरोपियन आयोगाने MiCAच्या पुनर्विलोकनात हे तपासावे की DeFiचा प्रवेश सुकर करणाऱ्या CASP—विशेषतः कर्ज प्रोटोकॉल—यांना अतिरिक्त अटी लागू कराव्यात का.",
+    "fa": "مرجع بانکداری اروپا (EBA) در ۲۵ نوامبر ۲۰۲۶ گزارشی درباره استفاده از توکن‌های پول الکترونیک (EMT) و دیگر استیبل‌کوین‌های منتخب در امور مالی غیرمتمرکز (DeFi) منتشر کرد. EBA می‌گوید استیبل‌کوین‌ها، از جمله برخی EMTهای منتشرشده تحت مقررات بازارهای دارایی رمزنگاری‌شده (MiCA)، در معامله و وام‌دهی DeFi برای نقدینگی، وثیقه و تسویه به کار می‌روند و این نهاد ریسک‌هایی برای حمایت از مصرف‌کننده و آربیتراژ نظارتی شناسایی کرده است، از جمله در ارتباط با ممنوعیت پرداخت بهره به EMT. به گفته EBA، مشارکت مصرف‌کنندگان اتحادیه اروپا در DeFi همچنان محدود است، اما دسترسی از طریق ارائه‌دهندگان خدمات دارایی رمزنگاری‌شده آسان‌تر می‌شود و در اطلاعیه آمده است که انتظار می‌رود تا سال ۲۰۲۸، ۴۲ درصد از سرمایه‌گذاران مستقر در اروپا با DeFi درگیر شوند. EBA بار دیگر توصیه می‌کند که کمیسیون اروپا در بازنگری MiCA ارزیابی کند آیا باید الزامات بیشتری برای CASPهایی اعمال شود که دسترسی به DeFi را تسهیل می‌کنند، به‌ویژه پروتکل‌های وام‌دهی.",
+    "uk": "Європейський банківський орган (EBA) 25 листопада 2026 року опублікувала звіт про використання токенів електронних грошей (EMT) та інших відібраних стейблкоїнів у децентралізованих фінансах (DeFi). За словами EBA, стейблкоїни, зокрема деякі EMT, випущені згідно з регламентом про ринки криптоактивів (MiCA), використовуються для ліквідності, забезпечення та розрахунків у торгівлі та кредитуванні DeFi, і відомство виявило ризики для захисту споживачів і регуляторного арбітражу, зокрема у зв’язку із забороною виплачувати відсотки за EMT. Участь споживачів ЄС у DeFi, як зазначає EBA, і надалі обмежена, але доступ стає простішим через надавачів послуг, пов’язаних із криптоактивами; у повідомленні сказано, що до 2028 року, як очікується, 42% інвесторів, які базуються в Європі, матимуть справу з DeFi. EBA знову рекомендує Європейській комісії під час перегляду MiCA оцінити, чи слід застосовувати додаткові вимоги до CASP, які полегшують доступ до DeFi, зокрема до кредитних протоколів.",
+    "tr": "Avrupa Bankacılık Otoritesi (EBA), 25 Kasım 2026’da merkeziyetsiz finans (DeFi) içinde e-para tokenları (EMT) ve diğer seçilmiş stablecoinlerin kullanımına ilişkin bir rapor yayımladı. EBA, Kripto Varlık Piyasaları Tüzüğü (MiCA) kapsamında ihraç edilen bazı EMT’ler dahil stablecoinlerin DeFi işlem ve kredilerinde likidite, teminat ve takas için kullanıldığını ve EMT’lere faiz ödenmesi yasağıyla ilgili olanlar da dahil olmak üzere tüketici koruması ile düzenleyici arbitraj riskleri tespit ettiğini belirtiyor. EBA’ya göre AB tüketicilerinin DeFi’ye katılımı hâlâ sınırlıdır, ancak kripto varlık hizmet sağlayıcıları aracılığıyla erişim kolaylaşmaktadır; açıklamada, Avrupa merkezli yatırımcıların %42’sinin 2028’e kadar DeFi ile temas etmesinin beklendiği belirtiliyor. EBA, Avrupa Komisyonu’nun MiCA incelemesinde, DeFi’ye erişimi kolaylaştıran CASP’lere, özellikle kredi protokollerine, ek gerekliliklerin uygulanıp uygulanmayacağını değerlendirmesi yönündeki tavsiyesini yineliyor.",
+    "se": "Eurohpá báŋkkubearráigeahččanásus (EBA) almmuhii skábmamánu 25. beaivvi 2026 raportta e-ruhtamearkkaid (EMT) ja eará válljejuvvon stablecoinaid geavaheami birra desentraliseruvvon ruhtadeamis (DeFi). EBA dadjá ahte stablecoinnat, maiddái muhtun EMT mat leat almmuhuvvon kryptoopmodusaid márkanid njuolggadusa (MiCA) vuođul, geavahuvvojit likviditehtan, dáhkádussan ja čielggadeamin DeFi gávppi ja luoikkahandoaimmain, ja ahte eiseváldi lea gávdnan riskkaid gálgaid suodjaleami ja njuolggadusaid arbitrašuvnna dáfus, maiddái EMT-korkaid máksima gildosa birra. EU gálgaid oassálastin DeFi:s lea ain ráddjejuvvon, dadjá EBA, muhto beassan šaddá álkibun kryptoopmodusbálvalusaid fálliid bokte, ja dieđáhus dadjá ahte 42 % Eurohpás vuođđuduvvon inviestejain vurdojuvvo deaivvadit DeFiin jagi 2028 rádjái. EBA geardduha evttuštusa ahte Eurohpá komišuvdna, MiCA ođđasisguorahallamis, árvvoštalá galgágo lasi gáibádusat gustot CASP-organisašuvnnaide mat álkidahttet DeFi beassama, erenoamážit luoikkahanprotokollaide."
+   },
+   "summary_i18n_review": "pending"
+  },
+  {
+   "id": "f1a0ad1c88f4",
+   "url": "https://kaupr.io/nyheter/bitcoin-suisse-satser-i-norden-mens-rivaler-er-blitt-mindre-synlige",
+   "title": "Bitcoin Suisse satser i Norden mens rivaler er blitt mindre synlige",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "SE",
+   "language": "Norwegian",
+   "via": "kaupr-se",
+   "seen_via": [
+    "kaupr-se"
+   ],
+   "published": "2026-11-25",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "merged",
+   "summary": null,
+   "published_date_only": true,
+   "merged_into": "d1325f9bb260"
+  },
+  {
+   "id": "78bd98349aa4",
+   "url": "https://kaupr.io/nyheter/institusjonell-bitcoin-etf-beholdning-satte-rekord-for-novemberfallet",
+   "title": "Institusjonell bitcoin-ETF-beholdning satte rekord før novemberfallet",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-25",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "published_date_only": true,
+   "reject_reason": "Price talk (institutional bitcoin ETF holdings / 13F data, Galaxy Research rewrite). No independent Nordic substance. Standing exclusion.; researcher 26.11; editor 2026-11-26"
+  },
+  {
+   "id": "02b72c69c782",
+   "url": "https://kaupr.io/nyheter/cftc-lar-bitcoin-telle-som-reservekapital",
+   "title": "CFTC lar bitcoin telle som reservekapital — med stor rabatt",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "kaupr",
+   "seen_via": [
+    "kaupr"
+   ],
+   "published": "2026-11-25",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bstablecoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
+   "id": "7d9d442fa75c",
+   "url": "https://itavisen.no/2026/11/24/gta-6-xbox-lekkasje-cyberleek-pc",
+   "title": "Rockstar har gått til aksjon mot GTA 6 PC",
+   "title_en": null,
+   "source": "itavisen",
+   "source_name": "ITavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "itavisen",
+   "seen_via": [
+    "itavisen",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-24T16:04:04+00:00",
+   "fetched": "2026-11-25T02:50:01+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "GTA 6 / CyberLeek standing exclusion. Same story family as already rejected d0be1a6a8261 and e31268d3c8ac (same slug, later date). Open ITavisen update was read; the paywall was not bypassed. Do not identify the private person the source describes as a minor.; researcher 25.11; editor 2026-11-25"
+  },
+  {
+   "id": "9947af3853f9",
+   "url": "https://kryptovalutaguiden.se/2026/11/strategy-aktien-nu-vard-mindre-an-bitcoin-innehavet-bolaget-har",
+   "title": "Strategy-aktien nu värd mindre än Bitcoin-innehavet bolaget har",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-24T12:01:20+00:00",
+   "fetched": "2026-11-25T02:50:01+00:00",
+   "topics": [
+    "bitcoin",
+    "companies"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price commentary on a US-listed stock (Strategy share price versus its bitcoin holdings). No independent Nordic substance. Do not merge into the published Nordic H100 story (different company). Official Strategy filing not read.; researcher 25.11; editor 2026-11-25"
+  },
+  {
+   "id": "3a0d07fda276",
+   "url": "https://kryptovalutaguiden.se/2026/11/bitcoin-har-fallit-i-sju-veckor-i-rad-nast-langsta-nedgangen",
+   "title": "Bitcoin har fallit i sju veckor i rad – näst längsta nedgången",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-24T11:32:00+00:00",
+   "fetched": "2026-11-25T02:50:01+00:00",
+   "topics": [
+    "bitcoin",
+    "crypto"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*",
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Price commentary (bitcoin down seven weeks). Standing exclusion. KVG rewrite of international market talk, no Nordic news angle of substance.; researcher 25.11; editor 2026-11-25"
+  },
+  {
+   "id": "365bf758e893",
+   "url": "https://weekendavisen.dk/kultur/kryptovaluta-og-parforholdsproblemer",
+   "title": "Kryptovaluta og parforholds­problemer",
+   "title_en": null,
+   "source": "weekendavisen",
+   "source_name": "Weekendavisen",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-24T04:01:58+00:00",
+   "fetched": "2026-11-26T02:49:13+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": true,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Culture review (the TV drama The Altruists), not a news story. Open Weekendavisen intro was read; the paywall was not bypassed.; researcher 26.11; editor 2026-11-26"
+  },
+  {
+   "id": "c97dfc9a11da",
+   "url": "https://dagensps.se/bors-finans/fintech/kryptovalutor/94-procent-borta-for-trump-pa-tredje-kryptogalan",
+   "title": "94 procent borta för Trump på tredje kryptogalan",
+   "title_en": null,
+   "source": "dagensps.se",
+   "source_name": "Dagens PS",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se"
+   ],
+   "published": "2026-11-23T15:31:33+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bkryptovaluta\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "International Trump memecoin / political dinner coverage, no Nordic news angle of substance. Price talk / political memecoin follow-up, not a Nordic main story.; researcher 24.11; editor 2026-11-24"
+  },
+  {
+   "id": "e31268d3c8ac",
+   "url": "https://itavisen.no/2026/11/23/gta-6-xbox-lekkasje-cyberleek-pc",
+   "title": "Cyberleek skal ha publisert .exe-filen for GTA 6",
+   "title_en": null,
+   "source": "itavisen",
+   "source_name": "ITavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "itavisen",
+   "seen_via": [
+    "itavisen",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-23T15:26:21+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "GTA 6 / CyberLeek standing exclusion. Follow-up of already rejected d0be1a6a8261.; researcher 24.11; editor 2026-11-24"
+  },
+  {
+   "id": "b4f24a952e39",
+   "url": "https://pitajalainen.fi/paikalliset/9979565",
+   "title": "Koillissavolainen mies menetti lähes 800 000 euroa – Kryptoilla rikastumisesta haaveilevia päätyy rikoksen uhreiksi joka viikko",
+   "title_en": null,
+   "source": "pitajalainen",
+   "source_name": "Pitäjäläinen",
+   "country": "FI",
+   "language": "Finnish",
+   "via": "pitajalainen",
+   "seen_via": [
+    "pitajalainen"
+   ],
+   "published": "2026-11-23T14:30:00+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*",
+    "\\bvirtuaalivaluut\\w*"
+   ],
+   "paywall": false,
+   "status": "merged",
+   "summary": null,
+   "also_covered_by": [
+    {
+     "outlet": "iisalmen-sanomat",
+     "outlet_name": "Iisalmen Sanomat",
+     "url": "https://iisalmensanomat.fi/paikalliset/9979565",
+     "title": "Koillissavolainen mies menetti lähes 800 000 euroa – Kryptoilla rikastumisesta haaveilevia päätyy rikoksen uhreiksi joka viikko",
+     "published": "2026-11-23T14:30:00+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": true
+    }
+   ],
+   "merged_into": "6b79e28fd26a"
+  },
+  {
+   "id": "44f27b3e2fa7",
+   "url": "https://kryptovalutaguiden.se/2026/11/jensen-huang-aterinsatt-som-vd-pa-nvidia-aktien-rusar",
+   "title": "Jensen Huang återinsatt som VD på NVIDIA – aktien rusar",
+   "title_en": null,
+   "source": "kryptovalutaguiden",
+   "source_name": "Kryptovalutaguiden",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "kryptovalutaguiden",
+   "seen_via": [
+    "kryptovalutaguiden"
+   ],
+   "published": "2026-11-23T14:24:38+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [],
+   "paywall": false,
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Not crypto news (NVIDIA / Jensen Huang share-price talk). KVG. Not fetched.; researcher 24.11; editor 2026-11-24"
+  },
+  {
+   "id": "91458a959259",
+   "url": "https://avisa-st.no/nyheter/n/kMJPX9/353-personer-oppga-krypto-for-nesten-59-millioner-kroner",
+   "title": "353 personer oppga krypto for nesten 59 millioner kroner",
+   "title_en": null,
+   "source": "avisa-st-no",
+   "source_name": "avisa-st.no",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn",
+    "avisa-st-no"
+   ],
+   "published": "2026-11-23T11:45:00+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
+  },
+  {
+   "id": "0d7c9d2ea9e3",
+   "url": "https://etc.se/inrikes/mullvad-grundarens-enorma-skattesmaellen-108-miljoner",
+   "title": "Mullvadsmannen sponsrade Örebropartiet – skyldig staten 108 miljoner",
+   "title_en": null,
+   "source": "dagens-etc",
+   "source_name": "Dagens ETC",
+   "country": "SE",
+   "language": "Swedish",
+   "via": "bing-se",
+   "seen_via": [
+    "bing-se",
+    "dagens-etc"
+   ],
+   "published": "2026-11-23T11:30:00+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "pending",
+   "summary": null
+  },
+  {
+   "id": "89d39a2faaf0",
+   "url": "https://finansavisen.no/valuta/2026/11/23/8397820/trump-har-tjent-grovt-kryptoinvestorene-taper-milliarder",
+   "title": "Trump har tjent grovt: Kryptoinvestorene taper milliarder",
+   "title_en": null,
+   "source": "finansavisen",
+   "source_name": "Finansavisen",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no",
+   "seen_via": [
+    "bing-no",
+    "bing-no-kn"
+   ],
+   "published": "2026-11-23T09:15:00+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto",
+    "companies"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": true,
+   "status": "rejected",
+   "summary": null,
+   "published_unverified": true,
+   "reject_reason": "Same international Trump memecoin cluster. Price talk. Finansavisen paywall, body not fetched; published_unverified in the queue. Wrong pipeline duplicate link to mn24 cleared.; researcher 24.11; editor 2026-11-24"
+  },
+  {
+   "id": "535b3aa47c61",
+   "url": "https://drm24.no/drammensere-eier-11-milliarder-i-kryptoverdier/379317",
+   "title": "Drammensere eier 1,1 milliarder i kryptoverdier",
+   "title_en": null,
+   "source": "drm24.no",
+   "source_name": "Drammen Live24",
+   "country": "NO",
+   "language": "Norwegian",
+   "via": "bing-no-kn",
+   "seen_via": [
+    "bing-no-kn"
+   ],
+   "published": "2026-11-23T06:37:16+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto",
+    "regulation"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
+  },
+  {
+   "id": "bf9da5495444",
+   "url": "https://dr.dk/nyheder/udland/fra-skoleboern-til-elitehackere-saadan-blev-nordkorea-en-stormagt-inden-cyberkriminalitet",
+   "title": "Fra skolebørn til elitehackere: Sådan blev Nordkorea en stormagt inden for cyberkriminalitet",
+   "title_en": null,
+   "source": "dr-penge",
+   "source_name": "DR",
+   "country": "DK",
+   "language": "Danish",
+   "via": "bing-dk",
+   "seen_via": [
+    "bing-dk"
+   ],
+   "published": "2026-11-23T04:00:00+00:00",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "crypto"
+   ],
+   "matched": [
+    "\\bkrypto(?!graf)\\w*"
+   ],
+   "paywall": false,
+   "status": "merged",
+   "summary": null,
+   "merged_into": "2ba8ad647f8e"
+  },
+  {
+   "id": "90274395780d",
+   "url": "https://kaupr.io/nyheter/hilbert-bygger-flere-forretningsben-og-krymper-tapet",
+   "title": "Hilbert bygger flere forretningsben og krymper tapet",
+   "title_en": null,
+   "source": "kaupr",
+   "source_name": "Kaupr",
+   "country": "SE",
+   "language": "Norwegian",
+   "via": "kaupr-se",
+   "seen_via": [
+    "kaupr-se"
+   ],
+   "published": "2026-11-23",
+   "fetched": "2026-11-24T02:48:37+00:00",
+   "topics": [
+    "bitcoin"
+   ],
+   "matched": [
+    "\\bbitcoin\\w*"
+   ],
+   "paywall": false,
+   "status": "pending",
+   "summary": null,
+   "published_date_only": true
+  },
+  {
    "id": "b34c97a34a5c",
    "url": "https://berlingske.dk/internationalt/trods-faldende-vaerdi-inviterer-trump-igen-til-kryptomiddag",
    "title": "Trods faldende værdi inviterer Trump igen til kryptomiddag",
@@ -23,7 +663,7 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "also_covered_by": [
     {
@@ -37,7 +677,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "reject_reason": "Same international Trump memecoin / dinner cluster. Berlingske paywall, body not fetched.; researcher 24.11; editor 2026-11-24"
   },
   {
    "id": "5f8ac82b626a",
@@ -64,8 +705,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "b528582087b0",
@@ -91,10 +733,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
-   "possible_duplicate_of": "5f8ac82b626a",
-   "possible_duplicate_reason": "rare headline word"
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "eb26045f0061",
@@ -119,8 +760,9 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "197d3a8df28c",
@@ -588,10 +1230,11 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "merged",
    "summary": null,
    "possible_duplicate_of": "a985949ee5e9",
-   "possible_duplicate_reason": "rare headline word"
+   "possible_duplicate_reason": "rare headline word",
+   "merged_into": "a985949ee5e9"
   },
   {
    "id": "a49aad996f09",
@@ -2190,6 +2833,83 @@
      "country": "NO",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "tb",
+     "outlet_name": "Tønsbergs Blad",
+     "url": "https://tb.no/skatteetaten-avslorer-kryptotallene-for-tonsberg/s/80-76-86179",
+     "title": "Skatteetaten avslører kryptotallene for Tønsberg",
+     "published": "2026-11-22T18:52:22+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "mn24.no",
+     "outlet_name": "MN24",
+     "url": "https://mn24.no/nyheter/n/kMJy1Q/troendere-har-meldt-inn-krypto-for-milliarder-staar-foran-et-stort-skifte",
+     "title": "Trøndere har meldt inn krypto for milliarder: - Står foran et stort skifte",
+     "published": "2026-11-22T05:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "eikernytt.no",
+     "outlet_name": "eikernytt",
+     "url": "https://eikernytt.no/2026/11/20/stadig-flere-rapporterer-krypto-i-buskerud",
+     "title": "Stadig flere rapporterer krypto i Buskerud",
+     "published": "2026-11-20T11:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "gjengangeren",
+     "outlet_name": "Gjengangeren",
+     "url": "https://gjengangeren.no/skatteetaten-avslorer-kryptotallene-for-horten/s/80-60-26763",
+     "title": "Skatteetaten avslører kryptotallene for Horten",
+     "published": "2026-11-22T15:00:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "drm24.no",
+     "outlet_name": "Drammen Live24",
+     "url": "https://drm24.no/drammensere-eier-11-milliarder-i-kryptoverdier/379317",
+     "title": "Drammensere eier 1,1 milliarder i kryptoverdier",
+     "published": "2026-11-23T06:37:16+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "avisa-st-no",
+     "outlet_name": "avisa-st.no",
+     "url": "https://avisa-st.no/nyheter/n/kMJPX9/353-personer-oppga-krypto-for-nesten-59-millioner-kroner",
+     "title": "353 personer oppga krypto for nesten 59 millioner kroner",
+     "published": "2026-11-23T11:45:00+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
+    },
+    {
+     "outlet": "kronstadposten",
+     "outlet_name": "Kronstadposten",
+     "url": "https://kp.no/kryptomillioner-alta-topper-lista/s/80-168-30729",
+     "title": "Kryptomillioner: Alta topper lista",
+     "published": "2026-11-25T12:54:07+00:00",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": true
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -3074,6 +3794,17 @@
      "url": "https://outokummunseutu.fi/paikalliset/9968288",
      "title": "Yli 200 tietoverkkorikosta Itä-Suomessa lokakuussa – huijaukset yleistyvät ja aiheuttavat suuria taloudellisia menetyksiä",
      "published": "2026-11-20T06:03:00+00:00",
+     "lang": "Finnish",
+     "country": "FI",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "pitajalainen",
+     "outlet_name": "Pitäjäläinen",
+     "url": "https://pitajalainen.fi/paikalliset/9979565",
+     "title": "Koillissavolainen mies menetti lähes 800 000 euroa – Kryptoilla rikastumisesta haaveilevia päätyy rikoksen uhreiksi joka viikko",
+     "published": "2026-11-23T14:30:00+00:00",
      "lang": "Finnish",
      "country": "FI",
      "source_type": "national",
@@ -4953,7 +5684,8 @@
    "language": "Swedish",
    "via": "realtid",
    "seen_via": [
-    "realtid"
+    "realtid",
+    "bing-se"
    ],
    "published": "2026-11-14T04:34:00+00:00",
    "fetched": "2026-11-15T02:43:45+00:00",
@@ -12875,6 +13607,17 @@
      "country": "SE",
      "source_type": "national",
      "paywall": true
+    },
+    {
+     "outlet": "dr-penge",
+     "outlet_name": "DR",
+     "url": "https://dr.dk/nyheder/udland/fra-skoleboern-til-elitehackere-saadan-blev-nordkorea-en-stormagt-inden-cyberkriminalitet",
+     "title": "Fra skolebørn til elitehackere: Sådan blev Nordkorea en stormagt inden for cyberkriminalitet",
+     "published": "2026-11-23T04:00:00+00:00",
+     "lang": "Danish",
+     "country": "DK",
+     "source_type": "national",
+     "paywall": false
     }
    ],
    "approved_by": "Nordic Crypto redaktør",
@@ -16318,6 +17061,17 @@
      "url": "https://kaupr.io/nyheter/bitcoin-suisse-satser-pa-formuende-investorer-i-norden",
      "title": "Bitcoin Suisse satser på formuende investorer i Norden",
      "published": "2026-11-03",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/bitcoin-suisse-satser-i-norden-mens-rivaler-er-blitt-mindre-synlige",
+     "title": "Bitcoin Suisse satser i Norden mens rivaler er blitt mindre synlige",
+     "published": "2026-11-25",
      "lang": "Norwegian",
      "country": "SE",
      "source_type": "national",
@@ -25817,5 +26571,5 @@
    "summary_i18n_review": "approved"
   }
  ],
- "updated": "2026-11-23T02:47:34+00:00"
+ "updated": "2026-11-26T02:49:13+00:00"
 }

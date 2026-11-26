@@ -1712,6 +1712,156 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-24T12:00:00+00:00",
+   "included": 1,
+   "by_country": {
+    "NO": 25,
+    "SE": 16,
+    "DK": 8,
+    "FI": 12,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 2,
+    "2014": 5,
+    "2017": 5,
+    "2018": 10,
+    "2022": 2,
+    "2023": 5,
+    "2025": 7,
+    "2026": 12,
+    "2016": 4,
+    "2019": 3,
+    "2024": 2,
+    "2015": 3,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 2,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1,
+     "2018": 2
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 3,
+     "2015": 1,
+     "2026": 3,
+     "2018": 2,
+     "2023": 1,
+     "2016": 1,
+     "2024": 1,
+     "2025": 1,
+     "2013": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 2,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1,
+     "2026": 1,
+     "2025": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 2,
+     "2020": 1,
+     "2012": 1,
+     "2017": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "One past event was stored. Mats Henricson states a bitcoin mini-conference on Saturday 26 October 2013 at Crisp, Sveavägen 31, Stockholm, starting at 10:00. The post says the day might run until 18:00. That was not stored as an end. A room for about 30 people was not stored as a count. The email address was not stored. No calendar event ended after 20 November 2026. Bitcoin Suisse Europe and the Bitwise evening ended on 19 November and are already on the calendar. No public recording of them was found. Slush for Cypherpunks on 19 November is a social evening at the BTCHEL hub. It was not stored. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. One event was added. Taper level unchanged: full.",
+   "queries": [
+    "https://bitcointalk.org/index.php?topic=286319.0",
+    "https://www.youtube.com/results?search_query=Slush+for+Cypherpunks+Helsinki",
+    "https://www.youtube.com/results?search_query=Bitwise+Stockholm",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-24"
+   ],
+   "sources_used": [
+    "Mats Henricson"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Bitcoin Suisse Europe launches in the Nordics, 19 November 2026",
+     "reason": "Already on the calendar. No public recording was found."
+    },
+    {
+     "name": "Exklusiv kväll med Bitwise, 19 November 2026",
+     "reason": "Already on the calendar. No public recording was found."
+    },
+    {
+     "name": "Slush for Cypherpunks, 19 November 2026",
+     "reason": "Kaupr describes drinks, cards and networking at the BTCHEL hub. Not stored as a talk event. No recording."
+    },
+    {
+     "name": "Handelshögskolan half-day, 25 October 2013",
+     "reason": "The BitcoinTalk post says the school had a conference the day before. It does not give the school's own page, a title or a room."
+    },
+    {
+     "name": "About 30 people and an email address",
+     "reason": "A room for about 30 is not a count. The address was not stored."
+    },
+    {
+     "name": "Maybe until 18:00",
+     "reason": "The post says the day might run until 18:00. That was not stored as an end."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

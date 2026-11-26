@@ -1,7 +1,47 @@
 {
- "updated": "2026-11-23T03:23:36+00:00",
+ "updated": "2026-11-26T03:20:09+00:00",
  "active_days": 90,
  "podcasts": [
+  {
+   "id": "bitcoin-infinity-show",
+   "name": "The Bitcoin Infinity Show",
+   "country": "SE",
+   "language": "en",
+   "feed": "https://feeds.fountain.fm/PGQg9eWxyOcGhx0uXamY",
+   "site": "https://www.bitcoininfinityshow.com/",
+   "flags": [
+    "affiliate-links"
+   ],
+   "active": true,
+   "episodes": [
+    {
+     "title": "BIP-110 Failed Exactly Like I Expected | Guy Swann | BIS #230",
+     "date": "2026-11-23",
+     "link": "https://fountain.fm/episode/WAwTTUHM98XLA7BM6hLI"
+    },
+    {
+     "title": "Number Go Up Is a Trap | Rune Østgård | BIS #229",
+     "date": "2026-11-16",
+     "link": "https://fountain.fm/episode/JJuk1nwzVy5zNHW17o29"
+    },
+    {
+     "title": "From Broken Mast to Bitcoin with Michal & Pavla Nydrle | Bitcoin Infinity Show #228",
+     "date": "2026-11-09",
+     "link": "https://fountain.fm/episode/YlppTj4ERGHVWr0gtSys"
+    },
+    {
+     "title": "A Master’s Degree in Bitcoin with Kristyna Mazankova | Bitcoin Infinity Show #227",
+     "date": "2026-11-02",
+     "link": "https://fountain.fm/episode/YuhvvQqYx38Zfk0o6zeM"
+    },
+    {
+     "title": "Why Every Bitcoiner Needs Two Stacks | Matouš Ledvina | BIS #226",
+     "date": "2026-10-26",
+     "link": "https://fountain.fm/episode/LCBFlvuIOfH0OwBT68Ic"
+    }
+   ],
+   "added_at": "2026-11-05"
+  },
   {
    "id": "hladvarp-myntkaupa",
    "name": "Hlaðvarp Myntkaupa",
@@ -121,46 +161,6 @@
     }
    ],
    "added_at": "2026-10-16"
-  },
-  {
-   "id": "bitcoin-infinity-show",
-   "name": "The Bitcoin Infinity Show",
-   "country": "SE",
-   "language": "en",
-   "feed": "https://feeds.fountain.fm/PGQg9eWxyOcGhx0uXamY",
-   "site": "https://www.bitcoininfinityshow.com/",
-   "flags": [
-    "affiliate-links"
-   ],
-   "active": true,
-   "episodes": [
-    {
-     "title": "Number Go Up Is a Trap | Rune Østgård | BIS #229",
-     "date": "2026-11-16",
-     "link": "https://fountain.fm/episode/JJuk1nwzVy5zNHW17o29"
-    },
-    {
-     "title": "From Broken Mast to Bitcoin with Michal & Pavla Nydrle | Bitcoin Infinity Show #228",
-     "date": "2026-11-09",
-     "link": "https://fountain.fm/episode/YlppTj4ERGHVWr0gtSys"
-    },
-    {
-     "title": "A Master’s Degree in Bitcoin with Kristyna Mazankova | Bitcoin Infinity Show #227",
-     "date": "2026-11-02",
-     "link": "https://fountain.fm/episode/YuhvvQqYx38Zfk0o6zeM"
-    },
-    {
-     "title": "Why Every Bitcoiner Needs Two Stacks | Matouš Ledvina | BIS #226",
-     "date": "2026-10-26",
-     "link": "https://fountain.fm/episode/LCBFlvuIOfH0OwBT68Ic"
-    },
-    {
-     "title": "You Don’t Own Your Bitcoin | Stephan Kinsella | BIS #225",
-     "date": "2026-10-19",
-     "link": "https://fountain.fm/episode/pK9ea5rMNjKS1gMhFRKW"
-    }
-   ],
-   "added_at": "2026-11-05"
   },
   {
    "id": "bpi",
