@@ -1862,6 +1862,181 @@
     }
    ],
    "taper": "full"
+  },
+  {
+   "retrieved_at": "2026-11-27T12:00:00+00:00",
+   "included": 2,
+   "by_country": {
+    "NO": 25,
+    "SE": 18,
+    "DK": 8,
+    "FI": 12,
+    "IS": 2,
+    "FO": 0,
+    "GL": 0,
+    "AX": 0
+   },
+   "by_year": {
+    "2013": 2,
+    "2014": 5,
+    "2017": 5,
+    "2018": 10,
+    "2022": 2,
+    "2023": 5,
+    "2025": 8,
+    "2026": 13,
+    "2016": 4,
+    "2019": 3,
+    "2024": 2,
+    "2015": 3,
+    "2020": 2,
+    "2012": 1
+   },
+   "by_country_year": {
+    "NO": {
+     "2022": 2,
+     "2023": 3,
+     "2016": 2,
+     "2017": 2,
+     "2026": 5,
+     "2025": 4,
+     "2015": 2,
+     "2019": 1,
+     "2014": 1,
+     "2020": 1,
+     "2018": 2
+    },
+    "SE": {
+     "2017": 2,
+     "2014": 3,
+     "2015": 1,
+     "2026": 4,
+     "2018": 2,
+     "2023": 1,
+     "2016": 1,
+     "2024": 1,
+     "2025": 2,
+     "2013": 1
+    },
+    "DK": {
+     "2013": 1,
+     "2018": 2,
+     "2023": 1,
+     "2024": 1,
+     "2019": 1,
+     "2026": 1,
+     "2025": 1
+    },
+    "FI": {
+     "2014": 1,
+     "2025": 1,
+     "2026": 3,
+     "2016": 1,
+     "2019": 1,
+     "2018": 2,
+     "2020": 1,
+     "2012": 1,
+     "2017": 1
+    },
+    "IS": {
+     "2018": 2
+    },
+    "FO": {},
+    "GL": {},
+    "AX": {}
+   },
+   "years_with_events": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "note": "Two past events were stored. The Academic Nordic Blockchain Workshop KTH 2026 on 25 May 2026, 16:00–19:00, in Room Sahara, Teknikringen 10B. The KTH page states the day, the clock and the room. Luma states Stockholm, Sweden, and that KTH hosted it. The Academic Nordic Blockchain Workshop KTH 2025 on 17 June 2025, 17:00–19:00, at KTH Campus, E-huset, room 1440 Henrik Ericsson, floor 4. The KTH page states the day, the clock and the room. Magnus Jones's post the same day places the workshop in Stockholm and names KTH Royal Institute of Technology. The pages call each one a workshop. The archive type is seminar. No count was stored. A room list of 20 seats and a Luma figure of 42 went were not counts. No recording of either workshop was found. Krypto-skatt v/ Reese Legal ended on 25 November 2026 and is already on the calendar. No public recording was found. ICDS 2026 had not ended. The Digital Securities and Tokenization Summit on 19–20 May 2021 is virtual on the IT-Branchen page and does not name a Nordic city, so it was not stored. Visa's stablecoin summit on 6 October 2026 was by invitation. Faroe Islands, Greenland and Åland were searched again and still have no dated public crypto event. The counts below are the whole archive. Two events were added. Taper level unchanged: full.",
+   "queries": [
+    "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+    "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+    "https://luma.com/tl38svz5",
+    "https://www.linkedin.com/posts/magnus-jones_if-you-are-in-stockholm-today-you-should-activity-7340764108922757120-GVfo",
+    "https://www.meetup.com/oslo-blockchain-meetup/events/316768461/",
+    "https://itb.dk/event/digital-securities-and-tokenization-summit/",
+    "Faroe Islands, Greenland and Åland: first-page searches on 2026-11-27"
+   ],
+   "sources_used": [
+    "KTH Royal Institute of Technology",
+    "Luma",
+    "Magnus Jones"
+   ],
+   "rejected": [
+    {
+     "host": "internationalconferencealerts.com",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "waset.org",
+     "reason": "Predatory conference listing. Not a source."
+    },
+    {
+     "host": "conferenceindex.org",
+     "reason": "Predatory conference listing. Not a source."
+    }
+   ],
+   "skipped": [
+    {
+     "name": "Krypto-skatt v/ Reese Legal, 25 November 2026",
+     "reason": "Already on the calendar. The Meetup page has no recording. The YouTube query returned no videos."
+    },
+    {
+     "name": "3rd International Conference on Digital Sovereignty (ICDS) 2026",
+     "reason": "The calendar end is 16:00 on 27 November 2026. The conference had not ended."
+    },
+    {
+     "name": "Digital Securities and Tokenization Summit, 19–20 May 2021",
+     "reason": "IT-Branchen states a virtual conference arranged by DigiShares. The page does not name a Nordic city."
+    },
+    {
+     "name": "Visa stablecoin summit, 6 October 2026",
+     "reason": "Kaupr says the summit at the National Museum in Oslo was by invitation."
+    },
+    {
+     "name": "What kind of asset is Bitcoin?, Aalborg University Business School",
+     "reason": "The watch page description is empty."
+    },
+    {
+     "name": "Violetta Zironi at Universitetet i Agder",
+     "reason": "The video page does not state the day or that the talk was held at the university."
+    },
+    {
+     "name": "David Truong, Aave, with Blockchain Tallinn and Ethereum Helsinki",
+     "reason": "The page names both cities and does not say where the session was held."
+    },
+    {
+     "name": "Coinmotion webinar, 5 October 2021",
+     "reason": "The page says the webinar was for Coinmotion's customers."
+    },
+    {
+     "name": "Bitcoinpolitisk Institutt Norge premieres on 27 November, 4 December and 11 December 2026",
+     "reason": "The watch pages still said Premiere. They were not public yet."
+    },
+    {
+     "name": "Morten Hake, HEX meetup in Copenhagen",
+     "reason": "The same meetup as the Richard Heart upload that was kept."
+    },
+    {
+     "name": "Room seats and a Luma went figure",
+     "reason": "A room for 20 and 42 went on Luma are not a count of people the source states as attendance."
+    }
+   ],
+   "taper": "full"
   }
  ]
 }

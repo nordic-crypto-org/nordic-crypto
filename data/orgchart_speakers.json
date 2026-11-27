@@ -1,6 +1,6 @@
 {
  "_note": "Speakers named on a talk in data/talks.json. An existing who's who name or handle is matched, not copied. affiliations are copied only from the video page, one per talk, with date, source URL and retrieved_at. A missing affiliation was not stated. No photo is stored. from_talks rows are published with the talks archive. tools/import_orgchart.py merges this file, so a later who's who build keeps the links.",
- "retrieved_at": "2026-11-24T12:00:00+00:00",
+ "retrieved_at": "2026-11-27T12:00:00+00:00",
  "entities": [
   {
    "id": "spk-rebecca-koskinen",
@@ -13905,6 +13905,157 @@
    "origin": "Talks archive",
    "caveat": false,
    "status": "published"
+  },
+  {
+   "id": "spk-mark-artymko",
+   "name": "Mark Artymko",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+     "title": "Opening the Black Box of Bitcoin Mining Pools",
+     "source_name": "BTCHEL",
+     "date": "2026-11-27"
+    }
+   ],
+   "talk_ids": [
+    "yt-bcvGE7qaGo4"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-bcvGE7qaGo4",
+     "title": "Opening the Black Box of Bitcoin Mining Pools",
+     "video_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-bcvGE7qaGo4",
+     "organisation": "OCEAN",
+     "source_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+     "source_name": "BTCHEL",
+     "retrieved_at": "2026-11-27T12:00:00+00:00",
+     "role": "President"
+    }
+   ],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-eric-yakes",
+   "name": "Eric Yakes",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=njMBYV1kCQw&hl=en",
+     "title": "The 4-Year Cycle Is Breaking. Here’s What’s Next",
+     "source_name": "BTCHEL",
+     "date": "2026-11-27"
+    }
+   ],
+   "talk_ids": [
+    "yt-njMBYV1kCQw"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-njMBYV1kCQw",
+     "title": "The 4-Year Cycle Is Breaking. Here’s What’s Next",
+     "video_url": "https://www.youtube.com/watch?v=njMBYV1kCQw"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-jamil-rehman",
+   "name": "Jamil Rehman",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=SRU2GYMwYT0&hl=en",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "source_name": "NBX",
+     "date": "2026-11-27"
+    }
+   ],
+   "talk_ids": [
+    "yt-SRU2GYMwYT0"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-SRU2GYMwYT0",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "video_url": "https://www.youtube.com/watch?v=SRU2GYMwYT0",
+     "date": "2026-11-19"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
+  },
+  {
+   "id": "spk-richard-heart",
+   "name": "Richard Heart",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "image": null,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=HUykBgxwnjI&hl=en",
+     "title": "HEX MEETUP IN COPENHAGEN #HEX #RichardHeart",
+     "source_name": "Richard Heart",
+     "date": "2026-11-27"
+    }
+   ],
+   "talk_ids": [
+    "yt-HUykBgxwnjI"
+   ],
+   "event_ids": [],
+   "talks": [
+    {
+     "id": "yt-HUykBgxwnjI",
+     "title": "HEX MEETUP IN COPENHAGEN #HEX #RichardHeart",
+     "video_url": "https://www.youtube.com/watch?v=HUykBgxwnjI",
+     "date": "2021-10-20"
+    }
+   ],
+   "affiliations": [],
+   "from_talks": true,
+   "origin": "Talks archive",
+   "caveat": false,
+   "status": "published"
   }
  ],
  "matched": {
@@ -14266,7 +14417,8 @@
   },
   "stig-aleksander-kjos-mathisen": {
    "talk_ids": [
-    "yt-RTcqp3MqRtU"
+    "yt-RTcqp3MqRtU",
+    "yt-SRU2GYMwYT0"
    ],
    "event_ids": [],
    "affiliations": [
@@ -14283,6 +14435,12 @@
      "id": "yt-RTcqp3MqRtU",
      "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 2 (Part 1)",
      "video_url": "https://www.youtube.com/watch?v=RTcqp3MqRtU"
+    },
+    {
+     "id": "yt-SRU2GYMwYT0",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "video_url": "https://www.youtube.com/watch?v=SRU2GYMwYT0",
+     "date": "2026-11-19"
     }
    ],
    "sources": [
@@ -14291,6 +14449,12 @@
      "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 2 (Part 1)",
      "source_name": "Nordic Blockchain Association",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=SRU2GYMwYT0&hl=en",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "source_name": "NBX",
+     "date": "2026-11-27"
     }
    ]
   },
