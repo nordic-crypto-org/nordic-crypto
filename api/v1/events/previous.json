@@ -1,9 +1,9 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-27T07:20:59+00:00",
+ "generated_at": "2026-11-27T10:03:39+00:00",
  "preview": false,
- "count": 85,
+ "count": 87,
  "events": [
   {
    "id": "7adc8e1ede97",
@@ -3906,6 +3906,122 @@
    ]
   },
   {
+   "id": "2439be73281b",
+   "title": "The Academic Nordic Blockchain Workshop KTH 2026",
+   "title_original": null,
+   "title_i18n": {
+    "se": "Akademalaš davviriikkalaš Blockchain Workshop KTH 2026"
+   },
+   "start": "2026-05-25T16:00:00+02:00",
+   "end": "2026-05-25T19:00:00+02:00",
+   "place": "KTH, Room Sahara, Teknikringen 10B",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "KTH Royal Institute of Technology",
+   "url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": {
+    "text": "Welcome to the KTH Academic Nordic Blockchain Workshop, a side event of Nordic Blockchain Week 2026. The goal of the event is to provide a forum for researchers and practitioners who are advancing blockchain technology.",
+    "lang": "en",
+    "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+    "source_name": "KTH Royal Institute of Technology",
+    "retrieved": "2026-11-27T12:00:00+00:00",
+    "i18n": {}
+   },
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2026-05-25T19:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/2439be73281b/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/2439be73281b/",
+    "nn": "https://nordiccrypto.no/nn/calendar/2439be73281b/",
+    "nb": "https://nordiccrypto.no/nb/calendar/2439be73281b/",
+    "sv": "https://nordiccrypto.no/sv/calendar/2439be73281b/",
+    "da": "https://nordiccrypto.no/da/calendar/2439be73281b/",
+    "fi": "https://nordiccrypto.no/fi/calendar/2439be73281b/",
+    "is": "https://nordiccrypto.no/is/calendar/2439be73281b/",
+    "zh": "https://nordiccrypto.no/zh/calendar/2439be73281b/",
+    "hi": "https://nordiccrypto.no/hi/calendar/2439be73281b/",
+    "es": "https://nordiccrypto.no/es/calendar/2439be73281b/",
+    "fr": "https://nordiccrypto.no/fr/calendar/2439be73281b/",
+    "ar": "https://nordiccrypto.no/ar/calendar/2439be73281b/",
+    "bn": "https://nordiccrypto.no/bn/calendar/2439be73281b/",
+    "pt": "https://nordiccrypto.no/pt/calendar/2439be73281b/",
+    "ru": "https://nordiccrypto.no/ru/calendar/2439be73281b/",
+    "ur": "https://nordiccrypto.no/ur/calendar/2439be73281b/",
+    "id": "https://nordiccrypto.no/id/calendar/2439be73281b/",
+    "de": "https://nordiccrypto.no/de/calendar/2439be73281b/",
+    "ja": "https://nordiccrypto.no/ja/calendar/2439be73281b/",
+    "sw": "https://nordiccrypto.no/sw/calendar/2439be73281b/",
+    "mr": "https://nordiccrypto.no/mr/calendar/2439be73281b/",
+    "fa": "https://nordiccrypto.no/fa/calendar/2439be73281b/",
+    "uk": "https://nordiccrypto.no/uk/calendar/2439be73281b/",
+    "tr": "https://nordiccrypto.no/tr/calendar/2439be73281b/",
+    "se": "https://nordiccrypto.no/se/calendar/2439be73281b/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/2439be73281b.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "start": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "end": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "place": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Luma",
+     "source_url": "https://luma.com/tl38svz5",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Luma",
+     "source_url": "https://luma.com/tl38svz5",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "url": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "KTH Royal Institute of Technology",
+    "url": "https://chains.proj.kth.se/academic-nordic-blockchain-2026",
+    "retrieved": "2026-11-27T12:00:00+00:00"
+   }
+  },
+  {
    "id": "9e5346069673",
    "title": "Satoshi Nakamoto-årstalen",
    "title_original": null,
@@ -4953,6 +5069,122 @@
     "name": "Nordic Blockchain Association",
     "url": "https://conf.nordicblockchain.com/conference-2025/location",
     "retrieved": "2026-11-17T11:00:00+00:00"
+   }
+  },
+  {
+   "id": "3f5fced171b0",
+   "title": "The Academic Nordic Blockchain Workshop KTH 2025",
+   "title_original": null,
+   "title_i18n": {
+    "se": "Akademalaš davviriikkalaš Blockchain Workshop KTH 2025"
+   },
+   "start": "2025-06-17T17:00:00+02:00",
+   "end": "2025-06-17T19:00:00+02:00",
+   "place": "KTH Campus, E-Huset, room 1440 Henrik Ericsson, floor 4",
+   "city": "Stockholm",
+   "country": "SE",
+   "online": false,
+   "organiser": "KTH Royal Institute of Technology",
+   "url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+   "source": "backfill",
+   "paid": null,
+   "sponsored": null,
+   "note": null,
+   "note_i18n": {},
+   "description": {
+    "text": "Welcome to the KTH Academic Nordic Blockchain Workshop, side event of Nordic Blockchain Week 2025. The goal of the event is to provide a forum for researchers and practitioners who are advancing blockchain technology.",
+    "lang": "en",
+    "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+    "source_name": "KTH Royal Institute of Technology",
+    "retrieved": "2026-11-27T12:00:00+00:00",
+    "i18n": {}
+   },
+   "past": true,
+   "ongoing": false,
+   "phase": "past",
+   "phase_end": "2025-06-17T19:00:00+02:00",
+   "html_url": "https://nordiccrypto.no/calendar/3f5fced171b0/",
+   "html_urls": {
+    "en": "https://nordiccrypto.no/calendar/3f5fced171b0/",
+    "nn": "https://nordiccrypto.no/nn/calendar/3f5fced171b0/",
+    "nb": "https://nordiccrypto.no/nb/calendar/3f5fced171b0/",
+    "sv": "https://nordiccrypto.no/sv/calendar/3f5fced171b0/",
+    "da": "https://nordiccrypto.no/da/calendar/3f5fced171b0/",
+    "fi": "https://nordiccrypto.no/fi/calendar/3f5fced171b0/",
+    "is": "https://nordiccrypto.no/is/calendar/3f5fced171b0/",
+    "zh": "https://nordiccrypto.no/zh/calendar/3f5fced171b0/",
+    "hi": "https://nordiccrypto.no/hi/calendar/3f5fced171b0/",
+    "es": "https://nordiccrypto.no/es/calendar/3f5fced171b0/",
+    "fr": "https://nordiccrypto.no/fr/calendar/3f5fced171b0/",
+    "ar": "https://nordiccrypto.no/ar/calendar/3f5fced171b0/",
+    "bn": "https://nordiccrypto.no/bn/calendar/3f5fced171b0/",
+    "pt": "https://nordiccrypto.no/pt/calendar/3f5fced171b0/",
+    "ru": "https://nordiccrypto.no/ru/calendar/3f5fced171b0/",
+    "ur": "https://nordiccrypto.no/ur/calendar/3f5fced171b0/",
+    "id": "https://nordiccrypto.no/id/calendar/3f5fced171b0/",
+    "de": "https://nordiccrypto.no/de/calendar/3f5fced171b0/",
+    "ja": "https://nordiccrypto.no/ja/calendar/3f5fced171b0/",
+    "sw": "https://nordiccrypto.no/sw/calendar/3f5fced171b0/",
+    "mr": "https://nordiccrypto.no/mr/calendar/3f5fced171b0/",
+    "fa": "https://nordiccrypto.no/fa/calendar/3f5fced171b0/",
+    "uk": "https://nordiccrypto.no/uk/calendar/3f5fced171b0/",
+    "tr": "https://nordiccrypto.no/tr/calendar/3f5fced171b0/",
+    "se": "https://nordiccrypto.no/se/calendar/3f5fced171b0/"
+   },
+   "api_url": "https://nordiccrypto.no/api/v1/events/3f5fced171b0.json",
+   "backfill": true,
+   "event_type": "seminar",
+   "credits": {
+    "title": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "start": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "end": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "place": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "city": {
+     "source_name": "Magnus Jones",
+     "source_url": "https://www.linkedin.com/posts/magnus-jones_if-you-are-in-stockholm-today-you-should-activity-7340764108922757120-GVfo",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "country": {
+     "source_name": "Magnus Jones",
+     "source_url": "https://www.linkedin.com/posts/magnus-jones_if-you-are-in-stockholm-today-you-should-activity-7340764108922757120-GVfo",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "organiser": {
+     "source_name": "Magnus Jones",
+     "source_url": "https://www.linkedin.com/posts/magnus-jones_if-you-are-in-stockholm-today-you-should-activity-7340764108922757120-GVfo",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "url": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    },
+    "event_type": {
+     "source_name": "KTH Royal Institute of Technology",
+     "source_url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+     "retrieved_at": "2026-11-27T12:00:00+00:00"
+    }
+   },
+   "place_source": {
+    "name": "KTH Royal Institute of Technology",
+    "url": "https://chains.proj.kth.se/academic-nordic-blockchain-2025.html",
+    "retrieved": "2026-11-27T12:00:00+00:00"
    }
   },
   {

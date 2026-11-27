@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-27T07:20:59+00:00",
+ "generated_at": "2026-11-27T10:03:39+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 520,
+ "count": 524,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -1845,19 +1845,32 @@
      "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 2 (Part 1)",
      "source_name": "Nordic Blockchain Association",
      "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=SRU2GYMwYT0&hl=en",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "source_name": "NBX",
+     "date": "2026-11-27"
     }
    ],
    "logo": null,
    "image": null,
    "profiles": [],
    "talk_ids": [
-    "yt-RTcqp3MqRtU"
+    "yt-RTcqp3MqRtU",
+    "yt-SRU2GYMwYT0"
    ],
    "talks": [
     {
      "id": "yt-RTcqp3MqRtU",
      "title": "Nordic Blockchain Conference 2026 - Day 1 - Stage 2 (Part 1)",
      "video_url": "https://www.youtube.com/watch?v=RTcqp3MqRtU"
+    },
+    {
+     "id": "yt-SRU2GYMwYT0",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "video_url": "https://www.youtube.com/watch?v=SRU2GYMwYT0",
+     "date": "2026-11-19"
     }
    ],
    "affiliations": [
@@ -21804,6 +21817,166 @@
      "id": "yt-PPyUhMhZbvo",
      "title": "Nexa and Bitcoin Unlimited: Jørgen Notland in Oslo",
      "video_url": "https://www.youtube.com/watch?v=PPyUhMhZbvo"
+    }
+   ]
+  },
+  {
+   "id": "spk-mark-artymko",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-mark-artymko.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-mark-artymko",
+   "name": "Mark Artymko",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+     "title": "Opening the Black Box of Bitcoin Mining Pools",
+     "source_name": "BTCHEL",
+     "date": "2026-11-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-bcvGE7qaGo4"
+   ],
+   "talks": [
+    {
+     "id": "yt-bcvGE7qaGo4",
+     "title": "Opening the Black Box of Bitcoin Mining Pools",
+     "video_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4"
+    }
+   ],
+   "affiliations": [
+    {
+     "talk_id": "yt-bcvGE7qaGo4",
+     "organisation": "OCEAN",
+     "source_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+     "source_name": "BTCHEL",
+     "retrieved_at": "2026-11-27T12:00:00+00:00",
+     "role": "President"
+    }
+   ]
+  },
+  {
+   "id": "spk-eric-yakes",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-eric-yakes.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-eric-yakes",
+   "name": "Eric Yakes",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=njMBYV1kCQw&hl=en",
+     "title": "The 4-Year Cycle Is Breaking. Here’s What’s Next",
+     "source_name": "BTCHEL",
+     "date": "2026-11-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-njMBYV1kCQw"
+   ],
+   "talks": [
+    {
+     "id": "yt-njMBYV1kCQw",
+     "title": "The 4-Year Cycle Is Breaking. Here’s What’s Next",
+     "video_url": "https://www.youtube.com/watch?v=njMBYV1kCQw"
+    }
+   ]
+  },
+  {
+   "id": "spk-jamil-rehman",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-jamil-rehman.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-jamil-rehman",
+   "name": "Jamil Rehman",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=SRU2GYMwYT0&hl=en",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "source_name": "NBX",
+     "date": "2026-11-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-SRU2GYMwYT0"
+   ],
+   "talks": [
+    {
+     "id": "yt-SRU2GYMwYT0",
+     "title": "NBX Investor Day 2026 | Oslo, 19 November",
+     "video_url": "https://www.youtube.com/watch?v=SRU2GYMwYT0",
+     "date": "2026-11-19"
+    }
+   ]
+  },
+  {
+   "id": "spk-richard-heart",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-richard-heart.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#spk-richard-heart",
+   "name": "Richard Heart",
+   "type": "person",
+   "sector": "private",
+   "country": null,
+   "description": null,
+   "role": null,
+   "org": null,
+   "group": null,
+   "profile_url": null,
+   "provenance": "Talks archive",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=HUykBgxwnjI&hl=en",
+     "title": "HEX MEETUP IN COPENHAGEN #HEX #RichardHeart",
+     "source_name": "Richard Heart",
+     "date": "2026-11-27"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": [],
+   "talk_ids": [
+    "yt-HUykBgxwnjI"
+   ],
+   "talks": [
+    {
+     "id": "yt-HUykBgxwnjI",
+     "title": "HEX MEETUP IN COPENHAGEN #HEX #RichardHeart",
+     "video_url": "https://www.youtube.com/watch?v=HUykBgxwnjI",
+     "date": "2021-10-20"
     }
    ]
   }

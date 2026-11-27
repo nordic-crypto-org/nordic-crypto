@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-27T07:20:59+00:00",
+ "generated_at": "2026-11-27T10:03:39+00:00",
  "preview": false,
  "country": "DK",
- "count": 18,
+ "count": 19,
  "talks": [
   {
    "id": "yt-MgISZpaxARM",
@@ -309,6 +309,37 @@
    "embed": true,
    "html_url": "https://nordiccrypto.no/talks/#yt-F6L7ePrru-o",
    "api_url": "https://nordiccrypto.no/api/v1/talks/yt-F6L7ePrru-o.json"
+  },
+  {
+   "id": "yt-HUykBgxwnjI",
+   "video_url": "https://www.youtube.com/watch?v=HUykBgxwnjI",
+   "platform": "youtube",
+   "title": "HEX MEETUP IN COPENHAGEN #HEX #RichardHeart",
+   "speakers": [
+    "Richard Heart"
+   ],
+   "event_name": "HEX Meetup in Copenhagen",
+   "event_url": null,
+   "calendar_event_id": null,
+   "event_id": null,
+   "unlink_reason": "the video page did not name the organiser",
+   "speaker_ids": [
+    "spk-richard-heart"
+   ],
+   "city": "Copenhagen",
+   "country": "DK",
+   "date": "2021-10-20",
+   "published": "2021-10-20",
+   "duration": "PT2H22M28S",
+   "language": null,
+   "channel": "Richard Heart",
+   "description": "Richard Heart speaks at a HEX meetup in Copenhagen, streamed live on 20 October 2021. The page does not name a street address or an organiser.",
+   "source_url": "https://www.youtube.com/watch?v=HUykBgxwnjI&hl=en",
+   "retrieved_at": "2026-11-27T12:00:00Z",
+   "added_at": "2026-11-27T12:00:00Z",
+   "embed": true,
+   "html_url": "https://nordiccrypto.no/talks/#yt-HUykBgxwnjI",
+   "api_url": "https://nordiccrypto.no/api/v1/talks/yt-HUykBgxwnjI.json"
   },
   {
    "id": "yt-McCMg7UVCIk",

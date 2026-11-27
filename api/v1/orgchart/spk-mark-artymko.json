@@ -1,0 +1,53 @@
+{
+ "api_version": "1",
+ "name": "Nordic Crypto",
+ "generated_at": "2026-11-27T10:03:39+00:00",
+ "preview": false,
+ "item": {
+  "id": "spk-mark-artymko",
+  "api_url": "https://nordiccrypto.no/api/v1/orgchart/spk-mark-artymko.json",
+  "html_url": "https://nordiccrypto.no/org-chart/#spk-mark-artymko",
+  "name": "Mark Artymko",
+  "type": "person",
+  "sector": "private",
+  "country": null,
+  "description": null,
+  "role": null,
+  "org": null,
+  "group": null,
+  "profile_url": null,
+  "provenance": "Talks archive",
+  "caveat": false,
+  "sources": [
+   {
+    "url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+    "title": "Opening the Black Box of Bitcoin Mining Pools",
+    "source_name": "BTCHEL",
+    "date": "2026-11-27"
+   }
+  ],
+  "logo": null,
+  "image": null,
+  "profiles": [],
+  "talk_ids": [
+   "yt-bcvGE7qaGo4"
+  ],
+  "talks": [
+   {
+    "id": "yt-bcvGE7qaGo4",
+    "title": "Opening the Black Box of Bitcoin Mining Pools",
+    "video_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4"
+   }
+  ],
+  "affiliations": [
+   {
+    "talk_id": "yt-bcvGE7qaGo4",
+    "organisation": "OCEAN",
+    "source_url": "https://www.youtube.com/watch?v=bcvGE7qaGo4&hl=en",
+    "source_name": "BTCHEL",
+    "retrieved_at": "2026-11-27T12:00:00+00:00",
+    "role": "President"
+   }
+  ]
+ }
+}
