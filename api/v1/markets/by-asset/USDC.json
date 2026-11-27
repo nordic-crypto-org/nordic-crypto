@@ -1,7 +1,7 @@
 {
  "api_version": "1",
  "name": "USD Coin",
- "generated_at": "2026-11-27T06:51:18+00:00",
+ "generated_at": "2026-11-27T06:57:27+00:00",
  "preview": false,
  "kind": "markets",
  "disclaimer": "Market data, not investment advice. Each figure is the value published by the named exchange at fetched_at. Nordic Crypto does not set these prices and does not tell anyone to buy or sell.",
@@ -32,7 +32,7 @@
     "name": "Coinmotion",
     "country": "FI"
    },
-   "fetched_at": "2026-11-27T06:41:38+00:00",
+   "fetched_at": "2026-11-27T06:53:50+00:00",
    "source_url": "https://api.coinmotion.com/v2/rates",
    "volume_base": null,
    "volume_quote": null,
@@ -41,7 +41,7 @@
    "high": "10.20",
    "low": "10.17",
    "change_pct": null,
-   "exchange_time": "2026-11-27T06:41:10+00:00"
+   "exchange_time": "2026-11-27T06:53:17+00:00"
   },
   {
    "id": "coinmotion:USDC-EUR",
@@ -57,7 +57,7 @@
     "name": "Coinmotion",
     "country": "FI"
    },
-   "fetched_at": "2026-11-27T06:41:38+00:00",
+   "fetched_at": "2026-11-27T06:53:50+00:00",
    "source_url": "https://api.coinmotion.com/v2/rates",
    "volume_base": null,
    "volume_quote": null,
@@ -66,7 +66,7 @@
    "high": "0.91240",
    "low": "0.91010",
    "change_pct": null,
-   "exchange_time": "2026-11-27T06:41:10+00:00"
+   "exchange_time": "2026-11-27T06:53:17+00:00"
   },
   {
    "id": "firi:USDC-NOK",
@@ -82,7 +82,7 @@
     "name": "Firi",
     "country": "NO"
    },
-   "fetched_at": "2026-11-27T06:41:36+00:00",
+   "fetched_at": "2026-11-27T06:53:48+00:00",
    "source_url": "https://api.firi.com/v2/markets/USDCNOK",
    "volume_base": "2594.62",
    "volume_quote": null,
@@ -100,13 +100,13 @@
    "quote": "NOK",
    "last": "9.84",
    "bid": "9.64",
-   "ask": "9.80",
+   "ask": "9.81",
    "exchange": {
     "id": "nbx",
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-27T06:41:37+00:00",
+   "fetched_at": "2026-11-27T06:53:48+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -130,7 +130,7 @@
     "name": "Norwegian Block Exchange",
     "country": "NO"
    },
-   "fetched_at": "2026-11-27T06:41:37+00:00",
+   "fetched_at": "2026-11-27T06:53:48+00:00",
    "source_url": "https://api.nbx.com/tickers",
    "volume_base": null,
    "volume_quote": null,
@@ -148,8 +148,8 @@
    "name": "USD Coin",
    "quote": "NOK",
    "currency": "NOK",
-   "updated_at": "2026-11-27T06:41:37+00:00",
-   "oldest_fetched_at": "2026-11-27T06:41:36+00:00",
+   "updated_at": "2026-11-27T06:53:48+00:00",
+   "oldest_fetched_at": "2026-11-27T06:53:48+00:00",
    "exchange_count": 2,
    "method": "mean_last",
    "method_note": "Arithmetic mean of last prices from exchanges that published a last for this pair. Exchanges without a last stay in contributors and are left out of last, min and max. Not weighted by volume. mid is the mean of bid/ask midpoints and is not mixed into last.",
@@ -160,10 +160,10 @@
    "last_count": 2,
    "last_min": "9.41",
    "last_max": "9.84",
-   "mid": "9.6975000000000000",
+   "mid": "9.7000000000000000",
    "mid_count": 2,
    "mid_min": "9.6750000000000000",
-   "mid_max": "9.72",
+   "mid_max": "9.725",
    "vwap": null,
    "volume_used_for_price": false,
    "volume": {
@@ -197,7 +197,7 @@
      "volume_quote": null,
      "volume_base_24h": null,
      "volume_quote_24h": null,
-     "fetched_at": "2026-11-27T06:41:36+00:00",
+     "fetched_at": "2026-11-27T06:53:48+00:00",
      "source_url": "https://api.firi.com/v2/markets/USDCNOK",
      "included_in_price": true
     },
@@ -207,15 +207,15 @@
      "country": "NO",
      "last": "9.84",
      "bid": "9.64",
-     "ask": "9.80",
-     "mid": "9.72",
+     "ask": "9.81",
+     "mid": "9.725",
      "included_in_last": true,
      "included_in_mid": true,
      "volume_base": null,
      "volume_quote": null,
      "volume_base_24h": "57467.691565",
      "volume_quote_24h": "567067.11",
-     "fetched_at": "2026-11-27T06:41:37+00:00",
+     "fetched_at": "2026-11-27T06:53:48+00:00",
      "source_url": "https://api.nbx.com/tickers",
      "included_in_price": true
     }
@@ -241,8 +241,8 @@
    "name": "USD Coin",
    "quote": "SEK",
    "currency": "SEK",
-   "updated_at": "2026-11-27T06:41:38+00:00",
-   "oldest_fetched_at": "2026-11-27T06:41:38+00:00",
+   "updated_at": "2026-11-27T06:53:50+00:00",
+   "oldest_fetched_at": "2026-11-27T06:53:50+00:00",
    "exchange_count": 1,
    "method": "mean_bid_ask_mid",
    "method_note": "No exchange published a last for this pair. price is the arithmetic mean of (bid+ask)/2 from exchanges that published both. It is not a last-trade average.",
@@ -290,7 +290,7 @@
      "volume_quote": null,
      "volume_base_24h": null,
      "volume_quote_24h": null,
-     "fetched_at": "2026-11-27T06:41:38+00:00",
+     "fetched_at": "2026-11-27T06:53:50+00:00",
      "source_url": "https://api.coinmotion.com/v2/rates",
      "included_in_price": true
     }
@@ -316,8 +316,8 @@
    "name": "USD Coin",
    "quote": "EUR",
    "currency": "EUR",
-   "updated_at": "2026-11-27T06:41:38+00:00",
-   "oldest_fetched_at": "2026-11-27T06:41:37+00:00",
+   "updated_at": "2026-11-27T06:53:50+00:00",
+   "oldest_fetched_at": "2026-11-27T06:53:48+00:00",
    "exchange_count": 2,
    "method": "mean_last",
    "method_note": "Arithmetic mean of last prices from exchanges that published a last for this pair. Exchanges without a last stay in contributors and are left out of last, min and max. Not weighted by volume. mid is the mean of bid/ask midpoints and is not mixed into last.",
@@ -365,7 +365,7 @@
      "volume_quote": null,
      "volume_base_24h": "5.077464",
      "volume_quote_24h": "4.5931245440",
-     "fetched_at": "2026-11-27T06:41:37+00:00",
+     "fetched_at": "2026-11-27T06:53:48+00:00",
      "source_url": "https://api.nbx.com/tickers",
      "included_in_price": true
     },
@@ -383,7 +383,7 @@
      "volume_quote": null,
      "volume_base_24h": null,
      "volume_quote_24h": null,
-     "fetched_at": "2026-11-27T06:41:38+00:00",
+     "fetched_at": "2026-11-27T06:53:50+00:00",
      "source_url": "https://api.coinmotion.com/v2/rates",
      "included_in_price": false
     }
