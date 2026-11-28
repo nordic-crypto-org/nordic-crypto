@@ -1612,11 +1612,11 @@
   },
   {
    "id": "firi",
-   "name": "Firi",
+   "name": "Firi AS",
    "type": "organisation",
    "sector": "private",
    "country": "NO",
-   "description": "CASP licence (MiCA Art. 63) from 22 May 2026: trading platform, custody, exchange, order execution and transfer (Finanstilsynet). Also an e-money institution licence from 3 Jun 2024 (Finanstilsynet's register). About 417,000 customers and a Swedish launch in Sep 2026 – according to Shifter, 15 Sep 2026.",
+   "description": "CASP licence (MiCA Art. 63) from 22 May 2026: trading platform, custody, exchange, order execution and transfer (Finanstilsynet). Also an e-money institution licence from 3 Jun 2024 (Finanstilsynet's register). About 417,000 customers and a Swedish launch in Sep 2026 – according to Shifter, 15 Sep 2026. On 26 November 2026 it entered into a partnership agreement with Huddlestock Fintech AS for a tied-agent solution under Huddlestock’s MiFID II framework, according to Huddlestock’s MFN notice.",
    "sources": [
     {
      "url": "https://www.finanstilsynet.no/nyhetsarkiv/nyheter/2026/firi-as-far-tillatelse-som-casp-foretak/",
@@ -1686,7 +1686,7 @@
    "caveat": true,
    "origin": "Kryptonytt industry map (approved for Norway)",
    "org": "firi",
-   "role": "CEO and co-founder",
+   "role": "CEO and Founder, Firi AS",
    "profile_url": "https://www.finanstilsynet.no/nyhetsarkiv/nyheter/2026/firi-as-far-tillatelse-som-casp-foretak/",
    "status": "published",
    "profiles": []
@@ -1779,7 +1779,7 @@
    "caveat": false,
    "origin": "Kryptonytt industry map (approved for Norway)",
    "org": "nbx",
-   "role": "CEO",
+   "role": "CEO, NBX",
    "profile_url": "https://nbx.com/en/investor",
    "talk_ids": [
     "yt-RTcqp3MqRtU",
@@ -6501,13 +6501,19 @@
    "sector": "private",
    "country": "NO",
    "group": "Companies & startups",
-   "description": "Norwegian listed company, based in Stavanger. On 18 November 2026 it signed a letter of intent with Firi for a tied-agent solution, according to its MFN stock-exchange notice; the collaboration is conditional on further commercial, operational and regulatory assessment and is not a completed agreement.",
+   "description": "Norwegian listed company, based in Stavanger. On 26 November 2026 it entered into a partnership agreement with Firi AS for a tied-agent solution under its MiFID II framework, with a fixed monthly fee plus a volume-based fee, subject to customary regulatory notifications, according to its MFN notice. The agreement follows a letter of intent announced on 18 November 2026.",
    "sources": [
     {
      "url": "https://storage.mfn.se/db908609-3743-4493-9949-f35c5c6b4420/huddlestock-fintech-as-huddlestock-has-signed-a-letter-of-intent-loi-with-firi.pdf",
      "title": "Huddlestock has signed a letter of intent (LOI) with Firi",
      "source_name": "MFN",
      "date": "2026-11-21"
+    },
+    {
+     "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics",
+     "title": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+     "source_name": "MFN",
+     "date": "2026-11-26"
     }
    ],
    "url": "https://www.huddlestock.com/",
@@ -6562,6 +6568,32 @@
    "image": null,
    "review": "pending",
    "added": "2026-11-26",
+   "origin": "Nordic Crypto research",
+   "status": "published",
+   "profiles": []
+  },
+  {
+   "id": "ramtin-matin",
+   "name": "Ramtin Matin",
+   "type": "person",
+   "sector": "private",
+   "country": "NO",
+   "group": null,
+   "description": null,
+   "sources": [
+    {
+     "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics",
+     "title": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+     "source_name": "MFN",
+     "date": "2026-11-26"
+    }
+   ],
+   "url": null,
+   "image": null,
+   "org": "huddlestock-fintech",
+   "role": "Acting CEO, Huddlestock Fintech AS",
+   "review": "pending",
+   "added": "2026-11-28",
    "origin": "Nordic Crypto research",
    "status": "published",
    "profiles": []

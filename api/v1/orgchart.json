@@ -1,10 +1,10 @@
 {
  "api_version": "1",
  "name": "Nordic Crypto",
- "generated_at": "2026-11-28T03:52:08+00:00",
+ "generated_at": "2026-11-28T06:39:40+00:00",
  "preview": false,
  "updated": "2026-10-03",
- "count": 524,
+ "count": 525,
  "entities": [
   {
    "id": "stortinget-finanskomiteen",
@@ -1677,11 +1677,11 @@
    "id": "firi",
    "api_url": "https://nordiccrypto.no/api/v1/orgchart/firi.json",
    "html_url": "https://nordiccrypto.no/org-chart/#firi",
-   "name": "Firi",
+   "name": "Firi AS",
    "type": "organisation",
    "sector": "private",
    "country": "NO",
-   "description": "CASP licence (MiCA Art. 63) from 22 May 2026: trading platform, custody, exchange, order execution and transfer (Finanstilsynet). Also an e-money institution licence from 3 Jun 2024 (Finanstilsynet's register). About 417,000 customers and a Swedish launch in Sep 2026 – according to Shifter, 15 Sep 2026.",
+   "description": "CASP licence (MiCA Art. 63) from 22 May 2026: trading platform, custody, exchange, order execution and transfer (Finanstilsynet). Also an e-money institution licence from 3 Jun 2024 (Finanstilsynet's register). About 417,000 customers and a Swedish launch in Sep 2026 – according to Shifter, 15 Sep 2026. On 26 November 2026 it entered into a partnership agreement with Huddlestock Fintech AS for a tied-agent solution under Huddlestock’s MiFID II framework, according to Huddlestock’s MFN notice.",
    "role": null,
    "org": null,
    "group": "Exchanges & brokers",
@@ -1729,7 +1729,7 @@
    "sector": "private",
    "country": "NO",
    "description": null,
-   "role": "CEO and co-founder",
+   "role": "CEO and Founder, Firi AS",
    "org": "firi",
    "group": null,
    "profile_url": "https://www.finanstilsynet.no/nyhetsarkiv/nyheter/2026/firi-as-far-tillatelse-som-casp-foretak/",
@@ -1821,7 +1821,7 @@
    "sector": "private",
    "country": "NO",
    "description": null,
-   "role": "CEO",
+   "role": "CEO, NBX",
    "org": "nbx",
    "group": null,
    "profile_url": "https://nbx.com/en/investor",
@@ -6946,7 +6946,7 @@
    "type": "organisation",
    "sector": "private",
    "country": "NO",
-   "description": "Norwegian listed company, based in Stavanger. On 18 November 2026 it signed a letter of intent with Firi for a tied-agent solution, according to its MFN stock-exchange notice; the collaboration is conditional on further commercial, operational and regulatory assessment and is not a completed agreement.",
+   "description": "Norwegian listed company, based in Stavanger. On 26 November 2026 it entered into a partnership agreement with Firi AS for a tied-agent solution under its MiFID II framework, with a fixed monthly fee plus a volume-based fee, subject to customary regulatory notifications, according to its MFN notice. The agreement follows a letter of intent announced on 18 November 2026.",
    "role": null,
    "org": null,
    "group": "Companies & startups",
@@ -6959,6 +6959,12 @@
      "title": "Huddlestock has signed a letter of intent (LOI) with Firi",
      "source_name": "MFN",
      "date": "2026-11-21"
+    },
+    {
+     "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics",
+     "title": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+     "source_name": "MFN",
+     "date": "2026-11-26"
     }
    ],
    "logo": null,
@@ -7013,6 +7019,33 @@
      "title": "36 Group omstrukturerar finansieringsavtalet med Loft Capital och tecknar avsiktsförklaring om ny finansiering",
      "source_name": "MFN",
      "date": "2026-11-13"
+    }
+   ],
+   "logo": null,
+   "image": null,
+   "profiles": []
+  },
+  {
+   "id": "ramtin-matin",
+   "api_url": "https://nordiccrypto.no/api/v1/orgchart/ramtin-matin.json",
+   "html_url": "https://nordiccrypto.no/org-chart/#ramtin-matin",
+   "name": "Ramtin Matin",
+   "type": "person",
+   "sector": "private",
+   "country": "NO",
+   "description": null,
+   "role": "Acting CEO, Huddlestock Fintech AS",
+   "org": "huddlestock-fintech",
+   "group": null,
+   "profile_url": null,
+   "provenance": "Nordic Crypto research",
+   "caveat": false,
+   "sources": [
+    {
+     "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics",
+     "title": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+     "source_name": "MFN",
+     "date": "2026-11-26"
     }
    ],
    "logo": null,
