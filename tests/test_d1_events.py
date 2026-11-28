@@ -59,6 +59,14 @@ class EventsD1(unittest.TestCase):
         kept = d1_store.one(self.store, "SELECT origin, city, end_at FROM events WHERE id = '019f42a4506c'")
         self.assertEqual((kept["origin"], kept["city"]), ("import", "Oslo"))
 
+    def test_translations_items_skips_non_language_rows(self):
+        self.store.execute("INSERT INTO event_translations (event_id, field, lang, source_text, text, updated_at) VALUES ('e1','description','nn','S','N',?), ('e1','description','lang','S','nb',?)", (AT, AT))
+        self.assertEqual(d1_store.translations_items(self.store), {"e1": {"source": "S", "nn": "N"}})
+
+    def test_story_columns_drops_row_updated_at(self):
+        row = {"payload": json.dumps({"id": "s", "updated_at": AT}), "item_status": "published", "review_status": "approved"}
+        self.assertNotIn("updated_at", d1_store.story_columns(row))
+
     def test_merge_marks_old_row_and_carries_approval_and_note(self):
         old, new = ev("old111111111", "Crypto killer apps", note="Paid entry."), ev("new222222222", "Crypto killer apps: more")
         r = self.root([new], archive=[dict(old, status="published")])
