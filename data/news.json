@@ -23,8 +23,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Betting/politics (Polymarket); sibling of rejected d37f2f2edd22.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "286c31a03f9c",
@@ -49,7 +50,7 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
    "also_covered_by": [
     {
@@ -63,7 +64,8 @@
      "source_type": "national",
      "paywall": true
     }
-   ]
+   ],
+   "reject_reason": "iLevanger forced-sale story; Amedia unread; no official auction notice. Private persons are not named.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "df7df6e63b6f",
@@ -88,8 +90,9 @@
     "\\bstablecoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "69be74bd8fb4"
   },
   {
    "id": "c8f05ea73237",
@@ -113,8 +116,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Kauppalehti, paywall, price commentary.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "4376483e634f",
@@ -138,8 +142,9 @@
     "\\bbitcoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Coinmotion price commentary.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "ef6ed98306ee",
@@ -166,8 +171,9 @@
     "\\bkryptovaluta\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null
+   "status": "merged",
+   "summary": null,
+   "merged_into": "7211abf1eb1a"
   },
   {
    "id": "f41661ecf7fe",
@@ -192,18 +198,19 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": true,
-   "status": "pending",
-   "summary": null
+   "status": "rejected",
+   "summary": null,
+   "reject_reason": "Breakit Obama/SBF Netflix story; paywall; entertainment, not a crypto news event.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "7211abf1eb1a",
-   "url": "https://kaupr.io/nyheter/firi-huddlestock-avtale-investeringstjenester",
-   "title": "Firi og Huddlestock signerer avtale om investeringstjenester",
-   "title_en": null,
-   "source": "kaupr",
-   "source_name": "Kaupr",
-   "country": "SE",
-   "language": "Norwegian",
+   "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics",
+   "title": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+   "title_en": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+   "source": "mfn",
+   "source_name": "MFN",
+   "country": "NO",
+   "language": "English",
    "via": "kaupr-se",
    "seen_via": [
     "kaupr-se"
@@ -211,7 +218,6 @@
    "published": "2026-11-27",
    "fetched": "2026-11-28T02:50:14+00:00",
    "topics": [
-    "crypto",
     "companies"
    ],
    "matched": [
@@ -219,9 +225,82 @@
     "\\bkrypto(?!graf)\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS for a tied-agent solution under Huddlestock's MiFID II framework. Firi will itself communicate the scope and timing of new services. The commercial terms are a fixed monthly fee plus a volume-based fee, and the agreement is subject to customary regulatory notifications. The deal follows the letter of intent published on 21 November.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/firi-huddlestock-avtale-investeringstjenester",
+     "title": "Firi og Huddlestock signerer avtale om investeringstjenester",
+     "published": "2026-11-27",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-28T04:50:49+01:00",
+   "primary_source": {
+    "name": "MFN, 26 November 2026, «Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics»",
+    "url": "https://mfn.se/all/a/huddlestock-fintech/huddlestock-fintech-as-has-entered-into-a-partnership-agreement-with-firi-as-the-largest-cryptocurrency-exchange-in-the-nordics"
+   },
+   "title_i18n": {
+    "nn": "Huddlestock Fintech AS har inngått ein partnerskapsavtale med Firi AS, den største kryptobørsen i Norden",
+    "nb": "Huddlestock Fintech AS har inngått en partnerskapsavtale med Firi AS, den største kryptobørsen i Norden",
+    "sv": "Huddlestock Fintech AS har ingått ett partnerskapsavtal med Firi AS, den största kryptobörsen i Norden",
+    "da": "Huddlestock Fintech AS har indgået en partnerskabsaftale med Firi AS, den største kryptobørs i Norden",
+    "fi": "Huddlestock Fintech AS on solminut kumppanuussopimuksen Firi AS:n, Pohjoismaiden suurimman kryptopörssin, kanssa",
+    "is": "Huddlestock Fintech AS hefur gert samstarfssamning við Firi AS, stærsta dulritunargjaldmiðilskauphöllina á Norðurlöndum",
+    "zh": "Huddlestock Fintech AS 与北欧最大加密货币交易所 Firi AS 签订合作协议",
+    "hi": "Huddlestock Fintech AS ने नॉर्डिक्स के सबसे बड़े क्रिप्टोकरेंसी एक्सचेंज Firi AS के साथ साझेदारी समझौता किया",
+    "es": "Huddlestock Fintech AS ha firmado un acuerdo de colaboración con Firi AS, el mayor intercambio de criptomonedas de los países nórdicos",
+    "fr": "Huddlestock Fintech AS a conclu un accord de partenariat avec Firi AS, la plus grande plateforme d’échange de cryptomonnaies des pays nordiques",
+    "ar": "Huddlestock Fintech AS تبرم اتفاقية شراكة مع Firi AS، أكبر بورصة للعملات المشفرة في بلدان الشمال",
+    "bn": "Huddlestock Fintech AS নর্ডিক অঞ্চলের বৃহত্তম ক্রিপ্টোকারেন্সি এক্সচেঞ্জ Firi AS-এর সঙ্গে অংশীদারিত্ব চুক্তি করেছে",
+    "pt": "A Huddlestock Fintech AS celebrou um acordo de parceria com a Firi AS, a maior bolsa de criptomoedas dos países nórdicos",
+    "ru": "Huddlestock Fintech AS заключила соглашение о партнёрстве с Firi AS, крупнейшей криптобиржей стран Северной Европы",
+    "ur": "Huddlestock Fintech AS نے نورڈکس کے سب سے بڑے کرپٹوکرنسی ایکسچینج Firi AS کے ساتھ شراکت داری کا معاہدہ کیا",
+    "id": "Huddlestock Fintech AS menandatangani perjanjian kemitraan dengan Firi AS, bursa mata uang kripto terbesar di Nordik",
+    "de": "Huddlestock Fintech AS hat eine Partnerschaftsvereinbarung mit Firi AS, der größten Kryptowährungsbörse im Norden, geschlossen",
+    "ja": "Huddlestock Fintech AS、北欧最大の暗号資産取引所Firi ASと提携契約を締結",
+    "sw": "Huddlestock Fintech AS imeingia mkataba wa ushirikiano na Firi AS, soko kubwa zaidi la sarafu-fiche katika nchi za Nordic",
+    "mr": "Huddlestock Fintech AS ने नॉर्डिक प्रदेशातील सर्वात मोठ्या क्रिप्टोकरन्सी एक्सचेंज Firi AS सोबत भागीदारी करार केला",
+    "fa": "Huddlestock Fintech AS با Firi AS، بزرگ‌ترین صرافی رمزارز کشورهای شمال اروپا، قرارداد شراکت بست",
+    "uk": "Huddlestock Fintech AS уклала угоду про партнерство з Firi AS, найбільшою криптобіржею країн Північної Європи",
+    "tr": "Huddlestock Fintech AS, İskandinavya’nın en büyük kripto para borsası Firi AS ile ortaklık anlaşması imzaladı",
+    "se": "Huddlestock Fintech AS lea dahkan ovttasbargosoahpamuša Firi AS:ain, mii lea Davviriikkain stuorimus kryptoruvdnohávdi"
+   },
+   "title_i18n_source": "Huddlestock Fintech AS has entered into a partnership agreement with Firi AS, the largest cryptocurrency exchange in the Nordics",
+   "summary_i18n": {
+    "nn": "Huddlestock Fintech AS har inngått ein partnerskapsavtale med Firi AS om ei tied-agent-løysing under MiFID II-rammeverket til Huddlestock. Firi skal sjølv kommunisere omfanget og tidspunktet for nye tenester. Dei kommersielle vilkåra er eit fast månadsgebyr pluss eit volumbasert gebyr, og avtalen er underlagd vanlege regulatoriske meldingar. Avtalen kjem etter intensjonsavtalen som vart kunngjord 21. november.",
+    "nb": "Huddlestock Fintech AS har inngått en partnerskapsavtale med Firi AS om en tied-agent-løsning under Huddlestocks MiFID II-rammeverk. Firi skal selv kommunisere omfanget og tidspunktet for nye tjenester. De kommersielle vilkårene er et fast månedsgebyr pluss et volumbasert gebyr, og avtalen er underlagt vanlige regulatoriske meldinger. Avtalen følger intensjonsavtalen som ble kunngjort 21. november.",
+    "sv": "Huddlestock Fintech AS har ingått ett partnerskapsavtal med Firi AS om en tied agent-lösning under Huddlestocks MiFID II-ramverk. Firi kommer självt att kommunicera omfattningen och tidpunkten för nya tjänster. De kommersiella villkoren är en fast månadsavgift plus en volymbaserad avgift, och avtalet är föremål för sedvanliga regulatoriska anmälningar. Avtalet följer på avsiktsförklaringen som offentliggjordes den 21 november.",
+    "da": "Huddlestock Fintech AS har indgået en partnerskabsaftale med Firi AS om en tied agent-løsning under Huddlestocks MiFID II-ramme. Firi vil selv kommunikere omfanget og tidspunktet for nye tjenester. De kommercielle vilkår er et fast månedsgebyr plus et volumbaseret gebyr, og aftalen er underlagt sædvanlige regulatoriske meddelelser. Aftalen følger intensjonsaftalen, der blev offentliggjort den 21. november.",
+    "fi": "Huddlestock Fintech AS on solminut Firi AS:n kanssa kumppanuussopimuksen sidotun asiamiehen (tied agent) ratkaisusta Huddlestockin MiFID II -kehyksen puitteissa. Firi tiedottaa itse uusien palvelujen laajuudesta ja aikataulusta. Kaupalliset ehdot ovat kiinteä kuukausimaksu sekä volyymiin perustuva palkkio, ja sopimus edellyttää tavanomaisia ilmoituksia valvojille. Sopimus seuraa 21. marraskuuta julkistettua aiesopimusta.",
+    "is": "Huddlestock Fintech AS hefur gert samstarfssamning við Firi AS um lausn bundins umboðsaðila (tied agent) samkvæmt MiFID II-ramma Huddlestock. Firi mun sjálft tilkynna umfang og tímasetningu nýrra þjónustu. Viðskiptakjörin eru föst mánaðarleg gjöld auk volumsháðra gjalda, og samningurinn er háður venjubundnum tilkynningum til eftirlitsaðila. Samningurinn kemur í kjölfar viljayfirlýsingarinnar sem var birt 21. nóvember.",
+    "zh": "Huddlestock Fintech AS 已与 Firi AS 签订合作协议，在 Huddlestock 的 MiFID II 框架下提供绑定代理（tied-agent）方案。新服务的范围和时间将由 Firi 自行公布。商业条款为固定月费外加按交易量计费，协议尚须履行惯常的监管报备。该协议是对 11 月 21 日公布的意向书的后续落实。",
+    "hi": "Huddlestock Fintech AS ने Firi AS के साथ Huddlestock के MiFID II ढांचे के अंतर्गत टाइड-एजेंट समाधान के लिए साझेदारी समझौता किया है। नई सेवाओं का दायरा और समय Firi स्वयं बताएगी। वाणिज्यिक शर्तें एक निश्चित मासिक शुल्क तथा मात्रा-आधारित शुल्क हैं, और समझौता प्रचलित नियामक अधिसूचनाओं के अधीन है। यह सौदा 21 नवंबर को प्रकाशित आशय-पत्र के बाद आता है।",
+    "es": "Huddlestock Fintech AS ha firmado un acuerdo de colaboración con Firi AS para una solución de agente vinculado (tied agent) bajo el marco MiFID II de Huddlestock. Firi comunicará por sí misma el alcance y el calendario de los nuevos servicios. Las condiciones comerciales son una cuota mensual fija más una comisión basada en el volumen, y el acuerdo está sujeto a las notificaciones regulatorias habituales. El pacto da seguimiento a la carta de intenciones publicada el 21 de noviembre.",
+    "fr": "Huddlestock Fintech AS a conclu un accord de partenariat avec Firi AS pour une solution d’agent lié (tied agent) dans le cadre MiFID II de Huddlestock. Firi communiquera elle-même la portée et le calendrier des nouveaux services. Les conditions commerciales consistent en un frais mensuel fixe et un frais indexé sur les volumes, et l’accord est soumis aux notifications réglementaires habituelles. L’accord fait suite à la lettre d’intention publiée le 21 novembre.",
+    "ar": "أبرمت Huddlestock Fintech AS اتفاقية شراكة مع Firi AS لحل وكيل مرتبط (tied agent) ضمن إطار MiFID II الخاص بـ Huddlestock. وستعلن Firi بنفسها نطاق الخدمات الجديدة وتوقيتها. وتتمثل الشروط التجارية في رسم شهري ثابت بالإضافة إلى رسم قائم على الحجم، والاتفاقية خاضعة للإخطارات التنظيمية المعتادة. ويأتي الاتفاق بعد خطاب النوايا المنشور في 21 نوفمبر.",
+    "bn": "Huddlestock Fintech AS Firi AS-এর সঙ্গে Huddlestock-এর MiFID II কাঠামোর অধীনে tied-agent সমাধানের জন্য অংশীদারিত্ব চুক্তি করেছে। নতুন সেবার পরিধি ও সময় Firi নিজেই জানাবে। বাণিজ্যিক শর্ত একটি নির্দিষ্ট মাসিক ফি এবং পরিমাণভিত্তিক ফি, এবং চুক্তি প্রথাগত নিয়ন্ত্রক বিজ্ঞপ্তির অধীন। এই চুক্তি ২১ নভেম্বর প্রকাশিত ইচ্ছাপত্রের পরবর্তী পদক্ষেপ।",
+    "pt": "A Huddlestock Fintech AS celebrou um acordo de parceria com a Firi AS para uma solução de agente vinculado (tied agent) no quadro MiFID II da Huddlestock. A Firi comunicará ela própria o âmbito e o calendário dos novos serviços. As condições comerciais são uma taxa mensal fixa mais uma taxa baseada no volume, e o acordo está sujeito às notificações regulamentares habituais. O acordo dá seguimento à carta de intenções publicada a 21 de novembro.",
+    "ru": "Huddlestock Fintech AS заключила с Firi AS соглашение о партнёрстве по модели связанного агента (tied agent) в рамках MiFID II компании Huddlestock. Охват и сроки новых услуг Firi сообщит самостоятельно. Коммерческие условия включают фиксированную ежемесячную плату и комиссию, зависящую от объёма, а соглашение подлежит обычным уведомлениям регуляторов. Сделка следует за письмом о намерениях, опубликованным 21 ноября.",
+    "ur": "Huddlestock Fintech AS نے Firi AS کے ساتھ Huddlestock کے MiFID II فریم ورک کے تحت tied-agent حل کے لیے شراکت داری کا معاہدہ کیا ہے۔ نئی خدمات کی وسعت اور وقت Firi خود بتائے گی۔ تجارتی شرائط ایک مقررہ ماہانہ فیس کے ساتھ حجم پر مبنی فیس ہیں، اور معاہدہ معمول کی ریگولیٹری اطلاعیوں کے تابع ہے۔ یہ معاہدہ 21 نومبر کو شائع ہونے والے ارادے کے خط کے بعد آیا ہے۔",
+    "id": "Huddlestock Fintech AS telah menandatangani perjanjian kemitraan dengan Firi AS untuk solusi tied agent di bawah kerangka MiFID II Huddlestock. Firi sendiri yang akan mengomunikasikan cakupan dan waktu layanan baru. Ketentuan komersialnya adalah biaya bulanan tetap ditambah biaya berbasis volume, dan perjanjian ini tunduk pada pemberitahuan regulator yang lazim. Kesepakatan ini menindaklanjuti surat niat yang diterbitkan pada 21 November.",
+    "de": "Huddlestock Fintech AS hat mit Firi AS eine Partnerschaftsvereinbarung über eine Tied-Agent-Lösung im Rahmen des MiFID-II-Regelwerks von Huddlestock geschlossen. Umfang und Zeitpunkt neuer Dienstleistungen wird Firi selbst mitteilen. Die kommerziellen Konditionen sind eine feste monatliche Gebühr plus eine volumensabhängige Gebühr; die Vereinbarung unterliegt den üblichen aufsichtsrechtlichen Anzeigen. Der Vertrag folgt auf die Absichtserklärung, die am 21. November veröffentlicht wurde.",
+    "ja": "Huddlestock Fintech ASは、自社のMiFID IIの枠組みの下でタイド・エージェント（tied-agent）の仕組みを提供する提携契約をFiri ASと締結した。新たなサービスの範囲と時期はFiri自身が知らせる。商業条件は定額の月額手数料に加え、取引量に応じた手数料であり、契約は通例の規制当局への届出を条件とする。これは11月21日に公表された意向表明書に続くものだ。",
+    "sw": "Huddlestock Fintech AS imeingia mkataba wa ushirikiano na Firi AS kwa suluhisho la wakala aliyeunganishwa (tied agent) chini ya mfumo wa MiFID II wa Huddlestock. Firi yenyewe itawasilisha wigo na muda wa huduma mpya. Masharti ya kibiashara ni ada ya kila mwezi iliyowekwa pamoja na ada inayotegemea kiasi, na mkataba uko chini ya arifa za kawaida kwa wadhibiti. Mkataba unafuata barua ya nia iliyochapishwa tarehe 21 Novemba.",
+    "mr": "Huddlestock Fintech AS ने Firi AS सोबत Huddlestockच्या MiFID II चौकटीखाली tied-agent उपायासाठी भागीदारी करार केला आहे. नवीन सेवांची व्याप्ती आणि वेळ Firi स्वतः कळवेल. व्यावसायिक अटी म्हणजे ठराविक मासिक शुल्क आणि प्रमाणावर आधारित शुल्क, आणि करार नेहमीच्या नियामक सूचनांना अधीन आहे. हा करार 21 नोव्हेंबर रोजी प्रकाशित झालेल्या हेतूपत्रानंतर आला आहे.",
+    "fa": "Huddlestock Fintech AS با Firi AS برای یک راهکار نماینده وابسته (tied agent) در چارچوب MiFID II شرکت Huddlestock قرارداد شراکت بسته است. دامنه و زمان خدمات جدید را خود Firi اعلام خواهد کرد. شرایط تجاری شامل کارمزد ماهانه ثابت به‌علاوه کارمزد مبتنی بر حجم است و قرارداد مشمول اعلام‌های نظارتی معمول است. این توافق در پی نامهٔ قصد منتشرشده در ۲۱ نوامبر آمده است.",
+    "uk": "Huddlestock Fintech AS уклала з Firi AS угоду про партнерство щодо рішення пов’язаного агента (tied agent) у межах рамки MiFID II компанії Huddlestock. Про обсяг і строки нових послуг Firi повідомить самостійно. Комерційні умови — фіксована щомісячна плата плюс комісія залежно від обсягу, і угода підлягає звичайним повідомленням регуляторам. Угода є продовженням листа про наміри, опублікованого 21 листопада.",
+    "tr": "Huddlestock Fintech AS, Huddlestock’un MiFID II çerçevesi altında bağlı acente (tied agent) çözümü için Firi AS ile ortaklık anlaşması imzaladı. Yeni hizmetlerin kapsamını ve zamanını Firi’nin kendisi duyuracak. Ticari koşullar sabit aylık ücret ile hacme bağlı bir ücretten oluşuyor ve anlaşma mutat düzenleyici bildirimlere tabi. Anlaşma, 21 Kasım’da yayımlanan niyet mektubunun ardından geliyor.",
+    "se": "Huddlestock Fintech AS lea dahkan ovttasbargosoahpamuša Firi AS:ain čatnasan ágenta (tied agent) čovdosis Huddlestock MiFID II-rámmain. Firi ieš dieđiha ođđa bálvalusaid viidodaga ja áiggi. Gávpe-eavttut leat bissovaš mánnosaš máksu ja volumavuođul mávssu, ja soahpamuš gáibida dábálaš regulerendieđihusaid. Soahpamuš čuovvu áigumušsoahpamuša mii almmuhuvvui 21. skábmamánu."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "05772d4a9c25",
@@ -246,9 +325,10 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Kaupr Nasdaq licence story; no readable confirmation from Nasdaq or Finansinspektionen.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "5edf23b96731",
@@ -272,18 +352,19 @@
     "\\bK33\\b"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Kaupr story on new K33 products; no official launch announcement.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "69be74bd8fb4",
-   "url": "https://kaupr.io/nyheter/nbx-lanserer-flexcard-stablecoin-kort",
-   "title": "NBX lanserer Flexcard – stablecoin-kort med Visas nye teknologi",
-   "title_en": null,
-   "source": "kaupr",
-   "source_name": "Kaupr",
-   "country": "SE",
+   "url": "https://www.mynewsdesk.com/no/visa/pressreleases/visa-og-nbx-gjoer-stablecoins-enklere-aa-bruke-til-hverdagskjoep-3484140",
+   "title": "Visa og NBX gjør stablecoins enklere å bruke til hverdagskjøp",
+   "title_en": "Visa and NBX plan stablecoin-enabled Visa Flex Card for 2027",
+   "source": "visa",
+   "source_name": "Visa Norge",
+   "country": "NO",
    "language": "Norwegian",
    "via": "kaupr-se",
    "seen_via": [
@@ -295,17 +376,111 @@
    "published": "2026-11-27",
    "fetched": "2026-11-28T02:50:14+00:00",
    "topics": [
-    "crypto",
-    "companies"
+    "companies",
+    "payments"
    ],
    "matched": [
     "\\bNBX\\b",
     "\\bstablecoin\\w*"
    ],
    "paywall": false,
-   "status": "pending",
-   "summary": null,
-   "published_date_only": true
+   "status": "published",
+   "summary": "Visa, NBX, Tieto and IDT Finance have announced plans for a Visa Flex Card, slated for launch in 2027 as a debit card in Norway, Sweden, Denmark, Finland and Germany, and later in Poland. Eligible NBX customers will be able to pay from fiat or supported stablecoin balances via Visa Flexible Credential. The announcement follows NBX's earlier agreement with Tieto on a stablecoin payment card.",
+   "published_date_only": true,
+   "also_covered_by": [
+    {
+     "outlet": "realtid",
+     "outlet_name": "Realtid",
+     "url": "https://realtid.se/bors-finans/visa-satsar-pa-krypto-lanserar-nytt-betalkort-i-sverige",
+     "title": "Visa satsar på krypto – lanserar nytt betalkort i Sverige",
+     "published": "2026-11-27T16:35:26+00:00",
+     "lang": "Swedish",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "kaupr",
+     "outlet_name": "Kaupr",
+     "url": "https://kaupr.io/nyheter/nbx-lanserer-flexcard-stablecoin-kort",
+     "title": "NBX lanserer Flexcard – stablecoin-kort med Visas nye teknologi",
+     "published": "2026-11-27",
+     "lang": "Norwegian",
+     "country": "SE",
+     "source_type": "national",
+     "paywall": false
+    },
+    {
+     "outlet": "nbx",
+     "outlet_name": "NBX",
+     "url": "https://nbx.com/no/nbxvisa",
+     "title": "NBX VISA FLEX CARD",
+     "published": "2026-11-26",
+     "lang": "Norwegian",
+     "country": "NO",
+     "source_type": "national",
+     "paywall": false
+    }
+   ],
+   "approved_by": "Nordic Crypto redaktør",
+   "approved_at": "2026-11-28T04:50:49+01:00",
+   "primary_source": {
+    "name": "Visa Norge / MyNewsdesk, 26 November 2026, «Visa og NBX gjør stablecoins enklere å bruke til hverdagskjøp»",
+    "url": "https://www.mynewsdesk.com/no/visa/pressreleases/visa-og-nbx-gjoer-stablecoins-enklere-aa-bruke-til-hverdagskjoep-3484140"
+   },
+   "title_i18n": {
+    "nn": "Visa og NBX planlegg Visa Flex Card med støtte for stablecoins til 2027",
+    "sv": "Visa och NBX planerar Visa Flex Card med stöd för stablecoins till 2027",
+    "da": "Visa og NBX planlægger Visa Flex Card med support for stablecoins til 2027",
+    "fi": "Visa ja NBX suunnittelevat stablecoin-tuella toimivaa Visa Flex Cardia vuodelle 2027",
+    "is": "Visa og NBX stefna á Visa Flex Card með stuðningi við stöðugildi (stablecoins) árið 2027",
+    "zh": "Visa 与 NBX 计划于 2027 年推出支持稳定币的 Visa Flex Card",
+    "hi": "Visa और NBX 2027 के लिए स्टेबलकॉइन-सक्षम Visa Flex Card की योजना बना रहे हैं",
+    "es": "Visa y NBX planean una Visa Flex Card compatible con stablecoins para 2027",
+    "fr": "Visa et NBX prévoient une Visa Flex Card compatible avec les stablecoins pour 2027",
+    "ar": "Visa وNBX تخططان لبطاقة Visa Flex Card داعمة للعملات المستقرة لعام 2027",
+    "bn": "Visa ও NBX ২০২৭-এর জন্য স্টেবলকয়েন-সক্ষম Visa Flex Card-এর পরিকল্পনা করছে",
+    "pt": "Visa e NBX planeiam um Visa Flex Card com suporte a stablecoins para 2027",
+    "ru": "Visa и NBX планируют на 2027 год карту Visa Flex Card с поддержкой стейблкоинов",
+    "ur": "Visa اور NBX 2027 کے لیے اسٹیبل کوائن کی سہولت والا Visa Flex Card کی منصوبہ بندی کر رہے ہیں",
+    "id": "Visa dan NBX merencanakan Visa Flex Card berkemampuan stablecoin untuk 2027",
+    "de": "Visa und NBX planen für 2027 eine Visa Flex Card mit Stablecoin-Funktion",
+    "ja": "VisaとNBX、2027年にステーブルコイン対応のVisa Flex Cardを計画",
+    "sw": "Visa na NBX zinapanga Visa Flex Card inayotumia stablecoins kwa mwaka 2027",
+    "mr": "Visa आणि NBX 2027 साठी स्टेबलकॉइन-सक्षम Visa Flex Card चे नियोजन करतात",
+    "fa": "Visa و NBX برای سال ۲۰۲۷ کارت Visa Flex Card با قابلیت استیبل‌کوین برنامه‌ریزی می‌کنند",
+    "uk": "Visa і NBX планують на 2027 рік картку Visa Flex Card з підтримкою стейблкоїнів",
+    "tr": "Visa ve NBX, 2027 için stablecoin destekli bir Visa Flex Card planlıyor",
+    "se": "Visa ja NBX plánenet Visa Flex Card stablecoinaide 2027:ii"
+   },
+   "title_i18n_source": "Visa og NBX gjør stablecoins enklere å bruke til hverdagskjøp",
+   "summary_i18n": {
+    "nn": "Visa, NBX, Tieto og IDT Finance har kunngjort planar om eit Visa Flex Card, som etter planen skal lanserast i 2027 som debetkort i Noreg, Sverige, Danmark, Finland og Tyskland, og seinare i Polen. Kvalifiserte NBX-kundar skal kunne betale frå saldo i tradisjonell valuta eller støtta stablecoins via Visa Flexible Credential. Kunngjeringa kjem etter den tidlegare avtalen mellom NBX og Tieto om eit betalingskort for stablecoins.",
+    "nb": "Visa, NBX, Tieto og IDT Finance har kunngjort planer om et Visa Flex Card, som etter planen skal lanseres i 2027 som debetkort i Norge, Sverige, Danmark, Finland og Tyskland, og senere i Polen. Kvalifiserte NBX-kunder skal kunne betale fra saldo i tradisjonell valuta eller støttede stablecoins via Visa Flexible Credential. Kunngjøringen følger den tidligere avtalen mellom NBX og Tieto om et betalingskort for stablecoins.",
+    "sv": "Visa, NBX, Tieto och IDT Finance har aviserat planer på ett Visa Flex Card, som enligt planerna lanseras 2027 som debitkort i Norge, Sverige, Danmark, Finland och Tyskland, och senare i Polen. Behöriga NBX-kunder ska kunna betala från saldo i traditionell valuta eller stödda stablecoins via Visa Flexible Credential. Tillkännagivandet följer NBX tidigare avtal med Tieto om ett betalkort för stablecoins.",
+    "da": "Visa, NBX, Tieto og IDT Finance har offentliggjort planer om et Visa Flex Card, der efter planen lanceres i 2027 som debetkort i Norge, Sverige, Danmark, Finland og Tyskland og senere i Polen. Berettigede NBX-kunder skal kunne betale fra saldo i traditionel valuta eller understøttede stablecoins via Visa Flexible Credential. Meddelelsen følger NBX’ tidligere aftale med Tieto om et betalingskort til stablecoins.",
+    "fi": "Visa, NBX, Tieto ja IDT Finance ovat ilmoittaneet suunnitelmista Visa Flex Cardista, joka on tarkoitus lanseerata vuonna 2027 debit-korttina Norjassa, Ruotsissa, Tanskassa, Suomessa ja Saksassa ja myöhemmin Puolassa. Edellytykset täyttävät NBX-asiakkaat voivat maksaa perinteisen valuutan tai tuettujen vakaavaluuttojen saldoilta Visa Flexible Credentialin avulla. Ilmoitus seuraa NBX:n aiempaa sopimusta Tieton kanssa vakaavaluuttojen maksukortista.",
+    "is": "Visa, NBX, Tieto og IDT Finance hafa kynnt áætlanir um Visa Flex Card, sem áætlað er að verði sett á markað 2027 sem debetkort í Noregi, Svíþjóð, Danmörku, Finnlandi og Þýskalandi, og síðar í Póllandi. Gildir NBX-viðskiptavinir munu geta greitt af inneign í hefðbundnum gjaldmiðli eða studdum stöðugildum (stablecoins) með Visa Flexible Credential. Tilkynningin kemur í kjölfar fyrri samnings NBX og Tieto um greiðslukort fyrir stöðugildi.",
+    "zh": "Visa、NBX、Tieto 和 IDT Finance 宣布计划推出 Visa Flex Card，拟于 2027 年作为借记卡在挪威、瑞典、丹麦、芬兰和德国发行，随后再扩展至波兰。符合条件的 NBX 客户将可通过 Visa Flexible Credential，从法币或受支持的稳定币余额进行支付。该公告是对 NBX 早前与 Tieto 就稳定币支付卡达成协议的后续。",
+    "hi": "Visa, NBX, Tieto और IDT Finance ने Visa Flex Card की योजनाओं की घोषणा की है, जिसे 2027 में नॉर्वे, स्वीडन, डेनमार्क, फिनलैंड और जर्मनी में डेबिट कार्ड के रूप में लॉन्च किया जाना है, और बाद में पोलैंड में। पात्र NBX ग्राहक Visa Flexible Credential के माध्यम से फिएट या समर्थित स्टेबलकॉइन शेष से भुगतान कर सकेंगे। यह घोषणा स्टेबलकॉइन भुगतान कार्ड पर Tieto के साथ NBX के पहले के समझौते के बाद आई है।",
+    "es": "Visa, NBX, Tieto e IDT Finance han anunciado planes para una Visa Flex Card, prevista para 2027 como tarjeta de débito en Noruega, Suecia, Dinamarca, Finlandia y Alemania, y más adelante en Polonia. Los clientes de NBX que cumplan los requisitos podrán pagar desde saldos en moneda fiduciaria o en stablecoins admitidas a través de Visa Flexible Credential. El anuncio da seguimiento al acuerdo anterior de NBX con Tieto sobre una tarjeta de pago de stablecoins.",
+    "fr": "Visa, NBX, Tieto et IDT Finance ont annoncé des projets de Visa Flex Card, dont le lancement est prévu en 2027 comme carte de débit en Norvège, en Suède, au Danemark, en Finlande et en Allemagne, puis en Pologne. Les clients NBX éligibles pourront payer à partir de soldes en monnaie fiduciaire ou en stablecoins pris en charge via Visa Flexible Credential. L’annonce fait suite à l’accord antérieur de NBX avec Tieto sur une carte de paiement en stablecoins.",
+    "ar": "أعلنت Visa وNBX وTieto وIDT Finance عن خطط لبطاقة Visa Flex Card، المزمع إطلاقها في عام 2027 كبطاقة خصم في النرويج والسويد والدنمارك وفنلندا وألمانيا، ثم لاحقاً في بولندا. وسيتمكن عملاء NBX المؤهلون من الدفع من أرصدة العملة التقليدية أو العملات المستقرة المدعومة عبر Visa Flexible Credential. ويأتي الإعلان بعد اتفاق NBX السابق مع Tieto حول بطاقة دفع للعملات المستقرة.",
+    "bn": "Visa, NBX, Tieto ও IDT Finance Visa Flex Card-এর পরিকল্পনা ঘোষণা করেছে, যা ২০২৭ সালে নরওয়ে, সুইডেন, ডেনমার্ক, ফিনল্যান্ড ও জার্মানিতে ডেবিট কার্ড হিসেবে চালু হওয়ার কথা, পরে পোল্যান্ডে। যোগ্য NBX গ্রাহকরা Visa Flexible Credential-এর মাধ্যমে ফিয়াট বা সমর্থিত স্টেবলকয়েন ব্যালেন্স থেকে পরিশোধ করতে পারবেন। এই ঘোষণা স্টেবলকয়েন পেমেন্ট কার্ড নিয়ে Tieto-এর সঙ্গে NBX-এর আগের চুক্তির পর এসেছে।",
+    "pt": "A Visa, a NBX, a Tieto e a IDT Finance anunciaram planos para um Visa Flex Card, com lançamento previsto para 2027 como cartão de débito na Noruega, na Suécia, na Dinamarca, na Finlândia e na Alemanha, e mais tarde na Polónia. Os clientes NBX elegíveis poderão pagar a partir de saldos em moeda fiduciária ou em stablecoins suportadas através da Visa Flexible Credential. O anúncio dá seguimento ao acordo anterior da NBX com a Tieto sobre um cartão de pagamento em stablecoins.",
+    "ru": "Visa, NBX, Tieto и IDT Finance объявили о планах выпуска карты Visa Flex Card: запуск намечен на 2027 год в виде дебетовой карты в Норвегии, Швеции, Дании, Финляндии и Германии, позднее — в Польше. Соответствующие требованиям клиенты NBX смогут платить с балансов в фиатной валюте или в поддерживаемых стейблкоинах через Visa Flexible Credential. Объявление следует за более ранним соглашением NBX с Tieto о платёжной карте для стейблкоинов.",
+    "ur": "Visa، NBX، Tieto اور IDT Finance نے Visa Flex Card کے منصوبوں کا اعلان کیا ہے، جسے 2027 میں ناروے، سویڈن، ڈنمارک، فن لینڈ اور جرمنی میں ڈیبٹ کارڈ کے طور پر لانچ کیا جانا ہے، اور بعد میں پولینڈ میں۔ اہل NBX صارفین Visa Flexible Credential کے ذریعے فیاٹ یا معاون اسٹیبل کوائن بیلنس سے ادائیگی کر سکیں گے۔ یہ اعلان اسٹیبل کوائن ادائیگی کارڈ پر Tieto کے ساتھ NBX کے پہلے معاہدے کے بعد آیا ہے۔",
+    "id": "Visa, NBX, Tieto, dan IDT Finance telah mengumumkan rencana Visa Flex Card, yang dijadwalkan diluncurkan pada 2027 sebagai kartu debit di Norwegia, Swedia, Denmark, Finlandia, dan Jerman, lalu kemudian di Polandia. Nasabah NBX yang memenuhi syarat akan dapat membayar dari saldo fiat atau stablecoin yang didukung melalui Visa Flexible Credential. Pengumuman ini menindaklanjuti perjanjian NBX sebelumnya dengan Tieto tentang kartu pembayaran stablecoin.",
+    "de": "Visa, NBX, Tieto und IDT Finance haben Pläne für eine Visa Flex Card bekannt gegeben, die 2027 als Debitkarte in Norwegen, Schweden, Dänemark, Finnland und Deutschland und später in Polen starten soll. Berechtigte NBX-Kunden sollen über Visa Flexible Credential von Guthaben in Fiatwährung oder unterstützten Stablecoins bezahlen können. Die Ankündigung folgt auf die frühere Vereinbarung von NBX mit Tieto über eine Zahlungskarte für Stablecoins.",
+    "ja": "Visa、NBX、Tieto、IDT Financeは、Visa Flex Cardの計画を発表した。2027年にノルウェー、スウェーデン、デンマーク、フィンランド、ドイツでデビットカードとして投入し、その後ポーランドに広げる予定という。対象となるNBXの顧客は、Visa Flexible Credentialを通じて法定通貨または対応ステーブルコインの残高から支払えるようになる。この発表は、ステーブルコイン決済カードに関するNBXとTietoの先行契約に続くものだ。",
+    "sw": "Visa, NBX, Tieto na IDT Finance zimetangaza mipango ya Visa Flex Card, inayotarajiwa kuzinduliwa mwaka 2027 kama kadi ya debiti nchini Norway, Sweden, Denmark, Finland na Ujerumani, na baadaye Poland. Wateja wa NBX wanaostahili wataweza kulipa kutoka salio la fiat au stablecoins zinazotumika kupitia Visa Flexible Credential. Tangazo hili linafuata makubaliano ya awali ya NBX na Tieto kuhusu kadi ya malipo ya stablecoins.",
+    "mr": "Visa, NBX, Tieto आणि IDT Finance यांनी Visa Flex Card च्या योजना जाहीर केल्या आहेत, जे 2027 मध्ये नॉर्वे, स्वीडन, डेन्मार्क, फिनलंड आणि जर्मनीत डेबिट कार्ड म्हणून सुरू होणार आहे आणि नंतर पोलंडमध्ये. पात्र NBX ग्राहक Visa Flexible Credential द्वारे फिएट किंवा समर्थित स्टेबलकॉइन शिल्लक मधून देय करू शकतील. ही घोषणा स्टेबलकॉइन पेमेंट कार्डबाबत Tieto सोबतच्या NBXच्या आधीच्या करारानंतर आली आहे.",
+    "fa": "Visa، NBX، Tieto و IDT Finance از برنامهٔ کارت Visa Flex Card خبر داده‌اند که قرار است در سال ۲۰۲۷ به‌صورت کارت بدهی در نروژ، سوئد، دانمارک، فنلاند و آلمان و بعداً در لهستان عرضه شود. مشتریان واجد شرایط NBX می‌توانند از موجودی پول رایج یا استیبل‌کوین‌های پشتیبانی‌شده از طریق Visa Flexible Credential پرداخت کنند. این اعلام پس از توافق پیشین NBX با Tieto درباره کارت پرداخت استیبل‌کوین آمده است.",
+    "uk": "Visa, NBX, Tieto та IDT Finance оголосили плани щодо картки Visa Flex Card, запуск якої заплановано на 2027 рік як дебетової картки в Норвегії, Швеції, Данії, Фінляндії та Німеччині, а згодом у Польщі. Клієнти NBX, які відповідають вимогам, зможуть платити з балансів у фіатній валюті або в підтримуваних стейблкоїнах через Visa Flexible Credential. Оголошення є продовженням ранішої угоди NBX із Tieto щодо платіжної картки для стейблкоїнів.",
+    "tr": "Visa, NBX, Tieto ve IDT Finance, 2027’de Norveç, İsveç, Danimarka, Finlandiya ve Almanya’da, daha sonra da Polonya’da banka kartı olarak piyasaya sürülmesi planlanan bir Visa Flex Card duyurdu. Koşulları sağlayan NBX müşterileri, Visa Flexible Credential aracılığıyla itibari para veya desteklenen stablecoin bakiyelerinden ödeme yapabilecek. Duyuru, NBX’in stablecoin ödeme kartına ilişkin Tieto ile yaptığı önceki anlaşmayı izliyor.",
+    "se": "Visa, NBX, Tieto ja IDT Finance leat almmuhan plánain Visa Flex Card birra, mii galgá 2027:s almmuhuvvot debethgoarttan Norggas, Ruoŧas, Dánmárkkus, Suomas ja Duiskkas, ja maŋŋeleappot Polskkas. NBX-áššihasat geat deavdet eavttuid sáhttet máksit fiata- dahje doarjjon stablecoin-saldoin Visa Flexible Credential bokte. Almmuhus čuovvu ovddit soahpamuša NBX ja Tieto gaskkas stablecoin-máksingoartta birra."
+   },
+   "summary_i18n_review": "pending"
   },
   {
    "id": "bfc180724d65",
@@ -331,9 +506,10 @@
     "\\btokeni[sz]\\w*"
    ],
    "paywall": false,
-   "status": "pending",
+   "status": "rejected",
    "summary": null,
-   "published_date_only": true
+   "published_date_only": true,
+   "reject_reason": "Kaupr Blockchain Sweden item; comment only, no official source.; researcher 28.11; editor 2026-11-28"
   },
   {
    "id": "cdaf088d54a6",
