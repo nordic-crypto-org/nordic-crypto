@@ -7,24 +7,27 @@ import mastodon_follow as mf
 
 
 def acct(i, **kw):
-    a = {"id": str(i), "acct": f"user{i}", "bot": False, "locked": False}
+    a = {"id": str(i), "acct": f"user{i}", "bot": False, "locked": False, "followers_count": 50,
+         "statuses_count": 200, "created_at": "2023-01-01T00:00:00.000Z"}
     a.update(kw)
     return a
 
 
 class FakeClient:
-    def __init__(self, sugg, trend, rel=None, remaining=None, rate_limit_after=None, fail_ids=()):
-        self.sugg, self.trend, self.rel = sugg, trend, rel or {}
+    def __init__(self, tagged, extra=(), rel=None, remaining=None, rate_limit_after=None, fail_ids=()):
+        self.timelines = {"bitcoin": tagged, "crypto": list(extra)}
+        self.rel = rel or {}
         self.remaining, self.rate_limit_after, self.fail_ids = remaining, rate_limit_after, set(fail_ids)
         self.follows = []
 
     def call(self, method, path, params=None):
         if path == "/api/v1/accounts/verify_credentials":
             return {"id": "me"}, {}
-        if path == "/api/v2/suggestions":
-            return [{"source": "global", "account": a} for a in self.sugg], {}
-        if path == "/api/v1/trends/statuses":
-            return [{"id": f"s{a['id']}", "account": a} for a in self.trend], {}
+        if path.startswith("/api/v1/timelines/tag/"):
+            tag = path.rsplit("/", 1)[-1]
+            if tag not in self.timelines:
+                raise urllib.error.HTTPError(path, 404, "nope", {}, None)
+            return [{"id": f"s{a['id']}", "account": a} for a in self.timelines[tag]], {}
         if path == "/api/v1/accounts/relationships":
             return [dict(id=i, **self.rel.get(i, {})) for i in params["id[]"]], {}
         if method == "POST" and path.endswith("/follow"):
@@ -42,14 +45,20 @@ class FakeClient:
 def run(client, ledger=None, **kw):
     kw.setdefault("max_follows", 10)
     kw.setdefault("reserve", 50)
+    kw.setdefault("tags", ("bitcoin", "crypto", "missing"))
     return mf.run(client, set() if ledger is None else ledger, sleep=lambda s: None, **kw)
 
 
 class Tests(unittest.TestCase):
-    def test_caps_at_max_and_merges_suggestions_then_trends(self):
+    def test_caps_at_max_and_round_robins_tags(self):
         c = FakeClient([acct(i) for i in range(5)], [acct(i) for i in range(3, 20)])
         self.assertEqual(len(run(c, max_follows=8)), 8)
-        self.assertEqual(c.follows, [str(i) for i in range(8)])
+        self.assertEqual(c.follows, ["0", "3", "1", "4", "2", "5", "6", "7"])
+
+    def test_duplicate_authors_followed_once(self):
+        c = FakeClient([acct(1), acct(1), acct(2)], [acct(2)])
+        run(c)
+        self.assertEqual(c.follows, ["1", "2"])
 
     def test_skips_self_bots_locked_groups_moved_and_existing_follows(self):
         sugg = [acct("me"), acct(1, bot=True), acct(2, locked=True), acct(3, group=True),
@@ -86,6 +95,18 @@ class Tests(unittest.TestCase):
         c = FakeClient([acct(1)], [])
         run(c, ledger, dry_run=True)
         self.assertEqual((c.follows, ledger), ([], set()))
+
+    def test_skips_spammy_new_empty_and_bridged_accounts(self):
+        c = FakeClient([acct(1, followers_count=2), acct(2, statuses_count=1),
+                        acct(3, created_at="2099-01-01T00:00:00Z"), acct(4, acct="x@web.brid.gy"),
+                        acct(5, acct="y@lemmy.world"), acct(6)], [])
+        run(c)
+        self.assertEqual(c.follows, ["6"])
+
+    def test_at_most_two_per_remote_domain(self):
+        c = FakeClient([acct(i, acct=f"t{i}@spam.example") for i in range(5)] + [acct(9)], [])
+        run(c)
+        self.assertEqual(c.follows, ["0", "1", "9"])
 
     def test_rejects_out_of_range_max(self):
         with self.assertRaises(SystemExit):
